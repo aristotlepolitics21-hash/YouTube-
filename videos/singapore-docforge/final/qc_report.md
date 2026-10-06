@@ -1,23 +1,19 @@
 # Quality control report
 
-**Result:** FAIL — 1 errors, 9 warnings
-
-## Automatic fixes
-
-- re-rendered clips [] and re-assembled the master
-- re-rendered clips [] and re-assembled the master
+**Result:** PASS — 0 errors, 10 warnings
 
 ## Checklist
 
+- ☑ target length
 - ☑ missing scenes
 - ☑ missing assets
 - ☑ scene order
 - ☑ audio gaps
 - ⚠ narration mismatch (1)
-- ⚠ repetition (1)
+- ⚠ repetition (2)
 - ⚠ visual continuity (7)
 - ☑ historical detail
-- ☒ durations (1)
+- ☑ durations
 - ☑ subtitle sync
 - ☑ audio clipping
 - ☑ black frames
@@ -29,8 +25,8 @@ _visual continuity and historical detail are heuristics: review flagged scenes b
 
 | Severity | Check | Scene | Detail |
 |---|---|---|---|
-| error | durations |  | film is 15.0 min; target is 15 min (minimum 15.0) |
 | warning | repetition | scene_101 | 5 'photo' scenes in a row |
+| warning | repetition |  | only 32% of the runtime is photos or footage; the rest is graphics and text cards |
 | warning | visual_continuity | scene_072 | image title doesn't mention 'singapore': View of Pulau Bukom from Sentosa Siloso Beach |
 | warning | visual_continuity | scene_077 | image title doesn't mention 'singapore': Changi Airport Control Tower |
 | warning | visual_continuity | scene_079 | image title doesn't mention 'singapore': Marina Bay Financial Centre |

@@ -1,16 +1,16 @@
 {
  "issues": [
   {
-   "check": "durations",
-   "severity": "error",
-   "scene": "",
-   "message": "film is 15.0 min; target is 15 min (minimum 15.0)"
-  },
-  {
    "check": "repetition",
    "severity": "warning",
    "scene": "scene_101",
    "message": "5 'photo' scenes in a row"
+  },
+  {
+   "check": "repetition",
+   "severity": "warning",
+   "scene": "",
+   "message": "only 32% of the runtime is photos or footage; the rest is graphics and text cards"
   },
   {
    "check": "visual_continuity",
@@ -61,8 +61,5 @@
    "message": "heard \"Heart of the answer was already underway.\" (67% match)"
   }
  ],
- "fixes": [
-  "re-rendered clips [] and re-assembled the master",
-  "re-rendered clips [] and re-assembled the master"
- ]
+ "fixes": []
 }

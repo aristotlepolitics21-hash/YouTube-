@@ -142,6 +142,7 @@ quality_control:
   silence_max_seconds: 2.5
   clip_peak_db: -0.1
   narration_match_min: 0.80   # word-level similarity between script and transcribed audio
+  min_footage_share: 0.5      # warn if photos/footage fill less than this share of the runtime
   min_length_ratio: 0.9       # fail QC if the film is shorter than this share of target_minutes
   duplicate_hash_distance: 6
 

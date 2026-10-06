@@ -1,0 +1,2 @@
+[console_scripts]
+docforge = docforge.cli:main

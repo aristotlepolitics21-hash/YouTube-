@@ -82,6 +82,13 @@ def check_repetition(project: Project) -> list[dict]:
         run = run + 1 if cur["visual"]["kind"] == prev["visual"]["kind"] else 1
         if run == max_run + 1:
             issues.append(_issue("repetition", "warning", f"{run} '{cur['visual']['kind']}' scenes in a row", cur["id"]))
+    footage = {"photo", "ai_image", "ai_video", "local"}
+    spans = [(s["visual"]["kind"], s["timing"]["end"] - s["timing"]["start"]) for s in scenes if s.get("timing")]
+    total = sum(d for _, d in spans)
+    share = sum(d for k, d in spans if k in footage) / total if total else 1
+    if share < float(project.config.get_path("quality_control.min_footage_share", 0.5)):
+        issues.append(_issue("repetition", "warning", f"only {share:.0%} of the runtime is photos or footage; "
+                                                      "the rest is graphics and text cards"))
     return issues
 
 
