@@ -15,18 +15,18 @@ In 1965, a small island was pushed out of a country it had joined less than two 
 
 CHAPTERS
 0:00 The hook
-0:30 Why Singapore matters
-1:06 Origins
-2:22 War, merger and separation
-3:52 An island with nothing
-4:39 The turning point
-5:35 The economic transformation
-7:20 The key policies
-8:58 People and society
-9:55 A global role
-10:25 The problems
-11:17 The future
-12:06 Conclusion
+0:33 Why Singapore matters
+1:13 Origins
+2:37 War, merger and separation
+4:18 An island with nothing
+5:09 The turning point
+6:12 The economic transformation
+8:09 The key policies
+9:57 People and society
+10:59 A global role
+11:33 The problems
+12:32 The future
+13:41 Conclusion
 
 SOURCES
 - https://fred.stlouisfed.org/data/PCAGDPSGA646NWDB

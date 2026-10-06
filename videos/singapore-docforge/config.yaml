@@ -4,14 +4,20 @@ project:
 llm:
   provider: manual
 assets:
-  photo_providers: [openverse, loc]
+  photo_providers:
+  - openverse
+  - loc
 voiceover:
   pronunciations:
-    "Syonan-to": "Show-nan toe"
-    "Sook Ching": "Sook Ching"
-    "Temasek": "Tuh-mah-sek"
-    "Pulau Bukom": "Poo-lau Boo-kom"
-    "Pulau Tekong": "Poo-lau Teh-kong"
-    "Bukit Ho Swee": "Boo-kit Hoe Swee"
+    Syonan-to: Show-nan toe
+    Sook Ching: Sook Ching
+    Temasek: Tuh-mah-sek
+    Pulau Bukom: Poo-lau Boo-kom
+    Pulau Tekong: Poo-lau Teh-kong
+    Bukit Ho Swee: Boo-kit Hoe Swee
+  length_scale: 1.25
+  scene_gap_seconds: 0.6
 render:
-  thumbnail_text: "Rich With Nothing"
+  thumbnail_text: Rich With Nothing
+quality_control:
+  min_length_ratio: 1.0

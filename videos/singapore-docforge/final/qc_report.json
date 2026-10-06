@@ -45,32 +45,38 @@
   {
    "check": "visual_continuity",
    "severity": "warning",
-   "scene": "scene_126",
+   "scene": "scene_128",
    "message": "image title doesn't mention 'singapore': Changi Airport Jewel - Skytrain passing from and to terminal"
   },
   {
    "check": "narration_mismatch",
    "severity": "warning",
-   "scene": "scene_008",
-   "message": "heard \"Sing -de -pours entire land area is less than 750 square kilometers.\" (74% match)"
+   "scene": "scene_030",
+   "message": "heard \"Japanese forces cross the narrow Joe Her Strait and attack the island from the northwest.\" (76% match)"
   },
   {
    "check": "narration_mismatch",
    "severity": "warning",
-   "scene": "scene_030",
-   "message": "heard \"Japanese forces cross the narrow Johar Strait and attack the island from the Northwest.\" (79% match)"
+   "scene": "scene_031",
+   "message": "heard \"On 15 February, the British commander surrendered.\" (75% match)"
+  },
+  {
+   "check": "narration_mismatch",
+   "severity": "warning",
+   "scene": "scene_064",
+   "message": "heard \"Heart of the answer was already underway.\" (67% match)"
   },
   {
    "check": "narration_mismatch",
    "severity": "warning",
    "scene": "scene_069",
-   "message": "heard \"Saying a port did the opposite. It invited them in.\" (78% match)"
+   "message": "heard \"Sing a pore did he opposite. Invited them in.\" (59% match)"
   },
   {
    "check": "narration_mismatch",
    "severity": "warning",
    "scene": "scene_087",
-   "message": "heard \"That there was housing.\" (75% match)"
+   "message": "heard \"That day was housing.\" (50% match)"
   }
  ],
  "fixes": []
