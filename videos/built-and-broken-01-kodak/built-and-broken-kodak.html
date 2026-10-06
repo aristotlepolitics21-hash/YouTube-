@@ -1,0 +1,460 @@
+<title>Built &amp; Broken: Kodak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: a 16:9 stage with the transport bar and chapter grid below. Single charcoal theme by choice, matching the series look. */
+:root {
+  color-scheme: dark;
+  --charcoal: #1d1d20;
+  --panel: #27272b;
+  --line: #3a3a40;
+  --paper: #efe9df;
+  --muted: #a9a49b;
+  --amber: #e8a33d;
+  --rust: #b4472a;
+  --display: "Archivo Black", Impact, "Arial Black", sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html, body { background: var(--charcoal); color: var(--paper); }
+body { font-family: var(--body); font-size: 15px; line-height: 1.55; padding-inline: 16px; padding-block: 24px 48px; }
+.wrap { max-width: 1040px; margin-inline: auto; display: grid; gap: 20px; }
+header { display: grid; gap: 4px; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--amber); }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(26px, 4.4vw, 42px); line-height: 1.05; margin: 0; text-wrap: balance; }
+h1 .b { color: var(--rust); }
+.lede { color: var(--muted); margin: 0; max-width: 62ch; }
+.stage { position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 4px; overflow: hidden; }
+canvas { display: block; width: 100%; height: 100%; }
+.caption { position: absolute; left: 50%; bottom: 5%; transform: translateX(-50%); width: 86%; text-align: center; font-size: clamp(12px, 2.1vw, 21px); line-height: 1.35; font-weight: 500; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.9), 0 0 12px rgba(0,0,0,.6); pointer-events: none; text-wrap: balance; }
+.bigplay { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(10,10,12,.35); border: 0; cursor: pointer; font: inherit; }
+.bigplay span { padding: 14px 22px; border-radius: 4px; background: var(--amber); color: #1a1408; font-weight: 600; font-size: 16px; }
+.bigplay:focus-visible span { outline: 3px solid var(--paper); outline-offset: 3px; }
+.transport { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.transport button { font: inherit; font-weight: 500; color: var(--paper); background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 7px 12px; cursor: pointer; }
+.transport button:hover { border-color: var(--amber); }
+.transport button[aria-pressed="true"] { background: var(--amber); color: #1a1408; border-color: var(--amber); }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.scrub { flex: 1 1 260px; min-width: 0; accent-color: var(--amber); }
+.time { font-family: var(--mono); font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
+.chapters { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 8px; list-style: none; padding: 0; margin: 0; }
+.chapters button { width: 100%; text-align: left; font: inherit; color: var(--paper); background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 10px 12px; cursor: pointer; display: grid; gap: 2px; }
+.chapters button:hover { border-color: var(--amber); }
+.chapters button.on { border-color: var(--amber); box-shadow: inset 3px 0 0 var(--amber); }
+.chapters .tc { font-family: var(--mono); font-size: 12px; color: var(--amber); }
+.chapters .nm { font-weight: 500; }
+h2 { font-family: var(--display); font-weight: 400; font-size: 20px; margin: 8px 0 0; }
+.notes { color: var(--muted); max-width: 70ch; display: grid; gap: 8px; margin: 0; padding-left: 18px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Built &amp; Broken · Episode 1</div>
+    <h1>Kodak: the company that invented the future and <span class="b">buried it</span></h1>
+    <p class="lede">The fact-checked episode, animated scene by scene and timed to the narration. Amber is what was built. Rust is what broke.</p>
+  </header>
+  <div class="stage">
+    <canvas id="cv" width="1280" height="720" aria-label="Animated illustration of the Kodak story"></canvas>
+    <div class="caption" id="cap" aria-live="polite"></div>
+    <button class="bigplay" id="bigplay" aria-label="Play the episode"><span>▶ Play episode</span></button>
+  </div>
+  <div class="transport">
+    <button id="play" aria-label="Play">▶ Play</button>
+    <button id="restart">⟲ Restart</button>
+    <input class="scrub" id="scrub" type="range" min="0" max="100" step="0.1" value="0" aria-label="Seek">
+    <span class="time" id="time">0:00 / 0:00</span>
+    <button id="voice" aria-pressed="true">Voice</button>
+    <button id="caps" aria-pressed="true">Captions</button>
+  </div>
+  <section>
+    <h2>Chapters</h2>
+    <ul class="chapters" id="chapters"></ul>
+  </section>
+  <section>
+    <h2>Notes</h2>
+    <ul class="notes">
+      <li>Figures were checked before production. Market shares are from 1976, the patent count is about 1,100, and peak employment was 145,300 in 1988.</li>
+      <li>The film-sales "cliff" chart is drawn as a shape, not to scale. It shows the trend, not exact figures.</li>
+      <li>No real logos are used. The building and the yellow box are generic.</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+(() => {
+const W = 1280, H = 720;
+const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
+const DISPLAY = '"Archivo Black", Impact, sans-serif', BODY = '"IBM Plex Sans", system-ui, sans-serif', MONO = '"IBM Plex Mono", monospace';
+const C = { bg: '#1d1d20', bg2: '#25252a', paper: '#efe9df', grey: '#6d6a66', dim: '#3c3b40', amber: '#e8a33d', amberD: '#b97d22', rust: '#b4472a', rustD: '#7e2f1c', yellow: '#f2c230', fuji: '#5f8f6a' };
+
+const SCENES = ['The hook', 'The rise', 'The invention', 'The warning signs', 'The fall', 'What it cost', 'The lesson'];
+// [scene, visual id, text]
+const LINES = [
+  [0,'building',"In 1975, an engineer at Kodak built the world's first digital camera."],
+  [0,'had',"Kodak had the invention. It had the patents. It had the money, the brand, and the distribution in nearly every country on Earth."],
+  [0,'crack',"And thirty-seven years later, it filed for bankruptcy."],
+  [0,'crack',"This is not the story of a company that missed the future. Kodak saw it first."],
+  [0,'crack',"This is the story of a company that saw the future clearly, and chose the past anyway."],
+  [1,'workshop',"In the 1880s, photography was for experts. You needed glass plates, chemicals, and patience."],
+  [1,'box',"George Eastman changed that. In 1888 he launched a simple box camera with a promise: you press the button, we do the rest."],
+  [1,'mail',"You took the pictures, mailed the whole camera back, and got your prints and a reloaded camera in return."],
+  [1,'brownie',"In 1900 came the Brownie, priced at one dollar. Photography was now for everyone."],
+  [1,'razor',"But the real genius was the business model. Kodak sold cameras cheaply, almost as bait."],
+  [1,'razor',"The profit was in the film, the chemicals, and the paper. Every photo someone took paid Kodak again."],
+  [1,'share',"By 1976, Kodak sold about 90 percent of the film and 85 percent of the cameras in the United States."],
+  [1,'share',"Kodak moment entered the language. The yellow box was one of the most recognisable things in millions of households."],
+  [1,'ledger',"Remember this model. It made Kodak rich. It is also what would trap it."],
+  [2,'lab',"In 1975, a young Kodak engineer named Steven Sasson was handed a loose assignment: see what you can do with a new kind of sensor called a CCD."],
+  [2,'lab',"He built a camera from a lens, a handful of circuit boards, and a cassette tape."],
+  [2,'specs',"It weighed about eight pounds. It captured a black and white image of 0.01 megapixels, and it took 23 seconds to record one photo."],
+  [2,'quote',"Sasson showed it to Kodak's executives. As he later told the New York Times, it was filmless photography, so the reaction was: that's cute, but don't tell anyone about it."],
+  [2,'scale',"It wasn't stupidity. It was arithmetic. Kodak earned its profits from film."],
+  [2,'scale',"A camera that needed no film was not a gift. It was a threat to the company's own profit engine."],
+  [3,'paths',"Here is the part people get wrong. Kodak did not ignore digital."],
+  [3,'digital',"It poured money into it. It built a portfolio of more than a thousand digital imaging patents."],
+  [3,'digital',"In 2005, Kodak was the number one seller of digital cameras in the United States. It had even bought an online photo sharing site, Ofoto, in 2001."],
+  [3,'prints',"But look at how it used these things. Kodak treated digital as a way to sell more prints. Ofoto existed to get you to order paper photos."],
+  [3,'prints',"The company was still running the old razor and blades model on new technology."],
+  [3,'cannibal',"The problem: digital cameras had no film margin. Every digital camera Kodak sold meant fewer rolls of film sold."],
+  [3,'cannibal',"So inside the company, digital was always competing with the product that paid everyone's salaries."],
+  [3,'fuji',"Meanwhile, rival Fuji went the other way. It cut back its own film business, moved into chemicals, cosmetics, and medical imaging, and survived."],
+  [3,'phone',"And then the real disruptor arrived. The phone."],
+  [4,'cliff',"Once cameras were built into phones, the standalone camera market collapsed. Film sales fell off a cliff."],
+  [4,'cliff',"Kodak's profits, built on decades of film, shrank year after year."],
+  [4,'stamp',"In January 2012, Kodak filed for Chapter 11 bankruptcy."],
+  [4,'insta',"Three months later, Facebook bought Instagram, a photo sharing app with 13 employees, for about one billion dollars."],
+  [4,'insta',"A company that had defined photography for a century was in bankruptcy court in the same season that the new version of photography got its first big price tag."],
+  [4,'patents',"Kodak sold its digital imaging patents for about 525 million dollars, and emerged from bankruptcy in 2013 as a much smaller company, focused largely on commercial printing."],
+  [5,'factory',"At its peak in 1988, Kodak employed about 145,000 people. Entire neighbourhoods in Rochester, New York were built around the company."],
+  [5,'factory',"Over the decades of its decline, most of those jobs disappeared."],
+  [6,'blueprint',"Kodak's fall isn't about a lack of vision. It's about a very hard question: what do you do when the thing that makes you rich is the thing that has to die?"],
+  [6,'blueprint',"Kodak had the answer in a lab in 1975. It had thirty-seven years to act on it."],
+  [6,'blueprint',"Its leaders chose to protect the business they had instead of building the one that was coming."],
+  [6,'hide',"The warning sign isn't a rival getting stronger. It's the moment you catch yourself hiding your own best idea, because it threatens your profits."],
+  [6,'end',"Built and Broken. Next week: another giant, another collapse."]
+];
+
+// Timeline: 150 wpm estimate unless the render passes real narration lengths.
+const DURS = window.__DURS || LINES.map(l => l[2].split(/\s+/).length / 2.5 + 0.45);
+let t0 = 0;
+const lines = LINES.map(([s, v, text], i) => { const l = { s, v, text, start: t0, dur: DURS[i], end: t0 + DURS[i] }; t0 += DURS[i]; return l; });
+const TOTAL = t0;
+// Visual blocks: consecutive lines sharing a visual id play as one shot.
+const shots = []; lines.forEach(l => { const last = shots[shots.length - 1]; if (last && last.v === l.v) last.end = l.end; else shots.push({ v: l.v, s: l.s, start: l.start, end: l.end }); });
+const scenes = SCENES.map((name, i) => { const ls = lines.filter(l => l.s === i); return { name, start: ls[0].start, end: ls[ls.length - 1].end }; });
+
+// ---------- helpers ----------
+const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+const seg = (t, a, b) => clamp((t - a) / (b - a));
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function rect(x, y, w, h, c) { ctx.fillStyle = c; ctx.fillRect(x, y, w, h); }
+function rrect(x, y, w, h, r, c) { ctx.beginPath(); ctx.roundRect(x, y, w, h, r); ctx.fillStyle = c; ctx.fill(); }
+function circle(x, y, r, c) { ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fillStyle = c; ctx.fill(); }
+function line(x1, y1, x2, y2, c, w = 4) { ctx.save(); ctx.strokeStyle = c; ctx.lineWidth = w; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke(); ctx.restore(); }
+function text(s, x, y, size, o = {}) {
+  ctx.save(); ctx.globalAlpha *= o.a ?? 1; ctx.fillStyle = o.c || C.paper; ctx.textAlign = o.align || 'center'; ctx.textBaseline = 'middle';
+  ctx.font = `${o.w || 400} ${size}px ${o.f || DISPLAY}`; if (o.ls) ctx.letterSpacing = o.ls + 'px'; ctx.fillText(s, x, y); ctx.restore();
+}
+const fade = (t, a, b) => ease(seg(t, a, b));
+function bg(c = C.bg) { rect(0, 0, W, H, c); }
+function ground(y = 600, c = '#151517') { rect(0, y, W, H - y, c); }
+function person(x, y, s, c = C.paper) { circle(x, y - 62 * s, 11 * s, c); ctx.beginPath(); ctx.moveTo(x - 14 * s, y - 46 * s); ctx.lineTo(x + 14 * s, y - 46 * s); ctx.lineTo(x + 10 * s, y); ctx.lineTo(x - 10 * s, y); ctx.closePath(); ctx.fillStyle = c; ctx.fill(); }
+function building(x, y, w, h, body, win, crack = 0) {
+  rect(x, y - h, w, h, body); rect(x - 10, y - h - 14, w + 20, 14, body);
+  const cols = 8, rows = 6, cw = w / cols, rh = (h - 90) / rows;
+  for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) rect(x + c * cw + cw * .22, y - h + 24 + r * rh, cw * .56, rh * .55, win);
+  rect(x + w / 2 - 40, y - 70, 80, 70, '#111');
+  rect(x + w / 2 - 110, y - h + 4, 220, 0, body);
+  if (crack > 0) {
+    ctx.save(); ctx.strokeStyle = '#0d0d0f'; ctx.lineWidth = 5; ctx.lineJoin = 'round';
+    const r = rng(5);
+    for (let k = 0; k < 5; k++) { let px = x + w * (.15 + k * .18), py = y - h; const pts = [[px, py]]; for (let j = 0; j < 8; j++) { px += (r() - .5) * 60; py += h / 8; pts.push([px, py]); }
+      const n = (pts.length - 1) * clamp(crack * 1.2 - k * .05); ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]);
+      for (let i = 1; i <= Math.ceil(n); i++) { const f = Math.min(1, n - (i - 1)); ctx.lineTo(lerp(pts[i - 1][0], pts[i][0], f), lerp(pts[i - 1][1], pts[i][1], f)); } ctx.stroke(); }
+    ctx.restore();
+  }
+}
+function boxCamera(x, y, s, c = C.dim, accent = C.amber) { ctx.save(); ctx.translate(x, y); ctx.scale(s, s); rrect(-60, -45, 120, 90, 8, c); circle(0, 2, 26, '#111'); circle(0, 2, 16, '#2c2c30'); circle(5, -3, 5, '#555'); rect(30, -60, 22, 15, c); rect(-50, -38, 24, 12, accent); ctx.restore(); }
+function filmRoll(x, y, s, c = C.yellow) { ctx.save(); ctx.translate(x, y); ctx.scale(s, s); rrect(-18, -26, 36, 52, 4, c); rect(-18, -10, 36, 6, '#1d1d20'); rect(-6, -34, 12, 8, '#888'); ctx.restore(); }
+function coin(x, y, r, c = C.amber) { circle(x, y, r, c); circle(x, y, r * .7, C.amberD); text('$', x, y + 1, r, { c: C.amber }); }
+function phone(x, y, s, glow = 0) { ctx.save(); ctx.translate(x, y); ctx.scale(s, s); rrect(-45, -90, 90, 180, 14, '#0d0d0f'); rrect(-38, -78, 76, 150, 6, glow ? `rgba(232,163,61,${.25 + .5 * glow})` : '#2a2a30'); circle(20, -66, 6, '#333'); ctx.restore(); }
+function digicam(x, y, s, c = C.grey) { ctx.save(); ctx.translate(x, y); ctx.scale(s, s); rrect(-70, -40, 140, 80, 10, c); circle(-15, 0, 26, '#111'); circle(-15, 0, 15, '#2c2c30'); rect(30, -52, 26, 12, c); rect(35, -25, 25, 15, '#8fd'); ctx.restore(); }
+function photoStack(x, y, n, s = 1) { for (let i = 0; i < n; i++) { ctx.save(); ctx.translate(x + Math.sin(i * 1.7) * 10, y - i * 8 * s); ctx.rotate(Math.sin(i * 2.3) * .12); rect(-40 * s, -30 * s, 80 * s, 60 * s, C.paper); rect(-34 * s, -24 * s, 68 * s, 40 * s, i % 2 ? '#c98b4a' : '#7a9bb0'); ctx.restore(); } }
+function label(s, x, y, size = 18, c = C.amber, a = 1) { text(s, x, y, size, { f: MONO, w: 500, c, a, ls: 2 }); }
+function chip(s, x, y, c, a = 1, size = 22) { ctx.save(); ctx.globalAlpha *= a; ctx.font = `600 ${size}px ${BODY}`; const w = ctx.measureText(s).width + 36; rrect(x - w / 2, y - size, w, size * 2, 4, c); ctx.restore(); text(s, x, y, size, { f: BODY, w: 600, c: '#141416', a }); }
+
+// ---------- shots ----------
+const SHOT = {
+  building(t, T) {
+    bg(); ground(); building(390, 600, 500, 420, C.amberD, C.amber);
+    for (let i = 0; i < 9; i++) { const p = ((T * .08 + i / 9) % 1); person(lerp(60, 600, p), 640, .8, '#0d0d0f'); }
+    label('1975 · ROCHESTER, NEW YORK', W / 2, 60, 20, C.paper, fade(t, .05, .3));
+  },
+  had(t) {
+    bg(); building(80, 640, 300, 280, C.amberD, C.amber);
+    ['The invention', 'The patents', 'The money', 'The brand', 'The distribution'].forEach((s, i) => {
+      const k = fade(t, .08 + i * .15, .18 + i * .15), y = 180 + i * 85;
+      ctx.save(); ctx.globalAlpha = k; ctx.strokeStyle = C.amber; ctx.lineWidth = 4; ctx.strokeRect(520, y - 20, 40, 40); ctx.beginPath(); ctx.moveTo(528, y); ctx.lineTo(538, y + 11); ctx.lineTo(554, y - 12); ctx.stroke(); ctx.restore();
+      text(s, 590, y, 40, { align: 'left', a: k });
+    });
+  },
+  crack(t) {
+    const k = fade(t, 0, .35);
+    bg(); ground(600, '#141011');
+    building(390, 600, 500, 420, lerp(0, 1, k) > .5 ? C.rustD : C.amberD, k > .5 ? C.rust : C.amber, k);
+    ctx.save(); ctx.globalAlpha = .35 * k; rect(0, 0, W, H, C.rust); ctx.restore();
+    text('1975', 220, 120, 70, { c: C.amber, a: 1 - k * .6 }); text('→', W / 2, 120, 60, { a: fade(t, .1, .2) }); text('2012', 1060, 120, 70, { c: C.rust, a: fade(t, .15, .3) });
+    label('CHAPTER 11', 1060, 180, 20, C.rust, fade(t, .2, .35));
+    text('Saw it first.', W / 2, 680, 34, { f: BODY, w: 600, a: fade(t, .45, .55) * (1 - fade(t, .7, .75)) });
+    text('Chose the past anyway.', W / 2, 680, 34, { f: BODY, w: 600, c: C.rust, a: fade(t, .78, .85) });
+  },
+  workshop(t) {
+    bg(C.bg2); rect(0, 520, W, 200, '#18181b'); rect(120, 470, 1040, 20, C.grey);
+    label('1880s', 120, 70, 22, C.amber, 1);
+    [['GLASS PLATES', 300], ['CHEMICALS', 640], ['PATIENCE', 980]].forEach(([s, x], i) => {
+      const k = fade(t, .15 + i * .2, .3 + i * .2); ctx.save(); ctx.globalAlpha = k;
+      if (i === 0) for (let j = 0; j < 5; j++) { ctx.save(); ctx.translate(x - 40 + j * 20, 400); ctx.rotate(-.15); rect(-35, -60, 70, 120, 'rgba(200,220,230,.35)'); ctx.restore(); }
+      if (i === 1) for (let j = 0; j < 3; j++) { rrect(x - 90 + j * 60, 360, 40, 110, 6, ['#6a8f7a', '#9b7a4a', '#7a6a9b'][j]); rect(x - 82 + j * 60, 345, 24, 18, '#555'); }
+      if (i === 2) { circle(x, 390, 60, C.dim); ctx.strokeStyle = C.paper; ctx.lineWidth = 6; ctx.beginPath(); ctx.moveTo(x, 390); ctx.lineTo(x, 350); ctx.moveTo(x, 390); ctx.lineTo(x + 28, 404); ctx.stroke(); }
+      ctx.restore(); label(s, x, 560, 22, C.paper, k);
+    });
+  },
+  box(t) {
+    bg(); boxCamera(W / 2, 330, 2.4 * (0.9 + .1 * fade(t, 0, .3)), C.dim);
+    label('1888', W / 2, 90, 26, C.amber, fade(t, 0, .15));
+    text('“You press the button,', W / 2, 560, 44, { a: fade(t, .45, .6) });
+    text('we do the rest.”', W / 2, 620, 44, { c: C.amber, a: fade(t, .6, .72) });
+  },
+  mail(t) {
+    bg();
+    const pts = [[260, 330, 'YOU SHOOT'], [640, 200, 'MAIL IT BACK'], [1020, 330, 'PRINTS + RELOADED CAMERA']];
+    ctx.save(); ctx.strokeStyle = C.amber; ctx.lineWidth = 5; ctx.setLineDash([14, 12]); ctx.lineDashOffset = -t * 200;
+    ctx.beginPath(); ctx.moveTo(260, 330); ctx.quadraticCurveTo(450, 140, 640, 200); ctx.quadraticCurveTo(830, 140, 1020, 330); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(1020, 400); ctx.quadraticCurveTo(640, 620, 260, 400); ctx.stroke(); ctx.restore();
+    pts.forEach(([x, y, s], i) => { const k = fade(t, i * .25, .15 + i * .25); ctx.save(); ctx.globalAlpha = k; i === 2 ? (photoStack(x - 30, y + 10, 3, .8), boxCamera(x + 60, y, .7)) : i === 1 ? (rect(x - 60, y - 40, 120, 80, C.paper), line(x - 60, y - 40, x, y + 5, C.grey, 3), line(x + 60, y - 40, x, y + 5, C.grey, 3)) : boxCamera(x, y, .9); ctx.restore(); label(s, x, y + 90, 18, C.paper, k); });
+  },
+  brownie(t) {
+    bg(); boxCamera(480, 360, 2, '#3a2c22', C.amber);
+    const k = fade(t, .2, .35); text('$1', 900, 330, 200 * (0.8 + .2 * k), { c: C.amber, a: k });
+    label('1900 · THE BROWNIE', 480, 120, 24, C.paper, fade(t, 0, .15));
+    text('Photography for everyone', 900, 480, 30, { f: BODY, w: 600, a: fade(t, .55, .7) });
+    for (let i = 0; i < 12; i++) person(120 + i * 95, 700, .55, `rgba(239,233,223,${.25 * fade(t, .6 + i * .02, .7 + i * .02)})`);
+  },
+  razor(t, T) {
+    bg();
+    boxCamera(250, 360, 1.3); label('CHEAP CAMERA', 250, 470, 20, C.paper); text('the bait', 250, 510, 22, { f: BODY, c: C.grey });
+    line(380, 360, 520, 360, C.amber, 5); line(500, 345, 520, 360, C.amber, 5); line(500, 375, 520, 360, C.amber, 5);
+    const k = fade(t, .45, .6);
+    for (let i = 0; i < 7; i++) { const p = ((T * .35 + i / 7) % 1); const x = lerp(560, 1180, p);
+      ctx.save(); ctx.globalAlpha = k * (p < .1 ? p * 10 : p > .9 ? (1 - p) * 10 : 1);
+      i % 3 === 0 ? filmRoll(x, 300, 1) : i % 3 === 1 ? rect(x - 25, 280, 50, 40, C.paper) : rrect(x - 16, 270, 32, 60, 5, '#6a8f7a');
+      coin(x, 420, 22); ctx.restore(); }
+    text('Film · chemicals · paper', 870, 210, 30, { f: BODY, w: 600, a: k }); text('Every photo pays again', 870, 520, 28, { f: BODY, w: 600, c: C.amber, a: fade(t, .7, .82) });
+  },
+  share(t) {
+    bg(); label('UNITED STATES · 1976', W / 2, 70, 22, C.paper, 1);
+    [['FILM', 90, 330], ['CAMERAS', 85, 470]].forEach(([s, v, y], i) => {
+      const k = fade(t, .05 + i * .15, .3 + i * .15);
+      rect(260, y - 35, 760, 70, C.dim); rect(260, y - 35, 760 * v / 100 * k, 70, C.amber);
+      text(s, 240, y, 28, { align: 'right', f: BODY, w: 600 }); text(Math.round(v * k) + '%', 1040, y, 40, { align: 'left', c: C.amber });
+    });
+    const y = fade(t, .55, .7); ctx.save(); ctx.globalAlpha = y; rect(560, 560, 160, 100, C.yellow); rect(560, 595, 160, 22, '#c43c2a'); ctx.restore();
+    text('“A Kodak moment”', W / 2, 690, 26, { f: BODY, w: 600, a: fade(t, .5, .6) });
+  },
+  ledger(t) {
+    bg(); rect(200, 600, 880, 4, C.grey);
+    for (let i = 0; i < 12; i++) { const k = fade(t, i * .04, .15 + i * .04), h = (60 + i * 32) * k; rect(220 + i * 72, 600 - h, 48, h, C.amber); }
+    text('It made Kodak rich.', W / 2, 100, 46, { a: fade(t, .25, .35) });
+    text('It would also trap it.', W / 2, 165, 46, { c: C.rust, a: fade(t, .65, .75) });
+  },
+  lab(t) {
+    bg(C.bg2); rect(0, 560, W, 160, '#18181b'); rect(220, 470, 840, 16, C.grey);
+    person(330, 560, 1.4, '#0d0d0f');
+    const k = fade(t, .1, .3); ctx.save(); ctx.globalAlpha = k;
+    rrect(560, 330, 260, 140, 8, C.dim); circle(600, 400, 34, '#111'); circle(600, 400, 20, '#333');
+    for (let i = 0; i < 4; i++) rect(660, 350 + i * 26, 130, 14, '#4a6a4a'); rrect(860, 380, 120, 90, 6, C.grey); rect(880, 400, 80, 50, '#222'); circle(900, 425, 12, '#555'); circle(940, 425, 12, '#555');
+    ctx.restore();
+    label('1975 · STEVEN SASSON', W / 2, 80, 22, C.amber, fade(t, 0, .1));
+    ['LENS', 'CIRCUIT BOARDS', 'CASSETTE TAPE'].forEach((s, i) => label(s, [600, 725, 920][i], 520, 16, C.paper, fade(t, .55 + i * .1, .62 + i * .1)));
+    label('CCD SENSOR', 600, 300, 16, C.amber, fade(t, .25, .35));
+  },
+  specs(t) {
+    bg();
+    [['≈8 lb', 'weight'], ['0.01 MP', '100 × 100 pixels'], ['23 s', 'to record one photo']].forEach(([a, b], i) => {
+      const k = fade(t, .05 + i * .22, .18 + i * .22), x = 240 + i * 400;
+      text(a, x, 210, 70, { c: C.amber, a: k }); text(b, x, 280, 24, { f: BODY, a: k, c: C.grey });
+    });
+    const k = fade(t, .7, .85), r = rng(4), px = 18;
+    for (let y = 0; y < 10; y++) for (let x = 0; x < 10; x++) { const d = Math.hypot(x - 4.5, y - 4.2); const v = d < 3.6 ? 150 + r() * 60 : 40 + r() * 40; ctx.save(); ctx.globalAlpha = k; rect(550 + x * px, 380 + y * px, px - 1, px - 1, `rgb(${v},${v},${v})`); ctx.restore(); }
+    label('BLACK AND WHITE', W / 2, 600, 18, C.paper, k);
+  },
+  quote(t) {
+    bg(); rect(140, 470, 1000, 18, C.grey);
+    for (let i = 0; i < 6; i++) person(260 + i * 150, 470, 1.2, '#0d0d0f');
+    rrect(560, 420, 160, 50, 6, C.dim);
+    const k = fade(t, .45, .55);
+    text('“That’s cute —', W / 2, 140, 54, { a: k }); text('but don’t tell anyone about it.”', W / 2, 215, 46, { c: C.amber, a: fade(t, .58, .68) });
+    label('AS SASSON RECALLED IT · NYT, 2008', W / 2, 290, 16, C.grey, fade(t, .7, .8));
+  },
+  scale(t) {
+    bg(); const tilt = lerp(0, -.22, fade(t, .1, .4));
+    rect(632, 300, 16, 300, C.grey); rect(560, 600, 160, 14, C.grey);
+    ctx.save(); ctx.translate(640, 300); ctx.rotate(tilt); rect(-360, -6, 720, 12, C.paper);
+    line(-300, 0, -300, 90, C.grey, 3); line(300, 0, 300, 90, C.grey, 3); rect(-370, 90, 140, 10, C.paper); rect(230, 90, 140, 10, C.paper);
+    for (let i = 0; i < 5; i++) for (let j = 0; j <= i % 3; j++) coin(-330 + i * 16, 70 - j * 18, 14);
+    filmRoll(-300, 40, 1.1); digicam(300, 50, .55, C.grey); ctx.restore();
+    label('FILM = PROFIT', 280, 560, 20, C.amber, fade(t, .2, .3)); label('DIGITAL = NO FILM', 1000, 560, 20, C.rust, fade(t, .45, .55));
+    text('Not a gift. A threat.', W / 2, 120, 50, { c: C.rust, a: fade(t, .65, .75) });
+  },
+  paths(t) {
+    bg(); const k = fade(t, 0, .4);
+    ctx.save(); ctx.lineCap = 'round';
+    ctx.strokeStyle = C.amber; ctx.lineWidth = 60; ctx.beginPath(); ctx.moveTo(640, 720); ctx.quadraticCurveTo(620, 450, lerp(640, 300, k), lerp(450, 160, k)); ctx.stroke();
+    ctx.strokeStyle = C.grey; ctx.beginPath(); ctx.moveTo(640, 720); ctx.quadraticCurveTo(660, 450, lerp(640, 980, k), lerp(450, 160, k)); ctx.stroke(); ctx.restore();
+    label('FILM', 300, 110, 26, C.amber, k); label('DIGITAL', 980, 110, 26, C.paper, k);
+    const kk = fade(t, .5, .65); ctx.save(); ctx.globalAlpha = kk * .9; rect(260, 330, 760, 100, C.bg); ctx.restore();
+    text('Kodak did not ignore digital.', W / 2, 380, 44, { a: kk });
+  },
+  digital(t) {
+    bg();
+    const items = [['$$$', 'poured money in'], ['1,100+', 'digital imaging patents'], ['#1', 'US digital cameras, 2005'], ['2001', 'bought Ofoto']];
+    items.forEach(([a, b], i) => { const k = fade(t, .05 + i * .2, .18 + i * .2), x = 200 + i * 290;
+      rrect(x - 125, 230, 250, 230, 6, C.bg2); ctx.save(); ctx.globalAlpha = k; rect(x - 125, 230, 250, 6, C.amber); ctx.restore();
+      text(a, x, 320, 54, { c: C.amber, a: k }); text(b, x, 400, 19, { f: BODY, w: 500, a: k }); });
+  },
+  prints(t) {
+    bg(); digicam(380, 380, 1.4);
+    photoStack(840, 520, Math.floor(2 + 16 * fade(t, .05, .8)), 1.3);
+    label('DIGITAL →', 600, 380, 22, C.grey, 1);
+    text('Old model. New technology.', W / 2, 110, 44, { a: fade(t, .55, .65) });
+    label('OFOTO = ORDER PRINTS', 840, 640, 18, C.amber, fade(t, .2, .3));
+  },
+  cannibal(t, T) {
+    bg(); const k = fade(t, .05, .9);
+    for (let i = 0; i < 8; i++) { ctx.save(); ctx.globalAlpha = i < 8 - Math.floor(k * 8) ? 1 : .12; filmRoll(760 + (i % 4) * 90, 280 + Math.floor(i / 4) * 110, 1.2); ctx.restore(); }
+    for (let i = 0; i < 4; i++) { ctx.save(); ctx.globalAlpha = i < Math.ceil(k * 4) ? 1 : .12; digicam(200 + (i % 2) * 200, 280 + Math.floor(i / 2) * 120, .8); ctx.restore(); }
+    label('DIGITAL SOLD ↑', 300, 500, 20, C.paper, 1); label('FILM SOLD ↓', 895, 500, 20, C.rust, 1);
+    text('Competing with its own paycheck', W / 2, 620, 36, { f: BODY, w: 600, a: fade(t, .6, .7) });
+  },
+  fuji(t, T) {
+    bg(); const k = fade(t, .1, .7);
+    ctx.save(); ctx.strokeStyle = C.dim; ctx.lineWidth = 40; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(100, 560); ctx.lineTo(1180, 560); ctx.stroke();
+    ctx.strokeStyle = C.fuji; ctx.lineWidth = 22; [[360, 1000, 300, 'CHEMICALS'], [360, 1000, 420, 'COSMETICS'], [360, 1000, 180, 'MEDICAL IMAGING']].forEach(([a, b, y]) => { ctx.beginPath(); ctx.moveTo(a, 560); ctx.quadraticCurveTo(lerp(a, b, .3), y, lerp(a, b, k), y); ctx.stroke(); }); ctx.restore();
+    [[300, 'CHEMICALS'], [420, 'COSMETICS'], [180, 'MEDICAL IMAGING']].forEach(([y, s], i) => label(s, 1000, y - 32, 18, C.paper, fade(t, .5 + i * .08, .6 + i * .08)));
+    person(lerp(360, 900, k), lerp(560, 300, k), 1, C.fuji); label('FUJI', lerp(360, 900, k), lerp(560, 300, k) + 30, 16, C.fuji, 1);
+    person(300, 545, 1, C.amber); label('KODAK', 300, 600, 16, C.amber, 1);
+  },
+  phone(t) {
+    bg(); const k = fade(t, .25, .55);
+    ctx.save(); ctx.globalAlpha = 1 - k; digicam(W / 2, 360, 2); ctx.restore();
+    ctx.save(); ctx.globalAlpha = k; phone(W / 2, 360, 1.6 * (0.8 + .2 * k), 1); ctx.restore();
+    text('The phone.', W / 2, 640, 50, { c: C.rust, a: fade(t, .55, .7) });
+  },
+  cliff(t) {
+    bg(C.bg); ctx.save(); ctx.globalAlpha = .18; rect(0, 0, W, H, C.rust); ctx.restore();
+    rect(160, 600, 960, 3, C.grey); rect(160, 160, 3, 440, C.grey);
+    const k = fade(t, .05, .75); ctx.save(); ctx.strokeStyle = C.rust; ctx.lineWidth = 8; ctx.lineJoin = 'round'; ctx.beginPath();
+    for (let i = 0; i <= 100 * k; i++) { const x = 170 + i * 9.4, f = i / 100, y = f < .55 ? 220 - f * 40 : 240 + Math.pow((f - .55) / .45, .6) * 340; i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); } ctx.stroke(); ctx.restore();
+    label('FILM SALES · SHAPE NOT TO SCALE', 640, 650, 16, C.grey, 1); label('1990s', 220, 630, 16, C.paper, 1); label('2010s', 1080, 630, 16, C.paper, 1);
+    text('Off a cliff.', 860, 140, 46, { c: C.rust, a: fade(t, .4, .5) });
+  },
+  stamp(t) {
+    bg(); building(390, 640, 500, 420, C.rustD, '#5a2214', 1);
+    const k = fade(t, .2, .3), s = lerp(2.4, 1, k);
+    ctx.save(); ctx.globalAlpha = k; ctx.translate(W / 2, 330); ctx.rotate(-.12); ctx.scale(s, s); ctx.strokeStyle = C.rust; ctx.lineWidth = 8; ctx.strokeRect(-260, -70, 520, 140); ctx.restore();
+    ctx.save(); ctx.translate(W / 2, 330); ctx.rotate(-.12); ctx.scale(s, s); text('CHAPTER 11', 0, -12, 64, { c: C.rust, a: k }); text('JANUARY 2012', 0, 42, 26, { f: MONO, c: C.rust, a: k }); ctx.restore();
+  },
+  insta(t) {
+    bg(); text('$1B', 400, 330, 190, { c: C.rust, a: fade(t, .05, .2) });
+    for (let i = 0; i < 13; i++) person(760 + (i % 7) * 58, 300 + Math.floor(i / 7) * 150, .9, `rgba(239,233,223,${fade(t, .15 + i * .02, .2 + i * .02)})`);
+    label('13 EMPLOYEES', 935, 460, 20, C.paper, fade(t, .4, .5)); label('INSTAGRAM · APRIL 2012', 400, 450, 20, C.paper, fade(t, .2, .3));
+    text('Same season. Opposite endings.', W / 2, 620, 36, { f: BODY, w: 600, a: fade(t, .65, .75) });
+  },
+  patents(t) {
+    bg(); const k = fade(t, .05, .4);
+    for (let i = 0; i < 20; i++) { ctx.save(); ctx.translate(lerp(300, 300 + 760, k * (0.6 + (i % 5) * .1)), 260 + (i % 5) * 30 - Math.floor(i / 5) * 6); ctx.rotate((i % 3 - 1) * .1); rect(-50, -32, 100, 64, C.paper); for (let j = 0; j < 4; j++) rect(-38, -20 + j * 12, 76, 4, C.grey); ctx.restore(); }
+    text('≈$525M', 300, 200, 60, { c: C.amber, a: fade(t, .2, .3) }); label('PATENTS SOLD · DEC 2012', 300, 140, 18, C.paper, fade(t, .1, .2));
+    const k2 = fade(t, .55, .7); ctx.save(); ctx.globalAlpha = k2; building(520, 650, 240, 160, C.rustD, '#5a2214'); ctx.restore();
+    label('2013 · SMALLER · COMMERCIAL PRINTING', W / 2, 690, 18, C.paper, k2);
+  },
+  factory(t) {
+    bg(C.bg2); rect(0, 560, W, 160, '#18181b');
+    for (let i = 0; i < 6; i++) rect(140 + i * 180, 420, 120, 140, C.dim);
+    const k = fade(t, .45, .95), r = rng(9);
+    for (let i = 0; i < 60; i++) { const x = 60 + (i % 20) * 58, y = 640 - Math.floor(i / 20) * 26; ctx.save(); ctx.globalAlpha = r() < k ? .08 : .9; person(x, y, .35, C.amber); ctx.restore(); }
+    text('145,300', W / 2, 150, 90, { c: C.amber, a: fade(t, .05, .2) * (1 - k * .5) }); label('PEAK EMPLOYMENT · 1988', W / 2, 225, 20, C.paper, fade(t, .1, .2));
+    label('ROCHESTER, NEW YORK', W / 2, 270, 16, C.grey, fade(t, .25, .35));
+  },
+  blueprint(t) {
+    rect(0, 0, W, H, '#16243a');
+    ctx.save(); ctx.strokeStyle = 'rgba(239,233,223,.08)'; ctx.lineWidth = 1; for (let x = 0; x < W; x += 40) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); } for (let y = 0; y < H; y += 40) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); } ctx.restore();
+    const k = fade(t, 0, .4); ctx.save(); ctx.strokeStyle = C.paper; ctx.lineWidth = 3; ctx.setLineDash([1200]); ctx.lineDashOffset = 1200 * (1 - k);
+    ctx.strokeRect(390, 230, 500, 420); ctx.strokeRect(380, 216, 520, 14); for (let r = 0; r < 6; r++) for (let c = 0; c < 8; c++) ctx.strokeRect(390 + c * 62.5 + 14, 254 + r * 55, 35, 30); ctx.restore();
+    text('What do you do when the thing', W / 2, 90, 34, { f: BODY, w: 600, a: fade(t, .05, .15) });
+    text('that makes you rich has to die?', W / 2, 140, 34, { f: BODY, w: 600, c: C.amber, a: fade(t, .12, .22) });
+    text('37 years to act.', W / 2, 690, 30, { f: MONO, c: C.paper, a: fade(t, .45, .55) * (1 - fade(t, .7, .74)) });
+    text('Protect the old. Or build the new.', W / 2, 690, 30, { f: MONO, c: C.amber, a: fade(t, .76, .84) });
+  },
+  hide(t) {
+    bg(); digicam(W / 2, 400, 1.3, C.amber);
+    const k = fade(t, .45, .8);
+    rect(W / 2 - 160, 300 - 260 * (1 - k), 320, 200 * k + 0.01, C.dim); rect(W / 2 - 170, 290 - 260 * (1 - k), 340, 14, C.grey);
+    rect(W / 2 - 160, 300, 320, 4, C.grey);
+    text('Hiding your own best idea', W / 2, 620, 40, { c: C.rust, a: fade(t, .6, .75) });
+  },
+  end(t) {
+    bg(); text('BUILT &', W / 2 - 10, 300, 110, { c: C.amber, a: fade(t, 0, .2), align: 'right' }); text(' BROKEN', W / 2 - 10, 300, 110, { c: C.rust, a: fade(t, .1, .3), align: 'left' });
+    text('Next week: another giant, another collapse.', W / 2, 420, 32, { f: BODY, w: 500, a: fade(t, .35, .5) });
+  },
+};
+
+// ---------- playback ----------
+const $ = id => document.getElementById(id);
+const cap = $('cap'), scrub = $('scrub'), timeEl = $('time');
+scrub.max = TOTAL.toFixed(1);
+const fmt = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
+let time = 0, playing = false, last = 0, voiceOn = true, capsOn = true, spokenIdx = -1, speaking = false, token = 0;
+const synth = 'speechSynthesis' in window ? window.speechSynthesis : null; let voice = null;
+function pickVoice() { if (!synth) return; const v = synth.getVoices(); voice = v.find(x => /^en/i.test(x.lang)) || null; }
+if (synth) { pickVoice(); synth.onvoiceschanged = pickVoice; } else { voiceOn = false; $('voice').setAttribute('aria-pressed', 'false'); $('voice').disabled = true; }
+const lineAt = s => { for (let i = lines.length - 1; i >= 0; i--) if (s >= lines[i].start) return i; return 0; };
+const shotAt = s => { for (let i = shots.length - 1; i >= 0; i--) if (s >= shots[i].start) return i; return 0; };
+const sceneAt = s => { for (let i = scenes.length - 1; i >= 0; i--) if (s >= scenes[i].start) return i; return 0; };
+function speak(i) { if (!synth) return; const my = ++token; synth.cancel(); const u = new SpeechSynthesisUtterance(lines[i].text); if (voice) u.voice = voice; u.rate = 1;
+  u.onend = u.onerror = () => { if (my !== token) return; speaking = false; if (playing && i + 1 < lines.length && time < lines[i + 1].start) time = lines[i + 1].start; };
+  speaking = true; spokenIdx = i; try { synth.speak(u); } catch (e) { speaking = false; } }
+function stopVoice() { token++; speaking = false; spokenIdx = -1; if (synth) try { synth.cancel(); } catch (e) {} }
+function render() {
+  const sh = shots[shotAt(time)], t = clamp((time - sh.start) / (sh.end - sh.start));
+  ctx.save(); SHOT[sh.v](t, time); ctx.restore();
+  const k = Math.min(clamp((time - sh.start) / .35), clamp((sh.end - time) / .35));
+  if (k < 1 && !(sh === shots[0] && time < .35)) { ctx.fillStyle = `rgba(0,0,0,${1 - k})`; ctx.fillRect(0, 0, W, H); }
+  cap.textContent = capsOn && (playing || time > 0) ? lines[lineAt(time)].text : '';
+  scrub.value = time.toFixed(1); timeEl.textContent = `${fmt(time)} / ${fmt(TOTAL)}`;
+  const si = sceneAt(time); document.querySelectorAll('#chapters button').forEach((b, i) => b.classList.toggle('on', i === si));
+}
+function tick(now) { if (!playing) return; const dt = Math.min(.1, (now - last) / 1000); last = now; let next = time + dt;
+  if (voiceOn && synth) { const i = lineAt(time); if (i !== spokenIdx) speak(i); if (speaking && next >= lines[i].end - .02) next = lines[i].end - .02; }
+  time = next; if (time >= TOTAL) { time = TOTAL; setPlaying(false); } render(); requestAnimationFrame(tick); }
+function setPlaying(p) { playing = p; $('bigplay').hidden = true; $('play').textContent = p ? '❚❚ Pause' : '▶ Play'; $('play').setAttribute('aria-label', p ? 'Pause' : 'Play');
+  if (p) { if (time >= TOTAL) time = 0; time = lines[lineAt(time)].start; last = performance.now(); requestAnimationFrame(tick); } else stopVoice(); render(); }
+function seek(s) { stopVoice(); time = clamp(s, 0, TOTAL); if (playing) time = lines[lineAt(time)].start; render(); }
+$('bigplay').onclick = () => setPlaying(true);
+$('play').onclick = () => setPlaying(!playing);
+$('restart').onclick = () => { seek(0); if (!playing) setPlaying(true); };
+scrub.oninput = () => seek(parseFloat(scrub.value));
+$('voice').onclick = () => { voiceOn = !voiceOn; $('voice').setAttribute('aria-pressed', voiceOn); if (!voiceOn) stopVoice(); };
+$('caps').onclick = () => { capsOn = !capsOn; $('caps').setAttribute('aria-pressed', capsOn); render(); };
+scenes.forEach(s => { const li = document.createElement('li'), b = document.createElement('button');
+  b.innerHTML = `<span class="tc">${fmt(s.start)}</span><span class="nm"></span>`; b.querySelector('.nm').textContent = s.name;
+  b.onclick = () => { seek(s.start); if (!playing) setPlaying(true); }; li.appendChild(b); $('chapters').appendChild(li); });
+window.__at = s => { time = s; render(); }; window.__lines = lines; window.__total = TOTAL;
+function poster() { ctx.save(); SHOT.crack(.6, 3); ctx.restore(); timeEl.textContent = `0:00 / ${fmt(TOTAL)}`; }
+poster(); if (document.fonts) document.fonts.ready.then(() => { if (!playing && time === 0) poster(); });
+document.addEventListener('keydown', e => { if (e.code === 'Space' && !/INPUT|BUTTON/.test(document.activeElement.tagName)) { e.preventDefault(); setPlaying(!playing); } });
+})();
+</script>
