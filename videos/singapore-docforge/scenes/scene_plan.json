@@ -889,24 +889,59 @@
    "section": "origins",
    "narration": "Rubber and tin from the Malay Peninsula flowed out through its harbour, and goods from Europe and India flowed in.",
    "visual": {
-    "kind": "photo",
-    "description": "Rubber and tin from the peninsula",
-    "camera": "pan_right",
-    "location": "Malaya",
-    "period": "1920",
+    "kind": "map",
+    "description": "Rubber and tin flowing to Singapore",
+    "camera": "static",
+    "location": "",
+    "period": "",
     "characters": "",
     "environment": "",
     "lighting": "",
     "mood": "",
-    "search_query": "rubber plantation Malaya",
-    "alt_queries": [
-     "rubber tapping",
-     "tin mine Malaya"
-    ],
+    "search_query": "",
+    "alt_queries": [],
     "pinned": "",
     "local_file": "",
-    "prompt": "Rubber and tin from the peninsula. Location: Malaya. Time period: 1920. Lighting: natural cinematic lighting. historically accurate 1920s clothing, hairstyles, vehicles, technology and architecture; no smartphones, no flat screens, no modern cars, no modern glass towers; period-correct photographic look. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
-    "data": {},
+    "prompt": "",
+    "data": {
+     "title": "Rubber and tin",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia"
+     ],
+     "bbox": [
+      99,
+      0.5,
+      106,
+      7
+     ],
+     "routes": [
+      {
+       "from": [
+        4.6,
+        101.1
+       ],
+       "to": [
+        1.35,
+        103.8
+       ],
+       "label": "tin"
+      },
+      {
+       "from": [
+        3.0,
+        101.6
+       ],
+       "to": [
+        1.4,
+        103.75
+       ],
+       "label": "rubber"
+      }
+     ]
+    },
     "shots": 1
    },
    "sfx": [],
@@ -963,24 +998,24 @@
    "section": "origins",
    "narration": "For more than a century, Singapore was a busy colonial port, built on one thing: trade.",
    "visual": {
-    "kind": "photo",
-    "description": "Colonial wharves",
-    "camera": "pan_left",
-    "location": "Singapore",
-    "period": "1910",
+    "kind": "title",
+    "description": "title",
+    "camera": "static",
+    "location": "",
+    "period": "",
     "characters": "",
     "environment": "",
     "lighting": "",
     "mood": "",
-    "search_query": "Singapore wharf",
-    "alt_queries": [
-     "Singapore quay",
-     "Singapore harbour"
-    ],
+    "search_query": "",
+    "alt_queries": [],
     "pinned": "",
     "local_file": "",
-    "prompt": "Colonial wharves. Location: Singapore. Time period: 1910. Lighting: natural cinematic lighting. historically accurate 1910s clothing, hairstyles, vehicles, technology and architecture; no smartphones, no flat screens, no modern cars, no modern glass towers; period-correct photographic look. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
-    "data": {},
+    "prompt": "",
+    "data": {
+     "text": "A century of trade",
+     "subtitle": "1819 - 1941"
+    },
     "shots": 1
    },
    "sfx": [],
@@ -2205,7 +2240,7 @@
    "narration": "Part of the answer was already under way.",
    "visual": {
     "kind": "photo",
-    "description": "Jurong today",
+    "description": "Jurong's industry today",
     "camera": "drone_forward",
     "location": "Singapore",
     "period": "present",
@@ -2213,13 +2248,14 @@
     "environment": "",
     "lighting": "",
     "mood": "",
-    "search_query": "Jurong Singapore",
+    "search_query": "Jurong Island Singapore",
     "alt_queries": [
-     "Jurong industrial"
+     "Jurong Island",
+     "Jurong industrial estate"
     ],
     "pinned": "",
     "local_file": "",
-    "prompt": "Jurong today. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow aerial drone push forward, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "prompt": "Jurong's industry today. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow aerial drone push forward, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
     "data": {},
     "shots": 1
    },
@@ -2409,7 +2445,7 @@
    "narration": "Foreign companies brought money, technology and know-how, and Singaporean workers learned on the job.",
    "visual": {
     "kind": "photo",
-    "description": "Skilled factory work",
+    "description": "A semiconductor cleanroom",
     "camera": "push_in",
     "location": "",
     "period": "present",
@@ -2417,13 +2453,13 @@
     "environment": "",
     "lighting": "",
     "mood": "",
-    "search_query": "technician factory",
+    "search_query": "semiconductor cleanroom",
     "alt_queries": [
-     "engineer manufacturing"
+     "wafer fab cleanroom"
     ],
     "pinned": "",
     "local_file": "",
-    "prompt": "Skilled factory work. Time period: present. Lighting: natural cinematic lighting. Camera: slow push-in, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "prompt": "A semiconductor cleanroom. Time period: present. Lighting: natural cinematic lighting. Camera: slow push-in, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
     "data": {},
     "shots": 1
    },
@@ -2437,23 +2473,23 @@
    "section": "transformation",
    "narration": "Factories making clothing, electronics and parts for global brands opened across the island, and jobs followed.",
    "visual": {
-    "kind": "photo",
-    "description": "An electronics assembly line",
-    "camera": "pan_right",
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
     "location": "",
-    "period": "present",
+    "period": "",
     "characters": "",
     "environment": "",
     "lighting": "",
     "mood": "",
-    "search_query": "electronics factory workers",
-    "alt_queries": [
-     "factory assembly line electronics"
-    ],
+    "search_query": "",
+    "alt_queries": [],
     "pinned": "",
     "local_file": "",
-    "prompt": "An electronics assembly line. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
-    "data": {},
+    "prompt": "",
+    "data": {
+     "text": "Clothing. Electronics. Parts for the world's brands."
+    },
     "shots": 1
    },
    "sfx": [],
@@ -2475,10 +2511,10 @@
     "environment": "",
     "lighting": "",
     "mood": "",
-    "search_query": "Pulau Bukom refinery",
+    "search_query": "Pulau Bukom",
     "alt_queries": [
-     "Singapore oil refinery",
-     "Jurong Island refinery"
+     "Jurong Island refinery Singapore",
+     "Singapore refinery night"
     ],
     "pinned": "",
     "local_file": "",
@@ -2638,8 +2674,9 @@
     "environment": "",
     "lighting": "",
     "mood": "",
-    "search_query": "Changi Airport",
+    "search_query": "Changi Airport control tower",
     "alt_queries": [
+     "Changi Airport runway",
      "Changi Airport terminal"
     ],
     "pinned": "",
@@ -2836,7 +2873,7 @@
    "narration": "The streets were cleaned up, and littering was punished with fines.",
    "visual": {
     "kind": "photo",
-    "description": "Singapore clean street",
+    "description": "Singapore tree lined road",
     "camera": "pan_left",
     "location": "Singapore",
     "period": "present",
@@ -2844,13 +2881,14 @@
     "environment": "",
     "lighting": "",
     "mood": "",
-    "search_query": "Singapore clean street",
+    "search_query": "Singapore tree lined road",
     "alt_queries": [
-     "Singapore street trees"
+     "Singapore street greenery",
+     "Singapore road trees"
     ],
     "pinned": "",
     "local_file": "",
-    "prompt": "Singapore clean street. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "prompt": "Singapore tree lined road. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
     "data": {},
     "shots": 1
    },
@@ -2935,23 +2973,23 @@
    "section": "policies",
    "narration": "Then there was housing.",
    "visual": {
-    "kind": "photo",
-    "description": "Public housing blocks",
-    "camera": "tilt_up",
-    "location": "Singapore",
-    "period": "present",
+    "kind": "title",
+    "description": "title",
+    "camera": "static",
+    "location": "",
+    "period": "",
     "characters": "",
     "environment": "",
     "lighting": "",
     "mood": "",
-    "search_query": "HDB flats Singapore",
-    "alt_queries": [
-     "Singapore public housing"
-    ],
+    "search_query": "",
+    "alt_queries": [],
     "pinned": "",
     "local_file": "",
-    "prompt": "Public housing blocks. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
-    "data": {},
+    "prompt": "",
+    "data": {
+     "text": "Then there was housing."
+    },
     "shots": 1
    },
    "sfx": [],
@@ -2964,23 +3002,38 @@
    "section": "policies",
    "narration": "In 1960, the government created the Housing and Development Board to replace overcrowded slums with modern flats.",
    "visual": {
-    "kind": "photo",
-    "description": "HDB estate Singapore",
-    "camera": "pan_left",
-    "location": "Singapore",
-    "period": "present",
+    "kind": "timeline",
+    "description": "timeline",
+    "camera": "static",
+    "location": "",
+    "period": "",
     "characters": "",
     "environment": "",
     "lighting": "",
     "mood": "",
-    "search_query": "HDB estate Singapore",
-    "alt_queries": [
-     "Singapore housing estate"
-    ],
+    "search_query": "",
+    "alt_queries": [],
     "pinned": "",
     "local_file": "",
-    "prompt": "HDB estate Singapore. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
-    "data": {},
+    "prompt": "",
+    "data": {
+     "title": "A home for everyone",
+     "events": [
+      {
+       "year": "1960",
+       "label": "Housing and Development Board"
+      },
+      {
+       "year": "1961",
+       "label": "Bukit Ho Swee fire"
+      },
+      {
+       "year": "1968",
+       "label": "CPF savings can buy homes"
+      }
+     ],
+     "highlight": 0
+    },
     "shots": 1
    },
    "sfx": [],
@@ -3309,7 +3362,7 @@
    "narration": "Within a single generation, many families moved from villages and crowded shophouses into high-rise flats.",
    "visual": {
     "kind": "photo",
-    "description": "Singapore HDB flats",
+    "description": "Toa Payoh Singapore",
     "camera": "tilt_up",
     "location": "Singapore",
     "period": "present",
@@ -3317,13 +3370,14 @@
     "environment": "",
     "lighting": "",
     "mood": "",
-    "search_query": "Singapore HDB flats",
+    "search_query": "Toa Payoh Singapore",
     "alt_queries": [
-     "Toa Payoh Singapore"
+     "Ang Mo Kio Singapore",
+     "Singapore housing estate"
     ],
     "pinned": "",
     "local_file": "",
-    "prompt": "Singapore HDB flats. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "prompt": "Toa Payoh Singapore. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
     "data": {},
     "shots": 1
    },
