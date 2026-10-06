@@ -46,7 +46,7 @@ Success has brought problems of its own. Singapore is regularly ranked among the
 
 ## The future
 
-So Singapore is doing what it has always done: planning decades ahead. It has grown its own land by more than a quarter since the 1960s, by reclaiming it from the sea. Off the island of Pulau Tekong, it has built its first polder, Dutch style: land below sea level, protected by a wall. A giant new port is rising at Tuas, designed to handle sixty five million containers a year when it is finished in the 2040s. At Changi, a fifth terminal is under construction, planned to open in the mid 2030s. For water, it has built its own supply: rainwater, recycled water called NEWater, and desalination plants. The first water agreement with Malaysia ended in 2011. The last one runs until 2061.
+So Singapore is doing what it has always done: planning decades ahead. It has grown its own land by more than a quarter since the 1960s, by reclaiming it from the sea. Off the island of Pulau Tekong, it has built its first polder, Dutch style: land below sea level, protected by a wall. The new land there covers about eight hundred hectares. A giant new port is rising at Tuas, designed to handle sixty five million containers a year when it is finished in the 2040s. The port is being built on more than thirteen hundred hectares of land, much of it reclaimed from the sea. At Changi, a fifth terminal is under construction, planned to open in the mid 2030s. Terminal 5 alone is designed to serve around fifty million passengers a year. For water, it has built its own supply: rainwater, recycled water called NEWater, and desalination plants. The first water agreement with Malaysia ended in 2011. The last one runs until 2061.
 
 ## Conclusion
 

@@ -1203,6 +1203,15 @@ Style bible: Premium documentary realism: natural colour, gentle contrast, 35mm 
 - **SFX:** -  **Music mood:** hopeful  **Transition:** crossfade
 
 ## SCENE_125  (future)
+- **Duration (est.):** 3.6 s
+- **Narration:** “The new land there covers about eight hundred hectares.”
+- **Visual (stat):** stat
+- **Camera:** static  **Location:** -  **Period:** -
+- **Characters:** -  **Environment:** -
+- **Lighting:** -  **Mood:** -
+- **SFX:** -  **Music mood:** hopeful  **Transition:** crossfade
+
+## SCENE_126  (future)
 - **Duration (est.):** 10.0 s
 - **Narration:** “A giant new port is rising at Tuas, designed to handle sixty five million containers a year when it is finished in the 2040s.”
 - **Visual (stat):** stat
@@ -1211,7 +1220,16 @@ Style bible: Premium documentary realism: natural colour, gentle contrast, 35mm 
 - **Lighting:** -  **Mood:** -
 - **SFX:** -  **Music mood:** hopeful  **Transition:** crossfade
 
-## SCENE_126  (future)
+## SCENE_127  (future)
+- **Duration (est.):** 8.0 s
+- **Narration:** “The port is being built on more than thirteen hundred hectares of land, much of it reclaimed from the sea.”
+- **Visual (map):** Tuas in the far west
+- **Camera:** static  **Location:** -  **Period:** -
+- **Characters:** -  **Environment:** -
+- **Lighting:** -  **Mood:** -
+- **SFX:** -  **Music mood:** hopeful  **Transition:** crossfade
+
+## SCENE_128  (future)
 - **Duration (est.):** 6.4 s
 - **Narration:** “At Changi, a fifth terminal is under construction, planned to open in the mid 2030s.”
 - **Visual (photo):** Changi Airport today
@@ -1222,7 +1240,16 @@ Style bible: Premium documentary realism: natural colour, gentle contrast, 35mm 
 - **Search:** Changi Airport Jewel
 - **Generation prompt:** Changi Airport today. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.
 
-## SCENE_127  (future)
+## SCENE_129  (future)
+- **Duration (est.):** 5.2 s
+- **Narration:** “Terminal 5 alone is designed to serve around fifty million passengers a year.”
+- **Visual (stat):** stat
+- **Camera:** static  **Location:** -  **Period:** -
+- **Characters:** -  **Environment:** -
+- **Lighting:** -  **Mood:** -
+- **SFX:** -  **Music mood:** hopeful  **Transition:** crossfade
+
+## SCENE_130  (future)
 - **Duration (est.):** 6.4 s
 - **Narration:** “For water, it has built its own supply: rainwater, recycled water called NEWater, and desalination plants.”
 - **Visual (photo):** Marina Barrage Singapore
@@ -1233,7 +1260,7 @@ Style bible: Premium documentary realism: natural colour, gentle contrast, 35mm 
 - **Search:** Marina Barrage Singapore
 - **Generation prompt:** Marina Barrage Singapore. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.
 
-## SCENE_128  (future)
+## SCENE_131  (future)
 - **Duration (est.):** 6.0 s
 - **Narration:** “The first water agreement with Malaysia ended in 2011. The last one runs until 2061.”
 - **Visual (timeline):** timeline
@@ -1242,7 +1269,7 @@ Style bible: Premium documentary realism: natural colour, gentle contrast, 35mm 
 - **Lighting:** -  **Mood:** -
 - **SFX:** -  **Music mood:** reflective  **Transition:** crossfade
 
-## SCENE_129  (conclusion)
+## SCENE_132  (conclusion)
 - **Duration (est.):** 4.4 s
 - **Narration:** “Singapore began with no oil, no farmland and not enough water.”
 - **Visual (text):** text
@@ -1251,7 +1278,7 @@ Style bible: Premium documentary realism: natural colour, gentle contrast, 35mm 
 - **Lighting:** -  **Mood:** -
 - **SFX:** -  **Music mood:** reflective  **Transition:** crossfade
 
-## SCENE_130  (conclusion)
+## SCENE_133  (conclusion)
 - **Duration (est.):** 7.6 s
 - **Narration:** “What it had was a location, and leaders who treated that location as a starting point, not a guarantee.”
 - **Visual (photo):** Singapore Strait sunset ships
@@ -1262,7 +1289,7 @@ Style bible: Premium documentary realism: natural colour, gentle contrast, 35mm 
 - **Search:** Singapore Strait sunset ships
 - **Generation prompt:** Singapore Strait sunset ships. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pull-back, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.
 
-## SCENE_131  (conclusion)
+## SCENE_134  (conclusion)
 - **Duration (est.):** 6.0 s
 - **Narration:** “It invited the world in, housed its people, fought corruption, and saved for the future.”
 - **Visual (photo, 2 shots):** Singapore skyline aerial
@@ -1273,7 +1300,7 @@ Style bible: Premium documentary realism: natural colour, gentle contrast, 35mm 
 - **Search:** Singapore skyline aerial
 - **Generation prompt:** Singapore skyline aerial. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow aerial drone push forward, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.
 
-## SCENE_132  (conclusion)
+## SCENE_135  (conclusion)
 - **Duration (est.):** 9.2 s
 - **Narration:** “Its success came from choices: to stay open, to plan ahead, and to keep its promises to investors and to its own people.”
 - **Visual (photo, 2 shots):** Singapore skyline sunrise
@@ -1284,7 +1311,7 @@ Style bible: Premium documentary realism: natural colour, gentle contrast, 35mm 
 - **Search:** Singapore skyline sunrise
 - **Generation prompt:** Singapore skyline sunrise. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow push-in, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.
 
-## SCENE_133  (conclusion)
+## SCENE_136  (conclusion)
 - **Duration (est.):** 6.4 s
 - **Narration:** “None of it was inevitable. In 1965, even its founders were not sure it would survive.”
 - **Visual (quote):** quote
@@ -1293,7 +1320,7 @@ Style bible: Premium documentary realism: natural colour, gentle contrast, 35mm 
 - **Lighting:** -  **Mood:** -
 - **SFX:** -  **Music mood:** reflective  **Transition:** crossfade
 
-## SCENE_134  (conclusion)
+## SCENE_137  (conclusion)
 - **Duration (est.):** 6.8 s
 - **Narration:** “Resources matter. But Singapore shows that what a country does with its position can matter even more.”
 - **Visual (title):** title

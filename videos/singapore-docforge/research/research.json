@@ -507,6 +507,22 @@
       "https://en.wikipedia.org/wiki/Changi_Airport"
      ],
      "note": ""
+    },
+    {
+     "claim": "Terminal 5 is planned to serve about 50 million passengers a year.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.timeout.com/singapore/news/singapore-changi-airports-new-terminal-5-is-slated-to-open-in-the-mid-2030s-works-have-already-begun-051525"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Tuas Port occupies about 1,337 ha, largely reclaimed land.",
+     "status": "confirmed",
+     "sources": [
+      "https://porteconomicsmanagement.org/pemp/contents/part3/changing-geography-of-seaports/singapore-tuas-port-expansion-project"
+     ],
+     "note": ""
     }
    ]
   }

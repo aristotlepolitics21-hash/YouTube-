@@ -4241,6 +4241,37 @@
   {
    "id": "scene_125",
    "section": "future",
+   "narration": "The new land there covers about eight hundred hectares.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "~800 ha",
+     "label": "reclaimed polder land at Pulau Tekong",
+     "source": "Housing & Development Board via Tabla"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_126",
+   "section": "future",
    "narration": "A giant new port is rising at Tuas, designed to handle sixty five million containers a year when it is finished in the 2040s.",
    "visual": {
     "kind": "stat",
@@ -4270,7 +4301,55 @@
    "short_candidate": false
   },
   {
-   "id": "scene_126",
+   "id": "scene_127",
+   "section": "future",
+   "narration": "The port is being built on more than thirteen hundred hectares of land, much of it reclaimed from the sea.",
+   "visual": {
+    "kind": "map",
+    "description": "Tuas in the far west",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Tuas Port",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia"
+     ],
+     "bbox": [
+      103.55,
+      1.18,
+      104.1,
+      1.5
+     ],
+     "points": [
+      {
+       "name": "Tuas",
+       "lat": 1.26,
+       "lon": 103.62
+      }
+     ]
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_128",
    "section": "future",
    "narration": "At Changi, a fifth terminal is under construction, planned to open in the mid 2030s.",
    "visual": {
@@ -4300,7 +4379,38 @@
    "short_candidate": false
   },
   {
-   "id": "scene_127",
+   "id": "scene_129",
+   "section": "future",
+   "narration": "Terminal 5 alone is designed to serve around fifty million passengers a year.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "50 million",
+     "label": "passengers a year: Changi Terminal 5's planned capacity",
+     "source": "Changi Airport Group via Time Out Singapore"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_130",
    "section": "future",
    "narration": "For water, it has built its own supply: rainwater, recycled water called NEWater, and desalination plants.",
    "visual": {
@@ -4329,7 +4439,7 @@
    "short_candidate": false
   },
   {
-   "id": "scene_128",
+   "id": "scene_131",
    "section": "future",
    "narration": "The first water agreement with Malaysia ended in 2011. The last one runs until 2061.",
    "visual": {
@@ -4377,7 +4487,7 @@
    "short_candidate": false
   },
   {
-   "id": "scene_129",
+   "id": "scene_132",
    "section": "conclusion",
    "narration": "Singapore began with no oil, no farmland and not enough water.",
    "visual": {
@@ -4406,7 +4516,7 @@
    "short_candidate": false
   },
   {
-   "id": "scene_130",
+   "id": "scene_133",
    "section": "conclusion",
    "narration": "What it had was a location, and leaders who treated that location as a starting point, not a guarantee.",
    "visual": {
@@ -4435,7 +4545,7 @@
    "short_candidate": false
   },
   {
-   "id": "scene_131",
+   "id": "scene_134",
    "section": "conclusion",
    "narration": "It invited the world in, housed its people, fought corruption, and saved for the future.",
    "visual": {
@@ -4464,7 +4574,7 @@
    "short_candidate": false
   },
   {
-   "id": "scene_132",
+   "id": "scene_135",
    "section": "conclusion",
    "narration": "Its success came from choices: to stay open, to plan ahead, and to keep its promises to investors and to its own people.",
    "visual": {
@@ -4493,7 +4603,7 @@
    "short_candidate": false
   },
   {
-   "id": "scene_133",
+   "id": "scene_136",
    "section": "conclusion",
    "narration": "None of it was inevitable. In 1965, even its founders were not sure it would survive.",
    "visual": {
@@ -4523,7 +4633,7 @@
    "short_candidate": false
   },
   {
-   "id": "scene_134",
+   "id": "scene_137",
    "section": "conclusion",
    "narration": "Resources matter. But Singapore shows that what a country does with its position can matter even more.",
    "visual": {

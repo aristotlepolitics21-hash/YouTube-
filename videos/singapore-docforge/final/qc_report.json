@@ -1,0 +1,77 @@
+{
+ "issues": [
+  {
+   "check": "repetition",
+   "severity": "warning",
+   "scene": "scene_101",
+   "message": "5 'photo' scenes in a row"
+  },
+  {
+   "check": "visual_continuity",
+   "severity": "warning",
+   "scene": "scene_072",
+   "message": "image title doesn't mention 'singapore': View of Pulau Bukom from Sentosa Siloso Beach"
+  },
+  {
+   "check": "visual_continuity",
+   "severity": "warning",
+   "scene": "scene_077",
+   "message": "image title doesn't mention 'singapore': Changi Airport Control Tower"
+  },
+  {
+   "check": "visual_continuity",
+   "severity": "warning",
+   "scene": "scene_079",
+   "message": "image title doesn't mention 'singapore': Marina Bay Financial Centre"
+  },
+  {
+   "check": "visual_continuity",
+   "severity": "warning",
+   "scene": "scene_093",
+   "message": "image title doesn't mention 'singapore': HDB void deck"
+  },
+  {
+   "check": "visual_continuity",
+   "severity": "warning",
+   "scene": "scene_101",
+   "message": "image title doesn't mention 'singapore': HDB blocks from Mount Faber"
+  },
+  {
+   "check": "visual_continuity",
+   "severity": "warning",
+   "scene": "scene_110",
+   "message": "image title doesn't mention 'singapore': Jewel Changi Airport waterfall"
+  },
+  {
+   "check": "visual_continuity",
+   "severity": "warning",
+   "scene": "scene_126",
+   "message": "image title doesn't mention 'singapore': Changi Airport Jewel - Skytrain passing from and to terminal"
+  },
+  {
+   "check": "narration_mismatch",
+   "severity": "warning",
+   "scene": "scene_008",
+   "message": "heard \"Sing -de -pours entire land area is less than 750 square kilometers.\" (74% match)"
+  },
+  {
+   "check": "narration_mismatch",
+   "severity": "warning",
+   "scene": "scene_030",
+   "message": "heard \"Japanese forces cross the narrow Johar Strait and attack the island from the Northwest.\" (79% match)"
+  },
+  {
+   "check": "narration_mismatch",
+   "severity": "warning",
+   "scene": "scene_069",
+   "message": "heard \"Saying a port did the opposite. It invited them in.\" (78% match)"
+  },
+  {
+   "check": "narration_mismatch",
+   "severity": "warning",
+   "scene": "scene_087",
+   "message": "heard \"That there was housing.\" (75% match)"
+  }
+ ],
+ "fixes": []
+}

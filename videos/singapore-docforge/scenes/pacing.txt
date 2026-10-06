@@ -1,5 +1,3 @@
 scene_016: only ~1.2s of narration; the shot will hold for the minimum
 scene_087: only ~1.6s of narration; the shot will hold for the minimum
-scene_119: ~10s, cutting between 2 shots
-scene_132: ~9s, cutting between 2 shots
 scene_101: 5 'photo' scenes in a row (repetitive)
