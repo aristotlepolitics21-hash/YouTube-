@@ -1,0 +1,455 @@
+1
+00:00:00,600 --> 00:00:03,293
+In September 2000, three men from a small,
+
+2
+00:00:03,293 --> 00:00:06,498
+money-losing startup flew to Dallas with an offer.
+
+3
+00:00:06,948 --> 00:00:11,232
+Buy us for fifty million dollars, they said, and we'll run your business online.
+
+4
+00:00:11,682 --> 00:00:13,172
+The startup was Netflix.
+
+5
+00:00:13,172 --> 00:00:14,289
+The answer was no.
+
+6
+00:00:14,739 --> 00:00:16,039
+Everyone knows that part.
+
+7
+00:00:16,039 --> 00:00:20,095
+What most people don't know is that Blockbuster fought back, and for a moment,
+
+8
+00:00:20,095 --> 00:00:20,875
+it was winning.
+
+9
+00:00:21,325 --> 00:00:23,135
+This is Built and Broken.
+
+10
+00:00:23,135 --> 00:00:24,149
+Episode three.
+
+11
+00:00:24,149 --> 00:00:25,018
+Blockbuster.
+
+12
+00:00:26,118 --> 00:00:28,405
+On the nineteenth of October 1985,
+
+13
+00:00:28,405 --> 00:00:33,989
+a businessman named David Cook opened the first Blockbuster store in Dallas, Texas.
+
+14
+00:00:34,439 --> 00:00:37,263
+Most video shops back then were small and cramped.
+
+15
+00:00:37,263 --> 00:00:39,070
+Cook's store was big and bright,
+
+16
+00:00:39,070 --> 00:00:43,362
+with around eight thousand tapes on the shelves and a computerized checkout.
+
+17
+00:00:43,812 --> 00:00:50,378
+In 1987, an entrepreneur named Wayne Huizenga took control and did what he did best.
+
+18
+00:00:50,378 --> 00:00:51,317
+He expanded.
+
+19
+00:00:51,317 --> 00:00:51,707
+Fast.
+
+20
+00:00:52,157 --> 00:00:55,327
+Blockbuster spread across America and then the world.
+
+21
+00:00:55,327 --> 00:00:57,061
+Friday night meant one thing.
+
+22
+00:00:57,061 --> 00:01:00,889
+Walk the aisles, pick a movie, grab some popcorn at the counter.
+
+23
+00:01:01,339 --> 00:01:07,228
+In 1994, the media giant Viacom bought Blockbuster in a deal worth eight point four
+
+24
+00:01:07,228 --> 00:01:08,363
+billion dollars.
+
+25
+00:01:09,463 --> 00:01:11,878
+By 2004, Blockbuster was at its peak.
+
+26
+00:01:11,878 --> 00:01:13,901
+More than nine thousand stores.
+
+27
+00:01:13,901 --> 00:01:15,924
+Eighty four thousand employees.
+
+28
+00:01:15,924 --> 00:01:19,710
+Six point one billion dollars in revenue in a single year.
+
+29
+00:01:20,160 --> 00:01:24,039
+But there was a secret inside that business, and every customer knew it.
+
+30
+00:01:24,039 --> 00:01:24,578
+Late fees.
+
+31
+00:01:25,028 --> 00:01:27,365
+Return a tape a day late, and you paid.
+
+32
+00:01:27,365 --> 00:01:32,220
+In 2000, Blockbuster collected nearly eight hundred million dollars in late fees.
+
+33
+00:01:32,670 --> 00:01:35,249
+That was about sixteen percent of its revenue.
+
+34
+00:01:35,249 --> 00:01:38,667
+One dollar in every six came from customers making a mistake.
+
+35
+00:01:39,117 --> 00:01:40,216
+Remember that number.
+
+36
+00:01:40,216 --> 00:01:44,399
+A business that makes money when its customers are unhappy is a business waiting
+
+37
+00:01:44,399 --> 00:01:45,288
+for a competitor.
+
+38
+00:01:46,388 --> 00:01:48,803
+That competitor started in 1997.
+
+39
+00:01:48,803 --> 00:01:54,162
+Netflix rented DVDs by mail, and, eventually, with no late fees at all.
+
+40
+00:01:54,612 --> 00:01:58,794
+By 2000, the dot-com bubble had burst, and Netflix was losing money.
+
+41
+00:01:58,794 --> 00:02:01,808
+So its founders, Reed Hastings and Marc Randolph,
+
+42
+00:02:01,808 --> 00:02:05,253
+with their finance chief Barry McCarthy, went to Dallas.
+
+43
+00:02:05,703 --> 00:02:09,514
+Their pitch: Netflix would become Blockbuster's online business.
+
+44
+00:02:09,514 --> 00:02:11,479
+The price, fifty million dollars.
+
+45
+00:02:11,929 --> 00:02:16,215
+Marc Randolph later wrote that Blockbuster's chief executive, John Antioco,
+
+46
+00:02:16,215 --> 00:02:17,815
+was struggling not to laugh.
+
+47
+00:02:18,265 --> 00:02:19,682
+McCarthy put it more bluntly.
+
+48
+00:02:19,682 --> 00:02:21,441
+They laughed us out of their office.
+
+49
+00:02:21,891 --> 00:02:25,568
+To be fair, it looked like a sensible decision at the time.
+
+50
+00:02:25,568 --> 00:02:27,687
+Netflix was tiny and unprofitable.
+
+51
+00:02:27,687 --> 00:02:29,682
+Blockbuster was making billions.
+
+52
+00:02:30,132 --> 00:02:33,653
+Netflix flew home and decided to beat them instead.
+
+53
+00:02:33,653 --> 00:02:37,174
+By the end of 2006, it had six million subscribers.
+
+54
+00:02:38,274 --> 00:02:40,620
+Here is the part that usually gets left out.
+
+55
+00:02:40,620 --> 00:02:42,912
+Blockbuster did not ignore Netflix forever.
+
+56
+00:02:43,362 --> 00:02:46,079
+In 2004 it launched Blockbuster Online.
+
+57
+00:02:46,079 --> 00:02:50,398
+And on the first of January 2005, it did something remarkable.
+
+58
+00:02:50,398 --> 00:02:51,931
+It scrapped late fees.
+
+59
+00:02:52,381 --> 00:02:53,348
+It was expensive.
+
+60
+00:02:53,348 --> 00:02:57,498
+By one estimate, ending late fees cost about two hundred million dollars,
+
+61
+00:02:57,498 --> 00:03:01,478
+and launching the online business cost about two hundred million more.
+
+62
+00:03:01,928 --> 00:03:07,214
+Then, in late 2006, Blockbuster played the one card Netflix could never match.
+
+63
+00:03:07,214 --> 00:03:07,960
+Its stores.
+
+64
+00:03:08,410 --> 00:03:09,970
+It was called Total Access.
+
+65
+00:03:09,970 --> 00:03:12,397
+Rent a DVD online, and when you were done,
+
+66
+00:03:12,397 --> 00:03:17,020
+you could return it to any Blockbuster store and walk out with another movie for
+
+67
+00:03:17,020 --> 00:03:17,309
+free.
+
+68
+00:03:17,759 --> 00:03:18,934
+Customers loved it.
+
+69
+00:03:18,934 --> 00:03:22,893
+Total Access passed two million subscribers, and inside Netflix,
+
+70
+00:03:22,893 --> 00:03:24,130
+people were worried.
+
+71
+00:03:24,130 --> 00:03:27,408
+Blockbuster was spending heavily, and it was working.
+
+72
+00:03:28,508 --> 00:03:30,389
+And then Blockbuster turned on itself.
+
+73
+00:03:30,839 --> 00:03:34,763
+The fight with Netflix was costing money, and the company was in debt.
+
+74
+00:03:34,763 --> 00:03:39,135
+The activist investor Carl Icahn, who held a large stake and sat on the board,
+
+75
+00:03:39,135 --> 00:03:40,481
+questioned the spending.
+
+76
+00:03:40,931 --> 00:03:45,052
+Antioco clashed with the board over his pay, and in 2007 he left.
+
+77
+00:03:45,502 --> 00:03:47,283
+His replacement was Jim Keyes,
+
+78
+00:03:47,283 --> 00:03:50,607
+the former boss of the convenience store chain 7-Eleven.
+
+79
+00:03:50,607 --> 00:03:53,160
+He believed the future was still in stores.
+
+80
+00:03:53,610 --> 00:03:55,109
+Money was running short.
+
+81
+00:03:55,109 --> 00:03:59,855
+Marketing for the online service had already been cut back, and under Keyes,
+
+82
+00:03:59,855 --> 00:04:02,041
+Total Access became more expensive.
+
+83
+00:04:02,041 --> 00:04:03,665
+Subscriber growth stalled.
+
+84
+00:04:04,115 --> 00:04:06,485
+Blockbuster had built a real answer to Netflix,
+
+85
+00:04:06,485 --> 00:04:08,503
+and then it took its foot off the pedal.
+
+86
+00:04:09,603 --> 00:04:11,971
+Meanwhile, the ground was moving.
+
+87
+00:04:11,971 --> 00:04:15,129
+In January 2007, Netflix launched streaming.
+
+88
+00:04:15,129 --> 00:04:19,937
+Just a thousand films at first, but no disc, no envelope, no store.
+
+89
+00:04:20,387 --> 00:04:22,867
+And from the other side came Redbox.
+
+90
+00:04:22,867 --> 00:04:27,483
+Red kiosks outside supermarkets, renting DVDs for a dollar a night.
+
+91
+00:04:27,483 --> 00:04:31,823
+By 2008, Redbox had more locations in America than Blockbuster.
+
+92
+00:04:32,273 --> 00:04:36,762
+Blockbuster was squeezed between the convenience of streaming and the price of a
+
+93
+00:04:36,762 --> 00:04:37,659
+vending machine.
+
+94
+00:04:37,659 --> 00:04:41,475
+Its stores, once its greatest strength, were now a giant fixed cost.
+
+95
+00:04:41,925 --> 00:04:46,801
+On the twenty third of September 2010, Blockbuster filed for bankruptcy.
+
+96
+00:04:47,251 --> 00:04:50,722
+That same year, Netflix passed twenty million subscribers.
+
+97
+00:04:51,172 --> 00:04:56,147
+In 2011, the satellite TV company Dish bought what was left of Blockbuster at
+
+98
+00:04:56,147 --> 00:04:59,958
+auction for about three hundred and twenty million dollars.
+
+99
+00:04:59,958 --> 00:05:03,253
+In 2014, Dish closed the last company-owned stores.
+
+100
+00:05:03,703 --> 00:05:07,409
+By 2019, there was just one Blockbuster left on Earth.
+
+101
+00:05:07,409 --> 00:05:11,871
+An independently owned store in Bend, Oregon, that kept the name.
+
+102
+00:05:12,971 --> 00:05:14,582
+Kodak protected its profits.
+
+103
+00:05:14,582 --> 00:05:16,367
+Nokia measured the wrong thing.
+
+104
+00:05:16,817 --> 00:05:18,761
+Blockbuster's story is stranger.
+
+105
+00:05:18,761 --> 00:05:20,341
+It found the right answer.
+
+106
+00:05:20,341 --> 00:05:21,252
+It paid for it.
+
+107
+00:05:21,252 --> 00:05:22,163
+It was winning.
+
+108
+00:05:22,163 --> 00:05:23,378
+And then it stopped.
+
+109
+00:05:23,828 --> 00:05:28,096
+Fighting a disruptor costs money, and the bill arrives long before the reward.
+
+110
+00:05:28,096 --> 00:05:30,394
+Blockbuster blinked when the bill arrived.
+
+111
+00:05:30,844 --> 00:05:33,755
+Fifty million dollars was the cheapest chance it ever had.
+
+112
+00:05:33,755 --> 00:05:36,818
+Every chance after that cost more, and it took fewer of them.
+
+113
+00:05:37,268 --> 00:05:39,096
+This has been Built and Broken.
+
+114
+00:05:39,096 --> 00:05:43,578
+Subscribe for the next story of a giant that saw the future, and still fell.
