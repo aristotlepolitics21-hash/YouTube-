@@ -1,15 +1,20 @@
-"""Build the Nokia episode from scenes.json.
+"""Build a Built & Broken episode from its scenes.json.
 
 Generates narration with Piper (offline TTS), times every scene to its
-narration, and writes:
+narration, and writes into the episode folder:
   narration.mp3   - full voice track
   props.json      - Remotion props for OpenMontage's Explainer composition
-  nokia.srt       - closed captions for YouTube
+  captions.srt    - closed captions for YouTube
   chapters.txt    - chapter timestamps for the description
 
+Optional keys in scenes.json:
+  theme         - colour overrides for the Explainer theme
+  caption_text  - {"spoken form": "shown form"} replacements for captions,
+                  e.g. {"twenty-one ten": "2110"}
+
 Usage (from the repo root, after `make setup` in OpenMontage/):
-  OpenMontage/.venv/bin/python videos/built-and-broken-02-nokia/build.py \
-      --voice /path/to/en_US-ryan-high.onnx
+  OpenMontage/.venv/bin/python videos/tools/build_episode.py \
+      videos/built-and-broken-03-blockbuster --voice ~/.piper/en_US-ryan-high.onnx
 """
 
 from __future__ import annotations
@@ -23,40 +28,15 @@ import tempfile
 import wave
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent
-ASSET_DIR = "nokia-ep2"  # folder under remotion-composer/public/ at render time
-
 LEAD_IN = 0.6  # silence before the first line
 SCENE_GAP = 0.45  # pause between scenes in the same section
 SECTION_GAP = 1.1  # longer pause when a new chapter starts
 TAIL = 2.0  # hold the final card after the last line
 
-THEME = {
-    "primaryColor": "#124191",
-    "accentColor": "#4FA3FF",
-    "backgroundColor": "#0A1430",
-    "surfaceColor": "#132350",
-    "textColor": "#F4F7FF",
-    "mutedTextColor": "#9FB0D4",
-    "chartColors": ["#4FA3FF", "#F5B841", "#7DD3C0", "#E86A6A", "#B79CFF", "#9FB0D4"],
-    "captionHighlightColor": "#4FA3FF",
-    "captionBackgroundColor": "rgba(10, 20, 48, 0.8)",
-}
 
-
-# Narration spells model numbers the way people say them; captions show digits.
-CAPTION_TEXT = {
-    "twenty-one ten": "2110",
-    "thirty-three ten": "3310",
-    "eleven hundred": "1100",
-    "nine thousand Communicator": "9000 Communicator",
-}
-
-
-def caption_text(narration: str) -> str:
-    for spoken, shown in CAPTION_TEXT.items():
-        narration = narration.replace(spoken, shown)
-    return narration
+def asset_dir(episode: Path) -> str:
+    """Folder under remotion-composer/public/ the narration is copied to at render time."""
+    return f"episodes/{episode.name}"
 
 
 def synth(text: str, voice: Path, out: Path, length_scale: float) -> None:
@@ -106,12 +86,20 @@ def split_caption(text: str, start: float, end: float, max_chars: int = 84):
 
 def main() -> int:
     ap = argparse.ArgumentParser()
+    ap.add_argument("episode", type=Path, help="Episode folder containing scenes.json")
     ap.add_argument("--voice", required=True, type=Path, help="Piper .onnx voice model")
     ap.add_argument("--length-scale", type=float, default=1.05, help=">1 speaks slower")
     args = ap.parse_args()
 
-    spec = json.loads((HERE / "scenes.json").read_text())
+    episode = args.episode.resolve()
+    spec = json.loads((episode / "scenes.json").read_text())
     scenes = spec["scenes"]
+    caption_map = spec.get("caption_text", {})
+
+    def caption_text(narration: str) -> str:
+        for spoken, shown in caption_map.items():
+            narration = narration.replace(spoken, shown)
+        return narration
 
     pcm = bytearray()
     rate = width = channels = 0
@@ -157,19 +145,18 @@ def main() -> int:
     # the screen is never empty. The first card also covers the lead-in.
     props_cuts = []
     for n, c in enumerate(cuts):
-        v = dict(c["scene"]["visual"])
         cut_in = 0.0 if n == 0 else c["start"] - 0.15
         cut_out = total if n == len(cuts) - 1 else cuts[n + 1]["start"] - 0.15
-        cut = {"id": f"s{c['index'] + 1:02d}", "source": "",
-               "in_seconds": round(cut_in, 3), "out_seconds": round(cut_out, 3), **v}
-        props_cuts.append(cut)
+        props_cuts.append({"id": f"s{c['index'] + 1:02d}", "source": "",
+                           "in_seconds": round(cut_in, 3), "out_seconds": round(cut_out, 3),
+                           **c["scene"]["visual"]})
 
     props = {
-        "themeConfig": THEME,
+        "themeConfig": spec.get("theme", {}),
         "cuts": props_cuts,
         "overlays": [],
         "captions": [],
-        "audio": {"narration": {"src": f"{ASSET_DIR}/narration.mp3", "volume": 1.0}},
+        "audio": {"narration": {"src": f"{asset_dir(episode)}/narration.mp3", "volume": 1.0}},
     }
 
     with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as f:
@@ -182,16 +169,16 @@ def main() -> int:
     subprocess.run(
         ["ffmpeg", "-y", "-loglevel", "error", "-i", str(full_wav),
          "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ar", "44100",
-         "-codec:a", "libmp3lame", "-b:a", "192k", str(HERE / "narration.mp3")],
+         "-codec:a", "libmp3lame", "-b:a", "192k", str(episode / "narration.mp3")],
         check=True,
     )
     full_wav.unlink()
 
-    (HERE / "props.json").write_text(json.dumps(props, indent=2, ensure_ascii=False) + "\n")
-    (HERE / "nokia.srt").write_text(
+    (episode / "props.json").write_text(json.dumps(props, indent=2, ensure_ascii=False) + "\n")
+    (episode / "captions.srt").write_text(
         "\n".join(f"{n}\n{fmt_srt(a)} --> {fmt_srt(b)}\n{txt}\n" for n, (txt, a, b) in enumerate(srt, 1))
     )
-    (HERE / "chapters.txt").write_text(
+    (episode / "chapters.txt").write_text(
         "\n".join(f"{fmt_chapter(0 if n == 0 else a)} {name}" for n, (a, name) in enumerate(chapters)) + "\n"
     )
     print(f"\nTotal length: {fmt_chapter(total)} ({total:.1f}s), {len(cuts)} scenes")

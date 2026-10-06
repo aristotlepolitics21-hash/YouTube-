@@ -1,5 +1,22 @@
 {
   "title": "Nokia Had 40% of All Phones. Six Years Later, It Quit",
+  "theme": {
+    "primaryColor": "#124191",
+    "accentColor": "#4FA3FF",
+    "backgroundColor": "#0A1430",
+    "surfaceColor": "#132350",
+    "textColor": "#F4F7FF",
+    "mutedTextColor": "#9FB0D4",
+    "chartColors": ["#4FA3FF", "#F5B841", "#7DD3C0", "#E86A6A", "#B79CFF", "#9FB0D4"],
+    "captionHighlightColor": "#4FA3FF",
+    "captionBackgroundColor": "rgba(10, 20, 48, 0.8)"
+  },
+  "caption_text": {
+    "twenty-one ten": "2110",
+    "thirty-three ten": "3310",
+    "eleven hundred": "1100",
+    "nine thousand Communicator": "9000 Communicator"
+  },
   "sections": {
     "hook": "The hook",
     "origins": "Paper, rubber and cables",
