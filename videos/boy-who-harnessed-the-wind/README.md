@@ -1,6 +1,6 @@
 # At 14, He Built a Windmill From Junk
 
-The true story of William Kamkwamba (*The Boy Who Harnessed the Wind*), about 4½ minutes.
+The true story of William Kamkwamba (*The Boy Who Harnessed the Wind*), about 3½ minutes, with an AI voiceover (Piper, "Ryan" voice).
 
 | File | What it is |
 |---|---|
@@ -16,4 +16,4 @@ The true story of William Kamkwamba (*The Boy Who Harnessed the Wind*), about 4�
 
 The rendered MP4s are not in git because of their size. They were delivered in the chat session.
 
-Before publishing: record the narration, then check the dates, the TED quote and the parts list against the book.
+Before publishing: check the dates, the TED quote and the parts list against the book.

@@ -1,163 +1,163 @@
 1
-00:00:00,000 --> 00:00:06,450
+00:00:00,000 --> 00:00:05,624
 You are 14, your family is starving, and you just lost your place at school.
 
 2
-00:00:06,450 --> 00:00:10,900
+00:00:05,624 --> 00:00:09,560
 Nobody in your village has power. What do you build?
 
 3
-00:00:10,900 --> 00:00:16,950
+00:00:09,560 --> 00:00:14,584
 This is the true story of William Kamkwamba, the boy who harnessed the wind.
 
 4
-00:00:16,950 --> 00:00:23,400
+00:00:14,584 --> 00:00:19,585
 And the part everyone remembers, the windmill, is not the most impressive thing he did.
 
 5
-00:00:23,400 --> 00:00:35,850
+00:00:19,585 --> 00:00:27,695
 By the end of this video you will know exactly how he built it, what he built it from, and why the hardest part had nothing to do with engineering.
 
 6
-00:00:35,850 --> 00:00:41,500
+00:00:27,695 --> 00:00:34,281
 Malawi, 2001. William lives in a farming village where almost nobody has electricity.
 
 7
-00:00:41,500 --> 00:00:45,550
+00:00:34,281 --> 00:00:37,320
 When the sun goes down, the day is over.
 
 8
-00:00:45,550 --> 00:00:50,400
+00:00:37,320 --> 00:00:41,489
 His family grows maize. That is their food and their income.
 
 9
-00:00:50,400 --> 00:00:58,050
+00:00:41,489 --> 00:00:47,199
 Then the rains fail. A drought, and then a famine. Families cut down to one meal a day.
 
 10
-00:00:58,050 --> 00:01:04,500
+00:00:47,199 --> 00:00:52,305
 William's father can no longer pay his school fees, so William has to leave school.
 
 11
-00:01:04,500 --> 00:01:10,950
+00:00:52,305 --> 00:00:57,809
 For most kids, that is the end of the story. Here is where William's begins.
 
 12
-00:01:10,950 --> 00:01:18,200
+00:00:57,809 --> 00:01:02,833
 He can't go to class, so he goes to the small library at his old primary school.
 
 13
-00:01:18,200 --> 00:01:25,450
+00:01:02,833 --> 00:01:08,502
 He doesn't have the English to read most of the books, so he reads the pictures. Diagrams.
 
 14
-00:01:25,450 --> 00:01:30,700
+00:01:08,502 --> 00:01:12,258
 And one book has a picture of a windmill on the cover.
 
 15
-00:01:30,700 --> 00:01:37,550
+00:01:12,258 --> 00:01:17,846
 The book is called Using Energy. And it explains something nobody around him had told him:
 
 16
-00:01:37,550 --> 00:01:44,400
+00:01:17,846 --> 00:01:23,378
 wind can turn a blade, the blade can turn a generator, and a generator makes electricity.
 
 17
-00:01:44,400 --> 00:01:52,050
+00:01:23,378 --> 00:01:29,994
 So William does the maths a hungry kid does. Electricity means light at night. It means a radio.
 
 18
-00:01:52,050 --> 00:01:58,500
+00:01:29,994 --> 00:01:33,962
 And if it can pump water, it means a second harvest in the dry season.
 
 19
-00:01:58,500 --> 00:02:02,550
+00:01:33,962 --> 00:01:37,265
 Which means the famine doesn't have to happen again.
 
 20
-00:02:02,550 --> 00:02:07,400
+00:01:37,265 --> 00:01:40,635
 But he has no money. So he goes to the scrapyard.
 
 21
-00:02:07,400 --> 00:02:14,650
+00:01:40,635 --> 00:01:45,427
 Here is the parts list, and every piece of it was something other people had thrown away.
 
 22
-00:02:14,650 --> 00:02:19,500
+00:01:45,427 --> 00:01:49,738
 A broken bicycle frame. A fan blade from an old tractor.
 
 23
-00:02:19,500 --> 00:02:23,550
+00:01:49,738 --> 00:01:53,508
 PVC pipe, which he heats and flattens into blades.
 
 24
-00:02:23,550 --> 00:02:32,000
+00:01:53,508 --> 00:02:00,985
 A small bicycle dynamo, the kind that powers a bike light. And for the tower, wood from blue gum trees.
 
 25
-00:02:32,000 --> 00:02:40,450
+00:02:00,985 --> 00:02:07,229
 And this is the part I find hardest to imagine. Every day he walks to the dump. The village watches.
 
 26
-00:02:40,450 --> 00:02:46,500
+00:02:07,229 --> 00:02:11,906
 And they decide he has gone mad. The word they use is misala. Crazy.
 
 27
-00:02:46,500 --> 00:02:50,150
+00:02:11,906 --> 00:02:15,619
 He keeps going anyway. No teacher. No internet.
 
 28
-00:02:50,150 --> 00:02:57,800
+00:02:15,619 --> 00:02:21,024
 A book he can only half read, and parts he can't afford to replace if he breaks them.
 
 29
-00:02:57,800 --> 00:03:05,050
+00:02:21,024 --> 00:02:26,164
 Then he raises the tower, and the wind turns the blades, and a single bulb lights up.
 
 30
-00:03:05,050 --> 00:03:09,900
+00:02:26,164 --> 00:02:29,825
 Then a radio. In a house that has never had either.
 
 31
-00:03:09,900 --> 00:03:15,150
+00:02:29,825 --> 00:02:33,953
 The crowd that called him crazy turns up to charge their phones.
 
 32
-00:03:15,150 --> 00:03:21,600
+00:02:33,953 --> 00:02:38,368
 Here is the thing the film can't really show you. The windmill was the proof.
 
 33
-00:03:21,600 --> 00:03:29,650
+00:02:38,368 --> 00:02:44,376
 What William actually did was decide that being out of school was not the same as being finished learning.
 
 34
-00:03:29,650 --> 00:03:37,700
+00:02:44,376 --> 00:02:52,083
 Word gets out. A journalist writes about him. In 2007 he is invited to speak at TED, in Tanzania.
 
 35
-00:03:37,700 --> 00:03:47,350
+00:02:52,083 --> 00:02:58,466
 He has never been on a plane. He has never used a computer. He tells the room: I try, and I made it.
 
 36
-00:03:47,350 --> 00:03:58,200
+00:02:58,466 --> 00:03:08,097
 After that, there is a book, then a place at Dartmouth College in the United States, and in 2019 a Netflix film directed by Chiwetel Ejiofor.
 
 37
-00:03:58,200 --> 00:04:04,650
+00:03:08,097 --> 00:03:13,267
 And he went back. He built more windmills, a solar-powered pump for the village well,
 
 38
-00:04:04,650 --> 00:04:10,700
+00:03:13,267 --> 00:03:17,429
 and he has spent years helping other young people build things of their own.
 
 39
-00:04:10,700 --> 00:04:16,350
+00:03:17,429 --> 00:03:22,645
 So that is the story. A bicycle, a tractor fan, a library book,
 
 40
-00:04:16,350 --> 00:04:22,800
+00:03:22,645 --> 00:03:26,508
 and a kid who kept walking to the dump when everyone was laughing at him.
 
 41
-00:04:22,800 --> 00:04:31,650
+00:03:26,508 --> 00:03:32,479
 If you want the full version, read the book, The Boy Who Harnessed the Wind. It is linked in the description.
