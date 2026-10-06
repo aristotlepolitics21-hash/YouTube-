@@ -1,0 +1,179 @@
+1
+00:00:01,000 --> 00:00:05,830
+On the evening before the launch, a group of engineers in Utah tried to stop it.
+
+2
+00:00:07,130 --> 00:00:14,990
+They told NASA, on a conference call, that the space shuttle Challenger should not fly in the cold that was forecast for the next morning.
+
+3
+00:00:16,290 --> 00:00:25,827
+By the next morning, their recommendation had been reversed. Challenger launched at eleven thirty-eight a.m. on the twenty-eighth of January, 1986.
+
+4
+00:00:27,127 --> 00:00:31,852
+Seventy-three seconds later, millions of people watched it break apart in the sky.
+
+5
+00:00:33,152 --> 00:00:42,004
+This is not a story about a failure nobody saw coming. It is a story about a warning that was given, clearly, the night before, and about how it was talked away.
+
+6
+00:00:44,404 --> 00:00:52,374
+The mission was called S T S fifty-one L. It was the twenty-fifth flight of the space shuttle programme, and Challenger's tenth.
+
+7
+00:00:53,674 --> 00:01:08,584
+There were seven people aboard. Commander Dick Scobee. Pilot Michael Smith. Mission specialists Ellison Onizuka, Judith Resnik and Ronald McNair. Payload specialist Gregory Jarvis. And Christa McAuliffe.
+
+8
+00:01:09,884 --> 00:01:23,624
+McAuliffe was a high school social studies teacher from New Hampshire, chosen from more than eleven thousand applicants to be the first teacher in space. Schoolchildren across America would be watching the launch live in their classrooms.
+
+9
+00:01:24,924 --> 00:01:40,358
+NASA was under pressure. It had promised Congress that the shuttle would fly often and cheaply, almost like an airline. In 1986 it planned a record fifteen flights. Challenger's launch had already been delayed several times.
+
+10
+00:01:41,658 --> 00:01:53,870
+On the twenty-seventh, the crew had already been strapped in. Then the countdown was stopped, first by a stuck bolt on the hatch handle, and then by strong crosswinds. The launch was moved to the next morning.
+
+11
+00:01:56,270 --> 00:02:07,804
+The shuttle was launched by two solid rocket boosters, strapped to the sides of a huge external fuel tank. Each booster was built in sections, stacked on top of each other and joined together.
+
+12
+00:02:09,104 --> 00:02:17,440
+Each joint was sealed by two rubber rings, called O-rings, that were supposed to stop burning gas at thousands of degrees from escaping through the gap.
+
+13
+00:02:18,740 --> 00:02:36,502
+On earlier flights, engineers had found that hot gas had sometimes got past the first ring and scorched it. The worst damage had come on a flight launched in January 1985, in the coldest weather the shuttle had flown in. The temperature at launch was fifty-three degrees Fahrenheit.
+
+14
+00:02:37,802 --> 00:02:50,196
+The boosters were recovered from the ocean after every flight and taken apart, so engineers could see exactly what had happened inside each joint. They kept finding soot and burned rubber where none should have been.
+
+15
+00:02:51,496 --> 00:03:07,407
+Roger Boisjoly was an engineer at Morton Thiokol, the company in Utah that built the boosters. In July 1985, he wrote a memo warning that if the problem was not fixed, the result could be a catastrophe of the highest order, loss of human life.
+
+16
+00:03:08,707 --> 00:03:21,813
+The physics was simple. Rubber gets stiff when it is cold. A stiff O-ring takes longer to spring into the gap and seal it, and in a rocket booster, a fraction of a second is enough for hot gas to get past.
+
+17
+00:03:23,113 --> 00:03:36,377
+But every time a shuttle came back safely, the damage was treated less as a warning, and more as an accepted risk. A sociologist who later studied the disaster gave this a name: the normalisation of deviance.
+
+18
+00:03:38,777 --> 00:03:47,768
+On the twenty-seventh of January, an unusual cold front swept across Florida. Overnight temperatures were forecast to drop well below freezing.
+
+19
+00:03:49,068 --> 00:03:58,257
+That evening, engineers at Thiokol asked for a teleconference with NASA managers in Florida and Alabama. They faxed over their charts.
+
+20
+00:03:59,557 --> 00:04:06,895
+Their recommendation was not to launch if the temperature was below fifty-three degrees, the coldest launch they had any experience of.
+
+21
+00:04:08,195 --> 00:04:19,948
+NASA's managers pushed back hard. The data, they said, did not prove that cold caused the damage. One of them asked, in frustration, when Thiokol wanted him to launch. Next April?
+
+22
+00:04:21,248 --> 00:04:31,818
+Thiokol asked for a few minutes off the line. In that private meeting, a senior manager told the head of engineering to take off his engineering hat, and put on his management hat.
+
+23
+00:04:33,118 --> 00:04:45,563
+When the call resumed, Thiokol's managers reversed the recommendation. The engineers were not asked to vote. NASA accepted the new advice, and the people above them were never told how fierce the argument had been.
+
+24
+00:04:46,863 --> 00:04:56,586
+In Florida, Thiokol's senior man at the Cape, Allan McDonald, refused to sign the written recommendation to launch. His boss in Utah signed it instead.
+
+25
+00:04:57,886 --> 00:05:02,913
+Boisjoly later said he went home that night convinced the shuttle would explode on the pad.
+
+26
+00:05:05,313 --> 00:05:18,443
+On the morning of the twenty-eighth, there was ice on the launch tower. Long icicles hung from the gantry. At liftoff, the air temperature was thirty-six degrees Fahrenheit, seventeen degrees colder than any previous launch.
+
+27
+00:05:19,743 --> 00:05:36,303
+An ice inspection team walked the pad before dawn. Engineers from Rockwell, the company that built the orbiter, said they could not be sure falling ice would not damage the shuttle at launch. But they did not formally ask for a stop. Nobody discussed the boosters' O-rings.
+
+28
+00:05:37,603 --> 00:05:40,308
+At eleven thirty-eight, Challenger left the pad.
+
+29
+00:05:41,608 --> 00:05:52,114
+In the first second after ignition, cameras recorded puffs of dark grey smoke from the aft joint of the right booster. The cold O-rings had not sealed. Burning gas was escaping.
+
+30
+00:05:53,414 --> 00:06:01,442
+For a while, by luck, the hole was plugged by melted residue from the burning fuel itself. The shuttle climbed normally.
+
+31
+00:06:02,742 --> 00:06:14,618
+About a minute after launch, the shuttle flew through strong wind shear. The seal broke open again. A flame appeared at the joint, and played across the strut holding the booster to the external tank.
+
+32
+00:06:15,918 --> 00:06:24,131
+Seventy-three seconds after liftoff, the tank failed. The booster swung loose, and the shuttle was torn apart by aerodynamic forces.
+
+33
+00:06:25,431 --> 00:06:34,423
+On television, a cloud spread across the sky, with the two boosters flying off on their own. For a long moment, the commentator said nothing.
+
+34
+00:06:35,723 --> 00:06:48,632
+The crew cabin broke away largely intact and fell to the ocean. Evidence recovered later suggested that some of the crew were alive and conscious for at least part of the fall. None could have survived the impact.
+
+35
+00:06:51,032 --> 00:06:57,893
+President Reagan appointed a commission, led by former Secretary of State William Rogers, to find out what had happened.
+
+36
+00:06:59,193 --> 00:07:09,427
+One of its members was the physicist Richard Feynman. At a televised hearing, he took a piece of O-ring rubber, squeezed it in a clamp, and dropped it into a glass of ice water.
+
+37
+00:07:10,727 --> 00:07:19,816
+When he took it out, it stayed squeezed. It did not spring back. In a few seconds, he had shown what the engineers had tried to explain the night before.
+
+38
+00:07:21,116 --> 00:07:31,113
+In his own appendix to the report, Feynman wrote that for a successful technology, reality must take precedence over public relations, for nature cannot be fooled.
+
+39
+00:07:32,413 --> 00:07:46,012
+The commission found a flawed joint design, known for years. Damage that had been accepted as normal. Pressure to keep to the schedule. And a decision-making process in which serious warnings never reached the people at the top.
+
+40
+00:07:48,412 --> 00:07:58,256
+The shuttle fleet was grounded for thirty-two months. The boosters were redesigned, with a third O-ring and heaters at the joints. NASA created a new office of safety.
+
+41
+00:07:59,556 --> 00:08:14,637
+Roger Boisjoly and Allan McDonald told the commission what had happened on the call. Afterwards, both were moved away from the work they knew best. Boisjoly left the company, and spent years speaking to engineering students about ethics and the duty to speak up.
+
+42
+00:08:15,937 --> 00:08:34,162
+But the deeper problem proved harder to fix. In 2003, the shuttle Columbia broke up on its way home, after foam struck its wing during launch. Foam strikes had happened before. They had come to be seen as normal. The investigators said the lessons of Challenger had not been learned.
+
+43
+00:08:35,462 --> 00:08:43,989
+Seven people died on Challenger. The engineers who had tried to stop the launch spent the rest of their lives asking whether they could have done more.
+
+44
+00:08:45,289 --> 00:08:58,169
+The warning had been right. It had been made clearly, by the people who knew the most. It lost, because it could not prove, with certainty, that disaster would come. It only showed that nobody knew it would not.
+
+45
+00:08:59,469 --> 00:09:06,760
+When an organisation demands proof that something is dangerous, rather than proof that it is safe, it has already made its decision.
