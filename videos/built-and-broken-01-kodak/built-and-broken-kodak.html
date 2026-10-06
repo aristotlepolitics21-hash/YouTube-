@@ -77,11 +77,14 @@ h2 { font-family: var(--display); font-weight: 400; font-size: 20px; margin: 8px
     <ul class="notes">
       <li>Figures were checked before production. Market shares are from 1976, the patent count is about 1,100, and peak employment was 145,300 in 1988.</li>
       <li>The film-sales "cliff" chart is drawn as a shape, not to scale. It shows the trend, not exact figures.</li>
-      <li>No real logos are used. The building and the yellow box are generic.</li>
+      <li>3D scenes are original CGI reconstructions, not photographs. Real photos come from Wikimedia Commons and are credited on screen.</li>
     </ul>
   </section>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="kodak3d.js"></script>
+<script src="photos.js"></script>
 <script>
 (() => {
 const W = 1280, H = 720;
@@ -92,47 +95,47 @@ const C = { bg: '#1d1d20', bg2: '#25252a', paper: '#efe9df', grey: '#6d6a66', di
 const SCENES = ['The hook', 'The rise', 'The invention', 'The warning signs', 'The fall', 'What it cost', 'The lesson'];
 // [scene, visual id, text]
 const LINES = [
-  [0,'building',"In 1975, an engineer at Kodak built the world's first digital camera."],
+  [0,'tower',"In 1975, an engineer at Kodak built the world's first digital camera."],
   [0,'had',"Kodak had the invention. It had the patents. It had the money, the brand, and the distribution in nearly every country on Earth."],
-  [0,'crack',"And thirty-seven years later, it filed for bankruptcy."],
-  [0,'crack',"This is not the story of a company that missed the future. Kodak saw it first."],
-  [0,'crack',"This is the story of a company that saw the future clearly, and chose the past anyway."],
+  [0,'tower_crack',"And thirty-seven years later, it filed for bankruptcy."],
+  [0,'tower_crack',"This is not the story of a company that missed the future. Kodak saw it first."],
+  [0,'tower_crack',"This is the story of a company that saw the future clearly, and chose the past anyway."],
   [1,'workshop',"In the 1880s, photography was for experts. You needed glass plates, chemicals, and patience."],
-  [1,'box',"George Eastman changed that. In 1888 he launched a simple box camera with a promise: you press the button, we do the rest."],
-  [1,'mail',"You took the pictures, mailed the whole camera back, and got your prints and a reloaded camera in return."],
-  [1,'brownie',"In 1900 came the Brownie, priced at one dollar. Photography was now for everyone."],
-  [1,'razor',"But the real genius was the business model. Kodak sold cameras cheaply, almost as bait."],
-  [1,'razor',"The profit was in the film, the chemicals, and the paper. Every photo someone took paid Kodak again."],
+  [1,'eastman_ad',"George Eastman changed that. In 1888 he launched a simple box camera with a promise: you press the button, we do the rest."],
+  [1,'box1888',"You took the pictures, mailed the whole camera back, and got your prints and a reloaded camera in return."],
+  [1,'brownie3d',"In 1900 came the Brownie, priced at one dollar. Photography was now for everyone."],
+  [1,'razor3d',"But the real genius was the business model. Kodak sold cameras cheaply, almost as bait."],
+  [1,'razor3d',"The profit was in the film, the chemicals, and the paper. Every photo someone took paid Kodak again."],
   [1,'share',"By 1976, Kodak sold about 90 percent of the film and 85 percent of the cameras in the United States."],
-  [1,'share',"Kodak moment entered the language. The yellow box was one of the most recognisable things in millions of households."],
+  [1,'filmbox',"Kodak moment entered the language. The yellow box was one of the most recognisable things in millions of households."],
   [1,'ledger',"Remember this model. It made Kodak rich. It is also what would trap it."],
-  [2,'lab',"In 1975, a young Kodak engineer named Steven Sasson was handed a loose assignment: see what you can do with a new kind of sensor called a CCD."],
-  [2,'lab',"He built a camera from a lens, a handful of circuit boards, and a cassette tape."],
-  [2,'specs',"It weighed about eight pounds. It captured a black and white image of 0.01 megapixels, and it took 23 seconds to record one photo."],
+  [2,'sasson',"In 1975, a young Kodak engineer named Steven Sasson was handed a loose assignment: see what you can do with a new kind of sensor called a CCD."],
+  [2,'protophoto',"He built a camera from a lens, a handful of circuit boards, and a cassette tape."],
+  [2,'proto3d',"It weighed about eight pounds. It captured a black and white image of 0.01 megapixels, and it took 23 seconds to record one photo."],
   [2,'quote',"Sasson showed it to Kodak's executives. As he later told the New York Times, it was filmless photography, so the reaction was: that's cute, but don't tell anyone about it."],
   [2,'scale',"It wasn't stupidity. It was arithmetic. Kodak earned its profits from film."],
   [2,'scale',"A camera that needed no film was not a gift. It was a threat to the company's own profit engine."],
   [3,'paths',"Here is the part people get wrong. Kodak did not ignore digital."],
   [3,'digital',"It poured money into it. It built a portfolio of more than a thousand digital imaging patents."],
-  [3,'digital',"In 2005, Kodak was the number one seller of digital cameras in the United States. It had even bought an online photo sharing site, Ofoto, in 2001."],
+  [3,'easyshare',"In 2005, Kodak was the number one seller of digital cameras in the United States. It had even bought an online photo sharing site, Ofoto, in 2001."],
   [3,'prints',"But look at how it used these things. Kodak treated digital as a way to sell more prints. Ofoto existed to get you to order paper photos."],
   [3,'prints',"The company was still running the old razor and blades model on new technology."],
   [3,'cannibal',"The problem: digital cameras had no film margin. Every digital camera Kodak sold meant fewer rolls of film sold."],
   [3,'cannibal',"So inside the company, digital was always competing with the product that paid everyone's salaries."],
-  [3,'fuji',"Meanwhile, rival Fuji went the other way. It cut back its own film business, moved into chemicals, cosmetics, and medical imaging, and survived."],
-  [3,'phone',"And then the real disruptor arrived. The phone."],
+  [3,'fujihq',"Meanwhile, rival Fuji went the other way. It cut back its own film business, moved into chemicals, cosmetics, and medical imaging, and survived."],
+  [3,'phone3d',"And then the real disruptor arrived. The phone."],
   [4,'cliff',"Once cameras were built into phones, the standalone camera market collapsed. Film sales fell off a cliff."],
   [4,'cliff',"Kodak's profits, built on decades of film, shrank year after year."],
   [4,'stamp',"In January 2012, Kodak filed for Chapter 11 bankruptcy."],
   [4,'insta',"Three months later, Facebook bought Instagram, a photo sharing app with 13 employees, for about one billion dollars."],
   [4,'insta',"A company that had defined photography for a century was in bankruptcy court in the same season that the new version of photography got its first big price tag."],
   [4,'patents',"Kodak sold its digital imaging patents for about 525 million dollars, and emerged from bankruptcy in 2013 as a much smaller company, focused largely on commercial printing."],
-  [5,'factory',"At its peak in 1988, Kodak employed about 145,000 people. Entire neighbourhoods in Rochester, New York were built around the company."],
+  [5,'rochester',"At its peak in 1988, Kodak employed about 145,000 people. Entire neighbourhoods in Rochester, New York were built around the company."],
   [5,'factory',"Over the decades of its decline, most of those jobs disappeared."],
-  [6,'blueprint',"Kodak's fall isn't about a lack of vision. It's about a very hard question: what do you do when the thing that makes you rich is the thing that has to die?"],
-  [6,'blueprint',"Kodak had the answer in a lab in 1975. It had thirty-seven years to act on it."],
-  [6,'blueprint',"Its leaders chose to protect the business they had instead of building the one that was coming."],
-  [6,'hide',"The warning sign isn't a rival getting stronger. It's the moment you catch yourself hiding your own best idea, because it threatens your profits."],
+  [6,'blueprint3d',"Kodak's fall isn't about a lack of vision. It's about a very hard question: what do you do when the thing that makes you rich is the thing that has to die?"],
+  [6,'blueprint3d',"Kodak had the answer in a lab in 1975. It had thirty-seven years to act on it."],
+  [6,'blueprint3d',"Its leaders chose to protect the business they had instead of building the one that was coming."],
+  [6,'hide3d',"The warning sign isn't a rival getting stronger. It's the moment you catch yourself hiding your own best idea, because it threatens your profits."],
   [6,'end',"Built and Broken. Next week: another giant, another collapse."]
 ];
 
@@ -412,6 +415,58 @@ const SHOT = {
   },
 };
 
+
+// ---------- real photos (Wikimedia Commons) ----------
+const PHOTO = window.__PHOTOS || {};
+const IMG = {}; for (const [k, v] of Object.entries(PHOTO)) v.forEach((p, i) => { const im = new Image(); im.src = p.src; IMG[k + i] = im; });
+function photoShot(id, t) {
+  const list = PHOTO[id], n = list.length, i = Math.min(n - 1, Math.floor(t * n)), p = list[i], im = IMG[id + i], lt = t * n - i;
+  bg('#000'); if (!im || !im.complete || !im.naturalWidth) return;
+  const z = 1.04 + .08 * lt, sc = Math.max(W / im.naturalWidth, H / im.naturalHeight) * z, dw = im.naturalWidth * sc, dh = im.naturalHeight * sc;
+  const dx = (W - dw) / 2 + (i % 2 ? -1 : 1) * 18 * lt, dy = clamp(H / 2 - dh * (p.fy ?? .45), H - dh, 0);
+  ctx.drawImage(im, dx, dy, dw, dh);
+  if (n > 1 && i > 0 && lt < .12) { ctx.save(); ctx.globalAlpha = 1 - lt / .12; rect(0, 0, W, H, '#000'); ctx.restore(); }
+  const g = ctx.createLinearGradient(0, 0, 0, 150); g.addColorStop(0, 'rgba(0,0,0,.65)'); g.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, 150);
+  text(p.label, 48, 52, 26, { f: BODY, w: 600, align: 'left', c: '#fff' });
+  text('Photo: ' + p.credit, W - 24, 24, 14, { f: BODY, align: 'right', c: 'rgba(255,255,255,.8)' });
+}
+// Text that sits on top of the 3D CGI shots.
+const OVER = {
+  tower(t) { label('1975 · ROCHESTER, NEW YORK', W / 2, 60, 20, C.paper, fade(t, .05, .3)); },
+  tower_crack(t) { const k = fade(t, 0, .35);
+    text('1975', 220, 110, 70, { c: C.amber, a: 1 - k * .6 }); text('→', W / 2, 110, 60, { a: fade(t, .1, .2) }); text('2012', 1060, 110, 70, { c: C.rust, a: fade(t, .15, .3) });
+    label('CHAPTER 11', 1060, 170, 20, C.rust, fade(t, .2, .35));
+    text('Saw it first.', W / 2, 670, 34, { f: BODY, w: 600, a: fade(t, .45, .55) * (1 - fade(t, .7, .75)) });
+    text('Chose the past anyway.', W / 2, 670, 34, { f: BODY, w: 600, c: C.rust, a: fade(t, .78, .85) }); },
+  box1888(t) { label('1888 · THE FIRST KODAK', W / 2, 60, 22, C.amber, 1);
+    chip('Shoot 100 photos', 250, 640, C.paper, fade(t, .05, .2)); chip('Mail the camera back', 640, 640, C.amber, fade(t, .3, .45)); chip('Prints + reloaded camera', 1030, 640, C.paper, fade(t, .55, .7)); },
+  brownie3d(t) { label('1900 · THE BROWNIE', 400, 70, 24, C.paper, fade(t, 0, .15)); const k = fade(t, .2, .35);
+    text('$1', 930, 330, 200 * (0.8 + .2 * k), { c: C.amber, a: k }); text('Photography for everyone', 930, 480, 30, { f: BODY, w: 600, a: fade(t, .55, .7) }); },
+  razor3d(t) { text('Cheap camera = the bait', W / 2, 80, 40, { a: fade(t, .02, .1) * (1 - fade(t, .42, .48)) });
+    text('Film · chemicals · paper', W / 2, 80, 40, { a: fade(t, .5, .58) }); text('Every photo pays again', W / 2, 650, 32, { f: BODY, w: 600, c: C.amber, a: fade(t, .7, .8) }); },
+  proto3d(t) { [['≈8 lb', 'weight'], ['0.01 MP', '100 × 100 pixels'], ['23 s', 'to record one photo']].forEach(([a, b], i) => {
+      const k = fade(t, .05 + i * .22, .18 + i * .22), x = 240 + i * 400; ctx.save(); ctx.globalAlpha = k * .75; rrect(x - 150, 40, 300, 130, 6, '#141416'); ctx.restore();
+      text(a, x, 90, 56, { c: C.amber, a: k }); text(b, x, 145, 20, { f: BODY, a: k }); });
+    label('RECONSTRUCTION · CGI', W - 140, 690, 14, C.grey, 1); },
+  phone3d(t) { text('The phone.', W / 2, 640, 50, { c: C.rust, a: fade(t, .55, .7) }); },
+  hide3d(t) { text('Hiding your own best idea', W / 2, 640, 40, { c: C.rust, a: fade(t, .6, .75) }); },
+  blueprint3d(t) {
+    ctx.save(); ctx.globalAlpha = .7; rect(0, 50, W, 120, '#0e1a2b'); ctx.restore();
+    text('What do you do when the thing', W / 2, 90, 34, { f: BODY, w: 600, a: fade(t, .05, .15) });
+    text('that makes you rich has to die?', W / 2, 140, 34, { f: BODY, w: 600, c: C.amber, a: fade(t, .12, .22) });
+    text('37 years to act.', W / 2, 670, 30, { f: MONO, c: C.paper, a: fade(t, .45, .55) * (1 - fade(t, .7, .74)) });
+    text('Protect the old. Or build the new.', W / 2, 670, 30, { f: MONO, c: C.amber, a: fade(t, .76, .84) }); },
+};
+// Fallbacks when WebGL or a photo is missing.
+const FALLBACK = { tower: 'building', tower_crack: 'crack', box1888: 'mail', brownie3d: 'brownie', razor3d: 'razor', proto3d: 'specs', phone3d: 'phone', hide3d: 'hide', blueprint3d: 'blueprint',
+  eastman_ad: 'box', filmbox: 'share', sasson: 'lab', protophoto: 'lab', easyshare: 'digital', fujihq: 'fuji', rochester: 'factory' };
+function drawShot(v, t, T) {
+  if (window.K3D && K3D.has(v)) { ctx.drawImage(K3D.draw(v, t, T), 0, 0, W, H); OVER[v] && OVER[v](t, T); return; }
+  if (PHOTO[v]) { photoShot(v, t); return; }
+  if (SHOT[v]) { SHOT[v](t, T); return; }
+  SHOT[FALLBACK[v]](t, T); if (OVER[v] && !SHOT[v]) {}
+}
+
 // ---------- playback ----------
 const $ = id => document.getElementById(id);
 const cap = $('cap'), scrub = $('scrub'), timeEl = $('time');
@@ -430,7 +485,7 @@ function speak(i) { if (!synth) return; const my = ++token; synth.cancel(); cons
 function stopVoice() { token++; speaking = false; spokenIdx = -1; if (synth) try { synth.cancel(); } catch (e) {} }
 function render() {
   const sh = shots[shotAt(time)], t = clamp((time - sh.start) / (sh.end - sh.start));
-  ctx.save(); SHOT[sh.v](t, time); ctx.restore();
+  ctx.save(); drawShot(sh.v, t, time); ctx.restore();
   const k = Math.min(clamp((time - sh.start) / .35), clamp((sh.end - time) / .35));
   if (k < 1 && !(sh === shots[0] && time < .35)) { ctx.fillStyle = `rgba(0,0,0,${1 - k})`; ctx.fillRect(0, 0, W, H); }
   cap.textContent = capsOn && (playing || time > 0) ? lines[lineAt(time)].text : '';
@@ -453,7 +508,7 @@ scenes.forEach(s => { const li = document.createElement('li'), b = document.crea
   b.innerHTML = `<span class="tc">${fmt(s.start)}</span><span class="nm"></span>`; b.querySelector('.nm').textContent = s.name;
   b.onclick = () => { seek(s.start); if (!playing) setPlaying(true); }; li.appendChild(b); $('chapters').appendChild(li); });
 window.__at = s => { time = s; render(); }; window.__lines = lines; window.__total = TOTAL;
-function poster() { ctx.save(); SHOT.crack(.6, 3); ctx.restore(); timeEl.textContent = `0:00 / ${fmt(TOTAL)}`; }
+function poster() { ctx.save(); drawShot('tower_crack', .6, 3); ctx.restore(); timeEl.textContent = `0:00 / ${fmt(TOTAL)}`; }
 poster(); if (document.fonts) document.fonts.ready.then(() => { if (!playing && time === 0) poster(); });
 document.addEventListener('keydown', e => { if (e.code === 'Space' && !/INPUT|BUTTON/.test(document.activeElement.tagName)) { e.preventDefault(); setPlaying(!playing); } });
 })();
