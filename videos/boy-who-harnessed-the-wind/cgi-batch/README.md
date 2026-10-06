@@ -32,6 +32,19 @@ Generate or draw one clean, front-lit portrait of each character, save it under 
 | `ref_father.png` | FATHER: lean Malawian farmer in his 40s, faded work shirt, weathered hands. |
 | `ref_mother.png` | MOTHER: Malawian woman in her 40s, patterned chitenge wrap and headscarf. |
 
+### Generated portraits (Canva)
+
+Download each one at full size from Canva and save it under the file name on the left.
+
+| File | Canva image | Canva media ID |
+|---|---|---|
+| `ref_william_14.png` | https://www.canva.com/M/MAHXPWynZiA | MAHXPWynZiA |
+| `ref_william_adult.png` | https://www.canva.com/M/MAHXPYG1oaA | MAHXPYG1oaA (made from the boy's portrait, so the faces match) |
+| `ref_father.png` | https://www.canva.com/M/MAHXPTp-utc | MAHXPTp-utc |
+| `ref_mother.png` | https://www.canva.com/M/MAHXPX0zd2E | MAHXPX0zd2E |
+
+These are designed characters, not likenesses of the real family.
+
 Veo takes up to 3 reference images (8-second clips only), Kling and Seedance up to 9.
 
 ## Hero shots (generate these first)
