@@ -68,7 +68,7 @@ assets:
   photo_providers: ["openverse", "loc", "nasa", "wikimedia"]
   ai_image_provider: "none"   # "fal" to generate images for ai_image scenes
   ai_video_provider: "none"   # "fal" to generate clips for ai_video scenes
-  min_width: 1280             # present-day photos
+  min_width: 1000             # present-day photos (Flickr via Openverse is often 1024 px)
   min_width_archival: 640     # scenes set before 1980
   min_relevance: 0.34         # share of query words a candidate's title/tags must match
   allowed_licenses: ["cc0", "pdm", "by", "by-sa", "public domain", "no known restrictions"]

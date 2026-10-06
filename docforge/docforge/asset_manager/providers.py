@@ -103,13 +103,24 @@ class Openverse:
         self.licenses = [l for l in licenses if l in ("cc0", "pdm", "by", "by-sa")]
 
     def search(self, query: str, limit: int) -> list[Candidate]:
-        r = self.http.get(self.API, params={"q": query, "page_size": min(limit, 50),
-                                            "license": ",".join(self.licenses), "size": "large",
-                                            "mature": "false"})
-        if not r:
-            return []
+        # No "size" filter: Openverse's "large" class is dominated by Wikimedia; real widths are
+        # checked after download. Sources whose host is rate-limited are excluded up front.
+        # Anonymous requests are capped at 20 per page, so read up to two pages.
+        results = []
+        for page in (1, 2):
+            params = {"q": query, "page_size": 20, "page": page, "license": ",".join(self.licenses),
+                      "mature": "false"}
+            if self.http.breaker.blocked("https://upload.wikimedia.org/"):
+                params["excluded_source"] = "wikimedia"
+            r = self.http.get(self.API, params=params)
+            if not r:
+                break
+            data = r.json()
+            results += data.get("results", [])
+            if len(results) >= limit or page >= data.get("page_count", 1):
+                break
         out = []
-        for it in r.json().get("results", []):
+        for it in results:
             if self.http.breaker.blocked(it.get("url", "")):
                 continue
             out.append(Candidate(
