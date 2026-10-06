@@ -1,0 +1,231 @@
+1
+00:00:00,800 --> 00:00:07,209
+In 2002, a fourteen-year-old boy in Malawi stood outside a school he could no longer afford.
+
+2
+00:00:08,309 --> 00:00:12,954
+His family had run out of money for the fees. His village was running out of food.
+
+3
+00:00:14,054 --> 00:00:20,753
+Within a few years, people around the world would know his name, because of something he built from junk behind his house.
+
+4
+00:00:21,853 --> 00:00:24,593
+This is the story of William Kamkwamba.
+
+5
+00:00:25,693 --> 00:00:32,615
+He grew up in a farming village in central Malawi. Like almost everyone he knew, his family had no electricity.
+
+6
+00:00:33,715 --> 00:00:36,211
+When the sun went down, the day was over.
+
+7
+00:00:37,311 --> 00:00:45,043
+Families sat around a small kerosene lamp, breathing its smoke, until there was nothing left to do but blow it out and sleep.
+
+8
+00:00:47,643 --> 00:00:54,146
+William's family were farmers. They grew maize to eat and tobacco to sell, and everything depended on the rain.
+
+9
+00:00:55,246 --> 00:01:02,086
+William wanted to know how things worked. He took apart radios to see what was inside, and he got good at fixing them.
+
+10
+00:01:03,186 --> 00:01:06,147
+Soon, neighbours were bringing him their broken radios.
+
+11
+00:01:07,247 --> 00:01:12,159
+He loved school, and he loved science. He dreamed of becoming a scientist.
+
+12
+00:01:13,259 --> 00:01:16,359
+But in 2001, the weather turned against Malawi.
+
+13
+00:01:25,643 --> 00:01:30,360
+First came floods. Then came drought. The maize withered in the fields.
+
+14
+00:01:31,460 --> 00:01:37,973
+Much of the country's emergency grain reserve had already been sold, and by the end of 2001, there was famine.
+
+15
+00:01:39,073 --> 00:01:42,964
+Food prices soared. People traded whatever they had for a little maize.
+
+16
+00:01:44,064 --> 00:01:47,071
+William's family cut down to one small meal a day.
+
+17
+00:01:48,171 --> 00:01:55,255
+His father could no longer pay the school fees. So William had to leave school, and watch his classmates walk in without him.
+
+18
+00:01:56,355 --> 00:02:01,848
+Across the country, people grew thin and weak. Some foraged for wild leaves to eat.
+
+19
+00:02:02,948 --> 00:02:06,514
+The village went quiet. Many people did not survive that year.
+
+20
+00:02:34,043 --> 00:02:35,889
+But William refused to stop learning.
+
+21
+00:02:36,989 --> 00:02:41,772
+He found a small library at his old primary school, stocked with donated books.
+
+22
+00:02:42,872 --> 00:02:48,758
+His English wasn't good enough for most of them, so he worked slowly, studying the pictures and diagrams.
+
+23
+00:02:49,858 --> 00:02:53,759
+One textbook, called Using Energy, had a windmill on its cover.
+
+24
+00:02:54,859 --> 00:03:01,756
+Inside, it explained that the wind could turn blades, the blades could turn a generator, and the generator could make electricity.
+
+25
+00:03:02,856 --> 00:03:06,432
+William realised a windmill could bring light to his family's house.
+
+26
+00:03:07,532 --> 00:03:14,486
+And if it could pump water, they could irrigate their fields, grow food in the dry season, and never go hungry like this again.
+
+27
+00:03:34,843 --> 00:03:38,676
+He had no money and no tools. So he went to the scrapyard.
+
+28
+00:03:39,776 --> 00:03:49,966
+Day after day, he collected what other people had thrown away. A broken bicycle frame. A tractor fan. A shock absorber. Plastic pipes. Wire.
+
+29
+00:03:51,066 --> 00:03:55,513
+A bicycle dynamo, the kind that powers a bike light, would be his generator.
+
+30
+00:03:56,613 --> 00:04:03,590
+He heated the plastic pipes over a fire to soften and flatten them into blades, and used a red-hot nail to bore holes.
+
+31
+00:04:04,690 --> 00:04:06,920
+He cut down blue gum trees for the tower.
+
+32
+00:04:08,020 --> 00:04:14,118
+He tested his ideas on small models first. Some of them broke. He fixed them, and tried again.
+
+33
+00:04:15,218 --> 00:04:20,109
+The village thought he had lost his mind. They called him misala. Crazy.
+
+34
+00:04:21,209 --> 00:04:29,177
+People laughed as he carried scrap through the village. Even his parents were worried. The family was hungry, and their son was digging through junk.
+
+35
+00:04:30,277 --> 00:04:34,830
+But he kept going. Week by week, the tower rose beside the house.
+
+36
+00:04:35,930 --> 00:04:37,985
+And in the end, his father let him finish.
+
+37
+00:05:32,643 --> 00:05:35,209
+When it was done, a crowd gathered to watch.
+
+38
+00:05:36,309 --> 00:05:39,339
+William connected a small bulb, and waited for the wind.
+
+39
+00:05:40,439 --> 00:05:44,657
+The blades began to turn. The bulb flickered. And then it glowed.
+
+40
+00:05:45,757 --> 00:05:48,822
+The people who had laughed came to see it for themselves.
+
+41
+00:05:49,922 --> 00:05:54,078
+Soon, the windmill was powering lights and a radio in the family's home.
+
+42
+00:05:55,178 --> 00:05:59,522
+William wired the house and built his own switches. He could read at night.
+
+43
+00:06:00,622 --> 00:06:03,327
+And neighbours lined up to charge their mobile phones.
+
+44
+00:06:33,443 --> 00:06:34,441
+Then he went further.
+
+45
+00:06:35,541 --> 00:06:40,847
+He built more windmills, including one to pump water, so crops could be watered in the dry season.
+
+46
+00:06:41,947 --> 00:06:45,593
+Later, a solar-powered pump brought clean water to the village.
+
+47
+00:06:46,693 --> 00:06:51,720
+The boy who had been forced out of school was solving the problem that had nearly starved his village.
+
+48
+00:07:03,843 --> 00:07:08,988
+Word began to spread. A newspaper wrote about him, and bloggers picked up the story.
+
+49
+00:07:10,088 --> 00:07:18,019
+In 2007, he was invited to speak at the TEDGlobal conference in Arusha, Tanzania. It was his first time on a plane.
+
+50
+00:07:19,119 --> 00:07:24,390
+He stood in front of the audience, and in halting English, he told them: I try, and I made it.
+
+51
+00:07:25,490 --> 00:07:27,440
+The audience rose to its feet.
+
+52
+00:07:38,043 --> 00:07:43,199
+It is easy to tell this as a story about a windmill. But the windmill was never really the point.
+
+53
+00:07:44,299 --> 00:07:51,126
+A boy with no school, no money and no tools taught himself from a library book, and built a future out of scrap.
+
+54
+00:07:52,226 --> 00:08:04,244
+With help from supporters, he went back to school. First at the African Leadership Academy in South Africa, then at Dartmouth College in the United States, where he graduated in 2014.
+
+55
+00:08:05,344 --> 00:08:10,836
+His story became a book, The Boy Who Harnessed the Wind, and in 2019, a film.
+
+56
+00:08:11,936 --> 00:08:16,382
+And he has kept working to help young people in Malawi learn to build things of their own.
+
+57
+00:08:17,482 --> 00:08:20,965
+Back where it all began, the windmill turned in the evening wind.
+
+58
+00:08:22,065 --> 00:08:27,709
+Not a monument to a machine, but to a decision. When the school doors closed, he kept learning anyway.

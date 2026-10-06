@@ -1,0 +1,108 @@
+{
+  "title": "The Boy Who Harnessed the Wind",
+  "acts": [
+    {
+      "act": 1, "name": "Darkness", "shots": [1, 12],
+      "lines": [
+        "In 2002, a fourteen-year-old boy in Malawi stood outside a school he could no longer afford.",
+        "His family had run out of money for the fees. His village was running out of food.",
+        "Within a few years, people around the world would know his name, because of something he built from junk behind his house.",
+        "This is the story of William Kamkwamba.",
+        "He grew up in a farming village in central Malawi. Like almost everyone he knew, his family had no electricity.",
+        "When the sun went down, the day was over.",
+        "Families sat around a small kerosene lamp, breathing its smoke, until there was nothing left to do but blow it out and sleep."
+      ]
+    },
+    {
+      "act": 2, "name": "Farm and curiosity", "shots": [13, 22],
+      "lines": [
+        "William's family were farmers. They grew maize to eat and tobacco to sell, and everything depended on the rain.",
+        "William wanted to know how things worked. He took apart radios to see what was inside, and he got good at fixing them.",
+        "Soon, neighbours were bringing him their broken radios.",
+        "He loved school, and he loved science. He dreamed of becoming a scientist.",
+        "But in 2001, the weather turned against Malawi."
+      ]
+    },
+    {
+      "act": 3, "name": "Famine", "shots": [23, 40],
+      "lines": [
+        "First came floods. Then came drought. The maize withered in the fields.",
+        "Much of the country's emergency grain reserve had already been sold, and by the end of 2001, there was famine.",
+        "Food prices soared. People traded whatever they had for a little maize.",
+        "William's family cut down to one small meal a day.",
+        "His father could no longer pay the school fees. So William had to leave school, and watch his classmates walk in without him.",
+        "Across the country, people grew thin and weak. Some foraged for wild leaves to eat.",
+        "The village went quiet. Many people did not survive that year."
+      ]
+    },
+    {
+      "act": 4, "name": "The library", "shots": [41, 56],
+      "lines": [
+        "But William refused to stop learning.",
+        "He found a small library at his old primary school, stocked with donated books.",
+        "His English wasn't good enough for most of them, so he worked slowly, studying the pictures and diagrams.",
+        "One textbook, called Using Energy, had a windmill on its cover.",
+        "Inside, it explained that the wind could turn blades, the blades could turn a generator, and the generator could make electricity.",
+        "William realised a windmill could bring light to his family's house.",
+        "And if it could pump water, they could irrigate their fields, grow food in the dry season, and never go hungry like this again."
+      ]
+    },
+    {
+      "act": 5, "name": "Building it", "shots": [57, 87],
+      "lines": [
+        "He had no money and no tools. So he went to the scrapyard.",
+        "Day after day, he collected what other people had thrown away. A broken bicycle frame. A tractor fan. A shock absorber. Plastic pipes. Wire.",
+        "A bicycle dynamo, the kind that powers a bike light, would be his generator.",
+        "He heated the plastic pipes over a fire to soften and flatten them into blades, and used a red-hot nail to bore holes.",
+        "He cut down blue gum trees for the tower.",
+        "He tested his ideas on small models first. Some of them broke. He fixed them, and tried again.",
+        "The village thought he had lost his mind. They called him misala. Crazy.",
+        "People laughed as he carried scrap through the village. Even his parents were worried. The family was hungry, and their son was digging through junk.",
+        "But he kept going. Week by week, the tower rose beside the house.",
+        "And in the end, his father let him finish."
+      ]
+    },
+    {
+      "act": 6, "name": "First light", "shots": [88, 103],
+      "lines": [
+        "When it was done, a crowd gathered to watch.",
+        "William connected a small bulb, and waited for the wind.",
+        "The blades began to turn. The bulb flickered. And then it glowed.",
+        "The people who had laughed came to see it for themselves.",
+        "Soon, the windmill was powering lights and a radio in the family's home.",
+        "William wired the house and built his own switches. He could read at night.",
+        "And neighbours lined up to charge their mobile phones."
+      ]
+    },
+    {
+      "act": 7, "name": "Water", "shots": [104, 111],
+      "lines": [
+        "Then he went further.",
+        "He built more windmills, including one to pump water, so crops could be watered in the dry season.",
+        "Later, a solar-powered pump brought clean water to the village.",
+        "The boy who had been forced out of school was solving the problem that had nearly starved his village."
+      ]
+    },
+    {
+      "act": 8, "name": "The world finds out", "shots": [112, 120],
+      "lines": [
+        "Word began to spread. A newspaper wrote about him, and bloggers picked up the story.",
+        "In 2007, he was invited to speak at the TEDGlobal conference in Arusha, Tanzania. It was his first time on a plane.",
+        "He stood in front of the audience, and in halting English, he told them: I try, and I made it.",
+        "The audience rose to its feet."
+      ]
+    },
+    {
+      "act": 9, "name": "Legacy", "shots": [121, 136],
+      "lines": [
+        "It is easy to tell this as a story about a windmill. But the windmill was never really the point.",
+        "A boy with no school, no money and no tools taught himself from a library book, and built a future out of scrap.",
+        "With help from supporters, he went back to school. First at the African Leadership Academy in South Africa, then at Dartmouth College in the United States, where he graduated in 2014.",
+        "His story became a book, The Boy Who Harnessed the Wind, and in 2019, a film.",
+        "And he has kept working to help young people in Malawi learn to build things of their own.",
+        "Back where it all began, the windmill turned in the evening wind.",
+        "Not a monument to a machine, but to a decision. When the school doors closed, he kept learning anyway."
+      ]
+    }
+  ]
+}

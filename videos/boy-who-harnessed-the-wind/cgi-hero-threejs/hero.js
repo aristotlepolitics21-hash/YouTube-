@@ -310,6 +310,7 @@ SHOTS[134] = () => { const S = stage({ sky: [[0, '#3a3a6a'], [.45, '#d9784a'], [
 const ORDER = [1, 3, 43, 50, 58, 60, 81, 82, 88, 91, 92, 94, 98, 118, 134];
 const DUR = { 82: 4, 91: 4 };
 const cache = {};
+window.HERO_LIB = { T3, renderer, canvas, clamp, lerp, ease, seg, rng, V, mat, mesh, beam, canvasTex, skyTex, glow, cloud, dust, stage, terrain, house, tree, person, crowdPerson, windmill, bulb, flick, look, lerpV, junkPile, homestead, maizeRow, SHOTS, SKIN, GLOW };
 window.HERO = {
   shots: ORDER.map(n => ({ n, dur: DUR[n] || 6 })),
   draw(n, k, T) { if (!cache[n]) cache[n] = SHOTS[n](); const S = cache[n](k, T); renderer.render(S.scene, S.cam); return canvas; },
