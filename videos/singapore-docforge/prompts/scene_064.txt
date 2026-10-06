@@ -1,0 +1,5 @@
+PROMPT:
+Jurong today. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow aerial drone push forward, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.
+
+NEGATIVE:
+readable text, captions, signage with letters, logos, watermarks, distorted faces, extra fingers, extra limbs, duplicated people, warped architecture, cartoon, illustration, oversaturated colours, low resolution

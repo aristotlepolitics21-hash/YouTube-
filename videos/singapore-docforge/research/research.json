@@ -1,0 +1,695 @@
+{
+ "topic": "Singapore: How a Tiny Country Became Rich Without Natural Resources",
+ "generated_by": "manual (written by Claude Code from live web searches; no API key in session)",
+ "sections": [
+  {
+   "topic": "Historical background",
+   "facts": [
+    {
+     "claim": "Stamford Raffles arrived on 29 January 1819 and signed a treaty with Sultan Hussein and the Temenggong on 6 February 1819.",
+     "status": "confirmed",
+     "sources": [
+      "https://eresources.nlb.gov.sg/infopedia/articles/SIP_131_2005-01-03.html",
+      "https://eresources.nlb.gov.sg/infopedia/articles/SIP_715_2004-12-15.html"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "About a thousand people lived on the island before Raffles arrived (estimates vary).",
+     "status": "uncertain",
+     "sources": [
+      "https://eresources.nlb.gov.sg/infopedia/articles/SIP_715_2004-12-15.html"
+     ],
+     "note": "estimates range from a few hundred to about 1,000"
+    },
+    {
+     "claim": "Singapore became part of the Straits Settlements in 1826 and their capital in 1836.",
+     "status": "confirmed",
+     "sources": [
+      "https://eresources.nlb.gov.sg/infopedia/articles/SIP_715_2004-12-15.html"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "topic": "Geography",
+   "facts": [
+    {
+     "claim": "Land area was about 581.5 km² in 1960 and about 744 km² by the 2020s, mostly through reclamation.",
+     "status": "confirmed",
+     "sources": [
+      "https://data.gov.sg/dataset/total-land-area-of-singapore",
+      "https://en.wikipedia.org/wiki/Geography_of_Singapore"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Singapore lies at the southern tip of the Malay Peninsula on the sea route between the Indian Ocean and the South China Sea.",
+     "status": "confirmed",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_Singapore"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "topic": "Political development",
+   "facts": [
+    {
+     "claim": "Full internal self-government came with the May 1959 election; the PAP won 43 of 51 seats and Lee Kuan Yew became prime minister.",
+     "status": "confirmed",
+     "sources": [
+      "https://en.wikipedia.org/wiki/1959_Singaporean_general_election"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Singapore joined Malaysia on 16 September 1963 and separated on 9 August 1965.",
+     "status": "confirmed",
+     "sources": [
+      "https://en.wikipedia.org/wiki/History_of_the_State_of_Singapore_(Malaysia)"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Lee Kuan Yew called separation 'a moment of anguish' at a televised press conference on 9 August 1965.",
+     "status": "confirmed",
+     "sources": [
+      "https://biblioasia.nlb.gov.sg/all-sections/vol-22-issue-2-jul-sep-2026-the-days-leading-to-separation-in-lee-kuan-yews-own-words-/"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "topic": "Major historical events",
+   "facts": [
+    {
+     "claim": "Singapore fell to Japan on 15 February 1942; about 80,000 Allied troops became prisoners.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.sg101.gov.sg/learn/resources/onthisday-fall-of-singapore",
+      "https://en.wikipedia.org/wiki/Fall_of_Singapore"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Renamed Syonan-to; British rule returned in September 1945.",
+     "status": "confirmed",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Japanese_occupation_of_Singapore"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Britain announced in January 1968 it would withdraw forces east of Suez by 1971; most troops left by October 1971.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.cia.gov/readingroom/node/1922414",
+      "https://countrystudies.us/singapore/28.htm"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "The Bukit Ho Swee fire of 25 May 1961 left about 16,000 people homeless.",
+     "status": "confirmed",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Housing_and_Development_Board"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "There were deadly communal riots in Singapore in 1964.",
+     "status": "confirmed",
+     "sources": [
+      "https://en.wikipedia.org/wiki/History_of_the_State_of_Singapore_(Malaysia)"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "topic": "Population",
+   "facts": [
+    {
+     "claim": "Total population was 6.04 million in June 2024; about one in five citizens was 65 or older, rising to one in four by 2030.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.population.gov.sg/files/media-centre/publications/Population_in_Brief_2024.pdf"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Resident total fertility rate fell to 0.97 in 2023, below 1 for the first time.",
+     "status": "confirmed",
+     "sources": [
+      "https://asianews.network/?p=136624"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Around 1968 the population was about 2 million.",
+     "status": "confirmed",
+     "sources": [
+      "https://countrystudies.us/singapore/28.htm"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "topic": "Natural resources",
+   "facts": [
+    {
+     "claim": "Singapore has no significant oil, gas or mineral resources and little farmland.",
+     "status": "confirmed",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_Singapore"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Water agreements with Johor were signed in 1961 and 1962; the 1961 agreement expired in 2011, the 1962 one runs to 2061.",
+     "status": "confirmed",
+     "sources": [
+      "https://eresources.nlb.gov.sg/infopedia/articles/SIP_1533_2009-06-23.html",
+      "https://lkyspp.nus.edu.sg/gia/article/water-policy-in-singapore"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "NEWater and desalination meet a large and growing share of demand.",
+     "status": "uncertain",
+     "sources": [
+      "https://lkyspp.nus.edu.sg/gia/article/water-policy-in-singapore"
+     ],
+     "note": "published shares vary by year (around 40% in older reports); not quoted as a number"
+    }
+   ]
+  },
+  {
+   "topic": "Economy",
+   "facts": [
+    {
+     "claim": "GDP per capita was about US$517 in 1965 and about US$94,900 in 2024 (current US$, World Bank).",
+     "status": "confirmed",
+     "sources": [
+      "https://fred.stlouisfed.org/data/PCAGDPSGA646NWDB"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Manufacturing is about a fifth of the economy.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.statista.com/topics/9319/manufacturing-sector-in-singapore"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "About one in ten chips worldwide is made in Singapore (A*STAR).",
+     "status": "confirmed",
+     "sources": [
+      "https://www.a-star.edu.sg/News/astarNews/news/features/singapore-semiconductor-rise-ai-chip-wars"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "In 1959 roughly 14% unemployment was estimated.",
+     "status": "uncertain",
+     "sources": [
+      "https://www.sg101.gov.sg/economy/surviving-our-independence/1959-1965/"
+     ],
+     "note": "figure quoted inconsistently; not used in narration"
+    }
+   ]
+  },
+  {
+   "topic": "Trade",
+   "facts": [
+    {
+     "claim": "Trade was about 326% of GDP in 2023.",
+     "status": "confirmed",
+     "sources": [
+      "https://wits.worldbank.org/CountryProfile/en/Country/SGP/Year/LTST"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "The port handled a record 41.12 million TEU in 2024; around 90% is transshipment.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.mpa.gov.sg/media-centre/details/strong-growth-momentum-for-maritime-singapore"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "topic": "Major industries",
+   "facts": [
+    {
+     "claim": "Electronics, semiconductors, chemicals, precision engineering and finance are major industries.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.a-star.edu.sg/News/astarNews/news/features/singapore-semiconductor-rise-ai-chip-wars",
+      "https://www.statista.com/topics/9319/manufacturing-sector-in-singapore"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Singapore ranks in the global top five financial centres on the Global Financial Centres Index.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.finews.asia/finance/37717-singapore-surpasses-hong-kong-in-financial-hub-index"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "topic": "Infrastructure",
+   "facts": [
+    {
+     "claim": "Changi Airport began operating on 1 July 1981.",
+     "status": "confirmed",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Changi_Airport"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Tuas Port is designed to handle 65 million TEU when completed in the 2040s.",
+     "status": "confirmed",
+     "sources": [
+      "https://porteconomicsmanagement.org/pemp/contents/part3/changing-geography-of-seaports/singapore-tuas-port-expansion-project"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Jurong Industrial Estate's first factory opened in August 1963.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.roots.gov.sg/stories-landing/stories/jurong-industrial-estate/story"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "topic": "Government policies",
+   "facts": [
+    {
+     "claim": "The Economic Development Board was set up on 1 August 1961, after a UN team led by Albert Winsemius advised on industrialisation.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.sg101.gov.sg/economy/surviving-our-independence/1959-1965/",
+      "https://www.roots.gov.sg/stories-landing/stories/jurong-industrial-estate/story"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "The HDB was created in 1960 and built about 21,000 flats in under three years.",
+     "status": "confirmed",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Housing_and_Development_Board"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "From 1968, CPF savings could be used to buy HDB flats.",
+     "status": "confirmed",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Housing_and_Development_Board"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "About 77% of residents live in HDB flats; home ownership is about 90% (2023).",
+     "status": "confirmed",
+     "sources": [
+      "https://www.singstat.gov.sg/modules/infographics/-/media/Files/visualising_data/infographics/Population/singapore-population10052024.pdf"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "The CPIB was set up in 1952.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.cpib.gov.sg/who-we-are/our-heritage/"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Temasek was incorporated in 1974; GIC was set up in 1981.",
+     "status": "confirmed",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Temasek_Holdings",
+      "https://en.wikipedia.org/wiki/GIC_(sovereign_wealth_fund)"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "topic": "International relations",
+   "facts": [
+    {
+     "claim": "The British bases generated about 20% of GDP, employed 54,000 people directly and occupied 12% of the land.",
+     "status": "confirmed",
+     "sources": [
+      "https://countrystudies.us/singapore/28.htm",
+      "https://www.cia.gov/readingroom/node/1922414"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "topic": "Problems and challenges",
+   "facts": [
+    {
+     "claim": "Low fertility and rapid ageing.",
+     "status": "confirmed",
+     "sources": [
+      "https://asianews.network/?p=136624",
+      "https://www.population.gov.sg/files/media-centre/publications/Population_in_Brief_2024.pdf"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Sea levels could rise by up to 1 m by 2100; coastal protection could cost S$100 billion or more (PM Lee, 2019).",
+     "status": "confirmed",
+     "sources": [
+      "https://www.malaymail.com/amp/news/world/2019/08/19/singapore-to-bolster-coastal-defences-against-rising-sea-levels-says-pm/1781949"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "topic": "Important statistics",
+   "facts": [
+    {
+     "claim": "Singapore ranked 3rd of 180 in the 2024 Corruption Perceptions Index (score 84).",
+     "status": "confirmed",
+     "sources": [
+      "https://www.cpib.gov.sg/press-room/2024-ti-cpi-singapore-moves-up-2-spots-to-3rd-least-corrupt-country-and-top-in-asia-pacific/"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "topic": "Future prospects",
+   "facts": [
+    {
+     "claim": "Tuas mega-port, continued reclamation and polders, water self-sufficiency before 2061.",
+     "status": "confirmed",
+     "sources": [
+      "https://porteconomicsmanagement.org/pemp/contents/part3/changing-geography-of-seaports/singapore-tuas-port-expansion-project",
+      "https://www.malaymail.com/amp/news/world/2019/08/19/singapore-to-bolster-coastal-defences-against-rising-sea-levels-says-pm/1781949",
+      "https://eresources.nlb.gov.sg/infopedia/articles/SIP_1533_2009-06-23.html"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "topic": "Additional sourced details",
+   "facts": [
+    {
+     "claim": "The 1824 Anglo-Dutch Treaty and the 1824 Crawfurd treaty secured British sovereignty over Singapore.",
+     "status": "confirmed",
+     "sources": [
+      "https://biblioasia.nlb.gov.sg/vol-15/issue-1/apr-jun-2019/making-history/"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "The Sook Ching killings in February-March 1942 killed tens of thousands of Chinese civilians; estimates range widely (Japan claimed under 6,000; common estimates 25,000-50,000).",
+     "status": "confirmed",
+     "sources": [
+      "https://biblioasia.nlb.gov.sg/vol-12/issue-4/jan-mar-2017/the-sook-ching/"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Shell's Pulau Bukom refinery, Singapore's first, opened on 26 July 1961.",
+     "status": "confirmed",
+     "sources": [
+      "https://roots.gov.sg/Collection-Landing/listing/1579795"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Singapore Airlines was formed in 1972.",
+     "status": "confirmed",
+     "sources": [
+      "https://biblioasia.nlb.gov.sg/vol-18/issue-2/jul-sep-2022/history-singapore-airlines/"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "National Service began in 1967.",
+     "status": "confirmed",
+     "sources": [
+      "https://en.wikipedia.org/wiki/National_service_in_Singapore"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "The Employment Act and Industrial Relations (Amendment) Act were passed in 1968.",
+     "status": "confirmed",
+     "sources": [
+      "https://eresources.nlb.gov.sg/infopedia/articles/SIP_2014-07-07_133856.html"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "The first Concept Plan for long-term land use was unveiled in 1971.",
+     "status": "confirmed",
+     "sources": [
+      "https://biblioasia.nlb.gov.sg/vol-10/issue-3/oct-dec-2014/singapore-concept-plan/"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Hawker culture was inscribed on UNESCO's intangible heritage list in December 2020.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.nea.gov.sg/media/news/news/index/hawker-culture-is-singapore-s-first-inscription-on-unesco-s-representative-list-of-the-intangible-cultural-heritage-of-humanity"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Changi Terminal 5 is planned to open in the mid-2030s.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.timeout.com/singapore/news/singapore-changi-airports-new-terminal-5-is-slated-to-open-in-the-mid-2030s-works-have-already-begun-051525"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Singapore's first polder, about 800 ha, is at Pulau Tekong.",
+     "status": "confirmed",
+     "sources": [
+      "https://www.tabla.com.sg/news/singapore/plot-twice-size-toa-payoh-reclaimed-pulau-tekong-spores-first-polder-project"
+     ],
+     "note": ""
+    },
+    {
+     "claim": "Changi Airport has won Skytrax's World's Best Airport award many times.",
+     "status": "confirmed",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Changi_Airport"
+     ],
+     "note": ""
+    }
+   ]
+  }
+ ],
+ "statistics": [
+  {
+   "name": "GDP per capita",
+   "value": "US$517",
+   "year": "1965",
+   "source": "https://fred.stlouisfed.org/data/PCAGDPSGA646NWDB"
+  },
+  {
+   "name": "GDP per capita",
+   "value": "US$94,897",
+   "year": "2024",
+   "source": "https://fred.stlouisfed.org/data/PCAGDPSGA646NWDB"
+  },
+  {
+   "name": "Land area",
+   "value": "581.5 km²",
+   "year": "1960",
+   "source": "https://data.gov.sg/dataset/total-land-area-of-singapore"
+  },
+  {
+   "name": "Land area",
+   "value": "744.3 km²",
+   "year": "2024",
+   "source": "https://data.gov.sg/dataset/total-land-area-of-singapore"
+  },
+  {
+   "name": "Population",
+   "value": "6.04 million",
+   "year": "2024",
+   "source": "https://www.population.gov.sg/files/media-centre/publications/Population_in_Brief_2024.pdf"
+  },
+  {
+   "name": "Container throughput",
+   "value": "41.12 million TEU",
+   "year": "2024",
+   "source": "https://www.mpa.gov.sg/media-centre/details/strong-growth-momentum-for-maritime-singapore"
+  },
+  {
+   "name": "Resident fertility rate",
+   "value": "0.97",
+   "year": "2023",
+   "source": "https://asianews.network/?p=136624"
+  },
+  {
+   "name": "Trade / GDP",
+   "value": "326%",
+   "year": "2023",
+   "source": "https://wits.worldbank.org/CountryProfile/en/Country/SGP/Year/LTST"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://fred.stlouisfed.org/data/PCAGDPSGA646NWDB"
+  },
+  {
+   "url": "https://data.gov.sg/dataset/total-land-area-of-singapore"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Geography_of_Singapore"
+  },
+  {
+   "url": "https://www.population.gov.sg/files/media-centre/publications/Population_in_Brief_2024.pdf"
+  },
+  {
+   "url": "https://eresources.nlb.gov.sg/infopedia/articles/SIP_131_2005-01-03.html"
+  },
+  {
+   "url": "https://eresources.nlb.gov.sg/infopedia/articles/SIP_715_2004-12-15.html"
+  },
+  {
+   "url": "https://www.sg101.gov.sg/learn/resources/onthisday-fall-of-singapore"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Fall_of_Singapore"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Singapore"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/1959_Singaporean_general_election"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/History_of_the_State_of_Singapore_(Malaysia)"
+  },
+  {
+   "url": "https://biblioasia.nlb.gov.sg/all-sections/vol-22-issue-2-jul-sep-2026-the-days-leading-to-separation-in-lee-kuan-yews-own-words-/"
+  },
+  {
+   "url": "https://eresources.nlb.gov.sg/infopedia/articles/SIP_1533_2009-06-23.html"
+  },
+  {
+   "url": "https://lkyspp.nus.edu.sg/gia/article/water-policy-in-singapore"
+  },
+  {
+   "url": "https://www.cia.gov/readingroom/node/1922414"
+  },
+  {
+   "url": "https://countrystudies.us/singapore/28.htm"
+  },
+  {
+   "url": "https://www.sg101.gov.sg/economy/surviving-our-independence/1959-1965/"
+  },
+  {
+   "url": "https://www.roots.gov.sg/stories-landing/stories/jurong-industrial-estate/story"
+  },
+  {
+   "url": "https://www.mpa.gov.sg/media-centre/details/strong-growth-momentum-for-maritime-singapore"
+  },
+  {
+   "url": "https://porteconomicsmanagement.org/pemp/contents/part3/changing-geography-of-seaports/singapore-tuas-port-expansion-project"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Changi_Airport"
+  },
+  {
+   "url": "https://www.a-star.edu.sg/News/astarNews/news/features/singapore-semiconductor-rise-ai-chip-wars"
+  },
+  {
+   "url": "https://www.statista.com/topics/9319/manufacturing-sector-in-singapore"
+  },
+  {
+   "url": "https://www.cpib.gov.sg/who-we-are/our-heritage/"
+  },
+  {
+   "url": "https://www.cpib.gov.sg/press-room/2024-ti-cpi-singapore-moves-up-2-spots-to-3rd-least-corrupt-country-and-top-in-asia-pacific/"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Housing_and_Development_Board"
+  },
+  {
+   "url": "https://www.singstat.gov.sg/modules/infographics/-/media/Files/visualising_data/infographics/Population/singapore-population10052024.pdf"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Temasek_Holdings"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/GIC_(sovereign_wealth_fund)"
+  },
+  {
+   "url": "https://wits.worldbank.org/CountryProfile/en/Country/SGP/Year/LTST"
+  },
+  {
+   "url": "https://www.finews.asia/finance/37717-singapore-surpasses-hong-kong-in-financial-hub-index"
+  },
+  {
+   "url": "https://asianews.network/?p=136624"
+  },
+  {
+   "url": "https://www.malaymail.com/amp/news/world/2019/08/19/singapore-to-bolster-coastal-defences-against-rising-sea-levels-says-pm/1781949"
+  },
+  {
+   "url": "https://biblioasia.nlb.gov.sg/vol-15/issue-1/apr-jun-2019/making-history/"
+  },
+  {
+   "url": "https://biblioasia.nlb.gov.sg/vol-12/issue-4/jan-mar-2017/the-sook-ching/"
+  },
+  {
+   "url": "https://roots.gov.sg/Collection-Landing/listing/1579795"
+  },
+  {
+   "url": "https://biblioasia.nlb.gov.sg/vol-18/issue-2/jul-sep-2022/history-singapore-airlines/"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/National_service_in_Singapore"
+  },
+  {
+   "url": "https://eresources.nlb.gov.sg/infopedia/articles/SIP_2014-07-07_133856.html"
+  },
+  {
+   "url": "https://biblioasia.nlb.gov.sg/vol-10/issue-3/oct-dec-2014/singapore-concept-plan/"
+  },
+  {
+   "url": "https://www.nea.gov.sg/media/news/news/index/hawker-culture-is-singapore-s-first-inscription-on-unesco-s-representative-list-of-the-intangible-cultural-heritage-of-humanity"
+  },
+  {
+   "url": "https://www.timeout.com/singapore/news/singapore-changi-airports-new-terminal-5-is-slated-to-open-in-the-mid-2030s-works-have-already-begun-051525"
+  },
+  {
+   "url": "https://www.tabla.com.sg/news/singapore/plot-twice-size-toa-payoh-reclaimed-pulau-tekong-spores-first-polder-project"
+  }
+ ]
+}

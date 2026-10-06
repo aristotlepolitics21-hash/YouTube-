@@ -1,0 +1,17 @@
+project:
+  topic: 'Singapore: How a Tiny Country Became Rich Without Natural Resources'
+  target_minutes: 15
+llm:
+  provider: manual
+assets:
+  photo_providers: [openverse, loc]
+voiceover:
+  pronunciations:
+    "Syonan-to": "Show-nan toe"
+    "Sook Ching": "Sook Ching"
+    "Temasek": "Tuh-mah-sek"
+    "Pulau Bukom": "Poo-lau Boo-kom"
+    "Pulau Tekong": "Poo-lau Teh-kong"
+    "Bukit Ho Swee": "Boo-kit Hoe Swee"
+render:
+  thumbnail_text: "Rich With Nothing"

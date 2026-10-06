@@ -1,0 +1,4502 @@
+{
+ "style_bible": "Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+ "scenes": [
+  {
+   "id": "scene_001",
+   "section": "hook",
+   "narration": "In 1965, a small island was pushed out of a country it had joined less than two years earlier.",
+   "visual": {
+    "kind": "map",
+    "description": "Singapore alone at the tip of the peninsula",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "1965",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia"
+     ],
+     "bbox": [
+      103.2,
+      0.9,
+      104.4,
+      1.7
+     ],
+     "start_zoom": 6
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": true
+  },
+  {
+   "id": "scene_002",
+   "section": "hook",
+   "narration": "It had no oil, no farmland, no hinterland, and not even enough fresh water for its own people.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "No oil. No farmland. No hinterland. Not enough water."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_003",
+   "section": "hook",
+   "narration": "Its own prime minister broke down on television as he announced the news.",
+   "visual": {
+    "kind": "quote",
+    "description": "quote",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "For me, it is a moment of anguish.",
+     "attribution": "Lee Kuan Yew, 9 August 1965"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_004",
+   "section": "hook",
+   "narration": "Today, its people are among the richest in the world.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore skyline Marina Bay",
+    "camera": "drone_forward",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "awe",
+    "search_query": "Singapore skyline Marina Bay",
+    "alt_queries": [
+     "Singapore skyline"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore skyline Marina Bay. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Mood: awe. Camera: slow aerial drone push forward, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_005",
+   "section": "hook",
+   "narration": "Its port is one of the busiest anywhere, and its airport connects the planet.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore port container cranes ships",
+    "camera": "pan_right",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore port container cranes ships",
+    "alt_queries": [
+     "Singapore container terminal"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore port container cranes ships. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_006",
+   "section": "hook",
+   "narration": "How did a tiny country with almost nothing become this?",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore skyline night",
+    "camera": "pull_out",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore skyline night",
+    "alt_queries": [
+     "Marina Bay night"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore skyline night. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pull-back, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_007",
+   "section": "hook",
+   "narration": "This is the story of Singapore.",
+   "visual": {
+    "kind": "title",
+    "description": "title",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "SINGAPORE",
+     "subtitle": "How a tiny country became rich without natural resources"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "epic",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_008",
+   "section": "why-it-matters",
+   "narration": "Singapore's entire land area is less than seven hundred and fifty square kilometres.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "744 km²",
+     "label": "Singapore's land area, 2024",
+     "source": "Singapore Land Authority via data.gov.sg"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_009",
+   "section": "why-it-matters",
+   "narration": "About six million people live on it.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "6.04 million",
+     "label": "Singapore's total population, June 2024",
+     "source": "Population in Brief 2024"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_010",
+   "section": "why-it-matters",
+   "narration": "In 1965, Singapore's output per person was about five hundred dollars a year.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "$517",
+     "label": "GDP per person, 1965 (current US$)",
+     "source": "World Bank"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_011",
+   "section": "why-it-matters",
+   "narration": "By 2024, it was more than ninety thousand dollars.",
+   "visual": {
+    "kind": "comparison",
+    "description": "comparison",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "GDP per person (current US$)",
+     "left": {
+      "label": "1965",
+      "value": "$517"
+     },
+     "right": {
+      "label": "2024",
+      "value": "$94,897"
+     },
+     "source": "World Bank via FRED"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_012",
+   "section": "why-it-matters",
+   "narration": "That is about a hundred and eighty times as much, before adjusting for inflation.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "~180×",
+     "label": "growth in GDP per person, 1965 to 2024 (current US$, not inflation-adjusted)",
+     "source": "World Bank"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_013",
+   "section": "why-it-matters",
+   "narration": "Few countries have ever made that journey from poverty to wealth so quickly.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore Central Business District skyscrapers",
+    "camera": "tilt_up",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore Central Business District skyscrapers",
+    "alt_queries": [
+     "Raffles Place Singapore"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore Central Business District skyscrapers. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_014",
+   "section": "why-it-matters",
+   "narration": "And Singapore did it without the things that usually make countries rich: oil, minerals, land.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "No oil. No minerals. No land to spare."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_015",
+   "section": "why-it-matters",
+   "narration": "So what did it have instead?",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore Strait ships anchored",
+    "camera": "pan_left",
+    "location": "Singapore Strait",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore Strait ships anchored",
+    "alt_queries": [
+     "ships Singapore Strait"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore Strait ships anchored. Location: Singapore Strait. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_016",
+   "section": "origins",
+   "narration": "Start with location.",
+   "visual": {
+    "kind": "map",
+    "description": "Southeast Asia, zooming to Singapore",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Location",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia",
+      "Indonesia"
+     ],
+     "bbox": [
+      95,
+      -8,
+      115,
+      9
+     ],
+     "start_zoom": 3
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_017",
+   "section": "origins",
+   "narration": "Singapore sits at the southern tip of the Malay Peninsula, where the Strait of Malacca opens toward the South China Sea.",
+   "visual": {
+    "kind": "map",
+    "description": "Strait of Malacca and South China Sea",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Between two oceans",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia",
+      "Indonesia"
+     ],
+     "bbox": [
+      98,
+      -2,
+      110,
+      7
+     ],
+     "points": [
+      {
+       "name": "Strait of Malacca",
+       "lat": 3.2,
+       "lon": 100.4
+      },
+      {
+       "name": "South China Sea",
+       "lat": 4.6,
+       "lon": 107.2
+      }
+     ]
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_018",
+   "section": "origins",
+   "narration": "For centuries, ships sailing between India, China and the Middle East have passed through these waters.",
+   "visual": {
+    "kind": "map",
+    "description": "Trade routes through the strait",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "An ancient sea route",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia",
+      "Indonesia",
+      "India",
+      "China",
+      "Thailand",
+      "Vietnam"
+     ],
+     "bbox": [
+      75,
+      -10,
+      125,
+      28
+     ],
+     "start_zoom": 1.5,
+     "routes": [
+      {
+       "from": [
+        8.0,
+        77.5
+       ],
+       "to": [
+        1.29,
+        103.85
+       ],
+       "label": "from India"
+      },
+      {
+       "from": [
+        1.29,
+        103.85
+       ],
+       "to": [
+        22.3,
+        114.2
+       ],
+       "label": "to China"
+      }
+     ]
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_019",
+   "section": "origins",
+   "narration": "In January 1819, an official of the British East India Company, Stamford Raffles, arrived on the island.",
+   "visual": {
+    "kind": "photo",
+    "description": "The statue of Stamford Raffles at his landing site, today",
+    "camera": "tilt_up",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Raffles statue Singapore",
+    "alt_queries": [
+     "Sir Stamford Raffles statue"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "The statue of Stamford Raffles at his landing site, today. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_020",
+   "section": "origins",
+   "narration": "Britain wanted a port on this route that its Dutch rivals, the main European power in the region, could not control.",
+   "visual": {
+    "kind": "map",
+    "description": "British and Dutch spheres",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "A rival to the Dutch",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia",
+      "Indonesia"
+     ],
+     "bbox": [
+      95,
+      -9,
+      120,
+      8
+     ],
+     "labels": [
+      "Singapore",
+      "Indonesia"
+     ]
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_021",
+   "section": "origins",
+   "narration": "At the time, perhaps a thousand people lived there.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "~1,000",
+     "label": "estimated population of the island in 1819 (estimates vary)",
+     "source": "National Library Board, Singapore"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_022",
+   "section": "origins",
+   "narration": "On the sixth of February, he signed a treaty with the local rulers that allowed the British to set up a trading post.",
+   "visual": {
+    "kind": "timeline",
+    "description": "timeline",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "A trading post",
+     "events": [
+      {
+       "year": "Jan 1819",
+       "label": "Raffles arrives"
+      },
+      {
+       "year": "6 Feb 1819",
+       "label": "Treaty with Sultan Hussein and the Temenggong"
+      }
+     ],
+     "highlight": 1
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_023",
+   "section": "origins",
+   "narration": "Singapore became a free port, open to traders from everywhere.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore harbour, early 1900s",
+    "camera": "pan_right",
+    "location": "Singapore",
+    "period": "1900",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore harbor",
+    "alt_queries": [
+     "Singapore river boats"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore harbour, early 1900s. Location: Singapore. Time period: 1900. Lighting: natural cinematic lighting. historically accurate 1900s clothing, hairstyles, vehicles, technology and architecture; no smartphones, no flat screens, no modern cars, no modern glass towers; period-correct photographic look. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_024",
+   "section": "origins",
+   "narration": "Treaties signed in 1824, with the Dutch and with the local rulers, made the island British.",
+   "visual": {
+    "kind": "timeline",
+    "description": "timeline",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Becoming British",
+     "events": [
+      {
+       "year": "1819",
+       "label": "Trading post"
+      },
+      {
+       "year": "1824",
+       "label": "Anglo-Dutch Treaty"
+      },
+      {
+       "year": "1824",
+       "label": "Island ceded to the British"
+      }
+     ],
+     "highlight": 2
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_025",
+   "section": "origins",
+   "narration": "Merchants and workers came from China, India, the Malay world and far beyond, and the town grew quickly.",
+   "visual": {
+    "kind": "photo",
+    "description": "A busy Singapore street around 1900",
+    "camera": "push_in",
+    "location": "Singapore",
+    "period": "1900",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore street",
+    "alt_queries": [
+     "Singapore Chinatown street"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "A busy Singapore street around 1900. Location: Singapore. Time period: 1900. Lighting: natural cinematic lighting. historically accurate 1900s clothing, hairstyles, vehicles, technology and architecture; no smartphones, no flat screens, no modern cars, no modern glass towers; period-correct photographic look. Camera: slow push-in, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_026",
+   "section": "origins",
+   "narration": "Rubber and tin from the Malay Peninsula flowed out through its harbour, and goods from Europe and India flowed in.",
+   "visual": {
+    "kind": "photo",
+    "description": "Rubber and tin from the peninsula",
+    "camera": "pan_right",
+    "location": "Malaya",
+    "period": "1920",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "rubber plantation Malaya",
+    "alt_queries": [
+     "rubber tapping",
+     "tin mine Malaya"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Rubber and tin from the peninsula. Location: Malaya. Time period: 1920. Lighting: natural cinematic lighting. historically accurate 1920s clothing, hairstyles, vehicles, technology and architecture; no smartphones, no flat screens, no modern cars, no modern glass towers; period-correct photographic look. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_027",
+   "section": "origins",
+   "narration": "In 1826, it became part of the Straits Settlements, and ten years later their capital.",
+   "visual": {
+    "kind": "timeline",
+    "description": "timeline",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Colonial Singapore",
+     "events": [
+      {
+       "year": "1819",
+       "label": "Trading post"
+      },
+      {
+       "year": "1826",
+       "label": "Straits Settlements"
+      },
+      {
+       "year": "1836",
+       "label": "Capital of the Settlements"
+      }
+     ],
+     "highlight": 2
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_028",
+   "section": "origins",
+   "narration": "For more than a century, Singapore was a busy colonial port, built on one thing: trade.",
+   "visual": {
+    "kind": "photo",
+    "description": "Colonial wharves",
+    "camera": "pan_left",
+    "location": "Singapore",
+    "period": "1910",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore wharf",
+    "alt_queries": [
+     "Singapore quay",
+     "Singapore harbour"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Colonial wharves. Location: Singapore. Time period: 1910. Lighting: natural cinematic lighting. historically accurate 1910s clothing, hairstyles, vehicles, technology and architecture; no smartphones, no flat screens, no modern cars, no modern glass towers; period-correct photographic look. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_029",
+   "section": "history",
+   "narration": "That world collapsed in February 1942.",
+   "visual": {
+    "kind": "title",
+    "description": "title",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "February 1942"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_030",
+   "section": "history",
+   "narration": "Japanese forces crossed the narrow Johor Strait and attacked the island from the north-west.",
+   "visual": {
+    "kind": "map",
+    "description": "The Johor Strait crossing",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "The invasion",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia"
+     ],
+     "bbox": [
+      103.45,
+      1.15,
+      104.15,
+      1.6
+     ],
+     "routes": [
+      {
+       "from": [
+        1.56,
+        103.62
+       ],
+       "to": [
+        1.42,
+        103.68
+       ],
+       "label": "8 February 1942"
+      }
+     ]
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_031",
+   "section": "history",
+   "narration": "On the fifteenth of February, the British commander surrendered.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "15 Feb 1942",
+     "label": "Singapore surrenders to Japan",
+     "source": "National Archives of Singapore"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_032",
+   "section": "history",
+   "narration": "About eighty thousand British, Indian, Australian and local troops became prisoners of war.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "80,000",
+     "label": "Allied troops taken prisoner at Singapore",
+     "source": "National Archives of Singapore"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_033",
+   "section": "history",
+   "narration": "Singapore was renamed Syonan-to, and endured three and a half years of occupation.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "Renamed Syonan-to. Three and a half years of occupation."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_034",
+   "section": "history",
+   "narration": "In the first weeks, thousands of Chinese civilians were rounded up and killed in a purge known as Sook Ching.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "Sook Ching, 1942: tens of thousands of civilians killed. Estimates still vary widely."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_035",
+   "section": "history",
+   "narration": "Food ran short, and many families survived on tapioca and sweet potatoes.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "Tapioca. Sweet potatoes. Hunger."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_036",
+   "section": "history",
+   "narration": "When the British returned in September 1945, the old idea that they could always protect the colony was gone.",
+   "visual": {
+    "kind": "timeline",
+    "description": "timeline",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Occupation",
+     "events": [
+      {
+       "year": "Feb 1942",
+       "label": "Surrender"
+      },
+      {
+       "year": "1942-45",
+       "label": "Syonan-to"
+      },
+      {
+       "year": "Sep 1945",
+       "label": "British return"
+      }
+     ],
+     "highlight": 2
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_037",
+   "section": "history",
+   "narration": "The years that followed brought strikes, riots and a long struggle over who would govern the colony.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "Strikes. Riots. A fight over who would rule."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_038",
+   "section": "history",
+   "narration": "In 1959, Singapore won self-government, and Lee Kuan Yew of the People's Action Party became its first prime minister.",
+   "visual": {
+    "kind": "photo",
+    "description": "Lee Kuan Yew",
+    "camera": "push_in",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Lee Kuan Yew",
+    "alt_queries": [
+     "Lee Kuan Yew portrait"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Lee Kuan Yew. Lighting: natural cinematic lighting. Camera: slow push-in, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_039",
+   "section": "history",
+   "narration": "His government believed the island was too small to survive on its own.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "Too small to survive alone?"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_040",
+   "section": "history",
+   "narration": "So in September 1963, Singapore joined the new Federation of Malaysia.",
+   "visual": {
+    "kind": "map",
+    "description": "Malaysia in 1963 including Singapore",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Malaysia, 1963",
+     "focus": [
+      "Malaysia",
+      "Singapore"
+     ],
+     "context": [
+      "Indonesia",
+      "Brunei"
+     ],
+     "bbox": [
+      99,
+      -1,
+      120,
+      8
+     ],
+     "labels": [
+      "Malaysia"
+     ]
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_041",
+   "section": "history",
+   "narration": "It did not last. There were deep political disagreements, and deadly racial riots in 1964.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "Political disagreements. Racial riots in 1964."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_042",
+   "section": "history",
+   "narration": "On the ninth of August 1965, Singapore separated from Malaysia and became an independent country.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "9 Aug 1965",
+     "label": "Singapore becomes independent",
+     "source": "National Library Board, Singapore"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_043",
+   "section": "history",
+   "narration": "Lee Kuan Yew called it a moment of anguish. He had believed in merger all his adult life.",
+   "visual": {
+    "kind": "quote",
+    "description": "quote",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "For me, it is a moment of anguish.",
+     "attribution": "Lee Kuan Yew, press conference, 9 August 1965"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_044",
+   "section": "history",
+   "narration": "Singapore was now a nation. Whether it could survive was a different question.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "A nation. But could it survive?"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_045",
+   "section": "geography",
+   "narration": "Look at what the new country had to work with.",
+   "visual": {
+    "kind": "map",
+    "description": "Singapore island close up",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "The new nation",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia",
+      "Indonesia"
+     ],
+     "bbox": [
+      103.55,
+      1.15,
+      104.1,
+      1.48
+     ],
+     "start_zoom": 2
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_046",
+   "section": "geography",
+   "narration": "The main island is only about fifty kilometres from east to west.",
+   "visual": {
+    "kind": "map",
+    "description": "The island's width",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "About 50 km across",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia"
+     ],
+     "bbox": [
+      103.55,
+      1.15,
+      104.1,
+      1.48
+     ],
+     "points": [
+      {
+       "name": "West",
+       "lat": 1.32,
+       "lon": 103.64
+      },
+      {
+       "name": "East",
+       "lat": 1.36,
+       "lon": 104.03
+      }
+     ]
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_047",
+   "section": "geography",
+   "narration": "Much of it was swamp, forest or crowded town, with very little room to spare.",
+   "visual": {
+    "kind": "photo",
+    "description": "Mangrove swamp, as much of the coast once was",
+    "camera": "pan_right",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore mangrove swamp",
+    "alt_queries": [
+     "Sungei Buloh mangroves"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Mangrove swamp, as much of the coast once was. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_048",
+   "section": "geography",
+   "narration": "No oil. No gas. No minerals worth mining. No room for large farms.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "No oil. No gas. No minerals. No farmland."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_049",
+   "section": "geography",
+   "narration": "Worst of all, not enough water for a growing city.",
+   "visual": {
+    "kind": "photo",
+    "description": "A reservoir in Singapore",
+    "camera": "pan_right",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore reservoir",
+    "alt_queries": [
+     "MacRitchie Reservoir"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "A reservoir in Singapore. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_050",
+   "section": "geography",
+   "narration": "Since 1961 and 1962, Singapore had depended on agreements to buy water from the Malaysian state of Johor, across the strait.",
+   "visual": {
+    "kind": "map",
+    "description": "Water from Johor",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Water from next door",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia"
+     ],
+     "bbox": [
+      103.3,
+      1.15,
+      104.3,
+      1.95
+     ],
+     "routes": [
+      {
+       "from": [
+        1.78,
+        103.75
+       ],
+       "to": [
+        1.42,
+        103.78
+       ],
+       "label": "water from Johor"
+      }
+     ]
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_051",
+   "section": "geography",
+   "narration": "Its neighbours, Malaysia and Indonesia, were far larger, and relations in the region were tense.",
+   "visual": {
+    "kind": "map",
+    "description": "Singapore between its large neighbours",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Big neighbours",
+     "focus": [
+      "Malaysia",
+      "Indonesia"
+     ],
+     "context": [
+      "Singapore"
+     ],
+     "bbox": [
+      94,
+      -11,
+      141,
+      8
+     ],
+     "labels": [
+      "Malaysia",
+      "Indonesia"
+     ]
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_052",
+   "section": "geography",
+   "narration": "Its population, about two million people, was crowded, mostly poor, and growing.",
+   "visual": {
+    "kind": "photo",
+    "description": "Crowded streets of old Singapore",
+    "camera": "pan_left",
+    "location": "Singapore",
+    "period": "1930",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore crowded street",
+    "alt_queries": [
+     "Singapore street people",
+     "Chinatown Singapore"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Crowded streets of old Singapore. Location: Singapore. Time period: 1930. Lighting: natural cinematic lighting. historically accurate 1930s clothing, hairstyles, vehicles, technology and architecture; no smartphones, no flat screens, no modern cars, no modern glass towers; period-correct photographic look. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_053",
+   "section": "geography",
+   "narration": "Many lived in crowded shophouses and wooden villages, and jobs were scarce.",
+   "visual": {
+    "kind": "photo",
+    "description": "Shophouses",
+    "camera": "push_in",
+    "location": "Singapore",
+    "period": "1930",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore shophouses",
+    "alt_queries": [
+     "Singapore houses"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Shophouses. Location: Singapore. Time period: 1930. Lighting: natural cinematic lighting. historically accurate 1930s clothing, hairstyles, vehicles, technology and architecture; no smartphones, no flat screens, no modern cars, no modern glass towers; period-correct photographic look. Camera: slow push-in, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_054",
+   "section": "turning-point",
+   "narration": "Then, in January 1968, came a second shock.",
+   "visual": {
+    "kind": "title",
+    "description": "title",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "January 1968"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_055",
+   "section": "turning-point",
+   "narration": "Britain announced it would pull its military forces out of the region by 1971.",
+   "visual": {
+    "kind": "timeline",
+    "description": "timeline",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Britain leaves",
+     "events": [
+      {
+       "year": "Jan 1968",
+       "label": "Withdrawal announced"
+      },
+      {
+       "year": "Oct 1971",
+       "label": "Most forces gone"
+      }
+     ],
+     "highlight": 0
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_056",
+   "section": "turning-point",
+   "narration": "Its bases in Singapore generated around a fifth of the economy.",
+   "visual": {
+    "kind": "chart",
+    "description": "chart",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Share of Singapore's economy from British bases, 1960s",
+     "type": "bar",
+     "unit": "%",
+     "source": "US Library of Congress country study; CIA (1968)",
+     "bars": [
+      {
+       "label": "British bases",
+       "value": 20
+      },
+      {
+       "label": "Everything else",
+       "value": 80
+      }
+     ],
+     "highlight": 0
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_057",
+   "section": "turning-point",
+   "narration": "They employed tens of thousands of local workers and occupied about twelve percent of the island's land.",
+   "visual": {
+    "kind": "comparison",
+    "description": "comparison",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "The British bases",
+     "left": {
+      "label": "Direct jobs",
+      "value": "54,000"
+     },
+     "right": {
+      "label": "Share of land",
+      "value": "12%"
+     },
+     "source": "US Library of Congress country study"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_058",
+   "section": "turning-point",
+   "narration": "Singapore had already lost its hoped-for common market when it left Malaysia.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "First the common market. Now the bases."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_059",
+   "section": "turning-point",
+   "narration": "Now it was about to lose its protector and one of its biggest employers.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "No protector. Fewer jobs."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_060",
+   "section": "turning-point",
+   "narration": "The government moved fast. In 1967 it began national service, to build an army of its own.",
+   "visual": {
+    "kind": "timeline",
+    "description": "timeline",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Moving fast",
+     "events": [
+      {
+       "year": "1967",
+       "label": "National service begins"
+      },
+      {
+       "year": "1968",
+       "label": "New labour laws"
+      },
+      {
+       "year": "1971",
+       "label": "First Concept Plan"
+      }
+     ],
+     "highlight": 0
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_061",
+   "section": "turning-point",
+   "narration": "In 1968, new labour laws limited strikes and gave employers more control, to make the island more attractive to investors.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "1968: new labour laws. Fewer strikes. More investors."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_062",
+   "section": "turning-point",
+   "narration": "And in 1971, a long-term Concept Plan mapped out land, roads, housing and industry for decades ahead.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "1971",
+     "label": "First Concept Plan: land use mapped decades ahead",
+     "source": "National Library Board, Singapore"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_063",
+   "section": "turning-point",
+   "narration": "The government had to decide what kind of economy this island would have.",
+   "visual": {
+    "kind": "photo",
+    "description": "Parliament House",
+    "camera": "push_in",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore Parliament House",
+    "alt_queries": [
+     "Old Parliament House Singapore"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Parliament House. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow push-in, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_064",
+   "section": "transformation",
+   "narration": "Part of the answer was already under way.",
+   "visual": {
+    "kind": "photo",
+    "description": "Jurong today",
+    "camera": "drone_forward",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Jurong Singapore",
+    "alt_queries": [
+     "Jurong industrial"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Jurong today. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow aerial drone push forward, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_065",
+   "section": "transformation",
+   "narration": "In 1961, a United Nations team led by the Dutch economist Albert Winsemius had advised Singapore to industrialise, fast.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "1961: a UN team led by Albert Winsemius says industrialise, fast."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_066",
+   "section": "transformation",
+   "narration": "That year, the government set up the Economic Development Board to win investment and create jobs.",
+   "visual": {
+    "kind": "timeline",
+    "description": "timeline",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Building an economy",
+     "events": [
+      {
+       "year": "1961",
+       "label": "Economic Development Board"
+      },
+      {
+       "year": "1963",
+       "label": "First Jurong factory"
+      }
+     ],
+     "highlight": 0
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_067",
+   "section": "transformation",
+   "narration": "Its first big project was a vast industrial estate on swampy land at Jurong, in the west of the island.",
+   "visual": {
+    "kind": "map",
+    "description": "Jurong in the west",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Jurong",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia"
+     ],
+     "bbox": [
+      103.55,
+      1.18,
+      104.1,
+      1.5
+     ],
+     "points": [
+      {
+       "name": "Jurong",
+       "lat": 1.333,
+       "lon": 103.7
+      }
+     ]
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_068",
+   "section": "transformation",
+   "narration": "Many newly independent countries at the time were wary of foreign multinational companies.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "Many new nations kept foreign companies out."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_069",
+   "section": "transformation",
+   "narration": "Singapore did the opposite. It invited them in.",
+   "visual": {
+    "kind": "title",
+    "description": "title",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "It invited them in."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_070",
+   "section": "transformation",
+   "narration": "Foreign companies brought money, technology and know-how, and Singaporean workers learned on the job.",
+   "visual": {
+    "kind": "photo",
+    "description": "Skilled factory work",
+    "camera": "push_in",
+    "location": "",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "technician factory",
+    "alt_queries": [
+     "engineer manufacturing"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Skilled factory work. Time period: present. Lighting: natural cinematic lighting. Camera: slow push-in, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_071",
+   "section": "transformation",
+   "narration": "Factories making clothing, electronics and parts for global brands opened across the island, and jobs followed.",
+   "visual": {
+    "kind": "photo",
+    "description": "An electronics assembly line",
+    "camera": "pan_right",
+    "location": "",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "electronics factory workers",
+    "alt_queries": [
+     "factory assembly line electronics"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "An electronics assembly line. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_072",
+   "section": "transformation",
+   "narration": "Oil companies built refineries here too. Shell opened the first, on the island of Pulau Bukom, in 1961.",
+   "visual": {
+    "kind": "photo",
+    "description": "Refineries off Singapore",
+    "camera": "pan_left",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Pulau Bukom refinery",
+    "alt_queries": [
+     "Singapore oil refinery",
+     "Jurong Island refinery"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Refineries off Singapore. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_073",
+   "section": "transformation",
+   "narration": "A country with no oil of its own became one of Asia's great refining centres.",
+   "visual": {
+    "kind": "title",
+    "description": "title",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "No oil. Huge refineries."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_074",
+   "section": "transformation",
+   "narration": "Trade kept growing too, and Singapore's harbour became one of the busiest ports on the planet.",
+   "visual": {
+    "kind": "photo",
+    "description": "The port of Singapore",
+    "camera": "drone_forward",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore port",
+    "alt_queries": [
+     "Singapore container port",
+     "PSA Singapore"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "The port of Singapore. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow aerial drone push forward, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_075",
+   "section": "transformation",
+   "narration": "In 2024, it handled a record forty one million containers, counted in twenty foot units.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "41.12 million",
+     "label": "containers handled in 2024 (twenty-foot equivalent units)",
+     "source": "Maritime and Port Authority of Singapore"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": true
+  },
+  {
+   "id": "scene_076",
+   "section": "transformation",
+   "narration": "About nine in ten are transshipped, moved from one ship to another on the way somewhere else.",
+   "visual": {
+    "kind": "chart",
+    "description": "chart",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Singapore's container traffic",
+     "type": "bar",
+     "unit": "%",
+     "source": "Maritime and Port Authority of Singapore",
+     "bars": [
+      {
+       "label": "Transshipment",
+       "value": 90
+      },
+      {
+       "label": "Local cargo",
+       "value": 10
+      }
+     ],
+     "highlight": 0
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_077",
+   "section": "transformation",
+   "narration": "In 1981, Changi Airport opened, making Singapore a hub of the air as well as the sea.",
+   "visual": {
+    "kind": "photo",
+    "description": "Changi Airport",
+    "camera": "pan_left",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Changi Airport",
+    "alt_queries": [
+     "Changi Airport terminal"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Changi Airport. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_078",
+   "section": "transformation",
+   "narration": "Singapore Airlines, formed in 1972, carried the country's name around the world.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore Airlines aircraft",
+    "camera": "pan_right",
+    "location": "",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore Airlines aircraft",
+    "alt_queries": [
+     "Singapore Airlines A380",
+     "Singapore Airlines plane"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore Airlines aircraft. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_079",
+   "section": "transformation",
+   "narration": "Over the decades, the economy climbed up the value chain, into chemicals, precision engineering, finance and semiconductors.",
+   "visual": {
+    "kind": "photo",
+    "description": "Marina Bay Financial Centre",
+    "camera": "tilt_up",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Marina Bay Financial Centre",
+    "alt_queries": [
+     "Singapore financial district"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Marina Bay Financial Centre. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 2
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_080",
+   "section": "transformation",
+   "narration": "Manufacturing is still about a fifth of the economy, and around one in every ten chips made in the world is made in Singapore.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "1 in 10",
+     "label": "of the world's chips are made in Singapore",
+     "source": "A*STAR"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_081",
+   "section": "policies",
+   "narration": "Investors did not come only for the location.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore skyline day",
+    "camera": "pan_right",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore skyline day",
+    "alt_queries": [
+     "Singapore city"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore skyline day. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_082",
+   "section": "policies",
+   "narration": "They came because the government worked, and because it was clean.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "A government that worked. And was clean."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_083",
+   "section": "policies",
+   "narration": "Civil servants were judged on results, and the rules on bribery applied all the way up.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore government buildings",
+    "camera": "tilt_up",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore government buildings",
+    "alt_queries": [
+     "Singapore civic district"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore government buildings. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_084",
+   "section": "policies",
+   "narration": "The streets were cleaned up, and littering was punished with fines.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore clean street",
+    "camera": "pan_left",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore clean street",
+    "alt_queries": [
+     "Singapore street trees"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore clean street. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_085",
+   "section": "policies",
+   "narration": "An anti-corruption agency, set up in 1952, was given tough new laws in 1960 to go after bribery at every level.",
+   "visual": {
+    "kind": "timeline",
+    "description": "timeline",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Fighting corruption",
+     "events": [
+      {
+       "year": "1952",
+       "label": "Corrupt Practices Investigation Bureau"
+      },
+      {
+       "year": "1960",
+       "label": "Prevention of Corruption Act"
+      }
+     ],
+     "highlight": 1
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_086",
+   "section": "policies",
+   "narration": "In 2024, Transparency International ranked Singapore the third least corrupt country in the world.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "#3",
+     "label": "of 180 countries, Corruption Perceptions Index 2024",
+     "source": "Transparency International / CPIB"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_087",
+   "section": "policies",
+   "narration": "Then there was housing.",
+   "visual": {
+    "kind": "photo",
+    "description": "Public housing blocks",
+    "camera": "tilt_up",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "HDB flats Singapore",
+    "alt_queries": [
+     "Singapore public housing"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Public housing blocks. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_088",
+   "section": "policies",
+   "narration": "In 1960, the government created the Housing and Development Board to replace overcrowded slums with modern flats.",
+   "visual": {
+    "kind": "photo",
+    "description": "HDB estate Singapore",
+    "camera": "pan_left",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "HDB estate Singapore",
+    "alt_queries": [
+     "Singapore housing estate"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "HDB estate Singapore. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_089",
+   "section": "policies",
+   "narration": "In May 1961, a huge fire in Bukit Ho Swee left about sixteen thousand people homeless.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "16,000",
+     "label": "people made homeless by the Bukit Ho Swee fire, 1961",
+     "source": "Housing and Development Board history"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": true
+  },
+  {
+   "id": "scene_090",
+   "section": "policies",
+   "narration": "The board rehoused them and kept building at remarkable speed: twenty one thousand flats in less than three years.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "21,000",
+     "label": "flats built in under three years",
+     "source": "Housing and Development Board history"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_091",
+   "section": "policies",
+   "narration": "From 1968, workers could use savings from the Central Provident Fund, a compulsory savings scheme, to buy their homes.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "1968: Pension savings can buy a home."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_092",
+   "section": "policies",
+   "narration": "Today, about seventy seven percent of residents live in public housing, and around nine in ten own their home.",
+   "visual": {
+    "kind": "comparison",
+    "description": "comparison",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Housing in Singapore, 2023",
+     "left": {
+      "label": "Live in public housing",
+      "value": "77%"
+     },
+     "right": {
+      "label": "Own their home",
+      "value": "~90%"
+     },
+     "source": "Department of Statistics Singapore"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_093",
+   "section": "policies",
+   "narration": "Owning a home gave ordinary people a direct stake in the country's success.",
+   "visual": {
+    "kind": "photo",
+    "description": "HDB void deck",
+    "camera": "push_in",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "HDB void deck",
+    "alt_queries": [
+     "Singapore HDB playground",
+     "Singapore neighbourhood"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "HDB void deck. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow push-in, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_094",
+   "section": "policies",
+   "narration": "The state saved and invested too. Temasek Holdings was set up in 1974, and GIC in 1981, to manage its assets and reserves.",
+   "visual": {
+    "kind": "timeline",
+    "description": "timeline",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Saving for the long run",
+     "events": [
+      {
+       "year": "1974",
+       "label": "Temasek Holdings"
+      },
+      {
+       "year": "1981",
+       "label": "GIC"
+      }
+     ],
+     "highlight": 1
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_095",
+   "section": "policies",
+   "narration": "And it chose English as a common working language, alongside each community's mother tongue.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "English to work together. Mother tongues to stay rooted."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_096",
+   "section": "policies",
+   "narration": "None of this was gentle. The government was strict, and critics point to tight limits on the press and the political opposition.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "The trade-off: a strict state, a tightly controlled press, a weak opposition."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_097",
+   "section": "people",
+   "narration": "Singapore's real resource has always been its people.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore people street",
+    "camera": "pan_right",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore people street",
+    "alt_queries": [
+     "Singapore crowd"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore people street. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_098",
+   "section": "people",
+   "narration": "Most are of Chinese, Malay or Indian descent, alongside many other communities.",
+   "visual": {
+    "kind": "photo",
+    "description": "Little India Singapore",
+    "camera": "push_in",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Little India Singapore",
+    "alt_queries": [
+     "Serangoon Road Singapore"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Little India Singapore. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow push-in, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_099",
+   "section": "people",
+   "narration": "Within a single generation, many families moved from villages and crowded shophouses into high-rise flats.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore HDB flats",
+    "camera": "tilt_up",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore HDB flats",
+    "alt_queries": [
+     "Toa Payoh Singapore"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore HDB flats. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_100",
+   "section": "people",
+   "narration": "Each has left its mark on the city's neighbourhoods, festivals and food.",
+   "visual": {
+    "kind": "photo",
+    "description": "Kampong Glam Singapore",
+    "camera": "tilt_up",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Kampong Glam Singapore",
+    "alt_queries": [
+     "Sultan Mosque Singapore"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Kampong Glam Singapore. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_101",
+   "section": "people",
+   "narration": "Public housing estates use ethnic quotas, so that communities live side by side rather than apart.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore HDB estate aerial",
+    "camera": "drone_forward",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore HDB estate aerial",
+    "alt_queries": [
+     "HDB blocks"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore HDB estate aerial. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow aerial drone push forward, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_102",
+   "section": "people",
+   "narration": "Hawker centres, where cheap meals from every tradition are sold under one roof, became part of the national identity.",
+   "visual": {
+    "kind": "photo",
+    "description": "hawker centre Singapore",
+    "camera": "pan_left",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "hawker centre Singapore",
+    "alt_queries": [
+     "Singapore food court hawker"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "hawker centre Singapore. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_103",
+   "section": "people",
+   "narration": "In 2020, UNESCO recognised Singapore's hawker culture as part of humanity's intangible heritage.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore hawker food",
+    "camera": "push_in",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore hawker food",
+    "alt_queries": [
+     "Singapore street food"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore hawker food. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow push-in, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 2
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_104",
+   "section": "people",
+   "narration": "Education became a national priority, and Singapore's students now regularly score near the top of international tests.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore students",
+    "camera": "pan_right",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore students",
+    "alt_queries": [
+     "Singapore school",
+     "Singapore university"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore students. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_105",
+   "section": "people",
+   "narration": "Today, about six million people live on the island, and nearly a third of them are not citizens or permanent residents.",
+   "visual": {
+    "kind": "chart",
+    "description": "chart",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Who lives in Singapore, June 2024 (millions)",
+     "type": "bar",
+     "source": "Population in Brief 2024",
+     "bars": [
+      {
+       "label": "Citizens",
+       "value": 3.64
+      },
+      {
+       "label": "Permanent residents",
+       "value": 0.54
+      },
+      {
+       "label": "Non-residents",
+       "value": 1.86
+      }
+     ]
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_106",
+   "section": "global-role",
+   "narration": "For a country this small, Singapore's reach is enormous.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore port night",
+    "camera": "pull_out",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore port night",
+    "alt_queries": [
+     "Singapore harbour night"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore port night. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pull-back, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "epic",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_107",
+   "section": "global-role",
+   "narration": "Its total trade is worth more than three times its whole economy.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "326%",
+     "label": "trade as a share of GDP, 2023",
+     "source": "World Bank WITS"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "epic",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_108",
+   "section": "global-role",
+   "narration": "It is one of the world's leading financial centres, ranked in the global top five.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore financial district skyscrapers",
+    "camera": "tilt_up",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore financial district skyscrapers",
+    "alt_queries": [
+     "Raffles Place towers"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore financial district skyscrapers. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "epic",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_109",
+   "section": "global-role",
+   "narration": "Hundreds of global companies run their Asian operations from the island.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore office towers",
+    "camera": "pan_left",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore office towers",
+    "alt_queries": [
+     "Singapore business district"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore office towers. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "epic",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_110",
+   "section": "global-role",
+   "narration": "And Changi has been voted the world's best airport many times.",
+   "visual": {
+    "kind": "photo",
+    "description": "Inside Changi Airport",
+    "camera": "pan_right",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Changi Airport interior",
+    "alt_queries": [
+     "Changi Airport terminal"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Inside Changi Airport. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "epic",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_111",
+   "section": "global-role",
+   "narration": "Its shipping lanes, airport and banks tie Southeast Asia to the rest of the world.",
+   "visual": {
+    "kind": "map",
+    "description": "Routes radiating from Singapore",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "A hub",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia",
+      "Indonesia",
+      "India",
+      "China",
+      "Australia"
+     ],
+     "bbox": [
+      70,
+      -38,
+      155,
+      40
+     ],
+     "start_zoom": 1.3,
+     "routes": [
+      {
+       "from": [
+        1.29,
+        103.85
+       ],
+       "to": [
+        13.1,
+        80.3
+       ],
+       "label": "India"
+      },
+      {
+       "from": [
+        1.29,
+        103.85
+       ],
+       "to": [
+        31.2,
+        121.5
+       ],
+       "label": "China"
+      },
+      {
+       "from": [
+        1.29,
+        103.85
+       ],
+       "to": [
+        -33.9,
+        151.2
+       ],
+       "label": "Australia"
+      },
+      {
+       "from": [
+        1.29,
+        103.85
+       ],
+       "to": [
+        25.2,
+        55.3
+       ],
+       "label": "Gulf"
+      }
+     ]
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "epic",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_112",
+   "section": "global-role",
+   "narration": "And it works hard to stay on good terms with both the United States and China.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "Friends with Washington. Friends with Beijing."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_113",
+   "section": "problems",
+   "narration": "Success has brought problems of its own.",
+   "visual": {
+    "kind": "title",
+    "description": "title",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "The price of success"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_114",
+   "section": "problems",
+   "narration": "Singapore is regularly ranked among the most expensive cities in the world to live in.",
+   "visual": {
+    "kind": "photo",
+    "description": "Orchard Road Singapore",
+    "camera": "pan_left",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Orchard Road Singapore",
+    "alt_queries": [
+     "Singapore shopping street"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Orchard Road Singapore. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_115",
+   "section": "problems",
+   "narration": "Its people are having very few children. In 2023, the fertility rate fell below one child per woman for the first time.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "0.97",
+     "label": "births per woman, Singapore residents, 2023",
+     "source": "Singapore Department of Statistics"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": true
+  },
+  {
+   "id": "scene_116",
+   "section": "problems",
+   "narration": "About one in five citizens is now sixty five or older, and by 2030 it will be one in four.",
+   "visual": {
+    "kind": "comparison",
+    "description": "comparison",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Citizens aged 65 and over",
+     "left": {
+      "label": "2024",
+      "value": "1 in 5"
+     },
+     "right": {
+      "label": "2030",
+      "value": "1 in 4"
+     },
+     "source": "Population in Brief 2024"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_117",
+   "section": "problems",
+   "narration": "Land is still scarce, and the economy relies heavily on foreign workers.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore construction site",
+    "camera": "pan_right",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore construction site",
+    "alt_queries": [
+     "construction workers Singapore"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore construction site. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_118",
+   "section": "problems",
+   "narration": "Housing prices have climbed, and many young couples worry about whether they can afford a home.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore condominium",
+    "camera": "tilt_up",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore condominium",
+    "alt_queries": [
+     "Singapore apartments"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore condominium. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_119",
+   "section": "problems",
+   "narration": "And as a low-lying island, Singapore is exposed to rising seas, which could rise by up to a metre by the end of the century.",
+   "visual": {
+    "kind": "photo",
+    "description": "East Coast Park Singapore sea",
+    "camera": "pan_left",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "East Coast Park Singapore sea",
+    "alt_queries": [
+     "Singapore coastline"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "East Coast Park Singapore sea. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan left, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 2
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_120",
+   "section": "problems",
+   "narration": "In 2019, the prime minister said protecting the coast could cost a hundred billion Singapore dollars or more over the coming decades.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "S$100 billion+",
+     "label": "estimated cost of coastal protection over 50 to 100 years",
+     "source": "PM Lee Hsien Loong, National Day Rally 2019"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "tense",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_121",
+   "section": "problems",
+   "narration": "And some Singaporeans ask whether a system built for growth leaves enough room for dissent.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "Growth first. But how much room for dissent?"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_122",
+   "section": "future",
+   "narration": "So Singapore is doing what it has always done: planning decades ahead.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore Gardens by the Bay",
+    "camera": "drone_forward",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore Gardens by the Bay",
+    "alt_queries": [
+     "Supertree Grove"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore Gardens by the Bay. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow aerial drone push forward, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_123",
+   "section": "future",
+   "narration": "It has grown its own land by more than a quarter since the 1960s, by reclaiming it from the sea.",
+   "visual": {
+    "kind": "chart",
+    "description": "chart",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Singapore's land area (km²)",
+     "type": "bar",
+     "source": "Singapore Land Authority via data.gov.sg",
+     "bars": [
+      {
+       "label": "1960",
+       "value": 581.5
+      },
+      {
+       "label": "2024",
+       "value": 744.3
+      }
+     ],
+     "highlight": 1
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_124",
+   "section": "future",
+   "narration": "Off the island of Pulau Tekong, it has built its first polder, Dutch style: land below sea level, protected by a wall.",
+   "visual": {
+    "kind": "map",
+    "description": "Pulau Tekong polder",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Pulau Tekong",
+     "focus": [
+      "Singapore"
+     ],
+     "context": [
+      "Malaysia"
+     ],
+     "bbox": [
+      103.75,
+      1.25,
+      104.15,
+      1.5
+     ],
+     "points": [
+      {
+       "name": "Pulau Tekong polder",
+       "lat": 1.42,
+       "lon": 104.03
+      }
+     ]
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_125",
+   "section": "future",
+   "narration": "A giant new port is rising at Tuas, designed to handle sixty five million containers a year when it is finished in the 2040s.",
+   "visual": {
+    "kind": "stat",
+    "description": "stat",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "value": "65 million",
+     "label": "containers a year: Tuas Port's planned capacity in the 2040s",
+     "source": "Port Economics, Management and Policy"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_126",
+   "section": "future",
+   "narration": "At Changi, a fifth terminal is under construction, planned to open in the mid 2030s.",
+   "visual": {
+    "kind": "photo",
+    "description": "Changi Airport today",
+    "camera": "tilt_up",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Changi Airport Jewel",
+    "alt_queries": [
+     "Jewel Changi",
+     "Changi Airport"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Changi Airport today. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow tilt up, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_127",
+   "section": "future",
+   "narration": "For water, it has built its own supply: rainwater, recycled water called NEWater, and desalination plants.",
+   "visual": {
+    "kind": "photo",
+    "description": "Marina Barrage Singapore",
+    "camera": "pan_right",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Marina Barrage Singapore",
+    "alt_queries": [
+     "Marina Reservoir"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Marina Barrage Singapore. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pan right, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "hopeful",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_128",
+   "section": "future",
+   "narration": "The first water agreement with Malaysia ended in 2011. The last one runs until 2061.",
+   "visual": {
+    "kind": "timeline",
+    "description": "timeline",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "title": "Water agreements with Johor",
+     "events": [
+      {
+       "year": "1961",
+       "label": "First agreement"
+      },
+      {
+       "year": "1962",
+       "label": "Second agreement"
+      },
+      {
+       "year": "2011",
+       "label": "1961 deal expires"
+      },
+      {
+       "year": "2061",
+       "label": "1962 deal expires"
+      }
+     ],
+     "highlight": 3
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_129",
+   "section": "conclusion",
+   "narration": "Singapore began with no oil, no farmland and not enough water.",
+   "visual": {
+    "kind": "text",
+    "description": "text",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "No oil. No farmland. Not enough water."
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_130",
+   "section": "conclusion",
+   "narration": "What it had was a location, and leaders who treated that location as a starting point, not a guarantee.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore Strait sunset ships",
+    "camera": "pull_out",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore Strait sunset ships",
+    "alt_queries": [
+     "Singapore sunset skyline"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore Strait sunset ships. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow pull-back, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_131",
+   "section": "conclusion",
+   "narration": "It invited the world in, housed its people, fought corruption, and saved for the future.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore skyline aerial",
+    "camera": "drone_forward",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore skyline aerial",
+    "alt_queries": [
+     "Singapore city aerial"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore skyline aerial. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow aerial drone push forward, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 2
+   },
+   "sfx": [],
+   "music_mood": "epic",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_132",
+   "section": "conclusion",
+   "narration": "Its success came from choices: to stay open, to plan ahead, and to keep its promises to investors and to its own people.",
+   "visual": {
+    "kind": "photo",
+    "description": "Singapore skyline sunrise",
+    "camera": "push_in",
+    "location": "Singapore",
+    "period": "present",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "Singapore skyline sunrise",
+    "alt_queries": [
+     "Singapore Marina Bay morning"
+    ],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "Singapore skyline sunrise. Location: Singapore. Time period: present. Lighting: natural cinematic lighting. Camera: slow push-in, 16:9, documentary realism, 35mm film look. Film style: Premium documentary realism: natural colour, gentle contrast, 35mm look. Colonial era (1819-1941): sepia and monochrome archival prints, shophouses, bumboats, rickshaws. 1942-1970: monochrome press photography. Today: clean daylight or blue-hour city light, Marina Bay, HDB estates, container port, greenery everywhere. No readable signage.",
+    "data": {},
+    "shots": 2
+   },
+   "sfx": [],
+   "music_mood": "epic",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_133",
+   "section": "conclusion",
+   "narration": "None of it was inevitable. In 1965, even its founders were not sure it would survive.",
+   "visual": {
+    "kind": "quote",
+    "description": "quote",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "For me, it is a moment of anguish.",
+     "attribution": "Lee Kuan Yew, 1965"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "reflective",
+   "transition": "crossfade",
+   "short_candidate": false
+  },
+  {
+   "id": "scene_134",
+   "section": "conclusion",
+   "narration": "Resources matter. But Singapore shows that what a country does with its position can matter even more.",
+   "visual": {
+    "kind": "title",
+    "description": "title",
+    "camera": "static",
+    "location": "",
+    "period": "",
+    "characters": "",
+    "environment": "",
+    "lighting": "",
+    "mood": "",
+    "search_query": "",
+    "alt_queries": [],
+    "pinned": "",
+    "local_file": "",
+    "prompt": "",
+    "data": {
+     "text": "SINGAPORE",
+     "subtitle": "From nothing to one of the richest nations on Earth"
+    },
+    "shots": 1
+   },
+   "sfx": [],
+   "music_mood": "epic",
+   "transition": "crossfade",
+   "short_candidate": false
+  }
+ ]
+}
