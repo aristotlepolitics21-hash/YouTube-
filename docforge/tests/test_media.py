@@ -35,6 +35,7 @@ def voiced(project, monkeypatch):
     project.config["subtitles"]["aligner"] = "proportional"
     project.config["editor"]["video_preset"] = "ultrafast"
     project.config["project"]["resolution"] = [640, 360]
+    project.config["quality_control"]["min_length_ratio"] = 0  # a 10 s test film vs a 1 min target
     run_scenes(project)
     from docforge.asset_manager import run_assets
     run_assets(project)
@@ -126,3 +127,27 @@ def test_chapters_follow_youtube_rules(voiced):
     voiced.manifest["outputs"]["timeline_seconds"] = voiced.scenes[-1]["timing"]["end"]
     # Only two short sections here, so YouTube's 3-chapter minimum isn't met.
     assert chapters(voiced) == []
+
+
+def test_qc_fails_short_film(voiced):
+    voiced.config["quality_control"]["min_length_ratio"] = 0.9
+    voiced.manifest["outputs"]["timeline_seconds"] = 30  # target is 1 minute
+    from docforge.quality_control.checks import check_length
+    assert check_length(voiced)[0]["severity"] == "error"
+    voiced.manifest["outputs"]["timeline_seconds"] = 58
+    assert check_length(voiced) == []
+
+
+def test_changed_voice_settings_resynthesise(voiced, monkeypatch):
+    calls = []
+
+    class Count(ToneTTS):
+        def synth(self, text, dest):
+            calls.append(text)
+            super().synth(text, dest)
+    monkeypatch.setattr(vo, "make_tts", lambda cfg: Count())
+    vo.run_voiceover(voiced)
+    assert calls == []  # nothing changed
+    voiced.config["voiceover"]["length_scale"] = 1.4
+    vo.run_voiceover(voiced)
+    assert len(calls) == 3

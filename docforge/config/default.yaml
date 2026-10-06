@@ -100,10 +100,10 @@ voiceover:
   provider: "piper"           # "piper" (offline, free) or "elevenlabs"
   piper_voice: "en_US-ryan-high"
   piper_voice_dir: "~/.cache/docforge/voices"
-  length_scale: 1.05          # >1 speaks slower
+  length_scale: 1.2           # >1 speaks slower; en_US-ryan-high is ~170 wpm at 1.05, ~150 at 1.2
   sentence_silence: 0.3
-  scene_gap_seconds: 0.35     # pause between scenes
-  section_gap_seconds: 0.9    # pause when a new section starts
+  scene_gap_seconds: 0.5      # pause between scenes
+  section_gap_seconds: 1.2    # pause when a new section starts
   pronunciations: {}          # {"written form": "spoken form"}
   elevenlabs:
     voice_id: ""
@@ -142,6 +142,7 @@ quality_control:
   silence_max_seconds: 2.5
   clip_peak_db: -0.1
   narration_match_min: 0.80   # word-level similarity between script and transcribed audio
+  min_length_ratio: 0.9       # fail QC if the film is shorter than this share of target_minutes
   duplicate_hash_distance: 6
 
 render:

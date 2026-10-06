@@ -160,16 +160,27 @@ def _scene_hash(scene: dict) -> str:
 
 
 def _merge_into_manifest(project: Project, plan: ScenePlan) -> None:
-    old = {s["id"]: s for s in project.scenes}
+    # Match unchanged scenes by content, not position: inserting or removing a scene shifts
+    # ids, and finished work (assets, audio) must follow the content it was made for.
+    old_by_hash: dict[str, list[dict]] = {}
+    for prev in project.scenes:
+        old_by_hash.setdefault(prev.get("hash", ""), []).append(prev)
     merged = []
     for scene in plan.scenes:
         d = scene.model_dump()
         d["hash"] = _scene_hash(d)
-        prev = old.get(d["id"])
-        if prev and prev.get("hash") == d["hash"]:
-            for key in ("status", "errors", "assets", "audio", "timing", "clip"):
+        candidates = old_by_hash.get(d["hash"]) or []
+        prev = candidates.pop(0) if candidates else None
+        if prev:
+            # Audio and clips are files named by scene id; if the id moved, another scene may
+            # now own that filename, so re-make them (cheap). Assets have unique names and stay.
+            moved = prev["id"] != d["id"]
+            keep = ("status", "errors", "assets") if moved else ("status", "errors", "assets", "audio", "timing", "clip")
+            for key in keep:
                 if key in prev:
                     d[key] = prev[key]
+            if moved:
+                d["status"] = {k: v for k, v in d.get("status", {}).items() if k == "assets"}
         else:
             d["status"] = {}
         merged.append(d)

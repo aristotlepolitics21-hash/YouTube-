@@ -113,3 +113,20 @@ def test_claude_mode_without_credentials_says_so(project, monkeypatch):
     assert credentials_available() is False
     with pytest.raises(LLMUnavailable):
         run_research(project)
+
+
+def test_inserting_a_scene_keeps_work_of_shifted_scenes(project):
+    tiny_plan(project)
+    run_scenes(project)
+    for sc in project.scenes:
+        sc["assets"] = [{"type": "graphic", "path": f"x/{sc['narration'][:5]}"}]
+        project.mark_scene(sc, "assets", "done")
+    plan = json.loads(project.path("scenes", "scene_plan.json").read_text())
+    new = dict(plan["scenes"][0], narration="A brand new first line.")
+    plan["scenes"].insert(0, new)
+    project.path("scenes", "scene_plan.json").write_text(json.dumps(plan))
+    run_scenes(project)
+    assert project.scene_status(project.scenes[0], "assets") == "pending"
+    for sc in project.scenes[1:]:
+        assert project.scene_status(sc, "assets") == "done"
+        assert sc["assets"][0]["path"] == f"x/{sc['narration'][:5]}"

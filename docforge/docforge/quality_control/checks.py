@@ -198,7 +198,19 @@ def check_media(project: Project) -> list[dict]:
     return issues
 
 
-CHECKS = [check_scenes, check_assets, check_repetition, check_history, check_continuity,
+def check_length(project: Project) -> list[dict]:
+    target = float(project.config.get_path("project.target_minutes", 0)) * 60
+    total = project.manifest["outputs"].get("timeline_seconds", 0)
+    ratio = float(project.config.get_path("quality_control.min_length_ratio", 0.9))
+    if target and total < target * ratio:
+        return [_issue("durations", "error", f"film is {total / 60:.1f} min; target is {target / 60:g} min "
+                                             f"(minimum {target * ratio / 60:.1f})")]
+    if target and total > target * 1.2:
+        return [_issue("durations", "warning", f"film is {total / 60:.1f} min, well over the {target / 60:g} min target")]
+    return []
+
+
+CHECKS = [check_length, check_scenes, check_assets, check_repetition, check_history, check_continuity,
           check_narration, check_subtitles, check_media]
 
 

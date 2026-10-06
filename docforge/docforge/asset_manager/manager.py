@@ -146,7 +146,8 @@ class AssetManager:
                 if self._is_duplicate(h):
                     continue
                 k = len(found) + 1
-                dest = self.p.path("images", f"{scene['id']}_{k}.jpg")
+                # Unique per scene content, so shifted scene ids never overwrite another scene's file.
+                dest = self.p.path("images", f"{scene['id']}_{k}_{scene.get('hash', 'x')[:6]}.jpg")
                 if img.width > 3840:
                     img.thumbnail((3840, 3840), Image.LANCZOS)
                 img.save(dest, quality=92)

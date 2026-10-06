@@ -84,17 +84,29 @@ def assemble_narration(project: Project, total: float) -> Path:
     return out
 
 
+def voice_key(project: Project, text: str) -> str:
+    """Identifies what the audio was made from, so changed voice settings re-synthesise it."""
+    import hashlib
+    g = project.config.get_path
+    parts = [text, g("voiceover.provider"), g("voiceover.piper_voice"), g("voiceover.length_scale"),
+             g("voiceover.sentence_silence"), g("voiceover.elevenlabs.voice_id")]
+    return hashlib.sha1(repr(parts).encode()).hexdigest()[:12]
+
+
 def run_voiceover(project: Project) -> dict:
     tts = None
     prons = project.config.get_path("voiceover.pronunciations", {}) or {}
     todo = [s for s in project.scenes if project.scene_status(s, "voiceover") != DONE
-            or not project.path(s.get("audio", {}).get("path", "missing")).exists()]
+            or not project.path(s.get("audio", {}).get("path", "missing")).exists()
+            or s.get("audio", {}).get("key") != voice_key(project, speakable(s["narration"], prons))]
     for i, scene in enumerate(todo):
         dest = project.path("voiceover", f"{scene['id']}.wav")
         try:
             tts = tts or make_tts(project.config)
-            tts.synth(speakable(scene["narration"], prons), dest)
-            scene["audio"] = {"path": project.rel(dest), "duration": round(wav_duration(dest), 3)}
+            text = speakable(scene["narration"], prons)
+            tts.synth(text, dest)
+            scene["audio"] = {"path": project.rel(dest), "duration": round(wav_duration(dest), 3),
+                              "key": voice_key(project, text)}
             project.mark_scene(scene, "voiceover", DONE)
         except Exception as exc:
             project.mark_scene(scene, "voiceover", FAILED, f"{type(exc).__name__}: {exc}")
@@ -105,7 +117,16 @@ def run_voiceover(project: Project) -> dict:
         raise RuntimeError(f"voiceover failed for {len(failed)} scenes: {[s['id'] for s in failed][:10]}")
     total = build_timeline(project)
     assemble_narration(project, total)
-    project.manifest["outputs"]["duration_seconds"] = round(total, 2)
+    speech = sum(s["audio"]["duration"] for s in project.scenes)
+    words = sum(len(s["narration"].split()) for s in project.scenes)
+    wpm = words / (speech / 60) if speech else 0
+    target = float(project.config.get_path("project.target_minutes", 0)) * 60
+    project.manifest["outputs"].update({"duration_seconds": round(total, 2), "measured_wpm": round(wpm)})
     project.save()
-    project.log("voiceover", f"narration assembled: {total / 60:.2f} min")
+    project.log("voiceover", f"narration assembled: {total / 60:.2f} min (voice speaks {wpm:.0f} wpm; "
+                             f"planning assumed {project.config.get_path('planning.words_per_minute')})")
+    if target and total < target * float(project.config.get_path("quality_control.min_length_ratio", 0.9)):
+        project.log("voiceover", f"WARNING: {total / 60:.1f} min is short of the {target / 60:g} min target. "
+                                 "Slow the voice (voiceover.length_scale), lengthen pauses, or add script, "
+                                 "then re-run from voiceover.")
     return {"duration": total}
