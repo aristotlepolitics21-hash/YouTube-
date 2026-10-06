@@ -10,13 +10,13 @@ for i, (si, txt) in enumerate(lines):
     say = txt
     for k, v in SAY.items(): say = say.replace(k, v)
     f = f"{outdir}/vo/{i:03d}.wav"
-    subprocess.run([f"{D}/tts/bin/piper", "-m", f"{D}/voices/{voice}.onnx", "--length_scale", "1.1", "--sentence_silence", "0.4", "-f", f], input=say.encode(), check=True, capture_output=True)
+    subprocess.run([f"{D}/tts/bin/piper", "-m", f"{D}/voices/{voice}.onnx", "--length_scale", "1.18", "--sentence_silence", "0.4", "-f", f], input=say.encode(), check=True, capture_output=True)
     with wave.open(f) as w:
         if params is None: params = w.getparams(); out.setparams(params)
         fr = w.readframes(w.getnframes()); d = w.getnframes() / w.getframerate()
     lead = 1.0 if i == 0 else 0.0
     nxt = lines[i + 1][0] if i + 1 < len(lines) else None
-    gap = 3.0 if nxt is None else (1.8 if nxt != si else 0.9)
+    gap = 3.0 if nxt is None else (2.4 if nxt != si else 1.3)
     if i == 0 or lines[i - 1][0] != si: chapters.append((t, sc["sections"][si]["name"]))
     rate, sw, ch = params.framerate, params.sampwidth, params.nchannels
     sil = lambda s: b"\x00" * (int(round(s * rate)) * sw * ch)

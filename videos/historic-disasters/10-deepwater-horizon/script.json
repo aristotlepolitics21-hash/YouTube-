@@ -1,0 +1,69 @@
+{
+  "series": "Historic Disasters", "episode": 10, "title": "Deepwater Horizon", "subtitle": "The well that would not stop",
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "DEEPWATER HORIZON", "sub": "The well that would not stop", "art": "rig", "artp": {"state": "fire"}}, "At about a quarter to ten on the night of the twentieth of April, 2010, mud began shooting out of the drill floor of an oil rig in the Gulf of Mexico."],
+      ["rig", {"state": "blowout"}, "Behind the mud came gas. It spread across the decks, into the engine rooms, and found something to ignite it."],
+      ["rig", {"state": "fire"}, "Two huge explosions tore through the Deepwater Horizon. Within minutes, the rig was a tower of fire, burning in the middle of the night, forty miles from the coast."],
+      ["stat", {"value": "11", "label": "workers killed · 17 injured"}, "Eleven men were killed. Their bodies were never found."],
+      ["lesson", {"text": "Then the oil kept coming. For 87 days."}, "And a mile below the burning rig, on the sea floor, an oil well was now open to the ocean. It would take eighty-seven days to stop it."]
+    ]},
+    { "name": "The rig", "lines": [
+      ["rig", {"state": "drill"}, "The Deepwater Horizon was a floating drilling rig, as wide as a football field, owned by the drilling company Transocean. It could hold its position over a well using thrusters and satellite navigation, in water up to two miles deep."],
+      ["portrait", {"name": "BP", "role": "Leased the rig · operator of the Macondo well"}, "In 2010, it was working for the oil company B P, drilling an exploratory well known as Macondo, about forty miles off the coast of Louisiana."],
+      ["well", {}, "The water there was about five thousand feet deep. From the sea floor, the well went down more than thirteen thousand feet further, into rock holding oil and gas under enormous pressure."],
+      ["lesson", {"text": "The well was behind schedule and over budget."}, "Macondo had been a difficult well. There had been problems with gas and with lost drilling fluid. By April, the job was weeks behind schedule and many millions of dollars over budget. Every day the rig was there cost B P around a million dollars."],
+      ["people", {"n": 12, "hats": 1, "label": "126 people aboard"}, "On the night of the twentieth, there were one hundred and twenty-six people on board: Transocean's crew, B P's company men, and contractors from other firms. The drilling was finished. They were preparing to seal the well and move on."]
+    ]},
+    { "name": "The cement", "lines": [
+      ["well", {}, "To seal a well like this, cement is pumped down to the bottom, to plug the gap between the steel pipe and the rock. If the cement is good, oil and gas cannot get in. It is the main barrier at the bottom of the well."],
+      ["portrait", {"name": "Halliburton", "role": "Cementing contractor"}, "The cement job was done by the contractor Halliburton. It used a special foamed cement, mixed with nitrogen gas. Halliburton's own laboratory tests had raised questions about whether the mix would be stable."],
+      ["lesson", {"text": "Six centralisers instead of twenty-one."}, "To keep the pipe centred in the hole, so the cement would fill evenly around it, Halliburton's computer model suggested using twenty-one devices called centralisers. B P used six."],
+      ["lesson", {"text": "A test of the cement was skipped."}, "There was a test that could check how well the cement had bonded. A team was on the rig to carry it out. B P decided it was not needed, and the team flew home that morning."],
+      ["inquiry", {"label": "decisions that saved time"}, "Each of these decisions saved time or money. Investigators later found that none of them, on its own, was obviously reckless. But each one made the well a little less safe, and nobody added up the risk."]
+    ]},
+    { "name": "The test", "lines": [
+      ["chart", {"title": "Negative pressure test", "y": "pressure", "x": "time", "points": [[0.1, 0.2], [0.3, 0.25], [0.5, 0.6], [0.7, 0.75], [0.9, 0.8]], "notes": [["pressure kept building", 0.7, 0.75]]}, "That evening, the crew ran a final check called a negative pressure test. They reduced the pressure inside the well, and watched. If the cement was holding, the pressure should stay steady. It did not. It kept building back up."],
+      ["lesson", {"text": "The test showed the well was not sealed."}, "This was a clear sign that oil and gas were leaking into the well. The cement had failed."],
+      ["people", {"n": 4, "hats": 1, "pose": "look", "label": "a theory to explain the readings away"}, "But the men on the rig floor talked about it, and settled on an explanation. One reading was blamed on something called the bladder effect, a theory that investigators later found had no real basis. The test was accepted as a success."],
+      ["rig", {"state": "kick", "label": "the signs of a kick were missed"}, "The crew then began replacing the heavy drilling mud in the riser pipe with lighter seawater. Without the weight of the mud, the gas and oil below began pushing upward. For around forty minutes, the instruments showed signs of this, a kick. They were not noticed in time."]
+    ]},
+    { "name": "The blowout", "lines": [
+      ["clock", {"time": "9:45 PM", "date": "20 April", "year": 2010}, "At about a quarter to ten, mud and seawater burst out of the drill floor, shooting up into the derrick. Then came the gas."],
+      ["rig", {"state": "blowout"}, "The crew diverted the flow into a system designed to separate small amounts of gas from mud. It was overwhelmed. Gas poured out across the rig, and alarms sounded."],
+      ["rig", {"state": "fire"}, "The gas reached the engines. They raced, and then it ignited. Two explosions destroyed the drill floor and knocked out the power. The men working closest to the well had no chance."],
+      ["portrait", {"name": "Andrea Fleytas", "role": "Bridge officer, Deepwater Horizon"}, "On the bridge, a twenty-three-year-old officer, Andrea Fleytas, sent out the mayday call by radio. In the confusion, no one had yet given the order."],
+      ["people", {"n": 10, "night": 1, "pose": "walk", "label": "lifeboats · some jumped into the sea"}, "Most of the crew made it to the lifeboats. Some, cut off by the flames, jumped more than sixty feet into the dark water below."],
+      ["people", {"n": 8, "night": 1, "pose": "look", "label": "the supply ship Damon B. Bankston"}, "A supply ship, the Damon B. Bankston, was alongside. Its crew pulled survivors out of the water and took in the lifeboats. One hundred and fifteen people were saved. Eleven were missing."]
+    ]},
+    { "name": "The last barrier", "lines": [
+      ["well", {"gas": 1, "bop": 1}, "There was one last line of defence: the blowout preventer, a five-storey stack of valves sitting on the well at the sea floor. In an emergency, its blind shear rams were supposed to cut through the drill pipe and seal the well shut."],
+      ["lesson", {"text": "The blowout preventer did not seal the well."}, "They did not. Investigators later found that the force of the blowout had buckled the drill pipe, pushing it off centre, so the shear rams could not cut it cleanly. The well stayed open."],
+      ["rig", {"state": "sink"}, "The Deepwater Horizon burned for a day and a half. On the twenty-second of April, it capsized and sank, five thousand feet down to the sea floor."]
+    ]},
+    { "name": "87 days", "lines": [
+      ["map", {"land": 1, "route": [], "marks": [["Macondo well", 0.55, 0.62], ["New Orleans", 0.4, 0.3], ["Mobile", 0.6, 0.28]], "shapes": [[[0.05, 0.1], [0.95, 0.1], [0.95, 0.3], [0.7, 0.35], [0.5, 0.4], [0.35, 0.45], [0.05, 0.4]]], "plume": [0.55, 0.62, 0.15, -0.2]}, "With the rig gone, oil and gas flowed freely from the broken well, a mile underwater. At first, B P said the leak was about a thousand barrels a day. Independent scientists soon showed it was far, far more."],
+      ["lesson", {"text": "Nobody had a plan for a well this deep."}, "The industry had no tested way to stop a blowout at this depth. Engineers tried one idea after another, using remote-controlled submarines. A containment dome clogged with ice crystals. An attempt to choke the well with heavy mud and junk, called the top kill, failed."],
+      ["portrait", {"name": "Tony Hayward", "role": "Chief executive, BP"}, "B P's chief executive, Tony Hayward, became the face of the disaster. In late May, speaking to reporters on the coast, he said that he would like his life back. He later apologised. Eleven families would never have theirs back."],
+      ["date", {"date": "15 July 2010", "place": "the well is capped"}, "Finally, on the fifteenth of July, a new capping stack was bolted on top of the well, and the flow stopped. In September, a relief well sealed Macondo for good."],
+      ["stat", {"value": "3.19 – 4.9 m", "label": "barrels of oil released · court finding to government estimate"}, "A federal court later found that about three point two million barrels had entered the Gulf. The government's own estimate was four point nine million. Either way, it was the largest marine oil spill in American history."]
+    ]},
+    { "name": "The Gulf", "lines": [
+      ["map", {"land": 1, "route": [], "marks": [["Louisiana", 0.35, 0.25], ["Florida", 0.85, 0.3]], "shapes": [[[0.05, 0.1], [0.95, 0.1], [0.95, 0.3], [0.7, 0.35], [0.5, 0.4], [0.35, 0.45], [0.05, 0.4]]], "plume": [0.55, 0.62, 0.3, -0.25]}, "Oil washed up along more than a thousand miles of coastline, from Louisiana to Florida. It coated marshes, beaches and wetlands. Huge areas of the Gulf were closed to fishing."],
+      ["lesson", {"text": "Nearly two million gallons of dispersant."}, "To break up the oil, nearly two million gallons of chemical dispersant were sprayed on the surface and injected at the wellhead, an experiment on a scale never tried before."],
+      ["people", {"n": 10, "hats": 1, "label": "fishermen · cleanup crews"}, "Fishing communities lost their season, and for some, their livelihoods. Tens of thousands of people worked on the cleanup. Scientists are still studying the long-term damage to wildlife, from dolphins and sea turtles to deep-sea corals."]
+    ]},
+    { "name": "Who was responsible", "lines": [
+      ["inquiry", {"label": "National Commission on the BP Deepwater Horizon Oil Spill · 2011"}, "A presidential commission reported in January 2011. It found that the blowout was not a freak event. It could have been prevented. Its causes were systemic, in the companies and in the government that regulated them."],
+      ["lesson", {"text": "The regulator was too close to the industry."}, "The government agency that oversaw offshore drilling also collected the money from oil leases. It was understaffed, and had come to rely on the industry to police itself. It was broken up and replaced."],
+      ["stat", {"value": "$20.8 bn", "label": "2015 settlement · the largest environmental settlement in US history"}, "B P pleaded guilty to criminal charges, including eleven counts of manslaughter, one for each man killed. In 2015, it agreed to pay more than twenty billion dollars in a settlement with the federal government and five states. In total, the disaster has cost the company more than sixty billion dollars."]
+    ]},
+    { "name": "The lesson", "lines": [
+      ["timeline", {"events": [["Behind schedule", 0.1], ["Weak cement", 0.3], ["Test explained away", 0.5], ["Kick missed", 0.7], ["Last barrier failed", 0.9]]}, "A well behind schedule. A cement job with known doubts. A failed test explained away. Warning signs on the instruments that nobody saw. And a last line of defence that could not do its job."],
+      ["checklist", {"head": "After Deepwater Horizon", "items": ["New offshore safety regulator", "Stricter rules for well design and cementing", "Blowout preventers tested to new standards", "Capping stacks ready for deep wells"]}, "New rules followed: stricter standards for well design and cement, for testing blowout preventers, and for having equipment ready to cap a deep-water well quickly if the worst happened again."],
+      ["lesson", {"text": "Every disaster in this series ends the same way."}, "Across this series, we have seen ships, reactors, rockets, dams and wells. The technology changes. The story does not. Warnings are given. Doubts are raised. Pressure, money and habit win the argument."],
+      ["lesson", {"text": "Safety is not the absence of disaster."}, "Safety is not the absence of disaster. It is the willingness to stop, when stopping is expensive, because the signs say something is wrong."],
+      ["memorial", {"n": 11, "date": "20 April 2010"}, "Eleven men died on the Deepwater Horizon. They are remembered in Louisiana, Mississippi and Texas, by the families who still ask why the warnings were not enough."]
+    ]}
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "series": "Historic Disasters", "episode": 8, "title": "The Hindenburg", "subtitle": "Thirty-four seconds that ended an age",
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "HINDENBURG", "sub": "Thirty-four seconds that ended an age", "art": "airship", "artp": {"state": "fire"}}, "At about twenty-five past seven in the evening, on the sixth of May, 1937, the largest aircraft ever built was coming in to land at Lakehurst, New Jersey."],
+      ["airship", {"state": "moor"}, "Mooring lines had been dropped to the ground crew below. Reporters and newsreel cameras were waiting. Families of passengers were watching from the edge of the field."],
+      ["airship", {"state": "fire"}, "Then a small flame appeared near the tail. In the next half minute or so, the whole ship was consumed by fire."],
+      ["airship", {"state": "crash"}, "It fell to the ground, burning, nose up, as people inside jumped or were thrown from its windows."],
+      ["stat", {"value": "36", "label": "people killed · 62 of the 97 aboard survived"}, "Thirty-six people died. Remarkably, sixty-two of the ninety-seven people on board survived. But the age of the passenger airship died with the Hindenburg that evening."]
+    ]},
+    { "name": "The giant", "lines": [
+      ["airship", {"state": "fly"}, "The Hindenburg was a German airship, a rigid zeppelin, built by the Zeppelin company and launched in 1936. It was two hundred and forty-five metres long, more than three times the length of a modern jumbo jet."],
+      ["cells", {}, "Inside its aluminium frame were sixteen enormous gas bags, holding about seven million cubic feet of hydrogen. That was what lifted it. Hydrogen is the lightest gas there is. It is also extremely flammable."],
+      ["lesson", {"text": "It was designed to use helium."}, "The ship had originally been designed to use helium, which is almost as light, and does not burn. But almost all of the world's helium came from the United States, and American law restricted its export. Germany could not get enough."],
+      ["lesson", {"text": "The ship carried the symbols of the Nazi state."}, "By the 1930s, the Zeppelin company had been taken under the influence of Hitler's government, and the Hindenburg carried the swastika on its tail fins. It was a flying piece of national prestige."],
+      ["people", {"n": 8, "hats": 1, "label": "a flying luxury liner"}, "On board, it was a luxury liner. There were cabins, a dining room, a lounge, promenade decks with sloping windows, and even a pressurised smoking room, sealed off from the hydrogen above."],
+      ["map", {"route": [["Frankfurt", 0.85, 0.3], ["Lakehurst", 0.12, 0.45]]}, "In its first season, 1936, it made seventeen round trips across the Atlantic without serious incident, to North America and to Brazil. Crossing took about two to three days, much faster than an ocean liner."]
+    ]},
+    { "name": "The last voyage", "lines": [
+      ["date", {"date": "3 May 1937", "place": "Frankfurt · first North American crossing of the season"}, "On the third of May, 1937, the Hindenburg left Frankfurt on its first North American trip of the new season. It carried thirty-six passengers and sixty-one crew."],
+      ["portrait", {"name": "Captain Max Pruss", "role": "Commander of the Hindenburg", "cap": 1}, "It was commanded by Captain Max Pruss. Also on board was Ernst Lehmann, one of Germany's most experienced airship captains, travelling as an observer."],
+      ["airship", {"state": "city"}, "Strong headwinds slowed the crossing. When the ship reached the American coast on the afternoon of the sixth of May, it was already behind schedule. It flew over Manhattan, where crowds came out to watch."],
+      ["airship", {"state": "fly", "label": "waiting off the coast for the storms to pass"}, "Then the weather turned. Thunderstorms were passing over the naval air station at Lakehurst. The landing was delayed while the Hindenburg waited off the coast for them to clear."],
+      ["airship", {"state": "moor"}, "By early evening, the storm had moved through, but the air was still damp and electrically charged. The ship came in to land, with orders to hurry."]
+    ]},
+    { "name": "The landing", "lines": [
+      ["airship", {"state": "moor", "label": "a sharp turn on the approach"}, "On the final approach, the Hindenburg made a sharp turn to line up with the mooring mast. To trim the ship, the crew released water ballast from the front, and valved off hydrogen from the back."],
+      ["airship", {"state": "moor", "label": "mooring lines dropped"}, "At around seven twenty-one, the mooring lines were dropped from the nose. Ground crew grabbed them. The ship hung about two hundred feet in the air."],
+      ["people", {"n": 6, "pose": "look", "label": "a flicker of flame near the tail"}, "A few minutes later, some witnesses saw something like a ripple in the fabric near the top of the tail, or a faint blue glow. Then a burst of flame appeared just ahead of the upper fin."],
+      ["clock", {"time": "7:25 PM", "date": "6 May", "year": 1937}, "It was about twenty-five past seven."],
+      ["airship", {"state": "fire"}, "The fire spread forward through the hydrogen cells with terrifying speed. The tail, losing lift, dropped. The nose pointed up."],
+      ["airship", {"state": "crash"}, "In roughly thirty-two to thirty-seven seconds, depending on who measured it, the ship went from first flame to a burning wreck on the ground."]
+    ]},
+    { "name": "Thirty-four seconds", "lines": [
+      ["people", {"n": 8, "pose": "up", "label": "jumping from the windows"}, "Inside, people had only seconds to react. Some passengers jumped from the windows of the promenade deck as the ship came down. Those who jumped from low enough often survived. Those who jumped too early, from too high, did not."],
+      ["people", {"n": 4, "pose": "walk", "label": "Werner Doehner, aged 8"}, "One family was in the dining room. As the ship neared the ground, the mother threw her two sons out of a window, and then jumped herself. All three survived, though the boys' father and sister did not. The younger boy, eight-year-old Werner Doehner, was the last living survivor of the Hindenburg until he died in 2019."],
+      ["people", {"n": 10, "pose": "walk", "hats": 1, "label": "ground crew ran towards the fire"}, "On the ground, members of the naval ground crew ran towards the burning wreck to pull people out. One of them, Allen Hagaman, was killed."],
+      ["stat", {"value": "35 + 1", "label": "13 passengers · 22 crew · 1 member of the ground crew"}, "Thirteen passengers and twenty-two crew members died, along with Hagaman. Ernst Lehmann was carried out alive, badly burned. He died the next day."]
+    ]},
+    { "name": "Oh, the humanity", "lines": [
+      ["portrait", {"name": "Herbert Morrison", "role": "Radio reporter, WLS Chicago"}, "Among the reporters at Lakehurst was Herbert Morrison, from a Chicago radio station, recording a report on disc to be broadcast the next day."],
+      ["quote", {"text": "It's burst into flames! … Oh, the humanity!", "who": "Herbert Morrison, WLS"}, "His voice, breaking as he watched the ship burn, became one of the most famous recordings ever made. It's burst into flames, he cried, and then, oh, the humanity."],
+      ["lesson", {"text": "For the first time, the world watched a disaster."}, "Newsreel cameras filmed the whole thing. Within days, audiences in cinemas around the world watched the Hindenburg burn. It was one of the first great disasters that the public could see with their own eyes."]
+    ]},
+    { "name": "What happened", "lines": [
+      ["inquiry", {"label": "US Commerce Department and German inquiries · 1937"}, "American and German investigators reached broadly the same conclusion. Hydrogen had been leaking somewhere near the tail, perhaps from a gas cell damaged during the sharp turn. And something had ignited it."],
+      ["cells", {"label": "leaking hydrogen + a spark of static electricity"}, "The most likely spark was static electricity. The ship had flown through charged, stormy air. When its wet mooring lines touched the ground, the frame was earthed, but parts of the outer skin may not have been. A discharge could have jumped across."],
+      ["lesson", {"text": "There was no evidence of sabotage."}, "Theories of sabotage, popular at the time, were never supported by evidence. Later researchers have argued about how much the ship's coated fabric skin helped the fire spread. But without the hydrogen, there would have been no disaster."]
+    ]},
+    { "name": "The end of an age", "lines": [
+      ["timeline", {"events": [["Hydrogen, not helium", 0.1], ["Behind schedule", 0.3], ["Charged air", 0.5], ["Sharp turn", 0.7], ["Hurried landing", 0.9]]}, "A flammable lifting gas, used because the safe one was unavailable. A ship behind schedule. A hurried landing in charged air after a storm. A sharp turn that may have opened a leak."],
+      ["lesson", {"text": "Public trust in airships was gone."}, "The airship industry never recovered. Its sister ship was finished, but never carried paying passengers. The older Graf Zeppelin was retired. Within a few years, the first commercial aeroplanes were flying the Atlantic."],
+      ["lesson", {"text": "One fire. One film."}, "Statistically, airships had a reasonable safety record for their time. But one fire, caught on film, was enough to end them. Public confidence, once lost in thirty-four seconds, could not be rebuilt."],
+      ["lesson", {"text": "The engineers knew the danger."}, "The engineers had always known that hydrogen was dangerous. They had planned around it, with rules, procedures and care. For years, it worked. Then, on a stormy evening, behind schedule, all the conditions came together at once."],
+      ["memorial", {"n": 36, "date": "6 May 1937"}, "Today, a marker on the field at Lakehurst shows where the Hindenburg came down."]
+    ]}
+  ]
+}

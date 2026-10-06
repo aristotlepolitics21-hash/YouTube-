@@ -95,7 +95,7 @@ function iconMan(x, y, s, c) { circ(x, y - 15 * s, 4 * s, c); ctx.fillStyle = c;
 
 // ---------- scenes ----------
 const SC = {};
-SC.title = (t, T, p) => { bg(true); starsSky(4); sea(520, true, t, T); ship(W / 2 + 120, 520, 520, { night: true, lights: true }); finish(true);
+SC.title = (t, T, p) => { if (p.art) { SC[p.art](Math.min(1, t * .6), T, Object.assign({}, p.artp || {}, { label: null })); ctx.fillStyle = 'rgba(10,12,16,.55)'; ctx.fillRect(0, 0, W, H); } else { bg(true); starsSky(4); sea(520, true, t, T); ship(W / 2 + 120, 520, 520, { night: true, lights: true }); finish(true); }
   text(p.title, W / 2, 210, 120, { f: BIG, c: P.paper, a: fade(t, .05, .3), ls: 12 }); text(p.sub, W / 2, 300, 34, { it: 1, c: P.paper, a: fade(t, .2, .45) }); return true; };
 SC.date = (t, T, p) => { bg(); cam(t, 1, 1.04); finish(); rect(W / 2 - 300, 260, 600, 4, P.red); text(p.date, W / 2, 340, 88, { f: BIG, a: fade(t, .05, .25) }); label(p.place, W / 2, 430, { a: fade(t, .2, .4), size: 22 }); return true; };
 SC.lesson = (t, T, p) => { bg(); finish(); wrap(p.text, W / 2, H / 2, 58, 980, { a: fade(t, .05, .3) }); rect(W / 2 - 60, H / 2 + 90, 120, 4, P.red); return true; };
@@ -112,11 +112,11 @@ SC.bars = (t, T, p) => { bg(); finish(); p.items.forEach(([lab, v, unit], i) => 
 SC.quote = (t, T, p) => { bg(); finish(); text('“', 230, 230, 200, { c: P.red, a: fade(t, 0, .2) }); wrap(p.text, W / 2, 340, 50, 880, { it: 1, a: fade(t, .05, .3) }); label('— ' + p.who, W / 2, 500, { a: fade(t, .3, .5), size: 20 }); return true; };
 SC.timeline = (t, T, p) => { bg(); finish(); const x0 = 140, x1 = 1140, y = 380, k = fade(t, 0, .8); line(x0, y, lerp(x0, x1, k), y, P.ink, 4);
   p.events.forEach(([lab, at], i) => { const x = lerp(x0, x1, at), a = seg(k, at - .05, at + .05); if (!a) return; circ(x, y, 12, P.red); text(lab, x, i % 2 ? y + 60 : y - 60, 26, { a, w: 700 }); line(x, y + (i % 2 ? 14 : -14), x, y + (i % 2 ? 40 : -40), P.ink, 2); }); return true; };
-SC.checklist = (t, T, p) => { bg(); finish(); label('After 1914, every ship had to have', W / 2, 150, { size: 20 }); p.items.forEach((it, i) => { const y = 250 + i * 95, a = fade(t, .08 + i * .18, .2 + i * .18); ctx.globalAlpha = a; rect(240, y - 24, 48, 48, null, P.ink, 3);
+SC.checklist = (t, T, p) => { bg(); finish(); label(p.head || 'After 1914, every ship had to have', W / 2, 150, { size: 20 }); p.items.forEach((it, i) => { const y = 250 + i * 95, a = fade(t, .08 + i * .18, .2 + i * .18); ctx.globalAlpha = a; rect(240, y - 24, 48, 48, null, P.ink, 3);
     ctx.globalAlpha = 1; if (a > .5) { line(250, y, 262, y + 13, P.red, 6); line(262, y + 13, 282, y - 16, P.red, 6); } text(it, 320, y, 36, { align: 'left', a }); }); return true; };
-SC.clock = (t, T, p) => { bg(true); finish(true); const [hh, rest] = p.time.split(':'); const mm = parseInt(rest); clockFace(W / 2 - 200, 360, 170, parseInt(hh), mm, true);
-  text(p.time, W / 2 + 220, 330, 110, { f: BIG, c: P.paper, a: fade(t, .05, .25) }); label(p.date + ' 1912', W / 2 + 220, 430, { c: P.gold, size: 22, a: fade(t, .2, .4) }); return true; };
-SC.portrait = (t, T, p) => { bg(); cam(t, 1, 1.04); finish(); frame(W / 2 - 330, 140, 300, 380); ctx.save(); ctx.beginPath(); ctx.rect(W / 2 - 322, 148, 284, 364); ctx.clip(); stick(W / 2 - 180, 640, 4.2, POSE.stand(), { cap: p.cap }); ctx.restore();
+SC.clock = (t, T, p) => { bg(true); finish(true); const [hh, rest] = p.time.split(':'); const mm = parseInt(rest); const pm = /PM/.test(p.time); clockFace(W / 2 - 200, 360, 170, parseInt(hh), mm, true);
+  text(p.time, W / 2 + 220, 330, 110, { f: BIG, c: P.paper, a: fade(t, .05, .25) }); label(p.date + (p.year === undefined ? ' 1912' : p.year ? ' ' + p.year : ''), W / 2 + 220, 430, { c: P.gold, size: 22, a: fade(t, .2, .4) }); return true; };
+SC.portrait = (t, T, p) => { bg(); cam(t, 1, 1.04); finish(); frame(W / 2 - 330, 140, 300, 380); ctx.save(); ctx.beginPath(); ctx.rect(W / 2 - 322, 148, 284, 364); ctx.clip(); stick(W / 2 - 180, 640, 4.2, POSE.stand(), { cap: p.cap, hat: p.hat, scarf: p.scarf }); ctx.restore();
   text(p.name, W / 2 + 20, 290, 50, { align: 'left', a: fade(t, .05, .25), w: 700 }); rect(W / 2 + 20, 330, 80, 4, P.red); wrap(p.role, W / 2 + 230, 390, 26, 420, { a: fade(t, .15, .35), c: P.soft }); return true; };
 SC.ship = (t, T, p) => { const night = p.state !== 'sail' && p.state !== 'dock' || p.dusk; bg(night); ctx.save(); cam(t, 1, 1.05);
   if (night) starsSky(5); if (p.dusk) { const g = ctx.createLinearGradient(0, 0, 0, 500); g.addColorStop(0, '#2a2438'); g.addColorStop(1, '#c8784a'); ctx.fillStyle = g; ctx.fillRect(-100, -100, W + 200, 620); }
@@ -168,11 +168,15 @@ SC.crowd = (t, T, p) => { const night = p.mode === 'deck' || p.dark; bg(night); 
     for (let i = 0; i < 14; i++) { const r = rng(i + 9); stick(80 + i * 85 + r() * 20, 520, 1.3, i % 4 === 0 ? POSE.point() : POSE.stand(), { c: ink, night, hat: r() < .3, face: r() < .5 ? 1 : -1 }); } }
   ctx.restore(); finish(night); return true; };
 SC.map = (t, T, p) => { bg(); ctx.save(); cam(t, 1, 1.04); ctx.strokeStyle = 'rgba(28,27,25,.12)'; ctx.lineWidth = 1; for (let x = 0; x < W; x += 80) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); } for (let y = 0; y < H; y += 80) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
-  if (!p.ships) { poly([[1000, 0], [W, 0], [W, 600], [1120, 560], [1080, 420], [1150, 330], [1060, 250], [1000, 140]], '#d6cbb4', P.ink, 2); poly([[960, 120], [1010, 100], [1020, 210], [970, 230]], '#d6cbb4', P.ink, 2); poly([[0, 120], [180, 160], [220, 300], [140, 420], [160, 560], [0, 620]], '#d6cbb4', P.ink, 2); }
-  const pts = p.route.map(([n, x, y]) => [n, x * W, y * H]); const k = ease(seg(t, .1, .85)), segs = pts.length - 1;
+  (p.shapes || []).forEach(sh => poly(sh.map(([x, y]) => [x * W, y * H]), '#d6cbb4', P.ink, 2));
+  if (!p.ships && !p.land) { poly([[1000, 0], [W, 0], [W, 600], [1120, 560], [1080, 420], [1150, 330], [1060, 250], [1000, 140]], '#d6cbb4', P.ink, 2); poly([[960, 120], [1010, 100], [1020, 210], [970, 230]], '#d6cbb4', P.ink, 2); poly([[0, 120], [180, 160], [220, 300], [140, 420], [160, 560], [0, 620]], '#d6cbb4', P.ink, 2); }
+  const pts = (p.route || []).map(([n, x, y]) => [n, x * W, y * H]); const k = ease(seg(t, .1, .85)), segs = pts.length - 1;
   ctx.setLineDash([10, 10]); ctx.strokeStyle = P.red; ctx.lineWidth = 4; ctx.beginPath(); pts.forEach(([, x, y], i) => { if (i === 0) ctx.moveTo(x, y); else { const f = clamp(k * segs - (i - 1)); if (f > 0) ctx.lineTo(lerp(pts[i - 1][1], x, f), lerp(pts[i - 1][2], y, f)); } }); ctx.stroke(); ctx.setLineDash([]);
   pts.forEach(([n, x, y], i) => { const a = i === 0 ? 1 : seg(k * segs, i - 1, i - .7); circ(x, y, 9, P.red); text(n, x, y - 26, 26, { a, w: 700 }); });
   if (p.ships) { const ip = pts[0], cp = pts[1]; ship(ip[1], ip[2] + 70, 170, {}); ship(lerp(cp[1], ip[1], k * .25), cp[2] + 70, 140, {}); if (p.dist) label(p.dist, (ip[1] + cp[1]) / 2 + 150, (ip[2] + cp[2]) / 2 - 10, { c: P.red, size: 24 }); }
+  (p.circles || []).forEach(([x, y, r, lab], i) => { const a = fade(t, .2 + i * .15, .4 + i * .15); ctx.globalAlpha = a; circ(x * W, y * H, r * W * a, 'rgba(163,41,31,.12)', P.red, 2); ctx.globalAlpha = 1; if (lab) label(lab, x * W, y * H + r * W + 20, { c: P.red, size: 14, a }); });
+  if (p.plume) { const [x, y, dx, dy] = p.plume, k = ease(seg(t, .1, .9)); for (let i = 0; i < 40; i++) { const r = rng(i + 5); circ((x + dx * k * r()) * W + (r() - .5) * 60 * k, (y + dy * k * r()) * H + (r() - .5) * 60 * k, 24 + r() * 30 * k, 'rgba(28,27,25,.08)'); } }
+  (p.marks || []).forEach(([n, x, y], i) => { const a = fade(t, .1 + i * .1, .3 + i * .1); circ(x * W, y * H, 7, P.ink); text(n, x * W + 14, y * H, 20, { a, align: 'left' }); });
   if (p.upto != null && pts.length > 3) { iceberg(pts[2][1] - 150, pts[2][2] + 120, .25, false, false); label('ice field', pts[2][1] - 150, pts[2][2] + 145, { size: 13 }); }
   ctx.restore(); finish(); return true; };
 SC.ocean = (t, T, p) => { bg(true); ctx.save(); cam(t, 1, 1.06); starsSky(21, 140); sea(380, true, t, T); for (let i = 0; i < 4; i++) boat(160 + i * 300 + Math.sin(T * .5 + i) * 10, 430 + (i % 2) * 30, .55, 6, true, { oars: 1 });
@@ -181,13 +185,14 @@ SC.rescue = (t, T, p) => { bg(); const g = ctx.createLinearGradient(0, 0, 0, 420
   circ(W - 260, 400, 60, 'rgba(255,220,170,.8)'); sea(400, false, t, T); ship(900, 405, 420, {}); label('RMS Carpathia', 900, 270, { size: 16 }); for (let i = 0; i < 5; i++) boat(lerp(140 + i * 110, 650 + i * 30, ease(t) * .6), 470 + (i % 2) * 40, .6, 10, false, { oars: 1 });
   iceberg(220, 400, .5, false, false); iceberg(560, 400, .3, false, false); ctx.restore(); finish(); return true; };
 SC.inquiry = (t, T, p) => { bg(); ctx.save(); cam(t, 1, 1.04); rect(0, 500, W, 220, '#c9bea8'); rect(380, 300, 520, 60, '#8a6a48', P.ink, 3); for (let i = 0; i < 5; i++) stick(450 + i * 95, 300, 1.2, POSE.stand(), {});
-  rect(160, 420, 120, 80, '#8a6a48', P.ink, 3); stick(220, 420, 1.3, POSE.point(), { face: 1 }); for (let i = 0; i < 9; i++) stick(520 + i * 70, 620, 1, POSE.sit(), { face: -1 }); label('United States Senate inquiry · British Wreck Commissioner\'s inquiry', W / 2, 120, { size: 16 }); ctx.restore(); finish(); return true; };
+  rect(160, 420, 120, 80, '#8a6a48', P.ink, 3); stick(220, 420, 1.3, POSE.point(), { face: 1 }); for (let i = 0; i < 9; i++) stick(520 + i * 70, 620, 1, POSE.sit(), { face: -1 }); label(p.label || 'United States Senate inquiry · British Wreck Commissioner\'s inquiry', W / 2, 120, { size: 16 }); ctx.restore(); finish(); return true; };
 SC.wreck = (t, T, p) => { ctx.fillStyle = '#04070b'; ctx.fillRect(0, 0, W, H); ctx.save(); cam(t, 1, 1.08); const g = ctx.createRadialGradient(lerp(300, 700, t), 300, 10, lerp(300, 700, t), 360, 420); g.addColorStop(0, 'rgba(90,120,140,.55)'); g.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
   poly([[260, 560], [900, 520], [1000, 470], [980, 600], [260, 620]], '#151b22', '#5d7380', 2); line(860, 520, 840, 380, '#5d7380', 3); for (let i = 0; i < 20; i++) { const r = rng(i + 9); circ(300 + r() * 650, 540 + r() * 30, 3, 'rgba(160,90,50,.7)'); }
   rect(0, 600, W, 120, '#0a0f14'); ctx.restore(); text('3,800 m', 1080, 120, 64, { f: BIG, c: P.paper, a: fade(t, .2, .4) }); label('found 1 September 1985', 1080, 170, { c: P.soft, size: 14, a: fade(t, .25, .45) }); finish(true); return true; };
 SC.memorial = (t, T, p) => { bg(true); const n = Math.floor(seg(t, .05, .8) * p.n), r = rng(1912); for (let i = 0; i < p.n; i++) { const x = 100 + r() * (W - 200), y = 120 + r() * 420; if (i < n) circ(x, y, 2.2, P.gold); }
-  text('15 April 1912', W / 2, 620, 40, { c: P.paper, it: 1, a: fade(t, .5, .8) }); finish(true); return true; };
+  text(p.date || '15 April 1912', W / 2, 620, 40, { c: P.paper, it: 1, a: fade(t, .5, .8) }); finish(true); return true; };
 
+/*SETS*/
 // ---------- playback ----------
 window.DOC = {
   W, H,
