@@ -16,7 +16,8 @@ voiceover:
     Pulau Tekong: Poo-lau Teh-kong
     Bukit Ho Swee: Boo-kit Hoe Swee
   length_scale: 1.25
-  scene_gap_seconds: 0.6
+  scene_gap_seconds: 0.62
+  section_gap_seconds: 1.6
 render:
   thumbnail_text: Rich With Nothing
 quality_control:

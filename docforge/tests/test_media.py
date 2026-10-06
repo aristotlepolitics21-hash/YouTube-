@@ -133,7 +133,8 @@ def test_qc_fails_short_film(voiced):
     voiced.config["quality_control"]["min_length_ratio"] = 0.9
     voiced.manifest["outputs"]["timeline_seconds"] = 30  # target is 1 minute
     from docforge.quality_control.checks import check_length
-    assert check_length(voiced)[0]["severity"] == "error"
+    issue = check_length(voiced)[0]
+    assert issue["severity"] == "error" and issue["check"] == "target_length"  # not auto-"fixed" by re-rendering
     voiced.manifest["outputs"]["timeline_seconds"] = 58
     assert check_length(voiced) == []
 

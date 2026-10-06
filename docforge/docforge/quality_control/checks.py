@@ -203,10 +203,10 @@ def check_length(project: Project) -> list[dict]:
     total = project.manifest["outputs"].get("timeline_seconds", 0)
     ratio = float(project.config.get_path("quality_control.min_length_ratio", 0.9))
     if target and total < target * ratio:
-        return [_issue("durations", "error", f"film is {total / 60:.1f} min; target is {target / 60:g} min "
+        return [_issue("target_length", "error", f"film is {total / 60:.2f} min; target is {target / 60:g} min "
                                              f"(minimum {target * ratio / 60:.1f})")]
     if target and total > target * 1.2:
-        return [_issue("durations", "warning", f"film is {total / 60:.1f} min, well over the {target / 60:g} min target")]
+        return [_issue("target_length", "warning", f"film is {total / 60:.1f} min, well over the {target / 60:g} min target")]
     return []
 
 
@@ -261,7 +261,7 @@ def write_report(project: Project, issues: list[dict], fixes: list[str]) -> None
              f"{len(issues) - len(errors)} warnings", ""]
     if fixes:
         lines += ["## Automatic fixes", ""] + [f"- {f}" for f in fixes] + [""]
-    checks = ["missing_scenes", "missing_assets", "scene_order", "audio_gaps", "narration_mismatch", "repetition",
+    checks = ["target_length", "missing_scenes", "missing_assets", "scene_order", "audio_gaps", "narration_mismatch", "repetition",
               "visual_continuity", "historical_detail", "durations", "subtitle_sync", "audio_clipping",
               "black_frames", "corrupt_files"]
     lines += ["## Checklist", ""]

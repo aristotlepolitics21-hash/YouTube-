@@ -126,7 +126,7 @@ def run_voiceover(project: Project) -> dict:
     project.log("voiceover", f"narration assembled: {total / 60:.2f} min (voice speaks {wpm:.0f} wpm; "
                              f"planning assumed {project.config.get_path('planning.words_per_minute')})")
     if target and total < target * float(project.config.get_path("quality_control.min_length_ratio", 0.9)):
-        project.log("voiceover", f"WARNING: {total / 60:.1f} min is short of the {target / 60:g} min target. "
+        project.log("voiceover", f"WARNING: {total / 60:.2f} min is short of the {target / 60:g} min target. "
                                  "Slow the voice (voiceover.length_scale), lengthen pauses, or add script, "
                                  "then re-run from voiceover.")
     return {"duration": total}
