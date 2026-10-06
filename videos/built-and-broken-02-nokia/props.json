@@ -1,0 +1,566 @@
+{
+  "themeConfig": {
+    "primaryColor": "#124191",
+    "accentColor": "#4FA3FF",
+    "backgroundColor": "#0A1430",
+    "surfaceColor": "#132350",
+    "textColor": "#F4F7FF",
+    "mutedTextColor": "#9FB0D4",
+    "chartColors": [
+      "#4FA3FF",
+      "#F5B841",
+      "#7DD3C0",
+      "#E86A6A",
+      "#B79CFF",
+      "#9FB0D4"
+    ],
+    "captionHighlightColor": "#4FA3FF",
+    "captionBackgroundColor": "rgba(10, 20, 48, 0.8)"
+  },
+  "cuts": [
+    {
+      "id": "s01",
+      "source": "",
+      "in_seconds": 0.0,
+      "out_seconds": 6.809,
+      "type": "stat_card",
+      "stat": "40%",
+      "subtitle": "of all phones sold worldwide, Q4 2007"
+    },
+    {
+      "id": "s02",
+      "source": "",
+      "in_seconds": 6.809,
+      "out_seconds": 13.286,
+      "type": "callout",
+      "callout_type": "quote",
+      "title": "Forbes cover, November 2007",
+      "text": "Nokia. One billion customers. Can anyone catch the cell phone king?"
+    },
+    {
+      "id": "s03",
+      "source": "",
+      "in_seconds": 13.286,
+      "out_seconds": 19.901,
+      "type": "comparison",
+      "title": "Six years",
+      "leftLabel": "2007",
+      "leftValue": "King of phones",
+      "rightLabel": "2013",
+      "rightValue": "Sold for €5.44B"
+    },
+    {
+      "id": "s04",
+      "source": "",
+      "in_seconds": 19.901,
+      "out_seconds": 25.21,
+      "type": "text_card",
+      "text": "It didn't lose to a better phone.\nIt lost to a different idea of what a phone was."
+    },
+    {
+      "id": "s05",
+      "source": "",
+      "in_seconds": 25.21,
+      "out_seconds": 29.933,
+      "type": "hero_title",
+      "text": "NOKIA",
+      "subtitle": "Built & Broken · Episode 2"
+    },
+    {
+      "id": "s06",
+      "source": "",
+      "in_seconds": 29.933,
+      "out_seconds": 39.833,
+      "type": "stat_card",
+      "stat": "1865",
+      "subtitle": "Fredrik Idestam opens a pulp mill in Tampere, Finland"
+    },
+    {
+      "id": "s07",
+      "source": "",
+      "in_seconds": 39.833,
+      "out_seconds": 49.421,
+      "type": "stat_card",
+      "stat": "1871",
+      "subtitle": "The company takes the name of a river town: Nokia"
+    },
+    {
+      "id": "s08",
+      "source": "",
+      "in_seconds": 49.421,
+      "out_seconds": 58.155,
+      "type": "stat_card",
+      "stat": "1967",
+      "subtitle": "Nokia merges with Finnish Rubber Works and Finnish Cable Works"
+    },
+    {
+      "id": "s09",
+      "source": "",
+      "in_seconds": 58.155,
+      "out_seconds": 67.743,
+      "type": "hero_title",
+      "text": "A bit of everything",
+      "subtitle": "Paper · rubber boots · tyres · cables · TVs"
+    },
+    {
+      "id": "s10",
+      "source": "",
+      "in_seconds": 67.743,
+      "out_seconds": 73.998,
+      "type": "text_card",
+      "text": "Inside the cable business:\na small electronics division"
+    },
+    {
+      "id": "s11",
+      "source": "",
+      "in_seconds": 73.998,
+      "out_seconds": 85.402,
+      "type": "comparison",
+      "title": "The Mobira Cityman",
+      "leftLabel": "1987",
+      "leftValue": "Launched",
+      "rightLabel": "1989",
+      "rightValue": "Gorbachev's call"
+    },
+    {
+      "id": "s12",
+      "source": "",
+      "in_seconds": 85.402,
+      "out_seconds": 89.184,
+      "type": "hero_title",
+      "text": "\"The Gorba\"",
+      "subtitle": "Finland's nickname for the Cityman"
+    },
+    {
+      "id": "s13",
+      "source": "",
+      "in_seconds": 89.184,
+      "out_seconds": 91.515,
+      "type": "text_card",
+      "text": "Then everything went wrong at once."
+    },
+    {
+      "id": "s14",
+      "source": "",
+      "in_seconds": 91.515,
+      "out_seconds": 98.931,
+      "type": "stat_card",
+      "stat": "1988",
+      "subtitle": "Chairman Kari Kairamo dies"
+    },
+    {
+      "id": "s15",
+      "source": "",
+      "in_seconds": 98.931,
+      "out_seconds": 107.125,
+      "type": "stat_card",
+      "stat": "1991",
+      "subtitle": "The Soviet Union collapses. Finland falls into a deep recession."
+    },
+    {
+      "id": "s16",
+      "source": "",
+      "in_seconds": 107.125,
+      "out_seconds": 115.227,
+      "type": "callout",
+      "callout_type": "warning",
+      "title": "1991",
+      "text": "Ericsson holds talks to buy Nokia."
+    },
+    {
+      "id": "s17",
+      "source": "",
+      "in_seconds": 115.227,
+      "out_seconds": 122.556,
+      "type": "comparison",
+      "title": "Why the deal died",
+      "leftLabel": "Ericsson wanted",
+      "leftValue": "Phones + networks",
+      "rightLabel": "Ericsson refused",
+      "rightValue": "TV business"
+    },
+    {
+      "id": "s18",
+      "source": "",
+      "in_seconds": 122.556,
+      "out_seconds": 127.22,
+      "type": "text_card",
+      "text": "The most important deal\nthat never happened"
+    },
+    {
+      "id": "s19",
+      "source": "",
+      "in_seconds": 127.22,
+      "out_seconds": 137.418,
+      "type": "callout",
+      "callout_type": "tip",
+      "title": "1992 · Jorma Ollila becomes CEO",
+      "text": "Sell everything that is not telecoms."
+    },
+    {
+      "id": "s20",
+      "source": "",
+      "in_seconds": 137.418,
+      "out_seconds": 144.742,
+      "type": "hero_title",
+      "text": "One product.",
+      "subtitle": "Paper, rubber, cables, TVs: all sold"
+    },
+    {
+      "id": "s21",
+      "source": "",
+      "in_seconds": 144.742,
+      "out_seconds": 154.254,
+      "type": "stat_card",
+      "stat": "1 July 1991",
+      "subtitle": "The first GSM call, made in Finland on a Nokia phone"
+    },
+    {
+      "id": "s22",
+      "source": "",
+      "in_seconds": 154.254,
+      "out_seconds": 161.049,
+      "type": "text_card",
+      "text": "GSM: the digital standard\nthat went global"
+    },
+    {
+      "id": "s23",
+      "source": "",
+      "in_seconds": 161.049,
+      "out_seconds": 168.552,
+      "type": "hero_title",
+      "text": "Nokia 2110",
+      "subtitle": "1994 · the first phone with the Nokia tune"
+    },
+    {
+      "id": "s24",
+      "source": "",
+      "in_seconds": 168.552,
+      "out_seconds": 179.62,
+      "type": "stat_card",
+      "stat": "#1",
+      "subtitle": "1998: Nokia passes Motorola as the world's biggest phone maker"
+    },
+    {
+      "id": "s25",
+      "source": "",
+      "in_seconds": 179.62,
+      "out_seconds": 188.069,
+      "type": "stat_card",
+      "stat": "€303B",
+      "subtitle": "Peak market value, 2000: Europe's most valuable company"
+    },
+    {
+      "id": "s26",
+      "source": "",
+      "in_seconds": 188.069,
+      "out_seconds": 197.988,
+      "type": "kpi_grid",
+      "title": "Nokia's share of Finland, 2000",
+      "columns": 3,
+      "chartData": [
+        {
+          "label": "of GDP",
+          "value": 4,
+          "suffix": "%"
+        },
+        {
+          "label": "of exports",
+          "value": 21,
+          "suffix": "%"
+        },
+        {
+          "label": "of Helsinki stock market value",
+          "value": 70,
+          "suffix": "%"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "source": "",
+      "in_seconds": 197.988,
+      "out_seconds": 211.093,
+      "type": "bar_chart",
+      "title": "Units sold (millions)",
+      "showValues": true,
+      "chartData": [
+        {
+          "label": "Nokia 3310",
+          "value": 126
+        },
+        {
+          "label": "Nokia 1100",
+          "value": 250
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "source": "",
+      "in_seconds": 211.093,
+      "out_seconds": 219.873,
+      "type": "pie_chart",
+      "title": "Global phone sales, Q4 2007",
+      "donut": true,
+      "centerLabel": "Nokia",
+      "centerValue": "40%",
+      "showLegend": true,
+      "chartData": [
+        {
+          "label": "Nokia",
+          "value": 40
+        },
+        {
+          "label": "Everyone else",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "source": "",
+      "in_seconds": 219.873,
+      "out_seconds": 223.975,
+      "type": "text_card",
+      "text": "Nokia did not miss the smartphone."
+    },
+    {
+      "id": "s30",
+      "source": "",
+      "in_seconds": 223.975,
+      "out_seconds": 233.615,
+      "type": "stat_card",
+      "stat": "1996",
+      "subtitle": "Nokia 9000 Communicator: email and web in your pocket"
+    },
+    {
+      "id": "s31",
+      "source": "",
+      "in_seconds": 233.615,
+      "out_seconds": 245.878,
+      "type": "callout",
+      "callout_type": "info",
+      "title": "c. 2004, as later reported by The New York Times",
+      "text": "A touchscreen, internet-ready prototype. Judged too risky. Shelved."
+    },
+    {
+      "id": "s32",
+      "source": "",
+      "in_seconds": 245.878,
+      "out_seconds": 252.377,
+      "type": "stat_card",
+      "stat": "~62%",
+      "subtitle": "Symbian's share of smartphones, Q4 2007"
+    },
+    {
+      "id": "s33",
+      "source": "",
+      "in_seconds": 252.377,
+      "out_seconds": 263.853,
+      "type": "text_card",
+      "text": "The best in the world\nat building phones"
+    },
+    {
+      "id": "s34",
+      "source": "",
+      "in_seconds": 263.853,
+      "out_seconds": 271.06,
+      "type": "comparison",
+      "title": "Two ideas of a phone",
+      "leftLabel": "Nokia",
+      "leftValue": "Hardware first",
+      "rightLabel": "Apple & Google",
+      "rightValue": "Software first"
+    },
+    {
+      "id": "s35",
+      "source": "",
+      "in_seconds": 271.06,
+      "out_seconds": 278.668,
+      "type": "comparison",
+      "title": "The new rivals",
+      "leftLabel": "Jan 2007",
+      "leftValue": "iPhone announced",
+      "rightLabel": "Late 2008",
+      "rightValue": "Android arrives"
+    },
+    {
+      "id": "s36",
+      "source": "",
+      "in_seconds": 278.668,
+      "out_seconds": 284.523,
+      "type": "text_card",
+      "text": "By the old scoreboard,\nnothing looked wrong."
+    },
+    {
+      "id": "s37",
+      "source": "",
+      "in_seconds": 284.523,
+      "out_seconds": 298.639,
+      "type": "bar_chart",
+      "title": "Symbian's share of smartphone sales (%)",
+      "showValues": true,
+      "chartData": [
+        {
+          "label": "2007",
+          "value": 62
+        },
+        {
+          "label": "2009",
+          "value": 47
+        },
+        {
+          "label": "2010",
+          "value": 38
+        },
+        {
+          "label": "2012",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "source": "",
+      "in_seconds": 298.639,
+      "out_seconds": 304.889,
+      "type": "stat_card",
+      "stat": "Sept 2010",
+      "subtitle": "Stephen Elop, a Microsoft executive, becomes Nokia's CEO"
+    },
+    {
+      "id": "s39",
+      "source": "",
+      "in_seconds": 304.889,
+      "out_seconds": 312.497,
+      "type": "callout",
+      "callout_type": "quote",
+      "title": "Stephen Elop, internal memo, February 2011",
+      "text": "We are standing on a burning platform."
+    },
+    {
+      "id": "s40",
+      "source": "",
+      "in_seconds": 312.497,
+      "out_seconds": 320.604,
+      "type": "stat_card",
+      "stat": "−14%",
+      "subtitle": "Nokia's share price on 11 February 2011"
+    },
+    {
+      "id": "s41",
+      "source": "",
+      "in_seconds": 320.604,
+      "out_seconds": 328.473,
+      "type": "text_card",
+      "text": "It announced the end of its old phones\nbefore the new ones were ready."
+    },
+    {
+      "id": "s42",
+      "source": "",
+      "in_seconds": 328.473,
+      "out_seconds": 341.19,
+      "type": "stat_card",
+      "stat": "3.5%",
+      "subtitle": "Nokia's smartphone market share, Q3 2012"
+    },
+    {
+      "id": "s43",
+      "source": "",
+      "in_seconds": 341.19,
+      "out_seconds": 351.433,
+      "type": "comparison",
+      "title": "Microsoft buys Nokia's phones, Sept 2013",
+      "leftLabel": "Price",
+      "leftValue": "€5.44B",
+      "rightLabel": "Staff moved",
+      "rightValue": "~32,000"
+    },
+    {
+      "id": "s44",
+      "source": "",
+      "in_seconds": 351.433,
+      "out_seconds": 362.953,
+      "type": "comparison",
+      "title": "Microsoft, July 2015",
+      "leftLabel": "Write-down",
+      "leftValue": "$7.6B",
+      "rightLabel": "Jobs cut",
+      "rightValue": "7,800"
+    },
+    {
+      "id": "s45",
+      "source": "",
+      "in_seconds": 362.953,
+      "out_seconds": 366.155,
+      "type": "text_card",
+      "text": "Where Nokia's story\nis different from Kodak's"
+    },
+    {
+      "id": "s46",
+      "source": "",
+      "in_seconds": 366.155,
+      "out_seconds": 378.982,
+      "type": "comparison",
+      "title": "Nokia today",
+      "leftLabel": "Sold",
+      "leftValue": "Phones",
+      "rightLabel": "Kept",
+      "rightValue": "Networks"
+    },
+    {
+      "id": "s47",
+      "source": "",
+      "in_seconds": 378.982,
+      "out_seconds": 387.484,
+      "type": "text_card",
+      "text": "Nokia still builds the networks.\nThe phones carry its name under licence."
+    },
+    {
+      "id": "s48",
+      "source": "",
+      "in_seconds": 387.484,
+      "out_seconds": 393.071,
+      "type": "comparison",
+      "title": "Built & Broken",
+      "leftLabel": "Kodak",
+      "leftValue": "Protected profits",
+      "rightLabel": "Nokia",
+      "rightValue": "Wrong scoreboard"
+    },
+    {
+      "id": "s49",
+      "source": "",
+      "in_seconds": 393.071,
+      "out_seconds": 399.129,
+      "type": "text_card",
+      "text": "It counted phones.\nThe market counted what the phone could do."
+    },
+    {
+      "id": "s50",
+      "source": "",
+      "in_seconds": 399.129,
+      "out_seconds": 408.072,
+      "type": "text_card",
+      "text": "Being the best at the old game\ncan stop you playing the new one."
+    },
+    {
+      "id": "s51",
+      "source": "",
+      "in_seconds": 408.072,
+      "out_seconds": 416.962,
+      "type": "hero_title",
+      "text": "Built & Broken",
+      "subtitle": "Subscribe for the next episode"
+    }
+  ],
+  "overlays": [],
+  "captions": [],
+  "audio": {
+    "narration": {
+      "src": "nokia-ep2/narration.mp3",
+      "volume": 1.0
+    }
+  }
+}

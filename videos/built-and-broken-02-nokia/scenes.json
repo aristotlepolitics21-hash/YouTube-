@@ -1,0 +1,294 @@
+{
+  "title": "Nokia Had 40% of All Phones. Six Years Later, It Quit",
+  "sections": {
+    "hook": "The hook",
+    "origins": "Paper, rubber and cables",
+    "near-death": "The near-death",
+    "golden-age": "The golden age",
+    "warning": "The warning signs",
+    "fall": "The fall",
+    "after": "What happened next",
+    "lesson": "The lesson"
+  },
+  "scenes": [
+    {
+      "section": "hook",
+      "narration": "At the end of 2007, four out of every ten mobile phones sold on Earth were made by one company.",
+      "visual": {"type": "stat_card", "stat": "40%", "subtitle": "of all phones sold worldwide, Q4 2007"}
+    },
+    {
+      "section": "hook",
+      "narration": "That November, Forbes put it on the cover. One billion customers. Can anyone catch the cell phone king?",
+      "visual": {"type": "callout", "callout_type": "quote", "title": "Forbes cover, November 2007", "text": "Nokia. One billion customers. Can anyone catch the cell phone king?"}
+    },
+    {
+      "section": "hook",
+      "narration": "Six years later, Nokia sold its entire phone business to Microsoft for five point four billion euros.",
+      "visual": {"type": "comparison", "title": "Six years", "leftLabel": "2007", "leftValue": "King of phones", "rightLabel": "2013", "rightValue": "Sold for €5.44B"}
+    },
+    {
+      "section": "hook",
+      "narration": "Nokia didn't lose to a better phone. It lost to a different idea of what a phone was.",
+      "visual": {"type": "text_card", "text": "It didn't lose to a better phone.\nIt lost to a different idea of what a phone was."}
+    },
+    {
+      "section": "hook",
+      "narration": "This is Built and Broken. Episode two. Nokia.",
+      "visual": {"type": "hero_title", "text": "NOKIA", "subtitle": "Built & Broken · Episode 2"}
+    },
+
+    {
+      "section": "origins",
+      "narration": "The story starts in 1865, in Finland, with a mining engineer named Fredrik Idestam and a mill that ground wood into pulp for paper.",
+      "visual": {"type": "stat_card", "stat": "1865", "subtitle": "Fredrik Idestam opens a pulp mill in Tampere, Finland"}
+    },
+    {
+      "section": "origins",
+      "narration": "He built a second mill near a small town on the Nokianvirta river. In 1871, the company took the town's name. Nokia.",
+      "visual": {"type": "stat_card", "stat": "1871", "subtitle": "The company takes the name of a river town: Nokia"}
+    },
+    {
+      "section": "origins",
+      "narration": "For the next century, Nokia was not a technology company. In 1967 it merged with the Finnish Rubber Works and the Finnish Cable Works.",
+      "visual": {"type": "stat_card", "stat": "1967", "subtitle": "Nokia merges with Finnish Rubber Works and Finnish Cable Works"}
+    },
+    {
+      "section": "origins",
+      "narration": "The new Nokia made paper, rubber boots, car tires, power cables, and later televisions and computers. It was a conglomerate. A bit of everything.",
+      "visual": {"type": "hero_title", "text": "A bit of everything", "subtitle": "Paper · rubber boots · tyres · cables · TVs"}
+    },
+    {
+      "section": "origins",
+      "narration": "But inside the cable business was a small electronics division, and it started building radio telephones.",
+      "visual": {"type": "text_card", "text": "Inside the cable business:\na small electronics division"}
+    },
+    {
+      "section": "origins",
+      "narration": "In 1987 it released the Mobira Cityman, a brick-sized phone. Two years later, Soviet leader Mikhail Gorbachev was photographed in Helsinki using one to call Moscow.",
+      "visual": {"type": "comparison", "title": "The Mobira Cityman", "leftLabel": "1987", "leftValue": "Launched", "rightLabel": "1989", "rightValue": "Gorbachev's call"}
+    },
+    {
+      "section": "origins",
+      "narration": "In Finland, people nicknamed the phone the Gorba.",
+      "visual": {"type": "hero_title", "text": "\"The Gorba\"", "subtitle": "Finland's nickname for the Cityman"}
+    },
+
+    {
+      "section": "near-death",
+      "narration": "Then everything went wrong at once.",
+      "visual": {"type": "text_card", "text": "Then everything went wrong at once."}
+    },
+    {
+      "section": "near-death",
+      "narration": "In 1988, Nokia's chairman, Kari Kairamo, the man who had pushed it into electronics, died by suicide.",
+      "visual": {"type": "stat_card", "stat": "1988", "subtitle": "Chairman Kari Kairamo dies"}
+    },
+    {
+      "section": "near-death",
+      "narration": "In 1991, the Soviet Union collapsed, and Finland, which had traded heavily with it, fell into a deep recession.",
+      "visual": {"type": "stat_card", "stat": "1991", "subtitle": "The Soviet Union collapses. Finland falls into a deep recession."}
+    },
+    {
+      "section": "near-death",
+      "narration": "Nokia was losing money. One of its bank owners wanted out. And that year, the Swedish rival Ericsson held talks to buy Nokia.",
+      "visual": {"type": "callout", "callout_type": "warning", "title": "1991", "text": "Ericsson holds talks to buy Nokia."}
+    },
+    {
+      "section": "near-death",
+      "narration": "The deal fell apart. Ericsson wanted the phones and the networks, but not the loss-making television business that came with them.",
+      "visual": {"type": "comparison", "title": "Why the deal died", "leftLabel": "Ericsson wanted", "leftValue": "Phones + networks", "rightLabel": "Ericsson refused", "rightValue": "TV business"}
+    },
+    {
+      "section": "near-death",
+      "narration": "It may be the most important deal that never happened in the history of mobile phones.",
+      "visual": {"type": "text_card", "text": "The most important deal\nthat never happened"}
+    },
+    {
+      "section": "near-death",
+      "narration": "In 1992, a new chief executive took over. Jorma Ollila. His plan was simple and brutal. Sell everything that is not telecoms.",
+      "visual": {"type": "callout", "callout_type": "tip", "title": "1992 · Jorma Ollila becomes CEO", "text": "Sell everything that is not telecoms."}
+    },
+    {
+      "section": "near-death",
+      "narration": "Paper, rubber, cables, televisions. All of it went. Nokia bet the company on one product.",
+      "visual": {"type": "hero_title", "text": "One product.", "subtitle": "Paper, rubber, cables, TVs: all sold"}
+    },
+
+    {
+      "section": "golden-age",
+      "narration": "The timing was perfect. On the first of July 1991, the world's first call on a GSM network was made in Finland, on a Nokia phone.",
+      "visual": {"type": "stat_card", "stat": "1 July 1991", "subtitle": "The first GSM call, made in Finland on a Nokia phone"}
+    },
+    {
+      "section": "golden-age",
+      "narration": "GSM was the new digital standard for Europe, and soon most of the world. Nokia knew it better than almost anyone.",
+      "visual": {"type": "text_card", "text": "GSM: the digital standard\nthat went global"}
+    },
+    {
+      "section": "golden-age",
+      "narration": "In 1994 came the Nokia twenty-one ten, and with it a ringtone you can probably hear right now. The Nokia tune.",
+      "visual": {"type": "hero_title", "text": "Nokia 2110", "subtitle": "1994 · the first phone with the Nokia tune"}
+    },
+    {
+      "section": "golden-age",
+      "narration": "Nokia's phones were cheap to make, tough, easy to use, and they lasted for days on one charge. In 1998, Nokia passed Motorola to become the biggest phone maker in the world.",
+      "visual": {"type": "stat_card", "stat": "#1", "subtitle": "1998: Nokia passes Motorola as the world's biggest phone maker"}
+    },
+    {
+      "section": "golden-age",
+      "narration": "In 2000, at the peak of the dot-com boom, Nokia was worth about three hundred and three billion euros, the most valuable company in Europe.",
+      "visual": {"type": "stat_card", "stat": "€303B", "subtitle": "Peak market value, 2000: Europe's most valuable company"}
+    },
+    {
+      "section": "golden-age",
+      "narration": "For a country of five million people, it was enormous. At its peak, Nokia was about four percent of Finland's economy and around a fifth of its exports.",
+      "visual": {"type": "kpi_grid", "title": "Nokia's share of Finland, 2000", "columns": 3, "chartData": [
+        {"label": "of GDP", "value": 4, "suffix": "%"},
+        {"label": "of exports", "value": 21, "suffix": "%"},
+        {"label": "of Helsinki stock market value", "value": 70, "suffix": "%"}
+      ]}
+    },
+    {
+      "section": "golden-age",
+      "narration": "Then came the phones people still remember. The thirty-three ten in 2000. And the Nokia eleven hundred in 2003, which sold more than two hundred and fifty million units, one of the best-selling phones ever made.",
+      "visual": {"type": "bar_chart", "title": "Units sold (millions)", "showValues": true, "chartData": [
+        {"label": "Nokia 3310", "value": 126},
+        {"label": "Nokia 1100", "value": 250}
+      ]},
+      "note": "3310 figure (about 126 million) is the widely reported estimate; 1100 is 'over 250 million'."
+    },
+    {
+      "section": "golden-age",
+      "narration": "By the end of 2007, Nokia sold forty percent of all phones on the planet. One hundred and thirty three million in a single quarter.",
+      "visual": {"type": "pie_chart", "title": "Global phone sales, Q4 2007", "donut": true, "centerLabel": "Nokia", "centerValue": "40%", "showLegend": true, "chartData": [
+        {"label": "Nokia", "value": 40},
+        {"label": "Everyone else", "value": 60}
+      ]}
+    },
+
+    {
+      "section": "warning",
+      "narration": "Here is the part people get wrong. Nokia did not miss the smartphone.",
+      "visual": {"type": "text_card", "text": "Nokia did not miss the smartphone."}
+    },
+    {
+      "section": "warning",
+      "narration": "It practically invented it. In 1996 it launched the Nokia nine thousand Communicator, a phone that opened up into a keyboard with email and the web.",
+      "visual": {"type": "stat_card", "stat": "1996", "subtitle": "Nokia 9000 Communicator: email and web in your pocket"}
+    },
+    {
+      "section": "warning",
+      "narration": "Around 2004, according to a former Nokia engineer, a team built a prototype with a large touchscreen and internet access. Management decided it was too risky, and shelved it.",
+      "visual": {"type": "callout", "callout_type": "info", "title": "c. 2004, as later reported by The New York Times", "text": "A touchscreen, internet-ready prototype. Judged too risky. Shelved."}
+    },
+    {
+      "section": "warning",
+      "narration": "And in 2007, Nokia's Symbian software ran on roughly six in ten smartphones in the world.",
+      "visual": {"type": "stat_card", "stat": "~62%", "subtitle": "Symbian's share of smartphones, Q4 2007"}
+    },
+    {
+      "section": "warning",
+      "narration": "So what was the problem? Nokia was the best company in the world at building phones. Hardware. Factories. Supply chains. Dozens of models for every price and every market.",
+      "visual": {"type": "text_card", "text": "The best in the world\nat building phones"}
+    },
+    {
+      "section": "warning",
+      "narration": "Software was something you put inside the phone. And Nokia kept score the old way. How many phones did we ship?",
+      "visual": {"type": "comparison", "title": "Two ideas of a phone", "leftLabel": "Nokia", "leftValue": "Hardware first", "rightLabel": "Apple & Google", "rightValue": "Software first"}
+    },
+
+    {
+      "section": "fall",
+      "narration": "In January 2007, Apple announced the iPhone. A year and a half later, the first Android phone went on sale.",
+      "visual": {"type": "comparison", "title": "The new rivals", "leftLabel": "Jan 2007", "leftValue": "iPhone announced", "rightLabel": "Late 2008", "rightValue": "Android arrives"}
+    },
+    {
+      "section": "fall",
+      "narration": "By Nokia's old scoreboard, nothing looked wrong. It was still selling more phones than anyone.",
+      "visual": {"type": "text_card", "text": "By the old scoreboard,\nnothing looked wrong."}
+    },
+    {
+      "section": "fall",
+      "narration": "But the new scoreboard was apps, touchscreens, and developers. And there, Symbian was falling fast. Forty seven percent of smartphones in 2009. Thirty eight in 2010. Under four percent by 2012.",
+      "visual": {"type": "bar_chart", "title": "Symbian's share of smartphone sales (%)", "showValues": true, "chartData": [
+        {"label": "2007", "value": 62},
+        {"label": "2009", "value": 47},
+        {"label": "2010", "value": 38},
+        {"label": "2012", "value": 4}
+      ]},
+      "note": "2007 = Q4 2007; 2012 = under 4% (Q3 2012 Nokia smartphone share 3.5%)."
+    },
+    {
+      "section": "fall",
+      "narration": "In September 2010, Nokia hired a new chief executive from Microsoft. Stephen Elop.",
+      "visual": {"type": "stat_card", "stat": "Sept 2010", "subtitle": "Stephen Elop, a Microsoft executive, becomes Nokia's CEO"}
+    },
+    {
+      "section": "fall",
+      "narration": "In February 2011, an internal memo from Elop leaked. He told staff that Nokia was standing on a burning platform.",
+      "visual": {"type": "callout", "callout_type": "quote", "title": "Stephen Elop, internal memo, February 2011", "text": "We are standing on a burning platform."}
+    },
+    {
+      "section": "fall",
+      "narration": "Days later, Nokia announced it would abandon Symbian and switch to Microsoft's Windows Phone. Its shares fell fourteen percent that day.",
+      "visual": {"type": "stat_card", "stat": "−14%", "subtitle": "Nokia's share price on 11 February 2011"}
+    },
+    {
+      "section": "fall",
+      "narration": "Here's the trap. Nokia had announced the end of its old phones before the new ones were ready. Why would anyone buy a Symbian phone now?",
+      "visual": {"type": "text_card", "text": "It announced the end of its old phones\nbefore the new ones were ready."}
+    },
+    {
+      "section": "fall",
+      "narration": "The Lumia phones that followed were well reviewed, but Windows Phone never caught up with the apps on iPhone and Android. By the third quarter of 2012, Nokia had three and a half percent of the smartphone market.",
+      "visual": {"type": "stat_card", "stat": "3.5%", "subtitle": "Nokia's smartphone market share, Q3 2012"}
+    },
+    {
+      "section": "fall",
+      "narration": "In September 2013, Microsoft agreed to buy Nokia's phone business for five point four four billion euros. About thirty two thousand people moved to Microsoft.",
+      "visual": {"type": "comparison", "title": "Microsoft buys Nokia's phones, Sept 2013", "leftLabel": "Price", "leftValue": "€5.44B", "rightLabel": "Staff moved", "rightValue": "~32,000"}
+    },
+    {
+      "section": "fall",
+      "narration": "It didn't work. In 2015, Microsoft wrote off seven point six billion dollars on the deal and announced seven thousand eight hundred job cuts, mostly in phones.",
+      "visual": {"type": "comparison", "title": "Microsoft, July 2015", "leftLabel": "Write-down", "leftValue": "$7.6B", "rightLabel": "Jobs cut", "rightValue": "7,800"}
+    },
+
+    {
+      "section": "after",
+      "narration": "But this is where Nokia's story is different from Kodak's.",
+      "visual": {"type": "text_card", "text": "Where Nokia's story\nis different from Kodak's"}
+    },
+    {
+      "section": "after",
+      "narration": "Nokia didn't die. It did what Jorma Ollila did in 1992. It cut down to the thing it was still best at, the networks that carry the calls, and in 2016 it bought the French rival Alcatel-Lucent.",
+      "visual": {"type": "comparison", "title": "Nokia today", "leftLabel": "Sold", "leftValue": "Phones", "rightLabel": "Kept", "rightValue": "Networks"}
+    },
+    {
+      "section": "after",
+      "narration": "Today, Nokia builds the equipment behind mobile networks around the world. The name on the phones is licensed to another company.",
+      "visual": {"type": "text_card", "text": "Nokia still builds the networks.\nThe phones carry its name under licence."}
+    },
+
+    {
+      "section": "lesson",
+      "narration": "Kodak lost because it protected its profits. Nokia lost because it measured the wrong thing.",
+      "visual": {"type": "comparison", "title": "Built & Broken", "leftLabel": "Kodak", "leftValue": "Protected profits", "rightLabel": "Nokia", "rightValue": "Wrong scoreboard"}
+    },
+    {
+      "section": "lesson",
+      "narration": "It counted phones shipped, while the market started counting apps, developers, and what you could do with the screen.",
+      "visual": {"type": "text_card", "text": "It counted phones.\nThe market counted what the phone could do."}
+    },
+    {
+      "section": "lesson",
+      "narration": "Being the best at the old game is not the same as winning the new one. And sometimes, being the best at the old game is exactly what stops you from playing the new one.",
+      "visual": {"type": "text_card", "text": "Being the best at the old game\ncan stop you playing the new one."}
+    },
+    {
+      "section": "lesson",
+      "narration": "This has been Built and Broken. If you want the next story of a giant that saw the future and still fell, subscribe.",
+      "visual": {"type": "hero_title", "text": "Built & Broken", "subtitle": "Subscribe for the next episode"}
+    }
+  ]
+}
