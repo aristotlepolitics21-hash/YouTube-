@@ -8,3 +8,4 @@ final/*.mp4
 final/shorts/
 logs/
 __pycache__/
+manifest.json
