@@ -1,0 +1,665 @@
+{
+ "series": "Historic Disasters",
+ "episode": 4,
+ "title": "The Dust Bowl",
+ "subtitle": "When the land blew away",
+ "sections": [
+  {
+   "name": "Cold open",
+   "lines": [
+    [
+     "title",
+     {
+      "title": "THE DUST BOWL",
+      "sub": "When the land blew away",
+      "art": "dust",
+      "artp": {
+       "state": "storm"
+      }
+     },
+     "On the afternoon of Sunday, the fourteenth of April, 1935, the sky over the southern Great Plains of America was clear and warm. People were outside, at church, visiting neighbours, driving to town."
+    ],
+    [
+     "dust",
+     {
+      "state": "storm",
+      "people": 1
+     },
+     "Then, to the north, a black wall appeared on the horizon. It was hundreds of miles wide and thousands of feet high, and it was moving towards them at highway speed."
+    ],
+    [
+     "dust",
+     {
+      "state": "storm",
+      "label": "Black Sunday \u00b7 14 April 1935"
+     },
+     "When it arrived, day turned to night. People could not see their own hands in front of their faces. Some thought it was the end of the world."
+    ],
+    [
+     "stat",
+     {
+      "value": "300,000 tons",
+      "label": "of topsoil moved in a single afternoon, by one estimate"
+     },
+     "One estimate put the amount of topsoil that storm moved at three hundred thousand tons."
+    ],
+    [
+     "lesson",
+     {
+      "text": "This disaster was partly man-made."
+     },
+     "It became known as Black Sunday. And it was not simply bad weather. The Dust Bowl was a natural drought made catastrophic by decades of human decisions about the land."
+    ]
+   ]
+  },
+  {
+   "name": "The grass",
+   "lines": [
+    [
+     "dust",
+     {
+      "state": "green"
+     },
+     "For thousands of years, the southern plains had been covered in grass. Short, tough prairie grasses, with roots that ran deep and held the soil in place through droughts, fires and wind."
+    ],
+    [
+     "map",
+     {
+      "land": 1,
+      "route": [],
+      "marks": [
+       [
+        "Oklahoma Panhandle",
+        0.45,
+        0.55
+       ],
+       [
+        "Texas Panhandle",
+        0.42,
+        0.68
+       ],
+       [
+        "Kansas",
+        0.55,
+        0.4
+       ],
+       [
+        "Colorado",
+        0.3,
+        0.38
+       ],
+       [
+        "New Mexico",
+        0.28,
+        0.65
+       ]
+      ],
+      "circles": [
+       [
+        0.43,
+        0.55,
+        0.12,
+        "the heart of the Dust Bowl"
+       ]
+      ],
+      "shapes": [
+       [
+        [
+         0.15,
+         0.15
+        ],
+        [
+         0.85,
+         0.15
+        ],
+        [
+         0.85,
+         0.88
+        ],
+        [
+         0.15,
+         0.88
+        ]
+       ]
+      ]
+     },
+     "This is semi-arid land. It does not get much rain, and in some years it gets almost none. Early American explorers had called parts of it the Great American Desert."
+    ],
+    [
+     "date",
+     {
+      "date": "1862 \u2013 1909",
+      "place": "The Homestead Acts"
+     },
+     "But the government wanted it settled. Homestead laws offered settlers free land if they would live on it and farm it. In 1909, the amount was doubled, to three hundred and twenty acres."
+    ],
+    [
+     "lesson",
+     {
+      "text": "\u201cRain follows the plow.\u201d"
+     },
+     "Promoters spread a comforting theory: that rain follows the plough. Break the sod, plant crops, and the climate itself would become wetter. It was not true. But for a while, it seemed to be."
+    ]
+   ]
+  },
+  {
+   "name": "The great plow-up",
+   "lines": [
+    [
+     "chart",
+     {
+      "title": "Wheat: a boom, then a bust",
+      "y": "wheat price",
+      "x": "1910 \u2192 1932",
+      "points": [
+       [
+        0,
+        0.3
+       ],
+       [
+        0.3,
+        0.5
+       ],
+       [
+        0.4,
+        0.9
+       ],
+       [
+        0.5,
+        0.7
+       ],
+       [
+        0.7,
+        0.55
+       ],
+       [
+        0.85,
+        0.4
+       ],
+       [
+        1,
+        0.1
+       ]
+      ],
+      "notes": [
+       [
+        0.4,
+        0.9,
+        "First World War"
+       ],
+       [
+        1,
+        0.1,
+        "1932"
+       ]
+      ]
+     },
+     "During the First World War, Europe needed food, and the price of wheat soared. Farmers on the plains planted as much as they could."
+    ],
+    [
+     "dust",
+     {
+      "state": "plow"
+     },
+     "After the war came tractors. A farmer with a tractor could plough far more land than with horses. Through the 1920s, millions of acres of native grassland were torn up for wheat. Historians call it the Great Plow-Up."
+    ],
+    [
+     "dust",
+     {
+      "state": "plow",
+      "label": "the grass that held the soil was gone"
+     },
+     "When wheat prices fell, farmers ploughed even more land to make up for it. The deep-rooted grass that had held the soil for millennia was gone, replaced by fields that were bare for much of the year."
+    ],
+    [
+     "people",
+     {
+      "n": 6,
+      "hats": 1,
+      "label": "suitcase farmers"
+     },
+     "Some of the new wheat fields were not even worked by people who lived there. So-called suitcase farmers bought land, ploughed it, planted wheat, and went home to towns far away, coming back only to harvest."
+    ],
+    [
+     "lesson",
+     {
+      "text": "Then the rain stopped."
+     },
+     "As long as the rain kept falling, it worked. Then, in 1931, the rain stopped."
+    ]
+   ]
+  },
+  {
+   "name": "Drought",
+   "lines": [
+    [
+     "dust",
+     {
+      "state": "dry"
+     },
+     "The drought lasted, on and off, for most of the 1930s. Crops withered. The ploughed fields dried into powder."
+    ],
+    [
+     "chart",
+     {
+      "title": "Dust storms reported on the southern plains",
+      "y": "storms per year",
+      "x": "1932 \u2192 1933",
+      "points": [
+       [
+        0,
+        0.25
+       ],
+       [
+        1,
+        0.7
+       ]
+      ],
+      "notes": [
+       [
+        0,
+        0.25,
+        "14"
+       ],
+       [
+        1,
+        0.7,
+        "38"
+       ]
+      ]
+     },
+     "And the wind, which had always blown across the plains, began picking up the soil. In 1932, weather observers recorded fourteen major dust storms. In 1933, thirty-eight."
+    ],
+    [
+     "dust",
+     {
+      "state": "buried"
+     },
+     "Dust drifted against fences and buried them. It piled up against houses like snow. Farmers dug out their tractors, and their fields blew away again overnight."
+    ],
+    [
+     "people",
+     {
+      "n": 6,
+      "label": "wet sheets over the windows \u00b7 damp cloths over faces",
+      "scarf": 1
+     },
+     "Inside, families hung wet sheets over windows and doors and stuffed rags into the cracks. It made no difference. Dust settled on plates and in beds. Mothers put damp cloths over babies' faces."
+    ],
+    [
+     "portrait",
+     {
+      "name": "Caroline Henderson",
+      "role": "Farmer and writer \u00b7 Oklahoma Panhandle",
+      "scarf": "#8a7a6a"
+     },
+     "Caroline Henderson, a farmer in the Oklahoma Panhandle, wrote letters about those years that were published in The Atlantic Monthly. She described dust so thick that her family read by lamplight at noon, and the daily, exhausting work of sweeping it out of the house, knowing it would be back by morning."
+    ],
+    [
+     "dust",
+     {
+      "state": "buried",
+      "label": "1934 \u00b7 the government bought starving cattle"
+     },
+     "Livestock suffered too. Cattle choked on the dust or starved on dead pasture. In 1934, the federal government began buying cattle from desperate ranchers. Animals too sick to be used for food were shot and buried on the spot."
+    ],
+    [
+     "people",
+     {
+      "n": 12,
+      "pose": "walk",
+      "label": "rabbit drives"
+     },
+     "Plagues of grasshoppers and jackrabbits moved through what little was growing. Communities organised rabbit drives, in which hundreds of people herded the animals into pens. They were grim scenes, and they were a measure of how close to ruin people felt."
+    ],
+    [
+     "lesson",
+     {
+      "text": "Dust pneumonia."
+     },
+     "Doctors began seeing a new illness, which people called dust pneumonia. The fine dust filled people's lungs. Children and the elderly were the most vulnerable. Many died, though nobody kept a full count."
+    ],
+    [
+     "map",
+     {
+      "land": 1,
+      "route": [],
+      "marks": [
+       [
+        "Great Plains",
+        0.3,
+        0.45
+       ],
+       [
+        "Chicago",
+        0.6,
+        0.35
+       ],
+       [
+        "Washington",
+        0.82,
+        0.42
+       ],
+       [
+        "New York",
+        0.86,
+        0.3
+       ]
+      ],
+      "plume": [
+       0.3,
+       0.45,
+       0.55,
+       -0.1
+      ],
+      "shapes": [
+       [
+        [
+         0.1,
+         0.15
+        ],
+        [
+         0.95,
+         0.15
+        ],
+        [
+         0.95,
+         0.85
+        ],
+        [
+         0.1,
+         0.85
+        ]
+       ]
+      ]
+     },
+     "In May 1934, a huge storm carried dust from the plains all the way to the East Coast. It fell on Chicago, on Washington, on New York. Ships hundreds of miles out in the Atlantic found dust on their decks."
+    ]
+   ]
+  },
+  {
+   "name": "Black Sunday",
+   "lines": [
+    [
+     "date",
+     {
+      "date": "14 April 1935",
+      "place": "Black Sunday"
+     },
+     "Then came Black Sunday."
+    ],
+    [
+     "dust",
+     {
+      "state": "storm",
+      "people": 1,
+      "label": "the black blizzard"
+     },
+     "The storm swept south from the Dakotas, through Kansas and into the Oklahoma and Texas panhandles. Witnesses described birds flying ahead of it in panic, and static electricity so strong that cars stalled and people shook hands and got shocks."
+    ],
+    [
+     "dust",
+     {
+      "state": "storm"
+     },
+     "It lasted for hours. When it passed, the landscape was changed. A reporter from the Associated Press, writing about the storm, used a new phrase for the region. He called it the Dust Bowl. The name stuck."
+    ],
+    [
+     "portrait",
+     {
+      "name": "Hugh Hammond Bennett",
+      "role": "Soil scientist \u00b7 the father of soil conservation",
+      "hat": 1
+     },
+     "That same week, a soil scientist named Hugh Hammond Bennett was testifying before Congress in Washington, arguing that soil erosion was a national emergency."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The dust arrived in Washington."
+     },
+     "The story goes that he timed his testimony so that, as he was speaking, the dust from the plains arrived and darkened the sky outside the windows. Whether or not he planned it, Congress was convinced."
+    ],
+    [
+     "date",
+     {
+      "date": "27 April 1935",
+      "place": "Soil Conservation Service created"
+     },
+     "Less than two weeks after Black Sunday, the Soil Conservation Act created a new federal agency, the Soil Conservation Service, with Bennett as its chief."
+    ]
+   ]
+  },
+  {
+   "name": "Exodus",
+   "lines": [
+    [
+     "migrate",
+     {},
+     "By then, many families had already given up. They loaded what they could onto cars and trucks and headed west, most often along Route 66, towards California."
+    ],
+    [
+     "stat",
+     {
+      "value": "2.5 million",
+      "label": "people left the Plains states by 1940"
+     },
+     "By 1940, around two and a half million people had moved out of the Plains states. It was one of the largest migrations in American history."
+    ],
+    [
+     "people",
+     {
+      "n": 10,
+      "pose": "walk",
+      "label": "\u201cOkies\u201d"
+     },
+     "Not all of them came from the Dust Bowl, and many were fleeing debt and the Great Depression as much as the dust. But in California, they were lumped together as Okies, and often treated with open hostility."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The Grapes of Wrath \u00b7 1939"
+     },
+     "Their story was told in songs by Woody Guthrie, in photographs by Dorothea Lange, and in John Steinbeck's novel The Grapes of Wrath."
+    ],
+    [
+     "people",
+     {
+      "n": 6,
+      "pose": "look",
+      "hats": 1,
+      "label": "those who stayed"
+     },
+     "But most people in the Dust Bowl did not leave. They stayed, and endured, and tried to save what was left of their land."
+    ]
+   ]
+  },
+  {
+   "name": "Holding the soil",
+   "lines": [
+    [
+     "dust",
+     {
+      "state": "green",
+      "label": "contour ploughing \u00b7 cover crops \u00b7 shelterbelts"
+     },
+     "The Soil Conservation Service taught farmers new methods. Ploughing along the contours of the land, rather than in straight lines. Planting cover crops to protect bare soil. Leaving stubble in the fields. Rotating crops."
+    ],
+    [
+     "people",
+     {
+      "n": 8,
+      "label": "farmers paid to change how they farmed",
+      "hats": 1
+     },
+     "The government paid farmers to adopt them, and to take the most fragile land out of production altogether."
+    ],
+    [
+     "people",
+     {
+      "n": 9,
+      "pose": "walk",
+      "label": "Civilian Conservation Corps"
+     },
+     "Young men from the New Deal's Civilian Conservation Corps were sent to the plains to build terraces and dams, plant trees and repair damaged land."
+    ],
+    [
+     "map",
+     {
+      "land": 1,
+      "route": [],
+      "marks": [
+       [
+        "shelterbelts",
+        0.45,
+        0.5
+       ]
+      ],
+      "shapes": [
+       [
+        [
+         0.15,
+         0.15
+        ],
+        [
+         0.85,
+         0.15
+        ],
+        [
+         0.85,
+         0.88
+        ],
+        [
+         0.15,
+         0.88
+        ]
+       ]
+      ],
+      "circles": [
+       [
+        0.45,
+        0.35,
+        0.03,
+        ""
+       ],
+       [
+        0.45,
+        0.5,
+        0.03,
+        ""
+       ],
+       [
+        0.45,
+        0.65,
+        0.03,
+        ""
+       ]
+      ]
+     },
+     "A huge federal project planted long belts of trees from the Dakotas down to Texas, to break the force of the wind. Over the next seven years, more than two hundred million trees went into the ground."
+    ],
+    [
+     "dust",
+     {
+      "state": "green"
+     },
+     "Around 1939 and 1940, the rains returned. The worst of the dust storms ended. The land slowly began to recover."
+    ]
+   ]
+  },
+  {
+   "name": "The lesson",
+   "lines": [
+    [
+     "timeline",
+     {
+      "events": [
+       [
+        "Grass ploughed up",
+        0.1
+       ],
+       [
+        "Wheat boom",
+        0.3
+       ],
+       [
+        "Drought",
+        0.5
+       ],
+       [
+        "Bare soil + wind",
+        0.7
+       ],
+       [
+        "Exodus",
+        0.9
+       ]
+      ]
+     },
+     "The drought of the 1930s was real, and severe. But droughts had come before, and the grass had held. What was different this time was that the grass was gone."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The soil was treated as if it were permanent."
+     },
+     "The Dust Bowl happened because people treated the soil as if it were permanent, and the rain as if it were guaranteed. Neither was."
+    ],
+    [
+     "chart",
+     {
+      "title": "When drought came back",
+      "y": "dust storm damage",
+      "x": "1930s \u2192 1950s",
+      "points": [
+       [
+        0,
+        1
+       ],
+       [
+        0.4,
+        0.6
+       ],
+       [
+        0.6,
+        0.1
+       ],
+       [
+        1,
+        0.25
+       ]
+      ],
+      "notes": [
+       [
+        0,
+        1,
+        "1930s"
+       ],
+       [
+        1,
+        0.25,
+        "1950s"
+       ]
+      ]
+     },
+     "In the 1950s, severe drought returned to the southern plains. There were dust storms again. But with much of the land protected by conservation practices, it never became another Dust Bowl."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The land had been telling them."
+     },
+     "The land had been sending warnings for years: dry seasons, blowing fields, small storms. But wheat prices, debt and hope all pushed in the other direction."
+    ],
+    [
+     "memorial",
+     {
+      "n": 400,
+      "date": "14 April 1935"
+     },
+     "Many of the conservation practices developed in those years are still used today. They exist because a generation of farmers watched their land blow away."
+    ]
+   ]
+  }
+ ]
+}

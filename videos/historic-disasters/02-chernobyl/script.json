@@ -1,0 +1,695 @@
+{
+ "series": "Historic Disasters",
+ "episode": 2,
+ "title": "Chernobyl",
+ "subtitle": "The test that blew the lid off a reactor",
+ "sections": [
+  {
+   "name": "Cold open",
+   "lines": [
+    [
+     "title",
+     {
+      "title": "CHERNOBYL",
+      "sub": "The test that blew the lid off a reactor",
+      "art": "reactor",
+      "artp": {
+       "state": "open"
+      }
+     },
+     "At twenty-three minutes past one in the morning, on the twenty-sixth of April, 1986, an operator in a control room in northern Ukraine pressed a button that was supposed to make everything safe."
+    ],
+    [
+     "control",
+     {
+      "button": 1,
+      "alarm": 0
+     },
+     "The button was labelled A Z five. It was the emergency shutdown. It was designed to drop every control rod into the reactor and stop the chain reaction."
+    ],
+    [
+     "reactor",
+     {
+      "state": "surge"
+     },
+     "Instead, for a few seconds, it made the reaction faster."
+    ],
+    [
+     "reactor",
+     {
+      "state": "explode"
+     },
+     "Within moments, reactor number four of the Chernobyl Nuclear Power Plant had torn itself apart."
+    ],
+    [
+     "lesson",
+     {
+      "text": "A safety test caused the worst nuclear accident in history."
+     },
+     "The explosion happened during a safety test. This is the story of how a test meant to make a reactor safer caused the worst nuclear accident in history."
+    ]
+   ]
+  },
+  {
+   "name": "The plant",
+   "lines": [
+    [
+     "map",
+     {
+      "land": 1,
+      "route": [],
+      "marks": [
+       [
+        "Chernobyl plant",
+        0.5,
+        0.42
+       ],
+       [
+        "Pripyat",
+        0.54,
+        0.38
+       ],
+       [
+        "Kyiv",
+        0.6,
+        0.7
+       ]
+      ],
+      "shapes": [
+       [
+        [
+         0.2,
+         0.1
+        ],
+        [
+         0.85,
+         0.08
+        ],
+        [
+         0.9,
+         0.85
+        ],
+        [
+         0.15,
+         0.9
+        ]
+       ]
+      ]
+     },
+     "The Chernobyl plant sat in Soviet Ukraine, about a hundred kilometres north of Kyiv. Next to it was Pripyat, a new town built for the plant's workers and their families. Around forty-nine thousand people lived there."
+    ],
+    [
+     "reactor",
+     {
+      "state": "normal",
+      "label": "RBMK-1000"
+     },
+     "The plant had four reactors of a Soviet design called the RBMK. They were large, powerful and cheap to build. They used blocks of graphite to keep the nuclear reaction going, and water flowing through hundreds of channels to carry the heat away."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The RBMK had two hidden flaws."
+     },
+     "The design had two flaws that were not widely understood, even by many of the people who ran it."
+    ],
+    [
+     "chart",
+     {
+      "title": "Flaw one: at low power, more steam meant more power",
+      "y": "reactor power",
+      "x": "steam in the core",
+      "points": [
+       [
+        0,
+        0.1
+       ],
+       [
+        0.2,
+        0.15
+       ],
+       [
+        0.4,
+        0.25
+       ],
+       [
+        0.6,
+        0.45
+       ],
+       [
+        0.8,
+        0.75
+       ],
+       [
+        1,
+        1
+       ]
+      ]
+     },
+     "The first was that at low power, the reactor could become unstable. If the cooling water boiled into steam, the reaction sped up, which made more steam, which sped it up further."
+    ],
+    [
+     "reactor",
+     {
+      "state": "normal",
+      "rods": 0.2,
+      "label": "control rods with graphite tips"
+     },
+     "The second was in the control rods themselves. Each rod had a graphite section at its tip. When a rod that was pulled all the way out was dropped back in, that tip briefly pushed water out of the bottom of the core, and for a few seconds, increased the reaction instead of reducing it."
+    ]
+   ]
+  },
+  {
+   "name": "The test",
+   "lines": [
+    [
+     "lesson",
+     {
+      "text": "What if the power fails?"
+     },
+     "The test was about a simple question. If the plant lost its outside electricity, the backup diesel generators needed about a minute to start. Could the spinning turbines produce enough power to keep the cooling pumps running for that minute?"
+    ],
+    [
+     "date",
+     {
+      "date": "25 April 1986",
+      "place": "Reactor No. 4 \u00b7 scheduled shutdown"
+     },
+     "The test had been tried before without success. On the twenty-fifth of April, reactor four was due to shut down for maintenance, and the test would be run on the way down."
+    ],
+    [
+     "clock",
+     {
+      "time": "2:00 PM",
+      "date": "25 April",
+      "year": 1986
+     },
+     "But the grid controller in Kyiv asked the plant to keep producing electricity for the afternoon. The test was delayed by about ten hours."
+    ],
+    [
+     "people",
+     {
+      "n": 6,
+      "night": 1,
+      "label": "the night shift inherited the test"
+     },
+     "That meant it would be run by the night shift, who had not been prepared to carry it out."
+    ],
+    [
+     "control",
+     {
+      "power": [
+       0.5,
+       0.02
+      ]
+     },
+     "Shortly after midnight, while the operators were reducing power, it fell much further than intended, almost to zero."
+    ],
+    [
+     "chart",
+     {
+      "title": "Reactor power, night of 25\u201326 April",
+      "y": "power",
+      "x": "time",
+      "points": [
+       [
+        0,
+        0.5
+       ],
+       [
+        0.2,
+        0.45
+       ],
+       [
+        0.35,
+        0.05
+       ],
+       [
+        0.5,
+        0.02
+       ],
+       [
+        0.6,
+        0.07
+       ],
+       [
+        0.75,
+        0.07
+       ],
+       [
+        0.9,
+        0.08
+       ],
+       [
+        0.97,
+        0.1
+       ],
+       [
+        1,
+        1
+       ]
+      ],
+      "notes": [
+       [
+        0.5,
+        0.02,
+        "near zero"
+       ],
+       [
+        0.75,
+        0.07,
+        "rods pulled out"
+       ],
+       [
+        1,
+        1,
+        "1:23:40"
+       ]
+      ]
+     },
+     "A reactor that drops that low is hard to bring back up. It fills with a gas, xenon, that absorbs neutrons. To raise the power again, the operators pulled out more and more control rods."
+    ],
+    [
+     "reactor",
+     {
+      "state": "test",
+      "rods": 0.02,
+      "label": "far fewer rods in the core than the rules allowed"
+     },
+     "By the time the power steadied, at a fraction of the planned level, far fewer rods were left in the core than the safety rules required. Several automatic safety systems had been switched off for the test."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The test went ahead anyway."
+     },
+     "The test went ahead anyway."
+    ]
+   ]
+  },
+  {
+   "name": "1:23 AM",
+   "lines": [
+    [
+     "clock",
+     {
+      "time": "1:23 AM",
+      "date": "26 April",
+      "year": 1986
+     },
+     "At one twenty-three and four seconds, the operators shut off the steam to the turbine. The turbine began to slow down, and so did the pumps it was powering."
+    ],
+    [
+     "reactor",
+     {
+      "state": "test",
+      "rods": 0.02,
+      "label": "less water \u00b7 more steam"
+     },
+     "With less water flowing, more of it turned to steam. In this reactor, at this power, more steam meant more power."
+    ],
+    [
+     "control",
+     {
+      "button": 1
+     },
+     "Thirty-six seconds into the test, someone pressed A Z five. Exactly why, and at what moment, is still debated. It may have been to end the test, or because they saw the power rising."
+    ],
+    [
+     "reactor",
+     {
+      "state": "surge",
+      "rods": 0.02
+     },
+     "Every control rod began to fall. And because almost all of them had been pulled out, their graphite tips entered the core together, pushing out water and adding power at the bottom of the reactor."
+    ],
+    [
+     "control",
+     {
+      "alarm": 1,
+      "power": [
+       0.1,
+       1
+      ]
+     },
+     "Within a few seconds, the power surged to many times the reactor's maximum. Fuel shattered. Steam pressure ripped through the channels."
+    ],
+    [
+     "reactor",
+     {
+      "state": "explode"
+     },
+     "A steam explosion blew the massive concrete and steel lid off the top of the reactor. A second explosion seconds later threw burning graphite and fuel across the site."
+    ],
+    [
+     "reactor",
+     {
+      "state": "open"
+     },
+     "The core was open to the sky. The graphite inside caught fire, and the fire carried radioactive material high into the air."
+    ]
+   ]
+  },
+  {
+   "name": "The night",
+   "lines": [
+    [
+     "people",
+     {
+      "n": 8,
+      "night": 1,
+      "pose": "look",
+      "hats": 1,
+      "label": "firefighters on the roof"
+     },
+     "Firefighters arrived within minutes. They were told it was a roof fire. They worked on the rooftops of the turbine hall, among pieces of graphite from the core, with no idea of the radiation they were absorbing."
+    ],
+    [
+     "control",
+     {
+      "power": [
+       0.3,
+       1
+      ],
+      "text": "dosimeters off the scale"
+     },
+     "The plant's radiation meters only went up to a level far below what was now in the air. Readings went off the scale, and some in charge took the low numbers at face value."
+    ],
+    [
+     "lesson",
+     {
+      "text": "\u201cThe reactor is intact.\u201d"
+     },
+     "For hours, senior staff reported that the reactor was intact, and that they were cooling it with water."
+    ],
+    [
+     "reactor",
+     {
+      "state": "open",
+      "label": "sand, clay, boron and lead dropped by helicopter"
+     },
+     "Over the next days, helicopters flew over the open reactor again and again, dropping thousands of tonnes of sand, clay, boron and lead onto the burning core."
+    ],
+    [
+     "people",
+     {
+      "n": 3,
+      "night": 1,
+      "pose": "walk",
+      "label": "into the flooded basement"
+     },
+     "Engineers feared the melting core could reach water flooding the basements below it. Three plant workers volunteered to wade through the dark, flooded corridors to open the valves and drain it. All three survived."
+    ],
+    [
+     "map",
+     {
+      "land": 1,
+      "route": [],
+      "marks": [
+       [
+        "Pripyat",
+        0.54,
+        0.38
+       ],
+       [
+        "Chernobyl plant",
+        0.5,
+        0.42
+       ]
+      ],
+      "shapes": [
+       [
+        [
+         0.2,
+         0.1
+        ],
+        [
+         0.85,
+         0.08
+        ],
+        [
+         0.9,
+         0.85
+        ],
+        [
+         0.15,
+         0.9
+        ]
+       ]
+      ]
+     },
+     "In Pripyat, three kilometres away, Saturday began as normal. Children went to school. There were weddings. People went fishing near the plant."
+    ],
+    [
+     "date",
+     {
+      "date": "27 April 1986",
+      "place": "Pripyat \u00b7 2:00 PM"
+     },
+     "The evacuation of Pripyat began only on the afternoon of the twenty-seventh, about thirty-six hours after the explosion."
+    ],
+    [
+     "people",
+     {
+      "n": 12,
+      "pose": "walk",
+      "label": "\u201cfor three days\u201d"
+     },
+     "Residents were told to bring documents and a few things for three days. They never went back."
+    ]
+   ]
+  },
+  {
+   "name": "The world finds out",
+   "lines": [
+    [
+     "map",
+     {
+      "land": 1,
+      "route": [],
+      "marks": [
+       [
+        "Chernobyl",
+        0.62,
+        0.72
+       ],
+       [
+        "Forsmark, Sweden",
+        0.42,
+        0.22
+       ]
+      ],
+      "plume": [
+       0.62,
+       0.72,
+       -0.25,
+       -0.5
+      ],
+      "shapes": [
+       [
+        [
+         0.3,
+         0.05
+        ],
+        [
+         0.5,
+         0.05
+        ],
+        [
+         0.48,
+         0.35
+        ],
+        [
+         0.35,
+         0.4
+        ]
+       ],
+       [
+        [
+         0.45,
+         0.45
+        ],
+        [
+         0.95,
+         0.4
+        ],
+        [
+         0.95,
+         0.95
+        ],
+        [
+         0.4,
+         0.95
+        ]
+       ]
+      ]
+     },
+     "The Soviet government said nothing publicly. Then, on the morning of the twenty-eighth, workers arriving at a nuclear plant in Sweden, more than a thousand kilometres away, set off radiation alarms. The contamination was not coming from their plant."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The fallout had crossed borders."
+     },
+     "Only then did Soviet state television read a short announcement. The radioactive cloud had already crossed into Belarus, Scandinavia and much of Europe."
+    ],
+    [
+     "map",
+     {
+      "land": 1,
+      "route": [],
+      "circles": [
+       [
+        0.5,
+        0.5,
+        0.18,
+        "30 km exclusion zone"
+       ]
+      ],
+      "marks": [
+       [
+        "Chernobyl",
+        0.5,
+        0.5
+       ]
+      ],
+      "shapes": [
+       [
+        [
+         0.1,
+         0.1
+        ],
+        [
+         0.9,
+         0.1
+        ],
+        [
+         0.9,
+         0.9
+        ],
+        [
+         0.1,
+         0.9
+        ]
+       ]
+      ]
+     },
+     "A thirty kilometre exclusion zone was drawn around the plant. In 1986 alone, more than a hundred thousand people were evacuated. Over the following years, the number of people resettled from contaminated land in Ukraine, Belarus and Russia passed three hundred thousand."
+    ]
+   ]
+  },
+  {
+   "name": "The cost",
+   "lines": [
+    [
+     "people",
+     {
+      "n": 10,
+      "pose": "mourn",
+      "red": 10,
+      "label": "liquidators"
+     },
+     "Hundreds of thousands of people, soldiers, miners, firefighters and workers known as liquidators, were sent to fight the fire, bury the waste and clean up the site."
+    ],
+    [
+     "stat",
+     {
+      "value": "31",
+      "label": "deaths in the first months, officially"
+     },
+     "Two plant workers died on the night. In the months that followed, twenty-nine more died, most of them firefighters and staff, from acute radiation sickness."
+    ],
+    [
+     "stat",
+     {
+      "value": "134",
+      "label": "people diagnosed with acute radiation syndrome"
+     },
+     "One hundred and thirty-four people were diagnosed with acute radiation syndrome."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The long-term toll is still argued over."
+     },
+     "The long-term toll is still argued over. The clearest effect was a sharp rise in thyroid cancer among people who were children at the time, many thousands of cases, mostly treatable. Estimates of eventual deaths from cancer range from a few thousand to far higher, depending on who is counting and how."
+    ],
+    [
+     "reactor",
+     {
+      "state": "sarcophagus"
+     },
+     "By November 1986, the ruined reactor had been sealed inside a hastily built concrete shelter. In 2016, a giant steel arch, the New Safe Confinement, was slid over it."
+    ]
+   ]
+  },
+  {
+   "name": "The lesson",
+   "lines": [
+    [
+     "inquiry",
+     {
+      "label": "IAEA safety reports \u00b7 1986 and 1992"
+     },
+     "The first Soviet accounts blamed the operators. Years later, a revised international report put much more of the weight on the reactor's design, and on a system that had kept its flaws quiet."
+    ],
+    [
+     "timeline",
+     {
+      "events": [
+       [
+        "Unstable at low power",
+        0.1
+       ],
+       [
+        "Faulty rod tips",
+        0.3
+       ],
+       [
+        "Test delayed to night",
+        0.5
+       ],
+       [
+        "Rods pulled out",
+        0.7
+       ],
+       [
+        "Secrecy",
+        0.9
+       ]
+      ]
+     },
+     "An unstable design. Rods that briefly did the opposite of what they were for. A test pushed onto an unprepared shift. Rules broken to finish it. And a culture of secrecy that delayed the truth."
+    ],
+    [
+     "checklist",
+     {
+      "head": "After Chernobyl",
+      "items": [
+       "Every RBMK reactor modified",
+       "Control rods redesigned",
+       "Faster international accident reporting",
+       "Safety culture became a formal standard"
+      ]
+     },
+     "Every remaining RBMK reactor was modified. International rules now require countries to report nuclear accidents quickly. And the phrase safety culture, the idea that how an organisation thinks matters as much as its machines, entered the language of the nuclear industry."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The safety button made it worse."
+     },
+     "At Chernobyl, the button meant to save the reactor helped destroy it. Nobody in the control room that night knew it could."
+    ],
+    [
+     "memorial",
+     {
+      "n": 900,
+      "date": "26 April 1986"
+     },
+     "The people who paid for that lesson are still being counted."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+  "series": "Historic Disasters", "episode": 6, "title": "The Johnstown Flood", "subtitle": "The lake above the town",
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "JOHNSTOWN", "sub": "The lake above the town", "art": "dam", "artp": {"state": "break"}}, "At ten past three in the afternoon on the thirty-first of May, 1889, an earth dam in the mountains of western Pennsylvania gave way."],
+      ["dam", {"state": "break"}, "Behind it was one of the largest artificial lakes in the United States. In about forty minutes, the entire lake emptied into the narrow valley below."],
+      ["flood", {}, "Fourteen miles downstream was the steel town of Johnstown. When the water reached it, it was no longer really water. It was a moving wall of trees, houses, railway cars, barbed wire and bodies."],
+      ["stat", {"value": "2,209", "label": "people killed"}, "In about ten minutes, it destroyed most of the town. Two thousand two hundred and nine people died."],
+      ["lesson", {"text": "The dam belonged to a club for millionaires."}, "The dam that failed belonged to a private club, whose members included some of the richest men in America. They had used the lake for fishing and sailing. And for years, they had been warned."]
+    ]},
+    { "name": "The dam", "lines": [
+      ["date", {"date": "1838 – 1853", "place": "South Fork Dam · built by the State of Pennsylvania"}, "The South Fork Dam was built by the State of Pennsylvania between 1838 and 1853, to hold water for a canal system. It was an earthen dam, a huge bank of clay and rock, more than seventy feet high."],
+      ["dam", {"state": "club", "label": "Lake Conemaugh"}, "But by the time it was finished, railways had made the canal obsolete. The dam was abandoned, sold, and neglected. In 1862, part of it failed, but the lake was low and little damage was done."],
+      ["date", {"date": "1879", "place": "South Fork Fishing and Hunting Club"}, "In 1879, the dam and the land around it were bought by a group of wealthy men from Pittsburgh. They formed the South Fork Fishing and Hunting Club, and turned the reservoir, now called Lake Conemaugh, into a private summer retreat."],
+      ["people", {"n": 8, "hats": 1, "label": "club members included Andrew Carnegie and Henry Clay Frick"}, "The club's members would come to include the steel magnates Andrew Carnegie and Henry Clay Frick, and the banker Andrew Mellon. They built cottages and a clubhouse by the water, stocked the lake with fish, and sailed on it in summer."]
+    ]},
+    { "name": "The repairs", "lines": [
+      ["dam", {"state": "club", "label": "the repairs were done cheaply"}, "To restore the lake, the club repaired the breached dam. But the work was done cheaply, without a qualified engineer. Holes were filled with mud, rocks, brush and even horse manure."],
+      ["lesson", {"text": "Three changes made it far more dangerous."}, "Over time, three changes made the dam far more dangerous."],
+      ["checklist", {"head": "What the club changed", "items": ["Removed the discharge pipes at the base", "Lowered the top of the dam to widen the road", "Put fish screens across the spillway"]}, "The pipes at the base of the dam, which could have been used to lower the lake in an emergency, had been removed and sold. The top of the dam was lowered by several feet, so a road across it would be wide enough for two carriages. And screens were put across the spillway, to stop the club's expensive fish from escaping."],
+      ["dam", {"state": "club", "label": "a low spot in the middle"}, "Lowering the crest meant water could flow over the top sooner. The dam had also sagged in the middle, making that part the lowest point. And the screens meant that in a flood, the spillway could clog with debris."],
+      ["portrait", {"name": "Daniel J. Morrell", "role": "Head of the Cambria Iron Company, Johnstown"}, "In Johnstown, people knew about the lake above them. Daniel Morrell, head of the town's huge iron works, sent an engineer to inspect the dam. The report was worrying. Morrell offered to help pay for repairs. The club's president rejected the criticism."],
+      ["lesson", {"text": "“The dam will break someday.”"}, "In town, the dam became a running joke. Every spring, people said it would break someday. Every spring, it did not."]
+    ]},
+    { "name": "The storm", "lines": [
+      ["date", {"date": "30 May 1889", "place": "the heaviest rainfall ever recorded in the region"}, "On the thirtieth of May, 1889, a huge storm moved over western Pennsylvania. Over the next day, between six and ten inches of rain fell, the heaviest rainfall ever recorded in the area."],
+      ["dam", {"state": "rain"}, "In Johnstown, the rivers rose and flooded the streets, as they did most springs. People moved their belongings upstairs and waited."],
+      ["dam", {"state": "overtop"}, "Up at the lake, the water rose about an inch every ten minutes. The spillway, blocked by debris and fish screens, could not carry it away."],
+      ["portrait", {"name": "John Parke", "role": "Resident engineer, South Fork Club"}, "On the morning of the thirty-first, the club's young resident engineer, John Parke, saw that the dam might not hold. He organised men to try to dig a new spillway, and to pile earth on top of the dam. It was not enough."],
+      ["people", {"n": 4, "pose": "walk", "label": "warnings sent down the valley"}, "Parke rode to the nearby village of South Fork to raise the alarm. Telegraph messages were sent down the valley to Johnstown. But the warnings had been heard so many times before that many people did not take them seriously."]
+    ]},
+    { "name": "The break", "lines": [
+      ["clock", {"time": "3:10 PM", "date": "31 May", "year": 1889}, "At around ten past three in the afternoon, water was pouring over the top of the dam. It cut into the earth on the downstream side, and the dam gave way."],
+      ["dam", {"state": "break"}, "About twenty million tons of water rushed into the valley of the Little Conemaugh River."],
+      ["map", {"land": 1, "route": [["Lake Conemaugh", 0.85, 0.3], ["South Fork", 0.72, 0.4], ["Mineral Point", 0.55, 0.45], ["East Conemaugh", 0.35, 0.55], ["Johnstown", 0.15, 0.65]], "shapes": [[[0.05, 0.1], [0.95, 0.1], [0.95, 0.9], [0.05, 0.9]]]}, "It swept down the narrow valley, through the villages of South Fork and Mineral Point and East Conemaugh, picking up everything in its path. Houses. Trees. Locomotives. Miles of barbed wire from a wire works."],
+      ["flood", {"label": "a wall of debris up to forty feet high"}, "The wave slowed when it hit obstacles, and then built up behind them and broke through, faster. By the time it reached Johnstown, the front of it was a churning mass of debris that witnesses described as up to forty feet high."],
+      ["clock", {"time": "4:07 PM", "date": "31 May", "year": 1889}, "It reached Johnstown at about seven minutes past four, less than an hour after the dam broke."]
+    ]},
+    { "name": "Johnstown", "lines": [
+      ["flood", {}, "The people of Johnstown heard it before they saw it, a deep roar that grew louder. Then the wave came through the town. Brick buildings were crushed. Wooden houses were lifted off their foundations and swept away with families still inside."],
+      ["lesson", {"text": "About ten minutes."}, "It took about ten minutes."],
+      ["flood", {"bridge": 1}, "At the lower end of town stood a massive stone railway bridge. The debris piled up against its arches, until it formed a dam of wreckage covering about thirty acres, with hundreds of people trapped inside it."],
+      ["flood", {"bridge": 1, "fire": 1}, "That evening, the pile caught fire, probably from stoves in the wrecked houses. It burned for days. About eighty people who had survived the flood died in the fire."],
+      ["stat", {"value": "99", "label": "entire families wiped out"}, "Two thousand two hundred and nine people were killed. Ninety-nine entire families died together. Three hundred and ninety-six of the dead were children. Many bodies were never identified."]
+    ]},
+    { "name": "Aftermath", "lines": [
+      ["portrait", {"name": "Clara Barton", "role": "Founder, American Red Cross", "scarf": "#6b655a"}, "Help came from across the country and the world. Clara Barton arrived with the young American Red Cross. It was the organisation's first major disaster relief effort. She stayed for five months."],
+      ["inquiry", {"label": "lawsuits against the South Fork Club"}, "Survivors sued the South Fork Fishing and Hunting Club. They did not win a single case. The courts treated the dam failure as an act of God. No member of the club was ever held responsible, and none paid any compensation, though some gave privately to the relief fund."],
+      ["lesson", {"text": "The law changed."}, "The outrage helped change American law. Over the following years, more and more courts adopted the principle that whoever keeps something dangerous on their land, like a reservoir, is responsible if it escapes and causes harm, whether or not anyone can prove they were careless."]
+    ]},
+    { "name": "The lesson", "lines": [
+      ["timeline", {"events": [["Cheap repairs", 0.1], ["Pipes removed", 0.3], ["Crest lowered", 0.5], ["Spillway screened", 0.7], ["Warnings ignored", 0.9]]}, "The storm was extraordinary. But the dam failed because of choices. Cheap repairs. Safety pipes removed. The crest lowered for a road. The spillway blocked for the sake of the fish. And warnings dismissed, by the club and, in the end, by the town itself."],
+      ["lesson", {"text": "The risk was carried by the people below."}, "The people who controlled the dam enjoyed the lake. The people who carried the risk lived fourteen miles away, and had no say in how it was maintained."],
+      ["lesson", {"text": "Familiar danger stops feeling like danger."}, "And there is another lesson in Johnstown, an uncomfortable one. A danger that is familiar, that has been joked about for years, stops feeling like danger at all."],
+      ["memorial", {"n": 2209, "date": "31 May 1889"}, "Johnstown was rebuilt. Today, the remains of the South Fork Dam are part of a national memorial, two halves of an earth bank with a gap between them, where the lake used to be."]
+    ]}
+  ]
+}

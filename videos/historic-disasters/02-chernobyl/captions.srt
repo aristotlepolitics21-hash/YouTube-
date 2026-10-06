@@ -1,0 +1,183 @@
+1
+00:00:01,000 --> 00:00:13,504
+At twenty-three minutes past one in the morning, on the twenty-sixth of April, 1986, an operator in a control room in northern Ukraine pressed a button that was supposed to make everything safe.
+
+2
+00:00:14,804 --> 00:00:25,373
+The button was labelled A Z five. It was the emergency shutdown. It was designed to drop every control rod into the reactor and stop the chain reaction.
+
+3
+00:00:26,673 --> 00:00:30,133
+Instead, for a few seconds, it made the reaction faster.
+
+4
+00:00:31,433 --> 00:00:37,052
+Within moments, reactor number four of the Chernobyl Nuclear Power Plant had torn itself apart.
+
+5
+00:00:38,352 --> 00:00:47,669
+The explosion happened during a safety test. This is the story of how a test meant to make a reactor safer caused the worst nuclear accident in history.
+
+6
+00:00:50,069 --> 00:01:02,920
+The Chernobyl plant sat in Soviet Ukraine, about a hundred kilometres north of Kyiv. Next to it was Pripyat, a new town built for the plant's workers and their families. Around forty-nine thousand people lived there.
+
+7
+00:01:04,220 --> 00:01:20,280
+The plant had four reactors of a Soviet design called the RBMK. They were large, powerful and cheap to build. They used blocks of graphite to keep the nuclear reaction going, and water flowing through hundreds of channels to carry the heat away.
+
+8
+00:01:21,580 --> 00:01:26,665
+The design had two flaws that were not widely understood, even by many of the people who ran it.
+
+9
+00:01:27,965 --> 00:01:38,883
+The first was that at low power, the reactor could become unstable. If the cooling water boiled into steam, the reaction sped up, which made more steam, which sped it up further.
+
+10
+00:01:40,183 --> 00:01:56,912
+The second was in the control rods themselves. Each rod had a graphite section at its tip. When a rod that was pulled all the way out was dropped back in, that tip briefly pushed water out of the bottom of the core, and for a few seconds, increased the reaction instead of reducing it.
+
+11
+00:01:59,312 --> 00:02:12,059
+The test was about a simple question. If the plant lost its outside electricity, the backup diesel generators needed about a minute to start. Could the spinning turbines produce enough power to keep the cooling pumps running for that minute?
+
+12
+00:02:13,359 --> 00:02:23,871
+The test had been tried before without success. On the twenty-fifth of April, reactor four was due to shut down for maintenance, and the test would be run on the way down.
+
+13
+00:02:25,171 --> 00:02:33,141
+But the grid controller in Kyiv asked the plant to keep producing electricity for the afternoon. The test was delayed by about ten hours.
+
+14
+00:02:34,441 --> 00:02:38,748
+That meant it would be run by the night shift, who had not been prepared to carry it out.
+
+15
+00:02:40,048 --> 00:02:47,374
+Shortly after midnight, while the operators were reducing power, it fell much further than intended, almost to zero.
+
+16
+00:02:48,674 --> 00:03:01,351
+A reactor that drops that low is hard to bring back up. It fills with a gas, xenon, that absorbs neutrons. To raise the power again, the operators pulled out more and more control rods.
+
+17
+00:03:02,651 --> 00:03:13,779
+By the time the power steadied, at a fraction of the planned level, far fewer rods were left in the core than the safety rules required. Several automatic safety systems had been switched off for the test.
+
+18
+00:03:15,079 --> 00:03:16,704
+The test went ahead anyway.
+
+19
+00:03:19,104 --> 00:03:28,827
+At one twenty-three and four seconds, the operators shut off the steam to the turbine. The turbine began to slow down, and so did the pumps it was powering.
+
+20
+00:03:30,127 --> 00:03:37,563
+With less water flowing, more of it turned to steam. In this reactor, at this power, more steam meant more power.
+
+21
+00:03:38,863 --> 00:03:51,777
+Thirty-six seconds into the test, someone pressed A Z five. Exactly why, and at what moment, is still debated. It may have been to end the test, or because they saw the power rising.
+
+22
+00:03:53,077 --> 00:04:04,623
+Every control rod began to fall. And because almost all of them had been pulled out, their graphite tips entered the core together, pushing out water and adding power at the bottom of the reactor.
+
+23
+00:04:05,923 --> 00:04:14,385
+Within a few seconds, the power surged to many times the reactor's maximum. Fuel shattered. Steam pressure ripped through the channels.
+
+24
+00:04:15,685 --> 00:04:27,300
+A steam explosion blew the massive concrete and steel lid off the top of the reactor. A second explosion seconds later threw burning graphite and fuel across the site.
+
+25
+00:04:28,600 --> 00:04:34,794
+The core was open to the sky. The graphite inside caught fire, and the fire carried radioactive material high into the air.
+
+26
+00:04:37,194 --> 00:04:49,743
+Firefighters arrived within minutes. They were told it was a roof fire. They worked on the rooftops of the turbine hall, among pieces of graphite from the core, with no idea of the radiation they were absorbing.
+
+27
+00:04:51,043 --> 00:05:00,952
+The plant's radiation meters only went up to a level far below what was now in the air. Readings went off the scale, and some in charge took the low numbers at face value.
+
+28
+00:05:02,252 --> 00:05:07,952
+For hours, senior staff reported that the reactor was intact, and that they were cooling it with water.
+
+29
+00:05:09,252 --> 00:05:19,690
+Over the next days, helicopters flew over the open reactor again and again, dropping thousands of tonnes of sand, clay, boron and lead onto the burning core.
+
+30
+00:05:20,990 --> 00:05:33,214
+Engineers feared the melting core could reach water flooding the basements below it. Three plant workers volunteered to wade through the dark, flooded corridors to open the valves and drain it. All three survived.
+
+31
+00:05:34,514 --> 00:05:43,597
+In Pripyat, three kilometres away, Saturday began as normal. Children went to school. There were weddings. People went fishing near the plant.
+
+32
+00:05:44,897 --> 00:05:51,747
+The evacuation of Pripyat began only on the afternoon of the twenty-seventh, about thirty-six hours after the explosion.
+
+33
+00:05:53,047 --> 00:05:57,963
+Residents were told to bring documents and a few things for three days. They never went back.
+
+34
+00:06:00,363 --> 00:06:15,652
+The Soviet government said nothing publicly. Then, on the morning of the twenty-eighth, workers arriving at a nuclear plant in Sweden, more than a thousand kilometres away, set off radiation alarms. The contamination was not coming from their plant.
+
+35
+00:06:16,952 --> 00:06:26,617
+Only then did Soviet state television read a short announcement. The radioactive cloud had already crossed into Belarus, Scandinavia and much of Europe.
+
+36
+00:06:27,917 --> 00:06:46,016
+A thirty kilometre exclusion zone was drawn around the plant. In 1986 alone, more than a hundred thousand people were evacuated. Over the following years, the number of people resettled from contaminated land in Ukraine, Belarus and Russia passed three hundred thousand.
+
+37
+00:06:48,416 --> 00:06:58,435
+Hundreds of thousands of people, soldiers, miners, firefighters and workers known as liquidators, were sent to fight the fire, bury the waste and clean up the site.
+
+38
+00:06:59,735 --> 00:07:09,261
+Two plant workers died on the night. In the months that followed, twenty-nine more died, most of them firefighters and staff, from acute radiation sickness.
+
+39
+00:07:10,561 --> 00:07:15,031
+One hundred and thirty-four people were diagnosed with acute radiation syndrome.
+
+40
+00:07:16,331 --> 00:07:34,569
+The long-term toll is still argued over. The clearest effect was a sharp rise in thyroid cancer among people who were children at the time, many thousands of cases, mostly treatable. Estimates of eventual deaths from cancer range from a few thousand to far higher, depending on who is counting and how.
+
+41
+00:07:35,869 --> 00:07:49,620
+By November 1986, the ruined reactor had been sealed inside a hastily built concrete shelter. In 2016, a giant steel arch, the New Safe Confinement, was slid over it.
+
+42
+00:07:52,020 --> 00:08:03,636
+The first Soviet accounts blamed the operators. Years later, a revised international report put much more of the weight on the reactor's design, and on a system that had kept its flaws quiet.
+
+43
+00:08:04,936 --> 00:08:18,413
+An unstable design. Rods that briefly did the opposite of what they were for. A test pushed onto an unprepared shift. Rules broken to finish it. And a culture of secrecy that delayed the truth.
+
+44
+00:08:19,713 --> 00:08:38,919
+Every remaining RBMK reactor was modified. International rules now require countries to report nuclear accidents quickly. And the phrase safety culture, the idea that how an organisation thinks matters as much as its machines, entered the language of the nuclear industry.
+
+45
+00:08:40,219 --> 00:08:46,958
+At Chernobyl, the button meant to save the reactor helped destroy it. Nobody in the control room that night knew it could.
+
+46
+00:08:48,258 --> 00:08:51,508
+The people who paid for that lesson are still being counted.

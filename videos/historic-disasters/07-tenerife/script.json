@@ -1,0 +1,57 @@
+{
+  "series": "Historic Disasters", "episode": 7, "title": "Tenerife", "subtitle": "Two jumbo jets, one runway, and a word that meant two things",
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "TENERIFE", "sub": "Two jumbo jets, one runway, and one misunderstood word", "art": "runway", "artp": {"state": "fog"}}, "At six minutes past five in the afternoon, on the twenty-seventh of March, 1977, a Boeing seven forty-seven began to accelerate down a runway on the island of Tenerife."],
+      ["runway", {"state": "takeoff", "fog": 0.8}, "The runway was covered in thick fog. The crew could see only a few hundred metres ahead. They believed the runway was clear."],
+      ["runway", {"state": "takeoff", "fog": 0.85}, "It was not. Another seven forty-seven was still on it, taxiing slowly towards them in the mist."],
+      ["runway", {"state": "collision", "fog": 0.5}, "Seconds later, the two largest passenger aircraft in the world collided."],
+      ["stat", {"value": "583", "label": "people killed · the deadliest accident in aviation history"}, "Five hundred and eighty-three people died. It is still the deadliest accident in the history of aviation. And neither aircraft was ever supposed to be at that airport."]
+    ]},
+    { "name": "Diverted", "lines": [
+      ["date", {"date": "27 March 1977", "place": "Gran Canaria · Canary Islands"}, "Both flights were heading to Gran Canaria, a holiday island off the coast of Africa. That afternoon, a bomb planted by a separatist group exploded in the terminal at Gran Canaria's airport. The airport was closed."],
+      ["map", {"land": 1, "route": [], "marks": [["Tenerife · Los Rodeos", 0.35, 0.45], ["Gran Canaria", 0.6, 0.6]], "shapes": [[[0.25, 0.35], [0.45, 0.38], [0.42, 0.52], [0.28, 0.55]], [[0.55, 0.52], [0.68, 0.53], [0.66, 0.68], [0.54, 0.66]]]}, "Incoming flights were diverted to the neighbouring island of Tenerife, to a small regional airport called Los Rodeos."],
+      ["runway", {"state": "apron", "fog": 0.05}, "Los Rodeos had one runway and one main taxiway. It was not built for jumbo jets. Within hours, its small apron was packed with diverted aircraft, parked so closely that some of them were blocking the taxiway."],
+      ["portrait", {"name": "KLM Flight 4805", "role": "Boeing 747 · from Amsterdam · 248 people aboard"}, "Among them was K L M flight forty-eight-oh-five, a charter flight from Amsterdam, with two hundred and thirty-four passengers and fourteen crew."],
+      ["portrait", {"name": "Pan Am Flight 1736", "role": "Boeing 747 · from Los Angeles and New York · 396 people aboard"}, "And Pan Am flight seventeen thirty-six, from Los Angeles via New York, with three hundred and eighty passengers and sixteen crew."]
+    ]},
+    { "name": "Waiting", "lines": [
+      ["portrait", {"name": "Captain Jacob van Zanten", "role": "KLM's head of 747 flight training", "cap": 1}, "The K L M captain was Jacob Veldhuyzen van Zanten. He was one of the airline's most senior pilots, head of its seven forty-seven training programme, and his face appeared in K L M's magazine advertisements."],
+      ["lesson", {"text": "Strict limits on crew working hours."}, "He was under pressure. Dutch law had recently tightened the rules on how long crews could work. If the delay went on too long, his crew would be over their limit, the flight would be cancelled, and hundreds of passengers would need hotels on the island."],
+      ["runway", {"state": "apron", "fog": 0.1}, "When Gran Canaria reopened, the Pan Am crew were ready to leave. But they could not. The K L M jet was in their way, and there was not enough room to get around it."],
+      ["clock", {"time": "4:30 PM", "date": "27 March", "year": 1977}, "And the K L M captain had decided to refuel at Tenerife, to save time later. Refuelling took about thirty-five minutes. The Pan Am crew had to wait."],
+      ["runway", {"state": "fog", "fog": 0.55}, "As they waited, the weather changed. Los Rodeos sits high up, and clouds often roll across it. That afternoon, a thick fog moved in over the runway."]
+    ]},
+    { "name": "The runway", "lines": [
+      ["runway", {"state": "taxi", "fog": 0.6}, "Because the taxiway was blocked by parked planes, both jets were told to taxi along the runway itself, one behind the other. This is called backtracking."],
+      ["runway", {"state": "fog", "fog": 0.7, "label": "KLM: to the end of the runway, then turn around"}, "K L M went first. It was told to taxi all the way to the far end of the runway, turn around, and wait."],
+      ["runway", {"state": "taxi", "fog": 0.75, "label": "Pan Am: leave the runway at the third exit"}, "Pan Am followed. It was told to leave the runway at the third exit on its left, and get out of the way. But in the fog, the crew had trouble counting the exits. The third one required a sharp, awkward turn backwards. The Pan Am jet carried on towards the fourth."],
+      ["tower", {"text": "visibility: a few hundred metres"}, "The airport had no ground radar. In the tower, the controllers could not see either aircraft. They were relying entirely on the radio."],
+      ["runway", {"state": "fog", "fog": 0.85}, "At the end of the runway, the K L M jet turned around to face the way it had come. Somewhere ahead of it, invisible in the fog, the Pan Am jet was still taxiing towards it."]
+    ]},
+    { "name": "The radio", "lines": [
+      ["tower", {"text": "Wait a minute, we don't have an ATC clearance."}, "Almost as soon as the turn was complete, the K L M captain pushed the throttles forward. His first officer stopped him. Wait a minute, he said. We don't have an A T C clearance."],
+      ["tower", {"text": "KLM 4805 … cleared to the Papa beacon …"}, "The first officer radioed the tower, and the controller read out the route clearance: the path the plane should follow after takeoff. It was not a clearance to take off."],
+      ["lesson", {"text": "The captain began the takeoff."}, "As the first officer was reading the instructions back, the captain released the brakes and began the takeoff."],
+      ["tower", {"text": "We are now at takeoff.", "red": 1}, "The first officer, perhaps surprised, finished his readback with an unusual phrase. We are now at takeoff. Or, in some hearings of the tape, we are now, uh, taking off."],
+      ["tower", {"text": "OK … stand by for takeoff, I will call you."}, "The controller understood that to mean the plane was in position, waiting. He replied, O K. Then, a moment later, stand by for takeoff. I will call you."],
+      ["tower", {"text": "We're still taxiing down the runway!", "red": 1}, "At that exact moment, the Pan Am crew, alarmed by what they had heard, pressed their own radio button to say, we're still taxiing down the runway."],
+      ["lesson", {"text": "Two transmissions cancelled each other out."}, "Two transmissions at once on the same frequency produce a loud squeal. In the K L M cockpit, they heard the word O K, and then noise. The crucial words, stand by for takeoff, and the warning from Pan Am, were lost."]
+    ]},
+    { "name": "Thirteen seconds", "lines": [
+      ["tower", {"text": "Is he not clear, that Pan American?"}, "In the K L M cockpit, the flight engineer had heard enough to be uneasy. Is he not clear, he asked, that Pan American? The captain answered emphatically, oh, yes."],
+      ["runway", {"state": "takeoff", "fog": 0.8}, "The jet kept accelerating. In the fog, it was invisible to the Pan Am crew until they saw its landing lights coming towards them."],
+      ["people", {"n": 3, "night": 0, "pose": "up", "label": "Pan Am cockpit: “Get off! Get off! Get off!”"}, "The Pan Am captain shouted to get off the runway, and swung his plane hard towards the grass. The K L M captain saw them, and pulled back on the controls as hard as he could, trying to jump over them."],
+      ["runway", {"state": "collision", "fog": 0.5}, "The K L M jet left the ground, but not high enough. Its engines and undercarriage tore through the upper deck of the Pan Am jet. It flew on for a moment, then crashed and exploded."],
+      ["stat", {"value": "248 / 335", "label": "everyone on KLM · most of Pan Am"}, "All two hundred and forty-eight people on the K L M flight were killed. On the Pan Am jet, three hundred and thirty-five died. Sixty-one people survived, most of them scrambling out through holes torn in the left side of the fuselage, and jumping to the ground."]
+    ]},
+    { "name": "The lesson", "lines": [
+      ["inquiry", {"label": "Spanish, Dutch and American investigations"}, "The investigations, by Spain, the Netherlands and the United States, did not agree on every detail. But the core of what happened was clear. The K L M captain had begun his takeoff without clearance."],
+      ["lesson", {"text": "Why would an expert do that?"}, "The harder question was why. Why would one of the most experienced pilots in the world, a man who trained other pilots, make such a basic error?"],
+      ["timeline", {"events": [["Bomb · diversion", 0.1], ["Crowded airport", 0.3], ["Time pressure", 0.5], ["Fog · no ground radar", 0.7], ["Ambiguous words", 0.9]]}, "Part of the answer was pressure: the delays, the deadline, the fog closing in. Part was the radio: ambiguous words, and a blocked transmission. And part was the cockpit itself. The two men under the captain had doubts. One raised them. Neither felt able to stop him."],
+      ["checklist", {"head": "After Tenerife", "items": ["The word takeoff reserved for clearance", "Standard English phrases for all pilots", "Crew resource management training", "Juniors trained to challenge captains"]}, "After Tenerife, aviation changed the way it talks. The word takeoff is now used only when a clearance is given or cancelled. Otherwise, pilots and controllers say departure. Standard phrases in English became mandatory. And airlines began training crews in what became known as crew resource management, teaching junior pilots to speak up, and captains to listen."],
+      ["lesson", {"text": "The most experienced person can still be wrong."}, "Those changes have saved countless lives since. They exist because, on a foggy afternoon in 1977, the most experienced person in the cockpit was wrong, and the system around him had no way to stop him."],
+      ["memorial", {"n": 583, "date": "27 March 1977"}, "Today, a memorial on Tenerife, a spiral staircase rising towards the sky, remembers the five hundred and eighty-three people who died."]
+    ]}
+  ]
+}

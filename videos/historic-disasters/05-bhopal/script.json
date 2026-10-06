@@ -1,0 +1,415 @@
+{
+ "series": "Historic Disasters",
+ "episode": 5,
+ "title": "Bhopal",
+ "subtitle": "The night the air turned to poison",
+ "sections": [
+  {
+   "name": "Cold open",
+   "lines": [
+    [
+     "title",
+     {
+      "title": "BHOPAL",
+      "sub": "The night the air turned to poison",
+      "art": "plant",
+      "artp": {
+       "state": "leak"
+      }
+     },
+     "Just after midnight on the third of December, 1984, people sleeping in the poorest neighbourhoods of Bhopal, in central India, woke up coughing."
+    ],
+    [
+     "plant",
+     {
+      "state": "leak"
+     },
+     "Their eyes burned. Their chests tightened. Some thought a neighbour was burning chillies. Then people began to choke, and to run."
+    ],
+    [
+     "plant",
+     {
+      "state": "leak",
+      "people": 1
+     },
+     "A cloud of gas was drifting out of the pesticide factory at the edge of the city and settling over the houses. It was heavier than air. It stayed low, along the ground, exactly where people were breathing."
+    ],
+    [
+     "stat",
+     {
+      "value": "3,787",
+      "label": "deaths officially confirmed \u00b7 other estimates are far higher"
+     },
+     "By the government's official count, three thousand seven hundred and eighty-seven people died. Other estimates of the deaths in the first days run to eight thousand or more, and in the years that followed, to many thousands more."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The worst industrial disaster in history."
+     },
+     "It is still the worst industrial disaster in history. And almost every safety system that might have stopped it was switched off, broken, or too small for the job."
+    ]
+   ]
+  },
+  {
+   "name": "The plant",
+   "lines": [
+    [
+     "plant",
+     {
+      "state": "day"
+     },
+     "The plant belonged to Union Carbide India Limited, a company majority owned by the American chemical giant Union Carbide. It made a pesticide sold under the name Sevin."
+    ],
+    [
+     "map",
+     {
+      "land": 1,
+      "route": [],
+      "marks": [
+       [
+        "Bhopal",
+        0.48,
+        0.5
+       ],
+       [
+        "Delhi",
+        0.45,
+        0.22
+       ],
+       [
+        "Mumbai",
+        0.3,
+        0.68
+       ]
+      ],
+      "shapes": [
+       [
+        [
+         0.3,
+         0.1
+        ],
+        [
+         0.65,
+         0.12
+        ],
+        [
+         0.75,
+         0.4
+        ],
+        [
+         0.55,
+         0.9
+        ],
+        [
+         0.45,
+         0.92
+        ],
+        [
+         0.25,
+         0.55
+        ]
+       ]
+      ]
+     },
+     "When it was built in the 1970s, it sat on the edge of Bhopal. As the city grew, poor families who had come looking for work built homes right up against its walls."
+    ],
+    [
+     "tank",
+     {},
+     "To make the pesticide, the plant used an extremely dangerous chemical called methyl isocyanate, M I C. Small amounts can kill. It reacts violently with water, producing heat and pressure. It has to be kept cold."
+    ],
+    [
+     "tank",
+     {
+      "safety": 0
+     },
+     "The plant stored M I C in three large underground tanks. One of them, tank E six-ten, held about forty-two tonnes, more than the safety guidelines recommended."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The plant was losing money."
+     },
+     "By the early 1980s, the plant was losing money. Demand for its pesticide had fallen. Union Carbide wanted to sell it. Maintenance was cut. Staff were reduced, and training was shortened."
+    ]
+   ]
+  },
+  {
+   "name": "Warnings",
+   "lines": [
+    [
+     "date",
+     {
+      "date": "December 1981",
+      "place": "a worker killed by phosgene"
+     },
+     "There were warnings. In December 1981, a worker named Mohammed Ashraf was killed by a phosgene gas leak at the plant. Other leaks injured more workers in the years that followed."
+    ],
+    [
+     "portrait",
+     {
+      "name": "Rajkumar Keswani",
+      "role": "Local journalist"
+     },
+     "A local journalist, Rajkumar Keswani, wrote a series of articles warning that the city was sitting on top of a volcano. Few people listened."
+    ],
+    [
+     "inquiry",
+     {
+      "label": "1982 safety audit"
+     },
+     "In 1982, a safety audit by experts from Union Carbide's American headquarters found dozens of problems at Bhopal, including some that could lead to a serious release of toxic material. Not all of them were fixed."
+    ],
+    [
+     "tank",
+     {
+      "safety": 1
+     },
+     "By December 1984, the safety systems around the M I C tanks were in a state that would later shock investigators. The refrigeration unit, meant to keep the M I C cold, had been shut down months earlier, and its coolant drained. The vent gas scrubber, meant to neutralise any escaping gas, was on standby. The flare tower, meant to burn it off, was out of service for repair. And the water curtain, meant to knock down a leaking cloud, could not spray high enough to reach it."
+    ],
+    [
+     "lesson",
+     {
+      "text": "Every layer of protection had a hole."
+     },
+     "Every layer of protection had a hole in it. And on the night of the second of December, the holes lined up."
+    ]
+   ]
+  },
+  {
+   "name": "The leak",
+   "lines": [
+    [
+     "clock",
+     {
+      "time": "11:00 PM",
+      "date": "2 December",
+      "year": 1984
+     },
+     "Late in the evening of the second of December, water entered tank E six-ten. How it got there is still disputed. Investigators believe it came from a routine washing of pipes, through valves that should have been sealed. Union Carbide later claimed sabotage by a disgruntled worker."
+    ],
+    [
+     "tank",
+     {
+      "water": 1
+     },
+     "However it happened, the result was a violent chemical reaction. The temperature inside the tank shot up. So did the pressure."
+    ],
+    [
+     "people",
+     {
+      "n": 4,
+      "night": 1,
+      "pose": "look",
+      "hats": 1,
+      "label": "the night shift"
+     },
+     "Workers noticed their eyes watering and smelled the gas. A pressure gauge was rising fast. At first they were not alarmed. Small leaks were common."
+    ],
+    [
+     "clock",
+     {
+      "time": "12:30 AM",
+      "date": "3 December",
+      "year": 1984
+     },
+     "Shortly after midnight, the pressure burst a safety disc, and a relief valve opened. Gas began pouring out of a tall vent stack, and into the night air."
+    ],
+    [
+     "plant",
+     {
+      "state": "leak"
+     },
+     "Over the next hour or two, around forty tonnes of methyl isocyanate escaped. A gentle wind carried it south, over the shanty towns and into the old city."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The public siren was switched off."
+     },
+     "The plant's loud public siren sounded briefly, and then it was switched off, apparently to avoid causing panic. For more than an hour, it did not sound again."
+    ]
+   ]
+  },
+  {
+   "name": "The night",
+   "lines": [
+    [
+     "plant",
+     {
+      "state": "leak",
+      "people": 1
+     },
+     "In the neighbourhoods closest to the plant, people woke to a burning, suffocating fog. Nobody had told them what to do. Many did the natural thing, and ran. Running made them breathe harder."
+    ],
+    [
+     "people",
+     {
+      "n": 12,
+      "night": 1,
+      "pose": "walk",
+      "label": "running through the gas"
+     },
+     "People ran with no idea which way was safe. The gas settled in low-lying streets, hanging thickest around those who were shortest. Children were among the worst affected."
+    ],
+    [
+     "people",
+     {
+      "n": 8,
+      "night": 1,
+      "pose": "mourn",
+      "red": 8
+     },
+     "Thousands collapsed in the streets. Animals died where they stood. By morning, the city's hospitals were overwhelmed, with people lying in corridors and on the ground outside."
+    ],
+    [
+     "lesson",
+     {
+      "text": "Doctors did not know what they were treating."
+     },
+     "Doctors did not know what they were treating. The company's information on the gas, and on how to treat exposure, was limited and slow to arrive. Many survivors were left with lasting damage to their lungs, eyes and nervous systems."
+    ],
+    [
+     "stat",
+     {
+      "value": "500,000+",
+      "label": "people exposed to the gas"
+     },
+     "More than half a million people were exposed to the gas."
+    ],
+    [
+     "people",
+     {
+      "n": 12,
+      "pose": "walk",
+      "label": "Operation Faith \u00b7 16 December 1984"
+     },
+     "Two weeks later, the plant restarted production for a few days to use up the M I C left in the other tanks, under an operation the authorities called Operation Faith. Terrified that it would happen again, huge numbers of people fled the city until it was over."
+    ]
+   ]
+  },
+  {
+   "name": "Who was responsible",
+   "lines": [
+    [
+     "portrait",
+     {
+      "name": "Warren Anderson",
+      "role": "Chairman, Union Carbide"
+     },
+     "Four days later, Union Carbide's chairman, Warren Anderson, flew to India. He was arrested in Bhopal, released on bail within hours, and left the country. He never returned to face trial, despite being declared a fugitive by an Indian court. He died in the United States in 2014."
+    ],
+    [
+     "date",
+     {
+      "date": "1989",
+      "place": "Settlement \u00b7 $470 million"
+     },
+     "In 1989, Union Carbide agreed a settlement with the Indian government of four hundred and seventy million dollars. Divided among the victims, most families received very little. Many survivors felt they had been sold out."
+    ],
+    [
+     "inquiry",
+     {
+      "label": "Bhopal court \u00b7 2010"
+     },
+     "It was not until 2010 that a court in Bhopal convicted seven former senior employees of Union Carbide India, of causing death by negligence. They were sentenced to two years in prison, and released on bail. Survivors protested in the streets."
+    ],
+    [
+     "plant",
+     {
+      "state": "day",
+      "label": "the site was never fully cleaned up"
+     },
+     "The abandoned plant still stands. Toxic waste left on the site has been linked to the contamination of groundwater used by nearby communities, a second disaster unfolding slowly over decades."
+    ],
+    [
+     "people",
+     {
+      "n": 10,
+      "pose": "up",
+      "label": "survivors' campaigns",
+      "scarf": 1
+     },
+     "Survivors organised. Many of the campaign groups were led by women who had lost husbands, children and their own health. In 2004, two of them, Rashida Bee and Champa Devi Shukla, won the Goldman Environmental Prize for their decades of work for the people of Bhopal."
+    ]
+   ]
+  },
+  {
+   "name": "The lesson",
+   "lines": [
+    [
+     "timeline",
+     {
+      "events": [
+       [
+        "Too much MIC stored",
+        0.1
+       ],
+       [
+        "Cost cuts",
+        0.3
+       ],
+       [
+        "Safety systems off",
+        0.5
+       ],
+       [
+        "Siren silenced",
+        0.7
+       ],
+       [
+        "No plan for the city",
+        0.9
+       ]
+      ]
+     },
+     "Investigations pointed to many causes. Far too much of a deadly chemical stored in one place. A loss-making plant starved of money. Safety systems shut down or broken. A warning siren turned off. And no plan at all for the hundreds of thousands of people living next door."
+    ],
+    [
+     "date",
+     {
+      "date": "August 1985",
+      "place": "Institute, West Virginia"
+     },
+     "The warnings did not stop with Bhopal. In August 1985, a leak at Union Carbide's sister plant in Institute, West Virginia, sent more than a hundred people to hospital. It was a different chemical, but the same kind of failure."
+    ],
+    [
+     "checklist",
+     {
+      "head": "After Bhopal",
+      "items": [
+       "Communities told what chemicals are nearby",
+       "Emergency plans required for plants",
+       "Less hazardous material stored on site",
+       "Process safety rules tightened worldwide"
+      ]
+     },
+     "Bhopal changed chemical safety around the world. In the United States, a law passed in 1986 gave communities the right to know what dangerous chemicals were stored nearby. Companies were required to plan for emergencies. The industry began to talk seriously about storing less of the most dangerous materials."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The people at risk were never told."
+     },
+     "But the deepest lesson of Bhopal is about who carries the risk. The people who lived closest to the plant had no say in how it was run, no warning of what was stored inside, and no plan for escape."
+    ],
+    [
+     "lesson",
+     {
+      "text": "Safety cannot be cut like any other cost."
+     },
+     "Every safety system at Bhopal had been designed by engineers who understood the danger. One by one, they were treated as costs that could be cut. On the night they were needed, none of them worked."
+    ],
+    [
+     "memorial",
+     {
+      "n": 1500,
+      "date": "3 December 1984"
+     },
+     "In Bhopal, the anniversary is marked every year, by survivors who are still waiting for what they consider justice."
+    ]
+   ]
+  }
+ ]
+}
