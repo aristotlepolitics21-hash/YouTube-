@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Title cards</title>
+<link rel="icon" href="data:,">
+<style>
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url("fonts/SpaceGrotesk-700.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
+  }
+  html, body { margin: 0; background: #0b0b0f; overflow: hidden; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script type="module">
+import * as T from './tokens.js';
+
+const canvas = document.getElementById('c');
+canvas.width = T.W;
+canvas.height = T.H;
+const ctx = canvas.getContext('2d');
+
+// ---- schedule: derived once from constants only ----
+const cards = [];
+let cursor = T.LEAD;
+for (const line of T.LINES) {
+  const words = line.split(/\s+/).map((w) => ({
+    text: w.replace(/\*/g, ''),
+    accent: /^\*.+\*$/.test(w),
+  }));
+  const accents = words.filter((w) => w.accent).length;
+  if (accents !== 1) throw new Error(`"${line}" needs exactly one *accent* word, has ${accents}`);
+  const holdS = T.hold(words.length);
+  cards.push({ words, start: cursor, holdS, end: cursor + T.IN + holdS + T.OUT });
+  cursor += T.IN + holdS + T.OUT + T.GAP;
+}
+const DURATION = cursor - T.GAP + T.TAIL;
+
+const clamp01 = (x) => Math.min(1, Math.max(0, x));
+const easeOutCubic = (x) => 1 - Math.pow(1 - x, 3);
+const easeInQuad = (x) => x * x;
+
+const font = (px) => `${T.FONT_WEIGHT} ${px}px "${T.FONT_FAMILY}"`;
+
+// Layout is measured lazily (after fonts load) and cached; it depends only on constants.
+let layoutCache = null;
+function layout() {
+  if (layoutCache) return layoutCache;
+  const safeW = T.W - 2 * T.MARGIN;
+  const safeH = T.H - 2 * T.MARGIN;
+  layoutCache = cards.map((card) => {
+    let size = T.FONT_SIZE;
+    let m;
+    for (;;) {
+      ctx.font = font(size);
+      ctx.letterSpacing = `${T.LETTER_SPACING * size}px`;
+      m = measure(card.words);
+      if ((m.width <= safeW && m.height + T.RISE <= safeH) || size <= 24) break;
+      size -= 2;
+    }
+    return { size, ...m };
+  });
+  return layoutCache;
+}
+
+function measure(words) {
+  const space = ctx.measureText(' ').width;
+  const widths = words.map((w) => ctx.measureText(w.text).width);
+  // letterSpacing adds trailing space after the last glyph of each run; trim it from the total
+  const trail = parseFloat(ctx.letterSpacing) || 0;
+  const width = widths.reduce((a, b) => a + b, 0) + space * (words.length - 1) - trail;
+  const cap = ctx.measureText('H').actualBoundingBoxAscent;
+  const full = ctx.measureText(words.map((w) => w.text).join(' '));
+  const height = full.actualBoundingBoxAscent + full.actualBoundingBoxDescent;
+  return { width, widths, space, cap, height };
+}
+
+function renderFrame(t) {
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.globalAlpha = 1;
+  ctx.fillStyle = T.BG;
+  ctx.fillRect(0, 0, T.W, T.H);
+
+  const L = layout();
+  cards.forEach((card, i) => {
+    if (t < card.start || t >= card.end) return;
+    const local = t - card.start;
+    const pIn = clamp01(local / T.IN);
+    const pOut = clamp01((local - T.IN - card.holdS) / T.OUT);
+    const alpha = easeOutCubic(pIn) * (1 - easeInQuad(pOut));
+    const dy = T.RISE * (1 - easeOutCubic(pIn));
+    if (alpha <= 0) return;
+
+    const { size, width, widths, space, cap } = L[i];
+    ctx.font = font(size);
+    ctx.letterSpacing = `${T.LETTER_SPACING * size}px`;
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'alphabetic';
+    ctx.globalAlpha = alpha;
+
+    // optical centre: cap height centred on the frame
+    const baseline = Math.round(T.H / 2 + cap / 2 + dy);
+    let x = (T.W - width) / 2;
+    card.words.forEach((w, k) => {
+      ctx.fillStyle = w.accent ? T.ACCENT : T.INK;
+      ctx.fillText(w.text, x, baseline);
+      x += widths[k] + space;
+    });
+    ctx.globalAlpha = 1;
+  });
+}
+
+// Mid-hold time of each card, for stills.
+const CARD_STILLS = cards.map((c) => c.start + T.IN + c.holdS / 2);
+
+window.renderFrame = renderFrame;
+window.DURATION = DURATION;
+window.FPS = T.FPS;
+window.CARD_STILLS = CARD_STILLS;
+window.LAYOUT = () => layout().map((l, i) => ({ line: T.LINES[i], size: l.size, width: Math.round(l.width) }));
+
+await document.fonts.load(`${T.FONT_WEIGHT} ${T.FONT_SIZE}px "${T.FONT_FAMILY}"`);
+await document.fonts.ready;
+if (!document.fonts.check(`${T.FONT_WEIGHT} ${T.FONT_SIZE}px "${T.FONT_FAMILY}"`)) {
+  throw new Error('Space Grotesk failed to load');
+}
+renderFrame(0);
+window.READY = true;
+</script>
+</body>
+</html>

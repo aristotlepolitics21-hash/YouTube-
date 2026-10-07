@@ -31,3 +31,16 @@ $100,000), `burger_short.json` (vertical Short). Scene types are `hook`, `tier`,
 `counter`, `versus`, `winner` and `outro`. Art is anti-aliased Cairo vector drawing (`animator/toon.py`):
 characters with arms, legs, eyelids and lip-sync to the voiceover, detailed kitchen and field sets with
 depth-of-field blur, whip-pan transitions, and scenes rendered in parallel.
+
+## Title cards from code
+
+`title-cards/` renders a silent title-card sequence frame by frame: Canvas2D in headless Chrome
+(puppeteer), deterministic `window.renderFrame(t)`, encoded with ffmpeg. Edit `title-cards/tokens.js`
+for lines, palette, font and timing.
+
+```sh
+cd title-cards && npm install
+node render.mjs --stills   # one PNG per card in stills/
+node render.mjs            # every frame in frames/
+npm run encode             # out/title_cards.mp4
+```
