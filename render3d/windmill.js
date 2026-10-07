@@ -125,8 +125,8 @@ function village(p) {
   const mode = P(p, 'mode', 'drought');
   const scene = baseScene(mode === 'night' ? '#050818' : '#d8c8a0', mode === 'night' ? 0.01 : 0.012); const camera = cam(40);
   sky(scene, mode); lights(scene, mode);
-  ground(scene, mode === 'green' ? '#6a8a3a' : '#b8925a');
-  for (let i = 0; i < 9; i++) scene.add(hut(-14 + i * 3.6 + rnd(i) * 1.5, -6 - rnd(i + 1) * 6, 1.3 + rnd(i + 2) * 0.5));
+  ground(scene, mode === 'green' ? '#6a8a3a' : mode === 'night' ? '#3a2e22' : '#b8925a');
+  for (let i = 0; i < 9; i++) { const h = hut(-14 + i * 3.6 + rnd(i) * 1.5, -6 - rnd(i + 1) * 6, 1.3 + rnd(i + 2) * 0.5); if (mode === 'night') { h.traverse((o) => { if (o.isMesh && o.material.color && o !== h.userData.win) { o.material = o.material.clone(); o.material.color.multiplyScalar(0.3); } }); if (i % 3 === 1) h.userData.win.material.color.set(WARM); } scene.add(h); }
   for (let i = 0; i < 26; i++) scene.add(tree((rnd(i + 3) - 0.5) * 70, -10 - rnd(i + 4) * 40, 0.8 + rnd(i + 5) * 0.8, mode === 'green' ? '#3a7a2a' : '#7a7a3a'));
   if (p.windmill) { const w = windmill({ height: 7 }); w.position.set(2, 0, -4); scene.add(w); scene.userData.w = w; }
   const dust = motes(scene, 300, 40, '#e8d0a0', mode === 'drought' ? 0.4 : 0);
