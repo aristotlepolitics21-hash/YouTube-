@@ -9,6 +9,8 @@ pose then drives the skin and the x-ray skeleton together.
 
 from __future__ import annotations
 
+import re
+
 import bpy
 import mathutils
 
@@ -79,7 +81,9 @@ def load_character(bundle: str, name: str = "hero") -> dict:
                 o.modifiers.remove(m)
     bpy.context.view_layer.update()
 
-    joint = {n: bpy.data.objects[P + n].matrix_world.translation.copy() for n in
+    # look joints up among THIS character's skeleton (a second character's objects get .001 suffixes)
+    by_name = {re.sub(r"\.\d{3}$", "", o.name): o for o in skel_objs}
+    joint = {n: by_name[P + n].matrix_world.translation.copy() for n in
              {v for t in CHAIN.values() for v in t[:2] if v}}
     arm_data = bpy.data.armatures.new(name + "_rig")
     rig = bpy.data.objects.new(name + "_rig", arm_data)
@@ -129,13 +133,13 @@ def load_character(bundle: str, name: str = "hero") -> dict:
     # Each skeleton mesh follows the bone that starts at it.
     owner = {start: bname for bname, (start, _, _) in CHAIN.items()}
     for o in skel_objs:
-        key = o.name.replace(P, "")
+        key = re.sub(r"\.\d{3}$", "", o.name).replace(P, "")
         bone = owner.get(key)
         if bone is None:  # vertebrae, ribs, carpals: follow the nearest chain bone above them
             p = o.parent
-            while p is not None and owner.get(p.name.replace(P, "")) is None:
+            while p is not None and owner.get(re.sub(r"\.\d{3}$", "", p.name).replace(P, "")) is None:
                 p = p.parent
-            bone = owner.get(p.name.replace(P, "")) if p else "spine2"
+            bone = owner.get(re.sub(r"\.\d{3}$", "", p.name).replace(P, "")) if p else "spine2"
         mw = o.matrix_world.copy()
         o.parent = None
         o.matrix_world = mw

@@ -248,7 +248,7 @@ def build_stage(spec, frames, ctx):
         _apply_transform_keys(root, frames, p)
     for t in spec.get("texts", []):
         col = tuple(t.get("color", (1.0, 0.85, 0.3)))
-        o = fx.text(t["text"], looks.principled("txt", col, 0.3, emit=col, emit_strength=t.get("glow", 2.5)),
+        o = fx.text(t["text"], looks.principled("txt", col, 0.3, emit=col, emit_strength=t.get("glow", 1.0)),
                     tuple(t.get("at", (0, 0, 1))), size=t.get("size", 0.3), depth=t.get("depth", 0.05))
         _apply_transform_keys(o, frames, {**t, "rot": t.get("rot", (90, 0, 0))})
     if spec.get("rain"):

@@ -246,7 +246,10 @@ def bolt_icon(name, material, loc, size=0.3, depth=0.05, rotation=(math.radians(
 def text(body, material, loc, size=0.5, depth=0.08, rotation=(math.radians(90), 0, 0)):
     cu = bpy.data.curves.new("txt", "FONT")
     cu.body = body
-    for path in (FONT, FONT_FALLBACK):
+    fonts = (FONT, FONT_FALLBACK)
+    if any(ord(ch) > 0x2000 or 0x370 <= ord(ch) < 0x400 or ord(ch) > 0x1F00 for ch in body if ch not in "\u2013\u2192\u2212"):
+        fonts = ("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",) + fonts  # maths and Greek glyphs
+    for path in fonts:
         try:
             cu.font = bpy.data.fonts.load(path, check_existing=True)
             break

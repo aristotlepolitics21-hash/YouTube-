@@ -16,13 +16,13 @@ SKIN = [0.72, 0.52, 0.42]
 FARADAY = {"hair": [0.25, 0.13, 0.06], "sleeves": "long",
            "outfit": {"skin": SKIN, "shirt": [0.06, 0.07, 0.14], "pants": [0.07, 0.06, 0.06], "boots": [0.04, 0.03, 0.02]}}
 YOUNG = {"hair": [0.3, 0.16, 0.07], "sleeves": "long",
-         "outfit": {"skin": SKIN, "shirt": [0.55, 0.42, 0.25], "pants": [0.2, 0.15, 0.1], "boots": [0.1, 0.06, 0.03]}}
+         "outfit": {"skin": SKIN, "shirt": [0.16, 0.24, 0.1], "pants": [0.12, 0.09, 0.06], "boots": [0.06, 0.04, 0.02]}}
 DAVY = {"hair": [0.1, 0.07, 0.05], "sleeves": "long",
         "outfit": {"skin": SKIN, "shirt": [0.4, 0.05, 0.08], "pants": [0.1, 0.08, 0.08], "boots": [0.04, 0.03, 0.02]}}
 ORSTED = {"hair": [0.65, 0.62, 0.58], "sleeves": "long",
           "outfit": {"skin": SKIN, "shirt": [0.08, 0.25, 0.15], "pants": [0.1, 0.1, 0.1], "boots": [0.04, 0.03, 0.02]}}
 FRANKLIN = {"hair": [0.7, 0.68, 0.65], "sleeves": "long",
-            "outfit": {"skin": SKIN, "shirt": [0.35, 0.2, 0.08], "pants": [0.3, 0.18, 0.08], "boots": [0.05, 0.04, 0.03]}}
+            "outfit": {"skin": SKIN, "shirt": [0.18, 0.09, 0.04], "pants": [0.15, 0.08, 0.04], "boots": [0.05, 0.04, 0.03]}}
 MAXWELL = {"hair": [0.05, 0.04, 0.04], "sleeves": "long",
            "outfit": {"skin": SKIN, "shirt": [0.1, 0.1, 0.12], "pants": [0.08, 0.08, 0.09], "boots": [0.04, 0.03, 0.02]}}
 
@@ -106,10 +106,9 @@ S("And it was found by a poor bookbinder's boy who left school at thirteen, and 
                P("candle", (0.25, -0.25, TOP)), P("notebook", (0, -0.05, 1.05), rot=[60, 0, 0])]), still=True)
 S("His name was Michael Faraday. And this is how he turned electricity from a party trick into the power that runs the world.",
   stage("studio", cam((0, -3.4, 1.2), (0, -2.8, 1.15), (0, 0, 1.1), lens=35),
-        texts=[T("MICHAEL FARADAY", (0, 0, 1.45), 0.28, pop=0.08), T("THE SCIENTIST WHO DISCOVERED ELECTRICITY", (0, 0, 1.05), 0.11,
+        texts=[T("MICHAEL FARADAY", (0, 0, 1.45), 0.28, pop=0.08), T("THE SCIENTIST WHO DISCOVERED ELECTRICITY", (0, 0, 1.12), 0.11,
                                                                           (0.4, 0.85, 1.0), pop=0.25)],
-        props=[P("dipole_lines", (0, 0.4, 1.2), rot=[0, 0, 0], args={"draw": [0.05, 0.6], "scale": 1.6}),
-               P("bar_magnet", (0, 0.4, 1.2), args={"length": 0.3})],
+        props=[P("coil", (0, 0.3, 0.72), args={"glow": [[0, 0], [0.3, 4]]}), P("bar_magnet", (0, 0.3, 0.72), args={"length": 0.42, "width": 0.05})],
         env_opts={"focus": [0, 0, 1.2]}))
 
 # ======================================================== 2. A SPARK NOBODY UNDERSTOOD
@@ -161,7 +160,7 @@ S("Electricity was a curiosity for lecture halls. A show, not a power source.",
 # ======================================================== 3. THE BOOKBINDER'S APPRENTICE
 S("Michael Faraday was born in seventeen ninety one, near London, the son of a blacksmith.",
   stage("lab", cam((0, -2.8, 1.4), (0, -2.3, 1.3), (0, 0, 1.0)), cast=[who(YOUNG, pose=STAND, scale=0.8)],
-        texts=[T("1791", (-0.9, 0.5, 1.8), 0.35, pop=0.15)], env_opts={"wall": [0.18, 0.16, 0.15]}),
+        texts=[T("1791", (-0.9, 0.5, 1.55), 0.35, pop=0.15)], env_opts={"wall": [0.18, 0.16, 0.15]}),
   still=True, chapter="The bookbinder's apprentice")
 S("His family was poor. At times he had a single loaf of bread to last him a week.",
   stage("lab", CLOSE(0, TOP + 0.05), props=[TABLE, P("bread", (0, -0.1, TOP)), P("candle", (0.35, 0.05, TOP))],
@@ -182,7 +181,7 @@ S("At night he went to lectures at a small club called the City Philosophical So
                                                                P("figures", (0, -0.6, 0), args={"n": 6, "seed": 4})]), still=True)
 S("One of them was an encyclopedia, with a long article on electricity.",
   stage("lab", CLOSE(0, TOP), props=[TABLE, P("books", (-0.2, -0.1, TOP), args={"n": 3, "seed": 2}), P("candle", (0.35, -0.05, TOP))],
-        texts=[T("ELECTRICITY", (0, -0.12, TOP + 0.2), 0.07, (0.4, 0.85, 1.0), pop=0.3)]), still=True, still_at=0.8)
+        texts=[T("ELECTRICITY", (0, -0.12, TOP + 0.12), 0.06, (0.4, 0.85, 1.0), pop=0.3)]), still=True, still_at=0.8)
 S("He built his own simple electrical machines from scraps, in the back of the shop.",
   stage("lab", cam((0.35, -1.0, 1.25), (0.25, -0.85, 1.2), (0, -0.1, 0.95)),
         props=[TABLE, P("glassware", (-0.3, -0.1, TOP), args={"n": 2}), P("wire", (0.15, -0.15, TOP + 0.02), args={"length": 0.4, "glow": [[0, 0], [0.4, 0], [0.45, 4], [0.6, 0], [0.75, 4]]}),
@@ -212,7 +211,7 @@ S("Davy had recently been hurt in a laboratory explosion that damaged his eyesig
         props=[TABLE, P("notebook", (-0.45, 0.0, 1.06), rot=[65, 0, 0])]), still=True)
 S("A few months later, one of Davy's lab assistants was sacked after a fight. And Davy hired Faraday to wash bottles.",
   stage("lab", BENCH_CAM, cast=[who(FARADAY, pose=WORK)], props=[TABLE, P("glassware", (0, -0.1, TOP), args={"n": 6, "seed": 5})],
-        texts=[T("1813", (-0.9, 0.6, 1.9), 0.3, pop=0.4)]), still=True)
+        texts=[T("1813", (0.9, 0.6, 1.55), 0.3, pop=0.4)]), still=True)
 
 # ======================================================== 4. OUTGROWING THE MASTER
 S("Faraday worked his way up. He travelled across Europe with Davy, sometimes treated like a servant, but meeting the greatest scientists of the age.",
@@ -228,7 +227,7 @@ S("In Florence, they used a giant magnifying glass to focus sunlight on a diamon
 S("Then, in eighteen twenty, the Danish scientist Hans Christian Oersted noticed something strange.",
   stage("lab", cam((0.6, -1.9, 1.5), (0.4, -1.6, 1.45), "cast0.head"), cast=[who(ORSTED, pose=WORK)],
         props=[TABLE, P("compass", (0, -0.1, TOP)), P("battery", (0.4, -0.05, TOP))],
-        texts=[T("1820", (-0.9, 0.6, 1.9), 0.3, pop=0.15)]), still=True)
+        texts=[T("1820", (0.9, 0.6, 1.6), 0.3, pop=0.15)]), still=True)
 S("A wire carrying electric current made a nearby compass needle swing.",
   stage("studio", cam((0.25, -0.55, 0.45), (0.15, -0.45, 0.4), (0, 0, 0.05)),
         props=[P("compass", (0, 0, 0), args={"needle": [[0, 0], [0.35, 0], [0.45, 75], [0.5, 62], [0.55, 70]]}),
@@ -254,9 +253,9 @@ S("He was so excited that he danced around the laboratory table with his brother
 S("That same year he married Sarah Barnard. They were together for forty six years.",
   stage("lab", cam((0, -2.4, 1.45), (0, -2.0, 1.4), (0, 0.3, 1.25)),
         cast=[who(FARADAY, at=(-0.3, 0.35, 0), turn=-12, pose=STAND),
-              who(YOUNG | {"hair": [0.45, 0.25, 0.1], "outfit": {**YOUNG["outfit"], "shirt": [0.5, 0.2, 0.35], "pants": [0.5, 0.2, 0.35]}},
+              who(YOUNG | {"hair": [0.45, 0.25, 0.1], "outfit": {**YOUNG["outfit"], "shirt": [0.35, 0.08, 0.3], "pants": [0.35, 0.08, 0.3]}},
                   at=(0.3, 0.35, 0), turn=12, pose=STAND, scale=0.94)],
-        texts=[T("1821", (0, 1.0, 2.0), 0.3, pop=0.2)]), still=True)
+        texts=[T("1821", (0, 1.0, 1.85), 0.3, pop=0.2)]), still=True)
 S("But instead of praise, Faraday faced suspicion. Some, including Davy, felt he had used another scientist's ideas without giving credit.",
   stage("lab", cam((0.0, -1.6, 1.45), (0.0, -1.3, 1.4), "cast0.head"), cast=[who(FARADAY, pose={**STAND, "head_nod": 20})],
         props=[P("candle", (0.4, -0.3, 0.0), scale=1.0)], env_opts={"wall": [0.05, 0.06, 0.07], "world": [0.01, 0.01, 0.015]}),
@@ -283,12 +282,12 @@ S("He wound wires around magnets. Nothing.",
                P("meter", (-0.45, 0.2, 0.14), args={"needle": [[0, 0]]})]), still=True)
 S("Between other work, he liquefied chlorine gas and discovered a new chemical called benzene. But the magnet problem would not go away.",
   stage("lab", BENCH_CAM, cast=[who(FARADAY, pose=WORK)], props=[TABLE, P("glassware", (0, -0.1, TOP), args={"n": 5, "seed": 9})],
-        texts=[T("C₆H₆", (0.9, 0.3, 1.8), 0.22, (0.4, 1.0, 0.6), pop=0.5)]), still=True)
+        texts=[T("C₆H₆", (0.9, 0.3, 1.55), 0.22, (0.4, 1.0, 0.6), pop=0.5)]), still=True)
 
 # ======================================================== 6. AUGUST 29, 1831
 S("In eighteen twenty four, he was elected to the Royal Society, reportedly against Davy's wishes. A year later, he was running the Royal Institution's laboratory.",
   stage("hall", cam((0.3, -2.4, 1.6), (0.2, -2.0, 1.55), "cast0.head"), cast=[who(FARADAY, at=(0, 0.6, 0), pose=STAND)],
-        props=[P("medal", (0.45, 0.2, 1.3), spin=["z", 30])], texts=[T("1824", (-0.9, 1.2, 2.0), 0.3, pop=0.2)]), still=True)
+        props=[P("medal", (0.45, 0.2, 1.3), spin=["z", 30])], texts=[T("1824", (0.8, 1.0, 1.75), 0.3, pop=0.2)]), still=True)
 S("Then, on the twenty ninth of August, eighteen thirty one, he took an iron ring, and wrapped two separate coils of wire around it.",
   stage("studio", cam((0.5, -0.9, 0.75), (0.3, -0.75, 0.55), (0, 0, 0.05)), props=[P("iron_ring", (0, 0, 0.05))],
         texts=[T("29 AUGUST 1831", (0, 0.6, 0.6), 0.12, pop=0.1)]), chapter="August 29, 1831")
@@ -347,8 +346,8 @@ S("Within a year, a French instrument maker, Hippolyte Pixii, built a hand-crank
 S("It didn't matter what did the turning: falling water, steam, wind, or later, the heat from nuclear reactions.",
   stage("studio", cam((0, -4.5, 2.0), (0, -3.8, 1.8), (0, 0, 1.0), lens=30),
         props=[P("turbine", (-1.2, 0.5, 0), scale=0.5), P("faraday_disk", (0.4, 0, 0), scale=1.5, args={"spin": [0, 1], "turns": 3, "glow": [0, 1]})],
-        texts=[T("WATER", (-1.6, 0, 1.9), 0.12, (0.3, 0.7, 1.0), pop=0.15), T("STEAM", (-0.5, 0, 1.9), 0.12, (1, 1, 1), pop=0.3),
-               T("WIND", (0.6, 0, 1.9), 0.12, (0.5, 1.0, 0.6), pop=0.45), T("NUCLEAR", (1.6, 0, 1.9), 0.12, (1.0, 0.5, 0.2), pop=0.6)]))
+        texts=[T("WATER", (-1.6, 0, 1.65), 0.17, (0.3, 0.7, 1.0), pop=0.15), T("STEAM", (-0.5, 0, 1.65), 0.17, (1, 1, 1), pop=0.3),
+               T("WIND", (0.6, 0, 1.65), 0.17, (0.5, 1.0, 0.6), pop=0.45), T("NUCLEAR", (1.6, 0, 1.65), 0.17, (1.0, 0.5, 0.2), pop=0.6)]))
 S("Today almost all the electricity we use comes from Faraday's idea: magnets and coils of wire, moving past each other in giant generators.",
   stage("lab", cam((-2.0, -3.5, 1.8), (1.0, -3.2, 1.6), (0, 1, 0.8), lens=26), props=[P("generator_hall", (0, 1.0, 0), scale=0.8)],
         env_opts={"wall": [0.2, 0.22, 0.24], "world": [0.05, 0.05, 0.06]}))
@@ -365,7 +364,7 @@ S("He believed these lines of force were real things, filling the space around e
         props=[P("filings", args={"align": [0, 0.01]}), P("dipole_lines", (0, 0, 0.04), rot=[90, 0, 0], args={"draw": [0.1, 0.7], "scale": 0.7})]))
 S("Most scientists thought this was childish. But a young Scottish physicist, James Clerk Maxwell, turned Faraday's pictures into mathematics.",
   stage("lab", cam((0.5, -1.8, 1.5), (0.35, -1.5, 1.45), "cast0.head"), cast=[who(MAXWELL, pose=READ)],
-        props=[TABLE, P("notebook", (0, 0.0, 1.06), rot=[65, 0, 0])], texts=[T("1860s", (-0.9, 0.6, 1.9), 0.3, pop=0.2)]), still=True)
+        props=[TABLE, P("notebook", (0, 0.0, 1.06), rot=[65, 0, 0])], texts=[T("1860s", (0.9, 0.6, 1.6), 0.3, pop=0.2)]), still=True)
 S("His equations showed something astonishing: light itself is a wave of electricity and magnetism.",
   stage("studio", cam((0, -2.6, 1.2), (0.4, -2.3, 1.1), (0, 0, 0.9)),
         props=[P("em_wave", (0, 0, 0.6), args={"draw": [0.1, 0.4]}), P("equations", (0, 0.5, 1.6), args={"at": 0.05}, scale=0.7)]))
@@ -385,7 +384,7 @@ S("Which is why we still call it a Faraday cage. It's why you're safe inside a c
   stage("storm", cam((-1.6, -3.4, 1.4), (-1.2, -2.9, 1.3), (0, 0, 0.8)),
         cast=[who(FARADAY, at=(0, 0, 0), pose=STAND)], props=[P("cage", args={"size": 2.0, "strikes": [0.3, 0.65]})]))
 S("He started the Royal Institution's Christmas Lectures for young people, which still run today.",
-  stage("hall", cam((0.3, -2.9, 1.5), (0.2, -2.5, 1.45), (0, 1.0, 1.1), lens=32),
+  stage("hall", cam((0.3, -3.4, 2.1), (0.2, -3.0, 2.0), (0, 0.6, 0.75), lens=32),
         cast=[who(FARADAY, at=(0, 1.4, 0), pose=PRESENT)],
         props=[P("table", (0, 0.9, 0)), P("candle", (0.2, 0.9, TOP)), P("figures", (0, -0.6, 0), args={"n": 7})]), still=True)
 S("But he turned down a knighthood. And twice, he refused to become President of the Royal Society.",
@@ -402,7 +401,7 @@ S("He was deeply religious, and in the eighteen fifties he refused to help the B
         env_opts={"wall": [0.08, 0.09, 0.1]}), still=True)
 S("Faraday died in eighteen sixty seven.",
   stage("lab", cam((0, -1.2, 1.2), (0, -1.0, 1.15), (0, -0.1, 0.95)), props=[TABLE, P("candle", (0, -0.1, TOP))],
-        texts=[T("1791 – 1867", (0, 0.4, 1.45), 0.16, pop=0.2)], env_opts={"wall": [0.05, 0.06, 0.07], "world": [0.01, 0.01, 0.015]}),
+        texts=[T("1791 – 1867", (0, 0.4, 1.2), 0.12, pop=0.2)], env_opts={"wall": [0.05, 0.06, 0.07], "world": [0.01, 0.01, 0.015]}),
   still=True, still_at=0.8, chapter="Legacy")
 S("A few years later, Thomas Edison and others used generators built on his principle to light up whole streets.",
   stage("street", cam((1.6, -2.5, 1.9), (1.0, -1.5, 1.8), (0, 4, 1.6), lens=28), props=[P("street_lamps", (0, 0, 0), args={"n": 7, "on": [0.15, 0.8]})]))
@@ -437,13 +436,13 @@ spec = {
                     "move it and understand it. This is the story of Michael Faraday, told in 3D animation."),
     "tags": ["Michael Faraday", "electricity", "electromagnetic induction", "history of science", "physics",
              "electric generator", "Humphry Davy", "Maxwell", "Faraday cage", "3D animation"],
-    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.12, "sentence_silence": 0.28,
+    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.25, "sentence_silence": 0.28,
               "pronunciations": {"Oersted": "Er-sted", "Gilbert": "Gil-bert", "B.C.": "B C", "Wi-Fi": "Why-Fye",
                                  "elektron": "ee-LEK-tron", "electricus": "ee-LEK-tri-kus"}},
     "render": {"width": 960, "height": 540, "samples": 8, "fps": 12},
     "still_render": {"width": 1920, "height": 1080, "samples": 16},
     "output_fps": 24,
-    "gap_seconds": 0.35,
+    "gap_seconds": 0.5,
     "chapter_gap_seconds": 0.9,
     "music_mood": "reflective",
     "burn_captions": False,
