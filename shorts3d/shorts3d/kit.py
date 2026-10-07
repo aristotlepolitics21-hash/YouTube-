@@ -2812,6 +2812,182 @@ def spikes(frames, channels=6, length=2.0, draw=(0.05, 0.9), seed=4):
         draw_on(o, frames, draw[0], draw[1])
     return root
 
+
+# ------------------------------------------------------------------ heart & medicine
+def heart_organ(frames, beats=((0, 1),), bpm=70, fps=12, size=0.3, xray=False):
+    """An anatomical-ish heart (metaball body + aorta arch) that beats during the given stretches."""
+    root = empty("heart_organ")
+    h = fx.heart((0, 0, 0), size)
+    h.parent = root
+    red = mat("aorta", (0.75, 0.08, 0.1), 0.35, emit=0.3)
+    curve_obj("aorta", [V((0.02, 0, size * 0.6)), V((0.05, 0, size * 1.4)), V((-0.15, 0.05, size * 1.6)), V((-0.25, 0.1, size * 0.9))], size * 0.15, red, root)
+    blue = mat("vena", (0.25, 0.3, 0.75), 0.35, emit=0.3)
+    curve_obj("vena_cava", [V((-0.12, 0, size * 0.4)), V((-0.16, 0, size * 1.3))], size * 0.12, blue, root)
+    fb = fx.beat_frames(frames, fps, list(beats), bpm)
+    fx.animate_beats(h, fb, base=1.0, amp=0.12)
+    return root
+
+
+def artificial_heart(frames, pump=True, bpm=80, fps=12):
+    """Total artificial heart: two rounded pumping chambers with flexible diaphragms and tubes (Jarvik-7 style)."""
+    root = empty("tah")
+    shell = mat("polyurethane", (0.92, 0.9, 0.85), 0.25)
+    for side in (-1, 1):
+        sph("ventricle", (side * 0.11, 0, 0), 0.12, shell, (1, 0.85, 1.15), root)
+        dia = sph("diaphragm", (side * 0.11, -0.06, 0), 0.09, mat("diaphragm", (0.95, 0.45, 0.3), 0.3, emit=0.2), (1, 0.4, 1.0), root)
+        if pump:
+            period = int(fps * 60 / bpm)
+            for f in range(1, frames + 1, max(1, period // 2)):
+                k = (f // max(1, period // 2)) % 2
+                props.key(dia, f, location=(side * 0.11, -0.06 + 0.04 * k, 0))
+        cyl("outflow", (side * 0.11, 0, 0.2), 0.035, 0.18, mat("dacron", (0.9, 0.9, 0.92), 0.6), parent=root)
+    for side in (-1, 1):
+        curve_obj("driveline", [V((side * 0.11, 0.05, -0.12)), V((side * 0.15, 0.2, -0.4)), V((side * 0.3, 0.4, -0.9))], 0.012, mat("driveline", (0.85, 0.85, 0.8), 0.5), root)
+    return root
+
+
+def lvad(frames, spin=True):
+    """A small implanted rotary pump with a cable running out to a controller and battery pack."""
+    root = empty("lvad")
+    ti = mat("titanium", (0.75, 0.75, 0.78), 0.25, 1.0)
+    cyl("pump", (0, 0, 0), 0.08, 0.06, ti, parent=root)
+    cyl("inflow", (0, 0, 0.08), 0.025, 0.1, ti, parent=root)
+    curve_obj("outflow_graft", [V((0.08, 0, 0)), V((0.2, 0, 0.1)), V((0.25, 0, 0.3))], 0.02, mat("graft", (0.9, 0.9, 0.92), 0.6), root)
+    rotor = child(empty("rotor"), root)
+    for k in range(4):
+        box("vane", (0.03 * math.cos(R(k * 90)), 0.03 * math.sin(R(k * 90)), 0.032), (0.05, 0.01, 0.005), mat("vane", (0.3, 0.8, 1.0), 0.3, emit=2), parent=rotor).rotation_euler = (0, 0, R(k * 90))
+    if spin:
+        props.key(rotor, 1, rotation_euler=(0, 0, 0))
+        props.key(rotor, frames, rotation_euler=(0, 0, R(360 * 20)))
+        fx._linear(rotor)
+    curve_obj("driveline", [V((-0.05, 0, -0.03)), V((-0.2, 0.05, -0.4)), V((-0.35, 0.0, -0.8))], 0.008, mat("driveline", (0.2, 0.2, 0.22), 0.5), root)
+    box("controller", (-0.35, 0, -0.9), (0.12, 0.05, 0.18), mat("controller", (0.2, 0.2, 0.25), 0.4), 0.01, root)
+    return root
+
+
+def heart_lung_machine(frames):
+    root = empty("hlm")
+    cab = mat("hlm_cabinet", (0.85, 0.87, 0.9), 0.35)
+    box("cabinet", (0, 0, 0.6), (1.0, 0.6, 1.2), cab, 0.03, root)
+    for k, x in enumerate((-0.3, 0.0, 0.3)):
+        cyl("roller_housing", (x, -0.31, 0.9), 0.12, 0.04, mat("housing", (0.6, 0.62, 0.66), 0.3, 0.6), rot=(R(90), 0, 0), parent=root)
+        rot = child(empty("roller"), root)
+        rot.location = (x, -0.34, 0.9)
+        box("roller_arm", (0, 0, 0), (0.2, 0.02, 0.03), mat("roller", (0.3, 0.3, 0.32), 0.4, 0.6), parent=rot)
+        props.key(rot, 1, rotation_euler=(0, 0, 0))
+        props.key(rot, frames, rotation_euler=(0, R(360 * 6), 0))
+        fx._linear(rot)
+    for k, col in enumerate(((0.75, 0.05, 0.08), (0.4, 0.05, 0.1))):
+        curve_obj("blood_line", [V((-0.3 + 0.6 * k, -0.33, 1.0)), V((-0.2 + 0.4 * k, -0.6, 1.3)), V((0.3 - 0.6 * k, -1.2, 0.9))], 0.02, mat(f"blood{k}", col, 0.2, emit=0.6), root)
+    cyl("oxygenator", (0.55, -0.1, 1.0), 0.08, 0.3, mat("oxy", (0.9, 0.95, 1.0), 0.1, alpha=0.4), parent=root)
+    return root
+
+
+def pacemaker(frames, pulse=True):
+    root = empty("pacemaker")
+    sph("can", (0, 0, 0), 0.08, mat("pm_titanium", (0.7, 0.72, 0.75), 0.2, 1.0), (1, 0.35, 0.8), root)
+    box("header", (0, 0, 0.07), (0.07, 0.03, 0.03), mat("header", (0.9, 0.95, 1.0), 0.1, alpha=0.6), parent=root)
+    lm, ls = fx.emissive("lead", (0.3, 0.9, 1.0), 1)
+    curve_obj("lead", [V((0, 0, 0.08)), V((0.1, 0, 0.2)), V((0.3, 0, 0.1)), V((0.45, 0, -0.15))], 0.006, lm, root)
+    if pulse:
+        pairs = [(0, 1)]
+        for k in range(10):
+            t = k / 10
+            pairs += [(t, 1), (t + 0.01, 8), (t + 0.04, 1)]
+        glow_keys(ls, frames, sorted(pairs))
+    return root
+
+
+def surgical_lights(frames):
+    root = empty("or_lights")
+    for x in (-0.6, 0.6):
+        curve_obj("boom", [V((x * 0.3, 0, 3.0)), V((x, 0, 2.6)), V((x, 0, 2.2))], 0.03, mat("boom", (0.8, 0.8, 0.82), 0.3, 0.6), root)
+        cyl("lamp_head", (x, 0, 2.15), 0.3, 0.08, mat("lamp_head", (0.9, 0.9, 0.92), 0.3), parent=root)
+        cyl("lamp_face", (x, 0, 2.105), 0.27, 0.01, fx.emissive("lamp_face", (1.0, 0.98, 0.92), 6)[0], parent=root)
+        light = bpy.data.lights.new("or_spot", "SPOT")
+        light.energy, light.spot_size = 800, R(50)
+        lo = child(bpy.data.objects.new("or_spot", light), root)
+        bpy.context.scene.collection.objects.link(lo)
+        lo.location = (x, 0, 2.05)
+    return root
+
+
+# ------------------------------------------------------------------ batteries
+def battery_cell(frames, ions=True, cutaway=True, charge=(0.1, 0.9), solid=False):
+    """A cutaway lithium-ion cell: anode (graphite, dark), separator (white), cathode (metal oxide, blue),
+    with lithium ions (gold) hopping from cathode to anode while charging. solid=True swaps the
+    liquid electrolyte for a glassy solid layer and a lithium-metal anode."""
+    root = empty("cell")
+    W, D, H = 1.2, 0.5, 0.9
+    anode = mat("anode_li" if solid else "anode", (0.75, 0.78, 0.82) if solid else (0.08, 0.08, 0.09), 0.3, 1.0 if solid else 0.2)
+    sep = mat("solid_electrolyte" if solid else "separator", (0.6, 0.9, 0.95) if solid else (0.93, 0.93, 0.95), 0.1 if solid else 0.6, alpha=0.6 if solid else 1.0)
+    cath = mat("cathode", (0.15, 0.35, 0.8), 0.35, 0.3)
+    box("anode_cc", (-W / 2 - 0.02, 0, H / 2), (0.03, D, H), mat("copper_foil", (0.9, 0.5, 0.25), 0.3, 1.0), parent=root)
+    box("anode", (-W * 0.3, 0, H / 2), (W * 0.35, D, H), anode, parent=root)
+    box("separator", (0, 0, H / 2), (0.06 if not solid else 0.12, D, H), sep, parent=root)
+    box("cathode", (W * 0.3, 0, H / 2), (W * 0.35, D, H), cath, parent=root)
+    box("cathode_cc", (W / 2 + 0.02, 0, H / 2), (0.03, D, H), mat("al_foil", (0.85, 0.86, 0.9), 0.3, 1.0), parent=root)
+    if not solid:
+        box("electrolyte", (0, 0, H / 2), (W, D * 1.02, H * 1.02), mat("electrolyte", (0.6, 0.85, 1.0), 0.05, alpha=0.05), parent=root)
+    for txt, x in (("ANODE", -W * 0.3), ("CATHODE", W * 0.3)):
+        t = fx.text(txt, mat("cl", (1, 1, 1), 0.4, emit=1.5), (x, -D / 2 - 0.02, H + 0.12), size=0.08, depth=0.005)
+        t.parent = root
+    if ions:
+        im = mat("li_ion", (1.0, 0.8, 0.2), 0.3, emit=3)
+        rng = random.Random(3)
+        for k in range(18):
+            z, y = rng.uniform(0.1, H - 0.1), rng.uniform(-D / 2 + 0.05, D / 2 - 0.05)
+            ion = sph("li", (W * 0.3, y, z), 0.025, im, parent=root)
+            t0 = charge[0] + (charge[1] - charge[0] - 0.2) * k / 18
+            props.key(ion, key_frac(frames, t0), location=(W * rng.uniform(0.15, 0.45), y, z))
+            props.key(ion, key_frac(frames, t0 + 0.2), location=(-W * rng.uniform(0.15, 0.45), y, z))
+    return root
+
+
+def dendrite(frames, grow=(0.1, 0.8), seed=5):
+    """Spiky metal whiskers growing from the anode across the gap: the short-circuit danger."""
+    rng = random.Random(seed)
+    root = empty("dendrite")
+    m = mat("li_metal", (0.85, 0.86, 0.9), 0.2, 1.0)
+    for k in range(6):
+        y, z = rng.uniform(-0.2, 0.2), rng.uniform(0.15, 0.75)
+        pts = [V((0, y, z))]
+        for i in range(6):
+            pts.append(pts[-1] + V((0.06, rng.uniform(-0.03, 0.03), rng.uniform(-0.03, 0.03))))
+        o = curve_obj("whisker", pts, 0.012, m, root)
+        draw_on(o, frames, grow[0] + 0.05 * k, grow[1])
+    return root
+
+
+def battery_pack(frames, rows=6, cols=12):
+    root = empty("pack")
+    box("tray", (0, 0, 0.05), (1.6, 2.6, 0.1), mat("tray", (0.25, 0.27, 0.3), 0.4, 0.7), 0.02, root)
+    cm = mat("pack_cell", (0.15, 0.35, 0.75), 0.35, 0.3)
+    for r in range(rows):
+        for c in range(cols):
+            cyl("cell", (-0.7 + r * 0.28, -1.2 + c * 0.22, 0.17), 0.09, 0.14, cm, parent=root, verts=16)
+    return root
+
+
+def charger(frames, plug=None):
+    root = empty("charger")
+    box("post", (0, 0, 0.75), (0.35, 0.25, 1.5), mat("charger_body", (0.9, 0.92, 0.95), 0.3), 0.04, root)
+    sm, ss = fx.emissive("charger_screen", (0.3, 1.0, 0.5), 2)
+    box("screen", (0, -0.13, 1.2), (0.25, 0.01, 0.2), sm, parent=root)
+    curve_obj("cable", [V((0.1, -0.13, 1.0)), V((0.4, -0.5, 0.5)), V((0.8, -0.7, 0.6))], 0.025, mat("cable_black", (0.05, 0.05, 0.06), 0.5), root)
+    return root
+
+
+def brine_ponds(frames, n=6, seed=2):
+    """Lithium evaporation ponds in the desert: rectangles in shades from blue to yellow-green."""
+    rng = random.Random(seed)
+    root = empty("ponds")
+    cols = [(0.02, 0.35, 0.7), (0.05, 0.55, 0.6), (0.2, 0.65, 0.4), (0.55, 0.7, 0.15), (0.8, 0.75, 0.1), (0.85, 0.85, 0.6)]
+    for i in range(n):
+        r, c = divmod(i, 3)
+        box("pond", ((c - 1) * 2.2, r * 1.6, 0.01), (2.0, 1.4, 0.02), mat(f"brine{i}", cols[i % len(cols)], 0.7, emit=0.25), parent=root)
+    return root
+
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",
