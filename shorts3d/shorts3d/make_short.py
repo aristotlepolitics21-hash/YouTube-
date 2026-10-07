@@ -378,7 +378,7 @@ def make(spec_path: Path, preview: bool = False, only: set[str] | None = None) -
     print(f"{len(plan)} shots, {total:.1f}s, {sum(p['frames'] for p in plan)} frames", flush=True)
     render_shots(spec_path, spec, plan, work, bundle, preview, only or set())
     (work / "plan.json").write_text(json.dumps(plan, indent=1, default=str))
-    if preview:
+    if preview or only:  # a partial render: assemble once every shot is done
         return None
     picture = encode_shots(spec, plan, work)
     audio = build_audio(spec, plan, work)
