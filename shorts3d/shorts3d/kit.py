@@ -115,11 +115,23 @@ def glow_keys(socket, frames, pairs):
         socket.keyframe_insert("default_value", frame=key_frac(frames, t))
 
 
+def _tree(obj):
+    yield obj
+    for c in obj.children:
+        yield from _tree(c)
+
+
+def hide_keys(obj, pairs):
+    """Key hide_render on an object and all of its children: pairs = [(frame, hidden), ...]."""
+    for o in _tree(obj):
+        for fr, hidden in pairs:
+            o.hide_render = hidden
+            o.keyframe_insert("hide_render", frame=max(1, fr))
+
+
 def visible_from(obj, frames, t):
     f = key_frac(frames, t)
-    for fr, hidden in ((1, True), (max(1, f - 1), True), (f, False)):
-        obj.hide_render = hidden
-        obj.keyframe_insert("hide_render", frame=fr)
+    hide_keys(obj, ((1, True), (max(1, f - 1), True), (f, False)))
 
 
 COPPER = (0.95, 0.45, 0.2)
@@ -1079,7 +1091,214 @@ def pills(frames, n=14, seed=4):
         p.rotation_euler = (0, 0, rng.uniform(0, 3.14))
     return root
 
+
+# ------------------------------------------------------------------ nuclear
+def _nucleus(name, loc, r, parent, seed=1, n=40):
+    rng = random.Random(seed)
+    root = child(empty(name), parent) if parent else empty(name)
+    root.location = loc
+    pm, nm = mat("proton", (0.95, 0.2, 0.2), 0.35), mat("neutron_n", (0.3, 0.45, 0.95), 0.35)
+    for i in range(n):
+        v = V((rng.gauss(0, 1), rng.gauss(0, 1), rng.gauss(0, 1))).normalized() * r * rng.random() ** 0.33
+        sph("nucleon", v, r * 0.28, pm if i % 2 else nm, parent=root)
+    return root
+
+
+def fission(frames, hit=0.35, split=0.5, products=True, neutrons=3, seed=1):
+    """A neutron strikes a uranium nucleus, which wobbles, splits into two fragments, releases a flash and new neutrons."""
+    root = empty("fission")
+    nuc = _nucleus("uranium", (0, 0, 0), 0.25, root, seed, 60)
+    nm = mat("free_neutron", (0.75, 0.8, 0.9), 0.3, emit=1.5)
+    inc = sph("incoming", (-1.4, 0, 0), 0.055, nm, parent=root)
+    fh, fs = key_frac(frames, hit), key_frac(frames, split)
+    props.key(inc, 1, location=(-1.4, 0, 0))
+    props.key(inc, fh, location=(-0.25, 0, 0))
+    hide_keys(inc, ((1, False), (fh, False), (fh + 1, True)))
+    props.key(nuc, fh, scale=(1, 1, 1))
+    props.key(nuc, (fh + fs) // 2, scale=(1.35, 0.85, 0.85))
+    props.key(nuc, fs, scale=(1.6, 0.75, 0.75))
+    hide_keys(nuc, ((1, False), (fs, False), (fs + 1, True)))
+    if products:
+        for k, sign in enumerate((-1, 1)):
+            frag = _nucleus(f"fragment{k}", (sign * 0.2, 0, 0), 0.18, root, seed + 5 + k, 30)
+            visible_from(frag, frames, split)
+            props.key(frag, fs, location=(sign * 0.2, 0, 0))
+            props.key(frag, frames, location=(sign * 1.1, 0, sign * 0.15))
+        fm, fstr = fx.emissive("flash", (1.0, 0.85, 0.5), 0)
+        fl = sph("flash", (0, 0, 0), 0.3, fm, parent=root)
+        glow_keys(fstr, frames, [(0, 0), (split - 0.005, 0), (split, 30), (min(1, split + 0.12), 0)])
+        props.key(fl, fs, scale=(0.5, 0.5, 0.5))
+        props.key(fl, min(frames, fs + 8), scale=(3, 3, 3))
+        rng = random.Random(seed)
+        for k in range(neutrons):
+            n = sph(f"out{k}", (0, 0, 0), 0.05, nm, parent=root)
+            visible_from(n, frames, split)
+            d = V((rng.uniform(-0.3, 0.3), rng.uniform(-1, 1), rng.uniform(-1, 1))).normalized() * 1.4
+            props.key(n, fs, location=(0, 0, 0))
+            props.key(n, frames, location=tuple(d))
+    return root
+
+
+def chain_reaction(frames, generations=4, seed=2, start=0.1, span=0.75):
+    """Branching tree of fissions: each split frees neutrons that split more nuclei."""
+    rng = random.Random(seed)
+    root = empty("chain")
+    nm = mat("free_neutron", (0.75, 0.8, 0.9), 0.3, emit=1.5)
+    fm = mat("chain_flash", (1.0, 0.75, 0.3), 0.3, emit=6)
+    level = [V((0, 0, 0))]
+    dt = span / generations
+    for g in range(generations):
+        nxt = []
+        t0 = start + g * dt
+        for p in level:
+            nu = _nucleus("cn", tuple(p), 0.09, root, rng.randint(0, 99), 14)
+            f = key_frac(frames, t0 + dt * 0.5)
+            hide_keys(nu, ((1, False), (f, False), (f + 1, True)))
+            if g:
+                visible_from(nu, frames, t0)
+            fl = sph("cf", tuple(p), 0.09, fm, parent=root)
+            visible_from(fl, frames, t0 + dt * 0.5)
+            props.key(fl, f, scale=(0.3, 0.3, 0.3))
+            props.key(fl, f + 2, scale=(1.2, 1.2, 1.2))
+            props.key(fl, f + 4, scale=(0, 0, 0))
+            for k in range(2 if g < generations - 1 else 0):
+                a = rng.uniform(-0.9, 0.9)
+                q = p + V((0.55 + 0.1 * g, (k - 0.5) * (1.3 / (g + 1)) + rng.uniform(-0.08, 0.08), a * 0.15))
+                n = sph("cnn", tuple(p), 0.03, nm, parent=root)
+                visible_from(n, frames, t0 + dt * 0.5)
+                props.key(n, f, location=tuple(p))
+                props.key(n, key_frac(frames, t0 + dt * 1.5), location=tuple(q))
+                nxt.append(q)
+        level = nxt
+    return root
+
+
+def graphite_pile(frames, layers=14, rods=None, glow=None):
+    """Chicago Pile-1: a flattened sphere of black graphite bricks in a wooden frame, with control rods."""
+    root = empty("pile")
+    g = mat("graphite", (0.015, 0.015, 0.018), 0.6, 0.2)
+    gu = mat("graphite_u", (0.03, 0.03, 0.035), 0.55, 0.2)
+    wood = mat("timber", (0.45, 0.3, 0.15), 0.7)
+    h = 0.11
+    for i in range(layers):
+        z = i * h + h / 2
+        u = (z - layers * h / 2) / (layers * h / 2)
+        w = 1.2 * math.sqrt(max(0.15, 1 - u * u))
+        b = box(f"layer{i}", (0, 0, z), (w * 2, w * 2, h * 0.96), gu if i % 2 else g, 0.004, root)
+        b.modifiers.new("bricks", "BEVEL").width = 0.003
+    for sx in (-1, 1):
+        for sy in (-1, 1):
+            box("post", (sx * 1.35, sy * 1.35, layers * h / 2), (0.08, 0.08, layers * h + 0.2), wood, parent=root)
+    rod_m = mat("cadmium", (0.75, 0.76, 0.8), 0.3, 1.0)
+    rod = box("control_rod", (0, -1.0, layers * h * 0.55), (0.06, 1.6, 0.06), rod_m, parent=root)
+    if rods:
+        for t, out in rods:  # out = how far withdrawn (m)
+            props.key(rod, key_frac(frames, t), location=(0, -1.0 - out, layers * h * 0.55))
+    if glow:
+        gm, gs = fx.emissive("core_glow", (0.3, 0.6, 1.0), 0)
+        sph("core", (0, 0, layers * h / 2), 0.6, gm, (1, 1, 0.8), root)
+        glow_keys(gs, frames, glow)
+    return root
+
+
+def cooling_towers(frames, n=2, steam=True):
+    root = empty("towers")
+    conc = mat("concrete", (0.72, 0.72, 0.7), 0.8)
+    for i in range(n):
+        x = (i - (n - 1) / 2) * 2.6
+        prof = [(1.1, 0), (0.75, 1.6), (0.68, 2.1), (0.8, 2.8)]
+        lathe("tower", prof + [(0.78, 2.8)], conc, parent=root, loc=(x, 0, 0)).modifiers["lathe"].use_normal_flip = False
+        if steam:
+            sm = mat("steam", (1, 1, 1), 0.9, alpha=0.55)
+            rng = random.Random(i)
+            for k in range(7):
+                p = sph("puff", (x + rng.uniform(-0.3, 0.3), 0, 3.0 + k * 0.35), 0.45 + k * 0.08, sm, parent=root)
+                off = rng.uniform(0, 1)
+                for f in range(1, frames + 1, 4):
+                    u = (f / frames * 0.6 + off) % 1
+                    props.key(p, f, location=(x + rng.uniform(-0.05, 0.05) + u * 0.6, 0, 3.0 + k * 0.3 + u * 0.8))
+    return root
+
+
+def reactor_core(frames, rods_out=(0.1, 0.6)):
+    """Fuel assemblies in a pool, glowing Cherenkov blue as control rods lift."""
+    root = empty("core")
+    water, ws = fx.emissive("cherenkov", (0.15, 0.45, 1.0), 0.3)
+    box("pool", (0, 0, -0.02), (2.0, 2.0, 0.04), water, parent=root)
+    fuel = mat("fuel", (0.55, 0.57, 0.6), 0.3, 1.0)
+    for i in range(5):
+        for j in range(5):
+            cyl("assembly", ((i - 2) * 0.3, (j - 2) * 0.3, 0.3), 0.1, 0.6, fuel, parent=root, verts=6)
+    rodm = mat("rods", (0.2, 0.2, 0.22), 0.3, 0.8)
+    rods = child(empty("rods"), root)
+    for i in range(4):
+        for j in range(4):
+            cyl("rod", ((i - 1.5) * 0.3, (j - 1.5) * 0.3, 0.45), 0.03, 0.9, rodm, parent=rods)
+    props.key(rods, key_frac(frames, rods_out[0]), location=(0, 0, 0))
+    props.key(rods, key_frac(frames, rods_out[1]), location=(0, 0, 0.7))
+    glow_keys(ws, frames, [(0, 0.3), (rods_out[0], 0.3), (rods_out[1], 5)])
+    light = bpy.data.lights.new("cherenkov_light", "POINT")
+    light.color = (0.2, 0.5, 1.0)
+    lo = child(bpy.data.objects.new("cherenkov_light", light), root)
+    bpy.context.scene.collection.objects.link(lo)
+    lo.location = (0, 0, 0.8)
+    for t, e in ((0, 20), (rods_out[0], 20), (rods_out[1], 400)):
+        light.energy = e
+        light.keyframe_insert("energy", frame=key_frac(frames, t))
+    return root
+
+
+def geiger(frames, clicks=None):
+    root = empty("geiger")
+    box("geiger_box", (0, 0, 0.08), (0.25, 0.14, 0.16), mat("geiger", (0.85, 0.7, 0.15), 0.4), 0.01, root)
+    cyl("dial", (0, -0.071, 0.1), 0.045, 0.004, mat("dial", (0.95, 0.92, 0.82), 0.4), rot=(R(90), 0, 0), parent=root)
+    piv = child(empty("g_needle"), root)
+    piv.location = (0, -0.075, 0.08)
+    box("needle", (0, 0, 0.025), (0.003, 0.002, 0.05), mat("needle", (0.9, 0.05, 0.1), 0.3, emit=1), parent=piv)
+    cyl("probe", (0.2, 0, 0.05), 0.02, 0.18, mat("probe", (0.3, 0.3, 0.32), 0.3, 0.8), rot=(0, R(90), 0), parent=root)
+    if clicks:
+        for t, deg in clicks:
+            props.key(piv, key_frac(frames, t), rotation_euler=(0, R(deg), 0))
+    return root
+
+
+def stadium(frames):
+    """Stagg Field's west stands: stepped seating over a brick wall with arched windows."""
+    root = empty("stadium")
+    brick = mat("brick", (0.45, 0.2, 0.12), 0.8)
+    stone = mat("stone", (0.7, 0.65, 0.55), 0.7)
+    box("wall", (0, 0, 2.0), (8, 0.6, 4.0), brick, parent=root)
+    for i in range(6):
+        box("tower", ((i - 2.5) * 1.5, -0.32, 2.2), (0.35, 0.1, 4.4), stone, parent=root)
+        box("window", ((i - 2.5) * 1.5 + 0.75, -0.31, 2.2), (0.6, 0.02, 1.4), mat("win", (0.15, 0.2, 0.3), 0.2, emit=0.4), parent=root)
+    for k in range(8):
+        box("step", (0, 0.5 + k * 0.4, 4.0 + k * 0.3), (8, 0.4, 0.3), stone, parent=root)
+    return root
+
+
+def bottle(frames, label="CHIANTI"):
+    root = empty("bottle")
+    lathe("wine", [(0, 0), (0.07, 0), (0.09, 0.08), (0.08, 0.16), (0.02, 0.26), (0.018, 0.34), (0, 0.34)],
+          mat("wine_glass", (0.15, 0.35, 0.15), 0.1, alpha=0.6), parent=root)
+    lathe("straw", [(0, 0.0), (0.075, 0.0), (0.092, 0.08), (0.08, 0.15), (0, 0.15)], mat("straw", (0.75, 0.6, 0.3), 0.8), parent=root,
+          loc=(0, 0, -0.002)).scale = (1.02, 1.02, 1)
+    for k in range(3):
+        cyl("cup", (0.2 + k * 0.1, -0.05, 0.04), 0.03, 0.08, mat("paper_cup", (0.95, 0.95, 0.93), 0.6), parent=root)
+    return root
+
+
+def slide_rule(frames, slide=None):
+    root = empty("slide_rule")
+    box("rule", (0, 0, 0), (0.5, 0.06, 0.012), mat("ivory", (0.95, 0.92, 0.82), 0.4), parent=root)
+    s = box("slider", (0, 0, 0.007), (0.5, 0.02, 0.004), mat("ivory2", (0.9, 0.88, 0.78), 0.4), parent=root)
+    for k in range(25):
+        box("tick", (-0.24 + k * 0.02, 0.025, 0.007), (0.002, 0.01, 0.001), mat("ink", (0.05, 0.05, 0.05)), parent=root)
+    if slide:
+        for t, x in slide:
+            props.key(s, key_frac(frames, t), location=(x, 0, 0.007))
+    return root
+
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",
-                          "glow_keys", "visible_from", "_fuzzy")}
+                          "glow_keys", "visible_from", "_fuzzy", "_nucleus", "_tree", "hide_keys")}
