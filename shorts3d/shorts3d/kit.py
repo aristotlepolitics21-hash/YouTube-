@@ -2676,6 +2676,142 @@ def gpu(frames):
         props.torus("fan_ring", (x, 0, 0.145), 0.13, 0.008, mat("ring", (0.5, 1.0, 0.4), 0.3, emit=3)).parent = root
     return root
 
+
+# ------------------------------------------------------------------ brain-computer interfaces
+def brain(frames, glow=None, region="motor", xray=False):
+    """Two folded hemispheres (noise-displaced spheres) with an optional glowing region (motor/visual/speech)."""
+    root = empty("brain")
+    m = mat("cortex", (0.9, 0.5, 0.55), 0.5, 0.15) if not xray else looks.xray("cortex_x", (1.0, 0.5, 0.6), 1.5, 0.3)
+    tex = bpy.data.textures.new("gyri", "MARBLE")
+    tex.noise_scale = 0.05
+    tex.turbulence = 12
+    tex.marble_type = "SHARPER"
+    for side in (-1, 1):
+        h = sph("hemisphere", (side * 0.16, 0, 0), 0.3, m, (0.55, 1.0, 0.8), root)
+        d = h.modifiers.new("folds", "DISPLACE")
+        d.texture, d.strength = tex, 0.05
+        h.modifiers.new("detail", "SUBSURF").levels = 2
+        h.modifiers.move(len(h.modifiers) - 1, 0)
+    sph("cerebellum", (0, 0.24, -0.18), 0.14, mat("cerebellum", (0.8, 0.5, 0.5), 0.6), (1.6, 1, 0.7), root)
+    cyl("stem", (0, 0.12, -0.32), 0.05, 0.25, mat("stem", (0.8, 0.55, 0.5), 0.6), rot=(R(-20), 0, 0), parent=root)
+    if glow:
+        loc = {"motor": (0.2, -0.02, 0.2), "visual": (0.1, 0.27, 0.0), "speech": (-0.3, -0.12, 0.0)}[region]
+        gm, gs = fx.emissive("region", (0.3, 0.9, 1.0), 0)
+        sph("region", loc, 0.1, gm, (1, 1, 0.6), root)
+        glow_keys(gs, frames, glow)
+    return root
+
+
+def eeg_cap(frames, signals=True):
+    """A head-sized cap covered in electrodes with trailing wires."""
+    root = empty("eeg")
+    sph("cap", (0, 0, 0.05), 0.2, mat("cap_fabric", (0.15, 0.3, 0.6), 0.7), (0.95, 1.1, 0.9), root)
+    rng = random.Random(3)
+    em = mat("electrode", (0.85, 0.85, 0.88), 0.3, 0.8)
+    for k in range(24):
+        a, b = rng.uniform(0, 2 * math.pi), rng.uniform(0.1, 1.3)
+        p = V((math.sin(b) * math.cos(a) * 0.19, math.sin(b) * math.sin(a) * 0.21, 0.05 + math.cos(b) * 0.18))
+        sph("electrode", tuple(p), 0.014, em, parent=root)
+    return root
+
+
+def electrode_array(frames, n=10, glow=None):
+    """A Utah-style array: a tiny square chip with a bed of needles."""
+    root = empty("array")
+    box("base", (0, 0, 0.0), (0.4, 0.4, 0.04), mat("array_base", (0.3, 0.32, 0.35), 0.3, 0.8), parent=root)
+    nm = mat("needle", (0.75, 0.76, 0.8), 0.2, 1.0, emit=0.0, emit_color=(0.3, 0.9, 1.0))
+    for i in range(n):
+        for j in range(n):
+            bpy.ops.mesh.primitive_cone_add(vertices=8, radius1=0.008, radius2=0.002, depth=0.15,
+                                            location=(-0.18 + i * 0.04, -0.18 + j * 0.04, -0.095), rotation=(R(180), 0, 0))
+            c = bpy.context.active_object
+            c.data.materials.append(nm)
+            c.parent = root
+    curve_obj("ribbon", [V((0.2, 0, 0)), V((0.45, 0.1, 0.1)), V((0.8, 0.0, 0.25))], 0.02, mat("ribbon", (0.9, 0.7, 0.2), 0.4), root)
+    if glow:
+        glow_keys(nm.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"], frames, glow)
+    return root
+
+
+def robot_arm(frames, reach=(0.2, 0.7), grip=0.75):
+    """A three-segment robotic arm on a base with a two-finger gripper; reaches forward then closes its grip."""
+    root = empty("robot_arm")
+    metal = mat("arm_metal", (0.85, 0.86, 0.9), 0.3, 0.7)
+    dark = mat("arm_joint", (0.15, 0.15, 0.17), 0.4, 0.5)
+    cyl("base", (0, 0, 0.05), 0.15, 0.1, dark, parent=root)
+    shoulder = child(empty("shoulder"), root)
+    shoulder.location = (0, 0, 0.1)
+    box("upper", (0, 0, 0.25), (0.08, 0.08, 0.5), metal, 0.02, shoulder)
+    sph("j1", (0, 0, 0.5), 0.07, dark, parent=shoulder)
+    elbow = child(empty("elbow"), shoulder)
+    elbow.location = (0, 0, 0.5)
+    box("fore", (0, 0, 0.2), (0.07, 0.07, 0.4), metal, 0.02, elbow)
+    sph("j2", (0, 0, 0.4), 0.055, dark, parent=elbow)
+    wrist = child(empty("wrist"), elbow)
+    wrist.location = (0, 0, 0.4)
+    fingers = []
+    for sx in (-1, 1):
+        fp = child(empty("finger"), wrist)
+        fp.location = (sx * 0.03, 0, 0.02)
+        box("finger", (0, 0, 0.06), (0.015, 0.04, 0.12), dark, parent=fp)
+        fingers.append((fp, sx))
+    for t, (sh, el) in ((0, (0, 0)), (reach[0], (0, 0)), (reach[1], (-45, -60))):
+        props.key(shoulder, key_frac(frames, t), rotation_euler=(R(sh), 0, 0))
+        props.key(elbow, key_frac(frames, t), rotation_euler=(R(el), 0, 0))
+    for fp, sx in fingers:
+        props.key(fp, key_frac(frames, grip), rotation_euler=(0, R(sx * 25), 0))
+        props.key(fp, key_frac(frames, grip) + 4, rotation_euler=(0, R(-sx * 5), 0))
+    return root
+
+
+def mri_machine(frames, slide=None):
+    root = empty("mri")
+    white = mat("mri_white", (0.93, 0.93, 0.95), 0.35)
+    bore = props.torus("bore", (0, 0, 1.0), 0.95, 0.45, white, rotation=(R(90), 0, 0))
+    bore.parent = root
+    bore.scale = (1, 1, 1.6)
+    props.torus("bore_glow", (0, -0.75, 1.0), 0.55, 0.02, fx.emissive("bore_glow", (0.4, 0.8, 1.0), 4)[0], rotation=(R(90), 0, 0)).parent = root
+    table = box("table", (0, -1.4, 0.75), (0.6, 2.2, 0.12), white, 0.04, root)
+    box("table_stand", (0, -1.9, 0.35), (0.4, 0.4, 0.7), white, 0.04, root)
+    if slide:
+        props.key(table, key_frac(frames, slide[0]), location=(0, -1.4, 0.75))
+        props.key(table, key_frac(frames, slide[1]), location=(0, -0.3, 0.75))
+    return root
+
+
+def stent(frames):
+    """A tiny mesh tube electrode, like those threaded through a blood vessel."""
+    root = empty("stent")
+    bpy.ops.mesh.primitive_cylinder_add(vertices=24, radius=0.1, depth=0.6, location=(0, 0, 0), rotation=(0, R(90), 0))
+    c = bpy.context.active_object
+    sub = c.modifiers.new("sub", "SUBSURF")
+    sub.subdivision_type, sub.levels, sub.render_levels = "SIMPLE", 2, 2
+    c.modifiers.new("wire", "WIREFRAME").thickness = 0.006
+    c.data.materials.append(mat("nitinol", (0.8, 0.8, 0.85), 0.25, 1.0))
+    c.parent = root
+    vm = mat("vessel_wall", (0.8, 0.2, 0.25), 0.4, alpha=0.35)
+    cyl("vessel", (0, 0, 0), 0.13, 1.6, vm, rot=(0, R(90), 0), parent=root)
+    return root
+
+
+def spikes(frames, channels=6, length=2.0, draw=(0.05, 0.9), seed=4):
+    """Several channels of neural spike trains drawing across like a lab recording."""
+    rng = random.Random(seed)
+    root = empty("spikes")
+    cols = [(0.3, 0.9, 1.0), (1.0, 0.5, 0.8), (0.5, 1.0, 0.5), (1.0, 0.8, 0.3)]
+    for c in range(channels):
+        m, _ = fx.emissive(f"chan{c}", cols[c % len(cols)], 4)
+        pts = []
+        for i in range(301):
+            u = i / 300
+            y = 0.01 * math.sin(i * 0.7 + c)
+            if rng.random() < 0.04:
+                y += 0.12
+            pts.append(V((u * length - length / 2, 0, c * 0.2 + y)))
+        o = curve_obj(f"chan{c}", pts, 0.005, m, root)
+        draw_on(o, frames, draw[0], draw[1])
+    return root
+
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",
