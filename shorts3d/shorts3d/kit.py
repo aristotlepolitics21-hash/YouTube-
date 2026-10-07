@@ -1298,7 +1298,262 @@ def slide_rule(frames, slide=None):
             props.key(s, key_frac(frames, t), location=(x, 0, 0.007))
     return root
 
+
+# ------------------------------------------------------------------ flight
+def _wing(name, span, chord, thick, material, loc, parent, camber=0.02):
+    """A gently cambered wing panel (spanning X) from a curved, thin box."""
+    bpy.ops.mesh.primitive_cube_add(size=1, location=loc)
+    w = bpy.context.active_object
+    w.name = name
+    w.scale = (span, chord, thick)
+    sub = w.modifiers.new("cut", "SUBSURF")
+    sub.subdivision_type, sub.levels, sub.render_levels = "SIMPLE", 3, 3
+    bend = w.modifiers.new("camber", "SIMPLE_DEFORM")
+    bend.deform_method, bend.deform_axis, bend.angle = "BEND", "X", R(camber * 400)
+    w.data.materials.append(material)
+    w.parent = parent
+    return w
+
+
+def propeller(name, loc, radius, material, parent, frames, rpm_turns=12, axis="y"):
+    piv = child(empty(name), parent)
+    piv.location = loc
+    for k in range(2):
+        b = box("blade", (0, 0, radius / 2 if k == 0 else -radius / 2), (radius * 0.18, 0.01, radius), material, 0.003, piv)
+        b.rotation_euler = (0, R(12 if k == 0 else -12), 0)
+    i = "xyz".index(axis)
+    r0, r1 = [0, 0, 0], [0, 0, 0]
+    r1[i] = R(360 * rpm_turns)
+    props.key(piv, 1, rotation_euler=tuple(r0))
+    props.key(piv, frames, rotation_euler=tuple(r1))
+    fx._linear(piv)
+    return piv
+
+
+def wright_flyer(frames, props_spin=True, pilot=True):
+    """1903 Flyer: two stacked wings, forward elevator, twin rear rudders, two pusher propellers. Flies toward -Y."""
+    root = empty("flyer")
+    cloth = mat("muslin", (0.92, 0.88, 0.75), 0.8)
+    spruce = mat("spruce", (0.6, 0.45, 0.25), 0.6)
+    for z in (0.0, 0.55):
+        _wing("wing", 4.0, 0.65, 0.025, cloth, (0, 0, 1.0 + z), root)
+    for x in (-1.9, -1.3, -0.65, 0.0, 0.65, 1.3, 1.9):
+        cyl("strut", (x, -0.25, 1.27), 0.012, 0.55, spruce, parent=root)
+        cyl("strut", (x, 0.25, 1.27), 0.012, 0.55, spruce, parent=root)
+    for z in (0.9, 1.08):
+        _wing("elevator", 1.5, 0.3, 0.02, cloth, (0, -1.5, z), root, camber=0.01)
+    for x in (-0.6, 0.6):
+        box("boom", (x, -0.85, 0.95), (0.02, 1.4, 0.02), spruce, parent=root)
+        box("rboom", (x, 1.2, 1.2), (0.02, 1.4, 0.02), spruce, parent=root)
+    for x in (-0.15, 0.15):
+        box("rudder", (x, 1.9, 1.2), (0.01, 0.35, 0.6), cloth, 0.004, root)
+    box("skid", (-0.3, -0.5, 0.82), (0.04, 2.6, 0.04), spruce, parent=root)
+    box("skid", (0.3, -0.5, 0.82), (0.04, 2.6, 0.04), spruce, parent=root)
+    box("engine", (0.25, 0.05, 1.06), (0.25, 0.3, 0.15), mat("engine", (0.2, 0.2, 0.22), 0.4, 0.8), 0.01, root)
+    pm = mat("prop", (0.65, 0.5, 0.3), 0.5)
+    for x in (-1.0, 1.0):
+        propeller("prop", (x, 0.45, 1.27), 0.6, pm, root, frames, 30 if props_spin else 0)
+    if pilot:  # prone pilot: a simple rounded figure lying on the lower wing
+        suit = mat("pilot", (0.15, 0.15, 0.18), 0.6)
+        sph("pilot_body", (-0.2, 0.0, 1.1), 0.12, suit, (1, 2.8, 0.8), root)
+        sph("pilot_head", (-0.2, -0.38, 1.12), 0.08, mat("face", (0.75, 0.55, 0.45), 0.6), parent=root)
+    return root
+
+
+def glider(frames, flap=False):
+    """Lilienthal-style hang glider: ribbed bat wings with a pilot hanging below."""
+    root = empty("glider")
+    cloth = mat("glider_cloth", (0.93, 0.9, 0.82), 0.8)
+    rib = mat("willow", (0.45, 0.32, 0.18), 0.6)
+    verts, faces = [(0, -0.6, 0), (0, 0.6, 0)], []
+    n = 9
+    for side in (-1, 1):
+        prev = None
+        for k in range(n + 1):
+            a = R(-80 + 160 * k / n)
+            tip = (side * 3.3 * math.cos(a * 0.6) * (1 - 0.3 * abs(math.sin(a))), 1.0 * math.sin(a) * 0.9, 0.25)
+            verts.append(tip)
+            cur = len(verts) - 1
+            curve_obj("rib", [V((0, 0, 0)), V(tip)], 0.01, rib, root)
+            if prev is not None:
+                faces.append((0 if k <= n // 2 else 1, prev, cur) if side < 0 else (prev, 0 if k <= n // 2 else 1, cur))
+            prev = cur
+    mesh = bpy.data.meshes.new("glider_wing")
+    mesh.from_pydata([V(v) for v in verts], [], faces)
+    w = bpy.data.objects.new("glider_wing", mesh)
+    bpy.context.scene.collection.objects.link(w)
+    w.data.materials.append(cloth)
+    w.parent = root
+    w.modifiers.new("smooth", "SUBSURF").levels = 1
+    box("tail", (0, 1.6, 0.25), (0.02, 0.6, 0.4), cloth, parent=root)
+    box("tailplane", (0, 1.6, 0.25), (0.8, 0.5, 0.02), cloth, parent=root)
+    curve_obj("tailboom", [V((0, 0.4, 0.2)), V((0, 1.5, 0.25))], 0.01, rib, root)
+    suit = mat("glider_pilot", (0.25, 0.22, 0.2), 0.6)
+    sph("pilot", (0, 0, -0.45), 0.14, suit, (1, 0.8, 2.6), root)
+    sph("pilot_head", (0, 0, -0.02), 0.09, mat("face", (0.75, 0.55, 0.45), 0.6), parent=root)
+    return root
+
+
+def balloon(frames, rise=None):
+    root = empty("balloon")
+    m = bpy.data.materials.new("balloon_silk")
+    m.use_nodes = True
+    nt = m.node_tree
+    p = nt.nodes["Principled BSDF"]
+    tc = nt.nodes.new("ShaderNodeTexCoord")
+    grad = nt.nodes.new("ShaderNodeTexGradient")
+    grad.gradient_type = "RADIAL"
+    nt.links.new(tc.outputs["Object"], grad.inputs["Vector"])
+    mathn = nt.nodes.new("ShaderNodeMath")
+    mathn.operation = "MULTIPLY"
+    mathn.inputs[1].default_value = 12
+    nt.links.new(grad.outputs["Fac"], mathn.inputs[0])
+    fr = nt.nodes.new("ShaderNodeMath")
+    fr.operation = "FRACT"
+    nt.links.new(mathn.outputs[0], fr.inputs[0])
+    st = nt.nodes.new("ShaderNodeMath")
+    st.operation = "GREATER_THAN"
+    st.inputs[1].default_value = 0.5
+    nt.links.new(fr.outputs[0], st.inputs[0])
+    mix = nt.nodes.new("ShaderNodeMix")
+    mix.data_type = "RGBA"
+    mix.inputs["A"].default_value = (0.1, 0.2, 0.7, 1)
+    mix.inputs["B"].default_value = (0.95, 0.75, 0.15, 1)
+    nt.links.new(st.outputs[0], mix.inputs["Factor"])
+    nt.links.new(mix.outputs["Result"], p.inputs["Base Color"])
+    lathe("envelope", [(0, 0), (0.25, 0.05), (0.9, 0.9), (1.05, 1.6), (0.85, 2.3), (0.3, 2.6), (0, 2.62)], m, parent=root, loc=(0, 0, 1.0))
+    box("basket", (0, 0, 0.6), (0.6, 0.6, 0.45), mat("wicker", (0.55, 0.38, 0.18), 0.8), 0.03, root)
+    for sx in (-1, 1):
+        for sy in (-1, 1):
+            curve_obj("rope", [V((sx * 0.28, sy * 0.28, 0.82)), V((sx * 0.2, sy * 0.2, 1.05))], 0.005, mat("rope", (0.8, 0.7, 0.5)), root)
+    if rise:
+        props.key(root, key_frac(frames, rise[0]), location=(0, 0, 0))
+        props.key(root, key_frac(frames, rise[1]), location=(0.3, 0, rise[2] if len(rise) > 2 else 2.0))
+    return root
+
+
+def airliner(frames, roll=0):
+    """A modern twin-engine jet, flying toward -Y."""
+    root = empty("airliner")
+    white = mat("livery", (0.92, 0.93, 0.95), 0.3)
+    blue = mat("livery_blue", (0.1, 0.25, 0.65), 0.3)
+    sph("fuselage", (0, 0, 0), 0.3, white, (1, 6.5, 1), root)
+    box("stripe", (0, 0, -0.05), (0.605, 3.8, 0.06), blue, parent=root)
+    for side in (-1, 1):
+        w = box("wing", (side * 1.6, 0.3, -0.1), (3.0, 0.75, 0.05), white, 0.02, root)
+        w.rotation_euler = (0, R(side * -4), R(side * 18))
+        cyl("engine", (side * 1.1, -0.15, -0.35), 0.17, 0.6, mat("nacelle", (0.8, 0.82, 0.85), 0.3, 0.5), rot=(R(90), 0, 0), parent=root)
+        t = box("tailplane", (side * 0.6, 1.75, 0.1), (1.0, 0.35, 0.03), white, 0.01, root)
+        t.rotation_euler = (0, 0, R(side * 22))
+    box("fin", (0, 1.8, 0.55), (0.04, 0.6, 0.9), blue, 0.01, root).rotation_euler = (R(-20), 0, 0)
+    for k in range(14):
+        box("window", (0.3, -1.2 + k * 0.16, 0.08), (0.02, 0.06, 0.06), mat("glass_dark", (0.05, 0.08, 0.12), 0.2), parent=root)
+        box("window", (-0.3, -1.2 + k * 0.16, 0.08), (0.02, 0.06, 0.06), mat("glass_dark", (0.05, 0.08, 0.12), 0.2), parent=root)
+    root.rotation_euler = (0, R(roll), 0)
+    return root
+
+
+def airfoil_flow(frames, angle=6, lines=9, draw=(0.05, 0.6)):
+    """A wing cross-section in a stream of air: the lines bend over the top and are deflected down behind it."""
+    root = empty("airfoil")
+    # NACA-ish airfoil in the YZ plane (chord along +Y)
+    pts = []
+    for i in range(41):
+        x = 1 - math.cos(math.pi * i / 40) * 0.5 - 0.5
+        t = 0.12 * (0.2969 * math.sqrt(max(x, 0)) - 0.126 * x - 0.3516 * x * x + 0.2843 * x ** 3 - 0.1015 * x ** 4) * 5
+        pts.append((x, t + 0.06 * math.sin(math.pi * x)))
+    lower = [(x, -t * 0.4 + 0.06 * math.sin(math.pi * x)) for x, t in pts]
+    outline = pts + lower[::-1]
+    mesh = bpy.data.meshes.new("airfoil")
+    verts = [(-0.3, (x - 0.5) * 1.2, z * 1.2) for x, z in outline] + [(0.3, (x - 0.5) * 1.2, z * 1.2) for x, z in outline]
+    n = len(outline)
+    faces = [tuple(range(n)), tuple(range(2 * n - 1, n - 1, -1))] + [(i, (i + 1) % n, n + (i + 1) % n, n + i) for i in range(n)]
+    mesh.from_pydata(verts, [], faces)
+    o = bpy.data.objects.new("airfoil", mesh)
+    bpy.context.scene.collection.objects.link(o)
+    o.data.materials.append(mat("wing_metal", (0.8, 0.82, 0.86), 0.3, 0.6))
+    o.parent = root
+    o.rotation_euler = (R(angle), 0, 0)
+    lm, _ = fx.emissive("airflow", (0.3, 0.85, 1.0), 4)
+    for k in range(lines):
+        z0 = -0.5 + k * 1.0 / (lines - 1)
+        lp = []
+        for i in range(81):
+            y = -1.6 + 3.2 * i / 80
+            bump = 0.18 * math.exp(-((y - 0.0) / 0.5) ** 2) * math.exp(-abs(z0) * 2.5) * (1 if z0 >= 0 else 0.4)
+            down = -0.35 * max(0, y) / 1.6 * math.exp(-abs(z0) * 1.5)
+            lp.append(V((0, y, z0 + bump * (1 if z0 >= -0.05 else -1) + down)))
+        c = curve_obj("flow", lp, 0.006, lm, root)
+        draw_on(c, frames, draw[0] + 0.02 * k, draw[1])
+    return root
+
+
+def wind_tunnel(frames):
+    """The Wrights' 1901 tunnel: a wooden box with a fan at one end and a balance holding a tiny wing."""
+    root = empty("wind_tunnel")
+    wood = mat("pine", (0.62, 0.45, 0.25), 0.6)
+    box("floor", (0, 0, 0.0), (0.45, 1.8, 0.03), wood, parent=root)
+    box("roof", (0, 0, 0.42), (0.45, 1.8, 0.03), mat("glass_top", (0.9, 0.95, 1), 0.05, alpha=0.3), parent=root)
+    for sx in (-1, 1):
+        box("side", (sx * 0.22, 0, 0.21), (0.03, 1.8, 0.42), wood, parent=root)
+    propeller("fan", (0, 0.92, 0.21), 0.18, mat("fanblade", (0.4, 0.4, 0.42), 0.4, 0.8), root, frames, 60)
+    box("balance", (0, -0.1, 0.12), (0.02, 0.02, 0.18), mat("brass", (0.8, 0.65, 0.3), 0.3, 0.9), parent=root)
+    w = box("test_wing", (0, -0.1, 0.22), (0.12, 0.05, 0.004), mat("steel", (0.75, 0.75, 0.8), 0.3, 1.0), parent=root)
+    w.rotation_euler = (R(-8), 0, 0)
+    lm, _ = fx.emissive("tunnel_air", (0.4, 0.85, 1.0), 2)
+    for k in range(5):
+        c = curve_obj("air", [V((-0.12 + k * 0.06, 0.8, 0.15 + 0.03 * (k % 2))), V((-0.12 + k * 0.06, -0.8, 0.15 + 0.03 * (k % 2)))], 0.003, lm, root)
+        draw_on(c, frames, 0.05, 0.4)
+    return root
+
+
+def bicycle(frames, spin=0):
+    root = empty("bicycle")
+    steel = mat("frame", (0.12, 0.12, 0.14), 0.3, 0.8)
+    tyre = mat("tyre", (0.03, 0.03, 0.03), 0.6)
+    for y in (-0.5, 0.5):
+        whl = child(empty("wheel"), root)
+        whl.location = (0, y, 0.35)
+        props.torus("tyre", (0, 0, 0), 0.33, 0.02, tyre, rotation=(0, R(90), 0)).parent = whl
+        for k in range(12):
+            box("spoke", (0, 0, 0), (0.003, 0.003, 0.64), steel, parent=whl).rotation_euler = (R(k * 15), 0, 0)
+        if spin:
+            props.key(whl, 1, rotation_euler=(0, 0, 0))
+            props.key(whl, frames, rotation_euler=(R(360 * spin), 0, 0))
+    curve_obj("frame", [V((0, -0.5, 0.35)), V((0, -0.05, 0.4)), V((0, 0.35, 0.8)), V((0, -0.35, 0.8)), V((0, -0.05, 0.4)),
+                        V((0, 0.5, 0.35)), V((0, 0.35, 0.8))], 0.015, steel, root)
+    box("saddle", (0, -0.3, 0.88), (0.08, 0.2, 0.04), mat("leather", (0.3, 0.15, 0.08), 0.6), 0.02, root)
+    curve_obj("bars", [V((-0.25, 0.35, 0.95)), V((0, 0.4, 0.92)), V((0.25, 0.35, 0.95))], 0.012, steel, root)
+    return root
+
+
+def dunes(frames, seed=6, n=10):
+    root = empty("dunes")
+    sand = mat("sand", (0.85, 0.72, 0.5), 0.9)
+    rng = random.Random(seed)
+    for i in range(n):
+        sph("dune", (rng.uniform(-12, 12), rng.uniform(3, 18), -0.2), rng.uniform(2, 5), sand, (1.6, 1, rng.uniform(0.15, 0.35)), root)
+    return root
+
+
+def birds(frames, n=6, seed=3, area=3.0):
+    rng = random.Random(seed)
+    root = empty("birds")
+    m = mat("bird", (0.1, 0.1, 0.12), 0.6)
+    for i in range(n):
+        b = child(empty("bird"), root)
+        b.location = (rng.uniform(-area, area), rng.uniform(-area, area) * 0.5, rng.uniform(0, area * 0.4))
+        sph("bird_body", (0, 0, 0), 0.05, m, (0.6, 1.6, 0.6), b)
+        for side in (-1, 1):
+            wp = child(empty("wing_pivot"), b)
+            box("feather_wing", (side * 0.12, 0, 0), (0.24, 0.07, 0.008), m, parent=wp)
+            for f in range(1, frames + 1, 3):
+                props.key(wp, f, rotation_euler=(0, R(side * 30 * math.sin(f * 0.9 + i)), 0))
+        props.key(b, 1, location=tuple(b.location))
+        props.key(b, frames, location=(b.location.x + rng.uniform(1, 2), b.location.y, b.location.z + 0.2))
+    return root
+
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",
-                          "glow_keys", "visible_from", "_fuzzy", "_nucleus", "_tree", "hide_keys")}
+                          "glow_keys", "visible_from", "_fuzzy", "_nucleus", "_tree", "hide_keys", "_wing", "propeller")}
