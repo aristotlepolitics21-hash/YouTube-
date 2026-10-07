@@ -1,0 +1,3478 @@
+{
+ "format": "long",
+ "render": {
+  "width": 960,
+  "height": 540,
+  "samples": 8,
+  "fps": 12
+ },
+ "still_render": {
+  "width": 1920,
+  "height": 1080,
+  "samples": 16
+ },
+ "output_fps": 24,
+ "gap_seconds": 0.5,
+ "chapter_gap_seconds": 0.9,
+ "burn_captions": false,
+ "slug": "06-power-grid",
+ "title": "The Invention That Gave the World Electricity",
+ "description": "Edison's DC versus Tesla and Westinghouse's AC: the war of the currents, the transformer, the White City and the Niagara Falls power plant that lit up the world, told in 3D animation.",
+ "tags": [
+  "war of the currents",
+  "Nikola Tesla",
+  "Thomas Edison",
+  "George Westinghouse",
+  "alternating current",
+  "transformer",
+  "Niagara Falls",
+  "power grid",
+  "history of electricity",
+  "3D animation"
+ ],
+ "voice": {
+  "piper_voice": "en_US-ryan-high",
+  "length_scale": 1.25,
+  "sentence_silence": 0.28,
+  "pronunciations": {
+   "Menlo": "Men-low",
+   "Barrington": "Barr-ing-ton",
+   "Columbian": "Co-lum-bee-an",
+   "Hz": "hertz"
+  }
+ },
+ "music_mood": "tense",
+ "sources": [
+  "https://www.energy.gov/articles/war-currents-ac-vs-dc-power",
+  "https://www.nps.gov/edis/learn/historyculture/edison-light-bulb.htm",
+  "https://www.britannica.com/biography/Nikola-Tesla",
+  "https://www.ieee.org/about/history",
+  "https://ethw.org/Milestones:Adams_Hydroelectric_Generating_Plant,_1895",
+  "https://ethw.org/Milestones:Alternating_Current_Electrification,_1886"
+ ],
+ "shots": [
+  {
+   "id": "s001",
+   "line": "Look out of any window at night, and you'll see the result of a battle fought more than a hundred years ago.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "houses",
+      "at": [
+       0,
+       1.5,
+       0
+      ],
+      "args": {
+       "on": [
+        0.1,
+        0.6
+       ]
+      }
+     },
+     {
+      "prop": "city",
+      "at": [
+       0,
+       6,
+       0
+      ],
+      "args": {
+       "on": 0.3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -1.2,
+      1.4
+     ],
+     "to": [
+      0,
+      -7.5,
+      3.0
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 50,
+     "target_to": [
+      0,
+      4,
+      1.2
+     ],
+     "lens_to": 28
+    }
+   }
+  },
+  {
+   "id": "s002",
+   "line": "It was a fight over how electricity should travel, from the power station to your home.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "pylons",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "current": [
+        0.1,
+        0.3
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      6,
+      -4,
+      2.5
+     ],
+     "to": [
+      5,
+      -2,
+      2.6
+     ],
+     "target": [
+      0,
+      5,
+      2.5
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s003",
+   "line": "On one side was the most famous inventor in the world, Thomas Edison. On the other, a brilliant immigrant engineer named Nikola Tesla, and the businessman George Westinghouse.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [
+     {
+      "hair": [
+       0.55,
+       0.52,
+       0.5
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.18,
+        0.15
+       ],
+       "pants": [
+        0.2,
+        0.18,
+        0.15
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.8,
+       0.3,
+       0
+      ],
+      "turn": -15,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.04,
+       0.03,
+       0.03
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "pants": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.4,
+       0.3,
+       0
+      ],
+      "turn": 10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.6,
+       0.6,
+       0.62
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.15,
+        0.17,
+        0.25
+       ],
+       "pants": [
+        0.15,
+        0.17,
+        0.25
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       1.1,
+       0.5,
+       0
+      ],
+      "turn": 20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [
+     {
+      "text": "DC",
+      "at": [
+       -0.8,
+       0.3,
+       2.15
+      ],
+      "size": 0.25,
+      "color": [
+       0.4,
+       0.85,
+       1.0
+      ],
+      "pop": 0.15
+     },
+     {
+      "text": "AC",
+      "at": [
+       0.75,
+       0.4,
+       2.15
+      ],
+      "size": 0.25,
+      "color": [
+       1.0,
+       0.5,
+       0.2
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.2,
+      1.6
+     ],
+     "to": [
+      0,
+      -2.8,
+      1.55
+     ],
+     "target": [
+      0,
+      0.3,
+      1.2
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s004",
+   "line": "The winner shaped the electrical grid that powers almost the entire world today.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "waveform",
+      "at": [
+       0,
+       0.4,
+       0.75
+      ],
+      "args": {
+       "kind": "ac",
+       "draw": [
+        0.1,
+        0.6
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "THE WAR OF THE CURRENTS",
+      "at": [
+       0,
+       0,
+       1.3
+      ],
+      "size": 0.22,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.08
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.2
+     ],
+     "to": [
+      0,
+      -2.6,
+      1.15
+     ],
+     "target": [
+      0,
+      0,
+      1.1
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s005",
+   "line": "In eighteen seventy nine, Edison's lab in Menlo Park, New Jersey, produced a practical electric light bulb that could glow for hours.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.55,
+       0.52,
+       0.5
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.18,
+        0.15
+       ],
+       "pants": [
+        0.2,
+        0.18,
+        0.15
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "bulb",
+      "at": [
+       0,
+       -0.1,
+       0.895
+      ],
+      "args": {
+       "on": 0.3
+      }
+     },
+     {
+      "prop": "glassware",
+      "at": [
+       -0.5,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.9,
+      -2.5,
+      1.6
+     ],
+     "to": [
+      0.6,
+      -2.1,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.15
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.27,
+      0.22
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.025
+     ]
+    }
+   },
+   "chapter": "Edison's light"
+  },
+  {
+   "id": "s006",
+   "line": "But a light bulb is useless without electricity to run it. So Edison designed a whole system: generators, cables, switches, fuses and meters.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bulb",
+      "at": [
+       -0.9,
+       0,
+       0.1
+      ],
+      "args": {
+       "on": 0.05
+      }
+     },
+     {
+      "prop": "wall_switch",
+      "at": [
+       -0.3,
+       0,
+       0.5
+      ],
+      "args": {
+       "flip": 0.2
+      }
+     },
+     {
+      "prop": "meter",
+      "at": [
+       0.3,
+       0,
+       0.15
+      ],
+      "args": {
+       "needle": [
+        [
+         0,
+         0
+        ],
+        [
+         0.3,
+         30
+        ]
+       ]
+      }
+     },
+     {
+      "prop": "faraday_disk",
+      "at": [
+       0.9,
+       0,
+       0
+      ],
+      "scale": 0.8,
+      "args": {
+       "spin": [
+        0,
+        1
+       ],
+       "glow": [
+        0,
+        1
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.2
+     ],
+     "to": [
+      0.3,
+      -2.2,
+      1.1
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s007",
+   "line": "On the fourth of September, eighteen eighty two, his Pearl Street power station in Manhattan switched on, lighting buildings across a few city blocks.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "generator_hall",
+      "at": [
+       0,
+       -0.5,
+       0
+      ],
+      "scale": 0.3
+     },
+     {
+      "prop": "city",
+      "at": [
+       0,
+       3,
+       0
+      ],
+      "args": {
+       "count": 70,
+       "on": 0.3
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "PEARL STREET  1882",
+      "at": [
+       0,
+       0.5,
+       1.2
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -5.5,
+      2.0
+     ],
+     "to": [
+      0.6,
+      -4.8,
+      1.8
+     ],
+     "target": [
+      0,
+      2,
+      1.2
+     ],
+     "lens": 30
+    }
+   }
+  },
+  {
+   "id": "s008",
+   "line": "Edison's system used direct current, or DC. The electricity flows steadily in one direction, like water through a pipe.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "waveform",
+      "at": [
+       0,
+       0,
+       0.55
+      ],
+      "args": {
+       "kind": "dc"
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      0.7
+     ],
+     "to": [
+      0,
+      -2.3,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s009",
+   "line": "But DC had a serious problem. Sent through long wires, much of the power was lost as heat.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "pylons",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 3
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "HEAT",
+      "at": [
+       0,
+       4,
+       4.2
+      ],
+      "size": 0.3,
+      "color": [
+       1.0,
+       0.35,
+       0.2
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      6,
+      -4,
+      2.5
+     ],
+     "to": [
+      5,
+      -2,
+      2.6
+     ],
+     "target": [
+      0,
+      5,
+      2.5
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s010",
+   "line": "At the low voltages Edison used, a power station could only serve customers within about a mile. A city would need a power station in nearly every neighbourhood.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "houses",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "on": [
+        0,
+        0.01
+       ]
+      }
+     },
+     {
+      "prop": "houses",
+      "at": [
+       0,
+       3,
+       0
+      ],
+      "args": {
+       "on": [
+        0.5,
+        0.51
+       ]
+      }
+     },
+     {
+      "prop": "generator_hall",
+      "at": [
+       -6,
+       1.5,
+       0
+      ],
+      "scale": 0.25,
+      "args": {
+       "n": 1
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -7,
+      4.0
+     ],
+     "to": [
+      0.5,
+      -6.4,
+      3.6
+     ],
+     "target": [
+      0,
+      2,
+      0.5
+     ],
+     "lens": 28
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s011",
+   "line": "Nikola Tesla was born in eighteen fifty six, in what is now Croatia, to a Serbian family.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.04,
+       0.03,
+       0.03
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "pants": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.8
+     }
+    ],
+    "props": [],
+    "texts": [
+     {
+      "text": "1856",
+      "at": [
+       0.9,
+       0.5,
+       1.6
+      ],
+      "size": 0.3,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.5
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.4
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       1.0,
+       0.6,
+       0.3
+      ],
+      "zenith": [
+       0.2,
+       0.45,
+       0.85
+      ]
+     },
+     "floor": [
+      0.3,
+      0.45,
+      0.2
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Tesla's idea"
+  },
+  {
+   "id": "s012",
+   "line": "He had a remarkable memory, and said he could design and test machines entirely in his imagination.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.04,
+       0.03,
+       0.03
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "pants": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": -15
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "induction_motor",
+      "at": [
+       0.8,
+       0,
+       1.3
+      ],
+      "scale": 0.5
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.6
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.6
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.08,
+      0.08,
+      0.12
+     ],
+     "world": [
+      0.01,
+      0.01,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s013",
+   "line": "As a student, he became obsessed with an idea: a motor that ran on alternating current, AC, where the electricity rapidly switches direction back and forth.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "waveform",
+      "at": [
+       0,
+       0,
+       0.55
+      ],
+      "args": {
+       "kind": "ac"
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      0.7
+     ],
+     "to": [
+      0,
+      -2.3,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s014",
+   "line": "In eighteen eighty four, he arrived in New York with almost nothing, and went to work for Edison.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "route",
+      "at": [
+       0,
+       0,
+       0.05
+      ],
+      "args": {
+       "stops": [
+        "PARIS",
+        "NEW YORK"
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      2.0
+     ],
+     "to": [
+      0.4,
+      -2.0,
+      1.6
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s015",
+   "line": "But the two men were opposites. Edison was a tireless tinkerer, who tested thousands of ideas by trial and error. Tesla was a theorist. They soon fell out, and Tesla quit.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.55,
+       0.52,
+       0.5
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.18,
+        0.15
+       ],
+       "pants": [
+        0.2,
+        0.18,
+        0.15
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.5,
+       0.35,
+       0
+      ],
+      "turn": -25,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.04,
+       0.03,
+       0.03
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "pants": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.5,
+       0.35,
+       0
+      ],
+      "turn": 25,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.27,
+      0.22
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.025
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s016",
+   "line": "For a while, he even dug ditches to survive.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.04,
+       0.03,
+       0.03
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "pants": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.4
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.35
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.3,
+       0.4,
+       0.6
+      ]
+     },
+     "floor": [
+      0.35,
+      0.28,
+      0.2
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s017",
+   "line": "Then, in eighteen eighty eight, he patented his AC induction motor.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "induction_motor",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "spin": [
+        0.15,
+        1.0
+       ],
+       "turns": 3
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "1888",
+      "at": [
+       -0.8,
+       0.3,
+       1.0
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0.6,
+      -1.6,
+      0.8
+     ],
+     "to": [
+      0.4,
+      -1.3,
+      0.7
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s018",
+   "line": "Instead of brushes and sparking contacts, it used coils that create a magnetic field which spins around. The rotor is simply dragged around by it.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "induction_motor",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "spin": [
+        0.05,
+        1.0
+       ],
+       "turns": 4
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.25,
+      -1.2,
+      0.55
+     ],
+     "to": [
+      0.15,
+      -1.0,
+      0.5
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s019",
+   "line": "It was simple, tough and efficient. Versions of it still run most of the world's fans, pumps, factory machines and many electric cars.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "induction_motor",
+      "at": [
+       -0.5,
+       0,
+       0
+      ],
+      "args": {
+       "spin": [
+        0,
+        1
+       ]
+      }
+     },
+     {
+      "prop": "turbine",
+      "at": [
+       1.0,
+       1.2,
+       0
+      ],
+      "scale": 0.4
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.2,
+      -2.6,
+      1.4
+     ],
+     "to": [
+      0.8,
+      -2.0,
+      1.1
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s020",
+   "line": "The real advantage of AC was something else: the transformer.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "transformer",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -1.6,
+      0.8
+     ],
+     "to": [
+      0.4,
+      -1.3,
+      0.7
+     ],
+     "target": [
+      0,
+      0,
+      0.35
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "chapter": "The transformer"
+  },
+  {
+   "id": "s021",
+   "line": "A transformer is two coils of wire wrapped around an iron core. Thanks to Faraday's induction, the changing current in one coil creates current in the other.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "transformer",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "glow": [
+        0.2,
+        0.6
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.4,
+      0.7
+     ],
+     "to": [
+      0.3,
+      -1.2,
+      0.6
+     ],
+     "target": [
+      0,
+      0,
+      0.35
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s022",
+   "line": "Give the second coil more turns, and the voltage goes up. Give it fewer, and the voltage goes down. It only works with alternating current.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "transformer",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "glow": [
+        0.1,
+        0.5
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -1.4,
+      0.7
+     ],
+     "to": [
+      0.1,
+      -1.2,
+      0.6
+     ],
+     "target": [
+      0,
+      0,
+      0.35
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s023",
+   "line": "Here's why that matters. The power lost as heat in a wire depends on the current. Raise the voltage a hundred times, and the current falls a hundred times, for the same power.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "VOLTAGE ×100",
+      "at": [
+       0,
+       0,
+       1.15
+      ],
+      "size": 0.16,
+      "color": [
+       1.0,
+       0.5,
+       0.3
+      ],
+      "pop": 0.2
+     },
+     {
+      "text": "CURRENT ÷100",
+      "at": [
+       0,
+       0,
+       0.82
+      ],
+      "size": 0.16,
+      "color": [
+       0.4,
+       0.85,
+       1.0
+      ],
+      "pop": 0.5
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.0
+     ],
+     "to": [
+      0,
+      -2.1,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s024",
+   "line": "And because heat losses depend on the current squared, the losses drop ten thousand times.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "LOSSES ÷10,000",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.2,
+      "color": [
+       0.4,
+       1.0,
+       0.6
+      ],
+      "pop": 0.15
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.0
+     ],
+     "to": [
+      0,
+      -2.1,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s025",
+   "line": "So with AC, you can step the voltage up, send power hundreds of kilometres along thin wires, and step it down again near homes.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "pylons",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 5,
+       "current": [
+        0.05,
+        0.2
+       ]
+      }
+     },
+     {
+      "prop": "transformer",
+      "at": [
+       0,
+       -1.2,
+       0
+      ],
+      "scale": 1.5
+     },
+     {
+      "prop": "houses",
+      "at": [
+       0,
+       19,
+       0
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      8,
+      -3,
+      3.0
+     ],
+     "to": [
+      6,
+      2,
+      3.2
+     ],
+     "target": [
+      0,
+      6,
+      2.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s026",
+   "line": "In the mid eighteen eighties, engineers in Hungary, Britain and the United States developed practical transformers. In eighteen eighty six, William Stanley lit up the main street of Great Barrington, Massachusetts, with alternating current.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "street_lamps",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 7,
+       "on": [
+        0.15,
+        0.8
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "1886",
+      "at": [
+       -1.5,
+       3,
+       2.5
+      ],
+      "size": 0.3,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      1.6,
+      -2.5,
+      1.9
+     ],
+     "to": [
+      1.0,
+      -1.5,
+      1.8
+     ],
+     "target": [
+      0,
+      4,
+      1.6
+     ],
+     "lens": 28
+    }
+   }
+  },
+  {
+   "id": "s027",
+   "line": "George Westinghouse, an inventor and industrialist who had made a fortune from railway air brakes, saw the future. He bought Tesla's patents, and hired him.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.6,
+       0.6,
+       0.62
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.15,
+        0.17,
+        0.25
+       ],
+       "pants": [
+        0.15,
+        0.17,
+        0.25
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.45,
+       0.35,
+       0
+      ],
+      "turn": -12,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.04,
+       0.03,
+       0.03
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "pants": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.45,
+       0.35,
+       0
+      ],
+      "turn": 12,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "induction_motor",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ],
+      "scale": 0.3
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.27,
+      0.22
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.025
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "The war of the currents"
+  },
+  {
+   "id": "s028",
+   "line": "Edison had invested everything in DC. He began a campaign to convince the public that AC's high voltages were deadly.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "THE DEADLY ALTERNATING CURRENT",
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.7
+  },
+  {
+   "id": "s029",
+   "line": "His allies staged gruesome public demonstrations, killing animals with AC to frighten people.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tesla_coil",
+      "at": [
+       0,
+       0.3,
+       0
+      ],
+      "scale": 0.6,
+      "args": {
+       "sparks": [
+        0.3,
+        0.5,
+        0.7
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.3,
+      0.05,
+      0.05
+     ]
+    }
+   }
+  },
+  {
+   "id": "s030",
+   "line": "And when New York State introduced the electric chair for executions, it used an AC generator, partly to tie Westinghouse's name to death.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "1890",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.3,
+      "color": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.06,
+      0.06
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s031",
+   "line": "But it was true that high voltage needed respect. Overhead wires in cities were a tangled, dangerous mess, and people were killed by fallen lines.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "pylons",
+      "at": [
+       0,
+       -2,
+       0
+      ],
+      "args": {
+       "n": 3,
+       "spacing": 2.5,
+       "height": 3.0
+      }
+     },
+     {
+      "prop": "city",
+      "at": [
+       0,
+       4,
+       0
+      ],
+      "args": {
+       "count": 60
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -4.5,
+      2.4
+     ],
+     "to": [
+      0.3,
+      -4.0,
+      2.2
+     ],
+     "target": [
+      0,
+      2,
+      2.0
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s032",
+   "line": "The turning point came in eighteen ninety three. Westinghouse won the contract to light the World's Columbian Exposition in Chicago, underbidding its rival, General Electric.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "city",
+      "at": [
+       0,
+       3,
+       0
+      ],
+      "args": {
+       "count": 90,
+       "on": 0.2
+      }
+     },
+     {
+      "prop": "tesla_coil",
+      "at": [
+       0,
+       -2,
+       0
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [
+     {
+      "text": "CHICAGO 1893",
+      "at": [
+       0,
+       -1,
+       3.2
+      ],
+      "size": 0.3,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.15
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -9,
+      3.0
+     ],
+     "to": [
+      0.6,
+      -8.0,
+      2.8
+     ],
+     "target": [
+      0,
+      3,
+      1.5
+     ],
+     "lens": 28
+    }
+   },
+   "chapter": "The White City and Niagara Falls"
+  },
+  {
+   "id": "s033",
+   "line": "Visitors saw a glittering White City, lit by tens of thousands of electric lamps, all running on alternating current. Tesla's machines were among the stars of the show.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "street_lamps",
+      "at": [
+       -3,
+       -3,
+       0
+      ],
+      "rot": [
+       0,
+       0,
+       -90
+      ],
+      "args": {
+       "n": 8,
+       "on": [
+        0,
+        0.3
+       ]
+      }
+     },
+     {
+      "prop": "city",
+      "at": [
+       0,
+       3,
+       0
+      ],
+      "args": {
+       "count": 90
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      -3,
+      -8,
+      2.0
+     ],
+     "to": [
+      3,
+      -7.5,
+      2.4
+     ],
+     "target": [
+      0,
+      3,
+      1.5
+     ],
+     "lens": 28
+    }
+   }
+  },
+  {
+   "id": "s034",
+   "line": "That same year, Westinghouse won the biggest prize of all: a contract to harness Niagara Falls.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "waterfall",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "width": 8.0,
+       "height": 3.5
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      3,
+      -10,
+      3.0
+     ],
+     "to": [
+      2,
+      -8.5,
+      2.6
+     ],
+     "target": [
+      0,
+      0,
+      1.5
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s035",
+   "line": "The falling water spun huge turbines, and Tesla-designed AC generators turned that motion into electricity.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "generator_hall",
+      "at": [
+       0,
+       1.0,
+       0
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      -2.0,
+      -3.5,
+      1.8
+     ],
+     "to": [
+      1.0,
+      -3.2,
+      1.6
+     ],
+     "target": [
+      0,
+      1,
+      0.8
+     ],
+     "lens": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.4,
+      0.38,
+      0.33
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.05
+     ]
+    }
+   }
+  },
+  {
+   "id": "s036",
+   "line": "On the sixteenth of November, eighteen ninety six, power from Niagara was switched on in Buffalo, about forty kilometres away.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "pylons",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 5,
+       "current": [
+        0.1,
+        0.25
+       ]
+      }
+     },
+     {
+      "prop": "houses",
+      "at": [
+       0,
+       19,
+       0
+      ],
+      "scale": 0.8,
+      "args": {
+       "on": [
+        0.5,
+        0.9
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "NIAGARA → BUFFALO",
+      "at": [
+       0,
+       6,
+       5.0
+      ],
+      "size": 0.3,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      8,
+      -3,
+      3.0
+     ],
+     "to": [
+      6,
+      3,
+      3.2
+     ],
+     "target": [
+      0,
+      8,
+      2.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.3,
+       0.4,
+       0.6
+      ]
+     },
+     "floor": [
+      0.85,
+      0.87,
+      0.9
+     ]
+    }
+   }
+  },
+  {
+   "id": "s037",
+   "line": "Streetcars ran and factories hummed on electricity generated by a waterfall, miles away. The war of the currents was effectively over. AC had won.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "city",
+      "at": [
+       0,
+       3,
+       0
+      ],
+      "args": {
+       "on": 0.1
+      }
+     },
+     {
+      "prop": "houses",
+      "at": [
+       0,
+       -0.5,
+       0
+      ],
+      "args": {
+       "on": [
+        0.1,
+        0.5
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -6.5,
+      2.4
+     ],
+     "to": [
+      0.5,
+      -5.5,
+      2.2
+     ],
+     "target": [
+      0,
+      3,
+      1.4
+     ],
+     "lens": 30
+    }
+   }
+  },
+  {
+   "id": "s038",
+   "line": "Edison's company merged with others to form General Electric, which soon embraced AC too.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.55,
+       0.52,
+       0.5
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.18,
+        0.15
+       ],
+       "pants": [
+        0.2,
+        0.18,
+        0.15
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": 12
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.27,
+      0.22
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.025
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "What happened next"
+  },
+  {
+   "id": "s039",
+   "line": "Westinghouse's company struggled with debts. Tesla famously tore up a contract that would have paid him royalties on every AC motor sold, to help keep the firm afloat. That story is often told, though historians debate the details.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "headline": "CONTRACT",
+       "n": 1
+      }
+     },
+     {
+      "prop": "candle",
+      "at": [
+       0.4,
+       0,
+       0.875
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.35,
+      -1.0,
+      1.25
+     ],
+     "to": [
+      0.22,
+      -0.85,
+      1.2
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.95
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.27,
+      0.22
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.025
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s040",
+   "line": "Tesla went on to experiment with radio, wireless power and giant coils that threw lightning across his lab. But he died poor and alone in a New York hotel room in nineteen forty three.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.04,
+       0.03,
+       0.03
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "pants": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -1.2,
+       0.3,
+       0
+      ],
+      "turn": -20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "tesla_coil",
+      "at": [
+       0.4,
+       0.5,
+       0
+      ],
+      "args": {
+       "sparks": [
+        0.2,
+        0.35,
+        0.5,
+        0.65,
+        0.8
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.5,
+      -3,
+      1.4
+     ],
+     "to": [
+      1.2,
+      -2.6,
+      1.3
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.05,
+      0.05,
+      0.08
+     ],
+     "world": [
+      0.01,
+      0.01,
+      0.015
+     ]
+    }
+   }
+  },
+  {
+   "id": "s041",
+   "line": "Today, the unit of magnetic field strength, the tesla, carries his name.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "1 TESLA",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.35,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.0
+     ],
+     "to": [
+      0,
+      -2.0,
+      1.0
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s042",
+   "line": "Today, almost every power grid on Earth runs on alternating current, switching direction fifty or sixty times every second.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "50 Hz  /  60 Hz",
+      "at": [
+       0,
+       -1.2,
+       1.25
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.6,
+       0.2
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.4,
+      0.6
+     ],
+     "to": [
+      0.3,
+      -3.0,
+      0.5
+     ],
+     "target": [
+      0,
+      0,
+      0
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "chapter": "The grid today"
+  },
+  {
+   "id": "s043",
+   "line": "Giant transformers step the voltage up to hundreds of thousands of volts for long journeys across the country, then step it down to the voltage in your sockets.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "pylons",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 5,
+       "current": [
+        0.05,
+        0.2
+       ]
+      }
+     },
+     {
+      "prop": "transformer",
+      "at": [
+       0,
+       -1.2,
+       0
+      ],
+      "scale": 1.5
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      8,
+      -3,
+      3.0
+     ],
+     "to": [
+      6,
+      2,
+      3.2
+     ],
+     "target": [
+      0,
+      6,
+      2.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s044",
+   "line": "In a twist Edison might have enjoyed, very long distance links now often use direct current again, at extremely high voltages, thanks to modern electronics.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "waveform",
+      "at": [
+       0,
+       0,
+       0.85
+      ],
+      "args": {
+       "kind": "ac"
+      }
+     },
+     {
+      "prop": "waveform",
+      "at": [
+       0,
+       0,
+       0.3
+      ],
+      "args": {
+       "kind": "dc"
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      0.9
+     ],
+     "to": [
+      0,
+      -2.3,
+      0.85
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s045",
+   "line": "But the basic system, generators, transformers and alternating current, is the one Tesla and Westinghouse fought for.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "generator_hall",
+      "at": [
+       0,
+       1.0,
+       0
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      -2.0,
+      -3.5,
+      1.8
+     ],
+     "to": [
+      1.0,
+      -3.2,
+      1.6
+     ],
+     "target": [
+      0,
+      1,
+      0.8
+     ],
+     "lens": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.2,
+      0.22,
+      0.24
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.06
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s046",
+   "line": "Edison gave the world the light bulb. But it was alternating current that carried the light into every home.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "houses",
+      "at": [
+       0,
+       1.5,
+       0
+      ],
+      "args": {
+       "on": [
+        0.1,
+        0.5
+       ]
+      }
+     },
+     {
+      "prop": "pylons",
+      "at": [
+       -5,
+       -2,
+       0
+      ],
+      "args": {
+       "n": 4,
+       "current": [
+        0.1,
+        0.3
+       ]
+      }
+     },
+     {
+      "prop": "city",
+      "at": [
+       0,
+       7,
+       0
+      ],
+      "args": {
+       "on": 0.4
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.0,
+      1.4
+     ],
+     "to": [
+      0,
+      -7.5,
+      3.0
+     ],
+     "target": [
+      0,
+      1.5,
+      1.0
+     ],
+     "lens": 40,
+     "target_to": [
+      0,
+      4,
+      1.2
+     ],
+     "lens_to": 28
+    }
+   },
+   "chapter": "Close",
+   "hold": 1.5
+  }
+ ]
+}
