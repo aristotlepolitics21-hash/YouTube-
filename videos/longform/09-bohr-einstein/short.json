@@ -1,0 +1,4677 @@
+{
+ "format": "long",
+ "render": {
+  "width": 960,
+  "height": 540,
+  "samples": 8,
+  "fps": 12
+ },
+ "still_render": {
+  "width": 1920,
+  "height": 1080,
+  "samples": 16
+ },
+ "output_fps": 24,
+ "gap_seconds": 0.5,
+ "chapter_gap_seconds": 0.9,
+ "burn_captions": false,
+ "slug": "09-bohr-einstein",
+ "title": "The Scientist Who Challenged Einstein",
+ "description": "God does not play dice, said Einstein. Stop telling God what to do, said Niels Bohr. The 30-year debate over quantum mechanics, and the experiments that finally settled it, told in 3D animation.",
+ "tags": [
+  "Niels Bohr",
+  "Albert Einstein",
+  "quantum mechanics",
+  "Bohr-Einstein debates",
+  "entanglement",
+  "Bell's theorem",
+  "Solvay conference",
+  "physics history",
+  "3D animation"
+ ],
+ "voice": {
+  "piper_voice": "en_US-ryan-high",
+  "length_scale": 1.25,
+  "sentence_silence": 0.28,
+  "pronunciations": {
+   "Bohr": "Boar",
+   "Heisenberg": "High-zen-berg",
+   "Solvay": "Sol-vay",
+   "Podolsky": "Po-dol-skee",
+   "Aspect": "As-pay",
+   "Clauser": "Clow-zer",
+   "Zeilinger": "Tsy-ling-er"
+  }
+ },
+ "music_mood": "reflective",
+ "sources": [
+  "https://www.nobelprize.org/prizes/physics/1922/bohr/biographical/",
+  "https://plato.stanford.edu/entries/qt-epr/",
+  "https://www.nobelprize.org/prizes/physics/2022/press-release/",
+  "https://www.aip.org/history-programs/niels-bohr-library",
+  "https://www.solvayinstitutes.be/html/solvayconference.html",
+  "https://www.britannica.com/biography/Niels-Bohr"
+ ],
+ "shots": [
+  {
+   "id": "s001",
+   "line": "Albert Einstein is the most famous scientist who ever lived. But for thirty years, one man kept telling him he was wrong.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.5,
+       0.35,
+       0
+      ],
+      "turn": -20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.5,
+       0.35,
+       0
+      ],
+      "turn": 20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s002",
+   "line": "Their argument was about the deepest question in physics: is the universe, at its smallest scale, certain? Or is it ruled by chance?",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dice",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "roll": [
+        0.1,
+        0.5
+       ]
+      }
+     },
+     {
+      "prop": "bohr_atom",
+      "at": [
+       0,
+       0.6,
+       0.6
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      0.9
+     ],
+     "to": [
+      0.2,
+      -2.3,
+      0.85
+     ],
+     "target": [
+      0,
+      0,
+      0.4
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s003",
+   "line": "Einstein famously said: God does not play dice. His rival's reply? Stop telling God what to do.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "“GOD DOES NOT PLAY DICE”",
+      "at": [
+       0,
+       0,
+       1.15
+      ],
+      "size": 0.13,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     },
+     {
+      "text": "“STOP TELLING GOD WHAT TO DO”",
+      "at": [
+       0,
+       0,
+       0.8
+      ],
+      "size": 0.11,
+      "color": [
+       0.5,
+       0.85,
+       1.0
+      ],
+      "pop": 0.55
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "still": true,
+   "still_at": 0.85
+  },
+  {
+   "id": "s004",
+   "line": "The man who challenged Einstein was the Danish physicist Niels Bohr. And in the end, experiments proved Bohr right.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bohr_atom",
+      "at": [
+       0,
+       0.6,
+       0.5
+      ],
+      "scale": 0.7
+     }
+    ],
+    "texts": [
+     {
+      "text": "NIELS BOHR",
+      "at": [
+       0,
+       0,
+       1.45
+      ],
+      "size": 0.28,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.08
+     },
+     {
+      "text": "THE SCIENTIST WHO CHALLENGED EINSTEIN",
+      "at": [
+       0,
+       0,
+       1.12
+      ],
+      "size": 0.1,
+      "color": [
+       0.5,
+       0.85,
+       1.0
+      ],
+      "pop": 0.25
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.2,
+      1.2
+     ],
+     "to": [
+      0,
+      -2.8,
+      1.15
+     ],
+     "target": [
+      0,
+      0,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s005",
+   "line": "Bohr was born in Copenhagen in eighteen eighty five, into a family of scholars. He was also a talented football goalkeeper. His brother Harald played for Denmark at the Olympics.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.85
+     }
+    ],
+    "props": [
+     {
+      "prop": "bulb",
+      "at": [
+       0.7,
+       0,
+       0.0
+      ],
+      "scale": 1.5,
+      "args": {
+       "on": 2
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "COPENHAGEN 1885",
+      "at": [
+       0.9,
+       0.5,
+       1.6
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.5
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.4
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.8,
+       0.85,
+       0.95
+      ],
+      "zenith": [
+       0.2,
+       0.4,
+       0.8
+      ]
+     },
+     "floor": [
+      0.2,
+      0.5,
+      0.2
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Bohr's atom"
+  },
+  {
+   "id": "s006",
+   "line": "In the early nineteen hundreds, nobody understood atoms. Experiments showed a tiny, heavy nucleus with electrons around it, but by the known laws of physics, the electrons should spiral inwards and crash in a fraction of a second.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bohr_atom",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "orbits": 1
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      0.9
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s007",
+   "line": "In nineteen thirteen, Bohr proposed a bold fix. Electrons could only travel in certain fixed orbits, like rungs on a ladder.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bohr_atom",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "orbits": 4
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "1913",
+      "at": [
+       1.0,
+       0.4,
+       1.2
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      0.9
+     ],
+     "to": [
+      0.2,
+      -1.9,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s008",
+   "line": "When an electron jumped down from a higher orbit to a lower one, it gave out a flash of light of one exact colour.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bohr_atom",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "jump": [
+        0.35,
+        2,
+        0
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -1.9,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -1.6,
+      0.75
+     ],
+     "target": [
+      0.2,
+      0,
+      0.6
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s009",
+   "line": "It explained the strange bar-code of colours that hydrogen gives off when it glows. Bohr won the Nobel Prize in nineteen twenty two.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bulb",
+      "at": [
+       -0.6,
+       0,
+       0.6
+      ],
+      "args": {
+       "on": 0.1,
+       "color": [
+        1.0,
+        0.1,
+        0.1
+       ],
+       "strength": 15
+      }
+     },
+     {
+      "prop": "bulb",
+      "at": [
+       -0.1,
+       0,
+       0.6
+      ],
+      "args": {
+       "on": 0.25,
+       "color": [
+        0.2,
+        0.8,
+        1.0
+       ],
+       "strength": 15
+      }
+     },
+     {
+      "prop": "bulb",
+      "at": [
+       0.35,
+       0,
+       0.6
+      ],
+      "args": {
+       "on": 0.4,
+       "color": [
+        0.3,
+        0.3,
+        1.0
+       ],
+       "strength": 15
+      }
+     },
+     {
+      "prop": "bulb",
+      "at": [
+       0.7,
+       0,
+       0.6
+      ],
+      "args": {
+       "on": 0.5499999999999999,
+       "color": [
+        0.6,
+        0.2,
+        1.0
+       ],
+       "strength": 15
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "NOBEL 1922",
+      "at": [
+       0,
+       0,
+       1.25
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.6
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s010",
+   "line": "But Bohr's model was only a start. In the nineteen twenties, a group of young physicists, many of them working at Bohr's institute in Copenhagen, built a whole new theory: quantum mechanics.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.9,
+       0.35,
+       0
+      ],
+      "turn": -15,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.6,
+       0.45,
+       0.25
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.25,
+        0.3
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.45,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.2,
+       0.15,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.9,
+       0.35,
+       0
+      ],
+      "turn": 15,
+      "pose": {
+       "raise_arm": {
+        "L": -35,
+        "R": -35
+       },
+       "arm_forward": {
+        "L": 35,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": 30,
+        "R": 30
+       },
+       "elbow": {
+        "L": 95,
+        "R": 95
+       },
+       "twist": {
+        "L": 80,
+        "R": 80
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       },
+       "head_nod": 22
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "blackboard",
+      "at": [
+       0,
+       1.5,
+       0
+      ],
+      "args": {
+       "lines": [
+        "Δx Δp ≥ ħ/2",
+        "iħ ∂ψ/∂t = Hψ"
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.7
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.6
+     ],
+     "target": [
+      0,
+      0.3,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "A strange new theory"
+  },
+  {
+   "id": "s011",
+   "line": "Quantum mechanics made astonishingly accurate predictions. But it described the world in a deeply strange way.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "double_slit",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "build": [
+        0.05,
+        0.9
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      -1.6,
+      -2.2,
+      1.3
+     ],
+     "to": [
+      -1.2,
+      -1.9,
+      1.1
+     ],
+     "target": [
+      0.2,
+      0,
+      0.4
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s012",
+   "line": "Fire single particles, like electrons, at a wall with two slits, and they land one by one on the screen behind, like tiny bullets.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "double_slit",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "build": [
+        0.1,
+        0.4
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      -1.6,
+      -2.2,
+      1.3
+     ],
+     "to": [
+      -1.2,
+      -1.9,
+      1.1
+     ],
+     "target": [
+      0.2,
+      0,
+      0.4
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s013",
+   "line": "But as more arrive, they build up a pattern of stripes, the kind of pattern only waves make, as if each particle went through both slits at once.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "double_slit",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "build": [
+        0.0,
+        0.95
+       ],
+       "particles": false
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.4,
+      -1.0,
+      0.5
+     ],
+     "to": [
+      0.5,
+      -0.8,
+      0.45
+     ],
+     "target": [
+      1.2,
+      0,
+      0.4
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s014",
+   "line": "According to quantum mechanics, before you look, a particle doesn't have one definite position. It has only probabilities. Measurement forces a result, and which result is down to pure chance.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dice",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 3,
+       "roll": [
+        0.1,
+        0.6
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -1.5,
+      0.6
+     ],
+     "to": [
+      0,
+      -1.3,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s015",
+   "line": "Werner Heisenberg showed that you can't even know a particle's exact position and its exact speed at the same time. This is the uncertainty principle.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "blackboard",
+      "at": [
+       0,
+       1.5,
+       0
+      ],
+      "args": {
+       "lines": [
+        "Δx · Δp ≥ ħ / 2"
+       ],
+       "at": 0.2
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.5
+     ],
+     "to": [
+      0,
+      -2.6,
+      1.5
+     ],
+     "target": [
+      0,
+      1.5,
+      1.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s016",
+   "line": "Bohr embraced all of this. Einstein, who had helped to start quantum physics, could not accept it.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.5,
+       0.35,
+       0
+      ],
+      "turn": -20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.5,
+       0.35,
+       0
+      ],
+      "turn": 20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": 8
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s017",
+   "line": "In nineteen oh five, Einstein had shown that light comes in little packets of energy, which we now call photons. That's what won him his own Nobel Prize.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bohr_atom",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "jump": [
+        0.2,
+        1,
+        0
+       ],
+       "orbits": 2
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "E = hν",
+      "at": [
+       0.9,
+       0.3,
+       1.0
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0.3,
+      -1.9,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -1.6,
+      0.75
+     ],
+     "target": [
+      0.2,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s018",
+   "line": "But a universe run on chance? Einstein believed there must be a deeper reality underneath, where everything had a definite cause.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": -15
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.6
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.6
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s019",
+   "line": "In a letter in nineteen twenty six, he wrote that he was convinced God does not throw dice.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "notebook",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ]
+     },
+     {
+      "prop": "candle",
+      "at": [
+       0.4,
+       0,
+       0.875
+      ]
+     },
+     {
+      "prop": "dice",
+      "at": [
+       -0.35,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "roll": [
+        0.0,
+        0.01
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.35,
+      -1.0,
+      1.25
+     ],
+     "to": [
+      0.22,
+      -0.85,
+      1.2
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.95
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s020",
+   "line": "The showdown came in October nineteen twenty seven, at the Solvay Conference in Brussels.",
+   "visual": {
+    "type": "stage",
+    "env": "hall",
+    "cast": [
+     {
+      "hair": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.6,
+       0.3,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.6,
+       0.3,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.6,
+       0.45,
+       0.25
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.25,
+        0.3
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.9,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.2,
+       0.15,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -1.3,
+       0.8,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       1.3,
+       0.8,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [
+     {
+      "text": "SOLVAY 1927",
+      "at": [
+       0,
+       1.6,
+       2.4
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -4.0,
+      1.8
+     ],
+     "to": [
+      0.2,
+      -3.6,
+      1.7
+     ],
+     "target": [
+      0,
+      0.6,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.04,
+      0.04,
+      0.035
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "The Solvay showdown"
+  },
+  {
+   "id": "s021",
+   "line": "It was perhaps the most famous gathering in the history of science. Seventeen of the twenty nine people in the official photograph won a Nobel Prize, including Marie Curie, who won two.",
+   "visual": {
+    "type": "stage",
+    "env": "hall",
+    "cast": [
+     {
+      "hair": [
+       0.15,
+       0.12,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -1.5,
+       0.3,
+       0.0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.25,
+       0.12,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.8999999999999999,
+       0.3,
+       0.0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.35,
+       0.12,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.3,
+       0.3,
+       0.0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.45000000000000007,
+       0.12,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.3,
+       0.3,
+       0.0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.15,
+       0.12,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.8999999999999999,
+       0.3,
+       0.0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.25,
+       0.12,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       1.5,
+       0.3,
+       0.0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.35,
+       0.12,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -1.5,
+       1.0,
+       0.3
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.45000000000000007,
+       0.12,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.8999999999999999,
+       1.0,
+       0.3
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.15,
+       0.12,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.3,
+       1.0,
+       0.3
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.25,
+       0.12,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.3,
+       1.0,
+       0.3
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.35,
+       0.12,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.8999999999999999,
+       1.0,
+       0.3
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.45000000000000007,
+       0.12,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       1.5,
+       1.0,
+       0.3
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -4.8,
+      1.8
+     ],
+     "to": [
+      0.2,
+      -4.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.8,
+      1.0
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.04,
+      0.04,
+      0.035
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s022",
+   "line": "Each morning at breakfast, Einstein would present a clever thought experiment designed to break quantum mechanics.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.5,
+       0.35,
+       0
+      ],
+      "turn": -20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.5,
+       0.35,
+       0
+      ],
+      "turn": 20,
+      "pose": {
+       "raise_arm": {
+        "L": -35,
+        "R": -35
+       },
+       "arm_forward": {
+        "L": 35,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": 30,
+        "R": 30
+       },
+       "elbow": {
+        "L": 95,
+        "R": 95
+       },
+       "twist": {
+        "L": 80,
+        "R": 80
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       },
+       "head_nod": 22
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "bottle",
+      "at": [
+       0.3,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "label": ""
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.04,
+      0.04,
+      0.035
+     ]
+    }
+   }
+  },
+  {
+   "id": "s023",
+   "line": "Bohr would worry about it all day. And by dinner, he usually had an answer.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": 15
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "blackboard",
+      "at": [
+       0,
+       1.5,
+       0
+      ],
+      "args": {
+       "lines": [
+        "?"
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.6
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.6
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.04,
+      0.04,
+      0.035
+     ]
+    }
+   }
+  },
+  {
+   "id": "s024",
+   "line": "Einstein came back in nineteen thirty with his cleverest challenge: a box full of light, hanging from a spring scale, with a clock inside that opens a shutter to let out a single photon.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "photon_box",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "open_at": 0.6
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.2,
+      -2.6,
+      1.3
+     ],
+     "to": [
+      1.0,
+      -2.2,
+      1.2
+     ],
+     "target": [
+      0.3,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "chapter": "Einstein's light box"
+  },
+  {
+   "id": "s025",
+   "line": "By weighing the box before and after, he argued, you could know both the exact energy of the photon and the exact time it left. That would break Heisenberg's uncertainty principle.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "photon_box",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "open_at": 0.3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.8,
+      -1.6,
+      1.1
+     ],
+     "to": [
+      0.6,
+      -1.4,
+      1.05
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s026",
+   "line": "Bohr was shaken. A colleague said he looked like a man in shock.",
+   "visual": {
+    "type": "stage",
+    "env": "hall",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": 20
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.6
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.6
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.04,
+      0.04,
+      0.035
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s027",
+   "line": "But after a sleepless night, he found the flaw, using Einstein's own theory of general relativity. When the box moves in gravity, its clock runs at a slightly different rate. The uncertainty was restored.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "photon_box",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "open_at": 0.2
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.2,
+      -2.6,
+      1.3
+     ],
+     "to": [
+      1.0,
+      -2.2,
+      1.2
+     ],
+     "target": [
+      0.3,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s028",
+   "line": "Einstein changed tactics. In nineteen thirty five, with Boris Podolsky and Nathan Rosen, he published a paper arguing that quantum mechanics must be incomplete.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "CAN QUANTUM-MECHANICAL DESCRIPTION OF PHYSICAL REALITY BE CONSIDERED COMPLETE?",
+       "n": 2
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "chapter": "Spooky action at a distance",
+   "still_at": 0.7
+  },
+  {
+   "id": "s029",
+   "line": "The theory predicts that two particles can become entangled. Separate them, even by vast distances, and measuring one instantly affects what you will find when you measure the other.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "entangled",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "args": {
+       "apart": [
+        0.1,
+        0.5
+       ],
+       "measure": 0.75
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      0.8
+     ],
+     "to": [
+      0,
+      -2.6,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s030",
+   "line": "Einstein thought that was absurd. He later called it spooky action at a distance. Surely, he said, the particles must have carried hidden instructions all along.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.6
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.6
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s031",
+   "line": "Bohr replied that it makes no sense to talk about properties that haven't been measured. For the rest of their lives, neither man convinced the other.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.5,
+       0.35,
+       0
+      ],
+      "turn": -20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.5,
+       0.35,
+       0
+      ],
+      "turn": 20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s032",
+   "line": "Yet they remained deep friends. And when Bohr died in nineteen sixty two, the last drawing on his blackboard was a sketch of Einstein's light box.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "blackboard",
+      "at": [
+       0,
+       1.5,
+       0
+      ],
+      "args": {
+       "lines": [
+        ""
+       ]
+      }
+     },
+     {
+      "prop": "photon_box",
+      "at": [
+       0,
+       1.4,
+       1.2
+      ],
+      "scale": 0.35
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -1.2,
+      1.2
+     ],
+     "to": [
+      0,
+      -1.0,
+      1.15
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.95
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.08,
+      0.08,
+      0.09
+     ],
+     "world": [
+      0.01,
+      0.01,
+      0.01
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s033",
+   "line": "During the Second World War, Bohr, whose mother was Jewish, fled Nazi-occupied Denmark by fishing boat to Sweden in nineteen forty three.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "route",
+      "at": [
+       0,
+       0,
+       0.05
+      ],
+      "scale": 0.8,
+      "args": {
+       "stops": [
+        "COPENHAGEN",
+        "SWEDEN"
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -5.5,
+      1.4
+     ],
+     "to": [
+      0.4,
+      -5.0,
+      1.3
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "chapter": "Escape"
+  },
+  {
+   "id": "s034",
+   "line": "He was then flown to Britain lying in the empty bomb bay of a fast Mosquito aircraft. His oxygen mask didn't fit his large head, and he passed out on the way.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "airliner",
+      "at": [
+       0,
+       3,
+       3.2
+      ],
+      "scale": 0.4,
+      "rot": [
+       0,
+       0,
+       -90
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -5,
+          3,
+          3.0
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          5,
+          3,
+          3.4
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -9,
+      3.0
+     ],
+     "to": [
+      0.4,
+      -8.4,
+      3.0
+     ],
+     "target": [
+      0,
+      0,
+      3.0
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s035",
+   "line": "For decades, the Bohr-Einstein debate seemed like philosophy. Nobody could see how to test it.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "BOHR  ?  EINSTEIN",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.22,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "The verdict",
+   "still_at": 0.8
+  },
+  {
+   "id": "s036",
+   "line": "Then, in nineteen sixty four, the Northern Irish physicist John Bell found a way. He showed that hidden instructions and quantum mechanics predict measurably different results.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "blackboard",
+      "at": [
+       0,
+       1.5,
+       0
+      ],
+      "args": {
+       "lines": [
+        "|S| ≤ 2",
+        "QUANTUM: 2√2"
+       ],
+       "at": 0.2
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.5
+     ],
+     "to": [
+      0,
+      -2.6,
+      1.5
+     ],
+     "target": [
+      0,
+      1.5,
+      1.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s037",
+   "line": "Experiments by John Clauser in the nineteen seventies, and Alain Aspect in the nineteen eighties, tested Bell's idea with entangled particles of light.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "entangled",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "args": {
+       "apart": [
+        0.05,
+        0.4
+       ],
+       "measure": 0.6
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      0.8
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s038",
+   "line": "Again and again, quantum mechanics won. The universe really is as strange as Bohr said.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "QUANTUM MECHANICS WINS",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.16,
+      "color": [
+       0.4,
+       1.0,
+       0.6
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s039",
+   "line": "In twenty twenty two, Aspect, Clauser and Anton Zeilinger shared the Nobel Prize in Physics for this work.",
+   "visual": {
+    "type": "stage",
+    "env": "hall",
+    "cast": [
+     {
+      "hair": [
+       0.2,
+       0.15,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.75,
+       0.35,
+       0
+      ],
+      "turn": -10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.7,
+       0.7,
+       0.7
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.45,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.4,
+       0.35,
+       0.3
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.75,
+       0.35,
+       0
+      ],
+      "turn": 10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "medal",
+      "at": [
+       0,
+       -0.2,
+       1.75
+      ],
+      "spin": [
+       "z",
+       40
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "NOBEL 2022",
+      "at": [
+       0,
+       0.2,
+       2.05
+      ],
+      "size": 0.13,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.6
+     ],
+     "to": [
+      0,
+      -2.4,
+      1.5
+     ],
+     "target": [
+      0,
+      0.4,
+      1.2
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s040",
+   "line": "Today, entanglement is no longer just an argument. It's the basis of quantum computers and ultra-secure quantum communication.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "microchip",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "glow": [
+        0.1,
+        0.5
+       ]
+      }
+     },
+     {
+      "prop": "entangled",
+      "at": [
+       0,
+       0.4,
+       0.3
+      ],
+      "scale": 0.3
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -0.7,
+      0.45
+     ],
+     "to": [
+      0.2,
+      -0.55,
+      0.38
+     ],
+     "target": [
+      0,
+      0,
+      0.03
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s041",
+   "line": "Einstein lost the argument. But by pushing so hard, he forced quantum mechanics to explain itself, and revealed its strangest feature.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": 10
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.6
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.6
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Close"
+  },
+  {
+   "id": "s042",
+   "line": "Sometimes, the greatest gift a scientist can give is a really good objection.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.5,
+       0.35,
+       0
+      ],
+      "turn": -20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.5,
+       0.35,
+       0
+      ],
+      "turn": 20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "bohr_atom",
+      "at": [
+       0,
+       1.2,
+       2.1
+      ],
+      "scale": 0.5
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.0,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -3.4,
+      2.0
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35,
+     "target_to": [
+      0,
+      0.6,
+      1.2
+     ]
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "hold": 1.5
+  }
+ ]
+}
