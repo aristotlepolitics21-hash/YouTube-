@@ -145,7 +145,7 @@ function spot(scene, color, intensity, pos, target = [0, 0, 0], angle = 0.5, sha
 function shotMouth() {
   const scene = baseScene('#1a0a08');
   const camera = cam(30);
-  const skin = flesh('#b8705a', 2, { sheenColor: new THREE.Color('#ffb59a'), clearcoat: 0.25, clearcoatRoughness: 0.4 });
+  const skin = flesh('#b8705a', 2, { sheenColor: new THREE.Color('#ffb59a'), clearcoat: 0.25, clearcoatRoughness: 0.4, normalScale: new THREE.Vector2(0.2, 0.2) });
   const lipM = flesh('#b8524f', 2, { clearcoat: 0.9, clearcoatRoughness: 0.08 });
 
   // face slab with mouth hole, softly bevelled
@@ -154,27 +154,20 @@ function shotMouth() {
   const hole = new THREE.Path();
   hole.absellipse(0, 0, 3.0, 1.55, 0, Math.PI * 2, true);
   face.holes.push(hole);
-  const fg = new THREE.ExtrudeGeometry(face, { depth: 0.6, bevelEnabled: true, bevelThickness: 1.2, bevelSize: 0.9, bevelSegments: 16, curveSegments: 160 });
+  const fg = new THREE.ExtrudeGeometry(face, { depth: 0.6, bevelEnabled: true, bevelThickness: 0.8, bevelSize: 0.3, bevelSegments: 16, curveSegments: 160 });
   fg.translate(0, 0, -0.6);
   const faceMesh = new THREE.Mesh(fg, skin);
-  // bulge the face so it isn't a flat wall (cheeks/chin curvature)
-  const p = fg.attributes.position;
-  for (let i = 0; i < p.count; i++) {
-    const x = p.getX(i), y = p.getY(i);
-    p.setZ(i, p.getZ(i) - (x * x) * 0.03 - (y * y) * 0.012 + 0.25 * n3(x * 0.3, y * 0.3, 1));
-  }
-  fg.computeVertexNormals();
   faceMesh.receiveShadow = true; scene.add(faceMesh);
 
   // lips: two fat tubes around the opening
   const lipCurve = (up) => new THREE.CatmullRomCurve3(Array.from({ length: 41 }, (_, i) => {
     const a = (up ? 0 : Math.PI) + (i / 40) * Math.PI;
-    const x = Math.cos(a) * 3.15, y = Math.sin(a) * 1.7;
-    return new THREE.Vector3(x, y + (up ? 0.1 : -0.1), 0.85 - Math.abs(x) * 0.05 - (x * x) * 0.03);
+    const x = Math.cos(a) * 3.0, y = Math.sin(a) * 1.45;
+    return new THREE.Vector3(x, y + (up ? 0.05 : -0.05), 0.75 - (x * x) * 0.02);
   }));
   for (const up of [true, false]) {
     const c = lipCurve(up);
-    const g = organicTube(c, 0.62, 200, 48, (u) => 0.25 + 0.75 * Math.sin(u * Math.PI) ** 0.6 * (up ? 1 - 0.18 * Math.exp(-((u - 0.5) ** 2) / 0.004) : 1.12));
+    const g = organicTube(c, 0.55, 200, 48, (u) => 0.25 + 0.75 * Math.sin(u * Math.PI) ** 0.6 * (up ? 1 - 0.18 * Math.exp(-((u - 0.5) ** 2) / 0.004) : 1.12));
     const m = new THREE.Mesh(g, lipM); m.castShadow = m.receiveShadow = true; scene.add(m);
   }
 
@@ -188,7 +181,7 @@ function shotMouth() {
     for (let i = -5; i <= 5; i++) {
       const a = i * 0.13, w = Math.abs(i) < 2 ? 0.52 : 0.46;
       const t = new THREE.Mesh(new RoundedBoxGeometry(w, 0.75, 0.42, 4, 0.14), toothM);
-      t.position.set(Math.sin(a) * 3.3, up ? 1.08 - Math.abs(i) * 0.02 : -1.05 + Math.abs(i) * 0.02, -0.3 - (1 - Math.cos(a)) * 3.3);
+      t.position.set(Math.sin(a) * 3.3, up ? 0.88 - Math.abs(i) * 0.02 : -0.85 + Math.abs(i) * 0.02, -0.3 - (1 - Math.cos(a)) * 3.3);
       t.rotation.y = a; t.castShadow = t.receiveShadow = true; scene.add(t);
     }
   };
@@ -200,7 +193,7 @@ function shotMouth() {
   const tongue = new THREE.Mesh(tg, flesh('#d0585e', 4, { clearcoat: 1, clearcoatRoughness: 0.06 }));
   tongue.scale.set(2.5, 0.8, 2.6); tongue.position.set(0, -1.35, -1.8); tongue.receiveShadow = true; tongue.castShadow = true; scene.add(tongue);
 
-  const gum = gumBlob(0.55, 3); gum.scale.set(1.15, 0.72, 1); gum.position.set(0.1, -0.52, -0.7); scene.add(gum);
+  const gum = gumBlob(0.55, 3); gum.scale.set(1.15, 0.72, 1); gum.position.set(0.1, -0.22, -0.95); scene.add(gum);
 
   spot(scene, '#ffd9c2', 200, [-6, 9, 14], [0, -0.5, -1], 0.9);
   spot(scene, '#ff8a6a', 50, [9, -3, 8], [0, 0, -1], 0.5, false);
