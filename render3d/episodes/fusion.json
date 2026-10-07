@@ -1,92 +1,392 @@
 {
  "module": "fusion",
  "title": "The Secret Technology Behind Nuclear Fusion",
- "size": [1920, 1080],
+ "size": [
+  1920,
+  1080
+ ],
  "length_scale": 1.2,
  "music": "ambient",
  "shots": [
-  {"scene": "sun", "params": {},
-   "vo": "Every second, the Sun fuses roughly six hundred million tonnes of hydrogen into helium. That's what makes it shine, and it has kept life on Earth going for billions of years."},
-  {"scene": "sun_core", "params": {},
-   "vo": "If we could build a small star here on Earth, it could give us enormous amounts of clean energy, from fuel found in seawater. That's the promise of nuclear fusion."},
-  {"scene": "tokamak", "params": {},
-   "vo": "For more than seventy years, scientists have been trying to make it work. And in the last few years, they've hit milestones that once seemed impossible. So what's the secret technology behind fusion, and why is it so hard?"},
-
-  {"scene": "fusion_reaction", "params": {"hitAt": 2},
-   "vo": "Fusion is the opposite of the nuclear power we use today. Today's reactors split heavy atoms apart. That's fission. Fusion does the reverse. It smashes light atoms together to make heavier ones."},
-  {"scene": "fusion_reaction", "params": {"hitAt": 0.55}, "sfx": [{"type": "boom", "segment": 1}],
-   "vo": ["The easiest reaction uses two forms of hydrogen: deuterium, with one extra neutron, and tritium, with two.", "When they fuse, they become helium, and release a very fast neutron."]},
-  {"scene": "fusion_reaction", "params": {"hitAt": 0.15, "az0": 0.5, "az1": 0.7},
-   "vo": "The products weigh slightly less than what you started with. That missing mass becomes energy, following Einstein's famous equation, E equals m c squared."},
-  {"scene": "title_card", "params": {"big": "~4,000,000×", "bigSize": 200, "sub": "more energy per kilogram than burning coal, oil or gas", "color": "#ffb347"},
-   "vo": "Kilogram for kilogram, fusing these atoms releases nearly four million times more energy than burning coal, oil or gas."},
-
-  {"scene": "repulsion", "params": {},
-   "vo": "So why don't we have it already? Because atomic nuclei don't want to touch. They're positively charged, and like charges push each other away.", "highlight": "#ff4b5c"},
-  {"scene": "repulsion", "params": {"fast": true, "az0": 0.3, "az1": 0.4},
-   "vo": "To get close enough to fuse, they have to collide at enormous speeds. And speed, at the atomic level, means heat."},
-  {"scene": "sun_core", "params": {"dist0": 10, "dist1": 7, "az0": 0.2, "az1": 0.0},
-   "vo": "The Sun has a huge advantage. Its immense gravity squeezes its core to incredible density, so fusion can happen at about fifteen million degrees."},
-  {"scene": "plasma_particles", "params": {},
-   "vo": "We can't recreate the Sun's gravity on Earth, so we have to go hotter. Much hotter. Around a hundred and fifty million degrees, about ten times hotter than the center of the Sun.", "highlight": "#ff6ad5"},
-  {"scene": "plasma_particles", "params": {"dist0": 8, "dist1": 6, "az0": 1, "az1": 1.5},
-   "vo": "At those temperatures, atoms are torn apart into a glowing soup of charged particles called plasma. And no material on Earth can touch it without being damaged, or instantly cooling it down."},
-
-  {"scene": "tokamak", "params": {"az0": 0.6, "az1": 1.0, "dist0": 16, "dist1": 13},
-   "vo": "So how do you hold something hotter than the Sun? You don't touch it at all. You hold it with magnets."},
-  {"scene": "field_lines", "params": {"twist": 0},
-   "vo": "Charged particles can't easily cross magnetic field lines. Instead, they spiral along them. So if you bend the field into a closed loop, the plasma can race around and around without hitting the walls."},
-  {"scene": "tokamak", "params": {"az0": -1.0, "az1": -0.6, "el0": 0.6, "el1": 0.45},
-   "vo": "This design is called a tokamak, from a Russian acronym coined by Soviet scientists in the 1950s. Giant magnets wrap around a doughnut-shaped vacuum chamber."},
-  {"scene": "field_lines", "params": {"twist": 3, "az0": 0.8, "az1": 1.2},
-   "vo": "But a simple loop isn't enough, because the plasma drifts outward. So tokamaks twist the field into a helix, partly by driving a powerful electric current through the plasma itself."},
-  {"scene": "cold_hot", "params": {},
-   "vo": "Here's the incredible part. The superconducting magnets in the biggest tokamaks are cooled to minus two hundred and sixty-nine degrees, close to absolute zero. Just a few meters away, the plasma is at a hundred and fifty million degrees."},
-  {"scene": "stellarator", "params": {},
-   "vo": "There's a rival design called the stellarator. Its magnets are bizarrely twisted, so the field shape itself confines the plasma, with no plasma current needed. Germany's Wendelstein 7-X is the most advanced, and it's built to run for long periods."},
-
-  {"scene": "tokamak_inside", "params": {},
-   "vo": "And these machines keep improving. In 2024, South Korea's KSTAR held plasma above a hundred million degrees for forty-eight seconds. In early 2025, China's EAST kept a high-performance plasma running for more than a thousand seconds."},
-  {"scene": "tokamak_inside", "params": {"u0": 2.5},
-   "vo": "In Britain, the JET tokamak finished its forty-year career with a world record: sixty-nine megajoules of fusion energy, from just a fraction of a milligram of fuel."},
-
-  {"scene": "laser_target", "params": {},
-   "vo": "There's a completely different approach too. At the National Ignition Facility in California, a hundred and ninety-two giant lasers fire at a fuel capsule smaller than a peppercorn."},
-  {"scene": "laser_target", "params": {"close": 1}, "sfx": [{"type": "boom", "segment": 1}],
-   "vo": ["The lasers heat a tiny gold cylinder around the capsule, which floods it with X-rays.", "The capsule's surface blasts away, crushing the fuel inward until it fuses, in a few billionths of a second."]},
-  {"scene": "title_card", "params": {"year": "DECEMBER 5, 2022", "lines": ["IGNITION", "more fusion energy out than laser energy in"], "sub": "National Ignition Facility, California"},
-   "vo": "On December fifth, 2022, NIF achieved ignition for the first time. The reaction released about three point one five megajoules, more than the two point zero five megajoules of laser light that hit the target.", "highlight": "#4dff9a"},
-  {"scene": "energy_bars", "params": {"kind": "nif"},
-   "vo": "There's a catch. Powering those lasers took far more energy from the grid, around three hundred megajoules. So fusion has produced more energy than went into the fuel, but not yet more than the whole machine uses. NIF has since beaten its own record several times."},
-
-  {"scene": "tokamak", "params": {"person": true, "cut": true, "az0": 0.9, "az1": 1.2, "dist0": 22, "dist1": 18, "el0": 0.15, "el1": 0.1},
-   "vo": "The biggest bet is ITER, a giant tokamak being built in southern France by thirty-five nations. When finished, it will weigh about twenty-three thousand tonnes."},
-  {"scene": "energy_bars", "params": {"kind": "iter"},
-   "vo": "Its goal is to produce five hundred megawatts of fusion power from fifty megawatts of heating, ten times more out than in. But it has faced long delays, and full fusion experiments aren't expected until the late 2030s."},
-  {"scene": "cold_hot", "params": {"az0": 0.4, "az1": 0.2, "dist0": 12, "dist1": 10},
-   "vo": "Meanwhile, private companies are racing ahead with new technology. A key breakthrough is high-temperature superconducting tape, which can make much stronger magnets."},
-  {"scene": "title_card", "params": {"big": "20 TESLA", "bigSize": 220, "sub": "high-temperature superconducting magnet — CFS & MIT, 2021", "color": "#57d8ff"},
-   "vo": "In 2021, Commonwealth Fusion Systems and MIT tested a large magnet made of this tape that reached twenty tesla, a record for its kind. Stronger magnets can mean smaller, cheaper reactors."},
-  {"scene": "tokamak", "params": {"cut": false, "az0": -0.3, "az1": 0.3, "dist0": 15, "dist1": 12, "el0": 0.25, "el1": 0.2},
-   "vo": "They're building a compact tokamak called SPARC, aiming to show net energy from the plasma within the next few years. And dozens of other fusion companies have raised billions of dollars."},
-
-  {"scene": "neutron_wall", "params": {"mode": "damage"},
-   "vo": "But big challenges remain. Those fast neutrons slam into the reactor walls, gradually damaging the materials and making them radioactive. Engineers need materials that can survive years of this.", "highlight": "#ff4b5c"},
-  {"scene": "seawater", "params": {},
-   "vo": "Then there's fuel. Deuterium is easy. About one in every six thousand hydrogen atoms in seawater is deuterium. But tritium is radioactive and extremely rare."},
-  {"scene": "neutron_wall", "params": {"mode": "breed", "az0": -0.5, "az1": -0.3},
-   "vo": "So future reactors will need to breed their own tritium, by surrounding the plasma with lithium. When neutrons hit lithium, they produce new tritium. That has never been done at power-plant scale.", "highlight": "#4dff9a"},
-
-  {"scene": "plasma_particles", "params": {"az0": -0.8, "az1": -0.4},
-   "vo": "Fusion does have big safety advantages. It isn't a chain reaction. There are only a few grams of fuel in the chamber at a time, so if something goes wrong, the plasma simply cools and the reaction stops."},
-  {"scene": "power_plant", "params": {},
-   "vo": "It releases no carbon dioxide while running, and it doesn't create the long-lived high-level waste of fission. Reactor parts do become radioactive, but most of that decays within about a hundred years."},
-
-  {"scene": "title_card", "params": {"year": "", "lines": ["\"FUSION IS 30 YEARS AWAY", "AND ALWAYS WILL BE\""], "sub": "an old joke among physicists"},
-   "vo": "There's an old joke that fusion is thirty years away, and always will be. For decades, that felt true."},
-  {"scene": "power_plant", "params": {"az0": 0.4, "az1": 0.7, "dist0": 26, "dist1": 20},
-   "vo": "But ignition has now been achieved, magnets are getting stronger, and records keep falling. The first fusion power plants may still be years away. But fusion is no longer just a dream.", "highlight": "#4dff9a"},
-  {"scene": "sun", "params": {"dist0": 9, "dist1": 16, "az0": 0.5, "az1": 0},
-   "vo": ["We're learning how to build a star on Earth.", "If you enjoyed this, subscribe. Next time: can scientists grow a brand new human organ?"]}
+  {
+   "scene": "sun",
+   "params": {},
+   "vo": "Every second, the Sun fuses roughly six hundred million tonnes of hydrogen into helium. That's what makes it shine, and it has kept life on Earth going for billions of years."
+  },
+  {
+   "scene": "sun_core",
+   "params": {},
+   "vo": "If we could build a small star here on Earth, it could give us enormous amounts of clean energy, from fuel found in seawater. That's the promise of nuclear fusion."
+  },
+  {
+   "scene": "seawater",
+   "params": {
+    "az0": 0.4,
+    "az1": 0.7
+   },
+   "vo": "By one European estimate, the deuterium in about forty-five liters of water, plus the lithium from a single laptop battery, could produce as much electricity as one person in Europe uses in thirty years."
+  },
+  {
+   "scene": "tokamak",
+   "params": {},
+   "vo": "For more than seventy years, scientists have been trying to make it work. And in the last few years, they've hit milestones that once seemed impossible. So what's the secret technology behind fusion, and why is it so hard?"
+  },
+  {
+   "scene": "fusion_reaction",
+   "params": {
+    "hitAt": 2
+   },
+   "vo": "Fusion is the opposite of the nuclear power we use today. Today's reactors split heavy atoms apart. That's fission. Fusion does the reverse. It smashes light atoms together to make heavier ones."
+  },
+  {
+   "scene": "fusion_reaction",
+   "params": {
+    "hitAt": 0.55
+   },
+   "sfx": [
+    {
+     "type": "boom",
+     "segment": 1
+    }
+   ],
+   "vo": [
+    "The easiest reaction uses two forms of hydrogen: deuterium, with one extra neutron, and tritium, with two.",
+    "When they fuse, they become helium, and release a very fast neutron."
+   ]
+  },
+  {
+   "scene": "fusion_reaction",
+   "params": {
+    "hitAt": 0.15,
+    "az0": 0.5,
+    "az1": 0.7
+   },
+   "vo": "The products weigh slightly less than what you started with. That missing mass becomes energy, following Einstein's famous equation, E equals m c squared."
+  },
+  {
+   "scene": "title_card",
+   "params": {
+    "year": "1920",
+    "lines": [
+     "STARS RUN ON FUSION",
+     "Eddington's idea, Bethe's proof"
+    ],
+    "sub": "Hans Bethe · Nobel Prize in Physics, 1967"
+   },
+   "vo": "We've known this is how stars shine for about a century. In 1920, the astronomer Arthur Eddington suggested the Sun was powered by fusing hydrogen. In 1939, Hans Bethe worked out the details, and later won a Nobel Prize for it."
+  },
+  {
+   "scene": "title_card",
+   "params": {
+    "big": "~4,000,000×",
+    "bigSize": 200,
+    "sub": "more energy per kilogram than burning coal, oil or gas",
+    "color": "#ffb347"
+   },
+   "vo": "Kilogram for kilogram, fusing these atoms releases nearly four million times more energy than burning coal, oil or gas."
+  },
+  {
+   "scene": "repulsion",
+   "params": {},
+   "vo": "So why don't we have it already? Because atomic nuclei don't want to touch. They're positively charged, and like charges push each other away.",
+   "highlight": "#ff4b5c"
+  },
+  {
+   "scene": "repulsion",
+   "params": {
+    "fast": true,
+    "az0": 0.3,
+    "az1": 0.4
+   },
+   "vo": "To get close enough to fuse, they have to collide at enormous speeds. And speed, at the atomic level, means heat."
+  },
+  {
+   "scene": "sun_core",
+   "params": {
+    "dist0": 10,
+    "dist1": 7,
+    "az0": 0.2,
+    "az1": 0.0
+   },
+   "vo": "The Sun has a huge advantage. Its immense gravity squeezes its core to incredible density, so fusion can happen at about fifteen million degrees."
+  },
+  {
+   "scene": "plasma_particles",
+   "params": {},
+   "vo": "We can't recreate the Sun's gravity on Earth, so we have to go hotter. Much hotter. Around a hundred and fifty million degrees, about ten times hotter than the center of the Sun.",
+   "highlight": "#ff6ad5"
+  },
+  {
+   "scene": "plasma_particles",
+   "params": {
+    "dist0": 8,
+    "dist1": 6,
+    "az0": 1,
+    "az1": 1.5
+   },
+   "vo": "At those temperatures, atoms are torn apart into a glowing soup of charged particles called plasma. And no material on Earth can touch it without being damaged, or instantly cooling it down."
+  },
+  {
+   "scene": "plasma_particles",
+   "params": {
+    "az0": -0.4,
+    "az1": 0.0,
+    "dist0": 9,
+    "dist1": 7
+   },
+   "vo": "To get more energy out than you put in, you need three things at once: a high enough temperature, a dense enough plasma, and enough time holding it together. Physicists call this the triple product. Push all three high enough, and the fusion keeps itself hot."
+  },
+  {
+   "scene": "tokamak",
+   "params": {
+    "az0": 0.6,
+    "az1": 1.0,
+    "dist0": 16,
+    "dist1": 13
+   },
+   "vo": "So how do you hold something hotter than the Sun? You don't touch it at all. You hold it with magnets."
+  },
+  {
+   "scene": "field_lines",
+   "params": {
+    "twist": 0
+   },
+   "vo": "Charged particles can't easily cross magnetic field lines. Instead, they spiral along them. So if you bend the field into a closed loop, the plasma can race around and around without hitting the walls."
+  },
+  {
+   "scene": "tokamak",
+   "params": {
+    "az0": -1.0,
+    "az1": -0.6,
+    "el0": 0.6,
+    "el1": 0.45
+   },
+   "vo": "This design is called a tokamak, from a Russian acronym coined by Soviet scientists in the 1950s. Giant magnets wrap around a doughnut-shaped vacuum chamber."
+  },
+  {
+   "scene": "field_lines",
+   "params": {
+    "twist": 3,
+    "az0": 0.8,
+    "az1": 1.2
+   },
+   "vo": "But a simple loop isn't enough, because the plasma drifts outward. So tokamaks twist the field into a helix, partly by driving a powerful electric current through the plasma itself."
+  },
+  {
+   "scene": "cold_hot",
+   "params": {},
+   "vo": "Here's the incredible part. The superconducting magnets in the biggest tokamaks are cooled to minus two hundred and sixty-nine degrees, close to absolute zero. Just a few meters away, the plasma is at a hundred and fifty million degrees."
+  },
+  {
+   "scene": "stellarator",
+   "params": {},
+   "vo": "There's a rival design called the stellarator. Its magnets are bizarrely twisted, so the field shape itself confines the plasma, with no plasma current needed. Germany's Wendelstein 7-X is the most advanced, and it's built to run for long periods."
+  },
+  {
+   "scene": "stellarator",
+   "params": {
+    "az0": 0.6,
+    "az1": 0.9
+   },
+   "vo": "Stellarators are fiendishly hard to design and build. Supercomputers were needed to calculate the magnet shapes. In 2023, Germany's Wendelstein 7-X, the world's largest stellarator, kept a plasma running for about eight minutes."
+  },
+  {
+   "scene": "tokamak_inside",
+   "params": {},
+   "vo": "And these machines keep improving. In 2024, South Korea's KSTAR held plasma above a hundred million degrees for forty-eight seconds. In early 2025, China's EAST kept a high-performance plasma running for more than a thousand seconds."
+  },
+  {
+   "scene": "tokamak_inside",
+   "params": {
+    "u0": 2.5
+   },
+   "vo": "In Britain, the JET tokamak finished its forty-year career with a world record: sixty-nine megajoules of fusion energy, from just a fraction of a milligram of fuel."
+  },
+  {
+   "scene": "laser_target",
+   "params": {},
+   "vo": "There's a completely different approach too. At the National Ignition Facility in California, a hundred and ninety-two giant lasers fire at a fuel capsule smaller than a peppercorn."
+  },
+  {
+   "scene": "laser_target",
+   "params": {
+    "close": 1
+   },
+   "sfx": [
+    {
+     "type": "boom",
+     "segment": 1
+    }
+   ],
+   "vo": [
+    "The lasers heat a tiny gold cylinder around the capsule, which floods it with X-rays.",
+    "The capsule's surface blasts away, crushing the fuel inward until it fuses, in a few billionths of a second."
+   ]
+  },
+  {
+   "scene": "title_card",
+   "params": {
+    "year": "DECEMBER 5, 2022",
+    "lines": [
+     "IGNITION",
+     "more fusion energy out than laser energy in"
+    ],
+    "sub": "National Ignition Facility, California"
+   },
+   "vo": "On December fifth, 2022, NIF achieved ignition for the first time. The reaction released about three point one five megajoules, more than the two point zero five megajoules of laser light that hit the target.",
+   "highlight": "#4dff9a"
+  },
+  {
+   "scene": "energy_bars",
+   "params": {
+    "kind": "nif"
+   },
+   "vo": "There's a catch. Powering those lasers took far more energy from the grid, around three hundred megajoules. So fusion has produced more energy than went into the fuel, but not yet more than the whole machine uses. NIF has since beaten its own record several times."
+  },
+  {
+   "scene": "tokamak",
+   "params": {
+    "person": true,
+    "cut": true,
+    "az0": 0.9,
+    "az1": 1.2,
+    "dist0": 22,
+    "dist1": 18,
+    "el0": 0.15,
+    "el1": 0.1
+   },
+   "vo": "The biggest bet is ITER, a giant tokamak being built in southern France by thirty-five nations. When finished, it will weigh about twenty-three thousand tonnes."
+  },
+  {
+   "scene": "energy_bars",
+   "params": {
+    "kind": "iter"
+   },
+   "vo": "Its goal is to produce five hundred megawatts of fusion power from fifty megawatts of heating, ten times more out than in. But it has faced long delays, and full fusion experiments aren't expected until the late 2030s."
+  },
+  {
+   "scene": "cold_hot",
+   "params": {
+    "az0": 0.4,
+    "az1": 0.2,
+    "dist0": 12,
+    "dist1": 10
+   },
+   "vo": "Meanwhile, private companies are racing ahead with new technology. A key breakthrough is high-temperature superconducting tape, which can make much stronger magnets."
+  },
+  {
+   "scene": "title_card",
+   "params": {
+    "big": "20 TESLA",
+    "bigSize": 220,
+    "sub": "high-temperature superconducting magnet — CFS & MIT, 2021",
+    "color": "#57d8ff"
+   },
+   "vo": "In 2021, Commonwealth Fusion Systems and MIT tested a large magnet made of this tape that reached twenty tesla, a record for its kind. Stronger magnets can mean smaller, cheaper reactors."
+  },
+  {
+   "scene": "tokamak",
+   "params": {
+    "cut": false,
+    "az0": -0.3,
+    "az1": 0.3,
+    "dist0": 15,
+    "dist1": 12,
+    "el0": 0.25,
+    "el1": 0.2
+   },
+   "vo": "They're building a compact tokamak called SPARC, aiming to show net energy from the plasma within the next few years. And dozens of other fusion companies have raised billions of dollars."
+  },
+  {
+   "scene": "neutron_wall",
+   "params": {
+    "mode": "damage"
+   },
+   "vo": "But big challenges remain. Those fast neutrons slam into the reactor walls, gradually damaging the materials and making them radioactive. Engineers need materials that can survive years of this.",
+   "highlight": "#ff4b5c"
+  },
+  {
+   "scene": "neutron_wall",
+   "params": {
+    "mode": "damage",
+    "az0": 0.5,
+    "az1": 0.7
+   },
+   "vo": "The parts facing the plasma are often made of tungsten, the metal with the highest melting point of all. Even so, engineers still need materials that can survive years of bombardment inside a power plant."
+  },
+  {
+   "scene": "seawater",
+   "params": {},
+   "vo": "Then there's fuel. Deuterium is easy. About one in every six thousand hydrogen atoms in seawater is deuterium. But tritium is radioactive and extremely rare."
+  },
+  {
+   "scene": "neutron_wall",
+   "params": {
+    "mode": "breed",
+    "az0": -0.5,
+    "az1": -0.3
+   },
+   "vo": "So future reactors will need to breed their own tritium, by surrounding the plasma with lithium. When neutrons hit lithium, they produce new tritium. That has never been done at power-plant scale.",
+   "highlight": "#4dff9a"
+  },
+  {
+   "scene": "plasma_particles",
+   "params": {
+    "az0": -0.8,
+    "az1": -0.4
+   },
+   "vo": "Fusion does have big safety advantages. It isn't a chain reaction. There are only a few grams of fuel in the chamber at a time, so if something goes wrong, the plasma simply cools and the reaction stops."
+  },
+  {
+   "scene": "power_plant",
+   "params": {},
+   "vo": "It releases no carbon dioxide while running, and it doesn't create the long-lived high-level waste of fission. Reactor parts do become radioactive, but most of that decays within about a hundred years."
+  },
+  {
+   "scene": "power_plant",
+   "params": {
+    "az0": -0.5,
+    "az1": -0.2,
+    "dist0": 24,
+    "dist1": 20
+   },
+   "vo": "And unlike solar and wind, a fusion plant could run day and night, in any weather, providing steady power alongside renewables."
+  },
+  {
+   "scene": "title_card",
+   "params": {
+    "year": "",
+    "lines": [
+     "\"FUSION IS 30 YEARS AWAY",
+     "AND ALWAYS WILL BE\""
+    ],
+    "sub": "an old joke among physicists"
+   },
+   "vo": "There's an old joke that fusion is thirty years away, and always will be. For decades, that felt true."
+  },
+  {
+   "scene": "power_plant",
+   "params": {
+    "az0": 0.4,
+    "az1": 0.7,
+    "dist0": 26,
+    "dist1": 20
+   },
+   "vo": "But ignition has now been achieved, magnets are getting stronger, and records keep falling. The first fusion power plants may still be years away. But fusion is no longer just a dream.",
+   "highlight": "#4dff9a"
+  },
+  {
+   "scene": "sun",
+   "params": {
+    "dist0": 9,
+    "dist1": 16,
+    "az0": 0.5,
+    "az1": 0
+   },
+   "vo": [
+    "We're learning how to build a star on Earth.",
+    "If you enjoyed this, subscribe. Next time: can scientists grow a brand new human organ?"
+   ]
+  }
  ]
 }
