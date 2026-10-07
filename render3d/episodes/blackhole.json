@@ -1,0 +1,693 @@
+{
+ "module": "blackhole",
+ "title": "What Happens If You Fall Into a Black Hole?",
+ "size": [
+  1920,
+  1080
+ ],
+ "length_scale": 1.18,
+ "music": "ambient",
+ "shots": [
+  {
+   "scene": "bh_hero",
+   "params": {
+    "dist0": 60,
+    "dist1": 34,
+    "el0": 0.2,
+    "el1": 0.12,
+    "az0": -0.6,
+    "az1": -0.2
+   },
+   "vo": "Imagine floating in the dark, staring at the most extreme object in the universe.",
+   "caption": "What happens if you **fall into a black hole?**"
+  },
+  {
+   "scene": "bh_hero",
+   "params": {
+    "dist0": 30,
+    "dist1": 22,
+    "el0": 0.08,
+    "el1": 0.06,
+    "az0": 0.2,
+    "az1": 0.5
+   },
+   "vo": [
+    "A black hole.",
+    "Nothing that crosses its edge ever comes back out. Not light. Not radio signals. Not you."
+   ]
+  },
+  {
+   "scene": "astronaut_bh",
+   "params": {
+    "az0": 0.9,
+    "az1": 0.5,
+    "dist0": 8,
+    "dist1": 6
+   },
+   "vo": "So what would actually happen if you fell in? Would you be crushed? Stretched? Frozen in time?",
+   "caption": "Crushed? Stretched? **Frozen in time?**"
+  },
+  {
+   "scene": "bh_hero",
+   "params": {
+    "dist0": 26,
+    "dist1": 18,
+    "el0": 0.5,
+    "el1": 0.3,
+    "az0": 1.2,
+    "az1": 1.6
+   },
+   "vo": "The real answer is stranger than any of those. And it depends on which black hole you pick.",
+   "caption": "It depends on **which black hole** you pick"
+  },
+  {
+   "scene": "star_collapse",
+   "params": {
+    "phase": "collapse"
+   },
+   "vo": "First, what is a black hole? Most of them form when a giant star, many times heavier than our Sun, runs out of fuel.",
+   "caption": "A giant star **runs out of fuel**"
+  },
+  {
+   "scene": "star_collapse",
+   "params": {
+    "phase": "collapse",
+    "az0": 0.6,
+    "az1": 0.9
+   },
+   "vo": "Without the energy of fusion pushing outward, the core can no longer hold itself up. It collapses in on itself in a fraction of a second."
+  },
+  {
+   "scene": "star_collapse",
+   "params": {
+    "phase": "supernova"
+   },
+   "sfx": [
+    {
+     "type": "boom",
+     "segment": 0
+    }
+   ],
+   "vo": "The outer layers blast away in a supernova. But the core keeps falling inward, squeezing more and more mass into less and less space.",
+   "caption": "**Supernova**"
+  },
+  {
+   "scene": "bh_hero",
+   "params": {
+    "dist0": 40,
+    "dist1": 28,
+    "el0": 0.3,
+    "el1": 0.2,
+    "az0": -1,
+    "az1": -0.6
+   },
+   "vo": "Until gravity becomes so strong that nothing, not even light, can escape.",
+   "caption": "Gravity wins: **nothing escapes**"
+  },
+  {
+   "scene": "grid_well",
+   "params": {
+    "mass": "planet",
+    "depth0": 0.5,
+    "depth1": 1.5
+   },
+   "vo": "Einstein showed that gravity isn't really a force pulling on you. It's mass bending space and time. A planet makes a gentle dip.",
+   "caption": "Mass **bends space and time**"
+  },
+  {
+   "scene": "grid_well",
+   "params": {
+    "mass": "star",
+    "depth0": 1.5,
+    "depth1": 4,
+    "az0": 0.4,
+    "az1": 0.8
+   },
+   "vo": "A star makes a deeper one, and anything rolling nearby curves toward it. That curve is what we feel as gravity."
+  },
+  {
+   "scene": "grid_well",
+   "params": {
+    "mass": "hole",
+    "depth0": 1,
+    "depth1": 3,
+    "el0": 0.7,
+    "el1": 0.5
+   },
+   "vo": "A black hole makes a pit so steep that, past a certain point, every possible path leads inward.",
+   "caption": "Every path **leads inward**"
+  },
+  {
+   "scene": "bh_hero",
+   "params": {
+    "dist0": 16,
+    "dist1": 11,
+    "el0": 0.05,
+    "el1": 0.04,
+    "az0": 0.3,
+    "az1": 0.1
+   },
+   "vo": "That point of no return is called the event horizon. It isn't a surface you could touch. It's a boundary in space-time.",
+   "caption": "The point of no return: **the event horizon**"
+  },
+  {
+   "scene": "earth_squeeze",
+   "params": {},
+   "vo": "Here's how extreme that is. To turn Earth into a black hole, you'd have to squeeze the entire planet down to about the size of a marble.",
+   "caption": "Earth as a black hole: **about 9 mm wide**"
+  },
+  {
+   "scene": "galaxy",
+   "params": {
+    "dist0": 46,
+    "dist1": 30,
+    "el0": 1.0,
+    "el1": 0.8
+   },
+   "vo": "Black holes come in very different sizes. Stellar black holes weigh a few to a few dozen Suns."
+  },
+  {
+   "scene": "galaxy",
+   "params": {
+    "dist0": 26,
+    "dist1": 12,
+    "el0": 0.7,
+    "el1": 0.45,
+    "az0": 0.4,
+    "az1": 0.9
+   },
+   "vo": "But at the center of our own galaxy sits a monster, called Sagittarius A star.",
+   "caption": "**Sagittarius A***: our galaxy's black hole",
+   "highlight": "#ff6b6b"
+  },
+  {
+   "scene": "size_compare",
+   "params": {},
+   "vo": "It holds about four million times the mass of the Sun, packed inside an event horizon roughly seventeen times wider than the Sun itself.",
+   "caption": "**4 million** Suns of mass"
+  },
+  {
+   "scene": "size_compare",
+   "params": {
+    "dist0": 20,
+    "dist1": 15,
+    "el0": 1.1,
+    "el1": 0.9
+   },
+   "vo": "Put it where the Sun is, and its horizon would sit well inside the orbit of Mercury.",
+   "caption": "Smaller than **Mercury's orbit**"
+  },
+  {
+   "scene": "eht_image",
+   "params": {},
+   "vo": "In 2022, astronomers released the first image of it, taken with the Event Horizon Telescope, a network of radio dishes spread across the planet.",
+   "caption": "Sgr A*, 2022 (**recreation**)"
+  },
+  {
+   "scene": "eht_image",
+   "params": {
+    "rot": 0.6
+   },
+   "vo": "What you see is a glowing ring of hot gas, wrapped around a dark shadow. The black hole itself is in that shadow."
+  },
+  {
+   "scene": "star_orbits",
+   "params": {},
+   "vo": "How do we even know it's there? For decades, astronomers tracked stars whipping around the center of our galaxy. One of them, called S2, completes an orbit every sixteen years.",
+   "caption": "Stars orbiting **something invisible**"
+  },
+  {
+   "scene": "star_orbits",
+   "params": {
+    "dist0": 14,
+    "dist1": 10,
+    "el0": 0.6,
+    "el1": 0.4,
+    "az0": 1,
+    "az1": 1.4
+   },
+   "vo": "Only an object about four million times the Sun's mass, crammed into a tiny space, could swing them around like that. That work won the 2020 Nobel Prize in Physics.",
+   "caption": "The **2020 Nobel Prize** in Physics"
+  },
+  {
+   "scene": "merger",
+   "params": {},
+   "sfx": [
+    {
+     "type": "boom",
+     "segment": 1
+    }
+   ],
+   "vo": [
+    "And in 2015, detectors called LIGO felt ripples in space-time from two black holes colliding, more than a billion light years away.",
+    "For a split second, that collision put out more power than all the stars in the observable universe combined."
+   ],
+   "caption": "**Gravitational waves** from colliding black holes"
+  },
+  {
+   "scene": "bh_hero",
+   "params": {
+    "dist0": 90,
+    "dist1": 70,
+    "el0": 0.3,
+    "el1": 0.25,
+    "az0": -0.4,
+    "az1": -0.2
+   },
+   "vo": "The closest black hole we know of, called Gaia BH1, is about fifteen hundred light years away. So there's no danger of falling into one by accident.",
+   "caption": "Nearest known: **about 1,500 light-years**",
+   "highlight": "#4dff9a"
+  },
+  {
+   "scene": "ship_travel",
+   "params": {
+    "size0": 2,
+    "size1": 3
+   },
+   "vo": "So let's go. We'll take the big one. It's about twenty-six thousand light years away, so this is a one-way trip in more ways than one.",
+   "caption": "Destination: **26,000 light-years** away"
+  },
+  {
+   "scene": "ship_travel",
+   "params": {
+    "size0": 5,
+    "size1": 10,
+    "bhx": -20
+   },
+   "vo": "As you get closer, the first thing you notice is the accretion disk: gas and dust spiraling inward, heated to millions of degrees.",
+   "caption": "The **accretion disk**"
+  },
+  {
+   "scene": "bh_hero",
+   "params": {
+    "dist0": 18,
+    "dist1": 14,
+    "el0": 0.9,
+    "el1": 0.7,
+    "az0": 0,
+    "az1": 0.4
+   },
+   "vo": "The disk looks lopsided. One side is far brighter than the other.",
+   "caption": "One side **shines brighter**"
+  },
+  {
+   "scene": "bh_hero",
+   "params": {
+    "dist0": 14,
+    "dist1": 12,
+    "el0": 0.4,
+    "el1": 0.3,
+    "az0": 0.6,
+    "az1": 0.9
+   },
+   "vo": "That's because gas racing toward you has its light boosted, while gas moving away looks dimmer. Astronomers call it relativistic beaming."
+  },
+  {
+   "scene": "bh_hero",
+   "params": {
+    "dist0": 15,
+    "dist1": 10,
+    "el0": 0.06,
+    "el1": 0.05,
+    "az0": -0.4,
+    "az1": -0.1
+   },
+   "vo": "And the disk seems to wrap over the top and under the bottom of the black hole. That's an illusion.",
+   "caption": "Gravity **bends light** like a lens"
+  },
+  {
+   "scene": "bh_hero",
+   "params": {
+    "dist0": 11,
+    "dist1": 9,
+    "el0": 0.1,
+    "el1": 0.08,
+    "az0": 2.2,
+    "az1": 2.5
+   },
+   "vo": "You're actually seeing the far side of the disk. Its light is bent up and over the hole by gravity, like a giant lens."
+  },
+  {
+   "scene": "astronaut_bh",
+   "params": {
+    "az0": 0.3,
+    "az1": 0.6,
+    "dist0": 9,
+    "dist1": 6
+   },
+   "vo": "Time to step outside. You leave the ship in your spacesuit and let gravity take over.",
+   "caption": "Time to **step outside**"
+  },
+  {
+   "scene": "astronaut_bh",
+   "params": {
+    "az0": -0.6,
+    "az1": -0.3,
+    "dist0": 6,
+    "dist1": 5,
+    "y0": 2,
+    "y1": 1.2
+   },
+   "vo": "At first, nothing feels strange at all. You're in free fall, so you feel completely weightless.",
+   "caption": "In free fall you feel **weightless**"
+  },
+  {
+   "scene": "astronaut_bh",
+   "params": {
+    "einstein": true,
+    "az0": 0.1,
+    "az1": 0,
+    "dist0": 7,
+    "dist1": 6,
+    "lookY": 0.5
+   },
+   "vo": "But look around. The stars behind the black hole are being bent and smeared into arcs, as if you're looking through a funhouse mirror made of gravity.",
+   "caption": "The sky **warps** around you"
+  },
+  {
+   "scene": "light_paths",
+   "params": {},
+   "vo": "Get within one and a half times the horizon's radius and you reach the photon sphere. Here, gravity is so strong that light itself can travel in a circle.",
+   "caption": "The **photon sphere**: light orbits",
+   "highlight": "#ff7ad9"
+  },
+  {
+   "scene": "light_paths",
+   "params": {
+    "loop": true,
+    "astro": true,
+    "dist0": 10,
+    "dist1": 6,
+    "el0": 0.7,
+    "el1": 0.5,
+    "az0": 0.8,
+    "az1": 1.2
+   },
+   "vo": "In principle, light leaving the back of your head could loop all the way around and come back to your eyes. You could look straight ahead and see the back of your own head.",
+   "caption": "You could see **the back of your own head**",
+   "highlight": "#ff7ad9"
+  },
+  {
+   "scene": "astronaut_bh",
+   "params": {
+    "small": true,
+    "az0": 0.7,
+    "az1": 0.5,
+    "dist0": 7,
+    "dist1": 6
+   },
+   "vo": "Now, if you had picked a small black hole, this is where things would go horribly wrong.",
+   "caption": "If you picked a **small** black hole..."
+  },
+  {
+   "scene": "astronaut_bh",
+   "params": {
+    "small": true,
+    "stretch0": 0,
+    "stretch1": 0.5,
+    "az0": 1.2,
+    "az1": 1.0,
+    "dist0": 8,
+    "dist1": 7
+   },
+   "vo": "Near a small black hole, gravity at your feet would pull much harder than gravity at your head.",
+   "caption": "Feet pulled **harder** than head",
+   "highlight": "#ff4b4b"
+  },
+  {
+   "scene": "astronaut_bh",
+   "params": {
+    "small": true,
+    "stretch0": 0.5,
+    "stretch1": 2.2,
+    "az0": 1.0,
+    "az1": 0.8,
+    "dist0": 9,
+    "dist1": 9,
+    "lookY": -1
+   },
+   "vo": "That difference, called the tidal force, would stretch you out like a noodle while squeezing you from the sides. Physicists really do call this spaghettification.",
+   "caption": "**Spaghettification**",
+   "highlight": "#ff4b4b"
+  },
+  {
+   "scene": "tidal_star",
+   "params": {
+    "tau0": 0,
+    "tau1": 0.6
+   },
+   "vo": "It doesn't just happen to people. When a star wanders too close to a black hole, the same tidal forces can rip it apart into a long stream of glowing gas.",
+   "caption": "Black holes can **shred whole stars**"
+  },
+  {
+   "scene": "tidal_star",
+   "params": {
+    "tau0": 0.6,
+    "tau1": 1,
+    "el0": 0.5,
+    "el1": 0.35,
+    "az0": 0.8,
+    "az1": 1.1
+   },
+   "vo": "Telescopes have actually caught this happening in distant galaxies. Astronomers call them tidal disruption events."
+  },
+  {
+   "scene": "astronaut_bh",
+   "params": {
+    "az0": -0.2,
+    "az1": 0.2,
+    "dist0": 6,
+    "dist1": 5
+   },
+   "vo": "But we picked a supermassive black hole, and that changes everything. Because it's so huge, the difference in pull between your head and your feet at the horizon is tiny.",
+   "caption": "Supermassive: you **barely feel a thing**",
+   "highlight": "#4dff9a"
+  },
+  {
+   "scene": "bh_hero",
+   "params": {
+    "ship": true,
+    "dist0": 22,
+    "dist1": 18,
+    "el0": 0.25,
+    "el1": 0.2,
+    "az0": 0.9,
+    "az1": 1.1
+   },
+   "vo": "Now think about your friend, watching from the safety of the ship. To them, something very strange is happening to you.",
+   "caption": "Meanwhile, back on the ship..."
+  },
+  {
+   "scene": "clocks",
+   "params": {},
+   "vo": "Near a black hole, time itself runs slower. Your friend sees your watch ticking slower, and slower, and slower, as you approach the horizon.",
+   "caption": "Your clock **slows down**",
+   "highlight": "#ff6b6b"
+  },
+  {
+   "scene": "astronaut_bh",
+   "params": {
+    "tint0": 0,
+    "tint1": 1,
+    "fall": 4,
+    "slow": 1,
+    "az0": 0.2,
+    "az1": 0.2,
+    "dist0": 9,
+    "dist1": 9
+   },
+   "vo": "Your image turns red and fades. To your friend, you never quite cross the edge. You seem to freeze just above it, dimming until you vanish from view.",
+   "caption": "To your friend, you **freeze and fade**",
+   "highlight": "#ff6b6b"
+  },
+  {
+   "scene": "astronaut_bh",
+   "params": {
+    "az0": 0,
+    "az1": 0,
+    "dist0": 4,
+    "dist1": 3,
+    "y0": 0.4,
+    "y1": 0.3,
+    "fall": 2
+   },
+   "vo": "But from your point of view, nothing special happens. Your watch ticks normally. There's no wall, no flash, no sign that says no return. You simply drift across.",
+   "caption": "For you, **nothing special happens**",
+   "highlight": "#4dff9a"
+  },
+  {
+   "scene": "astronaut_bh",
+   "params": {
+    "einstein": true,
+    "az0": -0.3,
+    "az1": -0.1,
+    "dist0": 5,
+    "dist1": 4,
+    "lookY": 0.8
+   },
+   "vo": "What would you see as you fall? You may have heard that you'd watch the entire future of the universe flash before your eyes. You wouldn't. That's a myth.",
+   "caption": "Myth: you'd see **the whole future**"
+  },
+  {
+   "scene": "falling_view",
+   "params": {},
+   "vo": "Instead, the outside universe shrinks into a bright, distorted circle above you, while the darkness of the black hole fills more and more of your view.",
+   "caption": "The universe **shrinks to a circle**"
+  },
+  {
+   "scene": "inside",
+   "params": {
+    "speed0": 10,
+    "speed1": 25
+   },
+   "vo": "And now you're inside. This is where things get truly strange. Inside the horizon, space and time effectively trade places.",
+   "caption": "Inside, **space and time swap roles**"
+  },
+  {
+   "scene": "inside",
+   "params": {
+    "speed0": 25,
+    "speed1": 40
+   },
+   "vo": "Out here, you can move in any direction in space, but only forward in time. Inside a black hole, the center isn't a place in front of you. It's in your future.",
+   "caption": "The center is **in your future**"
+  },
+  {
+   "scene": "inside",
+   "params": {
+    "speed0": 40,
+    "speed1": 90
+   },
+   "vo": "No engine, no matter how powerful, could save you. Every path you could possibly take ends at the center. For a black hole this size, you'd have about a minute.",
+   "caption": "About **one minute** left",
+   "highlight": "#ff4b4b"
+  },
+  {
+   "scene": "grid_well",
+   "params": {
+    "mass": "hole",
+    "glitch": true,
+    "depth0": 3,
+    "depth1": 6,
+    "el0": 0.6,
+    "el1": 0.8
+   },
+   "vo": "At the center, Einstein's equations predict a singularity, a point where density becomes infinite. But most physicists think that's a sign the theory breaks down, not a real description.",
+   "caption": "The **singularity**: where physics breaks"
+  },
+  {
+   "scene": "grid_well",
+   "params": {
+    "mass": "hole",
+    "glitch": true,
+    "depth0": 6,
+    "depth1": 8,
+    "az0": 1,
+    "az1": 1.5,
+    "el0": 0.9,
+    "el1": 0.7
+   },
+   "vo": "To know what's really at the center, we'd need a theory that unites gravity with quantum mechanics. Nobody has one yet.",
+   "caption": "Physics' biggest **unsolved problem**"
+  },
+  {
+   "scene": "wormhole",
+   "params": {},
+   "vo": "Could a black hole be a doorway to somewhere else? Some solutions to Einstein's equations describe wormholes, tunnels connecting distant regions of space.",
+   "caption": "A **wormhole**?",
+   "highlight": "#a98bff"
+  },
+  {
+   "scene": "wormhole",
+   "params": {
+    "dist0": 16,
+    "dist1": 12,
+    "el0": 0.7,
+    "el1": 0.5,
+    "az0": 1,
+    "az1": 1.4
+   },
+   "vo": "But they would need exotic matter that may not exist, and a black hole made by a collapsing star almost certainly has no exit. As far as we know, it's a one-way trip.",
+   "caption": "Most likely: **a one-way trip**",
+   "highlight": "#a98bff"
+  },
+  {
+   "scene": "hawking",
+   "params": {},
+   "vo": "And black holes don't last forever. Stephen Hawking showed that, because of quantum effects, black holes should slowly leak energy. We now call it Hawking radiation.",
+   "caption": "**Hawking radiation**",
+   "highlight": "#8fd8ff"
+  },
+  {
+   "scene": "hawking",
+   "params": {
+    "shrink": 0.6,
+    "dist0": 7,
+    "dist1": 9,
+    "az0": 0.8,
+    "az1": 1.2
+   },
+   "vo": "The leak is incredibly slow. A black hole as heavy as the Sun would take around ten to the sixty-seven years to evaporate, far longer than the universe has existed.",
+   "caption": "Evaporates in about **10^67 years**",
+   "highlight": "#8fd8ff"
+  },
+  {
+   "scene": "hawking",
+   "params": {
+    "shrink": 0.3,
+    "dist0": 9,
+    "dist1": 8,
+    "el0": 0.6,
+    "el1": 0.5
+   },
+   "vo": "And that raises a puzzle. If everything that falls in is eventually radiated away as heat, what happens to the information about you? Physicists are still arguing. It's called the information paradox.",
+   "caption": "The **information paradox**",
+   "highlight": "#8fd8ff"
+  },
+  {
+   "scene": "bh_hero",
+   "params": {
+    "dist0": 20,
+    "dist1": 26,
+    "el0": 0.15,
+    "el1": 0.2,
+    "az0": -0.3,
+    "az1": -0.8
+   },
+   "vo": "So, what happens if you fall into a black hole? Pick a small one, and you're torn apart before you even reach the edge.",
+   "caption": "Small: **torn apart**",
+   "highlight": "#ff4b4b"
+  },
+  {
+   "scene": "bh_hero",
+   "params": {
+    "astro": true,
+    "dist0": 14,
+    "dist1": 12,
+    "el0": 0.2,
+    "el1": 0.15,
+    "az0": 0.7,
+    "az1": 0.9
+   },
+   "vo": "Pick a giant one, and you cross the horizon without feeling a thing, while your friends watch you freeze and fade forever.",
+   "caption": "Giant: **you cross over**",
+   "highlight": "#4dff9a"
+  },
+  {
+   "scene": "bh_hero",
+   "params": {
+    "dist0": 30,
+    "dist1": 70,
+    "el0": 0.12,
+    "el1": 0.3,
+    "az0": 0.2,
+    "az1": -0.2
+   },
+   "vo": [
+    "Into the one place in the universe that no one can ever report back from.",
+    "If you enjoyed this, subscribe for more strange science. Next time: could scientists grow a brand new human organ?"
+   ],
+   "caption": "Subscribe for more **strange science**"
+  }
+ ]
+}

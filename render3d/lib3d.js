@@ -1,13 +1,19 @@
 // Shared 3D toolkit for the ZackDFilms-style episodes: renderer, procedural
 // textures, wet-flesh / gum materials, geometry helpers and the page runner.
-// An episode module calls run([shotFn, ...]); each shotFn() returns
-// { scene, camera, update(t) } with t in [0, 1].
+// An episode module calls run([shotFn, ...]) or run({ name: sceneFn, ... }); each
+// fn(params) returns { scene, camera, update(t), render? } with t in [0, 1].
+// Frame size comes from the page URL (?w=1920&h=1080), default 1080x1920.
 import * as THREE from 'three';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { ImprovedNoise } from 'three/addons/math/ImprovedNoise.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
-export const W = 1080, H = 1920;
+const query = new URLSearchParams(location.search);
+export const W = Number(query.get('w') || 1080), H = Number(query.get('h') || 1920);
 export const noise = new ImprovedNoise();
 export const n3 = (x, y, z) => noise.noise(x, y, z);
 export const ease = (t) => t * t * (3 - 2 * t);
@@ -141,16 +147,31 @@ export function spot(scene, color, intensity, pos, target = [0, 0, 0], angle = 0
 }
 
 
+// Bloom post-processing for glowing scenes; returns a render() for the shot object.
+export function bloom(scene, camera, { strength = 0.9, radius = 0.6, threshold = 0.75 } = {}) {
+  const composer = new EffectComposer(renderer);
+  composer.setPixelRatio(1); composer.setSize(W, H);
+  composer.addPass(new RenderPass(scene, camera));
+  composer.addPass(new UnrealBloomPass(new THREE.Vector2(W, H), strength, radius, threshold));
+  composer.addPass(new OutputPass());
+  return () => composer.render();
+}
+
+// window.renderShot(key, t): key is an index (array) or scene name (object);
+// window.shotParams (set by render.mjs) is passed to the scene function.
 export function run(shots) {
-  let current = null, currentIdx = -1;
-  window.shotCount = shots.length;
-  window.renderShot = (i, t) => {
-    if (currentIdx !== i) {
+  let current = null, currentKey = null;
+  window.shotNames = Object.keys(shots);
+  window.shotCount = window.shotNames.length;
+  window.renderShot = (key, t) => {
+    const params = window.shotParams || {};
+    const k = `${key}|${JSON.stringify(params)}`;
+    if (currentKey !== k) {
       if (current) current.scene.traverse((o) => { o.geometry?.dispose?.(); });
-      current = shots[i](); currentIdx = i;
+      current = shots[key](params); currentKey = k;
     }
     current.update(t);
-    renderer.render(current.scene, current.camera);
+    if (current.render) current.render(); else renderer.render(current.scene, current.camera);
     return true;
   };
   window.ready = true;
