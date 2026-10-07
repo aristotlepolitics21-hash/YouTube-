@@ -320,10 +320,12 @@ export function dataStream(curve, n = 300, color = '#57d8ff', size = 3) {
 }
 
 // Glowing tech floor grid
-export function techFloor(scene, { size = 60, color = '#1d6f8f', y = 0 } = {}) {
+export function techFloor(scene, { size = 60, color = '#1d6f8f', y = 0, matte = false } = {}) {
   const grid = new THREE.GridHelper(size, size, color, color); grid.position.y = y;
   grid.material.transparent = true; grid.material.opacity = 0.35; scene.add(grid);
-  const floor = new THREE.Mesh(new THREE.PlaneGeometry(size, size), new THREE.MeshPhysicalMaterial({ color: '#05121a', roughness: 0.35, metalness: 0.2, clearcoat: 0.5, envMapIntensity: 0.15 }));
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(size, size), matte
+    ? new THREE.MeshStandardMaterial({ color: '#0a1820', roughness: 0.85, metalness: 0.1, envMapIntensity: 0.1 })
+    : new THREE.MeshPhysicalMaterial({ color: '#05121a', roughness: 0.35, metalness: 0.2, clearcoat: 0.5, envMapIntensity: 0.15 }));
   floor.rotation.x = -Math.PI / 2; floor.position.y = y - 0.01; floor.receiveShadow = true; scene.add(floor);
   return grid;
 }
