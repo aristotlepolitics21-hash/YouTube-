@@ -185,7 +185,7 @@ def add_character(cdef, frames, ctx, idx):
     sc = cdef.get("scale", 1.0)
     rig.scale = (sc, sc, sc)
     rig.location = tuple(cdef.get("at", (0, 0, 0)))
-    rig.rotation_euler = (0, 0, R(cdef.get("turn", 0)))
+    rig.rotation_euler = tuple(R(v) for v in cdef["rot"]) if cdef.get("rot") else (0, 0, R(cdef.get("turn", 0)))
     if cdef.get("walk"):  # [[t, [x, y, z]], ...] slide the whole character
         for t, loc in cdef["walk"]:
             props.key(rig, kit.key_frac(frames, t), location=tuple(loc))

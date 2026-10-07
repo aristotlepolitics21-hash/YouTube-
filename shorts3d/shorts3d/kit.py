@@ -822,7 +822,264 @@ def figures(frames, n=5, spacing=0.35, seed=1, colors=None):
     return root
 
 
+
+# ------------------------------------------------------------------ biology / medicine
+def _fuzzy(name, loc, r, color, parent, seed=1, scale=(1, 1, 0.45)):
+    o = sph(name, loc, r, mat(name, color, 0.9), scale, parent)
+    tex = bpy.data.textures.new(name + "_tex", "CLOUDS")
+    tex.noise_scale = r * 0.35
+    d = o.modifiers.new("fuzz", "DISPLACE")
+    d.texture, d.strength = tex, r * 0.35
+    o.modifiers.new("smooth", "SUBSURF").levels = 1
+    return o
+
+
+def petri_dish(frames, mould=True, colonies=160, clear=(0.3, 0.8), seed=3, mould_grow=None):
+    """Glass dish with agar, cream bacterial colonies, and a blue-green mould whose clear zone spreads."""
+    rng = random.Random(seed)
+    root = empty("petri")
+    glass = mat("dish_glass", (0.95, 0.97, 1.0), 0.05, alpha=0.22)
+    cyl("dish", (0, 0, 0.012), 0.2, 0.024, glass, parent=root, verts=96)
+    cyl("lid_rim", (0, 0, 0.026), 0.205, 0.004, glass, parent=root, verts=96)
+    cyl("agar", (0, 0, 0.008), 0.193, 0.014, mat("agar", (0.75, 0.42, 0.08), 0.3, emit=0.05), parent=root, verts=96)
+    mx, my = 0.07, 0.04
+    cmat = mat("colony", (0.95, 0.85, 0.55), 0.4)
+    for i in range(colonies):
+        a, rr = rng.uniform(0, 2 * math.pi), 0.185 * math.sqrt(rng.random())
+        x, y = rr * math.cos(a), rr * math.sin(a)
+        size = rng.uniform(0.004, 0.009)
+        c = sph(f"col{i}", (x, y, 0.016), size, cmat, (1, 1, 0.4), root)
+        d = math.hypot(x - mx, y - my)
+        if mould and d < 0.115:
+            t = clear[0] + (clear[1] - clear[0]) * max(0.0, (d - 0.035) / 0.08)
+            props.key(c, 1, scale=(1, 1, 0.4))
+            props.key(c, key_frac(frames, t), scale=(1, 1, 0.4))
+            props.key(c, key_frac(frames, min(1, t + 0.08)), scale=(0, 0, 0))
+    if mould:
+        m = _fuzzy("mould", (mx, my, 0.02), 0.035, (0.05, 0.38, 0.3), root)
+        _fuzzy("mould_rim", (mx, my, 0.017), 0.045, (0.9, 0.95, 0.85), root).scale = (1, 1, 0.2)
+        if mould_grow:
+            for o in (m,):
+                props.key(o, key_frac(frames, mould_grow[0]), scale=(0.01, 0.01, 0.005))
+                props.key(o, key_frac(frames, mould_grow[1]), scale=(1, 1, 0.45))
+    return root
+
+
+def microscope(frames):
+    root = empty("microscope")
+    black, steel = mat("scope_black", (0.05, 0.05, 0.06), 0.35, 0.5), mat("steel", (0.75, 0.76, 0.8), 0.25, 1.0)
+    box("base", (0, 0.03, 0.02), (0.22, 0.28, 0.04), black, 0.01, root)
+    box("arm", (0, 0.12, 0.2), (0.05, 0.05, 0.34), black, 0.01, root).rotation_euler = (R(-12), 0, 0)
+    box("stage", (0, 0.0, 0.16), (0.16, 0.16, 0.012), black, 0.004, root)
+    cyl("tube", (0, 0.02, 0.33), 0.03, 0.22, black, rot=(R(-12), 0, 0), parent=root)
+    cyl("eyepiece", (0, 0.045, 0.45), 0.018, 0.06, steel, rot=(R(-12), 0, 0), parent=root)
+    cyl("objective", (0, 0.0, 0.215), 0.012, 0.05, steel, parent=root)
+    cyl("slide", (0, 0.0, 0.168), 0.03, 0.002, mat("slide", (0.9, 0.95, 1), 0.05, alpha=0.4), parent=root)
+    return root
+
+
+def bacteria(frames, n=24, burst=None, color=(0.55, 0.85, 0.3), resistant=0, area=0.5, seed=5, drift=0.05):
+    """Rod-shaped bacteria drifting; at `burst` their walls fail and they pop (resistant ones survive, glowing red)."""
+    rng = random.Random(seed)
+    root = empty("bacteria")
+    m = mat("bact", color, 0.35, emit=0.15)
+    rm = mat("bact_res", (0.9, 0.15, 0.15), 0.35, emit=1.2)
+    for i in range(n):
+        x, y, z = rng.uniform(-area, area), rng.uniform(-area * 0.6, area * 0.6), rng.uniform(0.0, area * 0.6)
+        res = i < resistant
+        b = sph(f"bac{i}", (x, y, z), 0.03, rm if res else m, (2.4, 1, 1), root)
+        b.rotation_euler = (rng.uniform(0, 3), rng.uniform(0, 3), rng.uniform(0, 3))
+        dx, dy = rng.uniform(-drift, drift), rng.uniform(-drift, drift)
+        props.key(b, 1, location=(x, y, z))
+        props.key(b, frames, location=(x + dx, y + dy, z + rng.uniform(-drift, drift)))
+        if burst is not None and not res:
+            t = burst + rng.uniform(0, 0.25)
+            f = key_frac(frames, t)
+            props.key(b, max(1, f - 3), scale=(2.4, 1, 1))
+            props.key(b, f, scale=(3.0, 1.35, 1.35))
+            props.key(b, f + 2, scale=(0, 0, 0))
+    return root
+
+
+def molecule(frames, spin=180):
+    """Ball-and-stick penicillin core: the four-membered beta-lactam ring fused to a five-membered ring."""
+    root = empty("molecule")
+    C, N, O, S = mat("C", (0.2, 0.2, 0.22), 0.3), mat("N", (0.2, 0.4, 1.0), 0.3), mat("O", (1.0, 0.15, 0.15), 0.3), mat("S", (1.0, 0.85, 0.1), 0.3)
+    atoms = {"c1": ((0, 0, 0), C), "c2": ((0.3, 0, 0), C), "n": ((0.3, 0.3, 0), N), "c3": ((0, 0.3, 0), C),
+             "o1": ((-0.25, -0.15, 0), O), "s": ((0.15, 0.6, 0.1), S), "c4": ((0.65, 0.5, 0.05), C), "c5": ((0.6, 0.2, 0.05), C),
+             "o2": ((0.95, 0.15, 0.1), O), "c6": ((-0.2, 0.55, -0.1), C)}
+    for name, (p, m) in atoms.items():
+        sph(name, p, 0.07 if m is not C else 0.08, m, parent=root)
+    bonds = [("c1", "c2"), ("c2", "n"), ("n", "c3"), ("c3", "c1"), ("c1", "o1"), ("c3", "s"), ("s", "c4"), ("c4", "c5"),
+             ("c5", "n"), ("c5", "o2"), ("c3", "c6")]
+    stick = mat("stick", (0.85, 0.85, 0.88), 0.4)
+    for a, b in bonds:
+        pa, pb = V(atoms[a][0]), V(atoms[b][0])
+        mid, d = (pa + pb) / 2, pb - pa
+        o = cyl("bond", mid, 0.02, d.length, stick, parent=root)
+        o.rotation_euler = d.to_track_quat("Z", "Y").to_euler()
+    ring_m, _ = fx.emissive("lactam", (0.3, 1.0, 0.6), 3)
+    curve_obj("lactam_ring", [V((0, 0, 0)), V((0.3, 0, 0)), V((0.3, 0.3, 0)), V((0, 0.3, 0)), V((0, 0, 0))], 0.008, ring_m, root)
+    props.key(root, 1, rotation_euler=(0, 0, 0))
+    props.key(root, frames, rotation_euler=(R(20), 0, R(spin)))
+    return root
+
+
+def mouse_cage(frames, n=4, alive=True, seed=2):
+    rng = random.Random(seed)
+    root = empty("cage_mice")
+    bpy.ops.mesh.primitive_cube_add(size=1, location=(0, 0, 0.12))
+    c = bpy.context.active_object
+    c.scale = (0.5, 0.32, 0.24)
+    sub = c.modifiers.new("sub", "SUBSURF")
+    sub.subdivision_type, sub.levels, sub.render_levels = "SIMPLE", 3, 3
+    c.modifiers.new("wire", "WIREFRAME").thickness = 0.004
+    c.data.materials.append(mat("cage", (0.8, 0.8, 0.85), 0.3, 1.0))
+    c.parent = root
+    fur = mat("fur", (0.92, 0.9, 0.88), 0.8)
+    pink = mat("pink", (1.0, 0.6, 0.65), 0.5)
+    for i in range(n):
+        x, y = -0.18 + 0.12 * i, rng.uniform(-0.06, 0.06)
+        body = sph(f"mouse{i}", (x, y, 0.03), 0.035, fur, (1.5, 1, 0.85), root)
+        sph("ear", (x + 0.04, y + 0.02, 0.06), 0.012, pink, (1, 0.4, 1), root)
+        sph("ear", (x + 0.04, y - 0.02, 0.06), 0.012, pink, (1, 0.4, 1), root)
+        curve_obj("tail", [V((x - 0.05, y, 0.02)), V((x - 0.09, y + 0.02, 0.01)), V((x - 0.13, y - 0.01, 0.005))], 0.003, pink, root)
+        if alive:
+            for f in range(1, frames + 1, 6):
+                props.key(body, f, location=(x + 0.01 * math.sin(f * 0.3 + i), y, 0.03 + 0.005 * abs(math.sin(f * 0.5 + i))))
+        else:
+            body.rotation_euler = (R(90), 0, 0)
+    return root
+
+
+def vessels(frames, kinds=("bedpan", "churn", "bath", "churn", "bedpan"), spacing=0.55, seed=1):
+    """Heatley's improvised culture vessels: bedpans, milk churns and a bath, each with a mould mat."""
+    root = empty("vessels")
+    steel = mat("enamel", (0.9, 0.9, 0.88), 0.35)
+    tin = mat("tin", (0.75, 0.76, 0.78), 0.3, 1.0)
+    for i, k in enumerate(kinds):
+        x = (i - (len(kinds) - 1) / 2) * spacing
+        if k == "bedpan":
+            lathe("bedpan", [(0, 0), (0.17, 0), (0.2, 0.05), (0.19, 0.06), (0.0, 0.06)], steel, parent=root, loc=(x, 0, 0))
+            _fuzzy("mat", (x, 0, 0.06), 0.17, (0.3, 0.6, 0.45), root, scale=(1, 1, 0.08))
+        elif k == "churn":
+            lathe("churn", [(0, 0), (0.13, 0), (0.14, 0.3), (0.08, 0.42), (0.08, 0.5), (0.1, 0.52), (0, 0.52)], tin, parent=root, loc=(x, 0, 0))
+        else:
+            box("bath", (x, 0, 0.12), (0.5, 0.3, 0.24), steel, 0.04, root)
+            _fuzzy("mat", (x, 0, 0.245), 0.2, (0.3, 0.6, 0.45), root, scale=(1.1, 0.65, 0.08))
+    return root
+
+
+def cantaloupe(frames, mould=True):
+    root = empty("cantaloupe")
+    m = bpy.data.materials.new("melon")
+    m.use_nodes = True
+    nt = m.node_tree
+    p = nt.nodes["Principled BSDF"]
+    vor = nt.nodes.new("ShaderNodeTexVoronoi")
+    vor.feature = "DISTANCE_TO_EDGE"
+    vor.inputs["Scale"].default_value = 25
+    mr = nt.nodes.new("ShaderNodeMapRange")
+    mr.inputs["From Min"].default_value, mr.inputs["From Max"].default_value = 0.0, 0.06
+    nt.links.new(vor.outputs["Distance"], mr.inputs["Value"])
+    mix = nt.nodes.new("ShaderNodeMix")
+    mix.data_type = "RGBA"
+    mix.inputs["A"].default_value = (0.85, 0.8, 0.6, 1)
+    mix.inputs["B"].default_value = (0.55, 0.45, 0.2, 1)
+    nt.links.new(mr.outputs[0], mix.inputs["Factor"])
+    nt.links.new(mix.outputs["Result"], p.inputs["Base Color"])
+    sph("melon", (0, 0, 0.12), 0.12, m, (1, 1, 0.92), root)
+    if mould:
+        _fuzzy("melon_mould", (0.06, -0.08, 0.17), 0.045, (0.85, 0.75, 0.25), root, scale=(1, 1, 0.5))
+    return root
+
+
+def fermenter(frames, n=3, bubbles=True):
+    root = empty("fermenters")
+    steel = mat("tank", (0.78, 0.8, 0.84), 0.22, 1.0)
+    for i in range(n):
+        x = (i - (n - 1) / 2) * 1.0
+        cyl("tank", (x, 0, 0.9), 0.38, 1.6, steel, parent=root, verts=64)
+        sph("dome", (x, 0, 1.7), 0.38, steel, (1, 1, 0.45), root)
+        cyl("pipe", (x + 0.3, -0.2, 1.95), 0.03, 0.6, mat("pipe", (0.9, 0.5, 0.15), 0.3, 0.6), parent=root)
+        box("window", (x, -0.37, 0.9), (0.22, 0.02, 0.5), mat("brew", (0.85, 0.6, 0.15), 0.2, emit=1.5), parent=root)
+        if bubbles:
+            bm = mat("bubble", (1, 0.95, 0.8), 0.1, emit=1.0)
+            rng = random.Random(i)
+            for k in range(6):
+                b = sph("bub", (x + rng.uniform(-0.08, 0.08), -0.39, 0.7), 0.012, bm, parent=root)
+                off = rng.uniform(0, 1)
+                for f in range(1, frames + 1, 3):
+                    u = ((f / frames) * 3 + off) % 1
+                    props.key(b, f, location=(b.location.x, -0.39, 0.66 + 0.48 * u))
+    return root
+
+
+def syringe(frames, push=None):
+    root = empty("syringe")
+    glass = mat("barrel", (0.95, 0.97, 1.0), 0.05, alpha=0.3)
+    cyl("barrel", (0, 0, 0), 0.02, 0.16, glass, rot=(0, R(90), 0), parent=root)
+    liquid = cyl("dose", (0.0, 0, 0), 0.017, 0.14, mat("dose", (1.0, 0.85, 0.2), 0.2, emit=0.8), rot=(0, R(90), 0), parent=root)
+    cyl("needle", (0.12, 0, 0), 0.002, 0.08, mat("steel", (0.8, 0.8, 0.85), 0.2, 1.0), rot=(0, R(90), 0), parent=root)
+    plunger = cyl("plunger", (-0.1, 0, 0), 0.006, 0.12, mat("white", (0.95, 0.95, 0.95), 0.4), rot=(0, R(90), 0), parent=root)
+    if push:
+        props.key(plunger, key_frac(frames, push[0]), location=(-0.1, 0, 0))
+        props.key(plunger, key_frac(frames, push[1]), location=(-0.0, 0, 0))
+        props.key(liquid, key_frac(frames, push[0]), scale=(1, 1, 1), location=(0, 0, 0))
+        props.key(liquid, key_frac(frames, push[1]), scale=(1, 1, 0.05), location=(0.065, 0, 0))
+    return root
+
+
+def vials(frames, n=6, label="PENICILLIN"):
+    root = empty("vials")
+    glass = mat("vial", (0.95, 0.97, 1.0), 0.05, alpha=0.3)
+    for i in range(n):
+        x = (i - (n - 1) / 2) * 0.07
+        cyl("vial", (x, 0, 0.045), 0.025, 0.09, glass, parent=root)
+        cyl("powder", (x, 0, 0.025), 0.022, 0.045, mat("powder", (1.0, 0.92, 0.6), 0.6), parent=root)
+        cyl("cap", (x, 0, 0.095), 0.026, 0.015, mat("capred", (0.85, 0.1, 0.1), 0.4), parent=root)
+    if label:
+        t = fx.text(label, mat("lbl", (1, 1, 1), 0.4, emit=1), (0, -0.03, 0.13), size=0.03, depth=0.003)
+        t.parent = root
+    return root
+
+
+def crates(frames, n=6, label="PENICILLIN", seed=3):
+    rng = random.Random(seed)
+    root = empty("crates")
+    wood = mat("crate", (0.5, 0.35, 0.18), 0.7)
+    for i in range(n):
+        r, c = divmod(i, 3)
+        x, z = (c - 1) * 0.62, r * 0.42
+        b = box("crate", (x + rng.uniform(-0.03, 0.03), 0, 0.2 + z), (0.58, 0.45, 0.4), wood, 0.01, root)
+        t = fx.text(label, mat("stencil", (0.08, 0.08, 0.08), 0.6), (b.location.x, -0.23, b.location.z), size=0.07, depth=0.002)
+        t.parent = root
+    return root
+
+
+def hospital_bed(frames):
+    root = empty("bed")
+    white = mat("sheet", (0.92, 0.93, 0.95), 0.6)
+    frame_m = mat("bedframe", (0.65, 0.68, 0.7), 0.3, 0.8)
+    box("mattress", (0, 0, 0.55), (0.95, 2.0, 0.18), white, 0.05, root)
+    box("pillow", (0, 0.8, 0.7), (0.6, 0.3, 0.12), white, 0.05, root)
+    for sx in (-1, 1):
+        for sy in (-1, 1):
+            cyl("leg", (sx * 0.42, sy * 0.95, 0.25), 0.02, 0.5, frame_m, parent=root)
+    box("headboard", (0, 1.0, 0.75), (0.95, 0.04, 0.6), frame_m, 0.01, root)
+    return root
+
+
+def pills(frames, n=14, seed=4):
+    rng = random.Random(seed)
+    root = empty("pills")
+    for i in range(n):
+        col = rng.choice([(0.9, 0.2, 0.2), (0.95, 0.85, 0.2), (0.3, 0.5, 0.95), (0.95, 0.95, 0.95)])
+        p = sph("pill", (rng.uniform(-0.25, 0.25), rng.uniform(-0.15, 0.15), 0.02), 0.02, mat(f"pill{i}", col, 0.3), (2.0, 1, 1), root)
+        p.rotation_euler = (0, 0, rng.uniform(0, 3.14))
+    return root
+
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",
-                          "glow_keys", "visible_from")}
+                          "glow_keys", "visible_from", "_fuzzy")}
