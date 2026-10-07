@@ -26,12 +26,15 @@ def main() -> int:
     ap.add_argument("--out", required=True)
     ap.add_argument("--bundle", required=True)
     ap.add_argument("--only", default="", help="comma-separated frame numbers (previews)")
+    ap.add_argument("--width", type=int)
+    ap.add_argument("--height", type=int)
+    ap.add_argument("--samples", type=int)
     a = ap.parse_args()
     spec = json.loads(Path(a.spec).read_text())
     shot = next(s for s in spec["shots"] if s["id"] == a.shot)
     r = spec.get("render", {})
-    ctx = {"bundle": a.bundle, "width": r.get("width", 540), "height": r.get("height", 960),
-           "samples": r.get("samples", 12), "fps": r.get("fps", 24)}
+    ctx = {"bundle": a.bundle, "width": a.width or r.get("width", 540), "height": a.height or r.get("height", 960),
+           "samples": a.samples or r.get("samples", 12), "fps": r.get("fps", 24), "spec": spec}
     scene = BUILDERS[shot["visual"]["type"]](shot["visual"], a.frames, ctx)
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)

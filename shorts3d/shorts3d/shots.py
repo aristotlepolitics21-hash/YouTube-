@@ -469,3 +469,7 @@ BUILDERS = {"character": build_character, "joint": build_joint, "trophy": build_
 from .space_shots import BUILDERS as _SPACE  # noqa: E402
 
 BUILDERS.update(_SPACE)
+
+from .stage import build_stage  # noqa: E402
+
+BUILDERS["stage"] = build_stage

@@ -88,15 +88,17 @@ def timeline(spec: dict, voice: list[dict]) -> list[dict]:
     fps = spec.get("render", {}).get("fps", 24)
     gap = spec.get("gap_seconds", 0.12)
     lead = spec.get("lead_seconds", 0.25)
+    chapter_gap = spec.get("chapter_gap_seconds", 0.8)
     t, plan = 0.0, []
     for i, (shot, v) in enumerate(zip(spec["shots"], voice)):
         start = t
-        audio_at = start + (lead if i == 0 else 0)
+        audio_at = start + (lead if i == 0 else chapter_gap if shot.get("chapter") else 0)
         end = audio_at + v["seconds"] + gap + shot.get("hold", 0)
         frames = max(12, round((end - start) * fps))
         end = start + frames / fps
         plan.append({"id": shot["id"], "start": start, "end": end, "frames": frames, "audio_at": audio_at,
-                     "wav": str(v["wav"]), "seconds": v["seconds"]})
+                     "wav": str(v["wav"]), "seconds": v["seconds"], "still": bool(shot.get("still")),
+                     "chapter": shot.get("chapter")})
         t = end
     return plan
 
@@ -108,14 +110,24 @@ def render_shots(spec_path: Path, spec: dict, plan: list[dict], work: Path, bund
         if only and p["id"] not in only:
             continue
         shot = next(s for s in spec["shots"] if s["id"] == p["id"])
-        sig = hashlib.sha1(json.dumps([shot["visual"], p["frames"], spec.get("render", {})],
+        still = p["still"]
+        hr = spec.get("still_render", {"width": 1920, "height": 1080, "samples": 16}) if still else {}
+        sig = hashlib.sha1(json.dumps([shot["visual"], p["frames"], spec.get("render", {}), still, hr],
                                       sort_keys=True).encode()).hexdigest()[:10]
         out = work / "frames" / f"{p['id']}_{sig}"
         p["frames_dir"] = str(out)
         args = [BLENDER_PY, "-m", "shorts3d.render_shot", "--spec", str(spec_path), "--shot", p["id"],
                 "--frames", str(p["frames"]), "--out", str(out), "--bundle", bundle]
+        if still:
+            p["still_frame"] = max(1, int(p["frames"] * shot.get("still_at", 0.6)))
+            args += ["--width", str(hr["width"]), "--height", str(hr["height"]), "--samples", str(hr["samples"])]
         if preview:
-            args += ["--only", f"1,{max(1, p['frames'] // 2)},{p['frames']}"]
+            pick = [p["still_frame"]] if still else [1, max(1, p['frames'] // 2), p['frames']]
+            args += ["--only", ",".join(map(str, pick))]
+        elif still:
+            if (out / f"{p['still_frame']:05d}.png").exists():
+                continue
+            args += ["--only", str(p["still_frame"])]
         elif out.exists() and len(list(out.glob("*.png"))) >= p["frames"]:
             continue
         env = {**os.environ, "PYTHONPATH": str(HERE.parent)}
@@ -126,20 +138,44 @@ def render_shots(spec_path: Path, spec: dict, plan: list[dict], work: Path, bund
         print([l for l in proc.stdout.splitlines() if l.startswith("SHOT")][-1], flush=True)
 
 
+def out_size(spec: dict) -> tuple[int, int]:
+    return (1920, 1080) if spec.get("format") == "long" else (1080, 1920)
+
+
 def encode_shots(spec: dict, plan: list[dict], work: Path) -> Path:
     fps = spec.get("render", {}).get("fps", 24)
+    out_fps = spec.get("output_fps", 24)
+    W, H = out_size(spec)
     parts = []
-    for p in plan:
+    for i, p in enumerate(plan):
         src = Path(p["frames_dir"])
         dest = work / "clips" / f"{src.name}.mp4"
         dest.parent.mkdir(parents=True, exist_ok=True)
+        seconds = p["frames"] / fps
+        n_out = max(1, round(seconds * out_fps))
+        enc = ["-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-r", str(out_fps),
+               "-frames:v", str(n_out)]
+        if p.get("still"):
+            img = src / f"{p['still_frame']:05d}.png"
+            if not img.exists():
+                raise RuntimeError(f"{p['id']}: still frame not rendered")
+            if not dest.exists():
+                # slow push in or out, alternating, with a slight drift
+                z = "1+0.07*on/{n}".format(n=n_out) if i % 2 == 0 else "1.07-0.07*on/{n}".format(n=n_out)
+                dx = ("+" if i % 4 < 2 else "-") + "0.02*iw*on/{n}".format(n=n_out)
+                media.run(["-i", str(img), "-vf",
+                           f"scale={W * 2}:{H * 2}:flags=lanczos,zoompan=z='{z}':x='iw/2-(iw/zoom/2){dx}/zoom':"
+                           f"y='ih/2-(ih/zoom/2)':d={n_out}:s={W}x{H}:fps={out_fps},format=yuv420p", *enc, str(dest)])
+            parts.append(dest)
+            continue
         n = len(list(src.glob("*.png")))
         if n < p["frames"]:
             raise RuntimeError(f"{p['id']} has {n}/{p['frames']} frames rendered")
         if not dest.exists():
-            media.run(["-framerate", str(fps), "-i", str(src / "%05d.png"),
-                       "-vf", "scale=1080:1920:flags=lanczos,unsharp=5:5:0.6,format=yuv420p",
-                       "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-r", str(fps), str(dest)])
+            vf = f"scale={W}:{H}:flags=lanczos,unsharp=5:5:0.6,format=yuv420p"
+            if out_fps != fps:  # motion-interpolate the low-frame-rate render
+                vf = f"minterpolate=fps={out_fps}:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1," + vf
+            media.run(["-framerate", str(fps), "-i", str(src / "%05d.png"), "-vf", vf, *enc, str(dest)])
         parts.append(dest)
     lst = work / "clips.txt"
     lst.write_text("".join(f"file '{p.resolve()}'\n" for p in parts))
@@ -285,8 +321,10 @@ def build_audio(spec: dict, plan: list[dict], work: Path) -> Path:
         fx[i:i + m] += clip[:m] * gain
 
     w = whoosh(0.5, seed=7)
+    long_form = spec.get("format") == "long"
     for i, p in enumerate(plan[1:], 1):
-        place(w, p["start"] - 0.25, 0.35)
+        if not long_form or p.get("chapter"):
+            place(w, p["start"] - 0.25, 0.35)
     for p in plan:
         shot = next(s for s in spec["shots"] if s["id"] == p["id"])
         dur = p["end"] - p["start"]
@@ -428,6 +466,24 @@ def write_srt(words: list[dict], path: Path) -> None:
 
 
 # ------------------------------------------------------------------ main
+def write_youtube(spec: dict, plan: list[dict], path: Path) -> None:
+    """Title, description, chapters (from shots marked "chapter") and sources."""
+    def stamp(t):
+        t = int(t)
+        return f"{t // 60}:{t % 60:02d}"
+    lines = [f"# {spec.get('title', '')}", "", spec.get("description", ""), ""]
+    chapters = [(p["start"], p["chapter"]) for p in plan if p.get("chapter")]
+    if chapters:
+        if chapters[0][0] > 0.5:
+            chapters.insert(0, (0.0, "Intro"))
+        lines += ["Chapters:"] + [f"{stamp(t if i else 0)} {name}" for i, (t, name) in enumerate(chapters)] + [""]
+    if spec.get("sources"):
+        lines += ["Sources:"] + [f"- {u}" for u in spec["sources"]] + [""]
+    if spec.get("tags"):
+        lines += ["Tags: " + ", ".join(spec["tags"]), ""]
+    path.write_text("\n".join(lines))
+
+
 def make(spec_path: Path, preview: bool = False, only: set[str] | None = None) -> Path | None:
     spec = json.loads(spec_path.read_text())
     work = spec_path.parent / "build"
@@ -445,16 +501,23 @@ def make(spec_path: Path, preview: bool = False, only: set[str] | None = None) -
     audio = build_audio(spec, plan, work)
     words = word_timings(spec, plan)
     (work / "words.json").write_text(json.dumps(words))
-    ass = work / "captions.ass"
-    write_ass(words, ass, spec.get("caption_font", "Inter Display"))
     final_dir = spec_path.parent / "final"
     final_dir.mkdir(exist_ok=True)
     slug = spec.get("slug", spec_path.parent.name)
     out = final_dir / f"{slug}.mp4"
-    media.run(["-i", str(picture), "-i", str(audio), "-vf", f"ass={ass}", "-map", "0:v", "-map", "1:a",
-               "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
+    burn = spec.get("burn_captions", spec.get("format") != "long")
+    vf = []
+    if burn:
+        ass = work / "captions.ass"
+        write_ass(words, ass, spec.get("caption_font", "Inter Display"))
+        vf = ["-vf", f"ass={ass}"]
+        v_codec = ["-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p"]
+    else:
+        v_codec = ["-c:v", "copy"]
+    media.run(["-i", str(picture), "-i", str(audio), *vf, "-map", "0:v", "-map", "1:a", *v_codec,
                "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(out)])
     write_srt(words, final_dir / f"{slug}.srt")
+    write_youtube(spec, plan, final_dir / "youtube.md")
     (work / "plan.json").write_text(json.dumps(plan, indent=1, default=str))
     low = [(p["id"], p["narration_match"]) for p in plan if p.get("narration_match", 1) < 0.8]
     print(f"done: {out} ({media.duration(out):.1f}s); narration check below 80%: {low}", flush=True)
