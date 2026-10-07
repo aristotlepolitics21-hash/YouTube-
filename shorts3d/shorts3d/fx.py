@@ -578,3 +578,17 @@ def _linear_data(idblock):
         for fc in _fcurves(ad.action):
             for k in fc.keyframe_points:
                 k.interpolation = "LINEAR"
+
+
+def apple(loc, radius=0.045):
+    """A shiny red apple with a stem and a leaf; returns the root mesh (children follow it)."""
+    red = looks.principled("apple", (0.75, 0.02, 0.03), 0.25, 0.1)
+    a = props.uv_sphere("apple", loc, radius, red, scale=(1, 1, 0.9))
+    stem = props.cylinder("stem", (0, 0, radius * 1.0), radius * 0.07, radius * 0.5,
+                          looks.principled("stem", (0.2, 0.1, 0.03), 0.6))
+    leaf = props.uv_sphere("leaf", (radius * 0.35, 0, radius * 1.1), radius * 0.4,
+                           looks.principled("leaf", (0.1, 0.55, 0.08), 0.4), scale=(1, 0.45, 0.12))
+    leaf.rotation_euler = (0, math.radians(-25), 0)
+    for o in (stem, leaf):
+        o.parent = a
+    return a

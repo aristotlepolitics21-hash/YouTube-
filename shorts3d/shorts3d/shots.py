@@ -86,7 +86,7 @@ def _keys(socket, pairs):
 
 def build_character(spec, frames, ctx):
     scene, mats = _base_scene(ctx, frames)
-    storm = spec.get("env") == "storm"
+    storm = spec.get("env") in ("storm", "sky")
     sky = fx.gradient_world(scene, **spec.get("sky", {})) if storm else None
     ch = load_character(ctx["bundle"])
     rig = ch["rig"]
@@ -110,7 +110,10 @@ def build_character(spec, frames, ctx):
     looks.assign(ch["eyes"], mats["eye"])
     bone_mat, bone_glow = looks.glow_bone()
     looks.assign(ch["skel_objs"], bone_mat)
-    floor = fx.wet_floor() if storm else props.floor(mats["floor"])
+    if spec.get("env") == "sky":
+        floor = props.floor(looks.principled("ground", tuple(spec.get("floor_color", (0.1, 0.35, 0.06))), 0.8), size=60)
+    else:
+        floor = fx.wet_floor() if storm else props.floor(mats["floor"])
     floor.location.z = -0.002
     if spec.get("hat"):
         top = max((ch["body"].matrix_world @ v.co).z for v in ch["body"].data.vertices)
@@ -142,6 +145,27 @@ def build_character(spec, frames, ctx):
     head = _anchor(rig, "head")
     if spec.get("rain"):
         fx.rain(frames, ctx["fps"], centre=(head.x, head.y, 0))
+    drop = spec.get("drop")
+    if drop:  # an apple falls past the face in slow motion and bounces
+        start = head + mathutils.Vector(drop.get("offset", (0.22, -0.35, 0.55)))
+        apple = fx.apple(start)
+        f0 = max(1, int(frames * drop.get("at", 0.15)))
+        g = 9.81 * drop.get("slow", 0.35) ** 2
+        props.key(apple, 1, location=start)
+        props.key(apple, f0, location=start)
+        z, vz, f, rot = start.z, 0.0, f0, 0.0
+        r = 0.045
+        while f < frames:
+            f += 1
+            vz -= g / ctx["fps"]
+            z += vz / ctx["fps"]
+            if z < r:
+                z, vz = r, -vz * 0.35
+            rot += 0.06
+            apple.location = (start.x, start.y, z)
+            apple.rotation_euler = (rot, rot * 0.4, 0)
+            apple.keyframe_insert("location", frame=f)
+            apple.keyframe_insert("rotation_euler", frame=f)
     b = spec.get("bolt")
     flash_pairs = []
     if b:
@@ -441,3 +465,7 @@ def build_count(spec, frames, ctx):
 
 BUILDERS = {"character": build_character, "joint": build_joint, "trophy": build_trophy,
             "compare": build_compare, "crowd": build_crowd, "count": build_count}
+
+from .space_shots import BUILDERS as _SPACE  # noqa: E402
+
+BUILDERS.update(_SPACE)

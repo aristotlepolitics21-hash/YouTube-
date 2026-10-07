@@ -231,6 +231,44 @@ def _rain(seconds) -> np.ndarray:
     return _st((x * 0.6 + drops) * env, 0.5)
 
 
+def _tick(f=2400, seconds=0.03) -> np.ndarray:
+    n = int(seconds * RATE)
+    t = np.arange(n) / RATE
+    x = np.sin(2 * np.pi * f * t) * np.exp(-t * 300) + _noise(n, 3) * np.exp(-t * 500) * 0.4
+    return _st(x, 0.5)
+
+
+def _thud() -> np.ndarray:
+    n = int(0.4 * RATE)
+    t = np.arange(n) / RATE
+    x = np.sin(2 * np.pi * (90 * np.exp(-t * 6) + 40) * t) * np.exp(-t * 14) + _noise(n, 6) * np.exp(-t * 80) * 0.3
+    return _st(x, 0.9)
+
+
+def _swell(seconds=2.0) -> np.ndarray:
+    n = int(seconds * RATE)
+    t = np.arange(n) / RATE
+    f = 38 + 30 * (1 - np.exp(-t * 2))
+    x = np.sin(2 * np.pi * np.cumsum(f) / RATE) + 0.4 * np.sin(2 * np.pi * np.cumsum(f * 2.01) / RATE)
+    env = np.minimum(1, t / (seconds * 0.6)) * np.minimum(1, (seconds - t) * 3)
+    return _st(x * env, 0.8)
+
+
+def _rumble(seconds=3.0) -> np.ndarray:
+    n = int(seconds * RATE)
+    t = np.arange(n) / RATE
+    x = _lowpass(_lowpass(_noise(n, 12), 120), 120) * 40 + np.sin(2 * np.pi * 32 * t) * 0.5
+    env = np.minimum(1, t * 2) * np.minimum(1, (seconds - t) * 2)
+    return _st(x * env, 0.8)
+
+
+def _ping() -> np.ndarray:
+    n = int(0.5 * RATE)
+    t = np.arange(n) / RATE
+    x = np.sin(2 * np.pi * 1760 * t) * np.exp(-t * 9) + 0.3 * np.sin(2 * np.pi * 2640 * t) * np.exp(-t * 12)
+    return _st(x, 0.4)
+
+
 def build_audio(spec: dict, plan: list[dict], work: Path) -> Path:
     total = plan[-1]["end"]
     n = int(total * RATE) + RATE
@@ -291,8 +329,31 @@ def build_audio(spec: dict, plan: list[dict], work: Path) -> Path:
                 gaps.append((edges[-1][1], 1.0))
             for g0, g1 in gaps:
                 place(_beep(dur * (g1 - g0) * 0.9), p["start"] + dur * g0 + 0.3, 0.35)
+        if v.get("drop"):  # matches build_character: apple starts ~2.2 m up, slowed gravity
+            g = 9.81 * v["drop"].get("slow", 0.35) ** 2
+            t_land = (2 * (2.2 - 0.045) / g) ** 0.5
+            place(_thud(), p["start"] + dur * v["drop"].get("at", 0.15) + t_land, 0.8)
+        if v.get("type") == "clocks":
+            for k, (rate, f) in enumerate(zip(v.get("rates", (1.0, 1.35)), (1800, 2600))):
+                t = 0.0
+                while t < dur:
+                    place(_tick(f), p["start"] + t, 0.45)
+                    t += 1 / rate
+        if v.get("type") == "gps" and v.get("mode", "signals") == "signals":
+            for i in range(3):
+                k = int(p["frames"] * 0.1) + i * 5
+                while k < p["frames"]:
+                    place(_ping(), p["start"] + k / fps, 0.35)
+                    k += int(fps * 0.9)
+        if v.get("type") == "spacetime" and v.get("mode") in ("sun", "orbits", "blackhole") \
+                and not v.get("bent_from_start"):
+            a, b = v.get("bend", (0.1, 0.6))
+            place(_swell(max(0.8, dur * (b - a) + 0.6)), p["start"] + dur * a, 0.7)
+        if v.get("type") == "spacetime" and v.get("mode") == "blackhole":
+            place(_rumble(dur), p["start"], 0.5)
         for e in shot.get("sfx", []):
-            clip = {"chime": _chime, "pop": _pop, "thunder": _thunder, "zap": _zap}.get(e["type"])
+            clip = {"chime": _chime, "pop": _pop, "thunder": _thunder, "zap": _zap, "thud": _thud,
+                    "ping": _ping, "swell": _swell, "rumble": _rumble}.get(e["type"])
             if clip:
                 place(clip(), p["start"] + dur * e.get("at", 0), e.get("gain", 0.6))
     music = _pad_section(total + 1, spec.get("music_mood", "reflective"), seed=11)[:n] * 0.35
