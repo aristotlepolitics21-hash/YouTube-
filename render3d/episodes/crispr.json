@@ -75,6 +75,15 @@
    "vo": "It works like a gallery of wanted posters. Each stored piece is a mugshot of a virus the bacterium has met before."
   },
   {
+   "scene": "cas9",
+   "params": {
+    "mode": "cut",
+    "az0": -0.3,
+    "az1": -0.1
+   },
+   "vo": "If that virus attacks again, the bacterium copies the matching poster into RNA. The RNA guides a protein called Cas9 along the DNA, and when it finds a match, Cas9 cuts it. The invader is destroyed."
+  },
+  {
    "scene": "virus_bacteria",
    "params": {
     "n": 3,
@@ -84,15 +93,6 @@
     "dist1": 8
    },
    "vo": "In 2007, scientists at a food company proved the idea, using bacteria that make yogurt and cheese. When those bacteria survived a virus, they stored a piece of it, and became resistant to that virus from then on."
-  },
-  {
-   "scene": "cas9",
-   "params": {
-    "mode": "cut",
-    "az0": -0.3,
-    "az1": -0.1
-   },
-   "vo": "If that virus attacks again, the bacterium copies the matching poster into RNA. The RNA guides a protein called Cas9 along the DNA, and when it finds a match, Cas9 cuts it. The invader is destroyed."
   },
   {
    "scene": "title_card",
