@@ -53,6 +53,12 @@ S("To read the brain in detail, scientists needed to listen to single neurons, u
   stage("studio", cam((0.5, -1.4, 0.7), (0.3, -1.2, 0.65), (0.4, 0, 0.6)), props=[P("neuron", (0, 0, 0.6), args={"fire": [0.2, 0.7]})], env_opts=NEURO))
 
 # ===================================================================== MOTOR CORTEX
+S("In nineteen seventy three, a computer scientist at UCLA, Jacques Vidal, coined the phrase brain-computer interface, and asked whether brain signals could control machines.",
+  stage("lab", cam((0.5, -1.8, 1.55), (0.35, -1.5, 1.5), "cast0.head"), cast=[who(SCIENTIST, pose=PRESENT)], props=[P("laptop", (0.6, -0.2, 0.9), scale=1.2)], env_opts=LAB),
+  still=True)
+S("The first brain-computer interfaces most people have heard of don't read thoughts at all. Cochlear implants turn sound into signals for the hearing nerve, and over a million people now use them.",
+  stage("studio", cam((0, -2.2, 0.9), (0.2, -1.9, 0.85), (0, 0, 0.6)), props=[P("eeg_cap", (0, 0, 0.6), scale=1.2), P("radio_tower", (1.2, 0.5, 0), scale=0.3)],
+        texts=[T("1,000,000+", (0, 0.3, 1.25), 0.15, pop=0.3)], env_opts=NEURO), still=True)
 S("A strip of brain called the motor cortex controls movement. Each part of it handles a different part of the body: hands, lips, legs.",
   stage("studio", BRAIN, props=[P("brain", (0, 0, 0.6), args={"glow": [[0, 0], [0.2, 6]], "region": "motor"})], texts=[T("MOTOR CORTEX", (0.5, 0, 1.15), 0.1, pop=0.3)],
         env_opts=NEURO), chapter="Listening to neurons")
@@ -67,6 +73,12 @@ S("So what if you could intercept the command, and send it somewhere else?",
   still=True, still_at=0.8)
 
 # ===================================================================== BRAINGATE
+S("In nineteen ninety eight, the neurologist Phil Kennedy implanted an electrode in a paralysed man named Johnny Ray, who learned to move a cursor with his brain signals.",
+  stage("lab", cam((0, -2.4, 1.4), (0.3, -2.0, 1.35), (0.3, 0.2, 1.0)), cast=[who(PATIENT, at=(-0.2, 0.4, 0), pose=SEATED)],
+        props=[TABLE, P("laptop", (0.35, -0.15, TOP), args={"glow": 0.1})], texts=[T("1998", (0.9, 0.9, 1.9), 0.2, pop=0.2)], env_opts=LAB), still=True)
+S("In two thousand and eight, monkeys at the University of Pittsburgh fed themselves marshmallows using a robotic arm, controlled directly by their brains.",
+  stage("studio", cam((0.8, -1.8, 1.0), (0.6, -1.5, 0.9), (0.3, 0, 0.5)), props=[P("robot_arm", args={"reach": [0.2, 0.7], "grip": 0.75}), P("bread", (0.5, -0.4, 0), scale=0.3)],
+        env_opts=NEURO))
 S("The tool for that job is a tiny chip called the Utah array: four millimetres across, with a hundred hair-thin needles that sit in the brain's surface.",
   stage("studio", cam((0.5, -1.0, 0.5), (0.35, -0.8, 0.4), (0, 0, 0.0)), props=[P("electrode_array", (0, 0, 0.1), args={"glow": [[0, 0], [0.4, 3]]})], env_opts=NEURO),
   chapter="BrainGate")
@@ -83,6 +95,9 @@ S("It was the first time in fifteen years she had served herself a drink.",
   stage("lab", cam((0.5, -1.4, 1.5), (0.4, -1.2, 1.48), "cast0.head", lens=45), cast=[who(PATIENT2, at=(-0.2, 0.4, 0), pose=SEATED, scale=0.95)], env_opts=LAB), still=True)
 
 # ===================================================================== WRITING & SPEECH
+S("Signals can flow the other way too. In twenty sixteen, Nathan Copeland, paralysed in a car crash, felt pressure in his fingers when a robotic hand was touched, thanks to tiny pulses sent into his brain. He later fist-bumped President Obama with it.",
+  stage("lab", cam((0.8, -2.0, 1.4), (0.6, -1.7, 1.3), (0.4, 0.2, 1.0)), cast=[who(PATIENT, at=(-0.2, 0.4, 0), pose=SEATED)],
+        props=[TABLE, P("robot_arm", (0.5, -0.1, TOP), scale=0.6, args={"reach": [0.2, 0.6], "grip": 0.7})], env_opts=LAB), still=True)
 S("Then the machines learned to write. In twenty twenty one, a Stanford team asked a paralysed man to imagine writing letters by hand.",
   stage("lab", cam((0, -2.4, 1.4), (0.3, -2.0, 1.35), (0.3, 0.2, 1.0)), cast=[who(PATIENT, at=(-0.2, 0.4, 0), pose=SEATED)],
         props=[TABLE, P("laptop", (0.35, -0.15, TOP), args={"glow": 0.1}), P("notebook", (-0.15, -0.15, TOP))], env_opts=LAB), chapter="Writing and speaking")
@@ -105,12 +120,23 @@ S("In twenty twenty four, its first patient, Noland Arbaugh, paralysed in a divi
   CHAIR(PATIENT, [P("dice", (-0.45, -0.2, TOP), args={"n": 1, "roll": [0, 0.01]})]))
 S("Another company, Synchron, avoids open brain surgery. Its device is a tiny mesh tube, threaded up through a blood vessel from the neck, to sit right next to the motor cortex.",
   stage("studio", cam((0.6, -1.4, 0.8), (0.4, -1.1, 0.7), (0, 0, 0.6)), props=[P("stent", (0, 0, 0.6), spin=["x", 60])], env_opts=NEURO))
+S("Most implants still need a cable through the skull, connected to a computer. Newer devices are wireless, charging through the skin like a phone.",
+  stage("studio", cam((0.5, -1.0, 0.5), (0.35, -0.8, 0.4), (0, 0, 0.0)), props=[P("electrode_array", (0, 0, 0.1), args={"glow": [[0, 0], [0.3, 2]]}), P("phone", (0.6, 0.1, 0.1), rot=[-70, 0, 0])],
+        env_opts=NEURO), still=True)
 S("Patients with Synchron implants have sent texts and emails, and shopped online, by thought alone.",
   CHAIR(PATIENT2))
 
 # ===================================================================== READING THOUGHTS?
+S("In twenty twenty three, a Dutch man named Gert-Jan Oskam, paralysed in a cycling accident, walked again, using implants that read his brain's intentions and passed them wirelessly to a stimulator on his spinal cord. The team called it a digital bridge.",
+  stage("sky", cam((0, -3.6, 1.4), (0.3, -3.2, 1.3), (0, 0, 1.0)), cast=[who(PATIENT, pose=STAND, walk=[[0, [-0.6, 0, 0]], [1, [0.4, 0, 0]]])],
+        env_opts={"sky": {"horizon": [0.85, 0.85, 0.9], "zenith": [0.25, 0.45, 0.85]}, "floor": [0.3, 0.5, 0.2]}))
+S("Similar implants, called deep brain stimulators, are already used by more than a hundred and sixty thousand people, mostly to calm the tremors of Parkinson's disease.",
+  stage("studio", BRAIN, props=[P("brain", (0, 0, 0.6), args={"xray": True}), P("wire", (0.2, 0, 0.75), rot=[0, 60, 0], args={"length": 0.6, "glow": [[0, 0], [0.3, 4]]})],
+        env_opts=NEURO), still=True)
 S("What about reading thoughts without surgery? Brain scanners called fMRI can see which areas of the brain are working, by tracking blood flow.",
   stage("lab", cam((2.0, -3.5, 1.8), (1.6, -3.0, 1.6), (0, -0.6, 1.1)), props=[P("mri_machine", args={"slide": [0.2, 0.8]})], env_opts=LAB), chapter="Reading thoughts?")
+S("As early as twenty eleven, a Berkeley team used fMRI to make blurry reconstructions of movie clips that volunteers were watching.",
+  stage("studio", cam((0, -2.4, 0.9), (0, -2.1, 0.85), (0, 0, 0.75)), props=[P("pixel_image", (0, 0, 0.3))], env_opts=NEURO), still=True)
 S("In twenty twenty three, a team at the University of Texas trained an AI on many hours of a volunteer's brain scans as they listened to podcasts. It could then produce the rough gist of new stories they heard, or even imagined.",
   stage("lab", cam((2.0, -3.5, 1.8), (1.6, -3.0, 1.6), (0, -0.6, 1.1)), props=[P("mri_machine"), P("spikes", (0, -2.0, 1.8), scale=0.6)], env_opts=LAB))
 S("It only worked on people who had spent hours training it, and who cooperated. When volunteers thought about something else on purpose, it failed. True mind reading is still science fiction.",

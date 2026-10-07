@@ -794,6 +794,193 @@
   },
   {
    "id": "s010",
+   "line": "In nineteen seventy three, a computer scientist at UCLA, Jacques Vidal, coined the phrase brain-computer interface, and asked whether brain signals could control machines.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.25,
+       0.18,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.88,
+        0.9,
+        0.93
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "laptop",
+      "at": [
+       0.6,
+       -0.2,
+       0.9
+      ],
+      "scale": 1.2
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s011",
+   "line": "The first brain-computer interfaces most people have heard of don't read thoughts at all. Cochlear implants turn sound into signals for the hearing nerve, and over a million people now use them.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eeg_cap",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "scale": 1.2
+     },
+     {
+      "prop": "radio_tower",
+      "at": [
+       1.2,
+       0.5,
+       0
+      ],
+      "scale": 0.3
+     }
+    ],
+    "texts": [
+     {
+      "text": "1,000,000+",
+      "at": [
+       0,
+       0.3,
+       1.25
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      0.9
+     ],
+     "to": [
+      0.2,
+      -1.9,
+      0.85
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.04,
+      0.16
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s012",
    "line": "A strip of brain called the motor cortex controls movement. Each part of it handles a different part of the body: hands, lips, legs.",
    "visual": {
     "type": "stage",
@@ -873,7 +1060,7 @@
    "chapter": "Listening to neurons"
   },
   {
-   "id": "s011",
+   "id": "s013",
    "line": "In the nineteen eighties, the neuroscientist Apostolos Georgopoulos showed that when a monkey moves its arm, groups of neurons vote on the direction. Average their votes, and you can predict the movement.",
    "visual": {
     "type": "stage",
@@ -934,7 +1121,7 @@
    }
   },
   {
-   "id": "s012",
+   "id": "s014",
    "line": "The key point: those signals keep firing even in people who are paralysed. The brain still sends the command. It just never reaches the muscles.",
    "visual": {
     "type": "stage",
@@ -1033,7 +1220,7 @@
    }
   },
   {
-   "id": "s013",
+   "id": "s015",
    "line": "So what if you could intercept the command, and send it somewhere else?",
    "visual": {
     "type": "stage",
@@ -1092,7 +1279,207 @@
    "still_at": 0.8
   },
   {
-   "id": "s014",
+   "id": "s016",
+   "line": "In nineteen ninety eight, the neurologist Phil Kennedy implanted an electrode in a paralysed man named Johnny Ray, who learned to move a cursor with his brain signals.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.2,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.45,
+        0.7
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       -0.2,
+       0.4,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -35,
+        "R": -35
+       },
+       "arm_forward": {
+        "L": 30,
+        "R": 30
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 5
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "laptop",
+      "at": [
+       0.35,
+       -0.15,
+       0.875
+      ],
+      "args": {
+       "glow": 0.1
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "1998",
+      "at": [
+       0.9,
+       0.9,
+       1.9
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.4
+     ],
+     "to": [
+      0.3,
+      -2.0,
+      1.35
+     ],
+     "target": [
+      0.3,
+      0.2,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s017",
+   "line": "In two thousand and eight, monkeys at the University of Pittsburgh fed themselves marshmallows using a robotic arm, controlled directly by their brains.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "robot_arm",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "reach": [
+        0.2,
+        0.7
+       ],
+       "grip": 0.75
+      }
+     },
+     {
+      "prop": "bread",
+      "at": [
+       0.5,
+       -0.4,
+       0
+      ],
+      "scale": 0.3
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.8,
+      -1.8,
+      1.0
+     ],
+     "to": [
+      0.6,
+      -1.5,
+      0.9
+     ],
+     "target": [
+      0.3,
+      0,
+      0.5
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.04,
+      0.16
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s018",
    "line": "The tool for that job is a tiny chip called the Utah array: four millimetres across, with a hundred hair-thin needles that sit in the brain's surface.",
    "visual": {
     "type": "stage",
@@ -1155,7 +1542,7 @@
    "chapter": "BrainGate"
   },
   {
-   "id": "s015",
+   "id": "s019",
    "line": "In two thousand and four, Matthew Nagle, a young man paralysed from the neck down after a knife attack, had one implanted, in a research trial called BrainGate.",
    "visual": {
     "type": "stage",
@@ -1317,7 +1704,7 @@
    "still": true
   },
   {
-   "id": "s016",
+   "id": "s020",
    "line": "Just by imagining moving his hand, he could move a cursor on a screen, open emails, and play a simple video game.",
    "visual": {
     "type": "stage",
@@ -1434,7 +1821,7 @@
    }
   },
   {
-   "id": "s017",
+   "id": "s021",
    "line": "In twenty twelve, a woman named Cathy Hutchinson, paralysed by a stroke fifteen years earlier, used a BrainGate implant to control a robotic arm, and lift a bottle of coffee to her lips.",
    "visual": {
     "type": "stage",
@@ -1568,7 +1955,7 @@
    }
   },
   {
-   "id": "s018",
+   "id": "s022",
    "line": "It was the first time in fifteen years she had served herself a drink.",
    "visual": {
     "type": "stage",
@@ -1663,7 +2050,130 @@
    "still": true
   },
   {
-   "id": "s019",
+   "id": "s023",
+   "line": "Signals can flow the other way too. In twenty sixteen, Nathan Copeland, paralysed in a car crash, felt pressure in his fingers when a robotic hand was touched, thanks to tiny pulses sent into his brain. He later fist-bumped President Obama with it.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.2,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.45,
+        0.7
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       -0.2,
+       0.4,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -35,
+        "R": -35
+       },
+       "arm_forward": {
+        "L": 30,
+        "R": 30
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 5
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "robot_arm",
+      "at": [
+       0.5,
+       -0.1,
+       0.875
+      ],
+      "scale": 0.6,
+      "args": {
+       "reach": [
+        0.2,
+        0.6
+       ],
+       "grip": 0.7
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.8,
+      -2.0,
+      1.4
+     ],
+     "to": [
+      0.6,
+      -1.7,
+      1.3
+     ],
+     "target": [
+      0.4,
+      0.2,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s024",
    "line": "Then the machines learned to write. In twenty twenty one, a Stanford team asked a paralysed man to imagine writing letters by hand.",
    "visual": {
     "type": "stage",
@@ -1789,7 +2299,7 @@
    "chapter": "Writing and speaking"
   },
   {
-   "id": "s020",
+   "id": "s025",
    "line": "An AI decoder turned his imagined pen strokes into text on a screen, at around ninety characters a minute, close to the speed of texting on a phone.",
    "visual": {
     "type": "stage",
@@ -1868,7 +2378,7 @@
    }
   },
   {
-   "id": "s021",
+   "id": "s026",
    "line": "Speech came next. In twenty twenty three, two teams in California decoded attempted speech, directly from the brains of women who had lost the ability to speak.",
    "visual": {
     "type": "stage",
@@ -1947,7 +2457,7 @@
    }
   },
   {
-   "id": "s022",
+   "id": "s027",
    "line": "Pat Bennett, who has ALS, a disease that slowly paralyses the body, could communicate at about sixty words a minute. A second woman, Ann Johnson, paralysed by a stroke, spoke through a digital avatar on screen.",
    "visual": {
     "type": "stage",
@@ -2077,7 +2587,7 @@
    }
   },
   {
-   "id": "s023",
+   "id": "s028",
    "line": "In twenty twenty four, a team at UC Davis gave a man with ALS a voice that sounded like his own, recreated from old recordings. When he first heard it, he and his family wept.",
    "visual": {
     "type": "stage",
@@ -2171,7 +2681,7 @@
    "still": true
   },
   {
-   "id": "s024",
+   "id": "s029",
    "line": "Private companies have joined the race. One of them, Neuralink, founded by Elon Musk, uses a robot to sew ultra-thin threads into the brain.",
    "visual": {
     "type": "stage",
@@ -2249,7 +2759,7 @@
    "chapter": "The race"
   },
   {
-   "id": "s025",
+   "id": "s030",
    "line": "In twenty twenty four, its first patient, Noland Arbaugh, paralysed in a diving accident, used his implant to play online chess and video games, controlling the cursor with his thoughts.",
    "visual": {
     "type": "stage",
@@ -2381,7 +2891,7 @@
    }
   },
   {
-   "id": "s026",
+   "id": "s031",
    "line": "Another company, Synchron, avoids open brain surgery. Its device is a tiny mesh tube, threaded up through a blood vessel from the neck, to sit right next to the motor cortex.",
    "visual": {
     "type": "stage",
@@ -2435,7 +2945,83 @@
    }
   },
   {
-   "id": "s027",
+   "id": "s032",
+   "line": "Most implants still need a cable through the skull, connected to a computer. Newer devices are wireless, charging through the skin like a phone.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "electrode_array",
+      "at": [
+       0,
+       0,
+       0.1
+      ],
+      "args": {
+       "glow": [
+        [
+         0,
+         0
+        ],
+        [
+         0.3,
+         2
+        ]
+       ]
+      }
+     },
+     {
+      "prop": "phone",
+      "at": [
+       0.6,
+       0.1,
+       0.1
+      ],
+      "rot": [
+       -70,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.0,
+      0.5
+     ],
+     "to": [
+      0.35,
+      -0.8,
+      0.4
+     ],
+     "target": [
+      0,
+      0,
+      0.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.04,
+      0.16
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s033",
    "line": "Patients with Synchron implants have sent texts and emails, and shopped online, by thought alone.",
    "visual": {
     "type": "stage",
@@ -2552,7 +3138,208 @@
    }
   },
   {
-   "id": "s028",
+   "id": "s034",
+   "line": "In twenty twenty three, a Dutch man named Gert-Jan Oskam, paralysed in a cycling accident, walked again, using implants that read his brain's intentions and passed them wirelessly to a stimulator on his spinal cord. The team called it a digital bridge.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.2,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.45,
+        0.7
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "walk": [
+       [
+        0,
+        [
+         -0.6,
+         0,
+         0
+        ]
+       ],
+       [
+        1,
+        [
+         0.4,
+         0,
+         0
+        ]
+       ]
+      ]
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.6,
+      1.4
+     ],
+     "to": [
+      0.3,
+      -3.2,
+      1.3
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.85,
+       0.85,
+       0.9
+      ],
+      "zenith": [
+       0.25,
+       0.45,
+       0.85
+      ]
+     },
+     "floor": [
+      0.3,
+      0.5,
+      0.2
+     ]
+    }
+   }
+  },
+  {
+   "id": "s035",
+   "line": "Similar implants, called deep brain stimulators, are already used by more than a hundred and sixty thousand people, mostly to calm the tremors of Parkinson's disease.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "brain",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "xray": true
+      }
+     },
+     {
+      "prop": "wire",
+      "at": [
+       0.2,
+       0,
+       0.75
+      ],
+      "rot": [
+       0,
+       60,
+       0
+      ],
+      "args": {
+       "length": 0.6,
+       "glow": [
+        [
+         0,
+         0
+        ],
+        [
+         0.3,
+         4
+        ]
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.9,
+      -1.6,
+      0.9
+     ],
+     "to": [
+      0.6,
+      -1.3,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.04,
+      0.16
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s036",
    "line": "What about reading thoughts without surgery? Brain scanners called fMRI can see which areas of the brain are working, by tracking blood flow.",
    "visual": {
     "type": "stage",
@@ -2609,7 +3396,58 @@
    "chapter": "Reading thoughts?"
   },
   {
-   "id": "s029",
+   "id": "s037",
+   "line": "As early as twenty eleven, a Berkeley team used fMRI to make blurry reconstructions of movie clips that volunteers were watching.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "pixel_image",
+      "at": [
+       0,
+       0,
+       0.3
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      0.9
+     ],
+     "to": [
+      0,
+      -2.1,
+      0.85
+     ],
+     "target": [
+      0,
+      0,
+      0.75
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.04,
+      0.16
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s038",
    "line": "In twenty twenty three, a team at the University of Texas trained an AI on many hours of a volunteer's brain scans as they listened to podcasts. It could then produce the rough gist of new stories they heard, or even imagined.",
    "visual": {
     "type": "stage",
@@ -2668,7 +3506,7 @@
    }
   },
   {
-   "id": "s030",
+   "id": "s039",
    "line": "It only worked on people who had spent hours training it, and who cooperated. When volunteers thought about something else on purpose, it failed. True mind reading is still science fiction.",
    "visual": {
     "type": "stage",
@@ -2727,7 +3565,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s031",
+   "id": "s040",
    "line": "But it raises new questions. Who owns the data from your brain? Could it be sold, hacked, or used against you?",
    "visual": {
     "type": "stage",
@@ -2811,7 +3649,7 @@
    "chapter": "Neural privacy"
   },
   {
-   "id": "s032",
+   "id": "s041",
    "line": "In twenty twenty one, Chile became the first country to protect brain activity in its constitution. In twenty twenty four, the US state of Colorado passed a law protecting neural data.",
    "visual": {
     "type": "stage",
@@ -2865,7 +3703,7 @@
    "still": true
   },
   {
-   "id": "s033",
+   "id": "s042",
    "line": "Implants also carry the risks of brain surgery, and some early devices have had problems. In Neuralink's first patient, many of the threads pulled back out of the brain within weeks, although the team recovered much of the performance with software.",
    "visual": {
     "type": "stage",
@@ -2916,7 +3754,7 @@
    "still": true
   },
   {
-   "id": "s034",
+   "id": "s043",
    "line": "A century ago, Hans Berger could barely detect a whisper of brain electricity.",
    "visual": {
     "type": "stage",
@@ -3036,7 +3874,7 @@
    "chapter": "Close"
   },
   {
-   "id": "s035",
+   "id": "s044",
    "line": "Today, machines can turn the signals in a paralysed person's brain into words, movement and a voice.",
    "visual": {
     "type": "stage",
@@ -3169,7 +4007,7 @@
    }
   },
   {
-   "id": "s036",
+   "id": "s045",
    "line": "The machine that can read your brain isn't coming. For a small number of people, it's already here, and it's giving them back their lives.",
    "visual": {
     "type": "stage",
