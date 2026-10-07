@@ -1553,6 +1553,202 @@ def birds(frames, n=6, seed=3, area=3.0):
         props.key(b, frames, location=(b.location.x + rng.uniform(1, 2), b.location.y, b.location.z + 0.2))
     return root
 
+
+# ------------------------------------------------------------------ power grid
+def pylons(frames, n=4, spacing=4.0, current=None, height=3.6):
+    """Lattice transmission towers along +Y with sagging lines; `current` = [t0, t1] sends glowing pulses along them."""
+    root = empty("pylons")
+    steel = mat("pylon", (0.6, 0.62, 0.66), 0.35, 0.9)
+    tops = []
+    for i in range(n):
+        y = i * spacing
+        for sx in (-1, 1):
+            for sy in (-1, 1):
+                curve_obj("leg", [V((sx * 0.55, y + sy * 0.55, 0)), V((sx * 0.12, y + sy * 0.12, height))], 0.02, steel, root)
+        for z in (height * 0.3, height * 0.55, height * 0.8):
+            r = 0.55 - 0.43 * z / height
+            for sx in (-1, 1):
+                curve_obj("brace", [V((sx * r, y - r, z)), V((-sx * r, y + r, z + height * 0.12))], 0.01, steel, root)
+        for zc, w in ((height, 1.6), (height * 0.82, 1.2)):
+            box("arm", (0, y, zc), (w * 2, 0.08, 0.08), steel, parent=root)
+            tops.append([(sx * w * 0.95, y, zc - 0.25) for sx in (-1, 1)])
+    wire_m = mat("cable", (0.15, 0.15, 0.17), 0.4, 0.8, emit=0.0, emit_color=(0.4, 0.85, 1.0))
+    for k in range(4):
+        pts = []
+        for i in range(n - 1):
+            a, b = V(tops[2 * i + k // 2][k % 2]), V(tops[2 * (i + 1) + k // 2][k % 2])
+            for u in range(21):
+                t = u / 20
+                p = a.lerp(b, t)
+                p.z -= 0.45 * math.sin(math.pi * t)
+                pts.append(p)
+        curve_obj(f"line{k}", pts, 0.012, wire_m, root)
+    if current:
+        p = wire_m.node_tree.nodes["Principled BSDF"]
+        glow_keys(p.inputs["Emission Strength"], frames, [(0, 0), (current[0], 0), (current[1], 6)])
+        pm, _ = fx.emissive("pulse", (0.5, 0.9, 1.0), 12)
+        for k in range(6):
+            pulse = sph("pulse", (0, 0, 0), 0.06, pm, parent=root)
+            off = k / 6
+            for f in range(1, frames + 1, 2):
+                u = ((f / frames - current[0]) / max(0.05, 1 - current[0]) * 2 + off) % 1
+                y = u * (n - 1) * spacing
+                pulse.location = (-1.52, y, height - 0.25 - 0.45 * math.sin(math.pi * ((y / spacing) % 1)))
+                pulse.keyframe_insert("location", frame=f)
+            visible_from(pulse, frames, current[0])
+    return root
+
+
+def transformer(frames, step="up", glow=(0.2, 1.0)):
+    """Iron core with a few-turn primary and many-turn secondary (or the reverse for step-down)."""
+    root = empty("transformer")
+    iron = mat("core", (0.3, 0.3, 0.33), 0.4, 0.8)
+    box("core_top", (0, 0, 0.55), (0.8, 0.12, 0.12), iron, parent=root)
+    box("core_bottom", (0, 0, 0.05), (0.8, 0.12, 0.12), iron, parent=root)
+    for x in (-0.34, 0.34):
+        box("core_leg", (x, 0, 0.3), (0.12, 0.12, 0.62), iron, parent=root)
+    few, many = (6, 18) if step == "up" else (18, 6)
+    for x, turns, col in ((-0.34, few, (1.0, 0.45, 0.15)), (0.34, many, (0.95, 0.6, 0.2))):
+        c = coil(frames, turns=turns, radius=0.1, length=0.42, axis="z", glow=[[0, 0], [glow[0], 0], [glow[1], 3]], color=col, wire=0.009)
+        c.parent = root
+        c.location = (x, 0, 0.3)
+    for txt, x, colr in (("LOW V", -0.34, (0.4, 0.85, 1.0)), ("HIGH V", 0.34, (1.0, 0.45, 0.3))) if step == "up" else \
+            (("HIGH V", -0.34, (1.0, 0.45, 0.3)), ("LOW V", 0.34, (0.4, 0.85, 1.0))):
+        t = fx.text(txt, mat("tl", colr, 0.4, emit=1.5), (x, -0.15, 0.8), size=0.07, depth=0.005)
+        t.parent = root
+    return root
+
+
+def waterfall(frames, width=6.0, height=3.0):
+    """A curtain of falling water over a rock ledge, with rising mist."""
+    root = empty("falls")
+    rock = mat("rock", (0.25, 0.22, 0.2), 0.9)
+    box("ledge", (0, 1.5, height / 2), (width + 2, 3, height), rock, 0.2, root)
+    box("river", (0, 4, height + 0.02), (width + 2, 3, 0.04), mat("river", (0.1, 0.35, 0.45), 0.1), parent=root)
+    box("pool", (0, -2.0, 0.02), (width + 6, 4, 0.04), mat("pool", (0.08, 0.3, 0.4), 0.08), parent=root)
+    wm = bpy.data.materials.new("falling_water")
+    wm.use_nodes = True
+    nt = wm.node_tree
+    pr = nt.nodes["Principled BSDF"]
+    tc = nt.nodes.new("ShaderNodeTexCoord")
+    mp = nt.nodes.new("ShaderNodeMapping")
+    nt.links.new(tc.outputs["Object"], mp.inputs["Vector"])
+    noise = nt.nodes.new("ShaderNodeTexNoise")
+    noise.inputs["Scale"].default_value = 6
+    noise.inputs["Detail"].default_value = 6
+    nt.links.new(mp.outputs[0], noise.inputs["Vector"])
+    mp.inputs["Scale"].default_value = (4, 0.35, 4)
+    ramp = nt.nodes.new("ShaderNodeValToRGB")
+    ramp.color_ramp.elements[0].color = (0.05, 0.3, 0.45, 1)
+    ramp.color_ramp.elements[1].color = (0.85, 0.95, 1.0, 1)
+    nt.links.new(noise.outputs["Fac"], ramp.inputs["Fac"])
+    nt.links.new(ramp.outputs["Color"], pr.inputs["Base Color"])
+    pr.inputs["Roughness"].default_value = 0.2
+    for f, z in ((1, 0.0), (frames, 3.0)):
+        mp.inputs["Location"].default_value = (0, z, 0)
+        mp.inputs["Location"].keyframe_insert("default_value", frame=f)
+    bpy.ops.mesh.primitive_plane_add(size=1, location=(0, -0.05, height / 2))
+    sheet = bpy.context.active_object
+    sheet.scale = (width, height, 1)
+    sheet.rotation_euler = (R(85), 0, 0)
+    sheet.data.materials.append(wm)
+    sheet.parent = root
+    mist = mat("mist", (1, 1, 1), 0.9, alpha=0.35)
+    rng = random.Random(3)
+    for k in range(10):
+        p = sph("mist", (rng.uniform(-width / 2, width / 2), -0.6, 0.3), rng.uniform(0.4, 0.8), mist, parent=root)
+        off = rng.uniform(0, 1)
+        for f in range(1, frames + 1, 4):
+            u = (f / frames + off) % 1
+            props.key(p, f, location=(p.location.x, -0.6 - u * 0.5, 0.2 + u * 1.2))
+    return root
+
+
+def waveform(frames, kind="ac", length=2.0, draw=(0.05, 0.7), color=None):
+    root = empty("waveform")
+    col = color or ((1.0, 0.5, 0.2) if kind == "ac" else (0.4, 0.85, 1.0))
+    m, _ = fx.emissive("wave_" + kind, col, 4)
+    pts = []
+    for i in range(201):
+        u = i / 200
+        z = 0.25 * math.sin(2 * math.pi * 4 * u) if kind == "ac" else 0.2
+        pts.append(V((u * length - length / 2, 0, z)))
+    c = curve_obj("wave_" + kind, pts, 0.012, m, root)
+    draw_on(c, frames, draw[0], draw[1])
+    am = mat("axis", (0.8, 0.8, 0.9), 0.4, emit=0.5)
+    cyl("axis", (0, 0, 0), 0.004, length, am, rot=(0, R(90), 0), parent=root)
+    t = fx.text("AC" if kind == "ac" else "DC", mat("wl", col, 0.4, emit=2), (-length / 2 - 0.25, 0, 0.0), size=0.18, depth=0.02)
+    t.parent = root
+    return root
+
+
+def tesla_coil(frames, sparks=(0.2, 0.4, 0.6, 0.8)):
+    root = empty("tesla_coil")
+    base = mat("tc_base", (0.35, 0.2, 0.1), 0.5)
+    box("tc_base", (0, 0, 0.1), (0.6, 0.6, 0.2), base, 0.01, root)
+    c = coil(frames, turns=40, radius=0.12, length=1.0, axis="z", color=(0.95, 0.55, 0.2), wire=0.004)
+    c.parent = root
+    c.location = (0, 0, 0.75)
+    cyl("tc_tube", (0, 0, 0.75), 0.115, 1.0, mat("tube", (0.2, 0.25, 0.2), 0.5), parent=root)
+    props.torus("toroid", (0, 0, 1.35), 0.3, 0.1, mat("toroid", (0.8, 0.82, 0.86), 0.2, 1.0)).parent = root
+    rng = random.Random(5)
+    for i, t in enumerate(sparks):
+        a = rng.uniform(0, 2 * math.pi)
+        fx.bolt(V((0.35 * math.cos(a), 0.35 * math.sin(a), 1.35)), V((1.2 * math.cos(a), 1.2 * math.sin(a), rng.uniform(0.6, 1.6))),
+                key_frac(frames, t), seed=30 + i, width=0.008, branches=3, color=(0.7, 0.6, 1.0), hold=3)
+    return root
+
+
+def houses(frames, n=6, on=(0.2, 0.8), seed=2):
+    """A street of little houses whose windows light up one after another."""
+    rng = random.Random(seed)
+    root = empty("houses")
+    pal = [(0.75, 0.55, 0.4), (0.6, 0.65, 0.75), (0.8, 0.75, 0.6), (0.55, 0.7, 0.55), (0.75, 0.5, 0.5)]
+    roof = mat("roof", (0.35, 0.12, 0.1), 0.6)
+    for i in range(n):
+        x = (i - (n - 1) / 2) * 1.4
+        box("house", (x, 0, 0.5), (1.1, 1.0, 1.0), mat(f"wall{i}", rng.choice(pal), 0.7), 0.01, root)
+        bpy.ops.mesh.primitive_cone_add(vertices=4, radius1=0.85, depth=0.6, location=(x, 0, 1.3), rotation=(0, 0, R(45)))
+        r = bpy.context.active_object
+        r.scale = (1.0, 0.85, 1)
+        r.data.materials.append(roof)
+        r.parent = root
+        wmat = mat(f"window{i}", (0.15, 0.15, 0.2), 0.3, emit=0.0, emit_color=(1.0, 0.75, 0.35))
+        for wx in (-0.25, 0.25):
+            box("window", (x + wx, -0.51, 0.6), (0.25, 0.02, 0.3), wmat, parent=root)
+        t = on[0] + (on[1] - on[0]) * i / max(1, n - 1)
+        glow_keys(wmat.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"], frames, [(0, 0), (t, 0), (t + 0.02, 6)])
+    return root
+
+
+def induction_motor(frames, spin=(0.2, 1.0), turns=4):
+    """Stator coils around a rotor; a rotating glow shows the rotating magnetic field dragging the rotor round."""
+    root = empty("motor")
+    steel = mat("stator", (0.45, 0.47, 0.5), 0.35, 0.9)
+    props.torus("stator", (0, 0, 0.5), 0.5, 0.08, steel, rotation=(R(90), 0, 0)).parent = root
+    glows = []
+    for k in range(6):
+        a = R(k * 60)
+        c = coil(frames, turns=8, radius=0.07, length=0.16, axis="x", color=(0.95, 0.5, 0.2), wire=0.008)
+        c.parent = root
+        c.location = (0.36 * math.cos(a), 0, 0.5 + 0.36 * math.sin(a))
+        c.rotation_euler = (0, -a, 0)
+        gm, gs = fx.emissive(f"phase{k}", (0.4, 0.85, 1.0), 0)
+        g = sph("pole_glow", (0.36 * math.cos(a), -0.02, 0.5 + 0.36 * math.sin(a)), 0.06, gm, parent=root)
+        for f in range(1, frames + 1, 2):
+            phase = f / frames * turns * 2 * math.pi - a
+            gs.default_value = max(0.0, math.cos(phase)) ** 3 * 8 * (f / frames > spin[0])
+            gs.keyframe_insert("default_value", frame=f)
+    rot = child(empty("rotor"), root)
+    rot.location = (0, 0, 0.5)
+    cyl("rotor", (0, 0, 0), 0.22, 0.3, mat("rotor", (0.75, 0.6, 0.35), 0.3, 1.0), rot=(R(90), 0, 0), parent=rot)
+    for k in range(10):
+        a = R(k * 36)
+        box("bar", (0.2 * math.cos(a), 0, 0.2 * math.sin(a)), (0.03, 0.32, 0.03), mat("cu_bar", COPPER, 0.3, 1.0), parent=rot)
+    props.key(rot, key_frac(frames, spin[0]), rotation_euler=(0, 0, 0))
+    props.key(rot, frames, rotation_euler=(0, R(-360 * turns * 0.95 * (1 - spin[0])), 0))
+    return root
+
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",
