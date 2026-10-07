@@ -128,6 +128,14 @@
    "highlight": "#ffb347"
   },
   {
+   "scene": "dynamo",
+   "params": {
+    "az0": -0.8,
+    "az1": -0.5
+   },
+   "vo": "Notice that energy is never created out of nothing. It only changes form. The wind's motion becomes the spinning of the blades, and the spinning becomes electricity. William's windmill was a machine for changing energy from one form into another."
+  },
+  {
    "scene": "bicycle",
    "params": {},
    "vo": "William realized he already knew a small version of this machine. Some bicycles had a dynamo: a little generator pressed against the wheel, that powered the headlight while you pedaled."
@@ -205,6 +213,15 @@
     "az1": 0.8
    },
    "vo": "Shaping the blades was tricky. Too flat, and they wouldn't catch the wind. Too curved, and they'd be inefficient. He bent them by hand until they had just the right twist."
+  },
+  {
+   "scene": "pvc_blades",
+   "params": {
+    "flatten": 1,
+    "az0": -0.6,
+    "az1": -0.2
+   },
+   "vo": "Windmill blades work a bit like the wings of an airplane. As air flows over the curved surface, it pushes on the blade unevenly, and that push turns the rotor."
   },
   {
    "scene": "build",
@@ -308,6 +325,16 @@
    "vo": "Soon neighbors were lining up to charge their mobile phones. He later rebuilt the windmill on a taller tower, around twelve meters high, to catch stronger winds."
   },
   {
+   "scene": "village",
+   "params": {
+    "mode": "night",
+    "windmill": true,
+    "az0": 0.3,
+    "az1": 0.6
+   },
+   "vo": "His achievement mattered beyond one village. Even today, hundreds of millions of people in sub-Saharan Africa live without electricity. Cheap, local power from the wind and sun could change their lives too."
+  },
+  {
    "scene": "pump",
    "params": {},
    "vo": "He went on to build a solar-powered water pump for the village, and a windmill to help pump water for irrigation, so families could grow food even in the dry season.",
@@ -346,6 +373,14 @@
     "az1": 0.2
    },
    "vo": "The audience gave him a standing ovation. Within days, people around the world were sharing his story, and offering to help him return to school."
+  },
+  {
+   "scene": "stage",
+   "params": {
+    "az0": -0.4,
+    "az1": -0.2
+   },
+   "vo": "He returned to TED two years later, and gave a message to anyone facing a problem like his: trust yourself, and believe. Whatever happens, don't give up."
   },
   {
    "scene": "title_card",
