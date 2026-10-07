@@ -66,6 +66,12 @@ S("Newspapers predicted it would soon walk, talk and see. It couldn't. Its singl
   stage("studio", cam((0.2, -1.1, 0.8), (0.1, -0.95, 0.75), (0, 0, 0.1)), props=[P("newspapers", args={"headline": "ELECTRONIC BRAIN TEACHES ITSELF", "n": 3})]), still=True, still_at=0.7)
 
 # ===================================================================== DEEP NETWORKS
+S("Funding dried up. Researchers later called these lean years the AI winters.",
+  stage("sky", cam((0, -3.0, 1.4), (0.3, -2.6, 1.3), (0, 0, 1.0)), props=[P("eniac", (0, 1.5, 0), scale=0.5, args={"panels": 4, "blink": False})],
+        env_opts={"sky": {"horizon": [0.7, 0.75, 0.85], "zenith": [0.3, 0.4, 0.6]}, "floor": [0.85, 0.87, 0.9]}), still=True)
+S("In nineteen eighty, the Japanese researcher Kunihiko Fukushima built the Neocognitron, a layered network directly inspired by Hubel and Wiesel's discoveries.",
+  stage("studio", NET, props=[P("neural_net", (0, 0, 0.8), args={"layers": [8, 6, 6, 4, 2], "fire": [0.1, 0.7]})], texts=[T("NEOCOGNITRON 1980", (0, 0.4, 1.5), 0.12, pop=0.2)],
+        env_opts=DIGITAL))
 S("An artificial neural network is made of layers of simple units. Each one adds up signals from the layer before, and passes a signal on if the total is big enough.",
   stage("studio", NET, props=[P("neural_net", (0, 0, 0.8), args={"fire": [0.1, 0.8]})], env_opts=DIGITAL), chapter="Deep networks")
 S("At first, the connections are random. To train it, you show it thousands of labelled examples. Every time it gets one wrong, you nudge all the connections slightly, so it would have done a bit better.",
@@ -91,6 +97,10 @@ S("Starting in two thousand and seven, her team gathered images from the interne
   stage("lab", cam((0, -3.4, 1.9), (0.3, -3.0, 1.8), (0, 0.3, 1.0)),
         cast=[who(STUDENT | {"hair": [0.1 + 0.15 * i, 0.08, 0.05]}, at=(x, 0.35, 0), pose=WORK, scale=0.95) for i, x in enumerate((-1.1, 0, 1.1))],
         props=[P("table", (0, -0.1, 0), args={"w": 3.2})] + [P("laptop", (x, -0.15, TOP), args={"glow": 0.1}) for x in (-1.1, 0, 1.1)], env_opts=OFFICE), still=True)
+S("At its peak, nearly fifty thousand people in a hundred and sixty seven countries were helping to label the pictures.",
+  stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0)), texts=[T("50,000 PEOPLE  /  167 COUNTRIES", (0, -1.2, 1.25), 0.14, pop=0.3)]), still=True)
+S("Many experts thought it was a waste of time. More data, they argued, wouldn't fix bad algorithms.",
+  stage("lab", cam((0.5, -1.8, 1.55), (0.35, -1.5, 1.5), "cast0.head"), cast=[who(FEIFEI, pose={**STAND, "head_nod": 10}, scale=0.95)], env_opts=OFFICE), still=True)
 S("The result, ImageNet, held more than fourteen million pictures, sorted into over twenty thousand categories, from strawberries to sports cars to dozens of breeds of dog.",
   stage("studio", cam((0, -4.0, 1.6), (0.3, -3.4, 1.4), (0, 0, 0.9)),
         props=[P("pixel_image", ((k % 7 - 3) * 0.5, 0.4 * (k // 7), 0.1 + 0.55 * (k // 7)), scale=0.42) for k in range(21)],
@@ -112,6 +122,10 @@ S("To train it, Krizhevsky used two graphics cards, the chips built for video ga
 S("The results stunned the field. AlexNet's top five error rate was about fifteen percent. The next best entry got twenty six percent.",
   stage("studio", cam((0, -2.4, 1.0), (0, -2.1, 0.95), (0, 0, 0.8)), texts=[T("15%", (-0.6, 0, 1.0), 0.3, (0.4, 1.0, 0.6), pop=0.2), T("26%", (0.65, 0, 1.0), 0.3, (1.0, 0.4, 0.4), pop=0.45)],
         env_opts=DIGITAL), still=True, still_at=0.8)
+S("That same year, a Google team trained a huge network on ten million still frames from YouTube videos, without telling it what anything was. One of its artificial neurons learned, all by itself, to respond to cats.",
+  stage("studio", NET, props=[P("neural_net", (0, 0, 0.8), args={"fire": [0.1, 0.8], "seed": 9}), P("pixel_image", (1.6, 0, 0.5), scale=0.45)], env_opts=DIGITAL))
+S("Soon after, Google bought Hinton's tiny company, which had just three employees, for forty four million dollars, after an auction between tech giants.",
+  stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("$44,000,000", (0, 0, 1.0), 0.26, (0.4, 1.0, 0.6), pop=0.2)], env_opts=DIGITAL), still=True, still_at=0.8)
 S("Almost overnight, the whole field switched to deep learning. Within three years, networks were beating the human benchmark on the ImageNet test.",
   stage("studio", NET, props=[P("neural_net", (0, 0, 0.8), args={"layers": [6, 8, 8, 8, 8, 8, 8, 8, 5, 3], "spacing": 0.32, "fire": [0.05, 0.9]})], env_opts=DIGITAL))
 S("Inside a trained network, the first layers detect simple edges and colours, just like Hubel and Wiesel's cells. Deeper layers respond to eyes, wheels, fur, and faces.",
@@ -129,6 +143,12 @@ S("It guides robots in warehouses, checks crops from drones, and lets cars detec
   stage("street", cam((3, -5, 2.2), (2.4, -4.4, 2.0), (0, 0, 0.6)),
         props=[P("car", args={"boxes": True, "drive": [[0, -2], [1, 2]]}), P("street_lamps", (-1.6, -2, 0), args={"n": 4, "on": [0, 0.01]}),
                P("bbox_label", (1.5, 0, 1.2), args={"label": "PERSON 98%", "size": (0.6, 1.8), "at": 0.3})]))
+S("In some American cities, taxis with no human driver now carry paying passengers, using cameras, radar and laser scanners to build a picture of the road.",
+  stage("street", cam((3, -5, 2.2), (2.4, -4.4, 2.0), (0, 0, 0.6)), props=[P("car", args={"boxes": True, "color": (0.9, 0.9, 0.92), "drive": [[0, -2], [1, 2]]}),
+        P("houses", (0, 4, 0), args={"on": [0, 0.01]})]))
+S("Eye-screening systems can now detect diabetic eye disease from a photo of the back of the eye, helping clinics that have too few specialists.",
+  stage("studio", cam((0, -2.0, 0.8), (0.2, -1.7, 0.75), (0, 0, 0.6)), props=[P("eye", (0, 0, 0.6)), P("bbox_label", (0, -0.6, 0.62), args={"label": "SCAN OK", "size": (0.7, 0.7), "at": 0.4})],
+        env_opts=DIGITAL), still=True)
 S("But machine vision has strange weaknesses. Change a handful of pixels in a way no human would notice, and a network can be fooled into calling a panda a gibbon.",
   stage("studio", PIX, props=[P("pixel_image", (0, 0, 0.3)), P("bbox_label", (0, -0.05, 0.75), args={"label": "GIBBON 99%", "color": (1.0, 0.3, 0.3), "at": 0.4})], env_opts=DIGITAL))
 S("And if the training pictures are unbalanced, it can work worse for some groups of people than others. Fixing that is one of the biggest challenges in the field.",
@@ -137,6 +157,8 @@ S("And if the training pictures are unbalanced, it can work worse for some group
         env_opts=OFFICE), still=True)
 
 # ===================================================================== LEGACY
+S("In twenty fifteen, a photo app wrongly tagged a photo of two Black people with an offensive animal label. The company apologised, and its quick fix was simply to block that label.",
+  stage("studio", cam((0.2, -1.1, 0.8), (0.1, -0.95, 0.75), (0, 0, 0.1)), props=[P("newspapers", args={"headline": "ALGORITHM BIAS", "n": 3})]), still=True, still_at=0.7)
 S("In twenty eighteen, Hinton, LeCun and Yoshua Bengio won the Turing Award, computing's highest prize, for their work on deep learning.",
   stage("hall", cam((0, -2.8, 1.6), (0, -2.4, 1.5), (0, 0.4, 1.2)),
         cast=[who(HINTON, at=(-0.75, 0.35, 0), turn=-10), who(LECUN, at=(0, 0.45, 0)), who(STUDENT | {"hair": [0.2, 0.15, 0.1], "outfit": SUIT}, at=(0.75, 0.35, 0), turn=10)],

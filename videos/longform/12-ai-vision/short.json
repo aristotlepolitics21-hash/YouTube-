@@ -1188,6 +1188,148 @@
   },
   {
    "id": "s015",
+   "line": "Funding dried up. Researchers later called these lean years the AI winters.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       1.5,
+       0
+      ],
+      "scale": 0.5,
+      "args": {
+       "panels": 4,
+       "blink": false
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.4
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.3
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.3,
+       0.4,
+       0.6
+      ]
+     },
+     "floor": [
+      0.85,
+      0.87,
+      0.9
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s016",
+   "line": "In nineteen eighty, the Japanese researcher Kunihiko Fukushima built the Neocognitron, a layered network directly inspired by Hubel and Wiesel's discoveries.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "neural_net",
+      "at": [
+       0,
+       0,
+       0.8
+      ],
+      "args": {
+       "layers": [
+        8,
+        6,
+        6,
+        4,
+        2
+       ],
+       "fire": [
+        0.1,
+        0.7
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "NEOCOGNITRON 1980",
+      "at": [
+       0,
+       0.4,
+       1.5
+      ],
+      "size": 0.12,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      0.9
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      0.85
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.02,
+      0.1,
+      0.18
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s017",
    "line": "An artificial neural network is made of layers of simple units. Each one adds up signals from the layer before, and passes a signal on if the total is big enough.",
    "visual": {
     "type": "stage",
@@ -1244,7 +1386,7 @@
    "chapter": "Deep networks"
   },
   {
-   "id": "s016",
+   "id": "s018",
    "line": "At first, the connections are random. To train it, you show it thousands of labelled examples. Every time it gets one wrong, you nudge all the connections slightly, so it would have done a bit better.",
    "visual": {
     "type": "stage",
@@ -1310,7 +1452,7 @@
    }
   },
   {
-   "id": "s017",
+   "id": "s019",
    "line": "The method for working out those nudges, called backpropagation, was popularised in nineteen eighty six by Geoffrey Hinton and his colleagues.",
    "visual": {
     "type": "stage",
@@ -1430,7 +1572,7 @@
    "still": true
   },
   {
-   "id": "s018",
+   "id": "s020",
    "line": "In the late nineteen eighties, Yann LeCun, then at Bell Labs, built a network for reading handwritten digits. Instead of looking at the whole image at once, it scanned small windows across it, like the edge-detecting cells in the brain.",
    "visual": {
     "type": "stage",
@@ -1494,7 +1636,7 @@
    }
   },
   {
-   "id": "s019",
+   "id": "s021",
    "line": "This was a convolutional neural network. By the late nineteen nineties, versions of it were reading millions of handwritten cheques for American banks.",
    "visual": {
     "type": "stage",
@@ -1621,7 +1763,7 @@
    "still": true
   },
   {
-   "id": "s020",
+   "id": "s022",
    "line": "But for photos of the real world, neural networks still weren't good enough. They needed two things that didn't exist yet: far more data, and far more computing power.",
    "visual": {
     "type": "stage",
@@ -1695,7 +1837,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s021",
+   "id": "s023",
    "line": "The data came from a young professor named Fei-Fei Li.",
    "visual": {
     "type": "stage",
@@ -1790,7 +1932,7 @@
    "chapter": "ImageNet"
   },
   {
-   "id": "s022",
+   "id": "s024",
    "line": "She believed computers needed to see the world the way children do: by looking at an enormous number of examples.",
    "visual": {
     "type": "stage",
@@ -1973,7 +2115,7 @@
    "still": true
   },
   {
-   "id": "s023",
+   "id": "s025",
    "line": "Starting in two thousand and seven, her team gathered images from the internet, and paid thousands of online workers to label them.",
    "visual": {
     "type": "stage",
@@ -2253,7 +2395,148 @@
    "still": true
   },
   {
-   "id": "s024",
+   "id": "s026",
+   "line": "At its peak, nearly fifty thousand people in a hundred and sixty seven countries were helping to label the pictures.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "50,000 PEOPLE  /  167 COUNTRIES",
+      "at": [
+       0,
+       -1.2,
+       1.25
+      ],
+      "size": 0.14,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.4,
+      0.6
+     ],
+     "to": [
+      0.3,
+      -3.0,
+      0.5
+     ],
+     "target": [
+      0,
+      0,
+      0
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s027",
+   "line": "Many experts thought it was a waste of time. More data, they argued, wouldn't fix bad algorithms.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.05,
+       0.04,
+       0.04
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.85,
+        0.68,
+        0.55
+       ],
+       "shirt": [
+        0.6,
+        0.15,
+        0.2
+       ],
+       "pants": [
+        0.12,
+        0.12,
+        0.15
+       ],
+       "boots": [
+        0.05,
+        0.04,
+        0.03
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": 10
+      },
+      "scale": 0.95
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.42
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s028",
    "line": "The result, ImageNet, held more than fourteen million pictures, sorted into over twenty thousand categories, from strawberries to sports cars to dozens of breeds of dog.",
    "visual": {
     "type": "stage",
@@ -2500,7 +2783,7 @@
    }
   },
   {
-   "id": "s025",
+   "id": "s029",
    "line": "In two thousand and ten, she launched a yearly contest: whose program could recognise objects in a thousand different categories most accurately?",
    "visual": {
     "type": "stage",
@@ -2606,7 +2889,7 @@
    }
   },
   {
-   "id": "s026",
+   "id": "s030",
    "line": "In twenty twelve, a team from the University of Toronto entered: Geoffrey Hinton and two of his students, Alex Krizhevsky and Ilya Sutskever.",
    "visual": {
     "type": "stage",
@@ -2835,7 +3118,7 @@
    "chapter": "The 2012 breakthrough"
   },
   {
-   "id": "s027",
+   "id": "s031",
    "line": "Their network, later called AlexNet, was deep, with eight learning layers and sixty million adjustable connections.",
    "visual": {
     "type": "stage",
@@ -2902,7 +3185,7 @@
    }
   },
   {
-   "id": "s028",
+   "id": "s032",
    "line": "To train it, Krizhevsky used two graphics cards, the chips built for video games, in his bedroom. Their parallel number crunching turned out to be perfect for neural networks.",
    "visual": {
     "type": "stage",
@@ -2977,7 +3260,7 @@
    "still": true
   },
   {
-   "id": "s029",
+   "id": "s033",
    "line": "The results stunned the field. AlexNet's top five error rate was about fifteen percent. The next best entry got twenty six percent.",
    "visual": {
     "type": "stage",
@@ -3051,7 +3334,132 @@
    "still_at": 0.8
   },
   {
-   "id": "s030",
+   "id": "s034",
+   "line": "That same year, a Google team trained a huge network on ten million still frames from YouTube videos, without telling it what anything was. One of its artificial neurons learned, all by itself, to respond to cats.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "neural_net",
+      "at": [
+       0,
+       0,
+       0.8
+      ],
+      "args": {
+       "fire": [
+        0.1,
+        0.8
+       ],
+       "seed": 9
+      }
+     },
+     {
+      "prop": "pixel_image",
+      "at": [
+       1.6,
+       0,
+       0.5
+      ],
+      "scale": 0.45
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      0.9
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      0.85
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.02,
+      0.1,
+      0.18
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s035",
+   "line": "Soon after, Google bought Hinton's tiny company, which had just three employees, for forty four million dollars, after an auction between tech giants.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "$44,000,000",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.26,
+      "color": [
+       0.4,
+       1.0,
+       0.6
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.02,
+      0.1,
+      0.18
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s036",
    "line": "Almost overnight, the whole field switched to deep learning. Within three years, networks were beating the human benchmark on the ImageNet test.",
    "visual": {
     "type": "stage",
@@ -3120,7 +3528,7 @@
    }
   },
   {
-   "id": "s031",
+   "id": "s037",
    "line": "Inside a trained network, the first layers detect simple edges and colours, just like Hubel and Wiesel's cells. Deeper layers respond to eyes, wheels, fur, and faces.",
    "visual": {
     "type": "stage",
@@ -3195,7 +3603,7 @@
    }
   },
   {
-   "id": "s032",
+   "id": "s038",
    "line": "Today, computer vision is everywhere. It unlocks your phone with your face, and sorts the photos in your gallery.",
    "visual": {
     "type": "stage",
@@ -3254,7 +3662,7 @@
    "chapter": "Seeing machines everywhere"
   },
   {
-   "id": "s033",
+   "id": "s039",
    "line": "It helps doctors spot cancers and eye disease in scans, sometimes catching what a busy human might miss.",
    "visual": {
     "type": "stage",
@@ -3389,7 +3797,7 @@
    "still": true
   },
   {
-   "id": "s034",
+   "id": "s040",
    "line": "It guides robots in warehouses, checks crops from drones, and lets cars detect pedestrians, cyclists, and traffic lights.",
    "visual": {
     "type": "stage",
@@ -3471,7 +3879,144 @@
    }
   },
   {
-   "id": "s035",
+   "id": "s041",
+   "line": "In some American cities, taxis with no human driver now carry paying passengers, using cameras, radar and laser scanners to build a picture of the road.",
+   "visual": {
+    "type": "stage",
+    "env": "street",
+    "cast": [],
+    "props": [
+     {
+      "prop": "car",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "boxes": true,
+       "color": [
+        0.9,
+        0.9,
+        0.92
+       ],
+       "drive": [
+        [
+         0,
+         -2
+        ],
+        [
+         1,
+         2
+        ]
+       ]
+      }
+     },
+     {
+      "prop": "houses",
+      "at": [
+       0,
+       4,
+       0
+      ],
+      "args": {
+       "on": [
+        0,
+        0.01
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      3,
+      -5,
+      2.2
+     ],
+     "to": [
+      2.4,
+      -4.4,
+      2.0
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s042",
+   "line": "Eye-screening systems can now detect diabetic eye disease from a photo of the back of the eye, helping clinics that have too few specialists.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eye",
+      "at": [
+       0,
+       0,
+       0.6
+      ]
+     },
+     {
+      "prop": "bbox_label",
+      "at": [
+       0,
+       -0.6,
+       0.62
+      ],
+      "args": {
+       "label": "SCAN OK",
+       "size": [
+        0.7,
+        0.7
+       ],
+       "at": 0.4
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.0,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -1.7,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.02,
+      0.1,
+      0.18
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s043",
    "line": "But machine vision has strange weaknesses. Change a handful of pixels in a way no human would notice, and a network can be fooled into calling a panda a gibbon.",
    "visual": {
     "type": "stage",
@@ -3538,7 +4083,7 @@
    }
   },
   {
-   "id": "s036",
+   "id": "s044",
    "line": "And if the training pictures are unbalanced, it can work worse for some groups of people than others. Fixing that is one of the biggest challenges in the field.",
    "visual": {
     "type": "stage",
@@ -3746,7 +4291,51 @@
    "still": true
   },
   {
-   "id": "s037",
+   "id": "s045",
+   "line": "In twenty fifteen, a photo app wrongly tagged a photo of two Black people with an offensive animal label. The company apologised, and its quick fix was simply to block that label.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "ALGORITHM BIAS",
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.7
+  },
+  {
+   "id": "s046",
    "line": "In twenty eighteen, Hinton, LeCun and Yoshua Bengio won the Turing Award, computing's highest prize, for their work on deep learning.",
    "visual": {
     "type": "stage",
@@ -3969,7 +4558,7 @@
    "chapter": "Legacy"
   },
   {
-   "id": "s038",
+   "id": "s047",
    "line": "And in twenty twenty four, Hinton shared the Nobel Prize in Physics with John Hopfield, for discoveries that made machine learning with neural networks possible.",
    "visual": {
     "type": "stage",
@@ -4075,7 +4664,7 @@
    "still": true
   },
   {
-   "id": "s039",
+   "id": "s048",
    "line": "The same ideas that taught machines to see now power systems that understand speech, translate languages, and write text.",
    "visual": {
     "type": "stage",
@@ -4132,7 +4721,7 @@
    }
   },
   {
-   "id": "s040",
+   "id": "s049",
    "line": "It took more than half a century, a trick borrowed from a cat's brain, a contest built on fourteen million photos, and two graphics cards in a student's bedroom.",
    "visual": {
     "type": "stage",
@@ -4202,7 +4791,7 @@
    "chapter": "Close"
   },
   {
-   "id": "s041",
+   "id": "s050",
    "line": "But machines finally learned to do what a three year old does without thinking: look at the world, and understand what they see.",
    "visual": {
     "type": "stage",
