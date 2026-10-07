@@ -102,7 +102,8 @@ function net(p) {
   const out = holoPanel(3, 1.6, (ctx, t, w, h) => {
     const v = Math.min(P(p, 'risk', 82), Math.floor(seg(t, 0.3, 0.9) * P(p, 'risk', 82)));
     txt(ctx, P(p, 'label', 'RISK SCORE'), w / 2, 60, 46, '#d8f6ff', 'center');
-    txt(ctx, `${v}%`, w / 2, h / 2 + 40, 180, v > 60 ? RED : CYAN, 'center', 900);
+    if (P(p, 'risk', 82) > 0) txt(ctx, `${v}%`, w / 2, h / 2 + 40, 180, v > 60 ? RED : CYAN, 'center', 900);
+    else for (let i = 0; i < 3; i++) { ctx.globalAlpha = 0.35 + 0.65 * Math.max(0, Math.sin(t * 25 - i * 0.9)); txt(ctx, '•', w / 2 + (i - 1) * 110, h / 2 + 40, 180, CYAN, 'center', 900); ctx.globalAlpha = 1; }
   }, { res: 768 });
   out.position.set(7.5, 0, 0); out.rotation.y = -0.35; scene.add(out);
   const m = motes(scene, 300, 24, CYAN, 0.3);
