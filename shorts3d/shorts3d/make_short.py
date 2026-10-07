@@ -177,6 +177,60 @@ def _chime() -> np.ndarray:
     return np.stack([x, x * 0.9], 1) / np.abs(x).max() * 0.6
 
 
+def _noise(n, seed):
+    return np.random.default_rng(seed).standard_normal(n).astype(np.float32)
+
+
+def _lowpass(x, k):
+    return np.convolve(x, np.ones(k) / k, mode="same")
+
+
+def _st(x, peak=0.9):
+    return np.stack([x, x], 1) / (np.abs(x).max() + 1e-9) * peak
+
+
+def _thunder(seed=1) -> np.ndarray:
+    n = int(3.2 * RATE)
+    t = np.arange(n) / RATE
+    crack = _noise(n, seed) * np.exp(-t * 18)
+    rumble = _lowpass(_lowpass(_noise(n, seed + 1), 60), 60) * 30
+    rumble *= np.exp(-t * 0.9) * (1 + 0.5 * np.sin(2 * np.pi * 1.7 * t))
+    return _st(crack * 0.7 + rumble, 0.95)
+
+
+def _zap(seconds=0.6, seed=2) -> np.ndarray:
+    n = int(seconds * RATE)
+    t = np.arange(n) / RATE
+    buzz = np.sign(np.sin(2 * np.pi * 120 * t)) * 0.4 + np.sin(2 * np.pi * 240 * t) * 0.3
+    crackle = _noise(n, seed) * (np.random.default_rng(seed).random(n) > 0.985) * 2
+    env = np.minimum(1, t * 40) * np.minimum(1, (seconds - t) * 12)
+    return _st((buzz + crackle) * env, 0.6)
+
+
+def _heartbeat() -> np.ndarray:
+    n = int(0.5 * RATE)
+    t = np.arange(n) / RATE
+    def thump(at, f):
+        d = np.clip(t - at, 0, None)
+        return np.sin(2 * np.pi * f * d) * np.exp(-d * 28) * (t >= at)
+    return _st(thump(0, 55) + 0.7 * thump(0.17, 48), 0.95)
+
+
+def _beep(seconds=0.12, f=1000) -> np.ndarray:
+    n = int(seconds * RATE)
+    t = np.arange(n) / RATE
+    env = np.minimum(1, t * 200) * np.minimum(1, (seconds - t) * 200)
+    return _st(np.sin(2 * np.pi * f * t) * env, 0.35)
+
+
+def _rain(seconds) -> np.ndarray:
+    n = int(seconds * RATE)
+    x = _noise(n, 9) - _lowpass(_noise(n, 9), 8)
+    drops = _noise(n, 10) * (np.random.default_rng(11).random(n) > 0.997) * 3
+    env = np.minimum(1, np.arange(n) / RATE * 4) * np.minimum(1, (seconds - np.arange(n) / RATE) * 4)
+    return _st((x * 0.6 + drops) * env, 0.5)
+
+
 def build_audio(spec: dict, plan: list[dict], work: Path) -> Path:
     total = plan[-1]["end"]
     n = int(total * RATE) + RATE
@@ -205,8 +259,40 @@ def build_audio(spec: dict, plan: list[dict], work: Path) -> Path:
                 place(_crack(k), p["start"] + dur * (k + 0.55) / times, 0.55)
         if v.get("bubble"):
             place(_pop(), p["start"] + dur * v["bubble"]["at"] + 2 / spec.get("render", {}).get("fps", 24), 0.8)
+        fps = spec.get("render", {}).get("fps", 24)
+        if v.get("rain"):
+            place(_rain(dur + 0.2), p["start"], 0.25)
+        if v.get("bolt"):
+            place(_thunder(len(p["id"])), p["start"] + dur * v["bolt"].get("at", 0.3), 0.8)
+        if v.get("type") == "crowd":
+            place(_thunder(5), p["start"] + dur * v.get("flash_at", 0.45), 0.8)
+        if v.get("flashover"):
+            a, z = v["flashover"].get("at", (0.1, 0.9))
+            place(_zap(dur * (z - a), 4), p["start"] + dur * a, 0.5)
+        if v.get("type") == "count":
+            n_icons, (s0, s1) = v.get("count", 7), v.get("span", (0.12, 0.8))
+            for k in range(n_icons):
+                place(_zap(0.18, k), p["start"] + dur * (s0 + (s1 - s0) * k / max(1, n_icons - 1)), 0.5)
+        if v.get("heart"):
+            hs = v["heart"]
+            period = fps * 60 / hs.get("bpm", 80)
+            frames = p["frames"]
+            for a, b in hs.get("beats", [[0, 1]]):
+                f = frames * a + 3
+                while f < frames * b:
+                    place(_heartbeat(), p["start"] + f / fps, 0.9)
+                    place(_beep(), p["start"] + f / fps, 0.5)
+                    f += period
+            gaps = []  # flat line between active stretches
+            edges = sorted(hs.get("beats", [[0, 1]]))
+            for (a0, b0), (a1, b1) in zip(edges, edges[1:]):
+                gaps.append((b0, a1))
+            if edges and edges[-1][1] < 1:
+                gaps.append((edges[-1][1], 1.0))
+            for g0, g1 in gaps:
+                place(_beep(dur * (g1 - g0) * 0.9), p["start"] + dur * g0 + 0.3, 0.35)
         for e in shot.get("sfx", []):
-            clip = {"chime": _chime, "pop": _pop}.get(e["type"])
+            clip = {"chime": _chime, "pop": _pop, "thunder": _thunder, "zap": _zap}.get(e["type"])
             if clip:
                 place(clip(), p["start"] + dur * e.get("at", 0), e.get("gain", 0.6))
     music = _pad_section(total + 1, spec.get("music_mood", "reflective"), seed=11)[:n] * 0.35

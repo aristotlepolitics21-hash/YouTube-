@@ -21,7 +21,7 @@ Output: `videos/shorts/<name>/final/<slug>.mp4` (1080×1920) plus `<slug>.srt`.
    - Frames that already exist are skipped, so an interrupted render can be resumed.
 4. **Encoding.** Frames are upscaled to 1080×1920 and the shots are concatenated.
 5. **Audio.**
-   - The narration track gets procedural SFX: a whoosh on cuts, knuckle cracks synced to the animation, a pop, and a chime.
+   - The narration track gets procedural SFX synced to the animation: whooshes on cuts, cracks, pops, chimes, thunder, an electric buzz, heartbeats, ECG beeps, a flatline tone and rain.
    - A ducked ambient bed plays underneath.
    - The mix is loudness-normalised to −14 LUFS.
 6. **Captions.** Whisper gives word timings. The captions are burned-in ASS: 2 words per cue, with the active word in yellow.
@@ -33,6 +33,22 @@ Output: `videos/shorts/<name>/final/<slug>.mp4` (1080×1920) plus `<slug>.srt`.
 | `character` | The posed, rigged human. | `look` is `clay`, `xray`, or `{from, to, at:[a,b]}` for a dissolve.<br>`pose` / `pose_to` (see `rig.body_pose`).<br>`crack {side, times, curl}`, `bone_glow {at, color}`.<br>`camera {from, to}`, each with an `anchor` (head, chest, hips, hands, hand.L, hand.R), an `offset` in metres and a `lens`. |
 | `joint` | A macro of one finger joint: bones, capsule and synovial fluid. | `side`, `finger`, `separate [t0, t1, metres]`, `bubble {at, size, shrink}`, `mri`, `progress`, `orbit`, `distance` |
 | `trophy` | A spinning gold cup on a plinth. | `spin` |
+| `compare` | A lightning icon vs a sun, with bars growing to a ratio and a label such as "5×". | `ratio` |
+| `crowd` | Rows of simple coloured figures. After a lightning flash, one greys out and topples. | `count`, `cols`, `flash_at`, `victim` |
+| `count` | A big gold number, with lightning icons popping in one by one. | `count`, `text`, `span` |
+
+**Extra `character` options** (all in `fx.py`):
+
+| key | what it does |
+|---|---|
+| `env: "storm"` | Purple gradient sky, wet reflective floor and coloured lights. |
+| `rain: true` | Rain falling for the whole shot. |
+| `outfit` | Colours for `skin`, `shirt`, `pants` and `boots`, painted from bone weights. `shirt: null` leaves the chest bare. |
+| `hat` | A ranger hat in the given colour. |
+| `bolt {at, seed, from}` | A lightning strike on the head, with a sky flash and thunder. |
+| `flashover {at:[a,b], strength}` | Glowing electric veins crawling over the skin, with a buzz. |
+| `heart {beats:[[a,b],...], bpm, ecg}` | A glowing heart that beats only inside the given stretches of the shot, plus an ECG line that draws itself. Between the stretches you get a flatline tone. |
+| `lichtenberg {reveal:[a,b], fade:[a,b]}` | A fern-shaped Lichtenberg figure that grows on the back, then fades. |
 
 Shot `sfx` entries (`{"type": "chime", "at": 0.15}`) add extra sounds.
 
@@ -60,3 +76,4 @@ Use `--preview`, which renders first, middle and last frames only, to check fram
   - Keep cameras frontal for hand close-ups.
 - **No facial animation and no lip sync.**
 - **Sound effects and music are procedural placeholders.** A real SFX library would sound better.
+- **The background limit.** Long renders here hit the 2-hour limit on background jobs. Render in halves with `--only-shots`; finished frames are reused.
