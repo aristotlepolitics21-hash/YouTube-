@@ -213,7 +213,15 @@ function star_collapse(p) {
   const scene = baseScene('#000000'); const camera = cam(35);
   starfield(scene);
   const star = sunMesh(); scene.add(star);
-  const shell = new THREE.Mesh(new THREE.SphereGeometry(1, 96, 64), new THREE.MeshBasicMaterial({ color: '#9fd0ff', transparent: true, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide }));
+  // supernova shell: rim-lit bubble (bright at the limb, clear in the middle)
+  const shell = new THREE.Mesh(new THREE.SphereGeometry(1, 96, 64), new THREE.ShaderMaterial({
+    uniforms: { color: { value: new THREE.Color('#cfe6ff') }, opacity: { value: 1 } },
+    vertexShader: 'varying vec3 vN; varying vec3 vV; void main(){ vec4 mv = modelViewMatrix * vec4(position, 1.0); vN = normalize(normalMatrix * normal); vV = normalize(-mv.xyz); gl_Position = projectionMatrix * mv; }',
+    fragmentShader: 'uniform vec3 color; uniform float opacity; varying vec3 vN; varying vec3 vV; void main(){ float rim = pow(1.0 - abs(dot(vN, vV)), 2.5); gl_FragColor = vec4(color * rim * opacity * 2.0, 1.0); }',
+    transparent: true, blending: THREE.AdditiveBlending, depthWrite: false,
+  }));
+  shell.material.color = shell.material.uniforms.color.value;
+  Object.defineProperty(shell.material, 'opacity', { set(v) { this.uniforms && (this.uniforms.opacity.value = v); }, get() { return this.uniforms ? this.uniforms.opacity.value : 1; } });
   scene.add(shell);
   const bh = blackHole(scene, { gain: 0.8, size: 0.6 }); bh.group.visible = false;
   const flash = new THREE.PointLight('#ffffff', 0, 100, 1); scene.add(flash);
@@ -227,8 +235,8 @@ function star_collapse(p) {
       const f = seg(t, 0, 0.12);
       star.visible = t < 0.08; star.scale.setScalar(lerp(1.2, 0.3, f));
       shell.visible = t > 0.03; const sh = seg(t, 0.03, 1);
-      shell.scale.setScalar(lerp(0.5, 16, ease(sh))); shell.material.opacity = (1 - sh) * 0.55;
-      shell.material.color.setHSL(lerp(0.58, 0.05, sh), 0.8, 0.6);
+      shell.scale.setScalar(lerp(0.5, 16, ease(sh))); shell.material.opacity = (1 - sh) ** 1.5;
+      shell.material.color.set('#cfe6ff').lerp(new THREE.Color('#ff7a2a'), sh); // blue-white flash cooling to orange
       bh.group.visible = t > 0.25; bh.group.scale.setScalar(0.6 * ease(seg(t, 0.25, 0.6)) + 0.001);
       bh.update(t, camera);
     }
