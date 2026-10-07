@@ -9,6 +9,8 @@ for l, d in zip(lines, durs):
     if l[0] == scene and pick is None and l is not lines[0]: pick = t + d * .7
     t += d
 pick = pick or 30
+import os
+if os.environ.get("PICK"): pick = float(os.environ["PICK"])
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(pick), "-i", f"{E}/master.mp4", "-frames:v", "1", f"{E}/tframe.png"], check=True)
 im = Image.open(f"{E}/tframe.png").convert("RGBA").resize((1280, 720)); ov = Image.new("RGBA", im.size); od = ImageDraw.Draw(ov)
 for x in range(700): od.line([(x, 0), (x, 720)], fill=(8, 10, 14, int(215 * (1 - x / 700))))
