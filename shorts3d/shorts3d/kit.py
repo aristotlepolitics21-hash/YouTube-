@@ -2116,6 +2116,141 @@ def helmet(frames):
     sph("visor", (0, -0.035, 0.01), 0.15, mat("visor", (1.0, 0.75, 0.25), 0.05, 1.0), (1, 1, 0.9), root)
     return root
 
+
+# ------------------------------------------------------------------ quantum
+def bohr_atom(frames, orbits=3, jump=None, spin=True):
+    """Nucleus with circular electron orbits; jump=[t, from, to] moves an electron down an orbit and emits a photon."""
+    root = empty("bohr_atom")
+    _nucleus("nucleus", (0, 0, 0), 0.08, root, 2, 12)
+    om, _ = fx.emissive("orbit", (0.4, 0.75, 1.0), 1.5)
+    em = mat("electron", (0.3, 0.7, 1.0), 0.3, emit=4)
+    radii = [0.3 + 0.25 * k for k in range(orbits)]
+    for r in radii:
+        props.torus("orbit", (0, 0, 0), r, 0.004, om, rotation=(R(90), 0, 0)).parent = root
+    for k, r in enumerate(radii):
+        piv = child(empty("e_piv"), root)
+        e = sph("electron", (r, 0, 0), 0.03, em, parent=piv)
+        if spin:
+            props.key(piv, 1, rotation_euler=(0, 0, 0))
+            props.key(piv, frames, rotation_euler=(0, R(720 / (k + 1)), 0))
+            fx._linear(piv)
+        if jump and k == jump[1]:
+            f = key_frac(frames, jump[0])
+            props.key(e, f, location=(r, 0, 0))
+            props.key(e, f + 3, location=(radii[jump[2]], 0, 0))
+            pm, ps = fx.emissive("photon", (1.0, 0.4, 0.8), 0)
+            pts = [V((r + 0.03 * i, 0, 0.04 * math.sin(i * 0.9))) for i in range(40)]
+            ph = curve_obj("photon", pts, 0.008, pm, root)
+            glow_keys(ps, frames, [(0, 0), (jump[0], 0), (jump[0] + 0.02, 8)])
+            props.key(ph, f, location=(0, 0, 0))
+            props.key(ph, min(frames, f + 30), location=(1.5, 0, 0.3))
+    return root
+
+
+def double_slit(frames, build=(0.1, 0.9), particles=True, seed=4):
+    """A source, a barrier with two slits and a screen where hits pile up into interference bands."""
+    rng = random.Random(seed)
+    root = empty("double_slit")
+    wall = mat("barrier", (0.25, 0.25, 0.28), 0.5, 0.5)
+    for zc, h in ((0.1, 0.2), (0.4, 0.14), (0.7, 0.2)):
+        box("barrier", (0, 0, zc), (0.03, 0.8, h), wall, parent=root)
+    box("screen", (1.2, 0, 0.4), (0.02, 1.2, 0.8), mat("screen", (0.08, 0.09, 0.12), 0.5), parent=root)
+    box("source", (-1.2, 0, 0.4), (0.2, 0.2, 0.2), mat("source", (0.3, 0.3, 0.35), 0.4, 0.6), 0.02, root)
+    hm = mat("hit", (0.4, 1.0, 0.7), 0.3, emit=5)
+    n = 320
+    for k in range(n):
+        while True:  # sample a sharpened two-slit pattern so the bands read on screen
+            y = rng.uniform(-0.55, 0.55)
+            if rng.random() < (math.cos(y * 13) ** 6) * math.exp(-(y / 0.4) ** 2):
+                break
+        z = rng.uniform(0.15, 0.65)
+        d = sph("hit", (1.185, y, z), 0.008, hm, parent=root)
+        t = build[0] + (build[1] - build[0]) * k / n
+        visible_from(d, frames, t)
+    if particles:
+        pm = mat("particle", (0.6, 0.9, 1.0), 0.3, emit=4)
+        for k in range(6):
+            p = sph("particle", (-1.1, 0, 0.4), 0.02, pm, parent=root)
+            t0 = build[0] + k * (build[1] - build[0]) / 6
+            props.key(p, key_frac(frames, t0), location=(-1.1, 0, 0.4))
+            props.key(p, key_frac(frames, t0 + 0.08), location=(1.17, rng.uniform(-0.3, 0.3), rng.uniform(0.3, 0.5)))
+            visible_from(p, frames, t0)
+    return root
+
+
+def photon_box(frames, open_at=0.4):
+    """Einstein's 1930 box: hanging from a spring scale, a clock inside opens a shutter to release one photon."""
+    root = empty("photon_box")
+    box("box", (0, 0, 0.9), (0.5, 0.5, 0.5), mat("pbox", (0.5, 0.4, 0.3), 0.5), 0.01, root)
+    spring = coil(frames, turns=10, radius=0.04, length=0.5, axis="z", color=(0.75, 0.75, 0.8), wire=0.006)
+    spring.parent = root
+    spring.location = (0, 0, 1.45)
+    box("frame", (0, 0.4, 1.0), (0.05, 0.05, 2.0), mat("frame", (0.3, 0.3, 0.32), 0.4, 0.8), parent=root)
+    box("beam", (0, 0.2, 1.95), (0.05, 0.45, 0.05), mat("frame", (0.3, 0.3, 0.32), 0.4, 0.8), parent=root)
+    clk, mn, sc = space.clock("pb_clock", (0, -0.26, 0.95), 0.12, (1.0, 0.8, 0.2))
+    clk.parent = root
+    space.tick_hand(sc, frames, 12, 1.0, 30)
+    sh = box("shutter", (0.26, 0, 0.9), (0.02, 0.1, 0.1), mat("shutter", (0.1, 0.1, 0.1), 0.4), parent=root)
+    props.key(sh, key_frac(frames, open_at), location=(0.26, 0, 0.9))
+    props.key(sh, key_frac(frames, open_at) + 3, location=(0.26, 0, 1.02))
+    pm, _ = fx.emissive("box_photon", (1.0, 0.95, 0.5), 10)
+    ph = sph("box_photon", (0.26, 0, 0.9), 0.02, pm, parent=root)
+    visible_from(ph, frames, open_at)
+    props.key(ph, key_frac(frames, open_at), location=(0.26, 0, 0.9))
+    props.key(ph, frames, location=(1.8, 0, 0.9))
+    return root
+
+
+def dice(frames, n=2, roll=(0.1, 0.6), seed=3):
+    rng = random.Random(seed)
+    root = empty("dice")
+    white = mat("die", (0.95, 0.95, 0.93), 0.3)
+    pip = mat("pip", (0.05, 0.05, 0.08), 0.3)
+    for i in range(n):
+        d = child(empty("die"), root)
+        box("cube", (0, 0, 0), (0.12, 0.12, 0.12), white, 0.02, d)
+        for (x, y, z) in [(0, -0.061, 0), (0.061, 0.03, 0.03), (0.061, -0.03, -0.03), (0, 0, 0.061)]:
+            sph("pip", (x, y, z), 0.012, pip, (1, 0.3, 1) if abs(y) > 0.06 else (0.3, 1, 1) if abs(x) > 0.06 else (1, 1, 0.3), d)
+        x0 = (i - (n - 1) / 2) * 0.25
+        props.key(d, key_frac(frames, roll[0]), location=(x0 - 0.6, 0.2, 0.5), rotation_euler=(0, 0, 0))
+        props.key(d, key_frac(frames, roll[1]), location=(x0, 0, 0.06),
+                  rotation_euler=(R(90 * rng.randint(3, 8)), R(90 * rng.randint(3, 8)), R(rng.uniform(-30, 30))))
+    return root
+
+
+def entangled(frames, apart=(0.1, 0.6), measure=0.75):
+    """Two particles fly apart joined by a glowing thread; measuring one flips both spin arrows at once."""
+    root = empty("entangled")
+    for k, sign in enumerate((-1, 1)):
+        p = child(empty(f"particle{k}"), root)
+        sph("ball", (0, 0, 0), 0.08, mat(f"ent{k}", (0.4, 0.8, 1.0) if k else (1.0, 0.5, 0.8), 0.3, emit=2), parent=p)
+        ar = space.arrow(f"spin{k}", (1, 1, 1), 0.25, 0.012, 3)
+        ar.parent = p
+        ar.location = (0, 0, 0)
+        ar.rotation_euler = (0, R(-90), 0)
+        props.key(ar, key_frac(frames, measure), rotation_euler=(0, R(-90), R(0)))
+        props.key(ar, key_frac(frames, measure) + 3, rotation_euler=(0, R(-90 if k else 90), 0))
+        props.key(p, key_frac(frames, apart[0]), location=(0, 0, 0))
+        props.key(p, key_frac(frames, apart[1]), location=(sign * 1.4, 0, 0))
+    lm, ls = fx.emissive("link", (0.8, 0.6, 1.0), 2)
+    line = cyl("link", (0, 0, 0), 0.006, 2.8, lm, rot=(0, R(90), 0), parent=root)
+    props.key(line, key_frac(frames, apart[0]), scale=(1, 1, 0.01))
+    props.key(line, key_frac(frames, apart[1]), scale=(1, 1, 1))
+    glow_keys(ls, frames, [(0, 2), (measure, 2), (measure + 0.03, 12), (measure + 0.1, 2)])
+    return root
+
+
+def blackboard(frames, lines=("E = mc²",), at=0.1):
+    root = empty("blackboard")
+    box("board", (0, 0, 1.5), (2.4, 0.05, 1.3), mat("slate", (0.06, 0.12, 0.08), 0.8), parent=root)
+    box("board_frame", (0, 0.01, 1.5), (2.5, 0.04, 1.4), mat("frame_wood", (0.35, 0.2, 0.1), 0.6), parent=root)
+    chalk = mat("chalk", (0.95, 0.95, 0.9), 0.9, emit=0.4)
+    for i, line in enumerate(lines):
+        t = fx.text(line, chalk, (0, -0.035, 1.9 - i * 0.28), size=0.16, depth=0.003)
+        t.parent = root
+        fx.pop_in(t, key_frac(frames, at + 0.1 * i))
+    return root
+
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",
