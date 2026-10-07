@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
 videos/*/out/
+videos/shorts/*/build/
+videos/shorts/*/final/*.mp4

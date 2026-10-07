@@ -1,0 +1,523 @@
+{
+ "slug": "knuckle-cracking",
+ "title": "He Cracked Only One Hand for 50 Years",
+ "voice": {
+  "piper_voice": "en_US-ryan-high",
+  "length_scale": 0.92,
+  "sentence_silence": 0.12,
+  "pronunciations": {
+   "Ig Nobel": "Ig No-bell",
+   "synovial": "sigh-no-vee-al"
+  }
+ },
+ "render": {
+  "width": 540,
+  "height": 960,
+  "samples": 12,
+  "fps": 24
+ },
+ "music_mood": "reflective",
+ "gap_seconds": 0.1,
+ "sources": [
+  "https://thetech.com/2009/10/02/ignobels-v129-n41",
+  "https://www.scientificamerican.com/article/crack-research/",
+  "https://www.ualberta.ca/rehabilitation/news-and-events/news/2015/april/pull-my-finger-say-scientists-who-solve-knuckle-cracking-riddle.html",
+  "https://doaj.org/article/043e1b5f3a0040029b2a65165d717e35",
+  "https://en.wikipedia.org/wiki/Joint_cracking"
+ ],
+ "shots": [
+  {
+   "id": "s01",
+   "line": "This doctor cracked the knuckles on his left hand at least twice a day, for more than fifty years.",
+   "visual": {
+    "type": "character",
+    "look": "clay",
+    "pose": {
+     "arm_forward": {
+      "L": 10,
+      "R": 10
+     },
+     "raise_arm": {
+      "L": -34,
+      "R": -34
+     },
+     "elbow": {
+      "L": 100,
+      "R": 100
+     },
+     "twist": {
+      "L": 90,
+      "R": 90
+     },
+     "curl": {
+      "L": 15,
+      "R": 15
+     },
+     "head_nod": 12,
+     "arm_inward": {
+      "L": 35,
+      "R": 35
+     }
+    },
+    "crack": {
+     "side": "L",
+     "times": 2,
+     "curl": 85
+    },
+    "camera": {
+     "from": {
+      "anchor": "chest",
+      "offset": [
+       0.7,
+       -2.7,
+       0.2
+      ],
+      "lens": 35
+     },
+     "to": {
+      "anchor": "hands",
+      "offset": [
+       0.35,
+       -1.1,
+       0.25
+      ],
+      "lens": 45
+     }
+    }
+   }
+  },
+  {
+   "id": "s02",
+   "line": "But he never once cracked his right.",
+   "visual": {
+    "type": "character",
+    "look": "clay",
+    "pose": {
+     "arm_forward": {
+      "L": 10,
+      "R": 10
+     },
+     "raise_arm": {
+      "L": -34,
+      "R": -34
+     },
+     "elbow": {
+      "L": 100,
+      "R": 100
+     },
+     "twist": {
+      "L": 90,
+      "R": 90
+     },
+     "curl": {
+      "L": 15,
+      "R": 15
+     },
+     "head_nod": 12,
+     "arm_inward": {
+      "L": 35,
+      "R": 35
+     }
+    },
+    "camera": {
+     "from": {
+      "anchor": "hands",
+      "offset": [
+       -0.3,
+       -0.95,
+       0.15
+      ],
+      "lens": 45
+     },
+     "to": {
+      "anchor": "hand.R",
+      "offset": [
+       -0.12,
+       -0.6,
+       0.1
+      ],
+      "lens": 50
+     }
+    }
+   }
+  },
+  {
+   "id": "s03",
+   "line": "Everyone warned him it would give him arthritis. So he decided to find out.",
+   "visual": {
+    "type": "character",
+    "look": "clay",
+    "pose": {
+     "head_turn": 18,
+     "head_nod": 4
+    },
+    "pose_to": {
+     "head_turn": -12,
+     "head_nod": -6
+    },
+    "camera": {
+     "from": {
+      "anchor": "head",
+      "offset": [
+       0.35,
+       -1.0,
+       0.05
+      ],
+      "lens": 50
+     },
+     "to": {
+      "anchor": "head",
+      "offset": [
+       0.15,
+       -0.7,
+       0.0
+      ],
+      "lens": 55
+     }
+    }
+   }
+  },
+  {
+   "id": "s04",
+   "line": "Inside every knuckle, the bones sit in a capsule filled with a slippery liquid called synovial fluid.",
+   "visual": {
+    "type": "character",
+    "look": {
+     "from": "clay",
+     "to": "xray",
+     "at": [
+      0.08,
+      0.4
+     ]
+    },
+    "pose": {
+     "arm_forward": {
+      "L": 10,
+      "R": 10
+     },
+     "raise_arm": {
+      "L": -34,
+      "R": -34
+     },
+     "elbow": {
+      "L": 100,
+      "R": 100
+     },
+     "twist": {
+      "L": 90,
+      "R": 90
+     },
+     "curl": {
+      "L": 15,
+      "R": 15
+     },
+     "head_nod": 12,
+     "arm_inward": {
+      "L": 35,
+      "R": 35
+     }
+    },
+    "camera": {
+     "from": {
+      "anchor": "hands",
+      "offset": [
+       0.35,
+       -1.0,
+       0.25
+      ],
+      "lens": 45
+     },
+     "to": {
+      "anchor": "hand.L",
+      "offset": [
+       0.15,
+       -0.45,
+       0.12
+      ],
+      "lens": 50
+     }
+    }
+   }
+  },
+  {
+   "id": "s05",
+   "line": "When you pull the joint, the bones separate, and the pressure inside drops.",
+   "visual": {
+    "type": "joint",
+    "side": "L",
+    "finger": "index",
+    "separate": [
+     0.2,
+     0.75,
+     0.004
+    ],
+    "orbit": 40,
+    "distance": 0.075
+   }
+  },
+  {
+   "id": "s06",
+   "line": "Suddenly, a gas cavity forms in the fluid. That's the pop.",
+   "visual": {
+    "type": "joint",
+    "side": "L",
+    "finger": "index",
+    "separate": [
+     0.0,
+     0.05,
+     0.004
+    ],
+    "bubble": {
+     "at": 0.32,
+     "size": 0.0035
+    },
+    "orbit": 25,
+    "distance": 0.075
+   }
+  },
+  {
+   "id": "s07",
+   "line": "In 2015, scientists filmed it happening inside an MRI scanner.",
+   "visual": {
+    "type": "joint",
+    "side": "L",
+    "finger": "index",
+    "separate": [
+     0.3,
+     0.55,
+     0.004
+    ],
+    "bubble": {
+     "at": 0.6,
+     "size": 0.0035
+    },
+    "mri": true,
+    "orbit": 60,
+    "distance": 0.16
+   }
+  },
+  {
+   "id": "s08",
+   "line": "The gas takes about twenty minutes to dissolve, which is why you can't crack the same knuckle again right away.",
+   "visual": {
+    "type": "joint",
+    "side": "L",
+    "finger": "index",
+    "separate": [
+     0.0,
+     0.03,
+     0.004
+    ],
+    "bubble": {
+     "at": 0.02,
+     "size": 0.0035,
+     "shrink": [
+      0.15,
+      0.95
+     ]
+    },
+    "progress": [
+     0.15,
+     0.95
+    ],
+    "orbit": 30,
+    "distance": 0.075
+   }
+  },
+  {
+   "id": "s09",
+   "line": "After fifty years, he compared his two hands.",
+   "visual": {
+    "type": "character",
+    "look": "xray",
+    "pose": {
+     "arm_forward": {
+      "L": 10,
+      "R": 10
+     },
+     "raise_arm": {
+      "L": -34,
+      "R": -34
+     },
+     "elbow": {
+      "L": 100,
+      "R": 100
+     },
+     "twist": {
+      "L": 90,
+      "R": 90
+     },
+     "curl": {
+      "L": 15,
+      "R": 15
+     },
+     "head_nod": 12,
+     "arm_inward": {
+      "L": 35,
+      "R": 35
+     }
+    },
+    "camera": {
+     "from": {
+      "anchor": "hands",
+      "offset": [
+       0.0,
+       -0.85,
+       0.15
+      ],
+      "lens": 45
+     },
+     "to": {
+      "anchor": "hands",
+      "offset": [
+       0.0,
+       -0.6,
+       0.1
+      ],
+      "lens": 50
+     }
+    }
+   }
+  },
+  {
+   "id": "s10",
+   "line": "Neither hand had arthritis, and there was no difference between them.",
+   "visual": {
+    "type": "character",
+    "look": "xray",
+    "bone_glow": {
+     "at": 0.25,
+     "color": [
+      0.2,
+      1.0,
+      0.45
+     ],
+     "strength": 1.0
+    },
+    "pose": {
+     "arm_forward": {
+      "L": 10,
+      "R": 10
+     },
+     "raise_arm": {
+      "L": -34,
+      "R": -34
+     },
+     "elbow": {
+      "L": 100,
+      "R": 100
+     },
+     "twist": {
+      "L": 90,
+      "R": 90
+     },
+     "curl": {
+      "L": 15,
+      "R": 15
+     },
+     "head_nod": 12,
+     "arm_inward": {
+      "L": 35,
+      "R": 35
+     }
+    },
+    "camera": {
+     "from": {
+      "anchor": "hands",
+      "offset": [
+       0.25,
+       -0.7,
+       0.15
+      ],
+      "lens": 45
+     },
+     "to": {
+      "anchor": "hands",
+      "offset": [
+       -0.25,
+       -0.65,
+       0.12
+      ],
+      "lens": 45
+     }
+    }
+   }
+  },
+  {
+   "id": "s11",
+   "line": "In 2009, it won him an Ig Nobel Prize.",
+   "visual": {
+    "type": "trophy",
+    "spin": 140
+   },
+   "sfx": [
+    {
+     "type": "chime",
+     "at": 0.15,
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "line": "So go ahead. Crack away.",
+   "visual": {
+    "type": "character",
+    "look": "clay",
+    "pose": {
+     "arm_forward": {
+      "L": 10,
+      "R": 10
+     },
+     "raise_arm": {
+      "L": -34,
+      "R": -34
+     },
+     "elbow": {
+      "L": 100,
+      "R": 100
+     },
+     "twist": {
+      "L": 90,
+      "R": 90
+     },
+     "curl": {
+      "L": 15,
+      "R": 15
+     },
+     "head_nod": 6,
+     "arm_inward": {
+      "L": 35,
+      "R": 35
+     }
+    },
+    "crack": {
+     "side": "R",
+     "times": 1,
+     "curl": 85
+    },
+    "camera": {
+     "from": {
+      "anchor": "hands",
+      "offset": [
+       -0.3,
+       -1.0,
+       0.25
+      ],
+      "lens": 45
+     },
+     "to": {
+      "anchor": "chest",
+      "offset": [
+       0.4,
+       -2.6,
+       0.2
+      ],
+      "lens": 35
+     }
+    }
+   },
+   "hold": 0.5
+  }
+ ]
+}
