@@ -1,74 +1,417 @@
 {
  "module": "windmill",
  "title": "How One Boy Built a Windmill From Scrap",
- "size": [1920, 1080],
+ "size": [
+  1920,
+  1080
+ ],
  "length_scale": 1.2,
  "music": "ambient",
  "shots": [
-  {"scene": "village", "params": {"mode": "drought"},
-   "vo": "In 2001, a terrible famine swept across the African country of Malawi. Crops failed after floods and then drought. Food ran out, prices soared, and thousands of people died."},
-  {"scene": "maize", "params": {"dry": true},
-   "vo": "In the small village of Masitala, a fourteen-year-old boy named William Kamkwamba watched his family's maize fields wither. His family was down to one small meal a day."},
-  {"scene": "boy_walk", "params": {},
-   "vo": "Then came another blow. His parents could no longer afford his school fees, about eighty dollars a year. William had to drop out of school."},
-  {"scene": "windmill", "params": {"mode": "night"},
-   "vo": "But within a few years, this boy would bring electricity to his home, using a windmill he built himself, out of scrap. This is how he did it."},
-
-  {"scene": "boy_walk", "params": {"library": true, "az0": 0.3, "az1": 0.1},
-   "vo": "William didn't stop learning. He started visiting a small library at a nearby primary school, stocked with donated books. He read everything he could find about science."},
-  {"scene": "library", "params": {"cover": true},
-   "vo": "One day he found a textbook called Using Energy. On its cover was a row of windmills. The book explained that wind could turn a turbine and make electricity."},
-  {"scene": "library", "params": {"az0": 0.5, "az1": 0.7},
-   "vo": "His English wasn't perfect, so he studied the diagrams closely, and looked up the words he didn't know. Slowly, an idea took shape."},
-  {"scene": "house_light", "params": {"kerosene": 1, "on0": 0, "on1": 0},
-   "vo": "At the time, only about two percent of Malawians had electricity. At night, his family used smoky kerosene lamps, and the day ended when the sun went down. William wanted to change that."},
-
-  {"scene": "dynamo", "params": {},
-   "vo": "Here's the science behind his plan. In 1831, the scientist Michael Faraday discovered that moving a magnet near a coil of wire makes electric current flow. It's called electromagnetic induction."},
-  {"scene": "dynamo", "params": {"az0": 0.6, "az1": 0.9},
-   "vo": "Spin a magnet inside a coil, and you get a steady flow of electricity. That's how almost every power station on Earth works, from coal plants to giant wind turbines.", "highlight": "#ffb347"},
-  {"scene": "bicycle", "params": {},
-   "vo": "William realized he already knew a small version of this machine. Some bicycles had a dynamo: a little generator pressed against the wheel, that powered the headlight while you pedaled."},
-  {"scene": "windmill", "params": {"mode": "day", "spin": 20},
-   "vo": "So the plan was simple, at least on paper. Let the wind turn some blades. Let the blades spin a wheel. Let the wheel spin a dynamo. And let the dynamo light a bulb."},
-
-  {"scene": "junkyard", "params": {},
-   "vo": "But William had no money for parts. So he went to the local scrapyard, and started digging."},
-  {"scene": "junkyard", "params": {"az0": 0.6, "az1": 0.3},
-   "vo": "He collected a tractor fan, an old shock absorber, plastic pipes, and bits of metal. People in the village saw him carrying junk home and thought he had gone crazy. Some even said he was smoking something.", "highlight": "#ff4b5c"},
-  {"scene": "bicycle", "params": {"az0": -0.6, "az1": -0.3},
-   "vo": "His friend Gilbert, the son of the village chief, helped him buy a broken bicycle frame and a dynamo. Those would become the heart of the machine."},
-  {"scene": "pvc_blades", "params": {"flatten": 1},
-   "vo": "For the blades, he cut plastic PVC pipes in half, heated them over a fire, and pressed them flat. Then he bolted them to the tractor fan."},
-  {"scene": "build", "params": {"k0": 0, "k1": 1},
-   "vo": "For the tower, he and his friends cut down blue gum trees, and lashed the poles together into a tower about five meters tall."},
-
-  {"scene": "windmill", "params": {"mode": "day", "spin": 6, "az0": 0.4, "az1": 0.6},
-   "vo": "Finally, they hauled the machine to the top. The blades were connected to the bicycle wheel, and the wheel to the dynamo. A wire ran down to a small light bulb he held in his hand."},
-  {"scene": "house_light", "params": {"handheld": 1, "flicker": 1, "on0": 0, "on1": 1},
-   "vo": "The wind picked up. The blades started to turn. And the bulb flickered, then glowed.", "highlight": "#ffd36b"},
-  {"scene": "windmill", "params": {"mode": "day", "crowd": true, "spin": 30},
-   "vo": "A crowd had gathered to watch. The boy they had called crazy had made electricity from the wind."},
-
-  {"scene": "house_light", "params": {"windmill": true, "on0": 1, "on1": 1},
-   "vo": "William kept improving his machine. He ran wires into his family's house, and powered light bulbs and a radio. He even built his own circuit breaker, using nails, magnets and wire, to stop the wires from overheating and causing a fire."},
-  {"scene": "windmill", "params": {"mode": "night", "height": 11, "spin": 30, "az0": -0.4, "az1": -0.1},
-   "vo": "Soon neighbors were lining up to charge their mobile phones. He later rebuilt the windmill on a taller tower, around twelve meters high, to catch stronger winds."},
-  {"scene": "pump", "params": {},
-   "vo": "He went on to build a solar-powered water pump for the village, and a windmill to help pump water for irrigation, so families could grow food even in the dry season.", "highlight": "#4dff9a"},
-
-  {"scene": "title_card", "params": {"year": "2006", "lines": ["NEWS SPREADS", "a boy, a windmill, and a village with light"], "sub": "local newspapers · bloggers · the world takes notice"},
-   "vo": "In 2006, a local newspaper wrote about the windmill. Bloggers picked up the story, and it spread around the world."},
-  {"scene": "stage", "params": {},
-   "vo": "In 2007, William was invited to speak at a TED conference in Arusha, Tanzania. Nervous, and speaking in English to a huge audience, he summed up his story in a few words: I try, and I made it.", "highlight": "#ffd36b"},
-  {"scene": "title_card", "params": {"year": "2014", "lines": ["DARTMOUTH COLLEGE", "graduated, environmental studies"], "sub": "after the African Leadership Academy in South Africa"},
-   "vo": "Supporters helped him go back to school. He studied at the African Leadership Academy in South Africa, and later graduated from Dartmouth College in the United States in 2014."},
-  {"scene": "title_card", "params": {"big": "THE BOY WHO HARNESSED THE WIND", "bigSize": 96, "sub": "a bestselling book (2009) · a Netflix film (2019)", "sub2": "the windmill from scrap became a story told worldwide"},
-   "vo": "His story became a bestselling book, The Boy Who Harnessed the Wind, and in 2019, a Netflix film of the same name."},
-
-  {"scene": "windmill", "params": {"mode": "sunset", "spin": 12, "az0": 0.8, "az1": 1.1},
-   "vo": "William didn't have money, tools, or a teacher. What he had was curiosity, a library book, and the refusal to give up when people laughed at him."},
-  {"scene": "village", "params": {"mode": "green", "windmill": true},
-   "vo": ["Big ideas can come from anywhere, even from a scrapyard in a village without electricity. As William put it: I try, and I made it.", "Thanks for watching this series. If you enjoyed it, subscribe for more stories about science and the people who change the world."]}
+  {
+   "scene": "village",
+   "params": {
+    "mode": "drought"
+   },
+   "vo": "In 2001, a terrible famine swept across the African country of Malawi. Crops failed after floods and then drought. Food ran out, prices soared, and thousands of people died."
+  },
+  {
+   "scene": "maize",
+   "params": {
+    "dry": true
+   },
+   "vo": "In the small village of Masitala, a fourteen-year-old boy named William Kamkwamba watched his family's maize fields wither. His family was down to one small meal a day."
+  },
+  {
+   "scene": "maize",
+   "params": {
+    "dry": true,
+    "az0": 0.6,
+    "az1": 0.3
+   },
+   "vo": "Malawi is a small, landlocked country in southern Africa. Most families, like William's, grew maize to survive. When the rains failed, there was simply nothing else to eat."
+  },
+  {
+   "scene": "village",
+   "params": {
+    "mode": "drought",
+    "az0": -0.4,
+    "az1": -0.1
+   },
+   "vo": "People sold their goats, their pots, even the roofs of their houses to buy food. Some families walked for days searching for maize. William's family lived on a handful of meals a week."
+  },
+  {
+   "scene": "boy_walk",
+   "params": {},
+   "vo": "Then came another blow. His parents could no longer afford his school fees, about eighty dollars a year. William had to drop out of school."
+  },
+  {
+   "scene": "boy_walk",
+   "params": {
+    "az0": -0.5,
+    "az1": -0.2
+   },
+   "vo": "William had always loved taking things apart. He fixed radios for his neighbors, figuring out how they worked by opening them up and testing every part."
+  },
+  {
+   "scene": "windmill",
+   "params": {
+    "mode": "night"
+   },
+   "vo": "But within a few years, this boy would bring electricity to his home, using a windmill he built himself, out of scrap. This is how he did it."
+  },
+  {
+   "scene": "boy_walk",
+   "params": {
+    "library": true,
+    "az0": 0.3,
+    "az1": 0.1
+   },
+   "vo": "William didn't stop learning. He started visiting a small library at a nearby primary school, stocked with donated books. He read everything he could find about science."
+  },
+  {
+   "scene": "library",
+   "params": {
+    "cover": true
+   },
+   "vo": "One day he found a textbook called Using Energy. On its cover was a row of windmills. The book explained that wind could turn a turbine and make electricity."
+  },
+  {
+   "scene": "library",
+   "params": {
+    "az0": 0.5,
+    "az1": 0.7
+   },
+   "vo": "His English wasn't perfect, so he studied the diagrams closely, and looked up the words he didn't know. Slowly, an idea took shape."
+  },
+  {
+   "scene": "library",
+   "params": {
+    "cover": false,
+    "az0": -0.3,
+    "az1": 0.0
+   },
+   "vo": "He also studied another book, called Explaining Physics. It taught him about magnets, motors, and how electricity flows through wires. He read it again and again."
+  },
+  {
+   "scene": "house_light",
+   "params": {
+    "kerosene": 1,
+    "on0": 0,
+    "on1": 0
+   },
+   "vo": "At the time, only about two percent of Malawians had electricity. At night, his family used smoky kerosene lamps, and the day ended when the sun went down. William wanted to change that."
+  },
+  {
+   "scene": "house_light",
+   "params": {
+    "kerosene": 1,
+    "on0": 0,
+    "on1": 0,
+    "az0": -0.2,
+    "az1": 0.1
+   },
+   "vo": "Kerosene was expensive, and the smoke filled the house. Without electric light, children couldn't study at night, and without electric pumps, farmers could only grow crops when it rained."
+  },
+  {
+   "scene": "dynamo",
+   "params": {},
+   "vo": "Here's the science behind his plan. In 1831, the scientist Michael Faraday discovered that moving a magnet near a coil of wire makes electric current flow. It's called electromagnetic induction."
+  },
+  {
+   "scene": "dynamo",
+   "params": {
+    "az0": 0.6,
+    "az1": 0.9
+   },
+   "vo": "Spin a magnet inside a coil, and you get a steady flow of electricity. That's how almost every power station on Earth works, from coal plants to giant wind turbines.",
+   "highlight": "#ffb347"
+  },
+  {
+   "scene": "bicycle",
+   "params": {},
+   "vo": "William realized he already knew a small version of this machine. Some bicycles had a dynamo: a little generator pressed against the wheel, that powered the headlight while you pedaled."
+  },
+  {
+   "scene": "windmill",
+   "params": {
+    "mode": "day",
+    "spin": 25,
+    "height": 11,
+    "az0": -0.8,
+    "az1": -0.5
+   },
+   "vo": "And wind is free. The faster the wind blows, the more energy it carries. In fact, if the wind speed doubles, the power available goes up about eight times. That's why turbines are built on tall towers, where the wind is stronger and steadier.",
+   "highlight": "#ffb347"
+  },
+  {
+   "scene": "dynamo",
+   "params": {
+    "az0": -0.5,
+    "az1": -0.2
+   },
+   "vo": "William's challenge was turning that wind into enough motion to spin a magnet fast. The bicycle chain and wheel could help with that, acting like gears."
+  },
+  {
+   "scene": "windmill",
+   "params": {
+    "mode": "day",
+    "spin": 20
+   },
+   "vo": "So the plan was simple, at least on paper. Let the wind turn some blades. Let the blades spin a wheel. Let the wheel spin a dynamo. And let the dynamo light a bulb."
+  },
+  {
+   "scene": "junkyard",
+   "params": {},
+   "vo": "But William had no money for parts. So he went to the local scrapyard, and started digging."
+  },
+  {
+   "scene": "junkyard",
+   "params": {
+    "az0": 0.6,
+    "az1": 0.3
+   },
+   "vo": "He collected a tractor fan, an old shock absorber, plastic pipes, and bits of metal. People in the village saw him carrying junk home and thought he had gone crazy. Some even said he was smoking something.",
+   "highlight": "#ff4b5c"
+  },
+  {
+   "scene": "junkyard",
+   "params": {
+    "az0": -0.3,
+    "az1": 0.0
+   },
+   "vo": "Day after day, he searched through rusty metal and broken machines. For a boy with no money, the scrapyard was the only hardware store he had."
+  },
+  {
+   "scene": "bicycle",
+   "params": {
+    "az0": -0.6,
+    "az1": -0.3
+   },
+   "vo": "His friend Gilbert, the son of the village chief, helped him buy a broken bicycle frame and a dynamo. Those would become the heart of the machine."
+  },
+  {
+   "scene": "pvc_blades",
+   "params": {
+    "flatten": 1
+   },
+   "vo": "For the blades, he cut plastic PVC pipes in half, heated them over a fire, and pressed them flat. Then he bolted them to the tractor fan."
+  },
+  {
+   "scene": "pvc_blades",
+   "params": {
+    "flatten": 1,
+    "az0": 0.4,
+    "az1": 0.8
+   },
+   "vo": "Shaping the blades was tricky. Too flat, and they wouldn't catch the wind. Too curved, and they'd be inefficient. He bent them by hand until they had just the right twist."
+  },
+  {
+   "scene": "build",
+   "params": {
+    "k0": 0,
+    "k1": 1
+   },
+   "vo": "For the tower, he and his friends cut down blue gum trees, and lashed the poles together into a tower about five meters tall."
+  },
+  {
+   "scene": "build",
+   "params": {
+    "k0": 1,
+    "k1": 1,
+    "az0": -0.5,
+    "az1": -0.2
+   },
+   "vo": "There were no cranes or power tools. Everything was cut, lifted, and tied together by hand, with nails, wire, and help from his friends."
+  },
+  {
+   "scene": "windmill",
+   "params": {
+    "mode": "day",
+    "spin": 6,
+    "az0": 0.4,
+    "az1": 0.6
+   },
+   "vo": "Finally, they hauled the machine to the top. The blades were connected to the bicycle wheel, and the wheel to the dynamo. A wire ran down to a small light bulb he held in his hand."
+  },
+  {
+   "scene": "house_light",
+   "params": {
+    "handheld": 1,
+    "flicker": 1,
+    "on0": 0,
+    "on1": 1
+   },
+   "vo": "The wind picked up. The blades started to turn. And the bulb flickered, then glowed.",
+   "highlight": "#ffd36b"
+  },
+  {
+   "scene": "windmill",
+   "params": {
+    "mode": "day",
+    "crowd": true,
+    "spin": 30
+   },
+   "vo": "A crowd had gathered to watch. The boy they had called crazy had made electricity from the wind."
+  },
+  {
+   "scene": "windmill",
+   "params": {
+    "mode": "day",
+    "spin": 20,
+    "crowd": true,
+    "az0": -0.6,
+    "az1": -0.3
+   },
+   "vo": "It was only enough to power a single small bulb. But it proved something important. His idea worked."
+  },
+  {
+   "scene": "house_light",
+   "params": {
+    "windmill": true,
+    "on0": 1,
+    "on1": 1
+   },
+   "vo": "William kept improving his machine. He ran wires into his family's house, and powered light bulbs and a radio. He even built his own circuit breaker, using nails, magnets and wire, to stop the wires from overheating and causing a fire."
+  },
+  {
+   "scene": "house_light",
+   "params": {
+    "windmill": true,
+    "on0": 1,
+    "on1": 1,
+    "az0": 0.8,
+    "az1": 0.5
+   },
+   "vo": "To keep the lights on when the wind dropped, he connected a car battery to store the electricity. He made light switches from scraps of rubber and metal, and wired them himself."
+  },
+  {
+   "scene": "house_light",
+   "params": {
+    "on0": 1,
+    "on1": 1,
+    "az0": 0.1,
+    "az1": -0.1
+   },
+   "vo": "His mother worried that the wires might start a fire. His homemade circuit breaker was the answer. A real engineer thinks about safety, not just power.",
+   "highlight": "#ff4b5c"
+  },
+  {
+   "scene": "windmill",
+   "params": {
+    "mode": "night",
+    "height": 11,
+    "spin": 30,
+    "az0": -0.4,
+    "az1": -0.1
+   },
+   "vo": "Soon neighbors were lining up to charge their mobile phones. He later rebuilt the windmill on a taller tower, around twelve meters high, to catch stronger winds."
+  },
+  {
+   "scene": "pump",
+   "params": {},
+   "vo": "He went on to build a solar-powered water pump for the village, and a windmill to help pump water for irrigation, so families could grow food even in the dry season.",
+   "highlight": "#4dff9a"
+  },
+  {
+   "scene": "pump",
+   "params": {
+    "az0": 0.6,
+    "az1": 0.9
+   },
+   "vo": "With water, families could plant a second crop in the dry season. Food was no longer entirely at the mercy of the rain."
+  },
+  {
+   "scene": "title_card",
+   "params": {
+    "year": "2006",
+    "lines": [
+     "NEWS SPREADS",
+     "a boy, a windmill, and a village with light"
+    ],
+    "sub": "local newspapers · bloggers · the world takes notice"
+   },
+   "vo": "In 2006, a local newspaper wrote about the windmill. Bloggers picked up the story, and it spread around the world."
+  },
+  {
+   "scene": "stage",
+   "params": {},
+   "vo": "In 2007, William was invited to speak at a TED conference in Arusha, Tanzania. Nervous, and speaking in English to a huge audience, he summed up his story in a few words: I try, and I made it.",
+   "highlight": "#ffd36b"
+  },
+  {
+   "scene": "stage",
+   "params": {
+    "az0": 0.4,
+    "az1": 0.2
+   },
+   "vo": "The audience gave him a standing ovation. Within days, people around the world were sharing his story, and offering to help him return to school."
+  },
+  {
+   "scene": "title_card",
+   "params": {
+    "year": "2014",
+    "lines": [
+     "DARTMOUTH COLLEGE",
+     "graduated, environmental studies"
+    ],
+    "sub": "after the African Leadership Academy in South Africa"
+   },
+   "vo": "Supporters helped him go back to school. He studied at the African Leadership Academy in South Africa, and later graduated from Dartmouth College in the United States in 2014."
+  },
+  {
+   "scene": "title_card",
+   "params": {
+    "big": "THE BOY WHO HARNESSED THE WIND",
+    "bigSize": 96,
+    "sub": "a bestselling book (2009) · a Netflix film (2019)",
+    "sub2": "the windmill from scrap became a story told worldwide"
+   },
+   "vo": "His story became a bestselling book, The Boy Who Harnessed the Wind, and in 2019, a Netflix film of the same name."
+  },
+  {
+   "scene": "title_card",
+   "params": {
+    "year": "TODAY",
+    "lines": [
+     "BACK HOME",
+     "helping young inventors in Malawi"
+    ],
+    "sub": "schools · clean water · hands-on learning"
+   },
+   "vo": "Later, he returned home and worked to help young people in Malawi learn to build, invent, and solve problems in their own communities."
+  },
+  {
+   "scene": "windmill",
+   "params": {
+    "mode": "day",
+    "spin": 15,
+    "height": 11,
+    "az0": 1.2,
+    "az1": 0.9
+   },
+   "vo": "Today, wind turbines generate a growing share of the world's electricity. The biggest have blades over a hundred meters long. But they work on the same principle as William's homemade machine."
+  },
+  {
+   "scene": "windmill",
+   "params": {
+    "mode": "sunset",
+    "spin": 12,
+    "az0": 0.8,
+    "az1": 1.1
+   },
+   "vo": "William didn't have money, tools, or a teacher. What he had was curiosity, a library book, and the refusal to give up when people laughed at him."
+  },
+  {
+   "scene": "village",
+   "params": {
+    "mode": "green",
+    "windmill": true
+   },
+   "vo": [
+    "Big ideas can come from anywhere, even from a scrapyard in a village without electricity. As William put it: I try, and I made it.",
+    "Thanks for watching this series. If you enjoyed it, subscribe for more stories about science and the people who change the world."
+   ]
+  }
  ]
 }
