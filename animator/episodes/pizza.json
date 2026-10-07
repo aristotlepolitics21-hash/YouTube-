@@ -1,0 +1,158 @@
+{
+  "title": "$1 vs $1,000,000 Pizza!",
+  "format": "long",
+  "voice": {
+    "length_scale": 0.82
+  },
+  "thumbnail": {
+    "scene": 7,
+    "t": 2.0,
+    "text": [
+      "$1,000,000",
+      "PIZZA"
+    ],
+    "y": 0.1,
+    "x": 0.42,
+    "override": {
+      "score": null,
+      "mood": null,
+      "label": ""
+    },
+    "mascot": [
+      0.83,
+      0.68,
+      250,
+      "shock"
+    ],
+    "arrow": [
+      0.68,
+      0.62,
+      0.6,
+      0.58
+    ]
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "$1 PIZZA",
+        "VS",
+        "$1,000,000 PIZZA"
+      ],
+      "mood": "shock",
+      "min": 3.2,
+      "say": "This pizza costs one dollar. This one costs one million dollars. And today, Chip is eating both."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "6 PIZZAS",
+        "EACH 10X PRICIER"
+      ],
+      "palette": "blue",
+      "mood": "happy",
+      "money": false,
+      "say": "Every pizza costs ten times more than the last, and he has to rate every single one."
+    },
+    {
+      "type": "tier",
+      "item": "pizza",
+      "price": 1,
+      "level": 0,
+      "score": 2,
+      "mood": "sad",
+      "say": "We start with the one dollar slice. It's cold. It's burnt. And honestly, it's kind of crunchy in a bad way.",
+      "label": "PIZZA"
+    },
+    {
+      "type": "tier",
+      "item": "pizza",
+      "price": 10,
+      "level": 1,
+      "score": 5,
+      "mood": "neutral",
+      "say": "Ten dollars gets you a real cheese pizza. Not bad. Chip gives it a five.",
+      "label": "PIZZA"
+    },
+    {
+      "type": "tier",
+      "item": "pizza",
+      "price": 100,
+      "level": 2,
+      "score": 7,
+      "mood": "happy",
+      "say": "At one hundred dollars, it's handmade, wood fired, and covered in toppings.",
+      "label": "PIZZA"
+    },
+    {
+      "type": "tier",
+      "item": "pizza",
+      "price": 1000,
+      "level": 3,
+      "score": 8,
+      "mood": "happy",
+      "say": "One thousand dollars! Imported cheese, a chef flown in from Italy, and it's the size of a car tire.",
+      "label": "PIZZA"
+    },
+    {
+      "type": "tier",
+      "item": "pizza",
+      "price": 10000,
+      "level": 4,
+      "score": 9,
+      "mood": "shock",
+      "say": "Ten thousand dollars. This one is covered in truffles, and it actually sparkles. But wait, there's still one more.",
+      "label": "PIZZA"
+    },
+    {
+      "type": "tier",
+      "item": "pizza",
+      "price": 1000000,
+      "level": 5,
+      "score": 10,
+      "mood": "shock",
+      "min": 4,
+      "say": "This is the one million dollar pizza. Twenty four karat gold leaf, the rarest cheese on Earth, and a crust baked for seven days straight!",
+      "label": "PIZZA"
+    },
+    {
+      "type": "versus",
+      "left": {
+        "label": "$1",
+        "item": "pizza",
+        "level": 0
+      },
+      "right": {
+        "label": "$1,000,000",
+        "item": "pizza",
+        "level": 5
+      },
+      "say": "So here's the real question. Which one tastes better? The answer might surprise you."
+    },
+    {
+      "type": "counter",
+      "value": 1000000,
+      "label": "...OR TAKE THE CASH?",
+      "min": 3,
+      "say": "Chip can keep eating, or skip the pizza and take one million dollars instead."
+    },
+    {
+      "type": "winner",
+      "headline": "HE TOOK THE CASH!",
+      "name": "CHIP",
+      "color": [
+        40,
+        140,
+        255
+      ],
+      "min": 3.5,
+      "say": "He took the cash! And then he spent ten dollars on the cheese pizza. Smart."
+    },
+    {
+      "type": "outro",
+      "line": "WHICH ONE WOULD YOU EAT?",
+      "min": 3.5,
+      "say": "Which pizza would you pick? Tell me in the comments, and subscribe for the one million dollar burger."
+    }
+  ]
+}

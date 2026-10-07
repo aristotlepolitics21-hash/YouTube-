@@ -1,0 +1,249 @@
+{
+  "title": "Last To Leave The Circle Wins $100,000",
+  "format": "long",
+  "voice": {
+    "length_scale": 0.82
+  },
+  "thumbnail": {
+    "scene": 2,
+    "t": 0.2,
+    "text": [
+      "LAST TO LEAVE",
+      "WINS $100K"
+    ],
+    "y": 0.1,
+    "override": {
+      "banner": "",
+      "out": [],
+      "prize": null,
+      "clock": "",
+      "mood": "shock"
+    }
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "10 PLAYERS",
+        "1 CIRCLE",
+        "$100,000"
+      ],
+      "palette": "green",
+      "mood": "shock",
+      "min": 3.2,
+      "say": "Ten players. One circle. The last one standing inside it wins one hundred thousand dollars."
+    },
+    {
+      "type": "circle",
+      "prize": 100000,
+      "clock": "HOUR 0",
+      "mood": "happy",
+      "banner": "DON'T STEP OUT!",
+      "players": [
+        "ZOE",
+        "MAX",
+        "KAI",
+        "LUNA",
+        "OTTO",
+        "RIA",
+        "DEV",
+        "NOVA",
+        "SAM",
+        "PIP"
+      ],
+      "say": "Here are the rules. Step out of the circle, even for a second, and you're eliminated."
+    },
+    {
+      "type": "circle",
+      "prize": 100000,
+      "clock": "HOUR 6",
+      "mood": "neutral",
+      "out": [
+        8
+      ],
+      "players": [
+        "ZOE",
+        "MAX",
+        "KAI",
+        "LUNA",
+        "OTTO",
+        "RIA",
+        "DEV",
+        "NOVA",
+        "SAM",
+        "PIP"
+      ],
+      "say": "Six hours in, and Sam already forgot the rules and walked out to get a snack."
+    },
+    {
+      "type": "versus",
+      "left": {
+        "label": "STAY",
+        "mood": "nervous",
+        "color": [
+          255,
+          170,
+          30
+        ]
+      },
+      "right": {
+        "label": "$10,000 NOW",
+        "mood": "happy",
+        "color": [
+          90,
+          200,
+          90
+        ]
+      },
+      "say": "So we made it harder. Anyone who leaves right now gets ten thousand dollars, guaranteed."
+    },
+    {
+      "type": "circle",
+      "prize": 100000,
+      "clock": "HOUR 12",
+      "out": [
+        1,
+        5,
+        9
+      ],
+      "gone": [
+        8
+      ],
+      "players": [
+        "ZOE",
+        "MAX",
+        "KAI",
+        "LUNA",
+        "OTTO",
+        "RIA",
+        "DEV",
+        "NOVA",
+        "SAM",
+        "PIP"
+      ],
+      "say": "Max, Ria and Pip take the deal. Three players gone in one minute."
+    },
+    {
+      "type": "counter",
+      "value": 100000,
+      "start": 10000,
+      "label": "STILL ON THE LINE",
+      "palette": "purple",
+      "say": "But the hundred thousand is still out there, and six players want it."
+    },
+    {
+      "type": "circle",
+      "prize": 100000,
+      "clock": "HOUR 24",
+      "out": [
+        2,
+        6,
+        3
+      ],
+      "gone": [
+        1,
+        5,
+        8,
+        9
+      ],
+      "mood": "nervous",
+      "players": [
+        "ZOE",
+        "MAX",
+        "KAI",
+        "LUNA",
+        "OTTO",
+        "RIA",
+        "DEV",
+        "NOVA",
+        "SAM",
+        "PIP"
+      ],
+      "say": "One full day. No sleep. Kai falls asleep standing up, Dev gives up, and Luna slips right over the line."
+    },
+    {
+      "type": "circle",
+      "prize": 100000,
+      "clock": "HOUR 40",
+      "out": [
+        4
+      ],
+      "gone": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9
+      ],
+      "mood": "angry",
+      "banner": "FINAL 3",
+      "players": [
+        "ZOE",
+        "MAX",
+        "KAI",
+        "LUNA",
+        "OTTO",
+        "RIA",
+        "DEV",
+        "NOVA",
+        "SAM",
+        "PIP"
+      ],
+      "say": "Forty hours. Final three. And then Otto sneezes so hard he falls out of the circle."
+    },
+    {
+      "type": "circle",
+      "prize": 100000,
+      "clock": "HOUR 52",
+      "out": [
+        7
+      ],
+      "gone": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "mood": "nervous",
+      "banner": "FINAL 2",
+      "min": 4,
+      "players": [
+        "ZOE",
+        "MAX",
+        "KAI",
+        "LUNA",
+        "OTTO",
+        "RIA",
+        "DEV",
+        "NOVA",
+        "SAM",
+        "PIP"
+      ],
+      "say": "It's Zoe versus Nova. Fifty two hours. Nova closes her eyes for one second, and leans just a little too far."
+    },
+    {
+      "type": "winner",
+      "headline": "$100,000 WINNER!",
+      "name": "ZOE",
+      "color": [
+        240,
+        70,
+        70
+      ],
+      "min": 4,
+      "say": "Zoe wins one hundred thousand dollars! Fifty two hours inside one circle."
+    },
+    {
+      "type": "outro",
+      "line": "HOW LONG WOULD YOU LAST?",
+      "min": 3.5,
+      "say": "How long would you last in the circle? Comment your hours, and subscribe to see what we do with a thousand players."
+    }
+  ]
+}

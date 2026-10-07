@@ -1,0 +1,86 @@
+{
+  "title": "$1 vs $10,000 Burger #shorts",
+  "format": "short",
+  "voice": {
+    "length_scale": 0.8
+  },
+  "thumbnail": {
+    "scene": 4,
+    "t": 2.0,
+    "text": [
+      "PURE",
+      "GOLD?!"
+    ],
+    "y": 0.6,
+    "override": {
+      "score": null,
+      "label": ""
+    },
+    "mascot": [
+      0.78,
+      0.9,
+      140,
+      "shock"
+    ]
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "$1 BURGER",
+        "VS",
+        "$10,000"
+      ],
+      "mood": "shock",
+      "min": 2.5,
+      "say": "One dollar burger versus a ten thousand dollar burger."
+    },
+    {
+      "type": "tier",
+      "item": "burger",
+      "price": 1,
+      "level": 0,
+      "score": 1,
+      "mood": "sad",
+      "say": "The one dollar burger is just sad.",
+      "label": "BURGER"
+    },
+    {
+      "type": "tier",
+      "item": "burger",
+      "price": 100,
+      "level": 2,
+      "score": 7,
+      "mood": "happy",
+      "say": "A hundred dollars gets you a real stack.",
+      "label": "BURGER"
+    },
+    {
+      "type": "tier",
+      "item": "burger",
+      "price": 1000,
+      "level": 4,
+      "score": 9,
+      "mood": "shock",
+      "say": "A thousand dollars? Four patties and it sparkles.",
+      "label": "BURGER"
+    },
+    {
+      "type": "tier",
+      "item": "burger",
+      "price": 10000,
+      "level": 5,
+      "score": 10,
+      "mood": "shock",
+      "min": 3,
+      "say": "And the ten thousand dollar burger is wrapped in pure gold!",
+      "label": "BURGER"
+    },
+    {
+      "type": "outro",
+      "line": "WHICH ONE?",
+      "min": 2.5,
+      "say": "Which one would you eat? Subscribe for part two."
+    }
+  ]
+}
