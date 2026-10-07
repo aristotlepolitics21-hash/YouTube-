@@ -1,0 +1,5100 @@
+{
+ "format": "long",
+ "render": {
+  "width": 960,
+  "height": 540,
+  "samples": 8,
+  "fps": 12
+ },
+ "still_render": {
+  "width": 1920,
+  "height": 1080,
+  "samples": 16
+ },
+ "output_fps": 24,
+ "gap_seconds": 0.5,
+ "chapter_gap_seconds": 0.9,
+ "burn_captions": false,
+ "slug": "14-artificial-heart",
+ "title": "How Scientists Made an Artificial Heart",
+ "description": "From the first heart-lung machine to the Jarvik-7, LVADs that leave people with no pulse, and the magnetic BiVACOR heart: seventy years of building a heart by hand, told in 3D animation.",
+ "tags": [
+  "artificial heart",
+  "Jarvik-7",
+  "LVAD",
+  "heart transplant",
+  "BiVACOR",
+  "heart-lung machine",
+  "pacemaker",
+  "medical history",
+  "3D animation"
+ ],
+ "voice": {
+  "piper_voice": "en_US-ryan-high",
+  "length_scale": 1.25,
+  "sentence_silence": 0.28,
+  "pronunciations": {
+   "Bavolek": "Bav-oh-lek",
+   "Washkansky": "Wash-kan-skee",
+   "Liotta": "Lee-ot-ta",
+   "Jarvik": "Jar-vik",
+   "LVAD": "L-vad",
+   "LVADs": "L-vads",
+   "BiVACOR": "Bye-va-core",
+   "SynCardia": "Sin-car-dee-a",
+   "Timms": "Tims"
+  }
+ },
+ "music_mood": "hopeful",
+ "sources": [
+  "https://www.heart.org/en/health-topics/heart-failure/treatment-options-for-heart-failure/implantable-medical-devices-for-heart-failure",
+  "https://www.uchealth.org/today/history-of-the-artificial-heart/",
+  "https://www.texasheart.org/about-us/history/",
+  "https://healthcare.utah.edu/transplant/heart/history",
+  "https://bivacor.com/news/",
+  "https://www.umms.org/ummc/news/2022/university-of-maryland-school-of-medicine-faculty-scientists-and-clinicians-perform-historic-first-successful-transplant-of-porcine-heart-into-adult-human"
+ ],
+ "shots": [
+  {
+   "id": "s001",
+   "line": "Your heart beats about a hundred thousand times a day. Over a lifetime, that's around three billion beats, without a single day off.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "heart_organ",
+      "at": [
+       0,
+       0,
+       0.5
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "100,000 / DAY",
+      "at": [
+       0,
+       0.3,
+       1.0
+      ],
+      "size": 0.1,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.3,
+      -1.4,
+      0.7
+     ],
+     "to": [
+      0.2,
+      -1.2,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s002",
+   "line": "It pumps around seven thousand litres of blood every day, enough to fill a small swimming pool every few months.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "heart_organ",
+      "at": [
+       -0.3,
+       0,
+       0.5
+      ]
+     },
+     {
+      "prop": "blood_cells",
+      "at": [
+       0.6,
+       0.2,
+       0.0
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.8,
+      -2.0,
+      0.9
+     ],
+     "to": [
+      0.5,
+      -1.7,
+      0.8
+     ],
+     "target": [
+      0.3,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s003",
+   "line": "But when it fails, there is no backup. Heart disease is the world's biggest killer.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "heart_organ",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "args": {
+       "beats": [
+        [
+         0,
+         0.4
+        ]
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "NO. 1 KILLER",
+      "at": [
+       0,
+       0.3,
+       1.0
+      ],
+      "size": 0.1,
+      "color": [
+       1.0,
+       0.4,
+       0.4
+      ],
+      "pop": 0.5
+     }
+    ],
+    "camera": {
+     "from": [
+      0.3,
+      -1.4,
+      0.7
+     ],
+     "to": [
+      0.2,
+      -1.2,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s004",
+   "line": "So for seventy years, scientists and surgeons have tried to do something incredible: build a machine that can replace the human heart.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "artificial_heart",
+      "at": [
+       0,
+       0.4,
+       0.55
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "THE ARTIFICIAL HEART",
+      "at": [
+       0,
+       0,
+       1.4
+      ],
+      "size": 0.26,
+      "color": [
+       1.0,
+       0.45,
+       0.45
+      ],
+      "pop": 0.08
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.2,
+      1.2
+     ],
+     "to": [
+      0,
+      -2.8,
+      1.15
+     ],
+     "target": [
+      0,
+      0,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s005",
+   "line": "Your heart is really two pumps, side by side.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "heart_organ",
+      "at": [
+       0,
+       0,
+       0.5
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -1.4,
+      0.7
+     ],
+     "to": [
+      0.2,
+      -1.2,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   },
+   "chapter": "Two pumps in one"
+  },
+  {
+   "id": "s006",
+   "line": "The right side sends tired, oxygen-poor blood to the lungs. The left side, the stronger one, pushes fresh, oxygen-rich blood out to the whole body.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "heart_organ",
+      "at": [
+       0,
+       0,
+       0.5
+      ]
+     },
+     {
+      "prop": "blood_cells",
+      "at": [
+       0.9,
+       0.2,
+       0.2
+      ],
+      "scale": 0.5,
+      "args": {
+       "n": 6
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "LUNGS",
+      "at": [
+       -0.7,
+       0,
+       1.1
+      ],
+      "size": 0.1,
+      "color": [
+       0.4,
+       0.6,
+       1.0
+      ],
+      "pop": 0.2
+     },
+     {
+      "text": "BODY",
+      "at": [
+       0.7,
+       0,
+       1.1
+      ],
+      "size": 0.1,
+      "color": [
+       1.0,
+       0.4,
+       0.4
+      ],
+      "pop": 0.5
+     }
+    ],
+    "camera": {
+     "from": [
+      0.8,
+      -2.2,
+      0.9
+     ],
+     "to": [
+      0.5,
+      -1.8,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s007",
+   "line": "Four valves act like one-way doors, so blood only flows forwards. And a natural pacemaker sends an electrical spark to time every beat.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "heart_organ",
+      "at": [
+       0,
+       0,
+       0.5
+      ]
+     },
+     {
+      "prop": "spikes",
+      "at": [
+       0,
+       -0.4,
+       0.15
+      ],
+      "scale": 0.4,
+      "args": {
+       "channels": 1
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -1.4,
+      0.7
+     ],
+     "to": [
+      0.2,
+      -1.2,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s008",
+   "line": "Copying that with metal and plastic, inside a living body, for years, turned out to be one of the hardest problems in medicine.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "artificial_heart",
+      "at": [
+       0,
+       -0.1,
+       1.025
+      ],
+      "scale": 0.8
+     },
+     {
+      "prop": "glassware",
+      "at": [
+       0.45,
+       0,
+       0.875
+      ],
+      "args": {
+       "n": 2
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.35,
+      -1.0,
+      1.25
+     ],
+     "to": [
+      0.22,
+      -0.85,
+      1.2
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.98
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s009",
+   "line": "And unlike skin or bone, the heart barely repairs itself. In an adult, only about one percent of heart muscle cells are replaced each year, so damage from a heart attack is largely permanent.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "heart_organ",
+      "at": [
+       0,
+       0,
+       0.5
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -1.4,
+      0.7
+     ],
+     "to": [
+      0.2,
+      -1.2,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s010",
+   "line": "The first step was a machine that could take over from the heart for a few hours, so surgeons could operate on it.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "heart_lung_machine",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "prop": "hospital_bed",
+      "at": [
+       1.4,
+       0,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       1.4,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.5,
+      -3.6,
+      1.8
+     ],
+     "to": [
+      1.2,
+      -3.2,
+      1.7
+     ],
+     "target": [
+      0.6,
+      0,
+      1.0
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "chapter": "The heart-lung machine"
+  },
+  {
+   "id": "s011",
+   "line": "An American surgeon, John Gibbon, spent nearly twenty years building one, partly funded by IBM engineers.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.55,
+       0.5,
+       0.45
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.4,
+        0.65
+       ],
+       "pants": [
+        0.2,
+        0.4,
+        0.65
+       ],
+       "boots": [
+        0.9,
+        0.9,
+        0.9
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "heart_lung_machine",
+      "at": [
+       0.9,
+       0.3,
+       0
+      ],
+      "scale": 0.7
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s012",
+   "line": "His obsession began in the early nineteen thirties, when he sat all night beside a woman dying from a blood clot in her lungs, and imagined a machine that could take over while surgeons removed it.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     },
+     {
+      "hair": [
+       0.55,
+       0.5,
+       0.45
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.4,
+        0.65
+       ],
+       "pants": [
+        0.2,
+        0.4,
+        0.65
+       ],
+       "boots": [
+        0.9,
+        0.9,
+        0.9
+       ]
+      },
+      "at": [
+       -0.9,
+       0.2,
+       0
+      ],
+      "turn": -40,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s013",
+   "line": "His machine spread the blood in thin films over metal screens inside a chamber of oxygen, doing the work of the lungs, while a pump did the work of the heart.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "heart_lung_machine",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.0,
+      -2.2,
+      1.5
+     ],
+     "to": [
+      0.8,
+      -1.9,
+      1.45
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s014",
+   "line": "On the sixth of May, nineteen fifty three, he used it during an operation to repair a hole in the heart of an eighteen year old student, Cecelia Bavolek. The machine kept her alive for twenty six minutes. She recovered completely.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     },
+     {
+      "hair": [
+       0.25,
+       0.18,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.55,
+        0.5
+       ],
+       "pants": [
+        0.25,
+        0.55,
+        0.5
+       ],
+       "boots": [
+        0.9,
+        0.9,
+        0.9
+       ]
+      },
+      "at": [
+       -0.9,
+       0.2,
+       0
+      ],
+      "turn": -40,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "heart_lung_machine",
+      "at": [
+       1.4,
+       0.2,
+       0
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   }
+  },
+  {
+   "id": "s015",
+   "line": "Open-heart surgery was born. But surgeons still dreamed of something that could replace a heart for good.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "heart_lung_machine",
+      "at": [
+       1.4,
+       0.2,
+       0
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s016",
+   "line": "In nineteen fifty eight, Swedish doctors implanted the first pacemaker, a small device that sends electrical pulses to keep a slow heart beating steadily. Its first patient, Arne Larsson, went on to receive twenty six of them, and outlived both its inventors.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "pacemaker",
+      "at": [
+       0,
+       0,
+       0.7
+      ],
+      "scale": 1.5
+     },
+     {
+      "prop": "heart_organ",
+      "at": [
+       0.6,
+       0,
+       0.45
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.4,
+      -1.4,
+      0.8
+     ],
+     "to": [
+      0.3,
+      -1.2,
+      0.75
+     ],
+     "target": [
+      0.2,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s017",
+   "line": "In December nineteen sixty seven, in Cape Town, South Africa, surgeon Christiaan Barnard performed the first human heart transplant.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     },
+     {
+      "hair": [
+       0.25,
+       0.18,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.55,
+        0.5
+       ],
+       "pants": [
+        0.25,
+        0.55,
+        0.5
+       ],
+       "boots": [
+        0.9,
+        0.9,
+        0.9
+       ]
+      },
+      "at": [
+       -0.9,
+       0.2,
+       0
+      ],
+      "turn": -40,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     },
+     {
+      "hair": [
+       0.55,
+       0.5,
+       0.45
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.4,
+        0.65
+       ],
+       "pants": [
+        0.2,
+        0.4,
+        0.65
+       ],
+       "boots": [
+        0.9,
+        0.9,
+        0.9
+       ]
+      },
+      "at": [
+       0.9,
+       0.2,
+       0
+      ],
+      "turn": 40,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "chapter": "Transplants, and a shortage"
+  },
+  {
+   "id": "s018",
+   "line": "His patient, Louis Washkansky, lived for eighteen days.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s019",
+   "line": "The new heart itself worked well. He died of pneumonia, because the drugs that stopped his body rejecting it had also weakened his defences against infection.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s020",
+   "line": "It took until the nineteen eighties, and a new drug called cyclosporine, for transplants to become truly reliable. Today, more than four thousand heart transplants happen every year in the United States alone.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "heart_organ",
+      "at": [
+       0,
+       0,
+       0.5
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -1.4,
+      0.7
+     ],
+     "to": [
+      0.2,
+      -1.2,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s021",
+   "line": "But there's a problem that has never gone away: there are never enough donor hearts. Many patients die while waiting.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       -2.2,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "hospital_bed",
+      "at": [
+       2.2,
+       0.3,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -4.0,
+      2.0
+     ],
+     "to": [
+      0.3,
+      -3.6,
+      1.9
+     ],
+     "target": [
+      0,
+      0.6,
+      0.8
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.4,
+      0.42
+     ],
+     "world": [
+      0.02,
+      0.02,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s022",
+   "line": "That's why engineers kept chasing the dream of a mechanical heart.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "artificial_heart",
+      "at": [
+       0,
+       -0.1,
+       1.025
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.35,
+      -1.0,
+      1.25
+     ],
+     "to": [
+      0.22,
+      -0.85,
+      1.2
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.98
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   }
+  },
+  {
+   "id": "s023",
+   "line": "In April nineteen sixty nine, in Houston, surgeon Denton Cooley implanted the first total artificial heart in a human, designed by Domingo Liotta.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     },
+     {
+      "hair": [
+       0.55,
+       0.5,
+       0.45
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.4,
+        0.65
+       ],
+       "pants": [
+        0.2,
+        0.4,
+        0.65
+       ],
+       "boots": [
+        0.9,
+        0.9,
+        0.9
+       ]
+      },
+      "at": [
+       0.9,
+       0.2,
+       0
+      ],
+      "turn": 40,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "artificial_heart",
+      "at": [
+       0.6,
+       -0.3,
+       1.3
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "chapter": "The first artificial hearts"
+  },
+  {
+   "id": "s024",
+   "line": "It kept the patient, Haskell Karp, alive for sixty four hours, until a donor heart was found. It was meant as a bridge, not a permanent replacement.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "64 HOURS",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.3,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s025",
+   "line": "In Salt Lake City, a team at the University of Utah, including the engineer Robert Jarvik, built a stronger design: the Jarvik seven.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.2,
+       0.15,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.88,
+        0.9,
+        0.93
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "artificial_heart",
+      "at": [
+       0,
+       -0.1,
+       1.025
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.9,
+      -2.5,
+      1.6
+     ],
+     "to": [
+      0.6,
+      -2.1,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.15
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s026",
+   "line": "Two plastic pumping chambers replaced the heart's two lower chambers. Inside each, a flexible diaphragm was pushed by puffs of compressed air, squeezing blood out.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "artificial_heart",
+      "at": [
+       0,
+       0,
+       0.6
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -1.2,
+      0.7
+     ],
+     "to": [
+      0.2,
+      -1.0,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s027",
+   "line": "On the second of December, nineteen eighty two, a sixty one year old dentist named Barney Clark became the first person to receive one as a permanent replacement.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     },
+     {
+      "hair": [
+       0.25,
+       0.18,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.55,
+        0.5
+       ],
+       "pants": [
+        0.25,
+        0.55,
+        0.5
+       ],
+       "boots": [
+        0.9,
+        0.9,
+        0.9
+       ]
+      },
+      "at": [
+       -0.9,
+       0.2,
+       0
+      ],
+      "turn": -40,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "artificial_heart",
+      "at": [
+       0.6,
+       -0.3,
+       1.3
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   }
+  },
+  {
+   "id": "s028",
+   "line": "He lived for a hundred and twelve days. But he was tied by tubes to an air compressor the size of a washing machine, and suffered strokes and infections.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "heart_lung_machine",
+      "at": [
+       1.4,
+       0.2,
+       0
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s029",
+   "line": "The world watched with a mix of wonder and unease. Was this extending life, or just extending suffering?",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "MAN WITH A MECHANICAL HEART",
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.7
+  },
+  {
+   "id": "s030",
+   "line": "Another patient, William Schroeder, lived for six hundred and twenty days with a Jarvik seven, and even went on a fishing trip.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.2,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.45,
+        0.7
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "heart_lung_machine",
+      "at": [
+       1.0,
+       0.3,
+       0
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.4
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.3
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.85,
+       0.8,
+       0.7
+      ],
+      "zenith": [
+       0.25,
+       0.45,
+       0.85
+      ]
+     },
+     "floor": [
+      0.1,
+      0.35,
+      0.55
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s031",
+   "line": "Both implants were led by the same surgeon, William DeVries. But the strokes kept coming, and in nineteen ninety, US regulators withdrew approval for the Jarvik heart.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     },
+     {
+      "hair": [
+       0.25,
+       0.18,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.55,
+        0.5
+       ],
+       "pants": [
+        0.25,
+        0.55,
+        0.5
+       ],
+       "boots": [
+        0.9,
+        0.9,
+        0.9
+       ]
+      },
+      "at": [
+       -0.9,
+       0.2,
+       0
+      ],
+      "turn": -40,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "artificial_heart",
+      "at": [
+       0.7,
+       -0.3,
+       1.3
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s032",
+   "line": "Doctors realised that most failing hearts don't need to be replaced completely. Often, just the left side, the main pump, is too weak.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "heart_organ",
+      "at": [
+       0,
+       0,
+       0.5
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "LEFT VENTRICLE",
+      "at": [
+       0.5,
+       0.2,
+       0.95
+      ],
+      "size": 0.08,
+      "color": [
+       1.0,
+       0.4,
+       0.4
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.3,
+      -1.4,
+      0.7
+     ],
+     "to": [
+      0.2,
+      -1.2,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   },
+   "chapter": "Helping a heart, not replacing it"
+  },
+  {
+   "id": "s033",
+   "line": "So they built smaller devices to help it. A left ventricular assist device, or LVAD, is a pump about the size of a fist, attached to the heart.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "lvad",
+      "at": [
+       0,
+       0,
+       0.9
+      ]
+     },
+     {
+      "prop": "heart_organ",
+      "at": [
+       -0.35,
+       0,
+       0.75
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.4,
+      -1.4,
+      1.0
+     ],
+     "to": [
+      0.3,
+      -1.2,
+      0.95
+     ],
+     "target": [
+      0.1,
+      0,
+      0.7
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s034",
+   "line": "The first ones copied the heart, with pumping sacs that squeezed and relaxed, and wore out within a few years. Switching to spinning rotors made them smaller, quieter and far longer lasting.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "lvad",
+      "at": [
+       0,
+       0,
+       0.9
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.4,
+      -1.4,
+      1.0
+     ],
+     "to": [
+      0.3,
+      -1.2,
+      0.95
+     ],
+     "target": [
+      0.1,
+      0,
+      0.7
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s035",
+   "line": "Modern LVADs don't beat at all. A tiny spinning rotor, often levitated by magnets so it never wears out, pushes blood in a smooth, continuous stream.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "lvad",
+      "at": [
+       0,
+       0,
+       0.9
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.25,
+      -0.6,
+      1.0
+     ],
+     "to": [
+      0.18,
+      -0.5,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.92
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s036",
+   "line": "That leads to something astonishing: many people with these pumps have no pulse. A doctor feeling their wrist would find nothing, even though they're perfectly alive.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.2,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.45,
+        0.7
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "spikes",
+      "at": [
+       0.9,
+       0.4,
+       1.4
+      ],
+      "scale": 0.4,
+      "args": {
+       "channels": 1,
+       "seed": 9
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s037",
+   "line": "A cable runs through the skin to a controller and batteries worn on a belt or in a bag. Patients can go home, walk, and even return to work.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.2,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.45,
+        0.7
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "walk": [
+       [
+        0,
+        [
+         -0.6,
+         0,
+         0
+        ]
+       ],
+       [
+        1,
+        [
+         0.4,
+         0,
+         0
+        ]
+       ]
+      ]
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.4
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.3
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.85,
+       0.85,
+       0.9
+      ],
+      "zenith": [
+       0.25,
+       0.45,
+       0.85
+      ]
+     },
+     "floor": [
+      0.3,
+      0.5,
+      0.2
+     ]
+    }
+   }
+  },
+  {
+   "id": "s038",
+   "line": "Tens of thousands of people have now lived with an LVAD, some for more than ten years. The former US vice president Dick Cheney lived with one for about twenty months, before a heart transplant.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.42
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s039",
+   "line": "Total artificial hearts are still used too, as a bridge for people whose whole heart has failed. The best known today, SynCardia, is a descendant of the Jarvik seven.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "artificial_heart",
+      "at": [
+       0,
+       0,
+       0.6
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -1.2,
+      0.7
+     ],
+     "to": [
+      0.2,
+      -1.0,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   },
+   "chapter": "A heart with no beat"
+  },
+  {
+   "id": "s040",
+   "line": "More than two thousand have been implanted. And instead of a washing-machine-sized compressor, patients can now carry a portable driver in a backpack.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.2,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.7,
+        0.4,
+        0.2
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "crates",
+      "at": [
+       0.2,
+       0.4,
+       0.9
+      ],
+      "scale": 0.25,
+      "args": {
+       "n": 1,
+       "label": ""
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.4
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.3
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.85,
+       0.85,
+       0.9
+      ],
+      "zenith": [
+       0.25,
+       0.45,
+       0.85
+      ]
+     },
+     "floor": [
+      0.3,
+      0.5,
+      0.2
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s041",
+   "line": "The newest designs go further. The BiVACOR heart, from an Australian inventor, Daniel Timms, replaces both pumps with a single spinning disc, floating in a magnetic field.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "lvad",
+      "at": [
+       0,
+       0,
+       0.9
+      ],
+      "scale": 1.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.25,
+      -0.6,
+      1.0
+     ],
+     "to": [
+      0.18,
+      -0.5,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.92
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s042",
+   "line": "It has no valves, nothing to rub, and nothing to wear out. In twenty twenty four, the first patients received it in the United States.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     },
+     {
+      "hair": [
+       0.25,
+       0.18,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.55,
+        0.5
+       ],
+       "pants": [
+        0.25,
+        0.55,
+        0.5
+       ],
+       "boots": [
+        0.9,
+        0.9,
+        0.9
+       ]
+      },
+      "at": [
+       0.9,
+       0.2,
+       0
+      ],
+      "turn": 40,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s043",
+   "line": "Fittingly, the first implant took place at the Texas Heart Institute in Houston, where Denton Cooley had implanted the first artificial heart fifty five years earlier. Timms had started the project as a PhD student in Brisbane, more than twenty years before.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     },
+     {
+      "hair": [
+       0.25,
+       0.18,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.55,
+        0.5
+       ],
+       "pants": [
+        0.25,
+        0.55,
+        0.5
+       ],
+       "boots": [
+        0.9,
+        0.9,
+        0.9
+       ]
+      },
+      "at": [
+       -0.9,
+       0.2,
+       0
+      ],
+      "turn": -40,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "artificial_heart",
+      "at": [
+       0.7,
+       -0.3,
+       1.3
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s044",
+   "line": "In twenty twenty five, an Australian man in his forties became the first to leave hospital with one, living for more than a hundred days on a titanium heart, before receiving a donor heart.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.2,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.45,
+        0.7
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "walk": [
+       [
+        0,
+        [
+         -0.4,
+         0,
+         0
+        ]
+       ],
+       [
+        1,
+        [
+         0.4,
+         0,
+         0
+        ]
+       ]
+      ]
+     }
+    ],
+    "props": [],
+    "texts": [
+     {
+      "text": "100+ DAYS",
+      "at": [
+       0.9,
+       0.5,
+       1.8
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.4
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.3
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.95,
+       0.75,
+       0.5
+      ],
+      "zenith": [
+       0.2,
+       0.45,
+       0.85
+      ]
+     },
+     "floor": [
+      0.75,
+      0.6,
+      0.35
+     ]
+    }
+   }
+  },
+  {
+   "id": "s045",
+   "line": "Other researchers are trying different routes: hearts from genetically modified pigs, and heart tissue grown from a patient's own stem cells.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "heart_organ",
+      "at": [
+       -0.7,
+       0,
+       0.5
+      ],
+      "scale": 0.8
+     },
+     {
+      "prop": "cell",
+      "at": [
+       0.7,
+       0,
+       0.6
+      ],
+      "scale": 0.45
+     },
+     {
+      "prop": "dna_helix",
+      "at": [
+       0,
+       0.6,
+       1.1
+      ],
+      "scale": 0.4
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.0
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   },
+   "chapter": "The future"
+  },
+  {
+   "id": "s046",
+   "line": "In twenty twenty two, a man in Maryland lived for two months with a gene-edited pig heart, the first such transplant in a living person.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "heart_organ",
+      "at": [
+       0.6,
+       -0.3,
+       1.3
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s047",
+   "line": "His name was David Bennett, and he was fifty seven. A second patient received a pig heart the following year, and lived for about six weeks.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "pants": [
+        0.75,
+        0.8,
+        0.9
+       ],
+       "boots": [
+        0.72,
+        0.52,
+        0.42
+       ]
+      },
+      "at": [
+       0,
+       -0.55,
+       0.74
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -40,
+        "R": -40
+       },
+       "elbow": {
+        "L": 5,
+        "R": 5
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       }
+      },
+      "rot": [
+       -90,
+       0,
+       0
+      ]
+     },
+     {
+      "hair": [
+       0.55,
+       0.5,
+       0.45
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.4,
+        0.65
+       ],
+       "pants": [
+        0.2,
+        0.4,
+        0.65
+       ],
+       "boots": [
+        0.9,
+        0.9,
+        0.9
+       ]
+      },
+      "at": [
+       -0.9,
+       0.2,
+       0
+      ],
+      "turn": -40,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "surgical_lights",
+      "at": [
+       0,
+       0.3,
+       0
+      ]
+     },
+     {
+      "prop": "heart_organ",
+      "at": [
+       0.6,
+       -0.3,
+       1.3
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.8
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.7
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.6,
+      0.58
+     ],
+     "world": [
+      0.04,
+      0.05,
+      0.05
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s048",
+   "line": "And researchers have printed small, beating patches of heart tissue using 3D printers loaded with living cells.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "petri_dish",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "mould": false,
+       "colonies": 40,
+       "seed": 9
+      }
+     },
+     {
+      "prop": "heart_organ",
+      "at": [
+       0,
+       0,
+       0.05
+      ],
+      "scale": 0.2
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.25,
+      -0.75,
+      0.35
+     ],
+     "to": [
+      0.18,
+      -0.65,
+      0.32
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s049",
+   "line": "None of these is perfect yet. But each year, people who would once have died are living longer, at home, with their families.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.2,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.45,
+        0.7
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       -0.6,
+       0.35,
+       0
+      ],
+      "turn": -15,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.3,
+       0.15,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.7,
+        0.3,
+        0.4
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0.6,
+       0.35,
+       0
+      ],
+      "turn": 15,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.94
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.7
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.6
+     ],
+     "target": [
+      0,
+      0.3,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.6,
+      0.5,
+      0.4
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s050",
+   "line": "The human heart beats three billion times without stopping. Engineers have spent seventy years trying to match it.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "heart_organ",
+      "at": [
+       0,
+       0,
+       0.5
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -1.4,
+      0.7
+     ],
+     "to": [
+      0.2,
+      -1.2,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   },
+   "chapter": "Close"
+  },
+  {
+   "id": "s051",
+   "line": "They haven't beaten nature yet. But they've learned how to keep a human being alive, with a heart made by human hands.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "artificial_heart",
+      "at": [
+       -0.35,
+       0,
+       0.6
+      ],
+      "scale": 0.8
+     },
+     {
+      "prop": "heart_organ",
+      "at": [
+       0.35,
+       0,
+       0.5
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -0.9,
+      0.7
+     ],
+     "to": [
+      0.6,
+      -2.4,
+      0.9
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35,
+     "target_to": [
+      0,
+      0,
+      0.6
+     ]
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.04,
+      0.06
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.01
+     ]
+    }
+   },
+   "hold": 1.5
+  }
+ ]
+}
