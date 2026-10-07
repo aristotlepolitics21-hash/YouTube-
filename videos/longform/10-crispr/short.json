@@ -1,0 +1,3657 @@
+{
+ "format": "long",
+ "render": {
+  "width": 960,
+  "height": 540,
+  "samples": 8,
+  "fps": 12
+ },
+ "still_render": {
+  "width": 1920,
+  "height": 1080,
+  "samples": 16
+ },
+ "output_fps": 24,
+ "gap_seconds": 0.5,
+ "chapter_gap_seconds": 0.9,
+ "burn_captions": false,
+ "slug": "10-crispr",
+ "title": "How CRISPR Could Rewrite Human DNA",
+ "description": "A bacterial immune system became a word processor for genes. How CRISPR works, how it cured sickle cell disease, and the hard questions it raises, told in 3D animation.",
+ "tags": [
+  "CRISPR",
+  "gene editing",
+  "Cas9",
+  "Jennifer Doudna",
+  "Emmanuelle Charpentier",
+  "sickle cell",
+  "Casgevy",
+  "DNA",
+  "3D animation"
+ ],
+ "voice": {
+  "piper_voice": "en_US-ryan-high",
+  "length_scale": 1.25,
+  "sentence_silence": 0.28,
+  "pronunciations": {
+   "CRISPR": "Crisper",
+   "Cas nine": "Cass nine",
+   "Mojica": "Mo-hee-ka",
+   "Charpentier": "Shar-pon-tee-ay",
+   "Doudna": "Dowd-na",
+   "Danisco": "Dan-isco",
+   "Casgevy": "Cas-jev-ee",
+   "Jiankui": "Jyen-kway",
+   "haemoglobin": "hee-mo-glow-bin"
+  }
+ },
+ "music_mood": "hopeful",
+ "sources": [
+  "https://www.nobelprize.org/prizes/chemistry/2020/press-release/",
+  "https://www.science.org/doi/10.1126/science.1225829",
+  "https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease",
+  "https://www.npr.org/sections/health-shots/2019/07/29/744826505/sickle-cell-patient-reveals-why-she-is-volunteering-for-landmark-gene-editing-st",
+  "https://www.chop.edu/news/world-s-first-patient-treated-personalized-crispr-gene-editing-therapy-childrens-hospital",
+  "https://www.nature.com/articles/d41586-019-03891-1"
+ ],
+ "shots": [
+  {
+   "id": "s001",
+   "line": "Inside almost every cell of your body is a set of instructions, three billion letters long. Your DNA.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "cell",
+      "at": [
+       0,
+       0,
+       1.0
+      ]
+     },
+     {
+      "prop": "dna_helix",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "scale": 0.3
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.2,
+      1.2
+     ],
+     "to": [
+      0,
+      -2.4,
+      1.0
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s002",
+   "line": "A single wrong letter in that code can cause a devastating disease.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dna_helix",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "spin": 30
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "1 WRONG LETTER",
+      "at": [
+       0,
+       0.3,
+       1.1
+      ],
+      "size": 0.12,
+      "color": [
+       1.0,
+       0.4,
+       0.4
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      0.9
+     ],
+     "to": [
+      0.3,
+      -2.0,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s003",
+   "line": "For most of history, there was nothing we could do about it. Then, scientists found a tool that can find any spot in the genome, and cut it, with incredible precision.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dna_helix",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "cut": [
+        0.65,
+        0.2
+       ],
+       "spin": 20
+      }
+     },
+     {
+      "prop": "cas9",
+      "at": [
+       0.2,
+       -0.35,
+       0.75
+      ],
+      "scale": 0.8,
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -1.0,
+          -0.35,
+          0.75
+         ]
+        }
+       ],
+       [
+        0.6,
+        {
+         "at": [
+          0.2,
+          -0.35,
+          0.75
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      0.9
+     ],
+     "to": [
+      0.3,
+      -2.0,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s004",
+   "line": "It's called CRISPR. And it was borrowed from bacteria.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bacteria",
+      "at": [
+       0,
+       0.6,
+       0.4
+      ],
+      "args": {
+       "n": 12,
+       "area": 0.6
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "CRISPR",
+      "at": [
+       0,
+       0,
+       1.4
+      ],
+      "size": 0.4,
+      "color": [
+       0.5,
+       0.95,
+       0.6
+      ],
+      "pop": 0.08
+     },
+     {
+      "text": "HOW IT COULD REWRITE HUMAN DNA",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.11,
+      "color": [
+       1,
+       1,
+       1
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.2,
+      1.2
+     ],
+     "to": [
+      0,
+      -2.8,
+      1.15
+     ],
+     "target": [
+      0,
+      0,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s005",
+   "line": "DNA is a long, twisted ladder. Each rung is a pair of chemical letters: A, T, G and C. Their order spells out genes, the recipes for making proteins.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dna_helix",
+      "at": [
+       0,
+       0,
+       0.6
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "A   T   G   C",
+      "at": [
+       0,
+       0.3,
+       1.05
+      ],
+      "size": 0.14,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.5,
+      -1.6,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -1.3,
+      0.7
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   },
+   "chapter": "The code of life"
+  },
+  {
+   "id": "s006",
+   "line": "If you printed out the DNA in one human cell, it would fill around two hundred thick phone books. And if you stretched it out, it would be about two metres long.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "books",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 12,
+       "seed": 3
+      }
+     },
+     {
+      "prop": "books",
+      "at": [
+       0.4,
+       0.1,
+       0
+      ],
+      "args": {
+       "n": 10,
+       "seed": 4
+      }
+     },
+     {
+      "prop": "chromosome",
+      "at": [
+       -0.5,
+       0.2,
+       0.4
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -1.4,
+      0.9
+     ],
+     "to": [
+      0.1,
+      -1.2,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s007",
+   "line": "Some diseases, like sickle cell disease, come from a single misspelled letter in a single gene.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "blood_cells",
+      "at": [
+       0,
+       0.4,
+       0
+      ],
+      "args": {
+       "sickle": 5
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      0.9
+     ],
+     "to": [
+      0.2,
+      -2.4,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.25,
+      0.04,
+      0.05
+     ]
+    }
+   }
+  },
+  {
+   "id": "s008",
+   "line": "In sickle cell disease, red blood cells bend into stiff crescent shapes. They get stuck in blood vessels, causing terrible pain and organ damage.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "blood_cells",
+      "at": [
+       0,
+       0.4,
+       0
+      ],
+      "args": {
+       "sickle": 7,
+       "seed": 9
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -1.8,
+      0.7
+     ],
+     "to": [
+      0.2,
+      -1.5,
+      0.65
+     ],
+     "target": [
+      0,
+      0.3,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.25,
+      0.04,
+      0.05
+     ]
+    }
+   }
+  },
+  {
+   "id": "s009",
+   "line": "For decades, scientists dreamed of fixing faulty genes directly. But the early tools for editing DNA were slow, expensive, and hard to aim.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.25,
+       0.18,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.6,
+        0.6
+       ],
+       "pants": [
+        0.3,
+        0.6,
+        0.6
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "microscope",
+      "at": [
+       0.4,
+       -0.05,
+       0.875
+      ]
+     },
+     {
+      "prop": "glassware",
+      "at": [
+       -0.4,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.9,
+      -2.5,
+      1.6
+     ],
+     "to": [
+      0.6,
+      -2.1,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.15
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s010",
+   "line": "The answer came from somewhere unexpected. In the nineteen nineties, a Spanish microbiologist named Francisco Mojica was studying microbes from salt marshes.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.88,
+        0.9,
+        0.93
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.4
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.3
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.95,
+       0.8,
+       0.6
+      ],
+      "zenith": [
+       0.3,
+       0.5,
+       0.85
+      ]
+     },
+     "floor": [
+      0.85,
+      0.82,
+      0.75
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "A bacterial immune system"
+  },
+  {
+   "id": "s011",
+   "line": "In their DNA, he noticed strange repeated sequences, separated by unique spacers. Other scientists had spotted similar repeats in nineteen eighty seven.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dna_helix",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "edit": [
+        0.3,
+        -0.6,
+        3
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s012",
+   "line": "He and colleagues named them CRISPR: clustered regularly interspaced short palindromic repeats.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "C  R  I  S  P  R",
+      "at": [
+       0,
+       0,
+       1.2
+      ],
+      "size": 0.22,
+      "color": [
+       0.5,
+       0.95,
+       0.6
+      ],
+      "pop": 0.05
+     },
+     {
+      "text": "CLUSTERED REGULARLY INTERSPACED",
+      "at": [
+       0,
+       0,
+       0.9
+      ],
+      "size": 0.08,
+      "color": [
+       1,
+       1,
+       1
+      ],
+      "pop": 0.3
+     },
+     {
+      "text": "SHORT PALINDROMIC REPEATS",
+      "at": [
+       0,
+       0,
+       0.75
+      ],
+      "size": 0.08,
+      "color": [
+       1,
+       1,
+       1
+      ],
+      "pop": 0.45
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.85
+  },
+  {
+   "id": "s013",
+   "line": "Around two thousand and five, Mojica worked out what the spacers were: snippets of DNA from viruses that had attacked the bacteria before.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "phage",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "attack": [
+        0.1,
+        0.7
+       ]
+      }
+     },
+     {
+      "prop": "bacteria",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 3,
+       "area": 0.25
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -1.6,
+      0.6
+     ],
+     "to": [
+      0.4,
+      -1.3,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.4
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s014",
+   "line": "CRISPR was an immune system. The bacteria kept a library of mugshots of their enemies.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dna_helix",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "edit": [
+        0.2,
+        0.4,
+        1
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "VIRUS MUGSHOTS",
+      "at": [
+       0,
+       0.3,
+       1.05
+      ],
+      "size": 0.11,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      0.9
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      0.85
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s015",
+   "line": "If the same virus attacked again, the bacteria copied the matching mugshot into a short strand of RNA. That strand guided a cutting protein to the virus's DNA, and chopped it up.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dna_helix",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "cut": [
+        0.7,
+        0.2
+       ],
+       "spin": 20
+      }
+     },
+     {
+      "prop": "cas9",
+      "at": [
+       0.2,
+       -0.35,
+       0.75
+      ],
+      "scale": 0.8,
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -1.2,
+          -0.35,
+          0.75
+         ]
+        }
+       ],
+       [
+        0.65,
+        {
+         "at": [
+          0.2,
+          -0.35,
+          0.75
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      0.9
+     ],
+     "to": [
+      0.3,
+      -2.0,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s016",
+   "line": "In two thousand and seven, scientists at the yoghurt company Danisco confirmed it, while trying to protect the bacteria they used to make yoghurt and cheese from viruses.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "glassware",
+      "at": [
+       0,
+       0.05,
+       0
+      ],
+      "args": {
+       "n": 3,
+       "colors": [
+        [
+         0.95,
+         0.95,
+         0.9
+        ],
+        [
+         0.95,
+         0.9,
+         0.8
+        ],
+        [
+         1.0,
+         0.95,
+         0.85
+        ]
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.25,
+      -0.75,
+      0.35
+     ],
+     "to": [
+      0.18,
+      -0.65,
+      0.32
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s017",
+   "line": "The most important cutting protein is called Cas nine.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "cas9",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "spin": [
+       "z",
+       120
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -1.4,
+      0.6
+     ],
+     "to": [
+      0.3,
+      -1.2,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   },
+   "chapter": "The breakthrough"
+  },
+  {
+   "id": "s018",
+   "line": "In two thousand and eleven, the French microbiologist Emmanuelle Charpentier met the American biochemist Jennifer Doudna at a conference in Puerto Rico. They decided to work together.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.12,
+       0.08,
+       0.06
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.88,
+        0.9,
+        0.93
+       ],
+       "pants": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.45,
+       0.35,
+       0
+      ],
+      "turn": -15,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.45,
+       0.32,
+       0.18
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.88,
+        0.9,
+        0.93
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.45,
+       0.35,
+       0
+      ],
+      "turn": 15,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.95,
+       0.75,
+       0.55
+      ],
+      "zenith": [
+       0.2,
+       0.45,
+       0.85
+      ]
+     },
+     "floor": [
+      0.85,
+      0.75,
+      0.55
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s019",
+   "line": "In June twenty twelve, they published a landmark paper. They showed that Cas nine could be reprogrammed with a guide RNA to cut any DNA sequence they chose.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "A PROGRAMMABLE DUAL-RNA-GUIDED DNA ENDONUCLEASE",
+       "n": 2
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "2012",
+      "at": [
+       0,
+       0.3,
+       0.45
+      ],
+      "size": 0.12,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.7
+  },
+  {
+   "id": "s020",
+   "line": "Here's how it works. Scientists write a short guide sequence, about twenty letters long, that matches the target.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "cas9",
+      "at": [
+       0,
+       0,
+       0.5
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "20 LETTERS",
+      "at": [
+       0,
+       0.3,
+       0.85
+      ],
+      "size": 0.08,
+      "color": [
+       1.0,
+       0.85,
+       0.2
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.3,
+      -1.0,
+      0.6
+     ],
+     "to": [
+      0.2,
+      -0.85,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s021",
+   "line": "Cas nine slides along the DNA. When the guide finds its perfect match, Cas nine cuts both strands of the double helix.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dna_helix",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "cut": [
+        0.75,
+        0.2
+       ],
+       "spin": 15
+      }
+     },
+     {
+      "prop": "cas9",
+      "at": [
+       0.2,
+       -0.35,
+       0.75
+      ],
+      "scale": 0.8,
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -1.2,
+          -0.35,
+          0.75
+         ]
+        }
+       ],
+       [
+        0.7,
+        {
+         "at": [
+          0.2,
+          -0.35,
+          0.75
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      0.9
+     ],
+     "to": [
+      0.3,
+      -2.0,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s022",
+   "line": "The cell then rushes to repair the break. Scientists can use that moment to switch a gene off, or to slip in a new, corrected piece of DNA.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dna_helix",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "cut": [
+        0.1,
+        0.2
+       ],
+       "edit": [
+        0.5,
+        0.2,
+        3
+       ],
+       "spin": 15
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      0.9
+     ],
+     "to": [
+      0.3,
+      -2.0,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s023",
+   "line": "It's like a word processor for genes: find, cut, and replace.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "FIND",
+      "at": [
+       -0.7,
+       0,
+       1.0
+      ],
+      "size": 0.18,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     },
+     {
+      "text": "CUT",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.18,
+      "color": [
+       1.0,
+       0.5,
+       0.3
+      ],
+      "pop": 0.35
+     },
+     {
+      "text": "REPLACE",
+      "at": [
+       0.75,
+       0,
+       1.0
+      ],
+      "size": 0.18,
+      "color": [
+       0.4,
+       1.0,
+       0.6
+      ],
+      "pop": 0.6
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.85
+  },
+  {
+   "id": "s024",
+   "line": "Within months, teams led by Feng Zhang and George Church showed that it worked in human cells too.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.05,
+       0.04,
+       0.04
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.88,
+        0.9,
+        0.93
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "microscope",
+      "at": [
+       0.1,
+       -0.1,
+       0.875
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.9,
+      -2.5,
+      1.6
+     ],
+     "to": [
+      0.6,
+      -2.1,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.15
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s025",
+   "line": "CRISPR was cheap, fast and easy. Labs all over the world began using it almost overnight.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.1,
+       0.08,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.88,
+        0.9,
+        0.93
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -1.1,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.25,
+       0.08,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.88,
+        0.9,
+        0.93
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.4,
+       0.08,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.88,
+        0.9,
+        0.93
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       1.1,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      },
+      "scale": 0.95
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ],
+      "args": {
+       "w": 3.2
+      }
+     },
+     {
+      "prop": "microscope",
+      "at": [
+       -1.1,
+       -0.1,
+       0.875
+      ]
+     },
+     {
+      "prop": "petri_dish",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "mould": false
+      }
+     },
+     {
+      "prop": "glassware",
+      "at": [
+       1.1,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.4,
+      1.9
+     ],
+     "to": [
+      0.3,
+      -3.0,
+      1.8
+     ],
+     "target": [
+      0,
+      0.3,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s026",
+   "line": "In twenty twenty, Charpentier and Doudna won the Nobel Prize in Chemistry. It was the first time a science Nobel had been shared only by women.",
+   "visual": {
+    "type": "stage",
+    "env": "hall",
+    "cast": [
+     {
+      "hair": [
+       0.12,
+       0.08,
+       0.06
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.88,
+        0.9,
+        0.93
+       ],
+       "pants": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.45,
+       0.4,
+       0
+      ],
+      "turn": -10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.45,
+       0.32,
+       0.18
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.88,
+        0.9,
+        0.93
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.45,
+       0.4,
+       0
+      ],
+      "turn": 10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     }
+    ],
+    "props": [
+     {
+      "prop": "medal",
+      "at": [
+       0,
+       -0.2,
+       1.7
+      ],
+      "spin": [
+       "z",
+       40
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "NOBEL 2020",
+      "at": [
+       0,
+       0.2,
+       2.0
+      ],
+      "size": 0.14,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.4,
+      1.2
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s027",
+   "line": "The first big medical success came for sickle cell disease.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "blood_cells",
+      "at": [
+       0,
+       0.4,
+       0
+      ],
+      "args": {
+       "sickle": 5,
+       "fix": 0.5
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      0.9
+     ],
+     "to": [
+      0.2,
+      -2.4,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.25,
+      0.04,
+      0.05
+     ]
+    }
+   },
+   "chapter": "Curing disease"
+  },
+  {
+   "id": "s028",
+   "line": "Doctors take a patient's own blood stem cells, and use CRISPR to switch on a gene for a type of haemoglobin we all make before we're born.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.25,
+       0.18,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.6,
+        0.6
+       ],
+       "pants": [
+        0.3,
+        0.6,
+        0.6
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "vials",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ]
+     },
+     {
+      "prop": "syringe",
+      "at": [
+       0.4,
+       -0.15,
+       0.905
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.9,
+      -2.5,
+      1.6
+     ],
+     "to": [
+      0.6,
+      -2.1,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.15
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s029",
+   "line": "Those edited cells are put back, and begin making healthy red blood cells.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "blood_cells",
+      "at": [
+       0,
+       0.4,
+       0
+      ],
+      "args": {
+       "sickle": 6,
+       "fix": 0.2,
+       "seed": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      0.9
+     ],
+     "to": [
+      0.2,
+      -2.4,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s030",
+   "line": "Victoria Gray, from Mississippi, was the first American with sickle cell disease to be treated this way, in twenty nineteen. Her pain crises stopped.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.05,
+       0.04,
+       0.04
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.45,
+        0.3,
+        0.22
+       ],
+       "shirt": [
+        0.8,
+        0.4,
+        0.6
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -2.4,
+      1.6
+     ],
+     "to": [
+      0.35,
+      -2.0,
+      1.55
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.9,
+       0.8,
+       0.6
+      ],
+      "zenith": [
+       0.25,
+       0.45,
+       0.85
+      ]
+     },
+     "floor": [
+      0.3,
+      0.55,
+      0.25
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s031",
+   "line": "In late twenty twenty three, regulators in Britain and the United States approved the treatment, called Casgevy. It was the world's first approved CRISPR medicine.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "vials",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 4,
+       "label": "CASGEVY"
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "2023",
+      "at": [
+       0,
+       0.2,
+       0.3
+      ],
+      "size": 0.08,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.25,
+      -0.8,
+      0.35
+     ],
+     "to": [
+      0.18,
+      -0.65,
+      0.32
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s032",
+   "line": "Scientists are now testing CRISPR against inherited blindness, high cholesterol, some cancers, and other genetic diseases.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "cell",
+      "at": [
+       -0.8,
+       0,
+       0.8
+      ],
+      "scale": 0.6
+     },
+     {
+      "prop": "dna_helix",
+      "at": [
+       0.6,
+       0,
+       0.8
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.2,
+      1.2
+     ],
+     "to": [
+      0.3,
+      -2.8,
+      1.1
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s033",
+   "line": "In twenty twenty five, doctors in Philadelphia treated a baby boy named KJ, born with a rare and deadly liver disorder, with a gene-editing therapy designed just for him.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.25,
+       0.18,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.6,
+        0.6
+       ],
+       "pants": [
+        0.3,
+        0.6,
+        0.6
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.6,
+       0.3,
+       0
+      ],
+      "turn": 20,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "hospital_bed",
+      "at": [
+       -0.3,
+       0.3,
+       0
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.0,
+      1.4
+     ],
+     "to": [
+      0,
+      -1.7,
+      1.3
+     ],
+     "target": [
+      0,
+      0.3,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s034",
+   "line": "CRISPR is also changing farming. Researchers are using it to make crops that resist disease, survive drought, or simply keep fresh for longer.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "cantaloupe",
+      "at": [
+       -0.5,
+       0,
+       0
+      ],
+      "args": {
+       "mould": false
+      }
+     },
+     {
+      "prop": "bread",
+      "at": [
+       0.4,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -4.5,
+      1.4
+     ],
+     "to": [
+      0.4,
+      -4.0,
+      1.3
+     ],
+     "target": [
+      0,
+      0,
+      0.4
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.9,
+       0.85,
+       0.65
+      ],
+      "zenith": [
+       0.25,
+       0.45,
+       0.85
+      ]
+     },
+     "floor": [
+      0.45,
+      0.6,
+      0.25
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Beyond medicine"
+  },
+  {
+   "id": "s035",
+   "line": "Some scientists want to use it to spread genes through wild mosquitoes that stop them carrying malaria, a disease that kills hundreds of thousands of people every year.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "birds",
+      "at": [
+       0,
+       0,
+       1.6
+      ],
+      "scale": 0.4,
+      "args": {
+       "n": 10,
+       "area": 2.0
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.6
+     ],
+     "target": [
+      0,
+      0,
+      1.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.85,
+       0.65,
+       0.4
+      ],
+      "zenith": [
+       0.25,
+       0.35,
+       0.6
+      ]
+     },
+     "floor": [
+      0.25,
+      0.4,
+      0.2
+     ]
+    }
+   }
+  },
+  {
+   "id": "s036",
+   "line": "But CRISPR also raises hard questions.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "?",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.5,
+      "color": [
+       1.0,
+       0.5,
+       0.3
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "The hard questions"
+  },
+  {
+   "id": "s037",
+   "line": "Editing a patient's blood cells affects only that person. But editing an embryo would change every cell, including eggs and sperm, so the changes would pass to future generations.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "cell",
+      "at": [
+       0,
+       0,
+       1.0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.2,
+      1.2
+     ],
+     "to": [
+      0,
+      -2.6,
+      1.0
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s038",
+   "line": "In twenty eighteen, a Chinese scientist, He Jiankui, announced that he had secretly edited the DNA of human embryos, and that twin girls had been born.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "GENE-EDITED BABIES",
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.7
+  },
+  {
+   "id": "s039",
+   "line": "Scientists around the world condemned it as reckless and unethical. He was sentenced to three years in prison.",
+   "visual": {
+    "type": "stage",
+    "env": "hall",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       0.6,
+       0
+      ],
+      "args": {
+       "w": 2.0
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "2019",
+      "at": [
+       0,
+       1.0,
+       1.9
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.6
+     ],
+     "to": [
+      0,
+      -2.0,
+      1.55
+     ],
+     "target": [
+      0,
+      0.4,
+      1.3
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s040",
+   "line": "Most countries now ban or tightly restrict editing embryos for pregnancy. Deciding where the limits should be is a question for all of us, not just scientists.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.45,
+       0.32,
+       0.18
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.88,
+        0.9,
+        0.93
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.9,
+       0.35,
+       0
+      ],
+      "turn": -15,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.25,
+       0.18,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.6,
+        0.6
+       ],
+       "pants": [
+        0.3,
+        0.6,
+        0.6
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.45,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.45,
+        0.3,
+        0.22
+       ],
+       "shirt": [
+        0.3,
+        0.45,
+        0.7
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0.9,
+       0.35,
+       0
+      ],
+      "turn": 15,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.7
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.6
+     ],
+     "target": [
+      0,
+      0.3,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ],
+     "world": [
+      0.05,
+      0.05,
+      0.055
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s041",
+   "line": "A defence system that bacteria evolved to fight viruses has become one of the most powerful tools in the history of medicine.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dna_helix",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "spin": 30
+      }
+     },
+     {
+      "prop": "phage",
+      "at": [
+       1.2,
+       0.4,
+       0.3
+      ],
+      "scale": 0.5
+     },
+     {
+      "prop": "cas9",
+      "at": [
+       0.2,
+       -0.35,
+       0.75
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      0.9
+     ],
+     "to": [
+      0.3,
+      -2.0,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   },
+   "chapter": "Close"
+  },
+  {
+   "id": "s042",
+   "line": "We can now rewrite the code of life. The question is no longer whether we can. It's how wisely we choose to.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dna_helix",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "edit": [
+        0.3,
+        0.0,
+        2
+       ],
+       "spin": 40
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -0.8,
+      0.7
+     ],
+     "to": [
+      0,
+      -3.4,
+      1.2
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35,
+     "target_to": [
+      0,
+      0,
+      0.6
+     ]
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.12,
+      0.2
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.03
+     ]
+    }
+   },
+   "hold": 1.5
+  }
+ ]
+}
