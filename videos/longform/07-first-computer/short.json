@@ -1,0 +1,4888 @@
+{
+ "format": "long",
+ "render": {
+  "width": 960,
+  "height": 540,
+  "samples": 8,
+  "fps": 12
+ },
+ "still_render": {
+  "width": 1920,
+  "height": 1080,
+  "samples": 16
+ },
+ "output_fps": 24,
+ "gap_seconds": 0.5,
+ "chapter_gap_seconds": 0.9,
+ "burn_captions": false,
+ "slug": "07-first-computer",
+ "title": "How the First Computer Changed the World",
+ "description": "ENIAC filled a room, weighed thirty tonnes and was programmed by six women with a wiring diagram. From Babbage and Colossus to the transistor and your phone, told in 3D animation.",
+ "tags": [
+  "ENIAC",
+  "first computer",
+  "history of computing",
+  "ENIAC six",
+  "vacuum tube",
+  "transistor",
+  "Alan Turing",
+  "Moore's law",
+  "3D animation"
+ ],
+ "voice": {
+  "piper_voice": "en_US-ryan-high",
+  "length_scale": 1.25,
+  "sentence_silence": 0.28,
+  "pronunciations": {
+   "ENIAC": "Ee-nee-ack",
+   "Mauchly": "Mawk-lee",
+   "Presper": "Pres-per",
+   "McNulty": "Mac-Nul-tee",
+   "Wescoff": "Wes-coff",
+   "Bilas": "Bee-las",
+   "Lichterman": "Lick-ter-man",
+   "Bletchley": "Bletch-lee",
+   "Neumann": "Noy-man",
+   "Kilby": "Kil-bee"
+  }
+ },
+ "music_mood": "hopeful",
+ "sources": [
+  "https://www.britannica.com/technology/ENIAC",
+  "https://www.seas.upenn.edu/about/history-heritage/eniac/",
+  "https://eniacprogrammers.org/",
+  "https://www.computerhistory.org/revolution/birth-of-the-computer/4/78",
+  "https://www.tnmoc.org/colossus",
+  "https://www.manchester.ac.uk/discover/history-heritage/history/firsts/baby-computer/"
+ ],
+ "shots": [
+  {
+   "id": "s001",
+   "line": "The phone in your pocket can do billions of calculations every second.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "phone",
+      "at": [
+       0,
+       0,
+       0.1
+      ],
+      "rot": [
+       -70,
+       0,
+       0
+      ],
+      "args": {
+       "glow": 0.1
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -0.6,
+      0.25
+     ],
+     "to": [
+      0,
+      -0.5,
+      0.22
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s002",
+   "line": "Eighty years ago, a machine that could do just five thousand calculations a second filled an entire room, weighed thirty tonnes, and drew a hundred and fifty kilowatts of power.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -2.0,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -1.6,
+      1.5
+     ],
+     "target": [
+      -0.6,
+      1.2,
+      1.2
+     ],
+     "lens": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s003",
+   "line": "It was called ENIAC, and it was one of the first general-purpose electronic computers.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "ENIAC",
+      "at": [
+       0.2,
+       0.6,
+       2.3
+      ],
+      "size": 0.3,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -1.4,
+      1.5
+     ],
+     "to": [
+      0.2,
+      -1.2,
+      1.45
+     ],
+     "target": [
+      -0.3,
+      2.4,
+      1.3
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s004",
+   "line": "This is the story of how it was built, the women who programmed it, and how it changed the world.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "binary_rain",
+      "at": [
+       0,
+       1.0,
+       0.3
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "THE FIRST COMPUTER",
+      "at": [
+       0,
+       0,
+       1.3
+      ],
+      "size": 0.25,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.08
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.2
+     ],
+     "to": [
+      0,
+      -2.6,
+      1.15
+     ],
+     "target": [
+      0,
+      0,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.02,
+      0.1,
+      0.06
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s005",
+   "line": "For centuries, a computer wasn't a machine at all. It was a job title: a person who did calculations by hand.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "pants": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -1.1,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.6,
+       0.45,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "pants": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       1.1,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      },
+      "scale": 0.95
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ],
+      "args": {
+       "w": 3.2
+      }
+     },
+     {
+      "prop": "books",
+      "at": [
+       -1.1,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "n": 3
+      }
+     },
+     {
+      "prop": "books",
+      "at": [
+       1.1,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "n": 2,
+       "seed": 5
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.7
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.6
+     ],
+     "target": [
+      0,
+      0.3,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Before electronic computers"
+  },
+  {
+   "id": "s006",
+   "line": "In the eighteen twenties, the English mathematician Charles Babbage designed a mechanical calculator called the Difference Engine, made of thousands of brass gears.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.55,
+       0.5,
+       0.45
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.12,
+        0.1,
+        0.1
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.18
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.8,
+       0.4,
+       0
+      ],
+      "turn": -20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "w": 1.4,
+       "h": 0.5
+      }
+     },
+     {
+      "prop": "difference_engine",
+      "at": [
+       0,
+       0,
+       0.5
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -1.8,
+      1.3
+     ],
+     "to": [
+      0.4,
+      -1.5,
+      1.2
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.2,
+      0.15
+     ],
+     "world": [
+      0.03,
+      0.02,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s007",
+   "line": "Later, he designed a far more ambitious Analytical Engine, which could be programmed with punched cards. Ada Lovelace wrote what's often called the first computer program for it. But it was never built.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.55,
+       0.5,
+       0.45
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.12,
+        0.1,
+        0.1
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.18
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.45,
+       0.35,
+       0
+      ],
+      "turn": -12,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.1,
+       0.06,
+       0.04
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.1,
+        0.3
+       ],
+       "pants": [
+        0.25,
+        0.1,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.05
+       ]
+      },
+      "at": [
+       0.45,
+       0.35,
+       0
+      ],
+      "turn": 12,
+      "pose": {
+       "raise_arm": {
+        "L": -35,
+        "R": -35
+       },
+       "arm_forward": {
+        "L": 35,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": 30,
+        "R": 30
+       },
+       "elbow": {
+        "L": 95,
+        "R": 95
+       },
+       "twist": {
+        "L": 80,
+        "R": 80
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       },
+       "head_nod": 22
+      },
+      "scale": 0.94
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "punch_cards",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.2,
+      0.15
+     ],
+     "world": [
+      0.03,
+      0.02,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s008",
+   "line": "A century later, war created an urgent need for calculation.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "1939 – 1945",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.3,
+      "color": [
+       1.0,
+       0.35,
+       0.3
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s009",
+   "line": "In Britain, codebreakers at Bletchley Park built Colossus, an electronic machine that helped crack German codes. It was kept secret for decades.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "panels": 4,
+       "seed": 9
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "COLOSSUS 1944",
+      "at": [
+       0.5,
+       0.8,
+       2.2
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0.6,
+      -2.0,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -1.6,
+      1.5
+     ],
+     "target": [
+      -0.6,
+      1.2,
+      1.2
+     ],
+     "lens": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.25,
+      0.27,
+      0.22
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s010",
+   "line": "In America, the army had a different problem: artillery.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "trajectory",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "draw": [
+        0.1,
+        0.9
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -5,
+      1.2
+     ],
+     "to": [
+      0.3,
+      -4.6,
+      1.2
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.6,
+       0.5
+      ],
+      "zenith": [
+       0.25,
+       0.3,
+       0.45
+      ]
+     },
+     "floor": [
+      0.35,
+      0.33,
+      0.22
+     ]
+    }
+   },
+   "chapter": "The firing tables"
+  },
+  {
+   "id": "s011",
+   "line": "To aim a big gun, soldiers needed firing tables: books of numbers telling them the angle to use for every distance, wind and temperature.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "books",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 4
+      }
+     },
+     {
+      "prop": "newspapers",
+      "at": [
+       0.45,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "FIRING TABLE 155mm",
+       "n": 1
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s012",
+   "line": "Each trajectory took a human computer, with a desk calculator, about a day or more to work out. A single table needed thousands of them.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "pants": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "books",
+      "at": [
+       0.45,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "n": 8
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s013",
+   "line": "At the University of Pennsylvania, dozens of women worked on these calculations. They couldn't keep up.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "pants": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -1.2,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.6,
+       0.45,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "pants": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       1.2,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "pants": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -0.6,
+       1.6,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       0.6,
+       1.6,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      },
+      "scale": 0.95
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ],
+      "args": {
+       "w": 3.2
+      }
+     },
+     {
+      "prop": "table",
+      "at": [
+       0,
+       1.15,
+       0
+      ],
+      "args": {
+       "w": 2.2
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.4,
+      1.9
+     ],
+     "to": [
+      0.3,
+      -3.0,
+      1.8
+     ],
+     "target": [
+      0,
+      0.3,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s014",
+   "line": "A physicist named John Mauchly had an idea: build a calculator that used electronic vacuum tubes instead of moving parts.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.18
+       ],
+       "pants": [
+        0.25,
+        0.22,
+        0.18
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0.1,
+       -0.1,
+       0.875
+      ],
+      "scale": 2.0
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.9,
+      -2.5,
+      1.6
+     ],
+     "to": [
+      0.6,
+      -2.1,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.15
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Building ENIAC"
+  },
+  {
+   "id": "s015",
+   "line": "A vacuum tube is like a light bulb that can act as a switch, turning a current on and off thousands of times a second, with nothing moving at all.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "on": 0.2,
+       "flicker": true
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -0.6,
+      0.25
+     ],
+     "to": [
+      0.14,
+      -0.5,
+      0.22
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s016",
+   "line": "With a brilliant young engineer, J. Presper Eckert, Mauchly convinced the army to pay for it in nineteen forty three.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.22,
+        0.18
+       ],
+       "pants": [
+        0.25,
+        0.22,
+        0.18
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.45,
+       0.35,
+       0
+      ],
+      "turn": -12,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.1,
+       0.07,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.15,
+        0.15,
+        0.18
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.18
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.45,
+       0.35,
+       0
+      ],
+      "turn": 12,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "notebook",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "1943",
+      "at": [
+       0.95,
+       0.9,
+       1.7
+      ],
+      "size": 0.25,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s017",
+   "line": "Experts warned that it would never work. With so many tubes, they said, one would burn out every few seconds.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       -0.42000000000000004,
+       0.0,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": true
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       -0.42000000000000004,
+       0.14,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       -0.42000000000000004,
+       0.28,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       -0.28,
+       0.0,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": true
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       -0.28,
+       0.14,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       -0.28,
+       0.28,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       -0.14,
+       0.0,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": true
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       -0.14,
+       0.14,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       -0.14,
+       0.28,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0.0,
+       0.0,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": true
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0.0,
+       0.14,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0.0,
+       0.28,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0.14,
+       0.0,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": true
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0.14,
+       0.14,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0.14,
+       0.28,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0.28,
+       0.0,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": true
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0.28,
+       0.14,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0.28,
+       0.28,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0.42000000000000004,
+       0.0,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": true
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0.42000000000000004,
+       0.14,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     },
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0.42000000000000004,
+       0.28,
+       0
+      ],
+      "args": {
+       "on": 0.05,
+       "flicker": false
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.4,
+      -1.2,
+      0.5
+     ],
+     "to": [
+      0.3,
+      -1.0,
+      0.45
+     ],
+     "target": [
+      0,
+      0,
+      0.12
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s018",
+   "line": "Eckert solved it by running the tubes well below their limits, and choosing them carefully. Failures fell to about one tube every two days.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       0,
+       0.4,
+       0.2
+      ],
+      "scale": 3.0
+     }
+    ],
+    "texts": [
+     {
+      "text": "1 FAILURE / 2 DAYS",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.16,
+      "color": [
+       0.4,
+       1.0,
+       0.6
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s019",
+   "line": "The finished machine had almost eighteen thousand vacuum tubes, seventy thousand resistors, and around five million hand-soldered joints.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "17,468 TUBES",
+      "at": [
+       0.2,
+       1.0,
+       2.1
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      -0.8,
+      -1.4,
+      1.4
+     ],
+     "to": [
+      -0.6,
+      -1.0,
+      1.4
+     ],
+     "target": [
+      -1.6,
+      1.2,
+      1.3
+     ],
+     "lens": 28
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s020",
+   "line": "Its panels, arranged in a giant U, stretched about thirty metres, and the whole machine weighed thirty tonnes.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "panels": 12
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      2.0,
+      -3.0,
+      3.0
+     ],
+     "to": [
+      1.6,
+      -2.4,
+      3.2
+     ],
+     "target": [
+      -0.3,
+      1.2,
+      1.0
+     ],
+     "lens": 24
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s021",
+   "line": "Six women were chosen from the human computers to program it: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Frances Bilas, and Ruth Lichterman.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "pants": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -1.55,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -0.9299999999999999,
+       0.6,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.6,
+       0.45,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "pants": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -0.31,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "pants": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       0.31,
+       0.6,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       0.9299999999999999,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.6,
+       0.45,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "pants": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       1.55,
+       0.6,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.4,
+      1.7
+     ],
+     "to": [
+      0.3,
+      -3.0,
+      1.6
+     ],
+     "target": [
+      0,
+      0.3,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "The ENIAC six"
+  },
+  {
+   "id": "s022",
+   "line": "There were no programming languages, no keyboards, and no manuals. They were given the machine's wiring diagrams, and told to work it out.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "headline": "BLOCK DIAGRAMS",
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.35,
+      -1.0,
+      1.25
+     ],
+     "to": [
+      0.22,
+      -0.85,
+      1.2
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.95
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s023",
+   "line": "Programming ENIAC meant physically rewiring it: plugging hundreds of cables and setting thousands of switches by hand. A new program could take days to set up.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -1.1,
+       0.9,
+       0
+      ],
+      "turn": -90,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 0
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      -0.7,
+      -0.6,
+      1.4
+     ],
+     "to": [
+      -0.75,
+      -0.2,
+      1.35
+     ],
+     "target": [
+      -1.6,
+      1.0,
+      1.1
+     ],
+     "lens": 32
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s024",
+   "line": "They also invented techniques that programmers still use, like breaking a problem into sub-routines, and hunting down bugs by stepping through the machine.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "pants": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -0.45,
+       0.35,
+       0
+      ],
+      "turn": -12,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     },
+     {
+      "hair": [
+       0.6,
+       0.45,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "pants": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       0.45,
+       0.35,
+       0
+      ],
+      "turn": 12,
+      "pose": {
+       "raise_arm": {
+        "L": -35,
+        "R": -35
+       },
+       "arm_forward": {
+        "L": 35,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": 30,
+        "R": 30
+       },
+       "elbow": {
+        "L": 95,
+        "R": 95
+       },
+       "twist": {
+        "L": 80,
+        "R": 80
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       },
+       "head_nod": 22
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "punch_cards",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s025",
+   "line": "ENIAC was finished too late for the war. But on the fifteenth of February, nineteen forty six, it was unveiled to the press.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "15 FEBRUARY 1946",
+      "at": [
+       0.2,
+       0.6,
+       2.4
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.15
+     }
+    ],
+    "camera": {
+     "from": [
+      0.6,
+      -2.0,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -1.6,
+      1.5
+     ],
+     "target": [
+      -0.6,
+      1.2,
+      1.2
+     ],
+     "lens": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "chapter": "February 1946"
+  },
+  {
+   "id": "s026",
+   "line": "For the demonstration, it calculated the path of a shell that takes thirty seconds to reach its target, in just twenty seconds. Faster than the shell itself could fly.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "trajectory",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "draw": [
+        0.05,
+        0.6
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "20 s  <  30 s",
+      "at": [
+       0,
+       0,
+       2.2
+      ],
+      "size": 0.25,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.65
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -5,
+      1.2
+     ],
+     "to": [
+      0.3,
+      -4.6,
+      1.2
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.6,
+       0.5
+      ],
+      "zenith": [
+       0.25,
+       0.3,
+       0.45
+      ]
+     },
+     "floor": [
+      0.35,
+      0.33,
+      0.22
+     ]
+    }
+   }
+  },
+  {
+   "id": "s027",
+   "line": "The engineers had fitted ping-pong balls cut in half over the indicator lights, so the blinking would look more dramatic for the cameras.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      -0.9,
+      -0.3,
+      1.9
+     ],
+     "to": [
+      -0.95,
+      0.0,
+      1.9
+     ],
+     "target": [
+      -1.6,
+      0.5,
+      2.0
+     ],
+     "lens": 40
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s028",
+   "line": "Newspapers called it a giant electronic brain. Yet at the celebration dinner afterwards, the six programmers were not invited.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "GIANT ELECTRONIC BRAIN",
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.7
+  },
+  {
+   "id": "s029",
+   "line": "Their contribution was overlooked for half a century, until historians and a new generation of programmers brought their story back to light.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "pants": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -1.55,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -0.9299999999999999,
+       0.6,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.6,
+       0.45,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "pants": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -0.31,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "pants": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       0.31,
+       0.6,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       0.9299999999999999,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.6,
+       0.45,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "pants": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       1.55,
+       0.6,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     }
+    ],
+    "props": [
+     {
+      "prop": "bulb",
+      "at": [
+       0,
+       -0.6,
+       2.3
+      ],
+      "args": {
+       "on": 0.3,
+       "strength": 15
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.4,
+      1.7
+     ],
+     "to": [
+      0.3,
+      -3.0,
+      1.6
+     ],
+     "target": [
+      0,
+      0.3,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.12,
+      0.13,
+      0.13
+     ],
+     "world": [
+      0.01,
+      0.01,
+      0.01
+     ]
+    }
+   }
+  },
+  {
+   "id": "s030",
+   "line": "ENIAC had a big weakness. Its program lived in its wiring, so changing the task meant rebuilding the machine.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      -0.7,
+      -0.6,
+      1.4
+     ],
+     "to": [
+      -0.75,
+      -0.2,
+      1.35
+     ],
+     "target": [
+      -1.6,
+      1.0,
+      1.1
+     ],
+     "lens": 32
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "The stored program"
+  },
+  {
+   "id": "s031",
+   "line": "The team, joined by the mathematician John von Neumann, came up with a better design: store the program in the computer's memory, just like data.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "binary_rain",
+      "at": [
+       0,
+       0.8,
+       0.0
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "PROGRAM  =  DATA",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.2,
+      "color": [
+       0.4,
+       0.85,
+       1.0
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.0
+     ],
+     "to": [
+      0,
+      -2.1,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.02,
+      0.1,
+      0.06
+     ],
+     "zenith": [
+      0.0,
+      0.01,
+      0.01
+     ]
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s032",
+   "line": "Alan Turing in Britain had imagined such a universal machine back in nineteen thirty six. In nineteen forty eight, a small machine in Manchester, nicknamed the Baby, ran the first stored program.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.15,
+       0.1,
+       0.06
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.28,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.22
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       1.5,
+       1.0,
+       0
+      ],
+      "scale": 0.6,
+      "args": {
+       "panels": 3
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "1948",
+      "at": [
+       0.9,
+       0.6,
+       1.7
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s033",
+   "line": "Almost every computer since has been built on that idea.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "laptop",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "glow": 0.2
+      }
+     },
+     {
+      "prop": "phone",
+      "at": [
+       0.4,
+       0,
+       0.08
+      ],
+      "rot": [
+       -70,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -1.6,
+      0.6
+     ],
+     "to": [
+      0.2,
+      -1.3,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.2
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s034",
+   "line": "Next, the machines began to shrink. In nineteen forty seven, scientists at Bell Labs invented the transistor, a tiny solid switch that could replace the fragile vacuum tube.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       -0.05,
+       0,
+       0
+      ]
+     },
+     {
+      "prop": "transistor",
+      "at": [
+       0.2,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "1947",
+      "at": [
+       0.1,
+       0.2,
+       0.3
+      ],
+      "size": 0.08,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.25,
+      -0.8,
+      0.35
+     ],
+     "to": [
+      0.2,
+      -0.7,
+      0.3
+     ],
+     "target": [
+      0.1,
+      0,
+      0.06
+     ],
+     "lens": 35
+    }
+   },
+   "chapter": "Smaller and smaller"
+  },
+  {
+   "id": "s035",
+   "line": "In the late nineteen fifties, Jack Kilby and Robert Noyce worked out how to put many transistors onto a single chip of silicon: the integrated circuit.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "microchip",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "glow": [
+        0.2,
+        0.6
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -0.7,
+      0.45
+     ],
+     "to": [
+      0.2,
+      -0.55,
+      0.38
+     ],
+     "target": [
+      0,
+      0,
+      0.03
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s036",
+   "line": "In nineteen sixty five, Gordon Moore predicted that the number of transistors on a chip would keep doubling roughly every year or two. For decades, he was right.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "microchip",
+      "at": [
+       -1.2,
+       0,
+       0
+      ],
+      "scale": 0.4,
+      "pop": 0.1
+     },
+     {
+      "prop": "microchip",
+      "at": [
+       -0.6,
+       0,
+       0
+      ],
+      "scale": 0.65,
+      "pop": 0.25
+     },
+     {
+      "prop": "microchip",
+      "at": [
+       0.1,
+       0,
+       0
+      ],
+      "scale": 0.9,
+      "pop": 0.4
+     },
+     {
+      "prop": "microchip",
+      "at": [
+       0.95,
+       0,
+       0
+      ],
+      "scale": 1.15,
+      "pop": 0.5499999999999999
+     }
+    ],
+    "texts": [
+     {
+      "text": "MOORE'S LAW",
+      "at": [
+       0,
+       0,
+       1.5
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.05
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.2
+     ],
+     "to": [
+      0,
+      -2.3,
+      1.1
+     ],
+     "target": [
+      0,
+      0,
+      0.7
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s037",
+   "line": "A modern smartphone chip holds billions of transistors, each smaller than most viruses.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "microchip",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "glow": [
+        0,
+        0.3
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "BILLIONS",
+      "at": [
+       0,
+       0.25,
+       0.2
+      ],
+      "size": 0.08,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0.15,
+      -0.35,
+      0.25
+     ],
+     "to": [
+      0.08,
+      -0.25,
+      0.18
+     ],
+     "target": [
+      0,
+      0,
+      0.03
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s038",
+   "line": "ENIAC itself went on to calculate weather forecasts, the design of nuclear weapons, and the behaviour of wind tunnels and cosmic rays.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -2.0,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -1.6,
+      1.5
+     ],
+     "target": [
+      -0.6,
+      1.2,
+      1.2
+     ],
+     "lens": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Legacy"
+  },
+  {
+   "id": "s039",
+   "line": "It was switched off for the last time in October nineteen fifty five. Parts of it survive in museums today.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "blink": false
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -2.0,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -1.6,
+      1.5
+     ],
+     "target": [
+      -0.6,
+      1.2,
+      1.2
+     ],
+     "lens": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.1,
+      0.11,
+      0.11
+     ],
+     "world": [
+      0.01,
+      0.01,
+      0.01
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s040",
+   "line": "In about eighty years, we went from a thirty tonne machine that filled a room, to computers in our pockets millions of times more powerful.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "phone",
+      "at": [
+       0,
+       0,
+       0.1
+      ],
+      "rot": [
+       -70,
+       0,
+       0
+      ],
+      "args": {
+       "glow": 0.1
+      }
+     },
+     {
+      "prop": "eniac",
+      "at": [
+       -1.0,
+       2.0,
+       0
+      ],
+      "scale": 0.35
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -1.6,
+      0.6
+     ],
+     "to": [
+      0.2,
+      -1.3,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.2
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s041",
+   "line": "Every app, every search, every video you watch, traces its family tree back to a room full of glowing tubes, and six women with a wiring diagram.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "pants": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -1.25,
+       -0.2,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -0.75,
+       -0.2,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.6,
+       0.45,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "pants": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -0.25,
+       -0.2,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "pants": [
+        0.2,
+        0.35,
+        0.6
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       0.25,
+       -0.2,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.6,
+        0.2,
+        0.25
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       0.75,
+       -0.2,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     },
+     {
+      "hair": [
+       0.6,
+       0.45,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "pants": [
+        0.25,
+        0.5,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       1.25,
+       -0.2,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.95
+     }
+    ],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -1.4,
+      1.5
+     ],
+     "to": [
+      0.2,
+      -3.0,
+      1.8
+     ],
+     "target": [
+      -0.3,
+      2.4,
+      1.3
+     ],
+     "lens": 30,
+     "target_to": [
+      0,
+      1.5,
+      1.2
+     ],
+     "lens_to": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "chapter": "Close",
+   "hold": 1.5
+  }
+ ]
+}

@@ -1749,6 +1749,163 @@ def induction_motor(frames, spin=(0.2, 1.0), turns=4):
     props.key(rot, frames, rotation_euler=(0, R(-360 * turns * 0.95 * (1 - spin[0])), 0))
     return root
 
+
+# ------------------------------------------------------------------ computing
+def vacuum_tube(frames, on=0.1, flicker=False):
+    root = empty("tube")
+    lathe("tube_glass", [(0, 0.02), (0.035, 0.02), (0.04, 0.12), (0.03, 0.17), (0.0, 0.18)], mat("tube_glass", (0.9, 0.95, 1.0), 0.05, alpha=0.25), parent=root)
+    cyl("tube_base", (0, 0, 0.012), 0.04, 0.025, mat("bakelite", (0.08, 0.06, 0.05), 0.5), parent=root)
+    pm, ps = fx.emissive("plate_glow", (1.0, 0.45, 0.1), 0)
+    cyl("plate", (0, 0, 0.08), 0.015, 0.08, mat("plate", (0.3, 0.3, 0.32), 0.4, 0.8), parent=root)
+    cyl("filament", (0, 0, 0.08), 0.004, 0.07, pm, parent=root)
+    pairs = [(0, 0), (on, 0), (on + 0.05, 10)]
+    if flicker:
+        pairs += [(0.6, 4), (0.62, 10), (0.8, 3), (0.82, 10)]
+    glow_keys(ps, frames, sorted(pairs))
+    return root
+
+
+def eniac(frames, panels=8, blink=True, seed=3):
+    """A U of tall black panels with rows of glowing tubes, switches and patch cables."""
+    rng = random.Random(seed)
+    root = empty("eniac")
+    black = mat("panel", (0.05, 0.05, 0.06), 0.4, 0.3)
+    lamp_on = mat("neon", (1.0, 0.45, 0.12), 0.3, emit=6)
+    lamp_off = mat("neon_off", (0.25, 0.1, 0.05), 0.3)
+    cable_cols = [(0.1, 0.1, 0.1), (0.7, 0.1, 0.1), (0.1, 0.3, 0.7), (0.8, 0.7, 0.1)]
+    for i in range(panels):
+        if i < panels // 2:
+            loc, rot = (-1.6, i * 0.65, 1.2), (0, 0, R(90))
+        else:
+            loc, rot = ((i - panels // 2) * 0.65 - 0.65, panels // 2 * 0.65 + 0.3, 1.2), (0, 0, 0)
+        p = child(empty("panel"), root)
+        p.location, p.rotation_euler = loc, rot
+        box("cabinet", (0, 0, 0), (0.6, 0.4, 2.4), black, 0.01, p)
+        for r in range(10):
+            for c in range(6):
+                lm = lamp_on if rng.random() < 0.4 else lamp_off
+                l = sph("lamp", (-0.22 + c * 0.088, -0.205, 0.9 - r * 0.08), 0.012, lm, parent=p)
+                if blink and lm is lamp_on:
+                    for f in range(1, frames + 1, 3):
+                        l.hide_render = rng.random() < 0.35
+                        l.keyframe_insert("hide_render", frame=f)
+        for r in range(4):
+            for c in range(5):
+                box("switch", (-0.2 + c * 0.1, -0.21, -0.1 - r * 0.12), (0.02, 0.03, 0.05), mat("switch", (0.85, 0.85, 0.82), 0.3), parent=p)
+        for k in range(3):
+            y0 = rng.uniform(-0.2, -0.6)
+            curve_obj("cable", [V((rng.uniform(-0.25, 0.25), -0.22, y0)), V((0, -0.35, y0 - 0.35)), V((rng.uniform(-0.25, 0.25), -0.22, y0 - 0.5))],
+                      0.012, mat(f"cable{k}", rng.choice(cable_cols), 0.5), p)
+    return root
+
+
+def punch_cards(frames, n=6, seed=4, fly=None):
+    rng = random.Random(seed)
+    root = empty("cards")
+    card = mat("card", (0.9, 0.82, 0.6), 0.7)
+    hole = mat("hole", (0.05, 0.05, 0.05), 0.7)
+    for i in range(n):
+        c = child(empty("card"), root)
+        c.location = (rng.uniform(-0.15, 0.15), rng.uniform(-0.1, 0.1), i * 0.004)
+        c.rotation_euler = (0, 0, R(rng.uniform(-20, 20)))
+        box("card_body", (0, 0, 0), (0.19, 0.083, 0.002), card, parent=c)
+        if i == n - 1:
+            for k in range(60):
+                box("hole", (-0.085 + rng.randint(0, 79) * 0.00215, -0.035 + rng.randint(0, 11) * 0.0064, 0.0012), (0.0016, 0.004, 0.0005), hole, parent=c)
+        if fly:
+            t = fly[0] + (fly[1] - fly[0]) * i / n
+            props.key(c, key_frac(frames, t), location=(0.6, 0, 0.3 + i * 0.004))
+            props.key(c, key_frac(frames, min(1, t + 0.1)), location=tuple(c.location))
+    return root
+
+
+def difference_engine(frames, columns=7, turn=True):
+    """Babbage-style columns of brass figure wheels."""
+    root = empty("engine")
+    brass = mat("brass_wheel", (0.85, 0.65, 0.3), 0.3, 1.0)
+    steel = mat("steel", (0.75, 0.76, 0.8), 0.25, 1.0)
+    box("base", (0, 0, 0.03), (columns * 0.16 + 0.1, 0.3, 0.06), mat("mahogany", (0.3, 0.12, 0.06), 0.5), 0.01, root)
+    for c in range(columns):
+        x = (c - (columns - 1) / 2) * 0.16
+        cyl("axis", (x, 0, 0.45), 0.01, 0.85, steel, parent=root)
+        for k in range(8):
+            w = cyl("wheel", (x, 0, 0.12 + k * 0.1), 0.06, 0.03, brass, parent=root, verts=24)
+            if turn:
+                props.key(w, 1, rotation_euler=(0, 0, 0))
+                props.key(w, frames, rotation_euler=(0, 0, R((c + 1) * 36 * (k % 3 + 1))))
+    for z in (0.08, 0.9):
+        box("plate", (0, 0, z), (columns * 0.16 + 0.05, 0.22, 0.02), brass, parent=root)
+    return root
+
+
+def transistor(frames):
+    root = empty("transistor")
+    cyl("can", (0, 0, 0.06), 0.04, 0.05, mat("can", (0.15, 0.15, 0.17), 0.3, 0.6), parent=root)
+    cyl("cap", (0, 0, 0.09), 0.042, 0.01, mat("can2", (0.2, 0.2, 0.22), 0.3, 0.6), parent=root)
+    for x in (-0.015, 0, 0.015):
+        cyl("leg", (x, 0, 0.0), 0.0025, 0.08, mat("leg", (0.8, 0.8, 0.82), 0.2, 1.0), parent=root)
+    return root
+
+
+def microchip(frames, glow=(0.2, 0.6)):
+    root = empty("chip")
+    box("chip", (0, 0, 0.02), (0.4, 0.4, 0.03), mat("chip", (0.05, 0.05, 0.06), 0.35), 0.004, root)
+    for side in range(4):
+        for k in range(12):
+            u = -0.17 + k * 0.031
+            x, y = [(u, -0.215), (u, 0.215), (-0.215, u), (0.215, u)][side]
+            box("pin", (x, y, 0.012), (0.012 if side < 2 else 0.03, 0.03 if side < 2 else 0.012, 0.006), mat("pin", (0.85, 0.8, 0.6), 0.2, 1.0), parent=root)
+    dm, ds = fx.emissive("die", (0.3, 0.9, 1.0), 0)
+    rng = random.Random(2)
+    for k in range(40):
+        x, y = rng.uniform(-0.12, 0.12), rng.uniform(-0.12, 0.12)
+        box("trace", (x, y, 0.0365), (rng.choice([0.08, 0.004]), rng.choice([0.004, 0.08]), 0.001), dm, parent=root)
+    glow_keys(ds, frames, [(0, 0), (glow[0], 0), (glow[1], 6)])
+    return root
+
+
+def binary_rain(frames, cols=10, rows=8, area=(3.0, 2.0), seed=6, color=(0.3, 1.0, 0.5)):
+    rng = random.Random(seed)
+    root = empty("binary")
+    m = mat("digits", color, 0.4, emit=3)
+    for c in range(cols):
+        for r in range(rows):
+            d = fx.text(rng.choice("01"), m, ((c - cols / 2) * area[0] / cols, 0, r * area[1] / rows), size=0.14, depth=0.005)
+            d.parent = root
+            off = rng.uniform(0, 1)
+            z0 = r * area[1] / rows
+            props.key(d, 1, location=(d.location.x, 0, z0 + area[1] * off))
+            props.key(d, frames, location=(d.location.x, 0, z0 + area[1] * off - area[1] * 0.6))
+            fx._linear(d)
+    return root
+
+
+def trajectory(frames, draw=(0.1, 0.8), range_m=4.0, apex=1.5):
+    root = empty("trajectory")
+    m, _ = fx.emissive("traj", (1.0, 0.6, 0.15), 5)
+    pts = [V((range_m * u - range_m / 2, 0, 4 * apex * u * (1 - u))) for u in [i / 80 for i in range(81)]]
+    c = curve_obj("arc", pts, 0.012, m, root)
+    draw_on(c, frames, draw[0], draw[1])
+    sh = sph("shell", tuple(pts[0]), 0.05, mat("shellm", (0.4, 0.4, 0.38), 0.3, 0.8), (1.6, 1, 1), root)
+    for i, f in enumerate(range(key_frac(frames, draw[0]), key_frac(frames, draw[1]) + 1, 2)):
+        u = min(1.0, (f - key_frac(frames, draw[0])) / max(1, key_frac(frames, draw[1]) - key_frac(frames, draw[0])))
+        props.key(sh, f, location=(range_m * u - range_m / 2, 0, 4 * apex * u * (1 - u)))
+    box("gun", (-range_m / 2, 0, 0.1), (0.5, 0.2, 0.2), mat("gun", (0.2, 0.25, 0.15), 0.5, 0.5), parent=root).rotation_euler = (0, R(-35), 0)
+    return root
+
+
+def laptop(frames, glow=0.2):
+    root = empty("laptop")
+    box("base", (0, 0, 0.01), (0.34, 0.24, 0.02), mat("alu", (0.75, 0.76, 0.8), 0.3, 0.8), 0.004, root)
+    lid = child(empty("lid"), root)
+    lid.location = (0, 0.12, 0.02)
+    lid.rotation_euler = (R(-15), 0, 0)
+    box("lid", (0, 0, 0.11), (0.34, 0.012, 0.22), mat("alu", (0.75, 0.76, 0.8), 0.3, 0.8), 0.004, lid)
+    sm, ss = fx.emissive("lcd", (0.3, 0.6, 1.0), 0.2)
+    box("screen", (0, -0.007, 0.11), (0.31, 0.002, 0.19), sm, parent=lid)
+    glow_keys(ss, frames, [(0, 0.2), (glow, 0.2), (glow + 0.05, 2.5)])
+    return root
+
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",
