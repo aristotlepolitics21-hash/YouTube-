@@ -1,0 +1,36 @@
+{
+  "module": "brainfreeze",
+  "title": "What Happens When You Get Brain Freeze",
+  "shots": [
+    {
+      "vo": "What happens when you get brain freeze?",
+      "caption": "What happens when you get **brain freeze?**",
+      "highlight": "#7fd8ff"
+    },
+    {
+      "vo": "When something ice cold hits the roof of your mouth, it chills the blood vessels right behind it.",
+      "caption": "Ice cold food chills the **roof of your mouth**",
+      "highlight": "#7fd8ff"
+    },
+    {
+      "vo": "Scientists think those blood vessels quickly tighten to hold on to heat.",
+      "caption": "Blood vessels **tighten** to hold heat",
+      "highlight": "#7fd8ff"
+    },
+    {
+      "vo": "Then they suddenly widen again, and warm blood rushes back in.",
+      "caption": "Then they suddenly **widen**",
+      "highlight": "#ff4b4b"
+    },
+    {
+      "vo": "A big nerve in your face reports that sudden change as pain, and your brain feels it right in your forehead.",
+      "caption": "Your brain feels it as **pain in your forehead**",
+      "highlight": "#ff4b4b"
+    },
+    {
+      "vo": "The fix? Press your tongue against the roof of your mouth to warm it back up.",
+      "caption": "Fix it: press your tongue to the **roof of your mouth**",
+      "highlight": "#ffa23f"
+    }
+  ]
+}
