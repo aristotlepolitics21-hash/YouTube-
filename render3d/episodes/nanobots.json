@@ -1,103 +1,432 @@
 {
  "module": "nanobots",
  "title": "Can Nanobots Repair Your Body From Inside?",
- "size": [1920, 1080],
+ "size": [
+  1920,
+  1080
+ ],
  "length_scale": 1.2,
  "music": "ambient",
  "shots": [
-  {"scene": "bloodstream", "params": {"bots": 0},
-   "vo": "Right now, roughly twenty-five trillion red blood cells are racing through your blood vessels. Now imagine something else in there with them."},
-  {"scene": "nanobot_closeup", "params": {},
-   "vo": "A machine. Smaller than a single cell. Built to swim through your body, find damage, and fix it from the inside. No surgery. No scars."},
-  {"scene": "body_bots", "params": {"target": "heart"},
-   "vo": "Clearing a blocked artery. Destroying a tumor. Repairing a damaged cell. It sounds like science fiction, but scientists are already building the first versions. So how close are we, really?"},
-
-  {"scene": "title_card", "params": {"year": "1959", "title": "THERE'S PLENTY OF ROOM", "sub": "AT THE BOTTOM — RICHARD FEYNMAN"},
-   "vo": "The idea goes back to 1959, when the physicist Richard Feynman gave a famous talk called There's Plenty of Room at the Bottom."},
-  {"scene": "body_bots", "params": {"target": "stomach", "az0": 0.6, "az1": 0.9, "dist0": 9, "dist1": 7},
-   "vo": "He imagined machines so small they could travel through the body and operate from within. He credited a friend with the idea, which he described as swallowing the surgeon."},
-  {"scene": "bloodstream", "params": {"bots": 1, "camSpeed": 0.08, "flow": 0.2},
-   "vo": "Seven years later, the film Fantastic Voyage shrank a submarine full of doctors and sent it into a patient's bloodstream. The dream was born. Building it turned out to be far harder."},
-
-  {"scene": "scale_zoom", "params": {"z0": 0, "z1": 0.4},
-   "vo": "First, let's get a sense of scale. A human hair is roughly eighty thousand nanometers wide. A nanometer is a billionth of a meter."},
-  {"scene": "scale_zoom", "params": {"z0": 0.4, "z1": 2.2},
-   "vo": "A red blood cell is about seven or eight thousand nanometers across. A typical bacterium, around a thousand. A virus, about a hundred."},
-  {"scene": "scale_zoom", "params": {"z0": 2.2, "z1": 2.95},
-   "vo": "The tiny robots scientists are building range from tens of nanometers up to a few micrometers. And at that size, the world works very differently."},
-
-  {"scene": "low_reynolds", "params": {"mode": "scallop"},
-   "vo": "At the scale of a cell, water doesn't behave like water. It feels thick and sticky, like swimming through honey. The moment you stop pushing, you stop dead."},
-  {"scene": "low_reynolds", "params": {"mode": "scallop", "az0": 0.6, "az1": 0.4, "dist0": 8, "dist1": 7},
-   "vo": "That means a simple back-and-forth stroke gets you nowhere. Open and close like a scallop, and you just slide forward, then right back where you started.", "highlight": "#ff4b5c"},
-  {"scene": "low_reynolds", "params": {"mode": "bacterium"},
-   "vo": "Bacteria solved this problem billions of years ago. Many of them swim by spinning a corkscrew-shaped tail, which screws them forward through the liquid."},
-  {"scene": "low_reynolds", "params": {"mode": "helixbot", "az0": -0.4, "az1": -0.2},
-   "vo": "So engineers copied them. Many microrobots are tiny magnetic corkscrews, and they don't carry a motor at all."},
-  {"scene": "magnet_control", "params": {},
-   "vo": "Instead, a rotating magnetic field outside the body twists the corkscrew, and it drills its way forward. Change the direction of the field, and you steer the robot."},
-  {"scene": "magnet_control", "params": {"swarm": 40, "az0": 1.2, "az1": 1.6, "dist0": 10, "dist1": 8},
-   "vo": "Researchers have steered microrobots this way through fluid-filled channels and inside living animals. Some even move as swarms of thousands, guided together by the same field."},
-
-  {"scene": "nanobot_closeup", "params": {"az0": -0.6, "az1": -0.2, "dist0": 7, "dist1": 6},
-   "vo": "Power is the next big problem. There's no battery small enough to fit inside a nanobot. So scientists borrow energy from outside: magnetic fields, ultrasound, light, or chemicals already in the body."},
-  {"scene": "bladder_bots", "params": {"shrink": 0},
-   "vo": "In 2024, a team in Barcelona built nanobots powered by an enzyme that breaks down urea, a chemical found in urine. Inside the bladder, that reaction pushes them along."},
-  {"scene": "bladder_bots", "params": {"shrink": 1, "az0": 0.8, "az1": 1.2, "dist0": 11, "dist1": 8},
-   "vo": "Loaded with a radioactive drug, a single dose shrank bladder tumors in mice by about ninety percent.", "highlight": "#4dff9a"},
-
-  {"scene": "dna_origami", "params": {},
-   "vo": "Other nanorobots aren't made of metal at all. They're folded out of DNA. Scientists can program strands of DNA to fold themselves into almost any shape. It's called DNA origami."},
-  {"scene": "dna_origami", "params": {"az0": 0.6, "az1": 0.9},
-   "vo": "In 2018, researchers built a DNA nanorobot shaped like a tiny tube, less than a hundred nanometers long, with a clotting drug hidden inside."},
-  {"scene": "dna_origami", "params": {"openAt": 0.3, "az0": -0.3, "az1": 0.1, "dist0": 9, "dist1": 7},
-   "vo": "The tube stays locked shut until it touches a protein found on the blood vessels that feed tumors. Then it springs open."},
-  {"scene": "tumor_vessel", "params": {},
-   "vo": "The drug triggers clots that cut off the tumor's blood supply. In mice, tumors were starved and shrank, while healthy tissue was largely left alone.", "highlight": "#4dff9a"},
-
-  {"scene": "lnp", "params": {},
-   "vo": "Here's something surprising. You may already have had nanotechnology inside you. The mRNA COVID-19 vaccines are delivered in lipid nanoparticles, tiny bubbles of fat around a hundred nanometers across."},
-  {"scene": "lnp", "params": {"z0": 0, "z1": -4, "az0": 0.6, "az1": 0.3},
-   "vo": "They protect the fragile mRNA and help it slip into your cells. They're not robots. They can't steer or think. But billions of doses have shown that nanoscale delivery can work in people."},
-  {"scene": "lnp", "params": {"az0": -0.5, "az1": -0.8, "dist0": 8, "dist1": 7},
-   "vo": "Researchers are also designing particles that only release their drug when they sense a specific signal, like the slightly acidic environment around a tumor."},
-
-  {"scene": "xenobot", "params": {},
-   "vo": "Some scientists are going even further, building robots out of living cells. In 2020, researchers assembled frog cells into tiny body shapes designed by an AI. They called them xenobots."},
-  {"scene": "xenobot", "params": {"gather": true, "az0": -0.4, "az1": -0.6},
-   "vo": "Less than a millimeter across, they could swim and push particles around. A later version could even gather loose cells into copies of itself."},
-
-  {"scene": "immune_attack", "params": {},
-   "vo": "So why don't we have repair robots yet? Because the body is extremely good at getting rid of intruders."},
-  {"scene": "immune_attack", "params": {"az0": 0.5, "az1": 0.8, "dist0": 10, "dist1": 8},
-   "vo": "Immune cells called macrophages patrol your blood and tissues, swallowing anything that looks foreign. Many particles are filtered out by the liver and spleen before they ever reach their target.", "highlight": "#ff4b5c"},
-  {"scene": "title_card", "params": {"big": "< 1%", "sub": "of injected nanoparticles reach a tumor (median)", "color": "#ff4b5c"},
-   "vo": "One widely cited analysis of studies in animals found that, typically, less than one percent of injected nanoparticles actually reach a tumor."},
-  {"scene": "bloodstream", "params": {"bots": 3, "cu": 0.15, "camSpeed": 0.03},
-   "vo": "Then there's navigation. Inside the body, there's no GPS. A robot has to find one tiny target among trillions of cells, in a current that keeps pushing it around."},
-  {"scene": "nanobot_closeup", "params": {"az0": 1.6, "az1": 2.0, "dist0": 10, "dist1": 8},
-   "vo": "Building them is hard too. Making millions of identical machines, each smaller than a cell, safely and cheaply, is still a huge challenge."},
-  {"scene": "immune_attack", "params": {"az0": -0.6, "az1": -0.9, "dist0": 9, "dist1": 8},
-   "vo": "And they have to be safe. Anything left behind in the body must break down harmlessly, without causing inflammation or toxic side effects."},
-
-  {"scene": "respirocyte", "params": {},
-   "vo": "Still, scientists have sketched what might one day be possible. In 1998, Robert Freitas designed an artificial red blood cell he called a respirocyte.", "caption": ""},
-  {"scene": "respirocyte", "params": {"az0": -0.5, "az1": -0.2, "dist0": 8, "dist1": 7},
-   "vo": "On paper, it could carry hundreds of times more oxygen than a natural red blood cell. It's purely a concept. Nobody can build one yet."},
-  {"scene": "body_bots", "params": {"target": "heart", "az0": 1.0, "az1": 1.3, "dist0": 8, "dist1": 6.5},
-   "vo": "Future nanobots might patrol your arteries, clearing fatty plaque before it causes a heart attack."},
-  {"scene": "cell_repair", "params": {},
-   "vo": "Or enter damaged cells and repair them from within. That kind of repair is still far beyond anything we can build today."},
-  {"scene": "bloodstream", "params": {"bots": 8, "cu": 0.3, "camSpeed": 0.05},
-   "vo": "Others imagine nanobots that monitor your blood around the clock, warning you about infections or cancer long before symptoms appear."},
-  {"scene": "gray_goo", "params": {},
-   "vo": "Some people have worried about the opposite: self-copying nanobots running out of control and turning everything into gray goo. That fear came from a 1986 book, but most researchers, including its author, now consider it very unlikely."},
-
-  {"scene": "magnet_control", "params": {"az0": -0.6, "az1": -0.2, "dist0": 12, "dist1": 9},
-   "vo": "The realistic future is gradual. First, smarter drug delivery. Then robots that can be steered to a target and tested in clinical trials."},
-  {"scene": "bloodstream", "params": {"bots": 5, "cu": 0.45, "camSpeed": 0.06},
-   "vo": "So, can nanobots repair your body from inside? Not yet. But the first tiny machines are already swimming, steering, and fighting tumors in the lab."},
-  {"scene": "nanobot_closeup", "params": {"dist0": 6, "dist1": 14, "az0": 0.2, "az1": -0.4},
-   "vo": ["The fantastic voyage has begun.", "If you enjoyed this, subscribe. Next time: how CRISPR lets scientists rewrite human DNA."]}
+  {
+   "scene": "bloodstream",
+   "params": {
+    "bots": 0
+   },
+   "vo": "Right now, roughly twenty-five trillion red blood cells are racing through your blood vessels. Now imagine something else in there with them."
+  },
+  {
+   "scene": "nanobot_closeup",
+   "params": {},
+   "vo": "A machine. Smaller than a single cell. Built to swim through your body, find damage, and fix it from the inside. No surgery. No scars."
+  },
+  {
+   "scene": "body_bots",
+   "params": {
+    "target": "heart"
+   },
+   "vo": "Clearing a blocked artery. Destroying a tumor. Repairing a damaged cell. It sounds like science fiction, but scientists are already building the first versions. So how close are we, really?"
+  },
+  {
+   "scene": "title_card",
+   "params": {
+    "year": "1959",
+    "title": "THERE'S PLENTY OF ROOM",
+    "sub": "AT THE BOTTOM — RICHARD FEYNMAN"
+   },
+   "vo": "The idea goes back to 1959, when the physicist Richard Feynman gave a famous talk called There's Plenty of Room at the Bottom."
+  },
+  {
+   "scene": "body_bots",
+   "params": {
+    "target": "stomach",
+    "az0": 0.6,
+    "az1": 0.9,
+    "dist0": 9,
+    "dist1": 7
+   },
+   "vo": "He imagined machines so small they could travel through the body and operate from within. He credited a friend with the idea, which he described as swallowing the surgeon."
+  },
+  {
+   "scene": "bloodstream",
+   "params": {
+    "bots": 1,
+    "camSpeed": 0.08,
+    "flow": 0.2
+   },
+   "vo": "Seven years later, the film Fantastic Voyage shrank a submarine full of doctors and sent it into a patient's bloodstream. The dream was born. Building it turned out to be far harder."
+  },
+  {
+   "scene": "scale_zoom",
+   "params": {
+    "z0": 0,
+    "z1": 0.4
+   },
+   "vo": "First, let's get a sense of scale. A human hair is roughly eighty thousand nanometers wide. A nanometer is a billionth of a meter."
+  },
+  {
+   "scene": "scale_zoom",
+   "params": {
+    "z0": 0.4,
+    "z1": 2.2
+   },
+   "vo": "A red blood cell is about seven or eight thousand nanometers across. A typical bacterium, around a thousand. A virus, about a hundred."
+  },
+  {
+   "scene": "scale_zoom",
+   "params": {
+    "z0": 2.2,
+    "z1": 2.95
+   },
+   "vo": "The tiny robots scientists are building range from tens of nanometers up to a few micrometers. And at that size, the world works very differently."
+  },
+  {
+   "scene": "low_reynolds",
+   "params": {
+    "mode": "scallop"
+   },
+   "vo": "At the scale of a cell, water doesn't behave like water. It feels thick and sticky, like swimming through honey. The moment you stop pushing, you stop dead."
+  },
+  {
+   "scene": "low_reynolds",
+   "params": {
+    "mode": "scallop",
+    "az0": 0.6,
+    "az1": 0.4,
+    "dist0": 8,
+    "dist1": 7
+   },
+   "vo": "That means a simple back-and-forth stroke gets you nowhere. Open and close like a scallop, and you just slide forward, then right back where you started.",
+   "highlight": "#ff4b5c"
+  },
+  {
+   "scene": "low_reynolds",
+   "params": {
+    "mode": "bacterium"
+   },
+   "vo": "Bacteria solved this problem billions of years ago. Many of them swim by spinning a corkscrew-shaped tail, which screws them forward through the liquid."
+  },
+  {
+   "scene": "low_reynolds",
+   "params": {
+    "mode": "helixbot",
+    "az0": -0.4,
+    "az1": -0.2
+   },
+   "vo": "So engineers copied them. Many microrobots are tiny magnetic corkscrews, and they don't carry a motor at all."
+  },
+  {
+   "scene": "magnet_control",
+   "params": {},
+   "vo": "Instead, a rotating magnetic field outside the body twists the corkscrew, and it drills its way forward. Change the direction of the field, and you steer the robot."
+  },
+  {
+   "scene": "magnet_control",
+   "params": {
+    "az0": -0.8,
+    "az1": -0.5,
+    "dist0": 11,
+    "dist1": 9
+   },
+   "vo": "These magnetic fields are weak enough to pass harmlessly through the body. Hospital MRI scanners use far stronger ones every day."
+  },
+  {
+   "scene": "magnet_control",
+   "params": {
+    "swarm": 40,
+    "az0": 1.2,
+    "az1": 1.6,
+    "dist0": 10,
+    "dist1": 8
+   },
+   "vo": "Researchers have steered microrobots this way through fluid-filled channels and inside living animals. Some even move as swarms of thousands, guided together by the same field."
+  },
+  {
+   "scene": "magnet_control",
+   "params": {
+    "swarm": 1,
+    "az0": 0.3,
+    "az1": 0.6,
+    "dist0": 8,
+    "dist1": 7
+   },
+   "vo": "One system, developed in Zurich, used a ring of electromagnets to steer a tiny device inside the eye, a place where surgeons need extreme precision."
+  },
+  {
+   "scene": "nanobot_closeup",
+   "params": {
+    "az0": -0.6,
+    "az1": -0.2,
+    "dist0": 7,
+    "dist1": 6
+   },
+   "vo": "Power is the next big problem. There's no battery small enough to fit inside a nanobot. So scientists borrow energy from outside: magnetic fields, ultrasound, light, or chemicals already in the body."
+  },
+  {
+   "scene": "nanobot_closeup",
+   "params": {
+    "az0": 0.8,
+    "az1": 1.1,
+    "dist0": 6,
+    "dist1": 5
+   },
+   "vo": "Some early microrobots were coated with platinum and dropped into hydrogen peroxide. The reaction spat out bubbles that jetted them forward. But peroxide is toxic, so researchers look for fuels the body already has, like sugar or urea."
+  },
+  {
+   "scene": "bladder_bots",
+   "params": {
+    "shrink": 0
+   },
+   "vo": "In 2024, a team in Barcelona built nanobots powered by an enzyme that breaks down urea, a chemical found in urine. Inside the bladder, that reaction pushes them along."
+  },
+  {
+   "scene": "bladder_bots",
+   "params": {
+    "shrink": 1,
+    "az0": 0.8,
+    "az1": 1.2,
+    "dist0": 11,
+    "dist1": 8
+   },
+   "vo": "Loaded with a radioactive drug, a single dose shrank bladder tumors in mice by about ninety percent.",
+   "highlight": "#4dff9a"
+  },
+  {
+   "scene": "dna_origami",
+   "params": {},
+   "vo": "Other nanorobots aren't made of metal at all. They're folded out of DNA. Scientists can program strands of DNA to fold themselves into almost any shape. It's called DNA origami."
+  },
+  {
+   "scene": "dna_origami",
+   "params": {
+    "az0": 0.6,
+    "az1": 0.9
+   },
+   "vo": "In 2018, researchers built a DNA nanorobot shaped like a tiny tube, less than a hundred nanometers long, with a clotting drug hidden inside."
+  },
+  {
+   "scene": "dna_origami",
+   "params": {
+    "openAt": 0.3,
+    "az0": -0.3,
+    "az1": 0.1,
+    "dist0": 9,
+    "dist1": 7
+   },
+   "vo": "The tube stays locked shut until it touches a protein found on the blood vessels that feed tumors. Then it springs open."
+  },
+  {
+   "scene": "tumor_vessel",
+   "params": {},
+   "vo": "The drug triggers clots that cut off the tumor's blood supply. In mice, tumors were starved and shrank, while healthy tissue was largely left alone.",
+   "highlight": "#4dff9a"
+  },
+  {
+   "scene": "bloodstream",
+   "params": {
+    "bots": 4,
+    "cu": 0.1,
+    "camSpeed": 0.05
+   },
+   "vo": "Another idea is to recruit bacteria as tiny robots. Some bacteria naturally swim toward low-oxygen areas, like the core of a tumor. In 2016, researchers loaded drugs onto magnetic bacteria and steered them into tumors in mice."
+  },
+  {
+   "scene": "lnp",
+   "params": {},
+   "vo": "Here's something surprising. You may already have had nanotechnology inside you. The mRNA COVID-19 vaccines are delivered in lipid nanoparticles, tiny bubbles of fat around a hundred nanometers across."
+  },
+  {
+   "scene": "lnp",
+   "params": {
+    "z0": 0,
+    "z1": -4,
+    "az0": 0.6,
+    "az1": 0.3
+   },
+   "vo": "They protect the fragile mRNA and help it slip into your cells. They're not robots. They can't steer or think. But billions of doses have shown that nanoscale delivery can work in people."
+  },
+  {
+   "scene": "lnp",
+   "params": {
+    "az0": -0.5,
+    "az1": -0.8,
+    "dist0": 8,
+    "dist1": 7
+   },
+   "vo": "Researchers are also designing particles that only release their drug when they sense a specific signal, like the slightly acidic environment around a tumor."
+  },
+  {
+   "scene": "lnp",
+   "params": {
+    "az0": 0.9,
+    "az1": 1.2,
+    "dist0": 9,
+    "dist1": 8
+   },
+   "vo": "Nanomedicine isn't brand new, either. In 1995, a cancer drug called Doxil was approved. It packs chemotherapy inside tiny fat bubbles called liposomes, which helps reduce some of the drug's side effects."
+  },
+  {
+   "scene": "xenobot",
+   "params": {},
+   "vo": "Some scientists are going even further, building robots out of living cells. In 2020, researchers assembled frog cells into tiny body shapes designed by an AI. They called them xenobots."
+  },
+  {
+   "scene": "xenobot",
+   "params": {
+    "gather": true,
+    "az0": -0.4,
+    "az1": -0.6
+   },
+   "vo": "Less than a millimeter across, they could swim and push particles around. A later version could even gather loose cells into copies of itself."
+  },
+  {
+   "scene": "xenobot",
+   "params": {
+    "az0": 0.6,
+    "az1": 0.9
+   },
+   "vo": "Other teams have even built so-called spermbots, attaching sperm cells to tiny magnetic tubes, and using their powerful swimming to carry drugs to cancer cells in the lab."
+  },
+  {
+   "scene": "immune_attack",
+   "params": {},
+   "vo": "So why don't we have repair robots yet? Because the body is extremely good at getting rid of intruders."
+  },
+  {
+   "scene": "immune_attack",
+   "params": {
+    "az0": 0.5,
+    "az1": 0.8,
+    "dist0": 10,
+    "dist1": 8
+   },
+   "vo": "Immune cells called macrophages patrol your blood and tissues, swallowing anything that looks foreign. Many particles are filtered out by the liver and spleen before they ever reach their target.",
+   "highlight": "#ff4b5c"
+  },
+  {
+   "scene": "title_card",
+   "params": {
+    "big": "< 1%",
+    "sub": "of injected nanoparticles reach a tumor (median)",
+    "color": "#ff4b5c"
+   },
+   "vo": "One widely cited analysis of studies in animals found that, typically, less than one percent of injected nanoparticles actually reach a tumor."
+  },
+  {
+   "scene": "bloodstream",
+   "params": {
+    "bots": 3,
+    "cu": 0.15,
+    "camSpeed": 0.03
+   },
+   "vo": "Then there's navigation. Inside the body, there's no GPS. A robot has to find one tiny target among trillions of cells, in a current that keeps pushing it around."
+  },
+  {
+   "scene": "bloodstream",
+   "params": {
+    "bots": 6,
+    "cu": 0.25,
+    "camSpeed": 0.04
+   },
+   "vo": "One solution is to track robots with medical imaging, like ultrasound or MRI, so doctors can watch them in real time and steer them, almost like a remote-controlled car."
+  },
+  {
+   "scene": "nanobot_closeup",
+   "params": {
+    "az0": 1.6,
+    "az1": 2.0,
+    "dist0": 10,
+    "dist1": 8
+   },
+   "vo": "Building them is hard too. Making millions of identical machines, each smaller than a cell, safely and cheaply, is still a huge challenge."
+  },
+  {
+   "scene": "immune_attack",
+   "params": {
+    "az0": -0.6,
+    "az1": -0.9,
+    "dist0": 9,
+    "dist1": 8
+   },
+   "vo": "And they have to be safe. Anything left behind in the body must break down harmlessly, without causing inflammation or toxic side effects."
+  },
+  {
+   "scene": "respirocyte",
+   "params": {},
+   "vo": "Still, scientists have sketched what might one day be possible. In 1998, Robert Freitas designed an artificial red blood cell he called a respirocyte.",
+   "caption": ""
+  },
+  {
+   "scene": "respirocyte",
+   "params": {
+    "az0": -0.5,
+    "az1": -0.2,
+    "dist0": 8,
+    "dist1": 7
+   },
+   "vo": "On paper, it could carry hundreds of times more oxygen than a natural red blood cell. It's purely a concept. Nobody can build one yet."
+  },
+  {
+   "scene": "body_bots",
+   "params": {
+    "target": "heart",
+    "az0": 1.0,
+    "az1": 1.3,
+    "dist0": 8,
+    "dist1": 6.5
+   },
+   "vo": "Future nanobots might patrol your arteries, clearing fatty plaque before it causes a heart attack."
+  },
+  {
+   "scene": "cell_repair",
+   "params": {},
+   "vo": "Or enter damaged cells and repair them from within. That kind of repair is still far beyond anything we can build today."
+  },
+  {
+   "scene": "bloodstream",
+   "params": {
+    "bots": 8,
+    "cu": 0.3,
+    "camSpeed": 0.05
+   },
+   "vo": "Others imagine nanobots that monitor your blood around the clock, warning you about infections or cancer long before symptoms appear."
+  },
+  {
+   "scene": "gray_goo",
+   "params": {},
+   "vo": "Some people have worried about the opposite: self-copying nanobots running out of control and turning everything into gray goo. That fear came from a 1986 book, but most researchers, including its author, now consider it very unlikely."
+  },
+  {
+   "scene": "magnet_control",
+   "params": {
+    "az0": -0.6,
+    "az1": -0.2,
+    "dist0": 12,
+    "dist1": 9
+   },
+   "vo": "The realistic future is gradual. First, smarter drug delivery. Then robots that can be steered to a target and tested in clinical trials."
+  },
+  {
+   "scene": "bloodstream",
+   "params": {
+    "bots": 5,
+    "cu": 0.45,
+    "camSpeed": 0.06
+   },
+   "vo": "So, can nanobots repair your body from inside? Not yet. But the first tiny machines are already swimming, steering, and fighting tumors in the lab."
+  },
+  {
+   "scene": "nanobot_closeup",
+   "params": {
+    "dist0": 6,
+    "dist1": 14,
+    "az0": 0.2,
+    "az1": -0.4
+   },
+   "vo": [
+    "The fantastic voyage has begun.",
+    "If you enjoyed this, subscribe. Next time: how CRISPR lets scientists rewrite human DNA."
+   ]
+  }
  ]
 }
