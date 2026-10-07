@@ -257,6 +257,82 @@
   },
   {
    "id": "s003",
+   "line": "Around fifteen hundred, Leonardo da Vinci filled notebooks with designs for flying machines with flapping wings. None of them could ever have flown.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "notebook",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ]
+     },
+     {
+      "prop": "candle",
+      "at": [
+       0.4,
+       0,
+       0.875
+      ]
+     },
+     {
+      "prop": "glider",
+      "at": [
+       0,
+       0.1,
+       1.1
+      ],
+      "scale": 0.08
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.35,
+      -1.0,
+      1.25
+     ],
+     "to": [
+      0.22,
+      -0.85,
+      1.2
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.95
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.25,
+      0.18
+     ],
+     "world": [
+      0.04,
+      0.03,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s004",
    "line": "Then, on a cold, windy morning in December nineteen oh three, two brothers who ran a bicycle shop did it for real.",
    "visual": {
     "type": "stage",
@@ -323,7 +399,7 @@
    "still": true
   },
   {
-   "id": "s004",
+   "id": "s005",
    "line": "Their flight lasted twelve seconds. Sixty six years later, humans walked on the Moon.",
    "visual": {
     "type": "stage",
@@ -368,7 +444,7 @@
    }
   },
   {
-   "id": "s005",
+   "id": "s006",
    "line": "This is how humans learned to fly.",
    "visual": {
     "type": "stage",
@@ -469,7 +545,7 @@
    }
   },
   {
-   "id": "s006",
+   "id": "s007",
    "line": "The first humans to leave the ground did it in a bag of hot air.",
    "visual": {
     "type": "stage",
@@ -535,7 +611,7 @@
    "chapter": "Before the Wright brothers"
   },
   {
-   "id": "s007",
+   "id": "s008",
    "line": "In Paris, in November seventeen eighty three, a balloon built by the Montgolfier brothers carried two men over the rooftops for about twenty five minutes.",
    "visual": {
     "type": "stage",
@@ -626,7 +702,7 @@
    "still": true
   },
   {
-   "id": "s008",
+   "id": "s009",
    "line": "But balloons drift wherever the wind takes them. To truly fly, you need a wing.",
    "visual": {
     "type": "stage",
@@ -706,7 +782,7 @@
    }
   },
   {
-   "id": "s009",
+   "id": "s010",
    "line": "In seventeen ninety nine, an English baronet named George Cayley sketched the basic layout of a modern aeroplane: a fixed wing for lift, a tail for balance, and something separate to push it forward.",
    "visual": {
     "type": "stage",
@@ -787,7 +863,7 @@
    "still": true
   },
   {
-   "id": "s010",
+   "id": "s011",
    "line": "Fifty years later, one of his gliders carried a frightened passenger across a valley in Yorkshire. By some accounts, it was his coachman.",
    "visual": {
     "type": "stage",
@@ -867,7 +943,7 @@
    }
   },
   {
-   "id": "s011",
+   "id": "s012",
    "line": "In Germany in the eighteen nineties, an engineer named Otto Lilienthal made around two thousand flights in gliders he built himself, running down a hill and launching into the wind.",
    "visual": {
     "type": "stage",
@@ -958,7 +1034,7 @@
    }
   },
   {
-   "id": "s012",
+   "id": "s013",
    "line": "Newspapers around the world printed photographs of the flying man.",
    "visual": {
     "type": "stage",
@@ -1002,7 +1078,7 @@
    "still_at": 0.7
   },
   {
-   "id": "s013",
+   "id": "s014",
    "line": "In eighteen ninety six, a gust stalled his glider, and he fell. He died the next day.",
    "visual": {
     "type": "stage",
@@ -1101,7 +1177,7 @@
    }
   },
   {
-   "id": "s014",
+   "id": "s015",
    "line": "Far away, in Dayton, Ohio, two brothers read the news, and decided to take up where he left off.",
    "visual": {
     "type": "stage",
@@ -1275,7 +1351,7 @@
    "still": true
   },
   {
-   "id": "s015",
+   "id": "s016",
    "line": "Neither Wilbur nor Orville Wright ever received a high school diploma. They built printing presses, then opened a shop selling and repairing bicycles.",
    "visual": {
     "type": "stage",
@@ -1407,7 +1483,7 @@
    "chapter": "The bicycle mechanics"
   },
   {
-   "id": "s016",
+   "id": "s017",
    "line": "Bicycles taught them something important: a machine can be unstable, as long as the rider can control it.",
    "visual": {
     "type": "stage",
@@ -1490,7 +1566,213 @@
    }
   },
   {
-   "id": "s017",
+   "id": "s018",
+   "line": "Their sister Katharine, a teacher, helped run the family home and the business while they experimented, and became one of their strongest supporters.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.25,
+       0.2,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "pants": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.6,
+       0.35,
+       0
+      ],
+      "turn": -12,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.25,
+       0.15,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.12,
+        0.2
+       ],
+       "pants": [
+        0.3,
+        0.12,
+        0.2
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       0,
+       0.45,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.94
+     },
+     {
+      "hair": [
+       0.35,
+       0.22,
+       0.12
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.17,
+        0.14
+       ],
+       "pants": [
+        0.2,
+        0.17,
+        0.14
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.6,
+       0.35,
+       0
+      ],
+      "turn": 12,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.25,
+      0.18
+     ],
+     "world": [
+      0.04,
+      0.03,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s019",
    "line": "Everyone else was trying to build aircraft that were stable on their own. The Wrights thought the real problem was control.",
    "visual": {
     "type": "stage",
@@ -1567,7 +1849,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s018",
+   "id": "s020",
    "line": "Wilbur watched buzzards twisting the tips of their wings to turn and balance.",
    "visual": {
     "type": "stage",
@@ -1629,7 +1911,7 @@
    }
   },
   {
-   "id": "s019",
+   "id": "s021",
    "line": "Then, idly twisting a long, empty cardboard box in the shop, he realised a whole wing could be twisted in the same way. They called it wing warping.",
    "visual": {
     "type": "stage",
@@ -1743,7 +2025,7 @@
    }
   },
   {
-   "id": "s020",
+   "id": "s022",
    "line": "For testing, they needed steady winds and soft sand to land on. The weather bureau suggested a remote beach called Kitty Hawk, in North Carolina.",
    "visual": {
     "type": "stage",
@@ -1806,7 +2088,7 @@
    "chapter": "Kitty Hawk"
   },
   {
-   "id": "s021",
+   "id": "s023",
    "line": "Their gliders of nineteen hundred and nineteen oh one flew, but they produced far less lift than the published tables predicted.",
    "visual": {
     "type": "stage",
@@ -1897,7 +2179,7 @@
    }
   },
   {
-   "id": "s022",
+   "id": "s024",
    "line": "Wilbur was so discouraged he said that men would not fly in a thousand years.",
    "visual": {
     "type": "stage",
@@ -1999,7 +2281,7 @@
    "still": true
   },
   {
-   "id": "s023",
+   "id": "s025",
    "line": "Back home, they built their own wind tunnel, a wooden box with a fan at one end.",
    "visual": {
     "type": "stage",
@@ -2038,7 +2320,7 @@
    "chapter": "The wind tunnel"
   },
   {
-   "id": "s024",
+   "id": "s026",
    "line": "Inside, they tested around two hundred small model wings, carefully measuring the lift each one made.",
    "visual": {
     "type": "stage",
@@ -2076,7 +2358,7 @@
    }
   },
   {
-   "id": "s025",
+   "id": "s027",
    "line": "They discovered that the numbers everyone had relied on were wrong. Now they had their own data, the best in the world.",
    "visual": {
     "type": "stage",
@@ -2164,7 +2446,7 @@
    "still": true
   },
   {
-   "id": "s026",
+   "id": "s028",
    "line": "A wing works by meeting the air at a slight angle. Air flowing over the curved top is pulled downward behind it, and the wing is pushed up. That push is lift.",
    "visual": {
     "type": "stage",
@@ -2202,7 +2484,7 @@
    }
   },
   {
-   "id": "s027",
+   "id": "s029",
    "line": "In nineteen oh two, their new glider added a movable rudder. Now they could control it on all three axes: pitch, roll and yaw.",
    "visual": {
     "type": "stage",
@@ -2321,7 +2603,7 @@
    }
   },
   {
-   "id": "s028",
+   "id": "s030",
    "line": "They made hundreds of glides. That system of three-axis control is still how every aeroplane is flown today.",
    "visual": {
     "type": "stage",
@@ -2411,7 +2693,84 @@
    }
   },
   {
-   "id": "s029",
+   "id": "s031",
+   "line": "They spent months at Kitty Hawk each year, living in a wooden shed, battling storms and swarms of mosquitoes.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dunes",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "prop": "table",
+      "at": [
+       1.5,
+       1.0,
+       0
+      ],
+      "args": {
+       "w": 2.5,
+       "d": 1.6,
+       "h": 1.8,
+       "color": [
+        0.45,
+        0.32,
+        0.2
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -5.5,
+      1.8
+     ],
+     "to": [
+      0.4,
+      -5.0,
+      1.7
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s032",
    "line": "Next, they needed an engine. No company could build one light enough, so their mechanic, Charlie Taylor, built one in about six weeks, with an aluminium block.",
    "visual": {
     "type": "stage",
@@ -2552,7 +2911,7 @@
    "chapter": "An engine and propellers"
   },
   {
-   "id": "s030",
+   "id": "s033",
    "line": "And they realised a propeller is just a wing that spins. Nobody had worked out how to design one properly, so they did it themselves.",
    "visual": {
     "type": "stage",
@@ -2591,7 +2950,157 @@
    }
   },
   {
-   "id": "s031",
+   "id": "s034",
+   "line": "Meanwhile, the famous scientist Samuel Langley had fifty thousand dollars from the United States Army to build a flying machine. On the eighth of December, nineteen oh three, it plunged straight into the Potomac River.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "glider",
+      "at": [
+       0,
+       0,
+       2.5
+      ],
+      "scale": 1.2,
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -2,
+          0,
+          3.0
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          0.5,
+          0,
+          0.2
+         ],
+         "rot": [
+          -60,
+          0,
+          0
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -8,
+      2.0
+     ],
+     "to": [
+      0.4,
+      -7.4,
+      1.9
+     ],
+     "target": [
+      0,
+      0,
+      1.4
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.1,
+      0.3,
+      0.5
+     ]
+    }
+   },
+   "still": true,
+   "still_at": 0.5
+  },
+  {
+   "id": "s035",
+   "line": "The Wright brothers spent about a thousand dollars of their own money.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "$50,000",
+      "at": [
+       -0.6,
+       0,
+       1.0
+      ],
+      "size": 0.18,
+      "color": [
+       1.0,
+       0.4,
+       0.4
+      ],
+      "pop": 0.1
+     },
+     {
+      "text": "$1,000",
+      "at": [
+       0.6,
+       0,
+       1.0
+      ],
+      "size": 0.18,
+      "color": [
+       0.4,
+       1.0,
+       0.6
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s036",
    "line": "On the fourteenth of December, nineteen oh three, the brothers tossed a coin to decide who would go first. Wilbur won, but he stalled the machine on takeoff.",
    "visual": {
     "type": "stage",
@@ -2758,7 +3267,7 @@
    "chapter": "December 17, 1903"
   },
   {
-   "id": "s032",
+   "id": "s037",
    "line": "Three days later, on the seventeenth of December, it was Orville's turn. The wind was blowing at more than twenty miles an hour.",
    "visual": {
     "type": "stage",
@@ -2840,7 +3349,7 @@
    }
   },
   {
-   "id": "s033",
+   "id": "s038",
    "line": "At ten thirty five in the morning, the Flyer ran along a wooden rail, lifted into the air, and stayed there.",
    "visual": {
     "type": "stage",
@@ -2943,7 +3452,7 @@
    }
   },
   {
-   "id": "s034",
+   "id": "s039",
    "line": "It flew for twelve seconds and covered thirty seven metres, a shorter distance than the wingspan of a modern jumbo jet.",
    "visual": {
     "type": "stage",
@@ -3032,7 +3541,7 @@
    "still": true
   },
   {
-   "id": "s035",
+   "id": "s040",
    "line": "Wilbur ran alongside. A local lifeguard named John Daniels, who had never used a camera before, took one of the most famous photographs ever made.",
    "visual": {
     "type": "stage",
@@ -3214,7 +3723,7 @@
    "still": true
   },
   {
-   "id": "s036",
+   "id": "s041",
    "line": "They flew three more times that day. The last flight, by Wilbur, lasted fifty nine seconds and covered over two hundred and fifty metres.",
    "visual": {
     "type": "stage",
@@ -3323,7 +3832,51 @@
    }
   },
   {
-   "id": "s037",
+   "id": "s042",
+   "line": "Orville sent a telegram to their father: Success. Four flights Thursday morning. Inform press. Home Christmas.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "SUCCESS FOUR FLIGHTS THURSDAY MORNING",
+       "n": 1
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.7
+  },
+  {
+   "id": "s043",
    "line": "Almost nobody believed them. Newspapers ignored the story, and many experts called them liars.",
    "visual": {
     "type": "stage",
@@ -3368,7 +3921,87 @@
    "still_at": 0.7
   },
   {
-   "id": "s038",
+   "id": "s044",
+   "line": "Back in Ohio, they kept improving their machine in a cow pasture called Huffman Prairie. By nineteen oh five, they could stay up for thirty nine minutes, circling over the fields.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       2,
+       1.4
+      ],
+      "rot": [
+       0,
+       -15,
+       -60
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "39 MINUTES",
+      "at": [
+       0,
+       0,
+       3.0
+      ],
+      "size": 0.25,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -9,
+      2.4
+     ],
+     "to": [
+      0.5,
+      -8.4,
+      2.4
+     ],
+     "target": [
+      0,
+      0,
+      1.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s045",
    "line": "Then, in nineteen oh eight, Wilbur flew in public at a racecourse near Le Mans, in France. He banked, circled and landed exactly where he chose.",
    "visual": {
     "type": "stage",
@@ -3470,7 +4103,7 @@
    }
   },
   {
-   "id": "s039",
+   "id": "s046",
    "line": "The crowds were stunned. One French aviator said: we are beaten. We do not exist.",
    "visual": {
     "type": "stage",
@@ -3516,7 +4149,232 @@
    }
   },
   {
-   "id": "s040",
+   "id": "s047",
+   "line": "Flying was still dangerous. That September, Orville crashed during a demonstration for the US Army. His passenger, Lieutenant Thomas Selfridge, became the first person to die in a powered aeroplane crash.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       -0.4
+      ],
+      "rot": [
+       -20,
+       25,
+       15
+      ],
+      "args": {
+       "props_spin": false
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -6,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -5.6,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.5,
+       0.5,
+       0.55
+      ],
+      "zenith": [
+       0.2,
+       0.22,
+       0.3
+      ]
+     },
+     "floor": [
+      0.2,
+      0.35,
+      0.15
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s048",
+   "line": "But the Army bought a Wright Flyer the following year, and the brothers became famous around the world.",
+   "visual": {
+    "type": "stage",
+    "env": "hall",
+    "cast": [
+     {
+      "hair": [
+       0.25,
+       0.2,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "pants": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.4,
+       0.4,
+       0
+      ],
+      "turn": -10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.35,
+       0.22,
+       0.12
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.17,
+        0.14
+       ],
+       "pants": [
+        0.2,
+        0.17,
+        0.14
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.45,
+       0.4,
+       0
+      ],
+      "turn": 10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "medal",
+      "at": [
+       0,
+       -0.1,
+       1.7
+      ],
+      "spin": [
+       "z",
+       40
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.6
+     ],
+     "to": [
+      0,
+      -2.4,
+      1.5
+     ],
+     "target": [
+      0,
+      0.4,
+      1.2
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s049",
    "line": "After that, aviation exploded. In nineteen oh nine, Louis Blériot flew across the English Channel.",
    "visual": {
     "type": "stage",
@@ -3619,7 +4477,7 @@
    "chapter": "From Kitty Hawk to the Moon"
   },
   {
-   "id": "s041",
+   "id": "s050",
    "line": "In nineteen twenty seven, Charles Lindbergh flew alone, nonstop, from New York to Paris.",
    "visual": {
     "type": "stage",
@@ -3663,7 +4521,7 @@
    }
   },
   {
-   "id": "s042",
+   "id": "s051",
    "line": "Twenty years after that, Chuck Yeager flew faster than the speed of sound.",
    "visual": {
     "type": "stage",
@@ -3764,7 +4622,68 @@
    }
   },
   {
-   "id": "s043",
+   "id": "s052",
+   "line": "In the late nineteen thirties, Frank Whittle in Britain and Hans von Ohain in Germany each invented the jet engine. The first jet aircraft flew in August nineteen thirty nine.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "airliner",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "scale": 0.35,
+      "rot": [
+       0,
+       0,
+       40
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "THE JET ENGINE",
+      "at": [
+       0,
+       0.5,
+       0.95
+      ],
+      "size": 0.12,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0.5,
+      -1.6,
+      0.8
+     ],
+     "to": [
+      0.3,
+      -1.3,
+      0.7
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s053",
    "line": "And in July nineteen sixty nine, Neil Armstrong landed on the Moon. In his kit, he carried a piece of fabric from the wing of the nineteen oh three Wright Flyer.",
    "visual": {
     "type": "stage",
@@ -3810,7 +4729,72 @@
    "still": true
   },
   {
-   "id": "s044",
+   "id": "s054",
+   "line": "In nineteen fifty two, the de Havilland Comet began the first jet airliner service. And in nineteen seventy, the Boeing seven four seven made long distance flying affordable for millions.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "airliner",
+      "at": [
+       0,
+       3,
+       3.2
+      ],
+      "rot": [
+       0,
+       0,
+       -90
+      ],
+      "scale": 1.2
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -9,
+      3.0
+     ],
+     "to": [
+      0.4,
+      -8.4,
+      3.0
+     ],
+     "target": [
+      0,
+      0,
+      3.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s055",
    "line": "Today, around a hundred thousand commercial flights take off every day.",
    "visual": {
     "type": "stage",
@@ -4004,7 +4988,51 @@
    }
   },
   {
-   "id": "s045",
+   "id": "s056",
+   "line": "The original nineteen oh three Flyer spent twenty years on display in London, after a dispute with the Smithsonian. Since nineteen forty eight, it has hung in Washington, D.C., in what is now the National Air and Space Museum.",
+   "visual": {
+    "type": "stage",
+    "env": "hall",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       1.2
+      ],
+      "rot": [
+       0,
+       0,
+       30
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -6,
+      2.2
+     ],
+     "to": [
+      0.5,
+      -5.4,
+      2.4
+     ],
+     "target": [
+      0,
+      0,
+      2.6
+     ],
+     "lens": 30
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s057",
    "line": "It all began with two brothers from a bicycle shop, who refused to give up, and treated flying not as a dream, but as an engineering problem.",
    "visual": {
     "type": "stage",
@@ -4179,7 +5207,7 @@
    "chapter": "Close"
   },
   {
-   "id": "s046",
+   "id": "s058",
    "line": "Twelve seconds over a beach. And the whole sky opened up.",
    "visual": {
     "type": "stage",

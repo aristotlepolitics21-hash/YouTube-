@@ -28,6 +28,9 @@ S("Ancient myths are full of flying people. Icarus, in Greek legend, made wings 
   stage("sky", cam((0, -6.0, 3.0), (0.4, -5.4, 3.2), (0, 0, 3.4)),
         props=[P("glider", (0, 2, 3.5), anim=[[0, {"at": [0, 2, 4.0]}], [1, {"at": [0.6, 2, 2.2], "rot": [-25, 0, 20]}]])],
         env_opts={"sky": {"horizon": [1.0, 0.7, 0.3], "zenith": [0.3, 0.45, 0.85]}, "floor": [0.1, 0.3, 0.5]}))
+S("Around fifteen hundred, Leonardo da Vinci filled notebooks with designs for flying machines with flapping wings. None of them could ever have flown.",
+  stage("lab", cam((0.35, -1.0, 1.25), (0.22, -0.85, 1.2), (0, -0.1, 0.95)), props=[TABLE, P("notebook", (0, -0.1, TOP)), P("candle", (0.4, 0, TOP)),
+        P("glider", (0, 0.1, 1.1), scale=0.08)], env_opts=SHOP), still=True)
 S("Then, on a cold, windy morning in December nineteen oh three, two brothers who ran a bicycle shop did it for real.",
   stage("sky", cam((4.5, -5.5, 2.0), (3.8, -4.8, 1.8), (0, 0, 1.1)), props=[P("wright_flyer"), P("dunes")], env_opts=BEACH), still=True)
 S("Their flight lasted twelve seconds. Sixty six years later, humans walked on the Moon.",
@@ -74,6 +77,10 @@ S("Neither Wilbur nor Orville Wright ever received a high school diploma. They b
 S("Bicycles taught them something important: a machine can be unstable, as long as the rider can control it.",
   stage("sky", cam((2.2, -3.0, 1.2), (1.6, -2.4, 1.1), (0, 0, 0.6)), props=[P("bicycle", anim=[[0, {"at": [0, -1.5, 0]}], [1, {"at": [0, 1.5, 0]}]], args={"spin": 4})],
         env_opts=SKY))
+S("Their sister Katharine, a teacher, helped run the family home and the business while they experimented, and became one of their strongest supporters.",
+  stage("lab", cam((0, -2.6, 1.6), (0.3, -2.2, 1.5), (0, 0.3, 1.2)),
+        cast=[who(WILBUR, at=(-0.6, 0.35, 0), turn=-12), who({"hair": [0.25, 0.15, 0.08], "sleeves": "long", "outfit": {"skin": SKIN, "shirt": [0.3, 0.12, 0.2], "pants": [0.3, 0.12, 0.2], "boots": [0.1, 0.05, 0.04]}},
+                                                         at=(0, 0.45, 0), scale=0.94), who(ORVILLE, at=(0.6, 0.35, 0), turn=12)], env_opts=SHOP), still=True)
 S("Everyone else was trying to build aircraft that were stable on their own. The Wrights thought the real problem was control.",
   stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("LIFT", (-0.7, 0, 1.0), 0.14, (0.6, 0.6, 0.6), pop=0.1),
         T("POWER", (0, 0, 1.0), 0.14, (0.6, 0.6, 0.6), pop=0.2), T("CONTROL", (0.75, 0, 1.0), 0.18, (1.0, 0.85, 0.3), pop=0.4)]), still=True, still_at=0.8)
@@ -112,6 +119,9 @@ S("They made hundreds of glides. That system of three-axis control is still how 
         env_opts=SKY))
 
 # ===================================================================== POWER
+S("They spent months at Kitty Hawk each year, living in a wooden shed, battling storms and swarms of mosquitoes.",
+  stage("sky", cam((0, -5.5, 1.8), (0.4, -5.0, 1.7), (0, 0, 1.0)), props=[P("dunes"), P("table", (1.5, 1.0, 0), args={"w": 2.5, "d": 1.6, "h": 1.8, "color": [0.45, 0.32, 0.2]})],
+        env_opts=BEACH), still=True)
 S("Next, they needed an engine. No company could build one light enough, so their mechanic, Charlie Taylor, built one in about six weeks, with an aluminium block.",
   stage("lab", BENCH, cast=[who(WORKER, pose=WORK)], props=[TABLE, P("graphite_pile", (0, -0.1, TOP), scale=0.1)], texts=[T("12 HORSEPOWER", (0.9, 0.6, 1.6), 0.12, pop=0.3)],
         env_opts=SHOP), still=True, chapter="An engine and propellers")
@@ -119,6 +129,13 @@ S("And they realised a propeller is just a wing that spins. Nobody had worked ou
   stage("studio", cam((0.6, -1.4, 0.9), (0.4, -1.2, 0.85), (0, 0, 0.6)), props=[P("wright_flyer", (0, 0, -0.6), scale=0.7)]))
 
 # ===================================================================== DECEMBER 17
+S("Meanwhile, the famous scientist Samuel Langley had fifty thousand dollars from the United States Army to build a flying machine. On the eighth of December, nineteen oh three, it plunged straight into the Potomac River.",
+  stage("sky", cam((0, -8, 2.0), (0.4, -7.4, 1.9), (0, 0, 1.4)),
+        props=[P("glider", (0, 0, 2.5), scale=1.2, anim=[[0, {"at": [-2, 0, 3.0]}], [1, {"at": [0.5, 0, 0.2], "rot": [-60, 0, 0]}]])],
+        env_opts={"sky": SKY["sky"], "floor": [0.1, 0.3, 0.5]}), still=True, still_at=0.5)
+S("The Wright brothers spent about a thousand dollars of their own money.",
+  stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("$50,000", (-0.6, 0, 1.0), 0.18, (1.0, 0.4, 0.4), pop=0.1),
+        T("$1,000", (0.6, 0, 1.0), 0.18, (0.4, 1.0, 0.6), pop=0.4)]), still=True, still_at=0.8)
 S("On the fourteenth of December, nineteen oh three, the brothers tossed a coin to decide who would go first. Wilbur won, but he stalled the machine on takeoff.",
   stage("sky", cam((0, -2.6, 1.6), (0.3, -2.2, 1.5), (0, 0.3, 1.2)),
         cast=[who(WILBUR, at=(-0.4, 0.35, 0), turn=-10, pose=PRESENT), who(ORVILLE, at=(0.45, 0.35, 0), turn=10, pose=STAND)], env_opts=BEACH), still=True,
@@ -142,15 +159,27 @@ S("They flew three more times that day. The last flight, by Wilbur, lasted fifty
         texts=[T("59 SECONDS", (0, 3, 3.0), 0.25, pop=0.4)], env_opts=BEACH))
 
 # ===================================================================== DOUBT & TRIUMPH
+S("Orville sent a telegram to their father: Success. Four flights Thursday morning. Inform press. Home Christmas.",
+  stage("studio", cam((0.2, -1.1, 0.8), (0.1, -0.95, 0.75), (0, 0, 0.1)), props=[P("newspapers", args={"headline": "SUCCESS FOUR FLIGHTS THURSDAY MORNING", "n": 1})]),
+  still=True, still_at=0.7)
 S("Almost nobody believed them. Newspapers ignored the story, and many experts called them liars.",
   stage("studio", cam((0.2, -1.1, 0.8), (0.1, -0.95, 0.75), (0, 0, 0.1)), props=[P("newspapers", args={"headline": "FLYING OR LYING?", "n": 3})]),
   still=True, still_at=0.7, chapter="Nobody believed them")
+S("Back in Ohio, they kept improving their machine in a cow pasture called Huffman Prairie. By nineteen oh five, they could stay up for thirty nine minutes, circling over the fields.",
+  stage("sky", cam((0, -9, 2.4), (0.5, -8.4, 2.4), (0, 0, 1.8)), props=[P("wright_flyer", (0, 2, 1.4), rot=[0, -15, -60])],
+        texts=[T("39 MINUTES", (0, 0, 3.0), 0.25, pop=0.3)], env_opts=SKY), still=True)
 S("Then, in nineteen oh eight, Wilbur flew in public at a racecourse near Le Mans, in France. He banked, circled and landed exactly where he chose.",
   stage("sky", cam((0, -9, 2.0), (0.5, -8, 2.4), (0, 0, 2.2)),
         props=[P("wright_flyer", (0, 0, 1.2), anim=[[0, {"at": [-4, 2, 1.2], "rot": [0, -20, -40]}], [1, {"at": [4, 0, 1.8], "rot": [0, 20, 40]}]]),
                P("figures", (0, -2.5, 0), args={"n": 9, "spacing": 0.45})], env_opts=SKY))
 S("The crowds were stunned. One French aviator said: we are beaten. We do not exist.",
   stage("hall", cam((0, -4.6, 2.7), (0.4, -4.0, 2.4), (0, 1.0, 1.0), lens=30), props=[P("audience", (0, 1.0, 0), rot=[0, 0, 180], args={"react": 0.3})]))
+S("Flying was still dangerous. That September, Orville crashed during a demonstration for the US Army. His passenger, Lieutenant Thomas Selfridge, became the first person to die in a powered aeroplane crash.",
+  stage("sky", cam((0, -6, 1.6), (0.3, -5.6, 1.5), (0, 0, 0.6)), props=[P("wright_flyer", (0, 0, -0.4), rot=[-20, 25, 15], args={"props_spin": False})],
+        env_opts={"sky": {"horizon": [0.5, 0.5, 0.55], "zenith": [0.2, 0.22, 0.3]}, "floor": [0.2, 0.35, 0.15]}), still=True)
+S("But the Army bought a Wright Flyer the following year, and the brothers became famous around the world.",
+  stage("hall", cam((0, -2.8, 1.6), (0, -2.4, 1.5), (0, 0.4, 1.2)), cast=[who(WILBUR, at=(-0.4, 0.4, 0), turn=-10, pose=PRESENT), who(ORVILLE, at=(0.45, 0.4, 0), turn=10)],
+        props=[P("medal", (0, -0.1, 1.7), spin=["z", 40])]), still=True)
 S("After that, aviation exploded. In nineteen oh nine, Louis Blériot flew across the English Channel.",
   stage("sky", cam((0, -9, 2.0), (0.5, -8, 2.0), (0, 0, 1.6)),
         props=[P("wright_flyer", (0, 0, 1.6), scale=0.7, anim=[[0, {"at": [-5, 0, 1.6]}], [1, {"at": [5, 0, 1.8]}]], rot=[0, 0, -90])],
@@ -161,12 +190,19 @@ S("Twenty years after that, Chuck Yeager flew faster than the speed of sound.",
   stage("sky", cam((0, -9, 3.0), (0, -8.5, 3.0), (0, 0, 3.0)),
         props=[P("airliner", (0, 3, 3.2), scale=0.5, rot=[0, 0, -90], anim=[[0, {"at": [-12, 3, 3.0]}], [1, {"at": [12, 3, 3.6]}]])],
         texts=[T("MACH 1", (0, 0, 1.6), 0.3, pop=0.3)], env_opts={"sky": {"horizon": [0.6, 0.7, 0.9], "zenith": [0.02, 0.08, 0.35]}, "floor": [0.6, 0.5, 0.35]}))
+S("In the late nineteen thirties, Frank Whittle in Britain and Hans von Ohain in Germany each invented the jet engine. The first jet aircraft flew in August nineteen thirty nine.",
+  stage("studio", cam((0.5, -1.6, 0.8), (0.3, -1.3, 0.7), (0, 0, 0.5)), props=[P("airliner", (0, 0, 0.5), scale=0.35, rot=[0, 0, 40])],
+        texts=[T("THE JET ENGINE", (0, 0.5, 0.95), 0.12, pop=0.2)]), still=True)
 S("And in July nineteen sixty nine, Neil Armstrong landed on the Moon. In his kit, he carried a piece of fabric from the wing of the nineteen oh three Wright Flyer.",
   stage("space", cam((0, -3.0, 0.6), (0.3, -2.6, 0.55), (0, 0, 0.3)), texts=[T("1903 → 1969", (0, -1.2, 1.25), 0.2, pop=0.3)]), still=True)
+S("In nineteen fifty two, the de Havilland Comet began the first jet airliner service. And in nineteen seventy, the Boeing seven four seven made long distance flying affordable for millions.",
+  stage("sky", cam((0, -9, 3.0), (0.4, -8.4, 3.0), (0, 0, 3.0)), props=[P("airliner", (0, 3, 3.2), rot=[0, 0, -90], scale=1.2)], env_opts=SKY), still=True)
 S("Today, around a hundred thousand commercial flights take off every day.",
   stage("sky", cam((0, -9, 3.0), (0.4, -8.4, 3.0), (0, 0, 3.0)),
         props=[P("airliner", (x, 6 + abs(x), 3 + 0.3 * i), scale=0.5, rot=[0, 0, -90], anim=[[0, {"at": [x - 3, 6 + abs(x), 3 + 0.3 * i]}], [1, {"at": [x + 3, 6 + abs(x), 3.2 + 0.3 * i]}]])
                for i, x in enumerate((-4, -1.5, 1, 3.5))], env_opts=SKY))
+S("The original nineteen oh three Flyer spent twenty years on display in London, after a dispute with the Smithsonian. Since nineteen forty eight, it has hung in Washington, D.C., in what is now the National Air and Space Museum.",
+  stage("hall", cam((0, -6, 2.2), (0.5, -5.4, 2.4), (0, 0, 2.6), lens=30), props=[P("wright_flyer", (0, 0, 1.2), rot=[0, 0, 30])]), still=True)
 S("It all began with two brothers from a bicycle shop, who refused to give up, and treated flying not as a dream, but as an engineering problem.",
   stage("sky", cam((0, -2.6, 1.6), (0.3, -2.2, 1.5), (0, 0.3, 1.2)),
         cast=[who(WILBUR, at=(-0.4, 0.35, 0), turn=-10), who(ORVILLE, at=(0.45, 0.35, 0), turn=10)],
