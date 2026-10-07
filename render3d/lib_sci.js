@@ -227,7 +227,7 @@ export function xrayBody({ tint = '#57b8ff', organs = true } = {}) {
 export function humanoid({ style = 'robot', color } = {}) {
   const robot = style === 'robot';
   const shell = robot
-    ? new THREE.MeshPhysicalMaterial({ color: color || '#d9dde3', metalness: 0.3, roughness: 0.35, clearcoat: 0.8, envMapIntensity: 0.5 })
+    ? new THREE.MeshPhysicalMaterial({ color: color || '#aeb4bc', metalness: 0.3, roughness: 0.4, clearcoat: 0.5, envMapIntensity: 0.22 })
     : new THREE.MeshPhysicalMaterial({ color: color || '#8a5a3c', roughness: 0.6, sheen: 0.3, envMapIntensity: 0.3 });
   const dark = new THREE.MeshPhysicalMaterial({ color: robot ? '#2a2f36' : '#3b4a6b', metalness: robot ? 0.6 : 0, roughness: 0.45, envMapIntensity: 0.4 });
   const glow = new THREE.MeshBasicMaterial({ color: '#57d8ff' });
