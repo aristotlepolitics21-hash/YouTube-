@@ -70,11 +70,19 @@ S("When they fuse, they make helium, and a fast neutron carrying most of the ene
   stage("studio", REACT, props=[P("fusion_reaction", (0, 0, 0.6), args={"hit": 0.3})], env_opts=COSMOS))
 
 # ===================================================================== THE TOKAMAK
+S("Humans first released fusion energy in nineteen fifty two, in the hydrogen bomb. That was fusion out of control. The challenge since then has been to tame it.",
+  stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("1952", (0, 0, 1.0), 0.35, (0.8, 0.8, 0.8), pop=0.1)],
+        env_opts={"horizon": [0.06, 0.06, 0.06], "zenith": [0.0, 0.0, 0.0]}), still=True)
 S("The answer to holding plasma came from the Soviet Union. In the early nineteen fifties, physicists Igor Tamm and Andrei Sakharov proposed trapping it with magnetic fields.",
   stage("lab", cam((0.5, -1.8, 1.55), (0.35, -1.5, 1.5), "cast0.head"), cast=[who(SAKHAROV, pose=PRESENT)], env_opts={"wall": [0.25, 0.2, 0.18], "world": [0.02, 0.02, 0.015]}),
   still=True, chapter="The magnetic bottle")
 S("Charged particles spiral around magnetic field lines. Bend those lines into a ring, and the plasma can circle forever without touching the walls.",
   stage("lab", cam((0, -3.4, 3.0), (0.4, -3.0, 2.8), (0, 0, 0.9), lens=30), props=[P("tokamak", args={"plasma": [0.1, 0.4], "cutaway": False})], env_opts=HALL))
+S("In America, the physicist Lyman Spitzer designed a different magnetic bottle, a twisted ring called the stellarator. Germany's Wendelstein seven X, switched on in twenty fifteen, is a modern version.",
+  stage("lab", cam((0, -3.4, 3.0), (0.4, -3.0, 2.8), (0, 0, 0.9), lens=30), props=[P("tokamak", args={"plasma": [0.1, 0.4], "cutaway": False}, rot=[8, -6, 0])], env_opts=HALL),
+  still=True)
+S("Holding plasma steady has been compared to trying to squeeze a balloon, or hold jelly with rubber bands. Squeeze one place, and it bulges out somewhere else.",
+  stage("lab", cam((1.6, -2.4, 1.6), (1.2, -2.0, 1.4), (0, 0, 0.9)), props=[P("tokamak", args={"plasma": [0.0, 0.2]})], env_opts=HALL))
 S("The design was called a tokamak, a Russian acronym for a toroidal chamber with magnetic coils: a doughnut-shaped magnetic bottle.",
   stage("lab", TOK, props=[P("tokamak", args={"plasma": [0.1, 0.5]})], texts=[T("TOKAMAK", (0, 1.5, 2.6), 0.25, pop=0.3)], env_opts=HALL))
 S("In nineteen sixty eight, a Soviet tokamak called T-three reached around ten million degrees. Western scientists were sceptical, so a British team flew to Moscow with lasers to measure it. The Soviets were right.",
@@ -85,6 +93,8 @@ S("Soon, tokamaks were being built all over the world.",
         P("tokamak", (2.6, 2, 0), scale=0.6)], env_opts=HALL), still=True)
 
 # ===================================================================== RECORDS
+S("In nineteen fifty eight, countries declassified their fusion research at a conference in Geneva. That same year, Britain's ZETA machine was briefly celebrated for achieving fusion, before scientists realised the measurements had been misread.",
+  stage("studio", cam((0.2, -1.1, 0.8), (0.1, -0.95, 0.75), (0, 0, 0.1)), props=[P("newspapers", args={"headline": "MAN-MADE SUN?", "n": 3})]), still=True, still_at=0.7)
 S("The biggest was JET, the Joint European Torus, in England. In nineteen ninety seven, it produced sixteen megawatts of fusion power.",
   stage("lab", TOK, props=[P("tokamak", args={"plasma": [0.1, 0.4]})], texts=[T("JET  1997  16 MW", (0, 1.5, 2.6), 0.2, pop=0.3)], env_opts=HALL),
   chapter="Chasing break-even")
@@ -120,6 +130,11 @@ S("Meanwhile, dozens of private companies are racing to build smaller, cheaper r
         env_opts=HALL))
 
 # ===================================================================== WHY IT MATTERS
+S("In twenty twenty one, a team from MIT and the company Commonwealth Fusion Systems tested a new superconducting magnet that reached a field of twenty tesla, a record for its kind.",
+  stage("lab", cam((0.6, -2.0, 1.4), (0.4, -1.6, 1.3), (0, 0, 0.8)), cast=[who(ENGINEER, at=(-1.0, 0.3, 0), turn=-20, pose=STAND)],
+        props=[P("coil", (0, 0, 0.8), scale=4, args={"glow": [[0, 0], [0.4, 3]], "axis": "z"})], texts=[T("20 TESLA", (0.6, 0.5, 1.8), 0.2, pop=0.4)], env_opts=HALL), still=True)
+S("And in early twenty twenty five, tokamaks in China and France held hot plasma steady for more than twenty minutes, new records for staying power.",
+  stage("lab", TOK, props=[P("tokamak", args={"plasma": [0.0, 0.2]})], texts=[T("20+ MINUTES", (0, 1.5, 2.6), 0.25, pop=0.4)], env_opts=HALL))
 S("Why does it matter so much? Because fusion fuel is incredibly concentrated.",
   stage("studio", cam((0, -2.0, 0.6), (0, -1.8, 0.55), (0, 0, 0.2)), props=[P("vials", args={"n": 1, "label": "D + T"})], env_opts=COSMOS), still=True,
   chapter="Why it matters")
@@ -131,6 +146,9 @@ S("It produces no carbon dioxide. And unlike today's nuclear power, it can't mel
 S("It does create some radioactivity, as neutrons hit the reactor walls, but far less long-lived waste than fission.",
   stage("studio", cam((0.3, -1.2, 0.6), (0.2, -1.0, 0.55), (0, 0, 0.2)), props=[P("geiger", args={"clicks": [[0, -40], [0.4, -20], [0.8, -30]]})], env_opts=COSMOS),
   still=True)
+S("The engineering problems are still huge. The fast neutrons slowly damage the walls of the machine, and the tritium fuel must be made inside the reactor itself, from lithium.",
+  stage("lab", cam((1.6, -2.4, 1.6), (1.2, -2.0, 1.4), (0, 0, 0.9)), props=[P("tokamak", args={"plasma": [0.0, 0.2]}), P("fusion_reaction", (0, -1.2, 1.4), scale=0.3, args={"hit": 0.3})],
+        env_opts=HALL), still=True)
 S("Scientists like to joke that fusion power is always thirty years away. But the experiments of the last few years have brought it closer than ever before.",
   stage("studio", cam((0, -2.4, 1.0), (0, -2.1, 0.95), (0, 0, 0.8)), texts=[T("ALWAYS 30 YEARS AWAY?", (0, 0, 1.0), 0.16, pop=0.2)], env_opts=COSMOS), still=True, still_at=0.8)
 

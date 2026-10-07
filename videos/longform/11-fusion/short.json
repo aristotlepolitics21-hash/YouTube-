@@ -1159,6 +1159,64 @@
   },
   {
    "id": "s018",
+   "line": "Humans first released fusion energy in nineteen fifty two, in the hydrogen bomb. That was fusion out of control. The challenge since then has been to tame it.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "1952",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.35,
+      "color": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.06,
+      0.06
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s019",
    "line": "The answer to holding plasma came from the Soviet Union. In the early nineteen fifties, physicists Igor Tamm and Andrei Sakharov proposed trapping it with magnetic fields.",
    "visual": {
     "type": "stage",
@@ -1259,7 +1317,7 @@
    "chapter": "The magnetic bottle"
   },
   {
-   "id": "s019",
+   "id": "s020",
    "line": "Charged particles spiral around magnetic field lines. Bend those lines into a ring, and the plasma can circle forever without touching the walls.",
    "visual": {
     "type": "stage",
@@ -1316,7 +1374,126 @@
    }
   },
   {
-   "id": "s020",
+   "id": "s021",
+   "line": "In America, the physicist Lyman Spitzer designed a different magnetic bottle, a twisted ring called the stellarator. Germany's Wendelstein seven X, switched on in twenty fifteen, is a modern version.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.1,
+        0.4
+       ],
+       "cutaway": false
+      },
+      "rot": [
+       8,
+       -6,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.4,
+      3.0
+     ],
+     "to": [
+      0.4,
+      -3.0,
+      2.8
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s022",
+   "line": "Holding plasma steady has been compared to trying to squeeze a balloon, or hold jelly with rubber bands. Squeeze one place, and it bulges out somewhere else.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.0,
+        0.2
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.6,
+      -2.4,
+      1.6
+     ],
+     "to": [
+      1.2,
+      -2.0,
+      1.4
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   }
+  },
+  {
+   "id": "s023",
    "line": "The design was called a tokamak, a Russian acronym for a toroidal chamber with magnetic coils: a doughnut-shaped magnetic bottle.",
    "visual": {
     "type": "stage",
@@ -1388,7 +1565,7 @@
    }
   },
   {
-   "id": "s021",
+   "id": "s024",
    "line": "In nineteen sixty eight, a Soviet tokamak called T-three reached around ten million degrees. Western scientists were sceptical, so a British team flew to Moscow with lasers to measure it. The Soviets were right.",
    "visual": {
     "type": "stage",
@@ -1473,7 +1650,7 @@
    }
   },
   {
-   "id": "s022",
+   "id": "s025",
    "line": "Soon, tokamaks were being built all over the world.",
    "visual": {
     "type": "stage",
@@ -1543,7 +1720,51 @@
    "still": true
   },
   {
-   "id": "s023",
+   "id": "s026",
+   "line": "In nineteen fifty eight, countries declassified their fusion research at a conference in Geneva. That same year, Britain's ZETA machine was briefly celebrated for achieving fusion, before scientists realised the measurements had been misread.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "MAN-MADE SUN?",
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.7
+  },
+  {
+   "id": "s027",
    "line": "The biggest was JET, the Joint European Torus, in England. In nineteen ninety seven, it produced sixteen megawatts of fusion power.",
    "visual": {
     "type": "stage",
@@ -1616,7 +1837,7 @@
    "chapter": "Chasing break-even"
   },
   {
-   "id": "s024",
+   "id": "s028",
    "line": "But that took more power to run than it produced. The holy grail is to get more energy out of the fuel than you put in to heat it.",
    "visual": {
     "type": "stage",
@@ -1675,7 +1896,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s025",
+   "id": "s029",
    "line": "In twenty twenty three, in its final experiments before closing, JET set a world record: sixty nine megajoules of energy in five seconds, from a fraction of a milligramme of fuel.",
    "visual": {
     "type": "stage",
@@ -1747,7 +1968,7 @@
    }
   },
   {
-   "id": "s026",
+   "id": "s030",
    "line": "There's another way to do fusion. Instead of holding plasma steady, you can crush a tiny pellet of fuel so fast that it fuses before it can fly apart.",
    "visual": {
     "type": "stage",
@@ -1800,7 +2021,7 @@
    }
   },
   {
-   "id": "s027",
+   "id": "s031",
    "line": "At the National Ignition Facility in California, a hundred and ninety two giant lasers fire at a capsule the size of a peppercorn.",
    "visual": {
     "type": "stage",
@@ -1854,7 +2075,7 @@
    }
   },
   {
-   "id": "s028",
+   "id": "s032",
    "line": "On the fifth of December, twenty twenty two, for the first time, the fusion reactions released more energy than the laser light delivered to the target: three point one five megajoules out, from two point oh five in.",
    "visual": {
     "type": "stage",
@@ -1923,7 +2144,7 @@
    }
   },
   {
-   "id": "s029",
+   "id": "s033",
    "line": "It was a historic milestone called ignition. The lasers themselves still used far more electricity than the fusion produced. But it proved the physics works, and the team has since beaten that result.",
    "visual": {
     "type": "stage",
@@ -1982,7 +2203,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s030",
+   "id": "s034",
    "line": "Now, thirty five countries are building the biggest tokamak ever, ITER, in the south of France.",
    "visual": {
     "type": "stage",
@@ -2089,7 +2310,7 @@
    "chapter": "Building a star"
   },
   {
-   "id": "s031",
+   "id": "s035",
    "line": "Its magnets will be cooled to minus two hundred and sixty nine degrees, just a few degrees above absolute zero, while the plasma inside reaches a hundred and fifty million. Some of the coldest and hottest places in the solar system, a few metres apart.",
    "visual": {
     "type": "stage",
@@ -2176,7 +2397,7 @@
    }
   },
   {
-   "id": "s032",
+   "id": "s036",
    "line": "ITER is designed to produce ten times more fusion power than it uses to heat its plasma. It has faced long delays, and full operations are now planned for the late twenty thirties.",
    "visual": {
     "type": "stage",
@@ -2249,7 +2470,7 @@
    }
   },
   {
-   "id": "s033",
+   "id": "s037",
    "line": "Meanwhile, dozens of private companies are racing to build smaller, cheaper reactors, using powerful new superconducting magnets and clever designs.",
    "visual": {
     "type": "stage",
@@ -2324,7 +2545,215 @@
    }
   },
   {
-   "id": "s034",
+   "id": "s038",
+   "line": "In twenty twenty one, a team from MIT and the company Commonwealth Fusion Systems tested a new superconducting magnet that reached a field of twenty tesla, a record for its kind.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.2,
+       0.15,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.9,
+        0.9,
+        0.92
+       ],
+       "pants": [
+        0.2,
+        0.25,
+        0.4
+       ],
+       "boots": [
+        0.06,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       -1.0,
+       0.3,
+       0
+      ],
+      "turn": -20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "coil",
+      "at": [
+       0,
+       0,
+       0.8
+      ],
+      "scale": 4,
+      "args": {
+       "glow": [
+        [
+         0,
+         0
+        ],
+        [
+         0.4,
+         3
+        ]
+       ],
+       "axis": "z"
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "20 TESLA",
+      "at": [
+       0.6,
+       0.5,
+       1.8
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0.6,
+      -2.0,
+      1.4
+     ],
+     "to": [
+      0.4,
+      -1.6,
+      1.3
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s039",
+   "line": "And in early twenty twenty five, tokamaks in China and France held hot plasma steady for more than twenty minutes, new records for staying power.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.0,
+        0.2
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "20+ MINUTES",
+      "at": [
+       0,
+       1.5,
+       2.6
+      ],
+      "size": 0.25,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      2.8,
+      -3.8,
+      2.6
+     ],
+     "to": [
+      2.2,
+      -3.2,
+      2.2
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   }
+  },
+  {
+   "id": "s040",
    "line": "Why does it matter so much? Because fusion fuel is incredibly concentrated.",
    "visual": {
     "type": "stage",
@@ -2380,7 +2809,7 @@
    "chapter": "Why it matters"
   },
   {
-   "id": "s035",
+   "id": "s041",
    "line": "Fusion reactions release millions of times more energy per kilogramme than burning coal, oil or gas. A pineapple-sized amount of fuel could match thousands of tonnes of coal.",
    "visual": {
     "type": "stage",
@@ -2448,7 +2877,7 @@
    "still": true
   },
   {
-   "id": "s036",
+   "id": "s042",
    "line": "It produces no carbon dioxide. And unlike today's nuclear power, it can't melt down. If anything goes wrong, the plasma simply cools and the reaction stops.",
    "visual": {
     "type": "stage",
@@ -2504,7 +2933,7 @@
    }
   },
   {
-   "id": "s037",
+   "id": "s043",
    "line": "It does create some radioactivity, as neutrons hit the reactor walls, but far less long-lived waste than fission.",
    "visual": {
     "type": "stage",
@@ -2571,7 +3000,76 @@
    "still": true
   },
   {
-   "id": "s038",
+   "id": "s044",
+   "line": "The engineering problems are still huge. The fast neutrons slowly damage the walls of the machine, and the tritium fuel must be made inside the reactor itself, from lithium.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.0,
+        0.2
+       ]
+      }
+     },
+     {
+      "prop": "fusion_reaction",
+      "at": [
+       0,
+       -1.2,
+       1.4
+      ],
+      "scale": 0.3,
+      "args": {
+       "hit": 0.3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.6,
+      -2.4,
+      1.6
+     ],
+     "to": [
+      1.2,
+      -2.0,
+      1.4
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s045",
    "line": "Scientists like to joke that fusion power is always thirty years away. But the experiments of the last few years have brought it closer than ever before.",
    "visual": {
     "type": "stage",
@@ -2630,7 +3128,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s039",
+   "id": "s046",
    "line": "For billions of years, fusion has lit up the universe. Every atom of carbon in your body, and the oxygen you breathe, was forged by fusion inside ancient stars.",
    "visual": {
     "type": "stage",
@@ -2670,7 +3168,7 @@
    "chapter": "Close"
   },
   {
-   "id": "s040",
+   "id": "s047",
    "line": "Now, we're trying to light that same fire here on Earth.",
    "visual": {
     "type": "stage",
