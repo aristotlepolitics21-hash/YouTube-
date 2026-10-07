@@ -1,0 +1,45 @@
+{
+  "module": "knuckles",
+  "title": "What Happens When You Crack Your Knuckles",
+  "shots": [
+    {
+      "vo": "What happens when you crack your knuckles?",
+      "caption": "What happens when you **crack your knuckles?**"
+    },
+    {
+      "vo": "Every knuckle is a joint, sealed inside a little capsule.",
+      "caption": "Every knuckle is sealed in a **joint capsule**"
+    },
+    {
+      "vo": "That capsule is filled with a slippery liquid called synovial fluid.",
+      "caption": "It's filled with **synovial fluid**"
+    },
+    {
+      "vo": "When you pull or bend the finger, the bones separate, and the pressure inside drops.",
+      "caption": "Pull the bones apart and the **pressure drops**"
+    },
+    {
+      "vo": [
+        "Gas dissolved in the fluid suddenly forms a bubble.",
+        "Pop! That's the crack you hear."
+      ],
+      "caption": "A gas bubble forms... **POP!**",
+      "sfx": [
+        {
+          "type": "pop",
+          "segment": 1
+        }
+      ],
+      "params": {
+        "popAt": {
+          "segment": 1
+        }
+      }
+    },
+    {
+      "vo": "And no. Studies haven't found that cracking your knuckles causes arthritis.",
+      "caption": "And no, it doesn't cause **arthritis**",
+      "highlight": "#4dff9a"
+    }
+  ]
+}

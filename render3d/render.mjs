@@ -1,6 +1,9 @@
 // Render the 3D shots to PNG with headless Chromium.
-//   node render.mjs --stills            one PNG per shot (t = 0.7) in stills/
-//   node render.mjs --shot 2 --frames 90  PNG sequence in frames/shot2/ (t from 0 to 1)
+//   node render.mjs --stills                one PNG per shot (t = 0.7) in stills/
+//   node render.mjs --shot 2 --frames 90    PNG sequence in frames/shot3/ (t from 0 to 1)
+//   --params '{"popAt":0.4}'               per-shot values read by the episode (window.shotParams)
+//   --ep knuckles                           render episode knuckles.js; output goes under
+//                                           stills/knuckles/ and frames/knuckles/ instead
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -27,8 +30,13 @@ const page = await browser.newPage();
 page.on('console', (m) => console.log('[page]', m.text()));
 page.on('pageerror', (e) => console.error('[page error]', e.message));
 await page.setViewport({ width: 1080, height: 1920 });
-await page.goto(`http://localhost:${port}/index.html`);
+const ep = flag('--ep', null);
+const sub = ep ? ep : '';
+await page.goto(`http://localhost:${port}/index.html${ep ? `?ep=${ep}` : ''}`);
 await page.waitForFunction('window.ready === true', { timeout: 120000 });
+
+// --params '{"popAt":0.4}' is exposed to the episode as window.shotParams
+await page.evaluate((p) => { window.shotParams = p; }, JSON.parse(flag('--params', '{}')));
 
 async function grab(shot, t, file) {
   await page.evaluate((s, tt) => window.renderShot(s, tt), shot, t);
@@ -37,17 +45,19 @@ async function grab(shot, t, file) {
 }
 
 if (flag('--stills', false)) {
-  fs.mkdirSync(path.join(root, 'stills'), { recursive: true });
+  const outDir = path.join(root, 'stills', sub);
+  fs.mkdirSync(outDir, { recursive: true });
   const only = flag('--shot', null);
-  for (let s = 0; s < 6; s++) {
+  const count = await page.evaluate(() => window.shotCount);
+  for (let s = 0; s < count; s++) {
     if (only !== null && Number(only) !== s) continue;
     const t0 = Date.now();
-    await grab(s, Number(flag('--t', 0.7)), path.join(root, 'stills', `shot${s + 1}.png`));
+    await grab(s, Number(flag('--t', 0.7)), path.join(outDir, `shot${s + 1}.png`));
     console.log(`shot${s + 1}.png ${Date.now() - t0}ms`);
   }
 } else {
   const s = Number(flag('--shot', 0)), n = Number(flag('--frames', 90));
-  const dir = path.join(root, 'frames', `shot${s + 1}`); fs.mkdirSync(dir, { recursive: true });
+  const dir = path.join(root, 'frames', sub, `shot${s + 1}`); fs.mkdirSync(dir, { recursive: true });
   for (let i = 0; i < n; i++) {
     await grab(s, i / (n - 1), path.join(dir, `f${String(i).padStart(4, '0')}.png`));
     if (i % 15 === 0) console.log(`shot${s + 1} frame ${i}/${n}`);
