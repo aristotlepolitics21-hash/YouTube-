@@ -1906,6 +1906,216 @@ def laptop(frames, glow=0.2):
     glow_keys(ss, frames, [(0, 0.2), (glow, 0.2), (glow + 0.05, 2.5)])
     return root
 
+
+# ------------------------------------------------------------------ space race
+def sputnik(frames, beep=True):
+    root = empty("sputnik")
+    sph("sputnik_body", (0, 0, 0), 0.29, mat("polished", (0.85, 0.86, 0.9), 0.15, 0.6), parent=root)
+    for k in range(4):
+        a = R(45 + 90 * k)
+        curve_obj("antenna", [V((0.2 * math.cos(a), 0.2 * math.sin(a), -0.1)), V((1.4 * math.cos(a) * 0.5, 1.4 * math.sin(a) * 0.5, -1.2))],
+                  0.006, mat("antenna", (0.8, 0.8, 0.82), 0.2, 1.0), root)
+    props.key(root, 1, rotation_euler=(0, 0, 0))
+    props.key(root, frames, rotation_euler=(R(20), R(10), R(90)))
+    if beep:
+        for r in space.ring_pulse("beep", (0, 0, 0), (0.4, 1.0, 0.6), frames, max(4, frames // 5), max_scale=1.1, rotation=(R(90), 0, 0)):
+            r.parent = root
+    return root
+
+
+def saturn_v(frames, launch=None, scale_h=1.0):
+    """Saturn V: white stages with black roll pattern, fins, the Apollo spacecraft and escape tower. Launch = [t_ignite, t_end]."""
+    root = empty("saturn")
+    white = mat("rocket_white", (0.93, 0.93, 0.92), 0.4)
+    black = mat("rocket_black", (0.05, 0.05, 0.06), 0.4)
+    h = scale_h
+    cyl("s1", (0, 0, 2.1 * h), 0.5, 4.2 * h, white, parent=root)
+    for k in range(4):
+        a = R(k * 90)
+        box("roll_mark", (0.5 * math.cos(a), 0.5 * math.sin(a), 3.6 * h), (0.02, 0.4, 0.9), black, parent=root).rotation_euler = (0, 0, a)
+        f = box("fin", (0.62 * math.cos(a + R(45)), 0.62 * math.sin(a + R(45)), 0.35), (0.35, 0.03, 0.6), white, 0.01, root)
+        f.rotation_euler = (0, 0, a + R(45))
+    cyl("interstage", (0, 0, 4.3 * h), 0.5, 0.2, black, parent=root)
+    cyl("s2", (0, 0, 5.6 * h), 0.5, 2.4 * h, white, parent=root)
+    bpy.ops.mesh.primitive_cone_add(vertices=48, radius1=0.5, radius2=0.33, depth=0.5, location=(0, 0, 7.05 * h))
+    c = bpy.context.active_object
+    c.data.materials.append(white)
+    c.parent = root
+    cyl("s3", (0, 0, 7.9 * h), 0.33, 1.2 * h, white, parent=root)
+    cyl("sla", (0, 0, 8.8 * h), 0.33, 0.6, white, parent=root)
+    bpy.ops.mesh.primitive_cone_add(vertices=48, radius1=0.33, radius2=0.05, depth=0.5, location=(0, 0, 9.35 * h))
+    cm = bpy.context.active_object
+    cm.data.materials.append(mat("cm_silver", (0.85, 0.85, 0.88), 0.2, 1.0))
+    cm.parent = root
+    cyl("tower", (0, 0, 9.9 * h), 0.03, 0.7, mat("tower_red", (0.8, 0.1, 0.1), 0.4), parent=root)
+    for k in range(5):
+        a = R(k * 72)
+        bpy.ops.mesh.primitive_cone_add(vertices=24, radius1=0.12, radius2=0.18, depth=0.3, location=(0.25 * math.cos(a) * (k > 0), 0.25 * math.sin(a) * (k > 0), -0.12))
+        n = bpy.context.active_object
+        n.data.materials.append(black)
+        n.parent = root
+    if launch:
+        fm, fs = fx.emissive("flame", (1.0, 0.55, 0.15), 0)
+        flame = sph("flame", (0, 0, -1.2), 0.45, fm, (1, 1, 3.0), root)
+        glow_keys(fs, frames, [(0, 0), (launch[0], 0), (launch[0] + 0.03, 25)])
+        smoke = mat("smoke", (0.85, 0.83, 0.8), 0.9, alpha=0.8)
+        rng = random.Random(1)
+        for k in range(12):
+            a = rng.uniform(0, 2 * math.pi)
+            p = sph("smoke", (0, 0, 0.1), 0.6, smoke, parent=None)
+            visible_from(p, frames, launch[0])
+            f0 = key_frac(frames, launch[0])
+            props.key(p, f0, location=(0, 0, 0.1), scale=(0.2, 0.2, 0.2))
+            props.key(p, frames, location=(3.0 * math.cos(a), 3.0 * math.sin(a), rng.uniform(0.2, 1.0)), scale=(2.4, 2.4, 1.6))
+        f0, f1 = key_frac(frames, launch[0] + 0.1), key_frac(frames, launch[1])
+        props.key(root, 1, location=(0, 0, 0))
+        props.key(root, f0, location=(0, 0, 0))
+        for f in range(f0, f1 + 1, 2):
+            u = (f - f0) / max(1, f1 - f0)
+            root.location = (0, 0, 12 * u * u)
+            root.keyframe_insert("location", frame=f)
+    return root
+
+
+def launch_tower(frames, height=11.0):
+    root = empty("launch_tower")
+    red = mat("tower_red", (0.75, 0.12, 0.08), 0.5, 0.3)
+    for sx in (-1, 1):
+        for sy in (-1, 1):
+            cyl("leg", (1.4 + sx * 0.35, sy * 0.35, height / 2), 0.04, height, red, parent=root)
+    for z in range(1, int(height), 1):
+        box("deck", (1.4, 0, z), (0.8, 0.8, 0.05), red, parent=root)
+        box("arm", (0.95, 0, z + 0.5), (0.9, 0.12, 0.08), red, parent=root) if z % 3 == 0 else None
+    box("pad", (0, 0, -0.05), (6, 6, 0.1), mat("concrete", (0.6, 0.6, 0.58), 0.8), parent=root)
+    return root
+
+
+def lunar_module(frames, land=None):
+    root = empty("lm")
+    gold = mat("foil", (0.95, 0.7, 0.2), 0.25, 1.0)
+    grey = mat("ascent", (0.65, 0.65, 0.68), 0.4, 0.5)
+    box("descent", (0, 0, 0.9), (1.4, 1.4, 0.7), gold, 0.08, root)
+    box("ascent", (0, 0, 1.55), (1.0, 0.9, 0.7), grey, 0.12, root)
+    box("window", (0.2, -0.45, 1.7), (0.25, 0.02, 0.2), mat("lm_window", (0.05, 0.05, 0.07), 0.1), parent=root)
+    cyl("hatch_dish", (0.45, 0.2, 2.05), 0.15, 0.03, mat("dish", (0.9, 0.9, 0.9), 0.3), parent=root)
+    for k in range(4):
+        a = R(45 + 90 * k)
+        curve_obj("leg", [V((0.6 * math.cos(a), 0.6 * math.sin(a), 0.8)), V((1.3 * math.cos(a), 1.3 * math.sin(a), 0.08))], 0.03, gold, root)
+        cyl("pad", (1.3 * math.cos(a), 1.3 * math.sin(a), 0.03), 0.15, 0.04, gold, parent=root)
+    bpy.ops.mesh.primitive_cone_add(vertices=24, radius1=0.25, radius2=0.12, depth=0.35, location=(0, 0, 0.45))
+    n = bpy.context.active_object
+    n.data.materials.append(mat("nozzle", (0.2, 0.2, 0.22), 0.4, 0.8))
+    n.parent = root
+    if land:
+        fm, fs = fx.emissive("lm_flame", (0.6, 0.75, 1.0), 0)
+        sph("lm_flame", (0, 0, 0.1), 0.15, fm, (1, 1, 2), root)
+        glow_keys(fs, frames, [(0, 6), (land[1] - 0.02, 6), (land[1], 0)])
+        props.key(root, key_frac(frames, land[0]), location=(0, 0, 4.0))
+        props.key(root, key_frac(frames, land[1]), location=(0, 0, 0))
+    return root
+
+
+def command_module(frames):
+    root = empty("csm")
+    bpy.ops.mesh.primitive_cone_add(vertices=48, radius1=0.6, radius2=0.1, depth=0.75, location=(0, 0, 0.37))
+    c = bpy.context.active_object
+    c.data.materials.append(mat("cm_silver", (0.85, 0.85, 0.88), 0.2, 1.0))
+    c.parent = root
+    cyl("sm", (0, 0, -0.6), 0.6, 1.2, mat("sm", (0.8, 0.8, 0.82), 0.3, 0.8), parent=root)
+    bpy.ops.mesh.primitive_cone_add(vertices=24, radius1=0.12, radius2=0.35, depth=0.5, location=(0, 0, -1.4))
+    n = bpy.context.active_object
+    n.data.materials.append(mat("nozzle", (0.2, 0.2, 0.22), 0.4, 0.8))
+    n.parent = root
+    return root
+
+
+def moon_surface(frames, size=40, craters=40, seed=3, footprints=False, flag=False):
+    root = empty("moon")
+    regolith = mat("regolith", (0.42, 0.41, 0.4), 0.95)
+    bpy.ops.mesh.primitive_plane_add(size=size, location=(0, 0, 0))
+    g = bpy.context.active_object
+    g.data.materials.append(regolith)
+    g.parent = root
+    rng = random.Random(seed)
+    for k in range(craters):
+        r = rng.uniform(0.3, 2.5)
+        x, y = rng.uniform(-size / 2.5, size / 2.5), rng.uniform(-2, size / 2)
+        props.torus("crater_rim", (x, y, 0.0), r, r * 0.12, regolith).parent = root
+        sph("crater_floor", (x, y, -0.02), r * 0.95, mat("crater_dark", (0.3, 0.3, 0.3), 0.95), (1, 1, 0.05), root)
+    if footprints:
+        fp = mat("footprint", (0.25, 0.25, 0.25), 0.95)
+        for k in range(10):
+            box("print", (0.3 * (k % 2) - 0.15, -1.0 + k * 0.35, 0.002), (0.12, 0.3, 0.004), fp, parent=root)
+    if flag:
+        cyl("pole", (1.2, 0.5, 0.8), 0.015, 1.6, mat("pole", (0.85, 0.85, 0.85), 0.3, 0.8), parent=root)
+        fl = bpy.data.materials.new("flag")
+        fl.use_nodes = True
+        nt = fl.node_tree
+        pr = nt.nodes["Principled BSDF"]
+        tc = nt.nodes.new("ShaderNodeTexCoord")
+        sep = nt.nodes.new("ShaderNodeSeparateXYZ")
+        nt.links.new(tc.outputs["Generated"], sep.inputs[0])
+        stripes = nt.nodes.new("ShaderNodeMath")
+        stripes.operation = "MULTIPLY"
+        stripes.inputs[1].default_value = 6.5
+        nt.links.new(sep.outputs["Z"], stripes.inputs[0])
+        frc = nt.nodes.new("ShaderNodeMath")
+        frc.operation = "FRACT"
+        nt.links.new(stripes.outputs[0], frc.inputs[0])
+        gt = nt.nodes.new("ShaderNodeMath")
+        gt.operation = "GREATER_THAN"
+        gt.inputs[1].default_value = 0.5
+        nt.links.new(frc.outputs[0], gt.inputs[0])
+        mix = nt.nodes.new("ShaderNodeMix")
+        mix.data_type = "RGBA"
+        mix.inputs["A"].default_value = (0.75, 0.05, 0.08, 1)
+        mix.inputs["B"].default_value = (0.95, 0.95, 0.95, 1)
+        nt.links.new(gt.outputs[0], mix.inputs["Factor"])
+        canton = nt.nodes.new("ShaderNodeMath")
+        canton.operation = "LESS_THAN"
+        canton.inputs[1].default_value = 0.4
+        nt.links.new(sep.outputs["X"], canton.inputs[0])
+        top = nt.nodes.new("ShaderNodeMath")
+        top.operation = "GREATER_THAN"
+        top.inputs[1].default_value = 0.46
+        nt.links.new(sep.outputs["Z"], top.inputs[0])
+        both = nt.nodes.new("ShaderNodeMath")
+        both.operation = "MULTIPLY"
+        nt.links.new(canton.outputs[0], both.inputs[0])
+        nt.links.new(top.outputs[0], both.inputs[1])
+        mix2 = nt.nodes.new("ShaderNodeMix")
+        mix2.data_type = "RGBA"
+        nt.links.new(both.outputs[0], mix2.inputs["Factor"])
+        nt.links.new(mix.outputs["Result"], mix2.inputs["A"])
+        mix2.inputs["B"].default_value = (0.05, 0.1, 0.4, 1)
+        nt.links.new(mix2.outputs["Result"], pr.inputs["Base Color"])
+        box("flag", (1.6, 0.5, 1.4), (0.8, 0.01, 0.5), fl, parent=root)
+    return root
+
+
+def mission_control(frames, rows=3, cols=5, seed=2):
+    root = empty("mission_control")
+    desk = mat("console", (0.55, 0.55, 0.52), 0.5)
+    rng = random.Random(seed)
+    for r in range(rows):
+        for c in range(cols):
+            x, y, z = (c - (cols - 1) / 2) * 0.9, r * 1.1, r * 0.25
+            box("console", (x, y, z + 0.45), (0.85, 0.6, 0.9), desk, 0.02, root)
+            sm, ss = fx.emissive(f"crt{r}{c}", rng.choice([(0.3, 1.0, 0.5), (0.4, 0.8, 1.0), (1.0, 0.7, 0.3)]), 2)
+            box("screen", (x, y - 0.31, z + 0.75), (0.35, 0.02, 0.25), sm, parent=root)
+            sph("head", (x, y - 0.65, z + 1.25), 0.1, mat("op_skin", (0.75, 0.55, 0.45), 0.6), parent=root)
+            sph("torso", (x, y - 0.65, z + 0.9), 0.17, mat("shirt_white", (0.9, 0.9, 0.92), 0.6), (1, 0.8, 1.4), root)
+    box("big_screen", (0, rows * 1.1 + 0.5, 2.5), (6, 0.05, 2.2), fx.emissive("wall_screen", (0.15, 0.35, 0.6), 1.2)[0], parent=root)
+    return root
+
+
+def helmet(frames):
+    """Astronaut helmet with gold visor (place on a character's head)."""
+    root = empty("helmet")
+    sph("shell", (0, 0, 0), 0.17, mat("helmet_white", (0.95, 0.95, 0.95), 0.3), parent=root)
+    sph("visor", (0, -0.035, 0.01), 0.15, mat("visor", (1.0, 0.75, 0.25), 0.05, 1.0), (1, 1, 0.9), root)
+    return root
+
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",

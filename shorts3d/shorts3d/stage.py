@@ -156,6 +156,31 @@ def add_character(cdef, frames, ctx, idx):
     if cdef.get("hat"):
         top = max((body.matrix_world @ v.co).z for v in body.data.vertices)
         fx.hat(rig, looks.principled("hat", tuple(cdef["hat"]), 0.6), top + 0.02)
+    if cdef.get("astronaut"):  # bulky white suit, gloves, boots, helmet and life-support backpack
+        cdef = {**cdef, "helmet": True, "sleeves": "long",
+                "outfit": {"skin": [0.7, 0.7, 0.72], "shirt": [0.93, 0.93, 0.92], "pants": [0.93, 0.93, 0.92], "boots": [0.75, 0.75, 0.75]}}
+        d = body.modifiers.new("bulk", "DISPLACE")
+        d.strength, d.mid_level = 0.03, 0.0
+        sb = rig.data.bones["spine2"]
+        pack = kit.box("plss", rig.matrix_world @ (sb.head_local + V((0, 0.2, 0.05))), (0.42, 0.2, 0.55),
+                       kit.mat("plss", (0.9, 0.9, 0.88), 0.4), 0.03)
+        bpy.context.view_layer.update()
+        mw = pack.matrix_world.copy()
+        pack.parent, pack.parent_type, pack.parent_bone = rig, "BONE", "spine2"
+        bpy.context.view_layer.update()
+        pack.matrix_world = mw
+    if cdef.get("helmet"):
+        hb = rig.data.bones["head"]
+        c = rig.matrix_world @ (hb.head_local + (hb.tail_local - hb.head_local) * 0.42)
+        hm = kit.helmet(frames)
+        hm.location = c + V((0, -0.005, 0.0))
+        bpy.context.view_layer.update()
+        mw = hm.matrix_world.copy()
+        hm.parent = rig
+        hm.parent_type = "BONE"
+        hm.parent_bone = "head"
+        bpy.context.view_layer.update()
+        hm.matrix_world = mw
     outfit = cdef.get("outfit")
     if outfit:
         if cdef.get("sleeves") == "long":
