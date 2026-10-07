@@ -1,0 +1,98 @@
+1
+00:00:00,250 --> 00:00:01,770
+Drop an apple, and it falls.
+
+2
+00:00:02,210 --> 00:00:03,630
+Newton said the Earth pulls it
+down.
+
+3
+00:00:03,875 --> 00:00:05,775
+But Einstein figured out
+something much stranger.
+
+4
+00:00:06,292 --> 00:00:09,632
+Mass bends space and time, like
+a bowling ball on a trampoline.
+
+5
+00:00:09,917 --> 00:00:11,257
+Planets aren't really being
+pulled.
+
+6
+00:00:11,537 --> 00:00:12,577
+They're just following the
+curve.
+
+7
+00:00:12,958 --> 00:00:14,958
+The Moon is falling toward Earth
+right now.
+
+8
+00:00:15,198 --> 00:00:17,558
+It's just moving sideways so
+fast that it keeps missing.
+
+9
+00:00:17,917 --> 00:00:19,477
+Astronauts float for the same
+reason.
+
+10
+00:00:19,797 --> 00:00:21,317
+They're falling too, all the
+time.
+
+11
+00:00:21,667 --> 00:00:23,227
+Gravity even slows down time.
+
+12
+00:00:23,487 --> 00:00:26,427
+A clock on the ground ticks
+slower than one far up in space.
+
+13
+00:00:26,833 --> 00:00:28,393
+GPS satellites feel it.
+
+14
+00:00:28,593 --> 00:00:30,963
+Their clocks gain about
+thirty-eight millionths of a
+second
+
+15
+00:00:30,973 --> 00:00:31,740
+every day.
+
+16
+00:00:31,750 --> 00:00:34,860
+If engineers didn't correct for
+that, your map would drift about
+
+17
+00:00:34,870 --> 00:00:35,930
+ten kilometres a day.
+
+18
+00:00:36,167 --> 00:00:39,057
+Pack enough mass into a tiny
+space, and the curve becomes a
+
+19
+00:00:39,067 --> 00:00:39,867
+bottomless pit.
+
+20
+00:00:39,958 --> 00:00:40,758
+A black hole.
+
+21
+00:00:40,778 --> 00:00:42,418
+Not even light can climb back
+out.

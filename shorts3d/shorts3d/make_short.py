@@ -23,7 +23,7 @@ from pathlib import Path
 import numpy as np
 
 from docforge import media
-from docforge.editor.audio import RATE, _pad_section, whoosh
+from docforge.editor.audio import RATE, _pad_section, mood_family, whoosh
 from docforge.subtitles.subtitles import align, load_16k, _whisper
 from docforge.voiceover.tts import Piper
 
@@ -356,7 +356,7 @@ def build_audio(spec: dict, plan: list[dict], work: Path) -> Path:
                     "ping": _ping, "swell": _swell, "rumble": _rumble}.get(e["type"])
             if clip:
                 place(clip(), p["start"] + dur * e.get("at", 0), e.get("gain", 0.6))
-    music = _pad_section(total + 1, spec.get("music_mood", "reflective"), seed=11)[:n] * 0.35
+    music = _pad_section(total + 1, mood_family(spec.get("music_mood", "reflective")), seed=11)[:n] * 0.35
     music = np.pad(music, ((0, max(0, n - len(music))), (0, 0)))
     # Simple ducking: lower music where the voice is active.
     env = np.convolve(np.abs(voice), np.ones(4800) / 4800, mode="same")
