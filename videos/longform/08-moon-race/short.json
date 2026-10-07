@@ -1,0 +1,3053 @@
+{
+ "format": "long",
+ "render": {
+  "width": 960,
+  "height": 540,
+  "samples": 8,
+  "fps": 12
+ },
+ "still_render": {
+  "width": 1920,
+  "height": 1080,
+  "samples": 16
+ },
+ "output_fps": 24,
+ "gap_seconds": 0.5,
+ "chapter_gap_seconds": 0.9,
+ "burn_captions": false,
+ "slug": "08-moon-race",
+ "title": "The Race to the Moon",
+ "description": "From a beeping metal ball called Sputnik to the Eagle landing on the Sea of Tranquility: the Cold War race that took humans to the Moon, told in 3D animation.",
+ "tags": [
+  "space race",
+  "Apollo 11",
+  "moon landing",
+  "Sputnik",
+  "Yuri Gagarin",
+  "Saturn V",
+  "Neil Armstrong",
+  "NASA",
+  "3D animation"
+ ],
+ "voice": {
+  "piper_voice": "en_US-ryan-high",
+  "length_scale": 1.25,
+  "sentence_silence": 0.28,
+  "pronunciations": {
+   "Gagarin": "Gah-gar-in",
+   "Korolev": "Kor-oh-lyov",
+   "Tereshkova": "Teh-resh-kova",
+   "Leonov": "Lay-oh-nov",
+   "Vostok": "Voss-tok",
+   "Wernher": "Vair-ner",
+   "N1": "N one",
+   "Laika": "Lie-ka"
+  }
+ },
+ "music_mood": "epic",
+ "sources": [
+  "https://www.nasa.gov/history/apollo-11-mission-overview/",
+  "https://history.nasa.gov/sputnik/",
+  "https://www.jfklibrary.org/learn/about-jfk/historic-speeches/address-at-rice-university-on-the-nations-space-effort",
+  "https://www.nasa.gov/history/the-apollo-guidance-computer/",
+  "https://www.esa.int/About_Us/ESA_history/50_years_of_humans_in_space/Yuri_Gagarin",
+  "https://www.nasa.gov/image-article/apollo-8-earthrise/"
+ ],
+ "shots": [
+  {
+   "id": "s001",
+   "line": "On the twentieth of July, nineteen sixty nine, more than half a billion people around the world crowded around television sets.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "houses",
+      "at": [
+       0,
+       1,
+       0
+      ],
+      "args": {
+       "on": [
+        0,
+        0.3
+       ]
+      }
+     },
+     {
+      "prop": "city",
+      "at": [
+       0,
+       6,
+       0
+      ],
+      "args": {
+       "on": 0.2
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -1.6,
+      1.0
+     ],
+     "to": [
+      0,
+      -6,
+      2.4
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 40,
+     "target_to": [
+      0,
+      3,
+      1.0
+     ],
+     "lens_to": 28
+    }
+   }
+  },
+  {
+   "id": "s002",
+   "line": "They watched a fuzzy black and white picture, beamed from almost four hundred thousand kilometres away.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "384,000 km",
+      "at": [
+       0,
+       -1.2,
+       1.25
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.4,
+      0.6
+     ],
+     "to": [
+      0.3,
+      -3.0,
+      0.5
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s003",
+   "line": "A man in a white suit climbed down a ladder, and stepped onto the Moon.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [
+     {
+      "astronaut": true,
+      "at": [
+       0.9,
+       -0.9,
+       0
+      ],
+      "turn": -40,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "lunar_module",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "prop": "moon_surface",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.8,
+      -3.4,
+      1.0
+     ],
+     "to": [
+      1.4,
+      -2.8,
+      0.9
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s004",
+   "line": "It was the end of a race between two superpowers, that began with a beeping metal ball, just twelve years earlier.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "sputnik",
+      "at": [
+       0,
+       0.8,
+       0.55
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [
+     {
+      "text": "THE RACE TO THE MOON",
+      "at": [
+       0,
+       0,
+       1.35
+      ],
+      "size": 0.26,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.08
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.2,
+      1.2
+     ],
+     "to": [
+      0,
+      -2.8,
+      1.15
+     ],
+     "target": [
+      0,
+      0,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.05,
+      0.03,
+      0.12
+     ]
+    }
+   }
+  },
+  {
+   "id": "s005",
+   "line": "After the Second World War, the United States and the Soviet Union became rivals in the Cold War.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "USA  vs  USSR",
+      "at": [
+       0,
+       -1.2,
+       1.25
+      ],
+      "size": 0.22,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.4,
+      0.6
+     ],
+     "to": [
+      0.3,
+      -3.0,
+      0.5
+     ],
+     "target": [
+      0,
+      0,
+      0
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "chapter": "Sputnik"
+  },
+  {
+   "id": "s006",
+   "line": "Both had captured German rocket technology, and rocket scientists, at the end of the war.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.4,
+       0.3,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.3,
+        0.32
+       ],
+       "pants": [
+        0.3,
+        0.3,
+        0.32
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "saturn_v",
+      "at": [
+       0.9,
+       0.4,
+       0.9
+      ],
+      "scale": 0.08
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.32,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.035
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s007",
+   "line": "Rockets that could carry nuclear weapons across the world could also carry satellites into orbit.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "saturn_v",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "launch": [
+        0.2,
+        1.0
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -18,
+      3.0
+     ],
+     "to": [
+      0,
+      -16,
+      4.5
+     ],
+     "target": [
+      0,
+      0,
+      6.0
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.9,
+       0.75,
+       0.55
+      ],
+      "zenith": [
+       0.25,
+       0.45,
+       0.85
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.55,
+      0.55,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "id": "s008",
+   "line": "On the fourth of October, nineteen fifty seven, the Soviet Union launched Sputnik, a polished metal ball about the size of a beach ball.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "sputnik",
+      "at": [
+       0,
+       0,
+       0.9
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "4 OCTOBER 1957",
+      "at": [
+       0,
+       0.5,
+       1.7
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.15
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      0.9
+     ],
+     "to": [
+      0.3,
+      -2.2,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s009",
+   "line": "It did nothing but beep. But anyone with a radio could hear it passing overhead, every ninety six minutes.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "sputnik",
+      "at": [
+       1.6,
+       0,
+       1.4
+      ],
+      "scale": 0.25
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -5.0,
+      0.3
+     ],
+     "to": [
+      0.3,
+      -4.6,
+      0.4
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s010",
+   "line": "Americans were shocked. If the Soviets could put a satellite over their heads, what else could they do?",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "RED MOON OVER AMERICA",
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.7
+  },
+  {
+   "id": "s011",
+   "line": "A month later, the Soviets launched a dog named Laika into orbit. The first American attempt to launch a satellite exploded on the launch pad, live on television.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "saturn_v",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "scale": 0.5,
+      "args": {
+       "launch": [
+        0.2,
+        0.3
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -14,
+      3.0
+     ],
+     "to": [
+      0,
+      -13,
+      3.0
+     ],
+     "target": [
+      0,
+      0,
+      2.5
+     ],
+     "lens": 30
+    },
+    "bolts": [],
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.9,
+       0.5,
+       0.3
+      ],
+      "zenith": [
+       0.3,
+       0.35,
+       0.6
+      ]
+     },
+     "floor": [
+      0.55,
+      0.55,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "id": "s012",
+   "line": "The United States responded by creating NASA in nineteen fifty eight.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "NASA  1958",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.3,
+      "color": [
+       0.3,
+       0.6,
+       1.0
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s013",
+   "line": "Then came an even bigger shock. On the twelfth of April, nineteen sixty one, a twenty seven year old Soviet pilot named Yuri Gagarin became the first human in space.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [
+     {
+      "helmet": true,
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.85,
+        0.35,
+        0.1
+       ],
+       "pants": [
+        0.85,
+        0.35,
+        0.1
+       ],
+       "boots": [
+        0.2,
+        0.15,
+        0.1
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [
+     {
+      "text": "12 APRIL 1961",
+      "at": [
+       0.9,
+       0.5,
+       2.0
+      ],
+      "size": 0.14,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0.4,
+      -1.8,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -1.5,
+      1.55
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    }
+   },
+   "still": true,
+   "chapter": "The first human in space"
+  },
+  {
+   "id": "s014",
+   "line": "His capsule, Vostok One, circled the Earth once in a hundred and eight minutes. He became the most famous person on the planet.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "command_module",
+      "at": [
+       1.4,
+       -1.0,
+       1.0
+      ],
+      "scale": 0.25,
+      "spin": [
+       "z",
+       90
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "108 MINUTES",
+      "at": [
+       0,
+       -1.2,
+       1.6
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -5.2,
+      0.8
+     ],
+     "to": [
+      0.4,
+      -4.6,
+      0.6
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s015",
+   "line": "Behind the Soviet successes was a brilliant engineer whose name was kept secret: Sergei Korolev, known only as the Chief Designer.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.1,
+       0.08,
+       0.07
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.25,
+        0.25,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.25,
+        0.22
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.2,
+      0.15,
+      0.12
+     ],
+     "world": [
+      0.02,
+      0.015,
+      0.01
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s016",
+   "line": "Weeks later, Alan Shepard became the first American in space, on a fifteen minute flight that didn't even reach orbit.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "saturn_v",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "scale": 0.45,
+      "args": {
+       "launch": [
+        0.15,
+        1.0
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -14,
+      3.0
+     ],
+     "to": [
+      0,
+      -13,
+      4.0
+     ],
+     "target": [
+      0,
+      0,
+      4.0
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.9,
+       0.75,
+       0.55
+      ],
+      "zenith": [
+       0.25,
+       0.45,
+       0.85
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.55,
+      0.55,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "id": "s017",
+   "line": "President John F. Kennedy needed something bold. Something the Soviets could not easily win.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.35,
+       0.22,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.12,
+        0.12,
+        0.15
+       ],
+       "pants": [
+        0.12,
+        0.12,
+        0.15
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.32,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.035
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "We choose to go to the Moon"
+  },
+  {
+   "id": "s018",
+   "line": "In May nineteen sixty one, he asked Congress to commit America to landing a man on the Moon, and returning him safely to the Earth, before the decade was out.",
+   "visual": {
+    "type": "stage",
+    "env": "hall",
+    "cast": [
+     {
+      "hair": [
+       0.35,
+       0.22,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.12,
+        0.12,
+        0.15
+       ],
+       "pants": [
+        0.12,
+        0.12,
+        0.15
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       1.4,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       0.9,
+       0
+      ]
+     },
+     {
+      "prop": "audience",
+      "at": [
+       0,
+       1.2,
+       0
+      ],
+      "rot": [
+       0,
+       0,
+       180
+      ],
+      "args": {
+       "react": 0.8
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -4.6,
+      2.7
+     ],
+     "to": [
+      0.3,
+      -4.0,
+      2.4
+     ],
+     "target": [
+      0,
+      1.2,
+      1.2
+     ],
+     "lens": 30
+    }
+   }
+  },
+  {
+   "id": "s019",
+   "line": "At the time, America had a total of fifteen minutes of human spaceflight experience.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "15 MINUTES",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.3,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s020",
+   "line": "A year later, in a speech in Texas, he explained why. We choose to go to the Moon, he said, not because it is easy, but because it is hard.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.35,
+       0.22,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.12,
+        0.12,
+        0.15
+       ],
+       "pants": [
+        0.12,
+        0.12,
+        0.15
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "figures",
+      "at": [
+       0,
+       -1.4,
+       0
+      ],
+      "args": {
+       "n": 9,
+       "spacing": 0.4
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.6,
+      1.55
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.3,
+      0.45,
+      0.2
+     ]
+    }
+   }
+  },
+  {
+   "id": "s021",
+   "line": "The Apollo programme became one of the biggest engineering projects in history. At its peak, around four hundred thousand people worked on it.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "mission_control",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -4.5,
+      2.5
+     ],
+     "to": [
+      0.3,
+      -4.0,
+      2.3
+     ],
+     "target": [
+      0,
+      1.5,
+      1.2
+     ],
+     "lens": 28
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.32,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.035
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s022",
+   "line": "To get there, NASA needed the most powerful rocket ever built. It was designed by a team led by Wernher von Braun, a former Nazi rocket engineer brought to America after the war.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.4,
+       0.3,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.3,
+        0.32
+       ],
+       "pants": [
+        0.3,
+        0.3,
+        0.32
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.32,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.035
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Saturn V"
+  },
+  {
+   "id": "s023",
+   "line": "The Saturn Five stood a hundred and ten metres tall, taller than the Statue of Liberty, and weighed nearly three thousand tonnes when fully fuelled.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "saturn_v",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "prop": "launch_tower",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "110 m",
+      "at": [
+       -3,
+       0,
+       9.0
+      ],
+      "size": 0.8,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -20,
+      4.0
+     ],
+     "to": [
+      0,
+      -18,
+      5.0
+     ],
+     "target": [
+      0,
+      0,
+      5.0
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.9,
+       0.75,
+       0.55
+      ],
+      "zenith": [
+       0.25,
+       0.45,
+       0.85
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.55,
+      0.55,
+      0.5
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s024",
+   "line": "Its five first stage engines burned about thirteen tonnes of fuel and oxygen every second.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "saturn_v",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "launch": [
+        0.1,
+        2.0
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      3,
+      -6,
+      0.6
+     ],
+     "to": [
+      2.6,
+      -5.4,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.9,
+       0.75,
+       0.55
+      ],
+      "zenith": [
+       0.25,
+       0.45,
+       0.85
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.55,
+      0.55,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "id": "s025",
+   "line": "Inside the tiny command module, three astronauts would ride with less room than the inside of a small car.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "command_module",
+      "at": [
+       0,
+       0,
+       0.8
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.5,
+      -3,
+      1.3
+     ],
+     "to": [
+      1.2,
+      -2.6,
+      1.2
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s026",
+   "line": "And the computer that guided them had less memory than a modern greetings card that plays a tune.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "microchip",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "glow": [
+        0.1,
+        0.4
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "4 KB OF MEMORY",
+      "at": [
+       0,
+       0.25,
+       0.25
+      ],
+      "size": 0.07,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.25,
+      -0.75,
+      0.35
+     ],
+     "to": [
+      0.18,
+      -0.65,
+      0.32
+     ],
+     "target": [
+      0,
+      0,
+      0.03
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s027",
+   "line": "The Soviets kept scoring firsts: the first woman in space, Valentina Tereshkova, and the first spacewalk, by Alexei Leonov.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [
+     {
+      "astronaut": true,
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": 40,
+        "R": 10
+       }
+      },
+      "rot": [
+       0,
+       30,
+       20
+      ]
+     }
+    ],
+    "props": [
+     {
+      "prop": "command_module",
+      "at": [
+       1.2,
+       1.2,
+       1.4
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.6,
+      -3.2,
+      1.4
+     ],
+     "to": [
+      1.2,
+      -2.8,
+      1.3
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    }
+   },
+   "chapter": "Setbacks"
+  },
+  {
+   "id": "s028",
+   "line": "Then, in January nineteen sixty seven, disaster. During a launch rehearsal, fire swept through the Apollo One capsule. Astronauts Gus Grissom, Ed White and Roger Chaffee were killed.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "saturn_v",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "scale": 0.6
+     },
+     {
+      "prop": "launch_tower",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -14,
+      4.0
+     ],
+     "to": [
+      0,
+      -13,
+      4.2
+     ],
+     "target": [
+      0,
+      0,
+      5.0
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.35,
+       0.33,
+       0.35
+      ],
+      "zenith": [
+       0.1,
+       0.1,
+       0.15
+      ]
+     },
+     "floor": [
+      0.4,
+      0.4,
+      0.38
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s029",
+   "line": "NASA redesigned the capsule from top to bottom. The programme went on.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.2,
+       0.15,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.92,
+        0.92,
+        0.94
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -1.0,
+       0.2,
+       0
+      ],
+      "turn": -30,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "command_module",
+      "at": [
+       0,
+       0,
+       1.4
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.5,
+      -3,
+      1.6
+     ],
+     "to": [
+      1.2,
+      -2.6,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.32,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.035
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s030",
+   "line": "The Soviet Moon programme struggled. Korolev had died during surgery in nineteen sixty six, and their giant N1 rocket exploded on every one of its four launches.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "saturn_v",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "scale": 0.5,
+      "args": {
+       "launch": [
+        0.2,
+        0.45
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -14,
+      3.0
+     ],
+     "to": [
+      0,
+      -13,
+      3.0
+     ],
+     "target": [
+      0,
+      0,
+      2.5
+     ],
+     "lens": 30
+    },
+    "bolts": [
+     {
+      "from": [
+       0.5,
+       0,
+       6
+      ],
+      "to": [
+       0,
+       0,
+       2.5
+      ],
+      "at": 0.5,
+      "seed": 3,
+      "width": 0.05
+     }
+    ],
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.9,
+       0.5,
+       0.3
+      ],
+      "zenith": [
+       0.3,
+       0.35,
+       0.6
+      ]
+     },
+     "floor": [
+      0.45,
+      0.45,
+      0.4
+     ]
+    }
+   }
+  },
+  {
+   "id": "s031",
+   "line": "In December nineteen sixty eight, Apollo Eight carried three astronauts all the way to the Moon, and around it, ten times.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "command_module",
+      "at": [
+       1.5,
+       -1.5,
+       1.0
+      ],
+      "scale": 0.3
+     }
+    ],
+    "texts": [
+     {
+      "text": "APOLLO 8",
+      "at": [
+       0,
+       -1.2,
+       1.6
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -6,
+      1.0
+     ],
+     "to": [
+      1,
+      -5.4,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   },
+   "chapter": "Apollo 8"
+  },
+  {
+   "id": "s032",
+   "line": "On Christmas Eve, as their spacecraft came around from the far side, they saw the Earth rising over the lunar horizon, and grabbed a camera.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "moon_surface",
+      "at": [
+       0,
+       -2,
+       -0.5
+      ],
+      "args": {
+       "craters": 30
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -6,
+      0.6
+     ],
+     "to": [
+      0,
+      -6,
+      1.2
+     ],
+     "target": [
+      0,
+      6,
+      0.5
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s033",
+   "line": "That photograph, Earthrise, showed our whole world as a small, fragile blue marble in the darkness.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "moon_surface",
+      "at": [
+       0,
+       -3,
+       -1.1
+      ],
+      "args": {
+       "craters": 20
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.4,
+      0.6
+     ],
+     "to": [
+      0.2,
+      -3.0,
+      0.5
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s034",
+   "line": "On the sixteenth of July, nineteen sixty nine, Neil Armstrong, Buzz Aldrin and Michael Collins launched on Apollo Eleven.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "saturn_v",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "launch": [
+        0.15,
+        1.0
+       ]
+      }
+     },
+     {
+      "prop": "launch_tower",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -20,
+      4.0
+     ],
+     "to": [
+      0,
+      -18,
+      5.0
+     ],
+     "target": [
+      0,
+      0,
+      5.0
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.9,
+       0.75,
+       0.55
+      ],
+      "zenith": [
+       0.25,
+       0.45,
+       0.85
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.55,
+      0.55,
+      0.5
+     ]
+    }
+   },
+   "chapter": "Apollo 11"
+  },
+  {
+   "id": "s035",
+   "line": "Four days later, Armstrong and Aldrin climbed into the lunar module, named Eagle, and began their descent. Collins stayed behind in orbit.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "lunar_module",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "land": [
+        0,
+        1.5
+       ]
+      }
+     },
+     {
+      "prop": "moon_surface",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      2.5,
+      -4,
+      3.0
+     ],
+     "to": [
+      2,
+      -3.4,
+      2.4
+     ],
+     "target": [
+      0,
+      0,
+      1.5
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s036",
+   "line": "On the way down, the guidance computer flashed alarms they had never seen before, codes twelve oh two and twelve oh one. It was overloaded. Mission control decided to carry on.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "mission_control",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "1202",
+      "at": [
+       0,
+       3.4,
+       2.6
+      ],
+      "size": 0.6,
+      "color": [
+       1.0,
+       0.3,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -4.5,
+      2.5
+     ],
+     "to": [
+      0.3,
+      -4.0,
+      2.3
+     ],
+     "target": [
+      0,
+      1.5,
+      1.2
+     ],
+     "lens": 28
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.32,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.035
+     ]
+    }
+   }
+  },
+  {
+   "id": "s037",
+   "line": "Then Armstrong saw that the computer was steering them into a crater full of boulders. He took manual control, and flew on, searching for a safe spot.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "lunar_module",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "land": [
+        0,
+        0.9
+       ]
+      }
+     },
+     {
+      "prop": "moon_surface",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "craters": 70
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      2.5,
+      -4,
+      3.0
+     ],
+     "to": [
+      1.5,
+      -3.0,
+      2.2
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s038",
+   "line": "They touched down with less than a minute of fuel left to spare. Houston, Armstrong radioed, Tranquility Base here. The Eagle has landed.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "lunar_module",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "land": [
+        0,
+        0.5
+       ]
+      }
+     },
+     {
+      "prop": "moon_surface",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      3,
+      -5,
+      1.6
+     ],
+     "to": [
+      2.4,
+      -4.4,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s039",
+   "line": "Six and a half hours later, Armstrong stepped onto the surface. That's one small step for man, he said, one giant leap for mankind.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [
+     {
+      "astronaut": true,
+      "at": [
+       0.9,
+       -0.9,
+       0
+      ],
+      "turn": -40,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "lunar_module",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "prop": "moon_surface",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "footprints": true
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.8,
+      -3.4,
+      1.0
+     ],
+     "to": [
+      1.2,
+      -2.6,
+      0.9
+     ],
+     "target": [
+      0.9,
+      -0.9,
+      0.6
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s040",
+   "line": "Aldrin joined him. They planted a flag, collected rocks, and set up experiments, some of which are still being used today.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [
+     {
+      "astronaut": true,
+      "at": [
+       -1.0,
+       -0.6,
+       0
+      ],
+      "turn": -20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "astronaut": true,
+      "at": [
+       0.9,
+       0.0,
+       0
+      ],
+      "turn": -60,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "lunar_module",
+      "at": [
+       -0.5,
+       1.2,
+       0
+      ]
+     },
+     {
+      "prop": "moon_surface",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "flag": true,
+       "footprints": true
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      3,
+      -5,
+      1.6
+     ],
+     "to": [
+      2.4,
+      -4.2,
+      1.5
+     ],
+     "target": [
+      0.5,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s041",
+   "line": "Back on Earth, people wept and cheered in the streets.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "houses",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "on": [
+        0,
+        0.1
+       ]
+      }
+     },
+     {
+      "prop": "figures",
+      "at": [
+       0,
+       -1.5,
+       0
+      ],
+      "args": {
+       "n": 9,
+       "spacing": 0.45
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -5.5,
+      1.8
+     ],
+     "to": [
+      0.4,
+      -5.0,
+      1.7
+     ],
+     "target": [
+      0,
+      1,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s042",
+   "line": "Between nineteen sixty nine and nineteen seventy two, twelve men walked on the Moon. Since then, no one has gone back.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [
+     {
+      "astronaut": true,
+      "at": [
+       -1.0,
+       -0.6,
+       0
+      ],
+      "turn": -20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "moon_surface",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "flag": true,
+       "footprints": true
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "12",
+      "at": [
+       0,
+       2,
+       2.0
+      ],
+      "size": 0.6,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      3,
+      -5,
+      1.6
+     ],
+     "to": [
+      2.4,
+      -4.4,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "chapter": "Legacy"
+  },
+  {
+   "id": "s043",
+   "line": "The race left behind more than footprints. It pushed forward computers, materials, weather satellites and medicine, and inspired a generation to become scientists and engineers.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "microchip",
+      "at": [
+       -0.9,
+       0,
+       0.05
+      ],
+      "scale": 0.8
+     },
+     {
+      "prop": "sputnik",
+      "at": [
+       -0.1,
+       0.2,
+       0.6
+      ],
+      "scale": 0.4
+     },
+     {
+      "prop": "laptop",
+      "at": [
+       0.8,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.2
+     ],
+     "to": [
+      0.3,
+      -2.2,
+      1.1
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s044",
+   "line": "And it gave us that picture of Earthrise: a reminder that we all share one small planet.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "moon_surface",
+      "at": [
+       0,
+       -2,
+       -0.5
+      ],
+      "args": {
+       "craters": 30
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -6,
+      0.6
+     ],
+     "to": [
+      0,
+      -7,
+      1.6
+     ],
+     "target": [
+      0,
+      6,
+      0.5
+     ],
+     "lens": 35,
+     "target_to": [
+      0,
+      0,
+      0.3
+     ],
+     "lens_to": 28
+    }
+   },
+   "chapter": "Close",
+   "hold": 1.5
+  }
+ ]
+}
