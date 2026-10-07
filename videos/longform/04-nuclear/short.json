@@ -1,0 +1,4993 @@
+{
+ "format": "long",
+ "render": {
+  "width": 960,
+  "height": 540,
+  "samples": 8,
+  "fps": 12
+ },
+ "still_render": {
+  "width": 1920,
+  "height": 1080,
+  "samples": 16
+ },
+ "output_fps": 24,
+ "gap_seconds": 0.5,
+ "chapter_gap_seconds": 0.9,
+ "burn_captions": false,
+ "slug": "04-nuclear",
+ "title": "The Man Who Harnessed Nuclear Energy",
+ "description": "In a squash court under a Chicago football stadium, Enrico Fermi's team built the world's first nuclear reactor. From slow neutrons in Rome to Chicago Pile-1 and today's power stations, told in 3D animation.",
+ "tags": [
+  "Enrico Fermi",
+  "nuclear energy",
+  "Chicago Pile-1",
+  "nuclear reactor",
+  "chain reaction",
+  "fission",
+  "Manhattan Project",
+  "history of science",
+  "3D animation"
+ ],
+ "voice": {
+  "piper_voice": "en_US-ryan-high",
+  "length_scale": 1.25,
+  "sentence_silence": 0.28,
+  "pronunciations": {
+   "Fermi": "Fair-mee",
+   "Panisperna": "Pah-nee-spair-na",
+   "Obninsk": "Ob-ninsk",
+   "Strassmann": "Strahs-man",
+   "Meitner": "Mite-ner",
+   "Chianti": "Kee-an-tee",
+   "fermium": "fair-mee-um",
+   "Fermilab": "Fair-mee-lab",
+   "fermions": "fair-mee-ons",
+   "E B R one": "E B R one"
+  }
+ },
+ "music_mood": "tense",
+ "sources": [
+  "https://www.nobelprize.org/prizes/physics/1938/fermi/biographical/",
+  "https://www.energy.gov/articles/fermi-and-first-nuclear-reactor",
+  "https://www.anl.gov/article/the-first-reactor",
+  "https://www.osti.gov/opennet/manhattan-project-history/Events/1942/chicago_pile.htm",
+  "https://www.iaea.org/newscenter/news/what-is-nuclear-energy-the-science-of-nuclear-power",
+  "https://inl.gov/experimental-breeder-reactor-i/"
+ ],
+ "shots": [
+  {
+   "id": "s001",
+   "line": "On a freezing afternoon in December nineteen forty two, a group of scientists stood on a balcony inside an old squash court in Chicago.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.22,
+        0.22,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       1.9,
+       -1.0,
+       0
+      ],
+      "turn": -40,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": 10
+      }
+     },
+     {
+      "hair": [
+       0.35,
+       0.25,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.23,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       2.5,
+       -0.6,
+       0
+      ],
+      "turn": -50,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "graphite_pile",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      2.6,
+      -4.2,
+      2.0
+     ],
+     "to": [
+      2.0,
+      -3.4,
+      1.8
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ],
+     "window_x": -6
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s002",
+   "line": "In front of them was a strange, dark mound, built from about forty five thousand blocks of graphite and tonnes of uranium.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "graphite_pile",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -3.6,
+      1.3
+     ],
+     "to": [
+      1.4,
+      -3.0,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ],
+     "window_x": -6
+    }
+   }
+  },
+  {
+   "id": "s003",
+   "line": "If their calculations were wrong, it might run out of control. If they were right, it would be the first time humans had ever released the power locked inside the atom, on purpose.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "chain_reaction",
+      "at": [
+       -1.2,
+       0,
+       0.5
+      ],
+      "args": {
+       "generations": 4
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      0.8
+     ],
+     "to": [
+      0,
+      -2.6,
+      0.7
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.25,
+      0.1,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s004",
+   "line": "The man in charge was an Italian physicist named Enrico Fermi. This is how he harnessed nuclear energy.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fission",
+      "at": [
+       0,
+       0.5,
+       0.6
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [
+     {
+      "text": "ENRICO FERMI",
+      "at": [
+       0,
+       0,
+       1.45
+      ],
+      "size": 0.28,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.08
+     },
+     {
+      "text": "THE MAN WHO HARNESSED NUCLEAR ENERGY",
+      "at": [
+       0,
+       0,
+       1.12
+      ],
+      "size": 0.1,
+      "color": [
+       0.4,
+       0.85,
+       1.0
+      ],
+      "pop": 0.25
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.2,
+      1.2
+     ],
+     "to": [
+      0,
+      -2.8,
+      1.15
+     ],
+     "target": [
+      0,
+      0,
+      1.1
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s005",
+   "line": "Fermi was born in Rome in nineteen oh one. As a boy, he taught himself physics from old textbooks he bought at a market.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.25,
+        0.2
+       ],
+       "pants": [
+        0.25,
+        0.2,
+        0.15
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -35,
+        "R": -35
+       },
+       "arm_forward": {
+        "L": 35,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": 30,
+        "R": 30
+       },
+       "elbow": {
+        "L": 95,
+        "R": 95
+       },
+       "twist": {
+        "L": 80,
+        "R": 80
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       },
+       "head_nod": 22
+      },
+      "scale": 0.8
+     }
+    ],
+    "props": [
+     {
+      "prop": "books",
+      "at": [
+       0.8,
+       0.2,
+       0
+      ],
+      "args": {
+       "n": 7
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "ROME 1901",
+      "at": [
+       0.9,
+       0.5,
+       1.6
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.5
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      1.4
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       1.0,
+       0.6,
+       0.3
+      ],
+      "zenith": [
+       0.2,
+       0.45,
+       0.85
+      ]
+     },
+     "floor": [
+      0.75,
+      0.6,
+      0.4
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "A prodigy from Rome"
+  },
+  {
+   "id": "s006",
+   "line": "When he applied to university at seventeen, his entrance essay on the physics of vibrating strings was so advanced that the examiner said it was worthy of a doctorate.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "notebook",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ]
+     },
+     {
+      "prop": "candle",
+      "at": [
+       0.4,
+       0.0,
+       0.875
+      ]
+     },
+     {
+      "prop": "em_wave",
+      "at": [
+       0,
+       0.2,
+       1.25
+      ],
+      "scale": 0.25
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.4,
+      -1.4,
+      1.3
+     ],
+     "to": [
+      0.25,
+      -1.1,
+      1.25
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.95
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.18
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s007",
+   "line": "By twenty five, he was a professor in Rome, leading a group of brilliant young physicists nicknamed the Via Panisperna boys, after the street where their lab stood.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.22,
+        0.22,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.45,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.35,
+       0.25,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.23,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.9,
+       0.2,
+       0
+      ],
+      "turn": -20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.1,
+       0.08,
+       0.06
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.23,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.9,
+       0.2,
+       0
+      ],
+      "turn": 20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -2.4,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.5,
+      0.42,
+      0.3
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s008",
+   "line": "His students nicknamed him the Pope, because on questions of physics, he never seemed to be wrong.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.22,
+        0.22,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.5,
+      0.42,
+      0.3
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s009",
+   "line": "In nineteen thirty three, he wrote a theory of radioactive beta decay that introduced a new force of nature, the weak force. The journal Nature rejected it, saying it was too remote from physical reality.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "REJECTED",
+       "n": 2
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "THE WEAK FORCE",
+      "at": [
+       0,
+       0.3,
+       0.45
+      ],
+      "size": 0.08,
+      "color": [
+       0.4,
+       0.85,
+       1.0
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.7
+  },
+  {
+   "id": "s010",
+   "line": "The atom has a tiny, dense centre called the nucleus, made of protons and neutrons.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fission",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "args": {
+       "hit": 2,
+       "split": 3,
+       "products": false
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -1.4,
+      0.7
+     ],
+     "to": [
+      0.15,
+      -1.1,
+      0.6
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "chapter": "Slow neutrons",
+   "still_at": 0.1
+  },
+  {
+   "id": "s011",
+   "line": "In nineteen thirty two, the English physicist James Chadwick had discovered the neutron.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fission",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "args": {
+       "hit": 0.7,
+       "split": 3,
+       "products": false
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "NEUTRON  1932",
+      "at": [
+       0,
+       0.3,
+       0.9
+      ],
+      "size": 0.1,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.15
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -1.5,
+      0.7
+     ],
+     "to": [
+      0,
+      -1.3,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s012",
+   "line": "In nineteen thirty four, Fermi's team started firing neutrons at every element they could find, to see what would happen.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.22,
+        0.22,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "geiger",
+      "at": [
+       0.3,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "clicks": [
+        [
+         0,
+         -30
+        ],
+        [
+         0.5,
+         10
+        ],
+        [
+         0.6,
+         -20
+        ],
+        [
+         0.8,
+         25
+        ]
+       ]
+      }
+     },
+     {
+      "prop": "glassware",
+      "at": [
+       -0.4,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.9,
+      -2.5,
+      1.6
+     ],
+     "to": [
+      0.6,
+      -2.1,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.15
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.5,
+      0.42,
+      0.3
+     ]
+    }
+   }
+  },
+  {
+   "id": "s013",
+   "line": "Neutrons have no electric charge, so they can slip right into a nucleus, and make it unstable.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fission",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "args": {
+       "hit": 0.6,
+       "split": 3,
+       "products": false
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.4,
+      -2.4,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -2.0,
+      0.7
+     ],
+     "target": [
+      -0.3,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s014",
+   "line": "Then they noticed something strange. The results changed depending on what the table was made of.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "geiger",
+      "at": [
+       -0.2,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "clicks": [
+        [
+         0,
+         -20
+        ],
+        [
+         0.3,
+         20
+        ],
+        [
+         0.6,
+         -25
+        ]
+       ]
+      }
+     },
+     {
+      "prop": "glassware",
+      "at": [
+       0.3,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "n": 1
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.4,
+      -1.3,
+      1.3
+     ],
+     "to": [
+      0.25,
+      -1.1,
+      1.25
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.95
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.5,
+      0.42,
+      0.3
+     ]
+    }
+   }
+  },
+  {
+   "id": "s015",
+   "line": "Experiments on a wooden table gave far stronger effects than on a marble one.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       -0.45,
+       0,
+       0
+      ],
+      "args": {
+       "w": 0.7,
+       "d": 0.5,
+       "h": 0.4
+      }
+     },
+     {
+      "prop": "table",
+      "at": [
+       0.45,
+       0,
+       0
+      ],
+      "args": {
+       "w": 0.7,
+       "d": 0.5,
+       "h": 0.4,
+       "color": [
+        0.85,
+        0.85,
+        0.82
+       ]
+      }
+     },
+     {
+      "prop": "geiger",
+      "at": [
+       -0.45,
+       0,
+       0.4
+      ],
+      "args": {
+       "clicks": [
+        [
+         0,
+         -40
+        ],
+        [
+         0.3,
+         40
+        ],
+        [
+         0.5,
+         -40
+        ],
+        [
+         0.7,
+         40
+        ]
+       ]
+      }
+     },
+     {
+      "prop": "geiger",
+      "at": [
+       0.45,
+       0,
+       0.4
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "WOOD",
+      "at": [
+       -0.45,
+       0,
+       0.75
+      ],
+      "size": 0.08,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     },
+     {
+      "text": "MARBLE",
+      "at": [
+       0.45,
+       0,
+       0.75
+      ],
+      "size": 0.08,
+      "color": [
+       1,
+       1,
+       1
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -1.5,
+      0.7
+     ],
+     "to": [
+      0,
+      -1.3,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s016",
+   "line": "Fermi had a hunch. He put a block of paraffin wax between the neutrons and the target, and the radioactivity shot up, a hundred times stronger.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "geiger",
+      "at": [
+       0.4,
+       0,
+       0
+      ],
+      "args": {
+       "clicks": [
+        [
+         0,
+         -30
+        ],
+        [
+         0.4,
+         -30
+        ],
+        [
+         0.45,
+         50
+        ],
+        [
+         0.55,
+         45
+        ],
+        [
+         0.65,
+         50
+        ]
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "×100",
+      "at": [
+       0,
+       0.2,
+       0.55
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.5,
+       0.2
+      ],
+      "pop": 0.5
+     }
+    ],
+    "camera": {
+     "from": [
+      0.3,
+      -1.2,
+      0.6
+     ],
+     "to": [
+      0.2,
+      -1.0,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.2
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s017",
+   "line": "The hydrogen in the wax, and in the wooden table, slowed the neutrons down. And slow neutrons were far better at being captured by nuclei.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fission",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "args": {
+       "hit": 0.9,
+       "split": 3,
+       "products": false
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.4,
+      -2.4,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -2.0,
+      0.7
+     ],
+     "target": [
+      -0.3,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s018",
+   "line": "This discovery of slow neutrons would turn out to be the key to the nuclear reactor.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "graphite_pile",
+      "at": [
+       1.4,
+       1.2,
+       0
+      ],
+      "scale": 0.35
+     }
+    ],
+    "texts": [
+     {
+      "text": "SLOW NEUTRONS",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.2,
+      "color": [
+       0.4,
+       0.85,
+       1.0
+      ],
+      "pop": 0.15
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s019",
+   "line": "But Italy was changing. Mussolini's government passed racial laws in nineteen thirty eight, aimed at Jewish people. Fermi's wife, Laura, was Jewish.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.22,
+        0.22,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.35,
+       0.35,
+       0
+      ],
+      "turn": -10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.25,
+       0.15,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.45,
+        0.12,
+        0.2
+       ],
+       "pants": [
+        0.45,
+        0.12,
+        0.2
+       ],
+       "boots": [
+        0.1,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       0.35,
+       0.35,
+       0
+      ],
+      "turn": 10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.94
+     }
+    ],
+    "props": [],
+    "texts": [
+     {
+      "text": "1938",
+      "at": [
+       0.95,
+       0.9,
+       1.7
+      ],
+      "size": 0.25,
+      "color": [
+       1.0,
+       0.35,
+       0.35
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.15,
+      0.12,
+      0.1
+     ],
+     "world": [
+      0.015,
+      0.015,
+      0.015
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Escape"
+  },
+  {
+   "id": "s020",
+   "line": "That November, Fermi learned he had won the Nobel Prize in Physics.",
+   "visual": {
+    "type": "stage",
+    "env": "hall",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.22,
+        0.22,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.6,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "medal",
+      "at": [
+       0.55,
+       0.0,
+       1.4
+      ],
+      "spin": [
+       "z",
+       40
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "NOBEL PRIZE 1938",
+      "at": [
+       0,
+       0.9,
+       2.0
+      ],
+      "size": 0.14,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.6
+     ],
+     "to": [
+      0,
+      -2.0,
+      1.55
+     ],
+     "target": [
+      0,
+      0.4,
+      1.3
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s021",
+   "line": "He used the trip to Stockholm as an escape. After collecting the prize, the family never went home. They sailed straight on to New York.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "route",
+      "at": [
+       0,
+       0,
+       0.05
+      ],
+      "args": {
+       "stops": [
+        "ROME",
+        "STOCKHOLM",
+        "NEW YORK"
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      2.0
+     ],
+     "to": [
+      0.4,
+      -2.0,
+      1.6
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s022",
+   "line": "Just weeks later, news arrived from Germany. Otto Hahn and Fritz Strassmann had found that uranium, hit by neutrons, could split in two.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fission",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "args": {
+       "hit": 0.3,
+       "split": 0.45
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      0.8
+     ],
+     "to": [
+      0,
+      -2.6,
+      0.7
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   },
+   "chapter": "Splitting the atom"
+  },
+  {
+   "id": "s023",
+   "line": "Lise Meitner and Otto Frisch explained it, and named it fission.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fission",
+      "at": [
+       0,
+       0.6,
+       0.3
+      ],
+      "scale": 0.5,
+      "args": {
+       "hit": 0.05,
+       "split": 0.2
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "FISSION",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.3,
+      "color": [
+       1.0,
+       0.6,
+       0.2
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.85
+  },
+  {
+   "id": "s024",
+   "line": "Fermi's team had probably split uranium atoms back in Rome, four years earlier, without realising it.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.22,
+        0.22,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": 15
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.5,
+      0.42,
+      0.3
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s025",
+   "line": "When a uranium nucleus splits, it releases a burst of energy, and two or three new neutrons.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fission",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "args": {
+       "hit": 0.2,
+       "split": 0.35,
+       "neutrons": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      0.8
+     ],
+     "to": [
+      0,
+      -2.4,
+      0.7
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s026",
+   "line": "Fermi and others saw what that meant. If those neutrons split more atoms, which freed more neutrons, you could get a chain reaction.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "chain_reaction",
+      "at": [
+       -1.2,
+       0,
+       0.6
+      ],
+      "args": {
+       "generations": 4,
+       "start": 0.05,
+       "span": 0.85
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -3.6,
+      1.2
+     ],
+     "to": [
+      0.4,
+      -3.2,
+      1.0
+     ],
+     "target": [
+      0.3,
+      0,
+      0.6
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s027",
+   "line": "Controlled, it could power cities. Uncontrolled, it could become a bomb.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "CONTROLLED",
+      "at": [
+       -0.6,
+       0,
+       1.0
+      ],
+      "size": 0.14,
+      "color": [
+       0.4,
+       1.0,
+       0.6
+      ],
+      "pop": 0.1
+     },
+     {
+      "text": "UNCONTROLLED",
+      "at": [
+       0.6,
+       0,
+       1.0
+      ],
+      "size": 0.14,
+      "color": [
+       1.0,
+       0.35,
+       0.3
+      ],
+      "pop": 0.45
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.0
+     ],
+     "to": [
+      0,
+      -2.1,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s028",
+   "line": "The Hungarian physicist Leo Szilard had dreamed up the idea of a chain reaction years before. In nineteen thirty nine, he persuaded Albert Einstein to sign a letter warning President Roosevelt.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ],
+      "args": {
+       "headline": "AUGUST 2, 1939",
+       "n": 1
+      }
+     },
+     {
+      "prop": "candle",
+      "at": [
+       0.4,
+       0,
+       0.875
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.35,
+      -1.0,
+      1.25
+     ],
+     "to": [
+      0.22,
+      -0.85,
+      1.2
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.95
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.32,
+      0.34
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s029",
+   "line": "The Second World War had begun. Scientists feared that Nazi Germany might build an atomic bomb first.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "1939",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.35,
+      "color": [
+       1.0,
+       0.3,
+       0.3
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.2,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Chicago Pile-1"
+  },
+  {
+   "id": "s030",
+   "line": "The United States launched a secret project, and Fermi was asked to prove that a chain reaction was even possible.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.22,
+        0.22,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.45,
+       0.35,
+       0
+      ],
+      "turn": -12,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.15,
+        0.17,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.45,
+       0.35,
+       0
+      ],
+      "turn": 12,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "notebook",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.32,
+      0.34
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s031",
+   "line": "His team built a reactor in a squash court under the stands of Stagg Field, the University of Chicago's abandoned football stadium.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "stadium",
+      "at": [
+       0,
+       2,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -7.0,
+      2.0
+     ],
+     "to": [
+      0.5,
+      -6.0,
+      2.4
+     ],
+     "target": [
+      0,
+      2,
+      2.5
+     ],
+     "lens": 28
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.55,
+       0.6,
+       0.7
+      ],
+      "zenith": [
+       0.25,
+       0.3,
+       0.45
+      ],
+      "strength": 0.9
+     },
+     "floor": [
+      0.85,
+      0.87,
+      0.9
+     ]
+    }
+   }
+  },
+  {
+   "id": "s032",
+   "line": "They called it a pile, because that's exactly what it was: a pile of graphite bricks, layer after layer, with lumps of uranium tucked inside.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "graphite_pile",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.8,
+      -3.0,
+      1.2
+     ],
+     "to": [
+      1.2,
+      -2.4,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ],
+     "window_x": -6
+    }
+   }
+  },
+  {
+   "id": "s033",
+   "line": "The graphite did the same job as Fermi's paraffin wax. It slowed the neutrons down, so they would split more uranium.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "chain_reaction",
+      "at": [
+       -1.2,
+       0,
+       0.6
+      ],
+      "args": {
+       "generations": 3,
+       "start": 0.1,
+       "span": 0.8
+      }
+     },
+     {
+      "prop": "graphite_pile",
+      "at": [
+       0.3,
+       2.5,
+       0
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -3.6,
+      1.2
+     ],
+     "to": [
+      0.4,
+      -3.2,
+      1.0
+     ],
+     "target": [
+      0.3,
+      0,
+      0.6
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s034",
+   "line": "Running through the pile were control rods coated with cadmium, a metal that soaks up neutrons. Pull them out, and the reaction grows. Push them in, and it dies.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "graphite_pile",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "rods": [
+        [
+         0.1,
+         0
+        ],
+        [
+         0.5,
+         0.8
+        ],
+        [
+         0.8,
+         0.0
+        ]
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.2,
+      -2.6,
+      1.4
+     ],
+     "to": [
+      0.8,
+      -2.2,
+      1.3
+     ],
+     "target": [
+      0,
+      -1.2,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ],
+     "window_x": -6
+    }
+   }
+  },
+  {
+   "id": "s035",
+   "line": "There was no radiation shield, and no cooling system. Their safety plan included a rod on a rope that one man could cut with an axe, and three young physicists standing on top with buckets of cadmium solution.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.35,
+       0.25,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.23,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.4,
+       0.2,
+       1.54
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.9
+     },
+     {
+      "hair": [
+       0.6,
+       0.4,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.23,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.3,
+       -0.1,
+       1.54
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.9
+     }
+    ],
+    "props": [
+     {
+      "prop": "graphite_pile",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "prop": "vessels",
+      "at": [
+       0,
+       0.4,
+       1.54
+      ],
+      "scale": 0.4,
+      "args": {
+       "kinds": [
+        "churn",
+        "churn"
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      2.2,
+      -3.4,
+      2.6
+     ],
+     "to": [
+      1.8,
+      -2.9,
+      2.4
+     ],
+     "target": [
+      0,
+      0,
+      1.4
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ],
+     "window_x": -6
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s036",
+   "line": "They were nicknamed the suicide squad.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.35,
+       0.25,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.23,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.4,
+       0.2,
+       1.54
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.9
+     },
+     {
+      "hair": [
+       0.6,
+       0.4,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.23,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.3,
+       -0.1,
+       1.54
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      },
+      "scale": 0.9
+     }
+    ],
+    "props": [
+     {
+      "prop": "graphite_pile",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.8,
+      -1.8,
+      2.3
+     ],
+     "to": [
+      0.6,
+      -1.5,
+      2.25
+     ],
+     "target": "cast0.head",
+     "lens": 40
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ],
+     "window_x": -6
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s037",
+   "line": "On the morning of the second of December, nineteen forty two, Fermi ordered the control rods to be pulled out, step by step.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "graphite_pile",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "rods": [
+        [
+         0.1,
+         0
+        ],
+        [
+         0.3,
+         0.2
+        ],
+        [
+         0.5,
+         0.2
+        ],
+        [
+         0.6,
+         0.4
+        ],
+        [
+         0.8,
+         0.4
+        ],
+        [
+         0.9,
+         0.6
+        ]
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "2 DECEMBER 1942",
+      "at": [
+       -0.8,
+       1.2,
+       2.0
+      ],
+      "size": 0.14,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.15
+     }
+    ],
+    "camera": {
+     "from": [
+      1.2,
+      -2.6,
+      1.4
+     ],
+     "to": [
+      0.8,
+      -2.2,
+      1.3
+     ],
+     "target": [
+      0,
+      -1.2,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ],
+     "window_x": -6
+    }
+   },
+   "chapter": "December 2, 1942"
+  },
+  {
+   "id": "s038",
+   "line": "After each step, he checked the neutron counters, and calculated with his pocket slide rule exactly what should happen next.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "slide_rule",
+      "at": [
+       0,
+       0,
+       0.01
+      ],
+      "args": {
+       "slide": [
+        [
+         0,
+         0
+        ],
+        [
+         0.3,
+         0.06
+        ],
+        [
+         0.6,
+         -0.04
+        ],
+        [
+         0.9,
+         0.08
+        ]
+       ]
+      }
+     },
+     {
+      "prop": "geiger",
+      "at": [
+       0.35,
+       0.15,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.25,
+      -0.75,
+      0.35
+     ],
+     "to": [
+      0.18,
+      -0.65,
+      0.32
+     ],
+     "target": [
+      0,
+      0,
+      0.03
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s039",
+   "line": "The counters clicked faster and faster. Then, at about half past three in the afternoon, Fermi closed his slide rule and smiled.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.22,
+        0.22,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": 5
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "geiger",
+      "at": [
+       0.5,
+       -0.5,
+       1.0
+      ],
+      "args": {
+       "clicks": [
+        [
+         0,
+         -40
+        ],
+        [
+         0.2,
+         0
+        ],
+        [
+         0.3,
+         -30
+        ],
+        [
+         0.4,
+         20
+        ],
+        [
+         0.5,
+         -10
+        ],
+        [
+         0.6,
+         40
+        ],
+        [
+         0.7,
+         30
+        ],
+        [
+         0.8,
+         45
+        ]
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.4,
+      -1.3,
+      1.65
+     ],
+     "to": [
+      0.3,
+      -1.1,
+      1.62
+     ],
+     "target": "cast0.head",
+     "lens": 45
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ],
+     "window_x": -6
+    }
+   }
+  },
+  {
+   "id": "s040",
+   "line": "The reaction is self-sustaining, he announced. For the first time, a nuclear chain reaction was running under human control.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.22,
+        0.22,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       1.9,
+       -1.0,
+       0
+      ],
+      "turn": -40,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "graphite_pile",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "glow": [
+        [
+         0,
+         0
+        ],
+        [
+         0.3,
+         0
+        ],
+        [
+         0.6,
+         1.2
+        ]
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      2.6,
+      -4.2,
+      2.0
+     ],
+     "to": [
+      2.0,
+      -3.4,
+      1.8
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ],
+     "window_x": -6
+    }
+   }
+  },
+  {
+   "id": "s041",
+   "line": "It ran for about four and a half minutes, producing about half a watt, less than a small torch bulb. Then Fermi ordered the rods back in.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bulb",
+      "at": [
+       0,
+       0,
+       0.12
+      ],
+      "args": {
+       "on": 0.2,
+       "strength": 4
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "0.5 WATTS",
+      "at": [
+       0,
+       0.3,
+       0.55
+      ],
+      "size": 0.12,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -1.4,
+      0.6
+     ],
+     "to": [
+      0,
+      -1.2,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.25
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s042",
+   "line": "The pile was later taken apart and rebuilt outside the city, in the forest that became Argonne National Laboratory.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "graphite_pile",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -4.5,
+      1.8
+     ],
+     "to": [
+      0.5,
+      -3.8,
+      1.6
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.55,
+       0.6,
+       0.7
+      ],
+      "zenith": [
+       0.25,
+       0.3,
+       0.45
+      ],
+      "strength": 0.9
+     },
+     "floor": [
+      0.85,
+      0.87,
+      0.9
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s043",
+   "line": "Someone produced a bottle of Italian Chianti wine. They drank from paper cups, and signed the bottle's straw wrapper.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "bottle",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.35,
+      -1.0,
+      1.25
+     ],
+     "to": [
+      0.22,
+      -0.85,
+      1.2
+     ],
+     "target": [
+      0.1,
+      -0.1,
+      0.98
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ],
+     "window_x": -6
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s044",
+   "line": "The project's leader, Arthur Compton, phoned Washington in code. The Italian navigator has landed in the new world, he said. How were the natives? Very friendly.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.5,
+       0.45,
+       0.4
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.15,
+        0.17,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "R": 30
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "R": 140
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "arm_forward": {
+        "R": 40
+       },
+       "twist": {
+        "R": 60
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.32,
+      0.34
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s045",
+   "line": "Fermi's reactor opened the door to the Manhattan Project, and in nineteen forty five, to the atomic bombs that destroyed Hiroshima and Nagasaki.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "1945",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.35,
+      "color": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "pop": 0.1
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.0
+     ],
+     "to": [
+      0,
+      -2.1,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.06,
+      0.06
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Power and its price"
+  },
+  {
+   "id": "s046",
+   "line": "Fermi worked on the bomb at Los Alamos. Like many of the scientists, he lived with the consequences for the rest of his life. After the war, he opposed building the even more powerful hydrogen bomb.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.22,
+        0.22,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.08,
+      0.09,
+      0.1
+     ],
+     "world": [
+      0.01,
+      0.01,
+      0.01
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s047",
+   "line": "At the first test explosion, in the New Mexico desert, Fermi dropped scraps of paper as the blast wave passed, and from how far they flew, estimated its power. He was not far off.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.22,
+        0.22,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "R": 30
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "R": 20
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "arm_forward": {
+        "R": 60
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -2.0,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -1.7,
+      1.55
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.9,
+       0.55,
+       0.3
+      ],
+      "zenith": [
+       0.2,
+       0.3,
+       0.6
+      ]
+     },
+     "floor": [
+      0.6,
+      0.45,
+      0.3
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s048",
+   "line": "But the same principle could also be used to make electricity.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bulb",
+      "at": [
+       0,
+       0,
+       0.12
+      ],
+      "args": {
+       "on": 0.3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -1.4,
+      0.6
+     ],
+     "to": [
+      0,
+      -1.2,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.25
+     ],
+     "lens": 35
+    }
+   },
+   "chapter": "Atoms for power"
+  },
+  {
+   "id": "s049",
+   "line": "In a nuclear power station, the heat from fission boils water into steam. The steam spins a turbine, and the turbine spins a generator.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "reactor_core",
+      "at": [
+       -0.8,
+       0,
+       0
+      ],
+      "scale": 0.5,
+      "args": {
+       "rods_out": [
+        0.05,
+        0.3
+       ]
+      }
+     },
+     {
+      "prop": "generator_hall",
+      "at": [
+       0.9,
+       0.5,
+       0
+      ],
+      "scale": 0.35,
+      "args": {
+       "n": 1
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "HEAT → STEAM → TURBINE → ELECTRICITY",
+      "at": [
+       0,
+       0.5,
+       1.2
+      ],
+      "size": 0.08,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.5,
+      -2.4,
+      1.4
+     ],
+     "to": [
+      0.3,
+      -2.0,
+      1.2
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s050",
+   "line": "In December nineteen fifty one, an experimental reactor in Idaho, called E B R one, lit four light bulbs. It was the first electricity ever made from nuclear energy.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bulb",
+      "at": [
+       -0.45,
+       0,
+       0.12
+      ],
+      "args": {
+       "on": 0.2
+      }
+     },
+     {
+      "prop": "bulb",
+      "at": [
+       -0.15,
+       0,
+       0.12
+      ],
+      "args": {
+       "on": 0.30000000000000004
+      }
+     },
+     {
+      "prop": "bulb",
+      "at": [
+       0.15,
+       0,
+       0.12
+      ],
+      "args": {
+       "on": 0.4
+      }
+     },
+     {
+      "prop": "bulb",
+      "at": [
+       0.45,
+       0,
+       0.12
+      ],
+      "args": {
+       "on": 0.5
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "1951",
+      "at": [
+       0,
+       0.3,
+       0.65
+      ],
+      "size": 0.14,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.15
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -1.6,
+      0.7
+     ],
+     "to": [
+      0,
+      -1.4,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s051",
+   "line": "In nineteen fifty four, a small plant at Obninsk in the Soviet Union became the first to feed nuclear power into an electricity grid. Britain and the United States soon followed.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "cooling_towers",
+      "at": [
+       0,
+       2.5,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -6.0,
+      2.0
+     ],
+     "to": [
+      0.5,
+      -5.2,
+      1.9
+     ],
+     "target": [
+      0,
+      2,
+      1.5
+     ],
+     "lens": 30
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s052",
+   "line": "Today, around four hundred nuclear reactors produce roughly a tenth of the world's electricity, without burning any fuel or releasing carbon dioxide as they run.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "cooling_towers",
+      "at": [
+       0,
+       2.5,
+       0
+      ],
+      "args": {
+       "n": 3
+      }
+     },
+     {
+      "prop": "city",
+      "at": [
+       0,
+       8,
+       0
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      -2,
+      -7.0,
+      2.4
+     ],
+     "to": [
+      2,
+      -6.4,
+      2.2
+     ],
+     "target": [
+      0,
+      2,
+      1.5
+     ],
+     "lens": 28
+    }
+   }
+  },
+  {
+   "id": "s053",
+   "line": "Nuclear power has its problems: the radioactive waste must be stored safely for thousands of years, and accidents like Chernobyl and Fukushima showed the price of getting it wrong.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "vessels",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "kinds": [
+        "churn",
+        "churn",
+        "churn"
+       ],
+       "spacing": 0.35
+      }
+     },
+     {
+      "prop": "geiger",
+      "at": [
+       0.6,
+       -0.1,
+       0
+      ],
+      "args": {
+       "clicks": [
+        [
+         0,
+         -40
+        ],
+        [
+         0.4,
+         30
+        ],
+        [
+         0.6,
+         -20
+        ],
+        [
+         0.8,
+         40
+        ]
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -1.2,
+      0.6
+     ],
+     "to": [
+      0.2,
+      -1.0,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.25,
+      0.2,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s054",
+   "line": "But it remains one of the largest sources of low-carbon electricity on Earth.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "reactor_core",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "rods_out": [
+        0.1,
+        0.6
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -2.0,
+      1.6
+     ],
+     "to": [
+      0.4,
+      -1.6,
+      1.4
+     ],
+     "target": [
+      0,
+      0,
+      0.4
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.2,
+      0.25,
+      0.3
+     ],
+     "world": [
+      0.02,
+      0.02,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s055",
+   "line": "Fermi died of cancer in nineteen fifty four, at just fifty three years old.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "candle",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ]
+     },
+     {
+      "prop": "slide_rule",
+      "at": [
+       0.3,
+       -0.1,
+       0.885
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "1901 – 1954",
+      "at": [
+       0,
+       0.4,
+       1.12
+      ],
+      "size": 0.1,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -1.2,
+      1.2
+     ],
+     "to": [
+      0,
+      -1.0,
+      1.15
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.95
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.05,
+      0.06,
+      0.07
+     ],
+     "world": [
+      0.01,
+      0.01,
+      0.015
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Legacy"
+  },
+  {
+   "id": "s056",
+   "line": "Element number one hundred, fermium, is named after him. So is Fermilab, one of America's great particle physics laboratories, and a whole family of particles, the fermions.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "Fm",
+      "at": [
+       0,
+       0,
+       1.1
+      ],
+      "size": 0.4,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     },
+     {
+      "text": "100",
+      "at": [
+       -0.3,
+       0,
+       1.4
+      ],
+      "size": 0.1,
+      "color": [
+       1,
+       1,
+       1
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s057",
+   "line": "He was famous for estimating anything, quickly, from a few simple facts. Physicists still call these Fermi problems.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.08,
+       0.06,
+       0.05
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.22,
+        0.22,
+        0.25
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.23
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "slide_rule",
+      "at": [
+       0.1,
+       -0.1,
+       0.885
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.9,
+      -2.5,
+      1.6
+     ],
+     "to": [
+      0.6,
+      -2.1,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.15
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.32,
+      0.34
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s058",
+   "line": "And over lunch one day in nineteen fifty, talking about aliens, he asked a question that scientists still argue about: so where is everybody?",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "WHERE IS EVERYBODY?",
+      "at": [
+       0,
+       0,
+       0.8
+      ],
+      "size": 0.15,
+      "color": [
+       0.6,
+       0.9,
+       1.0
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      0.4
+     ],
+     "to": [
+      0,
+      -2.6,
+      0.5
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s059",
+   "line": "From a squash court under a football stadium, Enrico Fermi showed that the energy inside the atom could be released, and controlled.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "graphite_pile",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "glow": [
+        [
+         0,
+         0.3
+        ],
+        [
+         1,
+         1.0
+        ]
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -3.6,
+      1.3
+     ],
+     "to": [
+      2.4,
+      -4.4,
+      2.0
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.45,
+      0.42,
+      0.38
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ],
+     "window_x": -6
+    }
+   },
+   "chapter": "Close"
+  },
+  {
+   "id": "s060",
+   "line": "For better and for worse, we have been living in his nuclear age ever since.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "cooling_towers",
+      "at": [
+       0,
+       3,
+       0
+      ]
+     },
+     {
+      "prop": "city",
+      "at": [
+       0,
+       6,
+       0
+      ],
+      "scale": 0.7,
+      "args": {
+       "on": 0.3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.0,
+      1.4
+     ],
+     "to": [
+      0,
+      -7.5,
+      3.0
+     ],
+     "target": [
+      0,
+      2,
+      1.4
+     ],
+     "lens": 40,
+     "target_to": [
+      0,
+      4,
+      1.2
+     ],
+     "lens_to": 28
+    }
+   },
+   "hold": 1.5
+  }
+ ]
+}
