@@ -51,6 +51,9 @@ S("For decades, scientists dreamed of fixing faulty genes directly. But the earl
   still=True)
 
 # ===================================================================== DISCOVERY IN BACTERIA
+S("Tools called zinc fingers and TALENs could be built to cut chosen spots, but designing each one could take months of specialist work.",
+  stage("lab", cam((0.35, -1.0, 1.25), (0.22, -0.85, 1.2), (0, -0.1, 0.95)), props=[TABLE, P("notebook", (0, -0.1, TOP)), P("books", (0.4, 0, TOP), args={"n": 6})], env_opts=LAB),
+  still=True)
 S("The answer came from somewhere unexpected. In the nineteen nineties, a Spanish microbiologist named Francisco Mojica was studying microbes from salt marshes.",
   stage("sky", cam((0, -3.0, 1.4), (0.3, -2.6, 1.3), (0, 0, 1.0)), cast=[who(MOJICA, pose=STAND)],
         env_opts={"sky": {"horizon": [0.95, 0.8, 0.6], "zenith": [0.3, 0.5, 0.85]}, "floor": [0.85, 0.82, 0.75]}), still=True, chapter="A bacterial immune system")
@@ -62,6 +65,9 @@ S("He and colleagues named them CRISPR: clustered regularly interspaced short pa
   still=True, still_at=0.85)
 S("Around two thousand and five, Mojica worked out what the spacers were: snippets of DNA from viruses that had attacked the bacteria before.",
   stage("studio", cam((0.6, -1.6, 0.6), (0.4, -1.3, 0.55), (0, 0, 0.4)), props=[P("phage", args={"attack": [0.1, 0.7]}), P("bacteria", args={"n": 3, "area": 0.25})], env_opts=MICRO))
+S("Bacteria are in a never-ending war with viruses called phages. Phages are thought to be the most numerous biological entities on Earth, outnumbering bacteria by around ten to one.",
+  stage("studio", cam((0, -3.0, 1.0), (0.3, -2.6, 0.9), (0, 0, 0.5)), props=[P("phage", (x, y, 0), scale=0.6) for x, y in ((-0.9, 0), (-0.3, 0.4), (0.3, -0.1), (0.9, 0.3))] +
+        [P("bacteria", (0, 0.2, 0), args={"n": 4, "area": 0.8})], env_opts=MICRO), still=True)
 S("CRISPR was an immune system. The bacteria kept a library of mugshots of their enemies.",
   stage("studio", cam((0, -2.6, 0.9), (0.2, -2.2, 0.85), (0, 0, 0.6)), props=[P("dna_helix", (0, 0, 0.6), args={"edit": [0.2, 0.4, 1]})],
         texts=[T("VIRUS MUGSHOTS", (0, 0.3, 1.05), 0.11, pop=0.3)], env_opts=MICRO))
@@ -101,6 +107,9 @@ S("CRISPR was cheap, fast and easy. Labs all over the world began using it almos
         cast=[who(DOCTOR | {"hair": [0.1 + 0.15 * i, 0.08, 0.05], "outfit": LABCOAT}, at=(x, 0.35, 0), pose=WORK, scale=0.95) for i, x in enumerate((-1.1, 0, 1.1))],
         props=[P("table", (0, -0.1, 0), args={"w": 3.2}), P("microscope", (-1.1, -0.1, TOP)), P("petri_dish", (0, -0.1, TOP), args={"mould": False}), P("glassware", (1.1, -0.1, TOP), args={"n": 3})],
         env_opts=LAB), still=True)
+S("The discovery also sparked a long legal battle, between the University of California, where Doudna works, and the Broad Institute in Massachusetts, over who owns the patents.",
+  stage("hall", cam((0, -2.4, 1.6), (0, -2.0, 1.55), (0, 0.4, 1.3)), props=[P("table", (0, 0.6, 0), args={"w": 2.0}), P("newspapers", (0, 0.6, TOP), args={"headline": "PATENT", "n": 2})]),
+  still=True)
 S("In twenty twenty, Charpentier and Doudna won the Nobel Prize in Chemistry. It was the first time a science Nobel had been shared only by women.",
   stage("hall", cam((0, -2.6, 1.6), (0, -2.2, 1.5), (0, 0.4, 1.2)), cast=[who(CHARPENTIER, at=(-0.45, 0.4, 0), turn=-10, scale=0.95), who(DOUDNA, at=(0.45, 0.4, 0), turn=10, scale=0.95)],
         props=[P("medal", (0, -0.2, 1.7), spin=["z", 40])], texts=[T("NOBEL 2020", (0, 0.2, 2.0), 0.14, pop=0.2)]), still=True)
@@ -121,6 +130,11 @@ S("In late twenty twenty three, regulators in Britain and the United States appr
   still=True)
 S("Scientists are now testing CRISPR against inherited blindness, high cholesterol, some cancers, and other genetic diseases.",
   stage("studio", cam((0, -3.2, 1.2), (0.3, -2.8, 1.1), (0, 0, 0.8)), props=[P("cell", (-0.8, 0, 0.8), scale=0.6), P("dna_helix", (0.6, 0, 0.8), scale=0.6)], env_opts=MICRO))
+S("Newer versions are even more precise. Base editing, invented in David Liu's lab in twenty sixteen, can change a single letter without cutting both strands. Prime editing can search and replace short passages.",
+  stage("studio", cam((0.5, -1.6, 0.8), (0.2, -1.3, 0.7), (0, 0, 0.6)), props=[P("dna_helix", (0, 0, 0.6), args={"edit": [0.3, 0.0, 1], "spin": 20})], env_opts=MICRO))
+S("CRISPR has even been turned into fast diagnostic tests, which can detect the genetic material of viruses, like the one that causes COVID nineteen.",
+  stage("studio", cam((0.25, -0.75, 0.35), (0.18, -0.65, 0.32), (0, 0, 0.1)), props=[P("vials", args={"n": 3, "label": "TEST"}), P("phage", (0.35, 0.1, 0), scale=0.3)]),
+  still=True)
 S("In twenty twenty five, doctors in Philadelphia treated a baby boy named KJ, born with a rare and deadly liver disorder, with a gene-editing therapy designed just for him.",
   stage("lab", cam((0, -2.0, 1.4), (0, -1.7, 1.3), (0, 0.3, 0.9)), cast=[who(DOCTOR, at=(0.6, 0.3, 0), turn=20, pose=WORK)],
         props=[P("hospital_bed", (-0.3, 0.3, 0), scale=0.6)], env_opts=LAB), still=True)
@@ -134,6 +148,9 @@ S("Some scientists want to use it to spread genes through wild mosquitoes that s
         env_opts={"sky": {"horizon": [0.85, 0.65, 0.4], "zenith": [0.25, 0.35, 0.6]}, "floor": [0.25, 0.4, 0.2]}))
 
 # ===================================================================== ETHICS
+S("In twenty twenty four, surgeons in Boston transplanted a kidney from a gene-edited pig into a living patient, part of a push to solve the shortage of organs for transplant.",
+  stage("lab", cam((0, -2.6, 1.6), (0.3, -2.2, 1.5), (0, 0.3, 0.8)), cast=[who(DOCTOR, at=(0.9, 0.2, 0), turn=40, pose=WORK)], props=[P("hospital_bed", (0, 0.3, 0))], env_opts=LAB),
+  still=True)
 S("But CRISPR also raises hard questions.",
   stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("?", (0, 0, 1.0), 0.5, (1.0, 0.5, 0.3), pop=0.1)], env_opts=MICRO), still=True,
   chapter="The hard questions")
@@ -149,6 +166,8 @@ S("Most countries now ban or tightly restrict editing embryos for pregnancy. Dec
         cast=[who(DOUDNA, at=(-0.9, 0.35, 0), turn=-15, pose=PRESENT, scale=0.95), who(DOCTOR, at=(0, 0.45, 0)), who(PATIENT, at=(0.9, 0.35, 0), turn=15)], env_opts=LAB), still=True)
 
 # ===================================================================== CLOSE
+S("There are other worries, too. CRISPR can sometimes cut the wrong place. And the first approved treatment costs over two million dollars per patient in the United States, so who can afford it?",
+  stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("$2,200,000", (0, 0, 1.0), 0.25, (1.0, 0.6, 0.3), pop=0.3)]), still=True, still_at=0.8)
 S("A defence system that bacteria evolved to fight viruses has become one of the most powerful tools in the history of medicine.",
   stage("studio", HELIX, props=[P("dna_helix", (0, 0, 0.6), args={"spin": 30}), P("phage", (1.2, 0.4, 0.3), scale=0.5), P("cas9", (0.2, -0.35, 0.75), scale=0.8)], env_opts=MICRO),
   chapter="Close")
