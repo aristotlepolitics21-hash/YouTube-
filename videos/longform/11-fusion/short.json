@@ -1,0 +1,2736 @@
+{
+ "format": "long",
+ "render": {
+  "width": 960,
+  "height": 540,
+  "samples": 8,
+  "fps": 12
+ },
+ "still_render": {
+  "width": 1920,
+  "height": 1080,
+  "samples": 16
+ },
+ "output_fps": 24,
+ "gap_seconds": 0.5,
+ "chapter_gap_seconds": 0.9,
+ "burn_captions": false,
+ "slug": "11-fusion",
+ "title": "The Secret Behind Nuclear Fusion",
+ "description": "How the Sun shines, why fusion needs temperatures ten times hotter than its core, and how tokamaks, lasers and ITER are trying to build a star on Earth, told in 3D animation.",
+ "tags": [
+  "nuclear fusion",
+  "tokamak",
+  "ITER",
+  "National Ignition Facility",
+  "JET",
+  "plasma",
+  "clean energy",
+  "physics",
+  "3D animation"
+ ],
+ "voice": {
+  "piper_voice": "en_US-ryan-high",
+  "length_scale": 1.25,
+  "sentence_silence": 0.28,
+  "pronunciations": {
+   "Eddington": "Edd-ing-ton",
+   "Bethe": "Bay-tuh",
+   "Tamm": "Tahm",
+   "Sakharov": "Sah-ka-rov",
+   "tokamak": "toe-ka-mak",
+   "ITER": "Eater",
+   "JET": "Jet",
+   "megajoules": "mega-jools",
+   "T-three": "T three"
+  }
+ },
+ "music_mood": "epic",
+ "sources": [
+  "https://www.iter.org/mach",
+  "https://lasers.llnl.gov/science/achieving-fusion-ignition",
+  "https://euro-fusion.org/eurofusion-news/european-researchers-achieve-fusion-energy-record/",
+  "https://www.nobelprize.org/prizes/physics/1967/bethe/facts/",
+  "https://www.iaea.org/fusion-energy",
+  "https://www.energy.gov/science/doe-explainsnuclear-fusion-reactions"
+ ],
+ "shots": [
+  {
+   "id": "s001",
+   "line": "Every second, the Sun turns about six hundred million tonnes of hydrogen into helium.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "sun_ball",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "scale": 1.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -6,
+      0.5
+     ],
+     "to": [
+      0.4,
+      -5.2,
+      0.4
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s002",
+   "line": "In the process, around four million tonnes of matter simply disappears, turned into pure energy. That energy is sunlight, and it powers almost all life on Earth.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "sun_ball",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "scale": 1.2
+     }
+    ],
+    "texts": [
+     {
+      "text": "4,000,000 TONNES / SECOND",
+      "at": [
+       0,
+       -1.6,
+       2.1
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -4.5,
+      0.5
+     ],
+     "to": [
+      0.3,
+      -4.0,
+      0.45
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s003",
+   "line": "For seventy years, scientists have been trying to build a small star here on Earth.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.2,
+        0.7
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      2.8,
+      -3.8,
+      2.6
+     ],
+     "to": [
+      2.2,
+      -3.2,
+      2.2
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   }
+  },
+  {
+   "id": "s004",
+   "line": "If they succeed, it could give us almost limitless clean energy, from fuel found in seawater. This is the secret behind nuclear fusion, and why it's so hard.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fusion_reaction",
+      "at": [
+       0,
+       0.6,
+       0.45
+      ],
+      "scale": 0.5,
+      "args": {
+       "hit": 0.6
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "NUCLEAR FUSION",
+      "at": [
+       0,
+       0,
+       1.4
+      ],
+      "size": 0.32,
+      "color": [
+       1.0,
+       0.45,
+       0.85
+      ],
+      "pop": 0.08
+     },
+     {
+      "text": "THE SECRET OF THE STARS",
+      "at": [
+       0,
+       0,
+       1.05
+      ],
+      "size": 0.11,
+      "color": [
+       1,
+       1,
+       1
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.2,
+      1.2
+     ],
+     "to": [
+      0,
+      -2.8,
+      1.15
+     ],
+     "target": [
+      0,
+      0,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s005",
+   "line": "For most of history, nobody knew what made the Sun shine. If it were a giant lump of burning coal, it would have burned out in a few thousand years.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "sun_ball",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "scale": 1.3
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -5,
+      0.5
+     ],
+     "to": [
+      0.4,
+      -4.4,
+      0.4
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "chapter": "What powers the Sun?"
+  },
+  {
+   "id": "s006",
+   "line": "The first clue came from Einstein's famous equation: E equals m c squared. A tiny amount of mass can be turned into an enormous amount of energy.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "blackboard",
+      "at": [
+       0,
+       1.5,
+       0
+      ],
+      "args": {
+       "lines": [
+        "E = mc²"
+       ],
+       "at": 0.15
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.5
+     ],
+     "to": [
+      0,
+      -2.6,
+      1.5
+     ],
+     "target": [
+      0,
+      1.5,
+      1.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s007",
+   "line": "In nineteen twenty, the British astronomer Arthur Eddington noticed that a helium atom weighs slightly less than the four hydrogen atoms it could be built from.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.35,
+       0.3,
+       0.25
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -35,
+        "R": -35
+       },
+       "arm_forward": {
+        "L": 35,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": 30,
+        "R": 30
+       },
+       "elbow": {
+        "L": 95,
+        "R": 95
+       },
+       "twist": {
+        "L": 80,
+        "R": 80
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       },
+       "head_nod": 22
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s008",
+   "line": "He suggested that stars shine by fusing hydrogen into helium, and turning that missing mass into energy.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fusion_reaction",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "hit": 0.5
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -2.4,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s009",
+   "line": "In nineteen thirty nine, Hans Bethe worked out the exact nuclear reactions that power the stars. He later won the Nobel Prize for it.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.25,
+       0.2
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.23,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.9,
+       0.6,
+       0
+      ],
+      "turn": 20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "blackboard",
+      "at": [
+       -0.3,
+       1.5,
+       0
+      ],
+      "args": {
+       "lines": [
+        "p + p → d",
+        "d + p → ³He",
+        "³He + ³He → ⁴He"
+       ],
+       "at": 0.1
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.5
+     ],
+     "to": [
+      0,
+      -2.6,
+      1.5
+     ],
+     "target": [
+      0,
+      1.5,
+      1.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s010",
+   "line": "So why is fusion so hard? Because atomic nuclei hate each other.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fusion_reaction",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "hit": 2
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -2.4,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "chapter": "Why is fusion so hard?"
+  },
+  {
+   "id": "s011",
+   "line": "Every nucleus carries a positive electric charge. As two nuclei get close, they push each other away, harder and harder.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fusion_reaction",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "hit": 2
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "+                 +",
+      "at": [
+       0,
+       0,
+       0.9
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.3,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -2.4,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s012",
+   "line": "Only if they collide fast enough, can they get close enough for the strong nuclear force to grab hold and fuse them.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fusion_reaction",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "hit": 0.55
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -2.4,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s013",
+   "line": "Speed means heat. In the Sun's core, the temperature is about fifteen million degrees, and the crushing weight of the Sun squeezes nuclei together.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "thermometer",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "top_label": "15,000,000 °C"
+      }
+     },
+     {
+      "prop": "sun_ball",
+      "at": [
+       1.4,
+       1,
+       1.2
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -4,
+      1.3
+     ],
+     "to": [
+      0.4,
+      -3.6,
+      1.2
+     ],
+     "target": [
+      0.6,
+      0,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s014",
+   "line": "On Earth, we can't recreate that pressure. So we need to go much hotter: about a hundred and fifty million degrees, ten times hotter than the centre of the Sun.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "thermometer",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "top_label": "150,000,000 °C"
+      }
+     },
+     {
+      "prop": "sun_ball",
+      "at": [
+       1.4,
+       1,
+       1.2
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -4,
+      1.3
+     ],
+     "to": [
+      0.4,
+      -3.6,
+      1.2
+     ],
+     "target": [
+      0.6,
+      0,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s015",
+   "line": "At that temperature, matter becomes plasma: a glowing soup of bare nuclei and electrons. And no material container could hold it. It would vaporise the walls.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.0,
+        0.3
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.6,
+      -2.4,
+      1.6
+     ],
+     "to": [
+      1.2,
+      -2.0,
+      1.4
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   }
+  },
+  {
+   "id": "s016",
+   "line": "The best fuel is two heavy forms of hydrogen: deuterium, which can be extracted from ordinary seawater, and tritium, which can be made from lithium.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fusion_reaction",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "hit": 0.7
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "DEUTERIUM",
+      "at": [
+       -0.9,
+       0,
+       1.0
+      ],
+      "size": 0.09,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     },
+     {
+      "text": "TRITIUM",
+      "at": [
+       0.9,
+       0,
+       1.0
+      ],
+      "size": 0.09,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -2.4,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s017",
+   "line": "When they fuse, they make helium, and a fast neutron carrying most of the energy.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fusion_reaction",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "hit": 0.3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -2.4,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s018",
+   "line": "The answer to holding plasma came from the Soviet Union. In the early nineteen fifties, physicists Igor Tamm and Andrei Sakharov proposed trapping it with magnetic fields.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.25,
+       0.2,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.22,
+        0.2
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.25,
+      0.2,
+      0.18
+     ],
+     "world": [
+      0.02,
+      0.02,
+      0.015
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "The magnetic bottle"
+  },
+  {
+   "id": "s019",
+   "line": "Charged particles spiral around magnetic field lines. Bend those lines into a ring, and the plasma can circle forever without touching the walls.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.1,
+        0.4
+       ],
+       "cutaway": false
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.4,
+      3.0
+     ],
+     "to": [
+      0.4,
+      -3.0,
+      2.8
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   }
+  },
+  {
+   "id": "s020",
+   "line": "The design was called a tokamak, a Russian acronym for a toroidal chamber with magnetic coils: a doughnut-shaped magnetic bottle.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.1,
+        0.5
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "TOKAMAK",
+      "at": [
+       0,
+       1.5,
+       2.6
+      ],
+      "size": 0.25,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      2.8,
+      -3.8,
+      2.6
+     ],
+     "to": [
+      2.2,
+      -3.2,
+      2.2
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   }
+  },
+  {
+   "id": "s021",
+   "line": "In nineteen sixty eight, a Soviet tokamak called T-three reached around ten million degrees. Western scientists were sceptical, so a British team flew to Moscow with lasers to measure it. The Soviets were right.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.0,
+        0.2
+       ]
+      }
+     },
+     {
+      "prop": "laser_target",
+      "at": [
+       2.2,
+       0,
+       1.6
+      ],
+      "scale": 0.3,
+      "args": {
+       "fire": 0.5,
+       "beams": 6
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "T-3  1968",
+      "at": [
+       -1.5,
+       1.0,
+       2.4
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      2.8,
+      -3.8,
+      2.6
+     ],
+     "to": [
+      2.2,
+      -3.2,
+      2.2
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   }
+  },
+  {
+   "id": "s022",
+   "line": "Soon, tokamaks were being built all over the world.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       -2.6,
+       2,
+       0
+      ],
+      "scale": 0.6
+     },
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       3,
+       0
+      ],
+      "scale": 0.6
+     },
+     {
+      "prop": "tokamak",
+      "at": [
+       2.6,
+       2,
+       0
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -6.0,
+      3.0
+     ],
+     "to": [
+      0.6,
+      -5.4,
+      2.8
+     ],
+     "target": [
+      0,
+      2,
+      0.8
+     ],
+     "lens": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s023",
+   "line": "The biggest was JET, the Joint European Torus, in England. In nineteen ninety seven, it produced sixteen megawatts of fusion power.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.1,
+        0.4
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "JET  1997  16 MW",
+      "at": [
+       0,
+       1.5,
+       2.6
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      2.8,
+      -3.8,
+      2.6
+     ],
+     "to": [
+      2.2,
+      -3.2,
+      2.2
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   },
+   "chapter": "Chasing break-even"
+  },
+  {
+   "id": "s024",
+   "line": "But that took more power to run than it produced. The holy grail is to get more energy out of the fuel than you put in to heat it.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "ENERGY OUT  >  ENERGY IN",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.15,
+      "color": [
+       0.4,
+       1.0,
+       0.6
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.0
+     ],
+     "to": [
+      0,
+      -2.1,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s025",
+   "line": "In twenty twenty three, in its final experiments before closing, JET set a world record: sixty nine megajoules of energy in five seconds, from a fraction of a milligramme of fuel.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.05,
+        0.3
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "69 MJ",
+      "at": [
+       0,
+       1.5,
+       2.6
+      ],
+      "size": 0.4,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      2.8,
+      -3.8,
+      2.6
+     ],
+     "to": [
+      2.2,
+      -3.2,
+      2.2
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   }
+  },
+  {
+   "id": "s026",
+   "line": "There's another way to do fusion. Instead of holding plasma steady, you can crush a tiny pellet of fuel so fast that it fuses before it can fly apart.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "laser_target",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "args": {
+       "fire": 0.6
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.5,
+      -3.0,
+      1.6
+     ],
+     "to": [
+      1.2,
+      -2.6,
+      1.4
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s027",
+   "line": "At the National Ignition Facility in California, a hundred and ninety two giant lasers fire at a capsule the size of a peppercorn.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "laser_target",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "args": {
+       "beams": 96,
+       "fire": 0.5
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      2.5,
+      -4.0,
+      2.4
+     ],
+     "to": [
+      2.0,
+      -3.4,
+      2.0
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s028",
+   "line": "On the fifth of December, twenty twenty two, for the first time, the fusion reactions released more energy than the laser light delivered to the target: three point one five megajoules out, from two point oh five in.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "laser_target",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "args": {
+       "fire": 0.35
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "3.15 MJ OUT  /  2.05 MJ IN",
+      "at": [
+       0,
+       0.5,
+       1.55
+      ],
+      "size": 0.12,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.5
+     }
+    ],
+    "camera": {
+     "from": [
+      0.6,
+      -1.4,
+      1.2
+     ],
+     "to": [
+      0.4,
+      -1.1,
+      1.1
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s029",
+   "line": "It was a historic milestone called ignition. The lasers themselves still used far more electricity than the fusion produced. But it proved the physics works, and the team has since beaten that result.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "IGNITION",
+      "at": [
+       0,
+       0,
+       1.05
+      ],
+      "size": 0.3,
+      "color": [
+       1.0,
+       0.8,
+       0.3
+      ],
+      "pop": 0.15
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s030",
+   "line": "Now, thirty five countries are building the biggest tokamak ever, ITER, in the south of France.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.2,
+       0.15,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.9,
+        0.9,
+        0.92
+       ],
+       "pants": [
+        0.2,
+        0.25,
+        0.4
+       ],
+       "boots": [
+        0.06,
+        0.05,
+        0.04
+       ]
+      },
+      "at": [
+       2.4,
+       -2.0,
+       0
+      ],
+      "turn": -30,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "scale": 1.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -9,
+      4.0
+     ],
+     "to": [
+      1.0,
+      -8,
+      3.6
+     ],
+     "target": [
+      0,
+      0,
+      1.2
+     ],
+     "lens": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   },
+   "chapter": "Building a star"
+  },
+  {
+   "id": "s031",
+   "line": "Its magnets will be cooled to minus two hundred and sixty nine degrees, just a few degrees above absolute zero, while the plasma inside reaches a hundred and fifty million. Some of the coldest and hottest places in the solar system, a few metres apart.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.1,
+        0.5
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "−269 °C",
+      "at": [
+       -1.8,
+       0,
+       2.2
+      ],
+      "size": 0.2,
+      "color": [
+       0.4,
+       0.8,
+       1.0
+      ],
+      "pop": 0.2
+     },
+     {
+      "text": "150,000,000 °C",
+      "at": [
+       1.4,
+       0,
+       2.2
+      ],
+      "size": 0.18,
+      "color": [
+       1.0,
+       0.45,
+       0.85
+      ],
+      "pop": 0.45
+     }
+    ],
+    "camera": {
+     "from": [
+      2.8,
+      -3.8,
+      2.6
+     ],
+     "to": [
+      2.2,
+      -3.2,
+      2.2
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   }
+  },
+  {
+   "id": "s032",
+   "line": "ITER is designed to produce ten times more fusion power than it uses to heat its plasma. It has faced long delays, and full operations are now planned for the late twenty thirties.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "scale": 1.8,
+      "args": {
+       "plasma": [
+        0.2,
+        0.8
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "Q = 10",
+      "at": [
+       0,
+       2,
+       4.6
+      ],
+      "size": 0.4,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -9,
+      4.0
+     ],
+     "to": [
+      0.6,
+      -8.4,
+      3.8
+     ],
+     "target": [
+      0,
+      0,
+      1.2
+     ],
+     "lens": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   }
+  },
+  {
+   "id": "s033",
+   "line": "Meanwhile, dozens of private companies are racing to build smaller, cheaper reactors, using powerful new superconducting magnets and clever designs.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       -2.2,
+       2,
+       0
+      ],
+      "scale": 0.45
+     },
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       3,
+       0
+      ],
+      "scale": 0.45,
+      "args": {
+       "cutaway": false
+      }
+     },
+     {
+      "prop": "laser_target",
+      "at": [
+       2.4,
+       2,
+       1.0
+      ],
+      "scale": 0.4,
+      "args": {
+       "fire": 0.5
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -6.0,
+      3.0
+     ],
+     "to": [
+      0.6,
+      -5.4,
+      2.8
+     ],
+     "target": [
+      0,
+      2,
+      0.8
+     ],
+     "lens": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   }
+  },
+  {
+   "id": "s034",
+   "line": "Why does it matter so much? Because fusion fuel is incredibly concentrated.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "vials",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 1,
+       "label": "D + T"
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.0,
+      0.6
+     ],
+     "to": [
+      0,
+      -1.8,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Why it matters"
+  },
+  {
+   "id": "s035",
+   "line": "Fusion reactions release millions of times more energy per kilogramme than burning coal, oil or gas. A pineapple-sized amount of fuel could match thousands of tonnes of coal.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "cantaloupe",
+      "at": [
+       -0.6,
+       0,
+       0
+      ],
+      "scale": 1.5,
+      "args": {
+       "mould": false
+      }
+     },
+     {
+      "prop": "crates",
+      "at": [
+       0.8,
+       0.5,
+       0
+      ],
+      "scale": 0.8,
+      "args": {
+       "label": "COAL",
+       "n": 6
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.2
+     ],
+     "to": [
+      0,
+      -2.3,
+      1.1
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s036",
+   "line": "It produces no carbon dioxide. And unlike today's nuclear power, it can't melt down. If anything goes wrong, the plasma simply cools and the reaction stops.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.0,
+        0.01
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      2.8,
+      -3.8,
+      2.6
+     ],
+     "to": [
+      2.2,
+      -3.2,
+      2.2
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   }
+  },
+  {
+   "id": "s037",
+   "line": "It does create some radioactivity, as neutrons hit the reactor walls, but far less long-lived waste than fission.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "geiger",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "clicks": [
+        [
+         0,
+         -40
+        ],
+        [
+         0.4,
+         -20
+        ],
+        [
+         0.8,
+         -30
+        ]
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -1.2,
+      0.6
+     ],
+     "to": [
+      0.2,
+      -1.0,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s038",
+   "line": "Scientists like to joke that fusion power is always thirty years away. But the experiments of the last few years have brought it closer than ever before.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "ALWAYS 30 YEARS AWAY?",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.16,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.0
+     ],
+     "to": [
+      0,
+      -2.1,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s039",
+   "line": "For billions of years, fusion has lit up the universe. Every atom of carbon in your body, and the oxygen you breathe, was forged by fusion inside ancient stars.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "sun_ball",
+      "at": [
+       0,
+       0,
+       0.5
+      ],
+      "scale": 1.2
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -6,
+      0.5
+     ],
+     "to": [
+      0.3,
+      -5.4,
+      0.6
+     ],
+     "target": [
+      0,
+      0,
+      0.5
+     ],
+     "lens": 35
+    }
+   },
+   "chapter": "Close"
+  },
+  {
+   "id": "s040",
+   "line": "Now, we're trying to light that same fire here on Earth.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.0,
+        0.4
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -1.4,
+      1.2
+     ],
+     "to": [
+      3.2,
+      -4.4,
+      2.6
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 28,
+     "target_to": [
+      0,
+      0,
+      0.9
+     ],
+     "lens_to": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   },
+   "hold": 1.5
+  }
+ ]
+}
