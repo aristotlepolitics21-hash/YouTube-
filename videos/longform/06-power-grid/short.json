@@ -600,6 +600,118 @@
   },
   {
    "id": "s006",
+   "line": "His team tested thousands of materials for the glowing filament, from cotton thread to fishing line, before settling on carbonised bamboo, which could last for well over a thousand hours.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bulb",
+      "at": [
+       0,
+       0,
+       0.02
+      ],
+      "args": {
+       "on": 0.4
+      }
+     },
+     {
+      "prop": "books",
+      "at": [
+       0.4,
+       0.2,
+       0
+      ],
+      "args": {
+       "n": 4
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.25,
+      -0.75,
+      0.35
+     ],
+     "to": [
+      0.18,
+      -0.65,
+      0.32
+     ],
+     "target": [
+      0,
+      0,
+      0.12
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s007",
+   "line": "Edison would eventually hold more than a thousand American patents. Newspapers called him the Wizard of Menlo Park.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "THE WIZARD OF MENLO PARK",
+       "n": 3
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "1,093 PATENTS",
+      "at": [
+       0,
+       0.3,
+       0.42
+      ],
+      "size": 0.1,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.7
+  },
+  {
+   "id": "s008",
    "line": "But a light bulb is useless without electricity to run it. So Edison designed a whole system: generators, cables, switches, fuses and meters.",
    "visual": {
     "type": "stage",
@@ -691,7 +803,7 @@
    "still": true
   },
   {
-   "id": "s007",
+   "id": "s009",
    "line": "On the fourth of September, eighteen eighty two, his Pearl Street power station in Manhattan switched on, lighting buildings across a few city blocks.",
    "visual": {
     "type": "stage",
@@ -758,7 +870,65 @@
    }
   },
   {
-   "id": "s008",
+   "id": "s010",
+   "line": "At first, it supplied about four hundred lamps, for around eighty customers. Within two years, it was lighting more than ten thousand.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "city",
+      "at": [
+       0,
+       3,
+       0
+      ],
+      "args": {
+       "count": 110,
+       "on": 0.15
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "400 → 10,000 LAMPS",
+      "at": [
+       0,
+       0,
+       2.8
+      ],
+      "size": 0.22,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -6.5,
+      2.4
+     ],
+     "to": [
+      0.5,
+      -5.5,
+      2.2
+     ],
+     "target": [
+      0,
+      3,
+      1.4
+     ],
+     "lens": 30
+    }
+   }
+  },
+  {
+   "id": "s011",
    "line": "Edison's system used direct current, or DC. The electricity flows steadily in one direction, like water through a pipe.",
    "visual": {
     "type": "stage",
@@ -799,7 +969,7 @@
    }
   },
   {
-   "id": "s009",
+   "id": "s012",
    "line": "But DC had a serious problem. Sent through long wires, much of the power was lost as heat.",
    "visual": {
     "type": "stage",
@@ -877,7 +1047,7 @@
    "still": true
   },
   {
-   "id": "s010",
+   "id": "s013",
    "line": "At the low voltages Edison used, a power station could only serve customers within about a mile. A city would need a power station in nearly every neighbourhood.",
    "visual": {
     "type": "stage",
@@ -948,7 +1118,7 @@
    "still": true
   },
   {
-   "id": "s011",
+   "id": "s014",
    "line": "Nikola Tesla was born in eighteen fifty six, in what is now Croatia, to a Serbian family.",
    "visual": {
     "type": "stage",
@@ -1070,7 +1240,7 @@
    "chapter": "Tesla's idea"
   },
   {
-   "id": "s012",
+   "id": "s015",
    "line": "He had a remarkable memory, and said he could design and test machines entirely in his imagination.",
    "visual": {
     "type": "stage",
@@ -1174,7 +1344,7 @@
    "still": true
   },
   {
-   "id": "s013",
+   "id": "s016",
    "line": "As a student, he became obsessed with an idea: a motor that ran on alternating current, AC, where the electricity rapidly switches direction back and forth.",
    "visual": {
     "type": "stage",
@@ -1215,7 +1385,7 @@
    }
   },
   {
-   "id": "s014",
+   "id": "s017",
    "line": "In eighteen eighty four, he arrived in New York with almost nothing, and went to work for Edison.",
    "visual": {
     "type": "stage",
@@ -1259,7 +1429,201 @@
    }
   },
   {
-   "id": "s015",
+   "id": "s018",
+   "line": "According to Tesla, Edison promised him fifty thousand dollars if he could improve the company's dynamos. When he did, Edison told him: you don't understand our American humour.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.55,
+       0.52,
+       0.5
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.18,
+        0.15
+       ],
+       "pants": [
+        0.2,
+        0.18,
+        0.15
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.5,
+       0.35,
+       0
+      ],
+      "turn": -25,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.04,
+       0.03,
+       0.03
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "pants": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.5,
+       0.35,
+       0
+      ],
+      "turn": 25,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "faraday_disk",
+      "at": [
+       0,
+       -0.4,
+       0
+      ],
+      "scale": 0.9,
+      "args": {
+       "spin": [
+        0,
+        1
+       ],
+       "glow": [
+        0,
+        1
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "$50,000?",
+      "at": [
+       0,
+       0.5,
+       2.15
+      ],
+      "size": 0.18,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.5
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.27,
+      0.22
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.025
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s019",
    "line": "But the two men were opposites. Edison was a tireless tinkerer, who tested thousands of ideas by trial and error. Tesla was a theorist. They soon fell out, and Tesla quit.",
    "visual": {
     "type": "stage",
@@ -1417,7 +1781,7 @@
    "still": true
   },
   {
-   "id": "s016",
+   "id": "s020",
    "line": "For a while, he even dug ditches to survive.",
    "visual": {
     "type": "stage",
@@ -1526,7 +1890,7 @@
    "still": true
   },
   {
-   "id": "s017",
+   "id": "s021",
    "line": "Then, in eighteen eighty eight, he patented his AC induction motor.",
    "visual": {
     "type": "stage",
@@ -1587,7 +1951,135 @@
    }
   },
   {
-   "id": "s018",
+   "id": "s022",
+   "line": "That May, he demonstrated it in a famous lecture to the American Institute of Electrical Engineers.",
+   "visual": {
+    "type": "stage",
+    "env": "hall",
+    "cast": [
+     {
+      "hair": [
+       0.04,
+       0.03,
+       0.03
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "pants": [
+        0.1,
+        0.1,
+        0.12
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       1.4,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       0.9,
+       0
+      ]
+     },
+     {
+      "prop": "induction_motor",
+      "at": [
+       0.3,
+       0.9,
+       0.875
+      ],
+      "scale": 0.4,
+      "args": {
+       "spin": [
+        0.1,
+        1
+       ]
+      }
+     },
+     {
+      "prop": "audience",
+      "at": [
+       0,
+       1.2,
+       0
+      ],
+      "rot": [
+       0,
+       0,
+       180
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -4.6,
+      2.7
+     ],
+     "to": [
+      0.3,
+      -4.0,
+      2.4
+     ],
+     "target": [
+      0,
+      1.2,
+      1.2
+     ],
+     "lens": 30
+    }
+   }
+  },
+  {
+   "id": "s023",
    "line": "Instead of brushes and sparking contacts, it used coils that create a magnetic field which spins around. The rotor is simply dragged around by it.",
    "visual": {
     "type": "stage",
@@ -1632,7 +2124,7 @@
    }
   },
   {
-   "id": "s019",
+   "id": "s024",
    "line": "It was simple, tough and efficient. Versions of it still run most of the world's fans, pumps, factory machines and many electric cars.",
    "visual": {
     "type": "stage",
@@ -1685,7 +2177,7 @@
    }
   },
   {
-   "id": "s020",
+   "id": "s025",
    "line": "The real advantage of AC was something else: the transformer.",
    "visual": {
     "type": "stage",
@@ -1725,7 +2217,7 @@
    "chapter": "The transformer"
   },
   {
-   "id": "s021",
+   "id": "s026",
    "line": "A transformer is two coils of wire wrapped around an iron core. Thanks to Faraday's induction, the changing current in one coil creates current in the other.",
    "visual": {
     "type": "stage",
@@ -1769,7 +2261,7 @@
    }
   },
   {
-   "id": "s022",
+   "id": "s027",
    "line": "Give the second coil more turns, and the voltage goes up. Give it fewer, and the voltage goes down. It only works with alternating current.",
    "visual": {
     "type": "stage",
@@ -1813,7 +2305,7 @@
    }
   },
   {
-   "id": "s023",
+   "id": "s028",
    "line": "Here's why that matters. The power lost as heat in a wire depends on the current. Raise the voltage a hundred times, and the current falls a hundred times, for the same power.",
    "visual": {
     "type": "stage",
@@ -1875,7 +2367,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s024",
+   "id": "s029",
    "line": "And because heat losses depend on the current squared, the losses drop ten thousand times.",
    "visual": {
     "type": "stage",
@@ -1922,7 +2414,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s025",
+   "id": "s030",
    "line": "So with AC, you can step the voltage up, send power hundreds of kilometres along thin wires, and step it down again near homes.",
    "visual": {
     "type": "stage",
@@ -2005,7 +2497,7 @@
    }
   },
   {
-   "id": "s026",
+   "id": "s031",
    "line": "In the mid eighteen eighties, engineers in Hungary, Britain and the United States developed practical transformers. In eighteen eighty six, William Stanley lit up the main street of Great Barrington, Massachusetts, with alternating current.",
    "visual": {
     "type": "stage",
@@ -2066,7 +2558,7 @@
    }
   },
   {
-   "id": "s027",
+   "id": "s032",
    "line": "George Westinghouse, an inventor and industrialist who had made a fortune from railway air brakes, saw the future. He bought Tesla's patents, and hired him.",
    "visual": {
     "type": "stage",
@@ -2243,7 +2735,69 @@
    "chapter": "The war of the currents"
   },
   {
-   "id": "s028",
+   "id": "s033",
+   "line": "Tesla reportedly received about sixty thousand dollars in cash and stock, plus a royalty for every horsepower of AC equipment sold.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "$60,000",
+      "at": [
+       0,
+       0,
+       1.1
+      ],
+      "size": 0.25,
+      "color": [
+       0.4,
+       1.0,
+       0.6
+      ],
+      "pop": 0.1
+     },
+     {
+      "text": "+ ROYALTIES",
+      "at": [
+       0,
+       0,
+       0.8
+      ],
+      "size": 0.14,
+      "color": [
+       1,
+       1,
+       1
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s034",
    "line": "Edison had invested everything in DC. He began a campaign to convince the public that AC's high voltages were deadly.",
    "visual": {
     "type": "stage",
@@ -2287,7 +2841,7 @@
    "still_at": 0.7
   },
   {
-   "id": "s029",
+   "id": "s035",
    "line": "His allies staged gruesome public demonstrations, killing animals with AC to frighten people.",
    "visual": {
     "type": "stage",
@@ -2340,7 +2894,7 @@
    }
   },
   {
-   "id": "s030",
+   "id": "s036",
    "line": "And when New York State introduced the electric chair for executions, it used an AC generator, partly to tie Westinghouse's name to death.",
    "visual": {
     "type": "stage",
@@ -2398,7 +2952,7 @@
    "still": true
   },
   {
-   "id": "s031",
+   "id": "s037",
    "line": "But it was true that high voltage needed respect. Overhead wires in cities were a tangled, dangerous mess, and people were killed by fallen lines.",
    "visual": {
     "type": "stage",
@@ -2453,7 +3007,141 @@
    "still": true
   },
   {
-   "id": "s032",
+   "id": "s038",
+   "line": "Meanwhile, AC kept proving itself. In eighteen ninety one, a mine in Telluride, Colorado, began running on AC power from a hydroelectric plant several kilometres away.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "pylons",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 4
+      }
+     },
+     {
+      "prop": "generator_hall",
+      "at": [
+       0,
+       14,
+       0
+      ],
+      "scale": 0.3,
+      "args": {
+       "n": 1
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      4,
+      -8,
+      3.0
+     ],
+     "to": [
+      3,
+      -7,
+      2.8
+     ],
+     "target": [
+      0,
+      3,
+      1.5
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.45,
+      0.42,
+      0.38
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s039",
+   "line": "That same year in Germany, engineers sent three-phase AC a hundred and seventy five kilometres, from Lauffen to Frankfurt.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "route",
+      "at": [
+       0,
+       0,
+       0.05
+      ],
+      "args": {
+       "stops": [
+        "LAUFFEN",
+        "FRANKFURT"
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "175 km",
+      "at": [
+       0,
+       0.5,
+       0.9
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.5
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      2.0
+     ],
+     "to": [
+      0.4,
+      -2.0,
+      1.6
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s040",
    "line": "The turning point came in eighteen ninety three. Westinghouse won the contract to light the World's Columbian Exposition in Chicago, underbidding its rival, General Electric.",
    "visual": {
     "type": "stage",
@@ -2521,7 +3209,7 @@
    "chapter": "The White City and Niagara Falls"
   },
   {
-   "id": "s033",
+   "id": "s041",
    "line": "Visitors saw a glittering White City, lit by tens of thousands of electric lamps, all running on alternating current. Tesla's machines were among the stars of the show.",
    "visual": {
     "type": "stage",
@@ -2582,7 +3270,7 @@
    }
   },
   {
-   "id": "s034",
+   "id": "s042",
    "line": "That same year, Westinghouse won the biggest prize of all: a contract to harness Niagara Falls.",
    "visual": {
     "type": "stage",
@@ -2644,7 +3332,7 @@
    }
   },
   {
-   "id": "s035",
+   "id": "s043",
    "line": "The falling water spun huge turbines, and Tesla-designed AC generators turned that motion into electricity.",
    "visual": {
     "type": "stage",
@@ -2695,7 +3383,7 @@
    }
   },
   {
-   "id": "s036",
+   "id": "s044",
    "line": "On the sixteenth of November, eighteen ninety six, power from Niagara was switched on in Buffalo, about forty kilometres away.",
    "visual": {
     "type": "stage",
@@ -2790,7 +3478,7 @@
    }
   },
   {
-   "id": "s037",
+   "id": "s045",
    "line": "Streetcars ran and factories hummed on electricity generated by a waterfall, miles away. The war of the currents was effectively over. AC had won.",
    "visual": {
     "type": "stage",
@@ -2845,7 +3533,7 @@
    }
   },
   {
-   "id": "s038",
+   "id": "s046",
    "line": "Edison's company merged with others to form General Electric, which soon embraced AC too.",
    "visual": {
     "type": "stage",
@@ -2940,7 +3628,7 @@
    "chapter": "What happened next"
   },
   {
-   "id": "s039",
+   "id": "s047",
    "line": "Westinghouse's company struggled with debts. Tesla famously tore up a contract that would have paid him royalties on every AC motor sold, to help keep the firm afloat. That story is often told, though historians debate the details.",
    "visual": {
     "type": "stage",
@@ -3011,7 +3699,7 @@
    "still": true
   },
   {
-   "id": "s040",
+   "id": "s048",
    "line": "Tesla went on to experiment with radio, wireless power and giant coils that threw lightning across his lab. But he died poor and alone in a New York hotel room in nineteen forty three.",
    "visual": {
     "type": "stage",
@@ -3125,7 +3813,7 @@
    }
   },
   {
-   "id": "s041",
+   "id": "s049",
    "line": "Today, the unit of magnetic field strength, the tesla, carries his name.",
    "visual": {
     "type": "stage",
@@ -3172,7 +3860,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s042",
+   "id": "s050",
    "line": "Today, almost every power grid on Earth runs on alternating current, switching direction fifty or sixty times every second.",
    "visual": {
     "type": "stage",
@@ -3219,7 +3907,64 @@
    "chapter": "The grid today"
   },
   {
-   "id": "s043",
+   "id": "s051",
+   "line": "Westinghouse's engineers picked sixty cycles a second for America. Much of the rest of the world settled on fifty. That's why some appliances don't work when you travel.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "waveform",
+      "at": [
+       0,
+       0,
+       0.55
+      ],
+      "args": {
+       "kind": "ac"
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "60 Hz  vs  50 Hz",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.14,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      0.7
+     ],
+     "to": [
+      0,
+      -2.3,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s052",
    "line": "Giant transformers step the voltage up to hundreds of thousands of volts for long journeys across the country, then step it down to the voltage in your sockets.",
    "visual": {
     "type": "stage",
@@ -3293,7 +4038,7 @@
    }
   },
   {
-   "id": "s044",
+   "id": "s053",
    "line": "In a twist Edison might have enjoyed, very long distance links now often use direct current again, at extremely high voltages, thanks to modern electronics.",
    "visual": {
     "type": "stage",
@@ -3345,7 +4090,7 @@
    }
   },
   {
-   "id": "s045",
+   "id": "s054",
    "line": "But the basic system, generators, transformers and alternating current, is the one Tesla and Westinghouse fought for.",
    "visual": {
     "type": "stage",
@@ -3397,7 +4142,61 @@
    "still": true
   },
   {
-   "id": "s046",
+   "id": "s055",
+   "line": "And even now, hundreds of millions of people still live without electricity. The job that began in eighteen eighty two isn't finished.",
+   "visual": {
+    "type": "stage",
+    "env": "night",
+    "cast": [],
+    "props": [
+     {
+      "prop": "houses",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "on": [
+        0.95,
+        0.96
+       ]
+      }
+     },
+     {
+      "prop": "candle",
+      "at": [
+       0.2,
+       -0.6,
+       0
+      ],
+      "scale": 2.0
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -5.5,
+      1.8
+     ],
+     "to": [
+      0.4,
+      -5.0,
+      1.7
+     ],
+     "target": [
+      0,
+      1,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s056",
    "line": "Edison gave the world the light bulb. But it was alternating current that carried the light into every home.",
    "visual": {
     "type": "stage",

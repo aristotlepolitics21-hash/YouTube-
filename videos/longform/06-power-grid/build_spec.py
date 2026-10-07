@@ -39,6 +39,11 @@ S("The winner shaped the electrical grid that powers almost the entire world tod
 S("In eighteen seventy nine, Edison's lab in Menlo Park, New Jersey, produced a practical electric light bulb that could glow for hours.",
   stage("lab", BENCH, cast=[who(EDISON, pose=WORK)], props=[TABLE, P("bulb", (0, -0.1, TOP + 0.02), args={"on": 0.3}), P("glassware", (-0.5, -0.1, TOP), args={"n": 3})],
         env_opts=LAB), chapter="Edison's light")
+S("His team tested thousands of materials for the glowing filament, from cotton thread to fishing line, before settling on carbonised bamboo, which could last for well over a thousand hours.",
+  stage("studio", cam((0.25, -0.75, 0.35), (0.18, -0.65, 0.32), (0, 0, 0.12)), props=[P("bulb", (0, 0, 0.02), args={"on": 0.4}), P("books", (0.4, 0.2, 0), args={"n": 4})]))
+S("Edison would eventually hold more than a thousand American patents. Newspapers called him the Wizard of Menlo Park.",
+  stage("studio", cam((0.2, -1.1, 0.8), (0.1, -0.95, 0.75), (0, 0, 0.1)), props=[P("newspapers", args={"headline": "THE WIZARD OF MENLO PARK", "n": 3})],
+        texts=[T("1,093 PATENTS", (0, 0.3, 0.42), 0.1, pop=0.3)]), still=True, still_at=0.7)
 S("But a light bulb is useless without electricity to run it. So Edison designed a whole system: generators, cables, switches, fuses and meters.",
   stage("studio", cam((0, -2.6, 1.2), (0.3, -2.2, 1.1), (0, 0, 0.5)),
         props=[P("bulb", (-0.9, 0, 0.1), args={"on": 0.05}), P("wall_switch", (-0.3, 0, 0.5), args={"flip": 0.2}), P("meter", (0.3, 0, 0.15), args={"needle": [[0, 0], [0.3, 30]]}),
@@ -46,6 +51,9 @@ S("But a light bulb is useless without electricity to run it. So Edison designed
 S("On the fourth of September, eighteen eighty two, his Pearl Street power station in Manhattan switched on, lighting buildings across a few city blocks.",
   stage("night", cam((0, -5.5, 2.0), (0.6, -4.8, 1.8), (0, 2, 1.2), lens=30), props=[P("generator_hall", (0, -0.5, 0), scale=0.3), P("city", (0, 3, 0), args={"count": 70, "on": 0.3})],
         texts=[T("PEARL STREET  1882", (0, 0.5, 1.2), 0.2, pop=0.1)]))
+S("At first, it supplied about four hundred lamps, for around eighty customers. Within two years, it was lighting more than ten thousand.",
+  stage("night", cam((0, -6.5, 2.4), (0.5, -5.5, 2.2), (0, 3, 1.4), lens=30), props=[P("city", (0, 3, 0), args={"count": 110, "on": 0.15})],
+        texts=[T("400 → 10,000 LAMPS", (0, 0, 2.8), 0.22, pop=0.4)]))
 S("Edison's system used direct current, or DC. The electricity flows steadily in one direction, like water through a pipe.",
   stage("studio", cam((0, -2.6, 0.7), (0, -2.3, 0.65), (0, 0, 0.55)), props=[P("waveform", (0, 0, 0.55), args={"kind": "dc"})]))
 S("But DC had a serious problem. Sent through long wires, much of the power was lost as heat.",
@@ -68,6 +76,11 @@ S("As a student, he became obsessed with an idea: a motor that ran on alternatin
   stage("studio", cam((0, -2.6, 0.7), (0, -2.3, 0.65), (0, 0, 0.55)), props=[P("waveform", (0, 0, 0.55), args={"kind": "ac"})]))
 S("In eighteen eighty four, he arrived in New York with almost nothing, and went to work for Edison.",
   stage("studio", cam((0, -2.6, 2.0), (0.4, -2.0, 1.6), (0, 0, 0.3)), props=[P("route", (0, 0, 0.05), args={"stops": ["PARIS", "NEW YORK"]})]))
+S("According to Tesla, Edison promised him fifty thousand dollars if he could improve the company's dynamos. When he did, Edison told him: you don't understand our American humour.",
+  stage("lab", cam((0, -2.6, 1.6), (0.2, -2.2, 1.5), (0, 0.3, 1.25)),
+        cast=[who(EDISON, at=(-0.5, 0.35, 0), turn=-25, pose=PRESENT), who(TESLA, at=(0.5, 0.35, 0), turn=25, pose=STAND)],
+        props=[P("faraday_disk", (0, -0.4, 0), scale=0.9, args={"spin": [0, 1], "glow": [0, 1]})],
+        texts=[T("$50,000?", (0, 0.5, 2.15), 0.18, pop=0.5)], env_opts=LAB), still=True)
 S("But the two men were opposites. Edison was a tireless tinkerer, who tested thousands of ideas by trial and error. Tesla was a theorist. They soon fell out, and Tesla quit.",
   stage("lab", cam((0, -2.6, 1.6), (0.2, -2.2, 1.5), (0, 0.3, 1.25)),
         cast=[who(EDISON, at=(-0.5, 0.35, 0), turn=-25, pose=PRESENT), who(TESLA, at=(0.5, 0.35, 0), turn=25, pose=STAND)], env_opts=LAB), still=True)
@@ -76,6 +89,9 @@ S("For a while, he even dug ditches to survive.",
 S("Then, in eighteen eighty eight, he patented his AC induction motor.",
   stage("studio", cam((0.6, -1.6, 0.8), (0.4, -1.3, 0.7), (0, 0, 0.5)), props=[P("induction_motor", args={"spin": [0.15, 1.0], "turns": 3})],
         texts=[T("1888", (-0.8, 0.3, 1.0), 0.2, pop=0.1)]))
+S("That May, he demonstrated it in a famous lecture to the American Institute of Electrical Engineers.",
+  stage("hall", cam((0, -4.6, 2.7), (0.3, -4.0, 2.4), (0, 1.2, 1.2), lens=30), cast=[who(TESLA, at=(0, 1.4, 0), pose=PRESENT)],
+        props=[P("table", (0, 0.9, 0)), P("induction_motor", (0.3, 0.9, TOP), scale=0.4, args={"spin": [0.1, 1]}), P("audience", (0, 1.2, 0), rot=[0, 0, 180])]))
 S("Instead of brushes and sparking contacts, it used coils that create a magnetic field which spins around. The rotor is simply dragged around by it.",
   stage("studio", cam((0.25, -1.2, 0.55), (0.15, -1.0, 0.5), (0, 0, 0.5)), props=[P("induction_motor", args={"spin": [0.05, 1.0], "turns": 4})]))
 S("It was simple, tough and efficient. Versions of it still run most of the world's fans, pumps, factory machines and many electric cars.",
@@ -106,6 +122,9 @@ S("George Westinghouse, an inventor and industrialist who had made a fortune fro
   stage("lab", cam((0, -2.6, 1.6), (0.2, -2.2, 1.5), (0, 0.3, 1.25)),
         cast=[who(WESTINGHOUSE, at=(-0.45, 0.35, 0), turn=-12, pose=PRESENT), who(TESLA, at=(0.45, 0.35, 0), turn=12)],
         props=[TABLE, P("induction_motor", (0, -0.1, TOP), scale=0.3)], env_opts=LAB), still=True, chapter="The war of the currents")
+S("Tesla reportedly received about sixty thousand dollars in cash and stock, plus a royalty for every horsepower of AC equipment sold.",
+  stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("$60,000", (0, 0, 1.1), 0.25, (0.4, 1.0, 0.6), pop=0.1),
+        T("+ ROYALTIES", (0, 0, 0.8), 0.14, (1, 1, 1), pop=0.4)]), still=True, still_at=0.8)
 S("Edison had invested everything in DC. He began a campaign to convince the public that AC's high voltages were deadly.",
   stage("studio", cam((0.2, -1.1, 0.8), (0.1, -0.95, 0.75), (0, 0, 0.1)), props=[P("newspapers", args={"headline": "THE DEADLY ALTERNATING CURRENT", "n": 3})]),
   still=True, still_at=0.7)
@@ -120,6 +139,12 @@ S("But it was true that high voltage needed respect. Overhead wires in cities we
   still=True)
 
 # ===================================================================== WORLD'S FAIR & NIAGARA
+S("Meanwhile, AC kept proving itself. In eighteen ninety one, a mine in Telluride, Colorado, began running on AC power from a hydroelectric plant several kilometres away.",
+  stage("sky", cam((4, -8, 3.0), (3, -7, 2.8), (0, 3, 1.5), lens=30), props=[P("pylons", args={"n": 4}), P("generator_hall", (0, 14, 0), scale=0.3, args={"n": 1})],
+        env_opts={"sky": SKY["sky"], "floor": [0.45, 0.42, 0.38]}), still=True)
+S("That same year in Germany, engineers sent three-phase AC a hundred and seventy five kilometres, from Lauffen to Frankfurt.",
+  stage("studio", cam((0, -2.6, 2.0), (0.4, -2.0, 1.6), (0, 0, 0.3)), props=[P("route", (0, 0, 0.05), args={"stops": ["LAUFFEN", "FRANKFURT"]})],
+        texts=[T("175 km", (0, 0.5, 0.9), 0.15, pop=0.5)]))
 S("The turning point came in eighteen ninety three. Westinghouse won the contract to light the World's Columbian Exposition in Chicago, underbidding its rival, General Electric.",
   stage("night", cam((0, -9, 3.0), (0.6, -8.0, 2.8), (0, 3, 1.5), lens=28), props=[P("city", (0, 3, 0), args={"count": 90, "on": 0.2}), P("tesla_coil", (0, -2, 0), scale=0.6)],
         texts=[T("CHICAGO 1893", (0, -1, 3.2), 0.3, pop=0.15)]), chapter="The White City and Niagara Falls")
@@ -154,6 +179,9 @@ S("Today, the unit of magnetic field strength, the tesla, carries his name.",
 S("Today, almost every power grid on Earth runs on alternating current, switching direction fifty or sixty times every second.",
   stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0)), texts=[T("50 Hz  /  60 Hz", (0, -1.2, 1.25), 0.2, (1.0, 0.6, 0.2), pop=0.3)]), still=True,
   chapter="The grid today")
+S("Westinghouse's engineers picked sixty cycles a second for America. Much of the rest of the world settled on fifty. That's why some appliances don't work when you travel.",
+  stage("studio", cam((0, -2.6, 0.7), (0, -2.3, 0.65), (0, 0, 0.55)), props=[P("waveform", (0, 0, 0.55), args={"kind": "ac"})],
+        texts=[T("60 Hz  vs  50 Hz", (0, 0, 1.0), 0.14, pop=0.4)]))
 S("Giant transformers step the voltage up to hundreds of thousands of volts for long journeys across the country, then step it down to the voltage in your sockets.",
   stage("sky", cam((8, -3, 3.0), (6, 2, 3.2), (0, 6, 2.2)), props=[P("pylons", args={"n": 5, "current": [0.05, 0.2]}), P("transformer", (0, -1.2, 0), scale=1.5)],
         env_opts=SKY))
@@ -162,6 +190,9 @@ S("In a twist Edison might have enjoyed, very long distance links now often use 
 S("But the basic system, generators, transformers and alternating current, is the one Tesla and Westinghouse fought for.",
   stage("lab", cam((-2.0, -3.5, 1.8), (1.0, -3.2, 1.6), (0, 1, 0.8), lens=26), props=[P("generator_hall", (0, 1.0, 0), scale=0.8)],
         env_opts={"wall": [0.2, 0.22, 0.24], "world": [0.05, 0.05, 0.06]}), still=True)
+S("And even now, hundreds of millions of people still live without electricity. The job that began in eighteen eighty two isn't finished.",
+  stage("night", cam((0, -5.5, 1.8), (0.4, -5.0, 1.7), (0, 1, 0.8)), props=[P("houses", (0, 0, 0), args={"on": [0.95, 0.96]}), P("candle", (0.2, -0.6, 0), scale=2.0)]),
+  still=True)
 S("Edison gave the world the light bulb. But it was alternating current that carried the light into every home.",
   stage("night", cam((0, -2.0, 1.4), (0, -7.5, 3.0), (0, 1.5, 1.0), (0, 4, 1.2), 40, 28), props=[P("houses", (0, 1.5, 0), args={"on": [0.1, 0.5]}),
                                                                                             P("pylons", (-5, -2, 0), args={"n": 4, "current": [0.1, 0.3]}),
