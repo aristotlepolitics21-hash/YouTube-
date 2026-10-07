@@ -57,6 +57,11 @@ S("A century later, war created an urgent need for calculation.",
 S("In Britain, codebreakers at Bletchley Park built Colossus, an electronic machine that helped crack German codes. It was kept secret for decades.",
   stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), props=[P("eniac", args={"panels": 4, "seed": 9})],
         texts=[T("COLOSSUS 1944", (0.5, 0.8, 2.2), 0.15, pop=0.2)], env_opts={"wall": [0.25, 0.27, 0.22], "world": [0.03, 0.03, 0.03]}), still=True)
+S("In Germany, Konrad Zuse had already built the Z3 in nineteen forty one, a programmable machine that used thousands of clicking telephone relays.",
+  stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), props=[P("eniac", args={"panels": 3, "seed": 11, "blink": False})],
+        texts=[T("Z3  1941", (0.5, 0.8, 2.2), 0.15, pop=0.2)], env_opts={"wall": [0.3, 0.28, 0.25], "world": [0.03, 0.03, 0.03]}), still=True)
+S("And in Iowa, John Atanasoff and Clifford Berry built an electronic calculator for solving equations. Who built the first computer depends on exactly how you define one.",
+  stage("lab", BENCH, cast=[who(ECKERT | {"hair": [0.4, 0.3, 0.2]}, pose=WORK)], props=[TABLE, P("vacuum_tube", (0, -0.1, TOP), scale=1.5)], env_opts=ROOM), still=True)
 S("In America, the army had a different problem: artillery.",
   stage("sky", cam((0, -5, 1.2), (0.3, -4.6, 1.2), (0, 0, 0.8)), props=[P("trajectory", args={"draw": [0.1, 0.9]})],
         env_opts={"sky": {"horizon": [0.7, 0.6, 0.5], "zenith": [0.25, 0.3, 0.45]}, "floor": [0.35, 0.33, 0.22]}), chapter="The firing tables")
@@ -75,6 +80,9 @@ S("At the University of Pennsylvania, dozens of women worked on these calculatio
 S("A physicist named John Mauchly had an idea: build a calculator that used electronic vacuum tubes instead of moving parts.",
   stage("lab", BENCH, cast=[who(MAUCHLY, pose=PRESENT)], props=[TABLE, P("vacuum_tube", (0.1, -0.1, TOP), scale=2.0)], env_opts=ROOM), still=True,
   chapter="Building ENIAC")
+S("The project was based at the university's Moore School of Electrical Engineering, under the code name Project PX. It eventually cost about half a million dollars.",
+  stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("PROJECT PX", (0, 0, 1.1), 0.25, pop=0.1), T("$487,000", (0, 0, 0.78), 0.14, (1, 1, 1), pop=0.4)]),
+  still=True, still_at=0.8)
 S("A vacuum tube is like a light bulb that can act as a switch, turning a current on and off thousands of times a second, with nothing moving at all.",
   stage("studio", cam((0.2, -0.6, 0.25), (0.14, -0.5, 0.22), (0, 0, 0.1)), props=[P("vacuum_tube", args={"on": 0.2, "flicker": True})]))
 S("With a brilliant young engineer, J. Presper Eckert, Mauchly convinced the army to pay for it in nineteen forty three.",
@@ -90,6 +98,9 @@ S("Eckert solved it by running the tubes well below their limits, and choosing t
 S("The finished machine had almost eighteen thousand vacuum tubes, seventy thousand resistors, and around five million hand-soldered joints.",
   stage("lab", cam((-0.8, -1.4, 1.4), (-0.6, -1.0, 1.4), (-1.6, 1.2, 1.3), lens=28), props=[P("eniac")],
         texts=[T("17,468 TUBES", (0.2, 1.0, 2.1), 0.15, pop=0.3)], env_opts=ROOM))
+S("Surprisingly, it didn't count in binary. ENIAC worked in ordinary decimal numbers, using rings of ten tubes to store each digit.",
+  stage("studio", cam((0.4, -1.2, 0.5), (0.3, -1.0, 0.45), (0, 0, 0.12)),
+        props=[P("vacuum_tube", (0.12 * k - 0.54, 0, 0), args={"on": 0.05 if k == 7 else 2}) for k in range(10)], texts=[T("7", (0, 0.2, 0.45), 0.2, pop=0.2)]))
 S("Its panels, arranged in a giant U, stretched about thirty metres, and the whole machine weighed thirty tonnes.",
   stage("lab", cam((2.0, -3.0, 3.0), (1.6, -2.4, 3.2), (-0.3, 1.2, 1.0), lens=24), props=[P("eniac", args={"panels": 12})], env_opts=ROOM), still=True)
 
@@ -110,6 +121,9 @@ S("They also invented techniques that programmers still use, like breaking a pro
         props=[TABLE, P("punch_cards", (0, -0.1, TOP))], env_opts=ROOM), still=True)
 
 # ===================================================================== FEBRUARY 1946
+S("Over at Harvard, the programmer Grace Hopper later taped a real moth into a logbook after it jammed a computer: the first actual case of bug being found.",
+  stage("studio", cam((0.2, -0.8, 0.5), (0.12, -0.65, 0.45), (0, 0, 0.05)), props=[P("notebook"), P("birds", (0.02, 0, 0.06), scale=0.15, args={"n": 1, "area": 0.01})]),
+  still=True)
 S("ENIAC was finished too late for the war. But on the fifteenth of February, nineteen forty six, it was unveiled to the press.",
   stage("lab", ENIAC_CAM, props=[P("eniac")], texts=[T("15 FEBRUARY 1946", (0.2, 0.6, 2.4), 0.15, pop=0.15)], env_opts=ROOM), chapter="February 1946")
 S("For the demonstration, it calculated the path of a shell that takes thirty seconds to reach its target, in just twenty seconds. Faster than the shell itself could fly.",
@@ -139,6 +153,11 @@ S("Almost every computer since has been built on that idea.",
   stage("studio", cam((0, -1.6, 0.6), (0.2, -1.3, 0.55), (0, 0, 0.2)), props=[P("laptop", args={"glow": 0.2}), P("phone", (0.4, 0, 0.08), rot=[-70, 0, 0])]))
 
 # ===================================================================== SHRINKING
+S("Eckert and Mauchly started their own company, and built UNIVAC, one of the first computers sold to businesses. In nineteen fifty two, it correctly predicted Eisenhower's landslide in the US election, live on television.",
+  stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), props=[P("eniac", args={"panels": 6, "seed": 21})],
+        texts=[T("UNIVAC  1952", (0.5, 0.8, 2.2), 0.15, pop=0.2)], env_opts={"wall": [0.4, 0.42, 0.45], "world": [0.04, 0.04, 0.05]}), still=True)
+S("Betty Holberton, one of the original six, went on to help develop early programming languages, including COBOL, which still runs many banking systems today.",
+  stage("lab", cam((0.5, -1.8, 1.55), (0.35, -1.5, 1.5), "cast0.head"), cast=[who(PROGRAMMERS[2], pose=PRESENT)], env_opts=ROOM), still=True)
 S("Next, the machines began to shrink. In nineteen forty seven, scientists at Bell Labs invented the transistor, a tiny solid switch that could replace the fragile vacuum tube.",
   stage("studio", cam((0.25, -0.8, 0.35), (0.2, -0.7, 0.3), (0.1, 0, 0.06)), props=[P("vacuum_tube", (-0.05, 0, 0)), P("transistor", (0.2, 0, 0))],
         texts=[T("1947", (0.1, 0.2, 0.3), 0.08, pop=0.3)]), chapter="Smaller and smaller")
@@ -148,6 +167,12 @@ S("In nineteen sixty five, Gordon Moore predicted that the number of transistors
   stage("studio", cam((0, -2.6, 1.2), (0, -2.3, 1.1), (0, 0, 0.7)),
         props=[P("microchip", (x, 0, 0), scale=0.4 + 0.25 * i, pop=0.1 + 0.15 * i) for i, x in enumerate((-1.2, -0.6, 0.1, 0.95))],
         texts=[T("MOORE'S LAW", (0, 0, 1.5), 0.2, pop=0.05)]))
+S("In nineteen seventy one, Intel squeezed an entire computer processor onto one chip, the four zero zero four, with about two thousand three hundred transistors.",
+  stage("studio", cam((0.3, -0.7, 0.45), (0.2, -0.55, 0.38), (0, 0, 0.03)), props=[P("microchip", args={"glow": [0.1, 0.4]})],
+        texts=[T("4004", (0, 0.3, 0.3), 0.1, pop=0.3)]))
+S("By the late nineteen seventies, computers had shrunk enough to sit on a desk at home.",
+  stage("lab", BENCH, cast=[who(PROGRAMMERS[0] | {"outfit": {**PROGRAMMERS[0]["outfit"], "shirt": [0.8, 0.5, 0.1], "pants": [0.2, 0.25, 0.5]}}, pose=WORK)],
+        props=[TABLE, P("laptop", (0, -0.15, TOP), args={"glow": 0.2})], env_opts={"wall": [0.5, 0.4, 0.3]}), still=True)
 S("A modern smartphone chip holds billions of transistors, each smaller than most viruses.",
   stage("studio", cam((0.15, -0.35, 0.25), (0.08, -0.25, 0.18), (0, 0, 0.03)), props=[P("microchip", args={"glow": [0, 0.3]})],
         texts=[T("BILLIONS", (0, 0.25, 0.2), 0.08, pop=0.4)]))
@@ -155,6 +180,9 @@ S("A modern smartphone chip holds billions of transistors, each smaller than mos
 # ===================================================================== LEGACY
 S("ENIAC itself went on to calculate weather forecasts, the design of nuclear weapons, and the behaviour of wind tunnels and cosmic rays.",
   stage("lab", ENIAC_CAM, props=[P("eniac")], env_opts=ROOM), still=True, chapter="Legacy")
+S("And in nineteen seventy three, a court ruled that ENIAC's patent was invalid, partly because Atanasoff had got there first with key ideas.",
+  stage("hall", cam((0, -2.4, 1.6), (0, -2.0, 1.55), (0, 0.4, 1.3)), props=[P("table", (0, 0.6, 0), args={"w": 2.0}), P("newspapers", (0, 0.6, TOP), args={"headline": "PATENT INVALID", "n": 2})],
+        texts=[T("1973", (0, 1.0, 1.9), 0.2, pop=0.2)]), still=True)
 S("It was switched off for the last time in October nineteen fifty five. Parts of it survive in museums today.",
   stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), props=[P("eniac", args={"blink": False})],
         env_opts={"wall": [0.1, 0.11, 0.11], "world": [0.01, 0.01, 0.01]}), still=True)
@@ -172,7 +200,7 @@ write(HERE, {
                     "From Babbage and Colossus to the transistor and your phone, told in 3D animation."),
     "tags": ["ENIAC", "first computer", "history of computing", "ENIAC six", "vacuum tube", "transistor", "Alan Turing",
              "Moore's law", "3D animation"],
-    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.25, "sentence_silence": 0.28,
+    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.32, "sentence_silence": 0.28,
               "pronunciations": {"ENIAC": "Ee-nee-ack", "Mauchly": "Mawk-lee", "Presper": "Pres-per", "McNulty": "Mac-Nul-tee",
                                  "Wescoff": "Wes-coff", "Bilas": "Bee-las", "Lichterman": "Lick-ter-man", "Bletchley": "Bletch-lee",
                                  "Neumann": "Noy-man", "Kilby": "Kil-bee"}},
