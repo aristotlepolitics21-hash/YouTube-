@@ -3,3 +3,6 @@ __pycache__/
 videos/*/out/
 videos/shorts/*/build/
 videos/shorts/*/final/*.mp4
+videos/longform/*/build/
+videos/longform/*/final/*.mp4
+videos/longform/kit-test/
