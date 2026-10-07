@@ -2515,6 +2515,167 @@ def sun_ball(frames, radius=1.0):
         o.parent = root
     return root
 
+
+# ------------------------------------------------------------------ AI / vision / brain
+def neural_net(frames, layers=(6, 8, 8, 5, 3), spacing=0.6, fire=(0.1, 0.8), seed=2):
+    """Layers of glowing nodes joined by thin links; a wave of activation sweeps left to right."""
+    rng = random.Random(seed)
+    root = empty("neural_net")
+    link_m = mat("link", (0.4, 0.6, 0.9), 0.4, emit=0.4, alpha=0.6)
+    pos = []
+    for li, n in enumerate(layers):
+        x = (li - (len(layers) - 1) / 2) * spacing
+        pos.append([V((x, 0, (k - (n - 1) / 2) * 0.16)) for k in range(n)])
+    for li in range(len(layers) - 1):
+        for a in pos[li]:
+            for b in pos[li + 1]:
+                if rng.random() < 0.7:
+                    curve_obj("link", [a, b], 0.0025, link_m, root)
+    span = fire[1] - fire[0]
+    for li, layer in enumerate(pos):
+        t = fire[0] + span * li / max(1, len(pos) - 1)
+        for k, p in enumerate(layer):
+            m, st = fx.emissive(f"node{li}_{k}", (0.3, 0.9, 1.0) if li < len(pos) - 1 else (1.0, 0.8, 0.2), 0.5)
+            sph("node", tuple(p), 0.045, m, parent=root)
+            on = rng.random() < 0.6 or li == len(pos) - 1 and k == 0
+            glow_keys(st, frames, [(0, 0.5), (t, 0.5), (t + 0.04, 8 if on else 1.0), (min(1, t + 0.2), 3 if on else 0.5)])
+    return root
+
+
+CAT = ["..........",
+       ".X......X.",
+       ".XX....XX.",
+       ".XXXXXXXX.",
+       ".XX.XX.XX.",
+       ".XXXXXXXX.",
+       ".XXX..XXX.",
+       "..XXXXXX..",
+       "...XXXX...",
+       ".........."]
+
+
+def pixel_image(frames, pattern="cat", size=1.0, reveal=None, numbers=False):
+    """A grid of coloured squares forming a simple picture (a cat face by default)."""
+    root = empty("pixels")
+    grid = CAT
+    n = len(grid)
+    cell = size / n
+    fur, bg = mat("px_fur", (0.95, 0.45, 0.08), 0.5, emit=0.12), mat("px_bg", (0.08, 0.2, 0.45), 0.5, emit=0.08)
+    eye = mat("px_eye", (0.2, 0.9, 0.4), 0.5, emit=1.0)
+    for r, row in enumerate(grid):
+        for c, ch in enumerate(row):
+            m = fur if ch == "X" else bg
+            if (r, c) in ((4, 3), (4, 6)):
+                m = eye
+            b = box("px", ((c - (n - 1) / 2) * cell, 0, (n - 1 - r) * cell), (cell * 0.92, 0.02, cell * 0.92), m, parent=root)
+            if reveal:
+                visible_from(b, frames, reveal[0] + (reveal[1] - reveal[0]) * (r * n + c) / (n * n))
+            if numbers and r % 3 == 1 and c % 3 == 1:
+                t = fx.text(str(200 if ch == "X" else 40), mat("pxnum", (1, 1, 1), 0.4, emit=2), b.location + V((0, -0.02, 0)), size=cell * 0.35, depth=0.001)
+                t.parent = root
+    return root
+
+
+def conv_filter(frames, size=1.0, sweep=(0.1, 0.9)):
+    """A glowing 3x3 window that sweeps across a 10x10 image, row by row."""
+    root = empty("conv")
+    cell = size / 10
+    fm = mat("filter", (1.0, 0.85, 0.2), 0.3, emit=2, alpha=0.5)
+    w = box("window", (0, -0.03, 0), (cell * 3, 0.01, cell * 3), fm, parent=root)
+    steps = [(c, r) for r in range(0, 8, 2) for c in range(0, 8)]
+    for i, (c, r) in enumerate(steps):
+        t = sweep[0] + (sweep[1] - sweep[0]) * i / len(steps)
+        props.key(w, key_frac(frames, t), location=((c + 1 - 4.5) * cell, -0.03, (9 - r - 1) * cell))
+    return root
+
+
+def car(frames, drive=None, color=(0.85, 0.15, 0.15), boxes=False):
+    root = empty("car")
+    body = mat("car_paint", color, 0.25, 0.4)
+    box("body", (0, 0, 0.35), (0.9, 2.0, 0.4), body, 0.08, root)
+    box("cabin", (0, 0.1, 0.7), (0.8, 1.1, 0.35), mat("car_glass", (0.1, 0.12, 0.15), 0.1, 0.3), 0.1, root)
+    for sx in (-1, 1):
+        for sy in (-1, 1):
+            cyl("wheel", (sx * 0.45, sy * 0.65, 0.18), 0.18, 0.15, mat("tyre", (0.03, 0.03, 0.03), 0.6), rot=(0, R(90), 0), parent=root)
+    box("lidar", (0, 0.1, 0.92), (0.2, 0.2, 0.08), mat("lidar", (0.1, 0.1, 0.12), 0.3), parent=root)
+    if boxes:
+        bm = mat("bbox", (0.2, 1.0, 0.4), 0.3, emit=4)
+        bpy.ops.mesh.primitive_cube_add(size=1, location=(0, 0, 0.5))
+        b = bpy.context.active_object
+        b.scale = (1.0, 2.2, 1.0)
+        b.modifiers.new("wire", "WIREFRAME").thickness = 0.02
+        b.data.materials.append(bm)
+        b.parent = root
+    if drive:
+        for t, y in drive:
+            props.key(root, key_frac(frames, t), location=(root.location.x, y, 0))
+    return root
+
+
+def bbox_label(frames, label="CAT 97%", size=(1.0, 1.0), color=(0.2, 1.0, 0.4), at=0.3):
+    root = empty("bbox")
+    m = mat("bbox_" + label, color, 0.3, emit=4)
+    w, h = size
+    for (x, z, sx, sz) in ((0, h / 2, w, 0.02), (0, -h / 2, w, 0.02), (-w / 2, 0, 0.02, h), (w / 2, 0, 0.02, h)):
+        box("edge", (x, 0, z), (sx, 0.01, sz), m, parent=root)
+    t = fx.text(label, m, (-w / 2 + 0.25, 0, h / 2 + 0.08), size=0.1, depth=0.005)
+    t.parent = root
+    visible_from(root, frames, at)
+    return root
+
+
+def eye(frames, look=None):
+    root = empty("eye")
+    sph("eyeball", (0, 0, 0), 0.5, mat("sclera", (0.95, 0.95, 0.93), 0.2), parent=root)
+    iris = sph("iris", (0, -0.42, 0), 0.25, mat("iris", (0.2, 0.55, 0.85), 0.3), (1, 0.35, 1), root)
+    sph("pupil", (0, -0.48, 0), 0.11, mat("pupil", (0.01, 0.01, 0.01), 0.1), (1, 0.3, 1), root)
+    sph("cornea", (0, -0.15, 0), 0.47, mat("cornea", (1, 1, 1), 0.02, alpha=0.15), parent=root)
+    if look:
+        for t, (rx, rz) in look:
+            props.key(root, key_frac(frames, t), rotation_euler=(R(rx), 0, R(rz)))
+    return root
+
+
+def neuron(frames, fire=None, seed=1, color=(0.95, 0.55, 0.3)):
+    """A nerve cell: body, branching dendrites and a long axon; fire=[t0, t1] sends a glowing pulse down the axon."""
+    rng = random.Random(seed)
+    root = empty("neuron")
+    m = mat("neuron", color, 0.4, emit=0.5)
+    sph("soma", (0, 0, 0), 0.15, m, parent=root)
+    for k in range(7):
+        a = rng.uniform(0, 2 * math.pi)
+        pts = [V((0, 0, 0))]
+        d = V((math.cos(a), rng.uniform(-0.4, 0.4), math.sin(a))).normalized()
+        p = V((0, 0, 0))
+        for s in range(4):
+            p = p + d * 0.12
+            d = (d + V((rng.uniform(-0.5, 0.5), rng.uniform(-0.5, 0.5), rng.uniform(-0.5, 0.5)))).normalized()
+            pts.append(p.copy())
+        curve_obj("dendrite", pts, 0.015, m, root)
+    axon = [V((0, 0, 0))] + [V((0.15 + 0.12 * i, 0.03 * math.sin(i), 0.02 * math.cos(i * 1.3))) for i in range(18)]
+    curve_obj("axon", axon, 0.02, m, root)
+    if fire:
+        pm, ps = fx.emissive("spike", (0.5, 0.9, 1.0), 10)
+        sp = sph("spike", (0, 0, 0), 0.04, pm, parent=root)
+        visible_from(sp, frames, fire[0])
+        for i, f in enumerate(range(key_frac(frames, fire[0]), key_frac(frames, fire[1]) + 1, 2)):
+            u = min(1.0, (f - key_frac(frames, fire[0])) / max(1, key_frac(frames, fire[1]) - key_frac(frames, fire[0])))
+            idx = min(len(axon) - 1, int(u * (len(axon) - 1)))
+            props.key(sp, f, location=tuple(axon[idx]))
+    return root
+
+
+def gpu(frames):
+    root = empty("gpu")
+    box("board", (0, 0, 0.02), (0.9, 0.35, 0.03), mat("pcb", (0.05, 0.25, 0.12), 0.4), parent=root)
+    box("shroud", (0, 0, 0.09), (0.85, 0.32, 0.1), mat("shroud", (0.12, 0.12, 0.14), 0.3, 0.6), 0.01, root)
+    for x in (-0.22, 0.22):
+        fan = cyl("fan", (x, 0, 0.145), 0.12, 0.01, mat("fan_hub", (0.08, 0.08, 0.09), 0.4), parent=root)
+        for k in range(7):
+            box("fan_blade", (x + 0.06 * math.cos(R(k * 51)), 0.06 * math.sin(R(k * 51)), 0.152), (0.1, 0.025, 0.004), mat("fanblade", (0.25, 0.25, 0.27), 0.4), parent=root).rotation_euler = (R(15), 0, R(k * 51))
+        props.torus("fan_ring", (x, 0, 0.145), 0.13, 0.008, mat("ring", (0.5, 1.0, 0.4), 0.3, emit=3)).parent = root
+    return root
+
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",
