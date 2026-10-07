@@ -12,11 +12,15 @@ Episode JSON:
          "scene": "<scene name>"?, "params": {"name": value | {"segment": i}}?,
          "sfx": [{"type": "pop" | "boom", "segment": i}]?}
 A {"segment": i} value becomes the fraction of the shot where voice segment i starts.
+Captions ("captions": "words", the default) follow the narration word for word: Whisper
+times each spoken word, the script supplies the spelling, and short chunks appear as
+they are said with the current word in the shot's highlight colour. "captions": "phrase"
+shows each shot's "caption" text for the whole shot instead.
 Shots without "scene" render the module's i-th scene (episodes that call run([...])).
 Shots whose frames are already complete in frames/<module>/ are not re-rendered, so an
 interrupted build can simply be run again; --skip-render never renders.
 """
-import argparse, hashlib, json, math, pathlib, subprocess, sys, threading, wave, queue
+import argparse, difflib, hashlib, json, math, pathlib, re, subprocess, sys, threading, wave, queue
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
@@ -36,6 +40,66 @@ def tts(text, voice, path, length_scale=1.0):
         pcm = np.frombuffer(w.readframes(n), dtype=np.int16).astype(np.float32) / 32768
     x = np.interp(np.linspace(0, len(pcm) - 1, int(len(pcm) * SR / sr)), np.arange(len(pcm)), pcm)
     return x.astype(np.float32)
+
+
+_whisper = None
+
+
+def word_times(text, audio, cache):
+    """[(script word, start s, end s)] for one voice clip. Whisper gives the timing;
+    the script gives the words (Whisper mishears names), matched with difflib and
+    unmatched runs spread over their time gap by character count."""
+    if cache.exists():
+        return [tuple(w) for w in json.loads(cache.read_text())]
+    global _whisper
+    if _whisper is None:
+        from faster_whisper import WhisperModel
+        _whisper = WhisperModel('base.en', device='cpu', compute_type='int8',
+                                download_root=str(ROOT.parent / 'voices' / 'whisper'))
+    x16 = np.interp(np.linspace(0, len(audio) - 1, int(len(audio) * 16000 / SR)),
+                    np.arange(len(audio)), audio).astype(np.float32)
+    segs, _ = _whisper.transcribe(x16, word_timestamps=True, language='en')
+    heard = [(w.word.strip(), w.start, w.end) for s in segs for w in s.words]
+    script = text.split()
+    norm = lambda w: re.sub(r'[^a-z0-9]', '', w.lower())
+    times = [None] * len(script)
+    sm = difflib.SequenceMatcher(a=[norm(w) for w in script], b=[norm(h[0]) for h in heard], autojunk=False)
+    for blk in sm.get_matching_blocks():
+        for k in range(blk.size):
+            times[blk.a + k] = heard[blk.b + k][1:]
+    total = len(audio) / SR
+    i = 0
+    while i < len(script):  # fill unmatched runs between anchors
+        if times[i] is not None: i += 1; continue
+        j = i
+        while j < len(script) and times[j] is None: j += 1
+        t0 = times[i - 1][1] if i else 0.0
+        t1 = times[j][0] if j < len(script) else (heard[-1][2] if heard else total)
+        t1 = max(t1, t0 + 0.12 * (j - i))
+        lens = [len(w) + 1 for w in script[i:j]]; acc = t0
+        for k, L in zip(range(i, j), lens):
+            d = (t1 - t0) * L / sum(lens); times[k] = (acc, acc + d); acc += d
+        i = j
+    out = [(w, round(a, 3), round(b, 3)) for w, (a, b) in zip(script, times)]
+    cache.write_text(json.dumps(out))
+    return out
+
+
+def chunk_words(words, max_words=4, max_chars=24):
+    """Group timed words into caption chunks, breaking after punctuation and between voice segments."""
+    chunks, cur = [], []
+    for k, w in enumerate(words):
+        cur.append(w)
+        nxt = words[k + 1] if k + 1 < len(words) else None
+        text = ' '.join(x[0] for x in cur)
+        if nxt is None or w[0][-1] in '.,?!:;' or nxt[3] != w[3]:
+            chunks.append(cur); cur = []
+        elif len(cur) >= max_words or len(text) + len(nxt[0]) + 1 > max_chars:
+            # keep a sentence's last word with its chunk instead of leaving it alone
+            if nxt[0][-1] in '.?!' and len(cur) <= max_words and len(text) + len(nxt[0]) + 1 <= max_chars + 9:
+                continue
+            chunks.append(cur); cur = []
+    return chunks
 
 
 def sfx_pop():
@@ -85,10 +149,13 @@ def plan(ep, voice, workdir):
     shots, t0, ls = [], 0.0, ep.get('length_scale', 1.0)
     for i, s in enumerate(ep['shots']):
         segs = s['vo'] if isinstance(s['vo'], list) else [s['vo']]
-        audio, starts, cur = [], [], LEAD
+        audio, starts, cur, words = [], [], LEAD, []
         for j, text in enumerate(segs):
             key = hashlib.md5(f'{text}|{ls}'.encode()).hexdigest()[:10]  # cache by text + speed
-            a = tts(text, voice, workdir / f'vo{i + 1}_{j}_{key}.wav', ls)
+            wav = workdir / f'vo{i + 1}_{j}_{key}.wav'
+            a = tts(text, voice, wav, ls)
+            for w, ws, we in word_times(text, a, wav.with_suffix('.words.json')):
+                words.append((w, cur + ws, cur + we, j))
             starts.append(cur); audio.append((cur, a)); cur += len(a) / SR + GAP
         dur = cur - GAP + TAIL
         frames = max(2, round(dur * FPS)); dur = frames / FPS
@@ -96,7 +163,7 @@ def plan(ep, voice, workdir):
         for k, v in s.get('params', {}).items():
             params[k] = starts[v['segment']] / dur if isinstance(v, dict) and 'segment' in v else v
         shots.append(dict(index=i, start=t0, dur=dur, frames=frames, audio=audio,
-                          starts=starts, params=params, spec=s))
+                          starts=starts, params=params, spec=s, words=words, chunks=chunk_words(words)))
         t0 += dur
     return shots, t0
 
@@ -141,10 +208,14 @@ def render_frames(module, shots, size, workers):
 
 
 def caption_layer(text, hl_color, W, size, max_w):
-    font = ImageFont.truetype(str(FONT), size)
     words = []  # (word, highlighted)
     for k, part in enumerate(text.split('**')):
         words += [(w.upper(), k % 2 == 1) for w in part.split()]
+    return draw_caption(words, hl_color, W, size, max_w)
+
+
+def draw_caption(words, hl_color, W, size, max_w):
+    font = ImageFont.truetype(str(FONT), size)
     space = font.getlength(' ')
     lines, line, lw = [], [], 0
     for w, hl in words:
@@ -169,10 +240,28 @@ def ease_out_back(t, c=1.9):
     return 1 + (c + 1) * (t - 1) ** 3 + c * (t - 1) ** 2
 
 
-def encode(module, shots, size, out, audio_path):
+def word_caption_at(s, tf, cache, W, size, max_w):
+    """(image, chunk start) for the chunk being spoken at shot time tf, or (None, None).
+    The word being spoken is drawn in the shot's highlight colour."""
+    for ci, ch in enumerate(s['chunks']):
+        nxt = s['chunks'][ci + 1][0][1] if ci + 1 < len(s['chunks']) else s['dur']
+        if ch[0][1] - 0.05 <= tf < nxt and tf < ch[-1][2] + 0.6:
+            active = max([k for k, w in enumerate(ch) if w[1] - 0.03 <= tf] or [0])
+            key = (ci, active)
+            if key not in cache:
+                cache[key] = draw_caption([(w[0].upper(), k == active) for k, w in enumerate(ch)],
+                                          s['spec'].get('highlight', '#ffd23f'), W, size, max_w)
+            return cache[key], ch[0][1]
+    return None, None
+
+
+def encode(module, shots, size, out, audio_path, mode='words'):
     W, H = size
     landscape = W > H
-    cap_size, cap_w = (66, 1500) if landscape else (96, 940)
+    if mode == 'words':
+        cap_size, cap_w = (78, 1500) if landscape else (104, 940)
+    else:
+        cap_size, cap_w = (66, 1500) if landscape else (96, 940)
     cy = H - 150 if landscape else 1330  # lower third (16:9) / lower-middle (9:16)
     cmd = ['ffmpeg', '-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}',
            '-r', str(FPS), '-i', '-', '-i', str(audio_path), '-c:v', 'libx264', '-preset', 'medium',
@@ -180,14 +269,18 @@ def encode(module, shots, size, out, audio_path):
            '-movflags', '+faststart', str(out)]
     ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     for s in shots:
-        text = s['spec'].get('caption')
+        text = s['spec'].get('caption') if mode == 'phrase' else None
         cap = caption_layer(text, s['spec'].get('highlight', '#ffd23f'), W, cap_size, cap_w) if text else None
         files = frame_files(module, s)
+        cache = {}
         for f in range(s['frames']):
             frame = Image.open(files[f]).convert('RGB')
+            pop_start = 0.0
+            if mode == 'words':
+                cap, pop_start = word_caption_at(s, f / FPS, cache, W, cap_size, cap_w)
             if cap:
-                k = min(1.0, f / 7)  # pop-in over the first 7 frames
-                sc = 0.55 + 0.45 * ease_out_back(k)
+                k = min(1.0, (f / FPS - pop_start) * FPS / 4)  # pop-in over 4 frames
+                sc = 0.7 + 0.3 * ease_out_back(k)
                 c = cap if sc == 1 else cap.resize((max(1, int(cap.width * sc)), max(1, int(cap.height * sc))), Image.LANCZOS)
                 frame.paste(c, ((W - c.width) // 2, cy - c.height // 2), c)
             ff.stdin.write(frame.tobytes())
@@ -239,7 +332,7 @@ def main():
     mix(ep, shots, total, work / 'mix.wav')
     print('compositing captions + encoding...', flush=True)
     pathlib.Path(a.out).parent.mkdir(parents=True, exist_ok=True)
-    encode(module, shots, size, a.out, work / 'mix.wav')
+    encode(module, shots, size, a.out, work / 'mix.wav', ep.get('captions', 'words'))
     print('wrote', a.out)
 
 
