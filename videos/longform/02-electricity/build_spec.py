@@ -227,7 +227,7 @@ S("In Florence, they used a giant magnifying glass to focus sunlight on a diamon
 S("Then, in eighteen twenty, the Danish scientist Hans Christian Oersted noticed something strange.",
   stage("lab", cam((0.6, -1.9, 1.5), (0.4, -1.6, 1.45), "cast0.head"), cast=[who(ORSTED, pose=WORK)],
         props=[TABLE, P("compass", (0, -0.1, TOP)), P("battery", (0.4, -0.05, TOP))],
-        texts=[T("1820", (0.9, 0.6, 1.6), 0.3, pop=0.15)]), still=True)
+        texts=[T("1820", (0.62, 0.6, 1.6), 0.3, pop=0.15)]), still=True)
 S("A wire carrying electric current made a nearby compass needle swing.",
   stage("studio", cam((0.25, -0.55, 0.45), (0.15, -0.45, 0.4), (0, 0, 0.05)),
         props=[P("compass", (0, 0, 0), args={"needle": [[0, 0], [0.35, 0], [0.45, 75], [0.5, 62], [0.55, 70]]}),
@@ -364,7 +364,7 @@ S("He believed these lines of force were real things, filling the space around e
         props=[P("filings", args={"align": [0, 0.01]}), P("dipole_lines", (0, 0, 0.04), rot=[90, 0, 0], args={"draw": [0.1, 0.7], "scale": 0.7})]))
 S("Most scientists thought this was childish. But a young Scottish physicist, James Clerk Maxwell, turned Faraday's pictures into mathematics.",
   stage("lab", cam((0.5, -1.8, 1.5), (0.35, -1.5, 1.45), "cast0.head"), cast=[who(MAXWELL, pose=READ)],
-        props=[TABLE, P("notebook", (0, 0.0, 1.06), rot=[65, 0, 0])], texts=[T("1860s", (0.9, 0.6, 1.6), 0.3, pop=0.2)]), still=True)
+        props=[TABLE, P("notebook", (0, 0.0, 1.06), rot=[65, 0, 0])], texts=[T("1860s", (0.6, 0.6, 1.6), 0.3, pop=0.2)]), still=True)
 S("His equations showed something astonishing: light itself is a wave of electricity and magnetism.",
   stage("studio", cam((0, -2.6, 1.2), (0.4, -2.3, 1.1), (0, 0, 0.9)),
         props=[P("em_wave", (0, 0, 0.6), args={"draw": [0.1, 0.4]}), P("equations", (0, 0.5, 1.6), args={"at": 0.05}, scale=0.7)]))
@@ -401,7 +401,7 @@ S("He was deeply religious, and in the eighteen fifties he refused to help the B
         env_opts={"wall": [0.08, 0.09, 0.1]}), still=True)
 S("Faraday died in eighteen sixty seven.",
   stage("lab", cam((0, -1.2, 1.2), (0, -1.0, 1.15), (0, -0.1, 0.95)), props=[TABLE, P("candle", (0, -0.1, TOP))],
-        texts=[T("1791 – 1867", (0, 0.4, 1.2), 0.12, pop=0.2)], env_opts={"wall": [0.05, 0.06, 0.07], "world": [0.01, 0.01, 0.015]}),
+        texts=[T("1791 – 1867", (0, 0.4, 1.12), 0.1, pop=0.2)], env_opts={"wall": [0.05, 0.06, 0.07], "world": [0.01, 0.01, 0.015]}),
   still=True, still_at=0.8, chapter="Legacy")
 S("A few years later, Thomas Edison and others used generators built on his principle to light up whole streets.",
   stage("street", cam((1.6, -2.5, 1.9), (1.0, -1.5, 1.8), (0, 4, 1.6), lens=28), props=[P("street_lamps", (0, 0, 0), args={"n": 7, "on": [0.15, 0.8]})]))
