@@ -32,7 +32,7 @@ function body_scan(p) {
       const pulse = 0.5 + 0.5 * Math.sin(t * 18);
       organ.material.emissive.set(RED); organ.material.emissiveIntensity = 0.6 + pulse * 0.8;
       organ.getWorldPosition(ring.position); ring.lookAt(camera.position); ring.scale.setScalar(1 + pulse * 0.2);
-      stream.update(t, 0.4);
+      stream.userData.update(t, 0.4);
     } else ring.visible = false;
     m.userData.update(t);
     orbit(camera, p, t, { dist0: 14, dist1: 11, el0: 0.1, el1: 0.06, az0: -0.4, az1: 0.3, ty0: 1.3, ty1: 1.4 });
