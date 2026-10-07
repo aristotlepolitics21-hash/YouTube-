@@ -2300,7 +2300,7 @@ def dna_helix(frames, length=2.4, turns=3.0, spin=60, cut=None, edit=None, seed=
         for j in range(3):
             o = cyl("new_rung", (xe + (j - 1) * length / n, 0, 0), 0.024, 2 * r, mat("new_base", BASE_COLORS[kk], 0.3, emit=3), parent=root)
             o.rotation_euler = (R(90 + 36 * j), 0, 0)
-            pop_in(o, key_frac(frames, t + 0.04 * j))
+            fx.pop_in(o, key_frac(frames, t + 0.04 * j))
     if spin:
         props.key(root, 1, rotation_euler=(0, 0, 0))
         props.key(root, frames, rotation_euler=(R(spin), 0, 0))
@@ -2392,6 +2392,127 @@ def blood_cells(frames, n=10, sickle=0, seed=5, fix=None):
             props.torus("rbc", (0, 0, 0), 0.1, 0.05, red).parent = c
         props.key(c, 1, location=tuple(c.location))
         props.key(c, frames, location=(c.location.x + 0.4, c.location.y, c.location.z + rng.uniform(-0.1, 0.1)))
+    return root
+
+
+# ------------------------------------------------------------------ fusion
+def tokamak(frames, plasma=(0.2, 0.5), cutaway=True, coils=16):
+    """Doughnut vacuum vessel with D-shaped field coils and a glowing magenta plasma ring that brightens and swirls."""
+    root = empty("tokamak")
+    steel = mat("vessel", (0.7, 0.72, 0.76), 0.3, 0.9)
+    coil_m = mat("tf_coil", (0.85, 0.55, 0.15), 0.35, 0.8)
+    R0, r0 = 1.2, 0.5
+    vessel = props.torus("vessel", (0, 0, 0.9), R0, r0, steel)
+    vessel.parent = root
+    if cutaway:
+        bpy.ops.mesh.primitive_cube_add(size=1, location=(0.9, -0.9, 0.9))
+        cutter = bpy.context.active_object
+        cutter.scale = (1.8, 1.8, 2.0)
+        cutter.hide_render = True
+        cutter.parent = root
+        b = vessel.modifiers.new("cut", "BOOLEAN")
+        b.operation, b.object = "DIFFERENCE", cutter
+    for k in range(coils):
+        a = 2 * math.pi * k / coils
+        if cutaway and math.cos(a) > 0.2 and math.sin(a) < -0.2:
+            continue
+        pts = []
+        for i in range(41):
+            t = 2 * math.pi * i / 40
+            rr = R0 + (r0 + 0.12) * math.cos(t) * (1.0 if math.cos(t) > 0 else 0.8)
+            pts.append(V((rr * math.cos(a), rr * math.sin(a), 0.9 + (r0 + 0.2) * math.sin(t))))
+        curve_obj("tf", pts, 0.06, coil_m, root)
+    pm, ps = fx.emissive("plasma", (1.0, 0.3, 0.85), 0)
+    pl = props.torus("plasma", (0, 0, 0.9), R0, r0 * 0.55, pm)
+    pl.parent = root
+    pl.scale = (1, 1, 1.4)
+    glow_keys(ps, frames, [(0, 0), (plasma[0], 0), (plasma[1], 6)])
+    props.key(pl, 1, rotation_euler=(0, 0, 0))
+    props.key(pl, frames, rotation_euler=(0, 0, R(240)))
+    fx._linear(pl)
+    light = bpy.data.lights.new("plasma_light", "POINT")
+    light.color = (1.0, 0.35, 0.85)
+    lo = child(bpy.data.objects.new("plasma_light", light), root)
+    bpy.context.scene.collection.objects.link(lo)
+    lo.location = (0, 0, 0.9)
+    for t, e in ((0, 0), (plasma[0], 0), (plasma[1], 900)):
+        light.energy = e
+        light.keyframe_insert("energy", frame=key_frac(frames, t))
+    return root
+
+
+def fusion_reaction(frames, hit=0.45):
+    """Deuterium (1p1n) and tritium (1p2n) collide, fuse into helium-4, and fling out a fast neutron and a flash."""
+    root = empty("fusion")
+    pm, nm = mat("proton", (0.95, 0.2, 0.2), 0.35), mat("neutron_n", (0.3, 0.45, 0.95), 0.35)
+    def nucleus(name, parts, loc):
+        g = child(empty(name), root)
+        g.location = loc
+        offs = [(0, 0, 0), (0.09, 0, 0), (0.045, 0.08, 0), (0.045, 0.03, 0.08)]
+        for (x, y, z), m in zip(offs, parts):
+            sph("nucleon", (x, y, z), 0.06, m, parent=g)
+        return g
+    d = nucleus("deuterium", [pm, nm], (-1.2, 0, 0))
+    tr = nucleus("tritium", [pm, nm, nm], (1.2, 0, 0))
+    fh = key_frac(frames, hit)
+    props.key(d, 1, location=(-1.2, 0, 0))
+    props.key(d, fh, location=(-0.05, 0, 0))
+    props.key(tr, 1, location=(1.2, 0, 0))
+    props.key(tr, fh, location=(0.05, 0, 0))
+    hide_keys(d, ((1, False), (fh, False), (fh + 1, True)))
+    hide_keys(tr, ((1, False), (fh, False), (fh + 1, True)))
+    he = nucleus("helium", [pm, pm, nm, nm], (0, 0, 0))
+    visible_from(he, frames, hit + 0.01)
+    props.key(he, fh, location=(0, 0, 0))
+    props.key(he, frames, location=(-0.6, 0, 0.3))
+    n = sph("fast_neutron", (0, 0, 0), 0.06, mat("fast_n", (0.5, 0.65, 1.0), 0.3, emit=3), parent=root)
+    visible_from(n, frames, hit + 0.01)
+    props.key(n, fh, location=(0, 0, 0))
+    props.key(n, frames, location=(2.5, 0, -0.4))
+    fm, fs = fx.emissive("fusion_flash", (1.0, 0.85, 0.5), 0)
+    fl = sph("fusion_flash", (0, 0, 0), 0.25, fm, parent=root)
+    glow_keys(fs, frames, [(0, 0), (hit - 0.005, 0), (hit, 40), (min(1, hit + 0.15), 0)])
+    props.key(fl, fh, scale=(0.4, 0.4, 0.4))
+    props.key(fl, min(frames, fh + 8), scale=(3, 3, 3))
+    return root
+
+
+def laser_target(frames, beams=48, fire=0.4):
+    """Many laser beams converging on a tiny fuel capsule inside a gold cylinder, which flashes."""
+    root = empty("laser_target")
+    lm, ls = fx.emissive("laser", (0.25, 0.3, 1.0), 0)
+    rng = random.Random(4)
+    for k in range(beams):
+        u, v = rng.uniform(-1, 1), rng.uniform(0, 2 * math.pi)
+        dirn = V((math.sqrt(1 - u * u) * math.cos(v), math.sqrt(1 - u * u) * math.sin(v), u))
+        o = curve_obj("beam", [dirn * 3.0, dirn * 0.08], 0.008, lm, root)
+        draw_on(o, frames, fire - 0.1, fire)
+    glow_keys(ls, frames, [(0, 0), (fire - 0.1, 3), (fire + 0.05, 3), (fire + 0.15, 0)])
+    cyl("hohlraum", (0, 0, 0), 0.05, 0.12, mat("gold", (1.0, 0.75, 0.25), 0.2, 1.0), parent=root)
+    fm, fs = fx.emissive("implosion", (1.0, 0.9, 0.6), 0)
+    sph("capsule_flash", (0, 0, 0), 0.08, fm, parent=root)
+    glow_keys(fs, frames, [(0, 0), (fire, 0), (fire + 0.02, 60), (fire + 0.12, 0)])
+    return root
+
+
+def thermometer(frames, rise=(0.1, 0.7), top_label="100,000,000 °C"):
+    root = empty("thermometer")
+    glass = mat("therm_glass", (0.95, 0.97, 1.0), 0.05, alpha=0.3)
+    cyl("tube", (0, 0, 1.0), 0.06, 1.8, glass, parent=root)
+    sph("bulb", (0, 0, 0.08), 0.12, mat("therm_red", (1.0, 0.15, 0.1), 0.3, emit=2), parent=root)
+    col = cyl("column", (0, 0, 0.1), 0.035, 1.0, mat("therm_red", (1.0, 0.15, 0.1), 0.3, emit=2), parent=root)
+    props.key(col, key_frac(frames, rise[0]), scale=(1, 1, 0.05), location=(0, 0, 0.12))
+    props.key(col, key_frac(frames, rise[1]), scale=(1, 1, 1.7), location=(0, 0, 0.95))
+    t = fx.text(top_label, mat("tlbl", (1.0, 0.7, 0.3), 0.4, emit=2), (0, -0.1, 2.15), size=0.26, depth=0.01)
+    t.parent = root
+    fx.pop_in(t, key_frac(frames, rise[1]))
+    return root
+
+
+def sun_ball(frames, radius=1.0):
+    root = empty("sun_ball")
+    for o in space.glowing_sun((0, 0, 0), radius):
+        o.parent = root
     return root
 
 PROPS = {name: fn for name, fn in globals().items()
