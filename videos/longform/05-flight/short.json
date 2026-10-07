@@ -1,0 +1,4287 @@
+{
+ "format": "long",
+ "render": {
+  "width": 960,
+  "height": 540,
+  "samples": 8,
+  "fps": 12
+ },
+ "still_render": {
+  "width": 1920,
+  "height": 1080,
+  "samples": 16
+ },
+ "output_fps": 24,
+ "gap_seconds": 0.5,
+ "chapter_gap_seconds": 0.9,
+ "burn_captions": false,
+ "slug": "05-flight",
+ "title": "How Humans Learned to Fly",
+ "description": "From hot-air balloons and Lilienthal's gliders to the Wright brothers' wind tunnel and the 12 seconds at Kitty Hawk that changed the world, told in 3D animation.",
+ "tags": [
+  "Wright brothers",
+  "first flight",
+  "Kitty Hawk",
+  "history of aviation",
+  "how planes fly",
+  "lift",
+  "Otto Lilienthal",
+  "Montgolfier",
+  "3D animation"
+ ],
+ "voice": {
+  "piper_voice": "en_US-ryan-high",
+  "length_scale": 1.25,
+  "sentence_silence": 0.28,
+  "pronunciations": {
+   "Lilienthal": "Lil-ee-en-tahl",
+   "Montgolfier": "Mont-gol-fee-ay",
+   "Cayley": "Kay-lee",
+   "Blériot": "Blair-ee-oh",
+   "Le Mans": "Luh Mon",
+   "aluminium": "al-you-min-ee-um"
+  }
+ },
+ "music_mood": "hopeful",
+ "sources": [
+  "https://airandspace.si.edu/exhibitions/wright-brothers/online/",
+  "https://www.nps.gov/wrbr/learn/historyculture/thefirstflight.htm",
+  "https://www.loc.gov/collections/wilbur-and-orville-wright-papers/",
+  "https://airandspace.si.edu/collection-objects/1903-wright-flyer/nasm_A19610048000",
+  "https://www.britannica.com/biography/Otto-Lilienthal",
+  "https://www.nasa.gov/history/50-years-ago-apollo-11-flew-a-piece-of-the-wright-flyer/"
+ ],
+ "shots": [
+  {
+   "id": "s001",
+   "line": "For as long as there have been people, we have watched birds and wondered what it would be like to fly.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.2,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.35,
+        0.45
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.06,
+        0.04,
+        0.03
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": -15
+      },
+      "scale": 0.9
+     }
+    ],
+    "props": [
+     {
+      "prop": "birds",
+      "at": [
+       0,
+       2,
+       3.0
+      ],
+      "args": {
+       "n": 8,
+       "area": 3.0
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -5.0,
+      1.6
+     ],
+     "to": [
+      0,
+      -4.4,
+      2.0
+     ],
+     "target": [
+      0,
+      0,
+      2.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s002",
+   "line": "Ancient myths are full of flying people. Icarus, in Greek legend, made wings of feathers and wax, and fell when the sun melted them.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "glider",
+      "at": [
+       0,
+       2,
+       3.5
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          0,
+          2,
+          4.0
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          0.6,
+          2,
+          2.2
+         ],
+         "rot": [
+          -25,
+          0,
+          20
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -6.0,
+      3.0
+     ],
+     "to": [
+      0.4,
+      -5.4,
+      3.2
+     ],
+     "target": [
+      0,
+      0,
+      3.4
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       1.0,
+       0.7,
+       0.3
+      ],
+      "zenith": [
+       0.3,
+       0.45,
+       0.85
+      ]
+     },
+     "floor": [
+      0.1,
+      0.3,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "id": "s003",
+   "line": "Then, on a cold, windy morning in December nineteen oh three, two brothers who ran a bicycle shop did it for real.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "prop": "dunes",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      4.5,
+      -5.5,
+      2.0
+     ],
+     "to": [
+      3.8,
+      -4.8,
+      1.8
+     ],
+     "target": [
+      0,
+      0,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s004",
+   "line": "Their flight lasted twelve seconds. Sixty six years later, humans walked on the Moon.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "12 SECONDS → THE MOON",
+      "at": [
+       0,
+       -1.2,
+       1.25
+      ],
+      "size": 0.14,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      0.6
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s005",
+   "line": "This is how humans learned to fly.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "airliner",
+      "at": [
+       0,
+       3,
+       3.2
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -6,
+          3,
+          3.0
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          6,
+          3,
+          3.6
+         ]
+        }
+       ]
+      ],
+      "rot": [
+       0,
+       0,
+       -90
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "HOW HUMANS LEARNED TO FLY",
+      "at": [
+       0,
+       0,
+       2.0
+      ],
+      "size": 0.28,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.15
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -9,
+      3.0
+     ],
+     "to": [
+      0,
+      -8,
+      3.2
+     ],
+     "target": [
+      0,
+      0,
+      3.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s006",
+   "line": "The first humans to leave the ground did it in a bag of hot air.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "balloon",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "rise": [
+        0.2,
+        1.0,
+        3.0
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -9.0,
+      2.0
+     ],
+     "to": [
+      0,
+      -8.0,
+      3.0
+     ],
+     "target": [
+      0,
+      0,
+      2.5
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   },
+   "chapter": "Before the Wright brothers"
+  },
+  {
+   "id": "s007",
+   "line": "In Paris, in November seventeen eighty three, a balloon built by the Montgolfier brothers carried two men over the rooftops for about twenty five minutes.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "balloon",
+      "at": [
+       0,
+       0,
+       2.5
+      ],
+      "args": {
+       "rise": [
+        0.0,
+        1.0,
+        1.5
+       ]
+      }
+     },
+     {
+      "prop": "city",
+      "at": [
+       0,
+       8,
+       0
+      ],
+      "scale": 0.4
+     }
+    ],
+    "texts": [
+     {
+      "text": "PARIS 1783",
+      "at": [
+       -2.2,
+       0,
+       4.5
+      ],
+      "size": 0.25,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -10,
+      4.0
+     ],
+     "to": [
+      1.0,
+      -9,
+      4.6
+     ],
+     "target": [
+      0,
+      0,
+      4.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s008",
+   "line": "But balloons drift wherever the wind takes them. To truly fly, you need a wing.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "balloon",
+      "at": [
+       0,
+       0,
+       2.5
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -1.5,
+          0,
+          2.5
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          1.5,
+          0,
+          2.9
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -9.0,
+      4.0
+     ],
+     "to": [
+      0,
+      -8.5,
+      4.2
+     ],
+     "target": [
+      0,
+      0,
+      4.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s009",
+   "line": "In seventeen ninety nine, an English baronet named George Cayley sketched the basic layout of a modern aeroplane: a fixed wing for lift, a tail for balance, and something separate to push it forward.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "notebook",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ]
+     },
+     {
+      "prop": "candle",
+      "at": [
+       0.4,
+       0,
+       0.875
+      ]
+     },
+     {
+      "prop": "airliner",
+      "at": [
+       0,
+       0.1,
+       1.15
+      ],
+      "scale": 0.12,
+      "rot": [
+       0,
+       0,
+       200
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.35,
+      -1.0,
+      1.25
+     ],
+     "to": [
+      0.22,
+      -0.85,
+      1.2
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.95
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.25,
+      0.18
+     ],
+     "world": [
+      0.04,
+      0.03,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s010",
+   "line": "Fifty years later, one of his gliders carried a frightened passenger across a valley in Yorkshire. By some accounts, it was his coachman.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "glider",
+      "at": [
+       0,
+       0,
+       2.2
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -2,
+          0,
+          2.6
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          2,
+          0,
+          1.8
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      3.0,
+      -5.0,
+      3.0
+     ],
+     "to": [
+      2.4,
+      -4.4,
+      2.8
+     ],
+     "target": [
+      0,
+      0,
+      2.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s011",
+   "line": "In Germany in the eighteen nineties, an engineer named Otto Lilienthal made around two thousand flights in gliders he built himself, running down a hill and launching into the wind.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "glider",
+      "at": [
+       0,
+       0,
+       1.4
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -2.5,
+          1,
+          1.2
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          2.5,
+          -0.5,
+          2.4
+         ]
+        }
+       ]
+      ]
+     },
+     {
+      "prop": "dunes",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 6
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      3.2,
+      -5.0,
+      2.2
+     ],
+     "to": [
+      2.6,
+      -4.2,
+      2.4
+     ],
+     "target": [
+      0,
+      0,
+      1.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s012",
+   "line": "Newspapers around the world printed photographs of the flying man.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "THE FLYING MAN",
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.7
+  },
+  {
+   "id": "s013",
+   "line": "In eighteen ninety six, a gust stalled his glider, and he fell. He died the next day.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "glider",
+      "at": [
+       0,
+       0,
+       2.2
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -1,
+          0,
+          2.6
+         ]
+        }
+       ],
+       [
+        0.4,
+        {
+         "at": [
+          0,
+          0,
+          2.8
+         ],
+         "rot": [
+          25,
+          0,
+          0
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          0.6,
+          0,
+          0.6
+         ],
+         "rot": [
+          -50,
+          15,
+          0
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      2.0,
+      -5.0,
+      2.0
+     ],
+     "to": [
+      1.6,
+      -4.4,
+      1.8
+     ],
+     "target": [
+      0,
+      0,
+      1.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.5,
+       0.5,
+       0.55
+      ],
+      "zenith": [
+       0.2,
+       0.22,
+       0.3
+      ]
+     },
+     "floor": [
+      0.2,
+      0.35,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s014",
+   "line": "Far away, in Dayton, Ohio, two brothers read the news, and decided to take up where he left off.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.25,
+       0.2,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "pants": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.4,
+       0.35,
+       0
+      ],
+      "turn": -10,
+      "pose": {
+       "raise_arm": {
+        "L": -35,
+        "R": -35
+       },
+       "arm_forward": {
+        "L": 35,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": 30,
+        "R": 30
+       },
+       "elbow": {
+        "L": 95,
+        "R": 95
+       },
+       "twist": {
+        "L": 80,
+        "R": 80
+       },
+       "curl": {
+        "L": 20,
+        "R": 20
+       },
+       "head_nod": 22
+      }
+     },
+     {
+      "hair": [
+       0.35,
+       0.22,
+       0.12
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.17,
+        0.14
+       ],
+       "pants": [
+        0.2,
+        0.17,
+        0.14
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.45,
+       0.35,
+       0
+      ],
+      "turn": 10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "bicycle",
+      "at": [
+       1.4,
+       0.8,
+       0
+      ],
+      "rot": [
+       0,
+       0,
+       90
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.25,
+      0.18
+     ],
+     "world": [
+      0.04,
+      0.03,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s015",
+   "line": "Neither Wilbur nor Orville Wright ever received a high school diploma. They built printing presses, then opened a shop selling and repairing bicycles.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.35,
+       0.22,
+       0.12
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.17,
+        0.14
+       ],
+       "pants": [
+        0.2,
+        0.17,
+        0.14
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "bicycle",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ],
+      "scale": 0.6,
+      "rot": [
+       0,
+       0,
+       90
+      ],
+      "args": {
+       "spin": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.9,
+      -2.5,
+      1.6
+     ],
+     "to": [
+      0.6,
+      -2.1,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.15
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.25,
+      0.18
+     ],
+     "world": [
+      0.04,
+      0.03,
+      0.02
+     ]
+    }
+   },
+   "chapter": "The bicycle mechanics"
+  },
+  {
+   "id": "s016",
+   "line": "Bicycles taught them something important: a machine can be unstable, as long as the rider can control it.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bicycle",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          0,
+          -1.5,
+          0
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          0,
+          1.5,
+          0
+         ]
+        }
+       ]
+      ],
+      "args": {
+       "spin": 4
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      2.2,
+      -3.0,
+      1.2
+     ],
+     "to": [
+      1.6,
+      -2.4,
+      1.1
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s017",
+   "line": "Everyone else was trying to build aircraft that were stable on their own. The Wrights thought the real problem was control.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "LIFT",
+      "at": [
+       -0.7,
+       0,
+       1.0
+      ],
+      "size": 0.14,
+      "color": [
+       0.6,
+       0.6,
+       0.6
+      ],
+      "pop": 0.1
+     },
+     {
+      "text": "POWER",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.14,
+      "color": [
+       0.6,
+       0.6,
+       0.6
+      ],
+      "pop": 0.2
+     },
+     {
+      "text": "CONTROL",
+      "at": [
+       0.75,
+       0,
+       1.0
+      ],
+      "size": 0.18,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s018",
+   "line": "Wilbur watched buzzards twisting the tips of their wings to turn and balance.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "birds",
+      "at": [
+       0,
+       0,
+       2.7
+      ],
+      "args": {
+       "n": 3,
+       "area": 1.0
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      2.6
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      2.7
+     ],
+     "target": [
+      0,
+      0,
+      2.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s019",
+   "line": "Then, idly twisting a long, empty cardboard box in the shop, he realised a whole wing could be twisted in the same way. They called it wing warping.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "books",
+      "at": [
+       0,
+       -0.1,
+       1.0
+      ],
+      "rot": [
+       0,
+       0,
+       90
+      ],
+      "args": {
+       "n": 1
+      },
+      "anim": [
+       [
+        0,
+        {
+         "rot": [
+          0,
+          0,
+          90
+         ]
+        }
+       ],
+       [
+        0.5,
+        {
+         "rot": [
+          15,
+          0,
+          90
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "rot": [
+          -15,
+          0,
+          90
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "WING WARPING",
+      "at": [
+       0,
+       0.2,
+       1.3
+      ],
+      "size": 0.06,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.5
+     }
+    ],
+    "camera": {
+     "from": [
+      0.35,
+      -1.0,
+      1.25
+     ],
+     "to": [
+      0.22,
+      -0.85,
+      1.2
+     ],
+     "target": [
+      0,
+      -0.1,
+      1.05
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.25,
+      0.18
+     ],
+     "world": [
+      0.04,
+      0.03,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s020",
+   "line": "For testing, they needed steady winds and soft sand to land on. The weather bureau suggested a remote beach called Kitty Hawk, in North Carolina.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "dunes",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "n": 14
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -10,
+      3.0
+     ],
+     "to": [
+      2,
+      -9,
+      2.6
+     ],
+     "target": [
+      0,
+      4,
+      0.5
+     ],
+     "lens": 28
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Kitty Hawk"
+  },
+  {
+   "id": "s021",
+   "line": "Their gliders of nineteen hundred and nineteen oh one flew, but they produced far less lift than the published tables predicted.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       0.2
+      ],
+      "args": {
+       "props_spin": false
+      },
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -1.5,
+          0,
+          0.2
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          1.5,
+          0,
+          0.0
+         ]
+        }
+       ]
+      ]
+     },
+     {
+      "prop": "dunes",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      3.0,
+      -4.6,
+      1.6
+     ],
+     "to": [
+      2.4,
+      -4.0,
+      1.6
+     ],
+     "target": [
+      0,
+      0,
+      1.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   }
+  },
+  {
+   "id": "s022",
+   "line": "Wilbur was so discouraged he said that men would not fly in a thousand years.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.25,
+       0.2,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "pants": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.6
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.55
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s023",
+   "line": "Back home, they built their own wind tunnel, a wooden box with a fan at one end.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wind_tunnel",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      1.0,
+      -1.8,
+      1.0
+     ],
+     "to": [
+      0.7,
+      -1.4,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.2
+     ],
+     "lens": 35
+    }
+   },
+   "chapter": "The wind tunnel"
+  },
+  {
+   "id": "s024",
+   "line": "Inside, they tested around two hundred small model wings, carefully measuring the lift each one made.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wind_tunnel",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.25,
+      -0.5,
+      0.45
+     ],
+     "to": [
+      0.18,
+      -0.4,
+      0.38
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.22
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s025",
+   "line": "They discovered that the numbers everyone had relied on were wrong. Now they had their own data, the best in the world.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "notebook",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ]
+     },
+     {
+      "prop": "notebook",
+      "at": [
+       0.25,
+       -0.05,
+       0.875
+      ],
+      "rot": [
+       0,
+       0,
+       15
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "200 WINGS",
+      "at": [
+       0,
+       0.2,
+       1.25
+      ],
+      "size": 0.07,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.35,
+      -1.0,
+      1.25
+     ],
+     "to": [
+      0.22,
+      -0.85,
+      1.2
+     ],
+     "target": [
+      0,
+      -0.1,
+      0.95
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.25,
+      0.18
+     ],
+     "world": [
+      0.04,
+      0.03,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s026",
+   "line": "A wing works by meeting the air at a slight angle. Air flowing over the curved top is pulled downward behind it, and the wing is pushed up. That push is lift.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "airfoil_flow",
+      "at": [
+       0,
+       0,
+       0.8
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      -3.0,
+      0.0,
+      0.95
+     ],
+     "to": [
+      -2.6,
+      0.3,
+      0.9
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s027",
+   "line": "In nineteen oh two, their new glider added a movable rudder. Now they could control it on all three axes: pitch, roll and yaw.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "props_spin": false
+      },
+      "anim": [
+       [
+        0,
+        {
+         "rot": [
+          0,
+          0,
+          0
+         ]
+        }
+       ],
+       [
+        0.33,
+        {
+         "rot": [
+          8,
+          0,
+          0
+         ]
+        }
+       ],
+       [
+        0.66,
+        {
+         "rot": [
+          0,
+          12,
+          0
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "rot": [
+          0,
+          0,
+          15
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "PITCH  •  ROLL  •  YAW",
+      "at": [
+       0,
+       1.5,
+       2.6
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      3.0,
+      -4.6,
+      1.6
+     ],
+     "to": [
+      2.4,
+      -4.0,
+      1.6
+     ],
+     "target": [
+      0,
+      0,
+      1.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   }
+  },
+  {
+   "id": "s028",
+   "line": "They made hundreds of glides. That system of three-axis control is still how every aeroplane is flown today.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "airliner",
+      "at": [
+       0,
+       3,
+       3.2
+      ],
+      "rot": [
+       0,
+       0,
+       -90
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -5,
+          3,
+          3.0
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          5,
+          3,
+          3.4
+         ],
+         "rot": [
+          0,
+          -10,
+          -90
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -9,
+      3.0
+     ],
+     "to": [
+      0.4,
+      -8.4,
+      3.0
+     ],
+     "target": [
+      0,
+      0,
+      3.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s029",
+   "line": "Next, they needed an engine. No company could build one light enough, so their mechanic, Charlie Taylor, built one in about six weeks, with an aluminium block.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.2,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.35,
+        0.45
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.06,
+        0.04,
+        0.03
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "graphite_pile",
+      "at": [
+       0,
+       -0.1,
+       0.875
+      ],
+      "scale": 0.1
+     }
+    ],
+    "texts": [
+     {
+      "text": "12 HORSEPOWER",
+      "at": [
+       0.9,
+       0.6,
+       1.6
+      ],
+      "size": 0.12,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.9,
+      -2.5,
+      1.6
+     ],
+     "to": [
+      0.6,
+      -2.1,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.15
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.25,
+      0.18
+     ],
+     "world": [
+      0.04,
+      0.03,
+      0.02
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "An engine and propellers"
+  },
+  {
+   "id": "s030",
+   "line": "And they realised a propeller is just a wing that spins. Nobody had worked out how to design one properly, so they did it themselves.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       -0.6
+      ],
+      "scale": 0.7
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -1.4,
+      0.9
+     ],
+     "to": [
+      0.4,
+      -1.2,
+      0.85
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s031",
+   "line": "On the fourteenth of December, nineteen oh three, the brothers tossed a coin to decide who would go first. Wilbur won, but he stalled the machine on takeoff.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.25,
+       0.2,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "pants": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.4,
+       0.35,
+       0
+      ],
+      "turn": -10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.35,
+       0.22,
+       0.12
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.17,
+        0.14
+       ],
+       "pants": [
+        0.2,
+        0.17,
+        0.14
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.45,
+       0.35,
+       0
+      ],
+      "turn": 10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "December 17, 1903"
+  },
+  {
+   "id": "s032",
+   "line": "Three days later, on the seventeenth of December, it was Orville's turn. The wind was blowing at more than twenty miles an hour.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "prop": "dunes",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "17 DECEMBER 1903",
+      "at": [
+       0,
+       2,
+       2.6
+      ],
+      "size": 0.25,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      4.5,
+      -5.5,
+      2.0
+     ],
+     "to": [
+      3.8,
+      -4.8,
+      1.8
+     ],
+     "target": [
+      0,
+      0,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   }
+  },
+  {
+   "id": "s033",
+   "line": "At ten thirty five in the morning, the Flyer ran along a wooden rail, lifted into the air, and stayed there.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          0,
+          4,
+          -0.6
+         ]
+        }
+       ],
+       [
+        0.4,
+        {
+         "at": [
+          0,
+          0,
+          -0.6
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          0,
+          -8,
+          0.4
+         ]
+        }
+       ]
+      ]
+     },
+     {
+      "prop": "dunes",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      5.0,
+      -3.0,
+      1.4
+     ],
+     "to": [
+      4.0,
+      -1.0,
+      1.6
+     ],
+     "target": [
+      0,
+      0,
+      1.2
+     ],
+     "lens": 35,
+     "target_to": [
+      0,
+      -4,
+      1.6
+     ]
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   }
+  },
+  {
+   "id": "s034",
+   "line": "It flew for twelve seconds and covered thirty seven metres, a shorter distance than the wingspan of a modern jumbo jet.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       -0.6
+      ],
+      "rot": [
+       0,
+       0,
+       90
+      ]
+     },
+     {
+      "prop": "airliner",
+      "at": [
+       0,
+       5,
+       1.0
+      ],
+      "scale": 5.5
+     }
+    ],
+    "texts": [
+     {
+      "text": "37 m",
+      "at": [
+       0,
+       0,
+       2.2
+      ],
+      "size": 0.4,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -14,
+      2.5
+     ],
+     "to": [
+      0,
+      -13,
+      2.5
+     ],
+     "target": [
+      0,
+      0,
+      1.0
+     ],
+     "lens": 28
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s035",
+   "line": "Wilbur ran alongside. A local lifeguard named John Daniels, who had never used a camera before, took one of the most famous photographs ever made.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.25,
+       0.2,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "pants": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       1.0,
+       -1.2,
+       0
+      ],
+      "turn": -60,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.3,
+       0.2,
+       0.1
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.35,
+        0.45
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.2
+       ],
+       "boots": [
+        0.06,
+        0.04,
+        0.03
+       ]
+      },
+      "at": [
+       -1.8,
+       -1.6,
+       0
+      ],
+      "turn": -50,
+      "pose": {
+       "raise_arm": {
+        "L": -32,
+        "R": -32
+       },
+       "arm_forward": {
+        "L": 28,
+        "R": 28
+       },
+       "arm_inward": {
+        "L": 18,
+        "R": 18
+       },
+       "elbow": {
+        "L": 70,
+        "R": 70
+       },
+       "twist": {
+        "L": 60,
+        "R": 60
+       },
+       "curl": {
+        "L": 30,
+        "R": 30
+       },
+       "head_nod": 18
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       -0.2
+      ],
+      "rot": [
+       0,
+       0,
+       90
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      -3.5,
+      -3.5,
+      1.4
+     ],
+     "to": [
+      -3.0,
+      -3.0,
+      1.4
+     ],
+     "target": [
+      0,
+      0,
+      1.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s036",
+   "line": "They flew three more times that day. The last flight, by Wilbur, lasted fifty nine seconds and covered over two hundred and fifty metres.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -6,
+          2,
+          -0.2
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          6,
+          -2,
+          0.2
+         ]
+        }
+       ]
+      ],
+      "rot": [
+       0,
+       0,
+       -70
+      ]
+     },
+     {
+      "prop": "dunes",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "59 SECONDS",
+      "at": [
+       0,
+       3,
+       3.0
+      ],
+      "size": 0.25,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      4.5,
+      -6.0,
+      2.2
+     ],
+     "to": [
+      3.2,
+      -5.0,
+      2.4
+     ],
+     "target": [
+      0,
+      0,
+      1.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   }
+  },
+  {
+   "id": "s037",
+   "line": "Almost nobody believed them. Newspapers ignored the story, and many experts called them liars.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "newspapers",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "headline": "FLYING OR LYING?",
+       "n": 3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.2,
+      -1.1,
+      0.8
+     ],
+     "to": [
+      0.1,
+      -0.95,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "chapter": "Nobody believed them",
+   "still_at": 0.7
+  },
+  {
+   "id": "s038",
+   "line": "Then, in nineteen oh eight, Wilbur flew in public at a racecourse near Le Mans, in France. He banked, circled and landed exactly where he chose.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       1.2
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -4,
+          2,
+          1.2
+         ],
+         "rot": [
+          0,
+          -20,
+          -40
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          4,
+          0,
+          1.8
+         ],
+         "rot": [
+          0,
+          20,
+          40
+         ]
+        }
+       ]
+      ]
+     },
+     {
+      "prop": "figures",
+      "at": [
+       0,
+       -2.5,
+       0
+      ],
+      "args": {
+       "n": 9,
+       "spacing": 0.45
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -9,
+      2.0
+     ],
+     "to": [
+      0.5,
+      -8,
+      2.4
+     ],
+     "target": [
+      0,
+      0,
+      2.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s039",
+   "line": "The crowds were stunned. One French aviator said: we are beaten. We do not exist.",
+   "visual": {
+    "type": "stage",
+    "env": "hall",
+    "cast": [],
+    "props": [
+     {
+      "prop": "audience",
+      "at": [
+       0,
+       1.0,
+       0
+      ],
+      "rot": [
+       0,
+       0,
+       180
+      ],
+      "args": {
+       "react": 0.3
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -4.6,
+      2.7
+     ],
+     "to": [
+      0.4,
+      -4.0,
+      2.4
+     ],
+     "target": [
+      0,
+      1.0,
+      1.0
+     ],
+     "lens": 30
+    }
+   }
+  },
+  {
+   "id": "s040",
+   "line": "After that, aviation exploded. In nineteen oh nine, Louis Blériot flew across the English Channel.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       1.6
+      ],
+      "scale": 0.7,
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -5,
+          0,
+          1.6
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          5,
+          0,
+          1.8
+         ]
+        }
+       ]
+      ],
+      "rot": [
+       0,
+       0,
+       -90
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "1909",
+      "at": [
+       0,
+       2,
+       3.0
+      ],
+      "size": 0.3,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -9,
+      2.0
+     ],
+     "to": [
+      0.5,
+      -8,
+      2.0
+     ],
+     "target": [
+      0,
+      0,
+      1.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.1,
+      0.3,
+      0.5
+     ]
+    }
+   },
+   "chapter": "From Kitty Hawk to the Moon"
+  },
+  {
+   "id": "s041",
+   "line": "In nineteen twenty seven, Charles Lindbergh flew alone, nonstop, from New York to Paris.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "route",
+      "at": [
+       0,
+       0,
+       0.05
+      ],
+      "args": {
+       "stops": [
+        "NEW YORK",
+        "PARIS"
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      2.0
+     ],
+     "to": [
+      0.4,
+      -2.0,
+      1.6
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    }
+   }
+  },
+  {
+   "id": "s042",
+   "line": "Twenty years after that, Chuck Yeager flew faster than the speed of sound.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "airliner",
+      "at": [
+       0,
+       3,
+       3.2
+      ],
+      "scale": 0.5,
+      "rot": [
+       0,
+       0,
+       -90
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -12,
+          3,
+          3.0
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          12,
+          3,
+          3.6
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "MACH 1",
+      "at": [
+       0,
+       0,
+       1.6
+      ],
+      "size": 0.3,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -9,
+      3.0
+     ],
+     "to": [
+      0,
+      -8.5,
+      3.0
+     ],
+     "target": [
+      0,
+      0,
+      3.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.6,
+       0.7,
+       0.9
+      ],
+      "zenith": [
+       0.02,
+       0.08,
+       0.35
+      ]
+     },
+     "floor": [
+      0.6,
+      0.5,
+      0.35
+     ]
+    }
+   }
+  },
+  {
+   "id": "s043",
+   "line": "And in July nineteen sixty nine, Neil Armstrong landed on the Moon. In his kit, he carried a piece of fabric from the wing of the nineteen oh three Wright Flyer.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "1903 → 1969",
+      "at": [
+       0,
+       -1.2,
+       1.25
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      0.6
+     ],
+     "to": [
+      0.3,
+      -2.6,
+      0.55
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s044",
+   "line": "Today, around a hundred thousand commercial flights take off every day.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "airliner",
+      "at": [
+       -4,
+       10,
+       3.0
+      ],
+      "scale": 0.5,
+      "rot": [
+       0,
+       0,
+       -90
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -7,
+          10,
+          3.0
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          -1,
+          10,
+          3.2
+         ]
+        }
+       ]
+      ]
+     },
+     {
+      "prop": "airliner",
+      "at": [
+       -1.5,
+       7.5,
+       3.3
+      ],
+      "scale": 0.5,
+      "rot": [
+       0,
+       0,
+       -90
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -4.5,
+          7.5,
+          3.3
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          1.5,
+          7.5,
+          3.5
+         ]
+        }
+       ]
+      ]
+     },
+     {
+      "prop": "airliner",
+      "at": [
+       1,
+       7,
+       3.6
+      ],
+      "scale": 0.5,
+      "rot": [
+       0,
+       0,
+       -90
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          -2,
+          7,
+          3.6
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          4,
+          7,
+          3.8000000000000003
+         ]
+        }
+       ]
+      ]
+     },
+     {
+      "prop": "airliner",
+      "at": [
+       3.5,
+       9.5,
+       3.9
+      ],
+      "scale": 0.5,
+      "rot": [
+       0,
+       0,
+       -90
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          0.5,
+          9.5,
+          3.9
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          6.5,
+          9.5,
+          4.1
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -9,
+      3.0
+     ],
+     "to": [
+      0.4,
+      -8.4,
+      3.0
+     ],
+     "target": [
+      0,
+      0,
+      3.0
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.75,
+       0.82,
+       0.95
+      ],
+      "zenith": [
+       0.15,
+       0.35,
+       0.8
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.25,
+      0.5,
+      0.15
+     ]
+    }
+   }
+  },
+  {
+   "id": "s045",
+   "line": "It all began with two brothers from a bicycle shop, who refused to give up, and treated flying not as a dream, but as an engineering problem.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [
+     {
+      "hair": [
+       0.25,
+       0.2,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "pants": [
+        0.12,
+        0.12,
+        0.14
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.4,
+       0.35,
+       0
+      ],
+      "turn": -10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     },
+     {
+      "hair": [
+       0.35,
+       0.22,
+       0.12
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.2,
+        0.17,
+        0.14
+       ],
+       "pants": [
+        0.2,
+        0.17,
+        0.14
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.45,
+       0.35,
+       0
+      ],
+      "turn": 10,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       4,
+       0
+      ],
+      "scale": 0.8,
+      "rot": [
+       0,
+       0,
+       30
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.2
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   },
+   "still": true,
+   "chapter": "Close"
+  },
+  {
+   "id": "s046",
+   "line": "Twelve seconds over a beach. And the whole sky opened up.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "wright_flyer",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "anim": [
+       [
+        0,
+        {
+         "at": [
+          0,
+          3,
+          -0.4
+         ]
+        }
+       ],
+       [
+        1,
+        {
+         "at": [
+          0,
+          -6,
+          1.5
+         ]
+        }
+       ]
+      ]
+     },
+     {
+      "prop": "dunes",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "prop": "birds",
+      "at": [
+       0,
+       -2,
+       3
+      ],
+      "args": {
+       "n": 5
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      4.5,
+      -5.5,
+      1.4
+     ],
+     "to": [
+      6.0,
+      -9.0,
+      3.0
+     ],
+     "target": [
+      0,
+      0,
+      1.2
+     ],
+     "lens": 35,
+     "target_to": [
+      0,
+      -3,
+      2.5
+     ]
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.7,
+       0.75,
+       0.85
+      ],
+      "zenith": [
+       0.2,
+       0.35,
+       0.7
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.8,
+      0.68,
+      0.45
+     ]
+    }
+   },
+   "hold": 1.5
+  }
+ ]
+}
