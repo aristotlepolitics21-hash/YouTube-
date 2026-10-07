@@ -1070,6 +1070,356 @@
   },
   {
    "id": "s011",
+   "line": "Bohr and Einstein first met in Berlin in nineteen twenty, and liked each other at once. Einstein wrote that not often in life had a person given him such joy just by being there.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.5,
+       0.35,
+       0
+      ],
+      "turn": -25,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.5,
+       0.35,
+       0
+      ],
+      "turn": 25,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [
+     {
+      "text": "BERLIN 1920",
+      "at": [
+       0,
+       0.9,
+       2.0
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.6,
+      1.6
+     ],
+     "to": [
+      0.2,
+      -2.2,
+      1.5
+     ],
+     "target": [
+      0,
+      0.3,
+      1.25
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.25,
+      0.2
+     ],
+     "world": [
+      0.03,
+      0.025,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s012",
+   "line": "Years later, on a visit to Copenhagen, they got so absorbed arguing on a tram that they missed their stop, rode back, and missed it again.",
+   "visual": {
+    "type": "stage",
+    "env": "street",
+    "cast": [
+     {
+      "hair": [
+       0.8,
+       0.8,
+       0.8
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.3,
+        0.27,
+        0.22
+       ],
+       "pants": [
+        0.25,
+        0.22,
+        0.2
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.35,
+       0.5,
+       0
+      ],
+      "turn": -30,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     },
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0.35,
+       0.5,
+       0
+      ],
+      "turn": 30,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "street_lamps",
+      "at": [
+       -1.5,
+       -1,
+       0
+      ],
+      "args": {
+       "n": 4,
+       "on": [
+        0,
+        0.01
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      2.5,
+      -3.0,
+      2.0
+     ],
+     "to": [
+      2.0,
+      -2.4,
+      1.8
+     ],
+     "target": [
+      0,
+      1,
+      1.0
+     ],
+     "lens": 30
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s013",
    "line": "Quantum mechanics made astonishingly accurate predictions. But it described the world in a deeply strange way.",
    "visual": {
     "type": "stage",
@@ -1125,7 +1475,7 @@
    }
   },
   {
-   "id": "s012",
+   "id": "s014",
    "line": "Fire single particles, like electrons, at a wall with two slits, and they land one by one on the screen behind, like tiny bullets.",
    "visual": {
     "type": "stage",
@@ -1181,7 +1531,7 @@
    }
   },
   {
-   "id": "s013",
+   "id": "s015",
    "line": "But as more arrive, they build up a pattern of stripes, the kind of pattern only waves make, as if each particle went through both slits at once.",
    "visual": {
     "type": "stage",
@@ -1238,7 +1588,7 @@
    }
   },
   {
-   "id": "s014",
+   "id": "s016",
    "line": "According to quantum mechanics, before you look, a particle doesn't have one definite position. It has only probabilities. Measurement forces a result, and which result is down to pure chance.",
    "visual": {
     "type": "stage",
@@ -1295,7 +1645,7 @@
    }
   },
   {
-   "id": "s015",
+   "id": "s017",
    "line": "Werner Heisenberg showed that you can't even know a particle's exact position and its exact speed at the same time. This is the uncertainty principle.",
    "visual": {
     "type": "stage",
@@ -1352,7 +1702,7 @@
    "still": true
   },
   {
-   "id": "s016",
+   "id": "s018",
    "line": "Bohr embraced all of this. Einstein, who had helped to start quantum physics, could not accept it.",
    "visual": {
     "type": "stage",
@@ -1511,7 +1861,7 @@
    "still": true
   },
   {
-   "id": "s017",
+   "id": "s019",
    "line": "In nineteen oh five, Einstein had shown that light comes in little packets of energy, which we now call photons. That's what won him his own Nobel Prize.",
    "visual": {
     "type": "stage",
@@ -1585,7 +1935,7 @@
    }
   },
   {
-   "id": "s018",
+   "id": "s020",
    "line": "But a universe run on chance? Einstein believed there must be a deeper reality underneath, where everything had a definite cause.",
    "visual": {
     "type": "stage",
@@ -1679,7 +2029,7 @@
    "still": true
   },
   {
-   "id": "s019",
+   "id": "s021",
    "line": "In a letter in nineteen twenty six, he wrote that he was convinced God does not throw dice.",
    "visual": {
     "type": "stage",
@@ -1760,7 +2110,89 @@
    "still": true
   },
   {
-   "id": "s020",
+   "id": "s022",
+   "line": "He wasn't alone. Erwin Schrödinger, who had written quantum mechanics' most famous equation, imagined a cat in a box that, according to the theory, would be both alive and dead until someone looked.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "photon_box",
+      "at": [
+       0,
+       0,
+       -0.65
+      ],
+      "scale": 0.7,
+      "args": {
+       "open_at": 2
+      }
+     },
+     {
+      "prop": "dice",
+      "at": [
+       0.5,
+       -0.2,
+       0
+      ],
+      "args": {
+       "n": 1
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "ALIVE + DEAD?",
+      "at": [
+       0,
+       0.3,
+       0.9
+      ],
+      "size": 0.12,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.4,
+      -1.4,
+      0.7
+     ],
+     "to": [
+      0.3,
+      -1.2,
+      0.65
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s023",
    "line": "The showdown came in October nineteen twenty seven, at the Solvay Conference in Brussels.",
    "visual": {
     "type": "stage",
@@ -2090,7 +2522,7 @@
    "chapter": "The Solvay showdown"
   },
   {
-   "id": "s021",
+   "id": "s024",
    "line": "It was perhaps the most famous gathering in the history of science. Seventeen of the twenty nine people in the official photograph won a Nobel Prize, including Marie Curie, who won two.",
    "visual": {
     "type": "stage",
@@ -2793,7 +3225,7 @@
    "still": true
   },
   {
-   "id": "s022",
+   "id": "s025",
    "line": "Each morning at breakfast, Einstein would present a clever thought experiment designed to break quantum mechanics.",
    "visual": {
     "type": "stage",
@@ -2979,7 +3411,7 @@
    }
   },
   {
-   "id": "s023",
+   "id": "s026",
    "line": "Bohr would worry about it all day. And by dinner, he usually had an answer.",
    "visual": {
     "type": "stage",
@@ -3086,7 +3518,7 @@
    }
   },
   {
-   "id": "s024",
+   "id": "s027",
    "line": "Einstein came back in nineteen thirty with his cleverest challenge: a box full of light, hanging from a spring scale, with a clock inside that opens a shutter to let out a single photon.",
    "visual": {
     "type": "stage",
@@ -3140,7 +3572,7 @@
    "chapter": "Einstein's light box"
   },
   {
-   "id": "s025",
+   "id": "s028",
    "line": "By weighing the box before and after, he argued, you could know both the exact energy of the photon and the exact time it left. That would break Heisenberg's uncertainty principle.",
    "visual": {
     "type": "stage",
@@ -3193,7 +3625,7 @@
    }
   },
   {
-   "id": "s026",
+   "id": "s029",
    "line": "Bohr was shaken. A colleague said he looked like a man in shock.",
    "visual": {
     "type": "stage",
@@ -3287,7 +3719,7 @@
    "still": true
   },
   {
-   "id": "s027",
+   "id": "s030",
    "line": "But after a sleepless night, he found the flaw, using Einstein's own theory of general relativity. When the box moves in gravity, its clock runs at a slightly different rate. The uncertainty was restored.",
    "visual": {
     "type": "stage",
@@ -3340,7 +3772,7 @@
    }
   },
   {
-   "id": "s028",
+   "id": "s031",
    "line": "Einstein changed tactics. In nineteen thirty five, with Boris Podolsky and Nathan Rosen, he published a paper arguing that quantum mechanics must be incomplete.",
    "visual": {
     "type": "stage",
@@ -3385,7 +3817,7 @@
    "still_at": 0.7
   },
   {
-   "id": "s029",
+   "id": "s032",
    "line": "The theory predicts that two particles can become entangled. Separate them, even by vast distances, and measuring one instantly affects what you will find when you measure the other.",
    "visual": {
     "type": "stage",
@@ -3442,7 +3874,7 @@
    }
   },
   {
-   "id": "s030",
+   "id": "s033",
    "line": "Einstein thought that was absurd. He later called it spooky action at a distance. Surely, he said, the particles must have carried hidden instructions all along.",
    "visual": {
     "type": "stage",
@@ -3542,7 +3974,7 @@
    "still": true
   },
   {
-   "id": "s031",
+   "id": "s034",
    "line": "Bohr replied that it makes no sense to talk about properties that haven't been measured. For the rest of their lives, neither man convinced the other.",
    "visual": {
     "type": "stage",
@@ -3700,7 +4132,7 @@
    "still": true
   },
   {
-   "id": "s032",
+   "id": "s035",
    "line": "Yet they remained deep friends. And when Bohr died in nineteen sixty two, the last drawing on his blackboard was a sketch of Einstein's light box.",
    "visual": {
     "type": "stage",
@@ -3765,7 +4197,7 @@
    "still": true
   },
   {
-   "id": "s033",
+   "id": "s036",
    "line": "During the Second World War, Bohr, whose mother was Jewish, fled Nazi-occupied Denmark by fishing boat to Sweden in nineteen forty three.",
    "visual": {
     "type": "stage",
@@ -3812,7 +4244,7 @@
    "chapter": "Escape"
   },
   {
-   "id": "s034",
+   "id": "s037",
    "line": "He was then flown to Britain lying in the empty bomb bay of a fast Mosquito aircraft. His oxygen mask didn't fit his large head, and he passed out on the way.",
    "visual": {
     "type": "stage",
@@ -3878,7 +4310,165 @@
    }
   },
   {
-   "id": "s035",
+   "id": "s038",
+   "line": "Earlier, when the Nazis invaded Denmark in nineteen forty, a chemist at Bohr's institute, George de Hevesy, dissolved two colleagues' gold Nobel medals in acid to hide them. After the war, the gold was recovered and the medals recast.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "glassware",
+      "at": [
+       0,
+       0.05,
+       0
+      ],
+      "args": {
+       "n": 1,
+       "colors": [
+        [
+         0.9,
+         0.75,
+         0.2
+        ]
+       ]
+      }
+     },
+     {
+      "prop": "medal",
+      "at": [
+       0.25,
+       0,
+       0.12
+      ],
+      "scale": 0.8
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.25,
+      -0.75,
+      0.35
+     ],
+     "to": [
+      0.18,
+      -0.65,
+      0.32
+     ],
+     "target": [
+      0,
+      0,
+      0.1
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s039",
+   "line": "Bohr went on to Los Alamos, under the false name Nicholas Baker, as an adviser on the atomic bomb. He urged Churchill and Roosevelt to share atomic secrets with the world, to avoid an arms race. Churchill wanted him watched.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.22,
+       0.15
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "pants": [
+        0.14,
+        0.14,
+        0.17
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 5
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 35
+       },
+       "elbow": {
+        "L": 15,
+        "R": 35
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 0
+       },
+       "curl": {
+        "L": 25,
+        "R": 5
+       },
+       "twist": {
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.5,
+      -1.8,
+      1.55
+     ],
+     "to": [
+      0.35,
+      -1.5,
+      1.5
+     ],
+     "target": "cast0.head",
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.32,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.035
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s040",
    "line": "For decades, the Bohr-Einstein debate seemed like philosophy. Nobody could see how to test it.",
    "visual": {
     "type": "stage",
@@ -3938,7 +4528,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s036",
+   "id": "s041",
    "line": "Then, in nineteen sixty four, the Northern Irish physicist John Bell found a way. He showed that hidden instructions and quantum mechanics predict measurably different results.",
    "visual": {
     "type": "stage",
@@ -3996,7 +4586,7 @@
    "still": true
   },
   {
-   "id": "s037",
+   "id": "s042",
    "line": "Experiments by John Clauser in the nineteen seventies, and Alain Aspect in the nineteen eighties, tested Bell's idea with entangled particles of light.",
    "visual": {
     "type": "stage",
@@ -4053,7 +4643,7 @@
    }
   },
   {
-   "id": "s038",
+   "id": "s043",
    "line": "Again and again, quantum mechanics won. The universe really is as strange as Bohr said.",
    "visual": {
     "type": "stage",
@@ -4112,7 +4702,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s039",
+   "id": "s044",
    "line": "In twenty twenty two, Aspect, Clauser and Anton Zeilinger shared the Nobel Prize in Physics for this work.",
    "visual": {
     "type": "stage",
@@ -4334,7 +4924,7 @@
    "still": true
   },
   {
-   "id": "s040",
+   "id": "s045",
    "line": "Today, entanglement is no longer just an argument. It's the basis of quantum computers and ultra-secure quantum communication.",
    "visual": {
     "type": "stage",
@@ -4399,7 +4989,138 @@
    }
   },
   {
-   "id": "s041",
+   "id": "s046",
+   "line": "When Denmark gave Bohr its highest honour, he designed his own coat of arms, with the Chinese yin-yang symbol and a Latin motto: opposites are complementary.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "medal",
+      "at": [
+       0,
+       0.3,
+       0.55
+      ],
+      "scale": 2.0
+     }
+    ],
+    "texts": [
+     {
+      "text": "CONTRARIA SUNT COMPLEMENTA",
+      "at": [
+       0,
+       0,
+       1.0
+      ],
+      "size": 0.12,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.15
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.06,
+      0.03,
+      0.15
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s047",
+   "line": "Element number one hundred and seven, bohrium, is named after him. And the institute he founded in Copenhagen still carries his name.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [],
+    "texts": [
+     {
+      "text": "Bh",
+      "at": [
+       0,
+       0,
+       1.1
+      ],
+      "size": 0.4,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.1
+     },
+     {
+      "text": "107",
+      "at": [
+       -0.3,
+       0,
+       1.4
+      ],
+      "size": 0.1,
+      "color": [
+       1,
+       1,
+       1
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    }
+   },
+   "still": true,
+   "still_at": 0.8
+  },
+  {
+   "id": "s048",
    "line": "Einstein lost the argument. But by pushing so hard, he forced quantum mechanics to explain itself, and revealed its strangest feature.",
    "visual": {
     "type": "stage",
@@ -4494,7 +5215,7 @@
    "chapter": "Close"
   },
   {
-   "id": "s042",
+   "id": "s049",
    "line": "Sometimes, the greatest gift a scientist can give is a really good objection.",
    "visual": {
     "type": "stage",

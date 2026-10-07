@@ -56,6 +56,12 @@ S("But Bohr's model was only a start. In the nineteen twenties, a group of young
   chapter="A strange new theory")
 
 # ===================================================================== QUANTUM WEIRDNESS
+S("Bohr and Einstein first met in Berlin in nineteen twenty, and liked each other at once. Einstein wrote that not often in life had a person given him such joy just by being there.",
+  stage("lab", TWO, cast=[who(EINSTEIN, at=(-0.5, 0.35, 0), turn=-25, pose=PRESENT), who(BOHR, at=(0.5, 0.35, 0), turn=25, pose=PRESENT)],
+        texts=[T("BERLIN 1920", (0, 0.9, 2.0), 0.15, pop=0.2)], env_opts=STUDY), still=True)
+S("Years later, on a visit to Copenhagen, they got so absorbed arguing on a tram that they missed their stop, rode back, and missed it again.",
+  stage("street", cam((2.5, -3.0, 2.0), (2.0, -2.4, 1.8), (0, 1, 1.0), lens=30), cast=[who(EINSTEIN, at=(-0.35, 0.5, 0), turn=-30, pose=PRESENT), who(BOHR, at=(0.35, 0.5, 0), turn=30, pose=PRESENT)],
+        props=[P("street_lamps", (-1.5, -1, 0), args={"n": 4, "on": [0, 0.01]})]), still=True)
 S("Quantum mechanics made astonishingly accurate predictions. But it described the world in a deeply strange way.",
   stage("studio", cam((-1.6, -2.2, 1.3), (-1.2, -1.9, 1.1), (0.2, 0, 0.4)), props=[P("double_slit", args={"build": [0.05, 0.9]})], env_opts=DEEP))
 S("Fire single particles, like electrons, at a wall with two slits, and they land one by one on the screen behind, like tiny bullets.",
@@ -80,6 +86,9 @@ S("In a letter in nineteen twenty six, he wrote that he was convinced God does n
         P("dice", (-0.35, -0.1, TOP), args={"roll": [0.0, 0.01]})], env_opts=STUDY), still=True)
 
 # ===================================================================== SOLVAY
+S("He wasn't alone. Erwin Schr\u00f6dinger, who had written quantum mechanics' most famous equation, imagined a cat in a box that, according to the theory, would be both alive and dead until someone looked.",
+  stage("studio", cam((0.4, -1.4, 0.7), (0.3, -1.2, 0.65), (0, 0, 0.3)), props=[P("photon_box", (0, 0, -0.65), scale=0.7, args={"open_at": 2}), P("dice", (0.5, -0.2, 0), args={"n": 1})],
+        texts=[T("ALIVE + DEAD?", (0, 0.3, 0.9), 0.12, pop=0.3)], env_opts=DEEP), still=True)
 S("The showdown came in October nineteen twenty seven, at the Solvay Conference in Brussels.",
   stage("hall", cam((0, -4.0, 1.8), (0.2, -3.6, 1.7), (0, 0.6, 1.1)),
         cast=[who(EINSTEIN, at=(-0.6, 0.3, 0)), who(BOHR, at=(0.6, 0.3, 0)), who(HEISENBERG, at=(0, 0.9, 0)), who(SCIENTIST, at=(-1.3, 0.8, 0)), who(SCIENTIST | {"hair": [0.5, 0.45, 0.4]}, at=(1.3, 0.8, 0))],
@@ -126,6 +135,12 @@ S("He was then flown to Britain lying in the empty bomb bay of a fast Mosquito a
   stage("night", cam((0, -9, 3.0), (0.4, -8.4, 3.0), (0, 0, 3.0)), props=[P("airliner", (0, 3, 3.2), scale=0.4, rot=[0, 0, -90], anim=[[0, {"at": [-5, 3, 3.0]}], [1, {"at": [5, 3, 3.4]}]])]))
 
 # ===================================================================== VERDICT
+S("Earlier, when the Nazis invaded Denmark in nineteen forty, a chemist at Bohr's institute, George de Hevesy, dissolved two colleagues' gold Nobel medals in acid to hide them. After the war, the gold was recovered and the medals recast.",
+  stage("studio", cam((0.25, -0.75, 0.35), (0.18, -0.65, 0.32), (0, 0, 0.1)), props=[P("glassware", (0, 0.05, 0), args={"n": 1, "colors": [[0.9, 0.75, 0.2]]}), P("medal", (0.25, 0, 0.12), scale=0.8)]),
+  still=True)
+S("Bohr went on to Los Alamos, under the false name Nicholas Baker, as an adviser on the atomic bomb. He urged Churchill and Roosevelt to share atomic secrets with the world, to avoid an arms race. Churchill wanted him watched.",
+  stage("lab", cam((0.5, -1.8, 1.55), (0.35, -1.5, 1.5), "cast0.head"), cast=[who(BOHR, pose=PRESENT)], env_opts={"wall": [0.3, 0.32, 0.36], "world": [0.03, 0.03, 0.035]}),
+  still=True)
 S("For decades, the Bohr-Einstein debate seemed like philosophy. Nobody could see how to test it.",
   stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("BOHR  ?  EINSTEIN", (0, 0, 1.0), 0.22, pop=0.1)], env_opts=DEEP), still=True, still_at=0.8,
   chapter="The verdict")
@@ -146,6 +161,12 @@ S("Today, entanglement is no longer just an argument. It's the basis of quantum 
         env_opts=DEEP))
 
 # ===================================================================== CLOSE
+S("When Denmark gave Bohr its highest honour, he designed his own coat of arms, with the Chinese yin-yang symbol and a Latin motto: opposites are complementary.",
+  stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("CONTRARIA SUNT COMPLEMENTA", (0, 0, 1.0), 0.12, pop=0.15)],
+        props=[P("medal", (0, 0.3, 0.55), scale=2.0)], env_opts=DEEP), still=True, still_at=0.8)
+S("Element number one hundred and seven, bohrium, is named after him. And the institute he founded in Copenhagen still carries his name.",
+  stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("Bh", (0, 0, 1.1), 0.4, pop=0.1), T("107", (-0.3, 0, 1.4), 0.1, (1, 1, 1), pop=0.2)]),
+  still=True, still_at=0.8)
 S("Einstein lost the argument. But by pushing so hard, he forced quantum mechanics to explain itself, and revealed its strangest feature.",
   stage("lab", cam((0.5, -1.8, 1.6), (0.35, -1.5, 1.6), "cast0.head"), cast=[who(EINSTEIN, pose={**STAND, "head_nod": 10})], env_opts=STUDY), still=True,
   chapter="Close")
