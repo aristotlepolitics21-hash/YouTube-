@@ -61,6 +61,9 @@ S("The United States responded by creating NASA in nineteen fifty eight.",
   stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("NASA  1958", (0, 0, 1.0), 0.3, (0.3, 0.6, 1.0), pop=0.1)]), still=True, still_at=0.8)
 
 # ===================================================================== GAGARIN
+S("In nineteen fifty nine, NASA picked its first seven astronauts, all military test pilots. The press called them the Mercury Seven.",
+  stage("sky", cam((0, -3.6, 1.6), (0.3, -3.2, 1.5), (0, 0.3, 1.1)), cast=[who(ASTRO, at=((i - 3) * 0.55, 0.2 + (i % 2) * 0.3, 0), scale=0.95) for i in range(7)],
+        env_opts=CAPE), still=True)
 S("Then came an even bigger shock. On the twelfth of April, nineteen sixty one, a twenty seven year old Soviet pilot named Yuri Gagarin became the first human in space.",
   stage("space", cam((0.4, -1.8, 1.6), (0.3, -1.5, 1.55), "cast0.head"), cast=[who(GAGARIN, pose=STAND)],
         texts=[T("12 APRIL 1961", (0.9, 0.5, 2.0), 0.14, pop=0.2)]), still=True, chapter="The first human in space")
@@ -74,6 +77,10 @@ S("Weeks later, Alan Shepard became the first American in space, on a fifteen mi
   stage("sky", cam((0, -14, 3.0), (0, -13, 4.0), (0, 0, 4.0), lens=30), props=[P("saturn_v", scale=0.45, args={"launch": [0.15, 1.0]})], env_opts=CAPE))
 
 # ===================================================================== KENNEDY
+S("In February nineteen sixty two, John Glenn became the first American to orbit the Earth. Before he flew, he asked for one person to double check the computer's numbers: the NASA mathematician Katherine Johnson.",
+  stage("lab", cam((0.5, -1.8, 1.55), (0.35, -1.5, 1.5), "cast0.head"),
+        cast=[who({"hair": [0.08, 0.06, 0.05], "sleeves": "long", "outfit": {"skin": [0.45, 0.3, 0.22], "shirt": [0.25, 0.3, 0.55], "pants": [0.25, 0.3, 0.55], "boots": [0.1, 0.05, 0.04]}}, pose=WORK)],
+        props=[TABLE, P("books", (0.45, -0.1, TOP), args={"n": 4}), P("trajectory", (0, 0.4, 1.4), scale=0.2)], env_opts=OFFICE), still=True)
 S("President John F. Kennedy needed something bold. Something the Soviets could not easily win.",
   stage("lab", cam((0.5, -1.8, 1.55), (0.35, -1.5, 1.5), "cast0.head"), cast=[who(KENNEDY, pose=STAND)], env_opts=OFFICE), still=True,
   chapter="We choose to go to the Moon")
@@ -89,6 +96,14 @@ S("The Apollo programme became one of the biggest engineering projects in histor
   stage("lab", cam((0, -4.5, 2.5), (0.3, -4.0, 2.3), (0, 1.5, 1.2), lens=28), props=[P("mission_control")], env_opts=OFFICE), still=True)
 
 # ===================================================================== BUILDING THE ROCKET
+S("NASA flew ten crewed Gemini missions to practise everything a Moon trip would need: long flights, spacewalks, and finding and docking with another spacecraft in orbit.",
+  stage("space", cam((1.5, -4, 1.4), (1.0, -3.4, 1.2), (0, 0, 0.8)), props=[P("command_module", (-0.6, 0, 0.8), scale=0.6, rot=[0, 90, 0]),
+        P("command_module", (0.9, 0.3, 0.8), scale=0.6, rot=[0, -90, 0], anim=[[0, {"at": [2.0, 0.3, 0.8]}], [1, {"at": [0.9, 0.3, 0.8]}]])]))
+S("On Gemini Eight, a stuck thruster sent Neil Armstrong's spacecraft tumbling, once every second. He calmly regained control. NASA remembered.",
+  stage("space", cam((1.5, -3, 1.3), (1.2, -2.6, 1.2), (0, 0, 0.8)), props=[P("command_module", (0, 0, 0.8), scale=0.7, spin=["y", 1440])]))
+S("The plan they chose, championed by an engineer named John Houbolt, was clever: leave the main ship in orbit around the Moon, and send down only a small, light lander.",
+  stage("space", cam((0, -5.5, 1.5), (0.4, -5.0, 1.3), (0, 0, 0.3)), props=[P("command_module", (-0.8, 0, 1.4), scale=0.3), P("lunar_module", (0.8, 0, -0.3), scale=0.3),
+        P("moon_surface", (0, 0, -0.5), args={"craters": 20})]), still=True)
 S("To get there, NASA needed the most powerful rocket ever built. It was designed by a team led by Wernher von Braun, a former Nazi rocket engineer brought to America after the war.",
   stage("lab", cam((0.5, -1.8, 1.55), (0.35, -1.5, 1.5), "cast0.head"), cast=[who(VON_BRAUN, pose=PRESENT)], env_opts=OFFICE), still=True,
   chapter="Saturn V")
@@ -127,8 +142,13 @@ S("That photograph, Earthrise, showed our whole world as a small, fragile blue m
   stage("space", cam((0, -3.4, 0.6), (0.2, -3.0, 0.5), (0, 0, 0.1)), props=[P("moon_surface", (0, -3, -1.1), args={"craters": 20})]), still=True)
 
 # ===================================================================== APOLLO 11
+S("In May nineteen sixty nine, Apollo Ten flew a full dress rehearsal, taking the lunar module to within about fifteen kilometres of the Moon's surface. Everything was ready.",
+  stage("space", cam((2.5, -4, 3.0), (2, -3.4, 2.6), (0, 0, 1.5)), props=[P("lunar_module", (0, 0, 2.5)), P("moon_surface")]))
 S("On the sixteenth of July, nineteen sixty nine, Neil Armstrong, Buzz Aldrin and Michael Collins launched on Apollo Eleven.",
   stage("sky", PAD, props=[P("saturn_v", args={"launch": [0.15, 1.0]}), P("launch_tower")], env_opts=CAPE), chapter="Apollo 11")
+S("Around a million people gathered near Cape Kennedy to watch the launch.",
+  stage("sky", cam((0, -30, 2.0), (0, -28, 3.0), (0, 0, 5.0), lens=35), props=[P("saturn_v", args={"launch": [0.3, 1.0]}), P("figures", (0, -24, 0), args={"n": 12, "spacing": 0.5})],
+        env_opts=CAPE))
 S("Four days later, Armstrong and Aldrin climbed into the lunar module, named Eagle, and began their descent. Collins stayed behind in orbit.",
   stage("space", cam((2.5, -4, 3.0), (2, -3.4, 2.4), (0, 0, 1.5)), props=[P("lunar_module", args={"land": [0, 1.5]}), P("moon_surface")]))
 S("On the way down, the guidance computer flashed alarms they had never seen before, codes twelve oh two and twelve oh one. It was overloaded. Mission control decided to carry on.",
@@ -144,6 +164,12 @@ S("Six and a half hours later, Armstrong stepped onto the surface. That's one sm
 S("Aldrin joined him. They planted a flag, collected rocks, and set up experiments, some of which are still being used today.",
   stage("space", cam((3, -5, 1.6), (2.4, -4.2, 1.5), (0.5, 0, 0.8)), cast=[who(ASTRO, at=(-1.0, -0.6, 0), turn=-20), who(ASTRO, at=(0.9, 0.0, 0), turn=-60)],
         props=[P("lunar_module", (-0.5, 1.2, 0)), P("moon_surface", args={"flag": True, "footprints": True})]), still=True)
+S("They spent about two and a half hours outside, and gathered more than twenty kilogrammes of Moon rock. They left behind a plaque that reads: we came in peace for all mankind.",
+  stage("space", cam((0.4, -1.4, 1.0), (0.3, -1.2, 0.9), (0, 0, 0.7)), props=[P("lunar_module"), P("moon_surface")],
+        texts=[T("WE CAME IN PEACE FOR ALL MANKIND", (0, -0.75, 0.75), 0.04, (1, 1, 1), pop=0.3)]), still=True)
+S("On the twenty fourth of July, the crew splashed down in the Pacific Ocean. Just in case they had brought back Moon germs, they were kept in quarantine for three weeks.",
+  stage("sky", cam((2, -5, 1.2), (1.5, -4.4, 1.1), (0, 0, 0.5)), props=[P("command_module", (0, 0, 0.3), rot=[180, 0, 0])],
+        env_opts={"sky": SKY["sky"], "floor": [0.05, 0.25, 0.45]}), still=True)
 S("Back on Earth, people wept and cheered in the streets.",
   stage("night", cam((0, -5.5, 1.8), (0.4, -5.0, 1.7), (0, 1, 0.8)), props=[P("houses", args={"on": [0, 0.1]}), P("figures", (0, -1.5, 0), args={"n": 9, "spacing": 0.45})]),
   still=True)
@@ -152,6 +178,11 @@ S("Back on Earth, people wept and cheered in the streets.",
 S("Between nineteen sixty nine and nineteen seventy two, twelve men walked on the Moon. Since then, no one has gone back.",
   stage("space", MOON, cast=[who(ASTRO, at=(-1.0, -0.6, 0), turn=-20)], props=[P("moon_surface", args={"flag": True, "footprints": True})],
         texts=[T("12", (0, 2, 2.0), 0.6, pop=0.2)]), still=True, chapter="Legacy")
+S("In nineteen seventy, an explosion crippled Apollo Thirteen on its way to the Moon. With mission control's help, the crew used the lunar module as a lifeboat, and made it home.",
+  stage("space", cam((1.5, -4, 1.4), (1.0, -3.4, 1.2), (0, 0, 0.8)), props=[P("command_module", (0, 0, 0.8), scale=0.7), P("lunar_module", (0, 1.6, 0.0), scale=0.4)],
+        bolts=[{"from": [0.6, 0, 0.6], "to": [1.4, -0.3, 0.9], "at": 0.2, "seed": 4, "width": 0.01}]), still=True)
+S("The last astronaut to walk on the Moon, Gene Cernan, left in December nineteen seventy two. The Apollo programme had cost around twenty five billion dollars at the time.",
+  stage("space", MOON, cast=[who(ASTRO, at=(1.2, -0.6, 0), turn=-40)], props=[P("lunar_module"), P("moon_surface", args={"flag": True, "footprints": True})]), still=True)
 S("The race left behind more than footprints. It pushed forward computers, materials, weather satellites and medicine, and inspired a generation to become scientists and engineers.",
   stage("studio", cam((0, -2.6, 1.2), (0.3, -2.2, 1.1), (0, 0, 0.5)),
         props=[P("microchip", (-0.9, 0, 0.05), scale=0.8), P("sputnik", (-0.1, 0.2, 0.6), scale=0.4), P("laptop", (0.8, 0, 0))]), still=True)
