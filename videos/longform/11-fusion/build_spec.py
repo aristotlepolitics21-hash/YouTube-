@@ -133,8 +133,8 @@ S("Meanwhile, dozens of private companies are racing to build smaller, cheaper r
 S("In twenty twenty one, a team from MIT and the company Commonwealth Fusion Systems tested a new superconducting magnet that reached a field of twenty tesla, a record for its kind.",
   stage("lab", cam((0.6, -2.0, 1.4), (0.4, -1.6, 1.3), (0, 0, 0.8)), cast=[who(ENGINEER, at=(-1.0, 0.3, 0), turn=-20, pose=STAND)],
         props=[P("coil", (0, 0, 0.8), scale=4, args={"glow": [[0, 0], [0.4, 3]], "axis": "z"})], texts=[T("20 TESLA", (0.6, 0.5, 1.8), 0.2, pop=0.4)], env_opts=HALL), still=True)
-S("And in early twenty twenty five, tokamaks in China and France held hot plasma steady for more than twenty minutes, new records for staying power.",
-  stage("lab", TOK, props=[P("tokamak", args={"plasma": [0.0, 0.2]})], texts=[T("20+ MINUTES", (0, 1.5, 2.6), 0.25, pop=0.4)], env_opts=HALL))
+S("And in early twenty twenty five, tokamaks held hot plasma steady for almost eighteen minutes in China, and twenty two minutes in France, new records for staying power.",
+  stage("lab", TOK, props=[P("tokamak", args={"plasma": [0.0, 0.2]})], texts=[T("22 MINUTES", (0, 1.5, 2.6), 0.25, pop=0.4)], env_opts=HALL))
 S("Why does it matter so much? Because fusion fuel is incredibly concentrated.",
   stage("studio", cam((0, -2.0, 0.6), (0, -1.8, 0.55), (0, 0, 0.2)), props=[P("vials", args={"n": 1, "label": "D + T"})], env_opts=COSMOS), still=True,
   chapter="Why it matters")

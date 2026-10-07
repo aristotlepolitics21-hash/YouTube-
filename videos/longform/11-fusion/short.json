@@ -2682,7 +2682,7 @@
   },
   {
    "id": "s039",
-   "line": "And in early twenty twenty five, tokamaks in China and France held hot plasma steady for more than twenty minutes, new records for staying power.",
+   "line": "And in early twenty twenty five, tokamaks held hot plasma steady for almost eighteen minutes in China, and twenty two minutes in France, new records for staying power.",
    "visual": {
     "type": "stage",
     "env": "lab",
@@ -2705,7 +2705,7 @@
     ],
     "texts": [
      {
-      "text": "20+ MINUTES",
+      "text": "22 MINUTES",
       "at": [
        0,
        1.5,
