@@ -2251,7 +2251,150 @@ def blackboard(frames, lines=("E = mc²",), at=0.1):
         fx.pop_in(t, key_frac(frames, at + 0.1 * i))
     return root
 
+
+# ------------------------------------------------------------------ genetics
+BASE_COLORS = [(0.95, 0.3, 0.3), (0.3, 0.75, 1.0), (1.0, 0.8, 0.2), (0.4, 0.95, 0.45)]
+
+
+def dna_helix(frames, length=2.4, turns=3.0, spin=60, cut=None, edit=None, seed=1):
+    """Double helix along X: two backbone ribbons and coloured base-pair rungs.
+    cut=[t, x] opens a gap at x; edit=[t, x, colour_index] swaps in new rungs there."""
+    rng = random.Random(seed)
+    root = empty("dna")
+    backbone = mat("backbone", (0.85, 0.85, 0.9), 0.3, emit=0.4)
+    n = int(turns * 10)
+    r = 0.18
+    mats = [mat(f"base{k}", c, 0.35, emit=0.6) for k, c in enumerate(BASE_COLORS)]
+    for strand in (0, 1):
+        pts = []
+        for i in range(n * 4 + 1):
+            u = i / (n * 4)
+            a = 2 * math.pi * turns * u + strand * math.pi
+            pts.append(V((u * length - length / 2, r * math.cos(a), r * math.sin(a))))
+        curve_obj(f"strand{strand}", pts, 0.03, backbone, root)
+    rungs = []
+    for i in range(n):
+        u = (i + 0.5) / n
+        x = u * length - length / 2
+        a = 2 * math.pi * turns * u
+        p1 = V((x, r * math.cos(a), r * math.sin(a)))
+        p2 = V((x, -r * math.cos(a), -r * math.sin(a)))
+        k = rng.randint(0, 3)
+        for half, (pa, pb), kk in ((0, (p1, (p1 + p2) / 2), k), (1, ((p1 + p2) / 2, p2), 3 - k)):
+            mid, d = (pa + pb) / 2, pb - pa
+            o = cyl("rung", mid, 0.022, d.length, mats[kk], parent=root)
+            o.rotation_euler = d.to_track_quat("Z", "Y").to_euler()
+            rungs.append((x, o))
+    if cut:
+        t, xc = cut
+        for x, o in rungs:
+            if abs(x - xc) < length / n * 1.2:
+                props.key(o, 1, scale=(1, 1, 1))
+                props.key(o, key_frac(frames, t), scale=(1, 1, 1))
+                props.key(o, key_frac(frames, t) + 4, scale=(0, 0, 0))
+        fm, fs = fx.emissive("cut_flash", (1.0, 0.9, 0.4), 0)
+        sph("cut_flash", (xc, 0, 0), 0.12, fm, parent=root)
+        glow_keys(fs, frames, [(0, 0), (t - 0.01, 0), (t, 25), (t + 0.08, 0)])
+    if edit:
+        t, xe, kk = edit
+        for j in range(3):
+            o = cyl("new_rung", (xe + (j - 1) * length / n, 0, 0), 0.024, 2 * r, mat("new_base", BASE_COLORS[kk], 0.3, emit=3), parent=root)
+            o.rotation_euler = (R(90 + 36 * j), 0, 0)
+            pop_in(o, key_frac(frames, t + 0.04 * j))
+    if spin:
+        props.key(root, 1, rotation_euler=(0, 0, 0))
+        props.key(root, frames, rotation_euler=(R(spin), 0, 0))
+        fx._linear(root)
+    return root
+
+
+def cas9(frames, slide=None, guide=True):
+    """The Cas9 protein (a lumpy two-lobed blob) carrying a glowing guide RNA strand."""
+    root = empty("cas9")
+    pm = mat("cas9", (0.55, 0.35, 0.85), 0.5, emit=0.3)
+    for (x, y, z, r) in ((0, 0, 0.18, 0.2), (0.12, 0.05, -0.05, 0.17), (-0.13, -0.04, -0.02, 0.16), (0.02, 0.12, 0.05, 0.14)):
+        _fuzzy("lobe", (x, y, z), r, (0.55, 0.35, 0.85), root, scale=(1, 1, 1)).data.materials[0] = pm
+    if guide:
+        gm, _ = fx.emissive("guide_rna", (1.0, 0.85, 0.2), 4)
+        pts = [V((0.25 - 0.012 * i, -0.18 + 0.01 * math.sin(i * 0.6), 0.05 * math.cos(i * 0.4))) for i in range(40)]
+        curve_obj("guide", pts, 0.012, gm, root)
+    if slide:
+        for t, x in slide:
+            props.key(root, key_frac(frames, t), location=(x, 0, 0))
+    return root
+
+
+def cell(frames, nucleus=True, pulse=False):
+    root = empty("cell")
+    sph("membrane", (0, 0, 0), 1.0, looks.xray("membrane", (0.4, 0.8, 1.0), 1.5, 0.25), parent=root)
+    if nucleus:
+        sph("nucleus", (0.1, 0, 0.05), 0.38, mat("nucleus", (0.6, 0.25, 0.7), 0.4, emit=0.4, alpha=0.8), parent=root)
+    rng = random.Random(3)
+    for k in range(8):
+        o = sph("organelle", (rng.uniform(-0.6, 0.6), rng.uniform(-0.6, 0.6), rng.uniform(-0.5, 0.5)), rng.uniform(0.05, 0.1),
+                mat("mito", (1.0, 0.55, 0.3), 0.4, emit=0.3), (2, 1, 1), root)
+        o.rotation_euler = (rng.uniform(0, 3), rng.uniform(0, 3), 0)
+    return root
+
+
+def phage(frames, attack=None):
+    """Bacteriophage: icosahedral head, tail and spidery legs. attack=[t0, t1] moves it down onto a host."""
+    root = empty("phage")
+    bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=1, radius=0.15, location=(0, 0, 0.55))
+    h = bpy.context.active_object
+    h.data.materials.append(mat("capsid", (0.75, 0.8, 0.9), 0.3, 0.4))
+    h.parent = root
+    cyl("tail", (0, 0, 0.27), 0.03, 0.4, mat("tail", (0.6, 0.65, 0.7), 0.3, 0.5), parent=root)
+    for k in range(6):
+        a = R(k * 60)
+        curve_obj("leg", [V((0, 0, 0.08)), V((0.15 * math.cos(a), 0.15 * math.sin(a), 0.1)), V((0.2 * math.cos(a), 0.2 * math.sin(a), -0.05))],
+                  0.008, mat("leg", (0.6, 0.65, 0.7), 0.3, 0.5), root)
+    if attack:
+        props.key(root, key_frac(frames, attack[0]), location=(0, 0, 1.0))
+        props.key(root, key_frac(frames, attack[1]), location=(0, 0, 0.0))
+    return root
+
+
+def chromosome(frames, color=(0.6, 0.3, 0.9)):
+    root = empty("chromosome")
+    m = mat("chrom", color, 0.45, emit=0.4)
+    for sign in (-1, 1):
+        o = sph("arm", (sign * 0.07, 0, 0), 0.09, m, (1, 1, 4), root)
+        o.rotation_euler = (0, R(sign * 12), 0)
+    sph("centromere", (0, 0, 0), 0.08, mat("centro", (0.9, 0.85, 0.3), 0.4, emit=0.6), parent=root)
+    band = mat("chrom_band", (0.35, 0.15, 0.55), 0.5)
+    for sign in (-1, 1):
+        for k in range(4):
+            z = -0.28 + k * 0.16 + (0.04 if k > 1 else 0)
+            props.torus("band", (sign * 0.07 + z * math.tan(R(sign * 12)) * 0, 0, z), 0.085, 0.012, band).parent = root
+    return root
+
+
+def blood_cells(frames, n=10, sickle=0, seed=5, fix=None):
+    """Red blood cells: doughnut-like discs; `sickle` of them are crescents; fix=t morphs the crescents back to discs."""
+    rng = random.Random(seed)
+    root = empty("blood")
+    red = mat("rbc", (0.75, 0.05, 0.08), 0.35, emit=0.2)
+    for i in range(n):
+        c = child(empty("rbc"), root)
+        c.location = (rng.uniform(-1.2, 1.2), rng.uniform(-0.4, 0.6), rng.uniform(0.2, 1.0))
+        c.rotation_euler = (rng.uniform(0, 3), rng.uniform(0, 3), 0)
+        if i < sickle:
+            arc = [V((0.16 * math.cos(a), 0.16 * math.sin(a), 0)) for a in [R(-70 + 140 * k / 20) for k in range(21)]]
+            o = curve_obj("sickle", arc, 0.04, red, c)
+            o.data.bevel_factor_mapping_start = o.data.bevel_factor_mapping_end = "SPLINE"
+            if fix is not None:
+                ring = props.torus("fixed", (0, 0, 0), 0.1, 0.05, red)
+                ring.parent = c
+                visible_from(ring, frames, fix + 0.1)
+                hide_keys(o, ((1, False), (key_frac(frames, fix + 0.1), True)))
+        else:
+            props.torus("rbc", (0, 0, 0), 0.1, 0.05, red).parent = c
+        props.key(c, 1, location=tuple(c.location))
+        props.key(c, frames, location=(c.location.x + 0.4, c.location.y, c.location.z + rng.uniform(-0.1, 0.1)))
+    return root
+
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",
-                          "glow_keys", "visible_from", "_fuzzy", "_nucleus", "_tree", "hide_keys", "_wing", "propeller")}
+                          "glow_keys", "visible_from", "_fuzzy", "_nucleus", "_tree", "hide_keys", "_wing", "propeller", "BASE_COLORS")}
