@@ -6,20 +6,21 @@
   },
   "thumbnail": {
     "scene": 4,
-    "t": 2.0,
+    "t": 0.9,
     "text": [
       "PURE",
       "GOLD?!"
     ],
-    "y": 0.6,
+    "y": 0.1,
     "override": {
       "score": null,
-      "label": ""
+      "hide_tag": true,
+      "hide_host": true
     },
     "mascot": [
       0.78,
-      0.9,
-      140,
+      1.0,
+      520,
       "shock"
     ]
   },
@@ -43,7 +44,12 @@
       "score": 1,
       "mood": "sad",
       "say": "The one dollar burger is just sad.",
-      "label": "BURGER"
+      "label": "BURGER",
+      "still_t": [
+        0.9,
+        3.0,
+        4.6
+      ]
     },
     {
       "type": "tier",
@@ -53,7 +59,12 @@
       "score": 7,
       "mood": "happy",
       "say": "A hundred dollars gets you a real stack.",
-      "label": "BURGER"
+      "label": "BURGER",
+      "still_t": [
+        0.9,
+        3.0,
+        4.6
+      ]
     },
     {
       "type": "tier",
@@ -63,7 +74,12 @@
       "score": 9,
       "mood": "shock",
       "say": "A thousand dollars? Four patties and it sparkles.",
-      "label": "BURGER"
+      "label": "BURGER",
+      "still_t": [
+        0.9,
+        3.0,
+        4.6
+      ]
     },
     {
       "type": "tier",
@@ -74,7 +90,12 @@
       "mood": "shock",
       "min": 3,
       "say": "And the ten thousand dollar burger is wrapped in pure gold!",
-      "label": "BURGER"
+      "label": "BURGER",
+      "still_t": [
+        0.9,
+        3.0,
+        4.6
+      ]
     },
     {
       "type": "outro",

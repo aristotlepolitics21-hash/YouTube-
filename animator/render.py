@@ -24,11 +24,9 @@ name = os.path.splitext(os.path.basename(a.episode))[0]
 
 if a.stills:
     os.makedirs(a.stills, exist_ok=True)
-    portrait = ep.get("format") == "short"
-    ctx = engine.Ctx(*((540, 960) if portrait else (960, 540)))
     for i, sc in enumerate(ep["scenes"]):
-        img = engine.SCENES[sc["type"]](ctx, sc, sc.get("still_t", 1.6), 3.0)
-        img.save(os.path.join(a.stills, f"{name}_{i:02d}_{sc['type']}.png"))
+        for t in sc.get("still_t", [0.9, 3.0]):
+            engine.still(ep, i, t).save(os.path.join(a.stills, f"{name}_{i:02d}_{sc['type']}_{t:.1f}.png"))
     engine.thumbnail(ep, os.path.join(a.stills, f"{name}_thumb.png"))
     print("stills ->", a.stills); sys.exit()
 

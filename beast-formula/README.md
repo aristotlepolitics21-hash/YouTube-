@@ -55,8 +55,8 @@ the brand, not for views.
 | Formula element | Engine feature |
 |---|---|
 | Stakes-first hook | `hook` scene: pop-in lines over spinning rays and falling money |
-| Price ladder | `tier` scene: count-up price tag, item gets fancier per `level` (0-5), rating meter, reaction mascot |
-| Elimination competition | `circle` scene: up to 10 named blob players, timed `OUT!` launches, HUD with prize, clock and players left |
+| Price ladder | `tier` scene: item slides along a kitchen counter, the host points, leans in, bites (a chunk disappears), chews, reacts by score and rates it with stars |
+| Elimination competition | `circle` scene: up to 10 players with name tags, eliminated ones leap out and run off screen, HUD with prize, clock and players left |
 | Mid-video twist | `versus` (split screen slam) and `counter` (cash offer count-up) |
 | Payoff | `winner`: crown drop, confetti, money rain |
 | CTA | `outro`: animated subscribe press and a comment question |

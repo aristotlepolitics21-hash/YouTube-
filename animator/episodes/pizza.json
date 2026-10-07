@@ -6,29 +6,29 @@
   },
   "thumbnail": {
     "scene": 7,
-    "t": 2.0,
+    "t": 0.9,
     "text": [
       "$1,000,000",
       "PIZZA"
     ],
-    "y": 0.1,
+    "y": 0.13,
     "x": 0.42,
     "override": {
       "score": null,
-      "mood": null,
-      "label": ""
+      "hide_tag": true,
+      "hide_host": true
     },
     "mascot": [
-      0.83,
-      0.68,
-      250,
+      0.86,
+      1.02,
+      760,
       "shock"
     ],
     "arrow": [
-      0.68,
-      0.62,
       0.6,
-      0.58
+      0.5,
+      0.5,
+      0.66
     ]
   },
   "scenes": [
@@ -62,7 +62,12 @@
       "score": 2,
       "mood": "sad",
       "say": "We start with the one dollar slice. It's cold. It's burnt. And honestly, it's kind of crunchy in a bad way.",
-      "label": "PIZZA"
+      "label": "PIZZA",
+      "still_t": [
+        0.9,
+        3.0,
+        4.6
+      ]
     },
     {
       "type": "tier",
@@ -72,7 +77,12 @@
       "score": 5,
       "mood": "neutral",
       "say": "Ten dollars gets you a real cheese pizza. Not bad. Chip gives it a five.",
-      "label": "PIZZA"
+      "label": "PIZZA",
+      "still_t": [
+        0.9,
+        3.0,
+        4.6
+      ]
     },
     {
       "type": "tier",
@@ -82,7 +92,12 @@
       "score": 7,
       "mood": "happy",
       "say": "At one hundred dollars, it's handmade, wood fired, and covered in toppings.",
-      "label": "PIZZA"
+      "label": "PIZZA",
+      "still_t": [
+        0.9,
+        3.0,
+        4.6
+      ]
     },
     {
       "type": "tier",
@@ -92,7 +107,12 @@
       "score": 8,
       "mood": "happy",
       "say": "One thousand dollars! Imported cheese, a chef flown in from Italy, and it's the size of a car tire.",
-      "label": "PIZZA"
+      "label": "PIZZA",
+      "still_t": [
+        0.9,
+        3.0,
+        4.6
+      ]
     },
     {
       "type": "tier",
@@ -102,7 +122,12 @@
       "score": 9,
       "mood": "shock",
       "say": "Ten thousand dollars. This one is covered in truffles, and it actually sparkles. But wait, there's still one more.",
-      "label": "PIZZA"
+      "label": "PIZZA",
+      "still_t": [
+        0.9,
+        3.0,
+        4.6
+      ]
     },
     {
       "type": "tier",
@@ -113,7 +138,12 @@
       "mood": "shock",
       "min": 4,
       "say": "This is the one million dollar pizza. Twenty four karat gold leaf, the rarest cheese on Earth, and a crust baked for seven days straight!",
-      "label": "PIZZA"
+      "label": "PIZZA",
+      "still_t": [
+        0.9,
+        3.0,
+        4.6
+      ]
     },
     {
       "type": "versus",

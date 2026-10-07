@@ -21,11 +21,13 @@ output; run one with no arguments to see its full usage.
 scripts (JSON) into finished MP4s with voiceover, captions, music, SFX and a thumbnail:
 
 ```sh
-pip install piper-tts   # plus a Piper voice, e.g. en_US-ryan-high.onnx from huggingface.co/rhasspy/piper-voices
+pip install piper-tts pycairo   # plus a Piper voice, e.g. en_US-ryan-high.onnx from huggingface.co/rhasspy/piper-voices
 python3 animator/render.py animator/episodes/pizza.json --voice en_US-ryan-high.onnx -o out/pizza.mp4
 python3 animator/render.py animator/episodes/circle.json --stills out/stills   # quick per-scene PNGs
 ```
 
 Episodes: `pizza.json` ($1 vs $1,000,000 Pizza), `circle.json` (Last To Leave The Circle Wins
 $100,000), `burger_short.json` (vertical Short). Scene types are `hook`, `tier`, `circle`,
-`counter`, `versus`, `winner` and `outro`.
+`counter`, `versus`, `winner` and `outro`. Art is anti-aliased Cairo vector drawing (`animator/toon.py`):
+characters with arms, legs, eyelids and lip-sync to the voiceover, detailed kitchen and field sets with
+depth-of-field blur, whip-pan transitions, and scenes rendered in parallel.
