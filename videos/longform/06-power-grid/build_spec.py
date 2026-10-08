@@ -51,6 +51,9 @@ S("But a light bulb is useless without electricity to run it. So Edison designed
 S("On the fourth of September, eighteen eighty two, his Pearl Street power station in Manhattan switched on, lighting buildings across a few city blocks.",
   stage("night", cam((0, -5.5, 2.0), (0.6, -4.8, 1.8), (0, 2, 1.2), lens=30), props=[P("generator_hall", (0, -0.5, 0), scale=0.3), P("city", (0, 3, 0), args={"count": 70, "on": 0.3})],
         texts=[T("PEARL STREET  1882", (0, 0.5, 1.2), 0.2, pop=0.1)]))
+S("Its huge steam-driven generators were nicknamed Jumbos, after a famous circus elephant. Each one weighed about twenty seven tons.",
+  stage("night", cam((0, -5.5, 2.0), (0.6, -4.8, 1.8), (0, 2, 1.2), lens=30), props=[P("generator_hall", (0, -0.5, 0), scale=0.3), P("city", (0, 3, 0), args={"count": 70, "on": 0.3})],
+        texts=[T("PEARL STREET  1882", (0, 0.5, 1.2), 0.2, pop=0.1)]), still=True)
 S("At first, it supplied about four hundred lamps, for around eighty customers. Within two years, it was lighting more than ten thousand.",
   stage("night", cam((0, -6.5, 2.4), (0.5, -5.5, 2.2), (0, 3, 1.4), lens=30), props=[P("city", (0, 3, 0), args={"count": 110, "on": 0.15})],
         texts=[T("400 → 10,000 LAMPS", (0, 0, 2.8), 0.22, pop=0.4)]))
@@ -134,6 +137,9 @@ S("His allies staged gruesome public demonstrations, killing animals with AC to 
 S("And when New York State introduced the electric chair for executions, it used an AC generator, partly to tie Westinghouse's name to death.",
   stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("1890", (0, 0, 1.0), 0.3, (0.8, 0.8, 0.8), pop=0.1)],
         env_opts={"horizon": [0.06, 0.06, 0.06], "zenith": [0.0, 0.0, 0.0]}), still=True)
+S("The first execution, of a man named William Kemmler in eighteen ninety, was horribly botched. Westinghouse remarked that they would have done better using an axe.",
+  stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("1890", (0, 0, 1.0), 0.3, (0.8, 0.8, 0.8), pop=0.1)],
+        env_opts={"horizon": [0.06, 0.06, 0.06], "zenith": [0.0, 0.0, 0.0]}), still=True)
 S("But it was true that high voltage needed respect. Overhead wires in cities were a tangled, dangerous mess, and people were killed by fallen lines.",
   stage("night", cam((0, -4.5, 2.4), (0.3, -4.0, 2.2), (0, 2, 2.0)), props=[P("pylons", (0, -2, 0), args={"n": 3, "spacing": 2.5, "height": 3.0}), P("city", (0, 4, 0), args={"count": 60})]),
   still=True)
@@ -156,6 +162,9 @@ S("That same year, Westinghouse won the biggest prize of all: a contract to harn
 S("The falling water spun huge turbines, and Tesla-designed AC generators turned that motion into electricity.",
   stage("lab", cam((-2.0, -3.5, 1.8), (1.0, -3.2, 1.6), (0, 1, 0.8), lens=26), props=[P("generator_hall", (0, 1.0, 0), scale=0.8)],
         env_opts={"wall": [0.4, 0.38, 0.33], "world": [0.05, 0.05, 0.05]}))
+S("The first three generators each produced five thousand horsepower, the most powerful in the world at the time.",
+  stage("lab", cam((-2.0, -3.5, 1.8), (1.0, -3.2, 1.6), (0, 1, 0.8), lens=26), props=[P("generator_hall", (0, 1.0, 0), scale=0.8)],
+        env_opts={"wall": [0.4, 0.38, 0.33], "world": [0.05, 0.05, 0.05]}), still=True)
 S("On the sixteenth of November, eighteen ninety six, power from Niagara was switched on in Buffalo, about forty kilometres away.",
   stage("sky", cam((8, -3, 3.0), (6, 3, 3.2), (0, 8, 2.2)), props=[P("pylons", args={"n": 5, "current": [0.1, 0.25]}), P("houses", (0, 19, 0), scale=0.8, args={"on": [0.5, 0.9]})],
         texts=[T("NIAGARA → BUFFALO", (0, 6, 5.0), 0.3, pop=0.3)], env_opts=WINTER))
@@ -193,6 +202,8 @@ S("But the basic system, generators, transformers and alternating current, is th
 S("And even now, hundreds of millions of people still live without electricity. The job that began in eighteen eighty two isn't finished.",
   stage("night", cam((0, -5.5, 1.8), (0.4, -5.0, 1.7), (0, 1, 0.8)), props=[P("houses", (0, 0, 0), args={"on": [0.95, 0.96]}), P("candle", (0.2, -0.6, 0), scale=2.0)]),
   still=True)
+S("And when the grid fails, everyone notices. In August two thousand and three, a software bug and overgrown trees in Ohio set off a blackout that left about fifty five million people in the United States and Canada in the dark.",
+  stage("night", cam((0, -5.5, 1.8), (0.4, -5.0, 1.7), (0, 1, 0.8)), props=[P("houses", (0, 0, 0), args={"on": [0.95, 0.96]}), P("candle", (0.2, -0.6, 0), scale=2.0)]), still=True)
 S("Edison gave the world the light bulb. But it was alternating current that carried the light into every home.",
   stage("night", cam((0, -2.0, 1.4), (0, -7.5, 3.0), (0, 1.5, 1.0), (0, 4, 1.2), 40, 28), props=[P("houses", (0, 1.5, 0), args={"on": [0.1, 0.5]}),
                                                                                             P("pylons", (-5, -2, 0), args={"n": 4, "current": [0.1, 0.3]}),
@@ -205,7 +216,7 @@ write(HERE, {
                     "Niagara Falls power plant that lit up the world, told in 3D animation."),
     "tags": ["war of the currents", "Nikola Tesla", "Thomas Edison", "George Westinghouse", "alternating current", "transformer",
              "Niagara Falls", "power grid", "history of electricity", "3D animation"],
-    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.25, "sentence_silence": 0.28,
+    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.32, "sentence_silence": 0.28,
               "pronunciations": {"Menlo": "Men-low", "Barrington": "Barr-ing-ton", "Columbian": "Co-lum-bee-an", "Hz": "hertz"}},
     "music_mood": "tense",
     "sources": [
