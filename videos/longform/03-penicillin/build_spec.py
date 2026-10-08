@@ -147,7 +147,7 @@ S("But they needed huge amounts of mould juice to make even a little penicillin.
         props=[P("glassware", (-0.3, 0, 0), scale=2.0, args={"n": 3})],
         texts=[T("1939", (0.5, 0.2, 0.9), 0.22, (1.0, 0.3, 0.3), pop=0.2)]), still=True)
 S("So their colleague Norman Heatley improvised. He grew the mould in anything he could find: bedpans, milk churns, baths, and food tins.",
-  stage("lab", cam((0.3, -2.4, 1.3), (0.1, -2.0, 1.1), (0, 0, 0.3)), cast=[who(HEATLEY, at=(0, 0.8, 0), pose=STAND)],
+  stage("lab", cam((0.6, -3.3, 1.7), (0.3, -2.9, 1.55), (0, 0.4, 0.75)), cast=[who(HEATLEY, at=(0, 0.9, 0), pose=STAND)],
         props=[P("vessels", (0, 0, 0))], env_opts=CLEAN))
 S("He even designed special ceramic culture vessels, and the team hired young women, nicknamed the penicillin girls, to tend them.",
   stage("lab", cam((0, -2.8, 1.6), (0.4, -2.4, 1.5), (0, 0.3, 0.9)),
@@ -264,7 +264,7 @@ S("Norman Heatley, whose improvised bedpans made it all possible, was left out. 
   stage("lab", cam((0.4, -1.9, 1.5), (0.3, -1.6, 1.45), "cast0.head"), cast=[who(HEATLEY, pose=STAND)],
         props=[P("vessels", (0.8, 0, 0), scale=0.7, args={"kinds": ["bedpan", "churn"]})], env_opts=CLEAN), still=True)
 S("Fleming became world famous, and he always insisted that luck had played a big part.",
-  stage("hall", cam((0, -3.0, 1.6), (0.3, -2.6, 1.5), (0, 1.0, 1.2), lens=30), cast=[who(FLEMING, at=(0, 1.4, 0), pose=PRESENT)],
+  stage("hall", cam((0, -4.6, 2.7), (0.4, -4.0, 2.4), (0, 1.6, 1.1), lens=30), cast=[who(FLEMING, at=(0, 1.8, 0), pose=PRESENT)],
         props=[P("audience", (0, 1.2, 0), rot=[0, 0, 180], args={"react": 0.6})]))
 S("Fleming was knighted in nineteen forty four. When he died in nineteen fifty five, he was buried in St Paul's Cathedral in London.",
   stage("lab", cam((0, -2.0, 1.4), (0, -1.7, 1.35), (0, 0.5, 1.1)), props=[P("candle", (-0.4, 0.4, 0.9)), P("candle", (0.4, 0.4, 0.9)),
@@ -282,9 +282,9 @@ S("He was right. Bacteria evolve. Each time we use an antibiotic, the few that h
         props=[P("bacteria", (0, 0, 0.1), args={"n": 22, "area": 0.35, "resistant": 22, "seed": 15, "drift": 0.1})],
         env_opts={"horizon": [0.35, 0.05, 0.05]}), chapter="Penicillin today")
 S("Today, drug-resistant infections are one of the biggest threats to global health. In twenty nineteen, they directly caused an estimated one point two seven million deaths.",
-  stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0)),
-        texts=[T("1.27 MILLION", (0, -1.2, 1.25), 0.22, (1.0, 0.35, 0.35), pop=0.4)]), still=True)
-S("That's why doctors ask us to take antibiotics only when we need them, and to finish the course.",
+  stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0.3)), props=[P("bacteria", (0, 0.6, -0.1), scale=1.8, args={"resistant": 10, "color": (0.9, 0.35, 0.35)})],
+        texts=[T("1.27 MILLION", (0, -0.6, 0.55), 0.22, (1.0, 0.35, 0.35), pop=0.4)]), still=True)
+S("That's why doctors ask us to take antibiotics only when we need them, and exactly as prescribed.",
   stage("studio", cam((0.2, -0.8, 0.5), (0.15, -0.7, 0.45), (0, 0, 0.05)), props=[P("pills"), P("vials", (0.3, 0.15, 0), args={"n": 3, "label": ""})]),
   still=True)
 S("Penicillin and the antibiotics that followed it changed medicine completely. They made surgery, cancer treatment and organ transplants far safer.",

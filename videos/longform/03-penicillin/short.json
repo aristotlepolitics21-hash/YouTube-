@@ -3093,7 +3093,7 @@
       },
       "at": [
        0,
-       0.8,
+       0.9,
        0
       ],
       "turn": 0,
@@ -3130,19 +3130,19 @@
     "texts": [],
     "camera": {
      "from": [
-      0.3,
-      -2.4,
-      1.3
+      0.6,
+      -3.3,
+      1.7
      ],
      "to": [
-      0.1,
-      -2.0,
-      1.1
+      0.3,
+      -2.9,
+      1.55
      ],
      "target": [
       0,
-      0,
-      0.3
+      0.4,
+      0.75
      ],
      "lens": 35
     },
@@ -6006,7 +6006,7 @@
       },
       "at": [
        0,
-       1.4,
+       1.8,
        0
       ],
       "turn": 0,
@@ -6059,18 +6059,18 @@
     "camera": {
      "from": [
       0,
-      -3.0,
-      1.6
+      -4.6,
+      2.7
      ],
      "to": [
-      0.3,
-      -2.6,
-      1.5
+      0.4,
+      -4.0,
+      2.4
      ],
      "target": [
       0,
-      1.0,
-      1.2
+      1.6,
+      1.1
      ],
      "lens": 30
     }
@@ -6357,14 +6357,32 @@
     "type": "stage",
     "env": "space",
     "cast": [],
-    "props": [],
+    "props": [
+     {
+      "prop": "bacteria",
+      "at": [
+       0,
+       0.6,
+       -0.1
+      ],
+      "scale": 1.8,
+      "args": {
+       "resistant": 10,
+       "color": [
+        0.9,
+        0.35,
+        0.35
+       ]
+      }
+     }
+    ],
     "texts": [
      {
       "text": "1.27 MILLION",
       "at": [
        0,
-       -1.2,
-       1.25
+       -0.6,
+       0.55
       ],
       "size": 0.22,
       "color": [
@@ -6389,7 +6407,7 @@
      "target": [
       0,
       0,
-      0
+      0.3
      ],
      "lens": 35
     }
@@ -6398,7 +6416,7 @@
   },
   {
    "id": "s069",
-   "line": "That's why doctors ask us to take antibiotics only when we need them, and to finish the course.",
+   "line": "That's why doctors ask us to take antibiotics only when we need them, and exactly as prescribed.",
    "visual": {
     "type": "stage",
     "env": "studio",
