@@ -174,7 +174,7 @@ write(HERE, {
     "description": ("From the first heart-lung machine to the Jarvik-7, LVADs that leave people with no pulse, and the magnetic BiVACOR heart: "
                     "seventy years of building a heart by hand, told in 3D animation."),
     "tags": ["artificial heart", "Jarvik-7", "LVAD", "heart transplant", "BiVACOR", "heart-lung machine", "pacemaker", "medical history", "3D animation"],
-    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.25, "sentence_silence": 0.28,
+    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.32, "sentence_silence": 0.28,
               "pronunciations": {"Bavolek": "Bav-oh-lek", "Washkansky": "Wash-kan-skee", "Liotta": "Lee-ot-ta", "Jarvik": "Jar-vik",
                                  "LVAD": "L-vad", "LVADs": "L-vads", "BiVACOR": "Bye-va-core", "SynCardia": "Sin-car-dee-a", "Timms": "Tims"}},
     "music_mood": "hopeful",

@@ -160,7 +160,7 @@ write(HERE, {
     "description": ("From Volta's pile to the Nobel-winning lithium-ion cell and the race to build solid-state batteries: "
                     "why a thin layer of solid could make electric cars lighter, safer and faster to charge, told in 3D animation."),
     "tags": ["solid-state battery", "lithium-ion", "electric cars", "EV battery", "John Goodenough", "QuantumScape", "Toyota", "battery technology", "3D animation"],
-    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.25, "sentence_silence": 0.28,
+    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.32, "sentence_silence": 0.28,
               "pronunciations": {"Whittingham": "Whit-ing-um", "Yoshino": "Yo-shee-no", "Volta": "Vol-ta", "QuantumScape": "Quantum Scape",
                                  "Malmö": "Mal-mer", "NIO": "Nee-oh", "Goodenough": "Good-enuff"}},
     "music_mood": "hopeful",
