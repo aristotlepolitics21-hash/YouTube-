@@ -34,7 +34,7 @@ S("Around fifteen hundred, Leonardo da Vinci filled notebooks with designs for f
 S("Then, on a cold, windy morning in December nineteen oh three, two brothers who ran a bicycle shop did it for real.",
   stage("sky", cam((4.5, -5.5, 2.0), (3.8, -4.8, 1.8), (0, 0, 1.1)), props=[P("wright_flyer"), P("dunes")], env_opts=BEACH), still=True)
 S("Their flight lasted twelve seconds. Sixty six years later, humans walked on the Moon.",
-  stage("space", cam((0, -3.0, 0.6), (0.3, -2.6, 0.55), (0, 0, 0.3)), texts=[T("12 SECONDS → THE MOON", (0, -1.2, 1.25), 0.14, pop=0.3)]))
+  stage("space", cam((0, -3.0, 0.6), (0.3, -2.6, 0.55), (0, 0, 0.3)), texts=[T("12 SECONDS → THE MOON", (0, -0.6, 0.55), 0.14, pop=0.3)]))
 S("This is how humans learned to fly.",
   stage("sky", cam((0, -9, 3.0), (0, -8, 3.2), (0, 0, 3.0)), props=[P("airliner", (0, 3, 3.2), anim=[[0, {"at": [-6, 3, 3.0]}], [1, {"at": [6, 3, 3.6]}]], rot=[0, 0, -90])],
         texts=[T("HOW HUMANS LEARNED TO FLY", (0, 0, 2.0), 0.28, pop=0.15)], env_opts=SKY))
@@ -109,7 +109,7 @@ S("Wilbur was so discouraged he said that men would not fly in a thousand years.
 S("Back home, they built their own wind tunnel, a wooden box with a fan at one end.",
   stage("studio", cam((1.0, -1.8, 1.0), (0.7, -1.4, 0.8), (0, 0, 0.2)), props=[P("wind_tunnel")]), chapter="The wind tunnel")
 S("Inside, they tested around two hundred small model wings, carefully measuring the lift each one made.",
-  stage("studio", cam((0.25, -0.5, 0.45), (0.18, -0.4, 0.38), (0, -0.1, 0.22)), props=[P("wind_tunnel")]))
+  stage("studio", cam((-2.6, -1.2, 1.2), (-2.2, -0.8, 1.1), (0, 0, 0.8)), props=[P("airfoil_flow", (0, 0, 0.8))]))
 S("They discovered that the numbers everyone had relied on were wrong. Now they had their own data, the best in the world.",
   stage("lab", cam((0.35, -1.0, 1.25), (0.22, -0.85, 1.2), (0, -0.1, 0.95)), props=[TABLE, P("notebook", (0, -0.1, TOP)), P("notebook", (0.25, -0.05, TOP), rot=[0, 0, 15])],
         texts=[T("200 WINGS", (0, 0.2, 1.25), 0.07, pop=0.3)], env_opts=SHOP), still=True)
@@ -152,7 +152,7 @@ S("Three days later, on the seventeenth of December, it was Orville's turn. The 
         texts=[T("17 DECEMBER 1903", (0, 2, 2.6), 0.25, pop=0.2)], env_opts=BEACH))
 S("At ten thirty five in the morning, the Flyer ran along a wooden rail, lifted into the air, and stayed there.",
   stage("sky", cam((5.0, -3.0, 1.4), (4.0, -1.0, 1.6), (0, 0, 1.2), (0, -4, 1.6)),
-        props=[P("wright_flyer", anim=[[0, {"at": [0, 4, -0.6]}], [0.4, {"at": [0, 0, -0.6]}], [1, {"at": [0, -8, 0.4]}]]), P("dunes")], env_opts=BEACH))
+        props=[P("wright_flyer", anim=[[0, {"at": [0, 4, -0.25]}], [0.4, {"at": [0, 0, -0.25]}], [1, {"at": [0, -8, 1.0]}]]), P("dunes")], env_opts=BEACH))
 S("It flew for twelve seconds and covered thirty seven metres, a shorter distance than the wingspan of a modern jumbo jet.",
   stage("sky", cam((0, -14, 2.5), (0, -13, 2.5), (0, 0, 1.0), lens=28), props=[P("wright_flyer", (0, 0, -0.6), rot=[0, 0, 90]), P("airliner", (0, 5, 1.0), scale=5.5)],
         texts=[T("37 m", (0, 0, 2.2), 0.4, pop=0.3)], env_opts=BEACH), still=True)
@@ -201,7 +201,7 @@ S("In the late nineteen thirties, Frank Whittle in Britain and Hans von Ohain in
   stage("studio", cam((0.5, -1.6, 0.8), (0.3, -1.3, 0.7), (0, 0, 0.5)), props=[P("airliner", (0, 0, 0.5), scale=0.35, rot=[0, 0, 40])],
         texts=[T("THE JET ENGINE", (0, 0.5, 0.95), 0.12, pop=0.2)]), still=True)
 S("And in July nineteen sixty nine, Neil Armstrong landed on the Moon. In his kit, he carried a piece of fabric from the wing of the nineteen oh three Wright Flyer.",
-  stage("space", cam((0, -3.0, 0.6), (0.3, -2.6, 0.55), (0, 0, 0.3)), texts=[T("1903 → 1969", (0, -1.2, 1.25), 0.2, pop=0.3)]), still=True)
+  stage("space", cam((0, -3.0, 0.6), (0.3, -2.6, 0.55), (0, 0, 0.3)), texts=[T("1903 → 1969", (0, -0.6, 0.55), 0.2, pop=0.3)]), still=True)
 S("In nineteen fifty two, the de Havilland Comet began the first jet airliner service. And in nineteen seventy, the Boeing seven four seven made long distance flying affordable for millions.",
   stage("sky", cam((0, -9, 3.0), (0.4, -8.4, 3.0), (0, 0, 3.0)), props=[P("airliner", (0, 3, 3.2), rot=[0, 0, -90], scale=1.2)], env_opts=SKY), still=True)
 S("Today, around a hundred thousand commercial flights take off every day.",

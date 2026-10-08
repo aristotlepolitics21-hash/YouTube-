@@ -29,7 +29,7 @@ S("On the twentieth of July, nineteen sixty nine, more than half a billion peopl
   stage("night", cam((0, -1.6, 1.0), (0, -6, 2.4), (0, 0, 0.6), (0, 3, 1.0), 40, 28), props=[P("houses", (0, 1, 0), args={"on": [0, 0.3]}),
                                                                                           P("city", (0, 6, 0), args={"on": 0.2})]))
 S("They watched a fuzzy black and white picture, beamed from almost four hundred thousand kilometres away.",
-  stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0.3)), texts=[T("384,000 km", (0, -1.2, 1.25), 0.2, pop=0.3)]), still=True)
+  stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0.3)), texts=[T("384,000 km", (0, -0.6, 0.55), 0.2, pop=0.3)]), still=True)
 S("A man in a white suit climbed down a ladder, and stepped onto the Moon.",
   stage("space", cam((1.8, -3.4, 1.0), (1.4, -2.8, 0.9), (0, 0, 1.0)), cast=[who(ASTRO, at=(0.9, -0.9, 0), turn=-40)],
         props=[P("lunar_module"), P("moon_surface")]))
@@ -39,7 +39,7 @@ S("It was the end of a race between two superpowers, that began with a beeping m
 
 # ===================================================================== SPUTNIK
 S("After the Second World War, the United States and the Soviet Union became rivals in the Cold War.",
-  stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0)), texts=[T("USA  vs  USSR", (0, -1.2, 1.25), 0.22, pop=0.2)]), still=True,
+  stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0)), texts=[T("USA  vs  USSR", (0, -0.6, 0.55), 0.22, pop=0.2)]), still=True,
   chapter="Sputnik")
 S("Both had captured German rocket technology, and rocket scientists, at the end of the war.",
   stage("lab", cam((0.5, -1.8, 1.55), (0.35, -1.5, 1.5), "cast0.head"), cast=[who(VON_BRAUN, pose=PRESENT)],

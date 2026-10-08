@@ -98,7 +98,7 @@ S("Starting in two thousand and seven, her team gathered images from the interne
         cast=[who(STUDENT | {"hair": [0.1 + 0.15 * i, 0.08, 0.05]}, at=(x, 0.35, 0), pose=WORK, scale=0.95) for i, x in enumerate((-1.1, 0, 1.1))],
         props=[P("table", (0, -0.1, 0), args={"w": 3.2})] + [P("laptop", (x, -0.15, TOP), args={"glow": 0.1}) for x in (-1.1, 0, 1.1)], env_opts=OFFICE), still=True)
 S("At its peak, nearly fifty thousand people in a hundred and sixty seven countries were helping to label the pictures.",
-  stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0)), texts=[T("50,000 PEOPLE  /  167 COUNTRIES", (0, -1.2, 1.25), 0.14, pop=0.3)]), still=True)
+  stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0)), texts=[T("50,000 PEOPLE  /  167 COUNTRIES", (0, -0.6, 0.55), 0.14, pop=0.3)]), still=True)
 S("Many experts thought it was a waste of time. More data, they argued, wouldn't fix bad algorithms.",
   stage("lab", cam((0.5, -1.8, 1.55), (0.35, -1.5, 1.5), "cast0.head"), cast=[who(FEIFEI, pose={**STAND, "head_nod": 10}, scale=0.95)], env_opts=OFFICE), still=True)
 S("The result, ImageNet, held more than fourteen million pictures, sorted into over twenty thousand categories, from strawberries to sports cars to dozens of breeds of dog.",

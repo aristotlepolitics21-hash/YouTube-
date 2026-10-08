@@ -177,7 +177,7 @@ S("Today, the unit of magnetic field strength, the tesla, carries his name.",
 
 # ===================================================================== THE GRID TODAY
 S("Today, almost every power grid on Earth runs on alternating current, switching direction fifty or sixty times every second.",
-  stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0)), texts=[T("50 Hz  /  60 Hz", (0, -1.2, 1.25), 0.2, (1.0, 0.6, 0.2), pop=0.3)]), still=True,
+  stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0)), texts=[T("50 Hz  /  60 Hz", (0, -0.6, 0.55), 0.2, (1.0, 0.6, 0.2), pop=0.3)]), still=True,
   chapter="The grid today")
 S("Westinghouse's engineers picked sixty cycles a second for America. Much of the rest of the world settled on fifty. That's why some appliances don't work when you travel.",
   stage("studio", cam((0, -2.6, 0.7), (0, -2.3, 0.65), (0, 0, 0.55)), props=[P("waveform", (0, 0, 0.55), args={"kind": "ac"})],
