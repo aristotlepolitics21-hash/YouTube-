@@ -51,6 +51,8 @@ S("On the fourth of October, nineteen fifty seven, the Soviet Union launched Spu
         texts=[T("4 OCTOBER 1957", (0, 0.5, 1.7), 0.15, pop=0.15)]))
 S("It did nothing but beep. But anyone with a radio could hear it passing overhead, every ninety six minutes.",
   stage("space", cam((0, -5.0, 0.3), (0.3, -4.6, 0.4), (0, 0, 0.3)), props=[P("sputnik", (1.6, 0, 1.4), scale=0.25)]))
+S("Its batteries died after three weeks, and in January nineteen fifty eight, it fell back and burned up in the atmosphere. But the world had changed.",
+  stage("space", cam((0, -5.0, 0.3), (0.3, -4.6, 0.4), (0, 0, 0.3)), props=[P("sputnik", (1.6, 0, 1.4), scale=0.25)]), still=True)
 S("Americans were shocked. If the Soviets could put a satellite over their heads, what else could they do?",
   stage("studio", cam((0.2, -1.1, 0.8), (0.1, -0.95, 0.75), (0, 0, 0.1)), props=[P("newspapers", args={"headline": "RED MOON OVER AMERICA", "n": 3})]),
   still=True, still_at=0.7)
@@ -70,6 +72,9 @@ S("Then came an even bigger shock. On the twelfth of April, nineteen sixty one, 
 S("His capsule, Vostok One, circled the Earth once in a hundred and eight minutes. He became the most famous person on the planet.",
   stage("space", cam((0, -5.2, 0.8), (0.4, -4.6, 0.6), (0, 0, 0.3)), props=[P("command_module", (1.4, -1.0, 1.0), scale=0.25, spin=["z", 90])],
         texts=[T("108 MINUTES", (0, -1.2, 1.6), 0.2, pop=0.4)]))
+S("As his rocket lifted off, Gagarin shouted a single word: poyekhali. Let's go.",
+  stage("space", cam((0, -5.2, 0.8), (0.4, -4.6, 0.6), (0, 0, 0.3)), props=[P("command_module", (1.4, -1.0, 1.0), scale=0.25, spin=["z", 90])],
+        texts=[T("108 MINUTES", (0, -1.2, 1.6), 0.2, pop=0.4)]), still=True)
 S("Behind the Soviet successes was a brilliant engineer whose name was kept secret: Sergei Korolev, known only as the Chief Designer.",
   stage("lab", cam((0.5, -1.8, 1.55), (0.35, -1.5, 1.5), "cast0.head"), cast=[who(KOROLEV, pose=STAND)], env_opts={"wall": [0.2, 0.15, 0.12], "world": [0.02, 0.015, 0.01]}),
   still=True)
@@ -111,6 +116,8 @@ S("The Saturn Five stood a hundred and ten metres tall, taller than the Statue o
   stage("sky", PAD, props=[P("saturn_v"), P("launch_tower")], texts=[T("110 m", (-3, 0, 9.0), 0.8, pop=0.3)], env_opts=CAPE), still=True)
 S("Its five first stage engines burned about thirteen tonnes of fuel and oxygen every second.",
   stage("sky", cam((3, -6, 0.6), (2.6, -5.4, 0.8), (0, 0, 0.6), lens=30), props=[P("saturn_v", args={"launch": [0.1, 2.0]})], env_opts=CAPE))
+S("Thirteen Saturn Fives were launched, and not one was ever lost.",
+  stage("sky", cam((3, -6, 0.6), (2.6, -5.4, 0.8), (0, 0, 0.6), lens=30), props=[P("saturn_v", args={"launch": [0.1, 2.0]})], env_opts=CAPE), still=True)
 S("Inside the tiny command module, three astronauts would ride with less room than the inside of a small car.",
   stage("space", cam((1.5, -3, 1.3), (1.2, -2.6, 1.2), (0, 0, 0.8)), props=[P("command_module", (0, 0, 0.8))]), still=True)
 S("And the computer that guided them had less memory than a modern greetings card that plays a tune.",
@@ -151,6 +158,8 @@ S("Around a million people gathered near Cape Kennedy to watch the launch.",
         env_opts=CAPE))
 S("Four days later, Armstrong and Aldrin climbed into the lunar module, named Eagle, and began their descent. Collins stayed behind in orbit.",
   stage("space", cam((2.5, -4, 3.0), (2, -3.4, 2.4), (0, 0, 1.5)), props=[P("lunar_module", args={"land": [0, 1.5]}), P("moon_surface")]))
+S("Each time Collins passed behind the Moon, he lost all radio contact with Earth for about forty eight minutes. No human had ever been so far from everyone else.",
+  stage("space", cam((2.5, -4, 3.0), (2, -3.4, 2.4), (0, 0, 1.5)), props=[P("lunar_module", args={"land": [0, 1.5]}), P("moon_surface")]), still=True)
 S("On the way down, the guidance computer flashed alarms they had never seen before, codes twelve oh two and twelve oh one. It was overloaded. Mission control decided to carry on.",
   stage("lab", cam((0, -4.5, 2.5), (0.3, -4.0, 2.3), (0, 1.5, 1.2), lens=28), props=[P("mission_control")],
         texts=[T("1202", (0, 3.4, 2.6), 0.6, (1.0, 0.3, 0.3), pop=0.2)], env_opts=OFFICE))
@@ -165,6 +174,9 @@ S("Aldrin joined him. They planted a flag, collected rocks, and set up experimen
   stage("space", cam((3, -5, 1.6), (2.4, -4.2, 1.5), (0.5, 0, 0.8)), cast=[who(ASTRO, at=(-1.0, -0.6, 0), turn=-20), who(ASTRO, at=(0.9, 0.0, 0), turn=-60)],
         props=[P("lunar_module", (-0.5, 1.2, 0)), P("moon_surface", args={"flag": True, "footprints": True})]), still=True)
 S("They spent about two and a half hours outside, and gathered more than twenty kilogrammes of Moon rock. They left behind a plaque that reads: we came in peace for all mankind.",
+  stage("space", cam((0.4, -1.4, 1.0), (0.3, -1.2, 0.9), (0, 0, 0.7)), props=[P("lunar_module"), P("moon_surface")],
+        texts=[T("WE CAME IN PEACE FOR ALL MANKIND", (0, -0.75, 0.75), 0.04, (1, 1, 1), pop=0.3)]), still=True)
+S("When Eagle blasted off to rejoin Collins, the exhaust knocked over the flag they had planted.",
   stage("space", cam((0.4, -1.4, 1.0), (0.3, -1.2, 0.9), (0, 0, 0.7)), props=[P("lunar_module"), P("moon_surface")],
         texts=[T("WE CAME IN PEACE FOR ALL MANKIND", (0, -0.75, 0.75), 0.04, (1, 1, 1), pop=0.3)]), still=True)
 S("On the twenty fourth of July, the crew splashed down in the Pacific Ocean. Just in case they had brought back Moon germs, they were kept in quarantine for three weeks.",
@@ -196,8 +208,8 @@ write(HERE, {
     "description": ("From a beeping metal ball called Sputnik to the Eagle landing on the Sea of Tranquility: the Cold War race "
                     "that took humans to the Moon, told in 3D animation."),
     "tags": ["space race", "Apollo 11", "moon landing", "Sputnik", "Yuri Gagarin", "Saturn V", "Neil Armstrong", "NASA", "3D animation"],
-    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.25, "sentence_silence": 0.28,
-              "pronunciations": {"Gagarin": "Gah-gar-in", "Korolev": "Kor-oh-lyov", "Tereshkova": "Teh-resh-kova", "Leonov": "Lay-oh-nov",
+    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.32, "sentence_silence": 0.28,
+              "pronunciations": {"poyekhali": "pa-yeh-ha-lee", "Gagarin": "Gah-gar-in", "Korolev": "Kor-oh-lyov", "Tereshkova": "Teh-resh-kova", "Leonov": "Lay-oh-nov",
                                  "Vostok": "Voss-tok", "Wernher": "Vair-ner", "N1": "N one", "Laika": "Lie-ka"}},
     "music_mood": "epic",
     "sources": [

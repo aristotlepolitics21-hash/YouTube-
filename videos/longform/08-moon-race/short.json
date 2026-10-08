@@ -31,9 +31,10 @@
  ],
  "voice": {
   "piper_voice": "en_US-ryan-high",
-  "length_scale": 1.25,
+  "length_scale": 1.32,
   "sentence_silence": 0.28,
   "pronunciations": {
+   "poyekhali": "pa-yeh-ha-lee",
    "Gagarin": "Gah-gar-in",
    "Korolev": "Kor-oh-lyov",
    "Tereshkova": "Teh-resh-kova",
@@ -613,6 +614,46 @@
   },
   {
    "id": "s010",
+   "line": "Its batteries died after three weeks, and in January nineteen fifty eight, it fell back and burned up in the atmosphere. But the world had changed.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "sputnik",
+      "at": [
+       1.6,
+       0,
+       1.4
+      ],
+      "scale": 0.25
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -5.0,
+      0.3
+     ],
+     "to": [
+      0.3,
+      -4.6,
+      0.4
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s011",
    "line": "Americans were shocked. If the Soviets could put a satellite over their heads, what else could they do?",
    "visual": {
     "type": "stage",
@@ -656,7 +697,7 @@
    "still_at": 0.7
   },
   {
-   "id": "s011",
+   "id": "s012",
    "line": "A month later, the Soviets launched a dog named Laika into orbit. The first American attempt to launch a satellite exploded on the launch pad, live on television.",
    "visual": {
     "type": "stage",
@@ -721,7 +762,7 @@
    }
   },
   {
-   "id": "s012",
+   "id": "s013",
    "line": "The United States responded by creating NASA in nineteen fifty eight.",
    "visual": {
     "type": "stage",
@@ -768,7 +809,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s013",
+   "id": "s014",
    "line": "In nineteen fifty nine, NASA picked its first seven astronauts, all military test pilots. The press called them the Mercury Seven.",
    "visual": {
     "type": "stage",
@@ -1015,7 +1056,7 @@
    "still": true
   },
   {
-   "id": "s014",
+   "id": "s015",
    "line": "Then came an even bigger shock. On the twelfth of April, nineteen sixty one, a twenty seven year old Soviet pilot named Yuri Gagarin became the first human in space.",
    "visual": {
     "type": "stage",
@@ -1109,7 +1150,7 @@
    "chapter": "The first human in space"
   },
   {
-   "id": "s015",
+   "id": "s016",
    "line": "His capsule, Vostok One, circled the Earth once in a hundred and eight minutes. He became the most famous person on the planet.",
    "visual": {
     "type": "stage",
@@ -1168,7 +1209,67 @@
    }
   },
   {
-   "id": "s016",
+   "id": "s017",
+   "line": "As his rocket lifted off, Gagarin shouted a single word: poyekhali. Let's go.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "command_module",
+      "at": [
+       1.4,
+       -1.0,
+       1.0
+      ],
+      "scale": 0.25,
+      "spin": [
+       "z",
+       90
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "108 MINUTES",
+      "at": [
+       0,
+       -1.2,
+       1.6
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -5.2,
+      0.8
+     ],
+     "to": [
+      0.4,
+      -4.6,
+      0.6
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s018",
    "line": "Behind the Soviet successes was a brilliant engineer whose name was kept secret: Sergei Korolev, known only as the Chief Designer.",
    "visual": {
     "type": "stage",
@@ -1261,7 +1362,7 @@
    "still": true
   },
   {
-   "id": "s017",
+   "id": "s019",
    "line": "Weeks later, Alan Shepard became the first American in space, on a fifteen minute flight that didn't even reach orbit.",
    "visual": {
     "type": "stage",
@@ -1326,7 +1427,7 @@
    }
   },
   {
-   "id": "s018",
+   "id": "s020",
    "line": "In February nineteen sixty two, John Glenn became the first American to orbit the Earth. Before he flew, he asked for one person to double check the computer's numbers: the NASA mathematician Katherine Johnson.",
    "visual": {
     "type": "stage",
@@ -1457,7 +1558,7 @@
    "still": true
   },
   {
-   "id": "s019",
+   "id": "s021",
    "line": "President John F. Kennedy needed something bold. Something the Soviets could not easily win.",
    "visual": {
     "type": "stage",
@@ -1551,7 +1652,7 @@
    "chapter": "We choose to go to the Moon"
   },
   {
-   "id": "s020",
+   "id": "s022",
    "line": "In May nineteen sixty one, he asked Congress to commit America to landing a man on the Moon, and returning him safely to the Earth, before the decade was out.",
    "visual": {
     "type": "stage",
@@ -1667,7 +1768,7 @@
    }
   },
   {
-   "id": "s021",
+   "id": "s023",
    "line": "At the time, America had a total of fifteen minutes of human spaceflight experience.",
    "visual": {
     "type": "stage",
@@ -1714,7 +1815,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s022",
+   "id": "s024",
    "line": "A year later, in a speech in Texas, he explained why. We choose to go to the Moon, he said, not because it is easy, but because it is hard.",
    "visual": {
     "type": "stage",
@@ -1834,7 +1935,7 @@
    }
   },
   {
-   "id": "s023",
+   "id": "s025",
    "line": "The Apollo programme became one of the biggest engineering projects in history. At its peak, around four hundred thousand people worked on it.",
    "visual": {
     "type": "stage",
@@ -1885,7 +1986,7 @@
    "still": true
   },
   {
-   "id": "s024",
+   "id": "s026",
    "line": "NASA flew ten crewed Gemini missions to practise everything a Moon trip would need: long flights, spacewalks, and finding and docking with another spacecraft in orbit.",
    "visual": {
     "type": "stage",
@@ -1965,7 +2066,7 @@
    }
   },
   {
-   "id": "s025",
+   "id": "s027",
    "line": "On Gemini Eight, a stuck thruster sent Neil Armstrong's spacecraft tumbling, once every second. He calmly regained control. NASA remembered.",
    "visual": {
     "type": "stage",
@@ -2008,7 +2109,7 @@
    }
   },
   {
-   "id": "s026",
+   "id": "s028",
    "line": "The plan they chose, championed by an engineer named John Houbolt, was clever: leave the main ship in orbit around the Moon, and send down only a small, light lander.",
    "visual": {
     "type": "stage",
@@ -2068,7 +2169,7 @@
    "still": true
   },
   {
-   "id": "s027",
+   "id": "s029",
    "line": "To get there, NASA needed the most powerful rocket ever built. It was designed by a team led by Wernher von Braun, a former Nazi rocket engineer brought to America after the war.",
    "visual": {
     "type": "stage",
@@ -2169,7 +2270,7 @@
    "chapter": "Saturn V"
   },
   {
-   "id": "s028",
+   "id": "s030",
    "line": "The Saturn Five stood a hundred and ten metres tall, taller than the Statue of Liberty, and weighed nearly three thousand tonnes when fully fuelled.",
    "visual": {
     "type": "stage",
@@ -2252,7 +2353,7 @@
    "still": true
   },
   {
-   "id": "s029",
+   "id": "s031",
    "line": "Its five first stage engines burned about thirteen tonnes of fuel and oxygen every second.",
    "visual": {
     "type": "stage",
@@ -2316,7 +2417,72 @@
    }
   },
   {
-   "id": "s030",
+   "id": "s032",
+   "line": "Thirteen Saturn Fives were launched, and not one was ever lost.",
+   "visual": {
+    "type": "stage",
+    "env": "sky",
+    "cast": [],
+    "props": [
+     {
+      "prop": "saturn_v",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "launch": [
+        0.1,
+        2.0
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      3,
+      -6,
+      0.6
+     ],
+     "to": [
+      2.6,
+      -5.4,
+      0.8
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "sky": {
+      "horizon": [
+       0.9,
+       0.75,
+       0.55
+      ],
+      "zenith": [
+       0.25,
+       0.45,
+       0.85
+      ],
+      "strength": 1.0
+     },
+     "floor": [
+      0.55,
+      0.55,
+      0.5
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s033",
    "line": "Inside the tiny command module, three astronauts would ride with less room than the inside of a small car.",
    "visual": {
     "type": "stage",
@@ -2355,7 +2521,7 @@
    "still": true
   },
   {
-   "id": "s031",
+   "id": "s034",
    "line": "And the computer that guided them had less memory than a modern greetings card that plays a tune.",
    "visual": {
     "type": "stage",
@@ -2415,7 +2581,7 @@
    }
   },
   {
-   "id": "s032",
+   "id": "s035",
    "line": "The Soviets kept scoring firsts: the first woman in space, Valentina Tereshkova, and the first spacewalk, by Alexei Leonov.",
    "visual": {
     "type": "stage",
@@ -2476,7 +2642,7 @@
    "chapter": "Setbacks"
   },
   {
-   "id": "s033",
+   "id": "s036",
    "line": "Then, in January nineteen sixty seven, disaster. During a launch rehearsal, fire swept through the Apollo One capsule. Astronauts Gus Grissom, Ed White and Roger Chaffee were killed.",
    "visual": {
     "type": "stage",
@@ -2544,7 +2710,7 @@
    "still": true
   },
   {
-   "id": "s034",
+   "id": "s037",
    "line": "NASA redesigned the capsule from top to bottom. The programme went on.",
    "visual": {
     "type": "stage",
@@ -2659,7 +2825,7 @@
    "still": true
   },
   {
-   "id": "s035",
+   "id": "s038",
    "line": "The Soviet Moon programme struggled. Korolev had died during surgery in nineteen sixty six, and their giant N1 rocket exploded on every one of its four launches.",
    "visual": {
     "type": "stage",
@@ -2740,7 +2906,7 @@
    }
   },
   {
-   "id": "s036",
+   "id": "s039",
    "line": "In December nineteen sixty eight, Apollo Eight carried three astronauts all the way to the Moon, and around it, ten times.",
    "visual": {
     "type": "stage",
@@ -2796,7 +2962,7 @@
    "chapter": "Apollo 8"
   },
   {
-   "id": "s037",
+   "id": "s040",
    "line": "On Christmas Eve, as their spacecraft came around from the far side, they saw the Earth rising over the lunar horizon, and grabbed a camera.",
    "visual": {
     "type": "stage",
@@ -2837,7 +3003,7 @@
    }
   },
   {
-   "id": "s038",
+   "id": "s041",
    "line": "That photograph, Earthrise, showed our whole world as a small, fragile blue marble in the darkness.",
    "visual": {
     "type": "stage",
@@ -2879,7 +3045,7 @@
    "still": true
   },
   {
-   "id": "s039",
+   "id": "s042",
    "line": "In May nineteen sixty nine, Apollo Ten flew a full dress rehearsal, taking the lunar module to within about fifteen kilometres of the Moon's surface. Everything was ready.",
    "visual": {
     "type": "stage",
@@ -2925,7 +3091,7 @@
    }
   },
   {
-   "id": "s040",
+   "id": "s043",
    "line": "On the sixteenth of July, nineteen sixty nine, Neil Armstrong, Buzz Aldrin and Michael Collins launched on Apollo Eleven.",
    "visual": {
     "type": "stage",
@@ -2998,7 +3164,7 @@
    "chapter": "Apollo 11"
   },
   {
-   "id": "s041",
+   "id": "s044",
    "line": "Around a million people gathered near Cape Kennedy to watch the launch.",
    "visual": {
     "type": "stage",
@@ -3074,7 +3240,7 @@
    }
   },
   {
-   "id": "s042",
+   "id": "s045",
    "line": "Four days later, Armstrong and Aldrin climbed into the lunar module, named Eagle, and began their descent. Collins stayed behind in orbit.",
    "visual": {
     "type": "stage",
@@ -3126,7 +3292,60 @@
    }
   },
   {
-   "id": "s043",
+   "id": "s046",
+   "line": "Each time Collins passed behind the Moon, he lost all radio contact with Earth for about forty eight minutes. No human had ever been so far from everyone else.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "lunar_module",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "land": [
+        0,
+        1.5
+       ]
+      }
+     },
+     {
+      "prop": "moon_surface",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      2.5,
+      -4,
+      3.0
+     ],
+     "to": [
+      2,
+      -3.4,
+      2.4
+     ],
+     "target": [
+      0,
+      0,
+      1.5
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s047",
    "line": "On the way down, the guidance computer flashed alarms they had never seen before, codes twelve oh two and twelve oh one. It was overloaded. Mission control decided to carry on.",
    "visual": {
     "type": "stage",
@@ -3192,7 +3411,7 @@
    }
   },
   {
-   "id": "s044",
+   "id": "s048",
    "line": "Then Armstrong saw that the computer was steering them into a crater full of boulders. He took manual control, and flew on, searching for a safe spot.",
    "visual": {
     "type": "stage",
@@ -3247,7 +3466,7 @@
    }
   },
   {
-   "id": "s045",
+   "id": "s049",
    "line": "They touched down with less than a minute of fuel left to spare. Houston, Armstrong radioed, Tranquility Base here. The Eagle has landed.",
    "visual": {
     "type": "stage",
@@ -3299,7 +3518,7 @@
    }
   },
   {
-   "id": "s046",
+   "id": "s050",
    "line": "Six and a half hours later, Armstrong stepped onto the surface. That's one small step for man, he said, one giant leap for mankind.",
    "visual": {
     "type": "stage",
@@ -3376,7 +3595,7 @@
    }
   },
   {
-   "id": "s047",
+   "id": "s051",
    "line": "Aldrin joined him. They planted a flag, collected rocks, and set up experiments, some of which are still being used today.",
    "visual": {
     "type": "stage",
@@ -3482,7 +3701,7 @@
    "still": true
   },
   {
-   "id": "s048",
+   "id": "s052",
    "line": "They spent about two and a half hours outside, and gathered more than twenty kilogrammes of Moon rock. They left behind a plaque that reads: we came in peace for all mankind.",
    "visual": {
     "type": "stage",
@@ -3545,7 +3764,70 @@
    "still": true
   },
   {
-   "id": "s049",
+   "id": "s053",
+   "line": "When Eagle blasted off to rejoin Collins, the exhaust knocked over the flag they had planted.",
+   "visual": {
+    "type": "stage",
+    "env": "space",
+    "cast": [],
+    "props": [
+     {
+      "prop": "lunar_module",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "prop": "moon_surface",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "WE CAME IN PEACE FOR ALL MANKIND",
+      "at": [
+       0,
+       -0.75,
+       0.75
+      ],
+      "size": 0.04,
+      "color": [
+       1,
+       1,
+       1
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.4,
+      -1.4,
+      1.0
+     ],
+     "to": [
+      0.3,
+      -1.2,
+      0.9
+     ],
+     "target": [
+      0,
+      0,
+      0.7
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s054",
    "line": "On the twenty fourth of July, the crew splashed down in the Pacific Ocean. Just in case they had brought back Moon germs, they were kept in quarantine for three weeks.",
    "visual": {
     "type": "stage",
@@ -3609,7 +3891,7 @@
    "still": true
   },
   {
-   "id": "s050",
+   "id": "s055",
    "line": "Back on Earth, people wept and cheered in the streets.",
    "visual": {
     "type": "stage",
@@ -3666,7 +3948,7 @@
    "still": true
   },
   {
-   "id": "s051",
+   "id": "s056",
    "line": "Between nineteen sixty nine and nineteen seventy two, twelve men walked on the Moon. Since then, no one has gone back.",
    "visual": {
     "type": "stage",
@@ -3754,7 +4036,7 @@
    "chapter": "Legacy"
   },
   {
-   "id": "s052",
+   "id": "s057",
    "line": "In nineteen seventy, an explosion crippled Apollo Thirteen on its way to the Moon. With mission control's help, the crew used the lunar module as a lifeboat, and made it home.",
    "visual": {
     "type": "stage",
@@ -3820,7 +4102,7 @@
    "still": true
   },
   {
-   "id": "s053",
+   "id": "s058",
    "line": "The last astronaut to walk on the Moon, Gene Cernan, left in December nineteen seventy two. The Apollo programme had cost around twenty five billion dollars at the time.",
    "visual": {
     "type": "stage",
@@ -3899,7 +4181,7 @@
    "still": true
   },
   {
-   "id": "s054",
+   "id": "s059",
    "line": "The race left behind more than footprints. It pushed forward computers, materials, weather satellites and medicine, and inspired a generation to become scientists and engineers.",
    "visual": {
     "type": "stage",
@@ -3956,7 +4238,7 @@
    "still": true
   },
   {
-   "id": "s055",
+   "id": "s060",
    "line": "And it gave us that picture of Earthrise: a reminder that we all share one small planet.",
    "visual": {
     "type": "stage",
