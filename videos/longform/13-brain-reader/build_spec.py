@@ -29,6 +29,8 @@ S("Right now, around eighty six billion nerve cells in your brain are firing tin
   stage("studio", BRAIN, props=[P("brain", (0, 0, 0.6), args={"glow": [[0, 0], [0.3, 4]]}), P("neuron", (0.9, 0.3, 0.9), scale=0.5, args={"fire": [0.2, 0.8]})], env_opts=NEURO))
 S("Every thought, every memory, every movement you make, is written in those signals.",
   stage("studio", cam((0, -2.6, 1.0), (0.3, -2.2, 0.9), (0, 0, 0.6)), props=[P("spikes", (0, 0, 0.1), args={"channels": 6})], env_opts=NEURO))
+S("And it does all of this on about twenty watts of power, less than a dim light bulb.",
+  stage("studio", cam((0, -2.6, 1.0), (0.3, -2.2, 0.9), (0, 0, 0.6)), props=[P("spikes", (0, 0, 0.1), args={"channels": 6})], env_opts=NEURO), still=True)
 S("For most of history, that code was completely private. Now, scientists are building machines that can read it, and turn it into action.",
   stage("lab", cam((0.5, -1.8, 1.5), (0.3, -1.5, 1.4), (0.3, 0.2, 1.1)), cast=[who(PATIENT, at=(-0.2, 0.4, 0), pose=SEATED)],
         props=[TABLE, P("robot_arm", (0.5, -0.1, TOP), scale=0.6, args={"reach": [0.3, 0.8]})], env_opts=LAB))
@@ -42,6 +44,8 @@ S("In seventeen ninety one, the Italian scientist Luigi Galvani made a dead frog
         P("wire", (0.1, -0.1, TOP + 0.03), args={"length": 0.4, "glow": [[0, 0], [0.4, 4]]}), P("candle", (0.45, 0, TOP))], env_opts={"wall": [0.3, 0.22, 0.16]}), still=True,
   chapter="The electric brain")
 S("In nineteen twenty four, a German psychiatrist named Hans Berger stuck electrodes on his patients' heads, and recorded faint waves of electricity from the brain itself.",
+  stage("lab", BENCH, cast=[who(BERGER, pose=WORK)], props=[TABLE, P("eeg_cap", (0, -0.1, TOP + 0.15), scale=0.8)], env_opts={"wall": [0.3, 0.28, 0.25]}), still=True)
+S("He was so unsure of his strange results that he kept them to himself for five years, before finally publishing in nineteen twenty nine. Many scientists didn't believe him.",
   stage("lab", BENCH, cast=[who(BERGER, pose=WORK)], props=[TABLE, P("eeg_cap", (0, -0.1, TOP + 0.15), scale=0.8)], env_opts={"wall": [0.3, 0.28, 0.25]}), still=True)
 S("He called it the electroencephalogram, or EEG. For the first time, we could watch a living brain at work.",
   stage("studio", cam((0, -2.6, 1.0), (0.2, -2.2, 0.9), (0, 0, 0.6)), props=[P("spikes", (0, 0, 0.1), args={"channels": 4, "seed": 2}), P("eeg_cap", (-1.2, 0.3, 0.4), scale=0.8)],
@@ -82,6 +86,8 @@ S("In two thousand and eight, monkeys at the University of Pittsburgh fed themse
 S("The tool for that job is a tiny chip called the Utah array: four millimetres across, with a hundred hair-thin needles that sit in the brain's surface.",
   stage("studio", cam((0.5, -1.0, 0.5), (0.35, -0.8, 0.4), (0, 0, 0.0)), props=[P("electrode_array", (0, 0, 0.1), args={"glow": [[0, 0], [0.4, 3]]})], env_opts=NEURO),
   chapter="BrainGate")
+S("It was invented by the bioengineer Richard Normann at the University of Utah, and versions of it are still used in most of the patients you're about to meet.",
+  stage("studio", cam((0.5, -1.0, 0.5), (0.35, -0.8, 0.4), (0, 0, 0.0)), props=[P("electrode_array", (0, 0, 0.1), args={"glow": [[0, 0], [0.4, 3]]})], env_opts=NEURO), still=True)
 S("In two thousand and four, Matthew Nagle, a young man paralysed from the neck down after a knife attack, had one implanted, in a research trial called BrainGate.",
   stage("lab", cam((0, -2.6, 1.6), (0.3, -2.2, 1.5), (0, 0.3, 0.8)), cast=[who(PATIENT, at=(0, -0.55, 0.74), rot=(-90, 0, 0), pose={"raise_arm": {"L": -40, "R": -40}}),
                                                                          who(SCIENTIST, at=(0.9, 0.2, 0), turn=40, pose=WORK)],
@@ -116,6 +122,9 @@ S("In twenty twenty four, a team at UC Davis gave a man with ALS a voice that so
 S("Private companies have joined the race. One of them, Neuralink, founded by Elon Musk, uses a robot to sew ultra-thin threads into the brain.",
   stage("lab", cam((0.6, -2.0, 1.4), (0.4, -1.7, 1.3), (0, 0, 1.0)), props=[P("robot_arm", (0, 0, 0.6), args={"reach": [0.1, 0.8]}), P("electrode_array", (0.5, -0.5, 1.0), scale=0.4),
         P("table", (0, 0, 0), args={"w": 1.2, "h": 0.6})], env_opts=LAB), chapter="The race")
+S("Its implant, about the size of a coin, sits in a hole in the skull and records from more than a thousand electrodes, spread across sixty four threads.",
+  stage("lab", cam((0.6, -2.0, 1.4), (0.4, -1.7, 1.3), (0, 0, 1.0)), props=[P("robot_arm", (0, 0, 0.6), args={"reach": [0.1, 0.8]}), P("electrode_array", (0.5, -0.5, 1.0), scale=0.4),
+        P("table", (0, 0, 0), args={"w": 1.2, "h": 0.6})], env_opts=LAB), still=True)
 S("In twenty twenty four, its first patient, Noland Arbaugh, paralysed in a diving accident, used his implant to play online chess and video games, controlling the cursor with his thoughts.",
   CHAIR(PATIENT, [P("dice", (-0.45, -0.2, TOP), args={"n": 1, "roll": [0, 0.01]})]))
 S("Another company, Synchron, avoids open brain surgery. Its device is a tiny mesh tube, threaded up through a blood vessel from the neck, to sit right next to the motor cortex.",
@@ -170,7 +179,7 @@ write(HERE, {
     "description": ("From Hans Berger's first EEG to BrainGate, Neuralink and implants that give paralysed people a voice: "
                     "how brain-computer interfaces read the brain's electrical code, told in 3D animation."),
     "tags": ["brain-computer interface", "BCI", "BrainGate", "Neuralink", "Synchron", "neuroscience", "EEG", "neural privacy", "3D animation"],
-    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.25, "sentence_silence": 0.28,
+    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.33, "sentence_silence": 0.28,
               "pronunciations": {"Galvani": "Gal-vah-nee", "electroencephalogram": "electro-en-sef-alo-gram", "Georgopoulos": "Jor-gop-oo-los",
                                  "Nagle": "Nay-gul", "Arbaugh": "Ar-baw", "Synchron": "Sin-kron", "fMRI": "F M R I", "ALS": "A L S", "UC Davis": "U C Davis"}},
     "music_mood": "hopeful",
