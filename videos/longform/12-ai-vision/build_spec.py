@@ -57,9 +57,15 @@ S("In the late nineteen fifties, David Hubel and Torsten Wiesel recorded signals
 S("They found cells that fired only when the cat saw an edge, tilted at one particular angle. Other cells combined those edges into more complex shapes.",
   stage("studio", cam((0.8, -2.2, 0.9), (0.6, -1.9, 0.8), (0.6, 0, 0.5)), props=[P("neuron", (0, 0, 0.6), args={"fire": [0.3, 0.8]}), P("bar_magnet", (-0.8, 0, 0.6), rot=[0, 35, 0], scale=1.5)],
         env_opts=DIGITAL))
+S("The breakthrough came partly by accident. A cell burst into activity as they slid a glass slide into their projector, and its edge cast a faint line across the screen.",
+  stage("studio", cam((0.8, -2.2, 0.9), (0.6, -1.9, 0.8), (0.6, 0, 0.5)), props=[P("neuron", (0, 0, 0.6), args={"fire": [0.3, 0.8]}), P("bar_magnet", (-0.8, 0, 0.6), rot=[0, 35, 0], scale=1.5)],
+        env_opts=DIGITAL), still=True)
 S("Vision is a ladder: from edges, to shapes, to whole objects. That work won them a Nobel Prize, and it inspired the computer scientists who came next.",
   stage("studio", NET, props=[P("neural_net", (0, 0, 0.8), args={"fire": [0.1, 0.8]})], texts=[T("EDGES → SHAPES → OBJECTS", (0, 0.4, 1.5), 0.12, pop=0.3)], env_opts=DIGITAL))
 S("In nineteen fifty eight, a psychologist named Frank Rosenblatt built the Perceptron, a machine with a camera and a simple artificial neural network that could learn to tell shapes apart.",
+  stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), cast=[who(ROSENBLATT, at=(0.6, 0.0, 0), turn=-30, pose=PRESENT)],
+        props=[P("eniac", args={"panels": 4, "seed": 5})], texts=[T("PERCEPTRON 1958", (0.5, 0.8, 2.2), 0.15, pop=0.2)], env_opts=OFFICE), still=True)
+S("Its eye was a grid of just four hundred light sensors, twenty by twenty, wired at random to its artificial neurons.",
   stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), cast=[who(ROSENBLATT, at=(0.6, 0.0, 0), turn=-30, pose=PRESENT)],
         props=[P("eniac", args={"panels": 4, "seed": 5})], texts=[T("PERCEPTRON 1958", (0.5, 0.8, 2.2), 0.15, pop=0.2)], env_opts=OFFICE), still=True)
 S("Newspapers predicted it would soon walk, talk and see. It couldn't. Its single layer of artificial neurons was far too simple, and interest in neural networks collapsed for years.",
@@ -93,7 +99,7 @@ S("The data came from a young professor named Fei-Fei Li.",
 S("She believed computers needed to see the world the way children do: by looking at an enormous number of examples.",
   stage("studio", cam((0, -3.4, 1.4), (0.3, -3.0, 1.3), (0, 0, 0.8)),
         props=[P("pixel_image", ((k % 5 - 2) * 0.55, 0.3 * (k // 5), 0.1 + 0.6 * (k // 5)), scale=0.45, rot=[0, 0, (k % 3 - 1) * 8]) for k in range(10)], env_opts=DIGITAL), still=True)
-S("Starting in two thousand and seven, her team gathered images from the internet, and paid thousands of online workers to label them.",
+S("Starting in two thousand and seven, her team gathered images from the internet, and paid thousands of online workers, through Amazon's Mechanical Turk website, to label them.",
   stage("lab", cam((0, -3.4, 1.9), (0.3, -3.0, 1.8), (0, 0.3, 1.0)),
         cast=[who(STUDENT | {"hair": [0.1 + 0.15 * i, 0.08, 0.05]}, at=(x, 0.35, 0), pose=WORK, scale=0.95) for i, x in enumerate((-1.1, 0, 1.1))],
         props=[P("table", (0, -0.1, 0), args={"w": 3.2})] + [P("laptop", (x, -0.15, TOP), args={"glow": 0.1}) for x in (-1.1, 0, 1.1)], env_opts=OFFICE), still=True)
@@ -116,7 +122,7 @@ S("In twenty twelve, a team from the University of Toronto entered: Geoffrey Hin
         texts=[T("2012", (0, 1.2, 2.1), 0.2, pop=0.2)], env_opts=OFFICE), still=True, chapter="The 2012 breakthrough")
 S("Their network, later called AlexNet, was deep, with eight learning layers and sixty million adjustable connections.",
   stage("studio", NET, props=[P("neural_net", (0, 0, 0.8), args={"layers": [8, 10, 10, 10, 10, 8, 6, 4], "spacing": 0.4, "fire": [0.05, 0.9]})], env_opts=DIGITAL))
-S("To train it, Krizhevsky used two graphics cards, the chips built for video games, in his bedroom. Their parallel number crunching turned out to be perfect for neural networks.",
+S("To train it, Krizhevsky used two graphics cards, the chips built for video games, in his bedroom. Training took about a week. Their parallel number crunching turned out to be perfect for neural networks.",
   stage("lab", cam((0.4, -1.1, 1.2), (0.3, -0.9, 1.15), (0, -0.1, 0.95)), props=[TABLE, P("gpu", (-0.2, -0.1, TOP)), P("gpu", (0.35, -0.1, TOP)), P("laptop", (0, 0.2, TOP))],
         env_opts=OFFICE), still=True)
 S("The results stunned the field. AlexNet's top five error rate was about fifteen percent. The next best entry got twenty six percent.",
@@ -128,6 +134,8 @@ S("Soon after, Google bought Hinton's tiny company, which had just three employe
   stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("$44,000,000", (0, 0, 1.0), 0.26, (0.4, 1.0, 0.6), pop=0.2)], env_opts=DIGITAL), still=True, still_at=0.8)
 S("Almost overnight, the whole field switched to deep learning. Within three years, networks were beating the human benchmark on the ImageNet test.",
   stage("studio", NET, props=[P("neural_net", (0, 0, 0.8), args={"layers": [6, 8, 8, 8, 8, 8, 8, 8, 5, 3], "spacing": 0.32, "fire": [0.05, 0.9]})], env_opts=DIGITAL))
+S("That human benchmark came from one dedicated researcher, Andrej Karpathy, who sat down and labelled the test images himself. He got about five percent of them wrong.",
+  stage("studio", NET, props=[P("neural_net", (0, 0, 0.8), args={"layers": [6, 8, 8, 8, 8, 8, 8, 8, 5, 3], "spacing": 0.32, "fire": [0.05, 0.9]})], env_opts=DIGITAL), still=True)
 S("Inside a trained network, the first layers detect simple edges and colours, just like Hubel and Wiesel's cells. Deeper layers respond to eyes, wheels, fur, and faces.",
   stage("studio", PIX, props=[P("pixel_image", (0, 0, 0.3)), P("conv_filter", (0, 0, 0.3), args={"sweep": [0.1, 0.9]}), P("bbox_label", (0, -0.05, 0.75), args={"at": 0.85})],
         env_opts=DIGITAL))
@@ -181,8 +189,8 @@ write(HERE, {
     "description": ("From a cat's visual cortex to the Perceptron, ImageNet and AlexNet: how computers finally learned to recognise "
                     "what they see, told in 3D animation."),
     "tags": ["computer vision", "deep learning", "ImageNet", "AlexNet", "neural networks", "Fei-Fei Li", "Geoffrey Hinton", "Yann LeCun", "3D animation"],
-    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.25, "sentence_silence": 0.28,
-              "pronunciations": {"Wiesel": "Vee-zel", "Rosenblatt": "Roh-zen-blat", "LeCun": "Luh-kun", "Fei-Fei": "Fay-Fay",
+    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.33, "sentence_silence": 0.28,
+              "pronunciations": {"Karpathy": "Kar-path-ee", "Wiesel": "Vee-zel", "Rosenblatt": "Roh-zen-blat", "LeCun": "Luh-kun", "Fei-Fei": "Fay-Fay",
                                  "Krizhevsky": "Kri-zhev-skee", "Sutskever": "Suts-kev-er", "Bengio": "Ben-jee-oh", "AlexNet": "Alex Net"}},
     "music_mood": "hopeful",
     "sources": [
