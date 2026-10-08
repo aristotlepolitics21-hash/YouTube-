@@ -47,6 +47,9 @@ S("For centuries, a computer wasn't a machine at all. It was a job title: a pers
 S("In the eighteen twenties, the English mathematician Charles Babbage designed a mechanical calculator called the Difference Engine, made of thousands of brass gears.",
   stage("lab", cam((0.6, -1.8, 1.3), (0.4, -1.5, 1.2), (0, 0, 0.9)), cast=[who(BABBAGE, at=(-0.8, 0.4, 0), turn=-20)],
         props=[P("table", (0, 0, 0), args={"w": 1.4, "h": 0.5}), P("difference_engine", (0, 0, 0.5))], env_opts={"wall": [0.3, 0.2, 0.15], "world": [0.03, 0.02, 0.02]}), still=True)
+S("Babbage never finished it. But in nineteen ninety one, engineers at London's Science Museum built his second Difference Engine from his original drawings, and it worked perfectly.",
+  stage("lab", cam((0.6, -1.8, 1.3), (0.4, -1.5, 1.2), (0, 0, 0.9)), cast=[who(BABBAGE, at=(-0.8, 0.4, 0), turn=-20)],
+        props=[P("table", (0, 0, 0), args={"w": 1.4, "h": 0.5}), P("difference_engine", (0, 0, 0.5))], env_opts={"wall": [0.3, 0.2, 0.15], "world": [0.03, 0.02, 0.02]}), still=True)
 S("Later, he designed a far more ambitious Analytical Engine, which could be programmed with punched cards. Ada Lovelace wrote what's often called the first computer program for it. But it was never built.",
   stage("lab", cam((0, -2.6, 1.6), (0.2, -2.2, 1.5), (0, 0.3, 1.25)),
         cast=[who(BABBAGE, at=(-0.45, 0.35, 0), turn=-12), who(LOVELACE, at=(0.45, 0.35, 0), turn=12, pose=READ, scale=0.94)],
@@ -55,6 +58,9 @@ S("A century later, war created an urgent need for calculation.",
   stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("1939 – 1945", (0, 0, 1.0), 0.3, (1.0, 0.35, 0.3), pop=0.1)],
         env_opts={"horizon": [0.2, 0.03, 0.03]}), still=True)
 S("In Britain, codebreakers at Bletchley Park built Colossus, an electronic machine that helped crack German codes. It was kept secret for decades.",
+  stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), props=[P("eniac", args={"panels": 4, "seed": 9})],
+        texts=[T("COLOSSUS 1944", (0.5, 0.8, 2.2), 0.15, pop=0.2)], env_opts={"wall": [0.25, 0.27, 0.22], "world": [0.03, 0.03, 0.03]}), still=True)
+S("Its designer, a Post Office engineer named Tommy Flowers, used around two and a half thousand vacuum tubes, and paid for some of the parts out of his own pocket. By the end of the war, ten of them were running.",
   stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), props=[P("eniac", args={"panels": 4, "seed": 9})],
         texts=[T("COLOSSUS 1944", (0.5, 0.8, 2.2), 0.15, pop=0.2)], env_opts={"wall": [0.25, 0.27, 0.22], "world": [0.03, 0.03, 0.03]}), still=True)
 S("In Germany, Konrad Zuse had already built the Z3 in nineteen forty one, a programmable machine that used thousands of clicking telephone relays.",
@@ -121,7 +127,7 @@ S("They also invented techniques that programmers still use, like breaking a pro
         props=[TABLE, P("punch_cards", (0, -0.1, TOP))], env_opts=ROOM), still=True)
 
 # ===================================================================== FEBRUARY 1946
-S("Over at Harvard, the programmer Grace Hopper later taped a real moth into a logbook after it jammed a computer: the first actual case of bug being found.",
+S("Over at Harvard, Grace Hopper's team later taped a real moth into a logbook after it jammed a computer: the first actual case of bug being found.",
   stage("studio", cam((0.2, -0.8, 0.5), (0.12, -0.65, 0.45), (0, 0, 0.05)), props=[P("notebook"), P("birds", (0.02, 0, 0.06), scale=0.15, args={"n": 1, "area": 0.01})]),
   still=True)
 S("ENIAC was finished too late for the war. But on the fifteenth of February, nineteen forty six, it was unveiled to the press.",
@@ -153,7 +159,7 @@ S("Almost every computer since has been built on that idea.",
   stage("studio", cam((0, -1.6, 0.6), (0.2, -1.3, 0.55), (0, 0, 0.2)), props=[P("laptop", args={"glow": 0.2}), P("phone", (0.4, 0, 0.08), rot=[-70, 0, 0])]))
 
 # ===================================================================== SHRINKING
-S("Eckert and Mauchly started their own company, and built UNIVAC, one of the first computers sold to businesses. In nineteen fifty two, it correctly predicted Eisenhower's landslide in the US election, live on television.",
+S("Eckert and Mauchly started their own company, and built UNIVAC, one of the first computers sold to businesses. The first one went to the US Census Bureau in nineteen fifty one. In nineteen fifty two, it correctly predicted Eisenhower's landslide in the US election, live on television.",
   stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), props=[P("eniac", args={"panels": 6, "seed": 21})],
         texts=[T("UNIVAC  1952", (0.5, 0.8, 2.2), 0.15, pop=0.2)], env_opts={"wall": [0.4, 0.42, 0.45], "world": [0.04, 0.04, 0.05]}), still=True)
 S("Betty Holberton, one of the original six, went on to help develop early programming languages, including COBOL, which still runs many banking systems today.",
@@ -161,7 +167,10 @@ S("Betty Holberton, one of the original six, went on to help develop early progr
 S("Next, the machines began to shrink. In nineteen forty seven, scientists at Bell Labs invented the transistor, a tiny solid switch that could replace the fragile vacuum tube.",
   stage("studio", cam((0.25, -0.8, 0.35), (0.2, -0.7, 0.3), (0.1, 0, 0.06)), props=[P("vacuum_tube", (-0.05, 0, 0)), P("transistor", (0.2, 0, 0))],
         texts=[T("1947", (0.1, 0.2, 0.3), 0.08, pop=0.3)]), chapter="Smaller and smaller")
-S("In the late nineteen fifties, Jack Kilby and Robert Noyce worked out how to put many transistors onto a single chip of silicon: the integrated circuit.",
+S("Its inventors, John Bardeen, Walter Brattain and William Shockley, shared the Nobel Prize in Physics in nineteen fifty six.",
+  stage("studio", cam((0.25, -0.8, 0.35), (0.2, -0.7, 0.3), (0.1, 0, 0.06)), props=[P("vacuum_tube", (-0.05, 0, 0)), P("transistor", (0.2, 0, 0))],
+        texts=[T("1947", (0.1, 0.2, 0.3), 0.08, pop=0.3)]), still=True)
+S("In the late nineteen fifties, Jack Kilby and Robert Noyce worked out how to put many transistors onto a single chip of silicon: the integrated circuit. Noyce went on to co-found Intel with Gordon Moore, and Kilby later won a Nobel Prize.",
   stage("studio", cam((0.3, -0.7, 0.45), (0.2, -0.55, 0.38), (0, 0, 0.03)), props=[P("microchip", args={"glow": [0.2, 0.6]})]))
 S("In nineteen sixty five, Gordon Moore predicted that the number of transistors on a chip would keep doubling roughly every year or two. For decades, he was right.",
   stage("studio", cam((0, -2.6, 1.2), (0, -2.3, 1.1), (0, 0, 0.7)),
@@ -180,6 +189,8 @@ S("A modern smartphone chip holds billions of transistors, each smaller than mos
 # ===================================================================== LEGACY
 S("ENIAC itself went on to calculate weather forecasts, the design of nuclear weapons, and the behaviour of wind tunnels and cosmic rays.",
   stage("lab", ENIAC_CAM, props=[P("eniac")], env_opts=ROOM), still=True, chapter="Legacy")
+S("In nineteen forty seven, it was taken apart, moved to the army's Aberdeen Proving Ground in Maryland, and rebuilt. It ran there, almost around the clock, for eight more years.",
+  stage("lab", ENIAC_CAM, props=[P("eniac")], env_opts=ROOM), still=True)
 S("And in nineteen seventy three, a court ruled that ENIAC's patent was invalid, partly because Atanasoff had got there first with key ideas.",
   stage("hall", cam((0, -2.4, 1.6), (0, -2.0, 1.55), (0, 0.4, 1.3)), props=[P("table", (0, 0.6, 0), args={"w": 2.0}), P("newspapers", (0, 0.6, TOP), args={"headline": "PATENT INVALID", "n": 2})],
         texts=[T("1973", (0, 1.0, 1.9), 0.2, pop=0.2)]), still=True)
@@ -200,7 +211,7 @@ write(HERE, {
                     "From Babbage and Colossus to the transistor and your phone, told in 3D animation."),
     "tags": ["ENIAC", "first computer", "history of computing", "ENIAC six", "vacuum tube", "transistor", "Alan Turing",
              "Moore's law", "3D animation"],
-    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.32, "sentence_silence": 0.28,
+    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.35, "sentence_silence": 0.28,
               "pronunciations": {"ENIAC": "Ee-nee-ack", "Mauchly": "Mawk-lee", "Presper": "Pres-per", "McNulty": "Mac-Nul-tee",
                                  "Wescoff": "Wes-coff", "Bilas": "Bee-las", "Lichterman": "Lick-ter-man", "Bletchley": "Bletch-lee",
                                  "Neumann": "Noy-man", "Kilby": "Kil-bee"}},

@@ -31,7 +31,7 @@
  ],
  "voice": {
   "piper_voice": "en_US-ryan-high",
-  "length_scale": 1.32,
+  "length_scale": 1.35,
   "sentence_silence": 0.28,
   "pronunciations": {
    "ENIAC": "Ee-nee-ack",
@@ -675,6 +675,124 @@
   },
   {
    "id": "s007",
+   "line": "Babbage never finished it. But in nineteen ninety one, engineers at London's Science Museum built his second Difference Engine from his original drawings, and it worked perfectly.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.55,
+       0.5,
+       0.45
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.72,
+        0.52,
+        0.42
+       ],
+       "shirt": [
+        0.12,
+        0.1,
+        0.1
+       ],
+       "pants": [
+        0.15,
+        0.15,
+        0.18
+       ],
+       "boots": [
+        0.04,
+        0.03,
+        0.02
+       ]
+      },
+      "at": [
+       -0.8,
+       0.4,
+       0
+      ],
+      "turn": -20,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "w": 1.4,
+       "h": 0.5
+      }
+     },
+     {
+      "prop": "difference_engine",
+      "at": [
+       0,
+       0,
+       0.5
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -1.8,
+      1.3
+     ],
+     "to": [
+      0.4,
+      -1.5,
+      1.2
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.3,
+      0.2,
+      0.15
+     ],
+     "world": [
+      0.03,
+      0.02,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s008",
    "line": "Later, he designed a far more ambitious Analytical Engine, which could be programmed with punched cards. Ada Lovelace wrote what's often called the first computer program for it. But it was never built.",
    "visual": {
     "type": "stage",
@@ -852,7 +970,7 @@
    "still": true
   },
   {
-   "id": "s008",
+   "id": "s009",
    "line": "A century later, war created an urgent need for calculation.",
    "visual": {
     "type": "stage",
@@ -905,7 +1023,7 @@
    "still": true
   },
   {
-   "id": "s009",
+   "id": "s010",
    "line": "In Britain, codebreakers at Bletchley Park built Colossus, an electronic machine that helped crack German codes. It was kept secret for decades.",
    "visual": {
     "type": "stage",
@@ -976,7 +1094,78 @@
    "still": true
   },
   {
-   "id": "s010",
+   "id": "s011",
+   "line": "Its designer, a Post Office engineer named Tommy Flowers, used around two and a half thousand vacuum tubes, and paid for some of the parts out of his own pocket. By the end of the war, ten of them were running.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "panels": 4,
+       "seed": 9
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "COLOSSUS 1944",
+      "at": [
+       0.5,
+       0.8,
+       2.2
+      ],
+      "size": 0.15,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.2
+     }
+    ],
+    "camera": {
+     "from": [
+      0.6,
+      -2.0,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -1.6,
+      1.5
+     ],
+     "target": [
+      -0.6,
+      1.2,
+      1.2
+     ],
+     "lens": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.25,
+      0.27,
+      0.22
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s012",
    "line": "In Germany, Konrad Zuse had already built the Z3 in nineteen forty one, a programmable machine that used thousands of clicking telephone relays.",
    "visual": {
     "type": "stage",
@@ -1048,7 +1237,7 @@
    "still": true
   },
   {
-   "id": "s011",
+   "id": "s013",
    "line": "And in Iowa, John Atanasoff and Clifford Berry built an electronic calculator for solving equations. Who built the first computer depends on exactly how you define one.",
    "visual": {
     "type": "stage",
@@ -1172,7 +1361,7 @@
    "still": true
   },
   {
-   "id": "s012",
+   "id": "s014",
    "line": "In America, the army had a different problem: artillery.",
    "visual": {
     "type": "stage",
@@ -1236,7 +1425,7 @@
    "chapter": "The firing tables"
   },
   {
-   "id": "s013",
+   "id": "s015",
    "line": "To aim a big gun, soldiers needed firing tables: books of numbers telling them the angle to use for every distance, wind and temperature.",
    "visual": {
     "type": "stage",
@@ -1290,7 +1479,7 @@
    "still": true
   },
   {
-   "id": "s014",
+   "id": "s016",
    "line": "Each trajectory took a human computer, with a desk calculator, about a day or more to work out. A single table needed thousands of them.",
    "visual": {
     "type": "stage",
@@ -1412,7 +1601,7 @@
    "still": true
   },
   {
-   "id": "s015",
+   "id": "s017",
    "line": "At the University of Pennsylvania, dozens of women worked on these calculations. They couldn't keep up.",
    "visual": {
     "type": "stage",
@@ -1798,7 +1987,7 @@
    "still": true
   },
   {
-   "id": "s016",
+   "id": "s018",
    "line": "A physicist named John Mauchly had an idea: build a calculator that used electronic vacuum tubes instead of moving parts.",
    "visual": {
     "type": "stage",
@@ -1921,7 +2110,7 @@
    "chapter": "Building ENIAC"
   },
   {
-   "id": "s017",
+   "id": "s019",
    "line": "The project was based at the university's Moore School of Electrical Engineering, under the code name Project PX. It eventually cost about half a million dollars.",
    "visual": {
     "type": "stage",
@@ -1983,7 +2172,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s018",
+   "id": "s020",
    "line": "A vacuum tube is like a light bulb that can act as a switch, turning a current on and off thousands of times a second, with nothing moving at all.",
    "visual": {
     "type": "stage",
@@ -2025,7 +2214,7 @@
    }
   },
   {
-   "id": "s019",
+   "id": "s021",
    "line": "With a brilliant young engineer, J. Presper Eckert, Mauchly convinced the army to pay for it in nineteen forty three.",
    "visual": {
     "type": "stage",
@@ -2216,7 +2405,7 @@
    "still": true
   },
   {
-   "id": "s020",
+   "id": "s022",
    "line": "Experts warned that it would never work. With so many tubes, they said, one would burn out every few seconds.",
    "visual": {
     "type": "stage",
@@ -2498,7 +2687,7 @@
    }
   },
   {
-   "id": "s021",
+   "id": "s023",
    "line": "Eckert solved it by running the tubes well below their limits, and choosing them carefully. Failures fell to about one tube every two days.",
    "visual": {
     "type": "stage",
@@ -2555,7 +2744,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s022",
+   "id": "s024",
    "line": "The finished machine had almost eighteen thousand vacuum tubes, seventy thousand resistors, and around five million hand-soldered joints.",
    "visual": {
     "type": "stage",
@@ -2621,7 +2810,7 @@
    }
   },
   {
-   "id": "s023",
+   "id": "s025",
    "line": "Surprisingly, it didn't count in binary. ENIAC worked in ordinary decimal numbers, using rings of ten tubes to store each digit.",
    "visual": {
     "type": "stage",
@@ -2777,7 +2966,7 @@
    }
   },
   {
-   "id": "s024",
+   "id": "s026",
    "line": "Its panels, arranged in a giant U, stretched about thirty metres, and the whole machine weighed thirty tonnes.",
    "visual": {
     "type": "stage",
@@ -2831,7 +3020,7 @@
    "still": true
   },
   {
-   "id": "s025",
+   "id": "s027",
    "line": "Six women were chosen from the human computers to program it: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Frances Bilas, and Ruth Lichterman.",
    "visual": {
     "type": "stage",
@@ -3205,7 +3394,7 @@
    "chapter": "The ENIAC six"
   },
   {
-   "id": "s026",
+   "id": "s028",
    "line": "There were no programming languages, no keyboards, and no manuals. They were given the machine's wiring diagrams, and told to work it out.",
    "visual": {
     "type": "stage",
@@ -3268,7 +3457,7 @@
    "still": true
   },
   {
-   "id": "s027",
+   "id": "s029",
    "line": "Programming ENIAC meant physically rewiring it: plugging hundreds of cables and setting thousands of switches by hand. A new program could take days to set up.",
    "visual": {
     "type": "stage",
@@ -3382,7 +3571,7 @@
    }
   },
   {
-   "id": "s028",
+   "id": "s030",
    "line": "They also invented techniques that programmers still use, like breaking a problem into sub-routines, and hunting down bugs by stepping through the machine.",
    "visual": {
     "type": "stage",
@@ -3568,8 +3757,8 @@
    "still": true
   },
   {
-   "id": "s029",
-   "line": "Over at Harvard, the programmer Grace Hopper later taped a real moth into a logbook after it jammed a computer: the first actual case of bug being found.",
+   "id": "s031",
+   "line": "Over at Harvard, Grace Hopper's team later taped a real moth into a logbook after it jammed a computer: the first actual case of bug being found.",
    "visual": {
     "type": "stage",
     "env": "studio",
@@ -3620,7 +3809,7 @@
    "still": true
   },
   {
-   "id": "s030",
+   "id": "s032",
    "line": "ENIAC was finished too late for the war. But on the fifteenth of February, nineteen forty six, it was unveiled to the press.",
    "visual": {
     "type": "stage",
@@ -3687,7 +3876,7 @@
    "chapter": "February 1946"
   },
   {
-   "id": "s031",
+   "id": "s033",
    "line": "For the demonstration, it calculated the path of a shell that takes thirty seconds to reach its target, in just twenty seconds. Faster than the shell itself could fly.",
    "visual": {
     "type": "stage",
@@ -3766,7 +3955,7 @@
    }
   },
   {
-   "id": "s032",
+   "id": "s034",
    "line": "The engineers had fitted ping-pong balls cut in half over the indicator lights, so the blinking would look more dramatic for the cameras.",
    "visual": {
     "type": "stage",
@@ -3816,7 +4005,7 @@
    }
   },
   {
-   "id": "s033",
+   "id": "s035",
    "line": "Newspapers called it a giant electronic brain. Yet at the celebration dinner afterwards, the six programmers were not invited.",
    "visual": {
     "type": "stage",
@@ -3860,7 +4049,7 @@
    "still_at": 0.7
   },
   {
-   "id": "s034",
+   "id": "s036",
    "line": "Their contribution was overlooked for half a century, until historians and a new generation of programmers brought their story back to light.",
    "visual": {
     "type": "stage",
@@ -4245,7 +4434,7 @@
    }
   },
   {
-   "id": "s035",
+   "id": "s037",
    "line": "ENIAC had a big weakness. Its program lived in its wiring, so changing the task meant rebuilding the machine.",
    "visual": {
     "type": "stage",
@@ -4297,7 +4486,7 @@
    "chapter": "The stored program"
   },
   {
-   "id": "s036",
+   "id": "s038",
    "line": "The team, joined by the mathematician John von Neumann, came up with a better design: store the program in the computer's memory, just like data.",
    "visual": {
     "type": "stage",
@@ -4365,7 +4554,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s037",
+   "id": "s039",
    "line": "Alan Turing in Britain had imagined such a universal machine back in nineteen thirty six. In nineteen forty eight, a small machine in Manchester, nicknamed the Baby, ran the first stored program.",
    "visual": {
     "type": "stage",
@@ -4494,7 +4683,7 @@
    "still": true
   },
   {
-   "id": "s038",
+   "id": "s040",
    "line": "Almost every computer since has been built on that idea.",
    "visual": {
     "type": "stage",
@@ -4548,8 +4737,8 @@
    }
   },
   {
-   "id": "s039",
-   "line": "Eckert and Mauchly started their own company, and built UNIVAC, one of the first computers sold to businesses. In nineteen fifty two, it correctly predicted Eisenhower's landslide in the US election, live on television.",
+   "id": "s041",
+   "line": "Eckert and Mauchly started their own company, and built UNIVAC, one of the first computers sold to businesses. The first one went to the US Census Bureau in nineteen fifty one. In nineteen fifty two, it correctly predicted Eisenhower's landslide in the US election, live on television.",
    "visual": {
     "type": "stage",
     "env": "lab",
@@ -4619,7 +4808,7 @@
    "still": true
   },
   {
-   "id": "s040",
+   "id": "s042",
    "line": "Betty Holberton, one of the original six, went on to help develop early programming languages, including COBOL, which still runs many banking systems today.",
    "visual": {
     "type": "stage",
@@ -4719,7 +4908,7 @@
    "still": true
   },
   {
-   "id": "s041",
+   "id": "s043",
    "line": "Next, the machines began to shrink. In nineteen forty seven, scientists at Bell Labs invented the transistor, a tiny solid switch that could replace the fragile vacuum tube.",
    "visual": {
     "type": "stage",
@@ -4782,8 +4971,71 @@
    "chapter": "Smaller and smaller"
   },
   {
-   "id": "s042",
-   "line": "In the late nineteen fifties, Jack Kilby and Robert Noyce worked out how to put many transistors onto a single chip of silicon: the integrated circuit.",
+   "id": "s044",
+   "line": "Its inventors, John Bardeen, Walter Brattain and William Shockley, shared the Nobel Prize in Physics in nineteen fifty six.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "vacuum_tube",
+      "at": [
+       -0.05,
+       0,
+       0
+      ]
+     },
+     {
+      "prop": "transistor",
+      "at": [
+       0.2,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "1947",
+      "at": [
+       0.1,
+       0.2,
+       0.3
+      ],
+      "size": 0.08,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0.25,
+      -0.8,
+      0.35
+     ],
+     "to": [
+      0.2,
+      -0.7,
+      0.3
+     ],
+     "target": [
+      0.1,
+      0,
+      0.06
+     ],
+     "lens": 35
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s045",
+   "line": "In the late nineteen fifties, Jack Kilby and Robert Noyce worked out how to put many transistors onto a single chip of silicon: the integrated circuit. Noyce went on to co-found Intel with Gordon Moore, and Kilby later won a Nobel Prize.",
    "visual": {
     "type": "stage",
     "env": "studio",
@@ -4826,7 +5078,7 @@
    }
   },
   {
-   "id": "s043",
+   "id": "s046",
    "line": "In nineteen sixty five, Gordon Moore predicted that the number of transistors on a chip would keep doubling roughly every year or two. For decades, he was right.",
    "visual": {
     "type": "stage",
@@ -4912,7 +5164,7 @@
    }
   },
   {
-   "id": "s044",
+   "id": "s047",
    "line": "In nineteen seventy one, Intel squeezed an entire computer processor onto one chip, the four zero zero four, with about two thousand three hundred transistors.",
    "visual": {
     "type": "stage",
@@ -4972,7 +5224,7 @@
    }
   },
   {
-   "id": "s045",
+   "id": "s048",
    "line": "By the late nineteen seventies, computers had shrunk enough to sit on a desk at home.",
    "visual": {
     "type": "stage",
@@ -5093,7 +5345,7 @@
    "still": true
   },
   {
-   "id": "s046",
+   "id": "s049",
    "line": "A modern smartphone chip holds billions of transistors, each smaller than most viruses.",
    "visual": {
     "type": "stage",
@@ -5153,7 +5405,7 @@
    }
   },
   {
-   "id": "s047",
+   "id": "s050",
    "line": "ENIAC itself went on to calculate weather forecasts, the design of nuclear weapons, and the behaviour of wind tunnels and cosmic rays.",
    "visual": {
     "type": "stage",
@@ -5205,7 +5457,58 @@
    "chapter": "Legacy"
   },
   {
-   "id": "s048",
+   "id": "s051",
+   "line": "In nineteen forty seven, it was taken apart, moved to the army's Aberdeen Proving Ground in Maryland, and rebuilt. It ran there, almost around the clock, for eight more years.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eniac",
+      "at": [
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -2.0,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -1.6,
+      1.5
+     ],
+     "target": [
+      -0.6,
+      1.2,
+      1.2
+     ],
+     "lens": 26
+    },
+    "env_opts": {
+     "wall": [
+      0.35,
+      0.37,
+      0.36
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.03
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s052",
    "line": "And in nineteen seventy three, a court ruled that ENIAC's patent was invalid, partly because Atanasoff had got there first with key ideas.",
    "visual": {
     "type": "stage",
@@ -5275,7 +5578,7 @@
    "still": true
   },
   {
-   "id": "s049",
+   "id": "s053",
    "line": "It was switched off for the last time in October nineteen fifty five. Parts of it survive in museums today.",
    "visual": {
     "type": "stage",
@@ -5329,7 +5632,7 @@
    "still": true
   },
   {
-   "id": "s050",
+   "id": "s054",
    "line": "In about eighty years, we went from a thirty tonne machine that filled a room, to computers in our pockets millions of times more powerful.",
    "visual": {
     "type": "stage",
@@ -5384,7 +5687,7 @@
    }
   },
   {
-   "id": "s051",
+   "id": "s055",
    "line": "Every app, every search, every video you watch, traces its family tree back to a room full of glowing tubes, and six women with a wiring diagram.",
    "visual": {
     "type": "stage",
