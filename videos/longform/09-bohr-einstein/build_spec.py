@@ -97,6 +97,10 @@ S("It was perhaps the most famous gathering in the history of science. Seventeen
   stage("hall", cam((0, -4.8, 1.8), (0.2, -4.4, 1.7), (0, 0.8, 1.0), lens=30),
         cast=[who(SCIENTIST | {"hair": [0.15 + 0.1 * (i % 4), 0.12, 0.1]}, at=((i % 6 - 2.5) * 0.6, 0.3 + (i // 6) * 0.7, (i // 6) * 0.3), scale=0.95) for i in range(12)],
         env_opts=HALL), still=True)
+S("The official topic was electrons and photons. The real topic, everyone knew, was whether quantum mechanics told the whole truth about nature.",
+  stage("hall", cam((0, -4.8, 1.8), (0.2, -4.4, 1.7), (0, 0.8, 1.0), lens=30),
+        cast=[who(SCIENTIST | {"hair": [0.15 + 0.1 * (i % 4), 0.12, 0.1]}, at=((i % 6 - 2.5) * 0.6, 0.3 + (i // 6) * 0.7, (i // 6) * 0.3), scale=0.95) for i in range(12)],
+        env_opts=HALL), still=True)
 S("Each morning at breakfast, Einstein would present a clever thought experiment designed to break quantum mechanics.",
   stage("lab", TWO, cast=[who(EINSTEIN, at=(-0.5, 0.35, 0), turn=-20, pose=PRESENT), who(BOHR, at=(0.5, 0.35, 0), turn=20, pose=READ)],
         props=[TABLE, P("bottle", (0.3, -0.1, TOP), args={"label": ""})], env_opts=HALL))
@@ -123,6 +127,8 @@ S("Einstein thought that was absurd. He later called it spooky action at a dista
   stage("lab", cam((0.5, -1.8, 1.6), (0.35, -1.5, 1.6), "cast0.head"), cast=[who(EINSTEIN, pose=PRESENT)], env_opts=STUDY), still=True)
 S("Bohr replied that it makes no sense to talk about properties that haven't been measured. For the rest of their lives, neither man convinced the other.",
   stage("lab", TWO, cast=[who(EINSTEIN, at=(-0.5, 0.35, 0), turn=-20, pose=STAND), who(BOHR, at=(0.5, 0.35, 0), turn=20, pose=PRESENT)], env_opts=STUDY), still=True)
+S("Einstein spent his last years searching for a deeper theory that would make chance disappear. He died in nineteen fifty five, without finding it.",
+  stage("lab", TWO, cast=[who(EINSTEIN, at=(-0.5, 0.35, 0), turn=-20, pose=STAND), who(BOHR, at=(0.5, 0.35, 0), turn=20, pose=PRESENT)], env_opts=STUDY), still=True)
 S("Yet they remained deep friends. And when Bohr died in nineteen sixty two, the last drawing on his blackboard was a sketch of Einstein's light box.",
   stage("lab", cam((0, -1.2, 1.2), (0, -1.0, 1.15), (0, -0.1, 0.95)), props=[P("blackboard", (0, 1.5, 0), args={"lines": [""]}), P("photon_box", (0, 1.4, 1.2), scale=0.35)],
         env_opts={"wall": [0.08, 0.08, 0.09], "world": [0.01, 0.01, 0.01]}), still=True)
@@ -147,6 +153,9 @@ S("For decades, the Bohr-Einstein debate seemed like philosophy. Nobody could se
 S("Then, in nineteen sixty four, the Northern Irish physicist John Bell found a way. He showed that hidden instructions and quantum mechanics predict measurably different results.",
   stage("lab", cam((0, -3.0, 1.5), (0, -2.6, 1.5), (0, 1.5, 1.6)), props=[P("blackboard", (0, 1.5, 0), args={"lines": ["|S| ≤ 2", "QUANTUM: 2√2"], "at": 0.2})],
         env_opts=STUDY), still=True)
+S("Bell worked at the particle physics lab CERN, near Geneva. He did this work on the side, almost as a hobby, and it became one of the most important results in physics.",
+  stage("lab", cam((0, -3.0, 1.5), (0, -2.6, 1.5), (0, 1.5, 1.6)), props=[P("blackboard", (0, 1.5, 0), args={"lines": ["|S| ≤ 2", "QUANTUM: 2√2"], "at": 0.2})],
+        env_opts=STUDY), still=True)
 S("Experiments by John Clauser in the nineteen seventies, and Alain Aspect in the nineteen eighties, tested Bell's idea with entangled particles of light.",
   stage("studio", cam((0, -3.0, 0.8), (0.3, -2.6, 0.75), (0, 0, 0.5)), props=[P("entangled", (0, 0, 0.5), args={"apart": [0.05, 0.4], "measure": 0.6})], env_opts=DEEP))
 S("Again and again, quantum mechanics won. The universe really is as strange as Bohr said.",
@@ -161,6 +170,9 @@ S("Today, entanglement is no longer just an argument. It's the basis of quantum 
         env_opts=DEEP))
 
 # ===================================================================== CLOSE
+S("In twenty seventeen, a Chinese satellite called Micius sent entangled particles of light to two ground stations more than twelve hundred kilometres apart. They stayed linked, just as Bohr's quantum mechanics predicted.",
+  stage("studio", cam((0.3, -0.7, 0.45), (0.2, -0.55, 0.38), (0, 0, 0.03)), props=[P("microchip", args={"glow": [0.1, 0.5]}), P("entangled", (0, 0.4, 0.3), scale=0.3)],
+        env_opts=DEEP), still=True)
 S("When Denmark gave Bohr its highest honour, he designed his own coat of arms, with the Chinese yin-yang symbol and a Latin motto: opposites are complementary.",
   stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("CONTRARIA SUNT COMPLEMENTA", (0, 0, 1.0), 0.12, pop=0.15)],
         props=[P("medal", (0, 0.3, 0.55), scale=2.0)], env_opts=DEEP), still=True, still_at=0.8)
@@ -182,8 +194,8 @@ write(HERE, {
                     "quantum mechanics, and the experiments that finally settled it, told in 3D animation."),
     "tags": ["Niels Bohr", "Albert Einstein", "quantum mechanics", "Bohr-Einstein debates", "entanglement", "Bell's theorem",
              "Solvay conference", "physics history", "3D animation"],
-    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.25, "sentence_silence": 0.28,
-              "pronunciations": {"Bohr": "Boar", "Heisenberg": "High-zen-berg", "Solvay": "Sol-vay", "Podolsky": "Po-dol-skee",
+    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.32, "sentence_silence": 0.28,
+              "pronunciations": {"Micius": "Mish-us", "CERN": "Sern", "Bohr": "Boar", "Heisenberg": "High-zen-berg", "Solvay": "Sol-vay", "Podolsky": "Po-dol-skee",
                                  "Aspect": "As-pay", "Clauser": "Clow-zer", "Zeilinger": "Tsy-ling-er"}},
     "music_mood": "reflective",
     "sources": [
