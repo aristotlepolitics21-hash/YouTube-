@@ -1,0 +1,951 @@
+1
+00:00:00,250 --> 00:00:03,640
+Look out of any window at night,
+and you'll see the result
+
+2
+00:00:03,650 --> 00:00:06,210
+of a battle fought more than a
+hundred years ago.
+
+3
+00:00:06,917 --> 00:00:09,287
+It was a fight over how
+electricity should travel,
+
+4
+00:00:09,297 --> 00:00:11,397
+from the power station to your
+home.
+
+5
+00:00:12,167 --> 00:00:15,167
+On one side was the most famous
+inventor in the world,
+
+6
+00:00:15,587 --> 00:00:16,387
+Thomas Edison.
+
+7
+00:00:17,127 --> 00:00:20,537
+On the other, a brilliant
+immigrant engineer named Nikola
+
+8
+00:00:20,547 --> 00:00:21,077
+Tesla,
+
+9
+00:00:21,087 --> 00:00:23,747
+and the businessman George
+Westinghouse.
+
+10
+00:00:24,583 --> 00:00:27,893
+The winner shaped the electrical
+grid that powers almost
+
+11
+00:00:27,903 --> 00:00:29,363
+the entire world today.
+
+12
+00:00:30,900 --> 00:00:34,230
+In eighteen seventy nine,
+Edison's lab in Menlo
+
+13
+00:00:34,240 --> 00:00:35,040
+Park,
+
+14
+00:00:35,160 --> 00:00:38,610
+New Jersey, produced a practical
+electric light bulb that could
+
+15
+00:00:38,620 --> 00:00:39,520
+glow for hours.
+
+16
+00:00:40,417 --> 00:00:43,637
+His team tested thousands of
+materials for the glowing
+filament,
+
+17
+00:00:44,117 --> 00:00:47,547
+from cotton thread to fishing
+line, before settling on
+
+18
+00:00:47,557 --> 00:00:50,827
+carbonised bamboo, which could
+last for well over a
+
+19
+00:00:50,837 --> 00:00:51,657
+thousand hours.
+
+20
+00:00:52,417 --> 00:00:55,587
+Edison would eventually hold
+more than a thousand American
+
+21
+00:00:55,597 --> 00:00:56,397
+patents.
+
+22
+00:00:56,777 --> 00:00:59,877
+Newspapers called him the Wizard
+of Menlo Park.
+
+23
+00:01:00,667 --> 00:01:03,987
+But a light bulb is useless
+without electricity to run it.
+
+24
+00:01:04,347 --> 00:01:07,247
+So Edison designed a whole
+system: generators,
+
+25
+00:01:07,927 --> 00:01:10,687
+cables, switches, fuses and
+meters.
+
+26
+00:01:11,583 --> 00:01:14,993
+On the fourth of September,
+eighteen eighty two,
+
+27
+00:01:15,003 --> 00:01:18,053
+his Pearl Street power station
+in Manhattan switched
+
+28
+00:01:18,063 --> 00:01:18,863
+on,
+
+29
+00:01:18,983 --> 00:01:21,703
+lighting buildings across a few
+city blocks.
+
+30
+00:01:22,667 --> 00:01:25,937
+Its huge steam-driven generators
+were nicknamed Jumbos,
+
+31
+00:01:25,947 --> 00:01:28,347
+after a famous circus elephant.
+
+32
+00:01:28,987 --> 00:01:31,227
+Each one weighed about twenty
+seven tons.
+
+33
+00:01:32,167 --> 00:01:34,717
+At first, it supplied about four
+hundred lamps,
+
+34
+00:01:34,727 --> 00:01:36,527
+for around eighty customers.
+
+35
+00:01:37,487 --> 00:01:40,607
+Within two years, it was
+lighting more than ten thousand.
+
+36
+00:01:41,250 --> 00:01:44,370
+Edison's system used direct
+current, or DC.
+
+37
+00:01:45,050 --> 00:01:47,850
+The electricity flows steadily
+in one direction,
+
+38
+00:01:48,330 --> 00:01:49,490
+like water through a pipe.
+
+39
+00:01:50,250 --> 00:01:52,350
+But DC had a serious problem.
+
+40
+00:01:52,990 --> 00:01:54,170
+Sent through long wires,
+
+41
+00:01:54,810 --> 00:01:56,910
+much of the power was lost as
+heat.
+
+42
+00:01:57,667 --> 00:02:01,097
+At the low voltages Edison used,
+a power station
+
+43
+00:02:01,107 --> 00:02:03,927
+could only serve customers
+within about a mile.
+
+44
+00:02:04,367 --> 00:02:07,767
+A city would need a power
+station in nearly every
+neighbourhood.
+
+45
+00:02:09,483 --> 00:02:12,673
+Nikola Tesla was born in
+eighteen fifty six,
+
+46
+00:02:12,683 --> 00:02:16,083
+in what is now Croatia, to a
+Serbian family.
+
+47
+00:02:16,917 --> 00:02:20,367
+He had a remarkable memory, and
+said he could design and
+
+48
+00:02:20,377 --> 00:02:22,757
+test machines entirely in his
+imagination.
+
+49
+00:02:23,833 --> 00:02:26,593
+As a student, he became obsessed
+with an idea:
+
+50
+00:02:27,133 --> 00:02:29,443
+a motor that ran on alternating
+current,
+
+51
+00:02:29,453 --> 00:02:32,703
+AC, where the electricity
+rapidly switches
+
+52
+00:02:32,713 --> 00:02:34,333
+direction back and forth.
+
+53
+00:02:35,000 --> 00:02:38,410
+In eighteen eighty four, he
+arrived in New York with almost
+
+54
+00:02:38,420 --> 00:02:38,950
+nothing,
+
+55
+00:02:38,960 --> 00:02:40,480
+and went to work for Edison.
+
+56
+00:02:41,333 --> 00:02:42,233
+According to Tesla,
+
+57
+00:02:43,073 --> 00:02:46,123
+Edison promised him fifty
+thousand dollars if he could
+improve
+
+58
+00:02:46,133 --> 00:02:47,633
+the company's dynamos.
+
+59
+00:02:48,033 --> 00:02:51,243
+When he did, Edison told him:
+you don't understand our
+
+60
+00:02:51,253 --> 00:02:52,173
+American humour.
+
+61
+00:02:52,917 --> 00:02:54,457
+But the two men were opposites.
+
+62
+00:02:55,097 --> 00:02:58,507
+Edison was a tireless tinkerer,
+who tested thousands of ideas
+
+63
+00:02:58,517 --> 00:03:00,137
+by trial and error.
+
+64
+00:03:00,657 --> 00:03:01,937
+Tesla was a theorist.
+
+65
+00:03:02,757 --> 00:03:04,917
+They soon fell out, and Tesla
+quit.
+
+66
+00:03:05,667 --> 00:03:08,347
+For a while, he even dug ditches
+to survive.
+
+67
+00:03:09,250 --> 00:03:12,600
+Then, in eighteen eighty eight,
+he patented his AC induction
+
+68
+00:03:12,610 --> 00:03:13,410
+motor.
+
+69
+00:03:13,917 --> 00:03:17,267
+That May, he demonstrated it in
+a famous lecture to the
+
+70
+00:03:17,277 --> 00:03:19,857
+American Institute of Electrical
+Engineers.
+
+71
+00:03:20,833 --> 00:03:23,553
+Instead of brushes and sparking
+contacts,
+
+72
+00:03:24,073 --> 00:03:27,343
+it used coils that create a
+magnetic field which spins
+
+73
+00:03:27,353 --> 00:03:28,153
+around.
+
+74
+00:03:28,413 --> 00:03:30,753
+The rotor is simply dragged
+around by it.
+
+75
+00:03:31,417 --> 00:03:33,457
+It was simple, tough and
+efficient.
+
+76
+00:03:34,077 --> 00:03:36,957
+Versions of it still run most of
+the world's fans,
+
+77
+00:03:37,497 --> 00:03:40,447
+pumps, factory machines and many
+electric
+
+78
+00:03:40,457 --> 00:03:41,257
+cars.
+
+79
+00:03:42,817 --> 00:03:45,717
+The real advantage of AC was
+something else:
+
+80
+00:03:46,077 --> 00:03:46,877
+the transformer.
+
+81
+00:03:47,667 --> 00:03:50,817
+A transformer is two coils of
+wire wrapped
+
+82
+00:03:50,827 --> 00:03:52,247
+around an iron core.
+
+83
+00:03:52,807 --> 00:03:54,407
+Thanks to Faraday's induction,
+
+84
+00:03:55,047 --> 00:03:58,477
+the changing current in one coil
+creates current in the
+
+85
+00:03:58,487 --> 00:03:59,287
+other.
+
+86
+00:03:59,417 --> 00:04:02,737
+Give the second coil more turns,
+and the voltage goes up.
+
+87
+00:04:03,197 --> 00:04:05,437
+Give it fewer, and the voltage
+goes down.
+
+88
+00:04:05,997 --> 00:04:08,037
+It only works with alternating
+current.
+
+89
+00:04:08,833 --> 00:04:09,853
+Here's why that matters.
+
+90
+00:04:10,573 --> 00:04:13,813
+The power lost as heat in a wire
+depends on the current.
+
+91
+00:04:14,453 --> 00:04:17,643
+Raise the voltage a hundred
+times, and the current falls a
+
+92
+00:04:17,653 --> 00:04:19,813
+hundred times, for the same
+power.
+
+93
+00:04:20,500 --> 00:04:23,360
+And because heat losses depend
+on the current squared,
+
+94
+00:04:23,860 --> 00:04:26,140
+the losses drop ten thousand
+times.
+
+95
+00:04:27,000 --> 00:04:29,900
+So with AC, you can step the
+voltage up,
+
+96
+00:04:30,200 --> 00:04:33,160
+send power hundreds of
+kilometres along thin wires,
+
+97
+00:04:33,620 --> 00:04:35,380
+and step it down again near
+homes.
+
+98
+00:04:36,250 --> 00:04:39,410
+In the mid eighteen eighties,
+engineers in Hungary,
+
+99
+00:04:40,070 --> 00:04:42,650
+Britain and the United States
+developed practical
+
+100
+00:04:43,250 --> 00:04:44,050
+transformers.
+
+101
+00:04:44,410 --> 00:04:47,840
+In eighteen eighty six, William
+Stanley lit up the main
+
+102
+00:04:47,850 --> 00:04:50,790
+street of Great Barrington,
+Massachusetts,
+
+103
+00:04:51,450 --> 00:04:52,570
+with alternating current.
+
+104
+00:04:54,317 --> 00:04:57,667
+George Westinghouse, an inventor
+and industrialist who
+
+105
+00:04:57,677 --> 00:05:00,157
+had made a fortune from railway
+air brakes,
+
+106
+00:05:00,477 --> 00:05:01,337
+saw the future.
+
+107
+00:05:01,877 --> 00:05:04,497
+He bought Tesla's patents, and
+hired him.
+
+108
+00:05:05,167 --> 00:05:08,457
+Tesla reportedly received about
+sixty thousand dollars
+
+109
+00:05:08,467 --> 00:05:11,897
+in cash and stock, plus a
+royalty for
+
+110
+00:05:11,907 --> 00:05:14,987
+every horsepower of AC equipment
+sold.
+
+111
+00:05:15,750 --> 00:05:18,110
+Edison had invested everything
+in DC.
+
+112
+00:05:18,830 --> 00:05:22,240
+He began a campaign to convince
+the public that AC's high
+
+113
+00:05:22,250 --> 00:05:23,450
+voltages were deadly.
+
+114
+00:05:24,250 --> 00:05:27,130
+His allies staged gruesome
+public demonstrations,
+
+115
+00:05:27,650 --> 00:05:30,650
+killing animals with AC to
+frighten people.
+
+116
+00:05:31,417 --> 00:05:34,367
+And when New York State
+introduced the electric chair
+for
+
+117
+00:05:34,377 --> 00:05:35,177
+executions,
+
+118
+00:05:35,757 --> 00:05:38,567
+it used an AC generator, partly
+to tie
+
+119
+00:05:38,577 --> 00:05:40,477
+Westinghouse's name to death.
+
+120
+00:05:41,083 --> 00:05:44,533
+The first execution, of a man
+named William Kemmler
+
+121
+00:05:44,543 --> 00:05:47,243
+in eighteen ninety, was horribly
+botched.
+
+122
+00:05:47,883 --> 00:05:50,893
+Westinghouse remarked that they
+would have done better using an
+
+123
+00:05:50,903 --> 00:05:51,703
+axe.
+
+124
+00:05:52,083 --> 00:05:54,623
+But it was true that high
+voltage needed respect.
+
+125
+00:05:55,223 --> 00:05:57,523
+Overhead wires in cities were a
+tangled,
+
+126
+00:05:57,903 --> 00:06:01,123
+dangerous mess, and people were
+killed by fallen lines.
+
+127
+00:06:02,083 --> 00:06:04,483
+Meanwhile, AC kept proving
+itself.
+
+128
+00:06:05,103 --> 00:06:08,143
+In eighteen ninety one, a mine
+in Telluride,
+
+129
+00:06:08,443 --> 00:06:09,243
+Colorado,
+
+130
+00:06:09,423 --> 00:06:12,533
+began running on AC power from a
+hydroelectric
+
+131
+00:06:12,543 --> 00:06:14,563
+plant several kilometres away.
+
+132
+00:06:15,250 --> 00:06:18,520
+That same year in Germany,
+engineers sent three-phase
+
+133
+00:06:18,530 --> 00:06:20,760
+AC a hundred and seventy five
+kilometres,
+
+134
+00:06:20,770 --> 00:06:22,410
+from Lauffen to Frankfurt.
+
+135
+00:06:24,400 --> 00:06:27,590
+The turning point came in
+eighteen ninety three.
+
+136
+00:06:27,600 --> 00:06:30,790
+Westinghouse won the contract to
+light the World's
+
+137
+00:06:30,800 --> 00:06:33,020
+Columbian Exposition in Chicago,
+
+138
+00:06:33,620 --> 00:06:35,900
+underbidding its rival, General
+Electric.
+
+139
+00:06:36,750 --> 00:06:40,160
+Visitors saw a glittering White
+City, lit by tens
+
+140
+00:06:40,170 --> 00:06:43,200
+of thousands of electric lamps,
+all running on
+
+141
+00:06:43,210 --> 00:06:44,310
+alternating current.
+
+142
+00:06:45,010 --> 00:06:47,350
+Tesla's machines were among the
+stars of the show.
+
+143
+00:06:48,083 --> 00:06:51,523
+That same year, Westinghouse won
+the biggest prize of all:
+
+144
+00:06:51,923 --> 00:06:54,323
+a contract to harness Niagara
+Falls.
+
+145
+00:06:55,167 --> 00:06:58,077
+The falling water spun huge
+turbines, and
+
+146
+00:06:58,087 --> 00:07:01,297
+Tesla-designed AC generators
+turned that motion
+
+147
+00:07:01,307 --> 00:07:02,207
+into electricity.
+
+148
+00:07:03,333 --> 00:07:06,183
+The first three generators each
+produced five thousand
+
+149
+00:07:06,193 --> 00:07:06,993
+horsepower,
+
+150
+00:07:07,333 --> 00:07:09,753
+the most powerful in the world
+at the time.
+
+151
+00:07:10,500 --> 00:07:13,323
+On the sixteenth of November,
+eighteen ninety
+
+152
+00:07:13,333 --> 00:07:14,070
+six,
+
+153
+00:07:14,080 --> 00:07:17,020
+power from Niagara was switched
+on in Buffalo,
+
+154
+00:07:17,620 --> 00:07:19,360
+about forty kilometres away.
+
+155
+00:07:20,167 --> 00:07:23,297
+Streetcars ran and factories
+hummed on
+
+156
+00:07:23,307 --> 00:07:26,787
+electricity generated by a
+waterfall, miles away.
+
+157
+00:07:27,267 --> 00:07:29,647
+The war of the currents was
+effectively over.
+
+158
+00:07:30,087 --> 00:07:31,047
+AC had won.
+
+159
+00:07:32,650 --> 00:07:36,070
+Edison's company merged with
+others to form General Electric,
+
+160
+00:07:36,670 --> 00:07:38,710
+which soon embraced AC too.
+
+161
+00:07:39,250 --> 00:07:41,670
+Westinghouse's company struggled
+with debts.
+
+162
+00:07:42,670 --> 00:07:46,020
+Tesla famously tore up a
+contract that would have paid
+him
+
+163
+00:07:46,030 --> 00:07:49,380
+royalties on every AC motor
+sold, to help
+
+164
+00:07:49,390 --> 00:07:50,610
+keep the firm afloat.
+
+165
+00:07:51,430 --> 00:07:53,030
+That story is often told,
+
+166
+00:07:53,690 --> 00:07:55,430
+though historians debate the
+details.
+
+167
+00:07:56,417 --> 00:07:59,057
+Tesla went on to experiment with
+radio,
+
+168
+00:07:59,557 --> 00:08:02,627
+wireless power and giant coils
+that threw
+
+169
+00:08:02,637 --> 00:08:04,317
+lightning across his lab.
+
+170
+00:08:04,917 --> 00:08:08,307
+But he died poor and alone in a
+New York hotel room
+
+171
+00:08:08,317 --> 00:08:10,037
+in nineteen forty three.
+
+172
+00:08:10,500 --> 00:08:13,500
+Today, the unit of magnetic
+field strength,
+
+173
+00:08:13,900 --> 00:08:15,680
+the tesla, carries his name.
+
+174
+00:08:17,317 --> 00:08:20,547
+Today, almost every power grid
+on Earth runs
+
+175
+00:08:20,557 --> 00:08:23,987
+on alternating current,
+switching direction fifty or
+
+176
+00:08:23,997 --> 00:08:25,697
+sixty times every second.
+
+177
+00:08:26,417 --> 00:08:29,747
+Westinghouse's engineers picked
+sixty cycles a
+
+178
+00:08:29,757 --> 00:08:30,917
+second for America.
+
+179
+00:08:31,477 --> 00:08:33,577
+Much of the rest of the world
+settled on fifty.
+
+180
+00:08:34,117 --> 00:08:36,437
+That's why some appliances don't
+work when you travel.
+
+181
+00:08:37,333 --> 00:08:40,643
+Giant transformers step the
+voltage up to hundreds of
+thousands
+
+182
+00:08:40,653 --> 00:08:43,733
+of volts for long journeys
+across the country,
+
+183
+00:08:44,073 --> 00:08:46,553
+then step it down to the voltage
+in your sockets.
+
+184
+00:08:47,583 --> 00:08:51,013
+In a twist Edison might have
+enjoyed, very long distance
+
+185
+00:08:51,023 --> 00:08:53,633
+links now often use direct
+current again,
+
+186
+00:08:53,643 --> 00:08:56,953
+at extremely high voltages,
+thanks to modern
+
+187
+00:08:56,963 --> 00:08:57,763
+electronics.
+
+188
+00:08:58,583 --> 00:09:02,083
+But the basic system,
+generators, transformers
+
+189
+00:09:02,263 --> 00:09:05,573
+and alternating current, is the
+one Tesla and
+
+190
+00:09:05,583 --> 00:09:07,003
+Westinghouse fought for.
+
+191
+00:09:07,750 --> 00:09:11,200
+And even now, hundreds of
+millions of people still live
+
+192
+00:09:11,210 --> 00:09:12,210
+without electricity.
+
+193
+00:09:12,970 --> 00:09:16,190
+The job that began in eighteen
+eighty two isn't finished.
+
+194
+00:09:17,167 --> 00:09:19,567
+And when the grid fails,
+everyone notices.
+
+195
+00:09:20,387 --> 00:09:23,877
+In August two thousand and
+three, a software bug and
+
+196
+00:09:23,887 --> 00:09:27,097
+overgrown trees in Ohio set off
+a blackout
+
+197
+00:09:27,107 --> 00:09:30,417
+that left about fifty five
+million people in the United
+
+198
+00:09:30,427 --> 00:09:32,447
+States and Canada in the dark.
+
+199
+00:09:34,067 --> 00:09:36,127
+Edison gave the world the light
+bulb.
+
+200
+00:09:36,587 --> 00:09:39,777
+But it was alternating current
+that carried the light into
+every
+
+201
+00:09:39,787 --> 00:09:40,587
+home.
