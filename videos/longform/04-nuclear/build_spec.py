@@ -78,8 +78,8 @@ S("Experiments on a wooden table gave far stronger effects than on a marble one.
                P("geiger", (-0.45, 0, 0.4), args={"clicks": [[0, -40], [0.3, 40], [0.5, -40], [0.7, 40]]}), P("geiger", (0.45, 0, 0.4))],
         texts=[T("WOOD", (-0.45, 0, 0.75), 0.08, pop=0.1), T("MARBLE", (0.45, 0, 0.75), 0.08, (1, 1, 1), pop=0.2)]))
 S("Fermi had a hunch. He put a block of paraffin wax between the neutrons and the target, and the radioactivity shot up, a hundred times stronger.",
-  stage("studio", cam((0.3, -1.2, 0.6), (0.2, -1.0, 0.55), (0, 0, 0.2)),
-        props=[P("geiger", (0.4, 0, 0), args={"clicks": [[0, -30], [0.4, -30], [0.45, 50], [0.55, 45], [0.65, 50]]})],
+  stage("studio", cam((0.25, -1.0, 0.5), (0.15, -0.85, 0.45), (0, 0, 0.2)),
+        props=[P("candle", (-0.25, 0, 0), scale=1.4), P("geiger", (0.22, 0, 0), args={"clicks": [[0, -30], [0.4, -30], [0.45, 50], [0.55, 45], [0.65, 50]]})],
         texts=[T("×100", (0, 0.2, 0.55), 0.15, (1.0, 0.5, 0.2), pop=0.5)]))
 S("The hydrogen in the wax, and in the wooden table, slowed the neutrons down. And slow neutrons were far better at being captured by nuclei.",
   stage("studio", cam((0.4, -2.4, 0.8), (0.2, -2.0, 0.7), (-0.3, 0, 0.5)), props=[P("fission", (0, 0, 0.5), args={"hit": 0.9, "split": 3, "products": False})]))
@@ -138,7 +138,7 @@ S("Running through the pile were control rods coated with cadmium, a metal that 
   stage("lab", cam((1.2, -2.6, 1.4), (0.8, -2.2, 1.3), (0, -1.2, 0.8)), props=[P("graphite_pile", args={"rods": [[0.1, 0], [0.5, 0.8], [0.8, 0.0]]})],
         env_opts=COURT))
 S("There was no radiation shield, and no cooling system. Their safety plan included a rod on a rope that one man could cut with an axe, and three young physicists standing on top with buckets of cadmium solution.",
-  stage("lab", cam((2.2, -3.4, 2.6), (1.8, -2.9, 2.4), (0, 0, 1.4), lens=30),
+  stage("lab", cam((3.0, -4.8, 3.1), (2.6, -4.3, 2.9), (0, 0, 2.0), lens=30),
         cast=[who(COLLEAGUE, at=(-0.4, 0.2, 1.54), pose=STAND, scale=0.9), who(COLLEAGUE | {"hair": [0.6, 0.4, 0.2]}, at=(0.3, -0.1, 1.54), pose=STAND, scale=0.9)],
         props=[P("graphite_pile"), P("vessels", (0, 0.4, 1.54), scale=0.4, args={"kinds": ["churn", "churn"]})], env_opts=COURT), still=True)
 S("They were nicknamed the suicide squad.",

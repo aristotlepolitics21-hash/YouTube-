@@ -1128,7 +1128,9 @@ def fission(frames, hit=0.35, split=0.5, products=True, neutrons=3, seed=1):
         fl = sph("flash", (0, 0, 0), 0.3, fm, parent=root)
         glow_keys(fstr, frames, [(0, 0), (split - 0.005, 0), (split, 30), (min(1, split + 0.12), 0)])
         props.key(fl, fs, scale=(0.5, 0.5, 0.5))
-        props.key(fl, min(frames, fs + 8), scale=(3, 3, 3))
+        props.key(fl, min(frames, fs + 8), scale=(1.6, 1.6, 1.6))
+        fe = min(frames, key_frac(frames, min(1, split + 0.12)))
+        hide_keys(fl, ((1, True), (max(1, fs - 1), True), (fs, False), (fe, False), (fe + 1, True)))
         rng = random.Random(seed)
         for k in range(neutrons):
             n = sph(f"out{k}", (0, 0, 0), 0.05, nm, parent=root)
