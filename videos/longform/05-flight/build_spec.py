@@ -46,6 +46,9 @@ S("The first humans to leave the ground did it in a bag of hot air.",
 S("In Paris, in November seventeen eighty three, a balloon built by the Montgolfier brothers carried two men over the rooftops for about twenty five minutes.",
   stage("sky", cam((0, -10, 4.0), (1.0, -9, 4.6), (0, 0, 4.2)), props=[P("balloon", (0, 0, 2.5), args={"rise": [0.0, 1.0, 1.5]}), P("city", (0, 8, 0), scale=0.4)],
         texts=[T("PARIS 1783", (-2.2, 0, 4.5), 0.25, pop=0.2)], env_opts=SKY), still=True)
+S("Two months earlier, at the palace of Versailles, the Montgolfiers had tested their balloon with the first air passengers in history: a sheep, a duck and a rooster. All three landed safely.",
+  stage("sky", cam((0, -10, 4.0), (1.0, -9, 4.6), (0, 0, 4.2)), props=[P("balloon", (0, 0, 2.5), args={"rise": [0.0, 1.0, 1.5]})],
+        texts=[T("VERSAILLES 1783", (-2.2, 0, 4.5), 0.25, pop=0.2)], env_opts=SKY), still=True)
 S("But balloons drift wherever the wind takes them. To truly fly, you need a wing.",
   stage("sky", cam((0, -9.0, 4.0), (0, -8.5, 4.2), (0, 0, 4.0)), props=[P("balloon", (0, 0, 2.5), anim=[[0, {"at": [-1.5, 0, 2.5]}], [1, {"at": [1.5, 0, 2.9]}]])],
         env_opts=SKY))
@@ -95,6 +98,8 @@ S("Then, idly twisting a long, empty cardboard box in the shop, he realised a wh
 S("For testing, they needed steady winds and soft sand to land on. The weather bureau suggested a remote beach called Kitty Hawk, in North Carolina.",
   stage("sky", cam((0, -10, 3.0), (2, -9, 2.6), (0, 4, 0.5), lens=28), props=[P("dunes", args={"n": 14})], env_opts=BEACH), still=True,
   chapter="Kitty Hawk")
+S("Strictly speaking, they flew among the sand dunes of Kill Devil Hills, about four miles south of the village. There was no road, and supplies came by boat.",
+  stage("sky", cam((2, -9, 2.4), (0, -8, 2.2), (0, 4, 0.8), lens=28), props=[P("dunes", args={"n": 14, "seed": 4})], env_opts=BEACH), still=True)
 S("Their gliders of nineteen hundred and nineteen oh one flew, but they produced far less lift than the published tables predicted.",
   stage("sky", cam((3.0, -4.6, 1.6), (2.4, -4.0, 1.6), (0, 0, 1.2)),
         props=[P("wright_flyer", (0, 0, 0.2), args={"props_spin": False}, anim=[[0, {"at": [-1.5, 0, 0.2]}], [1, {"at": [1.5, 0, 0.0]}]]), P("dunes")],
@@ -129,6 +134,8 @@ S("And they realised a propeller is just a wing that spins. Nobody had worked ou
   stage("studio", cam((0.6, -1.4, 0.9), (0.4, -1.2, 0.85), (0, 0, 0.6)), props=[P("wright_flyer", (0, 0, -0.6), scale=0.7)]))
 
 # ===================================================================== DECEMBER 17
+S("The finished Flyer had wings more than twelve metres across. The pilot lay flat on his stomach on the lower wing, and steered by shifting his hips in a cradle, which pulled the wires that warped the wings.",
+  stage("sky", cam((3, -6, 2.0), (2, -5, 1.8), (0, 0, 0.8), lens=30), props=[P("wright_flyer", (0, 0, 0.3), rot=[0, 0, 30])], env_opts=BEACH), still=True)
 S("Meanwhile, the famous scientist Samuel Langley had fifty thousand dollars from the United States Army to build a flying machine. On the eighth of December, nineteen oh three, it plunged straight into the Potomac River.",
   stage("sky", cam((0, -8, 2.0), (0.4, -7.4, 1.9), (0, 0, 1.4)),
         props=[P("glider", (0, 0, 2.5), scale=1.2, anim=[[0, {"at": [-2, 0, 3.0]}], [1, {"at": [0.5, 0, 0.2], "rot": [-60, 0, 0]}]])],
@@ -203,6 +210,8 @@ S("Today, around a hundred thousand commercial flights take off every day.",
                for i, x in enumerate((-4, -1.5, 1, 3.5))], env_opts=SKY))
 S("The original nineteen oh three Flyer spent twenty years on display in London, after a dispute with the Smithsonian. Since nineteen forty eight, it has hung in Washington, D.C., in what is now the National Air and Space Museum.",
   stage("hall", cam((0, -6, 2.2), (0.5, -5.4, 2.4), (0, 0, 2.6), lens=30), props=[P("wright_flyer", (0, 0, 1.2), rot=[0, 0, 30])]), still=True)
+S("Wilbur never saw much of the age he started. He died of typhoid fever in nineteen twelve, aged just forty five. Orville lived until nineteen forty eight, long enough to see an aircraft fly faster than sound.",
+  stage("sky", cam((0, -2.6, 1.6), (0.3, -2.2, 1.5), (0, 0.3, 1.2)), cast=[who(ORVILLE, at=(0, 0.35, 0))], env_opts=BEACH), still=True)
 S("It all began with two brothers from a bicycle shop, who refused to give up, and treated flying not as a dream, but as an engineering problem.",
   stage("sky", cam((0, -2.6, 1.6), (0.3, -2.2, 1.5), (0, 0.3, 1.2)),
         cast=[who(WILBUR, at=(-0.4, 0.35, 0), turn=-10), who(ORVILLE, at=(0.45, 0.35, 0), turn=10)],
@@ -219,7 +228,7 @@ write(HERE, {
                     "that changed the world, told in 3D animation."),
     "tags": ["Wright brothers", "first flight", "Kitty Hawk", "history of aviation", "how planes fly", "lift", "Otto Lilienthal",
              "Montgolfier", "3D animation"],
-    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.25, "sentence_silence": 0.28,
+    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.32, "sentence_silence": 0.28,
               "pronunciations": {"Lilienthal": "Lil-ee-en-tahl", "Montgolfier": "Mont-gol-fee-ay", "Cayley": "Kay-lee",
                                  "Blériot": "Blair-ee-oh", "Le Mans": "Luh Mon", "aluminium": "al-you-min-ee-um"}},
     "music_mood": "hopeful",
