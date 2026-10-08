@@ -59,10 +59,10 @@ S("A century later, war created an urgent need for calculation.",
         env_opts={"horizon": [0.2, 0.03, 0.03]}), still=True)
 S("In Britain, codebreakers at Bletchley Park built Colossus, an electronic machine that helped crack German codes. It was kept secret for decades.",
   stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), props=[P("eniac", args={"panels": 4, "seed": 9})],
-        texts=[T("COLOSSUS 1944", (0.5, 0.8, 2.2), 0.15, pop=0.2)], env_opts={"wall": [0.25, 0.27, 0.22], "world": [0.03, 0.03, 0.03]}), still=True)
+        env_opts={"wall": [0.25, 0.27, 0.22], "world": [0.03, 0.03, 0.03]}), still=True)
 S("Its designer, a Post Office engineer named Tommy Flowers, used around two and a half thousand vacuum tubes, and paid for some of the parts out of his own pocket. By the end of the war, ten of them were running.",
   stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), props=[P("eniac", args={"panels": 4, "seed": 9})],
-        texts=[T("COLOSSUS 1944", (0.5, 0.8, 2.2), 0.15, pop=0.2)], env_opts={"wall": [0.25, 0.27, 0.22], "world": [0.03, 0.03, 0.03]}), still=True)
+        env_opts={"wall": [0.25, 0.27, 0.22], "world": [0.03, 0.03, 0.03]}), still=True)
 S("In Germany, Konrad Zuse had already built the Z3 in nineteen forty one, a programmable machine that used thousands of clicking telephone relays.",
   stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), props=[P("eniac", args={"panels": 3, "seed": 11, "blink": False})],
         texts=[T("Z3  1941", (0.5, 0.8, 2.2), 0.15, pop=0.2)], env_opts={"wall": [0.3, 0.28, 0.25], "world": [0.03, 0.03, 0.03]}), still=True)
@@ -154,7 +154,7 @@ S("The team, joined by the mathematician John von Neumann, came up with a better
         props=[P("binary_rain", (0, 0.8, 0.0))], env_opts=DARK), still=True, still_at=0.8)
 S("Alan Turing in Britain had imagined such a universal machine back in nineteen thirty six. In nineteen forty eight, a small machine in Manchester, nicknamed the Baby, ran the first stored program.",
   stage("lab", cam((0.5, -1.8, 1.55), (0.35, -1.5, 1.5), "cast0.head"), cast=[who(TURING, pose=PRESENT)],
-        props=[P("eniac", (1.5, 1.0, 0), scale=0.6, args={"panels": 3})], texts=[T("1948", (0.9, 0.6, 1.7), 0.2, pop=0.3)], env_opts=ROOM), still=True)
+        props=[P("eniac", (1.5, 1.0, 0), scale=0.6, args={"panels": 3})], texts=[T("1948", (0.55, 0.6, 1.85), 0.2, pop=0.3)], env_opts=ROOM), still=True)
 S("Almost every computer since has been built on that idea.",
   stage("studio", cam((0, -1.6, 0.6), (0.2, -1.3, 0.55), (0, 0, 0.2)), props=[P("laptop", args={"glow": 0.2}), P("phone", (0.4, 0, 0.08), rot=[-70, 0, 0])]))
 
@@ -173,9 +173,9 @@ S("Its inventors, John Bardeen, Walter Brattain and William Shockley, shared the
 S("In the late nineteen fifties, Jack Kilby and Robert Noyce worked out how to put many transistors onto a single chip of silicon: the integrated circuit. Noyce went on to co-found Intel with Gordon Moore, and Kilby later won a Nobel Prize.",
   stage("studio", cam((0.3, -0.7, 0.45), (0.2, -0.55, 0.38), (0, 0, 0.03)), props=[P("microchip", args={"glow": [0.2, 0.6]})]))
 S("In nineteen sixty five, Gordon Moore predicted that the number of transistors on a chip would keep doubling roughly every year or two. For decades, he was right.",
-  stage("studio", cam((0, -2.6, 1.2), (0, -2.3, 1.1), (0, 0, 0.7)),
+  stage("studio", cam((0, -3.1, 0.95), (0, -2.85, 0.9), (0, 0, 0.3)),
         props=[P("microchip", (x, 0, 0), scale=0.4 + 0.25 * i, pop=0.1 + 0.15 * i) for i, x in enumerate((-1.2, -0.6, 0.1, 0.95))],
-        texts=[T("MOORE'S LAW", (0, 0, 1.5), 0.2, pop=0.05)]))
+        texts=[T("MOORE'S LAW", (0, 0.4, 0.8), 0.2, pop=0.05)]))
 S("In nineteen seventy one, Intel squeezed an entire computer processor onto one chip, the four zero zero four, with about two thousand three hundred transistors.",
   stage("studio", cam((0.3, -0.7, 0.45), (0.2, -0.55, 0.38), (0, 0, 0.03)), props=[P("microchip", args={"glow": [0.1, 0.4]})],
         texts=[T("4004", (0, 0.3, 0.3), 0.1, pop=0.3)]))
