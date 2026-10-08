@@ -27,9 +27,9 @@ S("Look out of any window at night, and you'll see the result of a battle fought
 S("It was a fight over how electricity should travel, from the power station to your home.",
   stage("sky", cam((6, -4, 2.5), (5, -2, 2.6), (0, 5, 2.5)), props=[P("pylons", args={"current": [0.1, 0.3]})], env_opts=SKY))
 S("On one side was the most famous inventor in the world, Thomas Edison. On the other, a brilliant immigrant engineer named Nikola Tesla, and the businessman George Westinghouse.",
-  stage("studio", cam((0, -3.2, 1.6), (0, -2.8, 1.55), (0, 0.3, 1.2)),
+  stage("studio", cam((0, -3.6, 1.6), (0, -3.2, 1.55), (0, 0.3, 1.25)),
         cast=[who(EDISON, at=(-0.8, 0.3, 0), turn=-15), who(TESLA, at=(0.4, 0.3, 0), turn=10), who(WESTINGHOUSE, at=(1.1, 0.5, 0), turn=20)],
-        texts=[T("DC", (-0.8, 0.3, 2.15), 0.25, (0.4, 0.85, 1.0), pop=0.15), T("AC", (0.75, 0.4, 2.15), 0.25, (1.0, 0.5, 0.2), pop=0.4)]), still=True)
+        texts=[T("DC", (-0.8, 0.3, 1.95), 0.25, (0.4, 0.85, 1.0), pop=0.15), T("AC", (0.75, 0.4, 1.95), 0.25, (1.0, 0.5, 0.2), pop=0.4)]), still=True)
 S("The winner shaped the electrical grid that powers almost the entire world today.",
   stage("studio", cam((0, -3.0, 1.2), (0, -2.6, 1.15), (0, 0, 1.1)),
         texts=[T("THE WAR OF THE CURRENTS", (0, 0, 1.3), 0.22, pop=0.08)],
@@ -58,7 +58,7 @@ S("At first, it supplied about four hundred lamps, for around eighty customers. 
   stage("night", cam((0, -6.5, 2.4), (0.5, -5.5, 2.2), (0, 3, 1.4), lens=30), props=[P("city", (0, 3, 0), args={"count": 110, "on": 0.15})],
         texts=[T("400 → 10,000 LAMPS", (0, 0, 2.8), 0.22, pop=0.4)]))
 S("Edison's system used direct current, or DC. The electricity flows steadily in one direction, like water through a pipe.",
-  stage("studio", cam((0, -2.6, 0.7), (0, -2.3, 0.65), (0, 0, 0.55)), props=[P("waveform", (0, 0, 0.55), args={"kind": "dc"})]))
+  stage("studio", cam((-0.25, -3.3, 0.75), (-0.25, -3.0, 0.7), (-0.25, 0, 0.55)), props=[P("waveform", (0, 0, 0.55), args={"kind": "dc"})]))
 S("But DC had a serious problem. Sent through long wires, much of the power was lost as heat.",
   stage("sky", cam((6, -4, 2.5), (5, -2, 2.6), (0, 5, 2.5)), props=[P("pylons", args={"n": 3})], texts=[T("HEAT", (0, 4, 4.2), 0.3, (1.0, 0.35, 0.2), pop=0.3)],
         env_opts=SKY), still=True)
@@ -76,7 +76,7 @@ S("He had a remarkable memory, and said he could design and test machines entire
   stage("lab", cam((0.5, -1.8, 1.6), (0.35, -1.5, 1.6), "cast0.head"), cast=[who(TESLA, pose=LOOK_UP)],
         props=[P("induction_motor", (0.8, 0, 1.3), scale=0.5)], env_opts={"wall": [0.08, 0.08, 0.12], "world": [0.01, 0.01, 0.02]}), still=True)
 S("As a student, he became obsessed with an idea: a motor that ran on alternating current, AC, where the electricity rapidly switches direction back and forth.",
-  stage("studio", cam((0, -2.6, 0.7), (0, -2.3, 0.65), (0, 0, 0.55)), props=[P("waveform", (0, 0, 0.55), args={"kind": "ac"})]))
+  stage("studio", cam((-0.25, -3.3, 0.75), (-0.25, -3.0, 0.7), (-0.25, 0, 0.55)), props=[P("waveform", (0, 0, 0.55), args={"kind": "ac"})]))
 S("In eighteen eighty four, he arrived in New York with almost nothing, and went to work for Edison.",
   stage("studio", cam((0, -2.6, 2.0), (0.4, -2.0, 1.6), (0, 0, 0.3)), props=[P("route", (0, 0, 0.05), args={"stops": ["PARIS", "NEW YORK"]})]))
 S("According to Tesla, Edison promised him fifty thousand dollars if he could improve the company's dynamos. When he did, Edison told him: you don't understand our American humour.",
@@ -189,13 +189,13 @@ S("Today, almost every power grid on Earth runs on alternating current, switchin
   stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0)), texts=[T("50 Hz  /  60 Hz", (0, -0.6, 0.55), 0.2, (1.0, 0.6, 0.2), pop=0.3)]), still=True,
   chapter="The grid today")
 S("Westinghouse's engineers picked sixty cycles a second for America. Much of the rest of the world settled on fifty. That's why some appliances don't work when you travel.",
-  stage("studio", cam((0, -2.6, 0.7), (0, -2.3, 0.65), (0, 0, 0.55)), props=[P("waveform", (0, 0, 0.55), args={"kind": "ac"})],
+  stage("studio", cam((-0.25, -3.3, 0.75), (-0.25, -3.0, 0.7), (-0.25, 0, 0.55)), props=[P("waveform", (0, 0, 0.55), args={"kind": "ac"})],
         texts=[T("60 Hz  vs  50 Hz", (0, 0, 1.0), 0.14, pop=0.4)]))
 S("Giant transformers step the voltage up to hundreds of thousands of volts for long journeys across the country, then step it down to the voltage in your sockets.",
   stage("sky", cam((8, -3, 3.0), (6, 2, 3.2), (0, 6, 2.2)), props=[P("pylons", args={"n": 5, "current": [0.05, 0.2]}), P("transformer", (0, -1.2, 0), scale=1.5)],
         env_opts=SKY))
 S("In a twist Edison might have enjoyed, very long distance links now often use direct current again, at extremely high voltages, thanks to modern electronics.",
-  stage("studio", cam((0, -2.6, 0.9), (0, -2.3, 0.85), (0, 0, 0.6)), props=[P("waveform", (0, 0, 0.85), args={"kind": "ac"}), P("waveform", (0, 0, 0.3), args={"kind": "dc"})]))
+  stage("studio", cam((-0.25, -3.5, 0.95), (-0.25, -3.2, 0.9), (-0.25, 0, 0.6)), props=[P("waveform", (0, 0, 0.85), args={"kind": "ac"}), P("waveform", (0, 0, 0.3), args={"kind": "dc"})]))
 S("But the basic system, generators, transformers and alternating current, is the one Tesla and Westinghouse fought for.",
   stage("lab", cam((-2.0, -3.5, 1.8), (1.0, -3.2, 1.6), (0, 1, 0.8), lens=26), props=[P("generator_hall", (0, 1.0, 0), scale=0.8)],
         env_opts={"wall": [0.2, 0.22, 0.24], "world": [0.05, 0.05, 0.06]}), still=True)
