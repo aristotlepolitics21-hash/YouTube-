@@ -31,7 +31,7 @@
  ],
  "voice": {
   "piper_voice": "en_US-ryan-high",
-  "length_scale": 1.25,
+  "length_scale": 1.33,
   "sentence_silence": 0.28,
   "pronunciations": {
    "Eddington": "Edd-ing-ton",
@@ -545,6 +545,60 @@
   },
   {
    "id": "s009",
+   "line": "Many physicists argued that the Sun simply wasn't hot enough for that. Eddington's reply was famous: he told his critics to go and find a hotter place.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "fusion_reaction",
+      "at": [
+       0,
+       0,
+       0.6
+      ],
+      "args": {
+       "hit": 0.5
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.8,
+      0.8
+     ],
+     "to": [
+      0.2,
+      -2.4,
+      0.75
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s010",
    "line": "In nineteen thirty nine, Hans Bethe worked out the exact nuclear reactions that power the stars. He later won the Nobel Prize for it.",
    "visual": {
     "type": "stage",
@@ -665,7 +719,7 @@
    "still": true
   },
   {
-   "id": "s010",
+   "id": "s011",
    "line": "So why is fusion so hard? Because atomic nuclei hate each other.",
    "visual": {
     "type": "stage",
@@ -719,7 +773,7 @@
    "chapter": "Why is fusion so hard?"
   },
   {
-   "id": "s011",
+   "id": "s012",
    "line": "Every nucleus carries a positive electric charge. As two nuclei get close, they push each other away, harder and harder.",
    "visual": {
     "type": "stage",
@@ -788,7 +842,7 @@
    }
   },
   {
-   "id": "s012",
+   "id": "s013",
    "line": "Only if they collide fast enough, can they get close enough for the strong nuclear force to grab hold and fuse them.",
    "visual": {
     "type": "stage",
@@ -841,7 +895,7 @@
    }
   },
   {
-   "id": "s013",
+   "id": "s014",
    "line": "Speed means heat. In the Sun's core, the temperature is about fifteen million degrees, and the crushing weight of the Sun squeezes nuclei together.",
    "visual": {
     "type": "stage",
@@ -903,7 +957,70 @@
    }
   },
   {
-   "id": "s014",
+   "id": "s015",
+   "line": "Even at fifteen million degrees, almost no nuclei are fast enough. They fuse thanks to a quantum trick called tunnelling, which lets a lucky few slip through the barrier between them.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "thermometer",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "top_label": "15,000,000 °C"
+      }
+     },
+     {
+      "prop": "sun_ball",
+      "at": [
+       1.4,
+       1,
+       1.2
+      ],
+      "scale": 0.6
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -4,
+      1.3
+     ],
+     "to": [
+      0.4,
+      -3.6,
+      1.2
+     ],
+     "target": [
+      0.6,
+      0,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.1,
+      0.03,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.0,
+      0.02
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s016",
    "line": "On Earth, we can't recreate that pressure. So we need to go much hotter: about a hundred and fifty million degrees, ten times hotter than the centre of the Sun.",
    "visual": {
     "type": "stage",
@@ -965,7 +1082,7 @@
    }
   },
   {
-   "id": "s015",
+   "id": "s017",
    "line": "At that temperature, matter becomes plasma: a glowing soup of bare nuclei and electrons. And no material container could hold it. It would vaporise the walls.",
    "visual": {
     "type": "stage",
@@ -1021,7 +1138,7 @@
    }
   },
   {
-   "id": "s016",
+   "id": "s018",
    "line": "The best fuel is two heavy forms of hydrogen: deuterium, which can be extracted from ordinary seawater, and tritium, which can be made from lithium.",
    "visual": {
     "type": "stage",
@@ -1105,7 +1222,7 @@
    }
   },
   {
-   "id": "s017",
+   "id": "s019",
    "line": "When they fuse, they make helium, and a fast neutron carrying most of the energy.",
    "visual": {
     "type": "stage",
@@ -1158,7 +1275,7 @@
    }
   },
   {
-   "id": "s018",
+   "id": "s020",
    "line": "Humans first released fusion energy in nineteen fifty two, in the hydrogen bomb. That was fusion out of control. The challenge since then has been to tame it.",
    "visual": {
     "type": "stage",
@@ -1216,7 +1333,7 @@
    "still": true
   },
   {
-   "id": "s019",
+   "id": "s021",
    "line": "The answer to holding plasma came from the Soviet Union. In the early nineteen fifties, physicists Igor Tamm and Andrei Sakharov proposed trapping it with magnetic fields.",
    "visual": {
     "type": "stage",
@@ -1317,7 +1434,7 @@
    "chapter": "The magnetic bottle"
   },
   {
-   "id": "s020",
+   "id": "s022",
    "line": "Charged particles spiral around magnetic field lines. Bend those lines into a ring, and the plasma can circle forever without touching the walls.",
    "visual": {
     "type": "stage",
@@ -1374,7 +1491,7 @@
    }
   },
   {
-   "id": "s021",
+   "id": "s023",
    "line": "In America, the physicist Lyman Spitzer designed a different magnetic bottle, a twisted ring called the stellarator. Germany's Wendelstein seven X, switched on in twenty fifteen, is a modern version.",
    "visual": {
     "type": "stage",
@@ -1437,7 +1554,7 @@
    "still": true
   },
   {
-   "id": "s022",
+   "id": "s024",
    "line": "Holding plasma steady has been compared to trying to squeeze a balloon, or hold jelly with rubber bands. Squeeze one place, and it bulges out somewhere else.",
    "visual": {
     "type": "stage",
@@ -1493,7 +1610,7 @@
    }
   },
   {
-   "id": "s023",
+   "id": "s025",
    "line": "The design was called a tokamak, a Russian acronym for a toroidal chamber with magnetic coils: a doughnut-shaped magnetic bottle.",
    "visual": {
     "type": "stage",
@@ -1565,7 +1682,7 @@
    }
   },
   {
-   "id": "s024",
+   "id": "s026",
    "line": "In nineteen sixty eight, a Soviet tokamak called T-three reached around ten million degrees. Western scientists were sceptical, so a British team flew to Moscow with lasers to measure it. The Soviets were right.",
    "visual": {
     "type": "stage",
@@ -1650,7 +1767,7 @@
    }
   },
   {
-   "id": "s025",
+   "id": "s027",
    "line": "Soon, tokamaks were being built all over the world.",
    "visual": {
     "type": "stage",
@@ -1720,7 +1837,7 @@
    "still": true
   },
   {
-   "id": "s026",
+   "id": "s028",
    "line": "In nineteen fifty eight, countries declassified their fusion research at a conference in Geneva. That same year, Britain's ZETA machine was briefly celebrated for achieving fusion, before scientists realised the measurements had been misread.",
    "visual": {
     "type": "stage",
@@ -1764,7 +1881,7 @@
    "still_at": 0.7
   },
   {
-   "id": "s027",
+   "id": "s029",
    "line": "The biggest was JET, the Joint European Torus, in England. In nineteen ninety seven, it produced sixteen megawatts of fusion power.",
    "visual": {
     "type": "stage",
@@ -1837,7 +1954,80 @@
    "chapter": "Chasing break-even"
   },
   {
-   "id": "s028",
+   "id": "s030",
+   "line": "JET ran for forty years at Culham, near Oxford, from nineteen eighty three until twenty twenty three, and trained a whole generation of fusion scientists.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.1,
+        0.4
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "JET  1997  16 MW",
+      "at": [
+       0,
+       1.5,
+       2.6
+      ],
+      "size": 0.2,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      2.8,
+      -3.8,
+      2.6
+     ],
+     "to": [
+      2.2,
+      -3.2,
+      2.2
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s031",
    "line": "But that took more power to run than it produced. The holy grail is to get more energy out of the fuel than you put in to heat it.",
    "visual": {
     "type": "stage",
@@ -1896,7 +2086,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s029",
+   "id": "s032",
    "line": "In twenty twenty three, in its final experiments before closing, JET set a world record: sixty nine megajoules of energy in five seconds, from a fraction of a milligramme of fuel.",
    "visual": {
     "type": "stage",
@@ -1968,7 +2158,7 @@
    }
   },
   {
-   "id": "s030",
+   "id": "s033",
    "line": "There's another way to do fusion. Instead of holding plasma steady, you can crush a tiny pellet of fuel so fast that it fuses before it can fly apart.",
    "visual": {
     "type": "stage",
@@ -2021,7 +2211,7 @@
    }
   },
   {
-   "id": "s031",
+   "id": "s034",
    "line": "At the National Ignition Facility in California, a hundred and ninety two giant lasers fire at a capsule the size of a peppercorn.",
    "visual": {
     "type": "stage",
@@ -2075,7 +2265,7 @@
    }
   },
   {
-   "id": "s032",
+   "id": "s035",
    "line": "On the fifth of December, twenty twenty two, for the first time, the fusion reactions released more energy than the laser light delivered to the target: three point one five megajoules out, from two point oh five in.",
    "visual": {
     "type": "stage",
@@ -2144,7 +2334,7 @@
    }
   },
   {
-   "id": "s033",
+   "id": "s036",
    "line": "It was a historic milestone called ignition. The lasers themselves still used far more electricity than the fusion produced. But it proved the physics works, and the team has since beaten that result.",
    "visual": {
     "type": "stage",
@@ -2203,7 +2393,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s034",
+   "id": "s037",
    "line": "Now, thirty five countries are building the biggest tokamak ever, ITER, in the south of France.",
    "visual": {
     "type": "stage",
@@ -2310,7 +2500,7 @@
    "chapter": "Building a star"
   },
   {
-   "id": "s035",
+   "id": "s038",
    "line": "Its magnets will be cooled to minus two hundred and sixty nine degrees, just a few degrees above absolute zero, while the plasma inside reaches a hundred and fifty million. Some of the coldest and hottest places in the solar system, a few metres apart.",
    "visual": {
     "type": "stage",
@@ -2397,7 +2587,95 @@
    }
   },
   {
-   "id": "s036",
+   "id": "s039",
+   "line": "When it's finished, the machine will weigh about twenty three thousand tonnes, around three times as much as the Eiffel Tower.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [],
+    "props": [
+     {
+      "prop": "tokamak",
+      "at": [
+       0,
+       0,
+       0
+      ],
+      "args": {
+       "plasma": [
+        0.1,
+        0.5
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "−269 °C",
+      "at": [
+       -1.8,
+       0,
+       2.2
+      ],
+      "size": 0.2,
+      "color": [
+       0.4,
+       0.8,
+       1.0
+      ],
+      "pop": 0.2
+     },
+     {
+      "text": "150,000,000 °C",
+      "at": [
+       1.4,
+       0,
+       2.2
+      ],
+      "size": 0.18,
+      "color": [
+       1.0,
+       0.45,
+       0.85
+      ],
+      "pop": 0.45
+     }
+    ],
+    "camera": {
+     "from": [
+      2.8,
+      -3.8,
+      2.6
+     ],
+     "to": [
+      2.2,
+      -3.2,
+      2.2
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 30
+    },
+    "env_opts": {
+     "wall": [
+      0.32,
+      0.35,
+      0.4
+     ],
+     "world": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s040",
    "line": "ITER is designed to produce ten times more fusion power than it uses to heat its plasma. It has faced long delays, and full operations are now planned for the late twenty thirties.",
    "visual": {
     "type": "stage",
@@ -2470,7 +2748,7 @@
    }
   },
   {
-   "id": "s037",
+   "id": "s041",
    "line": "Meanwhile, dozens of private companies are racing to build smaller, cheaper reactors, using powerful new superconducting magnets and clever designs.",
    "visual": {
     "type": "stage",
@@ -2545,7 +2823,7 @@
    }
   },
   {
-   "id": "s038",
+   "id": "s042",
    "line": "In twenty twenty one, a team from MIT and the company Commonwealth Fusion Systems tested a new superconducting magnet that reached a field of twenty tesla, a record for its kind.",
    "visual": {
     "type": "stage",
@@ -2681,7 +2959,7 @@
    "still": true
   },
   {
-   "id": "s039",
+   "id": "s043",
    "line": "And in early twenty twenty five, tokamaks held hot plasma steady for almost eighteen minutes in China, and twenty two minutes in France, new records for staying power.",
    "visual": {
     "type": "stage",
@@ -2753,7 +3031,7 @@
    }
   },
   {
-   "id": "s040",
+   "id": "s044",
    "line": "Why does it matter so much? Because fusion fuel is incredibly concentrated.",
    "visual": {
     "type": "stage",
@@ -2809,7 +3087,7 @@
    "chapter": "Why it matters"
   },
   {
-   "id": "s041",
+   "id": "s045",
    "line": "Fusion reactions release millions of times more energy per kilogramme than burning coal, oil or gas. A pineapple-sized amount of fuel could match thousands of tonnes of coal.",
    "visual": {
     "type": "stage",
@@ -2877,7 +3155,7 @@
    "still": true
   },
   {
-   "id": "s042",
+   "id": "s046",
    "line": "It produces no carbon dioxide. And unlike today's nuclear power, it can't melt down. If anything goes wrong, the plasma simply cools and the reaction stops.",
    "visual": {
     "type": "stage",
@@ -2933,7 +3211,7 @@
    }
   },
   {
-   "id": "s043",
+   "id": "s047",
    "line": "It does create some radioactivity, as neutrons hit the reactor walls, but far less long-lived waste than fission.",
    "visual": {
     "type": "stage",
@@ -3000,7 +3278,7 @@
    "still": true
   },
   {
-   "id": "s044",
+   "id": "s048",
    "line": "The engineering problems are still huge. The fast neutrons slowly damage the walls of the machine, and the tritium fuel must be made inside the reactor itself, from lithium.",
    "visual": {
     "type": "stage",
@@ -3069,7 +3347,7 @@
    "still": true
   },
   {
-   "id": "s045",
+   "id": "s049",
    "line": "Scientists like to joke that fusion power is always thirty years away. But the experiments of the last few years have brought it closer than ever before.",
    "visual": {
     "type": "stage",
@@ -3128,7 +3406,7 @@
    "still_at": 0.8
   },
   {
-   "id": "s046",
+   "id": "s050",
    "line": "For billions of years, fusion has lit up the universe. Every atom of carbon in your body, and the oxygen you breathe, was forged by fusion inside ancient stars.",
    "visual": {
     "type": "stage",
@@ -3168,7 +3446,7 @@
    "chapter": "Close"
   },
   {
-   "id": "s047",
+   "id": "s051",
    "line": "Now, we're trying to light that same fire here on Earth.",
    "visual": {
     "type": "stage",

@@ -42,6 +42,8 @@ S("In nineteen twenty, the British astronomer Arthur Eddington noticed that a he
         env_opts={"wall": [0.3, 0.25, 0.2], "world": [0.03, 0.025, 0.02]}), still=True)
 S("He suggested that stars shine by fusing hydrogen into helium, and turning that missing mass into energy.",
   stage("studio", REACT, props=[P("fusion_reaction", (0, 0, 0.6), args={"hit": 0.5})], env_opts=COSMOS))
+S("Many physicists argued that the Sun simply wasn't hot enough for that. Eddington's reply was famous: he told his critics to go and find a hotter place.",
+  stage("studio", REACT, props=[P("fusion_reaction", (0, 0, 0.6), args={"hit": 0.5})], env_opts=COSMOS), still=True)
 S("In nineteen thirty nine, Hans Bethe worked out the exact nuclear reactions that power the stars. He later won the Nobel Prize for it.",
   stage("lab", cam((0, -3.0, 1.5), (0, -2.6, 1.5), (0, 1.5, 1.6)), cast=[who(BETHE, at=(0.9, 0.6, 0), turn=20, pose=PRESENT)],
         props=[P("blackboard", (-0.3, 1.5, 0), args={"lines": ["p + p → d", "d + p → ³He", "³He + ³He → ⁴He"], "at": 0.1})],
@@ -58,6 +60,9 @@ S("Only if they collide fast enough, can they get close enough for the strong nu
 S("Speed means heat. In the Sun's core, the temperature is about fifteen million degrees, and the crushing weight of the Sun squeezes nuclei together.",
   stage("studio", cam((0.6, -4, 1.3), (0.4, -3.6, 1.2), (0.6, 0, 1.1)), props=[P("thermometer", args={"top_label": "15,000,000 °C"}), P("sun_ball", (1.4, 1, 1.2), scale=0.6)],
         env_opts=COSMOS))
+S("Even at fifteen million degrees, almost no nuclei are fast enough. They fuse thanks to a quantum trick called tunnelling, which lets a lucky few slip through the barrier between them.",
+  stage("studio", cam((0.6, -4, 1.3), (0.4, -3.6, 1.2), (0.6, 0, 1.1)), props=[P("thermometer", args={"top_label": "15,000,000 °C"}), P("sun_ball", (1.4, 1, 1.2), scale=0.6)],
+        env_opts=COSMOS), still=True)
 S("On Earth, we can't recreate that pressure. So we need to go much hotter: about a hundred and fifty million degrees, ten times hotter than the centre of the Sun.",
   stage("studio", cam((0.6, -4, 1.3), (0.4, -3.6, 1.2), (0.6, 0, 1.1)), props=[P("thermometer", args={"top_label": "150,000,000 °C"}), P("sun_ball", (1.4, 1, 1.2), scale=0.6)],
         env_opts=COSMOS))
@@ -98,6 +103,8 @@ S("In nineteen fifty eight, countries declassified their fusion research at a co
 S("The biggest was JET, the Joint European Torus, in England. In nineteen ninety seven, it produced sixteen megawatts of fusion power.",
   stage("lab", TOK, props=[P("tokamak", args={"plasma": [0.1, 0.4]})], texts=[T("JET  1997  16 MW", (0, 1.5, 2.6), 0.2, pop=0.3)], env_opts=HALL),
   chapter="Chasing break-even")
+S("JET ran for forty years at Culham, near Oxford, from nineteen eighty three until twenty twenty three, and trained a whole generation of fusion scientists.",
+  stage("lab", TOK, props=[P("tokamak", args={"plasma": [0.1, 0.4]})], texts=[T("JET  1997  16 MW", (0, 1.5, 2.6), 0.2, pop=0.3)], env_opts=HALL), still=True)
 S("But that took more power to run than it produced. The holy grail is to get more energy out of the fuel than you put in to heat it.",
   stage("studio", cam((0, -2.4, 1.0), (0, -2.1, 0.95), (0, 0, 0.8)), texts=[T("ENERGY OUT  >  ENERGY IN", (0, 0, 1.0), 0.15, (0.4, 1.0, 0.6), pop=0.2)], env_opts=COSMOS),
   still=True, still_at=0.8)
@@ -121,6 +128,9 @@ S("Now, thirty five countries are building the biggest tokamak ever, ITER, in th
 S("Its magnets will be cooled to minus two hundred and sixty nine degrees, just a few degrees above absolute zero, while the plasma inside reaches a hundred and fifty million. Some of the coldest and hottest places in the solar system, a few metres apart.",
   stage("lab", TOK, props=[P("tokamak", args={"plasma": [0.1, 0.5]})], texts=[T("−269 °C", (-1.8, 0, 2.2), 0.2, (0.4, 0.8, 1.0), pop=0.2),
         T("150,000,000 °C", (1.4, 0, 2.2), 0.18, (1.0, 0.45, 0.85), pop=0.45)], env_opts=HALL))
+S("When it's finished, the machine will weigh about twenty three thousand tonnes, around three times as much as the Eiffel Tower.",
+  stage("lab", TOK, props=[P("tokamak", args={"plasma": [0.1, 0.5]})], texts=[T("−269 °C", (-1.8, 0, 2.2), 0.2, (0.4, 0.8, 1.0), pop=0.2),
+        T("150,000,000 °C", (1.4, 0, 2.2), 0.18, (1.0, 0.45, 0.85), pop=0.45)], env_opts=HALL), still=True)
 S("ITER is designed to produce ten times more fusion power than it uses to heat its plasma. It has faced long delays, and full operations are now planned for the late twenty thirties.",
   stage("lab", cam((0, -9, 4.0), (0.6, -8.4, 3.8), (0, 0, 1.2), lens=26), props=[P("tokamak", scale=1.8, args={"plasma": [0.2, 0.8]})],
         texts=[T("Q = 10", (0, 2, 4.6), 0.4, pop=0.3)], env_opts=HALL))
@@ -164,7 +174,7 @@ write(HERE, {
     "description": ("How the Sun shines, why fusion needs temperatures ten times hotter than its core, and how tokamaks, lasers and ITER "
                     "are trying to build a star on Earth, told in 3D animation."),
     "tags": ["nuclear fusion", "tokamak", "ITER", "National Ignition Facility", "JET", "plasma", "clean energy", "physics", "3D animation"],
-    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.25, "sentence_silence": 0.28,
+    "voice": {"piper_voice": "en_US-ryan-high", "length_scale": 1.33, "sentence_silence": 0.28,
               "pronunciations": {"Eddington": "Edd-ing-ton", "Bethe": "Bay-tuh", "Tamm": "Tahm", "Sakharov": "Sah-ka-rov",
                                  "tokamak": "toe-ka-mak", "ITER": "Eater", "JET": "Jet", "megajoules": "mega-jools", "T-three": "T three"}},
     "music_mood": "epic",
