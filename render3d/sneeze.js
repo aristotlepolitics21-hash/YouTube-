@@ -3,7 +3,7 @@
 // safe version (sneeze into your elbow).
 import {
   THREE, ease, lerp, clamp01, seg, P, rnd, orbit, done, setup, studio, headSection, flow, label,
-  path3, wet, glowMat, C,
+  path3, wet, glowMat, C, neckCutaway, bubbleMat, n3,
 } from './lib_body.js';
 import { run } from './lib3d.js';
 
@@ -163,4 +163,43 @@ function swell(p) {
   return done(scene, camera, update);
 }
 
-run({ build, blast, waves, tear, swell });
+// Soft puff sprite for misty air
+function puffTex() {
+  const c = document.createElement('canvas'); c.width = c.height = 128; const x = c.getContext('2d');
+  const g = x.createRadialGradient(64, 64, 0, 64, 64, 64); g.addColorStop(0, 'rgba(200,235,255,0.55)'); g.addColorStop(1, 'rgba(200,235,255,0)');
+  x.fillStyle = g; x.fillRect(0, 0, 128, 128); const t = new THREE.CanvasTexture(c); return t;
+}
+
+// The neck in 3D, cut in half: the windpipe tears and air bubbles burst out into the fat under
+// the skin, which swells. params: tear0/tear1, swell0/swell1, jet (air stream), camera
+function neck(p) {
+  const { scene, camera } = setup();
+  const nk = neckCutaway(); scene.add(nk.group); const P2 = nk.parts;
+  const n = 260, bub = new THREE.InstancedMesh(new THREE.SphereGeometry(1, 24, 16), bubbleMat('#8fd0ff'), n); bub.frustumCulled = false; scene.add(bub);
+  const puffM = new THREE.SpriteMaterial({ map: puffTex(), transparent: true, depthWrite: false, blending: THREE.AdditiveBlending });
+  const puffs = Array.from({ length: 26 }, () => { const s = new THREE.Sprite(puffM); scene.add(s); return s; });
+  const glow = new THREE.PointLight('#6fc3ff', 0, 7, 1.5); scene.add(glow);
+  studio(scene, { target: [1.5, 0.5, 0], keyI: 9, keyPos: [-4, 9, 14], rim: '#ffb59a', rimI: 8, rimPos: [10, 5, -6], hemi: 0.15 });
+  const d = new THREE.Object3D(), ox = P2.TX + P2.TR + 0.2, oy = 0.6, tp = P2.tearPos;
+  const update = (t) => {
+    const tear = clamp01(lerp(P(p, 'tear0', 0), P(p, 'tear1', 0), ease(t)));
+    const sw = clamp01(lerp(P(p, 'swell0', 0), P(p, 'swell1', 0), ease(t)));
+    P2.tear(tear); P2.swell(sw);
+    const jet = P(p, 'jet', 0) * tear, spread = Math.max(jet, sw);
+    for (let i = 0; i < n; i++) {
+      const life = ((rnd(i) + t * (0.35 + rnd(i + 0.2) * 0.4)) % 1), stay = i < n * sw * 0.8;
+      const yy = oy + (rnd(i + 0.4) - 0.5) * 2 * (0.4 + 4.5 * spread) * (stay ? 1 : life), fx = P2.fatX(yy);
+      const u2 = Math.min(1, life * 1.6), x = stay ? fx + (rnd(i + 0.6) - 0.5) * 1.0 : lerp(tp.x, fx + (rnd(i + 0.6) - 0.5) * 0.9, u2);
+      d.position.set(x, yy + (stay ? 0.05 * Math.sin(t * 6 + i) : 0), stay ? 0.12 + rnd(i + 0.8) * 0.35 : lerp(tp.z + 0.1, 0.12 + rnd(i + 0.8) * 0.35, Math.min(1, u2 * 2)));
+      const r = (0.05 + rnd(i + 0.9) ** 2 * 0.24) * (1 + sw * 0.9) * (stay || jet > 0 ? 1 : 0) * Math.min(1, life * 5 + (stay ? 1 : 0));
+      d.scale.setScalar(r); d.updateMatrix(); bub.setMatrixAt(i, d.matrix);
+    }
+    bub.instanceMatrix.needsUpdate = true;
+    puffs.forEach((s, i) => { const u = (rnd(i) + t * 0.8) % 1; s.visible = false; s.position.set(ox + u * 1.6, oy + (rnd(i + 0.3) - 0.5) * u * 2.2, 0.3); s.scale.setScalar(0.4 + u * 1.4); s.material.opacity = 0.18 * jet * (1 - u); });
+    glow.position.set(ox + 0.8, oy, 1.2); glow.intensity = (jet + sw) * 0.8;
+    orbit(camera, p, t, { az0: -0.4, az1: -0.28, el0: 0.18, el1: 0.1, dist0: 31, dist1: 28, tx0: 0.4, tx1: 0.6, ty0: 0.4, ty1: 0.5 });
+  };
+  return done(scene, camera, update);
+}
+
+run({ build, blast, waves, tear, swell, neck });

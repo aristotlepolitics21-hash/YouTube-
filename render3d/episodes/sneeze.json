@@ -52,24 +52,24 @@
       "cuts": [
         {"at": "Scotland", "params": {"dist0": 30, "dist1": 26, "ty0": -4, "ty1": -4.5, "az0": -0.1, "az1": 0.1}},
         {"at": "exactly", "scene": "build", "params": {"press0": 0.9, "press1": 1, "seal": 1, "tx0": 1.0, "tx1": 1.0, "ty0": -6.0, "ty1": -6.0, "dist0": 20, "dist1": 15, "az0": 0.4, "az1": 0.25}},
-        {"at": "tore", "scene": "tear", "params": {"at": 0.1}}
+        {"at": "tore", "scene": "neck", "params": {"tear0": 0, "tear1": 1, "jet": 1, "az0": -0.5, "az1": -0.42, "el0": 0.2, "el1": 0.18, "dist0": 14, "dist1": 11, "tx0": 2.4, "tx1": 2.5, "ty0": 0.6, "ty1": 0.6, "tz0": -0.3, "tz1": -0.3}}
       ]
     },
     {
       "vo": "Air leaked out under the skin of his neck, and it swelled up.",
       "highlight": "#7fd8ff",
-      "scene": "tear",
-      "params": {"at": -0.3, "dist0": 9, "dist1": 7, "az0": -0.3, "az1": -0.15},
+      "scene": "neck",
+      "params": {"tear0": 1, "tear1": 1, "jet": 1, "swell0": 0, "swell1": 0.2, "az0": -0.3, "az1": -0.2, "el0": 0.15, "el1": 0.12, "dist0": 16, "dist1": 14, "tx0": 2.6, "tx1": 2.8, "ty0": 0.6, "ty1": 0.6},
       "cuts": [
-        {"at": "skin", "scene": "swell", "params": {"amount": 0.45}},
-        {"at": "swelled", "scene": "swell", "params": {"start": 0.45, "amount": 0.55, "az0": -0.1, "az1": 0.15, "dist0": 24, "dist1": 22}}
+        {"at": "skin", "scene": "neck", "params": {"tear0": 1, "tear1": 1, "jet": 1, "swell0": 0.2, "swell1": 0.55}},
+        {"at": "swelled", "scene": "neck", "params": {"tear0": 1, "tear1": 1, "jet": 0.5, "swell0": 0.55, "swell1": 1, "az0": 0.35, "az1": 0.5, "el0": 0.1, "el1": 0.08, "dist0": 30, "dist1": 27, "tx0": 1.4, "tx1": 1.6}}
       ]
     },
     {
       "vo": "He recovered, and cases like this are rare.",
       "highlight": "#4dff9a",
-      "scene": "tear",
-      "params": {"heal": 1, "az0": 0.3, "az1": 0.1},
+      "scene": "neck",
+      "params": {"tear0": 1, "tear1": 0, "swell0": 0.8, "swell1": 0, "jet": 0, "az0": -0.45, "az1": -0.35, "dist0": 13, "dist1": 11, "tx0": 2.4, "tx1": 2.5, "ty0": 0.6, "ty1": 0.6, "tz0": -0.3, "tz1": -0.3},
       "cuts": [
         {"at": "rare", "scene": "build", "params": {"press0": 0, "press1": 0, "seal": 0, "dist0": 40, "dist1": 46}}
       ]

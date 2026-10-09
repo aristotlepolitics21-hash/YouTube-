@@ -4,10 +4,24 @@
 // Scenes take camera params (az0/az1, el0/el1, dist0/dist1, tx/ty/tz...) through orbit(), so an
 // episode's "cuts" can re-frame the same scene from new angles.
 import {
-  THREE, n3, ease, lerp, flesh, displace, baseScene, cam, clamp01, seg, P, rnd, orbit, finish,
+  THREE, n3, ease, lerp, flesh, displace, baseScene, cam, clamp01, seg, P, rnd, orbit as orbitSci, finish,
 } from './lib_sci.js';
+import { renderer, W, H } from './lib3d.js';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { BokehPass } from 'three/addons/postprocessing/BokehPass.js';
+import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
-export { THREE, n3, ease, lerp, flesh, displace, baseScene, cam, clamp01, seg, P, rnd, orbit, finish };
+export { THREE, n3, ease, lerp, flesh, displace, baseScene, cam, clamp01, seg, P, rnd, finish };
+
+// orbit() from lib_sci, also remembering the focus distance for depth of field
+export function orbit(camera, p, t, d = {}) {
+  orbitSci(camera, p, t, d);
+  camera.userData.focus = lerp(P(p, 'dist0', d.dist0 ?? 12), P(p, 'dist1', d.dist1 ?? 12), ease(t));
+}
 
 // Caption font for labels (loaded before any scene is built)
 const font = new FontFace('Archivo', 'url(./fonts/ArchivoBlack-Regular.ttf)');
@@ -24,8 +38,54 @@ export const wet = (color, opts = {}) => flesh(color, 2, { clearcoat: 1, clearco
 export const matte = (color, opts = {}) => new THREE.MeshPhysicalMaterial({ color, roughness: 0.55, sheen: 0.3, sheenColor: new THREE.Color('#ffd8c8'), envMapIntensity: 0.3, ...opts });
 export const boneMat = () => new THREE.MeshPhysicalMaterial({ color: C.bone, roughness: 0.6, clearcoat: 0.15, envMapIntensity: 0.25 });
 export const glowMat = (color, e = 1) => new THREE.MeshPhysicalMaterial({ color, emissive: color, emissiveIntensity: e, roughness: 0.3 });
-export function skinMat(color = C.skin) {
-  return flesh(color, 3, { roughness: 0.55, clearcoat: 0.15, clearcoatRoughness: 0.5, normalScale: new THREE.Vector2(0.15, 0.15), sheen: 0.4, sheenColor: new THREE.Color('#ffc9b0') });
+// Fresnel rim light baked into a material: edges facing away from the camera glow (the
+// "backlit translucent skin" look). Works on any Mesh*Material.
+export function rim(mat, color = '#6fb6ff', strength = 0.8, power = 3.0) {
+  mat.userData.rim = { value: new THREE.Color(color).multiplyScalar(strength) };
+  mat.onBeforeCompile = (sh) => {
+    sh.uniforms.rimColor = mat.userData.rim;
+    sh.fragmentShader = 'uniform vec3 rimColor;\n' + sh.fragmentShader.replace('#include <emissivemap_fragment>',
+      `#include <emissivemap_fragment>
+      totalEmissiveRadiance += rimColor * pow(1.0 - clamp(abs(dot(normal, normalize(vViewPosition))), 0.0, 1.0), ${power.toFixed(1)});`);
+  };
+  mat.customProgramCacheKey = () => `rim${power}`;
+  return mat;
+}
+export function skinMat(color = C.skin, rimStrength = 0.9) {
+  return rim(flesh(color, 3, { roughness: 0.5, clearcoat: 0.35, clearcoatRoughness: 0.35, normalScale: new THREE.Vector2(0.15, 0.15), sheen: 0.6, sheenRoughness: 0.4, sheenColor: new THREE.Color('#ffd2c0') }), '#7cc0ff', rimStrength, 2.6);
+}
+// vertex shader shared by the fresnel materials (works on plain and instanced meshes)
+const INST_VS = `varying vec3 vN; varying vec3 vV;
+  void main(){
+    vec4 p = vec4(position, 1.0); vec3 nn = normal;
+    #ifdef USE_INSTANCING
+      p = instanceMatrix * p; nn = mat3(instanceMatrix) * nn;
+    #endif
+    vec4 mv = modelViewMatrix * p; vN = normalize(normalMatrix * nn); vV = normalize(-mv.xyz); gl_Position = projectionMatrix * mv; }`;
+// Glassy outer membrane: transparent in the middle, glowing blue-white at grazing angles
+export function glassMat(color = '#9fd2ff', { edge = 0.85, core = 0.05, power = 2.2 } = {}) {
+  return new THREE.ShaderMaterial({
+    uniforms: { c: { value: new THREE.Color(color) } },
+    vertexShader: INST_VS,
+    fragmentShader: `uniform vec3 c; varying vec3 vN; varying vec3 vV;
+      void main(){ float f = pow(1.0 - abs(dot(normalize(vN), normalize(vV))), ${power.toFixed(1)});
+        gl_FragColor = vec4(c * (0.6 + 1.4 * f), ${core.toFixed(3)} + ${edge.toFixed(3)} * f); }`,
+    transparent: true, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending,
+  });
+}
+// Air bubble: clear centre, bright fresnel rim, a specular glint and a faint blue core
+export function bubbleMat(color = '#8fd0ff') {
+  return new THREE.ShaderMaterial({
+    uniforms: { c: { value: new THREE.Color(color) } },
+    vertexShader: INST_VS,
+    fragmentShader: `uniform vec3 c; varying vec3 vN; varying vec3 vV;
+      void main(){ vec3 n = normalize(vN); float f = pow(1.0 - max(dot(n, normalize(vV)), 0.0), 2.4);
+        float glint = pow(max(dot(n, normalize(vec3(-0.45, 0.6, 0.65))), 0.0), 60.0);
+        float glint2 = pow(max(dot(n, normalize(vec3(0.5, -0.5, 0.7))), 0.0), 25.0) * 0.35;
+        vec3 col = c * (0.2 + 1.0 * f) + vec3(1.0) * (glint * 1.3 + glint2 * 0.6);
+        gl_FragColor = vec4(col, clamp(0.06 + 0.7 * f + glint, 0.0, 1.0)); }`,
+    transparent: true, depthWrite: false,
+  });
 }
 
 // ---------- 2D outline helpers (x right, y up) ----------
@@ -79,14 +139,31 @@ export function cutaway(outline, layers, { depth = 3, face = C.tissue, skin = C.
   g.translate(0, 0, -top - 0.015); g.computeVertexNormals(); // just behind the face decal (no z-fighting)
   const shell = new THREE.Mesh(g, skinMat(skin)); shell.castShadow = shell.receiveShadow = true;
   group.add(shell); parts.shell = shell;
-  const faceM = flesh(face, 4, { clearcoat: 0.9, clearcoatRoughness: 0.18 });
+  const membrane = new THREE.Mesh(g, glassMat('#8cc8ff', { edge: 0.3, core: 0.0, power: 3.0 })); membrane.scale.set(1.01, 1.01, 1.02); group.add(membrane); parts.membrane = membrane;
+  const fm = tissueMap(face, 1024, 7); fm.repeat.set(0.18, 0.18);
+  const faceM = flesh('#ffffff', 4, { map: fm, clearcoat: 0.9, clearcoatRoughness: 0.18 });
   const f = decal(outline, faceM, 0.002); group.add(f); parts.face = f;
+  { const p = f.geometry.attributes.position, u = []; for (let i = 0; i < p.count; i++) u.push(p.getX(i), p.getY(i)); f.geometry.setAttribute('uv', new THREE.Float32BufferAttribute(u, 2)); }
   // rim of skin + fat around the cut edge
-  const rim = new THREE.Mesh(new THREE.TubeGeometry(path3(outline.filter((_, i) => i % 2 === 0).map((v) => [v.x, v.y, 0]), true), 400, 0.06, 8, true), wet('#c98e5a', { clearcoat: 0.3 }));
-  group.add(rim); parts.rim = rim;
+  const rimTube = new THREE.Mesh(new THREE.TubeGeometry(path3(outline.filter((_, i) => i % 2 === 0).map((v) => [v.x, v.y, 0]), true), 400, 0.06, 8, true), wet('#c98e5a', { clearcoat: 0.3 }));
+  group.add(rimTube); parts.rim = rimTube;
+  // Air spaces are real pockets sunk into the cut: a stencil mask punches the face and shell open
+  // where a cavity is, and a dark-walled pocket (seen from inside) shows the depth.
+  const hideInHoles = (m) => Object.assign(m, { stencilWrite: true, stencilRef: 1, stencilFunc: THREE.NotEqualStencilFunc, stencilZPass: THREE.KeepStencilOp });
+  hideInHoles(faceM); hideInHoles(shell.material); hideInHoles(rimTube.material);
+  const maskM = new THREE.MeshBasicMaterial({ colorWrite: false, depthWrite: false, stencilWrite: true, stencilRef: 1, stencilFunc: THREE.AlwaysStencilFunc, stencilZPass: THREE.ReplaceStencilOp });
   layers.forEach((l, i) => {
-    const mat = l.mat || (l.h > 0 ? wet(l.color) : new THREE.MeshPhysicalMaterial({ color: l.color || C.cavity, roughness: 0.25, clearcoat: 1, clearcoatRoughness: 0.1 }));
-    const m = l.h > 0 ? slab(l.outline, l.h, mat, l.bevel) : decal(l.outline, mat, 0.004 + i * 0.0005);
+    const cavity = !(l.h > 0) && !l.flat;
+    if (cavity) {
+      const mask = decal(l.outline, maskM, 0.003); mask.renderOrder = -5; group.add(mask);
+      const D = l.depthIn || 0.7;
+      const pg = new THREE.ExtrudeGeometry(new THREE.Shape(l.outline), { depth: D, bevelEnabled: false, curveSegments: 8 }); pg.translate(0, 0, -D + 0.001);
+      const pm = flesh(l.wall || '#6a2028', 3, { side: THREE.BackSide, clearcoat: 1, clearcoatRoughness: 0.1, roughness: 0.35 });
+      const pocket = new THREE.Mesh(pg, pm); pocket.receiveShadow = true; group.add(pocket); parts[l.name || `l${i}`] = pocket;
+      return;
+    }
+    const mat = l.mat || (l.h > 0 ? rim(wet(l.color, { sheen: 0.4, sheenColor: new THREE.Color('#ffd8d0') }), '#9fd0ff', 0.25, 3.0) : new THREE.MeshPhysicalMaterial({ color: l.color || C.cavity, roughness: 0.35, clearcoat: 1, clearcoatRoughness: 0.1 }));
+    const m = l.h > 0 ? slab(l.outline, l.h * 1.8, mat, l.bevel) : decal(l.outline, mat, 0.004 + i * 0.0005);
     if (l.h > 0) m.position.z = 0.002 + (l.z || 0);
     group.add(m); parts[l.name || `l${i}`] = m;
   });
@@ -268,35 +345,94 @@ export function label(text, { color = '#ff3b3b', size = 0.55 } = {}) {
 }
 
 // ---------- lights ----------
-export function studio(scene, { key = '#fff1e8', keyI = 18, rim = '#ff5a6a', rimI = 14, fill = '#7fa8ff', hemi = 0.3, target = [0, 0, 0], keyPos = [-6, 9, 12], rimPos = [8, 3, -8] } = {}) {
+export function studio(scene, { key = '#fff1e8', keyI = 18, rim = '#ff5a6a', rimI = 14, fill = '#7fa8ff', hemi = 0.3, target = [0, 0, 0], keyPos = [-6, 9, 12], rimPos = [8, 3, -8], rim2 = '#4f9dff', rim2I = 22, rim2Pos = [-9, 4, -9] } = {}) {
   const k = new THREE.SpotLight(key, keyI, 0, 0.6, 0.6, 1.2); k.position.set(...keyPos); k.target.position.set(...target);
   k.castShadow = true; k.shadow.mapSize.set(2048, 2048); k.shadow.bias = -0.0004; k.shadow.radius = 5;
   const r = new THREE.SpotLight(rim, rimI, 0, 0.7, 0.6, 1.2); r.position.set(...rimPos); r.target.position.set(...target);
-  scene.add(k, k.target, r, r.target, new THREE.HemisphereLight(fill, '#100406', hemi));
-  return { key: k, rim: r };
+  // cool back light from the other side: the blue edge glow of the reference look
+  const r2 = new THREE.SpotLight(rim2, rim2I, 0, 0.8, 0.7, 1.1); r2.position.set(...rim2Pos); r2.target.position.set(...target);
+  scene.add(k, k.target, r, r.target, r2, r2.target, new THREE.HemisphereLight(fill, '#05070f', hemi));
+  return { key: k, rim: r, rim2: r2 };
 }
 
-// Medical dark backdrop: dark gradient sphere + faint floating particles
-export function backdrop(scene, { top = '#1a0b10', bottom = '#030103', r = 60 } = {}) {
-  const c = document.createElement('canvas'); c.width = 4; c.height = 256;
-  const g = c.getContext('2d'), gr = g.createLinearGradient(0, 0, 0, 256);
-  gr.addColorStop(0, top); gr.addColorStop(1, bottom); g.fillStyle = gr; g.fillRect(0, 0, 4, 256);
+// Studio backdrop: navy vertical gradient with a soft cool glow behind the subject
+export function backdrop(scene, { top = '#14284f', bottom = '#03050c', glow = '#2b62b0', r = 80 } = {}) {
+  const c = document.createElement('canvas'); c.width = 512; c.height = 1024;
+  const g = c.getContext('2d'), gr = g.createLinearGradient(0, 0, 0, 1024);
+  gr.addColorStop(0, top); gr.addColorStop(1, bottom); g.fillStyle = gr; g.fillRect(0, 0, 512, 1024);
+  const rg = g.createRadialGradient(256, 470, 0, 256, 470, 300);
+  rg.addColorStop(0, glow + 'aa'); rg.addColorStop(1, glow + '00'); g.fillStyle = rg; g.fillRect(0, 0, 512, 1024);
   const tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace;
-  const s = new THREE.Mesh(new THREE.SphereGeometry(r, 32, 16), new THREE.MeshBasicMaterial({ map: tex, side: THREE.BackSide, fog: false, depthWrite: false }));
-  scene.add(s);
-  return s;
+  // a camera-facing plane far behind everything (follows the camera every frame)
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshBasicMaterial({ map: tex, fog: false, depthWrite: false, toneMapped: false }));
+  m.renderOrder = -10; m.frustumCulled = false;
+  m.onBeforeRender = (rdr, sc, camera) => {
+    const d = r, h = 2 * d * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * 1.05;
+    m.position.copy(camera.position).add(new THREE.Vector3(0, 0, -d).applyQuaternion(camera.quaternion));
+    m.quaternion.copy(camera.quaternion); m.scale.set(h * camera.aspect, h, 1); m.updateMatrixWorld();
+  };
+  scene.add(m);
+  return m;
 }
 
-// Standard scene + camera + finisher for a Medical Body shot
-export function setup({ bg = '#0a0508', fov = 30, top, bottom } = {}) {
+// Out-of-focus dust motes floating around the subject
+function dust(scene, n = 160, spread = 40) {
+  const g = new THREE.BufferGeometry(), pos = new Float32Array(n * 3);
+  for (let i = 0; i < n; i++) pos.set([(rnd(i) - 0.5) * spread, (rnd(i + 0.3) - 0.5) * spread, (rnd(i + 0.6) - 0.5) * spread], i * 3);
+  g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  const pts = new THREE.Points(g, new THREE.PointsMaterial({ color: '#9fcfff', size: 0.09, transparent: true, opacity: 0.45, blending: THREE.AdditiveBlending, depthWrite: false }));
+  scene.add(pts);
+  return pts;
+}
+
+// Standard scene + camera for a Medical Body shot. Dark custom backdrops fall back to the
+// shared navy studio look; bright ones (sky) are kept.
+export function setup({ bg = '#05070f', fov = 30, top, bottom } = {}) {
   const scene = baseScene(bg);
-  backdrop(scene, { top: top || '#1c0d12', bottom: bottom || '#030103' });
+  const bright = top && new THREE.Color(top).getHSL({}).l > 0.25;
+  backdrop(scene, bright ? { top, bottom: bottom || '#ffffff', glow: '#ffffff' } : {});
+  if (!bright) dust(scene);
   const camera = cam(fov); camera.near = 0.3; camera.updateProjectionMatrix();
   return { scene, camera };
 }
 
 // Finisher with a gentle bloom (only real highlights glow)
-export const done = (scene, camera, update, b = {}) => finish(scene, camera, update, { strength: 0.35, radius: 0.4, threshold: 0.95, ...b });
+// Final look: MSAA render, depth of field on the orbit target, gentle bloom, then a grade pass
+// (teal shadows / warm highlights, vignette, film grain, slight chromatic fringe).
+const GradeShader = {
+  uniforms: { tDiffuse: { value: null }, time: { value: 0 }, vig: { value: 0.55 }, grain: { value: 0.035 }, ca: { value: 0.0016 } },
+  vertexShader: 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.0); }',
+  fragmentShader: `uniform sampler2D tDiffuse; uniform float time, vig, grain, ca; varying vec2 vUv;
+    float h(vec2 p){ return fract(sin(dot(p, vec2(12.9898, 78.233)) + time * 7.13) * 43758.5453); }
+    void main(){
+      vec2 d = vUv - 0.5; float r2 = dot(d, d);
+      vec3 col = vec3(texture2D(tDiffuse, vUv - d * ca * 4.0).r, texture2D(tDiffuse, vUv).g, texture2D(tDiffuse, vUv + d * ca * 4.0).b);
+      float l = dot(col, vec3(0.299, 0.587, 0.114));
+      col = mix(col, col * vec3(0.86, 0.96, 1.12), (1.0 - smoothstep(0.0, 0.45, l)) * 0.6);   // cool shadows
+      col = mix(col, col * vec3(1.06, 1.0, 0.93), smoothstep(0.55, 1.0, l) * 0.5);          // warm highlights
+      col = (col - 0.5) * 1.06 + 0.5;                                                        // a touch of contrast
+      col *= 1.0 - vig * smoothstep(0.08, 0.55, r2 * 1.6);
+      col += (h(vUv * vec2(1080.0, 1920.0)) - 0.5) * grain;
+      gl_FragColor = vec4(clamp(col, 0.0, 1.0), 1.0); }`,
+};
+export function done(scene, camera, update, b = {}) {
+  const rt = new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType, samples: 4, stencilBuffer: true });
+  const composer = new EffectComposer(renderer, rt);
+  composer.setPixelRatio(1); composer.setSize(W, H);
+  composer.addPass(new RenderPass(scene, camera));
+  const dof = b.dof === false ? null : new BokehPass(scene, camera, { focus: 10, aperture: b.aperture ?? 0.0018, maxblur: b.maxblur ?? 0.006 });
+  if (dof) composer.addPass(dof);
+  composer.addPass(new UnrealBloomPass(new THREE.Vector2(W, H), b.strength ?? 0.32, b.radius ?? 0.5, b.threshold ?? 0.88));
+  composer.addPass(new OutputPass());
+  const grade = new ShaderPass(GradeShader); composer.addPass(grade);
+  let first = true, frame = 0;
+  const upd = (t) => {
+    update(t); if (first) { update(t); first = false; }
+    if (dof) dof.uniforms.focus.value = camera.userData.focus ?? 10;
+    grade.uniforms.time.value = (frame++ % 97) * 0.37 + t;
+  };
+  return { scene, camera, update: upd, render: () => composer.render() };
+}
 
 // Skin surface seen from outside: a wide plane with fine bumps, a few hairs and a canvas colour
 // map. paint(fn) redraws it: fn(ctx, size) draws in a size x size canvas covering the plane
@@ -326,4 +462,173 @@ export function skinPlane({ size = 24, color = '#c48a70', hairs = 80, res = 1024
   // world (x, z) -> canvas pixel
   const px = (x, z) => [(x / size + 0.5) * res, (z / size + 0.5) * res];
   return { mesh, paint, bulge, px, res };
+}
+
+// ---------- procedural tissue textures ----------
+// Muscle: long parallel fibers (colour + normal map). Repeat along u.
+export function muscleMaps(color = '#b8434c', size = 512) {
+  const c = document.createElement('canvas'); c.width = c.height = size; const x = c.getContext('2d');
+  const base = new THREE.Color(color);
+  x.fillStyle = color; x.fillRect(0, 0, size, size);
+  for (let i = 0; i < 260; i++) {
+    const px = rnd(i) * size, w = 1 + rnd(i + 0.3) * 3, l = 0.75 + rnd(i + 0.6) * 0.5;
+    x.strokeStyle = base.clone().offsetHSL(0, 0, (rnd(i + 0.9) - 0.5) * 0.18).getStyle(); x.lineWidth = w;
+    x.beginPath(); x.moveTo(px, 0); for (let y = 0; y <= size; y += 16) x.lineTo(px + 4 * Math.sin(y * 0.02 + i), y); x.stroke();
+    x.strokeStyle = `rgba(255,220,220,${0.12 * l})`; x.lineWidth = 0.8; x.stroke();
+  }
+  const map = new THREE.CanvasTexture(c); map.colorSpace = THREE.SRGBColorSpace; map.wrapS = map.wrapT = THREE.RepeatWrapping;
+  // normal: ridges across u
+  const n = document.createElement('canvas'); n.width = n.height = size; const nx = n.getContext('2d'), img = nx.createImageData(size, size);
+  for (let yy = 0; yy < size; yy++) for (let xx = 0; xx < size; xx++) {
+    const v = Math.sin(xx * 0.55 + 2 * n3(xx * 0.02, yy * 0.004, 0)) * 0.6 + 0.4 * n3(xx * 0.08, yy * 0.01, 3);
+    const i = (yy * size + xx) * 4; img.data[i] = 128 + v * 70; img.data[i + 1] = 128; img.data[i + 2] = 230; img.data[i + 3] = 255;
+  }
+  nx.putImageData(img, 0, 0);
+  const nrm = new THREE.CanvasTexture(n); nrm.wrapS = nrm.wrapT = THREE.RepeatWrapping;
+  return { map, normalMap: nrm };
+}
+// Soft tissue with fine capillaries (for flat cut faces)
+export function tissueMap(color = '#d9767c', size = 1024, seed = 0) {
+  const c = document.createElement('canvas'); c.width = c.height = size; const x = c.getContext('2d');
+  x.fillStyle = color; x.fillRect(0, 0, size, size);
+  const base = new THREE.Color(color);
+  for (let i = 0; i < 900; i++) { const px = rnd(i + seed) * size, py = rnd(i + 0.5 + seed) * size, r = 6 + rnd(i + 0.7) * 30; x.fillStyle = base.clone().offsetHSL(0, 0.05, (rnd(i + 0.2) - 0.5) * 0.08).getStyle().replace('rgb', 'rgba').replace(')', ',0.35)'); x.beginPath(); x.arc(px, py, r, 0, Math.PI * 2); x.fill(); }
+  x.lineCap = 'round';
+  const vessel = (px, py, a, w, d) => { if (d > 7 || w < 0.4) return; const L = 25 + rnd(px + py) * 45, nx2 = px + Math.cos(a) * L, ny = py + Math.sin(a) * L; x.strokeStyle = d % 2 ? 'rgba(150,20,40,0.55)' : 'rgba(120,10,30,0.6)'; x.lineWidth = w; x.beginPath(); x.moveTo(px, py); x.quadraticCurveTo((px + nx2) / 2 + 8, (py + ny) / 2 - 8, nx2, ny); x.stroke(); vessel(nx2, ny, a + 0.5, w * 0.72, d + 1); vessel(nx2, ny, a - 0.45, w * 0.68, d + 1); };
+  for (let k = 0; k < 7; k++) vessel(rnd(k + seed) * size, rnd(k + 0.5 + seed) * size, rnd(k + 0.2) * 6.3, 3.2, 0);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.wrapS = t.wrapT = THREE.RepeatWrapping;
+  return t;
+}
+
+// ---------- neck, cut in half lengthwise (sagittal): a 3D medical model ----------
+// x = toward the front of the neck, y = up, the cut plane is z = 0 and the model fills z < 0.
+// Layers from the front: glassy skin, fat lobules laced with connective fibers, strap muscle,
+// the windpipe (C-shaped cartilage rings, pink lining), muscle, the food pipe, the spine.
+// tear(k) opens a ragged hole in the windpipe's front wall; swell(k) pushes the front out.
+export function neckCutaway({ seed = 1 } = {}) {
+  const group = new THREE.Group(), parts = {};
+  const R = (y) => 4.6 + 1.5 * THREE.MathUtils.smoothstep(y, 4.5, 9) + 1.2 * THREE.MathUtils.smoothstep(-y, 5, 9);
+  const Y0 = -9, Y1 = 9, NY = 120;
+  const TX = 1.75, TR = 1.12;              // windpipe centre x, radius
+  const EX = -0.55, ER = 0.62;             // food pipe
+  let swellK = 0;
+  const front = (y) => swellK * 1.1 * Math.exp(-(y * y) / 10);   // swelling bulge of the front
+  // half shell of the outer skin
+  const shellGeo = new THREE.BufferGeometry();
+  const NA = 64, sp = new Float32Array((NY + 1) * (NA + 1) * 3), uv = [], idx = [];
+  for (let i = 0; i <= NY; i++) for (let j = 0; j <= NA; j++) uv.push(j / NA, i / NY);
+  for (let i = 0; i < NY; i++) for (let j = 0; j < NA; j++) { const a = i * (NA + 1) + j, b = a + NA + 1; idx.push(a, a + 1, b, b, a + 1, b + 1); }
+  shellGeo.setAttribute('position', new THREE.BufferAttribute(sp, 3)); shellGeo.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2)); shellGeo.setIndex(idx);
+  const fillShell = () => {
+    for (let i = 0; i <= NY; i++) {
+      const y = Y0 + (i / NY) * (Y1 - Y0), r = R(y);
+      for (let j = 0; j <= NA; j++) {
+        const a = Math.PI + (j / NA) * Math.PI, cx = Math.cos(a), k = (i * (NA + 1) + j) * 3;
+        sp[k] = cx * r + (cx > 0 ? front(y) * cx : 0); sp[k + 1] = y; sp[k + 2] = Math.sin(a) * r * 0.92;
+      }
+    }
+    shellGeo.attributes.position.needsUpdate = true; shellGeo.computeVertexNormals();
+  };
+  fillShell();
+  const shell = new THREE.Mesh(shellGeo, skinMat('#d4937a', 0.7)); shell.castShadow = shell.receiveShadow = true; group.add(shell);
+  const membrane = new THREE.Mesh(shellGeo, glassMat('#8cc8ff', { edge: 0.3, core: 0.0, power: 3.0 })); membrane.scale.set(1.02, 1, 1.02); group.add(membrane);
+  // flat strips on the cut face, rebuilt when the front swells
+  const strip = (x0, x1, mat, z = 0.002, depth = 0) => {
+    const m = new THREE.Mesh(new THREE.BufferGeometry(), mat); m.position.z = z; group.add(m);
+    m.userData.build = () => {
+      const L = [], Rr = [];
+      for (let i = 0; i <= 90; i++) { const y = Y0 + (i / 90) * (Y1 - Y0); L.push(new THREE.Vector2(x0(y), y)); Rr.push(new THREE.Vector2(x1(y), y)); }
+      const sh = new THREE.Shape([...L, ...Rr.reverse()]);
+      m.geometry.dispose();
+      m.geometry = depth ? new THREE.ExtrudeGeometry(sh, { depth, bevelEnabled: true, bevelThickness: depth * 0.5, bevelSize: 0.03, bevelSegments: 3 }) : new THREE.ShapeGeometry(sh);
+      if (!depth) { const p = m.geometry.attributes.position, u = []; for (let i = 0; i < p.count; i++) u.push(p.getX(i) * 0.12, p.getY(i) * 0.12); m.geometry.setAttribute('uv', new THREE.Float32BufferAttribute(u, 2)); }
+    };
+    m.userData.build(); return m;
+  };
+  const mm = muscleMaps('#b5434b'); mm.map.repeat.set(1.5, 0.35); mm.normalMap.repeat.set(1.5, 0.35);
+  const muscleM = flesh('#ffffff', 1, { map: mm.map, normalMap: mm.normalMap, normalScale: new THREE.Vector2(0.6, 0.6), clearcoat: 0.9, clearcoatRoughness: 0.12, sheen: 0.4, sheenColor: new THREE.Color('#ff9a9a') });
+  const fatM = flesh('#e2a63e', 3, { clearcoat: 1, clearcoatRoughness: 0.08, sheen: 0.15, sheenColor: new THREE.Color('#ffe2a0') });
+  const skinCutM = rim(flesh('#e9b9a2', 2, { clearcoat: 0.6, roughness: 0.4 }), '#9fd0ff', 0.35, 2.0);
+  parts.strips = [
+    strip((y) => R(y) - 0.38 + front(y), (y) => R(y) + front(y), skinCutM, 0.002, 0.06),                     // skin (front)
+    strip((y) => -R(y), (y) => -R(y) + 0.38, skinCutM, 0.002, 0.06),                                          // skin (back)
+    strip((y) => R(y) - 1.7, (y) => R(y) - 0.38 + front(y), fatM, 0.0015),                                    // fat (front)
+    strip((y) => -R(y) + 0.38, (y) => -R(y) + 1.0, fatM, 0.0015),                                             // fat (back)
+    strip((y) => TX + TR + 0.05, (y) => R(y) - 1.7, muscleM, 0.003, 0.08),                                     // strap muscle in front of the windpipe
+    strip((y) => EX + ER + 0.04, (y) => TX - TR - 0.05, muscleM, 0.003, 0.08),                                 // between food pipe and windpipe
+    strip((y) => -R(y) + 1.0, (y) => EX - ER - 0.04, muscleM, 0.003, 0.08),                                    // back muscle
+  ];
+  // fat lobules bulging out of the fat strips + connective fibers + tiny vessels
+  const lobG = new THREE.SphereGeometry(1, 20, 14);
+  const lobes = new THREE.InstancedMesh(lobG, fatM, 220); lobes.frustumCulled = false; group.add(lobes);
+  const lobData = Array.from({ length: 220 }, (_, i) => ({ front: i < 170, u: rnd(i + seed), y: Y0 + 1 + rnd(i + 0.4 + seed) * (Y1 - Y0 - 2), r: 0.16 + rnd(i + 0.7) * 0.16 }));
+  const fibM = new THREE.MeshPhysicalMaterial({ color: '#fff6ee', roughness: 0.3, transparent: true, opacity: 0.75, clearcoat: 1, emissive: '#ffffff', emissiveIntensity: 0.08 });
+  const fibers = new THREE.Group(); group.add(fibers);
+  const vesM = wet('#c8202c'), veinM = wet('#3b4fb0');
+  const d = new THREE.Object3D();
+  const placeFat = () => {
+    lobData.forEach((l, i) => {
+      const x0 = l.front ? R(l.y) - 1.6 : -R(l.y) + 0.45, x1 = l.front ? R(l.y) - 0.45 + front(l.y) : -R(l.y) + 0.95;
+      d.position.set(lerp(x0, x1, l.u), l.y, 0.02); d.scale.set(l.r * (1 + 0.6 * front(l.y) * 0.3), l.r * 0.85, l.r * 0.55); d.updateMatrix(); lobes.setMatrixAt(i, d.matrix);
+    });
+    lobes.instanceMatrix.needsUpdate = true;
+    fibers.children.forEach((c) => c.geometry.dispose()); fibers.clear();
+    for (let i = 0; i < 46; i++) {
+      const y = Y0 + 1.5 + rnd(i * 2 + seed) * (Y1 - Y0 - 3), x0 = R(y) - 1.6, x1 = R(y) - 0.45 + front(y);
+      const pts = Array.from({ length: 5 }, (_, k) => new THREE.Vector3(lerp(x0, x1, k / 4) + (rnd(i + k) - 0.5) * 0.15, y + (rnd(i + k + 0.5) - 0.5) * 0.9, 0.06 + rnd(i + k + 0.2) * 0.08));
+      fibers.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts), 16, 0.012 + rnd(i) * 0.012, 5), fibM));
+    }
+    for (let i = 0; i < 8; i++) {
+      const y = Y0 + 2 + i * 2, xm = R(y) - 1.0 + front(y) * 0.5;
+      const pts = Array.from({ length: 6 }, (_, k) => new THREE.Vector3(xm + Math.sin(k * 1.3 + i) * 0.35, y + k * 0.35, 0.05));
+      fibers.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts), 20, 0.035, 6), i % 2 ? veinM : vesM));
+    }
+  };
+  placeFat();
+  // windpipe: pink lining (inside of a half tube), C-shaped cartilage rings, membrane between
+  const half = (r, h, mat, side) => { const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 64, 400, true, Math.PI / 2, Math.PI), mat); if (side) m.material.side = side; return m; };
+  const liningMap = tissueMap('#e98a92', 512, 3); liningMap.repeat.set(1, 4);
+  const lining = half(TR - 0.1, Y1 - Y0, flesh('#ffffff', 2, { map: liningMap, side: THREE.BackSide, clearcoat: 1, clearcoatRoughness: 0.05 }));
+  // longitudinal folds in the lining
+  { const p = lining.geometry.attributes.position; for (let i = 0; i < p.count; i++) { const x = p.getX(i), z = p.getZ(i), yy = p.getY(i), a = Math.atan2(z, x), ring = Math.pow(0.5 + 0.5 * Math.cos(((yy - (Y0 + 0.4)) / 0.62) * Math.PI * 2), 3), k = 1 + 0.02 * Math.sin(a * 14) + 0.015 * n3(x, yy * 0.5, z) - 0.09 * ring; p.setX(i, x * k); p.setZ(i, z * k); } lining.geometry.computeVertexNormals(); }
+  lining.position.x = TX; group.add(lining);
+  const outer = half(TR, Y1 - Y0, flesh('#e8b4a4', 2, { clearcoat: 0.7 })); outer.position.x = TX; group.add(outer);
+  const cartM = rim(flesh('#eef2f2', 2, { clearcoat: 1, clearcoatRoughness: 0.15, sheen: 0.6, sheenColor: new THREE.Color('#dff4ff') }), '#bfe6ff', 0.35, 2.5);
+  parts.rings = [];
+  for (let y = Y0 + 0.4; y < Y1; y += 0.62) {
+    const ring = new THREE.Mesh(new THREE.TorusGeometry(TR + 0.1, 0.13, 14, 64, Math.PI), cartM);
+    ring.rotation.x = Math.PI / 2; ring.rotation.z = Math.PI; ring.scale.set(1, 1, 0.8); ring.position.set(TX, y, 0); group.add(ring);
+    for (const s of [1, -1]) { const cap = new THREE.Mesh(new THREE.SphereGeometry(0.13, 16, 12), cartM); cap.scale.set(1, 0.8, 0.5); cap.position.set(TX + s * (TR + 0.1), y, 0.0); group.add(cap); }
+    parts.rings.push(ring);
+  }
+  // food pipe: thick muscular wall, folded lining
+  const eLin = half(ER - 0.2, Y1 - Y0, flesh('#d77a86', 3, { side: THREE.BackSide, clearcoat: 1 }));
+  { const p = eLin.geometry.attributes.position; for (let i = 0; i < p.count; i++) { const x = p.getX(i), z = p.getZ(i), a = Math.atan2(z, x), k = 1 + 0.12 * Math.sin(a * 9); p.setX(i, x * k); p.setZ(i, z * k); } eLin.geometry.computeVertexNormals(); }
+  eLin.position.x = EX; group.add(eLin);
+  for (const s of [1, -1]) { const w = strip(() => EX + s * (ER - 0.2), () => EX + s * ER, flesh('#c25a66', 3, { clearcoat: 0.8 }), 0.004, 0.08); if (s < 0) w.userData.build(); }
+  // spine: vertebral bodies + discs + cord
+  const boneM = new THREE.MeshPhysicalMaterial({ color: '#e7d7b8', roughness: 0.55, clearcoat: 0.4, sheen: 0.3 });
+  const spineX = -R(0) + 1.9;
+  for (let y = Y0 + 0.3; y < Y1 - 1.5; y += 1.25) {
+    const v = new THREE.Mesh(new RoundedBoxGeometry(1.15, 0.95, 0.6, 4, 0.18), boneM); v.position.set(spineX, y, -0.25); group.add(v);
+    const dk = new THREE.Mesh(new RoundedBoxGeometry(1.05, 0.22, 0.5, 3, 0.08), wet('#cfe0ee', { clearcoat: 0.6 })); dk.position.set(spineX, y + 0.62, -0.22); group.add(dk);
+  }
+  // the tear: a ragged dark hole in the front wall, placed where the inside of the wall faces the viewer
+  const PHI = -0.62, tearPos = new THREE.Vector3(TX + Math.cos(PHI) * (TR - 0.1), 0.6, Math.sin(PHI) * (TR - 0.1));
+  const tearG = new THREE.Group(); tearG.position.copy(tearPos); tearG.lookAt(new THREE.Vector3(TX, 0.6, 0)); group.add(tearG);
+  const hole = new THREE.Mesh(new THREE.CircleGeometry(1, 40), new THREE.MeshBasicMaterial({ color: '#2a070b' })); hole.position.z = 0.12; tearG.add(hole);
+  const flapM = flesh('#d9606c', 3, { clearcoat: 1, side: THREE.DoubleSide });
+  const flaps = Array.from({ length: 22 }, (_, i) => {
+    const g = new THREE.SphereGeometry(1, 10, 8); displace(g, (v) => 0.3 * n3(v.x * 3 + i, v.y * 3, v.z * 3));
+    const m = new THREE.Mesh(g, flapM); m.userData.a = (i / 22) * Math.PI * 2; tearG.add(m); return m;
+  });
+  parts.tearPos = tearPos;
+  parts.tear = (k) => {
+    tearG.visible = k > 0.02; hole.scale.set(0.28 * k + 0.001, 0.42 * k + 0.001, 1);
+    flaps.forEach((f, i) => { const a = f.userData.a; f.position.set(Math.cos(a) * 0.3 * k, Math.sin(a) * 0.45 * k, 0.14); f.scale.set(0.09 * k, 0.07 * k, 0.05 * k); f.rotation.set(i, a, 0); });
+  };
+  parts.tear(0);
+  parts.swell = (k) => { if (Math.abs(k - swellK) < 1e-4) return; swellK = k; fillShell(); parts.strips.forEach((s) => s.userData.build()); placeFat(); };
+  parts.R = R; parts.front = front; parts.TX = TX; parts.TR = TR; parts.fatX = (y) => R(y) - 1.0 + front(y) * 0.6;
+  return { group, parts };
 }
