@@ -1,0 +1,81 @@
+{
+  "module": "floaters",
+  "title": "What Are Those Squiggles Floating in Your Eyes?",
+  "music": "ambient",
+  "length_scale": 1.08,
+  "punch": 0.06,
+  "max_clip": 2.6,
+  "shots": [
+    {
+      "vo": "What are those little squiggles floating in your vision?",
+      "highlight": "#7fd8ff",
+      "scene": "pov",
+      "params": {"n": 7},
+      "cuts": [
+        {"at": "floating", "scene": "eye", "params": {"clump0": 1, "clump1": 1, "slosh": 1, "dist0": 26, "dist1": 22}}
+      ]
+    },
+    {
+      "vo": "Your eyeball is filled with a clear jelly called the vitreous.",
+      "highlight": "#7fd8ff",
+      "scene": "eye",
+      "params": {"fibers": 0, "az0": 0.9, "az1": 0.6, "dist0": 24, "dist1": 21},
+      "cuts": [
+        {"at": "jelly", "params": {"fibers": 0, "labels": 1, "az0": 0.2, "az1": 0.1}}
+      ]
+    },
+    {
+      "vo": "It's mostly water, held together by tiny fibers of collagen.",
+      "highlight": "#7fd8ff",
+      "scene": "eye",
+      "params": {"fibers": 1, "az0": -0.3, "az1": -0.1},
+      "cuts": [
+        {"at": "fibers", "params": {"fibers": 1, "az0": 0.3, "az1": 0.45, "dist0": 11, "dist1": 9, "tx0": -0.6, "tx1": -0.6, "tz0": -1, "tz1": -1}}
+      ]
+    },
+    {
+      "vo": "Over time, some of those fibers clump together.",
+      "highlight": "#ffd23f",
+      "scene": "eye",
+      "params": {"clump0": 0, "clump1": 0.5, "dist0": 13, "dist1": 11, "tz0": -0.8, "tz1": -0.8},
+      "cuts": [
+        {"at": "clump", "params": {"clump0": 0.5, "clump1": 1, "az0": 0.6, "az1": 0.45, "dist0": 9, "dist1": 8, "tx0": -0.6, "tx1": -0.6, "tz0": -0.8, "tz1": -0.8}}
+      ]
+    },
+    {
+      "vo": "When light comes in, the clumps cast shadows on your retina.",
+      "highlight": "#ffd23f",
+      "scene": "eye",
+      "params": {"clump0": 1, "clump1": 1, "rays": 1, "dist0": 24, "dist1": 21},
+      "cuts": [
+        {"at": "shadows", "params": {"clump0": 1, "clump1": 1, "rays": 1, "shadows": 1, "az0": 1.1, "az1": 0.9, "el0": 0.1, "el1": 0.05, "dist0": 10, "dist1": 9, "tx0": -1.5, "tx1": -1.6, "tz0": -0.6, "tz1": -0.6}}
+      ]
+    },
+    {
+      "vo": "That's what you see. They drift because the jelly sloshes every time your eye moves.",
+      "highlight": "#7fd8ff",
+      "scene": "pov",
+      "params": {"n": 9},
+      "cuts": [
+        {"at": "jelly", "scene": "eye", "params": {"clump0": 1, "clump1": 1, "slosh": 1, "rays": 1, "shadows": 1, "dist0": 20, "dist1": 18}}
+      ]
+    },
+    {
+      "vo": "Floaters are usually harmless. But a sudden shower of new ones, or flashes of light, can mean a torn retina.",
+      "highlight": "#ff4b4b",
+      "scene": "pov",
+      "params": {"n": 5},
+      "cuts": [
+        {"at": "shower", "scene": "pov", "params": {"n": 6, "shower": 1}},
+        {"at": "flashes", "scene": "pov", "params": {"n": 6, "shower": 1, "flash": 1}},
+        {"at": "torn", "scene": "retina", "params": {"tear0": 0.2, "tear1": 1, "flash": 1}}
+      ]
+    },
+    {
+      "vo": "That needs an eye doctor the same day.",
+      "highlight": "#ff4b4b",
+      "scene": "retina",
+      "params": {"tear0": 1, "tear1": 1, "az0": 0.4, "az1": 0.3, "dist0": 14, "dist1": 16}
+    }
+  ]
+}

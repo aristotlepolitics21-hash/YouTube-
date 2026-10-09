@@ -10,12 +10,19 @@ Episode JSON:
    "music": "ambient"?, "shots": [shot, ...]}
   shot: {"vo": str | [str, ...], "caption": "text with **highlight**"?, "highlight": "#hex"?,
          "scene": "<scene name>"?, "params": {"name": value | {"segment": i}}?,
-         "sfx": [{"type": "pop" | "boom", "segment": i}]?}
+         "sfx": [{"type": "pop" | "boom", "segment": i | "word": "pop"}]?}
 A {"segment": i} value becomes the fraction of the shot where voice segment i starts.
 Captions ("captions": "words", the default) follow the narration word for word: Whisper
 times each spoken word, the script supplies the spelling, and short chunks appear as
 they are said with the current word in the shot's highlight colour. "captions": "phrase"
 shows each shot's "caption" text for the whole shot instead.
+Fast editing: a shot's "cuts": [{"at": "word", "scene"?: str, "params"?: {...}}, ...] cut to a
+new clip when that word is spoken (each searched after the previous cut), so one sentence can
+span several shots. A cut without "scene" keeps the shot's scene and merges its params over the
+shot's (a new camera angle on the same scene). Clip params may use {"segment": i} or
+{"word": "pop"}, the fraction of the clip where that starts. Episode options: "punch": 0.06
+starts every clip 6% zoomed in and settles it over 6 frames; "cut_whoosh": gain of the whoosh
+on mid-shot cuts (default 0.07); "max_clip": seconds, warns about longer clips.
 Shots without "scene" render the module's i-th scene (episodes that call run([...])).
 Shots whose frames are already complete in frames/<module>/ are not re-rendered, so an
 interrupted build can simply be run again; --skip-render never renders.
@@ -159,47 +166,93 @@ def plan(ep, voice, workdir):
             starts.append(cur); audio.append((cur, a)); cur += len(a) / SR + GAP
         dur = cur - GAP + TAIL
         frames = max(2, round(dur * FPS)); dur = frames / FPS
-        params = {}
-        for k, v in s.get('params', {}).items():
-            params[k] = starts[v['segment']] / dur if isinstance(v, dict) and 'segment' in v else v
-        shots.append(dict(index=i, start=t0, dur=dur, frames=frames, audio=audio,
-                          starts=starts, params=params, spec=s, words=words, chunks=chunk_words(words)))
+        shot = dict(index=i, start=t0, dur=dur, frames=frames, audio=audio,
+                    starts=starts, spec=s, words=words, chunks=chunk_words(words))
+        shot['clips'] = make_clips(shot)
+        shot['params'] = shot['clips'][0]['params']
+        shots.append(shot)
         t0 += dur
     return shots, t0
 
 
-def frame_dir(module, s):
-    return ROOT / 'frames' / module / f"shot{s['index'] + 1:02d}"
+def norm_word(w):
+    return re.sub(r'[^a-z0-9]', '', w.lower())
 
 
-def frame_files(module, s):
-    d = frame_dir(module, s)
-    return sorted(d.glob('f*.jpg')) or sorted(d.glob('f*.png')) if d.exists() else []
+def make_clips(shot):
+    """Split a shot into clips at its "cuts": each cut starts a new camera/scene on the
+    spoken word "at" (searched after the previous cut). Clip-relative params:
+    {"segment": i} or {"word": "pop"} become the fraction of the clip where it starts."""
+    s, words = shot['spec'], shot['words']
+    marks, pos = [(0, s.get('scene'), s.get('params', {}))], 0
+    for c in s.get('cuts', []):
+        k = next((k for k in range(pos, len(words)) if norm_word(words[k][0]) == norm_word(c['at'])), None)
+        if k is None:
+            sys.exit(f"shot {shot['index'] + 1}: cut word {c['at']!r} not found after word {pos}")
+        pos = k + 1
+        f = max(marks[-1][0] + 6, round((words[k][1] - 0.04) * FPS))  # at least 0.25 s per clip
+        params = c.get('params', {}) if 'scene' in c else {**s.get('params', {}), **c.get('params', {})}
+        marks.append((f, c.get('scene', s.get('scene')), params))
+    clips = []
+    for n, (f0, scene, raw) in enumerate(marks):
+        f1 = marks[n + 1][0] if n + 1 < len(marks) else shot['frames']
+        if f1 - f0 < 2: sys.exit(f"shot {shot['index'] + 1}: cut {n} leaves no frames")
+        dur, t0 = (f1 - f0) / FPS, f0 / FPS
+
+        def at(v):
+            if isinstance(v, dict) and 'segment' in v: return (shot['starts'][v['segment']] - t0) / dur
+            if isinstance(v, dict) and 'word' in v:
+                w = next(w for w in words if norm_word(w[0]) == norm_word(v['word']))
+                return (w[1] - t0) / dur
+            return v
+        name = f"shot{shot['index'] + 1:02d}" + (f"_{n + 1}" if n else '')
+        clips.append(dict(shot=shot['index'], n=n, name=name, start=f0, frames=f1 - f0,
+                          scene=scene, params={k: at(v) for k, v in raw.items()}))
+    return clips
+
+
+def frame_dir(module, c):
+    return ROOT / 'frames' / module / c['name']
+
+
+def frame_files(module, c):
+    d = frame_dir(module, c)
+    return (sorted(d.glob('f*.jpg')) or sorted(d.glob('f*.png'))) if d.exists() else []
 
 
 def render_frames(module, shots, size, workers):
-    todo = [s for s in shots if len(frame_files(module, s)) != s['frames']]
-    for s in shots:  # a changed duration invalidates old frames
-        if s in todo and frame_dir(module, s).exists():
-            for f in frame_dir(module, s).glob('f*'): f.unlink()
-    print(f'  {len(shots) - len(todo)} shots already rendered, {len(todo)} to go', flush=True)
+    clips = [c for s in shots for c in s['clips']]
+
+    code = hashlib.md5((ROOT / f'{module}.js').read_bytes()).hexdigest()[:10]
+
+    def stamp(c):  # scene, params, size and episode code the frames were made with; a change re-renders them
+        return json.dumps([c['scene'], c['params'], list(size), code], sort_keys=True)
+
+    def done(c):
+        st = frame_dir(module, c) / '.spec'
+        return len(frame_files(module, c)) == c['frames'] and (not st.exists() or st.read_text() == stamp(c))
+    todo = [c for c in clips if not done(c)]
+    for c in todo:  # a changed duration or spec invalidates old frames
+        if frame_dir(module, c).exists():
+            for f in frame_dir(module, c).glob('f*'): f.unlink()
+    print(f'  {len(clips) - len(todo)} clips already rendered, {len(todo)} to go', flush=True)
     q = queue.Queue()
-    for s in todo: q.put(s)
+    for c in sorted(todo, key=lambda c: -c['frames']): q.put(c)  # longest first balances workers
     errors = []
 
     def work():
         while True:
-            try: s = q.get_nowait()
+            try: c = q.get_nowait()
             except queue.Empty: return
-            scene = s['spec'].get('scene')
-            cmd = ['node', str(ROOT / 'render.mjs'), '--ep', module, '--frames', str(s['frames']),
-                   '--params', json.dumps(s['params']), '--size', f'{size[0]}x{size[1]}',
-                   '--format', 'jpg', '--out', frame_dir(module, s).name]
-            cmd += ['--scene', scene] if scene else ['--shot', str(s['index'])]
+            cmd = ['node', str(ROOT / 'render.mjs'), '--ep', module, '--frames', str(c['frames']),
+                   '--params', json.dumps(c['params']), '--size', f'{size[0]}x{size[1]}',
+                   '--format', 'jpg', '--out', c['name']]
+            cmd += ['--scene', c['scene']] if c['scene'] else ['--shot', str(c['shot'])]
             r = subprocess.run(cmd, capture_output=True, text=True)
-            ok = r.returncode == 0 and len(frame_files(module, s)) == s['frames']
-            print(f"  shot {s['index'] + 1} ({scene or 'index'}): {s['frames']} frames {'ok' if ok else 'FAILED'}", flush=True)
-            if not ok: errors.append(f"shot {s['index'] + 1}: " + (r.stderr or r.stdout)[-1500:])
+            ok = r.returncode == 0 and len(frame_files(module, c)) == c['frames']
+            if ok: (frame_dir(module, c) / '.spec').write_text(stamp(c))
+            print(f"  {c['name']} ({c['scene'] or 'index'}): {c['frames']} frames {'ok' if ok else 'FAILED'}", flush=True)
+            if not ok: errors.append(f"{c['name']}: " + (r.stderr or r.stdout)[-1500:])
 
     ts = [threading.Thread(target=work) for _ in range(workers)]
     for t in ts: t.start()
@@ -255,7 +308,7 @@ def word_caption_at(s, tf, cache, W, size, max_w):
     return None, None
 
 
-def encode(module, shots, size, out, audio_path, mode='words'):
+def encode(module, shots, size, out, audio_path, mode='words', punch=0.0):
     W, H = size
     landscape = W > H
     if mode == 'words':
@@ -271,10 +324,18 @@ def encode(module, shots, size, out, audio_path, mode='words'):
     for s in shots:
         text = s['spec'].get('caption') if mode == 'phrase' else None
         cap = caption_layer(text, s['spec'].get('highlight', '#ffd23f'), W, cap_size, cap_w) if text else None
-        files = frame_files(module, s)
-        cache = {}
+        files, cut_at = [], set()
+        for c in s['clips']:
+            if s['index'] or c['n']: cut_at.add(len(files))
+            files += frame_files(module, c)
+        cache, since_cut = {}, 99
         for f in range(s['frames']):
             frame = Image.open(files[f]).convert('RGB')
+            since_cut = 0 if f in cut_at else since_cut + 1
+            if punch and since_cut < 6:  # punch-in: start each cut zoomed in, settle over 6 frames
+                z = 1 + punch * (1 - since_cut / 6) ** 2
+                cw, ch = W / z, H / z
+                frame = frame.resize((W, H), Image.BICUBIC, box=((W - cw) / 2, (H - ch) / 2, (W + cw) / 2, (H + ch) / 2))
             pop_start = 0.0
             if mode == 'words':
                 cap, pop_start = word_caption_at(s, f / FPS, cache, W, cap_size, cap_w)
@@ -299,8 +360,12 @@ def mix(ep, shots, total, path):
             add(s['start'] + at, a)
         if s['index']:
             add(s['start'] - 0.17, whoosh, 0.12)
+        for c in s['clips'][1:]:  # quieter whoosh on mid-shot cuts
+            add(s['start'] + c['start'] / FPS - 0.17, whoosh, ep.get('cut_whoosh', 0.07))
         for e in s['spec'].get('sfx', []):
-            add(s['start'] + s['starts'][e.get('segment', 0)] - 0.05, fx[e['type']], 0.7)
+            at = (next(w[1] for w in s['words'] if norm_word(w[0]) == norm_word(e['word'])) if 'word' in e
+                  else s['starts'][e.get('segment', 0)])
+            add(s['start'] + at - 0.05, fx[e['type']], 0.7)
     voice_peak = np.abs(mixbuf).max()
     if ep.get('music') == 'ambient':
         mixbuf[: int(total * SR)] += music_ambient(total) * voice_peak * 0.07
@@ -322,9 +387,18 @@ def main():
     work = ROOT / 'out' / f'{module}_work'; work.mkdir(parents=True, exist_ok=True)
     print('voiceover...', flush=True)
     shots, total = plan(ep, a.voice, work)
+    long_clip = ep.get('max_clip')
     for s in shots:
         print(f"  shot {s['index'] + 1}: {s['dur']:.2f}s {s['spec'].get('scene', '')} {s['params'] or ''}")
-    print(f'total {total:.1f}s ({total / 60:.1f} min), {sum(s["frames"] for s in shots)} frames', flush=True)
+        for c in s['clips'][1:] if len(s['clips']) > 1 else []:
+            print(f"    cut {c['n']} @{c['start'] / FPS:.2f}s: {c['frames'] / FPS:.2f}s {c['scene'] or ''} {c['params'] or ''}")
+    clips = [c for s in shots for c in s['clips']]
+    print(f'total {total:.1f}s ({total / 60:.1f} min), {sum(s["frames"] for s in shots)} frames, '
+          f'{len(clips)} clips, average {total / len(clips):.2f}s', flush=True)
+    if long_clip:
+        for c in clips:
+            if c['frames'] / FPS > long_clip:
+                print(f"  warning: {c['name']} runs {c['frames'] / FPS:.2f}s (max_clip {long_clip})")
     if a.plan_only: return
     if not a.skip_render:
         print('rendering 3D frames...', flush=True)
@@ -332,7 +406,7 @@ def main():
     mix(ep, shots, total, work / 'mix.wav')
     print('compositing captions + encoding...', flush=True)
     pathlib.Path(a.out).parent.mkdir(parents=True, exist_ok=True)
-    encode(module, shots, size, a.out, work / 'mix.wav', ep.get('captions', 'words'))
+    encode(module, shots, size, a.out, work / 'mix.wav', ep.get('captions', 'words'), ep.get('punch', 0.0))
     print('wrote', a.out)
 
 

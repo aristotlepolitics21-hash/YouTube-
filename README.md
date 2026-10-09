@@ -44,3 +44,34 @@ node render.mjs --stills   # one PNG per card in stills/
 node render.mjs            # every frame in frames/
 npm run encode             # out/title_cards.mp4
 ```
+
+## Medical Body shorts: fast-cut 3D cutaways
+
+`render3d/` renders 3D episodes with three.js in headless Chromium. `make_episode.py` adds a Piper
+voiceover, word-by-word captions, whooshes and music, and encodes the MP4. The ten Medical Body
+shorts (vertical, 30–40 s) use the shared anatomy kit `render3d/lib_body.js`: a head-and-neck
+cutaway, chest and ear cutaways, a skin block with its layers, particles along a path, and pop-in
+labels. The kit lets the edit cut every 1–2 seconds:
+
+- A shot's `"cuts": [{"at": "word", "scene"?, "params"?}]` switches to a new clip when that word is
+  spoken, so one sentence can span several camera angles. Leave out `"scene"` to re-frame the same
+  scene: its params merge over the shot's, e.g. `az0/az1`, `dist0/dist1`, `tx0/ty0`.
+- `"punch": 0.06` starts every clip slightly zoomed in. Each mid-sentence cut gets a quieter whoosh.
+  `"max_clip"` warns about slow clips. `"sfx": [{"type": "pop", "word": "pop!"}]` puts a sound on a word.
+- Frames are cached per clip and re-rendered only when its scene, params, size or episode code changes.
+
+```sh
+pip install piper-tts faster-whisper && (cd render3d && npm install)
+python3 render3d/preview.py render3d/episodes/sneeze.json 0.6 --all   # storyboard: one frame per clip
+python3 render3d/make_episode.py render3d/episodes/sneeze.json --voice voices/en_US-ryan-high.onnx \
+    -o render3d/out/sneeze.mp4 --plan-only                            # timings + clip lengths only
+python3 render3d/make_episode.py render3d/episodes/sneeze.json --voice voices/en_US-ryan-high.onnx \
+    -o render3d/out/sneeze.mp4 --workers 3                            # full render
+```
+
+Episodes: `sneeze`, `battery`, `mosquito`, `hiccups`, `spicy`, `funnybone`, `bruise`, `floaters`,
+`sunburn`, `earspop`. Titles, descriptions, tags and pinned comments are in
+`render3d/publish/MEDICAL_BODY_SHORTS.md`, and storyboards are in `render3d/storyboards/`. To make a
+new one, write `render3d/<topic>.js` (scenes built from `lib_body.js`, each taking camera params)
+and `render3d/episodes/<topic>.json` (the script and its cuts). Then check the storyboard before
+rendering.

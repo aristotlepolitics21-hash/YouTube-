@@ -1,0 +1,75 @@
+{
+  "module": "funnybone",
+  "title": "Why Does Hitting Your Funny Bone Feel So Weird?",
+  "music": "ambient",
+  "length_scale": 1.08,
+  "punch": 0.06,
+  "max_clip": 2.6,
+  "shots": [
+    {
+      "vo": "Why does hitting your funny bone feel so weird?",
+      "highlight": "#ffd23f",
+      "scene": "arm",
+      "params": {"hitAt": 0.6},
+      "cuts": [
+        {"at": "bone", "params": {"hitAt": 0.05, "xray0": 1, "xray1": 1, "glow": 1, "zap": 1, "az0": -1.1, "az1": -1.0, "dist0": 16, "dist1": 13, "tx0": 0.5, "tx1": 0.8, "ty0": 0.3, "ty1": 0.3}}
+      ]
+    },
+    {
+      "vo": "Because it's not a bone at all. It's a nerve.",
+      "highlight": "#ffd23f",
+      "scene": "arm",
+      "params": {"xray0": 0, "xray1": 1, "az0": -0.3, "az1": -0.5},
+      "cuts": [
+        {"at": "nerve", "params": {"xray0": 1, "xray1": 1, "glow": 1, "labelNerve": 1, "az0": -0.9, "az1": -0.8, "dist0": 26, "dist1": 24, "ty0": 0.5, "ty1": 0.5}}
+      ]
+    },
+    {
+      "vo": "It runs from your neck all the way down to your hand.",
+      "highlight": "#ffd23f",
+      "scene": "arm",
+      "params": {"xray0": 1, "xray1": 1, "p0": 0, "p1": 0.75, "az0": -0.8, "az1": -0.7, "dist0": 36, "dist1": 34},
+      "cuts": [
+        {"at": "hand", "params": {"xray0": 1, "xray1": 1, "p0": 0.75, "p1": 1.25, "az0": -0.6, "az1": -0.5, "dist0": 18, "dist1": 15, "tx0": 6.5, "tx1": 7.5, "ty0": -0.4, "ty1": -0.4}}
+      ]
+    },
+    {
+      "vo": "At the elbow, it slides through a groove with almost no padding, just skin and a little fat.",
+      "highlight": "#ff8a1a",
+      "scene": "arm",
+      "params": {"xray0": 1, "xray1": 1, "glow": 1, "az0": -1.4, "az1": -1.2, "el0": 0.0, "el1": 0.1, "dist0": 13, "dist1": 10, "tx0": -0.3, "tx1": -0.3, "ty0": 0.4, "ty1": 0.3},
+      "cuts": [
+        {"at": "groove", "scene": "groove", "params": {"labels": 0}},
+        {"at": "padding", "scene": "groove", "params": {"labels": 1, "az0": -0.2, "az1": -0.1}}
+      ]
+    },
+    {
+      "vo": "So when you hit it there, you're hitting the nerve itself.",
+      "highlight": "#ff4b4b",
+      "scene": "groove",
+      "params": {"hitAt": 0.4, "dist0": 24, "dist1": 20},
+      "cuts": [
+        {"at": "hitting", "scene": "arm", "params": {"hitAt": 0.15, "xray0": 1, "xray1": 1, "glow": 1, "az0": -1.2, "az1": -1.05, "dist0": 14, "dist1": 12, "tx0": 0.0, "tx1": 0.0, "ty0": 0.4, "ty1": 0.4}}
+      ]
+    },
+    {
+      "vo": "That's why the zing shoots into your ring and pinky fingers.",
+      "highlight": "#ffd23f",
+      "scene": "arm",
+      "params": {"xray0": 1, "xray1": 1, "p0": 0.45, "p1": 1.25, "az0": -0.7, "az1": -0.6, "dist0": 26, "dist1": 22, "tx0": 4.5, "tx1": 5.5, "ty0": 0, "ty1": 0},
+      "cuts": [
+        {"at": "ring", "params": {"xray0": 0.3, "xray1": 0.3, "zap": 1, "glow": 1, "az0": 0.0, "az1": -0.1, "el0": 0.3, "el1": 0.25, "dist0": 13, "dist1": 11.5, "tx0": 9.5, "tx1": 9.6, "ty0": -0.3, "ty1": -0.3}}
+      ]
+    },
+    {
+      "vo": "And the name? It may be a pun on the bone right next to it: the humerus.",
+      "highlight": "#ff8a1a",
+      "scene": "arm",
+      "params": {"xray0": 0, "xray1": 0.2, "az0": 0.4, "az1": 0.2},
+      "cuts": [
+        {"at": "bone", "params": {"xray0": 1, "xray1": 1, "humerus": 1, "az0": -0.4, "az1": -0.3, "dist0": 32, "dist1": 30, "ty0": 3, "ty1": 3, "tx0": 1.5, "tx1": 1.5}},
+        {"at": "humerus.", "params": {"xray0": 1, "xray1": 1, "humerus": 1, "az0": 0.3, "az1": 0.15, "dist0": 24, "dist1": 22, "ty0": 4, "ty1": 4, "tx0": 0.6, "tx1": 0.6}}
+      ]
+    }
+  ]
+}

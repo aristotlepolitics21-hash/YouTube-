@@ -1,0 +1,84 @@
+{
+  "module": "hiccups",
+  "title": "What Actually Causes Hiccups?",
+  "music": "ambient",
+  "length_scale": 1.08,
+  "punch": 0.06,
+  "max_clip": 2.6,
+  "shots": [
+    {
+      "vo": "What actually causes hiccups?",
+      "highlight": "#ffd23f",
+      "scene": "torso",
+      "params": {"spasmAt": 0.55, "breaths": 0.5},
+      "cuts": [
+        {"at": "hiccups", "scene": "glottis", "params": {"shutAt": 0.45}}
+      ]
+    },
+    {
+      "vo": "Under your lungs is a dome-shaped muscle called the diaphragm.",
+      "highlight": "#ff4b4b",
+      "scene": "torso",
+      "params": {"still": 1, "az0": 0.6, "az1": 0.45, "dist0": 30, "dist1": 26, "ty0": 2.5, "ty1": 2.2},
+      "cuts": [
+        {"at": "dome-shaped", "params": {"still": 1, "glow": 1, "az0": 0.2, "az1": 0.1, "dist0": 24, "dist1": 21, "ty0": -0.2, "ty1": -0.3}},
+        {"at": "diaphragm", "params": {"still": 1, "glow": 1, "label": 1, "dist0": 40, "dist1": 37, "ty0": -0.5, "ty1": -0.5}}
+      ]
+    },
+    {
+      "vo": "Normally, it pulls down smoothly, so you can breathe.",
+      "highlight": "#7fd8ff",
+      "scene": "torso",
+      "params": {"breaths": 1, "airflow": 1},
+      "cuts": [
+        {"at": "smoothly", "params": {"breaths": 1, "airflow": 1, "az0": -0.5, "az1": -0.35, "dist0": 26, "dist1": 23, "ty0": 0.5, "ty1": 0.2}}
+      ]
+    },
+    {
+      "vo": "But sometimes, often after eating too fast, it suddenly spasms.",
+      "highlight": "#ff4b4b",
+      "scene": "torso",
+      "params": {"still": 1, "full0": 0, "full1": 0.2, "dist0": 38, "dist1": 34},
+      "cuts": [
+        {"at": "eating", "params": {"still": 1, "full0": 0.2, "full1": 1, "tx0": 2.2, "tx1": 2.2, "ty0": -1.5, "ty1": -1.6, "dist0": 18, "dist1": 15, "az0": 0.4, "az1": 0.3}},
+        {"at": "spasms", "params": {"full0": 1, "full1": 1, "spasmAt": 0.08, "dist0": 32, "dist1": 30, "ty0": 0, "ty1": 0}}
+      ]
+    },
+    {
+      "vo": "Air rushes into your throat,",
+      "highlight": "#7fd8ff",
+      "scene": "torso",
+      "params": {"spasmAt": 0.0, "tx0": 0, "tx1": 0, "ty0": 5.0, "ty1": 4.5, "dist0": 22, "dist1": 20, "az0": 0.35, "az1": 0.25},
+      "cuts": [
+        {"at": "throat", "scene": "glottis", "params": {"shutAt": 2}}
+      ]
+    },
+    {
+      "vo": "and a split second later, your vocal cords snap shut. Hic!",
+      "highlight": "#ffd23f",
+      "scene": "glottis",
+      "params": {"shutAt": 2, "el0": 1.0, "el1": 1.1, "dist0": 18, "dist1": 15},
+      "cuts": [
+        {"at": "vocal", "params": {"shutAt": 2, "el0": 1.4, "el1": 1.45, "dist0": 13, "dist1": 11}},
+        {"at": "snap", "params": {"shutAt": 0.15, "el0": 1.3, "el1": 1.35, "dist0": 12, "dist1": 11}},
+        {"at": "Hic!", "params": {"shutAt": 0.02, "open": 0.0, "el0": 1.5, "el1": 1.5, "dist0": 10, "dist1": 13}}
+      ],
+      "sfx": [{"type": "pop", "word": "Hic!"}]
+    },
+    {
+      "vo": "Most hiccups stop within a few minutes.",
+      "highlight": "#4dff9a",
+      "scene": "torso",
+      "params": {"breaths": 1.2, "dist0": 40, "dist1": 44}
+    },
+    {
+      "vo": "But one man, Charles Osborne, hiccupped for 68 years.",
+      "highlight": "#ffd23f",
+      "scene": "torso",
+      "params": {"spasmAt": 0.4, "breaths": 0.5, "az0": -0.4, "az1": -0.3},
+      "cuts": [
+        {"at": "hiccupped", "scene": "counter", "params": {"n0": 0, "n1": 68}}
+      ]
+    }
+  ]
+}

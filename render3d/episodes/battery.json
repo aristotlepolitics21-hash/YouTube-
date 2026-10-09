@@ -1,0 +1,87 @@
+{
+  "module": "battery",
+  "title": "What Happens If You Swallow a Button Battery?",
+  "music": "ambient",
+  "punch": 0.06,
+  "max_clip": 2.6,
+  "shots": [
+    {
+      "vo": "What happens if you swallow a button battery?",
+      "highlight": "#ff4b4b",
+      "scene": "hero",
+      "params": {"show": "battery"},
+      "cuts": [
+        {"at": "button", "scene": "swallow", "params": {"obj": "battery", "u0": 0, "u1": 0.3, "follow": 1}}
+      ]
+    },
+    {
+      "vo": "Lots of swallowed coins slide down and pass on their own.",
+      "highlight": "#ffd23f",
+      "scene": "hero",
+      "params": {"show": "both"},
+      "cuts": [
+        {"at": "slide", "scene": "swallow", "params": {"obj": "coin", "u0": 0.15, "u1": 0.75}},
+        {"at": "pass", "scene": "swallow", "params": {"obj": "coin", "u0": 0.6, "u1": 1.1, "follow": 1}}
+      ]
+    },
+    {
+      "vo": "But a button battery can get stuck in the food pipe.",
+      "highlight": "#ff4b4b",
+      "scene": "swallow",
+      "params": {"obj": "battery", "u0": 0.2, "u1": 0.62},
+      "cuts": [
+        {"at": "stuck", "scene": "swallow", "params": {"obj": "battery", "u0": 0.62, "u1": 0.64, "follow": 1, "stuck": 1, "jiggle": 1}},
+        {"at": "food", "scene": "stuck", "params": {"az0": 0.4, "az1": 0.2, "dist0": 20.3, "dist1": 15.9}}
+      ]
+    },
+    {
+      "vo": "Wet tissue lets electric current flow from one side to the other.",
+      "highlight": "#7fd8ff",
+      "scene": "stuck",
+      "params": {"current": 0, "el0": 0.5, "el1": 0.3},
+      "cuts": [
+        {"at": "electric", "scene": "stuck", "params": {"current": 1}},
+        {"at": "side", "scene": "stuck", "params": {"current": 1, "az0": -0.6, "az1": -0.4, "dist0": 10.2, "dist1": 8.7}}
+      ]
+    },
+    {
+      "vo": "That current makes a harsh alkaline chemical, like drain cleaner, right against the wall of the throat.",
+      "highlight": "#ff4b4b",
+      "scene": "stuck",
+      "params": {"current": 1, "burn0": 0, "burn1": 0.25},
+      "cuts": [
+        {"at": "alkaline", "params": {"burn0": 0.25, "burn1": 0.45, "az0": 0.3, "az1": 0.5, "dist0": 11.6, "dist1": 10.2}},
+        {"at": "drain", "params": {"burn0": 0.45, "burn1": 0.6, "az0": -0.8, "az1": -0.7, "el0": 0.4, "el1": 0.3, "dist0": 13.0, "dist1": 11.6}},
+        {"at": "wall", "params": {"burn0": 0.6, "burn1": 0.8, "az0": -0.2, "az1": -0.35, "dist0": 8.7, "dist1": 7.2}}
+      ]
+    },
+    {
+      "vo": "Serious burns can start in just two hours.",
+      "highlight": "#ff4b4b",
+      "scene": "stuck",
+      "params": {"current": 1, "burn0": 0.8, "burn1": 1, "az0": 0.1, "az1": -0.1, "dist0": 15.9, "dist1": 13.0},
+      "cuts": [
+        {"at": "two", "scene": "clock", "params": {"h0": 0, "h1": 2}}
+      ]
+    },
+    {
+      "vo": "So if a kid swallows one, don't wait for symptoms. Go to the ER right away.",
+      "highlight": "#ffd23f",
+      "scene": "swallow",
+      "params": {"obj": "battery", "u0": 0.0, "u1": 0.6},
+      "cuts": [
+        {"at": "wait", "scene": "clock", "params": {"h0": 0, "h1": 0.5, "az0": -0.3, "az1": -0.2}},
+        {"at": "ER", "scene": "hero", "params": {"show": "battery", "alarm": 1, "dist0": 17, "dist1": 14}}
+      ]
+    },
+    {
+      "vo": "And keep button batteries locked away.",
+      "highlight": "#4dff9a",
+      "scene": "locked",
+      "params": {"lockAt": 0.55},
+      "cuts": [
+        {"at": "locked", "params": {"lockAt": 0.25, "az0": -0.5, "az1": -0.35, "el0": 0.25, "el1": 0.2, "dist0": 14, "dist1": 12}}
+      ]
+    }
+  ]
+}

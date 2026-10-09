@@ -1,0 +1,88 @@
+{
+  "module": "earspop",
+  "title": "Why Do Your Ears Pop on a Plane?",
+  "music": "ambient",
+  "length_scale": 1.08,
+  "punch": 0.06,
+  "max_clip": 2.6,
+  "shots": [
+    {
+      "vo": "Why do your ears pop on a plane?",
+      "highlight": "#7fd8ff",
+      "scene": "plane",
+      "params": {},
+      "cuts": [
+        {"at": "pop", "scene": "ear", "params": {"bulge0": 0.6, "bulge1": 0.0, "open0": 1, "open1": 1, "flowOut": 1}}
+      ]
+    },
+    {
+      "vo": "Behind your eardrum is a tiny pocket of air.",
+      "highlight": "#7fd8ff",
+      "scene": "ear",
+      "params": {"l0": 1, "tx0": -1.0, "tx1": -0.8, "ty0": 0.6, "ty1": 0.6, "dist0": 20, "dist1": 17, "az0": 0.4, "az1": 0.3},
+      "cuts": [
+        {"at": "pocket", "params": {"l1": 1, "tx0": 0.0, "tx1": 0.1, "ty0": -0.4, "ty1": -0.4, "dist0": 16, "dist1": 14, "az0": -0.2, "az1": -0.1}}
+      ]
+    },
+    {
+      "vo": "As the plane climbs, the air pressure in the cabin drops.",
+      "highlight": "#7fd8ff",
+      "scene": "plane",
+      "params": {"climb": 0.35, "az0": -0.5, "az1": -0.35, "dist0": 26, "dist1": 22},
+      "cuts": [
+        {"at": "pressure", "params": {"climb": 0.35, "az0": 1.4, "az1": 1.2, "el0": 0.3, "el1": 0.25, "dist0": 18, "dist1": 16, "tx0": 2, "tx1": 2}},
+        {"at": "drops.", "scene": "ear", "params": {"thin0": 0, "thin1": 1, "tx0": -3.6, "tx1": -3.6, "ty0": 0.4, "ty1": 0.4, "dist0": 22, "dist1": 20}}
+      ]
+    },
+    {
+      "vo": "The air trapped behind your eardrum pushes it outward, and sounds get muffled.",
+      "highlight": "#ff4b4b",
+      "scene": "ear",
+      "params": {"thin0": 1, "thin1": 1, "bulge0": 0, "bulge1": 0.3},
+      "cuts": [
+        {"at": "pushes", "params": {"thin0": 1, "thin1": 1, "bulge0": 0.3, "bulge1": 1, "l0": 1, "tx0": -0.6, "tx1": -0.5, "ty0": 0.8, "ty1": 0.8, "dist0": 13, "dist1": 11, "az0": 0.5, "az1": 0.4}},
+        {"at": "sounds", "params": {"thin0": 1, "thin1": 1, "bulge0": 1, "bulge1": 1, "sound": 1, "muffle": 1, "tx0": -2.8, "tx1": -2.4, "dist0": 24, "dist1": 22}}
+      ]
+    },
+    {
+      "vo": "Your fix is a thin tube that links your ear to your throat: the Eustachian tube.",
+      "highlight": "#ff8a8a",
+      "scene": "ear",
+      "params": {"bulge0": 1, "bulge1": 1, "thin0": 1, "thin1": 1, "tubeGlow": 1},
+      "cuts": [
+        {"at": "throat:", "params": {"bulge0": 1, "bulge1": 1, "tubeGlow": 1, "tx0": 3.5, "tx1": 3.8, "ty0": -3.4, "ty1": -3.6, "dist0": 20, "dist1": 17, "az0": 0.5, "az1": 0.35}},
+        {"at": "Eustachian", "params": {"bulge0": 1, "bulge1": 1, "tubeGlow": 1, "l2": 1, "tx0": 1.6, "tx1": 1.6, "ty0": -2.6, "ty1": -2.6, "dist0": 24, "dist1": 22}}
+      ]
+    },
+    {
+      "vo": "It's normally squeezed shut. But when you swallow or yawn, it pops open.",
+      "highlight": "#ffd23f",
+      "scene": "ear",
+      "params": {"bulge0": 1, "bulge1": 1, "open0": 0, "open1": 0, "tx0": 2.6, "tx1": 2.8, "ty0": -3.2, "ty1": -3.3, "dist0": 14, "dist1": 12, "az0": 0.3, "az1": 0.2},
+      "cuts": [
+        {"at": "swallow", "params": {"bulge0": 1, "bulge1": 1, "open0": 0, "open1": 0, "tx0": 0.5, "tx1": 0.5, "ty0": -1.5, "ty1": -1.5, "dist0": 28, "dist1": 26}},
+        {"at": "pops", "params": {"bulge0": 1, "bulge1": 0.8, "open0": 0, "open1": 1, "tx0": 2.6, "tx1": 2.8, "ty0": -3.2, "ty1": -3.3, "dist0": 14, "dist1": 12, "az0": -0.2, "az1": -0.1}}
+      ]
+    },
+    {
+      "vo": "Air rushes through, the pressure evens out, and... pop!",
+      "highlight": "#4dff9a",
+      "scene": "ear",
+      "params": {"bulge0": 0.8, "bulge1": 0.3, "open0": 1, "open1": 1, "flowOut": 1, "dist0": 30, "dist1": 27, "tx0": 0.6, "tx1": 0.6, "ty0": -1.5, "ty1": -1.5},
+      "cuts": [
+        {"at": "evens", "params": {"bulge0": 0.3, "bulge1": 0.05, "open0": 1, "open1": 1, "flowOut": 1, "tx0": -0.4, "tx1": -0.3, "ty0": 0.5, "ty1": 0.5, "dist0": 14, "dist1": 12}},
+        {"at": "pop!", "params": {"bulge0": 0.05, "bulge1": 0, "open0": 1, "open1": 0.2, "sound": 1, "dist0": 26, "dist1": 34, "hurt": 0}}
+      ],
+      "sfx": [{"type": "pop", "word": "pop!"}]
+    },
+    {
+      "vo": "With a cold, that tube can clog. That's why flying with a cold can hurt.",
+      "highlight": "#ff4b4b",
+      "scene": "ear",
+      "params": {"cold": 1, "bulge0": 0.3, "bulge1": 0.6, "tx0": 2.6, "tx1": 2.8, "ty0": -3.2, "ty1": -3.3, "dist0": 16, "dist1": 14, "az0": 0.4, "az1": 0.3},
+      "cuts": [
+        {"at": "hurt.", "params": {"cold": 1, "bulge0": 0.8, "bulge1": 1, "l0": 1, "tx0": -0.4, "tx1": -0.4, "ty0": 0.6, "ty1": 0.6, "dist0": 18, "dist1": 15}}
+      ]
+    }
+  ]
+}

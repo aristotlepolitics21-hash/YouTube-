@@ -1,0 +1,78 @@
+{
+  "module": "sunburn",
+  "title": "What Actually Happens When You Get Sunburned?",
+  "music": "ambient",
+  "length_scale": 1.08,
+  "punch": 0.06,
+  "max_clip": 2.6,
+  "shots": [
+    {
+      "vo": "What actually happens when you get sunburned?",
+      "highlight": "#ff8a1a",
+      "scene": "skin",
+      "params": {"sun": 1, "rays": 0.6, "red0": 0, "red1": 0.4, "dist0": 30, "dist1": 26, "el0": 0.45, "el1": 0.35, "ty0": 1, "ty1": 0.5},
+      "cuts": [
+        {"at": "sunburned", "params": {"rays": 1, "red0": 0.6, "red1": 1, "peel0": 0.2, "peel1": 0.5}}
+      ]
+    },
+    {
+      "vo": "Invisible ultraviolet light dives into your skin.",
+      "highlight": "#b36bff",
+      "scene": "skin",
+      "params": {"sun": 1, "rays": 1, "dist0": 30, "dist1": 27, "el0": 0.5, "el1": 0.4, "ty0": 2, "ty1": 1},
+      "cuts": [
+        {"at": "dives", "params": {"rays": 1, "az0": 0.05, "az1": 0.1, "el0": 0.05, "el1": 0.08, "dist0": 11, "dist1": 9, "ty0": -0.8, "ty1": -0.9, "tz0": 3.5, "tz1": 3.5, "tx0": -0.5, "tx1": -0.5}}
+      ]
+    },
+    {
+      "vo": "It hits the DNA inside your skin cells and kinks it out of shape.",
+      "highlight": "#b36bff",
+      "scene": "dna",
+      "params": {"kink0": 0, "kink1": 0, "flash": 1},
+      "cuts": [
+        {"at": "kinks", "params": {"kink0": 0, "kink1": 1, "label": 1, "az0": 0.8, "az1": 0.6, "dist0": 14, "dist1": 12}}
+      ]
+    },
+    {
+      "vo": "Cells too damaged to fix destroy themselves on purpose.",
+      "highlight": "#ff4b4b",
+      "scene": "cells",
+      "params": {"die0": 0, "die1": 0.3},
+      "cuts": [
+        {"at": "destroy", "params": {"die0": 0.3, "die1": 1, "az0": -0.3, "az1": -0.15, "dist0": 13, "dist1": 11}}
+      ]
+    },
+    {
+      "vo": "Your body widens blood vessels to rush in help. That's the red, hot, painful skin.",
+      "highlight": "#ff4b4b",
+      "scene": "skin",
+      "params": {"red0": 0, "red1": 0.6, "az0": 0.1, "az1": 0.15, "el0": 0.05, "el1": 0.05, "dist0": 12, "dist1": 10, "ty0": -1.2, "ty1": -1.3, "tz0": 3.5, "tz1": 3.5},
+      "cuts": [
+        {"at": "red,", "params": {"red0": 0.6, "red1": 1, "el0": 0.6, "el1": 0.5, "dist0": 28, "dist1": 24}},
+        {"at": "painful", "params": {"red0": 1, "red1": 1, "az0": 1.1, "az1": 0.9, "el0": 0.3, "el1": 0.25, "dist0": 16, "dist1": 14}}
+      ]
+    },
+    {
+      "vo": "Days later, the dead layer peels away.",
+      "highlight": "#ffd23f",
+      "scene": "skin",
+      "params": {"red0": 0.5, "red1": 0.4, "peel0": 0, "peel1": 1, "az0": 0.6, "az1": 0.45, "el0": 0.35, "el1": 0.3, "dist0": 20, "dist1": 17}
+    },
+    {
+      "vo": "But some damaged cells survive, and that damage adds up, raising your risk of skin cancer.",
+      "highlight": "#ff4b4b",
+      "scene": "cells",
+      "params": {"die0": 1, "die1": 1},
+      "cuts": [
+        {"at": "adds", "params": {"die0": 1, "die1": 1, "mutant": 1, "dist0": 18, "dist1": 15, "tx0": 1.7, "tx1": 1.7}},
+        {"at": "cancer.", "params": {"die0": 1, "die1": 1, "mutant": 1, "az0": 0.9, "az1": 0.7, "dist0": 11, "dist1": 9, "tx0": 1.7, "tx1": 1.7}}
+      ]
+    },
+    {
+      "vo": "Sunscreen stops a lot of it before it starts.",
+      "highlight": "#4dff9a",
+      "scene": "skin",
+      "params": {"shield": 1, "sun": 1, "dist0": 30, "dist1": 27, "el0": 0.5, "el1": 0.4, "ty0": 2, "ty1": 1}
+    }
+  ]
+}

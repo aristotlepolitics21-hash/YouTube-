@@ -1,0 +1,83 @@
+{
+  "module": "spicy",
+  "title": "What Happens When You Eat a Hot Pepper?",
+  "music": "ambient",
+  "length_scale": 1.08,
+  "punch": 0.06,
+  "max_clip": 2.6,
+  "shots": [
+    {
+      "vo": "What happens when you eat a hot pepper?",
+      "highlight": "#ff8a1a",
+      "scene": "pepper",
+      "params": {},
+      "cuts": [
+        {"at": "pepper", "scene": "fire", "params": {"burn0": 0.4, "burn1": 1}}
+      ]
+    },
+    {
+      "vo": "Peppers are packed with a chemical called capsaicin.",
+      "highlight": "#ff8a1a",
+      "scene": "pepper",
+      "params": {"az0": 1.0, "az1": 0.7, "dist0": 15, "dist1": 12},
+      "cuts": [
+        {"at": "chemical", "params": {"open": 1}},
+        {"at": "capsaicin", "params": {"open": 1, "az0": -0.4, "az1": -0.2, "dist0": 7, "dist1": 6, "tx0": -1.2, "tx1": -1.0}}
+      ]
+    },
+    {
+      "vo": "On your tongue, it locks onto a sensor called TRPV1.",
+      "highlight": "#ff8a1a",
+      "scene": "tongue",
+      "params": {"land0": 0, "land1": 0.8},
+      "cuts": [
+        {"at": "locks", "scene": "receptor", "params": {"dock": 0.1}},
+        {"at": "sensor", "scene": "receptor", "params": {"open0": 0.4, "open1": 0.7, "az0": -0.3, "az1": -0.5, "el0": 0.05, "el1": 0.1, "dist0": 12, "dist1": 11}},
+        {"at": "TRPV1.", "scene": "receptor", "params": {"open0": 0.7, "open1": 0.9, "az0": 1.6, "az1": 1.4, "el0": 0.45, "el1": 0.4, "dist0": 14, "dist1": 12}}
+      ]
+    },
+    {
+      "vo": "That sensor's real job is to detect burning heat.",
+      "highlight": "#ff4b4b",
+      "scene": "receptor",
+      "params": {"open0": 0.7, "open1": 1, "heat": 1, "el0": 0.6, "el1": 0.5},
+      "cuts": [
+        {"at": "burning", "params": {"open0": 1, "open1": 1, "heat": 1, "az0": 1.2, "az1": 1.0, "el0": -0.25, "el1": -0.15, "dist0": 13, "dist1": 12}}
+      ]
+    },
+    {
+      "vo": "So your brain thinks your mouth is on fire,",
+      "highlight": "#ff4b4b",
+      "scene": "fire",
+      "params": {"burn0": 0.3, "burn1": 0.7, "tx0": 0.5, "tx1": 0.5, "ty0": 3.2, "ty1": 3.4, "dist0": 22, "dist1": 19},
+      "cuts": [
+        {"at": "fire", "params": {"burn0": 0.8, "burn1": 1, "tx0": 3.8, "tx1": 4.0, "ty0": -0.5, "ty1": -0.2, "dist0": 18, "dist1": 15, "az0": 0.6, "az1": 0.5}}
+      ]
+    },
+    {
+      "vo": "even though nothing is actually burning.",
+      "highlight": "#4dff9a",
+      "scene": "thermo",
+      "params": {}
+    },
+    {
+      "vo": "And water won't help. Capsaicin doesn't mix with water.",
+      "highlight": "#7fd8ff",
+      "scene": "glass",
+      "params": {"liquid": "water"},
+      "cuts": [
+        {"at": "capsaicin", "params": {"liquid": "water", "el0": 0.7, "el1": 0.65, "dist0": 13, "dist1": 11, "ty0": 1.4, "ty1": 1.4}}
+      ]
+    },
+    {
+      "vo": "Drink milk instead. A protein in it, casein, pulls the capsaicin away.",
+      "highlight": "#4dff9a",
+      "scene": "glass",
+      "params": {"liquid": "milk", "grab0": 0, "grab1": 0.1},
+      "cuts": [
+        {"at": "protein", "params": {"liquid": "milk", "grab0": 0.1, "grab1": 0.5, "dist0": 14, "dist1": 12, "az0": -0.5, "az1": -0.3}},
+        {"at": "pulls", "params": {"liquid": "milk", "grab0": 0.5, "grab1": 1}}
+      ]
+    }
+  ]
+}

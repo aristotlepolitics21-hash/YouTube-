@@ -1,0 +1,88 @@
+{
+  "module": "sneeze",
+  "title": "What Happens If You Hold In a Sneeze?",
+  "music": "ambient",
+  "punch": 0.06,
+  "max_clip": 2.6,
+  "shots": [
+    {
+      "vo": "What happens if you hold in a sneeze?",
+      "highlight": "#ff4b4b",
+      "scene": "build",
+      "params": {"press0": 0.1, "press1": 0.5, "seal": 0, "dist0": 52, "dist1": 40},
+      "cuts": [
+        {"at": "sneeze", "params": {"press0": 0.5, "press1": 0.9, "sealAt": 0.1, "tx0": 3.6, "tx1": 3.9, "ty0": -0.6, "ty1": -0.8, "dist0": 17, "dist1": 13, "az0": 0.55, "az1": 0.4}}
+      ]
+    },
+    {
+      "vo": "A sneeze blasts air out of your lungs at high pressure.",
+      "highlight": "#7fd8ff",
+      "scene": "build",
+      "params": {"press0": 0, "press1": 0.2, "seal": 0, "tx0": 0.8, "tx1": 0.8, "ty0": -7.5, "ty1": -3.5, "dist0": 20, "dist1": 22, "az0": 0.5, "az1": 0.3},
+      "cuts": [
+        {"at": "lungs", "scene": "blast", "params": {"at": 0.05}},
+        {"at": "high", "scene": "blast", "params": {"at": 0.0, "tx0": 5, "tx1": 6, "ty0": -0.8, "ty1": -0.8, "dist0": 18, "dist1": 22, "az0": 0.9, "az1": 0.7}}
+      ]
+    },
+    {
+      "vo": "But pinch your nose and close your mouth, and that blast has nowhere to go.",
+      "highlight": "#ff4b4b",
+      "scene": "build",
+      "params": {"press0": 0.3, "press1": 0.4, "sealAt": 0.25, "tx0": 4.0, "tx1": 4.2, "ty0": 0.3, "ty1": 0.1, "dist0": 14, "dist1": 11, "az0": 0.7, "az1": 0.6},
+      "cuts": [
+        {"at": "close", "params": {"press0": 0.4, "press1": 0.6, "seal": 1, "tx0": 4.0, "tx1": 4.1, "ty0": -1.4, "ty1": -1.5, "dist0": 13, "dist1": 10, "az0": 0.3, "az1": 0.45, "sealAt": -1}},
+        {"at": "nowhere", "params": {"press0": 0.6, "press1": 1, "seal": 1, "dist0": 36, "dist1": 44, "sealAt": -1, "tx0": 0.4, "tx1": 0.5, "ty0": -1.8, "ty1": -1.6, "az0": 0.32, "az1": 0.26}}
+      ]
+    },
+    {
+      "vo": "The pressure slams into your throat, your sinuses, even your ears.",
+      "highlight": "#ff4b4b",
+      "scene": "waves",
+      "params": {"l0": 0.1, "l1": 2, "l2": 2, "sinusAt": 2},
+      "cuts": [
+        {"at": "sinuses", "params": {"l0": -1, "l1": 0.05, "l2": 2, "sinusAt": 0.05, "tx0": 2.6, "tx1": 2.6, "ty0": 3.2, "ty1": 3.6, "dist0": 20, "dist1": 16, "az0": 0.45, "az1": 0.3}},
+        {"at": "ears", "params": {"l0": -1, "l1": -1, "l2": 0.05, "sinusAt": -1, "tx0": -0.5, "tx1": -0.8, "ty0": 0.8, "ty1": 1.2, "dist0": 22, "dist1": 18, "az0": -0.2, "az1": -0.35}}
+      ]
+    },
+    {
+      "vo": "Doctors in Scotland reported a man who did exactly this, and tore a hole in his windpipe.",
+      "highlight": "#ff4b4b",
+      "scene": "waves",
+      "params": {"l0": 2, "l1": 2, "l2": 2, "sinusAt": 2, "dist0": 40, "dist1": 34, "ty0": -2.5, "ty1": -3.5},
+      "cuts": [
+        {"at": "Scotland", "params": {"dist0": 30, "dist1": 26, "ty0": -4, "ty1": -4.5, "az0": -0.1, "az1": 0.1}},
+        {"at": "exactly", "scene": "build", "params": {"press0": 0.9, "press1": 1, "seal": 1, "tx0": 1.0, "tx1": 1.0, "ty0": -6.0, "ty1": -6.0, "dist0": 20, "dist1": 15, "az0": 0.4, "az1": 0.25}},
+        {"at": "tore", "scene": "tear", "params": {"at": 0.1}}
+      ]
+    },
+    {
+      "vo": "Air leaked out under the skin of his neck, and it swelled up.",
+      "highlight": "#7fd8ff",
+      "scene": "tear",
+      "params": {"at": -0.3, "dist0": 9, "dist1": 7, "az0": -0.3, "az1": -0.15},
+      "cuts": [
+        {"at": "skin", "scene": "swell", "params": {"amount": 0.45}},
+        {"at": "swelled", "scene": "swell", "params": {"start": 0.45, "amount": 0.55, "az0": -0.1, "az1": 0.15, "dist0": 24, "dist1": 22}}
+      ]
+    },
+    {
+      "vo": "He recovered, and cases like this are rare.",
+      "highlight": "#4dff9a",
+      "scene": "tear",
+      "params": {"heal": 1, "az0": 0.3, "az1": 0.1},
+      "cuts": [
+        {"at": "rare", "scene": "build", "params": {"press0": 0, "press1": 0, "seal": 0, "dist0": 40, "dist1": 46}}
+      ]
+    },
+    {
+      "vo": "So doctors say: don't hold it in. Let it out, into your elbow.",
+      "highlight": "#4dff9a",
+      "scene": "build",
+      "params": {"press0": 0.5, "press1": 0.8, "seal": 1, "tx0": 3.5, "tx1": 3.5, "ty0": -0.8, "ty1": -0.8, "dist0": 18, "dist1": 15, "az0": 0.5, "az1": 0.55},
+      "cuts": [
+        {"at": "let", "scene": "blast", "params": {"at": 0.0}},
+        {"at": "elbow", "scene": "blast", "params": {"at": 0.0, "tx0": 5.5, "tx1": 6.5, "ty0": -1, "ty1": -1.2, "dist0": 20, "dist1": 26, "az0": 1.2, "az1": 1.0}}
+      ]
+    }
+  ]
+}
