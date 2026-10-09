@@ -43,7 +43,7 @@ S("In nineteen twenty, the British astronomer Arthur Eddington noticed that a he
 S("He suggested that stars shine by fusing hydrogen into helium, and turning that missing mass into energy.",
   stage("studio", REACT, props=[P("fusion_reaction", (0, 0, 0.6), args={"hit": 0.5})], env_opts=COSMOS))
 S("Many physicists argued that the Sun simply wasn't hot enough for that. Eddington's reply was famous: he told his critics to go and find a hotter place.",
-  stage("studio", REACT, props=[P("fusion_reaction", (0, 0, 0.6), args={"hit": 0.5})], env_opts=COSMOS), still=True)
+  stage("studio", REACT, props=[P("fusion_reaction", (0, 0, 0.6), args={"hit": 0.5})], env_opts=COSMOS), still=True, still_at=0.95)
 S("In nineteen thirty nine, Hans Bethe worked out the exact nuclear reactions that power the stars. He later won the Nobel Prize for it.",
   stage("lab", cam((0, -3.0, 1.5), (0, -2.6, 1.5), (0, 1.5, 1.6)), cast=[who(BETHE, at=(0.9, 0.6, 0), turn=20, pose=PRESENT)],
         props=[P("blackboard", (-0.3, 1.5, 0), args={"lines": ["p + p → d", "d + p → ³He", "³He + ³He → ⁴He"], "at": 0.1})],
@@ -67,9 +67,9 @@ S("On Earth, we can't recreate that pressure. So we need to go much hotter: abou
   stage("studio", cam((0.6, -4, 1.3), (0.4, -3.6, 1.2), (0.6, 0, 1.1)), props=[P("thermometer", args={"top_label": "150,000,000 °C"}), P("sun_ball", (1.4, 1, 1.2), scale=0.6)],
         env_opts=COSMOS))
 S("At that temperature, matter becomes plasma: a glowing soup of bare nuclei and electrons. And no material container could hold it. It would vaporise the walls.",
-  stage("lab", cam((1.6, -2.4, 1.6), (1.2, -2.0, 1.4), (0, 0, 0.9)), props=[P("tokamak", args={"plasma": [0.0, 0.3]})], env_opts=HALL))
+  stage("lab", cam((3.0, -4.3, 2.4), (2.6, -3.8, 2.2), (0, 0, 0.8)), props=[P("tokamak", args={"plasma": [0.0, 0.3]})], env_opts=HALL))
 S("The best fuel is two heavy forms of hydrogen: deuterium, which can be extracted from ordinary seawater, and tritium, which can be made from lithium.",
-  stage("studio", REACT, props=[P("fusion_reaction", (0, 0, 0.6), args={"hit": 0.7})], texts=[T("DEUTERIUM", (-0.9, 0, 1.0), 0.09, pop=0.1), T("TRITIUM", (0.9, 0, 1.0), 0.09, pop=0.2)],
+  stage("studio", REACT, props=[P("fusion_reaction", (0, 0, 0.6), args={"hit": 0.7})], texts=[T("DEUTERIUM", (-0.7, 0, 0.95), 0.12, pop=0.1), T("TRITIUM", (0.7, 0, 0.95), 0.12, pop=0.2)],
         env_opts=COSMOS))
 S("When they fuse, they make helium, and a fast neutron carrying most of the energy.",
   stage("studio", REACT, props=[P("fusion_reaction", (0, 0, 0.6), args={"hit": 0.3})], env_opts=COSMOS))
@@ -87,7 +87,7 @@ S("In America, the physicist Lyman Spitzer designed a different magnetic bottle,
   stage("lab", cam((0, -3.4, 3.0), (0.4, -3.0, 2.8), (0, 0, 0.9), lens=30), props=[P("tokamak", args={"plasma": [0.1, 0.4], "cutaway": False}, rot=[8, -6, 0])], env_opts=HALL),
   still=True)
 S("Holding plasma steady has been compared to trying to squeeze a balloon, or hold jelly with rubber bands. Squeeze one place, and it bulges out somewhere else.",
-  stage("lab", cam((1.6, -2.4, 1.6), (1.2, -2.0, 1.4), (0, 0, 0.9)), props=[P("tokamak", args={"plasma": [0.0, 0.2]})], env_opts=HALL))
+  stage("lab", cam((3.0, -4.3, 2.4), (2.6, -3.8, 2.2), (0, 0, 0.8)), props=[P("tokamak", args={"plasma": [0.0, 0.2]})], env_opts=HALL))
 S("The design was called a tokamak, a Russian acronym for a toroidal chamber with magnetic coils: a doughnut-shaped magnetic bottle.",
   stage("lab", TOK, props=[P("tokamak", args={"plasma": [0.1, 0.5]})], texts=[T("TOKAMAK", (0, 1.5, 2.6), 0.25, pop=0.3)], env_opts=HALL))
 S("In nineteen sixty eight, a Soviet tokamak called T-three reached around ten million degrees. Western scientists were sceptical, so a British team flew to Moscow with lasers to measure it. The Soviets were right.",
@@ -146,7 +146,7 @@ S("In twenty twenty one, a team from MIT and the company Commonwealth Fusion Sys
 S("And in early twenty twenty five, tokamaks held hot plasma steady for almost eighteen minutes in China, and twenty two minutes in France, new records for staying power.",
   stage("lab", TOK, props=[P("tokamak", args={"plasma": [0.0, 0.2]})], texts=[T("22 MINUTES", (0, 1.5, 2.6), 0.25, pop=0.4)], env_opts=HALL))
 S("Why does it matter so much? Because fusion fuel is incredibly concentrated.",
-  stage("studio", cam((0, -2.0, 0.6), (0, -1.8, 0.55), (0, 0, 0.2)), props=[P("vials", args={"n": 1, "label": "D + T"})], env_opts=COSMOS), still=True,
+  stage("studio", cam((0.15, -0.85, 0.35), (0.1, -0.75, 0.32), (0, 0, 0.14), lens=70), props=[P("vials", args={"n": 1, "label": "D + T"})], env_opts=COSMOS), still=True,
   chapter="Why it matters")
 S("Fusion reactions release millions of times more energy per kilogramme than burning coal, oil or gas. A pineapple-sized amount of fuel could match thousands of tonnes of coal.",
   stage("studio", cam((0, -2.6, 1.2), (0, -2.3, 1.1), (0, 0, 0.6)), props=[P("cantaloupe", (-0.6, 0, 0), scale=1.5, args={"mould": False}),
@@ -157,7 +157,7 @@ S("It does create some radioactivity, as neutrons hit the reactor walls, but far
   stage("studio", cam((0.3, -1.2, 0.6), (0.2, -1.0, 0.55), (0, 0, 0.2)), props=[P("geiger", args={"clicks": [[0, -40], [0.4, -20], [0.8, -30]]})], env_opts=COSMOS),
   still=True)
 S("The engineering problems are still huge. The fast neutrons slowly damage the walls of the machine, and the tritium fuel must be made inside the reactor itself, from lithium.",
-  stage("lab", cam((1.6, -2.4, 1.6), (1.2, -2.0, 1.4), (0, 0, 0.9)), props=[P("tokamak", args={"plasma": [0.0, 0.2]}), P("fusion_reaction", (0, -1.2, 1.4), scale=0.3, args={"hit": 0.3})],
+  stage("lab", cam((3.0, -4.3, 2.4), (2.6, -3.8, 2.2), (0, 0, 0.8)), props=[P("tokamak", args={"plasma": [0.0, 0.2]}), P("fusion_reaction", (0, -1.2, 1.4), scale=0.3, args={"hit": 0.3})],
         env_opts=HALL), still=True)
 S("Scientists like to joke that fusion power is always thirty years away. But the experiments of the last few years have brought it closer than ever before.",
   stage("studio", cam((0, -2.4, 1.0), (0, -2.1, 0.95), (0, 0, 0.8)), texts=[T("ALWAYS 30 YEARS AWAY?", (0, 0, 1.0), 0.16, pop=0.2)], env_opts=COSMOS), still=True, still_at=0.8)

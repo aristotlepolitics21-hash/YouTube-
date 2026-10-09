@@ -2471,18 +2471,18 @@ def fusion_reaction(frames, hit=0.45):
     visible_from(n, frames, hit + 0.01)
     props.key(n, fh, location=(0, 0, 0))
     props.key(n, frames, location=(2.5, 0, -0.4))
-    fm, fs = fx.emissive("fusion_flash", (1.0, 0.85, 0.5), 0)
+    fm, fs = fx.emissive("fusion_flash", (1.0, 0.85, 0.5), 0, clear=True)
     fl = sph("fusion_flash", (0, 0, 0), 0.25, fm, parent=root)
     glow_keys(fs, frames, [(0, 0), (hit - 0.005, 0), (hit, 40), (min(1, hit + 0.15), 0)])
     props.key(fl, fh, scale=(0.4, 0.4, 0.4))
-    props.key(fl, min(frames, fh + 8), scale=(3, 3, 3))
+    props.key(fl, min(frames, fh + 8), scale=(1.6, 1.6, 1.6))
     return root
 
 
 def laser_target(frames, beams=48, fire=0.4):
     """Many laser beams converging on a tiny fuel capsule inside a gold cylinder, which flashes."""
     root = empty("laser_target")
-    lm, ls = fx.emissive("laser", (0.25, 0.3, 1.0), 0)
+    lm, ls = fx.emissive("laser", (0.25, 0.3, 1.0), 0, clear=True)
     rng = random.Random(4)
     for k in range(beams):
         u, v = rng.uniform(-1, 1), rng.uniform(0, 2 * math.pi)
@@ -2491,7 +2491,7 @@ def laser_target(frames, beams=48, fire=0.4):
         draw_on(o, frames, fire - 0.1, fire)
     glow_keys(ls, frames, [(0, 0), (fire - 0.1, 3), (fire + 0.05, 3), (fire + 0.15, 0)])
     cyl("hohlraum", (0, 0, 0), 0.05, 0.12, mat("gold", (1.0, 0.75, 0.25), 0.2, 1.0), parent=root)
-    fm, fs = fx.emissive("implosion", (1.0, 0.9, 0.6), 0)
+    fm, fs = fx.emissive("implosion", (1.0, 0.9, 0.6), 0, clear=True)
     sph("capsule_flash", (0, 0, 0), 0.08, fm, parent=root)
     glow_keys(fs, frames, [(0, 0), (fire, 0), (fire + 0.02, 60), (fire + 0.12, 0)])
     return root
