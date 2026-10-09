@@ -5,3 +5,4 @@ out/
 *.onnx
 *.onnx.json
 voices/
+render3d/publish/bg/

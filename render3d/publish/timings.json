@@ -1,0 +1,2836 @@
+{
+ "aidisease": {
+  "total": 483.2916666666667,
+  "shots": [
+   {
+    "i": 1,
+    "start": 0.0,
+    "scene": "body_scan",
+    "vo": "Imagine getting a phone call from your doctor. You feel completely fine. No pain, no symptoms, nothing at all."
+   },
+   {
+    "i": 2,
+    "start": 7.25,
+    "scene": "body_scan",
+    "vo": "But a computer has spotted something in your health data that no human could see."
+   },
+   {
+    "i": 3,
+    "start": 11.96,
+    "scene": "risk_dashboard",
+    "vo": "It's predicting that you'll get sick. Not today. Maybe not this year. But the warning signs are already there."
+   },
+   {
+    "i": 4,
+    "start": 17.96,
+    "scene": "net",
+    "vo": "This isn't science fiction. AI is already predicting kidney failure, cancer, heart problems and even Parkinson's disease, sometimes years before a diagnosis. So how does it actually work?"
+   },
+   {
+    "i": 5,
+    "start": 31.62,
+    "scene": "crowd_records",
+    "vo": "Diseases rarely appear out of nowhere. Long before you feel anything, tiny changes start showing up."
+   },
+   {
+    "i": 6,
+    "start": 38.33,
+    "scene": "body_scan",
+    "vo": "In your blood tests, your heartbeat, your scans, even the way you move and sleep."
+   },
+   {
+    "i": 7,
+    "start": 43.83,
+    "scene": "hospital_data",
+    "vo": "The problem is that these signals are faint, and scattered across thousands of data points. A doctor seeing you for fifteen minutes can't possibly connect them all."
+   },
+   {
+    "i": 8,
+    "start": 53.96,
+    "scene": "chart_panel",
+    "vo": "Doctors have used risk calculators for decades, built from a handful of factors like age, cholesterol and blood pressure. AI is different, because it can weigh thousands of factors at once, including ones nobody thought to look at."
+   },
+   {
+    "i": 9,
+    "start": 69.46,
+    "scene": "net",
+    "vo": "You train a machine learning model on the records of hundreds of thousands, sometimes millions, of patients. And you show it who eventually got sick, and who didn't."
+   },
+   {
+    "i": 10,
+    "start": 79.63,
+    "scene": "net",
+    "vo": "Layer by layer, it adjusts millions of internal numbers, until it learns the subtle combinations of signals that came before the disease."
+   },
+   {
+    "i": 11,
+    "start": 88.67,
+    "scene": "net",
+    "vo": "Nobody writes these rules by hand. In fact, the people who build these systems often can't fully explain which signals the model is relying on. That's called the black box problem."
+   },
+   {
+    "i": 12,
+    "start": 100.13,
+    "scene": "risk_dashboard",
+    "vo": "When it sees a new patient whose data looks like those early patterns, it raises a flag. It doesn't diagnose you. It gives a risk score, a warning that something may be coming."
+   },
+   {
+    "i": 13,
+    "start": 111.0,
+    "scene": "kidney",
+    "vo": "One of the first big demonstrations came in 2019. Researchers at DeepMind trained a model on the health records of more than seven hundred thousand US veterans."
+   },
+   {
+    "i": 14,
+    "start": 121.54,
+    "scene": "kidney",
+    "vo": "The target was acute kidney injury, a sudden drop in kidney function that can turn dangerous quickly for patients in hospital."
+   },
+   {
+    "i": 15,
+    "start": 130.08,
+    "scene": "risk_dashboard",
+    "vo": "The model predicted more than half of all cases up to forty-eight hours before they would normally be detected, and about nine in ten of the cases severe enough to need dialysis."
+   },
+   {
+    "i": 16,
+    "start": 140.62,
+    "scene": "chart_panel",
+    "vo": "But there was a catch. For every correct alert, it raised about two false alarms. That's one of the biggest challenges in this whole field, and we'll come back to it."
+   },
+   {
+    "i": 17,
+    "start": 149.88,
+    "scene": "eye_scan",
+    "vo": "Some of the most surprising predictions come from your eyes. The retina is the only place in the body where doctors can look directly at blood vessels and nerves without cutting you open."
+   },
+   {
+    "i": 18,
+    "start": 160.88,
+    "scene": "medical_image",
+    "vo": "In 2018, Google researchers showed that AI could estimate a person's age, blood pressure, smoking status and risk of a heart attack or stroke, just from a photo of the back of the eye."
+   },
+   {
+    "i": 19,
+    "start": 174.71,
+    "scene": "medical_image",
+    "vo": "Doctors didn't even know some of those signals were there. The AI found patterns in the tiny branching vessels that humans had never noticed."
+   },
+   {
+    "i": 20,
+    "start": 183.12,
+    "scene": "eye_scan",
+    "vo": "Researchers are now testing whether eye scans can also hint at kidney disease and even early signs of dementia, though that work is still at an early stage."
+   },
+   {
+    "i": 21,
+    "start": 192.83,
+    "scene": "cells_tumor",
+    "vo": "Cancer is where early warning matters most. Caught early, many cancers are far more treatable. Caught late, the options shrink fast."
+   },
+   {
+    "i": 22,
+    "start": 201.25,
+    "scene": "medical_image",
+    "vo": "At MIT, researchers built a model called Mirai that looks at a mammogram and predicts a woman's risk of developing breast cancer over the next five years."
+   },
+   {
+    "i": 23,
+    "start": 211.54,
+    "scene": "medical_image",
+    "vo": "It isn't only looking for a tumor that's already there. It looks for subtle patterns in the tissue that suggest one may develop, and in testing it beat the standard risk models doctors were using."
+   },
+   {
+    "i": 24,
+    "start": 222.67,
+    "scene": "body_scan",
+    "vo": "Pancreatic cancer is one of the deadliest cancers, because it usually hides until it's too late. In 2023, researchers trained AI on the medical histories of millions of people in Denmark and the United States."
+   },
+   {
+    "i": 25,
+    "start": 236.83,
+    "scene": "risk_dashboard",
+    "vo": "Using only past diagnoses and doctor visits, it flagged people at high risk up to three years before they were diagnosed."
+   },
+   {
+    "i": 26,
+    "start": 245.08,
+    "scene": "crowd_records",
+    "vo": "That could let doctors focus expensive scans on the small group of people at the highest risk, instead of everyone."
+   },
+   {
+    "i": 27,
+    "start": 252.21,
+    "scene": "heart_ecg",
+    "vo": "Your heart is constantly broadcasting information. Every heartbeat creates an electrical signal that a simple ECG can record in seconds."
+   },
+   {
+    "i": 28,
+    "start": 261.71,
+    "scene": "heart_ecg",
+    "vo": "Researchers at the Mayo Clinic trained AI to spot a weak heart pump from an ordinary ECG, something that normally takes an ultrasound to detect."
+   },
+   {
+    "i": 29,
+    "start": 271.25,
+    "scene": "heart_ecg",
+    "vo": "Even more striking, people the AI flagged who seemed healthy at the time were several times more likely to develop the problem over the following years."
+   },
+   {
+    "i": 30,
+    "start": 280.83,
+    "scene": "neurons",
+    "vo": "Then there's Parkinson's disease. By the time the classic tremor appears, many of the brain cells that make dopamine are already gone."
+   },
+   {
+    "i": 31,
+    "start": 289.42,
+    "scene": "smartwatch",
+    "vo": "In 2023, scientists analyzed data from more than a hundred thousand people in the UK who had worn a motion-tracking wristband for just one week."
+   },
+   {
+    "i": 32,
+    "start": 299.96,
+    "scene": "net",
+    "vo": "Their model picked up subtle changes in how people moved, and identified many who would be diagnosed with Parkinson's up to seven years later."
+   },
+   {
+    "i": 33,
+    "start": 308.5,
+    "scene": "neurons",
+    "vo": "That matters, because if future treatments can slow the disease, the earlier they start, the more of the brain they could protect."
+   },
+   {
+    "i": 34,
+    "start": 316.17,
+    "scene": "dna_scan",
+    "vo": "And AI can combine all of this: genes, blood tests, scans, wearables and medical history, into one picture of your health that updates every time new data comes in."
+   },
+   {
+    "i": 35,
+    "start": 328.38,
+    "scene": "smartwatch",
+    "vo": "Picture this. Your smartwatch notices your resting heart rate slowly creeping up. Your latest blood test is technically normal, but slightly off from your own baseline."
+   },
+   {
+    "i": 36,
+    "start": 338.92,
+    "scene": "net",
+    "vo": "On their own, none of these would worry anyone. Together, the AI recognizes a pattern it has seen thousands of times in people who later became ill."
+   },
+   {
+    "i": 37,
+    "start": 348.67,
+    "scene": "doctor_ai",
+    "vo": "So your doctor calls you in early for a simple test. And something that could have become serious is caught while it's still easy to treat."
+   },
+   {
+    "i": 38,
+    "start": 356.83,
+    "scene": "crowd_records",
+    "vo": "So why isn't this everywhere yet? Because predicting disease turns out to be really hard to get right."
+   },
+   {
+    "i": 39,
+    "start": 363.0,
+    "scene": "chart_panel",
+    "vo": "First, false alarms. If you screen thousands of healthy people, even a small error rate means lots of worried patients, and lots of expensive tests they didn't need."
+   },
+   {
+    "i": 40,
+    "start": 373.71,
+    "scene": "hospital_data",
+    "vo": "And doctors who get too many alerts start ignoring them. It's called alert fatigue, and it can turn a good system into a useless one."
+   },
+   {
+    "i": 41,
+    "start": 381.92,
+    "scene": "chart_panel",
+    "vo": "Second, a model that works in one hospital can fail in another. When independent researchers tested a widely used sepsis warning tool in 2021, it missed about two thirds of sepsis cases."
+   },
+   {
+    "i": 42,
+    "start": 394.88,
+    "scene": "chart_panel",
+    "vo": "Third, bias. In 2019, researchers found that an algorithm used for millions of US patients underestimated how sick Black patients were, because it used past healthcare spending as a stand-in for health needs."
+   },
+   {
+    "i": 43,
+    "start": 409.92,
+    "scene": "crowd_records",
+    "vo": "Less money had been spent on Black patients who were just as ill, so the algorithm learned the wrong lesson. AI learns from our data, including its blind spots."
+   },
+   {
+    "i": 44,
+    "start": 420.12,
+    "scene": "chart_panel",
+    "vo": "And then there's privacy. These systems need enormous amounts of personal health data. Who gets to use it, and who else might want to know your risk score?"
+   },
+   {
+    "i": 45,
+    "start": 429.12,
+    "scene": "doctor_ai",
+    "vo": "That's why most experts see AI as a second pair of eyes for doctors, not a replacement. The machine spots the pattern. The doctor decides what it means for you."
+   },
+   {
+    "i": 46,
+    "start": 439.54,
+    "scene": "chart_panel",
+    "vo": "Some of these tools are already in use. In 2018, the FDA authorized an AI system that screens eye photos for diabetic eye disease without a specialist needing to read the images."
+   },
+   {
+    "i": 47,
+    "start": 451.83,
+    "scene": "body_scan",
+    "vo": "In the future, you might wear a device that quietly tracks your heart, your sleep and your movement, while an AI compares your data with millions of others."
+   },
+   {
+    "i": 48,
+    "start": 460.58,
+    "scene": "risk_dashboard",
+    "vo": "Instead of treating disease after it shows up, medicine could shift toward stopping it before it ever starts."
+   },
+   {
+    "i": 49,
+    "start": 468.21,
+    "scene": "net",
+    "vo": "The technology to glimpse the future of your health is already here. The real question is how carefully we choose to use it. If you found this fascinating, subscribe. Next up: could tiny nanobots one day repair your body from the inside?"
+   }
+  ]
+ },
+ "nanobots": {
+  "total": 517.6249999999999,
+  "shots": [
+   {
+    "i": 1,
+    "start": 0.0,
+    "scene": "bloodstream",
+    "vo": "Right now, roughly twenty-five trillion red blood cells are racing through your blood vessels. Now imagine something else in there with them."
+   },
+   {
+    "i": 2,
+    "start": 8.38,
+    "scene": "nanobot_closeup",
+    "vo": "A machine. Smaller than a single cell. Built to swim through your body, find damage, and fix it from the inside. No surgery. No scars."
+   },
+   {
+    "i": 3,
+    "start": 18.04,
+    "scene": "body_bots",
+    "vo": "Clearing a blocked artery. Destroying a tumor. Repairing a damaged cell. It sounds like science fiction, but scientists are already building the first versions. So how close are we, really?"
+   },
+   {
+    "i": 4,
+    "start": 30.0,
+    "scene": "title_card",
+    "vo": "The idea goes back to 1959, when the physicist Richard Feynman gave a famous talk called There's Plenty of Room at the Bottom."
+   },
+   {
+    "i": 5,
+    "start": 38.71,
+    "scene": "body_bots",
+    "vo": "He imagined machines so small they could travel through the body and operate from within. He credited a friend with the idea, which he described as swallowing the surgeon."
+   },
+   {
+    "i": 6,
+    "start": 49.04,
+    "scene": "bloodstream",
+    "vo": "Seven years later, the film Fantastic Voyage shrank a submarine full of doctors and sent it into a patient's bloodstream. The dream was born. Building it turned out to be far harder."
+   },
+   {
+    "i": 7,
+    "start": 61.04,
+    "scene": "scale_zoom",
+    "vo": "First, let's get a sense of scale. A human hair is roughly eighty thousand nanometers wide. A nanometer is a billionth of a meter."
+   },
+   {
+    "i": 8,
+    "start": 69.21,
+    "scene": "scale_zoom",
+    "vo": "A red blood cell is about seven or eight thousand nanometers across. A typical bacterium, around a thousand. A virus, about a hundred."
+   },
+   {
+    "i": 9,
+    "start": 79.04,
+    "scene": "scale_zoom",
+    "vo": "The tiny robots scientists are building range from tens of nanometers up to a few micrometers. And at that size, the world works very differently."
+   },
+   {
+    "i": 10,
+    "start": 88.04,
+    "scene": "low_reynolds",
+    "vo": "At the scale of a cell, water doesn't behave like water. It feels thick and sticky, like swimming through honey. The moment you stop pushing, you stop dead."
+   },
+   {
+    "i": 11,
+    "start": 97.88,
+    "scene": "low_reynolds",
+    "vo": "That means a simple back-and-forth stroke gets you nowhere. Open and close like a scallop, and you just slide forward, then right back where you started."
+   },
+   {
+    "i": 12,
+    "start": 107.12,
+    "scene": "low_reynolds",
+    "vo": "Bacteria solved this problem billions of years ago. Many of them swim by spinning a corkscrew-shaped tail, which screws them forward through the liquid."
+   },
+   {
+    "i": 13,
+    "start": 116.79,
+    "scene": "low_reynolds",
+    "vo": "So engineers copied them. Many microrobots are tiny magnetic corkscrews, and they don't carry a motor at all."
+   },
+   {
+    "i": 14,
+    "start": 124.25,
+    "scene": "magnet_control",
+    "vo": "Instead, a rotating magnetic field outside the body twists the corkscrew, and it drills its way forward. Change the direction of the field, and you steer the robot."
+   },
+   {
+    "i": 15,
+    "start": 135.38,
+    "scene": "magnet_control",
+    "vo": "These magnetic fields are weak enough to pass harmlessly through the body. Hospital MRI scanners use far stronger ones every day."
+   },
+   {
+    "i": 16,
+    "start": 143.75,
+    "scene": "magnet_control",
+    "vo": "Researchers have steered microrobots this way through fluid-filled channels and inside living animals. Some even move as swarms of thousands, guided together by the same field."
+   },
+   {
+    "i": 17,
+    "start": 155.54,
+    "scene": "magnet_control",
+    "vo": "One system, developed in Zurich, used a ring of electromagnets to steer a tiny device inside the eye, a place where surgeons need extreme precision."
+   },
+   {
+    "i": 18,
+    "start": 166.17,
+    "scene": "nanobot_closeup",
+    "vo": "Power is the next big problem. There's no battery small enough to fit inside a nanobot. So scientists borrow energy from outside: magnetic fields, ultrasound, light, or chemicals already in the body."
+   },
+   {
+    "i": 19,
+    "start": 180.46,
+    "scene": "nanobot_closeup",
+    "vo": "Some early microrobots were coated with platinum and dropped into hydrogen peroxide. The reaction spat out bubbles that jetted them forward. But peroxide is toxic, so researchers look for fuels the body already has, like sugar or urea."
+   },
+   {
+    "i": 20,
+    "start": 196.54,
+    "scene": "bladder_bots",
+    "vo": "In 2024, a team in Barcelona built nanobots powered by an enzyme that breaks down urea, a chemical found in urine. Inside the bladder, that reaction pushes them along."
+   },
+   {
+    "i": 21,
+    "start": 209.33,
+    "scene": "bladder_bots",
+    "vo": "Loaded with a radioactive drug, a single dose shrank bladder tumors in mice by about ninety percent."
+   },
+   {
+    "i": 22,
+    "start": 216.21,
+    "scene": "dna_origami",
+    "vo": "Other nanorobots aren't made of metal at all. They're folded out of DNA. Scientists can program strands of DNA to fold themselves into almost any shape. It's called DNA origami."
+   },
+   {
+    "i": 23,
+    "start": 227.87,
+    "scene": "dna_origami",
+    "vo": "In 2018, researchers built a DNA nanorobot shaped like a tiny tube, less than a hundred nanometers long, with a clotting drug hidden inside."
+   },
+   {
+    "i": 24,
+    "start": 238.46,
+    "scene": "dna_origami",
+    "vo": "The tube stays locked shut until it touches a protein found on the blood vessels that feed tumors. Then it springs open."
+   },
+   {
+    "i": 25,
+    "start": 246.75,
+    "scene": "tumor_vessel",
+    "vo": "The drug triggers clots that cut off the tumor's blood supply. In mice, tumors were starved and shrank, while healthy tissue was largely left alone."
+   },
+   {
+    "i": 26,
+    "start": 255.75,
+    "scene": "bloodstream",
+    "vo": "Another idea is to recruit bacteria as tiny robots. Some bacteria naturally swim toward low-oxygen areas, like the core of a tumor. In 2016, researchers loaded drugs onto magnetic bacteria and steered them into tumors in mice."
+   },
+   {
+    "i": 27,
+    "start": 273.96,
+    "scene": "lnp",
+    "vo": "Here's something surprising. You may already have had nanotechnology inside you. The mRNA COVID-19 vaccines are delivered in lipid nanoparticles, tiny bubbles of fat around a hundred nanometers across."
+   },
+   {
+    "i": 28,
+    "start": 288.08,
+    "scene": "lnp",
+    "vo": "They protect the fragile mRNA and help it slip into your cells. They're not robots. They can't steer or think. But billions of doses have shown that nanoscale delivery can work in people."
+   },
+   {
+    "i": 29,
+    "start": 300.38,
+    "scene": "lnp",
+    "vo": "Researchers are also designing particles that only release their drug when they sense a specific signal, like the slightly acidic environment around a tumor."
+   },
+   {
+    "i": 30,
+    "start": 310.25,
+    "scene": "lnp",
+    "vo": "Nanomedicine isn't brand new, either. In 1995, a cancer drug called Doxil was approved. It packs chemotherapy inside tiny fat bubbles called liposomes, which helps reduce some of the drug's side effects."
+   },
+   {
+    "i": 31,
+    "start": 325.58,
+    "scene": "xenobot",
+    "vo": "Some scientists are going even further, building robots out of living cells. In 2020, researchers assembled frog cells into tiny body shapes designed by an AI. They called them xenobots."
+   },
+   {
+    "i": 32,
+    "start": 339.29,
+    "scene": "xenobot",
+    "vo": "Less than a millimeter across, they could swim and push particles around. A later version could even gather loose cells into copies of itself."
+   },
+   {
+    "i": 33,
+    "start": 348.5,
+    "scene": "xenobot",
+    "vo": "Other teams have even built so-called spermbots, attaching sperm cells to tiny magnetic tubes, and using their powerful swimming to carry drugs to cancer cells in the lab."
+   },
+   {
+    "i": 34,
+    "start": 360.08,
+    "scene": "immune_attack",
+    "vo": "So why don't we have repair robots yet? Because the body is extremely good at getting rid of intruders."
+   },
+   {
+    "i": 35,
+    "start": 366.46,
+    "scene": "immune_attack",
+    "vo": "Immune cells called macrophages patrol your blood and tissues, swallowing anything that looks foreign. Many particles are filtered out by the liver and spleen before they ever reach their target."
+   },
+   {
+    "i": 36,
+    "start": 378.29,
+    "scene": "title_card",
+    "vo": "One widely cited analysis of studies in animals found that, typically, less than one percent of injected nanoparticles actually reach a tumor."
+   },
+   {
+    "i": 37,
+    "start": 388.37,
+    "scene": "bloodstream",
+    "vo": "Then there's navigation. Inside the body, there's no GPS. A robot has to find one tiny target among trillions of cells, in a current that keeps pushing it around."
+   },
+   {
+    "i": 38,
+    "start": 399.29,
+    "scene": "bloodstream",
+    "vo": "One solution is to track robots with medical imaging, like ultrasound or MRI, so doctors can watch them in real time and steer them, almost like a remote-controlled car."
+   },
+   {
+    "i": 39,
+    "start": 411.79,
+    "scene": "nanobot_closeup",
+    "vo": "Building them is hard too. Making millions of identical machines, each smaller than a cell, safely and cheaply, is still a huge challenge."
+   },
+   {
+    "i": 40,
+    "start": 420.96,
+    "scene": "immune_attack",
+    "vo": "And they have to be safe. Anything left behind in the body must break down harmlessly, without causing inflammation or toxic side effects."
+   },
+   {
+    "i": 41,
+    "start": 429.58,
+    "scene": "respirocyte",
+    "vo": "Still, scientists have sketched what might one day be possible. In 1998, Robert Freitas designed an artificial red blood cell he called a respirocyte."
+   },
+   {
+    "i": 42,
+    "start": 440.83,
+    "scene": "respirocyte",
+    "vo": "On paper, it could carry hundreds of times more oxygen than a natural red blood cell. It's purely a concept. Nobody can build one yet."
+   },
+   {
+    "i": 43,
+    "start": 450.17,
+    "scene": "body_bots",
+    "vo": "Future nanobots might patrol your arteries, clearing fatty plaque before it causes a heart attack."
+   },
+   {
+    "i": 44,
+    "start": 456.83,
+    "scene": "cell_repair",
+    "vo": "Or enter damaged cells and repair them from within. That kind of repair is still far beyond anything we can build today."
+   },
+   {
+    "i": 45,
+    "start": 464.46,
+    "scene": "bloodstream",
+    "vo": "Others imagine nanobots that monitor your blood around the clock, warning you about infections or cancer long before symptoms appear."
+   },
+   {
+    "i": 46,
+    "start": 473.29,
+    "scene": "gray_goo",
+    "vo": "Some people have worried about the opposite: self-copying nanobots running out of control and turning everything into gray goo. That fear came from a 1986 book, but most researchers, including its author, now consider it very unlikely."
+   },
+   {
+    "i": 47,
+    "start": 489.25,
+    "scene": "magnet_control",
+    "vo": "The realistic future is gradual. First, smarter drug delivery. Then robots that can be steered to a target and tested in clinical trials."
+   },
+   {
+    "i": 48,
+    "start": 498.54,
+    "scene": "bloodstream",
+    "vo": "So, can nanobots repair your body from inside? Not yet. But the first tiny machines are already swimming, steering, and fighting tumors in the lab."
+   },
+   {
+    "i": 49,
+    "start": 508.37,
+    "scene": "nanobot_closeup",
+    "vo": "The fantastic voyage has begun. If you enjoyed this, subscribe. Next time: how CRISPR lets scientists rewrite human DNA."
+   }
+  ]
+ },
+ "crispr": {
+  "total": 516.5833333333334,
+  "shots": [
+   {
+    "i": 1,
+    "start": 0.0,
+    "scene": "dna_hero",
+    "vo": "Inside almost every cell of your body is a set of instructions about two meters long, written in just four chemical letters. Your DNA."
+   },
+   {
+    "i": 2,
+    "start": 9.79,
+    "scene": "genome_scale",
+    "vo": "Around three billion pairs of those letters make up your genome. And a single wrong letter in the wrong place can cause a lifelong disease."
+   },
+   {
+    "i": 3,
+    "start": 18.21,
+    "scene": "cas9",
+    "vo": "For most of history, there was nothing we could do about that. Then scientists found a tool that can locate one specific spot in all that DNA, and change it. It's called CRISPR."
+   },
+   {
+    "i": 4,
+    "start": 28.88,
+    "scene": "dna_hero",
+    "vo": "It's already transforming the lives of patients who had no other options. And it raises some of the hardest ethical questions in science. So how does it actually work?"
+   },
+   {
+    "i": 5,
+    "start": 39.33,
+    "scene": "virus_bacteria",
+    "vo": "Strangely, CRISPR wasn't invented by humans. It comes from bacteria. Bacteria are constantly attacked by viruses called bacteriophages, which inject their own DNA and hijack the cell."
+   },
+   {
+    "i": 6,
+    "start": 51.96,
+    "scene": "virus_bacteria",
+    "vo": "To fight back, many bacteria evolved a kind of immune system, one with a memory."
+   },
+   {
+    "i": 7,
+    "start": 58.04,
+    "scene": "crispr_array",
+    "vo": "The story began with a mystery. In 1987, Japanese researchers noticed strange repeating patterns in bacterial DNA. Years later, the Spanish scientist Francisco Mojica realized the pieces between the repeats matched the DNA of viruses. He named them CRISPR."
+   },
+   {
+    "i": 8,
+    "start": 75.96,
+    "scene": "crispr_array",
+    "vo": "When a bacterium survives an attack, it snips out a short piece of the virus's DNA and stores it in its own genome, in a special region of repeating sequences that scientists named CRISPR."
+   },
+   {
+    "i": 9,
+    "start": 89.38,
+    "scene": "crispr_array",
+    "vo": "It works like a gallery of wanted posters. Each stored piece is a mugshot of a virus the bacterium has met before."
+   },
+   {
+    "i": 10,
+    "start": 97.04,
+    "scene": "cas9",
+    "vo": "If that virus attacks again, the bacterium copies the matching poster into RNA. The RNA guides a protein called Cas9 along the DNA, and when it finds a match, Cas9 cuts it. The invader is destroyed."
+   },
+   {
+    "i": 11,
+    "start": 111.33,
+    "scene": "virus_bacteria",
+    "vo": "In 2007, scientists at a food company proved the idea, using bacteria that make yogurt and cheese. When those bacteria survived a virus, they stored a piece of it, and became resistant to that virus from then on."
+   },
+   {
+    "i": 12,
+    "start": 125.67,
+    "scene": "title_card",
+    "vo": "In 2012, Jennifer Doudna and Emmanuelle Charpentier showed that this bacterial system could be reprogrammed. Change the guide RNA, and Cas9 will cut any DNA sequence you choose."
+   },
+   {
+    "i": 13,
+    "start": 138.33,
+    "scene": "title_card",
+    "vo": "It was such a big deal that only eight years later, they won the Nobel Prize in Chemistry."
+   },
+   {
+    "i": 14,
+    "start": 144.25,
+    "scene": "cas9",
+    "vo": "Scientists could already edit genes before CRISPR. But older tools meant building a brand new protein for every target, which could take months. With CRISPR, you just write a new guide RNA. It's cheap, fast, and works in almost any organism."
+   },
+   {
+    "i": 15,
+    "start": 160.38,
+    "scene": "cas9",
+    "vo": "Here's how it works in a human cell. Scientists design a short guide RNA, about twenty letters long, that matches the exact spot they want to change."
+   },
+   {
+    "i": 16,
+    "start": 170.25,
+    "scene": "cas9",
+    "vo": "Cas9 carries the guide into the nucleus and scans the DNA. When the letters match, it unzips the double helix and cuts through both strands."
+   },
+   {
+    "i": 17,
+    "start": 179.67,
+    "scene": "repair",
+    "vo": "Then the cell rushes to repair the break. Usually it just glues the ends back together. But that repair is messy, and often adds or deletes a few letters."
+   },
+   {
+    "i": 18,
+    "start": 188.83,
+    "scene": "repair",
+    "vo": "That sounds bad, but it's useful. A few wrong letters can switch a gene off completely. That's one way CRISPR disables a gene."
+   },
+   {
+    "i": 19,
+    "start": 196.83,
+    "scene": "repair",
+    "vo": "Or scientists can supply a piece of template DNA, and the cell may copy it into the gap. That way, you can rewrite the sequence, or insert something new."
+   },
+   {
+    "i": 20,
+    "start": 207.08,
+    "scene": "base_edit",
+    "vo": "Newer versions go even further. Base editors, first reported in 2016, don't cut through both strands at all. They chemically change a single letter into another. A pencil, instead of scissors."
+   },
+   {
+    "i": 21,
+    "start": 220.33,
+    "scene": "base_edit",
+    "vo": "And prime editing, unveiled in 2019, can search and replace short stretches of DNA with even more control."
+   },
+   {
+    "i": 22,
+    "start": 229.04,
+    "scene": "base_edit",
+    "vo": "If regular CRISPR is a pair of scissors, base editing is more like a pencil and eraser, fixing a single letter without breaking the strand."
+   },
+   {
+    "i": 23,
+    "start": 238.67,
+    "scene": "sickle",
+    "vo": "The first big success came with sickle cell disease. It's caused by a single letter change in a gene for hemoglobin, the molecule that carries oxygen in your blood."
+   },
+   {
+    "i": 24,
+    "start": 249.17,
+    "scene": "sickle",
+    "vo": "It makes red blood cells stiff and curved like a sickle. They get stuck in small blood vessels, causing episodes of excruciating pain, organ damage, and shorter lives."
+   },
+   {
+    "i": 25,
+    "start": 260.79,
+    "scene": "gene_switch",
+    "vo": "Here's the clever part. Before birth, we all make a different version of hemoglobin, called fetal hemoglobin. After birth, a gene called BCL11A helps switch it off."
+   },
+   {
+    "i": 26,
+    "start": 272.17,
+    "scene": "gene_switch",
+    "vo": "So instead of fixing the faulty gene directly, scientists used CRISPR to disable part of that switch. The body starts making fetal hemoglobin again, which helps prevent the cells from sickling."
+   },
+   {
+    "i": 27,
+    "start": 284.96,
+    "scene": "ex_vivo",
+    "vo": "Doctors collect a patient's own blood stem cells and edit them in the lab. After strong chemotherapy clears space in the bone marrow, the edited cells are infused back, where they start making healthier red blood cells."
+   },
+   {
+    "i": 28,
+    "start": 298.58,
+    "scene": "title_card",
+    "vo": "In late 2023, this treatment, called Casgevy, became the first CRISPR therapy approved anywhere, first in the United Kingdom, and then in the United States."
+   },
+   {
+    "i": 29,
+    "start": 309.83,
+    "scene": "sickle",
+    "vo": "In its main trial, almost every patient with severe sickle cell disease went at least a year without a single pain crisis."
+   },
+   {
+    "i": 30,
+    "start": 317.75,
+    "scene": "ex_vivo",
+    "vo": "The same treatment was also approved for beta thalassemia, another inherited blood disorder, where patients had needed blood transfusions every few weeks. Most patients in the trial no longer needed them."
+   },
+   {
+    "i": 31,
+    "start": 330.29,
+    "scene": "liver_lnp",
+    "vo": "Editing cells outside the body is one thing. Editing inside it is harder. In 2021, researchers infused CRISPR, packed into lipid nanoparticles, directly into patients' blood for the first time."
+   },
+   {
+    "i": 32,
+    "start": 344.08,
+    "scene": "liver_lnp",
+    "vo": "The particles naturally travel to the liver, where the editor switched off a gene making a harmful protein. Levels of that protein dropped dramatically."
+   },
+   {
+    "i": 33,
+    "start": 354.0,
+    "scene": "title_card",
+    "vo": "And in 2025, doctors in Philadelphia treated a baby named KJ with a base editor designed just for him, to correct a rare and dangerous mutation affecting his liver. It went from idea to treatment in about six months."
+   },
+   {
+    "i": 34,
+    "start": 368.88,
+    "scene": "crops",
+    "vo": "CRISPR is also changing food. Scientists have edited crops to resist disease, cope with drought, or stay fresh longer, often by switching off a single gene."
+   },
+   {
+    "i": 35,
+    "start": 380.46,
+    "scene": "crops",
+    "vo": "In 2021, Japan began selling one of the first CRISPR-edited foods: a tomato with extra amounts of a compound called GABA. Because no foreign DNA is added, some countries regulate edited crops more lightly than traditional GMOs."
+   },
+   {
+    "i": 36,
+    "start": 397.04,
+    "scene": "mosquito",
+    "vo": "Some are even going after malaria. A gene drive uses CRISPR to push a genetic change through an entire mosquito population, far faster than normal inheritance would allow."
+   },
+   {
+    "i": 37,
+    "start": 408.62,
+    "scene": "mosquito",
+    "vo": "In lab experiments, gene drives have wiped out caged populations of malaria-carrying mosquitoes. Releasing them into the wild is still being debated, because the effects could ripple across ecosystems."
+   },
+   {
+    "i": 38,
+    "start": 422.21,
+    "scene": "embryo",
+    "vo": "Which brings us to the darkest chapter. In 2018, a Chinese scientist named He Jiankui announced that he had edited human embryos, and that twin girls had been born."
+   },
+   {
+    "i": 39,
+    "start": 432.92,
+    "scene": "embryo",
+    "vo": "He said he was trying to make them resistant to HIV. Scientists around the world condemned the experiment as reckless and unethical, and he was sentenced to three years in prison."
+   },
+   {
+    "i": 40,
+    "start": 443.71,
+    "scene": "embryo",
+    "vo": "In 2019, He Jiankui was sentenced to three years in prison. Scientists called for strict rules, and in many countries, editing embryos for pregnancy is illegal."
+   },
+   {
+    "i": 41,
+    "start": 455.62,
+    "scene": "dna_hero",
+    "vo": "Editing an embryo changes every cell, including eggs and sperm, so those changes can be passed on to future generations. No one can yet predict all the consequences."
+   },
+   {
+    "i": 42,
+    "start": 467.08,
+    "scene": "cas9",
+    "vo": "There are technical risks too. Cas9 sometimes cuts in the wrong place, known as off-target editing, and some edited cells can end up with unexpected changes."
+   },
+   {
+    "i": 43,
+    "start": 478.25,
+    "scene": "title_card",
+    "vo": "And there's the price. Casgevy costs over two million dollars per patient in the United States. Making these cures affordable may turn out to be as hard as inventing them."
+   },
+   {
+    "i": 44,
+    "start": 488.62,
+    "scene": "dna_hero",
+    "vo": "Even so, the pace is breathtaking. Researchers are testing gene-editing therapies for inherited blindness, high cholesterol, cancer and more."
+   },
+   {
+    "i": 45,
+    "start": 498.54,
+    "scene": "cas9",
+    "vo": "In a few decades, we've gone from noticing a strange pattern in bacterial DNA, to rewriting human genes. The question now isn't whether we can rewrite our DNA. It's how wisely we choose to. If you enjoyed this, subscribe. Next up: what happens if AI becomes smarter than humans?"
+   }
+  ]
+ },
+ "agi": {
+  "total": 527.5416666666667,
+  "shots": [
+   {
+    "i": 1,
+    "start": 0.0,
+    "scene": "robot_mind",
+    "vo": "For as long as humans have existed, we've been the smartest thing on the planet. That's how a fairly weak, slow animal ended up shaping the entire world."
+   },
+   {
+    "i": 2,
+    "start": 9.12,
+    "scene": "brain_vs_chip",
+    "vo": "But what happens if we build something smarter than us? Not just better at chess, or math, but better at everything?"
+   },
+   {
+    "i": 3,
+    "start": 16.29,
+    "scene": "net",
+    "vo": "Some of the world's leading scientists think this could happen within our lifetimes. Others think it's decades away, or may never happen at all. So what would it actually mean?"
+   },
+   {
+    "i": 4,
+    "start": 26.42,
+    "scene": "robot_mind",
+    "vo": "Researchers call this artificial general intelligence, or AGI: a machine that can learn and do almost any mental task a human can. Go beyond that, and you get what's called superintelligence, something smarter than the smartest humans in every field."
+   },
+   {
+    "i": 5,
+    "start": 41.96,
+    "scene": "title_card",
+    "vo": "The question is old. In 1950, the mathematician Alan Turing asked, can machines think? He proposed a test: if a machine could hold a conversation you couldn't tell apart from a human's, maybe we should say it thinks."
+   },
+   {
+    "i": 6,
+    "start": 56.21,
+    "scene": "chess",
+    "vo": "Let's start with how we got here. In 1997, IBM's Deep Blue beat the world chess champion, Garry Kasparov. But Deep Blue couldn't do anything except play chess."
+   },
+   {
+    "i": 7,
+    "start": 68.58,
+    "scene": "go_board",
+    "vo": "In 2016, DeepMind's AlphaGo beat Lee Sedol at Go, a game with more possible positions than there are atoms in the observable universe."
+   },
+   {
+    "i": 8,
+    "start": 78.33,
+    "scene": "go_board",
+    "vo": "In the second game, it played a move so unusual that experts first thought it was a mistake. Move thirty-seven turned out to be brilliant. The machine had found an idea no human had seen."
+   },
+   {
+    "i": 9,
+    "start": 89.71,
+    "scene": "protein",
+    "vo": "Then AI started doing science. DeepMind's AlphaFold predicted the 3D shapes of hundreds of millions of proteins, a problem biologists had struggled with for fifty years."
+   },
+   {
+    "i": 10,
+    "start": 101.92,
+    "scene": "title_card",
+    "vo": "In 2024, that work shared the Nobel Prize in Chemistry. The same year, the Nobel Prize in Physics went to pioneers of the neural networks behind modern AI."
+   },
+   {
+    "i": 11,
+    "start": 113.21,
+    "scene": "server_farm",
+    "vo": "And today, large language models can write code, explain science, and pass difficult professional exams. They're trained on huge amounts of text, using enormous data centers."
+   },
+   {
+    "i": 12,
+    "start": 125.0,
+    "scene": "net",
+    "vo": "Under the hood, a language model is trained to do one thing: predict the next word. It reads trillions of words, and adjusts billions of internal numbers, until it gets very good at that. Along the way, it picks up grammar, facts, and patterns of reasoning."
+   },
+   {
+    "i": 13,
+    "start": 140.88,
+    "scene": "robot_mind",
+    "vo": "But there's a big difference between these systems and true general intelligence. Today's AI can be brilliant at some tasks, and surprisingly bad at others."
+   },
+   {
+    "i": 14,
+    "start": 151.33,
+    "scene": "net",
+    "vo": "It can make confident mistakes, struggle with reliable long-term planning, and doesn't learn from experience the way we do. Researchers call the goal artificial general intelligence, or AGI: a system that can learn and do almost any task a human can."
+   },
+   {
+    "i": 15,
+    "start": 167.58,
+    "scene": "brain_vs_chip",
+    "vo": "Your brain runs on about twenty watts of power, roughly the same as a dim light bulb. But computers have one big advantage. They can be scaled up."
+   },
+   {
+    "i": 16,
+    "start": 176.58,
+    "scene": "compute_chart",
+    "vo": "The amount of computing power used to train the most advanced AI models has been growing about four to five times every single year. That's one reason progress has felt so sudden."
+   },
+   {
+    "i": 17,
+    "start": 187.96,
+    "scene": "compute_chart",
+    "vo": "Researchers discovered something surprising, called scaling laws. Make the models bigger, give them more data and more computing power, and they improve in a fairly predictable way. That's why companies are building enormous data centers."
+   },
+   {
+    "i": 18,
+    "start": 202.42,
+    "scene": "title_card",
+    "vo": "So when could AI match us? In a large survey of almost three thousand AI researchers, published in 2024, the combined forecast gave a fifty percent chance by 2047 that machines could outperform humans at every task."
+   },
+   {
+    "i": 19,
+    "start": 219.54,
+    "scene": "title_card",
+    "vo": "But individual answers ranged from just a few years to more than a century. And those forecasts have shifted a lot as the technology has improved. The honest answer is that nobody knows."
+   },
+   {
+    "i": 20,
+    "start": 231.21,
+    "scene": "title_card",
+    "vo": "Back in 1965, the mathematician I. J. Good, who had worked with Alan Turing, described a striking idea. An ultraintelligent machine could design even better machines."
+   },
+   {
+    "i": 21,
+    "start": 243.54,
+    "scene": "explosion",
+    "vo": "Those machines could design better ones still, in a runaway loop that some call an intelligence explosion. Good wrote that the first ultraintelligent machine would be the last invention humanity ever needed to make."
+   },
+   {
+    "i": 22,
+    "start": 256.92,
+    "scene": "explosion",
+    "vo": "Whether that could really happen is hotly debated. There may be hard limits on computing power, energy, data, and how fast experiments can be run in the real world."
+   },
+   {
+    "i": 23,
+    "start": 267.33,
+    "scene": "server_farm",
+    "vo": "And even without an explosion, digital minds have strange advantages. Once trained, an AI can be copied thousands of times, run day and night, and share what it learns instantly. No human expert can do that."
+   },
+   {
+    "i": 24,
+    "start": 281.29,
+    "scene": "discovery",
+    "vo": "If it goes well, the upside could be enormous. Imagine millions of tireless digital scientists working on cancer, new materials, clean energy, and diseases we've given up on."
+   },
+   {
+    "i": 25,
+    "start": 292.96,
+    "scene": "protein",
+    "vo": "AlphaFold is a small glimpse of that. Discoveries that once took a career could take days. Some researchers think AI could help compress decades of scientific progress into a few years."
+   },
+   {
+    "i": 26,
+    "start": 305.25,
+    "scene": "boat_race",
+    "vo": "So what's the worry? One of the biggest is called the alignment problem: making sure a powerful AI actually does what we intend, not just what we literally told it."
+   },
+   {
+    "i": 27,
+    "start": 315.92,
+    "scene": "boat_race",
+    "vo": "Here's a real example. In 2016, researchers trained an AI to play a boat racing game, rewarding it for points. Instead of finishing the race, it found a spot where it could circle forever, hitting the same targets and racking up points."
+   },
+   {
+    "i": 28,
+    "start": 331.63,
+    "scene": "midas",
+    "vo": "That's funny in a video game. It's less funny in a system running power grids, financial markets, or weapons. It's the King Midas problem. He got exactly what he asked for, and everything he touched turned to gold."
+   },
+   {
+    "i": 29,
+    "start": 344.67,
+    "scene": "off_switch",
+    "vo": "And it gets trickier as systems get smarter. A capable AI pursuing almost any goal might learn that being switched off would stop it reaching that goal. Researchers are studying how to build systems that reliably accept correction."
+   },
+   {
+    "i": 30,
+    "start": 358.04,
+    "scene": "off_switch",
+    "vo": "This isn't only theory. In controlled tests in 2024, researchers found that some advanced models would occasionally mislead their testers, or try to avoid being retrained, when placed in scenarios designed to tempt them."
+   },
+   {
+    "i": 31,
+    "start": 372.58,
+    "scene": "net",
+    "vo": "There's also misuse: people using powerful AI for cyberattacks, scams, or designing dangerous weapons. And there's the question of power. Whoever controls the most capable AI could gain enormous influence over everyone else."
+   },
+   {
+    "i": 32,
+    "start": 388.29,
+    "scene": "crowd",
+    "vo": "Then there's work. In 2024, the International Monetary Fund estimated that around forty percent of jobs worldwide are exposed to AI. Some will be helped by it. Others could be replaced."
+   },
+   {
+    "i": 33,
+    "start": 401.13,
+    "scene": "crowd",
+    "vo": "We've been here before. Machines replaced many farm and factory jobs, and new kinds of work appeared. The difference is that a truly general AI could, in principle, do almost any task, including the new ones."
+   },
+   {
+    "i": 34,
+    "start": 415.54,
+    "scene": "title_card",
+    "vo": "These concerns aren't coming only from outsiders. In 2023, hundreds of AI scientists and tech leaders signed a one-sentence statement saying that reducing the risk of extinction from AI should be a global priority."
+   },
+   {
+    "i": 35,
+    "start": 430.38,
+    "scene": "title_card",
+    "vo": "In that same large survey, the typical researcher put the chance of an extremely bad outcome, like human extinction, at around five percent. That's not likely, but it's far too high to ignore."
+   },
+   {
+    "i": 36,
+    "start": 442.42,
+    "scene": "robot_mind",
+    "vo": "Other experts think these fears are overblown. They argue that today's systems are far from true understanding, and that we'll have plenty of time to spot problems and fix them as the technology improves."
+   },
+   {
+    "i": 37,
+    "start": 455.71,
+    "scene": "net",
+    "vo": "Either way, work on safety is growing. Researchers are trying to look inside neural networks to understand how they reach their answers. It's called interpretability."
+   },
+   {
+    "i": 38,
+    "start": 465.96,
+    "scene": "off_switch",
+    "vo": "Companies and governments now test advanced models for dangerous abilities before release, and train them using human feedback to be more helpful and honest."
+   },
+   {
+    "i": 39,
+    "start": 476.33,
+    "scene": "globe",
+    "vo": "And laws are arriving. The European Union passed the world's first broad AI law in 2024, and many countries have signed agreements to cooperate on AI safety."
+   },
+   {
+    "i": 40,
+    "start": 487.92,
+    "scene": "globe",
+    "vo": "In 2023, world leaders met at Bletchley Park in England, where codebreakers once worked during World War Two. Twenty-eight countries and the European Union signed a declaration on the risks of the most powerful AI."
+   },
+   {
+    "i": 41,
+    "start": 503.25,
+    "scene": "fork_paths",
+    "vo": "So what happens if AI becomes smarter than humans? The truth is, it depends on choices we make now: how carefully we build it, who controls it, and whether we keep humans in charge of the decisions that matter."
+   },
+   {
+    "i": 42,
+    "start": 516.04,
+    "scene": "explosion",
+    "vo": "It could be the most important invention in our history. The question is whether we'll be ready for it. If you enjoyed this, subscribe. Next up: the secret technology behind nuclear fusion."
+   }
+  ]
+ },
+ "fusion": {
+  "total": 518.5833333333334,
+  "shots": [
+   {
+    "i": 1,
+    "start": 0.0,
+    "scene": "sun",
+    "vo": "Every second, the Sun fuses roughly six hundred million tonnes of hydrogen into helium. That's what makes it shine, and it has kept life on Earth going for billions of years."
+   },
+   {
+    "i": 2,
+    "start": 10.29,
+    "scene": "sun_core",
+    "vo": "If we could build a small star here on Earth, it could give us enormous amounts of clean energy, from fuel found in seawater. That's the promise of nuclear fusion."
+   },
+   {
+    "i": 3,
+    "start": 20.83,
+    "scene": "seawater",
+    "vo": "By one European estimate, the deuterium in about forty-five liters of water, plus the lithium from a single laptop battery, could produce as much electricity as one person in Europe uses in thirty years."
+   },
+   {
+    "i": 4,
+    "start": 34.96,
+    "scene": "tokamak",
+    "vo": "For more than seventy years, scientists have been trying to make it work. And in the last few years, they've hit milestones that once seemed impossible. So what's the secret technology behind fusion, and why is it so hard?"
+   },
+   {
+    "i": 5,
+    "start": 48.67,
+    "scene": "fusion_reaction",
+    "vo": "Fusion is the opposite of the nuclear power we use today. Today's reactors split heavy atoms apart. That's fission. Fusion does the reverse. It smashes light atoms together to make heavier ones."
+   },
+   {
+    "i": 6,
+    "start": 60.96,
+    "scene": "fusion_reaction",
+    "vo": "The easiest reaction uses two forms of hydrogen: deuterium, with one extra neutron, and tritium, with two. When they fuse, they become helium, and release a very fast neutron."
+   },
+   {
+    "i": 7,
+    "start": 73.17,
+    "scene": "fusion_reaction",
+    "vo": "The products weigh slightly less than what you started with. That missing mass becomes energy, following Einstein's famous equation, E equals m c squared."
+   },
+   {
+    "i": 8,
+    "start": 82.92,
+    "scene": "title_card",
+    "vo": "We've known this is how stars shine for about a century. In 1920, the astronomer Arthur Eddington suggested the Sun was powered by fusing hydrogen. In 1939, Hans Bethe worked out the details, and later won a Nobel Prize for it."
+   },
+   {
+    "i": 9,
+    "start": 99.08,
+    "scene": "title_card",
+    "vo": "Kilogram for kilogram, fusing these atoms releases nearly four million times more energy than burning coal, oil or gas."
+   },
+   {
+    "i": 10,
+    "start": 108.67,
+    "scene": "repulsion",
+    "vo": "So why don't we have it already? Because atomic nuclei don't want to touch. They're positively charged, and like charges push each other away."
+   },
+   {
+    "i": 11,
+    "start": 117.04,
+    "scene": "repulsion",
+    "vo": "To get close enough to fuse, they have to collide at enormous speeds. And speed, at the atomic level, means heat."
+   },
+   {
+    "i": 12,
+    "start": 125.17,
+    "scene": "sun_core",
+    "vo": "The Sun has a huge advantage. Its immense gravity squeezes its core to incredible density, so fusion can happen at about fifteen million degrees."
+   },
+   {
+    "i": 13,
+    "start": 135.17,
+    "scene": "plasma_particles",
+    "vo": "We can't recreate the Sun's gravity on Earth, so we have to go hotter. Much hotter. Around a hundred and fifty million degrees, about ten times hotter than the center of the Sun."
+   },
+   {
+    "i": 14,
+    "start": 146.25,
+    "scene": "plasma_particles",
+    "vo": "At those temperatures, atoms are torn apart into a glowing soup of charged particles called plasma. And no material on Earth can touch it without being damaged, or instantly cooling it down."
+   },
+   {
+    "i": 15,
+    "start": 158.67,
+    "scene": "plasma_particles",
+    "vo": "To get more energy out than you put in, you need three things at once: a high enough temperature, a dense enough plasma, and enough time holding it together. Physicists call this the triple product. Push all three high enough, and the fusion keeps itself hot."
+   },
+   {
+    "i": 16,
+    "start": 174.25,
+    "scene": "tokamak",
+    "vo": "So how do you hold something hotter than the Sun? You don't touch it at all. You hold it with magnets."
+   },
+   {
+    "i": 17,
+    "start": 179.67,
+    "scene": "field_lines",
+    "vo": "Charged particles can't easily cross magnetic field lines. Instead, they spiral along them. So if you bend the field into a closed loop, the plasma can race around and around without hitting the walls."
+   },
+   {
+    "i": 18,
+    "start": 192.71,
+    "scene": "tokamak",
+    "vo": "This design is called a tokamak, from a Russian acronym coined by Soviet scientists in the 1950s. Giant magnets wrap around a doughnut-shaped vacuum chamber."
+   },
+   {
+    "i": 19,
+    "start": 204.79,
+    "scene": "field_lines",
+    "vo": "But a simple loop isn't enough, because the plasma drifts outward. So tokamaks twist the field into a helix, partly by driving a powerful electric current through the plasma itself."
+   },
+   {
+    "i": 20,
+    "start": 216.75,
+    "scene": "cold_hot",
+    "vo": "Here's the incredible part. The superconducting magnets in the biggest tokamaks are cooled to minus two hundred and sixty-nine degrees, close to absolute zero. Just a few meters away, the plasma is at a hundred and fifty million degrees."
+   },
+   {
+    "i": 21,
+    "start": 232.21,
+    "scene": "stellarator",
+    "vo": "There's a rival design called the stellarator. Its magnets are bizarrely twisted, so the field shape itself confines the plasma, with no plasma current needed. Germany's Wendelstein 7-X is the most advanced, and it's built to run for long periods."
+   },
+   {
+    "i": 22,
+    "start": 247.75,
+    "scene": "stellarator",
+    "vo": "Stellarators are fiendishly hard to design and build. Supercomputers were needed to calculate the magnet shapes. In 2023, Germany's Wendelstein 7-X, the world's largest stellarator, kept a plasma running for about eight minutes."
+   },
+   {
+    "i": 23,
+    "start": 264.04,
+    "scene": "tokamak_inside",
+    "vo": "And these machines keep improving. In 2024, South Korea's KSTAR held plasma above a hundred million degrees for forty-eight seconds. In early 2025, China's EAST kept a high-performance plasma running for more than a thousand seconds."
+   },
+   {
+    "i": 24,
+    "start": 280.62,
+    "scene": "tokamak_inside",
+    "vo": "In Britain, the JET tokamak finished its forty-year career with a world record: sixty-nine megajoules of fusion energy, from just a fraction of a milligram of fuel."
+   },
+   {
+    "i": 25,
+    "start": 292.62,
+    "scene": "laser_target",
+    "vo": "There's a completely different approach too. At the National Ignition Facility in California, a hundred and ninety-two giant lasers fire at a fuel capsule smaller than a peppercorn."
+   },
+   {
+    "i": 26,
+    "start": 303.88,
+    "scene": "laser_target",
+    "vo": "The lasers heat a tiny gold cylinder around the capsule, which floods it with X-rays. The capsule's surface blasts away, crushing the fuel inward until it fuses, in a few billionths of a second."
+   },
+   {
+    "i": 27,
+    "start": 316.67,
+    "scene": "title_card",
+    "vo": "On December fifth, 2022, NIF achieved ignition for the first time. The reaction released about three point one five megajoules, more than the two point zero five megajoules of laser light that hit the target."
+   },
+   {
+    "i": 28,
+    "start": 330.88,
+    "scene": "energy_bars",
+    "vo": "There's a catch. Powering those lasers took far more energy from the grid, around three hundred megajoules. So fusion has produced more energy than went into the fuel, but not yet more than the whole machine uses. NIF has since beaten its own record several times."
+   },
+   {
+    "i": 29,
+    "start": 347.79,
+    "scene": "tokamak",
+    "vo": "The biggest bet is ITER, a giant tokamak being built in southern France by thirty-five nations. When finished, it will weigh about twenty-three thousand tonnes."
+   },
+   {
+    "i": 30,
+    "start": 358.12,
+    "scene": "energy_bars",
+    "vo": "Its goal is to produce five hundred megawatts of fusion power from fifty megawatts of heating, ten times more out than in. But it has faced long delays, and full fusion experiments aren't expected until the late 2030s."
+   },
+   {
+    "i": 31,
+    "start": 373.33,
+    "scene": "cold_hot",
+    "vo": "Meanwhile, private companies are racing ahead with new technology. A key breakthrough is high-temperature superconducting tape, which can make much stronger magnets."
+   },
+   {
+    "i": 32,
+    "start": 384.21,
+    "scene": "title_card",
+    "vo": "In 2021, Commonwealth Fusion Systems and MIT tested a large magnet made of this tape that reached twenty tesla, a record for its kind. Stronger magnets can mean smaller, cheaper reactors."
+   },
+   {
+    "i": 33,
+    "start": 397.54,
+    "scene": "tokamak",
+    "vo": "They're building a compact tokamak called SPARC, aiming to show net energy from the plasma within the next few years. And dozens of other fusion companies have raised billions of dollars."
+   },
+   {
+    "i": 34,
+    "start": 409.08,
+    "scene": "neutron_wall",
+    "vo": "But big challenges remain. Those fast neutrons slam into the reactor walls, gradually damaging the materials and making them radioactive. Engineers need materials that can survive years of this."
+   },
+   {
+    "i": 35,
+    "start": 421.38,
+    "scene": "neutron_wall",
+    "vo": "The parts facing the plasma are often made of tungsten, the metal with the highest melting point of all. Even so, engineers still need materials that can survive years of bombardment inside a power plant."
+   },
+   {
+    "i": 36,
+    "start": 433.92,
+    "scene": "seawater",
+    "vo": "Then there's fuel. Deuterium is easy. About one in every six thousand hydrogen atoms in seawater is deuterium. But tritium is radioactive and extremely rare."
+   },
+   {
+    "i": 37,
+    "start": 445.33,
+    "scene": "neutron_wall",
+    "vo": "So future reactors will need to breed their own tritium, by surrounding the plasma with lithium. When neutrons hit lithium, they produce new tritium. That has never been done at power-plant scale."
+   },
+   {
+    "i": 38,
+    "start": 457.71,
+    "scene": "plasma_particles",
+    "vo": "Fusion does have big safety advantages. It isn't a chain reaction. There are only a few grams of fuel in the chamber at a time, so if something goes wrong, the plasma simply cools and the reaction stops."
+   },
+   {
+    "i": 39,
+    "start": 470.67,
+    "scene": "power_plant",
+    "vo": "It releases no carbon dioxide while running, and it doesn't create the long-lived high-level waste of fission. Reactor parts do become radioactive, but most of that decays within about a hundred years."
+   },
+   {
+    "i": 40,
+    "start": 483.21,
+    "scene": "power_plant",
+    "vo": "And unlike solar and wind, a fusion plant could run day and night, in any weather, providing steady power alongside renewables."
+   },
+   {
+    "i": 41,
+    "start": 492.25,
+    "scene": "title_card",
+    "vo": "There's an old joke that fusion is thirty years away, and always will be. For decades, that felt true."
+   },
+   {
+    "i": 42,
+    "start": 499.17,
+    "scene": "power_plant",
+    "vo": "But ignition has now been achieved, magnets are getting stronger, and records keep falling. The first fusion power plants may still be years away. But fusion is no longer just a dream."
+   },
+   {
+    "i": 43,
+    "start": 509.88,
+    "scene": "sun",
+    "vo": "We're learning how to build a star on Earth. If you enjoyed this, subscribe. Next time: can scientists grow a brand new human organ?"
+   }
+  ]
+ },
+ "organs": {
+  "total": 515.6666666666666,
+  "shots": [
+   {
+    "i": 1,
+    "start": 0.0,
+    "scene": "waiting_list",
+    "vo": "Right now, more than a hundred thousand people in the United States are waiting for an organ transplant. Someone new is added to the list about every eight minutes. And every day, people die while they're still waiting."
+   },
+   {
+    "i": 2,
+    "start": 12.46,
+    "scene": "waiting_list",
+    "vo": "Every day in the United States, around seventeen people on that list die waiting. Around the world, the World Health Organization estimates that only about one in ten people who need a transplant gets one."
+   },
+   {
+    "i": 3,
+    "start": 25.42,
+    "scene": "lab",
+    "vo": "But what if we didn't have to wait for a donor? What if doctors could grow you a brand new organ, made from your own cells, one your body would never reject?"
+   },
+   {
+    "i": 4,
+    "start": 34.0,
+    "scene": "bioprinter",
+    "vo": "It sounds like science fiction. But scientists are already growing simple tissues, printing living structures, and transplanting organs from genetically edited pigs. So how close are we?"
+   },
+   {
+    "i": 5,
+    "start": 46.04,
+    "scene": "transplant_ops",
+    "vo": "The first successful organ transplant happened in 1954, when surgeons in Boston moved a kidney from one identical twin into the other."
+   },
+   {
+    "i": 6,
+    "start": 56.12,
+    "scene": "title_card",
+    "vo": "The surgeon who led that operation, Joseph Murray, later won the Nobel Prize. Since then, transplants have saved millions of lives. But they've always been limited by two problems: too few donors, and rejection."
+   },
+   {
+    "i": 7,
+    "start": 70.38,
+    "scene": "immune_reject",
+    "vo": "The twins mattered, because your immune system is built to attack anything that isn't you. An organ from someone else looks like an invader."
+   },
+   {
+    "i": 8,
+    "start": 79.25,
+    "scene": "immune_reject",
+    "vo": "So transplant patients must take drugs that suppress their immune system for the rest of their lives. Those drugs raise the risk of infections and other serious problems, and many donated organs eventually fail anyway."
+   },
+   {
+    "i": 9,
+    "start": 93.04,
+    "scene": "kidney",
+    "vo": "And even with those drugs, transplanted organs don't last forever. A kidney from a deceased donor often works for somewhere around ten to fifteen years, and then the patient may need another."
+   },
+   {
+    "i": 10,
+    "start": 105.08,
+    "scene": "kidney",
+    "vo": "An organ grown from your own cells could solve both problems at once. No waiting list, and no rejection."
+   },
+   {
+    "i": 11,
+    "start": 112.0,
+    "scene": "heart_beat",
+    "vo": "So why can't we just grow one? Because organs are astonishingly complex. A human heart contains billions of cells, of many different types, arranged in precise layers."
+   },
+   {
+    "i": 12,
+    "start": 123.46,
+    "scene": "vessels",
+    "vo": "And every one of those cells needs oxygen. In living tissue, cells sit within a fraction of a millimeter of a blood vessel. Grow a thick chunk of tissue without vessels, and the cells in the middle suffocate and die."
+   },
+   {
+    "i": 13,
+    "start": 136.58,
+    "scene": "vessels",
+    "vo": "That's why the hardest part of growing an organ isn't making the cells. It's building the plumbing: a network of blood vessels that reaches every corner."
+   },
+   {
+    "i": 14,
+    "start": 145.21,
+    "scene": "vessels",
+    "vo": "Scientists have tried some clever tricks. In 2012, a team printed a lattice of sugar glass inside a gel full of cells, then dissolved the sugar away, leaving open channels that liquid could flow through, like tiny blood vessels."
+   },
+   {
+    "i": 15,
+    "start": 161.0,
+    "scene": "scaffold",
+    "vo": "One of the first big successes came from Doctor Anthony Atala and his team. They built bladder-shaped scaffolds out of material that slowly dissolves in the body."
+   },
+   {
+    "i": 16,
+    "start": 171.17,
+    "scene": "scaffold",
+    "vo": "They coated the scaffolds with cells taken from each patient's own bladder, grew them in the lab, and implanted them. In 2006, they reported that the lab-grown bladders were still working in patients years later."
+   },
+   {
+    "i": 17,
+    "start": 184.21,
+    "scene": "lab",
+    "vo": "Bladders are relatively simple, hollow organs. Skin, cartilage and parts of the eye are simpler still, and lab-grown versions of some of these are already being used to treat patients."
+   },
+   {
+    "i": 18,
+    "start": 196.87,
+    "scene": "lab",
+    "vo": "Lab-grown skin has been used to help burn victims since the nineteen-eighties. Doctors take a small patch of the patient's skin, grow it into larger sheets, and graft it back on."
+   },
+   {
+    "i": 19,
+    "start": 208.29,
+    "scene": "decell_heart",
+    "vo": "For complex organs, scientists found a clever shortcut. In 2008, a team in Minnesota took a rat heart and washed it with detergent until all of its cells were gone."
+   },
+   {
+    "i": 20,
+    "start": 220.17,
+    "scene": "decell_heart",
+    "vo": "What was left was a ghostly white framework of proteins, still shaped like a heart, with the outlines of its blood vessels intact."
+   },
+   {
+    "i": 21,
+    "start": 228.96,
+    "scene": "decell_heart",
+    "vo": "They filled it with new heart cells, and after about a week, it started to beat. It was weak, but it was a beating heart, rebuilt in a lab."
+   },
+   {
+    "i": 22,
+    "start": 237.17,
+    "scene": "stem_cells",
+    "vo": "To build an organ from your own cells, you need the right kinds of cells, and lots of them. In 2006, the Japanese scientist Shinya Yamanaka discovered how to turn ordinary adult cells, like skin cells, back into stem cells, using just four genes."
+   },
+   {
+    "i": 23,
+    "start": 254.17,
+    "scene": "stem_cells",
+    "vo": "These induced pluripotent stem cells can become almost any cell type: heart muscle, nerve cells, liver cells, and more. Yamanaka shared the Nobel Prize for this discovery in 2012."
+   },
+   {
+    "i": 24,
+    "start": 267.46,
+    "scene": "stem_cells",
+    "vo": "In 2014, doctors in Japan carried out the first transplant of tissue made from these reprogrammed cells: a sheet of retinal cells, grown from a patient's own skin, to treat an eye disease."
+   },
+   {
+    "i": 25,
+    "start": 280.83,
+    "scene": "organoid",
+    "vo": "Using stem cells, labs now grow organoids: tiny, simplified organs, often smaller than a pea. There are mini-guts, mini-kidneys, mini-livers, and even mini-brains."
+   },
+   {
+    "i": 26,
+    "start": 293.83,
+    "scene": "organoid",
+    "vo": "They're far too small to transplant. But they're already helping scientists study diseases and test drugs on real human tissue, without risking a patient."
+   },
+   {
+    "i": 27,
+    "start": 303.79,
+    "scene": "bioprinter",
+    "vo": "Then there's 3D bioprinting. Instead of plastic, these printers lay down bio-ink: gels packed with living cells, one layer at a time."
+   },
+   {
+    "i": 28,
+    "start": 313.46,
+    "scene": "bioprinter",
+    "vo": "In 2019, researchers in Tel Aviv printed a small heart, about the size of a rabbit's, using a patient's own cells and tissue. It even had blood vessels."
+   },
+   {
+    "i": 29,
+    "start": 324.54,
+    "scene": "heart_beat",
+    "vo": "It couldn't pump yet. But it showed that one day, we might be able to print organs that match each patient perfectly."
+   },
+   {
+    "i": 30,
+    "start": 331.42,
+    "scene": "bioprinter",
+    "vo": "Printing a full-size organ is a much bigger challenge. A human heart or kidney needs billions of cells, and they all have to stay alive while the printer works, which can take hours."
+   },
+   {
+    "i": 31,
+    "start": 342.71,
+    "scene": "pig",
+    "vo": "While lab-grown organs are still years away, another approach is moving fast: borrowing organs from pigs."
+   },
+   {
+    "i": 32,
+    "start": 350.54,
+    "scene": "pig",
+    "vo": "Pig organs are about the right size for people. But a normal pig organ would be destroyed by the human immune system, very quickly."
+   },
+   {
+    "i": 33,
+    "start": 358.67,
+    "scene": "dna_edits",
+    "vo": "So scientists use CRISPR to edit the pigs' genes. They remove sugars that trigger rejection, add human genes, and switch off ancient viruses hidden in pig DNA. One line of pigs carries sixty-nine edits."
+   },
+   {
+    "i": 34,
+    "start": 372.83,
+    "scene": "dna_edits",
+    "vo": "Some of these pigs carry dozens of genetic changes. One pig kidney transplanted in 2024 had sixty-nine edits, most of them to switch off old virus genes hidden in the pig's DNA."
+   },
+   {
+    "i": 35,
+    "start": 386.04,
+    "scene": "title_card",
+    "vo": "In 2022, a man in Maryland named David Bennett became the first person to receive a heart from a gene-edited pig. He lived for about two months."
+   },
+   {
+    "i": 36,
+    "start": 396.29,
+    "scene": "kidney",
+    "vo": "In 2024, surgeons began transplanting gene-edited pig kidneys into living patients. One woman lived with her pig kidney for more than four months before it had to be removed."
+   },
+   {
+    "i": 37,
+    "start": 408.54,
+    "scene": "title_card",
+    "vo": "And in 2025, the US Food and Drug Administration cleared the first clinical trials of pig kidney transplants. What was once science fiction is now being tested in real patients."
+   },
+   {
+    "i": 38,
+    "start": 421.17,
+    "scene": "pig",
+    "vo": "Some scientists are trying something even stranger: growing human organs inside animals. By adding human stem cells to animal embryos, they hope to one day grow a human kidney inside a pig."
+   },
+   {
+    "i": 39,
+    "start": 434.33,
+    "scene": "organoid",
+    "vo": "In 2023, researchers in China reported early pig embryos with developing kidney tissue made mostly of human cells. It's very early research, and it raises serious ethical questions."
+   },
+   {
+    "i": 40,
+    "start": 447.75,
+    "scene": "pig",
+    "vo": "This raises big ethical questions. How should these animals be treated? And how much human tissue is acceptable inside another species? Scientists and regulators are setting strict limits as the research moves forward."
+   },
+   {
+    "i": 41,
+    "start": 460.88,
+    "scene": "lab",
+    "vo": "So, can scientists grow a new human organ? Simple tissues, yes. A full, working heart or kidney grown from scratch? Not yet."
+   },
+   {
+    "i": 42,
+    "start": 470.62,
+    "scene": "vessels",
+    "vo": "The biggest hurdles are building blood vessels, getting billions of cells to organize themselves the right way, and keeping everything alive long enough to work."
+   },
+   {
+    "i": 43,
+    "start": 479.58,
+    "scene": "organoid",
+    "vo": "Some researchers are also asking whether we could help the body regrow organs itself. The liver already does this. Remove a large part of it, and the rest can grow back to nearly full size within months."
+   },
+   {
+    "i": 44,
+    "start": 491.62,
+    "scene": "bioprinter",
+    "vo": "But the pieces are coming together: stem cells, scaffolds, organoids, printers, and edited pig organs. Within a few decades, the transplant waiting list could start to disappear."
+   },
+   {
+    "i": 45,
+    "start": 504.25,
+    "scene": "heart_beat",
+    "vo": "Maybe one day, a new organ will be something you order, not something you wait for. If you enjoyed this, subscribe. Next time: how brain-computer interfaces can read your thoughts."
+   }
+  ]
+ },
+ "bci": {
+  "total": 512.5833333333335,
+  "shots": [
+   {
+    "i": 1,
+    "start": 0.0,
+    "scene": "brain_hero",
+    "vo": "Right now, roughly eighty-six billion neurons in your brain are firing tiny electrical signals. Every thought, every movement you plan, every word you're about to say starts as a pattern of these sparks."
+   },
+   {
+    "i": 2,
+    "start": 11.58,
+    "scene": "neurons",
+    "vo": "Each neuron connects to thousands of others, forming something like a hundred trillion connections. It's the most complex network we know of in the universe."
+   },
+   {
+    "i": 3,
+    "start": 20.83,
+    "scene": "neurons",
+    "vo": "What if a machine could listen in? Not just to notice that your brain is busy, but to understand what it's trying to do?"
+   },
+   {
+    "i": 4,
+    "start": 28.13,
+    "scene": "cursor_control",
+    "vo": "That's the idea behind brain-computer interfaces. And they're no longer science fiction. People who can't move or speak are already using them to control computers, robotic arms, and even to talk again. So how do they work? And can they really read your thoughts?"
+   },
+   {
+    "i": 5,
+    "start": 43.67,
+    "scene": "neurons",
+    "vo": "Neurons communicate with electrical pulses called spikes, each lasting about a thousandth of a second. When you decide to move your hand, neurons in a strip of your brain called the motor cortex fire in a specific pattern."
+   },
+   {
+    "i": 6,
+    "start": 57.08,
+    "scene": "spike_chart",
+    "vo": "If you can record that pattern, and learn what it means, you can turn intention into action, even when the body can no longer carry it out."
+   },
+   {
+    "i": 7,
+    "start": 65.25,
+    "scene": "brain_hero",
+    "vo": "Scientists have known about this strip for a long time. In the mid-twentieth century, the Canadian surgeon Wilder Penfield gently stimulated patients' brains during surgery, and mapped which spots made the hand, face, or foot twitch."
+   },
+   {
+    "i": 8,
+    "start": 80.12,
+    "scene": "eeg_cap",
+    "vo": "The simplest way to listen is from outside the head. In 1924, the German psychiatrist Hans Berger recorded the first human brain waves using electrodes on the scalp. Today we call it EEG."
+   },
+   {
+    "i": 9,
+    "start": 92.71,
+    "scene": "eeg_cap",
+    "vo": "EEG is safe and cheap, but the skull blurs the signal. It's like trying to follow a conversation inside a stadium from outside the walls. You hear the roar, but not the words."
+   },
+   {
+    "i": 10,
+    "start": 103.21,
+    "scene": "brain_hero",
+    "vo": "There's a middle ground, too. Some electrodes sit on the surface of the brain, under the skull, but without piercing it. Patients with epilepsy sometimes have these placed for monitoring, and many have volunteered for brain-computer interface experiments."
+   },
+   {
+    "i": 11,
+    "start": 117.96,
+    "scene": "utah_array",
+    "vo": "To hear individual neurons, you have to go inside. One of the most widely used devices is the Utah array: a tiny square of a hundred needle-like electrodes, about four millimeters across, placed into the surface of the brain."
+   },
+   {
+    "i": 12,
+    "start": 132.12,
+    "scene": "utah_array",
+    "vo": "Electrodes inside the brain can pick up the spikes of individual nearby neurons. But it means brain surgery, so these devices have mainly been tested in people with severe paralysis."
+   },
+   {
+    "i": 13,
+    "start": 144.5,
+    "scene": "cursor_control",
+    "vo": "One of the first implants was placed in 1998, by the neurologist Philip Kennedy. A man named Johnny Ray, unable to move or speak after a stroke, learned to move a cursor on a screen with his brain signals."
+   },
+   {
+    "i": 14,
+    "start": 159.33,
+    "scene": "cursor_control",
+    "vo": "In 2006, a paralyzed man named Matthew Nagle used one to move a computer cursor, just by thinking about moving his hand. It was part of a research program called BrainGate."
+   },
+   {
+    "i": 15,
+    "start": 171.54,
+    "scene": "robot_arm",
+    "vo": "In 2012, Cathy Hutchinson, who had been paralyzed by a stroke, used a robotic arm controlled by her brain to pick up a bottle of coffee and drink from it. It was the first time in about fifteen years that she had served herself a drink."
+   },
+   {
+    "i": 16,
+    "start": 187.63,
+    "scene": "robot_arm",
+    "vo": "Later systems even added a sense of touch. In 2016, Nathan Copeland, paralyzed in a car accident, controlled a robotic arm whose fingers sent signals back into his brain, so he could feel what it touched. He even fist-bumped President Obama."
+   },
+   {
+    "i": 17,
+    "start": 205.54,
+    "scene": "net",
+    "vo": "The secret is decoding. Computers learn to match patterns of brain activity to intended movements. At first, the person imagines specific movements while the computer records. Over many sessions, the software and the person's brain adapt to each other."
+   },
+   {
+    "i": 18,
+    "start": 221.21,
+    "scene": "handwriting",
+    "vo": "In 2021, researchers at Stanford asked a paralyzed man to imagine writing letters by hand. An AI turned his brain activity into text at about ninety characters per minute, approaching how fast many people type on a phone."
+   },
+   {
+    "i": 19,
+    "start": 236.62,
+    "scene": "net",
+    "vo": "Today's decoders often use the same kinds of artificial neural networks that power speech recognition on your phone. They learn the subtle patterns linking thousands of signals to what the person is trying to do."
+   },
+   {
+    "i": 20,
+    "start": 248.96,
+    "scene": "speech_avatar",
+    "vo": "Then came speech. In 2023, two teams published breakthroughs side by side. A woman with ALS, who could no longer speak clearly, communicated at sixty-two words per minute."
+   },
+   {
+    "i": 21,
+    "start": 261.96,
+    "scene": "neurons",
+    "vo": "Speech devices work by listening to the brain area that controls the lips, tongue, jaw and voice box. An AI decodes the intended sounds, and a language model, like a supercharged autocorrect, turns them into likely words and sentences."
+   },
+   {
+    "i": 22,
+    "start": 278.54,
+    "scene": "speech_avatar",
+    "vo": "Another woman, paralyzed by a stroke eighteen years earlier, spoke at seventy-eight words per minute through a digital avatar that moved its face, with a voice based on a recording from her wedding."
+   },
+   {
+    "i": 23,
+    "start": 291.08,
+    "scene": "title_card",
+    "vo": "In 2024, a man with ALS named Casey Harrell used an implant that turned his attempted speech into words with about ninety-seven percent accuracy, read aloud in a voice recreated from old recordings of his own."
+   },
+   {
+    "i": 24,
+    "start": 306.63,
+    "scene": "speech_avatar",
+    "vo": "Normal conversation runs at about a hundred and sixty words per minute. These systems aren't there yet. But for people who were trapped in silence, being able to joke, argue, and say I love you again is life-changing."
+   },
+   {
+    "i": 25,
+    "start": 320.21,
+    "scene": "neuralink_threads",
+    "vo": "Companies are now racing to make these devices practical. Neuralink's implant is about the size of a coin, with over a thousand electrodes on ultra-thin threads, inserted by a surgical robot."
+   },
+   {
+    "i": 26,
+    "start": 332.71,
+    "scene": "cursor_control",
+    "vo": "In 2024, its first patient, Noland Arbaugh, paralyzed from the shoulders down, used it to move a cursor and play chess and video games. Some threads later pulled out of his brain, but software changes restored much of the performance."
+   },
+   {
+    "i": 27,
+    "start": 348.83,
+    "scene": "stentrode",
+    "vo": "Another company, Synchron, takes a different route. Its device is threaded up through a blood vessel and expands inside a vein next to the motor cortex, with no need to open the skull."
+   },
+   {
+    "i": 28,
+    "start": 360.88,
+    "scene": "spine_bridge",
+    "vo": "And in 2023, Swiss researchers connected a man's brain implants to an implant on his spinal cord. Paralyzed after a bike accident, he was able to walk again, more naturally than before, just by thinking about it."
+   },
+   {
+    "i": 29,
+    "start": 375.79,
+    "scene": "brain_hero",
+    "vo": "And some interfaces send signals the other way. Cochlear implants turn sound into electrical pulses that stimulate the hearing nerve. More than a million people use them to hear, making them by far the most successful neural interface so far."
+   },
+   {
+    "i": 30,
+    "start": 390.58,
+    "scene": "fmri",
+    "vo": "So can these devices read your thoughts? Not the way it sounds. Most brain-computer interfaces decode intended movements or attempted speech, from the specific brain areas that control them."
+   },
+   {
+    "i": 31,
+    "start": 402.88,
+    "scene": "fmri",
+    "vo": "But scientists are getting closer. In 2023, researchers in Texas used brain scans to decode the general meaning of stories people were listening to, or even just imagining, without any implant."
+   },
+   {
+    "i": 32,
+    "start": 416.5,
+    "scene": "title_card",
+    "vo": "It wasn't word for word. It needed about sixteen hours of training data for each person. And it stopped working when people resisted, for example by deliberately thinking about something else."
+   },
+   {
+    "i": 33,
+    "start": 428.0,
+    "scene": "privacy",
+    "vo": "Still, it raises serious questions. Brain data could reveal your intentions, your emotions, even early signs of disease. Who owns that data, and who gets to see it?"
+   },
+   {
+    "i": 34,
+    "start": 439.17,
+    "scene": "title_card",
+    "vo": "In 2021, Chile became the first country to protect brain activity and mental privacy in its constitution. Some US states have since passed laws to protect neural data as well."
+   },
+   {
+    "i": 35,
+    "start": 451.54,
+    "scene": "neuralink_threads",
+    "vo": "There are physical risks too. Brain surgery can cause infection and bleeding, and implants can lose signal over time as the brain's tissue reacts to a foreign object."
+   },
+   {
+    "i": 36,
+    "start": 463.04,
+    "scene": "eeg_cap",
+    "vo": "And brain data isn't only collected in hospitals. Consumer headbands that read EEG are already sold for meditation, sleep, and focus, gathering signals from people's brains every day."
+   },
+   {
+    "i": 37,
+    "start": 475.96,
+    "scene": "brain_hero",
+    "vo": "For now, brain-computer interfaces are mostly about restoring what was lost: movement, communication, independence."
+   },
+   {
+    "i": 38,
+    "start": 484.79,
+    "scene": "robot_arm",
+    "vo": "In the future, they may help treat conditions like depression, epilepsy, or blindness. Some people even imagine using them to enhance healthy brains, though that's much further off."
+   },
+   {
+    "i": 39,
+    "start": 496.17,
+    "scene": "brain_hero",
+    "vo": "Brain-computer interfaces can't read your mind like a book. But they can listen to what you're trying to say, and help you say it. For people who've lost their voice, that's nothing short of extraordinary. If you enjoyed this, subscribe. Next up: how humanoid robots learn to walk."
+   }
+  ]
+ },
+ "blackhole": {
+  "total": 498.29166666666663,
+  "shots": [
+   {
+    "i": 1,
+    "start": 0.0,
+    "scene": "bh_hero",
+    "vo": "Imagine floating in the dark, staring at the most extreme object in the universe."
+   },
+   {
+    "i": 2,
+    "start": 5.75,
+    "scene": "bh_hero",
+    "vo": "A black hole. Nothing that crosses its edge ever comes back out. Not light. Not radio signals. Not you."
+   },
+   {
+    "i": 3,
+    "start": 13.04,
+    "scene": "astronaut_bh",
+    "vo": "So what would actually happen if you fell in? Would you be crushed? Stretched? Frozen in time?"
+   },
+   {
+    "i": 4,
+    "start": 18.5,
+    "scene": "bh_hero",
+    "vo": "The real answer is stranger than any of those. And it depends on which black hole you pick."
+   },
+   {
+    "i": 5,
+    "start": 23.79,
+    "scene": "star_collapse",
+    "vo": "First, what is a black hole? Most of them form when a giant star, many times heavier than our Sun, runs out of fuel."
+   },
+   {
+    "i": 6,
+    "start": 32.0,
+    "scene": "star_collapse",
+    "vo": "Without the energy of fusion pushing outward, the core can no longer hold itself up. It collapses in on itself in a fraction of a second."
+   },
+   {
+    "i": 7,
+    "start": 40.75,
+    "scene": "star_collapse",
+    "vo": "The outer layers blast away in a supernova. But the core keeps falling inward, squeezing more and more mass into less and less space."
+   },
+   {
+    "i": 8,
+    "start": 49.25,
+    "scene": "bh_hero",
+    "vo": "Until gravity becomes so strong that nothing, not even light, can escape."
+   },
+   {
+    "i": 9,
+    "start": 54.75,
+    "scene": "grid_well",
+    "vo": "Einstein showed that gravity isn't really a force pulling on you. It's mass bending space and time. A planet makes a gentle dip."
+   },
+   {
+    "i": 10,
+    "start": 62.83,
+    "scene": "grid_well",
+    "vo": "A star makes a deeper one, and anything rolling nearby curves toward it. That curve is what we feel as gravity."
+   },
+   {
+    "i": 11,
+    "start": 69.88,
+    "scene": "grid_well",
+    "vo": "A black hole makes a pit so steep that, past a certain point, every possible path leads inward."
+   },
+   {
+    "i": 12,
+    "start": 76.67,
+    "scene": "bh_hero",
+    "vo": "That point of no return is called the event horizon. It isn't a surface you could touch. It's a boundary in space-time."
+   },
+   {
+    "i": 13,
+    "start": 84.17,
+    "scene": "earth_squeeze",
+    "vo": "Here's how extreme that is. To turn Earth into a black hole, you'd have to squeeze the entire planet down to about the size of a marble."
+   },
+   {
+    "i": 14,
+    "start": 92.92,
+    "scene": "galaxy",
+    "vo": "Black holes come in very different sizes. Stellar black holes weigh a few to a few dozen Suns."
+   },
+   {
+    "i": 15,
+    "start": 99.17,
+    "scene": "galaxy",
+    "vo": "But at the center of our own galaxy sits a monster, called Sagittarius A star."
+   },
+   {
+    "i": 16,
+    "start": 104.88,
+    "scene": "size_compare",
+    "vo": "It holds about four million times the mass of the Sun, packed inside an event horizon roughly seventeen times wider than the Sun itself."
+   },
+   {
+    "i": 17,
+    "start": 113.71,
+    "scene": "size_compare",
+    "vo": "Put it where the Sun is, and its horizon would sit well inside the orbit of Mercury."
+   },
+   {
+    "i": 18,
+    "start": 118.96,
+    "scene": "eht_image",
+    "vo": "In 2022, astronomers released the first image of it, taken with the Event Horizon Telescope, a network of radio dishes spread across the planet."
+   },
+   {
+    "i": 19,
+    "start": 129.5,
+    "scene": "eht_image",
+    "vo": "What you see is a glowing ring of hot gas, wrapped around a dark shadow. The black hole itself is in that shadow."
+   },
+   {
+    "i": 20,
+    "start": 136.42,
+    "scene": "star_orbits",
+    "vo": "How do we even know it's there? For decades, astronomers tracked stars whipping around the center of our galaxy. One of them, called S2, completes an orbit every sixteen years."
+   },
+   {
+    "i": 21,
+    "start": 147.71,
+    "scene": "star_orbits",
+    "vo": "Only an object about four million times the Sun's mass, crammed into a tiny space, could swing them around like that. That work won the 2020 Nobel Prize in Physics."
+   },
+   {
+    "i": 22,
+    "start": 158.67,
+    "scene": "merger",
+    "vo": "And in 2015, detectors called LIGO felt ripples in space-time from two black holes colliding, more than a billion light years away. For a split second, that collision put out more power than all the stars in the observable universe combined."
+   },
+   {
+    "i": 23,
+    "start": 174.5,
+    "scene": "bh_hero",
+    "vo": "The closest black hole we know of, called Gaia BH1, is about fifteen hundred light years away. So there's no danger of falling into one by accident."
+   },
+   {
+    "i": 24,
+    "start": 184.5,
+    "scene": "ship_travel",
+    "vo": "So let's go. We'll take the big one. It's about twenty-six thousand light years away, so this is a one-way trip in more ways than one."
+   },
+   {
+    "i": 25,
+    "start": 192.5,
+    "scene": "ship_travel",
+    "vo": "As you get closer, the first thing you notice is the accretion disk: gas and dust spiraling inward, heated to millions of degrees."
+   },
+   {
+    "i": 26,
+    "start": 201.33,
+    "scene": "bh_hero",
+    "vo": "The disk looks lopsided. One side is far brighter than the other."
+   },
+   {
+    "i": 27,
+    "start": 205.58,
+    "scene": "bh_hero",
+    "vo": "That's because gas racing toward you has its light boosted, while gas moving away looks dimmer. Astronomers call it relativistic beaming."
+   },
+   {
+    "i": 28,
+    "start": 213.88,
+    "scene": "bh_hero",
+    "vo": "And the disk seems to wrap over the top and under the bottom of the black hole. That's an illusion."
+   },
+   {
+    "i": 29,
+    "start": 219.29,
+    "scene": "bh_hero",
+    "vo": "You're actually seeing the far side of the disk. Its light is bent up and over the hole by gravity, like a giant lens."
+   },
+   {
+    "i": 30,
+    "start": 227.12,
+    "scene": "astronaut_bh",
+    "vo": "Time to step outside. You leave the ship in your spacesuit and let gravity take over."
+   },
+   {
+    "i": 31,
+    "start": 232.58,
+    "scene": "astronaut_bh",
+    "vo": "At first, nothing feels strange at all. You're in free fall, so you feel completely weightless."
+   },
+   {
+    "i": 32,
+    "start": 239.38,
+    "scene": "astronaut_bh",
+    "vo": "But look around. The stars behind the black hole are being bent and smeared into arcs, as if you're looking through a funhouse mirror made of gravity."
+   },
+   {
+    "i": 33,
+    "start": 248.25,
+    "scene": "light_paths",
+    "vo": "Get within one and a half times the horizon's radius and you reach the photon sphere. Here, gravity is so strong that light itself can travel in a circle."
+   },
+   {
+    "i": 34,
+    "start": 257.71,
+    "scene": "light_paths",
+    "vo": "In principle, light leaving the back of your head could loop all the way around and come back to your eyes. You could look straight ahead and see the back of your own head."
+   },
+   {
+    "i": 35,
+    "start": 266.54,
+    "scene": "astronaut_bh",
+    "vo": "Now, if you had picked a small black hole, this is where things would go horribly wrong."
+   },
+   {
+    "i": 36,
+    "start": 272.42,
+    "scene": "astronaut_bh",
+    "vo": "Near a small black hole, gravity at your feet would pull much harder than gravity at your head."
+   },
+   {
+    "i": 37,
+    "start": 278.17,
+    "scene": "astronaut_bh",
+    "vo": "That difference, called the tidal force, would stretch you out like a noodle while squeezing you from the sides. Physicists really do call this spaghettification."
+   },
+   {
+    "i": 38,
+    "start": 287.42,
+    "scene": "tidal_star",
+    "vo": "It doesn't just happen to people. When a star wanders too close to a black hole, the same tidal forces can rip it apart into a long stream of glowing gas."
+   },
+   {
+    "i": 39,
+    "start": 297.04,
+    "scene": "tidal_star",
+    "vo": "Telescopes have actually caught this happening in distant galaxies. Astronomers call them tidal disruption events."
+   },
+   {
+    "i": 40,
+    "start": 304.42,
+    "scene": "astronaut_bh",
+    "vo": "But we picked a supermassive black hole, and that changes everything. Because it's so huge, the difference in pull between your head and your feet at the horizon is tiny."
+   },
+   {
+    "i": 41,
+    "start": 315.08,
+    "scene": "bh_hero",
+    "vo": "Now think about your friend, watching from the safety of the ship. To them, something very strange is happening to you."
+   },
+   {
+    "i": 42,
+    "start": 322.29,
+    "scene": "clocks",
+    "vo": "Near a black hole, time itself runs slower. Your friend sees your watch ticking slower, and slower, and slower, as you approach the horizon."
+   },
+   {
+    "i": 43,
+    "start": 331.87,
+    "scene": "astronaut_bh",
+    "vo": "Your image turns red and fades. To your friend, you never quite cross the edge. You seem to freeze just above it, dimming until you vanish from view."
+   },
+   {
+    "i": 44,
+    "start": 341.21,
+    "scene": "astronaut_bh",
+    "vo": "But from your point of view, nothing special happens. Your watch ticks normally. There's no wall, no flash, no sign that says no return. You simply drift across."
+   },
+   {
+    "i": 45,
+    "start": 351.67,
+    "scene": "astronaut_bh",
+    "vo": "What would you see as you fall? You may have heard that you'd watch the entire future of the universe flash before your eyes. You wouldn't. That's a myth."
+   },
+   {
+    "i": 46,
+    "start": 360.12,
+    "scene": "falling_view",
+    "vo": "Instead, the outside universe shrinks into a bright, distorted circle above you, while the darkness of the black hole fills more and more of your view."
+   },
+   {
+    "i": 47,
+    "start": 370.0,
+    "scene": "inside",
+    "vo": "And now you're inside. This is where things get truly strange. Inside the horizon, space and time effectively trade places."
+   },
+   {
+    "i": 48,
+    "start": 378.54,
+    "scene": "inside",
+    "vo": "Out here, you can move in any direction in space, but only forward in time. Inside a black hole, the center isn't a place in front of you. It's in your future."
+   },
+   {
+    "i": 49,
+    "start": 388.67,
+    "scene": "inside",
+    "vo": "No engine, no matter how powerful, could save you. Every path you could possibly take ends at the center. For a black hole this size, you'd have about a minute."
+   },
+   {
+    "i": 50,
+    "start": 398.0,
+    "scene": "grid_well",
+    "vo": "At the center, Einstein's equations predict a singularity, a point where density becomes infinite. But most physicists think that's a sign the theory breaks down, not a real description."
+   },
+   {
+    "i": 51,
+    "start": 409.79,
+    "scene": "grid_well",
+    "vo": "To know what's really at the center, we'd need a theory that unites gravity with quantum mechanics. Nobody has one yet."
+   },
+   {
+    "i": 52,
+    "start": 417.29,
+    "scene": "wormhole",
+    "vo": "Could a black hole be a doorway to somewhere else? Some solutions to Einstein's equations describe wormholes, tunnels connecting distant regions of space."
+   },
+   {
+    "i": 53,
+    "start": 427.17,
+    "scene": "wormhole",
+    "vo": "But they would need exotic matter that may not exist, and a black hole made by a collapsing star almost certainly has no exit. As far as we know, it's a one-way trip."
+   },
+   {
+    "i": 54,
+    "start": 437.08,
+    "scene": "hawking",
+    "vo": "And black holes don't last forever. Stephen Hawking showed that, because of quantum effects, black holes should slowly leak energy. We now call it Hawking radiation."
+   },
+   {
+    "i": 55,
+    "start": 448.08,
+    "scene": "hawking",
+    "vo": "The leak is incredibly slow. A black hole as heavy as the Sun would take around ten to the sixty-seven years to evaporate, far longer than the universe has existed."
+   },
+   {
+    "i": 56,
+    "start": 458.96,
+    "scene": "hawking",
+    "vo": "And that raises a puzzle. If everything that falls in is eventually radiated away as heat, what happens to the information about you? Physicists are still arguing. It's called the information paradox."
+   },
+   {
+    "i": 57,
+    "start": 471.17,
+    "scene": "bh_hero",
+    "vo": "So, what happens if you fall into a black hole? Pick a small one, and you're torn apart before you even reach the edge."
+   },
+   {
+    "i": 58,
+    "start": 479.08,
+    "scene": "bh_hero",
+    "vo": "Pick a giant one, and you cross the horizon without feeling a thing, while your friends watch you freeze and fade forever."
+   },
+   {
+    "i": 59,
+    "start": 486.37,
+    "scene": "bh_hero",
+    "vo": "Into the one place in the universe that no one can ever report back from. If you enjoyed this, subscribe for more strange science. Next time: could scientists grow a brand new human organ?"
+   }
+  ]
+ },
+ "robots": {
+  "total": 507.66666666666674,
+  "shots": [
+   {
+    "i": 1,
+    "start": 0.0,
+    "scene": "robot_walk",
+    "vo": "Walking feels effortless. You do it without thinking, while texting, carrying shopping, or chatting with a friend. But for a robot, it's one of the hardest problems in engineering."
+   },
+   {
+    "i": 2,
+    "start": 11.08,
+    "scene": "robot_walk",
+    "vo": "Even for us, it isn't easy at first. Babies take about a year to start walking, and studies of toddlers found they fall around seventeen times an hour while they practice."
+   },
+   {
+    "i": 3,
+    "start": 21.33,
+    "scene": "fall",
+    "vo": "For decades, humanoid robots shuffled slowly and stiffly, and fell over constantly. Now, some can run, jump, dance, and recover from a shove. So what changed? How do robots actually learn to walk?"
+   },
+   {
+    "i": 4,
+    "start": 35.92,
+    "scene": "robot_walk",
+    "vo": "First, why build robots shaped like people at all? Because our world is built for human bodies: stairs, doorways, ladders and tools. A robot with legs and hands can, in principle, go wherever we go."
+   },
+   {
+    "i": 5,
+    "start": 50.04,
+    "scene": "inverted_pendulum",
+    "vo": "Here's the problem. Walking is really a controlled fall. With every step, you tip forward, and catch yourself with the other leg just in time."
+   },
+   {
+    "i": 6,
+    "start": 59.04,
+    "scene": "inverted_pendulum",
+    "vo": "Engineers often model it as an inverted pendulum: a weight balanced on top of a stick. It's naturally unstable. Without constant correction, it falls."
+   },
+   {
+    "i": 7,
+    "start": 69.04,
+    "scene": "robot_walk",
+    "vo": "Your brain handles this automatically, using signals from your inner ear, your eyes, and sensors in your muscles and feet, adjusting hundreds of muscles in real time."
+   },
+   {
+    "i": 8,
+    "start": 79.17,
+    "scene": "sensors",
+    "vo": "A humanoid robot has to do the same thing with motors and sensors. It might have twenty to forty joints, each driven by a motor, and it has to coordinate all of them many times every second."
+   },
+   {
+    "i": 9,
+    "start": 90.92,
+    "scene": "sensors",
+    "vo": "Robots copy our senses. Gyroscopes and accelerometers act like an inner ear, sensing tilt and motion. Encoders measure every joint angle. Force sensors in the feet feel the ground. And cameras or laser scanners see what's ahead."
+   },
+   {
+    "i": 10,
+    "start": 106.17,
+    "scene": "title_card",
+    "vo": "The first full-size humanoid robot, WABOT-1, was built at Waseda University in Japan in 1973. It could walk, but each step took around forty-five seconds."
+   },
+   {
+    "i": 11,
+    "start": 118.58,
+    "scene": "inverted_pendulum",
+    "vo": "Early robots avoided the problem by walking statically. They kept their weight over one foot at all times, so they could freeze at any moment without falling. Safe, but painfully slow."
+   },
+   {
+    "i": 12,
+    "start": 129.42,
+    "scene": "zmp",
+    "vo": "Engineers developed a clever rule called the zero moment point. Put simply: keep the robot's balance point inside the area covered by its feet, and it won't tip over."
+   },
+   {
+    "i": 13,
+    "start": 140.96,
+    "scene": "title_card",
+    "vo": "The idea came from the Serbian engineer Miomir Vukobratovi\u0107, who introduced the zero moment point in the late nineteen-sixties. It became the foundation of humanoid walking for decades."
+   },
+   {
+    "i": 14,
+    "start": 152.96,
+    "scene": "zmp",
+    "vo": "That's why early robots walked with bent knees and flat, careful steps. They were constantly calculating how to keep that point inside the safe zone."
+   },
+   {
+    "i": 15,
+    "start": 161.79,
+    "scene": "robot_walk",
+    "vo": "Honda used ideas like this to build ASIMO, unveiled in 2000. It could walk, climb stairs, and later even run. It became one of the most famous robots in the world."
+   },
+   {
+    "i": 16,
+    "start": 172.79,
+    "scene": "robot_walk",
+    "vo": "ASIMO stood about a hundred and thirty centimeters tall, the height of a child, so it could work at a human's eye level. Honda stopped developing it in 2018, but it inspired a generation of engineers."
+   },
+   {
+    "i": 17,
+    "start": 186.63,
+    "scene": "fall",
+    "vo": "But these robots were fragile. In 2015, at the DARPA Robotics Challenge, humanoid robots tried to complete tasks in a mock disaster zone. Many toppled over in slow motion, and the falls became famous blooper reels."
+   },
+   {
+    "i": 18,
+    "start": 201.63,
+    "scene": "parkour",
+    "vo": "Boston Dynamics pushed in a different direction, with dynamic balance. Its Atlas robot learned to run, jump over obstacles, and do parkour."
+   },
+   {
+    "i": 19,
+    "start": 211.71,
+    "scene": "parkour",
+    "vo": "It even did backflips. But routines like these took enormous engineering effort. Behaviors were carefully designed and tuned by teams of experts."
+   },
+   {
+    "i": 20,
+    "start": 221.5,
+    "scene": "parkour",
+    "vo": "The original Atlas was powered by hydraulics, like a construction machine. In 2024, Boston Dynamics retired it, and unveiled a new, fully electric Atlas, with joints that can rotate in ways no human's can."
+   },
+   {
+    "i": 21,
+    "start": 236.92,
+    "scene": "sim_grid",
+    "vo": "Today, many robots learn to walk in a completely different way. Nobody writes down the walking rules. The robot works them out itself, through trial and error. It's called reinforcement learning."
+   },
+   {
+    "i": 22,
+    "start": 248.54,
+    "scene": "reward_panel",
+    "vo": "The robot gets a score, called a reward. Points for moving forward, staying upright, and saving energy. Penalties for falling, slipping, or jerky motion."
+   },
+   {
+    "i": 23,
+    "start": 259.58,
+    "scene": "reward_panel",
+    "vo": "It's a bit like training a dog with treats. Do something good, get a reward. Do it again and again, and good behavior becomes a habit. The same idea taught AI to play Go and video games."
+   },
+   {
+    "i": 24,
+    "start": 271.75,
+    "scene": "neural_policy",
+    "vo": "The robot's controller is a neural network. It takes in sensor readings, like joint angles and which way is up, and outputs commands for every motor."
+   },
+   {
+    "i": 25,
+    "start": 282.17,
+    "scene": "neural_policy",
+    "vo": "This network runs incredibly fast, often hundreds of times every second, constantly adjusting each motor as the robot moves."
+   },
+   {
+    "i": 26,
+    "start": 290.92,
+    "scene": "sim_grid",
+    "vo": "At first, the network is basically random. The robot flails and collapses. But every time it does slightly better, the network is nudged toward whatever earned more reward."
+   },
+   {
+    "i": 27,
+    "start": 301.42,
+    "scene": "sim_grid",
+    "vo": "Of course, you can't let a real robot fall millions of times. It would break. So training happens in a physics simulation, a virtual world where robots can fall as often as they need to."
+   },
+   {
+    "i": 28,
+    "start": 314.33,
+    "scene": "sim_grid",
+    "vo": "And because it's virtual, you can train thousands of copies at once. In one 2021 study, researchers trained about four thousand simulated four-legged robots in parallel on a single graphics chip. They learned to walk in under twenty minutes."
+   },
+   {
+    "i": 29,
+    "start": 329.88,
+    "scene": "sim_grid",
+    "vo": "Years of practice, squeezed into hours."
+   },
+   {
+    "i": 30,
+    "start": 333.25,
+    "scene": "sim_grid",
+    "vo": "Simulated robots can be sneaky, though. If the reward allows it, they discover bizarre ways to move, like hopping on one leg or sliding on their knees. Engineers have to design rewards very carefully."
+   },
+   {
+    "i": 31,
+    "start": 345.71,
+    "scene": "randomize",
+    "vo": "But there's a catch. A simulation is never exactly like reality. Real floors may be slipperier, real motors weaker, and the robot's real weight slightly different."
+   },
+   {
+    "i": 32,
+    "start": 356.75,
+    "scene": "randomize",
+    "vo": "So engineers use a trick called domain randomization. During training, they constantly change the physics: friction, weight, motor strength. And they shove the robots around."
+   },
+   {
+    "i": 33,
+    "start": 368.33,
+    "scene": "real_world",
+    "vo": "A robot that can cope with all those variations in simulation is far more likely to cope with the messy real world. In 2024, researchers at Berkeley showed a humanoid trained this way walking outdoors, over grass, concrete and slopes, without any extra training in the real world."
+   },
+   {
+    "i": 34,
+    "start": 387.25,
+    "scene": "fall",
+    "vo": "Robots can even learn to recover from a fall and stand back up, something early humanoids couldn't do on their own."
+   },
+   {
+    "i": 35,
+    "start": 394.96,
+    "scene": "randomize",
+    "vo": "Some robots also keep a short memory of their recent movements. If their feet start slipping, they work out that the floor is icy, and adjust their walking within a few steps, a bit like you do on a frozen sidewalk."
+   },
+   {
+    "i": 36,
+    "start": 409.13,
+    "scene": "mocap",
+    "vo": "Another trick is to learn from us. Researchers record real people with motion capture, and reward the robot for matching human movements. That's one way robots learn more natural walking."
+   },
+   {
+    "i": 37,
+    "start": 420.38,
+    "scene": "real_world",
+    "vo": "Adding cameras makes them even better. With vision, robots can spot stairs, gaps and obstacles ahead, and plan their steps. Some four-legged robots have even learned parkour this way."
+   },
+   {
+    "i": 38,
+    "start": 432.33,
+    "scene": "mocap",
+    "vo": "And it's how some of them learn to dance."
+   },
+   {
+    "i": 39,
+    "start": 435.13,
+    "scene": "warehouse",
+    "vo": "Now humanoid robots are moving into the real world. Agility Robotics' Digit has been moving plastic totes in warehouses. Companies like Figure, Tesla, and Unitree are building humanoids for factories, and one day, homes."
+   },
+   {
+    "i": 40,
+    "start": 450.67,
+    "scene": "marathon",
+    "vo": "In 2025, Beijing even hosted the first half marathon with humanoid robots running alongside people. The winning robot finished in about two hours and forty minutes, with a few battery swaps along the way."
+   },
+   {
+    "i": 41,
+    "start": 464.5,
+    "scene": "marathon",
+    "vo": "Later that year, Beijing hosted the first World Humanoid Robot Games, with robots competing in running, boxing, and soccer. Plenty of them fell over. But many got back up."
+   },
+   {
+    "i": 42,
+    "start": 476.46,
+    "scene": "robot_walk",
+    "vo": "There's still a long way to go. Robots struggle with surprises, delicate tasks, and battery life. Walking is only the beginning. Doing useful work safely around people is the real test."
+   },
+   {
+    "i": 43,
+    "start": 488.46,
+    "scene": "sim_grid",
+    "vo": "But the big shift has already happened. Instead of programming every step, we now let robots practice, fail, and learn, millions of times over, in virtual worlds. If you enjoyed this, subscribe. Next up: the incredible true story of how one boy built a windmill from scrap."
+   }
+  ]
+ },
+ "windmill": {
+  "total": 514.875,
+  "shots": [
+   {
+    "i": 1,
+    "start": 0.0,
+    "scene": "village",
+    "vo": "In 2001, a terrible famine swept across the African country of Malawi. Crops failed after floods and then drought. Food ran out, prices soared, and thousands of people died."
+   },
+   {
+    "i": 2,
+    "start": 12.58,
+    "scene": "maize",
+    "vo": "In the small village of Masitala, a fourteen-year-old boy named William Kamkwamba watched his family's maize fields wither. His family was down to one small meal a day."
+   },
+   {
+    "i": 3,
+    "start": 23.25,
+    "scene": "maize",
+    "vo": "Malawi is a small, landlocked country in southern Africa. Most families, like William's, grew maize to survive. When the rains failed, there was simply nothing else to eat."
+   },
+   {
+    "i": 4,
+    "start": 34.75,
+    "scene": "village",
+    "vo": "People sold their goats, their pots, even the roofs of their houses to buy food. Some families walked for days searching for maize. William's family lived on a handful of meals a week."
+   },
+   {
+    "i": 5,
+    "start": 45.88,
+    "scene": "boy_walk",
+    "vo": "Then came another blow. His parents could no longer afford his school fees, about eighty dollars a year. William had to drop out of school."
+   },
+   {
+    "i": 6,
+    "start": 53.96,
+    "scene": "boy_walk",
+    "vo": "William had always loved taking things apart. He fixed radios for his neighbors, figuring out how they worked by opening them up and testing every part."
+   },
+   {
+    "i": 7,
+    "start": 63.0,
+    "scene": "windmill",
+    "vo": "But within a few years, this boy would bring electricity to his home, using a windmill he built himself, out of scrap. This is how he did it."
+   },
+   {
+    "i": 8,
+    "start": 71.92,
+    "scene": "boy_walk",
+    "vo": "William didn't stop learning. He started visiting a small library at a nearby primary school, stocked with donated books. He read everything he could find about science."
+   },
+   {
+    "i": 9,
+    "start": 82.67,
+    "scene": "library",
+    "vo": "One day he found a textbook called Using Energy. On its cover was a row of windmills. The book explained that wind could turn a turbine and make electricity."
+   },
+   {
+    "i": 10,
+    "start": 92.42,
+    "scene": "library",
+    "vo": "His English wasn't perfect, so he studied the diagrams closely, and looked up the words he didn't know. Slowly, an idea took shape."
+   },
+   {
+    "i": 11,
+    "start": 101.17,
+    "scene": "library",
+    "vo": "He also studied another book, called Explaining Physics. It taught him about magnets, motors, and how electricity flows through wires. He read it again and again."
+   },
+   {
+    "i": 12,
+    "start": 111.79,
+    "scene": "house_light",
+    "vo": "At the time, only about two percent of Malawians had electricity. At night, his family used smoky kerosene lamps, and the day ended when the sun went down. William wanted to change that."
+   },
+   {
+    "i": 13,
+    "start": 124.04,
+    "scene": "house_light",
+    "vo": "Kerosene was expensive, and the smoke filled the house. Without electric light, children couldn't study at night, and without electric pumps, farmers could only grow crops when it rained."
+   },
+   {
+    "i": 14,
+    "start": 135.21,
+    "scene": "dynamo",
+    "vo": "Here's the science behind his plan. In 1831, the scientist Michael Faraday discovered that moving a magnet near a coil of wire makes electric current flow. It's called electromagnetic induction."
+   },
+   {
+    "i": 15,
+    "start": 149.62,
+    "scene": "dynamo",
+    "vo": "Spin a magnet inside a coil, and you get a steady flow of electricity. That's how almost every power station on Earth works, from coal plants to giant wind turbines."
+   },
+   {
+    "i": 16,
+    "start": 159.96,
+    "scene": "dynamo",
+    "vo": "Notice that energy is never created out of nothing. It only changes form. The wind's motion becomes the spinning of the blades, and the spinning becomes electricity. William's windmill was a machine for changing energy from one form into another."
+   },
+   {
+    "i": 17,
+    "start": 174.92,
+    "scene": "bicycle",
+    "vo": "William realized he already knew a small version of this machine. Some bicycles had a dynamo: a little generator pressed against the wheel, that powered the headlight while you pedaled."
+   },
+   {
+    "i": 18,
+    "start": 185.79,
+    "scene": "windmill",
+    "vo": "And wind is free. The faster the wind blows, the more energy it carries. In fact, if the wind speed doubles, the power available goes up about eight times. That's why turbines are built on tall towers, where the wind is stronger and steadier."
+   },
+   {
+    "i": 19,
+    "start": 200.46,
+    "scene": "dynamo",
+    "vo": "William's challenge was turning that wind into enough motion to spin a magnet fast. The bicycle chain and wheel could help with that, acting like gears."
+   },
+   {
+    "i": 20,
+    "start": 210.04,
+    "scene": "windmill",
+    "vo": "So the plan was simple, at least on paper. Let the wind turn some blades. Let the blades spin a wheel. Let the wheel spin a dynamo. And let the dynamo light a bulb."
+   },
+   {
+    "i": 21,
+    "start": 220.08,
+    "scene": "junkyard",
+    "vo": "But William had no money for parts. So he went to the local scrapyard, and started digging."
+   },
+   {
+    "i": 22,
+    "start": 225.67,
+    "scene": "junkyard",
+    "vo": "He collected a tractor fan, an old shock absorber, plastic pipes, and bits of metal. People in the village saw him carrying junk home and thought he had gone crazy. Some even said he was smoking something."
+   },
+   {
+    "i": 23,
+    "start": 237.92,
+    "scene": "junkyard",
+    "vo": "Day after day, he searched through rusty metal and broken machines. For a boy with no money, the scrapyard was the only hardware store he had."
+   },
+   {
+    "i": 24,
+    "start": 247.04,
+    "scene": "bicycle",
+    "vo": "His friend Gilbert, the son of the village chief, helped him buy a broken bicycle frame and a dynamo. Those would become the heart of the machine."
+   },
+   {
+    "i": 25,
+    "start": 255.71,
+    "scene": "pvc_blades",
+    "vo": "For the blades, he cut plastic PVC pipes in half, heated them over a fire, and pressed them flat. Then he bolted them to the tractor fan."
+   },
+   {
+    "i": 26,
+    "start": 264.71,
+    "scene": "pvc_blades",
+    "vo": "Shaping the blades was tricky. Too flat, and they wouldn't catch the wind. Too curved, and they'd be inefficient. He bent them by hand until they had just the right twist."
+   },
+   {
+    "i": 27,
+    "start": 274.67,
+    "scene": "pvc_blades",
+    "vo": "Windmill blades work a bit like the wings of an airplane. As air flows over the curved surface, it pushes on the blade unevenly, and that push turns the rotor."
+   },
+   {
+    "i": 28,
+    "start": 284.83,
+    "scene": "build",
+    "vo": "For the tower, he and his friends cut down blue gum trees, and lashed the poles together into a tower about five meters tall."
+   },
+   {
+    "i": 29,
+    "start": 292.83,
+    "scene": "build",
+    "vo": "There were no cranes or power tools. Everything was cut, lifted, and tied together by hand, with nails, wire, and help from his friends."
+   },
+   {
+    "i": 30,
+    "start": 301.67,
+    "scene": "windmill",
+    "vo": "Finally, they hauled the machine to the top. The blades were connected to the bicycle wheel, and the wheel to the dynamo. A wire ran down to a small light bulb he held in his hand."
+   },
+   {
+    "i": 31,
+    "start": 313.04,
+    "scene": "house_light",
+    "vo": "The wind picked up. The blades started to turn. And the bulb flickered, then glowed."
+   },
+   {
+    "i": 32,
+    "start": 318.67,
+    "scene": "windmill",
+    "vo": "A crowd had gathered to watch. The boy they had called crazy had made electricity from the wind."
+   },
+   {
+    "i": 33,
+    "start": 324.75,
+    "scene": "windmill",
+    "vo": "It was only enough to power a single small bulb. But it proved something important. His idea worked."
+   },
+   {
+    "i": 34,
+    "start": 331.25,
+    "scene": "house_light",
+    "vo": "William kept improving his machine. He ran wires into his family's house, and powered light bulbs and a radio. He even built his own circuit breaker, using nails, magnets and wire, to stop the wires from overheating and causing a fire."
+   },
+   {
+    "i": 35,
+    "start": 345.83,
+    "scene": "house_light",
+    "vo": "To keep the lights on when the wind dropped, he connected a car battery to store the electricity. He made light switches from scraps of rubber and metal, and wired them himself."
+   },
+   {
+    "i": 36,
+    "start": 356.33,
+    "scene": "house_light",
+    "vo": "His mother worried that the wires might start a fire. His homemade circuit breaker was the answer. A real engineer thinks about safety, not just power."
+   },
+   {
+    "i": 37,
+    "start": 365.42,
+    "scene": "windmill",
+    "vo": "Soon neighbors were lining up to charge their mobile phones. He later rebuilt the windmill on a taller tower, around twelve meters high, to catch stronger winds."
+   },
+   {
+    "i": 38,
+    "start": 375.17,
+    "scene": "village",
+    "vo": "His achievement mattered beyond one village. Even today, hundreds of millions of people in sub-Saharan Africa live without electricity. Cheap, local power from the wind and sun could change their lives too."
+   },
+   {
+    "i": 39,
+    "start": 388.37,
+    "scene": "pump",
+    "vo": "He went on to build a solar-powered water pump for the village, and a windmill to help pump water for irrigation, so families could grow food even in the dry season."
+   },
+   {
+    "i": 40,
+    "start": 398.62,
+    "scene": "pump",
+    "vo": "With water, families could plant a second crop in the dry season. Food was no longer entirely at the mercy of the rain."
+   },
+   {
+    "i": 41,
+    "start": 405.96,
+    "scene": "title_card",
+    "vo": "In 2006, a local newspaper wrote about the windmill. Bloggers picked up the story, and it spread around the world."
+   },
+   {
+    "i": 42,
+    "start": 414.0,
+    "scene": "stage",
+    "vo": "In 2007, William was invited to speak at a TED conference in Arusha, Tanzania. Nervous, and speaking in English to a huge audience, he summed up his story in a few words: I try, and I made it."
+   },
+   {
+    "i": 43,
+    "start": 428.04,
+    "scene": "stage",
+    "vo": "The audience gave him a standing ovation. Within days, people around the world were sharing his story, and offering to help him return to school."
+   },
+   {
+    "i": 44,
+    "start": 436.79,
+    "scene": "stage",
+    "vo": "He returned to TED two years later, and gave a message to anyone facing a problem like his: trust yourself, and believe. Whatever happens, don't give up."
+   },
+   {
+    "i": 45,
+    "start": 447.0,
+    "scene": "title_card",
+    "vo": "Supporters helped him go back to school. He studied at the African Leadership Academy in South Africa, and later graduated from Dartmouth College in the United States in 2014."
+   },
+   {
+    "i": 46,
+    "start": 458.92,
+    "scene": "title_card",
+    "vo": "His story became a bestselling book, The Boy Who Harnessed the Wind, and in 2019, a Netflix film of the same name."
+   },
+   {
+    "i": 47,
+    "start": 468.0,
+    "scene": "title_card",
+    "vo": "Later, he returned home and worked to help young people in Malawi learn to build, invent, and solve problems in their own communities."
+   },
+   {
+    "i": 48,
+    "start": 477.25,
+    "scene": "windmill",
+    "vo": "Today, wind turbines generate a growing share of the world's electricity. The biggest have blades over a hundred meters long. But they work on the same principle as William's homemade machine."
+   },
+   {
+    "i": 49,
+    "start": 488.87,
+    "scene": "windmill",
+    "vo": "William didn't have money, tools, or a teacher. What he had was curiosity, a library book, and the refusal to give up when people laughed at him."
+   },
+   {
+    "i": 50,
+    "start": 498.62,
+    "scene": "village",
+    "vo": "Big ideas can come from anywhere, even from a scrapyard in a village without electricity. As William put it: I try, and I made it. Thanks for watching this series. If you enjoyed it, subscribe for more stories about science and the people who change the world."
+   }
+  ]
+ }
+}
