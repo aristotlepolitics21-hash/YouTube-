@@ -36,7 +36,7 @@ S("The man who challenged Einstein was the Danish physicist Niels Bohr. And in t
 # ===================================================================== BOHR'S ATOM
 S("Bohr was born in Copenhagen in eighteen eighty five, into a family of scholars. He was also a talented football goalkeeper. His brother Harald played for Denmark at the Olympics.",
   stage("sky", cam((0, -3.0, 1.5), (0.3, -2.6, 1.4), (0, 0, 1.0)), cast=[who(BOHR, pose=STAND, scale=0.85)], props=[P("bulb", (0.7, 0, 0.0), scale=1.5, args={"on": 2})],
-        texts=[T("COPENHAGEN 1885", (0.9, 0.5, 1.6), 0.15, pop=0.2)], env_opts={"sky": {"horizon": [0.8, 0.85, 0.95], "zenith": [0.2, 0.4, 0.8]}, "floor": [0.2, 0.5, 0.2]}),
+        texts=[T("COPENHAGEN 1885", (0.45, 0.5, 1.75), 0.15, pop=0.2)], env_opts={"sky": {"horizon": [0.8, 0.85, 0.95], "zenith": [0.2, 0.4, 0.8]}, "floor": [0.2, 0.5, 0.2]}),
   still=True, chapter="Bohr's atom")
 S("In the early nineteen hundreds, nobody understood atoms. Experiments showed a tiny, heavy nucleus with electrons around it, but by the known laws of physics, the electrons should spiral inwards and crash in a fraction of a second.",
   stage("studio", cam((0, -2.2, 0.9), (0, -1.9, 0.8), (0, 0, 0.6)), props=[P("bohr_atom", (0, 0, 0.6), args={"orbits": 1})]))
@@ -130,7 +130,7 @@ S("Bohr replied that it makes no sense to talk about properties that haven't bee
 S("Einstein spent his last years searching for a deeper theory that would make chance disappear. He died in nineteen fifty five, without finding it.",
   stage("lab", TWO, cast=[who(EINSTEIN, at=(-0.5, 0.35, 0), turn=-20, pose=STAND), who(BOHR, at=(0.5, 0.35, 0), turn=20, pose=PRESENT)], env_opts=STUDY), still=True)
 S("Yet they remained deep friends. And when Bohr died in nineteen sixty two, the last drawing on his blackboard was a sketch of Einstein's light box.",
-  stage("lab", cam((0, -1.2, 1.2), (0, -1.0, 1.15), (0, -0.1, 0.95)), props=[P("blackboard", (0, 1.5, 0), args={"lines": [""]}), P("photon_box", (0, 1.4, 1.2), scale=0.35)],
+  stage("lab", cam((0.2, -1.4, 1.5), (0.1, -1.2, 1.45), (0, 1.4, 1.35)), props=[P("blackboard", (0, 1.5, 0), args={"lines": [""]}), P("photon_box", (0, 1.4, 1.2), scale=0.8)],
         env_opts={"wall": [0.08, 0.08, 0.09], "world": [0.01, 0.01, 0.01]}), still=True)
 
 # ===================================================================== WAR
@@ -138,7 +138,7 @@ S("During the Second World War, Bohr, whose mother was Jewish, fled Nazi-occupie
   stage("night", cam((0, -5.5, 1.4), (0.4, -5.0, 1.3), (0, 0, 0.6)), props=[P("route", (0, 0, 0.05), scale=0.8, args={"stops": ["COPENHAGEN", "SWEDEN"]})]),
   still=True, chapter="Escape")
 S("He was then flown to Britain lying in the empty bomb bay of a fast Mosquito aircraft. His oxygen mask didn't fit his large head, and he passed out on the way.",
-  stage("night", cam((0, -9, 3.0), (0.4, -8.4, 3.0), (0, 0, 3.0)), props=[P("airliner", (0, 3, 3.2), scale=0.4, rot=[0, 0, -90], anim=[[0, {"at": [-5, 3, 3.0]}], [1, {"at": [5, 3, 3.4]}]])]))
+  stage("night", cam((0, -5.5, 3.0), (0.3, -5.0, 3.1), (0, 3, 3.2)), props=[P("airliner", (0, 3, 3.2), scale=0.9, rot=[0, 0, -90], anim=[[0, {"at": [-5, 3, 3.0]}], [1, {"at": [5, 3, 3.4]}]])]))
 
 # ===================================================================== VERDICT
 S("Earlier, when the Nazis invaded Denmark in nineteen forty, a chemist at Bohr's institute, George de Hevesy, dissolved two colleagues' gold Nobel medals in acid to hide them. After the war, the gold was recovered and the medals recast.",
