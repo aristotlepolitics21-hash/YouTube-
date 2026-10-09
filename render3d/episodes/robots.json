@@ -341,6 +341,14 @@
    "vo": "In 2025, Beijing even hosted the first half marathon with humanoid robots running alongside people. The winning robot finished in about two hours and forty minutes, with a few battery swaps along the way."
   },
   {
+   "scene": "marathon",
+   "params": {
+    "az0": 0.6,
+    "az1": 0.9
+   },
+   "vo": "Later that year, Beijing hosted the first World Humanoid Robot Games, with robots competing in running, boxing, and soccer. Plenty of them fell over. But many got back up."
+  },
+  {
    "scene": "robot_walk",
    "params": {
     "az0": 2.0,
@@ -367,14 +375,6 @@
     "But the big shift has already happened. Instead of programming every step, we now let robots practice, fail, and learn, millions of times over, in virtual worlds.",
     "If you enjoyed this, subscribe. Next up: the incredible true story of how one boy built a windmill from scrap."
    ]
-  },
-  {
-   "scene": "marathon",
-   "params": {
-    "az0": 0.6,
-    "az1": 0.9
-   },
-   "vo": "Later that year, Beijing hosted the first World Humanoid Robot Games, with robots competing in running, boxing, and soccer. Plenty of them fell over. But many got back up."
   }
  ]
 }
