@@ -128,7 +128,9 @@ def _glow_transparent(name, color, strength, opacity):
     return m
 
 
-def emissive(name, color, strength):
+def emissive(name, color, strength, clear=False):
+    """Pure emission material. clear=True adds a transparent base so the object vanishes (instead of
+    rendering black) whenever its strength is keyed down to zero - use it for flashes, flames, sparks."""
     m = bpy.data.materials.new(name)
     m.use_nodes = True
     nt = m.node_tree
@@ -137,7 +139,16 @@ def emissive(name, color, strength):
     em.inputs["Color"].default_value = (*color, 1)
     em.inputs["Strength"].default_value = strength
     out = nt.nodes.new("ShaderNodeOutputMaterial")
-    nt.links.new(em.outputs[0], out.inputs[0])
+    if clear:
+        tr = nt.nodes.new("ShaderNodeBsdfTransparent")
+        add = nt.nodes.new("ShaderNodeAddShader")
+        nt.links.new(em.outputs[0], add.inputs[0])
+        nt.links.new(tr.outputs[0], add.inputs[1])
+        nt.links.new(add.outputs[0], out.inputs[0])
+        if hasattr(m, "blend_method"):
+            m.blend_method = "BLEND"
+    else:
+        nt.links.new(em.outputs[0], out.inputs[0])
     return m, em.inputs["Strength"]
 
 

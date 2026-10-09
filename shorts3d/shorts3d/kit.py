@@ -325,7 +325,7 @@ def kite(frames, spark=0.6):
     string = curve_obj("string", [V((0, 0, 2.5)), V((0.3, 0, 1.4)), V((0.5, 0, 0.0))], 0.004,
                        mat("string", (0.9, 0.85, 0.7)), root)
     key_o = box("key", (0.5, 0, -0.05), (0.02, 0.005, 0.07), mat("brass", (0.8, 0.65, 0.3), 0.3, 0.9), parent=root)
-    sm, ss = fx.emissive("spark", (0.6, 0.85, 1.0), 0)
+    sm, ss = fx.emissive("spark", (0.6, 0.85, 1.0), 0, clear=True)
     sp = sph("spark", (0.5, -0.01, -0.1), 0.02, sm, parent=root)
     glow_keys(ss, frames, [(0, 0), (spark, 0), (spark + 0.02, 40), (spark + 0.06, 0), (spark + 0.1, 30), (spark + 0.14, 0)])
     for f in range(1, frames + 1, 4):
@@ -1124,7 +1124,7 @@ def fission(frames, hit=0.35, split=0.5, products=True, neutrons=3, seed=1):
             visible_from(frag, frames, split)
             props.key(frag, fs, location=(sign * 0.2, 0, 0))
             props.key(frag, frames, location=(sign * 1.1, 0, sign * 0.15))
-        fm, fstr = fx.emissive("flash", (1.0, 0.85, 0.5), 0)
+        fm, fstr = fx.emissive("flash", (1.0, 0.85, 0.5), 0, clear=True)
         fl = sph("flash", (0, 0, 0), 0.3, fm, parent=root)
         glow_keys(fstr, frames, [(0, 0), (split - 0.005, 0), (split, 30), (min(1, split + 0.12), 0)])
         props.key(fl, fs, scale=(0.5, 0.5, 0.5))
@@ -1957,7 +1957,7 @@ def saturn_v(frames, launch=None, scale_h=1.0):
         n.data.materials.append(black)
         n.parent = root
     if launch:
-        fm, fs = fx.emissive("flame", (1.0, 0.55, 0.15), 0)
+        fm, fs = fx.emissive("flame", (1.0, 0.55, 0.15), 0, clear=True)
         flame = sph("flame", (0, 0, -1.2), 0.45, fm, (1, 1, 3.0), root)
         glow_keys(fs, frames, [(0, 0), (launch[0], 0), (launch[0] + 0.03, 25)])
         smoke = mat("smoke", (0.85, 0.83, 0.8), 0.9, alpha=0.8)
@@ -2009,7 +2009,7 @@ def lunar_module(frames, land=None):
     n.data.materials.append(mat("nozzle", (0.2, 0.2, 0.22), 0.4, 0.8))
     n.parent = root
     if land:
-        fm, fs = fx.emissive("lm_flame", (0.6, 0.75, 1.0), 0)
+        fm, fs = fx.emissive("lm_flame", (0.6, 0.75, 1.0), 0, clear=True)
         sph("lm_flame", (0, 0, 0.1), 0.15, fm, (1, 1, 2), root)
         glow_keys(fs, frames, [(0, 6), (land[1] - 0.02, 6), (land[1], 0)])
         props.key(root, key_frac(frames, land[0]), location=(0, 0, 4.0))
@@ -2140,7 +2140,7 @@ def bohr_atom(frames, orbits=3, jump=None, spin=True):
             f = key_frac(frames, jump[0])
             props.key(e, f, location=(r, 0, 0))
             props.key(e, f + 3, location=(radii[jump[2]], 0, 0))
-            pm, ps = fx.emissive("photon", (1.0, 0.4, 0.8), 0)
+            pm, ps = fx.emissive("photon", (1.0, 0.4, 0.8), 0, clear=True)
             pts = [V((r + 0.03 * i, 0, 0.04 * math.sin(i * 0.9))) for i in range(40)]
             ph = curve_obj("photon", pts, 0.008, pm, root)
             glow_keys(ps, frames, [(0, 0), (jump[0], 0), (jump[0] + 0.02, 8)])
@@ -2294,7 +2294,7 @@ def dna_helix(frames, length=2.4, turns=3.0, spin=60, cut=None, edit=None, seed=
                 props.key(o, 1, scale=(1, 1, 1))
                 props.key(o, key_frac(frames, t), scale=(1, 1, 1))
                 props.key(o, key_frac(frames, t) + 4, scale=(0, 0, 0))
-        fm, fs = fx.emissive("cut_flash", (1.0, 0.9, 0.4), 0)
+        fm, fs = fx.emissive("cut_flash", (1.0, 0.9, 0.4), 0, clear=True)
         sph("cut_flash", (xc, 0, 0), 0.12, fm, parent=root)
         glow_keys(fs, frames, [(0, 0), (t - 0.01, 0), (t, 25), (t + 0.08, 0)])
     if edit:

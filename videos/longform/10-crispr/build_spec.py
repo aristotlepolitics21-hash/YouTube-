@@ -37,7 +37,7 @@ S("It's called CRISPR. And it was borrowed from bacteria.",
 # ===================================================================== DNA BASICS
 S("DNA is a long, twisted ladder. Each rung is a pair of chemical letters: A, T, G and C. Their order spells out genes, the recipes for making proteins.",
   stage("studio", cam((0.5, -1.6, 0.8), (0.2, -1.3, 0.7), (0, 0, 0.6)), props=[P("dna_helix", (0, 0, 0.6))],
-        texts=[T("A   T   G   C", (0, 0.3, 1.05), 0.14, pop=0.3)], env_opts=MICRO), chapter="The code of life")
+        texts=[T("A   T   G   C", (0, 0.5, 0.9), 0.14, pop=0.3)], env_opts=MICRO), chapter="The code of life")
 S("If you printed out the DNA in one human cell, it would fill around two hundred thick phone books. And if you stretched it out, it would be about two metres long.",
   stage("studio", cam((0.2, -1.4, 0.9), (0.1, -1.2, 0.8), (0, 0, 0.3)), props=[P("books", args={"n": 12, "seed": 3}), P("books", (0.4, 0.1, 0), args={"n": 10, "seed": 4}),
         P("chromosome", (-0.5, 0.2, 0.4))], env_opts=MICRO), still=True)
@@ -153,10 +153,10 @@ S("In twenty twenty five, doctors in Philadelphia treated a baby boy named KJ, b
 
 # ===================================================================== BEYOND MEDICINE
 S("CRISPR is also changing farming. Researchers are using it to make crops that resist disease, survive drought, or simply keep fresh for longer.",
-  stage("sky", cam((0, -4.5, 1.4), (0.4, -4.0, 1.3), (0, 0, 0.4)), props=[P("cantaloupe", (-0.5, 0, 0), args={"mould": False}), P("bread", (0.4, 0, 0))],
+  stage("sky", cam((0.3, -1.7, 0.75), (0.15, -1.45, 0.65), (0, 0, 0.15)), props=[P("cantaloupe", (-0.5, 0, 0), args={"mould": False}), P("bread", (0.4, 0, 0))],
         env_opts={"sky": {"horizon": [0.9, 0.85, 0.65], "zenith": [0.25, 0.45, 0.85]}, "floor": [0.45, 0.6, 0.25]}), still=True, chapter="Beyond medicine")
 S("Some scientists want to use it to spread genes through wild mosquitoes that stop them carrying malaria, a disease that kills hundreds of thousands of people every year.",
-  stage("sky", cam((0, -3, 1.6), (0.3, -2.6, 1.6), (0, 0, 1.6)), props=[P("birds", (0, 0, 1.6), scale=0.4, args={"n": 10, "area": 2.0})],
+  stage("sky", cam((0, -1.8, 1.7), (0.2, -1.5, 1.65), (0, 0, 1.6)), props=[P("birds", (0, 0, 1.6), scale=0.3, args={"n": 16, "area": 2.2})],
         env_opts={"sky": {"horizon": [0.85, 0.65, 0.4], "zenith": [0.25, 0.35, 0.6]}, "floor": [0.25, 0.4, 0.2]}))
 
 # ===================================================================== ETHICS
