@@ -1,0 +1,907 @@
+1
+00:00:00,250 --> 00:00:03,580
+Every second, the Sun turns
+about six hundred million
+
+2
+00:00:03,590 --> 00:00:05,410
+tonnes of hydrogen into helium.
+
+3
+00:00:06,250 --> 00:00:09,740
+In the process, around four
+million tonnes of matter
+
+4
+00:00:09,750 --> 00:00:12,770
+simply disappears, turned into
+pure energy.
+
+5
+00:00:13,450 --> 00:00:16,930
+That energy is sunlight, and it
+powers almost all life on Earth.
+
+6
+00:00:17,583 --> 00:00:21,013
+For seventy years, scientists
+have been trying to build a
+small
+
+7
+00:00:21,023 --> 00:00:22,263
+star here on Earth.
+
+8
+00:00:23,000 --> 00:00:26,230
+If they succeed, it could give
+us almost limitless clean
+
+9
+00:00:26,240 --> 00:00:26,770
+energy,
+
+10
+00:00:26,780 --> 00:00:29,060
+from fuel found in seawater.
+
+11
+00:00:29,540 --> 00:00:31,730
+This is the secret behind
+nuclear fusion,
+
+12
+00:00:31,740 --> 00:00:33,360
+and why it's so hard.
+
+13
+00:00:34,983 --> 00:00:38,303
+For most of history, nobody knew
+what made the Sun shine.
+
+14
+00:00:38,983 --> 00:00:40,903
+If it were a giant lump of
+burning coal,
+
+15
+00:00:41,463 --> 00:00:43,563
+it would have burned out in a
+few thousand years.
+
+16
+00:00:44,417 --> 00:00:47,677
+The first clue came from
+Einstein's famous equation:
+
+17
+00:00:48,117 --> 00:00:49,697
+E equals m c squared.
+
+18
+00:00:50,317 --> 00:00:53,727
+A tiny amount of mass can be
+turned into an
+
+19
+00:00:53,737 --> 00:00:55,297
+enormous amount of energy.
+
+20
+00:00:56,083 --> 00:00:59,013
+In nineteen twenty, the British
+astronomer Arthur
+
+21
+00:00:59,023 --> 00:01:02,153
+Eddington noticed that a helium
+atom weighs
+
+22
+00:01:02,163 --> 00:01:05,453
+slightly less than the four
+hydrogen atoms it could be
+
+23
+00:01:05,463 --> 00:01:06,263
+built from.
+
+24
+00:01:06,750 --> 00:01:09,920
+He suggested that stars shine by
+fusing hydrogen into
+
+25
+00:01:09,930 --> 00:01:10,360
+helium,
+
+26
+00:01:10,370 --> 00:01:13,050
+and turning that missing mass
+into energy.
+
+27
+00:01:13,833 --> 00:01:17,283
+Many physicists argued that the
+Sun simply wasn't hot
+
+28
+00:01:17,293 --> 00:01:18,093
+enough for that.
+
+29
+00:01:18,533 --> 00:01:21,943
+Eddington's reply was famous: he
+told his critics to go
+
+30
+00:01:21,953 --> 00:01:23,353
+and find a hotter place.
+
+31
+00:01:24,250 --> 00:01:27,400
+In nineteen thirty nine, Hans
+Bethe worked out the exact
+
+32
+00:01:27,410 --> 00:01:30,110
+nuclear reactions that power the
+stars.
+
+33
+00:01:30,790 --> 00:01:32,730
+He later won the Nobel Prize for
+it.
+
+34
+00:01:34,233 --> 00:01:36,133
+So why is fusion so hard?
+
+35
+00:01:36,553 --> 00:01:38,913
+Because atomic nuclei hate each
+other.
+
+36
+00:01:39,583 --> 00:01:42,763
+Every nucleus carries a positive
+electric charge.
+
+37
+00:01:43,403 --> 00:01:46,363
+As two nuclei get close, they
+push each other away,
+
+38
+00:01:46,863 --> 00:01:47,763
+harder and harder.
+
+39
+00:01:48,500 --> 00:01:51,830
+Only if they collide fast
+enough, can they get close
+enough
+
+40
+00:01:51,840 --> 00:01:55,140
+for the strong nuclear force to
+grab hold and fuse them.
+
+41
+00:01:55,833 --> 00:01:57,293
+Speed means heat.
+
+42
+00:01:57,873 --> 00:02:01,283
+In the Sun's core, the
+temperature is about fifteen
+million
+
+43
+00:02:01,293 --> 00:02:01,843
+degrees,
+
+44
+00:02:01,853 --> 00:02:04,763
+and the crushing weight of the
+Sun squeezes
+
+45
+00:02:04,773 --> 00:02:05,753
+nuclei together.
+
+46
+00:02:06,500 --> 00:02:09,950
+Even at fifteen million degrees,
+almost no nuclei are fast
+
+47
+00:02:09,960 --> 00:02:10,760
+enough.
+
+48
+00:02:10,940 --> 00:02:14,040
+They fuse thanks to a quantum
+trick called tunnelling,
+
+49
+00:02:14,200 --> 00:02:17,480
+which lets a lucky few slip
+through the barrier between
+them.
+
+50
+00:02:18,083 --> 00:02:20,383
+On Earth, we can't recreate that
+pressure.
+
+51
+00:02:21,043 --> 00:02:24,513
+So we need to go much hotter:
+about a hundred and fifty
+million
+
+52
+00:02:24,523 --> 00:02:25,323
+degrees,
+
+53
+00:02:25,423 --> 00:02:27,963
+ten times hotter than the centre
+of the Sun.
+
+54
+00:02:28,750 --> 00:02:31,130
+At that temperature, matter
+becomes plasma:
+
+55
+00:02:31,710 --> 00:02:34,430
+a glowing soup of bare nuclei
+and electrons.
+
+56
+00:02:35,110 --> 00:02:37,550
+And no material container could
+hold it.
+
+57
+00:02:37,950 --> 00:02:39,330
+It would vaporise the walls.
+
+58
+00:02:40,250 --> 00:02:43,130
+The best fuel is two heavy forms
+of hydrogen:
+
+59
+00:02:43,670 --> 00:02:46,640
+deuterium, which can be
+extracted from ordinary
+
+60
+00:02:46,650 --> 00:02:47,600
+seawater,
+
+61
+00:02:47,610 --> 00:02:49,970
+and tritium, which can be made
+from lithium.
+
+62
+00:02:50,750 --> 00:02:54,200
+When they fuse, they make
+helium, and a fast neutron
+carrying
+
+63
+00:02:54,210 --> 00:02:55,250
+most of the energy.
+
+64
+00:02:56,000 --> 00:02:59,217
+Humans first released fusion
+energy in nineteen fifty
+
+65
+00:02:59,227 --> 00:02:59,510
+two,
+
+66
+00:02:59,520 --> 00:03:01,240
+in the hydrogen bomb.
+
+67
+00:03:01,780 --> 00:03:03,160
+That was fusion out of control.
+
+68
+00:03:03,700 --> 00:03:05,940
+The challenge since then has
+been to tame it.
+
+69
+00:03:07,483 --> 00:03:10,623
+The answer to holding plasma
+came from the Soviet Union.
+
+70
+00:03:11,223 --> 00:03:14,573
+In the early nineteen fifties,
+physicists Igor Tamm
+
+71
+00:03:14,583 --> 00:03:17,753
+and Andrei Sakharov proposed
+trapping it with
+
+72
+00:03:17,763 --> 00:03:18,623
+magnetic fields.
+
+73
+00:03:19,583 --> 00:03:22,933
+Charged particles spiral around
+magnetic field
+
+74
+00:03:22,943 --> 00:03:23,743
+lines.
+
+75
+00:03:24,103 --> 00:03:27,593
+Bend those lines into a ring,
+and the plasma can
+
+76
+00:03:27,603 --> 00:03:29,863
+circle forever without touching
+the walls.
+
+77
+00:03:30,750 --> 00:03:34,180
+In America, the physicist Lyman
+Spitzer designed a
+
+78
+00:03:34,190 --> 00:03:37,220
+different magnetic bottle, a
+twisted ring called the
+
+79
+00:03:37,230 --> 00:03:38,030
+stellarator.
+
+80
+00:03:38,310 --> 00:03:41,700
+Germany's Wendelstein seven X,
+switched on
+
+81
+00:03:41,710 --> 00:03:44,430
+in twenty fifteen, is a modern
+version.
+
+82
+00:03:45,250 --> 00:03:48,560
+Holding plasma steady has been
+compared to trying to squeeze
+
+83
+00:03:48,570 --> 00:03:51,470
+a balloon, or hold jelly with
+rubber bands.
+
+84
+00:03:52,190 --> 00:03:55,220
+Squeeze one place, and it bulges
+out somewhere
+
+85
+00:03:55,230 --> 00:03:56,030
+else.
+
+86
+00:03:56,583 --> 00:03:59,853
+The design was called a tokamak,
+a Russian
+
+87
+00:03:59,863 --> 00:04:02,913
+acronym for a toroidal chamber
+with magnetic
+
+88
+00:04:02,923 --> 00:04:03,723
+coils:
+
+89
+00:04:04,123 --> 00:04:05,923
+a doughnut-shaped magnetic
+bottle.
+
+90
+00:04:06,667 --> 00:04:09,817
+In nineteen sixty eight, a
+Soviet tokamak
+
+91
+00:04:09,827 --> 00:04:13,087
+called T-three reached around
+ten million degrees.
+
+92
+00:04:14,067 --> 00:04:15,447
+Western scientists were
+sceptical,
+
+93
+00:04:16,187 --> 00:04:19,517
+so a British team flew to Moscow
+with lasers to
+
+94
+00:04:19,527 --> 00:04:20,327
+measure it.
+
+95
+00:04:20,487 --> 00:04:21,527
+The Soviets were right.
+
+96
+00:04:22,333 --> 00:04:25,683
+Soon, tokamaks were being built
+all over
+
+97
+00:04:25,693 --> 00:04:26,493
+the world.
+
+98
+00:04:26,917 --> 00:04:30,247
+In nineteen fifty eight,
+countries declassified their
+
+99
+00:04:30,257 --> 00:04:32,637
+fusion research at a conference
+in Geneva.
+
+100
+00:04:33,317 --> 00:04:36,347
+That same year, Britain's ZETA
+machine was briefly
+
+101
+00:04:36,357 --> 00:04:39,827
+celebrated for achieving fusion,
+before scientists
+
+102
+00:04:39,837 --> 00:04:42,137
+realised the measurements had
+been misread.
+
+103
+00:04:43,817 --> 00:04:44,677
+The biggest was JET,
+
+104
+00:04:45,397 --> 00:04:47,677
+the Joint European Torus, in
+England.
+
+105
+00:04:48,197 --> 00:04:51,227
+In nineteen ninety seven, it
+produced sixteen
+
+106
+00:04:51,237 --> 00:04:53,217
+megawatts of fusion power.
+
+107
+00:04:54,000 --> 00:04:57,030
+JET ran for forty years at
+Culham, near
+
+108
+00:04:57,040 --> 00:04:57,510
+Oxford,
+
+109
+00:04:57,520 --> 00:05:00,770
+from nineteen eighty three until
+twenty twenty
+
+110
+00:05:00,780 --> 00:05:01,110
+three,
+
+111
+00:05:01,120 --> 00:05:04,060
+and trained a whole generation
+of fusion scientists.
+
+112
+00:05:05,333 --> 00:05:08,053
+But that took more power to run
+than it produced.
+
+113
+00:05:08,793 --> 00:05:11,943
+The holy grail is to get more
+energy out of the fuel than you
+
+114
+00:05:11,953 --> 00:05:12,853
+put in to heat it.
+
+115
+00:05:13,500 --> 00:05:16,950
+In twenty twenty three, in its
+final experiments before
+
+116
+00:05:16,960 --> 00:05:17,860
+closing,
+
+117
+00:05:18,220 --> 00:05:20,630
+JET set a world record: sixty
+nine
+
+118
+00:05:20,640 --> 00:05:23,750
+megajoules of energy in five
+seconds,
+
+119
+00:05:23,760 --> 00:05:26,480
+from a fraction of a milligramme
+of fuel.
+
+120
+00:05:27,167 --> 00:05:28,727
+There's another way to do
+fusion.
+
+121
+00:05:29,287 --> 00:05:32,737
+Instead of holding plasma
+steady, you can crush a tiny
+
+122
+00:05:32,747 --> 00:05:36,117
+pellet of fuel so fast that it
+fuses before it can
+
+123
+00:05:36,127 --> 00:05:36,927
+fly apart.
+
+124
+00:05:37,583 --> 00:05:40,693
+At the National Ignition
+Facility in California,
+
+125
+00:05:40,703 --> 00:05:43,953
+a hundred and ninety two giant
+lasers fire
+
+126
+00:05:43,963 --> 00:05:46,603
+at a capsule the size of a
+peppercorn.
+
+127
+00:05:47,250 --> 00:05:50,160
+On the fifth of December, twenty
+twenty two,
+
+128
+00:05:50,170 --> 00:05:53,560
+for the first time, the fusion
+reactions released more
+
+129
+00:05:53,570 --> 00:05:56,480
+energy than the laser light
+delivered to the target:
+
+130
+00:05:56,490 --> 00:05:59,920
+three point one five megajoules
+out, from
+
+131
+00:05:59,930 --> 00:06:01,510
+two point oh five in.
+
+132
+00:06:02,167 --> 00:06:04,687
+It was a historic milestone
+called ignition.
+
+133
+00:06:05,367 --> 00:06:08,397
+The lasers themselves still used
+far more electricity
+
+134
+00:06:08,407 --> 00:06:09,907
+than the fusion produced.
+
+135
+00:06:10,687 --> 00:06:14,057
+But it proved the physics works,
+and the team has since beaten
+
+136
+00:06:14,067 --> 00:06:14,867
+that result.
+
+137
+00:06:16,567 --> 00:06:19,777
+Now, thirty five countries are
+building the biggest
+
+138
+00:06:19,787 --> 00:06:22,977
+tokamak ever, ITER, in the south
+of
+
+139
+00:06:22,987 --> 00:06:23,787
+France.
+
+140
+00:06:24,250 --> 00:06:27,560
+Its magnets will be cooled to
+minus two hundred and sixty nine
+
+141
+00:06:27,570 --> 00:06:28,370
+degrees,
+
+142
+00:06:28,910 --> 00:06:31,510
+just a few degrees above
+absolute zero,
+
+143
+00:06:32,170 --> 00:06:34,940
+while the plasma inside reaches
+a hundred and fifty
+
+144
+00:06:34,950 --> 00:06:35,890
+million.
+
+145
+00:06:36,330 --> 00:06:39,570
+Some of the coldest and hottest
+places in the solar system,
+
+146
+00:06:39,990 --> 00:06:40,870
+a few metres apart.
+
+147
+00:06:41,667 --> 00:06:45,107
+When it's finished, the machine
+will weigh about twenty three
+
+148
+00:06:45,117 --> 00:06:48,567
+thousand tonnes, around three
+times as much as the Eiffel
+Tower.
+
+149
+00:06:49,333 --> 00:06:52,483
+ITER is designed to produce ten
+times more
+
+150
+00:06:52,493 --> 00:06:55,433
+fusion power than it uses to
+heat its plasma.
+
+151
+00:06:56,173 --> 00:06:59,583
+It has faced long delays, and
+full operations are
+
+152
+00:06:59,593 --> 00:07:01,804
+now planned for the late twenty
+thirties.
+
+153
+00:07:02,333 --> 00:07:03,133
+Meanwhile,
+
+154
+00:07:03,293 --> 00:07:06,593
+dozens of private companies are
+racing to build smaller,
+
+155
+00:07:06,933 --> 00:07:09,583
+cheaper reactors, using powerful
+new
+
+156
+00:07:09,593 --> 00:07:12,193
+superconducting magnets and
+clever designs.
+
+157
+00:07:13,167 --> 00:07:16,617
+In twenty twenty one, a team
+from MIT and the
+
+158
+00:07:16,627 --> 00:07:19,877
+company Commonwealth Fusion
+Systems tested a new
+
+159
+00:07:19,887 --> 00:07:23,107
+superconducting magnet that
+reached a field of twenty tesla,
+
+160
+00:07:23,587 --> 00:07:24,827
+a record for its kind.
+
+161
+00:07:25,667 --> 00:07:29,137
+And in early twenty twenty five,
+tokamaks held hot plasma
+
+162
+00:07:29,147 --> 00:07:31,957
+steady for almost eighteen
+minutes in China,
+
+163
+00:07:31,967 --> 00:07:35,097
+and twenty two minutes in
+France, new records
+
+164
+00:07:35,107 --> 00:07:36,187
+for staying power.
+
+165
+00:07:37,900 --> 00:07:39,280
+Why does it matter so much?
+
+166
+00:07:39,840 --> 00:07:42,360
+Because fusion fuel is
+incredibly concentrated.
+
+167
+00:07:43,333 --> 00:07:46,503
+Fusion reactions release
+millions of times more
+
+168
+00:07:46,513 --> 00:07:49,153
+energy per kilogramme than
+burning coal,
+
+169
+00:07:49,553 --> 00:07:50,633
+oil or gas.
+
+170
+00:07:51,313 --> 00:07:54,243
+A pineapple-sized amount of fuel
+could match
+
+171
+00:07:54,253 --> 00:07:56,233
+thousands of tonnes of coal.
+
+172
+00:07:57,000 --> 00:07:58,660
+It produces no carbon dioxide.
+
+173
+00:07:59,480 --> 00:08:02,980
+And unlike today's nuclear
+power, it can't melt down.
+
+174
+00:08:03,500 --> 00:08:06,810
+If anything goes wrong, the
+plasma simply cools
+
+175
+00:08:06,820 --> 00:08:08,160
+and the reaction stops.
+
+176
+00:08:09,083 --> 00:08:12,373
+It does create some
+radioactivity, as neutrons hit
+the
+
+177
+00:08:12,383 --> 00:08:15,593
+reactor walls, but far less
+long-lived waste
+
+178
+00:08:15,603 --> 00:08:16,403
+than fission.
+
+179
+00:08:17,083 --> 00:08:19,183
+The engineering problems are
+still huge.
+
+180
+00:08:19,863 --> 00:08:23,093
+The fast neutrons slowly damage
+the walls of the machine,
+
+181
+00:08:23,103 --> 00:08:26,413
+and the tritium fuel must be
+made inside the reactor
+
+182
+00:08:26,423 --> 00:08:26,973
+itself,
+
+183
+00:08:26,983 --> 00:08:27,783
+from lithium.
+
+184
+00:08:28,583 --> 00:08:31,713
+Scientists like to joke that
+fusion power is always
+
+185
+00:08:31,723 --> 00:08:32,943
+thirty years away.
+
+186
+00:08:33,283 --> 00:08:36,633
+But the experiments of the last
+few years have brought it closer
+
+187
+00:08:36,643 --> 00:08:37,843
+than ever before.
+
+188
+00:08:39,483 --> 00:08:42,703
+For billions of years, fusion
+has lit up the universe.
+
+189
+00:08:43,523 --> 00:08:46,953
+Every atom of carbon in your
+body, and the oxygen you
+
+190
+00:08:46,963 --> 00:08:47,293
+breathe,
+
+191
+00:08:47,303 --> 00:08:50,463
+was forged by fusion inside
+ancient stars.
+
+192
+00:08:51,333 --> 00:08:54,673
+Now, we're trying to light that
+same fire here on Earth.
