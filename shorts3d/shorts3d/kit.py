@@ -2990,6 +2990,14 @@ def brine_ponds(frames, n=6, seed=2):
         box("pond", ((c - 1) * 2.2, r * 1.6, 0.01), (2.0, 1.4, 0.02), mat(f"brine{i}", cols[i % len(cols)], 0.7, emit=0.25), parent=root)
     return root
 
+def earth_globe(frames, radius=1.0, spin=20, tilt=23.0, clouds=True):
+    """The blue Earth (ocean, land, ice caps, clouds, glowing atmosphere), slowly turning."""
+    root = empty("earth_globe")
+    for o in space.earth((0, 0, 0), radius, spin_frames=spin, frames=frames, clouds=clouds, tilt=tilt):
+        o.parent = root
+    return root
+
+
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",
