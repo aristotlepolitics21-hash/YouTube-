@@ -9,3 +9,4 @@ render3d/publish/bg/
 render3d/frames/
 render3d/stills/_test_body/
 render3d/stills/*/[0-9][0-9][a-j]_*.png
+render3d/stills/*/t_*.png
