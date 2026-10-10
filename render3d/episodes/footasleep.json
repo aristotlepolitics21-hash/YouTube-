@@ -1,0 +1,84 @@
+{
+  "module": "footasleep",
+  "title": "Why Does Your Foot Fall Asleep?",
+  "music": "ambient",
+  "length_scale": 1.08,
+  "punch": 0.06,
+  "max_clip": 2.6,
+  "shots": [
+    {
+      "vo": "Why does your foot fall asleep?",
+      "highlight": "#7fd8ff",
+      "scene": "legs",
+      "params": {"xray0": 0, "xray1": 0, "squeeze0": 0.2, "squeeze1": 1, "az0": 0.2, "az1": 0.35},
+      "cuts": [
+        {"at": "foot", "scene": "pins", "params": {"numb": 1, "tingle0": 0, "tingle1": 0}}
+      ]
+    },
+    {
+      "vo": "When you cross your legs or sit on them, you squeeze a nerve that runs down to your foot.",
+      "highlight": "#ffd23f",
+      "scene": "legs",
+      "params": {"xray0": 0, "xray1": 0, "squeeze0": 0, "squeeze1": 1, "az0": -0.3, "az1": -0.15, "dist0": 36, "dist1": 32},
+      "cuts": [
+        {"at": "squeeze", "params": {"xray0": 0, "xray1": 1, "squeeze0": 1, "squeeze1": 1, "labels": 1, "az0": 0.7, "az1": 0.6, "dist0": 18, "dist1": 15, "tx0": 6.8, "tx1": 6.8, "ty0": -0.8, "ty1": -0.8}},
+        {"at": "runs", "params": {"xray0": 1, "xray1": 1, "squeeze0": 1, "squeeze1": 1, "labels": 1, "flow": 1}}
+      ]
+    },
+    {
+      "vo": "You also squeeze the tiny blood vessels that keep that nerve alive.",
+      "highlight": "#ff4b4b",
+      "scene": "bundle",
+      "params": {"squeeze0": 0, "squeeze1": 0.4, "labels": 1},
+      "cuts": [
+        {"at": "vessels", "params": {"squeeze0": 0.4, "squeeze1": 0.8, "labels": 0, "az0": 0.9, "az1": 0.75, "el0": 0.35, "el1": 0.3, "dist0": 11, "dist1": 9.5}}
+      ]
+    },
+    {
+      "vo": "Squashed and short on blood, it stops passing messages. Your foot goes numb.",
+      "highlight": "#7fd8ff",
+      "scene": "bundle",
+      "params": {"squeeze0": 0.8, "squeeze1": 0.85, "flow": 1, "block": 1, "az0": 0.3, "az1": 0.2, "dist0": 15, "dist1": 13},
+      "cuts": [
+        {"at": "short", "params": {"squeeze0": 0.85, "squeeze1": 0.9, "flow": 1, "block": 1, "az0": 1.1, "az1": 1.0, "el0": 0.3, "el1": 0.25, "dist0": 10, "dist1": 9}},
+        {"at": "messages.", "scene": "legs", "params": {"squeeze0": 1, "squeeze1": 1, "flow": 1, "block": 1, "numb": 1}},
+        {"at": "numb.", "scene": "pins", "params": {"numb": 1, "tingle0": 0, "tingle1": 0, "az0": 0.7, "az1": 0.6, "dist0": 9, "dist1": 8}}
+      ]
+    },
+    {
+      "vo": "Then you stand up.",
+      "highlight": "#4dff9a",
+      "scene": "legs",
+      "params": {"xray0": 0, "xray1": 0.6, "squeeze0": 1, "squeeze1": 0, "az0": 0.3, "az1": 0.45}
+    },
+    {
+      "vo": "Blood rushes back, and the nerve restarts all at once, firing off random signals.",
+      "highlight": "#ffd23f",
+      "scene": "bundle",
+      "params": {"squeeze0": 0.8, "squeeze1": 0, "wake": 1},
+      "cuts": [
+        {"at": "restarts", "params": {"squeeze0": 0, "squeeze1": 0, "wake": 1, "fire": 1, "az0": -0.4, "az1": -0.3, "dist0": 13, "dist1": 11}},
+        {"at": "random", "scene": "legs", "params": {"squeeze0": 0, "squeeze1": 0, "fire": 1, "showTop": 0, "az0": 0.55, "az1": 0.45}}
+      ]
+    },
+    {
+      "vo": "Your brain reads that static as pins and needles.",
+      "highlight": "#ffd23f",
+      "scene": "pins",
+      "params": {"tingle0": 0.3, "tingle1": 1},
+      "cuts": [
+        {"at": "pins", "params": {"tingle0": 1, "tingle1": 1, "az0": -0.2, "az1": -0.1, "el0": 0.6, "el1": 0.55, "dist0": 7, "dist1": 6, "tx0": 9.6, "tx1": 9.7}}
+      ]
+    },
+    {
+      "vo": "It fades in a minute or two. But if it keeps happening for no reason, see a doctor.",
+      "highlight": "#4dff9a",
+      "scene": "pins",
+      "params": {"tingle0": 1, "tingle1": 0, "az0": 0.5, "az1": 0.4, "dist0": 12, "dist1": 14},
+      "cuts": [
+        {"at": "keeps", "scene": "legs", "params": {"xray0": 1, "xray1": 1, "showTop": 0, "squeeze0": 0, "squeeze1": 0, "flow": 1, "az0": 0.2, "az1": 0.3, "dist0": 30, "dist1": 32}},
+        {"at": "see", "scene": "legs", "params": {"xray0": 0, "xray1": 0, "showTop": 0, "squeeze0": 0, "squeeze1": 0, "az0": -0.4, "az1": -0.3, "dist0": 36, "dist1": 40}}
+      ]
+    }
+  ]
+}
