@@ -21,19 +21,20 @@ BODY = {"horizon": [0.2, 0.04, 0.06], "zenith": [0.01, 0.0, 0.01]}
 
 S = ShotList()
 TABLE = P("table", (0, -0.1, 0))
-HEART = cam((0.3, -1.4, 0.7), (0.2, -1.2, 0.65), (0, 0, 0.55))
+HEART = cam((0.45, -2.4, 0.95), (0.35, -2.1, 0.9), (0, 0, 0.75))
+HEARTL = cam((0.75, -2.5, 0.95), (0.65, -2.2, 0.9), (0.4, 0, 0.75))
 BED = lambda extra=(), cast=(): stage("lab", cam((0, -2.8, 1.8), (0.3, -2.4, 1.7), (0, 0.3, 0.9)),
                                        cast=[who(PATIENT, at=(0, -0.55, 0.74), rot=(-90, 0, 0), pose=LYING)] + list(cast),
                                        props=[P("hospital_bed", (0, 0.3, 0)), P("surgical_lights", (0, 0.3, 0))] + list(extra), env_opts=OR)
 
 # ===================================================================== HOOK
 S("Your heart beats about a hundred thousand times a day. Over a lifetime, that's around three billion beats, without a single day off.",
-  stage("studio", HEART, props=[P("heart_organ", (0, 0, 0.5))], texts=[T("100,000 / DAY", (0, 0.3, 1.0), 0.1, pop=0.3)], env_opts=BODY))
+  stage("studio", HEARTL, props=[P("heart_organ", (0, 0, 0.5))], texts=[T("100,000 / DAY", (0.95, 0, 0.95), 0.11, pop=0.3)], env_opts=BODY))
 S("It pumps around seven thousand litres of blood every day, enough to fill a small swimming pool every few months.",
   stage("studio", cam((0.8, -2.0, 0.9), (0.5, -1.7, 0.8), (0.3, 0, 0.55)), props=[P("heart_organ", (-0.3, 0, 0.5)), P("blood_cells", (0.6, 0.2, 0.0), scale=0.6)],
         env_opts=BODY))
 S("But when it fails, there is no backup. Heart disease is the world's biggest killer.",
-  stage("studio", HEART, props=[P("heart_organ", (0, 0, 0.5), args={"beats": [[0, 0.4]]})], texts=[T("NO. 1 KILLER", (0, 0.3, 1.0), 0.1, (1.0, 0.4, 0.4), pop=0.5)], env_opts=BODY))
+  stage("studio", HEARTL, props=[P("heart_organ", (0, 0, 0.5), args={"beats": [[0, 0.4]]})], texts=[T("NO. 1 KILLER", (0.95, 0, 0.95), 0.11, (1.0, 0.4, 0.4), pop=0.5)], env_opts=BODY))
 S("So for seventy years, scientists and surgeons have tried to do something incredible: build a machine that can replace the human heart.",
   stage("studio", cam((0, -3.2, 1.2), (0, -2.8, 1.15), (0, 0, 1.1)), texts=[T("THE ARTIFICIAL HEART", (0, 0, 1.4), 0.26, (1.0, 0.45, 0.45), pop=0.08)],
         props=[P("artificial_heart", (0, 0.4, 0.55))], env_opts=BODY))
@@ -43,7 +44,7 @@ S("Your heart is really two pumps, side by side.",
   stage("studio", HEART, props=[P("heart_organ", (0, 0, 0.5))], env_opts=BODY), chapter="Two pumps in one")
 S("The right side sends tired, oxygen-poor blood to the lungs. The left side, the stronger one, pushes fresh, oxygen-rich blood out to the whole body.",
   stage("studio", cam((0.8, -2.2, 0.9), (0.5, -1.8, 0.8), (0, 0, 0.55)), props=[P("heart_organ", (0, 0, 0.5)), P("blood_cells", (0.9, 0.2, 0.2), scale=0.5, args={"n": 6})],
-        texts=[T("LUNGS", (-0.7, 0, 1.1), 0.1, (0.4, 0.6, 1.0), pop=0.2), T("BODY", (0.7, 0, 1.1), 0.1, (1.0, 0.4, 0.4), pop=0.5)], env_opts=BODY))
+        texts=[T("LUNGS", (-0.75, 0, 0.95), 0.15, (0.4, 0.6, 1.0), pop=0.2), T("BODY", (0.45, 0, 0.95), 0.15, (1.0, 0.4, 0.4), pop=0.5)], env_opts=BODY))
 S("Four valves act like one-way doors, so blood only flows forwards. And a natural pacemaker sends an electrical spark to time every beat.",
   stage("studio", HEART, props=[P("heart_organ", (0, 0, 0.5)), P("spikes", (0, -0.4, 0.15), scale=0.4, args={"channels": 1})], env_opts=BODY))
 S("Copying that with metal and plastic, inside a living body, for years, turned out to be one of the hardest problems in medicine.",
@@ -109,7 +110,7 @@ S("Both implants were led by the same surgeon, William DeVries. But the strokes 
 
 # ===================================================================== LVADS
 S("Doctors realised that most failing hearts don't need to be replaced completely. Often, just the left side, the main pump, is too weak.",
-  stage("studio", HEART, props=[P("heart_organ", (0, 0, 0.5))], texts=[T("LEFT VENTRICLE", (0.5, 0.2, 0.95), 0.08, (1.0, 0.4, 0.4), pop=0.3)], env_opts=BODY),
+  stage("studio", HEARTL, props=[P("heart_organ", (0, 0, 0.5))], texts=[T("LEFT VENTRICLE", (0.95, 0, 0.95), 0.11, (1.0, 0.4, 0.4), pop=0.3)], env_opts=BODY),
   chapter="Helping a heart, not replacing it")
 S("So they built smaller devices to help it. A left ventricular assist device, or LVAD, is a pump about the size of a fist, attached to the heart.",
   stage("studio", cam((0.4, -1.4, 1.0), (0.3, -1.2, 0.95), (0.1, 0, 0.7)), props=[P("lvad", (0, 0, 0.9)), P("heart_organ", (-0.35, 0, 0.75), scale=0.6)], env_opts=BODY))
@@ -143,7 +144,7 @@ S("Fittingly, the first implant took place at the Texas Heart Institute in Houst
   BED([P("artificial_heart", (0.7, -0.3, 1.3), scale=0.6)], [who(SURGEON, at=(-0.9, 0.2, 0), turn=-40, pose=WORK)]), still=True)
 S("In twenty twenty five, an Australian man in his forties became the first to leave hospital with one, living for more than a hundred days on a titanium heart, before receiving a donor heart.",
   stage("sky", cam((0, -3.0, 1.4), (0.3, -2.6, 1.3), (0, 0, 1.0)), cast=[who(WALKER, pose=STAND, walk=[[0, [-0.4, 0, 0]], [1, [0.4, 0, 0]]])],
-        texts=[T("100+ DAYS", (0.9, 0.5, 1.8), 0.15, pop=0.3)], env_opts={"sky": {"horizon": [0.95, 0.75, 0.5], "zenith": [0.2, 0.45, 0.85]}, "floor": [0.75, 0.6, 0.35]}))
+        texts=[T("100+ DAYS", (0.85, -0.3, 1.25), 0.14, pop=0.3)], env_opts={"sky": {"horizon": [0.95, 0.75, 0.5], "zenith": [0.2, 0.45, 0.85]}, "floor": [0.75, 0.6, 0.35]}))
 
 # ===================================================================== FUTURE
 S("Other researchers are trying different routes: hearts from genetically modified pigs, and heart tissue grown from a patient's own stem cells.",
