@@ -26,7 +26,7 @@ CHAIR = lambda who_, extra=(): stage("lab", cam((0, -2.4, 1.4), (0.3, -2.0, 1.35
 
 # ===================================================================== HOOK
 S("Right now, around eighty six billion nerve cells in your brain are firing tiny electrical signals, thousands of times a second.",
-  stage("studio", BRAIN, props=[P("brain", (0, 0, 0.6), args={"glow": [[0, 0], [0.3, 4]]}), P("neuron", (0.9, 0.3, 0.9), scale=0.5, args={"fire": [0.2, 0.8]})], env_opts=NEURO))
+  stage("studio", BRAIN, props=[P("brain", (0, 0, 0.6), args={"glow": [[0, 0], [0.3, 4]]})], env_opts=NEURO))
 S("Every thought, every memory, every movement you make, is written in those signals.",
   stage("studio", cam((0, -2.6, 1.0), (0.3, -2.2, 0.9), (0, 0, 0.6)), props=[P("spikes", (0, 0, 0.1), args={"channels": 6})], env_opts=NEURO))
 S("And it does all of this on about twenty watts of power, less than a dim light bulb.",
@@ -49,7 +49,7 @@ S("He was so unsure of his strange results that he kept them to himself for five
   stage("lab", BENCH, cast=[who(BERGER, pose=WORK)], props=[TABLE, P("eeg_cap", (0, -0.1, TOP + 0.15), scale=0.8)], env_opts={"wall": [0.3, 0.28, 0.25]}), still=True)
 S("He called it the electroencephalogram, or EEG. For the first time, we could watch a living brain at work.",
   stage("studio", cam((0, -2.6, 1.0), (0.2, -2.2, 0.9), (0, 0, 0.6)), props=[P("spikes", (0, 0, 0.1), args={"channels": 4, "seed": 2}), P("eeg_cap", (-1.2, 0.3, 0.4), scale=0.8)],
-        texts=[T("EEG  1924", (0, 0.3, 1.25), 0.15, pop=0.2)], env_opts=NEURO))
+        texts=[T("EEG  1924", (0, 0.3, 1.05), 0.15, pop=0.2)], env_opts=NEURO))
 S("But EEG is like listening to a stadium crowd from outside: you can hear the roar, but not individual conversations.",
   stage("sky", cam((0, -7.0, 2.0), (0.5, -6.0, 2.4), (0, 2, 2.5), lens=28), props=[P("stadium", (0, 2, 0))],
         env_opts={"sky": {"horizon": [0.8, 0.6, 0.45], "zenith": [0.2, 0.3, 0.6]}, "floor": [0.3, 0.45, 0.2]}), still=True)
@@ -62,7 +62,7 @@ S("In nineteen seventy three, a computer scientist at UCLA, Jacques Vidal, coine
   still=True)
 S("The first brain-computer interfaces most people have heard of don't read thoughts at all. Cochlear implants turn sound into signals for the hearing nerve, and over a million people now use them.",
   stage("studio", cam((0, -2.2, 0.9), (0.2, -1.9, 0.85), (0, 0, 0.6)), props=[P("eeg_cap", (0, 0, 0.6), scale=1.2), P("radio_tower", (1.2, 0.5, 0), scale=0.3)],
-        texts=[T("1,000,000+", (0, 0.3, 1.25), 0.15, pop=0.3)], env_opts=NEURO), still=True)
+        texts=[T("1,000,000+", (0, 0.3, 1.08), 0.15, pop=0.3)], env_opts=NEURO), still=True)
 S("A strip of brain called the motor cortex controls movement. Each part of it handles a different part of the body: hands, lips, legs.",
   stage("studio", BRAIN, props=[P("brain", (0, 0, 0.6), args={"glow": [[0, 0], [0.2, 6]], "region": "motor"})], texts=[T("MOTOR CORTEX", (0.5, 0, 1.15), 0.1, pop=0.3)],
         env_opts=NEURO), chapter="Listening to neurons")
@@ -147,14 +147,14 @@ S("What about reading thoughts without surgery? Brain scanners called fMRI can s
 S("As early as twenty eleven, a Berkeley team used fMRI to make blurry reconstructions of movie clips that volunteers were watching.",
   stage("studio", cam((0, -2.4, 0.9), (0, -2.1, 0.85), (0, 0, 0.75)), props=[P("pixel_image", (0, 0, 0.3))], env_opts=NEURO), still=True)
 S("In twenty twenty three, a team at the University of Texas trained an AI on many hours of a volunteer's brain scans as they listened to podcasts. It could then produce the rough gist of new stories they heard, or even imagined.",
-  stage("lab", cam((2.0, -3.5, 1.8), (1.6, -3.0, 1.6), (0, -0.6, 1.1)), props=[P("mri_machine"), P("spikes", (0, -2.0, 1.8), scale=0.6)], env_opts=LAB))
+  stage("lab", cam((3.0, -5.0, 2.0), (2.6, -4.5, 1.9), (0, -0.4, 1.15)), props=[P("mri_machine")], env_opts=LAB))
 S("It only worked on people who had spent hours training it, and who cooperated. When volunteers thought about something else on purpose, it failed. True mind reading is still science fiction.",
   stage("studio", cam((0, -2.2, 1.0), (0, -1.9, 0.95), (0, 0, 0.8)), texts=[T("NOT MIND READING... YET", (0, 0, 1.0), 0.15, (1.0, 0.7, 0.3), pop=0.2)], env_opts=NEURO),
   still=True, still_at=0.8)
 
 # ===================================================================== ETHICS
 S("But it raises new questions. Who owns the data from your brain? Could it be sold, hacked, or used against you?",
-  stage("studio", BRAIN, props=[P("brain", (0, 0, 0.6), args={"glow": [[0, 0], [0.3, 3]]}), P("bbox_label", (0, -0.5, 0.65), args={"label": "PRIVATE?", "size": (0.9, 0.9), "color": (1.0, 0.4, 0.4), "at": 0.4})],
+  stage("studio", cam((0, -3.3, 0.9), (0, -3.0, 0.88), (0, 0, 0.75)), props=[P("brain", (0, 0, 0.6), args={"glow": [[0, 0], [0.3, 3]]}), P("bbox_label", (0, -0.5, 0.65), args={"label": "PRIVATE?", "size": (0.95, 0.95), "color": (1.0, 0.4, 0.4), "at": 0.4})],
         env_opts=NEURO), chapter="Neural privacy")
 S("In twenty twenty one, Chile became the first country to protect brain activity in its constitution. In twenty twenty four, the US state of Colorado passed a law protecting neural data.",
   stage("hall", cam((0, -2.4, 1.6), (0, -2.0, 1.55), (0, 0.4, 1.3)), props=[P("table", (0, 0.6, 0), args={"w": 2.0}), P("newspapers", (0, 0.6, TOP), args={"headline": "NEURORIGHTS", "n": 2})]),
