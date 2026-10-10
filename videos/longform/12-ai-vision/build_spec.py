@@ -22,7 +22,7 @@ S = ShotList()
 TABLE = P("table", (0, -0.1, 0))
 BENCH = cam((0.9, -2.5, 1.6), (0.6, -2.1, 1.5), (0, 0, 1.15))
 NET = cam((0, -3.0, 0.9), (0.3, -2.6, 0.85), (0, 0, 0.8))
-PIX = cam((0, -2.4, 0.9), (0, -2.1, 0.85), (0, 0, 0.75))
+PIX = cam((0, -3.0, 0.95), (0, -2.7, 0.9), (0, 0, 0.8))
 
 # ===================================================================== HOOK
 S("Show a three year old a picture of a cat, and they'll say cat in an instant.",
@@ -46,7 +46,7 @@ S("Early researchers tried writing rules: a cat has two pointy ears, whiskers, f
         env_opts=OFFICE), still=True)
 S("In nineteen sixty six, an MIT professor famously set a group of students a summer project: get a computer to describe what it sees. It took more than half a century.",
   stage("lab", cam((0, -3.0, 1.7), (0.3, -2.6, 1.6), (0, 0.3, 1.1)), cast=[who(STUDENT, at=(-0.6, 0.35, 0), turn=-15, pose=WORK), who(STUDENT | {"hair": [0.4, 0.25, 0.1]}, at=(0.6, 0.35, 0), turn=15, pose=READ)],
-        props=[P("table", (0, -0.1, 0), args={"w": 2.2})], texts=[T("SUMMER 1966", (0, 1.2, 2.0), 0.15, pop=0.2)], env_opts=OFFICE), still=True)
+        props=[P("table", (0, -0.1, 0), args={"w": 2.2})], texts=[T("SUMMER 1966", (0, 1.2, 1.75), 0.15, pop=0.2)], env_opts=OFFICE), still=True)
 
 # ===================================================================== THE BRAIN
 S("Meanwhile, neuroscientists were discovering how real eyes and brains do it.",
@@ -61,13 +61,13 @@ S("The breakthrough came partly by accident. A cell burst into activity as they 
   stage("studio", cam((0.8, -2.2, 0.9), (0.6, -1.9, 0.8), (0.6, 0, 0.5)), props=[P("neuron", (0, 0, 0.6), args={"fire": [0.3, 0.8]}), P("bar_magnet", (-0.8, 0, 0.6), rot=[0, 35, 0], scale=1.5)],
         env_opts=DIGITAL), still=True)
 S("Vision is a ladder: from edges, to shapes, to whole objects. That work won them a Nobel Prize, and it inspired the computer scientists who came next.",
-  stage("studio", NET, props=[P("neural_net", (0, 0, 0.8), args={"fire": [0.1, 0.8]})], texts=[T("EDGES → SHAPES → OBJECTS", (0, 0.4, 1.5), 0.12, pop=0.3)], env_opts=DIGITAL))
+  stage("studio", cam((0, -3.9, 1.05), (0.3, -3.5, 1.0), (0, 0, 1.0)), props=[P("neural_net", (0, 0, 0.8), args={"fire": [0.1, 0.8]})], texts=[T("EDGES → SHAPES → OBJECTS", (0, 0.4, 1.78), 0.16, pop=0.3)], env_opts=DIGITAL))
 S("In nineteen fifty eight, a psychologist named Frank Rosenblatt built the Perceptron, a machine with a camera and a simple artificial neural network that could learn to tell shapes apart.",
   stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), cast=[who(ROSENBLATT, at=(0.6, 0.0, 0), turn=-30, pose=PRESENT)],
-        props=[P("eniac", args={"panels": 4, "seed": 5})], texts=[T("PERCEPTRON 1958", (0.5, 0.8, 2.2), 0.15, pop=0.2)], env_opts=OFFICE), still=True)
+        props=[P("eniac", args={"panels": 4, "seed": 5})], texts=[T("PERCEPTRON 1958", (-0.2, 0.6, 1.85), 0.15, pop=0.2)], env_opts=OFFICE), still=True)
 S("Its eye was a grid of just four hundred light sensors, twenty by twenty, wired at random to its artificial neurons.",
   stage("lab", cam((0.6, -2.0, 1.6), (0.3, -1.6, 1.5), (-0.6, 1.2, 1.2), lens=26), cast=[who(ROSENBLATT, at=(0.6, 0.0, 0), turn=-30, pose=PRESENT)],
-        props=[P("eniac", args={"panels": 4, "seed": 5})], texts=[T("PERCEPTRON 1958", (0.5, 0.8, 2.2), 0.15, pop=0.2)], env_opts=OFFICE), still=True)
+        props=[P("eniac", args={"panels": 4, "seed": 5})], texts=[T("PERCEPTRON 1958", (-0.2, 0.6, 1.85), 0.15, pop=0.2)], env_opts=OFFICE), still=True)
 S("Newspapers predicted it would soon walk, talk and see. It couldn't. Its single layer of artificial neurons was far too simple, and interest in neural networks collapsed for years.",
   stage("studio", cam((0.2, -1.1, 0.8), (0.1, -0.95, 0.75), (0, 0, 0.1)), props=[P("newspapers", args={"headline": "ELECTRONIC BRAIN TEACHES ITSELF", "n": 3})]), still=True, still_at=0.7)
 
@@ -76,7 +76,7 @@ S("Funding dried up. Researchers later called these lean years the AI winters.",
   stage("sky", cam((0, -3.0, 1.4), (0.3, -2.6, 1.3), (0, 0, 1.0)), props=[P("eniac", (0, 1.5, 0), scale=0.5, args={"panels": 4, "blink": False})],
         env_opts={"sky": {"horizon": [0.7, 0.75, 0.85], "zenith": [0.3, 0.4, 0.6]}, "floor": [0.85, 0.87, 0.9]}), still=True)
 S("In nineteen eighty, the Japanese researcher Kunihiko Fukushima built the Neocognitron, a layered network directly inspired by Hubel and Wiesel's discoveries.",
-  stage("studio", NET, props=[P("neural_net", (0, 0, 0.8), args={"layers": [8, 6, 6, 4, 2], "fire": [0.1, 0.7]})], texts=[T("NEOCOGNITRON 1980", (0, 0.4, 1.5), 0.12, pop=0.2)],
+  stage("studio", cam((0, -3.9, 1.05), (0.3, -3.5, 1.0), (0, 0, 1.0)), props=[P("neural_net", (0, 0, 0.8), args={"layers": [8, 6, 6, 4, 2], "fire": [0.1, 0.7]})], texts=[T("NEOCOGNITRON 1980", (0, 0.4, 1.78), 0.16, pop=0.2)],
         env_opts=DIGITAL))
 S("An artificial neural network is made of layers of simple units. Each one adds up signals from the layer before, and passes a signal on if the total is big enough.",
   stage("studio", NET, props=[P("neural_net", (0, 0, 0.8), args={"fire": [0.1, 0.8]})], env_opts=DIGITAL), chapter="Deep networks")
@@ -90,7 +90,7 @@ S("In the late nineteen eighties, Yann LeCun, then at Bell Labs, built a network
 S("This was a convolutional neural network. By the late nineteen nineties, versions of it were reading millions of handwritten cheques for American banks.",
   stage("lab", BENCH, cast=[who(LECUN, pose=WORK)], props=[TABLE, P("newspapers", (0, -0.1, TOP), args={"headline": "PAY TO THE ORDER OF", "n": 4})], env_opts=OFFICE), still=True)
 S("But for photos of the real world, neural networks still weren't good enough. They needed two things that didn't exist yet: far more data, and far more computing power.",
-  stage("studio", cam((0, -2.4, 1.0), (0, -2.1, 0.95), (0, 0, 0.8)), texts=[T("MORE DATA", (-0.6, 0, 1.0), 0.15, pop=0.2), T("MORE POWER", (0.65, 0, 1.0), 0.15, (1.0, 0.6, 0.3), pop=0.5)],
+  stage("studio", cam((0, -2.4, 1.0), (0, -2.1, 0.95), (0, 0, 0.8)), texts=[T("MORE DATA", (0, 0, 1.12), 0.15, pop=0.2), T("MORE POWER", (0, 0, 0.82), 0.15, (1.0, 0.6, 0.3), pop=0.5)],
         env_opts=DIGITAL), still=True, still_at=0.8)
 
 # ===================================================================== IMAGENET
@@ -104,7 +104,7 @@ S("Starting in two thousand and seven, her team gathered images from the interne
         cast=[who(STUDENT | {"hair": [0.1 + 0.15 * i, 0.08, 0.05]}, at=(x, 0.35, 0), pose=WORK, scale=0.95) for i, x in enumerate((-1.1, 0, 1.1))],
         props=[P("table", (0, -0.1, 0), args={"w": 3.2})] + [P("laptop", (x, -0.15, TOP), args={"glow": 0.1}) for x in (-1.1, 0, 1.1)], env_opts=OFFICE), still=True)
 S("At its peak, nearly fifty thousand people in a hundred and sixty seven countries were helping to label the pictures.",
-  stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0)), texts=[T("50,000 PEOPLE  /  167 COUNTRIES", (0, -0.6, 0.55), 0.14, pop=0.3)]), still=True)
+  stage("space", cam((0, -3.4, 0.6), (0.3, -3.0, 0.5), (0, 0, 0.5)), texts=[T("50,000 PEOPLE", (0, -0.6, 0.72), 0.2, pop=0.3), T("167 COUNTRIES", (0, -0.6, 0.38), 0.2, (1.0, 0.6, 0.3), pop=0.35)]), still=True)
 S("Many experts thought it was a waste of time. More data, they argued, wouldn't fix bad algorithms.",
   stage("lab", cam((0.5, -1.8, 1.55), (0.35, -1.5, 1.5), "cast0.head"), cast=[who(FEIFEI, pose={**STAND, "head_nod": 10}, scale=0.95)], env_opts=OFFICE), still=True)
 S("The result, ImageNet, held more than fourteen million pictures, sorted into over twenty thousand categories, from strawberries to sports cars to dozens of breeds of dog.",
@@ -142,7 +142,7 @@ S("Inside a trained network, the first layers detect simple edges and colours, j
 
 # ===================================================================== WORLD
 S("Today, computer vision is everywhere. It unlocks your phone with your face, and sorts the photos in your gallery.",
-  stage("studio", cam((0, -0.7, 0.3), (0, -0.6, 0.28), (0, 0, 0.12)), props=[P("phone", (0, 0, 0.12), rot=[-75, 0, 0], args={"glow": 0.1})], env_opts=DIGITAL),
+  stage("studio", cam((0, -0.7, 0.3), (0, -0.6, 0.28), (0, 0, 0.12), lens=85), props=[P("phone", (0, 0, 0.12), rot=[-75, 0, 0], args={"glow": 0.1})], env_opts=DIGITAL),
   chapter="Seeing machines everywhere")
 S("It helps doctors spot cancers and eye disease in scans, sometimes catching what a busy human might miss.",
   stage("lab", cam((0, -2.6, 1.6), (0.3, -2.2, 1.5), (0, 0.3, 1.1)), cast=[who(FEIFEI | {"outfit": LABCOAT}, at=(0.6, 0.3, 0), turn=20, pose=WORK)],
@@ -155,7 +155,7 @@ S("In some American cities, taxis with no human driver now carry paying passenge
   stage("street", cam((3, -5, 2.2), (2.4, -4.4, 2.0), (0, 0, 0.6)), props=[P("car", args={"boxes": True, "color": (0.9, 0.9, 0.92), "drive": [[0, -2], [1, 2]]}),
         P("houses", (0, 4, 0), args={"on": [0, 0.01]})]))
 S("Eye-screening systems can now detect diabetic eye disease from a photo of the back of the eye, helping clinics that have too few specialists.",
-  stage("studio", cam((0, -2.0, 0.8), (0.2, -1.7, 0.75), (0, 0, 0.6)), props=[P("eye", (0, 0, 0.6)), P("bbox_label", (0, -0.6, 0.62), args={"label": "SCAN OK", "size": (0.7, 0.7), "at": 0.4})],
+  stage("studio", cam((0, -3.5, 0.9), (0.2, -3.2, 0.85), (0, 0, 0.7)), props=[P("eye", (0, 0, 0.6)), P("bbox_label", (0, -0.6, 0.62), args={"label": "SCAN OK", "size": (1.0, 1.0), "at": 0.4})],
         env_opts=DIGITAL), still=True)
 S("But machine vision has strange weaknesses. Change a handful of pixels in a way no human would notice, and a network can be fooled into calling a panda a gibbon.",
   stage("studio", PIX, props=[P("pixel_image", (0, 0, 0.3)), P("bbox_label", (0, -0.05, 0.75), args={"label": "GIBBON 99%", "color": (1.0, 0.3, 0.3), "at": 0.4})], env_opts=DIGITAL))
@@ -180,7 +180,7 @@ S("It took more than half a century, a trick borrowed from a cat's brain, a cont
   stage("studio", cam((0, -3.0, 1.2), (0.3, -2.6, 1.1), (0, 0, 0.8)), props=[P("neuron", (-1.0, 0, 0.8), scale=0.6), P("pixel_image", (0, 0.2, 0.4), scale=0.6), P("gpu", (1.0, 0, 0.6))],
         env_opts=DIGITAL), still=True, chapter="Close")
 S("But machines finally learned to do what a three year old does without thinking: look at the world, and understand what they see.",
-  stage("studio", cam((0, -1.2, 0.8), (0, -3.0, 1.2), (0, 0, 0.75), (0, 0, 0.75)), props=[P("pixel_image", (0, 0, 0.3)), P("bbox_label", (0, -0.05, 0.75), args={"at": 0.3})],
+  stage("studio", cam((0, -1.7, 0.85), (0, -3.2, 1.1), (0, 0, 0.8), (0, 0, 0.8)), props=[P("pixel_image", (0, 0, 0.3)), P("bbox_label", (0, -0.05, 0.75), args={"at": 0.3})],
         env_opts=DIGITAL), hold=1.5)
 
 write(HERE, {
