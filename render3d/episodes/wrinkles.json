@@ -1,0 +1,88 @@
+{
+  "module": "wrinkles",
+  "title": "Why Do Your Fingers Wrinkle in Water?",
+  "music": "ambient",
+  "length_scale": 1.08,
+  "punch": 0.06,
+  "max_clip": 2.6,
+  "shots": [
+    {
+      "vo": "Why do your fingers wrinkle in the bath?",
+      "highlight": "#7fd8ff",
+      "scene": "finger",
+      "params": {"k0": 0, "k1": 0.5},
+      "cuts": [
+        {"at": "wrinkle", "params": {"k0": 0.5, "k1": 1, "dunk": 0, "az0": 0.3, "az1": 0.2, "el0": 0.35, "el1": 0.3, "dist0": 6, "dist1": 5.2, "tx0": -0.9, "tx1": -0.8}}
+      ]
+    },
+    {
+      "vo": "Most people think your skin just soaks up water and swells.",
+      "highlight": "#7fd8ff",
+      "scene": "finger",
+      "params": {"k0": 0, "k1": 0.1, "az0": -0.4, "az1": -0.25, "dist0": 11, "dist1": 9.5},
+      "cuts": [
+        {"at": "soaks", "params": {"k0": 0.1, "k1": 0.25, "az0": 0.55, "az1": 0.45, "el0": 0.05, "el1": 0.08, "dist0": 8, "dist1": 7, "tx0": -1.4, "tx1": -1.3}}
+      ]
+    },
+    {
+      "vo": "But here's the weird part. If the nerves in a finger are damaged, it doesn't wrinkle at all.",
+      "highlight": "#ff4b4b",
+      "scene": "cut",
+      "params": {"k0": 0, "k1": 0, "dist0": 24, "dist1": 21},
+      "cuts": [
+        {"at": "nerves", "params": {"damaged": 1, "labels": 0, "az0": 0.2, "az1": 0.1, "dist0": 13, "dist1": 11, "tx0": -4.4, "tx1": -4.4, "ty0": -0.3, "ty1": -0.3}},
+        {"at": "doesn't", "scene": "finger", "params": {"k0": 0, "k1": 0, "az0": 0.3, "az1": 0.2, "el0": 0.35, "el1": 0.3, "dist0": 6.5, "dist1": 5.6, "tx0": -0.9, "tx1": -0.8}}
+      ]
+    },
+    {
+      "vo": "Pruning is a reflex, run by your nervous system.",
+      "highlight": "#ffd23f",
+      "scene": "cut",
+      "params": {"pulse": 1, "labels": 1, "az0": 0.45, "az1": 0.3},
+      "cuts": [
+        {"at": "nervous", "params": {"pulse": 1, "az0": -0.2, "az1": -0.1, "dist0": 11, "dist1": 9.5, "tx0": -2.4, "tx1": -2.0, "ty0": -0.4, "ty1": -0.4, "labels": 0}}
+      ]
+    },
+    {
+      "vo": "Nerves tell the tiny blood vessels under your fingertip to tighten.",
+      "highlight": "#ff4b4b",
+      "scene": "cut",
+      "params": {"pulse": 1, "c0": 0, "c1": 0.3, "labels": 1, "az0": 0.3, "az1": 0.2, "dist0": 19, "dist1": 17},
+      "cuts": [
+        {"at": "vessels", "params": {"pulse": 1, "c0": 0.3, "c1": 0.6, "az0": 0.6, "az1": 0.5, "el0": -0.1, "el1": -0.05, "dist0": 9, "dist1": 8, "tx0": -2.0, "tx1": -1.8, "ty0": -0.7, "ty1": -0.7, "labels": 0}},
+        {"at": "tighten.", "params": {"c0": 0.6, "c1": 1, "az0": 0.05, "az1": 0.0, "dist0": 6.5, "dist1": 5.5, "tx0": -1.6, "tx1": -1.5, "ty0": -0.75, "ty1": -0.75, "labels": 0}}
+      ]
+    },
+    {
+      "vo": "The pad loses a little volume, and the skin on top crumples into ridges.",
+      "highlight": "#ffd23f",
+      "scene": "cut",
+      "params": {"c0": 1, "c1": 1, "k0": 0, "k1": 0.6, "az0": 0.35, "az1": 0.25, "dist0": 13, "dist1": 11, "tx0": -1.8, "tx1": -1.7, "ty0": -0.6, "ty1": -0.6},
+      "cuts": [
+        {"at": "volume,", "params": {"c0": 1, "c1": 1, "k0": 0.4, "k1": 0.7, "az0": -0.4, "az1": -0.3, "el0": 0.2, "el1": 0.15, "dist0": 9, "dist1": 8, "tx0": -1.4, "tx1": -1.3, "ty0": -0.8, "ty1": -0.8, "labels": 0}},
+        {"at": "crumples", "scene": "finger", "params": {"k0": 0.3, "k1": 1, "dunk": 0, "az0": 0.5, "az1": 0.4, "el0": 0.3, "el1": 0.25, "dist0": 5.5, "dist1": 4.8, "tx0": -1.2, "tx1": -1.1}}
+      ]
+    },
+    {
+      "vo": "One study found wrinkly fingers move wet objects faster, like tire treads pushing water away.",
+      "highlight": "#7fd8ff",
+      "scene": "finger",
+      "params": {"k0": 1, "k1": 1, "az0": -0.2, "az1": -0.1, "dist0": 10, "dist1": 9},
+      "cuts": [
+        {"at": "wet", "params": {"k0": 1, "k1": 1, "az0": -0.6, "az1": -0.5, "el0": 0.25, "el1": 0.22, "dist0": 7, "dist1": 6, "tx0": -1.6, "tx1": -1.5}},
+        {"at": "tire", "scene": "tread", "params": {"labels": 1}},
+        {"at": "water", "scene": "tread", "params": {"labels": 0, "az0": 0.6, "az1": 0.5, "el0": 0.3, "el1": 0.28, "dist0": 13, "dist1": 11, "ty0": -1.8, "ty1": -1.8}}
+      ]
+    },
+    {
+      "vo": "Scientists still debate why. But your fingers might have built-in rain tires.",
+      "highlight": "#4dff9a",
+      "scene": "finger",
+      "params": {"k0": 1, "k1": 1, "dunk": 0, "az0": 0.2, "az1": 0.35, "el0": 0.4, "el1": 0.35, "dist0": 6.5, "dist1": 5.8, "tx0": -0.9, "tx1": -0.9},
+      "cuts": [
+        {"at": "But", "params": {"k0": 1, "k1": 1, "dunk": 1, "az0": 0.6, "az1": 0.5, "el0": 0.12, "el1": 0.1, "dist0": 9, "dist1": 8}},
+        {"at": "rain", "scene": "tread", "params": {"labels": 0, "az0": -0.3, "az1": -0.15, "dist0": 20, "dist1": 24}}
+      ]
+    }
+  ]
+}
