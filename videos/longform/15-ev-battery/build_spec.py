@@ -20,8 +20,8 @@ ROAD = {"sky": {"horizon": [0.85, 0.85, 0.9], "zenith": [0.25, 0.45, 0.85]}, "fl
 
 S = ShotList()
 TABLE = P("table", (0, -0.1, 0))
-CELL = cam((0.5, -2.4, 0.9), (0.3, -2.1, 0.8), (0, 0, 0.45))
-CELL_CLOSE = cam((0.3, -1.3, 0.6), (0.2, -1.1, 0.55), (0, 0, 0.45))
+CELL = cam((0.9, -4.6, 1.4), (0.6, -4.2, 1.3), (0, 0, 0.55))
+CELL_CLOSE = cam((0.5, -3.4, 1.1), (0.35, -3.0, 1.0), (0, 0, 0.55))
 CAR = cam((3.2, -3.6, 1.6), (2.6, -3.0, 1.4), (0, 0, 0.5))
 BENCH = lambda person, extra=(), pose=WORK: stage("lab", cam((0.9, -2.5, 1.6), (0.6, -2.1, 1.5), (0, 0, 1.15)), cast=[who(person, pose=pose)],
                                                   props=[TABLE] + list(extra), env_opts=LAB)
@@ -32,7 +32,7 @@ PORTRAIT = lambda person, extra=(), texts=(): stage("lab", cam((0.5, -1.8, 1.55)
 S("Inside every electric car is a box weighing around half a tonne. It's the most expensive part of the car, and it decides how far you can drive, how fast you can charge, and how long the car will last.",
   stage("studio", cam((0.8, -3.8, 2.2), (0.5, -3.2, 2.0), (0, 0, 0.2)), props=[P("battery_pack")], env_opts=DARK))
 S("That box is full of lithium-ion cells, the same basic technology that's in your phone.",
-  stage("studio", cam((0.25, -0.9, 0.6), (0.15, -0.75, 0.55), (0, 0, 0.35)), props=[P("phone", (-0.3, 0, 0.3), args={"glow": 0.4}), P("battery_cell", (0.3, 0, 0.1), scale=0.4)],
+  stage("studio", cam((0.25, -2.0, 0.8), (0.15, -1.8, 0.75), (0, 0, 0.3)), props=[P("phone", (-0.3, 0, 0.3), args={"glow": 0.4}), P("battery_cell", (0.3, 0, 0.1), scale=0.4)],
         env_opts=DARK), still=True)
 S("But there's a new kind of battery that could make electric cars lighter, safer, faster to charge, and able to go much further. It's called the solid-state battery.",
   stage("studio", cam((0, -3.0, 1.0), (0, -2.6, 0.95), (0, 0, 0.8)), props=[P("battery_cell", (0, 0.4, 0.1), args={"solid": True})],
@@ -45,8 +45,7 @@ S("In eighteen hundred, the Italian scientist Alessandro Volta stacked discs of 
   stage("lab", cam((0.35, -1.0, 1.25), (0.22, -0.85, 1.2), (0, -0.1, 1.05)), props=[TABLE, P("voltaic_pile", (0, -0.1, TOP))], env_opts=LAB),
   chapter="How a battery works")
 S("Every battery since has worked the same way. There are two electrodes: a negative one, called the anode, and a positive one, called the cathode. Between them is an electrolyte.",
-  stage("studio", CELL, props=[P("battery_cell", args={"ions": False, "charge": [0.5, 0.5]})],
-        texts=[T("ANODE", (-0.45, 0, 1.15), 0.08, (0.8, 0.8, 0.85), pop=0.2), T("CATHODE", (0.45, 0, 1.15), 0.08, (0.4, 0.7, 1.0), pop=0.4)], env_opts=DARK))
+  stage("studio", CELL, props=[P("battery_cell", args={"ions": False, "charge": [0.5, 0.5]})], env_opts=DARK))
 S("When you charge the battery, tiny charged atoms, called ions, are pushed through the electrolyte into the anode, where they're stored, like water pumped uphill.",
   stage("studio", CELL_CLOSE, props=[P("battery_cell", args={"charge": [0.05, 0.95]})], env_opts=DARK))
 S("When you use it, the ions flow back, and the electrons they leave behind travel the long way round, through the wire, powering your phone, or your car's motor.",
@@ -67,19 +66,19 @@ S("It had a big problem. Its anode was pure lithium metal, and every time it cha
   stage("studio", CELL_CLOSE, props=[P("battery_cell", args={"ions": False, "charge": [0.5, 0.5]}), P("dendrite", (-0.3, 0, 0.1), args={"grow": [0.1, 0.9]})], env_opts=DARK))
 S("When a dendrite reached the other side, the battery short-circuited, and could catch fire. Some early lithium-metal batteries were recalled after doing exactly that.",
   stage("studio", CELL_CLOSE, props=[P("battery_cell", args={"ions": False, "charge": [0.5, 0.5]}), P("dendrite", (-0.3, 0, 0.1), args={"grow": [0.0, 0.3]})],
-        texts=[T("SHORT CIRCUIT", (0, 0, 1.15), 0.1, (1.0, 0.35, 0.2), pop=0.6)], env_opts=DARK))
+        texts=[T("SHORT CIRCUIT", (0, 0, 1.3), 0.13, (1.0, 0.35, 0.2), pop=0.6)], env_opts=DARK))
 S("In nineteen eighty, at Oxford, the American physicist John Goodenough found a far better cathode: lithium cobalt oxide. It nearly doubled the battery's voltage, to about four volts.",
   BENCH(GOODENOUGH, [P("glassware", (0, -0.1, TOP))]))
 S("Then in nineteen eighty five, in Japan, the chemist Akira Yoshino replaced the dangerous lithium metal anode with carbon. The lithium ions simply slipped in between layers of carbon atoms, with no metal spikes to grow.",
   BENCH(YOSHINO, [P("glassware", (0, -0.1, TOP), args={"seed": 5})]))
 S("That was the modern lithium-ion battery. In nineteen ninety one, Sony put it on sale, inside a video camera.",
-  stage("studio", cam((0.3, -1.1, 0.7), (0.2, -0.95, 0.65), (0, 0, 0.45)), props=[P("battery_cell", (0, 0, 0.1), scale=0.6)],
-        texts=[T("1991", (0, 0.2, 1.05), 0.2, pop=0.2)], env_opts=DARK), still=True)
+  stage("studio", cam((0.3, -2.8, 1.0), (0.2, -2.5, 0.95), (0, 0, 0.55)), props=[P("battery_cell", (0, 0, 0.1), scale=0.6)],
+        texts=[T("1991", (0, 0.2, 1.0), 0.3, pop=0.2)], env_opts=DARK), still=True)
 S("It changed everything. Mobile phones, laptops, and eventually, cars.",
   stage("studio", cam((0.3, -1.4, 0.9), (0.2, -1.2, 0.85), (0, 0, 0.4)), props=[P("phone", (-0.5, 0, 0.3), args={"glow": 0.4}), P("laptop", (0.1, 0, 0.2), scale=0.8)],
         env_opts=DARK), still=True)
 S("In twenty nineteen, Whittingham, Goodenough and Yoshino shared the Nobel Prize in Chemistry. Goodenough was ninety seven, the oldest person ever to win a Nobel Prize. He kept working into his late nineties, and died at the age of one hundred.",
-  PORTRAIT(GOODENOUGH, [P("medal", (0.55, 0.0, 1.4), spin=["z", 40])], [T("NOBEL PRIZE 2019", (0, 0.9, 2.0), 0.14, pop=0.2)]), still=True)
+  PORTRAIT(GOODENOUGH, [P("medal", (0.55, 0.0, 1.4), spin=["z", 40])], [T("NOBEL PRIZE 2019", (0.4, -0.2, 1.9), 0.075, pop=0.2)]), still=True)
 
 # ===================================================================== EV ERA
 S("In two thousand and eight, a small company called Tesla built a sports car powered by six thousand eight hundred and thirty one laptop batteries, wired together.",
@@ -90,7 +89,7 @@ S("Since twenty ten, the price of lithium-ion batteries has fallen by about nine
 S("But today's batteries are reaching their limits. A big share of a battery pack's weight is material that doesn't store energy at all: the casing, the wiring, the cooling, and the liquid electrolyte.",
   stage("studio", cam((0.8, -3.8, 2.2), (0.5, -3.2, 2.0), (0, 0, 0.2)), props=[P("battery_pack")], env_opts=DARK), still=True)
 S("That liquid is also flammable. If a cell is damaged, or overheats, it can set off a chain reaction called thermal runaway, and that fire is very hard to put out.",
-  stage("studio", CELL_CLOSE, props=[P("battery_cell", args={"ions": False, "charge": [0.5, 0.5]})], texts=[T("THERMAL RUNAWAY", (0, 0, 1.15), 0.09, (1.0, 0.4, 0.15), pop=0.4)],
+  stage("studio", CELL_CLOSE, props=[P("battery_cell", args={"ions": False, "charge": [0.5, 0.5]})], texts=[T("THERMAL RUNAWAY", (0, 0, 1.3), 0.13, (1.0, 0.4, 0.15), pop=0.4)],
         env_opts={"horizon": [0.4, 0.08, 0.02], "zenith": [0.02, 0.0, 0.0]}))
 S("And charging is still slow. Push the ions in too quickly, and lithium starts plating onto the anode as metal, the same spiky dendrites that haunted the first lithium batteries.",
   stage("studio", CELL_CLOSE, props=[P("battery_cell", args={"charge": [0.1, 0.9]}), P("dendrite", (-0.3, 0, 0.1), args={"grow": [0.5, 0.9], "seed": 8})], env_opts=DARK))
@@ -102,12 +101,12 @@ S("So drivers worry about range, and about waiting at chargers. Engineers wanted
 S("The idea behind the solid-state battery is simple. Replace the liquid electrolyte with a thin layer of solid material, a special ceramic, glass, or crystal that lets lithium ions pass straight through it.",
   stage("studio", CELL, props=[P("battery_cell", args={"solid": True})], env_opts=DARK), chapter="Going solid")
 S("A solid can't leak, and most of these materials don't burn. So the battery needs far less heavy protection around it.",
-  stage("studio", CELL_CLOSE, props=[P("battery_cell", args={"solid": True, "ions": False})], texts=[T("NO LIQUID", (0, 0, 1.15), 0.1, (0.4, 0.9, 1.0), pop=0.3)], env_opts=DARK),
+  stage("studio", CELL_CLOSE, props=[P("battery_cell", args={"solid": True, "ions": False})], texts=[T("NO LIQUID", (0, 0, 1.3), 0.13, (0.4, 0.9, 1.0), pop=0.3)], env_opts=DARK),
   still=True)
 S("But the real prize is what a solid electrolyte might allow next. If it's strong enough to block dendrites, engineers can finally go back to Whittingham's dream: an anode made of pure lithium metal.",
   stage("studio", CELL_CLOSE, props=[P("battery_cell", args={"solid": True, "charge": [0.1, 0.9]})], env_opts=DARK))
 S("Lithium metal can hold around ten times more charge than the same weight of graphite. Some designs go even further, and start with no anode at all. The lithium builds it up the first time the battery charges.",
-  stage("studio", cam((0.3, -1.2, 0.9), (0.2, -1.0, 0.85), (0, 0, 0.6)), props=[P("battery_cell", (-0.75, 0, 0.1), scale=0.6), P("battery_cell", (0.75, 0, 0.1), scale=0.6, args={"solid": True})],
+  stage("studio", cam((0.3, -4.0, 1.3), (0.2, -3.6, 1.2), (0, 0, 0.5)), props=[P("battery_cell", (-0.75, 0, 0.1), scale=0.6), P("battery_cell", (0.75, 0, 0.1), scale=0.6, args={"solid": True})],
         texts=[T("10x", (0.75, 0, 0.95), 0.18, (0.4, 0.9, 1.0), pop=0.5)], env_opts=DARK))
 S("The result could be a battery that stores perhaps fifty percent more energy in the same space. That could mean a car that goes much further, or the same range from a smaller, lighter, cheaper pack.",
   stage("sky", CAR, props=[P("car", args={"color": (0.15, 0.4, 0.85), "drive": [[0, -2.5], [1, 2.5]]})], env_opts=ROAD))
@@ -136,13 +135,13 @@ S("Even so, the race is on. Toyota holds more solid-state battery patents than a
 S("In California, QuantumScape, backed by Volkswagen, has been building a ceramic separator thinner than a sheet of paper, with cells that start with no anode at all.",
   BENCH(CHEMIST, [P("battery_cell", (0, -0.1, TOP), scale=0.25, args={"solid": True})]))
 S("In twenty twenty five, Mercedes-Benz drove a test car with solid-state cells from Stuttgart to Malmö, in Sweden, more than twelve hundred kilometres, on a single charge.",
-  stage("studio", cam((0.3, -1.4, 2.2), (0.2, -1.1, 2.0), (0, 0, 0)), props=[P("route", args={"stops": ["STUTTGART", "MALMÖ"]})], env_opts=DARK))
+  stage("street", CAR, props=[P("car", args={"color": (0.75, 0.77, 0.8), "drive": [[0, -2], [1, 2]]}), P("street_lamps", (-1.6, -2, 0), args={"n": 4, "on": [0, 0.01]})]))
 S("In China, the car maker NIO already sells cars with semi-solid batteries, a halfway step, with some liquid still inside. In twenty twenty three, NIO's founder drove one of his cars more than a thousand kilometres on a single charge, live on the internet.",
   stage("sky", CAR, props=[P("car", args={"color": (0.9, 0.9, 0.92), "drive": [[0, -2.5], [1, 2.5]]})], env_opts=ROAD))
 S("And it isn't only about range. Every lithium battery needs lithium, much of it mined in Australia, or pumped as salty water from beneath the deserts of Chile and Argentina, and left to evaporate in giant ponds for many months.",
   stage("sky", cam((0, -9, 6), (2, -8, 5.5), (0, 0, 0)), props=[P("brine_ponds")], env_opts=DESERT), still=True)
 S("A lithium-metal anode uses more lithium per cell, so other researchers are racing the other way, with sodium-ion batteries, made from the same element as table salt. They store less, but they're cheap.",
-  stage("studio", cam((0.3, -1.2, 0.9), (0.2, -1.0, 0.85), (0, 0, 0.6)), props=[P("battery_cell", (0, 0, 0.1), scale=0.6)],
+  stage("studio", cam((0.3, -2.8, 1.0), (0.2, -2.5, 0.95), (0, 0, 0.55)), props=[P("battery_cell", (0, 0, 0.1), scale=0.6)],
         texts=[T("Na", (0, 0, 1.0), 0.3, (1.0, 0.8, 0.3), pop=0.2)], env_opts=DARK), still=True)
 S("The likely future isn't one perfect battery, but several: cheap ones for city cars, and solid-state ones for cars, trucks, and maybe even planes, that need to go much further.",
   stage("street", CAR, props=[P("car", (-1.4, 0, 0), args={"color": (0.95, 0.75, 0.2)}), P("car", (1.4, 0, 0), args={"color": (0.15, 0.4, 0.85)}),
@@ -152,7 +151,7 @@ S("The likely future isn't one perfect battery, but several: cheap ones for city
 S("Two hundred years ago, Volta's pile could barely make a spark. Today, batteries can carry a family across a continent.",
   stage("lab", cam((0.35, -1.0, 1.25), (0.22, -0.85, 1.2), (0, -0.1, 1.05)), props=[TABLE, P("voltaic_pile", (0, -0.1, TOP))], env_opts=LAB), chapter="Close")
 S("The solid-state battery isn't finished yet. But if engineers crack it, the most important part of the electric car could be a thin layer of solid, thinner than a sheet of paper, that finally keeps lithium in its place.",
-  stage("studio", cam((0.3, -0.9, 0.7), (0.6, -2.4, 0.9), (0, 0, 0.5), (0, 0, 0.5)), props=[P("battery_cell", args={"solid": True})], env_opts=DARK), hold=1.5)
+  stage("studio", cam((0.3, -2.7, 0.9), (0.7, -4.2, 1.3), (0, 0, 0.5), (0, 0, 0.55)), props=[P("battery_cell", args={"solid": True})], env_opts=DARK), hold=1.5)
 
 write(HERE, {
     "slug": "15-ev-battery",
