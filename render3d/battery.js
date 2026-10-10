@@ -28,7 +28,7 @@ function buttonCell(r = 1) {
 }
 function coin(r = 1) {
   const g = new THREE.Group();
-  const m = metal('#d79a5a', 0.28);
+  const m = metal('#a8703c', 0.4); m.envMapIntensity = 0.25;
   const body = new THREE.Mesh(new THREE.CylinderGeometry(r, r, 0.14 * r, 128, 1), m); g.add(body);
   for (const s of [1, -1]) { const rim = new THREE.Mesh(new THREE.TorusGeometry(r * 0.94, 0.03 * r, 8, 96), m); rim.rotation.x = Math.PI / 2; rim.position.y = s * 0.07 * r; g.add(rim); }
   const relief = new THREE.Mesh(new THREE.CircleGeometry(r * 0.6, 64), metal('#c88a4c', 0.35)); relief.rotation.x = -Math.PI / 2; relief.position.y = 0.072 * r; g.add(relief);
