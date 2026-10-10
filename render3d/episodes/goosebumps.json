@@ -1,0 +1,89 @@
+{
+  "module": "goosebumps",
+  "title": "Why Do You Get Goosebumps?",
+  "music": "ambient",
+  "length_scale": 1.08,
+  "punch": 0.06,
+  "max_clip": 2.6,
+  "shots": [
+    {
+      "vo": "Why do you get goosebumps?",
+      "highlight": "#7fd8ff",
+      "scene": "surface",
+      "params": {"k0": 0, "k1": 0.6, "cold": 1, "dist0": 9, "dist1": 7},
+      "cuts": [
+        {"at": "goosebumps?", "params": {"k0": 0.6, "k1": 1, "cold": 1, "az0": 1.4, "az1": 1.2, "el0": 0.16, "el1": 0.14, "dist0": 4.5, "dist1": 3.8}}
+      ]
+    },
+    {
+      "vo": "Attached to almost every hair on your body is a tiny muscle.",
+      "highlight": "#ff8a8a",
+      "scene": "block",
+      "params": {"k0": 0, "k1": 0, "labels": 1, "dist0": 26, "dist1": 22},
+      "cuts": [
+        {"at": "hair", "params": {"k0": 0, "k1": 0, "labels": 0, "az0": -0.5, "az1": -0.4, "el0": 0.25, "el1": 0.2, "dist0": 14, "dist1": 12, "tx0": 0.1, "tx1": 0.1, "ty0": -0.5, "ty1": -0.6}},
+        {"at": "tiny", "params": {"k0": 0, "k1": 0.1, "labels": 0, "az0": 0.15, "az1": 0.05, "dist0": 9, "dist1": 7.5, "tx0": -0.6, "tx1": -0.5, "ty0": -0.9, "ty1": -1.0}}
+      ]
+    },
+    {
+      "vo": "When you're cold, or scared, your nerves tell those muscles to pull.",
+      "highlight": "#ffd23f",
+      "scene": "surface",
+      "params": {"k0": 0, "k1": 0.2, "cold": 1, "az0": -0.4, "az1": -0.25},
+      "cuts": [
+        {"at": "nerves", "scene": "block", "params": {"k0": 0, "k1": 0, "pulse": 1, "az0": 0.4, "az1": 0.3, "dist0": 13, "dist1": 11, "tx0": 0.4, "tx1": 0.3, "ty0": -1.8, "ty1": -1.6}},
+        {"at": "pull.", "scene": "block", "params": {"k0": 0, "k1": 1, "az0": -0.1, "az1": -0.2, "dist0": 9, "dist1": 8, "tx0": -0.5, "tx1": -0.5, "ty0": -0.9, "ty1": -0.9}}
+      ]
+    },
+    {
+      "vo": "Each one yanks its hair upright, and the skin around it puckers into a bump.",
+      "highlight": "#ffd23f",
+      "scene": "block",
+      "params": {"k0": 0.2, "k1": 1, "dist0": 22, "dist1": 19, "ty0": -1.0, "ty1": -0.8},
+      "cuts": [
+        {"at": "upright,", "scene": "surface", "params": {"k0": 0.1, "k1": 1, "az0": 1.0, "az1": 0.9, "el0": 0.1, "el1": 0.12, "dist0": 3.8, "dist1": 3.2}},
+        {"at": "puckers", "scene": "surface", "params": {"k0": 0.4, "k1": 1, "az0": 0.2, "az1": 0.1, "el0": 0.45, "el1": 0.4, "dist0": 7, "dist1": 6}}
+      ]
+    },
+    {
+      "vo": "In furry animals, that fluffs up the fur, trapping a layer of warm air.",
+      "highlight": "#ff8a1a",
+      "scene": "fur",
+      "params": {"k0": 0, "k1": 0.3, "cold": 1},
+      "cuts": [
+        {"at": "fluffs", "params": {"k0": 0.3, "k1": 1, "cold": 1, "az0": 1.3, "az1": 1.1, "el0": 0.12, "el1": 0.1, "dist0": 7, "dist1": 6}},
+        {"at": "warm", "params": {"k0": 1, "k1": 1, "warm": 1, "cold": 1, "az0": 0.2, "az1": 0.3, "el0": 0.08, "el1": 0.1, "dist0": 5, "dist1": 4.2, "ty0": 0.4, "ty1": 0.4}}
+      ]
+    },
+    {
+      "vo": "We lost most of our fur, so for us it barely helps. It's a leftover.",
+      "highlight": "#7fd8ff",
+      "scene": "surface",
+      "params": {"k0": 1, "k1": 1, "cold": 1, "az0": 2.2, "az1": 2.0, "dist0": 10, "dist1": 9},
+      "cuts": [
+        {"at": "barely", "params": {"k0": 1, "k1": 0.8, "cold": 1, "az0": -1.0, "az1": -0.9, "el0": 0.3, "el1": 0.3, "dist0": 6, "dist1": 5.5}},
+        {"at": "leftover.", "scene": "block", "params": {"k0": 1, "k1": 1, "az0": 0.6, "az1": 0.5, "el0": 0.3, "el1": 0.25, "dist0": 26, "dist1": 24}}
+      ]
+    },
+    {
+      "vo": "But in mice, scientists found this same nerve and muscle also wake up stem cells that grow new hair.",
+      "highlight": "#5dff9a",
+      "scene": "block",
+      "params": {"k0": 1, "k1": 1, "pulse": 1, "dist0": 20, "dist1": 18},
+      "cuts": [
+        {"at": "nerve", "params": {"k0": 1, "k1": 1, "pulse": 1, "az0": 0.5, "az1": 0.4, "dist0": 12, "dist1": 10, "tx0": 0.3, "tx1": 0.3, "ty0": -1.6, "ty1": -1.6}},
+        {"at": "stem", "params": {"k0": 1, "k1": 1, "stem": 1, "az0": 0.05, "az1": -0.05, "dist0": 6.5, "dist1": 5.5, "tx0": 0.3, "tx1": 0.35, "ty0": -1.2, "ty1": -1.25}},
+        {"at": "grow", "params": {"k0": 1, "k1": 1, "stem": 1, "grow": 1, "az0": -0.3, "az1": -0.2, "dist0": 11, "dist1": 10, "tx0": 0.0, "tx1": 0.0, "ty0": 0.2, "ty1": 0.6}}
+      ]
+    },
+    {
+      "vo": "So that chill during your favorite song? It's an ancient reflex, still firing.",
+      "highlight": "#7fd8ff",
+      "scene": "surface",
+      "params": {"k0": 0, "k1": 0.7, "music": 1, "az0": 0.6, "az1": 0.45, "el0": 0.3, "el1": 0.26, "dist0": 9, "dist1": 8},
+      "cuts": [
+        {"at": "ancient", "params": {"k0": 0.7, "k1": 1, "music": 1, "az0": 1.6, "az1": 1.4, "el0": 0.14, "el1": 0.12, "dist0": 4.2, "dist1": 3.6}}
+      ]
+    }
+  ]
+}
