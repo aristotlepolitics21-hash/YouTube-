@@ -111,7 +111,7 @@ function groove(p) {
   const cut = cutaway(outline, layers, { depth: 2.4 }); scene.add(cut.group);
   const nerve = new THREE.Group(); nerve.position.set(-0.2, 1.55, 0.18); scene.add(nerve);
   const nM = wet(C.nerve, { emissive: '#ffcc00', emissiveIntensity: 0.3 });
-  nerve.add(new THREE.Mesh(new THREE.CylinderGeometry(0.62, 0.62, 0.3, 48), nM)).rotation.x = Math.PI / 2;
+  { const disc = new THREE.Mesh(new THREE.CylinderGeometry(0.62, 0.62, 0.3, 48), nM); disc.rotation.x = Math.PI / 2; nerve.add(disc); }
   for (let i = 0; i < 7; i++) { const f = new THREE.Mesh(new THREE.CylinderGeometry(0.15, 0.15, 0.36, 16), wet('#e8c040')); const a = i / 7 * Math.PI * 2; f.position.set(Math.cos(a) * 0.32 * (i ? 1 : 0), Math.sin(a) * 0.32 * (i ? 1 : 0), 0); f.rotation.x = Math.PI / 2; nerve.add(f); }
   const blk = new THREE.Mesh(new RoundedBoxGeometry(4, 1.2, 3, 4, 0.1), new THREE.MeshPhysicalMaterial({ color: '#6a4a33', roughness: 0.4, clearcoat: 0.6 })); scene.add(blk);
   const flash = new THREE.PointLight('#ffe066', 0, 8, 1.5); flash.position.set(-0.2, 1.6, 2); scene.add(flash);

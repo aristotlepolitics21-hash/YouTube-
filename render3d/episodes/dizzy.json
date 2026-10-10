@@ -1,0 +1,91 @@
+{
+  "module": "dizzy",
+  "title": "Why Do You Get Dizzy After Spinning?",
+  "music": "ambient",
+  "length_scale": 1.08,
+  "punch": 0.06,
+  "max_clip": 2.6,
+  "shots": [
+    {
+      "vo": "Why do you get dizzy after spinning?",
+      "highlight": "#c38bff",
+      "scene": "room",
+      "params": {"w0": 0.3, "w1": 1.6},
+      "cuts": [
+        {"at": "dizzy", "params": {"w0": 1.2, "w1": 1.2, "stop": 0.35, "drift": 3}}
+      ]
+    },
+    {
+      "vo": "Deep inside each ear are three tiny loops, filled with fluid.",
+      "highlight": "#7fd8ff",
+      "scene": "ear",
+      "params": {"labels": 1, "dist0": 19, "dist1": 16},
+      "cuts": [
+        {"at": "loops,", "params": {"labels": 0, "az0": 1.2, "az1": 1.0, "el0": 0.35, "el1": 0.3, "dist0": 10, "dist1": 9, "ty0": 1.2, "ty1": 1.2}},
+        {"at": "fluid.", "params": {"labels": 0, "flow": 1, "glow": 1, "az0": -0.4, "az1": -0.3, "dist0": 13, "dist1": 12, "ty0": 0.8, "ty1": 0.8}}
+      ]
+    },
+    {
+      "vo": "Inside each loop sits a jelly flap on a bed of hair cells.",
+      "highlight": "#7fd8ff",
+      "scene": "flap",
+      "params": {"labels": 1},
+      "cuts": [
+        {"at": "flap", "params": {"labels": 1, "az0": -0.3, "az1": -0.2, "dist0": 15, "dist1": 14}},
+        {"at": "hair", "params": {"labels": 0, "az0": 0.9, "az1": 0.75, "el0": 0.45, "el1": 0.4, "dist0": 8, "dist1": 7, "ty0": -1.6, "ty1": -1.6}}
+      ]
+    },
+    {
+      "vo": "When you start spinning, the fluid lags behind and bends the flap. That's how your brain feels the turn.",
+      "highlight": "#ffd23f",
+      "scene": "room",
+      "params": {"w0": 0, "w1": 1.0},
+      "cuts": [
+        {"at": "fluid", "scene": "flap", "params": {"b0": 0, "b1": 0.85, "v": -1.2}},
+        {"at": "bends", "scene": "flap", "params": {"b0": 0.6, "b1": 0.9, "v": -1.2, "az0": -0.2, "az1": -0.1, "el0": 0.1, "el1": 0.1, "dist0": 13, "dist1": 12}},
+        {"at": "brain", "scene": "ear", "params": {"flow": -1, "glow": 1, "spinG": 1.6}}
+      ]
+    },
+    {
+      "vo": "Keep spinning, and the fluid catches up. The flap stands back up.",
+      "highlight": "#4dff9a",
+      "scene": "room",
+      "params": {"w0": 1.0, "w1": 1.0},
+      "cuts": [
+        {"at": "fluid", "scene": "flap", "params": {"b0": 0.85, "b1": 0.3, "v": -0.4}},
+        {"at": "flap", "scene": "flap", "params": {"b0": 0.3, "b1": 0, "v": 0, "az0": 0.2, "az1": 0.3, "dist0": 15, "dist1": 14}}
+      ]
+    },
+    {
+      "vo": "But when you stop, the fluid keeps swirling, and bends the flap the other way.",
+      "highlight": "#ff4b4b",
+      "scene": "room",
+      "params": {"w0": 1.0, "w1": 1.0, "stop": 0.25, "drift": 2},
+      "cuts": [
+        {"at": "fluid", "scene": "flap", "params": {"b0": 0, "b1": -0.5, "v": 1.2}},
+        {"at": "other", "scene": "flap", "params": {"b0": -0.5, "b1": -0.9, "v": 1.2, "az0": 0.7, "az1": 0.6, "el0": 0.2, "el1": 0.15, "dist0": 11, "dist1": 10}}
+      ]
+    },
+    {
+      "vo": "Your ears say you're still spinning. Your eyes say you're not. That mismatch is dizziness.",
+      "highlight": "#c38bff",
+      "scene": "ear",
+      "params": {"flow": 1, "glow": 1, "spinG": -1.2},
+      "cuts": [
+        {"at": "eyes", "scene": "room", "params": {"w0": 0, "w1": 0, "stop": 0, "drift": 1.5}},
+        {"at": "mismatch", "scene": "room", "params": {"w0": 0.4, "w1": 0.4, "stop": 0.1, "drift": 4}}
+      ]
+    },
+    {
+      "vo": "Ballet dancers spot, snapping their eyes back to one point, and with practice their brains learn to tune it out.",
+      "highlight": "#4dff9a",
+      "scene": "room",
+      "params": {"w0": 1.5, "w1": 1.5, "spot": 1},
+      "cuts": [
+        {"at": "snapping", "scene": "room", "params": {"w0": 2, "w1": 2, "spot": 1}},
+        {"at": "practice", "scene": "ear", "params": {"flow": 0, "glow": 0, "spinG": 0.4, "dist0": 15, "dist1": 17}},
+        {"at": "tune", "scene": "flap", "params": {"b0": 0, "b1": 0, "v": 0, "signal": 0, "az0": 0.4, "az1": 0.3, "dist0": 17, "dist1": 19}}
+      ]
+    }
+  ]
+}
