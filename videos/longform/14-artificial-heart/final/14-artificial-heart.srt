@@ -1,0 +1,870 @@
+1
+00:00:00,250 --> 00:00:03,490
+Your heart beats about a hundred
+thousand times a day.
+
+2
+00:00:03,930 --> 00:00:04,790
+Over a lifetime,
+
+3
+00:00:05,430 --> 00:00:08,640
+that's around three billion
+beats, without a single day
+
+4
+00:00:08,650 --> 00:00:09,450
+off.
+
+5
+00:00:09,750 --> 00:00:13,070
+It pumps around seven thousand
+litres of blood every day,
+
+6
+00:00:13,590 --> 00:00:16,790
+enough to fill a small swimming
+pool every few months.
+
+7
+00:00:17,667 --> 00:00:19,747
+But when it fails, there is no
+backup.
+
+8
+00:00:20,487 --> 00:00:22,587
+Heart disease is the world's
+biggest killer.
+
+9
+00:00:23,333 --> 00:00:26,683
+So for seventy years, scientists
+and surgeons have
+
+10
+00:00:26,693 --> 00:00:30,123
+tried to do something
+incredible: build a machine that
+can
+
+11
+00:00:30,133 --> 00:00:31,393
+replace the human heart.
+
+12
+00:00:33,067 --> 00:00:36,367
+Your heart is really two pumps,
+side by side.
+
+13
+00:00:37,083 --> 00:00:40,373
+The right side sends tired,
+oxygen-poor blood
+
+14
+00:00:40,383 --> 00:00:41,183
+to the lungs.
+
+15
+00:00:41,723 --> 00:00:44,893
+The left side, the stronger one,
+pushes fresh,
+
+16
+00:00:44,903 --> 00:00:47,623
+oxygen-rich blood out to the
+whole body.
+
+17
+00:00:48,333 --> 00:00:50,453
+Four valves act like one-way
+doors,
+
+18
+00:00:51,253 --> 00:00:53,063
+so blood only flows forwards.
+
+19
+00:00:53,073 --> 00:00:56,463
+And a natural pacemaker sends an
+electrical spark
+
+20
+00:00:56,473 --> 00:00:57,833
+to time every beat.
+
+21
+00:00:58,583 --> 00:01:02,033
+Copying that with metal and
+plastic, inside a living
+
+22
+00:01:02,043 --> 00:01:02,613
+body,
+
+23
+00:01:02,623 --> 00:01:05,793
+for years, turned out to be one
+of the hardest problems
+
+24
+00:01:05,803 --> 00:01:06,603
+in medicine.
+
+25
+00:01:07,417 --> 00:01:10,737
+And unlike skin or bone, the
+heart barely repairs itself.
+
+26
+00:01:11,297 --> 00:01:14,407
+In an adult, only about one
+percent of heart muscle
+
+27
+00:01:14,417 --> 00:01:17,747
+cells are replaced each year, so
+damage from a
+
+28
+00:01:17,757 --> 00:01:19,717
+heart attack is largely
+permanent.
+
+29
+00:01:21,567 --> 00:01:24,597
+The first step was a machine
+that could take over from the
+heart
+
+30
+00:01:24,607 --> 00:01:27,847
+for a few hours, so surgeons
+could operate on it.
+
+31
+00:01:28,500 --> 00:01:31,890
+An American surgeon, John
+Gibbon, spent nearly twenty
+
+32
+00:01:31,900 --> 00:01:35,070
+years building one, partly
+funded by IBM
+
+33
+00:01:35,080 --> 00:01:35,880
+engineers.
+
+34
+00:01:36,917 --> 00:01:40,067
+His obsession began in the early
+nineteen thirties,
+
+35
+00:01:40,077 --> 00:01:43,337
+when he sat all night beside a
+woman dying from a blood
+
+36
+00:01:43,557 --> 00:01:46,987
+clot in her lungs, and imagined
+a machine that could take over
+
+37
+00:01:46,997 --> 00:01:48,337
+while surgeons removed it.
+
+38
+00:01:49,000 --> 00:01:52,290
+His machine spread the blood in
+thin films over metal screens
+
+39
+00:01:52,300 --> 00:01:55,790
+inside a chamber of oxygen,
+doing the work of
+
+40
+00:01:55,800 --> 00:01:58,440
+the lungs, while a pump did the
+work of the heart.
+
+41
+00:01:59,083 --> 00:02:01,973
+On the sixth of May, nineteen
+fifty three,
+
+42
+00:02:01,983 --> 00:02:05,333
+he used it during an operation
+to repair a hole in the heart of
+
+43
+00:02:05,343 --> 00:02:08,443
+an eighteen year old student,
+Cecelia Bavolek.
+
+44
+00:02:08,823 --> 00:02:11,463
+The machine kept her alive for
+twenty six minutes.
+
+45
+00:02:12,263 --> 00:02:13,443
+She recovered completely.
+
+46
+00:02:14,333 --> 00:02:16,073
+Open-heart surgery was born.
+
+47
+00:02:16,553 --> 00:02:19,523
+But surgeons still dreamed of
+something that could replace a
+
+48
+00:02:19,533 --> 00:02:20,333
+heart for good.
+
+49
+00:02:20,833 --> 00:02:24,063
+In nineteen fifty eight, Swedish
+doctors implanted
+
+50
+00:02:24,073 --> 00:02:27,283
+the first pacemaker, a small
+device that
+
+51
+00:02:27,293 --> 00:02:30,743
+sends electrical pulses to keep
+a slow heart beating
+
+52
+00:02:30,753 --> 00:02:31,553
+steadily.
+
+53
+00:02:31,893 --> 00:02:33,713
+Its first patient, Arne Larsson,
+
+54
+00:02:34,353 --> 00:02:37,623
+went on to receive twenty six of
+them, and outlived both
+
+55
+00:02:37,633 --> 00:02:38,533
+its inventors.
+
+56
+00:02:40,150 --> 00:02:43,190
+In December nineteen sixty
+seven, in Cape Town,
+
+57
+00:02:43,610 --> 00:02:46,940
+South Africa, surgeon Christiaan
+Barnard performed
+
+58
+00:02:46,950 --> 00:02:48,910
+the first human heart
+transplant.
+
+59
+00:02:49,917 --> 00:02:53,267
+His patient, Louis Washkansky,
+lived for
+
+60
+00:02:53,277 --> 00:02:54,157
+eighteen days.
+
+61
+00:02:55,000 --> 00:02:56,760
+The new heart itself worked
+well.
+
+62
+00:02:57,200 --> 00:03:00,450
+He died of pneumonia, because
+the drugs that stopped his
+
+63
+00:03:00,460 --> 00:03:03,790
+body rejecting it had also
+weakened his defences against
+
+64
+00:03:03,800 --> 00:03:04,600
+infection.
+
+65
+00:03:05,250 --> 00:03:08,420
+It took until the nineteen
+eighties, and a new drug
+
+66
+00:03:08,430 --> 00:03:11,640
+called cyclosporine, for
+transplants to become
+
+67
+00:03:11,650 --> 00:03:12,890
+truly reliable.
+
+68
+00:03:13,590 --> 00:03:16,920
+Today, more than four thousand
+heart transplants happen
+
+69
+00:03:16,930 --> 00:03:19,010
+every year in the United States
+alone.
+
+70
+00:03:19,833 --> 00:03:22,253
+But there's a problem that has
+never gone away:
+
+71
+00:03:22,873 --> 00:03:24,233
+there are never enough donor
+hearts.
+
+72
+00:03:24,913 --> 00:03:26,713
+Many patients die while waiting.
+
+73
+00:03:27,417 --> 00:03:30,627
+That's why engineers kept
+chasing the dream of a
+mechanical
+
+74
+00:03:30,637 --> 00:03:31,437
+heart.
+
+75
+00:03:32,733 --> 00:03:35,453
+In April nineteen sixty nine, in
+Houston,
+
+76
+00:03:35,813 --> 00:03:39,083
+surgeon Denton Cooley implanted
+the first total artificial
+
+77
+00:03:39,093 --> 00:03:42,416
+heart in a human, designed by
+Domingo Liotta.
+
+78
+00:03:42,917 --> 00:03:46,237
+It kept the patient, Haskell
+Karp, alive for sixty
+
+79
+00:03:46,247 --> 00:03:49,137
+four hours, until a donor heart
+was found.
+
+80
+00:03:49,617 --> 00:03:52,537
+It was meant as a bridge, not a
+permanent replacement.
+
+81
+00:03:53,583 --> 00:03:56,873
+In Salt Lake City, a team at the
+University of
+
+82
+00:03:56,883 --> 00:03:57,673
+Utah,
+
+83
+00:03:57,683 --> 00:04:01,013
+including the engineer Robert
+Jarvik, built a
+
+84
+00:04:01,023 --> 00:04:02,023
+stronger design:
+
+85
+00:04:02,663 --> 00:04:03,883
+the Jarvik seven.
+
+86
+00:04:04,417 --> 00:04:07,787
+Two plastic pumping chambers
+replaced the heart's two lower
+
+87
+00:04:07,797 --> 00:04:08,597
+chambers.
+
+88
+00:04:08,877 --> 00:04:12,287
+Inside each, a flexible
+diaphragm was pushed by
+
+89
+00:04:12,297 --> 00:04:15,037
+puffs of compressed air,
+squeezing blood out.
+
+90
+00:04:15,750 --> 00:04:19,060
+On the second of December,
+nineteen eighty two,
+
+91
+00:04:19,070 --> 00:04:22,340
+a sixty one year old dentist
+named Barney Clark became
+
+92
+00:04:22,350 --> 00:04:25,420
+the first person to receive one
+as a permanent
+
+93
+00:04:25,430 --> 00:04:26,230
+replacement.
+
+94
+00:04:27,000 --> 00:04:29,140
+He lived for a hundred and
+twelve days.
+
+95
+00:04:29,700 --> 00:04:32,930
+But he was tied by tubes to an
+air compressor the size
+
+96
+00:04:32,940 --> 00:04:36,100
+of a washing machine, and
+suffered strokes and infections.
+
+97
+00:04:37,167 --> 00:04:40,187
+The world watched with a mix of
+wonder and unease.
+
+98
+00:04:40,527 --> 00:04:43,367
+Was this extending life, or just
+extending suffering?
+
+99
+00:04:44,333 --> 00:04:47,598
+Another patient, William
+Schroeder, lived for six hundred
+and
+
+100
+00:04:47,608 --> 00:04:50,983
+twenty days with a Jarvik seven,
+and even
+
+101
+00:04:50,993 --> 00:04:52,533
+went on a fishing trip.
+
+102
+00:04:53,250 --> 00:04:55,730
+Both implants were led by the
+same surgeon,
+
+103
+00:04:56,050 --> 00:04:57,320
+William DeVries.
+
+104
+00:04:57,330 --> 00:05:00,250
+But the strokes kept coming, and
+in nineteen
+
+105
+00:05:00,260 --> 00:05:00,920
+ninety,
+
+106
+00:05:00,930 --> 00:05:04,370
+US regulators withdrew approval
+for the Jarvik heart.
+
+107
+00:05:05,983 --> 00:05:09,153
+Doctors realised that most
+failing hearts don't need to be
+
+108
+00:05:09,163 --> 00:05:10,163
+replaced completely.
+
+109
+00:05:10,923 --> 00:05:13,773
+Often, just the left side, the
+main pump,
+
+110
+00:05:13,783 --> 00:05:15,023
+is too weak.
+
+111
+00:05:15,750 --> 00:05:17,990
+So they built smaller devices to
+help it.
+
+112
+00:05:18,370 --> 00:05:21,690
+A left ventricular assist
+device, or LVAD,
+
+113
+00:05:21,850 --> 00:05:25,280
+is a pump about the size of a
+fist, attached to the
+
+114
+00:05:25,290 --> 00:05:26,090
+heart.
+
+115
+00:05:26,250 --> 00:05:29,560
+The first ones copied the heart,
+with pumping sacs that
+
+116
+00:05:29,570 --> 00:05:33,030
+squeezed and relaxed, and wore
+out within a few years.
+
+117
+00:05:33,730 --> 00:05:36,110
+Switching to spinning rotors
+made them smaller,
+
+118
+00:05:36,690 --> 00:05:38,430
+quieter and far longer lasting.
+
+119
+00:05:39,333 --> 00:05:41,413
+Modern LVADs don't beat at all.
+
+120
+00:05:41,933 --> 00:05:45,063
+A tiny spinning rotor, often
+levitated by
+
+121
+00:05:45,073 --> 00:05:48,103
+magnets so it never wears out,
+pushes
+
+122
+00:05:48,113 --> 00:05:49,393
+blood in a smooth,
+
+123
+00:05:50,013 --> 00:05:51,413
+continuous stream.
+
+124
+00:05:52,250 --> 00:05:53,910
+That leads to something
+astonishing:
+
+125
+00:05:54,850 --> 00:05:57,010
+many people with these pumps
+have no pulse.
+
+126
+00:05:57,670 --> 00:06:00,090
+A doctor feeling their wrist
+would find nothing,
+
+127
+00:06:00,450 --> 00:06:01,950
+even though they're perfectly
+alive.
+
+128
+00:06:02,917 --> 00:06:06,267
+A cable runs through the skin to
+a controller and batteries
+
+129
+00:06:06,277 --> 00:06:08,477
+worn on a belt or in a bag.
+
+130
+00:06:08,937 --> 00:06:12,307
+Patients can go home, walk, and
+even return to
+
+131
+00:06:12,317 --> 00:06:13,117
+work.
+
+132
+00:06:13,250 --> 00:06:16,490
+Tens of thousands of people have
+now lived with an LVAD,
+
+133
+00:06:16,710 --> 00:06:18,310
+some for more than ten years.
+
+134
+00:06:18,890 --> 00:06:22,160
+The former US vice president
+Dick Cheney lived with
+
+135
+00:06:22,170 --> 00:06:25,510
+one for about twenty months,
+before a heart transplant.
+
+136
+00:06:27,317 --> 00:06:30,097
+Total artificial hearts are
+still used too,
+
+137
+00:06:30,617 --> 00:06:33,457
+as a bridge for people whose
+whole heart has failed.
+
+138
+00:06:33,997 --> 00:06:37,467
+The best known today, SynCardia,
+is a descendant
+
+139
+00:06:37,477 --> 00:06:38,937
+of the Jarvik seven.
+
+140
+00:06:39,667 --> 00:06:41,927
+More than two thousand have been
+implanted.
+
+141
+00:06:42,347 --> 00:06:44,987
+And instead of a
+washing-machine-sized
+compressor,
+
+142
+00:06:45,447 --> 00:06:48,717
+patients can now carry a
+portable driver in a
+
+143
+00:06:48,727 --> 00:06:49,527
+backpack.
+
+144
+00:06:50,083 --> 00:06:51,563
+The newest designs go further.
+
+145
+00:06:52,123 --> 00:06:55,083
+The BiVACOR heart, from an
+Australian inventor,
+
+146
+00:06:55,703 --> 00:06:59,013
+Daniel Timms, replaces both
+pumps with a single
+
+147
+00:06:59,023 --> 00:07:02,303
+spinning disc, floating in a
+magnetic field.
+
+148
+00:07:03,083 --> 00:07:04,043
+It has no valves,
+
+149
+00:07:04,683 --> 00:07:07,323
+nothing to rub, and nothing to
+wear out.
+
+150
+00:07:07,843 --> 00:07:11,333
+In twenty twenty four, the first
+patients received it in the
+
+151
+00:07:11,343 --> 00:07:12,143
+United States.
+
+152
+00:07:12,917 --> 00:07:16,207
+Fittingly, the first implant
+took place at the Texas
+
+153
+00:07:16,217 --> 00:07:19,107
+Heart Institute in Houston,
+where Denton
+
+154
+00:07:19,117 --> 00:07:22,467
+Cooley had implanted the first
+artificial heart fifty five
+
+155
+00:07:22,477 --> 00:07:23,677
+years earlier.
+
+156
+00:07:24,397 --> 00:07:27,487
+Timms had started the project as
+a PhD student
+
+157
+00:07:27,497 --> 00:07:30,217
+in Brisbane, more than twenty
+years before.
+
+158
+00:07:31,083 --> 00:07:34,293
+In twenty twenty five, an
+Australian man in his
+
+159
+00:07:34,303 --> 00:07:37,103
+forties became the first to
+leave hospital with one,
+
+160
+00:07:37,463 --> 00:07:40,473
+living for more than a hundred
+days on a titanium heart,
+
+161
+00:07:40,483 --> 00:07:42,603
+before receiving a donor heart.
+
+162
+00:07:44,233 --> 00:07:46,133
+Other researchers are trying
+different routes:
+
+163
+00:07:46,713 --> 00:07:49,743
+hearts from genetically modified
+pigs, and heart
+
+164
+00:07:49,753 --> 00:07:52,613
+tissue grown from a patient's
+own stem cells.
+
+165
+00:07:53,500 --> 00:07:56,670
+In twenty twenty two, a man in
+Maryland lived
+
+166
+00:07:56,680 --> 00:07:59,280
+for two months with a
+gene-edited pig heart,
+
+167
+00:07:59,780 --> 00:08:02,340
+the first such transplant in a
+living person.
+
+168
+00:08:03,250 --> 00:08:06,270
+His name was David Bennett, and
+he was fifty
+
+169
+00:08:06,280 --> 00:08:06,900
+seven.
+
+170
+00:08:06,910 --> 00:08:09,820
+A second patient received a pig
+heart the following year,
+
+171
+00:08:09,830 --> 00:08:11,930
+and lived for about six weeks.
+
+172
+00:08:12,833 --> 00:08:15,943
+And researchers have printed
+small, beating patches
+
+173
+00:08:15,953 --> 00:08:19,363
+of heart tissue using 3D
+printers loaded with
+
+174
+00:08:19,373 --> 00:08:20,173
+living cells.
+
+175
+00:08:21,083 --> 00:08:22,723
+None of these is perfect yet.
+
+176
+00:08:23,223 --> 00:08:25,913
+But each year, people who would
+once have died are living
+
+177
+00:08:25,923 --> 00:08:26,333
+longer,
+
+178
+00:08:26,343 --> 00:08:28,003
+at home, with their families.
+
+179
+00:08:29,733 --> 00:08:32,583
+The human heart beats three
+billion times without
+
+180
+00:08:32,593 --> 00:08:33,393
+stopping.
+
+181
+00:08:33,833 --> 00:08:36,793
+Engineers have spent seventy
+years trying to match it.
+
+182
+00:08:37,500 --> 00:08:38,940
+They haven't beaten nature yet.
+
+183
+00:08:39,280 --> 00:08:41,860
+But they've learned how to keep
+a human being alive,
+
+184
+00:08:42,420 --> 00:08:44,160
+with a heart made by human
+hands.
