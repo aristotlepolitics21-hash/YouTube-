@@ -1,0 +1,909 @@
+1
+00:00:00,250 --> 00:00:02,570
+Show a three year old a picture
+of a cat,
+
+2
+00:00:03,170 --> 00:00:04,870
+and they'll say cat in an
+instant.
+
+3
+00:00:05,750 --> 00:00:09,080
+For decades, that simple act
+defeated the most powerful
+
+4
+00:00:09,090 --> 00:00:10,610
+computers in the world.
+
+5
+00:00:11,333 --> 00:00:14,823
+Today, AI systems recognise
+faces, read
+
+6
+00:00:14,833 --> 00:00:17,633
+medical scans, and steer cars
+through traffic.
+
+7
+00:00:18,583 --> 00:00:20,883
+So how did machines finally
+learn to see?
+
+8
+00:00:21,343 --> 00:00:23,293
+The answer came from copying the
+brain,
+
+9
+00:00:23,303 --> 00:00:25,223
+and from a mountain of pictures.
+
+10
+00:00:26,983 --> 00:00:30,183
+To a computer, a picture is just
+a grid of numbers:
+
+11
+00:00:30,723 --> 00:00:33,293
+one for the brightness of each
+tiny dot,
+
+12
+00:00:33,303 --> 00:00:34,103
+or pixel.
+
+13
+00:00:34,917 --> 00:00:36,657
+A cat might be black or ginger,
+
+14
+00:00:37,257 --> 00:00:38,157
+near or far,
+
+15
+00:00:38,797 --> 00:00:41,757
+curled up or stretching, half
+hidden behind a sofa.
+
+16
+00:00:42,477 --> 00:00:45,077
+Every version produces
+completely different numbers.
+
+17
+00:00:45,917 --> 00:00:47,857
+Early researchers tried writing
+rules:
+
+18
+00:00:48,597 --> 00:00:51,737
+a cat has two pointy ears,
+whiskers, fur.
+
+19
+00:00:52,097 --> 00:00:54,197
+But there were always too many
+exceptions.
+
+20
+00:00:55,097 --> 00:00:56,297
+The rules kept breaking.
+
+21
+00:00:57,167 --> 00:00:59,997
+In nineteen sixty six, an MIT
+professor
+
+22
+00:01:00,007 --> 00:01:03,267
+famously set a group of students
+a summer project:
+
+23
+00:01:03,807 --> 00:01:05,607
+get a computer to describe what
+it sees.
+
+24
+00:01:06,287 --> 00:01:08,047
+It took more than half a
+century.
+
+25
+00:01:09,733 --> 00:01:12,983
+Meanwhile, neuroscientists were
+discovering how real
+
+26
+00:01:12,993 --> 00:01:14,673
+eyes and brains do it.
+
+27
+00:01:15,333 --> 00:01:18,823
+In the late nineteen fifties,
+David Hubel and Torsten
+
+28
+00:01:18,833 --> 00:01:22,203
+Wiesel recorded signals from
+single nerve cells in the
+
+29
+00:01:22,213 --> 00:01:23,773
+visual part of a cat's brain.
+
+30
+00:01:24,583 --> 00:01:28,023
+They found cells that fired only
+when the cat saw an edge,
+
+31
+00:01:28,443 --> 00:01:30,403
+tilted at one particular angle.
+
+32
+00:01:30,863 --> 00:01:34,303
+Other cells combined those edges
+into more complex shapes.
+
+33
+00:01:35,167 --> 00:01:37,567
+The breakthrough came partly by
+accident.
+
+34
+00:01:38,227 --> 00:01:41,217
+A cell burst into activity as
+they slid a glass
+
+35
+00:01:41,227 --> 00:01:44,677
+slide into their projector, and
+its edge cast a
+
+36
+00:01:44,687 --> 00:01:46,287
+faint line across the screen.
+
+37
+00:01:47,083 --> 00:01:49,853
+Vision is a ladder: from edges,
+to shapes,
+
+38
+00:01:49,863 --> 00:01:51,063
+to whole objects.
+
+39
+00:01:51,803 --> 00:01:55,073
+That work won them a Nobel
+Prize, and it inspired the
+
+40
+00:01:55,083 --> 00:01:57,103
+computer scientists who came
+next.
+
+41
+00:01:58,000 --> 00:02:01,090
+In nineteen fifty eight, a
+psychologist named
+
+42
+00:02:01,100 --> 00:02:04,390
+Frank Rosenblatt built the
+Perceptron, a
+
+43
+00:02:04,400 --> 00:02:07,750
+machine with a camera and a
+simple artificial neural
+
+44
+00:02:07,760 --> 00:02:10,280
+network that could learn to tell
+shapes apart.
+
+45
+00:02:11,083 --> 00:02:13,643
+Its eye was a grid of just four
+hundred light sensors,
+
+46
+00:02:14,083 --> 00:02:17,523
+twenty by twenty, wired at
+random to its artificial
+neurons.
+
+47
+00:02:18,417 --> 00:02:20,677
+Newspapers predicted it would
+soon walk,
+
+48
+00:02:21,077 --> 00:02:22,117
+talk and see.
+
+49
+00:02:22,617 --> 00:02:23,417
+It couldn't.
+
+50
+00:02:23,657 --> 00:02:26,887
+Its single layer of artificial
+neurons was far too
+
+51
+00:02:26,897 --> 00:02:27,697
+simple,
+
+52
+00:02:27,857 --> 00:02:30,697
+and interest in neural networks
+collapsed for years.
+
+53
+00:02:31,583 --> 00:02:32,703
+Funding dried up.
+
+54
+00:02:33,123 --> 00:02:36,083
+Researchers later called these
+lean years the AI winters.
+
+55
+00:02:37,083 --> 00:02:40,403
+In nineteen eighty, the Japanese
+researcher Kunihiko
+
+56
+00:02:40,413 --> 00:02:43,553
+Fukushima built the
+Neocognitron, a layered
+
+57
+00:02:43,563 --> 00:02:47,033
+network directly inspired by
+Hubel and Wiesel's
+
+58
+00:02:47,043 --> 00:02:47,843
+discoveries.
+
+59
+00:02:49,483 --> 00:02:52,733
+An artificial neural network is
+made of layers of
+
+60
+00:02:52,743 --> 00:02:53,543
+simple units.
+
+61
+00:02:54,143 --> 00:02:56,873
+Each one adds up signals from
+the layer before,
+
+62
+00:02:56,883 --> 00:03:00,363
+and passes a signal on if the
+total is big enough.
+
+63
+00:03:01,250 --> 00:03:03,290
+At first, the connections are
+random.
+
+64
+00:03:03,890 --> 00:03:07,390
+To train it, you show it
+thousands of labelled examples.
+
+65
+00:03:08,070 --> 00:03:11,040
+Every time it gets one wrong,
+you nudge all the connections
+
+66
+00:03:11,050 --> 00:03:11,850
+slightly,
+
+67
+00:03:12,350 --> 00:03:13,710
+so it would have done a bit
+better.
+
+68
+00:03:14,500 --> 00:03:16,740
+The method for working out those
+nudges,
+
+69
+00:03:17,040 --> 00:03:20,397
+called backpropagation, was
+popularised in nineteen
+
+70
+00:03:20,407 --> 00:03:23,480
+eighty six by Geoffrey Hinton
+and his colleagues.
+
+71
+00:03:24,500 --> 00:03:27,490
+In the late nineteen eighties,
+Yann LeCun,
+
+72
+00:03:27,500 --> 00:03:28,860
+then at Bell Labs,
+
+73
+00:03:29,660 --> 00:03:32,140
+built a network for reading
+handwritten digits.
+
+74
+00:03:32,740 --> 00:03:35,100
+Instead of looking at the whole
+image at once,
+
+75
+00:03:35,580 --> 00:03:38,850
+it scanned small windows across
+it, like the edge-detecting
+
+76
+00:03:38,860 --> 00:03:40,000
+cells in the brain.
+
+77
+00:03:40,833 --> 00:03:43,133
+This was a convolutional neural
+network.
+
+78
+00:03:43,573 --> 00:03:46,463
+By the late nineteen nineties,
+versions of it were reading
+
+79
+00:03:46,473 --> 00:03:49,153
+millions of handwritten cheques
+for American banks.
+
+80
+00:03:50,083 --> 00:03:53,353
+But for photos of the real
+world, neural networks
+
+81
+00:03:53,363 --> 00:03:54,583
+still weren't good enough.
+
+82
+00:03:55,143 --> 00:03:57,523
+They needed two things that
+didn't exist yet:
+
+83
+00:03:58,183 --> 00:04:00,763
+far more data, and far more
+computing power.
+
+84
+00:04:02,317 --> 00:04:05,602
+The data came from a young
+professor named Fei-Fei Li.
+
+85
+00:04:06,083 --> 00:04:09,493
+She believed computers needed to
+see the world the way children
+
+86
+00:04:09,503 --> 00:04:10,303
+do:
+
+87
+00:04:10,503 --> 00:04:13,103
+by looking at an enormous number
+of examples.
+
+88
+00:04:14,000 --> 00:04:17,150
+Starting in two thousand and
+seven, her team gathered
+
+89
+00:04:17,160 --> 00:04:20,410
+images from the internet, and
+paid thousands of online
+
+90
+00:04:20,420 --> 00:04:21,190
+workers,
+
+91
+00:04:21,200 --> 00:04:24,110
+through Amazon's Mechanical Turk
+website,
+
+92
+00:04:24,120 --> 00:04:25,140
+to label them.
+
+93
+00:04:25,750 --> 00:04:29,072
+At its peak, nearly fifty
+thousand people in a hundred and
+sixty
+
+94
+00:04:29,082 --> 00:04:32,490
+seven countries were helping to
+label the pictures.
+
+95
+00:04:33,417 --> 00:04:35,837
+Many experts thought it was a
+waste of time.
+
+96
+00:04:36,377 --> 00:04:37,177
+More data,
+
+97
+00:04:37,237 --> 00:04:38,037
+they argued,
+
+98
+00:04:38,477 --> 00:04:39,997
+wouldn't fix bad algorithms.
+
+99
+00:04:41,083 --> 00:04:44,213
+The result, ImageNet, held more
+than fourteen
+
+100
+00:04:44,223 --> 00:04:47,493
+million pictures, sorted into
+over twenty
+
+101
+00:04:47,503 --> 00:04:50,633
+thousand categories, from
+strawberries to sports
+
+102
+00:04:50,643 --> 00:04:52,863
+cars to dozens of breeds of dog.
+
+103
+00:04:53,667 --> 00:04:56,877
+In two thousand and ten, she
+launched a yearly
+
+104
+00:04:56,887 --> 00:04:57,597
+contest:
+
+105
+00:04:57,607 --> 00:05:01,057
+whose program could recognise
+objects in
+
+106
+00:05:01,067 --> 00:05:03,767
+a thousand different categories
+most accurately?
+
+107
+00:05:05,567 --> 00:05:08,937
+In twenty twelve, a team from
+the University of
+
+108
+00:05:08,947 --> 00:05:12,377
+Toronto entered: Geoffrey Hinton
+and two of
+
+109
+00:05:12,387 --> 00:05:15,617
+his students, Alex Krizhevsky
+and Ilya
+
+110
+00:05:15,627 --> 00:05:16,427
+Sutskever.
+
+111
+00:05:16,917 --> 00:05:20,137
+Their network, later called
+AlexNet, was deep,
+
+112
+00:05:20,637 --> 00:05:23,387
+with eight learning layers and
+sixty million adjustable
+
+113
+00:05:23,397 --> 00:05:24,237
+connections.
+
+114
+00:05:25,250 --> 00:05:28,570
+To train it, Krizhevsky used two
+graphics cards,
+
+115
+00:05:29,110 --> 00:05:31,990
+the chips built for video games,
+in his bedroom.
+
+116
+00:05:32,510 --> 00:05:33,790
+Training took about a week.
+
+117
+00:05:34,350 --> 00:05:37,400
+Their parallel number crunching
+turned out to be perfect for
+
+118
+00:05:37,410 --> 00:05:38,210
+neural networks.
+
+119
+00:05:39,083 --> 00:05:40,753
+The results stunned the field.
+
+120
+00:05:40,763 --> 00:05:43,913
+AlexNet's top five error rate
+was about
+
+121
+00:05:43,923 --> 00:05:45,133
+fifteen percent.
+
+122
+00:05:45,143 --> 00:05:48,293
+The next best entry got twenty
+six percent.
+
+123
+00:05:48,833 --> 00:05:52,203
+That same year, a Google team
+trained a huge network
+
+124
+00:05:52,213 --> 00:05:55,523
+on ten million still frames from
+YouTube videos,
+
+125
+00:05:55,533 --> 00:05:57,873
+without telling it what anything
+was.
+
+126
+00:05:58,493 --> 00:06:00,473
+One of its artificial neurons
+learned,
+
+127
+00:06:01,133 --> 00:06:03,673
+all by itself, to respond to
+cats.
+
+128
+00:06:04,667 --> 00:06:07,627
+Soon after, Google bought
+Hinton's tiny company,
+
+129
+00:06:08,107 --> 00:06:11,097
+which had just three employees,
+for forty four million
+
+130
+00:06:11,107 --> 00:06:12,077
+dollars,
+
+131
+00:06:12,087 --> 00:06:14,507
+after an auction between tech
+giants.
+
+132
+00:06:15,333 --> 00:06:16,133
+Almost overnight,
+
+133
+00:06:16,753 --> 00:06:18,793
+the whole field switched to deep
+learning.
+
+134
+00:06:19,433 --> 00:06:22,583
+Within three years, networks
+were beating the human benchmark
+
+135
+00:06:22,593 --> 00:06:24,193
+on the ImageNet test.
+
+136
+00:06:25,083 --> 00:06:28,303
+That human benchmark came from
+one dedicated researcher,
+
+137
+00:06:28,883 --> 00:06:32,193
+Andrej Karpathy, who sat down
+and labelled
+
+138
+00:06:32,203 --> 00:06:33,783
+the test images himself.
+
+139
+00:06:34,443 --> 00:06:36,503
+He got about five percent of
+them wrong.
+
+140
+00:06:37,333 --> 00:06:38,833
+Inside a trained network,
+
+141
+00:06:39,593 --> 00:06:42,763
+the first layers detect simple
+edges and colours,
+
+142
+00:06:42,773 --> 00:06:45,423
+just like Hubel and Wiesel's
+cells.
+
+143
+00:06:45,433 --> 00:06:48,653
+Deeper layers respond to eyes,
+wheels,
+
+144
+00:06:49,133 --> 00:06:49,723
+fur,
+
+145
+00:06:49,733 --> 00:06:50,533
+and faces.
+
+146
+00:06:52,067 --> 00:06:54,367
+Today, computer vision is
+everywhere.
+
+147
+00:06:55,167 --> 00:06:58,457
+It unlocks your phone with your
+face, and sorts the photos in
+
+148
+00:06:58,467 --> 00:06:59,267
+your gallery.
+
+149
+00:06:59,750 --> 00:07:02,900
+It helps doctors spot cancers
+and eye disease
+
+150
+00:07:02,910 --> 00:07:03,750
+in scans,
+
+151
+00:07:04,350 --> 00:07:07,110
+sometimes catching what a busy
+human might miss.
+
+152
+00:07:07,917 --> 00:07:09,597
+It guides robots in warehouses,
+
+153
+00:07:10,237 --> 00:07:11,577
+checks crops from drones,
+
+154
+00:07:12,177 --> 00:07:13,977
+and lets cars detect
+pedestrians,
+
+155
+00:07:14,617 --> 00:07:15,417
+cyclists,
+
+156
+00:07:15,557 --> 00:07:16,377
+and traffic lights.
+
+157
+00:07:17,250 --> 00:07:20,540
+In some American cities, taxis
+with no human
+
+158
+00:07:20,550 --> 00:07:22,670
+driver now carry paying
+passengers,
+
+159
+00:07:23,330 --> 00:07:26,820
+using cameras, radar and laser
+scanners to build a
+
+160
+00:07:26,830 --> 00:07:27,810
+picture of the road.
+
+161
+00:07:28,500 --> 00:07:31,790
+Eye-screening systems can now
+detect diabetic eye
+
+162
+00:07:31,800 --> 00:07:34,720
+disease from a photo of the back
+of the eye,
+
+163
+00:07:35,220 --> 00:07:37,520
+helping clinics that have too
+few specialists.
+
+164
+00:07:38,667 --> 00:07:41,067
+But machine vision has strange
+weaknesses.
+
+165
+00:07:41,907 --> 00:07:45,277
+Change a handful of pixels in a
+way no human would
+
+166
+00:07:45,287 --> 00:07:46,077
+notice,
+
+167
+00:07:46,087 --> 00:07:49,337
+and a network can be fooled into
+calling a panda a
+
+168
+00:07:49,347 --> 00:07:50,147
+gibbon.
+
+169
+00:07:50,333 --> 00:07:52,153
+And if the training pictures are
+unbalanced,
+
+170
+00:07:52,733 --> 00:07:55,873
+it can work worse for some
+groups of people than others.
+
+171
+00:07:56,313 --> 00:07:59,193
+Fixing that is one of the
+biggest challenges in the field.
+
+172
+00:08:00,083 --> 00:08:03,493
+In twenty fifteen, a photo app
+wrongly tagged a
+
+173
+00:08:03,503 --> 00:08:06,883
+photo of two Black people with
+an offensive animal label.
+
+174
+00:08:07,243 --> 00:08:10,633
+The company apologised, and its
+quick fix was simply
+
+175
+00:08:10,643 --> 00:08:11,903
+to block that label.
+
+176
+00:08:13,483 --> 00:08:16,513
+In twenty eighteen, Hinton,
+LeCun and
+
+177
+00:08:16,523 --> 00:08:18,933
+Yoshua Bengio won the Turing
+Award,
+
+178
+00:08:18,943 --> 00:08:22,353
+computing's highest prize, for
+their work on deep
+
+179
+00:08:22,363 --> 00:08:23,163
+learning.
+
+180
+00:08:23,417 --> 00:08:26,787
+And in twenty twenty four,
+Hinton shared the Nobel Prize
+
+181
+00:08:26,797 --> 00:08:30,247
+in Physics with John Hopfield,
+for discoveries
+
+182
+00:08:30,257 --> 00:08:33,517
+that made machine learning with
+neural networks possible.
+
+183
+00:08:34,417 --> 00:08:37,627
+The same ideas that taught
+machines to see now power
+
+184
+00:08:37,637 --> 00:08:40,527
+systems that understand speech,
+translate
+
+185
+00:08:40,537 --> 00:08:41,337
+languages,
+
+186
+00:08:41,777 --> 00:08:42,577
+and write text.
+
+187
+00:08:44,233 --> 00:08:47,503
+It took more than half a
+century, a trick borrowed from a
+
+188
+00:08:47,513 --> 00:08:50,683
+cat's brain, a contest built on
+fourteen
+
+189
+00:08:50,693 --> 00:08:53,923
+million photos, and two graphics
+cards in a
+
+190
+00:08:53,933 --> 00:08:54,733
+student's bedroom.
+
+191
+00:08:55,583 --> 00:08:58,633
+But machines finally learned to
+do what a three year old does
+
+192
+00:08:58,643 --> 00:08:59,443
+without thinking:
+
+193
+00:09:00,183 --> 00:09:02,663
+look at the world, and
+understand what they see.
