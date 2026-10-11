@@ -1,0 +1,944 @@
+1
+00:00:00,250 --> 00:00:03,580
+Inside every electric car is a
+box weighing around
+
+2
+00:00:03,590 --> 00:00:04,390
+half a tonne.
+
+3
+00:00:04,870 --> 00:00:06,930
+It's the most expensive part of
+the car,
+
+4
+00:00:07,330 --> 00:00:10,620
+and it decides how far you can
+drive, how fast you can
+
+5
+00:00:10,630 --> 00:00:11,400
+charge,
+
+6
+00:00:11,410 --> 00:00:12,950
+and how long the car will last.
+
+7
+00:00:13,833 --> 00:00:17,283
+That box is full of lithium-ion
+cells, the
+
+8
+00:00:17,293 --> 00:00:19,953
+same basic technology that's in
+your phone.
+
+9
+00:00:20,750 --> 00:00:23,880
+But there's a new kind of
+battery that could make electric
+cars
+
+10
+00:00:23,890 --> 00:00:24,690
+lighter,
+
+11
+00:00:24,830 --> 00:00:25,630
+safer,
+
+12
+00:00:25,990 --> 00:00:28,450
+faster to charge, and able to go
+much further.
+
+13
+00:00:29,090 --> 00:00:30,730
+It's called the solid-state
+battery.
+
+14
+00:00:31,583 --> 00:00:34,793
+Car makers are spending billions
+to build it
+
+15
+00:00:34,803 --> 00:00:35,603
+first.
+
+16
+00:00:35,783 --> 00:00:39,133
+To understand why, we need to go
+back to the very first
+
+17
+00:00:39,143 --> 00:00:39,943
+battery.
+
+18
+00:00:41,150 --> 00:00:44,040
+In eighteen hundred, the Italian
+scientist
+
+19
+00:00:44,050 --> 00:00:47,400
+Alessandro Volta stacked discs
+of zinc and
+
+20
+00:00:47,410 --> 00:00:48,210
+copper,
+
+21
+00:00:48,230 --> 00:00:50,890
+separated by cloth soaked in
+salty water.
+
+22
+00:00:51,350 --> 00:00:54,260
+It was the first battery, and it
+produced a steady electric
+
+23
+00:00:54,270 --> 00:00:55,070
+current.
+
+24
+00:00:55,583 --> 00:00:57,903
+Every battery since has worked
+the same way.
+
+25
+00:00:58,503 --> 00:00:59,723
+There are two electrodes:
+
+26
+00:01:00,363 --> 00:01:03,753
+a negative one, called the
+anode, and a
+
+27
+00:01:03,763 --> 00:01:06,563
+positive one, called the
+cathode.
+
+28
+00:01:07,103 --> 00:01:08,823
+Between them is an electrolyte.
+
+29
+00:01:09,417 --> 00:01:12,077
+When you charge the battery,
+tiny charged atoms,
+
+30
+00:01:12,497 --> 00:01:15,507
+called ions, are pushed through
+the electrolyte into the
+
+31
+00:01:15,517 --> 00:01:16,317
+anode,
+
+32
+00:01:16,377 --> 00:01:19,204
+where they're stored, like water
+pumped uphill.
+
+33
+00:01:19,667 --> 00:01:23,057
+When you use it, the ions flow
+back, and the electrons they
+
+34
+00:01:23,067 --> 00:01:25,507
+leave behind travel the long way
+round,
+
+35
+00:01:25,767 --> 00:01:29,047
+through the wire, powering your
+phone, or your car's motor.
+
+36
+00:01:29,750 --> 00:01:33,220
+For over a century, the best
+rechargeable battery was
+
+37
+00:01:33,230 --> 00:01:36,680
+the lead-acid kind, invented in
+eighteen fifty nine
+
+38
+00:01:36,690 --> 00:01:40,010
+and still used to start most
+petrol cars today.
+
+39
+00:01:40,550 --> 00:01:42,570
+It worked, but it was enormously
+heavy.
+
+40
+00:01:43,250 --> 00:01:45,370
+Early electric cars ran on these
+batteries.
+
+41
+00:01:46,330 --> 00:01:49,820
+In nineteen hundred, about a
+third of cars in the United
+States
+
+42
+00:01:49,830 --> 00:01:50,630
+were electric.
+
+43
+00:01:51,050 --> 00:01:53,450
+But they couldn't go far, and
+petrol won.
+
+44
+00:01:55,067 --> 00:01:56,787
+The answer turned out to be
+lithium.
+
+45
+00:01:57,407 --> 00:01:59,227
+It's the lightest metal in the
+universe,
+
+46
+00:01:59,747 --> 00:02:02,777
+so light it floats on water, and
+it gives up its
+
+47
+00:02:02,787 --> 00:02:06,147
+electrons more eagerly than
+almost any other element.
+
+48
+00:02:06,917 --> 00:02:09,777
+In the nineteen seventies,
+during an oil crisis,
+
+49
+00:02:10,237 --> 00:02:12,617
+a British chemist named Stanley
+Whittingham,
+
+50
+00:02:12,937 --> 00:02:16,127
+working for the oil company
+Exxon, built the first
+
+51
+00:02:16,137 --> 00:02:17,657
+rechargeable lithium battery.
+
+52
+00:02:18,500 --> 00:02:19,540
+It had a big problem.
+
+53
+00:02:20,240 --> 00:02:23,500
+Its anode was pure lithium
+metal, and every time it
+charged,
+
+54
+00:02:24,060 --> 00:02:27,460
+the lithium grew tiny,
+needle-like spikes called
+dendrites.
+
+55
+00:02:28,333 --> 00:02:30,373
+When a dendrite reached the
+other side,
+
+56
+00:02:30,733 --> 00:02:33,273
+the battery short-circuited, and
+could catch fire.
+
+57
+00:02:33,893 --> 00:02:37,363
+Some early lithium-metal
+batteries were recalled after
+doing
+
+58
+00:02:37,373 --> 00:02:38,393
+exactly that.
+
+59
+00:02:39,083 --> 00:02:41,063
+In nineteen eighty, at Oxford,
+
+60
+00:02:41,723 --> 00:02:44,853
+the American physicist John
+Goodenough found a far
+
+61
+00:02:44,863 --> 00:02:47,703
+better cathode: lithium cobalt
+oxide.
+
+62
+00:02:48,663 --> 00:02:50,453
+It nearly doubled the battery's
+voltage,
+
+63
+00:02:50,463 --> 00:02:52,163
+to about four volts.
+
+64
+00:02:53,083 --> 00:02:55,663
+Then in nineteen eighty five, in
+Japan,
+
+65
+00:02:56,303 --> 00:02:59,473
+the chemist Akira Yoshino
+replaced the dangerous lithium
+
+66
+00:02:59,483 --> 00:03:01,123
+metal anode with carbon.
+
+67
+00:03:01,823 --> 00:03:05,233
+The lithium ions simply slipped
+in between layers of carbon
+
+68
+00:03:05,243 --> 00:03:06,043
+atoms,
+
+69
+00:03:06,303 --> 00:03:07,743
+with no metal spikes to grow.
+
+70
+00:03:08,417 --> 00:03:10,637
+That was the modern lithium-ion
+battery.
+
+71
+00:03:11,197 --> 00:03:14,167
+In nineteen ninety one, Sony put
+it on sale,
+
+72
+00:03:14,177 --> 00:03:15,977
+inside a video camera.
+
+73
+00:03:16,750 --> 00:03:17,730
+It changed everything.
+
+74
+00:03:18,390 --> 00:03:20,110
+Mobile phones, laptops,
+
+75
+00:03:20,790 --> 00:03:21,950
+and eventually, cars.
+
+76
+00:03:22,917 --> 00:03:26,187
+In twenty nineteen, Whittingham,
+Goodenough and
+
+77
+00:03:26,197 --> 00:03:29,157
+Yoshino shared the Nobel Prize
+in Chemistry.
+
+78
+00:03:29,797 --> 00:03:33,267
+Goodenough was ninety seven, the
+oldest person ever to win
+
+79
+00:03:33,277 --> 00:03:34,297
+a Nobel Prize.
+
+80
+00:03:34,877 --> 00:03:37,187
+He kept working into his late
+nineties,
+
+81
+00:03:37,197 --> 00:03:39,185
+and died at the age of one
+hundred.
+
+82
+00:03:40,567 --> 00:03:43,937
+In two thousand and eight, a
+small company called
+
+83
+00:03:43,947 --> 00:03:47,431
+Tesla built a sports car powered
+by six thousand
+
+84
+00:03:47,441 --> 00:03:50,677
+eight hundred and thirty one
+laptop batteries,
+
+85
+00:03:50,687 --> 00:03:51,847
+wired together.
+
+86
+00:03:52,667 --> 00:03:56,157
+Since twenty ten, the price of
+lithium-ion batteries has
+
+87
+00:03:56,167 --> 00:03:58,337
+fallen by about ninety percent.
+
+88
+00:03:58,347 --> 00:04:01,557
+In twenty twenty four, more than
+seventeen million
+
+89
+00:04:01,567 --> 00:04:04,047
+electric cars were sold around
+the world,
+
+90
+00:04:04,407 --> 00:04:06,127
+more than one in five new cars.
+
+91
+00:04:07,000 --> 00:04:09,320
+But today's batteries are
+reaching their limits.
+
+92
+00:04:10,020 --> 00:04:13,050
+A big share of a battery pack's
+weight is material
+
+93
+00:04:13,060 --> 00:04:16,400
+that doesn't store energy at
+all: the casing,
+
+94
+00:04:16,920 --> 00:04:18,120
+the wiring, the cooling,
+
+95
+00:04:18,760 --> 00:04:20,220
+and the liquid electrolyte.
+
+96
+00:04:20,750 --> 00:04:22,550
+That liquid is also flammable.
+
+97
+00:04:22,950 --> 00:04:26,220
+If a cell is damaged, or
+overheats, it can set
+
+98
+00:04:26,230 --> 00:04:28,990
+off a chain reaction called
+thermal runaway,
+
+99
+00:04:29,570 --> 00:04:31,770
+and that fire is very hard to
+put out.
+
+100
+00:04:32,500 --> 00:04:34,240
+And charging is still slow.
+
+101
+00:04:34,720 --> 00:04:36,220
+Push the ions in too quickly,
+
+102
+00:04:36,840 --> 00:04:39,320
+and lithium starts plating onto
+the anode as metal,
+
+103
+00:04:39,640 --> 00:04:42,530
+the same spiky dendrites that
+haunted the first lithium
+
+104
+00:04:42,540 --> 00:04:43,340
+batteries.
+
+105
+00:04:44,000 --> 00:04:47,090
+So drivers worry about range,
+and about waiting at
+
+106
+00:04:47,100 --> 00:04:47,900
+chargers.
+
+107
+00:04:48,400 --> 00:04:50,620
+Engineers wanted a battery that
+was smaller,
+
+108
+00:04:51,040 --> 00:04:52,940
+safer, and could fill up in
+minutes.
+
+109
+00:04:54,733 --> 00:04:57,423
+The idea behind the solid-state
+battery is simple.
+
+110
+00:04:57,433 --> 00:05:00,743
+Replace the liquid electrolyte
+with a thin layer of
+
+111
+00:05:00,753 --> 00:05:01,693
+solid material,
+
+112
+00:05:02,313 --> 00:05:05,543
+a special ceramic, glass, or
+crystal that lets
+
+113
+00:05:05,553 --> 00:05:08,253
+lithium ions pass straight
+through it.
+
+114
+00:05:08,917 --> 00:05:12,257
+A solid can't leak, and most of
+these materials don't burn.
+
+115
+00:05:12,837 --> 00:05:16,207
+So the battery needs far less
+heavy protection around
+
+116
+00:05:16,217 --> 00:05:17,017
+it.
+
+117
+00:05:17,083 --> 00:05:20,323
+But the real prize is what a
+solid electrolyte might allow
+next.
+
+118
+00:05:21,123 --> 00:05:23,143
+If it's strong enough to block
+dendrites,
+
+119
+00:05:23,663 --> 00:05:26,733
+engineers can finally go back to
+Whittingham's dream:
+
+120
+00:05:26,743 --> 00:05:29,223
+an anode made of pure lithium
+metal.
+
+121
+00:05:29,917 --> 00:05:33,367
+Lithium metal can hold around
+ten times more charge than
+
+122
+00:05:33,377 --> 00:05:34,757
+the same weight of graphite.
+
+123
+00:05:35,157 --> 00:05:38,247
+Some designs go even further,
+and start with no
+
+124
+00:05:38,257 --> 00:05:39,057
+anode at all.
+
+125
+00:05:39,477 --> 00:05:42,417
+The lithium builds it up the
+first time the battery charges.
+
+126
+00:05:43,250 --> 00:05:46,680
+The result could be a battery
+that stores perhaps fifty
+percent
+
+127
+00:05:46,690 --> 00:05:48,710
+more energy in the same space.
+
+128
+00:05:49,330 --> 00:05:51,660
+That could mean a car that goes
+much further,
+
+129
+00:05:51,670 --> 00:05:54,570
+or the same range from a
+smaller, lighter,
+
+130
+00:05:55,570 --> 00:05:56,370
+cheaper pack.
+
+131
+00:05:56,667 --> 00:05:59,547
+And because the ions don't have
+to dodge through a liquid,
+
+132
+00:06:00,027 --> 00:06:03,097
+some solid-state cells could
+charge from ten to eighty
+
+133
+00:06:03,107 --> 00:06:04,987
+percent in around ten minutes.
+
+134
+00:06:06,733 --> 00:06:09,513
+So why isn't every car already
+using one?
+
+135
+00:06:10,013 --> 00:06:13,183
+Because building a solid-state
+battery turned out to be
+
+136
+00:06:13,193 --> 00:06:14,413
+extraordinarily hard.
+
+137
+00:06:15,167 --> 00:06:17,847
+A liquid touches every surface
+it's poured onto.
+
+138
+00:06:18,487 --> 00:06:21,607
+Two solids pressed together only
+touch at tiny points,
+
+139
+00:06:22,007 --> 00:06:22,837
+like two bricks.
+
+140
+00:06:22,847 --> 00:06:25,507
+Ions struggle to cross those
+gaps.
+
+141
+00:06:26,417 --> 00:06:29,667
+Every time a battery charges,
+its electrodes swell
+
+142
+00:06:29,677 --> 00:06:30,657
+and shrink.
+
+143
+00:06:31,297 --> 00:06:33,357
+A liquid flows to fill the
+space.
+
+144
+00:06:33,997 --> 00:06:34,817
+A solid cracks.
+
+145
+00:06:35,917 --> 00:06:37,887
+And to the surprise of many
+scientists,
+
+146
+00:06:37,897 --> 00:06:41,207
+dendrites can still grow,
+worming through
+
+147
+00:06:41,217 --> 00:06:44,177
+tiny cracks and the boundaries
+between crystals,
+
+148
+00:06:44,657 --> 00:06:46,017
+even in hard ceramic.
+
+149
+00:06:46,833 --> 00:06:49,773
+Some of the best solid
+electrolytes are made with
+sulfur.
+
+150
+00:06:50,533 --> 00:06:53,133
+They let ions move almost as
+fast as a liquid,
+
+151
+00:06:53,573 --> 00:06:56,903
+but if they meet moisture in the
+air, they can give off toxic
+
+152
+00:06:56,913 --> 00:06:58,353
+hydrogen sulfide gas.
+
+153
+00:06:59,233 --> 00:07:01,093
+So factories have to be bone
+dry.
+
+154
+00:07:01,917 --> 00:07:04,177
+Making a cell in a lab is one
+thing.
+
+155
+00:07:04,557 --> 00:07:07,627
+Making millions of them,
+cheaply, with no defects,
+
+156
+00:07:07,637 --> 00:07:08,757
+is another.
+
+157
+00:07:10,400 --> 00:07:12,180
+Even so, the race is on.
+
+158
+00:07:12,600 --> 00:07:16,030
+Toyota holds more solid-state
+battery patents than
+
+159
+00:07:16,040 --> 00:07:19,410
+any other company, and says it
+plans to put them
+
+160
+00:07:19,420 --> 00:07:22,527
+in cars by around twenty twenty
+seven or twenty
+
+161
+00:07:22,537 --> 00:07:23,370
+twenty eight.
+
+162
+00:07:23,833 --> 00:07:27,083
+In California, QuantumScape,
+backed by
+
+163
+00:07:27,093 --> 00:07:27,893
+Volkswagen,
+
+164
+00:07:28,353 --> 00:07:31,583
+has been building a ceramic
+separator thinner than a sheet
+of
+
+165
+00:07:31,593 --> 00:07:32,003
+paper,
+
+166
+00:07:32,013 --> 00:07:34,833
+with cells that start with no
+anode at all.
+
+167
+00:07:35,500 --> 00:07:38,670
+In twenty twenty five,
+Mercedes-Benz drove a test
+
+168
+00:07:38,680 --> 00:07:41,890
+car with solid-state cells from
+Stuttgart to
+
+169
+00:07:41,900 --> 00:07:42,350
+Malmö,
+
+170
+00:07:42,360 --> 00:07:45,150
+in Sweden, more than twelve
+hundred kilometres,
+
+171
+00:07:45,160 --> 00:07:46,900
+on a single charge.
+
+172
+00:07:47,833 --> 00:07:51,163
+In China, the car maker NIO
+already sells cars
+
+173
+00:07:51,173 --> 00:07:54,283
+with semi-solid batteries, a
+halfway step,
+
+174
+00:07:54,293 --> 00:07:56,193
+with some liquid still inside.
+
+175
+00:07:56,973 --> 00:08:00,383
+In twenty twenty three, NIO's
+founder drove one of
+
+176
+00:08:00,393 --> 00:08:03,683
+his cars more than a thousand
+kilometres on a single charge,
+
+177
+00:08:03,693 --> 00:08:04,993
+live on the internet.
+
+178
+00:08:05,917 --> 00:08:07,357
+And it isn't only about range.
+
+179
+00:08:08,177 --> 00:08:11,407
+Every lithium battery needs
+lithium, much of it mined in
+
+180
+00:08:11,417 --> 00:08:12,217
+Australia,
+
+181
+00:08:12,537 --> 00:08:15,967
+or pumped as salty water from
+beneath the deserts of Chile and
+
+182
+00:08:15,977 --> 00:08:16,777
+Argentina,
+
+183
+00:08:17,157 --> 00:08:20,557
+and left to evaporate in giant
+ponds for many months.
+
+184
+00:08:21,417 --> 00:08:24,437
+A lithium-metal anode uses more
+lithium per cell,
+
+185
+00:08:25,237 --> 00:08:27,587
+so other researchers are racing
+the other way,
+
+186
+00:08:27,597 --> 00:08:30,847
+with sodium-ion batteries, made
+from the same
+
+187
+00:08:30,857 --> 00:08:32,517
+element as table salt.
+
+188
+00:08:33,137 --> 00:08:34,617
+They store less, but they're
+cheap.
+
+189
+00:08:35,250 --> 00:08:37,870
+The likely future isn't one
+perfect battery,
+
+190
+00:08:38,470 --> 00:08:41,480
+but several: cheap ones for city
+cars, and
+
+191
+00:08:41,490 --> 00:08:44,820
+solid-state ones for cars,
+trucks, and maybe
+
+192
+00:08:44,830 --> 00:08:47,450
+even planes, that need to go
+much further.
+
+193
+00:08:49,233 --> 00:08:52,643
+Two hundred years ago, Volta's
+pile could barely make
+
+194
+00:08:52,653 --> 00:08:53,083
+a spark.
+
+195
+00:08:53,093 --> 00:08:56,533
+Today, batteries can carry a
+family across a continent.
+
+196
+00:08:57,250 --> 00:08:59,550
+The solid-state battery isn't
+finished yet.
+
+197
+00:09:00,070 --> 00:09:03,480
+But if engineers crack it, the
+most important part of the
+
+198
+00:09:03,490 --> 00:09:06,150
+electric car could be a thin
+layer of solid,
+
+199
+00:09:06,610 --> 00:09:09,860
+thinner than a sheet of paper,
+that finally keeps lithium
+
+200
+00:09:09,870 --> 00:09:10,950
+in its place.
