@@ -6,7 +6,7 @@
 import {
   THREE, n3, ease, lerp, flesh, displace, baseScene, cam, clamp01, seg, P, rnd, orbit as orbitSci, finish,
 } from './lib_sci.js';
-import { renderer, W, H } from './lib3d.js';
+import { renderer, W, H, bumpNormalMap } from './lib3d.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
@@ -632,3 +632,83 @@ export function neckCutaway({ seed = 1 } = {}) {
   parts.R = R; parts.front = front; parts.TX = TX; parts.TR = TR; parts.fatX = (y) => R(y) - 1.0 + front(y) * 0.6;
   return { group, parts };
 }
+
+// ---------- shared models: skin texture (goosebumps) and the 3D fingertip (wrinkles) ----------
+// ---------- skin colour map: mottled tone, pores, fine creases ----------
+export function skinTexture(size = 2048, seed = 0) {
+  const c = document.createElement('canvas'); c.width = c.height = size; const x = c.getContext('2d');
+  x.fillStyle = '#b97858'; x.fillRect(0, 0, size, size);
+  for (let i = 0; i < 2600; i++) {
+    const px = rnd(i + seed) * size, py = rnd(i + 0.3 + seed) * size, r = 10 + rnd(i + 0.6) * 60;
+    const g = x.createRadialGradient(px, py, 0, px, py, r), tone = rnd(i + 0.9);
+    g.addColorStop(0, tone > 0.5 ? 'rgba(214,150,120,0.18)' : 'rgba(170,100,80,0.16)'); g.addColorStop(1, 'rgba(0,0,0,0)');
+    x.fillStyle = g; x.fillRect(px - r, py - r, r * 2, r * 2);
+  }
+  x.strokeStyle = 'rgba(120,70,55,0.18)'; x.lineWidth = 1.4;
+  for (let i = 0; i < 380; i++) { const px = rnd(i * 2 + seed) * size, py = rnd(i * 2 + 0.5) * size, a = (rnd(i) - 0.5) * 0.8 + (i % 2 ? 0.6 : -0.6), L = 40 + rnd(i + 0.2) * 120; x.beginPath(); x.moveTo(px, py); x.lineTo(px + Math.cos(a) * L, py + Math.sin(a) * L); x.stroke(); }
+  for (let i = 0; i < 5000; i++) { const px = rnd(i * 3 + seed) * size, py = rnd(i * 3 + 0.7) * size; x.fillStyle = 'rgba(110,60,45,0.35)'; x.beginPath(); x.arc(px, py, 1.2 + rnd(i) * 1.6, 0, Math.PI * 2); x.fill(); }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; return t;
+}
+export const poreNormal = bumpNormalMap(512, 60, 3, 11);
+
+
+// wrinkle pattern on the fingertip: wavy ridges running across the pad
+// narrow deep grooves between soft ridges, meandering like a pruned fingertip
+export const ridge = (u, v, seed = 0) => { const w = u * 120 + 4.5 * n3(u * 5 + seed, v * 2.5, 1) + 1.6 * Math.sin(v * 7 + u * 9); return 1 - Math.pow(Math.abs(Math.sin(w)), 0.35); };
+
+// Fingerprint (whorl) normal map for the pad
+export function printNormal(size = 1024) {
+  const c = document.createElement('canvas'); c.width = c.height = size; const x = c.getContext('2d');
+  x.fillStyle = '#808080'; x.fillRect(0, 0, size, size);
+  x.strokeStyle = '#d8d8d8'; x.lineWidth = 3.5;
+  for (let r = 6; r < size * 0.9; r += 11) { x.beginPath(); for (let a = 0; a <= Math.PI * 2 + 0.05; a += 0.05) { const rr = r * (1 + 0.06 * Math.sin(a * 3 + r * 0.02)); const px = size / 2 + Math.cos(a) * rr * 1.4, py = size * 0.62 + Math.sin(a) * rr; a ? x.lineTo(px, py) : x.moveTo(px, py); } x.stroke(); }
+  // height -> normal
+  const img = x.getImageData(0, 0, size, size), out = x.createImageData(size, size), h = (i, j) => img.data[((j + size) % size * size + (i + size) % size) * 4] / 255;
+  for (let j = 0; j < size; j++) for (let i = 0; i < size; i++) {
+    const dx = (h(i - 1, j) - h(i + 1, j)) * 2.5, dy = (h(i, j - 1) - h(i, j + 1)) * 2.5, l = Math.hypot(dx, dy, 1), k = (j * size + i) * 4;
+    out.data[k] = (dx / l * 0.5 + 0.5) * 255; out.data[k + 1] = (dy / l * 0.5 + 0.5) * 255; out.data[k + 2] = (1 / l * 0.5 + 0.5) * 255; out.data[k + 3] = 255;
+  }
+  x.putImageData(out, 0, 0);
+  const t = new THREE.CanvasTexture(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; return t;
+}
+
+// 3D fingertip along +x (tip at x=0), pad facing -y. setWrinkle(k) deforms the pad.
+export function fingertip() {
+  const pts = [];
+  for (let i = 0; i <= 260; i++) {
+    const y = -7 + (i / 260) * 7.05; let r;
+    if (y < -1.5) r = 1.0 + (y < -5.6 ? 0.06 * (-(y + 5.6)) : 0);
+    else r = Math.pow(Math.max(0, 1 - Math.pow((y + 1.5) / 1.55, 2.4)), 1 / 2.4);
+    pts.push(new THREE.Vector2(Math.max(0.001, r), y));
+  }
+  pts.unshift(new THREE.Vector2(0.001, -7.0)); // close the base end
+  const g = new THREE.LatheGeometry(pts, 420); g.rotateZ(-Math.PI / 2);   // axis along +x
+  const p = g.attributes.position, base = Float32Array.from(p.array), uv = g.attributes.uv;
+  for (let i = 0; i < p.count; i++) { p.setY(i, base[i * 3 + 1] * 0.88); p.setZ(i, base[i * 3 + 2] * 1.12); }
+  // pad bulge on the underside near the tip
+  for (let i = 0; i < p.count; i++) { const x = p.getX(i), y = p.getY(i); if (y < 0 && x > -3.4) p.setY(i, y * (1 + 0.12 * Math.exp(-((x + 1.3) ** 2) / 1.2))); }
+  g.computeVertexNormals();
+  const rest = Float32Array.from(p.array), nrm = Float32Array.from(g.attributes.normal.array);
+  const mat = skinMat('#c4846a', 0.35); mat.sheen = 0.3;
+  mat.normalMap = printNormal(); mat.normalScale = new THREE.Vector2(0.5, 0.5); mat.normalMap.repeat.set(6, 12);
+  const m = new THREE.Mesh(g, mat); m.castShadow = m.receiveShadow = true;
+  // nail
+  const nailG = new THREE.SphereGeometry(1, 64, 32, 0, Math.PI * 2, 0, 0.62); nailG.scale(1.55, 0.18, 0.78); nailG.rotateZ(-0.05);
+  const nail = new THREE.Mesh(nailG, new THREE.MeshPhysicalMaterial({ color: '#f2d6cc', roughness: 0.15, clearcoat: 1, clearcoatRoughness: 0.05, transmission: 0.25, thickness: 0.2, sheen: 0.5, sheenColor: new THREE.Color('#ffffff') }));
+  nail.position.set(-1.55, 0.72, 0); // (hidden: the shots look at the pad side)
+  let last = -1;
+  m.userData.setWrinkle = (k) => {
+    if (Math.abs(k - last) < 0.005) return; last = k;
+    for (let i = 0; i < p.count; i++) {
+      const x = rest[i * 3], y = rest[i * 3 + 1], z = rest[i * 3 + 2];
+      const pad = clamp01((x + 3.8) / 1.2) * clamp01(-y / 0.3 + 0.75), top = THREE.MathUtils.smoothstep(0.55, 0.1, y) * clamp01((x + 3.4) / 1.0) * 0.3;
+      const amt = k * (0.075 * pad + 0.02 * top) * ridge(uv.getX(i), uv.getY(i) * 4, 1);
+      p.setXYZ(i, x - nrm[i * 3] * amt, y - nrm[i * 3 + 1] * amt, z - nrm[i * 3 + 2] * amt);
+    }
+    p.needsUpdate = true; g.computeVertexNormals();
+    mat.color.set('#c4846a').lerp(new THREE.Color('#d8ae9c'), k * 0.5);  // waterlogged skin goes paler
+  };
+  m.userData.setWrinkle(0);
+  return m;
+}
+

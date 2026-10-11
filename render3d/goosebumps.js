@@ -4,29 +4,12 @@
 // that fluffs up and traps warm air.
 import {
   THREE, ease, lerp, clamp01, seg, P, rnd, n3, orbit, done, setup, studio, label, path3, wet, glowMat, flesh,
-  skinMat, rim, muscleMaps, tissueMap, C,
+  skinMat, rim, muscleMaps, tissueMap, C, skinTexture, poreNormal,
 } from './lib_body.js';
 import { organicTube, bumpNormalMap } from './lib3d.js';
 import { run } from './lib3d.js';
 
 const gauss = (d2, r) => Math.exp(-d2 / (r * r));
-
-// ---------- skin colour map: mottled tone, pores, fine creases ----------
-function skinTexture(size = 2048, seed = 0) {
-  const c = document.createElement('canvas'); c.width = c.height = size; const x = c.getContext('2d');
-  x.fillStyle = '#b97858'; x.fillRect(0, 0, size, size);
-  for (let i = 0; i < 2600; i++) {
-    const px = rnd(i + seed) * size, py = rnd(i + 0.3 + seed) * size, r = 10 + rnd(i + 0.6) * 60;
-    const g = x.createRadialGradient(px, py, 0, px, py, r), tone = rnd(i + 0.9);
-    g.addColorStop(0, tone > 0.5 ? 'rgba(214,150,120,0.18)' : 'rgba(170,100,80,0.16)'); g.addColorStop(1, 'rgba(0,0,0,0)');
-    x.fillStyle = g; x.fillRect(px - r, py - r, r * 2, r * 2);
-  }
-  x.strokeStyle = 'rgba(120,70,55,0.18)'; x.lineWidth = 1.4;
-  for (let i = 0; i < 380; i++) { const px = rnd(i * 2 + seed) * size, py = rnd(i * 2 + 0.5) * size, a = (rnd(i) - 0.5) * 0.8 + (i % 2 ? 0.6 : -0.6), L = 40 + rnd(i + 0.2) * 120; x.beginPath(); x.moveTo(px, py); x.lineTo(px + Math.cos(a) * L, py + Math.sin(a) * L); x.stroke(); }
-  for (let i = 0; i < 5000; i++) { const px = rnd(i * 3 + seed) * size, py = rnd(i * 3 + 0.7) * size; x.fillStyle = 'rgba(110,60,45,0.35)'; x.beginPath(); x.arc(px, py, 1.2 + rnd(i) * 1.6, 0, Math.PI * 2); x.fill(); }
-  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; return t;
-}
-const poreNormal = bumpNormalMap(512, 60, 3, 11);
 
 // ---------- 1: macro of the skin surface; bumps rise around every hair ----------
 // params: k0/k1 (goosebump amount), cold (blue light), music (sound rings), cam
