@@ -308,14 +308,14 @@ def word_caption_at(s, tf, cache, W, size, max_w):
     return None, None
 
 
-def encode(module, shots, size, out, audio_path, mode='words', punch=0.0):
+def encode(module, shots, size, out, audio_path, mode='words', punch=0.0, cap_y=None):
     W, H = size
     landscape = W > H
     if mode == 'words':
         cap_size, cap_w = (78, 1500) if landscape else (104, 940)
     else:
         cap_size, cap_w = (66, 1500) if landscape else (96, 940)
-    cy = H - 150 if landscape else 1330  # lower third (16:9) / lower-middle (9:16)
+    cy = cap_y or (H - 150 if landscape else 1330)  # lower third (16:9) / lower-middle (9:16)
     cmd = ['ffmpeg', '-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}',
            '-r', str(FPS), '-i', '-', '-i', str(audio_path), '-c:v', 'libx264', '-preset', 'medium',
            '-crf', '19', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-shortest',

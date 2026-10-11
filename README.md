@@ -75,3 +75,19 @@ Episodes: `sneeze`, `battery`, `mosquito`, `hiccups`, `spicy`, `funnybone`, `bru
 new one, write `render3d/<topic>.js` (scenes built from `lib_body.js`, each taking camera params)
 and `render3d/episodes/<topic>.json` (the script and its cuts). Then check the storyboard before
 rendering.
+
+## Dark-twist story Shorts (cartoon)
+
+`stories/` turns a narrated story into a finished vertical Short: Piper voiceover, word-by-word
+captions, music and sound effects (reusing `render3d/make_episode.py`), with every beat drawn by
+`stories/cartoon.py` (characters with hair styles, rooms, outdoors, pool, elevator, hallway, stairs,
+props, and full-frame close-ups of phones, notes, fridge screens, photos and newspapers). A beat
+can be a still image instead (`beats/beatNN.jpg`, slow push/pan) when one exists.
+
+```sh
+python3 stories/contact.py stories/fridge/fridge.json sheet.png       # one frame per beat
+python3 stories/make_story.py stories/fridge/fridge.json --voice voices/en_US-ryan-high.onnx -o out/fridge.mp4
+```
+
+Stories: `fridge`, `sleep`, `ring`, `voicemail`, `footprints`, `floor13`, `lifeguard`, `basement`,
+`kindness`, `photo` (each about 65 s, 180-200 words).
