@@ -1,0 +1,75 @@
+1
+00:00:00,400 --> 00:00:02,366
+You type a web address and hit Enter.
+
+2
+00:00:02,716 --> 00:00:05,635
+Less than a second later, the page is on your screen.
+
+3
+00:00:05,985 --> 00:00:11,834
+But in that second, your request crosses a city, maybe an ocean, and back. Here is every step.
+
+4
+00:00:12,534 --> 00:00:20,204
+Step one. Computers don't understand names like example dot com. They only understand numbers, called I P addresses.
+
+5
+00:00:20,554 --> 00:00:25,759
+So your browser checks its memory first. If you visited recently, it already knows the number.
+
+6
+00:00:26,109 --> 00:00:34,790
+If not, it asks a D N S server, the phone book of the internet. That server asks the root servers, then the dot com servers, then the website's own server.
+
+7
+00:00:35,140 --> 00:00:38,150
+And an answer comes back. A number, like this one.
+
+8
+00:00:38,850 --> 00:00:45,949
+Step two. Your request is chopped into small pieces called packets. Each one is labelled with where it came from and where it's going.
+
+9
+00:00:46,299 --> 00:00:54,310
+Routers pass them along, hop by hop. Packets from the same message can even take different paths, and get put back in order at the end.
+
+10
+00:00:54,659 --> 00:01:02,035
+Across oceans, they travel as pulses of light through cables on the sea floor, at about two hundred thousand kilometres per second.
+
+11
+00:01:02,735 --> 00:01:10,808
+Step three. Before sharing anything, your device and the server shake hands. Hello. Hello, I hear you. Great, let's talk.
+
+12
+00:01:11,158 --> 00:01:18,970
+Then they agree on secret keys, so anyone who intercepts the packets sees only scrambled noise. That's the padlock next to the address.
+
+13
+00:01:19,670 --> 00:01:26,915
+Step four. The server reads your request, finds the page, and sends back a response. Status two hundred. O K.
+
+14
+00:01:27,265 --> 00:01:31,547
+What arrives first is H T M L, a text file describing the page.
+
+15
+00:01:31,897 --> 00:01:40,468
+Inside it are links to more files. Styles, scripts, images. So your browser fires off dozens more requests, many at the same time.
+
+16
+00:01:41,168 --> 00:01:48,593
+Step five. The browser builds a tree of every element, applies the styles, works out where each box goes, and paints the pixels.
+
+17
+00:01:48,943 --> 00:01:52,606
+And the page appears. All of it, usually in well under a second.
+
+18
+00:01:53,306 --> 00:01:58,360
+Find the address. Send the packets. Shake hands. Get the files. Draw the page.
+
+19
+00:01:58,710 --> 00:02:04,775
+You do this dozens of times a day, without thinking about it. Follow for more of the tech you use every day.

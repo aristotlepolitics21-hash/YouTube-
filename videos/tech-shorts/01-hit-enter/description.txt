@@ -1,0 +1,13 @@
+What Happens in the 1 Second After You Hit Enter
+
+You type a web address and hit Enter, and the page appears in under a second. In that second your request can cross a city or an ocean and come back. Here is every step, animated.
+
+1. Finding the address: browser cache, then DNS (resolver → root → .com → the site's name server)
+2. The journey: packets, routers, and fibre-optic cables on the sea floor
+3. The handshake: TCP (SYN, SYN-ACK, ACK), then TLS encryption, which is the padlock
+4. The server answers: HTTP 200 OK, the HTML, then dozens more requests for CSS, JS and images
+5. Drawing the page: DOM tree → styles → layout → paint
+
+Follow for more of the tech you use every day.
+
+#shorts #howtheinternetworks #techexplained #dns #webdevelopment
