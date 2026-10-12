@@ -5,7 +5,7 @@ The look is a neon diagram on a dark grid, with five numbered steps and burned-i
 
 | # | Episode | Status |
 |---|---|---|
-| 1 | What Happens in the 1 Second After You Hit Enter | Rendered |
+| 1 | What Happens in the 1 Second After You Hit Enter | Rendered (2D and 3D) |
 
 Each episode folder holds `script.json` (one scene and one narration line per entry), `captions.srt`, `chapters.txt`, `description.txt`, `tags.txt` and `thumbnail.jpg`.
 
@@ -20,3 +20,14 @@ videos/tech-shorts/engine/render.sh videos/tech-shorts/01-hit-enter/script.json 
 ```
 
 `engine/sheet.cjs PAGE.html OUTDIR` renders one still per scene, to check layouts before a full render.
+
+## 3D engine (Pixar-inspired)
+
+`engine3d/` renders the same scripts as stylised 3D in three.js: Bit, a glossy round robot, carries the request through soft toy-like sets, with a warm key light, cool rim light, soft shadows, reflections and bloom on glowing parts. It uses the same narration, captions and timings as the 2D engine. Each scene key in `script.json` maps to a set in `engine3d/pixar.js`.
+
+```
+cd videos/tech-shorts/engine3d && npm install
+./render.sh ../01-hit-enter/script.json WORKDIR what-happens-when-you-hit-enter-3d
+```
+
+It renders on the CPU (SwiftShader), at about 2 seconds a frame, in four parallel segments. `sheet.cjs PAGE.html OUTDIR [frac] [lines]` renders single stills to check sets first.
