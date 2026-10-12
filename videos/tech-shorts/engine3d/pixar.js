@@ -619,3 +619,6 @@ function frame(TL, T, total) {
   overlay(L, T, total);
 }
 window.DOC3D = { frame };
+// building blocks for episode set files (engine3d/sets/*.js): each exports register(KIT) and adds to KIT.BUILD
+export const KIT = { THREE, BUILD, C, W, H, M, RB, SPH, G, plastic, matte, metal, glowM, ctex, rrect, label, sign, textSign, bubble, sprite, GLOWTEX, stage, aim,
+  makeBit, makeHost, critter, envelope, pedestal, tree, confetti, sparkles, laptopRig, drawBrowser, speech, clamp, lerp, seg, ease, out, pop, frac, V, rng, SANS, MONO, hex };

@@ -6,8 +6,9 @@ The look is a neon diagram on a dark grid, with five numbered steps and burned-i
 | # | Episode | Status |
 |---|---|---|
 | 1 | What Happens in the 1 Second After You Hit Enter | Rendered (2D and 3D) |
+| 2 | How Wi-Fi Actually Works (in 5 Steps) | Rendered (3D) |
 
-Each episode folder holds `script.json` (one scene and one narration line per entry), `captions.srt`, `chapters.txt`, `description.txt`, `tags.txt` and `thumbnail.jpg`.
+Each episode folder holds `script.json` (one scene and one narration line per entry; an optional `"sets"` names an `engine3d/sets/` file with that episode's 3D sets), `captions.srt`, `chapters.txt`, `description.txt`, `tags.txt` and `thumbnail.jpg`.
 
 ## Engine
 
@@ -30,4 +31,4 @@ cd videos/tech-shorts/engine3d && npm install
 ./render.sh ../01-hit-enter/script.json WORKDIR what-happens-when-you-hit-enter-3d
 ```
 
-It renders on the CPU (SwiftShader), at about 2 seconds a frame, in four parallel segments. `sheet.cjs PAGE.html OUTDIR [frac] [lines]` renders single stills to check sets first.
+It renders on the CPU (SwiftShader): the 3D layer at 720×1280 under a full-resolution overlay, in two parallel segments, about 45 minutes for a two-minute episode. `sheet.cjs PAGE.html OUTDIR [frac] [lines]` renders single stills to check sets first.

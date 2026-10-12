@@ -7,13 +7,15 @@ lines = [[l[0], l[1], l[2], si] for si, s in enumerate(sc["sections"]) for l in 
 durs, caps = json.load(open(f"{ep}/durs.json")), json.load(open(f"{ep}/caps.json"))
 names = [s["name"] for s in sc["sections"]]
 steps = {si: si for si in range(1, len(names) - 1)}  # sections between the hook and the recap are steps 1-5
+# an episode can bring its own sets: "sets": "wifi.js" loads engine3d/sets/wifi.js
+sets = f"(await import('/engine/sets/{sc['sets']}')).register(KIT);" if sc.get("sets") else ""
 page = f"""<!doctype html><meta charset="utf-8"><style>body{{margin:0;background:#000}}</style>
 <canvas id="cv" width="1080" height="1920"></canvas>
 <script type="importmap">{{"imports":{{"three":"/three/build/three.module.js","three/addons/":"/three/examples/jsm/"}}}}</script>
 <script type="module">
 const LINES = {json.dumps(lines)}, DURS = {json.dumps(durs)}, CAPS = {json.dumps(caps)}, NAMES = {json.dumps(names)}, STEPS = {json.dumps(steps)};
 await Promise.all([document.fonts.load('900 70px Inter'), document.fonts.load('700 40px Inter'), document.fonts.load('700 40px "DejaVu Sans Mono"')]);
-await import('/engine/pixar.js');
+const {{ KIT }} = await import('/engine/pixar.js');\n{sets}
 let t0 = 0; const secStart = {{}};
 const TL = LINES.map((l, i) => {{ if (!(l[3] in secStart)) secStart[l[3]] = t0;
   const o = {{ scene: l[0], p: l[1], text: l[2], sec: l[3], start: t0, end: t0 + DURS[i], cap: CAPS[i].slice(0, 2), step: STEPS[l[3]], secName: NAMES[l[3]] }}; t0 += DURS[i]; return o; }});
