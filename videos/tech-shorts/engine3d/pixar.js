@@ -10,16 +10,16 @@ import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
-const W = 1080, H = 1920;
+const W = 1080, H = 1920, RS = 2 / 3; // 3D renders at 720x1280 and is upscaled under the full-res overlay
 const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
-renderer.setPixelRatio(1); renderer.setSize(W, H, false);
-renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.setPixelRatio(1); renderer.setSize(W * RS, H * RS, false);
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFShadowMap;
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05;
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 const ENV = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(renderer), .04).texture;
 const composer = new EffectComposer(renderer);
 const rpass = new RenderPass(new THREE.Scene(), new THREE.PerspectiveCamera());
-const bloom = new UnrealBloomPass(new THREE.Vector2(W / 2, H / 2), .42, .45, 2.2);
+const bloom = new UnrealBloomPass(new THREE.Vector2(W * RS / 2, H * RS / 2), .42, .45, 2.2);
 composer.addPass(rpass); composer.addPass(bloom); composer.addPass(new OutputPass());
 
 // ---------- math ----------
@@ -81,7 +81,7 @@ function bubble(w, h, draw, tail = 0) {
     if (tail) { const tx = tail < 0 ? cw * .22 : cw * .78; x.beginPath(); x.moveTo(tx - 26, ch - th - 8); x.lineTo(tx + tail * 10, ch - 6); x.lineTo(tx + 26, ch - th - 8); x.fill(); }
     draw(x, cw, ch - th);
   });
-  const m = M(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ map: t.tex, transparent: true, toneMapped: false, depthWrite: false }), { shadow: false });
+  const m = M(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ map: t.tex, transparent: true, toneMapped: false, depthWrite: false, fog: false }), { shadow: false });
   m.userData.redraw = t.redraw; return m;
 }
 const GLOWTEX = ctex(128, 128, (x) => { const g = x.createRadialGradient(64, 64, 0, 64, 64, 64); g.addColorStop(0, 'rgba(255,255,255,1)'); g.addColorStop(.3, 'rgba(255,255,255,.5)'); g.addColorStop(1, 'rgba(255,255,255,0)'); x.fillStyle = g; x.fillRect(0, 0, 128, 128); }).tex;
@@ -96,7 +96,7 @@ function stage(o = {}) {
   scene.add(new THREE.HemisphereLight(o.sky ?? 0xfff2e2, floorCol, o.hemi ?? 1.0));
   const key = new THREE.DirectionalLight(o.key ?? 0xfff0dc, o.keyI ?? 2.5); key.position.set(...(o.keyPos ?? [5, 10, 7])); key.castShadow = true;
   const b = o.shadowBox ?? 7; Object.assign(key.shadow.camera, { left: -b, right: b, top: b, bottom: -b, near: .5, far: 60 });
-  key.shadow.mapSize.set(2048, 2048); key.shadow.bias = -.0004; key.shadow.normalBias = .03; key.shadow.radius = 4;
+  key.shadow.mapSize.set(1536, 1536); key.shadow.bias = -.0004; key.shadow.normalBias = .03; key.shadow.radius = 4;
   if (o.keyTarget) key.target.position.set(...o.keyTarget); scene.add(key, key.target);
   const rim = new THREE.DirectionalLight(o.rim ?? 0xa9dcff, o.rimI ?? 1.8); rim.position.set(-6, 6, -8); scene.add(rim);
   if (o.floor !== null) { const f = M(new THREE.CircleGeometry(90, 64), matte(floorCol, { roughness: o.floorRough ?? .9 }), { rot: [-Math.PI / 2, 0, 0], shadow: false }); f.position.y = o.floorY ?? 0; scene.add(f); }
@@ -113,7 +113,7 @@ function makeBit(o = {}) {
   const acc = o.accent ?? 0xff8a3d, root = new THREE.Group(), body = new THREE.Group(); root.add(body); body.position.y = 1.12;
   body.add(M(SPH(1, 64, 48), plastic(o.shell ?? 0xf7f3ec), { scale: [1, .93, .9] }));
   body.add(M(SPH(1, 64, 40), plastic(0x161b2e, { roughness: .1, clearcoat: 1, clearcoatRoughness: .05, envMapIntensity: 1.2 }), { pos: [0, .12, .5], scale: [.74, .57, .45] }));
-  const eyes = [-1, 1].map(s => { const e = M(new THREE.CapsuleGeometry(.105, .16, 8, 20), glowM(o.eye ?? 0x5ff3ff, 3.2), { pos: [s * .27, .15, .9], shadow: false }); body.add(e); return e; });
+  const eyes = [-1, 1].map(s => { const e = M(new THREE.CapsuleGeometry(.105, .16, 8, 20), glowM(o.eye ?? 0x38e8ff, 1.5), { pos: [s * .27, .15, .9], shadow: false }); body.add(e); return e; });
   [-1, 1].forEach(s => { body.add(M(SPH(.035, 12, 8), glowM(0xffffff, 4), { pos: [s * .27 + .05, .26, .99], shadow: false })); });
   [-1, 1].forEach(s => body.add(M(SPH(.1, 20, 14), matte(0xff94a8), { pos: [s * .56, -.16, .66], scale: [1, .75, .4], rot: [0, s * .7, 0] })));
   body.add(M(new THREE.TorusGeometry(.92, .065, 16, 64), plastic(acc), { pos: [0, -.3, 0], rot: [Math.PI / 2, 0, 0], scale: [1, .97, 1] }));
@@ -613,7 +613,7 @@ function frame(TL, T, total) {
   const d = L.end - L.start, s = T - L.start, t = clamp(s / d);
   cur.update(t, s, d); cur.cam.aspect = W / H; cur.cam.updateProjectionMatrix();
   rpass.scene = cur.scene; rpass.camera = cur.cam; composer.render();
-  c2.drawImage(renderer.domElement, 0, 0, W, H);
+  c2.imageSmoothingQuality = 'high'; c2.drawImage(renderer.domElement, 0, 0, W, H);
   let a = 0; if (i > 0) a = Math.max(a, 1 - s / .2); if (i < TL.length - 1) a = Math.max(a, 1 - (L.end - T) / .2);
   if (a > 0) { c2.fillStyle = `rgba(255,248,240,${clamp(a) * .85})`; c2.fillRect(0, 0, W, H); }
   overlay(L, T, total);
