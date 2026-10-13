@@ -1,0 +1,13 @@
+How GPS Actually Works (in 5 Steps)
+
+Your phone finds you to within a few metres using signals from space, and never sends anything back. Here's how, animated.
+
+1. Clocks in space: about 30 GPS satellites, 20,200 km up, each carrying atomic clocks and broadcasting the time and its position
+2. Timing the signal: your phone only listens; the delay of a signal travelling at the speed of light gives the distance (about 0.067 seconds for 20,000 km)
+3. Where spheres meet: one distance puts you on a sphere, three narrow it to one spot, and a fourth fixes your phone's clock (1 microsecond off = 300 m)
+4. Einstein's correction: weaker gravity speeds satellite clocks up (+45 µs/day), their speed slows them (−7 µs/day); net +38 µs/day, so they're set to tick slow. Without it, GPS would drift by about 10 km a day
+5. Getting a fix: buildings block and bounce signals, so phones use Wi-Fi and cell towers for a rough position first
+
+Follow for more of the tech you use every day.
+
+#shorts #gps #techexplained #einstein #howitworks

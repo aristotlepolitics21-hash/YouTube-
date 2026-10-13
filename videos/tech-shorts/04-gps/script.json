@@ -1,0 +1,38 @@
+{
+  "series": "Tech Shorts",
+  "episode": 4,
+  "title": "How GPS Actually Works",
+  "sets": "gps.js",
+  "voice": "kokoro:af_heart",
+  "sections": [
+    { "name": "Hook", "lines": [
+      ["g_hook", {}, "Your phone knows where you are, to within a few metres, using signals from space. And it never sends a single word back."],
+      ["g_title", {"top": "HOW GPS", "bottom": "ACTUALLY WORKS"}, "Here's how it pulls that off, in five steps."]
+    ]},
+    { "name": "Clocks in space", "lines": [
+      ["g_sats", {}, "Step one. About thirty GPS satellites circle the Earth, twenty thousand kilometres up, each going around twice a day."],
+      ["g_clock", {}, "Each one carries atomic clocks, accurate to billionths of a second, and constantly broadcasts the time, and where it is."]
+    ]},
+    { "name": "Timing the signal", "lines": [
+      ["g_listen", {}, "Step two. Your phone only listens. It catches each signal and checks when it was sent."],
+      ["g_delay", {}, "Radio travels at the speed of light, so a tiny delay reveals the distance. About seven hundredths of a second means roughly twenty thousand kilometres."]
+    ]},
+    { "name": "Where spheres meet", "lines": [
+      ["g_one", {}, "Step three. Knowing your distance from one satellite puts you somewhere on a giant sphere around it."],
+      ["g_three", {}, "Add a second, and a third, and the spheres only cross in one spot on the ground. That's you."],
+      ["g_four", {}, "A fourth satellite corrects your phone's own clock, which is far less precise. Just one millionth of a second off would put you three hundred metres out."]
+    ]},
+    { "name": "Einstein's correction", "lines": [
+      ["g_rel", {}, "Step four. Up there, weaker gravity makes time run slightly faster, while the satellites' speed slows it down a little."],
+      ["g_fix", {}, "Overall, their clocks gain about thirty-eight millionths of a second a day. So engineers set them to tick slightly slow. Without that, GPS would drift by kilometres every day."]
+    ]},
+    { "name": "Getting a fix", "lines": [
+      ["g_block", {}, "Step five. Buildings and tunnels block or bounce the signals, which is why your dot wanders downtown."],
+      ["g_assist", {}, "So phones get a head start. Nearby Wi-Fi networks and cell towers give a rough position first, and GPS sharpens it."]
+    ]},
+    { "name": "Recap", "lines": [
+      ["w_recap", {"items": [["Satellites send the time", ""], ["Phone times the delay", ""], ["Delays become distances", ""], ["Einstein gets corrected", ""], ["Wi-Fi gives a head start", ""]]}, "Satellites send the time. Your phone times the delay, turns it into distances, and finds the one spot where they meet. With a little help from Einstein."],
+      ["outro", {}, "Next time you follow that blue dot, remember the clocks in space. Follow for more of the tech you use every day."]
+    ]}
+  ]
+}

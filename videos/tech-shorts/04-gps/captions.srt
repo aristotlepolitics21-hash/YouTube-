@@ -1,0 +1,59 @@
+1
+00:00:00,400 --> 00:00:07,261
+Your phone knows where you are, to within a few metres, using signals from space. And it never sends a single word back.
+
+2
+00:00:07,611 --> 00:00:09,750
+Here's how it pulls that off, in five steps.
+
+3
+00:00:10,450 --> 00:00:17,688
+Step one. About thirty GPS satellites circle the Earth, twenty thousand kilometres up, each going around twice a day.
+
+4
+00:00:18,038 --> 00:00:25,071
+Each one carries atomic clocks, accurate to billionths of a second, and constantly broadcasts the time, and where it is.
+
+5
+00:00:25,771 --> 00:00:30,537
+Step two. Your phone only listens. It catches each signal and checks when it was sent.
+
+6
+00:00:30,887 --> 00:00:40,034
+Radio travels at the speed of light, so a tiny delay reveals the distance. About seven hundredths of a second means roughly twenty thousand kilometres.
+
+7
+00:00:40,734 --> 00:00:46,036
+Step three. Knowing your distance from one satellite puts you somewhere on a giant sphere around it.
+
+8
+00:00:46,386 --> 00:00:51,565
+Add a second, and a third, and the spheres only cross in one spot on the ground. That's you.
+
+9
+00:00:51,915 --> 00:01:00,408
+A fourth satellite corrects your phone's own clock, which is far less precise. Just one millionth of a second off would put you three hundred metres out.
+
+10
+00:01:01,108 --> 00:01:07,934
+Step four. Up there, weaker gravity makes time run slightly faster, while the satellites' speed slows it down a little.
+
+11
+00:01:08,284 --> 00:01:19,130
+Overall, their clocks gain about thirty-eight millionths of a second a day. So engineers set them to tick slightly slow. Without that, GPS would drift by kilometres every day.
+
+12
+00:01:19,830 --> 00:01:26,047
+Step five. Buildings and tunnels block or bounce the signals, which is why your dot wanders downtown.
+
+13
+00:01:26,397 --> 00:01:33,861
+So phones get a head start. Nearby Wi-Fi networks and cell towers give a rough position first, and GPS sharpens it.
+
+14
+00:01:34,561 --> 00:01:43,473
+Satellites send the time. Your phone times the delay, turns it into distances, and finds the one spot where they meet. With a little help from Einstein.
+
+15
+00:01:43,823 --> 00:01:50,130
+Next time you follow that blue dot, remember the clocks in space. Follow for more of the tech you use every day.
