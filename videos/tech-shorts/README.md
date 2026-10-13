@@ -7,13 +7,16 @@ The look is a neon diagram on a dark grid, with five numbered steps and burned-i
 |---|---|---|
 | 1 | What Happens in the 1 Second After You Hit Enter | Rendered (2D and 3D) |
 | 2 | How Wi-Fi Actually Works (in 5 Steps) | Rendered (3D) |
+| 3 | How Your Phone Battery Actually Works (5 Steps) | Rendered (3D, Kokoro voice) |
 
 Each episode folder holds `script.json` (one scene and one narration line per entry; an optional `"sets"` names an `engine3d/sets/` file with that episode's 3D sets), `captions.srt`, `chapters.txt`, `description.txt`, `tags.txt` and `thumbnail.jpg`.
 
 ## Engine
 
 - `engine/techdoc.js` draws every scene on a 1080×1920 canvas.
-- `engine/voice.py` voices each line offline with RHVoice (`apt-get install rhvoice rhvoice-english`), then writes the narration, timings, captions and chapters.
+- `engine/voice.py` voices each line, then writes the narration, timings, captions and chapters. The voice comes from `"voice"` in `script.json`:
+  - `kokoro:af_heart` (from episode 3): Kokoro-82M, a natural neural voice that runs offline. Set it up once with `engine/setup_kokoro.sh DIR` (it fetches the model and voices from npm and the runtime from PyPI, and checks the model's sha256), then pass `KOKORO_DIR=DIR`. Other voices include `am_michael`, `af_bella` and `bm_george`.
+  - an RHVoice profile such as `slt` (episodes 1 and 2): `apt-get install rhvoice rhvoice-english`.
 - `engine/build_page.py` builds the page, `engine/seg.cjs` renders frames with Playwright, and `engine/render.sh` does the whole thing in one go:
 
 ```
@@ -24,7 +27,7 @@ videos/tech-shorts/engine/render.sh videos/tech-shorts/01-hit-enter/script.json 
 
 ## 3D engine (Pixar-inspired)
 
-`engine3d/` renders the same scripts as stylised 3D in three.js: Bit, a glossy round robot, carries the request through soft toy-like sets, with a warm key light, cool rim light, soft shadows, reflections and bloom on glowing parts. It uses the same narration, captions and timings as the 2D engine. Each scene key in `script.json` maps to a set in `engine3d/pixar.js`.
+`engine3d/` renders the same scripts as stylised 3D in three.js: Bit, a glossy round robot, carries the request through soft toy-like sets, with a warm key light, cool rim light, soft shadows, reflections and bloom on glowing parts. It uses the same narration, captions and timings as the 2D engine. Each scene key in `script.json` maps to a set in `engine3d/pixar.js` (episode 1) or the episode's `engine3d/sets/` file; `sets/common.js` holds the shared helpers and the recap set.
 
 ```
 cd videos/tech-shorts/engine3d && npm install

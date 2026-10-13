@@ -1,5 +1,6 @@
-# usage: voice.py SCRIPT.json OUTDIR [rhvoice-profile] [rate%]
-# Voices each line with RHVoice (offline), writes narration.wav, durs.json, captions.srt, chapters.txt.
+# usage: voice.py SCRIPT.json OUTDIR [voice] [rate%]
+# voice: an RHVoice profile (slt, alan, ...) or kokoro:NAME (neural, needs KOKORO_DIR from setup_kokoro.sh), e.g. kokoro:af_heart
+# Voices each line, then writes narration.wav, durs.json, caps.json, captions.srt, chapters.txt.
 import json, os, subprocess, sys, wave
 script, outdir = sys.argv[1], sys.argv[2]
 voice = sys.argv[3] if len(sys.argv) > 3 else "slt"
@@ -9,9 +10,14 @@ os.makedirs(f"{outdir}/vo", exist_ok=True)
 SR = 24000; durs = []; caps = []; chapters = []; t = 0.0
 out = wave.open(f"{outdir}/narration.wav", "wb"); out.setnchannels(1); out.setsampwidth(2); out.setframerate(SR)
 sil = lambda s: b"\x00\x00" * int(round(s * SR))
+if voice.startswith("kokoro:"):
+    kd = os.environ["KOKORO_DIR"]; jobs = f"{outdir}/vo/jobs.json"
+    json.dump([[txt, f"{outdir}/vo/{i:03d}.raw.wav"] for i, (si, txt) in enumerate(lines)], open(jobs, "w"))
+    subprocess.run([f"{kd}/venv/bin/python", "-I", os.path.join(os.path.dirname(os.path.abspath(__file__)), "kokoro_say.py"), kd, voice[7:], str(int(rate) / 100), jobs], check=True)
 for i, (si, txt) in enumerate(lines):
     raw, f = f"{outdir}/vo/{i:03d}.raw.wav", f"{outdir}/vo/{i:03d}.wav"
-    subprocess.run(["RHVoice-test", "-p", voice, "-r", rate, "-o", raw], input=txt.encode(), check=True, capture_output=True)
+    if not voice.startswith("kokoro:"):
+        subprocess.run(["RHVoice-test", "-p", voice, "-r", rate, "-o", raw], input=txt.encode(), check=True, capture_output=True)
     # resample to a fixed rate and trim leading/trailing silence so timings are tight
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", raw, "-ac", "1", "-ar", str(SR), "-af",
         "silenceremove=start_periods=1:start_threshold=-50dB,areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse", f], check=True)

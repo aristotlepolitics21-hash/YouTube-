@@ -1,0 +1,63 @@
+1
+00:00:00,400 --> 00:00:07,930
+Your phone battery is a tiny chemical machine. Every time you charge it, trillions of particles make a journey, and back again.
+
+2
+00:00:08,280 --> 00:00:10,699
+Here's what's going on inside, in five steps.
+
+3
+00:00:11,399 --> 00:00:21,913
+Step one. Inside is a sandwich. On one side, layers of graphite. On the other, a metal oxide packed with lithium. In between, a liquid, and a thin separator.
+
+4
+00:00:22,263 --> 00:00:29,715
+The stars of the show are lithium ions. Tiny charged particles that can swim through that liquid, from one side to the other.
+
+5
+00:00:30,415 --> 00:00:37,834
+Step two. When you plug in, the charger pushes lithium ions across, into the graphite, where they squeeze in between the layers.
+
+6
+00:00:38,184 --> 00:00:42,223
+That's stored energy. Like water pumped up a hill, ready to flow back down.
+
+7
+00:00:42,923 --> 00:00:49,868
+Step three. When you use your phone, the ions flow back. But their electrons can't take the shortcut through the separator.
+
+8
+00:00:50,218 --> 00:00:58,516
+They have to go the long way, through your phone's circuits. That flow of electrons is the electricity that runs your screen, your camera, everything.
+
+9
+00:00:58,866 --> 00:01:04,436
+A small chip counts the charge going in and out, and checks the voltage, to estimate your percentage.
+
+10
+00:01:05,136 --> 00:01:11,870
+Step four. With every cycle, a few ions get stuck, trapped in a crusty layer that slowly builds up on the graphite.
+
+11
+00:01:12,220 --> 00:01:19,860
+Fewer ions means less capacity. Many phones keep about eighty percent after five hundred to a thousand full charges.
+
+12
+00:01:20,560 --> 00:01:28,212
+Step five. Heat is the biggest enemy. It speeds up the wear, so don't leave your phone in a hot car, or game on it while it charges.
+
+13
+00:01:28,562 --> 00:01:35,064
+Batteries are happiest in the middle. Sitting at a hundred percent, or running down to zero, adds extra stress.
+
+14
+00:01:35,414 --> 00:01:42,641
+That's why fast charging races through the first half, then slows down. And why many phones offer to stop at eighty percent.
+
+15
+00:01:43,341 --> 00:01:51,491
+Two sides. Ions in when you charge. Ions back when you use it. Stuck ions wear it out. So keep it cool, and keep it in the middle.
+
+16
+00:01:51,841 --> 00:01:57,251
+Charge smart, and your battery will last for years. Follow for more of the tech you use every day.

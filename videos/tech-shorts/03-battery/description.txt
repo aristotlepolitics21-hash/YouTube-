@@ -1,0 +1,13 @@
+How Your Phone Battery Actually Works (5 Steps)
+
+Every time you charge your phone, trillions of lithium ions make a journey, and back again. Here's what's going on inside, animated.
+
+1. Two sides: graphite on one side, a lithium metal oxide on the other, a liquid electrolyte and a thin separator in between
+2. Charging: the charger pushes lithium ions into the graphite, storing energy
+3. Powering your phone: the ions flow back, and their electrons take the long way through your phone's circuits
+4. Why it wears out: some ions get trapped in a layer that builds up on the graphite; many phones keep about 80% capacity after 500 to 1,000 full charges
+5. Making it last: avoid heat, avoid sitting at 100% or running to 0%, and use your phone's 80% charging limit if it has one
+
+Follow for more of the tech you use every day.
+
+#shorts #battery #techexplained #lithiumion #smartphone

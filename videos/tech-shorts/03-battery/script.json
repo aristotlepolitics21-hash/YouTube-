@@ -1,0 +1,39 @@
+{
+  "series": "Tech Shorts",
+  "episode": 3,
+  "title": "How Your Phone Battery Actually Works",
+  "sets": "battery.js",
+  "voice": "kokoro:af_heart",
+  "sections": [
+    { "name": "Hook", "lines": [
+      ["b_hook", {}, "Your phone battery is a tiny chemical machine. Every time you charge it, trillions of particles make a journey, and back again."],
+      ["b_title", {"top": "HOW YOUR BATTERY", "bottom": "ACTUALLY WORKS"}, "Here's what's going on inside, in five steps."]
+    ]},
+    { "name": "Two sides", "lines": [
+      ["b_layers", {}, "Step one. Inside is a sandwich. On one side, layers of graphite. On the other, a metal oxide packed with lithium. In between, a liquid, and a thin separator."],
+      ["b_ions", {}, "The stars of the show are lithium ions. Tiny charged particles that can swim through that liquid, from one side to the other."]
+    ]},
+    { "name": "Charging", "lines": [
+      ["b_charge", {}, "Step two. When you plug in, the charger pushes lithium ions across, into the graphite, where they squeeze in between the layers."],
+      ["b_store", {}, "That's stored energy. Like water pumped up a hill, ready to flow back down."]
+    ]},
+    { "name": "Powering your phone", "lines": [
+      ["b_discharge", {}, "Step three. When you use your phone, the ions flow back. But their electrons can't take the shortcut through the separator."],
+      ["b_circuit", {}, "They have to go the long way, through your phone's circuits. That flow of electrons is the electricity that runs your screen, your camera, everything."],
+      ["b_gauge", {}, "A small chip counts the charge going in and out, and checks the voltage, to estimate your percentage."]
+    ]},
+    { "name": "Why it wears out", "lines": [
+      ["b_wear", {}, "Step four. With every cycle, a few ions get stuck, trapped in a crusty layer that slowly builds up on the graphite."],
+      ["b_cycles", {}, "Fewer ions means less capacity. Many phones keep about eighty percent after five hundred to a thousand full charges."]
+    ]},
+    { "name": "Making it last", "lines": [
+      ["b_heat", {}, "Step five. Heat is the biggest enemy. It speeds up the wear, so don't leave your phone in a hot car, or game on it while it charges."],
+      ["b_range", {}, "Batteries are happiest in the middle. Sitting at a hundred percent, or running down to zero, adds extra stress."],
+      ["b_fast", {}, "That's why fast charging races through the first half, then slows down. And why many phones offer to stop at eighty percent."]
+    ]},
+    { "name": "Recap", "lines": [
+      ["w_recap", {"items": [["Two sides and a liquid", ""], ["Charging pushes ions in", ""], ["Use it: ions flow back", ""], ["Stuck ions wear it out", ""], ["Avoid heat & extremes", ""]]}, "Two sides. Ions in when you charge. Ions back when you use it. Stuck ions wear it out. So keep it cool, and keep it in the middle."],
+      ["outro", {}, "Charge smart, and your battery will last for years. Follow for more of the tech you use every day."]
+    ]}
+  ]
+}
