@@ -1,0 +1,161 @@
+{
+ "series": "Tech Shorts",
+ "episode": 6,
+ "title": "How Noise Cancelling Actually Works",
+ "sets": "noise.js",
+ "voice": "kokoro:af_heart",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "n_hook",
+     {},
+     "Noise-cancelling headphones don't just block noise. They fight it, with more sound."
+    ],
+    [
+     "n_title",
+     {
+      "top": "HOW NOISE CANCELLING",
+      "bottom": "ACTUALLY WORKS"
+     },
+     "Here's how silence is made, in five steps."
+    ]
+   ]
+  },
+  {
+   "name": "Sound is a wave",
+   "lines": [
+    [
+     "n_wave",
+     {},
+     "Step one. Sound is a wave of air pressure. Squeezed air, then stretched air, rolling towards your ear."
+    ],
+    [
+     "n_ear",
+     {},
+     "Those waves push your eardrum in and out, and your brain hears that as sound."
+    ],
+    [
+     "n_pitch",
+     {},
+     "Fast wiggles sound high-pitched. Slow ones sound low, like a rumble."
+    ]
+   ]
+  },
+  {
+   "name": "Listening in",
+   "lines": [
+    [
+     "n_mics",
+     {},
+     "Step two. Tiny microphones on the outside of each ear cup listen to the noise around you."
+    ],
+    [
+     "n_inside",
+     {},
+     "Another microphone inside the cup checks what actually reaches your ear."
+    ],
+    [
+     "n_passive",
+     {},
+     "And even before any electronics, the padded cushions seal around your ears and soak up a lot of sound."
+    ]
+   ]
+  },
+  {
+   "name": "The opposite wave",
+   "lines": [
+    [
+     "n_flip",
+     {},
+     "Step three. A chip creates the exact opposite wave. Where the noise pushes, it pulls. Where the noise pulls, it pushes."
+    ],
+    [
+     "n_cancel",
+     {},
+     "Played through the speaker, the two waves meet and cancel out. Peaks fill the troughs, and the air barely moves."
+    ],
+    [
+     "n_fast",
+     {},
+     "It has to keep adjusting thousands of times every second, because noise is always changing."
+    ]
+   ]
+  },
+  {
+   "name": "What it beats best",
+   "lines": [
+    [
+     "n_low",
+     {},
+     "Step four. It works best on steady, low sounds, like engines, fans and the hum of a plane."
+    ],
+    [
+     "n_high",
+     {},
+     "Sudden, high-pitched sounds, like voices or clattering plates, change too fast to cancel. The soft cushions block much of those instead."
+    ]
+   ]
+  },
+  {
+   "name": "Tricks and quirks",
+   "lines": [
+    [
+     "n_trans",
+     {},
+     "Step five. Transparency mode flips the idea around. The outside microphones pass sound through, so you can hear the world."
+    ],
+    [
+     "n_pressure",
+     {},
+     "And if you ever feel a strange pressure in your ears, nothing's actually pushing on them. Your brain just isn't used to the missing hum."
+    ],
+    [
+     "n_battery",
+     {},
+     "It's also why noise cancelling uses battery. The chip and speaker keep working, even while you hear nothing."
+    ]
+   ]
+  },
+  {
+   "name": "Recap",
+   "lines": [
+    [
+     "w_recap",
+     {
+      "items": [
+       [
+        "Sound is a wave",
+        ""
+       ],
+       [
+        "Mics listen in",
+        ""
+       ],
+       [
+        "Chip makes anti-noise",
+        ""
+       ],
+       [
+        "Best on low hums",
+        ""
+       ],
+       [
+        "Cushions do the rest",
+        ""
+       ]
+      ]
+     },
+     "Sound is a wave. Microphones listen. A chip makes the opposite wave, and the two cancel out. Silence, made from sound."
+    ],
+    [
+     "outro",
+     {},
+     "Next time you put them on, you'll know you're hearing anti-noise. Follow for more of the tech you use every day."
+    ]
+   ]
+  }
+ ]
+}

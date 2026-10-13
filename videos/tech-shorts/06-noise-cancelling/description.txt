@@ -1,0 +1,13 @@
+How Noise Cancelling Actually Works (5 Steps)
+
+Noise-cancelling headphones don't just block noise. They fight it, with more sound. Here's how silence is made, animated.
+
+1. Sound is a wave: squeezed and stretched air that pushes your eardrum in and out; fast wiggles sound high, slow ones low
+2. Listening in: microphones outside each ear cup hear the noise, one inside checks what reaches your ear, and the cushions block a lot on their own
+3. The opposite wave: a chip creates the exact opposite wave and plays it through the speaker, so peaks fill troughs and the two cancel out, adjusting constantly
+4. What it beats best: steady low sounds like engines, fans and plane hum; sudden high sounds like voices change too fast, so the cushions handle more of those
+5. Tricks and quirks: transparency mode passes outside sound through, the "pressure" feeling is your brain missing the hum, and it all uses battery
+
+Follow for more of the tech you use every day.
+
+#shorts #noisecancelling #headphones #techexplained #howitworks

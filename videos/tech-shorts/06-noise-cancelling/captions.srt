@@ -1,0 +1,71 @@
+1
+00:00:00,400 --> 00:00:04,827
+Noise-cancelling headphones don't just block noise. They fight it, with more sound.
+
+2
+00:00:05,177 --> 00:00:07,563
+Here's how silence is made, in five steps.
+
+3
+00:00:08,263 --> 00:00:14,321
+Step one. Sound is a wave of air pressure. Squeezed air, then stretched air, rolling towards your ear.
+
+4
+00:00:14,671 --> 00:00:18,534
+Those waves push your eardrum in and out, and your brain hears that as sound.
+
+5
+00:00:18,884 --> 00:00:23,042
+Fast wiggles sound high-pitched. Slow ones sound low, like a rumble.
+
+6
+00:00:23,742 --> 00:00:28,779
+Step two. Tiny microphones on the outside of each ear cup listen to the noise around you.
+
+7
+00:00:29,129 --> 00:00:33,049
+Another microphone inside the cup checks what actually reaches your ear.
+
+8
+00:00:33,399 --> 00:00:39,019
+And even before any electronics, the padded cushions seal around your ears and soak up a lot of sound.
+
+9
+00:00:39,719 --> 00:00:46,907
+Step three. A chip creates the exact opposite wave. Where the noise pushes, it pulls. Where the noise pulls, it pushes.
+
+10
+00:00:47,257 --> 00:00:53,361
+Played through the speaker, the two waves meet and cancel out. Peaks fill the troughs, and the air barely moves.
+
+11
+00:00:53,711 --> 00:00:58,944
+It has to keep adjusting thousands of times every second, because noise is always changing.
+
+12
+00:00:59,644 --> 00:01:05,222
+Step four. It works best on steady, low sounds, like engines, fans and the hum of a plane.
+
+13
+00:01:05,572 --> 00:01:13,996
+Sudden, high-pitched sounds, like voices or clattering plates, change too fast to cancel. The soft cushions block much of those instead.
+
+14
+00:01:14,696 --> 00:01:22,450
+Step five. Transparency mode flips the idea around. The outside microphones pass sound through, so you can hear the world.
+
+15
+00:01:22,800 --> 00:01:30,222
+And if you ever feel a strange pressure in your ears, nothing's actually pushing on them. Your brain just isn't used to the missing hum.
+
+16
+00:01:30,572 --> 00:01:36,925
+It's also why noise cancelling uses battery. The chip and speaker keep working, even while you hear nothing.
+
+17
+00:01:37,625 --> 00:01:45,242
+Sound is a wave. Microphones listen. A chip makes the opposite wave, and the two cancel out. Silence, made from sound.
+
+18
+00:01:45,592 --> 00:01:51,361
+Next time you put them on, you'll know you're hearing anti-noise. Follow for more of the tech you use every day.
