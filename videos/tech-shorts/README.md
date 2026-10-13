@@ -5,8 +5,8 @@ The look is a neon diagram on a dark grid, with five numbered steps and burned-i
 
 | # | Episode | Status |
 |---|---|---|
-| 1 | What Happens in the 1 Second After You Hit Enter | Rendered (2D and 3D) |
-| 2 | How Wi-Fi Actually Works (in 5 Steps) | Rendered (3D) |
+| 1 | What Happens in the 1 Second After You Hit Enter | Rendered (3D, Kokoro voice; the older 2D cut keeps the RHVoice narration) |
+| 2 | How Wi-Fi Actually Works (in 5 Steps) | Rendered (3D, Kokoro voice) |
 | 3 | How Your Phone Battery Actually Works (5 Steps) | Rendered (3D, Kokoro voice) |
 
 Each episode folder holds `script.json` (one scene and one narration line per entry; an optional `"sets"` names an `engine3d/sets/` file with that episode's 3D sets), `captions.srt`, `chapters.txt`, `description.txt`, `tags.txt` and `thumbnail.jpg`.
