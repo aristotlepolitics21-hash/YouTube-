@@ -105,7 +105,13 @@ function stage(o = {}) {
 }
 // every camera sits a little further back than written: the vertical frame is narrow
 const ZOOM = 1.17;
-function aim(cam, pos, look) { cam.position.set(look[0] + (pos[0] - look[0]) * ZOOM, look[1] + (pos[1] - look[1]) * ZOOM, look[2] + (pos[2] - look[2]) * ZOOM); cam.lookAt(...look); }
+let NOW = 0; // global time, for the handheld drift in the lively style
+function aim(cam, pos, look) { cam.position.set(look[0] + (pos[0] - look[0]) * ZOOM, look[1] + (pos[1] - look[1]) * ZOOM, look[2] + (pos[2] - look[2]) * ZOOM);
+  if (window.STYLE === 'lively') cam.position.add(new THREE.Vector3(Math.sin(NOW * 1.3) * .09 + Math.sin(NOW * 3.1) * .03, Math.sin(NOW * 1.7 + 1) * .07, Math.sin(NOW * .9 + 2) * .06));
+  cam.lookAt(...look); }
+// a hop with anticipation, stretch and landing squash: returns { y, sq } for time x (seconds) into a hop of length dur
+function hop(x, dur = .7, h = .8) { if (x < 0 || x > dur + .25) return { y: 0, sq: 0 }; if (x < .12) return { y: 0, sq: .12 * Math.sin(x / .12 * Math.PI / 2) };
+  if (x < dur) { const u = (x - .12) / (dur - .12); return { y: 4 * h * u * (1 - u), sq: -.1 * Math.sin(u * Math.PI) }; } const v = (x - dur) / .25; return { y: 0, sq: .14 * Math.sin(v * Math.PI) * (1 - v) }; }
 
 // ---------- characters ----------
 // Bit: glossy round robot, the request on its journey
@@ -131,8 +137,11 @@ function makeBit(o = {}) {
     const blink = (frac(s / 2.7 + (p.seed ?? 0)) < .045) ? .12 : 1, happy = p.happy ?? 0;
     eyes.forEach(e => { e.scale.set(1, blink * (1 - happy * .55), 1); e.position.y = .15 + happy * .03 - (p.sad ?? 0) * .05; });
     const wv = Math.sin(s * 11) * .35;
-    arms[1].rotation.set(-(p.reachR ?? 0) * 1.3, 0, .18 + (p.waveR ?? 0) * (2.5 + wv) + (p.upR ?? 0) * 2.7);
-    arms[0].rotation.set(-(p.reachL ?? 0) * 1.3, 0, -(.18 + (p.waveL ?? 0) * (2.5 + wv) + (p.upL ?? 0) * 2.7));
+    const w = p.walk, sw = w === undefined ? 0 : Math.sin(w) * .55;
+    arms[1].rotation.set(-(p.reachR ?? 0) * 1.3 + sw, 0, .18 + (p.waveR ?? 0) * (2.5 + wv) + (p.upR ?? 0) * 2.7);
+    arms[0].rotation.set(-(p.reachL ?? 0) * 1.3 - sw, 0, -(.18 + (p.waveL ?? 0) * (2.5 + wv) + (p.upL ?? 0) * 2.7));
+    feet.forEach((f, i) => { const ph = w === undefined ? 0 : w + i * Math.PI; f.position.y = .14 + (w === undefined ? 0 : Math.max(0, Math.sin(ph)) * .22); f.position.z = .1 + (w === undefined ? 0 : Math.cos(ph) * .22); });
+    if (w !== undefined) { body.position.y += Math.abs(Math.sin(w)) * .08; body.rotation.z += Math.sin(w) * .07; }
     ball.material.emissiveIntensity = 2.6 + Math.sin(s * 6) * .8;
   };
   root.pose(); return root;
@@ -610,15 +619,22 @@ function dispose(sc) { sc.traverse(o => { if (o.geometry) o.geometry.dispose(); 
 function frame(TL, T, total) {
   let i = TL.findIndex(l => T < l.end); if (i < 0) i = TL.length - 1; const L = TL[i];
   if (i !== curIdx) { if (cur) dispose(cur.scene); cur = (BUILD[L.scene] || BUILD.title)(L.p || {}); curIdx = i; }
-  const d = L.end - L.start, s = T - L.start, t = clamp(s / d);
+  const d = L.end - L.start, s = T - L.start, t = clamp(s / d); NOW = T;
   cur.update(t, s, d); cur.cam.aspect = W / H; cur.cam.updateProjectionMatrix();
   rpass.scene = cur.scene; rpass.camera = cur.cam; composer.render();
-  c2.imageSmoothingQuality = 'high'; c2.drawImage(renderer.domElement, 0, 0, W, H);
-  let a = 0; if (i > 0) a = Math.max(a, 1 - s / .2); if (i < TL.length - 1) a = Math.max(a, 1 - (L.end - T) / .2);
-  if (a > 0) { c2.fillStyle = `rgba(255,248,240,${clamp(a) * .85})`; c2.fillRect(0, 0, W, H); }
+  c2.imageSmoothingQuality = 'high';
+  if (window.STYLE === 'lively') { // punch-in zoom and a flash on each cut instead of a soft fade
+    const kin = i > 0 ? clamp(s / .32) : 1, kout = i < TL.length - 1 ? clamp((L.end - T) / .16) : 1, z = 1 + .14 * Math.pow(1 - out(kin), 2) + .07 * Math.pow(1 - kout, 2);
+    c2.fillStyle = '#000'; c2.fillRect(0, 0, W, H); c2.drawImage(renderer.domElement, W * (1 - z) / 2, H * (1 - z) / 2, W * z, H * z);
+    const fl = .6 * Math.pow(1 - kin, 3); if (fl > .01) { c2.fillStyle = `rgba(255,255,255,${fl})`; c2.fillRect(0, 0, W, H); }
+  } else {
+    c2.drawImage(renderer.domElement, 0, 0, W, H);
+    let a = 0; if (i > 0) a = Math.max(a, 1 - s / .2); if (i < TL.length - 1) a = Math.max(a, 1 - (L.end - T) / .2);
+    if (a > 0) { c2.fillStyle = `rgba(255,248,240,${clamp(a) * .85})`; c2.fillRect(0, 0, W, H); }
+  }
   overlay(L, T, total);
 }
 window.DOC3D = { frame };
 // building blocks for episode set files (engine3d/sets/*.js): each exports register(KIT) and adds to KIT.BUILD
 export const KIT = { THREE, BUILD, C, W, H, M, RB, SPH, G, plastic, matte, metal, glowM, ctex, rrect, label, sign, textSign, bubble, sprite, GLOWTEX, stage, aim,
-  makeBit, makeHost, critter, envelope, pedestal, tree, confetti, sparkles, laptopRig, drawBrowser, speech, clamp, lerp, seg, ease, out, pop, frac, V, rng, SANS, MONO, hex };
+  makeBit, makeHost, hop, critter, envelope, pedestal, tree, confetti, sparkles, laptopRig, drawBrowser, speech, clamp, lerp, seg, ease, out, pop, frac, V, rng, SANS, MONO, hex };

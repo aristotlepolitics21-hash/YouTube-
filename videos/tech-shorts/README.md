@@ -9,6 +9,7 @@ The look is a neon diagram on a dark grid, with five numbered steps and burned-i
 | 2 | How Wi-Fi Actually Works (in 5 Steps) | Rendered (3D, Kokoro voice) |
 | 3 | How Your Phone Battery Actually Works (5 Steps) | Rendered (3D, Kokoro voice) |
 | 4 | How GPS Actually Works (in 5 Steps) | Rendered (3D, Kokoro voice) |
+| 5 | How Touchscreens Actually Work (5 Steps) | Rendered (3D, Kokoro voice, lively style) |
 
 Each episode folder holds `script.json` (one scene and one narration line per entry; an optional `"sets"` names an `engine3d/sets/` file with that episode's 3D sets), `captions.srt`, `chapters.txt`, `description.txt`, `tags.txt` and `thumbnail.jpg`.
 
@@ -36,3 +37,7 @@ cd videos/tech-shorts/engine3d && npm install
 ```
 
 It renders on the CPU (SwiftShader): the 3D layer at 720×1280 under a full-resolution overlay, in two parallel segments, about 45 minutes for a two-minute episode. `sheet.cjs PAGE.html OUTDIR [frac] [lines]` renders single stills to check sets first.
+
+### Lively style
+
+Set `"style": "lively"` in `script.json` (from episode 5) for punch-in zoom cuts with a flash instead of soft fades, and a subtle handheld drift on every camera. Sets can also use `pose({ walk })` for Bit's walk cycle and `hop(x, dur, height)` for jumps with anticipation, stretch and landing squash.
