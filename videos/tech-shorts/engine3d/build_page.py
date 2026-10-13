@@ -7,6 +7,7 @@ lines = [[l[0], l[1], l[2], si] for si, s in enumerate(sc["sections"]) for l in 
 durs, caps = json.load(open(f"{ep}/durs.json")), json.load(open(f"{ep}/caps.json"))
 names = [s["name"] for s in sc["sections"]]
 steps = {si: si for si in range(1, len(names) - 1)}  # sections between the hook and the recap are steps 1-5
+if sc.get("format") == "story": steps = {}  # story episodes show a case-file chapter chip instead of numbered steps
 # an episode can bring its own sets: "sets": "wifi.js" loads engine3d/sets/wifi.js
 sets = f"(await import('/engine/sets/{sc['sets']}')).register(KIT);" if sc.get("sets") else ""
 page = f"""<!doctype html><meta charset="utf-8"><style>body{{margin:0;background:#000}}</style>
@@ -19,7 +20,7 @@ const {{ KIT }} = await import('/engine/pixar.js');\n{sets}
 let t0 = 0; const secStart = {{}};
 const TL = LINES.map((l, i) => {{ if (!(l[3] in secStart)) secStart[l[3]] = t0;
   const o = {{ scene: l[0], p: l[1], text: l[2], sec: l[3], start: t0, end: t0 + DURS[i], cap: CAPS[i].slice(0, 2), step: STEPS[l[3]], secName: NAMES[l[3]] }}; t0 += DURS[i]; return o; }});
-window.TL = TL; window.__total = t0; window.STYLE = {json.dumps(sc.get('style', ''))};
+window.TL = TL; window.__total = t0; window.STYLE = {json.dumps(sc.get('style', ''))}; window.FORMAT = {json.dumps(sc.get('format', ''))};
 window.__at = T => {{ let i = TL.findIndex(l => T < l.end); if (i < 0) i = TL.length - 1; TL[i].secT = T - secStart[TL[i].sec]; DOC3D.frame(TL, T, t0); }};
 window.__ready = true;
 </script>"""

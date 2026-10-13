@@ -1,0 +1,95 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 5,
+ "title": "The 26 Kids Who Dug Their Way Out",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "ch_hook",
+     {},
+     "In 1976, a school bus full of children vanished on a quiet country road. What happened next is one of the most incredible escapes ever."
+    ],
+    [
+     "ch_title",
+     {
+      "top": "THE BUS THAT",
+      "bottom": "VANISHED",
+      "case": "CASE 05"
+     },
+     "This is the Chowchilla kidnapping."
+    ]
+   ]
+  },
+  {
+   "name": "The road",
+   "lines": [
+    [
+     "ch_bus",
+     {},
+     "Chowchilla, California. July 15th, 1976. Bus driver Ed Ray is taking twenty six children home from summer school."
+    ],
+    [
+     "ch_van",
+     {},
+     "A van blocks the road. Three masked men force everyone off the bus at gunpoint."
+    ]
+   ]
+  },
+  {
+   "name": "Underground",
+   "lines": [
+    [
+     "ch_quarry",
+     {},
+     "The children and Ed are driven for hours, to a rock quarry about a hundred miles away."
+    ],
+    [
+     "ch_buried",
+     {},
+     "There, they're ordered down into a moving truck trailer that's been buried underground. The kidnappers plan to demand a ransom of five million dollars."
+    ]
+   ]
+  },
+  {
+   "name": "The escape",
+   "lines": [
+    [
+     "ch_dark",
+     {},
+     "In the dark, the kids are scared. Ed keeps them calm, and the older children look after the little ones."
+    ],
+    [
+     "ch_dig",
+     {},
+     "After hours underground, Ed and fourteen year old Michael Marshall stack mattresses, pry at the roof, and start to dig."
+    ],
+    [
+     "ch_out",
+     {},
+     "Finally, they break through. One by one, all twenty six children climb out into the night. Every single one survived."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "ch_caught",
+     {},
+     "The three kidnappers were caught within weeks and sentenced to life in prison. Decades later, all three were paroled."
+    ],
+    [
+     "ch_outro",
+     {},
+     "A bus driver and a fourteen year old boy, who refused to give up. Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

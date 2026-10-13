@@ -601,6 +601,15 @@ function overlay(L, T, total) {
     c2.font = `900 46px ${SANS}`; c2.fillStyle = '#1d2442'; const nm = L.secName.toUpperCase(), mw = c2.measureText(nm).width, fit = Math.min(1, 400 / mw);
     c2.save(); c2.translate(75, 3); c2.scale(fit, 1); c2.fillText(nm, 0, 0); c2.restore(); c2.restore();
   }
+  if (window.FORMAT === 'story' && L.sec > 0) { // case-file chip: the chapter name on a red folder tab
+    const k = out(seg(L.secT, 0, .45)); c2.save(); c2.globalAlpha = k; c2.translate(W / 2, 175); c2.scale(.85 + .15 * k, .85 + .15 * k);
+    c2.font = `900 44px ${SANS}`; const nm = L.secName.toUpperCase(), bw = Math.min(760, c2.measureText(nm).width + 250);
+    c2.shadowColor = 'rgba(0,0,0,.45)'; c2.shadowBlur = 24; c2.shadowOffsetY = 6; c2.fillStyle = '#f3e3c3'; c2.beginPath(); c2.roundRect(-bw / 2, -58, bw, 116, 22); c2.fill(); c2.shadowBlur = 0; c2.shadowOffsetY = 0;
+    c2.fillStyle = '#c8202f'; c2.beginPath(); c2.roundRect(-bw / 2 + 14, -42, 170, 84, 14); c2.fill();
+    c2.textAlign = 'center'; c2.textBaseline = 'middle'; c2.fillStyle = '#fff'; c2.font = `900 30px ${SANS}`; c2.fillText('CASE FILE', -bw / 2 + 99, 3);
+    c2.font = `900 44px ${SANS}`; c2.fillStyle = '#2a1a12'; const fit = Math.min(1, (bw - 230) / c2.measureText(nm).width);
+    c2.save(); c2.translate(-bw / 2 + 200 + (bw - 220) / 2, 3); c2.scale(fit, 1); c2.fillText(nm, 0, 0); c2.restore(); c2.restore();
+  }
   if (!L.cap || T < L.cap[0] || T > L.cap[1] + .15) return;
   const words = L.text.split(/\s+/), chunks = []; let cur = [];
   words.forEach(w => { cur.push(w); if (cur.length >= 3 || /[.,?!]$/.test(w)) { chunks.push(cur.join(' ')); cur = []; } }); if (cur.length) chunks.push(cur.join(' '));

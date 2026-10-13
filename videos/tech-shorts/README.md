@@ -42,3 +42,7 @@ It renders on the CPU (SwiftShader): the 3D layer at 720×1280 under a full-reso
 ### Lively style
 
 Set `"style": "lively"` in `script.json` (from episode 5) for punch-in zoom cuts with a flash instead of soft fades, and a subtle handheld drift on every camera. Sets can also use `pose({ walk })` for Bit's walk cycle and `hop(x, dur, height)` for jumps with anticipation, stretch and landing squash.
+
+### Story format
+
+Set `"format": "story"` in `script.json` for narrative episodes (see `../cartoon-case-files`). The numbered step pill becomes a red **CASE FILE** chapter tab showing the section name. `sets/crime.js` holds the shared human cast builder, `makeHuman()`.

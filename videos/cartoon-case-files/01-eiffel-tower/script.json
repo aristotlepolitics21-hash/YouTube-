@@ -1,0 +1,54 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 1,
+ "title": "The Man Who Sold the Eiffel Tower",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    ["cc_hook", {}, "In 1925, a man sold the Eiffel Tower. There was just one problem. It wasn't his to sell."],
+    ["cc_title", {"top": "THE MAN WHO SOLD", "bottom": "THE EIFFEL TOWER", "case": "CASE 01"}, "This is the true story of Victor Lustig, one of the smoothest con men who ever lived."]
+   ]
+  },
+  {
+   "name": "Paris, 1925",
+   "lines": [
+    ["cc_news", {}, "Paris, 1925. Lustig reads a newspaper story. The tower is rusting, repairs are costly, and some people say it should come down."],
+    ["cc_letters", {}, "So he forges official government letters, names himself a top official, and invites the city's biggest scrap metal dealers to a secret meeting."]
+   ]
+  },
+  {
+   "name": "The pitch",
+   "lines": [
+    ["cc_hotel", {}, "They meet at the Hotel de Crillon, one of the grandest hotels in Paris. The tower, he says, will be sold for scrap. Thousands of tons of iron."],
+    ["cc_mark", {}, "But Lustig isn't watching the iron. He's watching the dealers. One of them, André Poisson, is new in town, and desperate to be taken seriously."]
+   ]
+  },
+  {
+   "name": "The bribe",
+   "lines": [
+    ["cc_hint", {}, "Then Lustig drops a hint. Government officials, he sighs, are so poorly paid. Poisson gets it. He offers a bribe."],
+    ["cc_proof", {}, "And that was the trick. To Poisson, an official asking for a bribe was proof the official was real."],
+    ["cc_train", {}, "Poisson pays for the tower, and the bribe. Within hours, the story goes, Lustig is on a train to Vienna with a suitcase full of cash."]
+   ]
+  },
+  {
+   "name": "The twist",
+   "lines": [
+    ["cc_silent", {}, "He watches the newspapers for news of the swindle. Nothing. Poisson is too embarrassed to tell anyone."],
+    ["cc_again", {}, "So Lustig comes back and tries the same scam again! This time, a dealer goes to the police, and Lustig slips away to America."]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    ["cc_jail", {}, "Years later, he was caught for printing fake money, and sent to Alcatraz. He died a prisoner in 1947."],
+    ["cc_outro", {}, "The tower still stands, and it has never been for sale. Would you have fallen for it? Follow for more true crime, animated."]
+   ]
+  }
+ ]
+}

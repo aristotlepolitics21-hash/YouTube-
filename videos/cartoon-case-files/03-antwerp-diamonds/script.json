@@ -1,0 +1,105 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 3,
+ "title": "The Sandwich That Cracked a Diamond Heist",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "aw_hook",
+     {},
+     "Thieves pulled off one of the biggest diamond heists in history. Then a half-eaten sandwich gave them away."
+    ],
+    [
+     "aw_title",
+     {
+      "top": "THE SANDWICH THAT",
+      "bottom": "CRACKED THE HEIST",
+      "case": "CASE 03"
+     },
+     "This is the Antwerp diamond heist."
+    ]
+   ]
+  },
+  {
+   "name": "The vault",
+   "lines": [
+    [
+     "aw_vault",
+     {},
+     "Antwerp, Belgium. The world's diamond capital. Deep under the Diamond Centre sits a vault with ten layers of security."
+    ],
+    [
+     "aw_layers",
+     {},
+     "Heat sensors. Motion detectors. A magnetic field on the door. And a combination lock with a hundred million possibilities."
+    ]
+   ]
+  },
+  {
+   "name": "The plan",
+   "lines": [
+    [
+     "aw_office",
+     {},
+     "A man named Leonardo Notarbartolo rents an office in the building, posing as a gem dealer. For more than two years, he's a friendly face."
+    ],
+    [
+     "aw_camera",
+     {},
+     "He used that access to study the vault. Years later, he even claimed the crew rehearsed on a full-size replica."
+    ]
+   ]
+  },
+  {
+   "name": "The night",
+   "lines": [
+    [
+     "aw_night",
+     {},
+     "February 2003. Valentine's weekend. The crew slips into the vault, and beats the sensors one by one."
+    ],
+    [
+     "aw_boxes",
+     {},
+     "By morning, more than a hundred safe deposit boxes are empty. An estimated hundred million dollars in diamonds, gold and jewels."
+    ]
+   ]
+  },
+  {
+   "name": "The mistake",
+   "lines": [
+    [
+     "aw_trash",
+     {},
+     "But on the drive out, they dump a bag of rubbish in a forest beside the motorway. A local man finds it, and calls the police."
+    ],
+    [
+     "aw_sandwich",
+     {},
+     "Inside, vault tapes, receipts, and a half-eaten salami sandwich. Those clues led detectives straight to the gang."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "aw_caught",
+     {},
+     "Notarbartolo was convicted and sentenced to ten years. But most of the diamonds have never been found."
+    ],
+    [
+     "aw_outro",
+     {},
+     "Perfect plan. One sandwich. Where do you think the diamonds are? Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

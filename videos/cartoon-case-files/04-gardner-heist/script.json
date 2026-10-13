@@ -1,0 +1,90 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 4,
+ "title": "13 Paintings, 81 Minutes, Still Missing",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "gd_hook",
+     {},
+     "In one night, two fake police officers stole half a billion dollars of art. Today, the empty frames still hang on the wall."
+    ],
+    [
+     "gd_title",
+     {
+      "top": "THE EMPTY",
+      "bottom": "FRAMES",
+      "case": "CASE 04"
+     },
+     "This is the Isabella Stewart Gardner Museum heist."
+    ]
+   ]
+  },
+  {
+   "name": "The knock",
+   "lines": [
+    [
+     "gd_door",
+     {},
+     "Boston, March 18th, 1990. Early in the morning, after Saint Patrick's Day. Two men in police uniforms buzz the museum's side door."
+    ],
+    [
+     "gd_guard",
+     {},
+     "They tell the young night guard they're answering a disturbance call. He breaks the rules, and lets them in."
+    ]
+   ]
+  },
+  {
+   "name": "The theft",
+   "lines": [
+    [
+     "gd_tied",
+     {},
+     "Within minutes, both guards are handcuffed and taped up in the basement. The officers aren't officers at all."
+    ],
+    [
+     "gd_cut",
+     {},
+     "For eighty one minutes, the thieves move through the galleries. They slice paintings straight out of their frames."
+    ],
+    [
+     "gd_list",
+     {},
+     "Thirteen works in all, including Rembrandt's only seascape, and The Concert, by Vermeer."
+    ]
+   ]
+  },
+  {
+   "name": "The hunt",
+   "lines": [
+    [
+     "gd_reward",
+     {},
+     "The museum offers a ten million dollar reward for information leading to the art's return. Decades of leads. Rumours. Dead ends."
+    ]
+   ]
+  },
+  {
+   "name": "Still missing",
+   "lines": [
+    [
+     "gd_frames",
+     {},
+     "The museum's founder wanted nothing in her galleries changed. So the empty frames still hang, waiting."
+    ],
+    [
+     "gd_outro",
+     {},
+     "It's one of the biggest art thefts in history, and it's still unsolved. Have you seen these paintings? Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

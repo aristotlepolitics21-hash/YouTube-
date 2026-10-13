@@ -1,0 +1,110 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 2,
+ "title": "The Hijacker Who Vanished",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "db_hook",
+     {},
+     "In 1971, a man hijacked a plane, collected two hundred thousand dollars, and jumped out into the night. He was never seen again."
+    ],
+    [
+     "db_title",
+     {
+      "top": "THE HIJACKER",
+      "bottom": "WHO VANISHED",
+      "case": "CASE 02"
+     },
+     "This is the mystery of D.B. Cooper."
+    ]
+   ]
+  },
+  {
+   "name": "The flight",
+   "lines": [
+    [
+     "db_seat",
+     {},
+     "November 24th, 1971. The night before Thanksgiving. A quiet man in a dark suit boards a flight from Portland to Seattle, under the name Dan Cooper."
+    ],
+    [
+     "db_note",
+     {},
+     "He hands a flight attendant a note. She thinks he's flirting, and slips it into her pocket. He leans in. Miss, you'd better look at that note."
+    ],
+    [
+     "db_case",
+     {},
+     "I have a bomb, he says, and opens his briefcase. Inside, wires, and red sticks. He wants two hundred thousand dollars, and four parachutes."
+    ]
+   ]
+  },
+  {
+   "name": "The swap",
+   "lines": [
+    [
+     "db_seattle",
+     {},
+     "In Seattle, the FBI delivers the cash and the parachutes. Cooper lets all thirty six passengers go."
+    ],
+    [
+     "db_takeoff",
+     {},
+     "Then he orders the plane back into the sky, heading south, flying low and slow."
+    ]
+   ]
+  },
+  {
+   "name": "The jump",
+   "lines": [
+    [
+     "db_stairs",
+     {},
+     "Somewhere over the forests of southwest Washington, in the dark and the rain, he lowers the rear stairs."
+    ],
+    [
+     "db_jump",
+     {},
+     "And he jumps. When the plane lands, the cabin is empty. Cooper, and the money, are gone."
+    ]
+   ]
+  },
+  {
+   "name": "The clue",
+   "lines": [
+    [
+     "db_boy",
+     {},
+     "Nine years later, an eight year old boy named Brian Ingram is helping his family build a campfire on a Columbia River beach."
+    ],
+    [
+     "db_money",
+     {},
+     "He digs into the sand, and finds bundles of rotting twenty dollar bills. About fifty eight hundred dollars. The serial numbers match Cooper's ransom."
+    ]
+   ]
+  },
+  {
+   "name": "Still unsolved",
+   "lines": [
+    [
+     "db_files",
+     {},
+     "It was the first real clue in years. But it raised more questions than it answered. In 2016, the FBI stopped actively investigating."
+    ],
+    [
+     "db_outro",
+     {},
+     "Did he survive the jump? Nobody knows. What do you think happened to D.B. Cooper? Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}
