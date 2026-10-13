@@ -2,6 +2,7 @@
   "series": "Tech Shorts",
   "episode": 1,
   "title": "What Happens When You Hit Enter",
+  "voice": "kokoro:af_heart",
   "sections": [
     { "name": "Hook", "lines": [
       ["type", {"url": "example.com"}, "You type a web address and hit Enter."],
@@ -9,9 +10,9 @@
       ["title", {"top": "WHAT HAPPENS", "bottom": "WHEN YOU HIT ENTER"}, "But in that second, your request crosses a city, maybe an ocean, and back. Here is every step."]
     ]},
     { "name": "Finding the address", "lines": [
-      ["names", {}, "Step one. Computers don't understand names like example dot com. They only understand numbers, called I P addresses."],
+      ["names", {}, "Step one. Computers don't understand names like example dot com. They only understand numbers, called IP addresses."],
       ["cache", {}, "So your browser checks its memory first. If you visited recently, it already knows the number."],
-      ["dns", {}, "If not, it asks a D N S server, the phone book of the internet. That server asks the root servers, then the dot com servers, then the website's own server."],
+      ["dns", {}, "If not, it asks a DNS server, the phone book of the internet. That server asks the root servers, then the dot com servers, then the website's own server."],
       ["ip", {"ip": "203.0.113.7"}, "And an answer comes back. A number, like this one."]
     ]},
     { "name": "The journey", "lines": [
@@ -24,8 +25,8 @@
       ["lock", {}, "Then they agree on secret keys, so anyone who intercepts the packets sees only scrambled noise. That's the padlock next to the address."]
     ]},
     { "name": "The server answers", "lines": [
-      ["server", {}, "Step four. The server reads your request, finds the page, and sends back a response. Status two hundred. O K."],
-      ["html", {}, "What arrives first is H T M L, a text file describing the page."],
+      ["server", {}, "Step four. The server reads your request, finds the page, and sends back a response. Status two hundred. OK."],
+      ["html", {}, "What arrives first is HTML, a text file describing the page."],
       ["fanout", {}, "Inside it are links to more files. Styles, scripts, images. So your browser fires off dozens more requests, many at the same time."]
     ]},
     { "name": "Drawing the page", "lines": [

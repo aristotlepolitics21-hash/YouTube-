@@ -3,6 +3,7 @@
   "episode": 2,
   "title": "How Wi-Fi Actually Works",
   "sets": "wifi.js",
+  "voice": "kokoro:af_heart",
   "sections": [
     { "name": "Hook", "lines": [
       ["w_room", {}, "Right now, invisible waves are flying through your room, through the walls, and through you."],
