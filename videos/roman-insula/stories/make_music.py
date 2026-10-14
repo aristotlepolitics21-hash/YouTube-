@@ -77,7 +77,14 @@ def pluck(f, dur=3.5, bright=0.5):
     return out * np.minimum(1, np.arange(n) / 30)
 
 
+MOODS = {  # used when story.json gives a shot a "mood" instead of an entry in PLAN
+    "lonely": (["Am", "F", "C", "G"], 0.5), "warm": (["F", "C", "Am", "G"], 0.9),
+    "dark": (["Dm", "Am", "Em", "Dm"], 0.35), "hope": (["F", "G", "Em", "Am"], 0.75),
+    "resolve": (["F", "G", "Am", "Fmaj7", "C"], 1.0),
+}
 for shot in tl["shots"]:
+    if shot["id"] not in PLAN:
+        PLAN[shot["id"]], LYRE[shot["id"]] = MOODS[shot.get("mood") or "warm"]
     prog, t0, dur = PLAN[shot["id"]], shot["start"], shot["dur"]
     bar = dur / len(prog)
     for k, name in enumerate(prog):

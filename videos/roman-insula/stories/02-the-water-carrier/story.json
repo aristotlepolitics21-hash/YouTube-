@@ -1,0 +1,41 @@
+{
+  "series": "Stories from the Insula",
+  "episode": 2,
+  "title": "The Water Carrier",
+  "cast": {
+    "narrator": { "voice": "af_heart:0.8,af_nicole:0.2", "speed": 0.84 },
+    "widow":    { "voice": "bf_emma:0.7,bf_isabella:0.3", "speed": 0.76, "pitch": 0.9 },
+    "landlord": { "voice": "bm_george", "speed": 0.84, "pitch": 0.95 }
+  },
+  "shots": [
+    { "id": "w1_stairs_dawn", "mood": "lonely", "lines": [
+      "Ninety-one steps.",
+      "That's how many Tullia climbed every morning, with a jar of water on her shoulder."
+    ]},
+    { "id": "w2_stairs_up", "mood": "lonely", "lines": [
+      "It was heavy. The fountain was three streets away.",
+      "But the old widow on the top floor could no longer walk."
+    ]},
+    { "id": "w3_room_day", "mood": "warm", "lines": [
+      "Julia never thanked her. Not once. She only ever said one thing.",
+      { "say": "You're late.", "as": "widow", "pause": 0.9 },
+      "Every... single... day."
+    ]},
+    { "id": "w4_room_night", "mood": "dark", "lines": [
+      "Then one winter, Julia died.",
+      "The landlord found Tullia on the stairs, and handed her a small cloth bundle.",
+      { "say": "She said this was yours.", "as": "landlord" }
+    ]},
+    { "id": "w5_bundle", "mood": "dark", "lines": [
+      "Inside were coins. Years of them. Every coin Julia had saved.",
+      "And a broken piece of pottery, with a few words scratched into it."
+    ]},
+    { "id": "w6_card", "card": "“You were always late.\nSo I always knew you’d come.”", "mood": "hope", "lines": [
+      { "say": "You were always late... so I always knew you'd come.", "as": "widow", "pause": 1.4 }
+    ]},
+    { "id": "w7_stairs_end", "mood": "resolve", "lines": [
+      "Some people never learn how to say thank you.",
+      "So they say it the only way they can... by waiting for you."
+    ]}
+  ]
+}

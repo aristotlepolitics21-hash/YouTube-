@@ -1,0 +1,40 @@
+{
+  "series": "Stories from the Insula",
+  "episode": 3,
+  "title": "The Lamp in the Window",
+  "cast": {
+    "narrator": { "voice": "af_heart:0.8,af_nicole:0.2", "speed": 0.84 },
+    "son":      { "voice": "am_michael:0.6,bm_george:0.4", "speed": 0.8, "pitch": 0.96 },
+    "mother":   { "voice": "bf_emma:0.6,af_heart:0.4", "speed": 0.8, "pitch": 0.94 }
+  },
+  "shots": [
+    { "id": "l1_room_lamp", "mood": "lonely", "lines": [
+      "Every night, for six years, a mother lit a lamp in the same window."
+    ]},
+    { "id": "l2_window", "mood": "lonely", "lines": [
+      "Her son had marched north with the legions.",
+      "Rome sent no letters. No news. Nothing at all."
+    ]},
+    { "id": "l3_bakery", "mood": "warm", "lines": [
+      "The neighbours whispered that she was wasting good oil.",
+      "But the baker downstairs always slipped her a little extra... and never said a word."
+    ]},
+    { "id": "l4_room_dark", "mood": "dark", "lines": [
+      "Then one night, the oil ran out.",
+      "And she wept... because she was sure it was a sign."
+    ]},
+    { "id": "l5_street", "mood": "hope", "lines": [
+      "But down in the dark street, a tired soldier stopped,",
+      "and looked up at the only window with no light in it."
+    ]},
+    { "id": "l6_stairs", "mood": "hope", "lines": [
+      "He knew exactly which one it was.",
+      "He had followed that light home, for three hundred miles."
+    ]},
+    { "id": "l7_reunion", "mood": "resolve", "lines": [
+      { "say": "Mother.", "as": "son", "pause": 1.1 },
+      { "say": "You can let it go out now. I'm home.", "as": "son", "pause": 1.6 },
+      "Some lights never really go out."
+    ]}
+  ]
+}

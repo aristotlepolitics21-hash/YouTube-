@@ -32,8 +32,8 @@ and add an entry to `PLAN` in `make_music.py`. The voice decides how long each s
 
 1. **Stairs, dawn.** Ninety-one steps. That's how many Tullia climbed every morning, with a jar of water on her shoulder.
 2. **Stairs, close.** It was heavy, and the fountain was three streets away. But the widow on the top floor couldn't walk any more.
-3. **Room.** The widow, Aurelia, never thanked her. She only ever said, "You're late." Every single day.
-4. **Room, night.** One winter, Aurelia died. The landlord handed Tullia a small cloth bundle. "She said this was yours."
+3. **Room.** The widow, Julia, never thanked her. She only ever said, "You're late." Every single day.
+4. **Room, night.** One winter, Julia died. The landlord handed Tullia a small cloth bundle. "She said this was yours."
 5. **Room, close.** Inside were coins. Years of them. And a scrap of pottery, scratched with one line:
 6. **Black, text only.** "You're late, so I knew you'd come."
 7. **Stairs, empty, sunbeam.** Some people can't say thank you. So they say it the only way they know.
