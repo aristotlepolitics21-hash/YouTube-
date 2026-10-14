@@ -1,0 +1,38 @@
+{
+  "series": "Stories from the Insula",
+  "episode": 1,
+  "title": "The Loaf on the Stairs",
+  "voice": "kokoro:af_heart",
+  "rate": 86,
+  "shots": [
+    { "id": "s1_room_night", "lines": [
+      "Every morning, for eleven years, someone left a loaf of bread outside room nine.",
+      "The old man who lived there, Lucius, never found out who."
+    ]},
+    { "id": "s2_bakery_dawn", "lines": [
+      "Downstairs, Marcus the baker lit his oven before the sun came up.",
+      "And before he sold a single loaf, he always set one aside."
+    ]},
+    { "id": "s3_stairs", "lines": [
+      "He climbed the stairs in the dark, so softly the old wood barely creaked.",
+      "He left the bread, and he was gone before anyone woke."
+    ]},
+    { "id": "s4_room_morning", "lines": [
+      "Lucius had no family left. No money to spare.",
+      "Just one warm loaf, every single morning. Like a promise someone was keeping."
+    ]},
+    { "id": "s5_flashback", "flashback": true, "lines": [
+      "What Lucius had long forgotten was a winter, forty years before.",
+      "A starving boy grabbed a loaf from this very counter, and the baker caught him by the arm.",
+      "A stranger stepped in. He paid for the bread, and said: Eat, son. Come back tomorrow. I'll pay for that one too."
+    ]},
+    { "id": "s6_bakery_meet", "lines": [
+      "One morning, Lucius woke early, and followed the footsteps down the stairs.",
+      "The baker only smiled. You fed a hungry boy once, he said. I've just been paying you back."
+    ]},
+    { "id": "s7_room_end", "lines": [
+      "Kindness is never wasted.",
+      "Sometimes, it just takes forty years to find its way home."
+    ]}
+  ]
+}
