@@ -7,7 +7,7 @@ It uses the same 3D engine as Tech Shorts (`../tech-shorts/engine3d`). The cast 
 | # | Episode | Status |
 |---|---|---|
 | 1 | The Man Who Sold the Eiffel Tower (Victor Lustig, 1925) | Rendered (`the-man-who-sold-the-eiffel-tower.mp4`) |
-| 2 | The Hijacker Who Vanished (D.B. Cooper, 1971) | Script ready; needs `db_*` sets |
+| 2 | The Hijacker Who Vanished (D.B. Cooper, 1971) | Rendered (`the-hijacker-who-vanished.mp4`) |
 | 3 | The Sandwich That Cracked a Diamond Heist (Antwerp, 2003) | Script ready; needs `aw_*` sets |
 | 4 | 13 Paintings, 81 Minutes, Still Missing (Gardner Museum, 1990) | Script ready; needs `gd_*` sets |
 | 5 | The 26 Kids Who Dug Their Way Out (Chowchilla, 1976) | Script ready; needs `ch_*` sets |
@@ -41,9 +41,11 @@ The voice is Kokoro `am_michael`, a calm male narrator. `bm_george` is a good Br
 
 - `makeHuman(o)` builds a character. Options: `suit`, `skin`, `hair`, `hairStyle` (slick, side, curly, bald), `hat` (fedora, cap, kepi), `stache`, `belly`, `iris`, `nose`.
 - `.pose({...})` sets expression and action: `talk`, `mouth` (smile, frown, open), `brow` (-1 angry to 1 worried), `wide`, `happy`, `sweat`, `walk`, `lean`, `eyeX`, `armR` / `armL` as `[x, z]`.
-- Presets: `LUSTIG`, `POISSON`, `dealer(i)`, `gendarme()`.
-- Props: `tower()`, `parisRow()`, `table()`, `suitcase()`, `cashStack()`, `bill()`, `newspaper(head, sub)`.
-- Moods: `NIGHT`, `DUSK`, `ROOM`.
+- More options: `shades`, `skirt`, `headScale` (use about 1.3 with a 0.6 overall scale for a child), hair `bob`, hat `pillbox`, and pose `sit`.
+- Presets: `LUSTIG`, `POISSON`, `dealer(i)`, `gendarme()`, `COOPER`, `ATTENDANT`, `agent(i)`, `brian()`.
+- Props: `tower()`, `parisRow()`, `table()`, `suitcase()`, `cashStack()`, `bill()`, `newspaper(head, sub)`, `jet()` (with a working rear airstair), `chute()`, `rain()`, `forest()`, `seatRow()`, `cabin()`, `cityLights()`.
+- `titleSet(p, mood, makeCharacter)` builds a title card for any episode.
+- Moods: `NIGHT`, `DUSK`, `ROOM`, `STORM`, `BEACH`.
 - Keep signs below about y = 4 at normal camera distances. The case-file chip covers the top of the frame.
 
 See `PROMPT-PACK.md` if you would rather make episodes with AI image and video tools, as the reference clips do.
