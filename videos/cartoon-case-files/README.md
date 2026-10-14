@@ -48,4 +48,12 @@ The voice is Kokoro `am_michael`, a calm male narrator. `bm_george` is a good Br
 - Moods: `NIGHT`, `DUSK`, `ROOM`, `STORM`, `BEACH`.
 - Keep signs below about y = 4 at normal camera distances. The case-file chip covers the top of the frame.
 
-See `PROMPT-PACK.md` if you would rather make episodes with AI image and video tools, as the reference clips do.
+## Realistic human characters (stills mode)
+
+The 3D sets use stylised toy-like people. For the realistic Pixar-style humans in the reference clips, generate one AI image per line and let the engine animate it:
+
+1. Generate the shots with the prompts in the episode's `stills/PROMPTS.md` (Episode 1) or `PROMPT-PACK.md` (Episode 2). Use 9:16, the style block, and the same character reference for every shot.
+2. Save each image as `stills/<scene key>.png`, `.jpg` or `.webp`. An image-to-video clip named `<scene key>.mp4` can be used instead.
+3. Add `"stills": "stills"` to the episode's `script.json` and render as usual.
+
+Each image gets a slow push or pull with drift, the punch-in cuts, the CASE FILE tab, narration and captions. Lines without an image keep their 3D set, so an episode can mix the two. Stills render in seconds per frame, much faster than the 3D sets.

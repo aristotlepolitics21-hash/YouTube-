@@ -46,3 +46,7 @@ Set `"style": "lively"` in `script.json` (from episode 5) for punch-in zoom cuts
 ### Story format
 
 Set `"format": "story"` in `script.json` for narrative episodes (see `../cartoon-case-files`). The numbered step pill becomes a red **CASE FILE** chapter tab showing the section name. `sets/crime.js` holds the shared human cast builder, `makeHuman()`.
+
+### Stills mode
+
+Set `"stills": "DIR"` in `script.json` (relative to the script) to replace 3D sets with images or clips. `DIR/<scene key>.png`, `.jpg` or `.webp` gets a slow camera move; `DIR/<scene key>.mp4` is converted to WebM and played in time with the line. Lines without a file keep their 3D set. See `../cartoon-case-files/README.md`.

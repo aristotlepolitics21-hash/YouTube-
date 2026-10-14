@@ -1,11 +1,22 @@
 # usage: build_page.py SCRIPT.json EPDIR OUT.html  (EPDIR holds durs.json and caps.json from ../engine/voice.py)
 # The page is served by render.cjs at http://tech3d.local/, with three.js and pixar.js resolved through the import map.
-import json, sys
+import json, os, subprocess, sys
 script_path, ep, out = sys.argv[1], sys.argv[2], sys.argv[3]
 sc = json.load(open(script_path))
 lines = [[l[0], l[1], l[2], si] for si, s in enumerate(sc["sections"]) for l in s["lines"]]
 durs, caps = json.load(open(f"{ep}/durs.json")), json.load(open(f"{ep}/caps.json"))
 names = [s["name"] for s in sc["sections"]]
+# "stills": "DIR" (relative to the script) holds one image or clip per line, named after its scene key (cc_hook.png, cc_hook.mp4);
+# those lines show the still with a slow camera move instead of a 3D set. Clips are converted to WebM, which headless Chromium plays.
+stills = {}
+sd = os.path.join(os.path.dirname(os.path.abspath(script_path)), sc["stills"]) if sc.get("stills") else None
+for f in sorted(os.listdir(sd)) if sd and os.path.isdir(sd) else []:
+    k, ext = os.path.splitext(f); ext = ext.lower(); src = os.path.join(sd, f)
+    if ext in (".mp4", ".mov", ".m4v"):
+        dst = os.path.join(os.path.abspath(ep), f"still_{k}.webm")
+        if not os.path.exists(dst): subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-an", "-c:v", "libvpx-vp9", "-b:v", "6M", "-deadline", "realtime", "-cpu-used", "8", dst], check=True)
+        stills[k] = "/abs" + dst
+    elif ext in (".png", ".jpg", ".jpeg", ".webp", ".webm"): stills.setdefault(k, "/abs" + src)
 steps = {si: si for si in range(1, len(names) - 1)}  # sections between the hook and the recap are steps 1-5
 if sc.get("format") == "story": steps = {}  # story episodes show a case-file chapter chip instead of numbered steps
 # an episode can bring its own sets: "sets": "wifi.js" loads engine3d/sets/wifi.js
@@ -21,7 +32,11 @@ let t0 = 0; const secStart = {{}};
 const TL = LINES.map((l, i) => {{ if (!(l[3] in secStart)) secStart[l[3]] = t0;
   const o = {{ scene: l[0], p: l[1], text: l[2], sec: l[3], start: t0, end: t0 + DURS[i], cap: CAPS[i].slice(0, 2), step: STEPS[l[3]], secName: NAMES[l[3]] }}; t0 += DURS[i]; return o; }});
 window.TL = TL; window.__total = t0; window.STYLE = {json.dumps(sc.get('style', ''))}; window.FORMAT = {json.dumps(sc.get('format', ''))};
-window.__at = T => {{ let i = TL.findIndex(l => T < l.end); if (i < 0) i = TL.length - 1; TL[i].secT = T - secStart[TL[i].sec]; DOC3D.frame(TL, T, t0); }};
+const SRC = {json.dumps(stills)}; window.STILLS = {{}};
+await Promise.all(Object.entries(SRC).map(([k, u]) => new Promise(res => {{ const v = /[.]webm$/.test(u);
+  const el = v ? Object.assign(document.createElement('video'), {{ muted: true, preload: 'auto' }}) : new Image();
+  el[v ? 'onloadeddata' : 'onload'] = res; el.onerror = () => {{ console.error('still failed', u); res(); }}; el.src = u; window.STILLS[k] = el; }})));
+window.__at = async T => {{ let i = TL.findIndex(l => T < l.end); if (i < 0) i = TL.length - 1; TL[i].secT = T - secStart[TL[i].sec]; await DOC3D.frame(TL, T, t0); }};
 window.__ready = true;
 </script>"""
 open(out, "w").write(page); print(len(lines), "lines", round(sum(durs), 1), "s")

@@ -625,8 +625,22 @@ function overlay(L, T, total) {
 // ---------- frame driver ----------
 let curIdx = -1, cur = null;
 function dispose(sc) { sc.traverse(o => { if (o.geometry) o.geometry.dispose(); const ms = o.material ? (Array.isArray(o.material) ? o.material : [o.material]) : []; ms.forEach(m => { ['map', 'emissiveMap'].forEach(k => m[k] && m[k] !== GLOWTEX && m[k].dispose()); m.dispose(); }); }); if (sc.background && sc.background.dispose) sc.background.dispose(); }
+// a still (AI image or image-to-video clip) for this line: slow push or pull with a drift, the same cuts and overlay as the 3D sets
+async function drawStill(el, L, i, TL, T, total) {
+  const d = L.end - L.start, s = T - L.start, t = clamp(s / d), vid = el.tagName === 'VIDEO';
+  if (vid && el.duration) { const tt = Math.min(s * (el.duration > d ? 1 : el.duration / d), el.duration - .04); if (Math.abs(el.currentTime - tt) > .001) await new Promise(r => { el.onseeked = r; el.currentTime = tt; }); }
+  const iw = el.videoWidth || el.naturalWidth, ih = el.videoHeight || el.naturalHeight; c2.fillStyle = '#000'; c2.fillRect(0, 0, W, H);
+  if (iw) { const dir = i % 2 ? -1 : 1, kb = vid ? 1.02 : lerp(dir > 0 ? 1.0 : 1.1, dir > 0 ? 1.1 : 1.0, ease(t));
+    const kin = i > 0 ? clamp(s / .32) : 1, kout = i < TL.length - 1 ? clamp((L.end - T) / .16) : 1, z = kb * (1 + .14 * Math.pow(1 - out(kin), 2) + .07 * Math.pow(1 - kout, 2));
+    const sc = Math.max(W / iw, H / ih) * z, px = Math.sin(i * 2.3) * W * .025 * (t - .5), py = Math.cos(i * 1.7) * H * .015 * (t - .5);
+    c2.imageSmoothingQuality = 'high'; c2.drawImage(el, (W - iw * sc) / 2 + px, (H - ih * sc) / 2 + py, iw * sc, ih * sc);
+    const fl = .6 * Math.pow(1 - kin, 3); if (fl > .01) { c2.fillStyle = `rgba(255,255,255,${fl})`; c2.fillRect(0, 0, W, H); } }
+  const g = c2.createLinearGradient(0, H * .62, 0, H); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,.45)'); c2.fillStyle = g; c2.fillRect(0, H * .62, W, H * .38);
+  overlay(L, T, total);
+}
 function frame(TL, T, total) {
   let i = TL.findIndex(l => T < l.end); if (i < 0) i = TL.length - 1; const L = TL[i];
+  const still = window.STILLS && window.STILLS[L.scene]; if (still) return drawStill(still, L, i, TL, T, total);
   if (i !== curIdx) { if (cur) dispose(cur.scene); cur = (BUILD[L.scene] || BUILD.title)(L.p || {}); curIdx = i; }
   const d = L.end - L.start, s = T - L.start, t = clamp(s / d); NOW = T;
   cur.update(t, s, d); cur.cam.aspect = W / H; cur.cam.updateProjectionMatrix();
