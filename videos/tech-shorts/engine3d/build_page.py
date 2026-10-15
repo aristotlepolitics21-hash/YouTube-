@@ -12,6 +12,7 @@ stills = {}
 sd = os.path.join(os.path.dirname(os.path.abspath(script_path)), sc["stills"]) if sc.get("stills") else None
 for f in sorted(os.listdir(sd)) if sd and os.path.isdir(sd) else []:
     k, ext = os.path.splitext(f); ext = ext.lower(); src = os.path.join(sd, f)
+    if k.isdigit() and 0 < int(k) <= len(lines): k = lines[int(k) - 1][0]  # 01.png, 02.png ... follow the script order
     if ext in (".mp4", ".mov", ".m4v"):
         dst = os.path.join(os.path.abspath(ep), f"still_{k}.webm")
         if not os.path.exists(dst): subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-an", "-c:v", "libvpx-vp9", "-b:v", "6M", "-deadline", "realtime", "-cpu-used", "8", dst], check=True)

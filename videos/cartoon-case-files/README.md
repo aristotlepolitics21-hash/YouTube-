@@ -11,6 +11,7 @@ It uses the same 3D engine as Tech Shorts (`../tech-shorts/engine3d`). The cast 
 | 3 | The Sandwich That Cracked a Diamond Heist (Antwerp, 2003) | Rendered (`the-sandwich-that-cracked-a-diamond-heist.mp4`) |
 | 4 | 13 Paintings, 81 Minutes, Still Missing (Gardner Museum, 1990) | Rendered (`13-paintings-81-minutes-still-missing.mp4`) |
 | 5 | The 26 Kids Who Dug Their Way Out (Chowchilla, 1976) | Rendered (`the-26-kids-who-dug-their-way-out.mp4`) |
+| 6 | The Grandpa Gang (Hatton Garden, 2015) | Script and narration ready; waiting for AI images (`06-hatton-garden/stills/PROMPTS.md`) |
 
 ## The formula (it's the one your reference clips use)
 
@@ -53,7 +54,7 @@ The voice is Kokoro `am_michael`, a calm male narrator. `bm_george` is a good Br
 The 3D sets use stylised toy-like people. For the realistic Pixar-style humans in the reference clips, generate one AI image per line and let the engine animate it:
 
 1. Generate the shots with the prompts in the episode's `stills/PROMPTS.md` (Episode 1) or `PROMPT-PACK.md` (Episode 2). Use 9:16, the style block, and the same character reference for every shot.
-2. Save each image as `stills/<scene key>.png`, `.jpg` or `.webp`. An image-to-video clip named `<scene key>.mp4` can be used instead.
+2. Save each image as `stills/<scene key>.png`, `.jpg` or `.webp`, or number them in script order (`01.png`, `02.png` ...). An image-to-video clip named `<scene key>.mp4` can be used instead.
 3. Add `"stills": "stills"` to the episode's `script.json` and render as usual.
 
-Each image gets a slow push or pull with drift, the punch-in cuts, the CASE FILE tab, narration and captions. Lines without an image keep their 3D set, so an episode can mix the two. Stills render in seconds per frame, much faster than the 3D sets.
+Each image gets a slow push or pull with drift, the punch-in cuts, the CASE FILE tab, narration and captions. Lines without an image keep their 3D set, so an episode can mix the two; a line with neither shows an "image needed" card. A line with `top`/`bottom`/`case` params gets the title card drawn over its image. Stills render in seconds per frame, much faster than the 3D sets.

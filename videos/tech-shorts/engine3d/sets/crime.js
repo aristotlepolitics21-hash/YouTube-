@@ -1167,4 +1167,11 @@ export function register(K) {
       aim(st.cam, [Math.sin(s * .25) * .5, 2.8, 8.4], [0, 2.3, 0]);
     } };
   };
+
+  // a story line with neither a 3D set nor a still: a plain card naming the missing image
+  BUILD.story_missing = (p, key) => {
+    const st = stage(NIGHT); const c = sign(3.2, 1.6, (x, w, h) => { x.fillStyle = '#f3e3c3'; x.fillRect(0, 0, w, h); label(x, 'IMAGE NEEDED', w / 2, h * .35, h * .2, '#c8202f', 900); label(x, String(key), w / 2, h * .68, h * .16, '#2a1a12', 800, 'center', MONO); }, { color: 0xf3e3c3, depth: .1 });
+    c.position.set(0, 2.6, 0); st.scene.add(c);
+    return { ...st, update(t, s) { c.rotation.y = Math.sin(s) * .1; aim(st.cam, [0, 2.8, 8], [0, 2.6, 0]); } };
+  };
 }

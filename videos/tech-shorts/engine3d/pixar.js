@@ -635,13 +635,19 @@ async function drawStill(el, L, i, TL, T, total) {
     const sc = Math.max(W / iw, H / ih) * z, px = Math.sin(i * 2.3) * W * .025 * (t - .5), py = Math.cos(i * 1.7) * H * .015 * (t - .5);
     c2.imageSmoothingQuality = 'high'; c2.drawImage(el, (W - iw * sc) / 2 + px, (H - ih * sc) / 2 + py, iw * sc, ih * sc);
     const fl = .6 * Math.pow(1 - kin, 3); if (fl > .01) { c2.fillStyle = `rgba(255,255,255,${fl})`; c2.fillRect(0, 0, W, H); } }
+  if (L.p && L.p.top) { // title card drawn over the still
+    const card = (txt, y, bg, fg, size, at) => { const k = Math.min(1, pop(s - at)); if (k <= 0) return; c2.save(); c2.translate(W / 2, y); c2.scale(k, k); c2.font = `900 ${size}px ${SANS}`;
+      const tw = Math.min(W - 140, c2.measureText(txt).width + 90); c2.shadowColor = 'rgba(0,0,0,.45)'; c2.shadowBlur = 26; c2.shadowOffsetY = 8; c2.fillStyle = bg; c2.beginPath(); c2.roundRect(-tw / 2, -size * .85, tw, size * 1.7, size * .4); c2.fill();
+      c2.shadowBlur = 0; c2.shadowOffsetY = 0; c2.fillStyle = fg; c2.textAlign = 'center'; c2.textBaseline = 'middle'; c2.fillText(txt, 0, 4, tw - 60); c2.restore(); };
+    if (L.p.case) card(L.p.case, 300, '#1d2442', '#ffc44d', 48, .5); card(L.p.top, 430, '#f3e3c3', '#2a1a12', 84, .05); if (L.p.bottom) card(L.p.bottom, 590, '#c8202f', '#ffffff', 92, .3);
+  }
   const g = c2.createLinearGradient(0, H * .62, 0, H); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,.45)'); c2.fillStyle = g; c2.fillRect(0, H * .62, W, H * .38);
   overlay(L, T, total);
 }
 function frame(TL, T, total) {
   let i = TL.findIndex(l => T < l.end); if (i < 0) i = TL.length - 1; const L = TL[i];
   const still = window.STILLS && window.STILLS[L.scene]; if (still) return drawStill(still, L, i, TL, T, total);
-  if (i !== curIdx) { if (cur) dispose(cur.scene); cur = (BUILD[L.scene] || BUILD.title)(L.p || {}); curIdx = i; }
+  if (i !== curIdx) { if (cur) dispose(cur.scene); cur = (BUILD[L.scene] || (window.FORMAT === 'story' && BUILD.story_missing) || BUILD.title)(L.p || {}, L.scene); curIdx = i; }
   const d = L.end - L.start, s = T - L.start, t = clamp(s / d); NOW = T;
   cur.update(t, s, d); cur.cam.aspect = W / H; cur.cam.updateProjectionMatrix();
   rpass.scene = cur.scene; rpass.camera = cur.cam; composer.render();
