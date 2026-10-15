@@ -8,9 +8,9 @@ It uses the same 3D engine as Tech Shorts (`../tech-shorts/engine3d`). The cast 
 |---|---|---|
 | 1 | The Man Who Sold the Eiffel Tower (Victor Lustig, 1925) | Rendered (`the-man-who-sold-the-eiffel-tower.mp4`) |
 | 2 | The Hijacker Who Vanished (D.B. Cooper, 1971) | Rendered (`the-hijacker-who-vanished.mp4`) |
-| 3 | The Sandwich That Cracked a Diamond Heist (Antwerp, 2003) | Script ready; needs `aw_*` sets |
-| 4 | 13 Paintings, 81 Minutes, Still Missing (Gardner Museum, 1990) | Script ready; needs `gd_*` sets |
-| 5 | The 26 Kids Who Dug Their Way Out (Chowchilla, 1976) | Script ready; needs `ch_*` sets |
+| 3 | The Sandwich That Cracked a Diamond Heist (Antwerp, 2003) | Rendered (`the-sandwich-that-cracked-a-diamond-heist.mp4`) |
+| 4 | 13 Paintings, 81 Minutes, Still Missing (Gardner Museum, 1990) | Rendered (`13-paintings-81-minutes-still-missing.mp4`) |
+| 5 | The 26 Kids Who Dug Their Way Out (Chowchilla, 1976) | Rendered (`the-26-kids-who-dug-their-way-out.mp4`) |
 
 ## The formula (it's the one your reference clips use)
 
