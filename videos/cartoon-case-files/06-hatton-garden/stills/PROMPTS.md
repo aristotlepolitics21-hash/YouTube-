@@ -2,6 +2,9 @@
 
 Make **13 images in 9:16 portrait**, one per line below, in order. Upload them in the chat and I'll name them and render the episode. You can also save them here yourself as `hg_hook.png`, `hg_title.png` and so on, or simply `01.png` to `13.png`.
 
+**Done so far:** 1 hg_hook, 2 hg_title, 3 hg_garden, 4 hg_basil, 5 hg_lift. Still needed: 6 to 13.
+Character references are in `refs/` (`gang.webp`, `basil.webp`, `detective.webp`). Attach them when generating the remaining shots so the faces stay the same.
+
 **Style block (start every prompt with this):**
 > 3D animated feature film still, Pixar and Disney style, realistic human proportions, expressive faces with big detailed eyes, soft subsurface skin, detailed hair and fabric, cinematic lighting, shallow depth of field, vertical 9:16, no text, no watermark
 
