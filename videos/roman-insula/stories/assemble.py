@@ -105,6 +105,14 @@ for ln in tl["lines"]:
         text = f"\u201c{c}\u201d" if style == "Quote" and len(parts) == 1 else c
         ev.append(f"Dialogue: 1,{ts(t0)},{ts(t1)},{style},,0,0,0,,{{\\fad(80,60)}}{text}")
         i += m
+# never let one caption run into the next (a line's last chunk can hang on into the next line)
+caps = sorted(ev, key=lambda e: e.split(",")[1])
+for k in range(len(caps) - 1):
+    a_, b_ = caps[k].split(","), caps[k + 1].split(",")
+    if a_[2] > b_[1]:
+        cs = lambda x: (lambda h, m, s_: int(h) * 360000 + int(m) * 6000 + round(float(s_) * 100))(*x.split(":"))
+        caps[k] = ",".join(a_[:2] + [ts(max(cs(a_[1]) + 10, cs(b_[1]) - 2) / 100)] + a_[3:])
+ev = caps
 for s in tl["shots"]:
     if s.get("card"):
         txt = s["card"].replace("\n", "\\N")
