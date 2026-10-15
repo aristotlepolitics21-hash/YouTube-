@@ -11,7 +11,7 @@ It uses the same 3D engine as Tech Shorts (`../tech-shorts/engine3d`). The cast 
 | 3 | The Sandwich That Cracked a Diamond Heist (Antwerp, 2003) | Rendered (`the-sandwich-that-cracked-a-diamond-heist.mp4`) |
 | 4 | 13 Paintings, 81 Minutes, Still Missing (Gardner Museum, 1990) | Rendered (`13-paintings-81-minutes-still-missing.mp4`) |
 | 5 | The 26 Kids Who Dug Their Way Out (Chowchilla, 1976) | Rendered (`the-26-kids-who-dug-their-way-out.mp4`) |
-| 6 | The Grandpa Gang (Hatton Garden, 2015) | Script and narration ready; waiting for AI images (`06-hatton-garden/stills/PROMPTS.md`) |
+| 6 | The Grandpa Gang (Hatton Garden, 2015) | Rendered (`the-grandpa-gang.mp4`): AI-image stills with depth parallax. Shots 6–13 reuse the first images with `src`/`crop`; replace them with new images or clips any time |
 
 ## The formula (it's the one your reference clips use)
 
@@ -57,4 +57,4 @@ The 3D sets use stylised toy-like people. For the realistic Pixar-style humans i
 2. Save each image as `stills/<scene key>.png`, `.jpg` or `.webp`, or number them in script order (`01.png`, `02.png` ...). An image-to-video clip named `<scene key>.mp4` can be used instead.
 3. Add `"stills": "stills"` to the episode's `script.json` and render as usual.
 
-With `DEPTH_DIR` set (run `../tech-shorts/engine/setup_depth.sh DIR` once), each image is split into three depth layers with Depth Anything V2. The layers slide and scale at different rates (a push in, a sideways drift or a rise), so it reads like a camera moving through the scene. Add `"fx": "rain" | "dust" | "steam" | "sparkle"` to a line's params for atmosphere on top. Without it, each image gets a slow push or pull with drift, the punch-in cuts, the CASE FILE tab, narration and captions. Lines without an image keep their 3D set, so an episode can mix the two; a line with neither shows an "image needed" card. A line with `top`/`bottom`/`case` params gets the title card drawn over its image. Stills render in seconds per frame, much faster than the 3D sets.
+With `DEPTH_DIR` set (run `../tech-shorts/engine/setup_depth.sh DIR` once), each image is split into three depth layers with Depth Anything V2. The layers slide and scale at different rates (a push in, a sideways drift or a rise), so it reads like a camera moving through the scene. Add `"fx": "rain" | "dust" | "steam" | "sparkle" | "alarm"` to a line's params for atmosphere on top. `"src": "<other key>"` reuses another line's image (or `refs_<name>` for `stills/refs/<name>`), and `"crop": [x, y, w, h]` (fractions of the image) frames part of it. Without it, each image gets a slow push or pull with drift, the punch-in cuts, the CASE FILE tab, narration and captions. Lines without an image keep their 3D set, so an episode can mix the two; a line with neither shows an "image needed" card. A line with `top`/`bottom`/`case` params gets the title card drawn over its image. Stills render in seconds per frame, much faster than the 3D sets.

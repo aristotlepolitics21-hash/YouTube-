@@ -10,8 +10,8 @@ names = [s["name"] for s in sc["sections"]]
 # those lines show the still with a slow camera move instead of a 3D set. Clips are converted to WebM, which headless Chromium plays.
 stills = {}
 sd = os.path.join(os.path.dirname(os.path.abspath(script_path)), sc["stills"]) if sc.get("stills") else None
-for f in sorted(os.listdir(sd)) if sd and os.path.isdir(sd) else []:
-    k, ext = os.path.splitext(f); ext = ext.lower(); src = os.path.join(sd, f)
+for f in (sorted(os.listdir(sd)) + sorted("refs/" + r for r in os.listdir(os.path.join(sd, "refs")) if os.path.isdir(os.path.join(sd, "refs")))) if sd and os.path.isdir(sd) else []:
+    k, ext = os.path.splitext(f); ext = ext.lower(); src = os.path.join(sd, f); k = k.replace("/", "_")  # refs/gang.webp -> refs_gang
     if k.isdigit() and 0 < int(k) <= len(lines): k = lines[int(k) - 1][0]  # 01.png, 02.png ... follow the script order
     if ext in (".mp4", ".mov", ".m4v"):
         dst = os.path.join(os.path.abspath(ep), f"still_{k}.webm")
@@ -44,6 +44,7 @@ const load = u => new Promise(res => {{ const v = /[.]webm$/.test(u);
   const el = v ? Object.assign(document.createElement('video'), {{ muted: true, preload: 'auto' }}) : new Image();
   el[v ? 'onloadeddata' : 'onload'] = () => res(el); el.onerror = () => {{ console.error('still failed', u); res(el); }}; el.src = u; }});
 await Promise.all(Object.entries(SRC).map(async ([k, u]) => {{ window.STILLS[k] = Array.isArray(u) ? await Promise.all(u.map(load)) : await load(u); }}));
+LINES.forEach(l => {{ const src = l[1] && l[1].src; if (src && !STILLS[l[0]] && STILLS[src]) STILLS[l[0]] = STILLS[src]; }});  // "src": reuse another line's still
 window.__at = async T => {{ let i = TL.findIndex(l => T < l.end); if (i < 0) i = TL.length - 1; TL[i].secT = T - secStart[TL[i].sec]; await DOC3D.frame(TL, T, t0); }};
 window.__ready = true;
 </script>"""

@@ -62,14 +62,28 @@
     [
      "hg_wall",
      {
-      "fx": "dust"
+      "fx": "dust",
+      "src": "hg_lift",
+      "crop": [
+       0.2,
+       0,
+       0.6,
+       0.6
+      ]
      },
      "Their target is a concrete wall half a metre thick. They drill for hours, and finally break through."
     ],
     [
      "hg_stuck",
      {
-      "fx": "dust"
+      "fx": "dust",
+      "src": "refs_gang",
+      "crop": [
+       0,
+       0.12,
+       0.92,
+       0.92
+      ]
      },
      "But behind the wall, a steel cabinet is bolted in place. They can't get past it. The gang goes home empty handed."
     ]
@@ -81,20 +95,37 @@
     [
      "hg_return",
      {
-      "fx": "dust"
+      "fx": "dust",
+      "src": "hg_title"
      },
      "Two nights later, they come back with new equipment. This time, the cabinet crashes to the floor."
     ],
     [
      "hg_boxes",
      {
-      "fx": "sparkle"
+      "fx": "sparkle",
+      "src": "hg_garden",
+      "crop": [
+       0.03,
+       0.5,
+       0.5,
+       0.5
+      ]
      },
      "They break open seventy three boxes, and haul away loot worth up to fourteen million pounds."
     ],
     [
      "hg_alarm",
-     {},
+     {
+      "src": "hg_garden",
+      "crop": [
+       0.25,
+       0.55,
+       0.42,
+       0.42
+      ],
+      "fx": "alarm"
+     },
      "The alarm had actually gone off on the first night. But police decided it didn't need a response."
     ]
    ]
@@ -104,20 +135,33 @@
    "lines": [
     [
      "hg_caught",
-     {},
+     {
+      "src": "refs_detective",
+      "fx": "rain"
+     },
      "About six weeks later, police raids rounded up the gang. They were jailed in 2016. Basil was finally convicted in 2019."
     ],
     [
      "hg_loot",
      {
-      "fx": "sparkle"
+      "fx": "sparkle",
+      "src": "hg_garden",
+      "crop": [
+       0.47,
+       0.5,
+       0.5,
+       0.5
+      ],
+      "top": "MOST OF THE LOOT",
+      "bottom": "NEVER FOUND"
      },
      "But most of the loot has never been found."
     ],
     [
      "hg_outro",
      {
-      "fx": "dust"
+      "fx": "dust",
+      "src": "refs_gang"
      },
      "England's biggest burglary, pulled off by a gang of grandpas. Would you have spotted them? Follow for more true crime, animated."
     ]
