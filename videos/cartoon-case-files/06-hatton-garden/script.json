@@ -13,7 +13,9 @@
    "lines": [
     [
      "hg_hook",
-     {},
+     {
+      "fx": "steam"
+     },
      "Over Easter weekend in 2015, a gang of thieves broke into one of London's most secure vaults. The oldest was seventy six."
     ],
     [
@@ -21,7 +23,8 @@
      {
       "top": "THE GRANDPA",
       "bottom": "GANG",
-      "case": "CASE 06"
+      "case": "CASE 06",
+      "fx": "dust"
      },
      "This is the Hatton Garden heist."
     ]
@@ -32,12 +35,16 @@
    "lines": [
     [
      "hg_garden",
-     {},
+     {
+      "fx": "rain"
+     },
      "Hatton Garden is London's jewellery quarter. Under one of its buildings sits a vault full of safe deposit boxes, packed with gems, gold and cash."
     ],
     [
      "hg_basil",
-     {},
+     {
+      "fx": "rain"
+     },
      "On Thursday night, a mystery man in a ginger wig, known only as Basil, lets the gang into the building."
     ]
    ]
@@ -47,17 +54,23 @@
    "lines": [
     [
      "hg_lift",
-     {},
+     {
+      "fx": "dust"
+     },
      "They climb down the lift shaft to the basement, and set up a huge industrial drill."
     ],
     [
      "hg_wall",
-     {},
+     {
+      "fx": "dust"
+     },
      "Their target is a concrete wall half a metre thick. They drill for hours, and finally break through."
     ],
     [
      "hg_stuck",
-     {},
+     {
+      "fx": "dust"
+     },
      "But behind the wall, a steel cabinet is bolted in place. They can't get past it. The gang goes home empty handed."
     ]
    ]
@@ -67,12 +80,16 @@
    "lines": [
     [
      "hg_return",
-     {},
+     {
+      "fx": "dust"
+     },
      "Two nights later, they come back with new equipment. This time, the cabinet crashes to the floor."
     ],
     [
      "hg_boxes",
-     {},
+     {
+      "fx": "sparkle"
+     },
      "They break open seventy three boxes, and haul away loot worth up to fourteen million pounds."
     ],
     [
@@ -92,12 +109,16 @@
     ],
     [
      "hg_loot",
-     {},
+     {
+      "fx": "sparkle"
+     },
      "But most of the loot has never been found."
     ],
     [
      "hg_outro",
-     {},
+     {
+      "fx": "dust"
+     },
      "England's biggest burglary, pulled off by a gang of grandpas. Would you have spotted them? Follow for more true crime, animated."
     ]
    ]

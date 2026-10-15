@@ -626,14 +626,38 @@ function overlay(L, T, total) {
 let curIdx = -1, cur = null;
 function dispose(sc) { sc.traverse(o => { if (o.geometry) o.geometry.dispose(); const ms = o.material ? (Array.isArray(o.material) ? o.material : [o.material]) : []; ms.forEach(m => { ['map', 'emissiveMap'].forEach(k => m[k] && m[k] !== GLOWTEX && m[k].dispose()); m.dispose(); }); }); if (sc.background && sc.background.dispose) sc.background.dispose(); }
 // a still (AI image or image-to-video clip) for this line: slow push or pull with a drift, the same cuts and overlay as the 3D sets
+// weather and atmosphere drawn over a still: p.fx = rain | dust | steam | sparkle (deterministic per frame)
+function drawFx(fx, s, i) {
+  if (!fx) return; const r = rng(i * 97 + 13);
+  if (fx === 'rain') { c2.strokeStyle = 'rgba(210,225,255,.38)'; c2.lineWidth = 2.5; c2.beginPath();
+    for (let k = 0; k < 170; k++) { const x0 = r() * (W + 300) - 150, sp = 1700 + r() * 900, y = (r() * H + s * sp) % (H + 200) - 100, x = x0 - y * .12; c2.moveTo(x, y); c2.lineTo(x - 9, y + 60); } c2.stroke(); }
+  if (fx === 'dust' || fx === 'sparkle') { for (let k = 0; k < (fx === 'dust' ? 70 : 45); k++) { const x = r() * W + Math.sin(s * .6 + k) * 30, y = (r() * H - s * (20 + r() * 40)) % H, sz = 2 + r() * (fx === 'dust' ? 5 : 9);
+      const tw = fx === 'sparkle' ? Math.max(0, Math.sin(s * 3 + k * 1.7)) : .35 + .25 * Math.sin(s * 2 + k); const yy = y < 0 ? y + H : y;
+      const g = c2.createRadialGradient(x, yy, 0, x, yy, sz * 3); g.addColorStop(0, `rgba(255,240,210,${tw * .8})`); g.addColorStop(1, 'rgba(255,240,210,0)'); c2.fillStyle = g; c2.fillRect(x - sz * 3, yy - sz * 3, sz * 6, sz * 6); } }
+  if (fx === 'steam') { for (let k = 0; k < 14; k++) { const ph = frac(s * .18 + k / 14), x = W * (.35 + r() * .35) + Math.sin(ph * 6 + k) * 60, y = H * (.95 - ph * .6), rr = 80 + ph * 260;
+      const g = c2.createRadialGradient(x, y, 0, x, y, rr); g.addColorStop(0, `rgba(235,235,240,${.16 * (1 - ph)})`); g.addColorStop(1, 'rgba(235,235,240,0)'); c2.fillStyle = g; c2.fillRect(x - rr, y - rr, rr * 2, rr * 2); } }
+}
 async function drawStill(el, L, i, TL, T, total) {
-  const d = L.end - L.start, s = T - L.start, t = clamp(s / d), vid = el.tagName === 'VIDEO';
+  const d = L.end - L.start, s = T - L.start, t = clamp(s / d);
+  if (Array.isArray(el)) { // depth layers: each slides and scales by its distance, like a camera moving through the scene
+    const [l0] = el, iw = l0.naturalWidth, ih = l0.naturalHeight; c2.fillStyle = '#000'; c2.fillRect(0, 0, W, H);
+    const kin = i > 0 ? clamp(s / .32) : 1, kout = i < TL.length - 1 ? clamp((L.end - T) / .16) : 1, punch = 1 + .14 * Math.pow(1 - out(kin), 2) + .07 * Math.pow(1 - kout, 2);
+    const e = ease(t), dir = i % 2 ? -1 : 1, mv = i % 3; // moves: 0 push in, 1 drift sideways, 2 rise up
+    el.forEach((im, li) => { const depth = [.25, .6, 1.15][li], base = Math.max(W / iw, H / ih) * 1.12 * punch;
+      const sc = base * (1 + (mv === 0 ? .1 * e : .03 * e) * depth), px = (mv === 1 ? dir * (e - .5) * W * .05 : dir * (e - .5) * W * .012) * depth, py = (mv === 2 ? (.5 - e) * H * .03 : 0) * depth + Math.sin(s * .9 + li) * 3 * depth;
+      c2.drawImage(im, (W - iw * sc) / 2 + px, (H - ih * sc) / 2 + py, iw * sc, ih * sc); });
+    drawFx(L.p && L.p.fx, s, i);
+    const fl = .6 * Math.pow(1 - kin, 3); if (fl > .01) { c2.fillStyle = `rgba(255,255,255,${fl})`; c2.fillRect(0, 0, W, H); }
+    el = null;
+  }
+  const vid = el && el.tagName === 'VIDEO';
   if (vid && el.duration) { const tt = Math.min(s * (el.duration > d ? 1 : el.duration / d), el.duration - .04); if (Math.abs(el.currentTime - tt) > .001) await new Promise(r => { el.onseeked = r; el.currentTime = tt; }); }
-  const iw = el.videoWidth || el.naturalWidth, ih = el.videoHeight || el.naturalHeight; c2.fillStyle = '#000'; c2.fillRect(0, 0, W, H);
+  const iw = el ? el.videoWidth || el.naturalWidth : 0, ih = el ? el.videoHeight || el.naturalHeight : 0; if (el) { c2.fillStyle = '#000'; c2.fillRect(0, 0, W, H); }
   if (iw) { const dir = i % 2 ? -1 : 1, kb = vid ? 1.02 : lerp(dir > 0 ? 1.0 : 1.1, dir > 0 ? 1.1 : 1.0, ease(t));
     const kin = i > 0 ? clamp(s / .32) : 1, kout = i < TL.length - 1 ? clamp((L.end - T) / .16) : 1, z = kb * (1 + .14 * Math.pow(1 - out(kin), 2) + .07 * Math.pow(1 - kout, 2));
     const sc = Math.max(W / iw, H / ih) * z, px = Math.sin(i * 2.3) * W * .025 * (t - .5), py = Math.cos(i * 1.7) * H * .015 * (t - .5);
     c2.imageSmoothingQuality = 'high'; c2.drawImage(el, (W - iw * sc) / 2 + px, (H - ih * sc) / 2 + py, iw * sc, ih * sc);
+    drawFx(L.p && L.p.fx, s, i);
     const fl = .6 * Math.pow(1 - kin, 3); if (fl > .01) { c2.fillStyle = `rgba(255,255,255,${fl})`; c2.fillRect(0, 0, W, H); } }
   if (L.p && L.p.top) { // title card drawn over the still
     const card = (txt, y, bg, fg, size, at) => { const k = Math.min(1, pop(s - at)); if (k <= 0) return; c2.save(); c2.translate(W / 2, y); c2.scale(k, k); c2.font = `900 ${size}px ${SANS}`;

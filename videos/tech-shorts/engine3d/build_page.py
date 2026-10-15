@@ -17,7 +17,13 @@ for f in sorted(os.listdir(sd)) if sd and os.path.isdir(sd) else []:
         dst = os.path.join(os.path.abspath(ep), f"still_{k}.webm")
         if not os.path.exists(dst): subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-an", "-c:v", "libvpx-vp9", "-b:v", "6M", "-deadline", "realtime", "-cpu-used", "8", dst], check=True)
         stills[k] = "/abs" + dst
-    elif ext in (".png", ".jpg", ".jpeg", ".webp", ".webm"): stills.setdefault(k, "/abs" + src)
+    elif ext in (".png", ".jpg", ".jpeg", ".webp"):
+        # with DEPTH_DIR set (engine/setup_depth.sh), an image is split into three depth layers for parallax
+        dd, pre = os.environ.get("DEPTH_DIR"), os.path.join(os.path.abspath(ep), f"still_{k}")
+        if dd and not os.path.exists(pre + ".l2.png"):
+            subprocess.run([f"{dd}/venv/bin/python", "-I", os.path.join(os.path.dirname(os.path.abspath(__file__)), "../engine/depth_layers.py"), dd, src, pre], check=True)
+        stills.setdefault(k, ["/abs" + pre + f".l{i}.png" for i in range(3)] if os.path.exists(pre + ".l2.png") else "/abs" + src)
+    elif ext == ".webm": stills.setdefault(k, "/abs" + src)
 steps = {si: si for si in range(1, len(names) - 1)}  # sections between the hook and the recap are steps 1-5
 if sc.get("format") == "story": steps = {}  # story episodes show a case-file chapter chip instead of numbered steps
 # an episode can bring its own sets: "sets": "wifi.js" loads engine3d/sets/wifi.js
@@ -34,9 +40,10 @@ const TL = LINES.map((l, i) => {{ if (!(l[3] in secStart)) secStart[l[3]] = t0;
   const o = {{ scene: l[0], p: l[1], text: l[2], sec: l[3], start: t0, end: t0 + DURS[i], cap: CAPS[i].slice(0, 2), step: STEPS[l[3]], secName: NAMES[l[3]] }}; t0 += DURS[i]; return o; }});
 window.TL = TL; window.__total = t0; window.STYLE = {json.dumps(sc.get('style', ''))}; window.FORMAT = {json.dumps(sc.get('format', ''))};
 const SRC = {json.dumps(stills)}; window.STILLS = {{}};
-await Promise.all(Object.entries(SRC).map(([k, u]) => new Promise(res => {{ const v = /[.]webm$/.test(u);
+const load = u => new Promise(res => {{ const v = /[.]webm$/.test(u);
   const el = v ? Object.assign(document.createElement('video'), {{ muted: true, preload: 'auto' }}) : new Image();
-  el[v ? 'onloadeddata' : 'onload'] = res; el.onerror = () => {{ console.error('still failed', u); res(); }}; el.src = u; window.STILLS[k] = el; }})));
+  el[v ? 'onloadeddata' : 'onload'] = () => res(el); el.onerror = () => {{ console.error('still failed', u); res(el); }}; el.src = u; }});
+await Promise.all(Object.entries(SRC).map(async ([k, u]) => {{ window.STILLS[k] = Array.isArray(u) ? await Promise.all(u.map(load)) : await load(u); }}));
 window.__at = async T => {{ let i = TL.findIndex(l => T < l.end); if (i < 0) i = TL.length - 1; TL[i].secT = T - secStart[TL[i].sec]; await DOC3D.frame(TL, T, t0); }};
 window.__ready = true;
 </script>"""
