@@ -55,7 +55,10 @@ jobs = []
 for i, p in enumerate(pieces):
     c = cast[lines[p["line"]]["speaker"]]
     p["raw"] = f"{B}/vo/{i:03d}.raw.wav"
-    jobs.append({"text": p["text"], "voice": c["voice"], "speed": c["speed"], "out": p["raw"], "clause_pause": 0.2})
+    spoken = p["text"]
+    for word, sound in story.get("pronounce", {}).items():  # spelled for the voice; captions keep the real word
+        spoken = re.sub(rf"\b{word}\b", sound, spoken)
+    jobs.append({"text": spoken, "voice": c["voice"], "speed": c["speed"], "out": p["raw"], "clause_pause": 0.2})
 json.dump(jobs, open(f"{B}/vo/jobs.json", "w"), indent=1)
 kd = os.environ["KOKORO_DIR"]
 subprocess.run([f"{kd}/venv/bin/python", "-I", os.path.join(HERE, "tts.py"), kd, f"{B}/vo/jobs.json"], check=True)

@@ -7,8 +7,10 @@ the stair.
 | # | Title | Status |
 |---|---|---|
 | 1 | The Loaf on the Stairs | Fully produced: `01-the-loaf-on-the-stairs/` |
-| 2 | The Water Carrier | Script below, needs its shots staged |
-| 3 | The Lamp in the Window | Script below, needs its shots staged |
+| 2 | The Water Carrier | Produced: `02-the-water-carrier/` |
+| 3 | The Lamp in the Window | Produced: `03-the-lamp-in-the-window/` |
+| 4 | The Golden Crack (Kyoto, 1820) | Produced: `04-the-golden-crack/`, set `edo` |
+| 5 | The Painter's Hands (Thebes, 1200 BC) | Produced: `05-the-painters-hands/`, set `egypt` |
 
 ## How an episode is made
 
@@ -20,6 +22,16 @@ python story_render.py -- 01-the-loaf-on-the-stairs --stills          # 3 check 
 python story_render.py -- 01-the-loaf-on-the-stairs --res 720         # all frames, resumable
 python3 assemble.py 01-the-loaf-on-the-stairs out.mp4                 # grade, captions, mix
 ```
+
+## New places
+
+The house is the same cutaway in every story, re-dressed per place by `sets.py`: a theme swaps the
+materials (walls, timber, floors, street) and furnishes both floors. `shots.py` picks it with
+`SET = "edo"` (Kyoto potter's townhouse) or `SET = "egypt"` (tomb-builders' village); no `SET` means
+the Roman insula. Costumes for other places live in `acting.py`: `hair()` (topknot, bun, Egyptian wigs),
+`long_skirt()`, `sash()`, `wide_sleeves()`, `broad_collar()`, and the kneeling pose `kneel()`.
+Painted textures are drawn by `make_assets.py` into `assets/`. A story can add `"pronounce"` to respell
+a name for the voice only, and `"subtitle"` / `"end_card"` for its title and closing text.
 
 To stage a new story, add one function per shot id in `story_render.py` (cast, poses, camera)
 and add an entry to `PLAN` in `make_music.py`. The voice decides how long each shot runs.

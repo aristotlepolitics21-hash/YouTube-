@@ -1,0 +1,41 @@
+{
+  "series": "Stories Through Time",
+  "episode": 5,
+  "title": "The Painter's Hands",
+  "subtitle": "A story from ancient Egypt",
+  "end_card": "Stories Through Time · Thebes, 1200 BC",
+  "cast": {
+    "narrator": { "voice": "af_heart:0.8,af_nicole:0.2", "speed": 0.84 },
+    "paneb":    { "voice": "am_onyx:0.5,bm_george:0.5", "speed": 0.78, "pitch": 0.92 }
+  },
+  "shots": [
+    { "id": "e1_lamp", "mood": "lonely", "lines": [
+      "In the village of the tomb builders, Paneb had painted the walls of kings for forty years.",
+      "But now, his eyes were failing."
+    ]},
+    { "id": "e2_wall", "mood": "dark", "lines": [
+      "He told no one. Not even his daughter, Meret.",
+      "But she saw how his lines had begun to shake."
+    ]},
+    { "id": "e3_night_practice", "mood": "hope", "lines": [
+      "So every night, while he slept, she came down to the workshop...",
+      "and copied his figures, line by line, until her hand moved exactly like his."
+    ]},
+    { "id": "e4_dawn", "mood": "warm", "lines": [
+      "And every morning, before he woke, she climbed to the tomb, and finished his wall for him."
+    ]},
+    { "id": "e5_praise", "mood": "warm", "lines": [
+      "One day, the master of the works came to Paneb's door.",
+      "He said his painting had never been finer. And Paneb understood."
+    ]},
+    { "id": "e6_hands", "mood": "resolve", "lines": [
+      "That evening, he found her at the wall, and took her hands in his.",
+      { "say": "I wondered whose hands these were.", "as": "paneb", "pause": 1.0 },
+      { "say": "They were always going to be yours.", "as": "paneb", "pause": 1.4 }
+    ]},
+    { "id": "e7_pullback", "mood": "resolve", "lines": [
+      "Some things we pass on with words.",
+      "The best ones... we pass on with our hands."
+    ]}
+  ]
+}

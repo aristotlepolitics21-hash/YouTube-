@@ -29,7 +29,8 @@ def load_shots(story_dir):
 
 def render_shot(shots, shot, a, out_root, stills):
     T = shot["dur"]
-    M = acting.base_set(getattr(shots, "LIGHT", {}).get(shot["id"], "day"), a.res, a.samples)
+    M = acting.base_set(getattr(shots, "LIGHT", {}).get(shot["id"], "day"), a.res, a.samples,
+                        getattr(shots, "SET", "rome"))
     fn = getattr(shots, shot["id"])
     if fn.__code__.co_argcount >= 3:  # L: each line's start, in seconds from the start of the shot
         fn(M, T, [ln["start"] - shot["start"] for ln in shot["lines"]])

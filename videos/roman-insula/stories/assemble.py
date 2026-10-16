@@ -120,9 +120,9 @@ for s in tl["shots"]:
                   f"{{\\fad(900,500)}}{txt}")
 title, series = story["title"], story["series"]
 ev.append(f"Dialogue: 2,{ts(0.6)},{ts(5.2)},Title,,0,0,0,,{{\\fad(900,700)}}{title}")
-ev.append(f"Dialogue: 2,{ts(1.2)},{ts(5.2)},Sub,,0,0,0,,{{\\fad(900,700)}}A story from ancient Rome")
+ev.append(f"Dialogue: 2,{ts(1.2)},{ts(5.2)},Sub,,0,0,0,,{{\\fad(900,700)}}{story.get('subtitle', 'A story from ancient Rome')}")
 end = tl["total"]
-ev.append(f"Dialogue: 2,{ts(end - 2.6)},{ts(end)},Sub,,0,0,0,,{{\\fad(600,0)}}{series} · Episode {story['episode']}")
+ev.append(f"Dialogue: 2,{ts(end - 2.6)},{ts(end)},Sub,,0,0,0,,{{\\fad(600,0)}}{story.get('end_card', f"{series} · Episode {story['episode']}")}")
 ass = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: 1080

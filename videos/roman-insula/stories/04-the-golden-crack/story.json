@@ -1,0 +1,42 @@
+{
+  "series": "Stories Through Time",
+  "episode": 4,
+  "title": "The Golden Crack",
+  "subtitle": "A story from old Kyoto",
+  "end_card": "Stories Through Time · Kyoto, 1820",
+  "pronounce": { "Hana": "Hahnah" },
+  "cast": {
+    "narrator": { "voice": "af_heart:0.8,af_nicole:0.2", "speed": 0.84 },
+    "takeo":    { "voice": "bm_george:0.6,am_onyx:0.4", "speed": 0.76, "pitch": 0.9 }
+  },
+  "shots": [
+    { "id": "k1_workshop", "mood": "warm", "lines": [
+      "In a small pottery shop in old Kyoto, Takeo made a hundred bowls a week.",
+      "But one bowl in the house was never for sale."
+    ]},
+    { "id": "k2_alcove", "mood": "lonely", "lines": [
+      "It had belonged to his wife.",
+      "Every evening he drank his tea from it, slowly... the way she used to."
+    ]},
+    { "id": "k3_slip", "mood": "dark", "lines": [
+      "One afternoon, his granddaughter Hana reached up to hold it.",
+      "And it slipped."
+    ]},
+    { "id": "k4_tears", "mood": "dark", "lines": [
+      "She hid the pieces under her sleeve, and cried until she could not breathe."
+    ]},
+    { "id": "k5_night_work", "mood": "hope", "lines": [
+      "That night, Takeo found them. He did not say a word.",
+      "He took the pieces down to his bench... and worked by lamplight until morning."
+    ]},
+    { "id": "k6_morning", "mood": "warm", "lines": [
+      "At dawn, the bowl was back in its place. Whole again, with seams of shining gold.",
+      { "say": "When something we love breaks, we do not throw it away.", "as": "takeo", "pause": 0.9 },
+      { "say": "We fill the cracks with gold.", "as": "takeo", "pause": 1.3 }
+    ]},
+    { "id": "k7_pullback", "mood": "resolve", "lines": [
+      "The Japanese call it kintsugi.",
+      "Because the places where we broke... can become the most beautiful part of us."
+    ]}
+  ]
+}

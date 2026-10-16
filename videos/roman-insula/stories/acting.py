@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.join(HERE, "..", "blender"))
 import bpy  # noqa: E402
 import build_insula as B  # noqa: E402
 from build_insula import F1, Figure, box, ellipsoid, loaf  # noqa: E402
+import sets  # noqa: E402
 
 FPS = 15
 
@@ -21,13 +22,20 @@ def fr(sec):
 
 
 # ------------------------------------------------------------------------ set and light
-def base_set(light, res, samples):
+def base_set(light, res, samples, theme="rome"):
+    """Build the house dressed for `theme` (rome, or one of sets.THEMES) and light it for `light`."""
     B.reset()
     M = B.build_materials()
+    T = sets.THEMES.get(theme)
+    if T:
+        T["materials"](M)
     B.build_house(M)
     B.build_stairs(M)
-    B.build_bakery(M)
-    B.build_room(M)
+    if T:
+        T["props"](M, light)
+    else:
+        B.build_bakery(M)
+        B.build_room(M)
     B.build_world()
     B.setup_render(res, samples)
     sc = bpy.context.scene
@@ -35,7 +43,8 @@ def base_set(light, res, samples):
     sc.cycles.max_bounces = 4
     sc.render.use_persistent_data = True  # keep the BVH between frames
     sc.cycles.adaptive_threshold = 0.05
-    build_oven(M, light)
+    if not T:
+        build_oven(M, light)
     add_costumes(M)
     O = bpy.data.objects
     sun, world = O["sun"].data, sc.world.node_tree.nodes["Background"]
@@ -65,6 +74,8 @@ def base_set(light, res, samples):
         fill.energy = 60
         lamp.energy = 35
         sc.view_settings.exposure = 0.6
+    if T and T["light"]:
+        T["light"](light)
     return M
 
 
@@ -195,6 +206,13 @@ def add_costumes(M):
     M["bronze"].node_tree.nodes["Principled BSDF"].inputs["Metallic"].default_value = 0.9
     M["coin"] = B.flat("silver coin", (0.75, 0.74, 0.7), 0.3)
     M["coin"].node_tree.nodes["Principled BSDF"].inputs["Metallic"].default_value = 1.0
+    M["hair"] = B.flat("hair", (0.035, 0.03, 0.028), 0.45)
+    M["kimono_slate"] = B.cloth_mat("kimono slate", (0.12, 0.14, 0.17))
+    M["kimono_rose"] = B.cloth_mat("kimono rose", (0.55, 0.16, 0.2))
+    M["obi_gold"] = B.cloth_mat("obi gold", (0.55, 0.4, 0.13))
+    M["obi_dark"] = B.cloth_mat("obi dark", (0.08, 0.07, 0.06))
+    M.setdefault("linen", B.cloth_mat("linen", (0.86, 0.84, 0.78)))
+    M["faience"] = B.flat("faience", (0.08, 0.42, 0.45), 0.3)
 
 
 def soldier_kit(fig, M):
@@ -280,3 +298,53 @@ def face(fig, x, y):
     """Turn a figure's root to face the point (x, y)."""
     p = fig.root.location
     fig.root.rotation_euler.z = math.atan2(x - p.x, -(y - p.y))
+
+
+# -------------------------------------------------------------------- dress for other places
+def hair(fig, M, style):
+    """topknot (Edo man), bun (Edo girl), wig_short / wig_long (Egypt)."""
+    n, h = fig.neck, M["hair"]
+    if style in ("topknot", "bun"):
+        ellipsoid(f"{fig.name} hair", (0.097, 0.113, 0.095), h, (0, 0.012, 0.2), n)
+        if style == "topknot":
+            ellipsoid(f"{fig.name} knot", (0.018, 0.065, 0.02), h, (0, 0.0, 0.305), n)
+        else:
+            ellipsoid(f"{fig.name} bun", (0.055, 0.05, 0.055), h, (0, 0.105, 0.255), n)
+    else:
+        ellipsoid(f"{fig.name} wig", (0.112, 0.124, 0.11), h, (0, 0.015, 0.195), n)
+        ellipsoid(f"{fig.name} wig sides", (0.115, 0.1, 0.15 if style == "wig_short" else 0.24), h,
+                  (0, 0.045, 0.12 if style == "wig_short" else 0.03), n)
+
+
+def long_skirt(fig, M, mat, flare=0.24):
+    """Ankle-length robe below the tunic, hung from the hips. Returns it (scale z down when kneeling)."""
+    fig.skirt = B.lathe(f"{fig.name} skirt", [(0, 0.12), (0.17, 0.12), (0.19, -0.3), (flare, -0.86), (0, -0.86)],
+                        M[mat], (0, 0, 0), 32, fig.pelvis)
+    fig.skirt.scale.y = 0.8
+    return fig.skirt
+
+
+def sash(fig, M, mat, z0=0.02, z1=0.2):
+    B.lathe(f"{fig.name} sash", [(0, z0), (0.19, z0), (0.19, z1), (0, z1)], M[mat], (0, 0, 0), 32, fig.spine).scale.y = 0.74
+
+
+def wide_sleeves(fig, M, mat):
+    for side in ("L", "R"):
+        B.lathe(f"{fig.name} wide sleeve {side}", [(0, 0.02), (0.1, 0.02), (0.12, -0.34), (0, -0.34)], M[mat],
+                (0, 0, 0), 16, fig.j[f"shoulder{side}"])
+
+
+def broad_collar(fig, M):
+    c = B.lathe(f"{fig.name} collar", [(0.06, 0.47), (0.2, 0.43), (0.2, 0.45), (0.06, 0.5)], M["faience"], (0, 0, 0), 32,
+                fig.spine)
+    c.scale.y = 0.75
+
+
+def kneel(fig, frame=None, floor=F1, bow=8, scale=1.0):
+    """Seiza: kneeling, sitting back on the heels, hands on the thighs."""
+    fig.root.location.z = floor - (0.95 - 0.27) * scale
+    if getattr(fig, "skirt", None):
+        fig.skirt.scale.z = 0.32
+    fig.pose(frame, spine=(-4, 0, 0), neck=(-bow, 0, 0), hipL=(-82, 0, -4), kneeL=(168, 0, 0), ankleL=(-70, 0, 0),
+             hipR=(-82, 0, 4), kneeR=(168, 0, 0), ankleR=(-70, 0, 0),
+             shoulderL=(-28, 0, 6), elbowL=(-55, 0, 0), shoulderR=(-28, 0, -6), elbowR=(-55, 0, 0))
