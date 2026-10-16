@@ -1,0 +1,156 @@
+{
+ "series": "Tech Shorts",
+ "episode": 11,
+ "title": "How Tap to Pay Actually Works",
+ "sets": "payment.js",
+ "voice": "kokoro:af_heart",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "tp_hook",
+     {},
+     "Your bank card has no battery. So how does it talk to the card reader? The reader powers it, through thin air."
+    ],
+    [
+     "tp_title",
+     {
+      "top": "HOW TAP TO PAY",
+      "bottom": "ACTUALLY WORKS"
+     },
+     "Here's what happens in that one-second tap, in five steps."
+    ]
+   ]
+  },
+  {
+   "name": "Power from the reader",
+   "lines": [
+    [
+     "tp_field",
+     {},
+     "Step one. The reader has a coil of wire that makes a magnetic field, flipping thirteen and a half million times a second."
+    ],
+    [
+     "tp_coil",
+     {},
+     "Inside your card, a thin loop of wire runs around the edge. Bring it close, and that field makes a current flow in it."
+    ],
+    [
+     "tp_wake",
+     {},
+     "That tiny current is enough to wake up the chip. It's why you have to hold the card so close, just a few centimetres."
+    ]
+   ]
+  },
+  {
+   "name": "Talking back",
+   "lines": [
+    [
+     "tp_talk",
+     {},
+     "Step two. The chip replies by flickering how much power it draws. The reader feels those flickers, and reads them as data."
+    ],
+    [
+     "tp_nfc",
+     {},
+     "This short-range chat is called NFC, near field communication. It only works over a few centimetres, on purpose."
+    ]
+   ]
+  },
+  {
+   "name": "A one-time code",
+   "lines": [
+    [
+     "tp_code",
+     {},
+     "Step three. The chip doesn't just send your card number. It creates a one-time code, just for this payment."
+    ],
+    [
+     "tp_reuse",
+     {},
+     "Copy that code and try it again, and it's useless. That's what makes contactless cards so hard to clone."
+    ]
+   ]
+  },
+  {
+   "name": "Phones and watches",
+   "lines": [
+    [
+     "tp_token",
+     {},
+     "Step four. Your phone doesn't even store your real card number. It keeps a stand-in number, called a token."
+    ],
+    [
+     "tp_unlock",
+     {},
+     "And it only pays after your face, fingerprint or passcode says it's really you."
+    ],
+    [
+     "tp_watch",
+     {},
+     "Watches and payment rings work the same way, with a tiny antenna and chip tucked inside."
+    ]
+   ]
+  },
+  {
+   "name": "The approval",
+   "lines": [
+    [
+     "tp_bank",
+     {},
+     "Step five. The reader sends the details through the payment network to your bank, which checks your account and says yes or no."
+    ],
+    [
+     "tp_pin",
+     {},
+     "For bigger amounts, many cards ask for your PIN as well, as an extra check."
+    ],
+    [
+     "tp_beep",
+     {},
+     "That whole round trip usually takes a second or two. Then, beep."
+    ]
+   ]
+  },
+  {
+   "name": "Recap",
+   "lines": [
+    [
+     "w_recap",
+     {
+      "items": [
+       [
+        "Reader powers the card",
+        ""
+       ],
+       [
+        "The chip flickers back",
+        ""
+       ],
+       [
+        "A one-time code",
+        ""
+       ],
+       [
+        "Phones use a token",
+        ""
+       ],
+       [
+        "Your bank says yes",
+        ""
+       ]
+      ]
+     },
+     "The reader powers the card. The chip flickers back a one-time code. Phones use a token, and your bank says yes."
+    ],
+    [
+     "outro",
+     {},
+     "Next time you tap, remember, a magnet just powered a tiny computer. Follow for more of the tech you use every day."
+    ]
+   ]
+  }
+ ]
+}

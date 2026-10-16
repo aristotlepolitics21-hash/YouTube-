@@ -15,6 +15,7 @@ The look is a neon diagram on a dark grid, with five numbered steps and burned-i
 | 8 | How QR Codes Actually Work | Rendered (3D, Kokoro voice, lively style) |
 | 9 | How Your Phone Camera Takes a Photo | Rendered (3D, Kokoro voice, lively style) |
 | 10 | How Bluetooth Actually Works | Rendered (3D, Kokoro voice, lively style) |
+| 11 | How Tap to Pay Actually Works | Rendered (3D, Kokoro voice, lively style) |
 
 Each episode folder holds `script.json` (one scene and one narration line per entry; an optional `"sets"` names an `engine3d/sets/` file with that episode's 3D sets), `captions.srt`, `chapters.txt`, `description.txt`, `tags.txt` and `thumbnail.jpg`.
 
