@@ -1,0 +1,13 @@
+How Face Unlock Actually Works
+
+When you glance at your phone, it can cover your face in thousands of invisible dots. Here's how it knows it's you, animated.
+
+1. Invisible light: on phones with 3D face unlock, a flood light washes your face in infrared (so it works in the dark), then a projector beams 30,000+ infrared dots onto it
+2. Reading the shape: an infrared camera photographs the dots; on a flat wall they'd sit in rows, but on your face they bend, and the phone builds a 3D map
+3. Faces into numbers: the map becomes a mathematical description that's compared with the one saved at setup, all in well under a second. It isn't a photo, and it's kept in a secure chip on the phone
+4. Real and paying attention: it can check your eyes are open and looking, and a flat photo won't fool real 3D sensing
+5. Changing faces: it keeps updating for glasses, beards and hats. The chance a random stranger unlocks it is about one in a million (identical twins may manage it), and camera-only face unlock is easier to fool, so it's often not allowed for payments
+
+Follow for more of the tech you use every day.
+
+#shorts #faceid #faceunlock #techexplained #howitworks

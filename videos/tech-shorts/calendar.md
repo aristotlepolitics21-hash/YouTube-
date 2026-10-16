@@ -10,13 +10,13 @@ One Short a day, Sat 17 Oct to Sun 15 Nov 2026. Post at the same time every day;
 | 4 | Tue 20 Oct | 04 | How GPS Actually Works (in 5 Steps) | Your phone finds you using clocks in space, and Einstein. | Done |
 | 5 | Wed 21 Oct | 02 | How Wi-Fi Actually Works (in 5 Steps) | Invisible waves carry everything you load. | Done |
 | 6 | Thu 22 Oct | 01 | What Happens in the 1 Second After You Hit Enter | Your request crosses the world and back in under a second. | Done |
-| 7 | Fri 23 Oct | 07 | How a Microwave Actually Heats Food | It doesn't heat the plate. It shakes the water. | Rendering |
+| 7 | Fri 23 Oct | 07 | How a Microwave Actually Heats Food | It doesn't heat the plate. It shakes the water. | Done |
 | 8 | Sat 24 Oct | 08 | How QR Codes Actually Work | A square of dots that survives being torn. | Rendering |
 | 9 | Sun 25 Oct | 09 | How Your Phone Camera Takes a Photo | Millions of tiny light buckets, and a lot of maths. | Rendering |
 | 10 | Mon 26 Oct | 10 | How Bluetooth Actually Works | Your earbuds hop channels hundreds of times a second. | Rendering |
 | 11 | Tue 27 Oct | 11 | How Tap to Pay Actually Works | Your card has no battery. The reader powers it. | Rendering |
 | 12 | Wed 28 Oct | 12 | How Websites Store Your Password | They shouldn't know your password at all. | Rendering |
-| 13 | Thu 29 Oct | 13 | How Face Unlock Actually Works | Your phone maps your face in invisible dots. | To make |
+| 13 | Thu 29 Oct | 13 | How Face Unlock Actually Works | Your phone maps your face in invisible dots. | Rendering |
 | 14 | Fri 30 Oct | 14 | How Your Phone Stores Photos (Flash Memory) | Trapped electrons that stay put with the power off. | To make |
 | 15 | Sat 31 Oct | 15 | How Video Streaming Actually Works | Why a video starts instantly but sometimes buffers. | To make |
 | 16 | Sun 01 Nov | 16 | How Wireless Charging Actually Works | Power jumps through thin air with magnets. | To make |

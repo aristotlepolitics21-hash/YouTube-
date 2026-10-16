@@ -1,0 +1,63 @@
+1
+00:00:00,400 --> 00:00:04,436
+Your microwave doesn't heat your food with heat. It shakes the water inside it.
+
+2
+00:00:04,786 --> 00:00:07,569
+Here's what's happening behind that door, in five steps.
+
+3
+00:00:08,269 --> 00:00:15,690
+Step one. Inside is a device called a magnetron. It turns electricity into radio waves, called microwaves.
+
+4
+00:00:16,040 --> 00:00:20,641
+A metal channel guides them into the box, where they bounce around off the metal walls.
+
+5
+00:00:21,341 --> 00:00:27,202
+Step two. Water molecules are lopsided. Slightly positive at one end, and negative at the other.
+
+6
+00:00:27,552 --> 00:00:34,846
+The microwaves' electric field flips direction billions of times a second, and the water molecules keep twisting to follow it.
+
+7
+00:00:35,196 --> 00:00:40,086
+All that twisting and jostling is heat. The food cooks itself, from the water inside.
+
+8
+00:00:40,786 --> 00:00:46,086
+Step three. The bouncing waves stack up into hot spots and cold spots inside the box.
+
+9
+00:00:46,436 --> 00:00:51,470
+That's why the plate turns. It carries your food through the hot spots, so it cooks more evenly.
+
+10
+00:00:52,170 --> 00:00:59,477
+Step four. Microwaves only reach a few centimetres into food. The middle heats up more slowly, as the warmth spreads inward.
+
+11
+00:00:59,827 --> 00:01:03,582
+That's why the instructions say stir halfway, or let it stand for a minute.
+
+12
+00:01:03,932 --> 00:01:11,992
+Ice is tricky too. Its molecules are locked in place, so defrost mode pulses the power on and off, giving the heat time to spread.
+
+13
+00:01:12,692 --> 00:01:19,900
+Step five. The door has a metal mesh with tiny holes. Light can get out, but the microwaves are too big to fit through.
+
+14
+00:01:20,250 --> 00:01:25,794
+And metal with sharp edges, like a fork, can gather so much charge that it sparks. So keep it out.
+
+15
+00:01:26,494 --> 00:01:35,466
+A magnetron makes the waves. The waves twist the water. The twisting makes heat. The plate spins to even it out, and the door keeps it all inside.
+
+16
+00:01:35,816 --> 00:01:42,473
+Next time you wait for that beep, picture all those spinning water molecules. Follow for more of the tech you use every day.
