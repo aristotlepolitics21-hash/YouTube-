@@ -1,0 +1,350 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 22,
+ "title": "The Golden Toilet Heist",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "SHEEN": {
+   "preset": "thief",
+   "suit": 2763316,
+   "hat": "cap",
+   "hatCol": 1381660
+  },
+  "JONES": {
+   "preset": "worker",
+   "suit": 5921378,
+   "shirt": 5921378,
+   "hat": null,
+   "hair": 3811870
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "mansion",
+      "props": [
+       {
+        "type": "gold",
+        "x": 0,
+        "y": 0,
+        "z": 0.6,
+        "n": 3,
+        "s": 1.4
+       },
+       {
+        "type": "sign",
+        "text": "🚽",
+        "style": "gold",
+        "x": 0,
+        "y": 1.9,
+        "z": 0.6,
+        "w": 1.0,
+        "h": 1.0,
+        "size": 120
+       }
+      ],
+      "signs": [
+       {
+        "text": "18-CARAT GOLD",
+        "style": "gold"
+       }
+      ],
+      "cam": "medium",
+      "fx": "sparkle"
+     },
+     "In 2019, a working toilet made of solid gold was stolen from a palace in England, in about five minutes. It's never been seen again."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "THE GOLDEN",
+      "bottom": "TOILET HEIST",
+      "case": "CASE 22",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "SHEEN"
+       }
+      ]
+     },
+     "This is the theft of America."
+    ]
+   ]
+  },
+  {
+   "name": "The artwork",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "mansion",
+      "cast": [
+       {
+        "who": "woman",
+        "act": "cheer",
+        "at": 0.3,
+        "x": -0.9
+       },
+       {
+        "who": "dealer2",
+        "act": "shock",
+        "at": 0.35,
+        "x": 0.9
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "🚽",
+        "style": "gold",
+        "x": 0,
+        "y": 1.4,
+        "z": 0.4,
+        "w": 1.0,
+        "h": 1.0,
+        "size": 120
+       }
+      ],
+      "signs": [
+       {
+        "text": "\"AMERICA\"",
+        "style": "gold"
+       },
+       {
+        "text": "by Maurizio Cattelan",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "The artwork was called America, by the Italian artist Maurizio Cattelan, a fully working toilet made of eighteen carat gold."
+    ],
+    [
+     "s04",
+     {
+      "set": "abbey",
+      "mood": "dusk",
+      "cast": [
+       {
+        "who": "woman",
+        "act": "look",
+        "x": -0.9
+       },
+       {
+        "who": "dealer1",
+        "act": "look",
+        "x": 0.9
+       }
+      ],
+      "signs": [
+       {
+        "text": "BLENHEIM PALACE",
+        "style": "navy"
+       },
+       {
+        "text": "visitors could use it",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "In 2019 it was put on show at Blenheim Palace, the birthplace of Winston Churchill. Visitors could book a few minutes to actually use it."
+    ]
+   ]
+  },
+  {
+   "name": "The raid",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "mansion",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "SHEEN",
+        "act": "run",
+        "x": -2.5,
+        "to": 0.4,
+        "at": 0,
+        "until": 0.4
+       },
+       {
+        "who": "thief",
+        "act": "run",
+        "x": -3.3,
+        "to": -0.6,
+        "at": 0.05,
+        "until": 0.45
+       }
+      ],
+      "signs": [
+       {
+        "text": "SEPT 14, 2019",
+        "style": "navy",
+        "mono": true
+       },
+       {
+        "text": "~5 MINUTES",
+        "style": "red",
+        "at": 0.5
+       }
+      ],
+      "cam": "wide"
+     },
+     "Two days after it went on show, in the early morning, a gang smashed their way in, ripped the toilet out, and fled in stolen cars."
+    ],
+    [
+     "s06",
+     {
+      "set": "mansion",
+      "mood": "room",
+      "cast": [
+       {
+        "who": "guard",
+        "act": "shock",
+        "at": 0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "💧",
+        "style": "blue",
+        "x": 0.9,
+        "y": 0.8,
+        "z": 0.8,
+        "w": 0.8,
+        "h": 0.6,
+        "size": 70
+       }
+      ],
+      "signs": [
+       {
+        "text": "FLOODED",
+        "style": "blue"
+       },
+       {
+        "text": "no toilet",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "medium"
+     },
+     "Because it was plumbed in, ripping it out flooded the palace."
+    ]
+   ]
+  },
+  {
+   "name": "The verdict",
+   "lines": [
+    [
+     "s07",
+     {
+      "set": "courtroom",
+      "cast": [
+       {
+        "who": "SHEEN",
+        "act": "sad",
+        "mood": "sad",
+        "x": -0.7,
+        "z": 1
+       },
+       {
+        "who": "JONES",
+        "act": "sad",
+        "mood": "sad",
+        "x": 0.7,
+        "z": 1
+       }
+      ],
+      "signs": [
+       {
+        "text": "JAILED · 2025",
+        "style": "red",
+        "mono": true
+       },
+       {
+        "text": "4 YEARS · 27 MONTHS",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "In 2025, James Sheen, who admitted the burglary, got four years. Michael Jones, convicted of scouting the palace, got twenty seven months."
+    ],
+    [
+     "s08",
+     {
+      "set": "room",
+      "mood": "night",
+      "props": [
+       {
+        "type": "gold",
+        "x": 0,
+        "y": 0,
+        "z": 0.6,
+        "n": 6,
+        "s": 1.2
+       }
+      ],
+      "signs": [
+       {
+        "text": "MELTED DOWN?",
+        "style": "red"
+       },
+       {
+        "text": "never recovered",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "medium"
+     },
+     "The toilet itself was never found. Investigators believe it was broken up and the gold sold off."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "s09",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "SHEEN",
+        "act": "sly",
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "question",
+        "x": 1.2,
+        "y": 1.6,
+        "z": 0.8
+       }
+      ],
+      "ask": "Strangest heist ever?",
+      "cam": "wide"
+     },
+     "Millions of dollars of gold, gone down the drain. Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

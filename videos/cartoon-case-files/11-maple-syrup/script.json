@@ -1,0 +1,358 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 11,
+ "title": "The Great Maple Syrup Heist",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "VAL": {
+   "preset": "worker",
+   "suit": 13115439,
+   "shirt": 13115439,
+   "pants": 2767450,
+   "hat": "cap",
+   "hatCol": 1710618,
+   "hair": 3811870,
+   "stache": true,
+   "belly": 1.1
+  },
+  "INS": {
+   "preset": "reporter",
+   "hat": null,
+   "suit": 3824250
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "vault",
+      "mood": "room",
+      "cast": [
+       {
+        "who": "INS",
+        "act": "shock",
+        "at": 0.5
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "WATER?!",
+        "style": "blue",
+        "x": 0,
+        "y": 1.3,
+        "z": 1.2,
+        "at": 0.6
+       }
+      ],
+      "signs": [
+       {
+        "text": "$18 MILLION",
+        "style": "green"
+       }
+      ],
+      "cam": "medium"
+     },
+     "Thieves stole eighteen million dollars of maple syrup, and nobody noticed for months."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "THE GREAT",
+      "bottom": "MAPLE SYRUP HEIST",
+      "case": "CASE 11",
+      "mood": "day",
+      "cast": [
+       {
+        "who": "VAL"
+       }
+      ]
+     },
+     "This is the Great Canadian Maple Syrup Heist."
+    ]
+   ]
+  },
+  {
+   "name": "Liquid gold",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "country",
+      "cast": [
+       {
+        "who": "oldman",
+        "act": "carry"
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "🍁",
+        "style": "red",
+        "x": 0,
+        "y": 3.6,
+        "z": 0.4,
+        "w": 0.9,
+        "h": 0.9,
+        "size": 120
+       }
+      ],
+      "signs": [
+       {
+        "text": "QUEBEC",
+        "style": "cream",
+        "y": 4.5
+       }
+      ],
+      "cam": "medium"
+     },
+     "Quebec makes most of the world's maple syrup. It's so valuable, producers keep a strategic reserve, stored in giant warehouses."
+    ],
+    [
+     "s04",
+     {
+      "set": "vault",
+      "mood": "room",
+      "props": [
+       {
+        "type": "gold",
+        "x": -1,
+        "y": 0,
+        "z": 0.8
+       },
+       {
+        "type": "gold",
+        "x": 1,
+        "y": 0,
+        "z": 0.8
+       }
+      ],
+      "signs": [
+       {
+        "text": "STRATEGIC RESERVE",
+        "style": "gold"
+       },
+       {
+        "text": "barrels of syrup",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "wide"
+     },
+     "Barrels and barrels of it, sitting quietly in a warehouse in the small town of Saint-Louis-de-Blandford."
+    ]
+   ]
+  },
+  {
+   "name": "The scheme",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "vault",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "VAL",
+        "act": "sneak",
+        "x": -2.5,
+        "to": 0.6,
+        "at": 0.05,
+        "until": 0.5
+       },
+       {
+        "who": "worker",
+        "act": "carry",
+        "x": 1.4
+       }
+      ],
+      "props": [
+       {
+        "type": "van",
+        "x": 2.6,
+        "z": -0.6,
+        "s": 0.6,
+        "ry": 3.14
+       }
+      ],
+      "signs": [
+       {
+        "text": "2011 – 2012",
+        "style": "navy",
+        "mono": true
+       }
+      ],
+      "cam": "wide"
+     },
+     "Over many months, a gang trucked barrels out of the warehouse, siphoned off the syrup, and sold it."
+    ],
+    [
+     "s06",
+     {
+      "set": "vault",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "VAL",
+        "act": "sly",
+        "mood": "sly",
+        "x": -0.8
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "H₂O",
+        "style": "blue",
+        "x": 0.8,
+        "y": 1.5,
+        "z": 0.8,
+        "w": 1.0,
+        "h": 0.6,
+        "size": 80
+       }
+      ],
+      "signs": [
+       {
+        "text": "REFILLED WITH WATER",
+        "style": "blue"
+       }
+      ],
+      "cam": "medium"
+     },
+     "Then they refilled the barrels with water, and put them back, so the stacks looked untouched."
+    ]
+   ]
+  },
+  {
+   "name": "The discovery",
+   "lines": [
+    [
+     "s07",
+     {
+      "set": "vault",
+      "mood": "room",
+      "cast": [
+       {
+        "who": "INS",
+        "act": "shock",
+        "at": 0.4,
+        "x": 0.5
+       }
+      ],
+      "signs": [
+       {
+        "text": "JULY 2012",
+        "style": "navy",
+        "mono": true
+       },
+       {
+        "text": "{n} BARRELS EMPTIED",
+        "count": 9571,
+        "style": "red",
+        "at": 0.45
+       }
+      ],
+      "cam": "medium"
+     },
+     "In 2012, during an inventory check, inspectors found barrels that should have been full of syrup. Some held only water. Nearly ten thousand barrels had been emptied."
+    ]
+   ]
+  },
+  {
+   "name": "The bust",
+   "lines": [
+    [
+     "s08",
+     {
+      "set": "night",
+      "cast": [
+       {
+        "who": "cop",
+        "act": "point",
+        "x": -1
+       },
+       {
+        "who": "VAL",
+        "act": "hands_up",
+        "x": 1
+       }
+      ],
+      "signs": [
+       {
+        "text": "17 ARRESTED",
+        "style": "red"
+       }
+      ],
+      "cam": "wide"
+     },
+     "Police traced the syrup across Canada and the United States, and arrested more than a dozen people."
+    ],
+    [
+     "s09",
+     {
+      "set": "courtroom",
+      "cast": [
+       {
+        "who": "VAL",
+        "act": "sad",
+        "mood": "sad"
+       }
+      ],
+      "signs": [
+       {
+        "text": "8 YEARS",
+        "style": "red"
+       },
+       {
+        "text": "+ $9.4M FINE",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "The ringleader, Richard Vallières, was sentenced to eight years in prison, and fined more than nine million dollars."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "s10",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "VAL",
+        "act": "sly",
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "gold",
+        "x": 0,
+        "y": 0,
+        "z": 1.2
+       }
+      ],
+      "ask": "Sweetest crime ever?",
+      "cam": "wide"
+     },
+     "The sweetest crime in Canadian history. Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

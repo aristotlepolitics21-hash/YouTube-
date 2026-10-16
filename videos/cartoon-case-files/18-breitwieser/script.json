@@ -1,0 +1,341 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 18,
+ "title": "The Art Thief Who Stole for Love",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "STEPH": {
+   "preset": "student",
+   "suit": 3820138,
+   "pants": 2763316,
+   "tie": null,
+   "shirt": 3820138,
+   "hair": 3811870,
+   "hairStyle": "side"
+  },
+  "ANNE": {
+   "preset": "woman",
+   "suit": 9067050,
+   "skirt": 5913118,
+   "hair": 1708556
+  },
+  "MOM": {
+   "preset": "woman",
+   "suit": 5925466,
+   "skirt": 3820090,
+   "hair": 10132122,
+   "hairStyle": "curly"
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "museum",
+      "cast": [
+       {
+        "who": "STEPH",
+        "act": "sly",
+        "mood": "sly"
+       }
+      ],
+      "signs": [
+       {
+        "text": "200+ ARTWORKS",
+        "style": "red",
+        "at": 0.4
+       }
+      ],
+      "cam": "medium"
+     },
+     "One young man stole more than two hundred works of art from museums across Europe. He never sold a single one."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "THE ART THIEF",
+      "bottom": "WHO NEVER SOLD",
+      "case": "CASE 18",
+      "mood": "room",
+      "cast": [
+       {
+        "who": "STEPH"
+       }
+      ]
+     },
+     "This is Stéphane Breitwieser."
+    ]
+   ]
+  },
+  {
+   "name": "The method",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "museum",
+      "cast": [
+       {
+        "who": "STEPH",
+        "act": "look",
+        "x": -0.8
+       },
+       {
+        "who": "ANNE",
+        "act": "look",
+        "x": 0.9
+       }
+      ],
+      "signs": [
+       {
+        "text": "LUNCHTIME",
+        "style": "cream"
+       },
+       {
+        "text": "no weapons · no tools",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "wide"
+     },
+     "In the 1990s, Stéphane Breitwieser and his girlfriend Anne-Catherine visited small museums, usually around lunchtime when guards were few."
+    ],
+    [
+     "s04",
+     {
+      "set": "museum",
+      "cast": [
+       {
+        "who": "STEPH",
+        "act": "carry",
+        "x": -1.6,
+        "to": 2.6,
+        "at": 0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "painting",
+        "kind": "portrait",
+        "seed": 3,
+        "carry": 0,
+        "s": 0.5,
+        "off": [
+         0.3,
+         0,
+         0.3
+        ]
+       }
+      ],
+      "signs": [
+       {
+        "text": "UNDER HIS COAT",
+        "style": "red",
+        "at": 0.4
+       }
+      ],
+      "cam": "follow"
+     },
+     "While she kept watch, he'd slip a small painting or object under his coat, and simply walk out."
+    ]
+   ]
+  },
+  {
+   "name": "The collection",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "room",
+      "cast": [
+       {
+        "who": "STEPH",
+        "act": "cheer",
+        "at": 0.3,
+        "mood": "happy"
+       }
+      ],
+      "props": [
+       {
+        "type": "painting",
+        "kind": "portrait",
+        "seed": 1,
+        "x": -1.4,
+        "y": 3.2,
+        "z": -1.6,
+        "s": 0.6
+       },
+       {
+        "type": "painting",
+        "kind": "storm",
+        "x": 0,
+        "y": 3.4,
+        "z": -1.6,
+        "s": 0.6
+       },
+       {
+        "type": "painting",
+        "kind": "portrait",
+        "seed": 4,
+        "x": 1.4,
+        "y": 3.2,
+        "z": -1.6,
+        "s": 0.6
+       }
+      ],
+      "signs": [
+       {
+        "text": "HIS BEDROOM",
+        "style": "gold"
+       },
+       {
+        "text": "worth millions",
+        "style": "green",
+        "at": 0.4
+       }
+      ],
+      "cam": "wide"
+     },
+     "He never sold anything. He kept it all in his bedroom at his mother's house, a secret private museum worth millions."
+    ]
+   ]
+  },
+  {
+   "name": "The arrest",
+   "lines": [
+    [
+     "s06",
+     {
+      "set": "museum",
+      "cast": [
+       {
+        "who": "guard",
+        "act": "point",
+        "x": -1
+       },
+       {
+        "who": "STEPH",
+        "act": "shock",
+        "at": 0.4,
+        "x": 1
+       }
+      ],
+      "signs": [
+       {
+        "text": "LUCERNE, 2001",
+        "style": "navy",
+        "mono": true
+       },
+       {
+        "text": "CAUGHT",
+        "style": "red",
+        "at": 0.5
+       }
+      ],
+      "cam": "wide"
+     },
+     "In 2001, in Lucerne, Switzerland, a guard recognized him returning to a museum he'd stolen from two days earlier. He was arrested."
+    ],
+    [
+     "s07",
+     {
+      "set": "room",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "MOM",
+        "act": "worried",
+        "mood": "scared"
+       }
+      ],
+      "props": [
+       {
+        "type": "painting",
+        "kind": "portrait",
+        "seed": 2,
+        "x": 0.9,
+        "y": 0.8,
+        "z": 0.6,
+        "s": 0.6,
+        "until": 0.6
+       }
+      ],
+      "signs": [
+       {
+        "text": "DESTROYED",
+        "style": "red",
+        "at": 0.6,
+        "pop": 1.1
+       }
+      ],
+      "cam": "medium"
+     },
+     "Then came the tragedy. Back in France, his mother destroyed many of the paintings, to get rid of the evidence. Others were thrown into a canal."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "s08",
+     {
+      "set": "courtroom",
+      "cast": [
+       {
+        "who": "STEPH",
+        "act": "sad",
+        "mood": "sad",
+        "x": -0.7,
+        "z": 1
+       },
+       {
+        "who": "MOM",
+        "act": "sad",
+        "mood": "sad",
+        "x": 0.7,
+        "z": 1
+       }
+      ],
+      "signs": [
+       {
+        "text": "PRISON",
+        "style": "red"
+       },
+       {
+        "text": "masterpieces lost forever",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "wide"
+     },
+     "Breitwieser and his mother were both sent to prison. Some of the art was recovered, but many priceless works were lost forever."
+    ],
+    [
+     "s09",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "STEPH",
+        "act": "look"
+       }
+      ],
+      "ask": "Collector or thief?",
+      "cam": "wide"
+     },
+     "He said he just loved art. Collector, or thief? Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

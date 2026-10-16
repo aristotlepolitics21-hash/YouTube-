@@ -1,0 +1,403 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 13,
+ "title": "The Taxi Driver Who Stole a Goya",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "KEMPTON": {
+   "preset": "oldman",
+   "hat": null,
+   "hairStyle": "side",
+   "hair": 14211280,
+   "suit": 5917242,
+   "belly": 1.3,
+   "stache": false
+  },
+  "JOHN": {
+   "preset": "student",
+   "suit": 3816004,
+   "hair": 2759184
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "gallery_empty",
+      "cast": [
+       {
+        "who": "guard",
+        "act": "shock",
+        "at": 0.5
+       }
+      ],
+      "signs": [
+       {
+        "text": "STOLEN!",
+        "style": "red",
+        "at": 0.55,
+        "pop": 1.15
+       }
+      ],
+      "cam": "medium"
+     },
+     "In 1961, a famous painting vanished from London's National Gallery. The thief turned out to be a retired bus driver with a cause."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "THE PENSIONER",
+      "bottom": "WHO STOLE A GOYA",
+      "case": "CASE 13",
+      "mood": "room",
+      "cast": [
+       {
+        "who": "KEMPTON"
+       }
+      ],
+      "props": [
+       {
+        "type": "painting",
+        "kind": "portrait",
+        "seed": 2,
+        "x": 1.5,
+        "y": 2.3,
+        "z": -1.2
+       }
+      ]
+     },
+     "This is the theft of the Duke of Wellington."
+    ]
+   ]
+  },
+  {
+   "name": "The painting",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "museum",
+      "cast": [
+       {
+        "who": "banker",
+        "act": "talk",
+        "x": -1
+       },
+       {
+        "who": "woman",
+        "act": "look",
+        "x": 1
+       }
+      ],
+      "props": [
+       {
+        "type": "painting",
+        "kind": "portrait",
+        "seed": 2,
+        "x": 0,
+        "y": 2.7,
+        "z": -1.8,
+        "w": 1.3,
+        "h": 1.6
+       }
+      ],
+      "signs": [
+       {
+        "text": "£140,000",
+        "style": "gold",
+        "mono": true
+       },
+       {
+        "text": "bought for the nation",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "wide"
+     },
+     "Goya's portrait of the Duke of Wellington had just been bought for the nation, for a hundred and forty thousand pounds."
+    ],
+    [
+     "s04",
+     {
+      "set": "room",
+      "cast": [
+       {
+        "who": "KEMPTON",
+        "act": "angry",
+        "mood": "angry",
+        "x": -0.6
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "TV LICENCE",
+        "style": "red",
+        "x": 0.9,
+        "y": 2.2,
+        "z": 0.6
+       }
+      ],
+      "signs": [
+       {
+        "text": "KEMPTON BUNTON",
+        "style": "navy"
+       }
+      ],
+      "cam": "medium"
+     },
+     "Kempton Bunton, a retired bus driver from Newcastle, was furious. He'd been campaigning for pensioners to get free TV licences."
+    ]
+   ]
+  },
+  {
+   "name": "The theft",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "gallery_empty",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "KEMPTON",
+        "act": "carry",
+        "x": -2.4,
+        "to": 2.6,
+        "at": 0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "painting",
+        "kind": "portrait",
+        "seed": 2,
+        "carry": 0,
+        "off": [
+         0.4,
+         -0.1,
+         0.25
+        ],
+        "s": 0.7
+       }
+      ],
+      "signs": [
+       {
+        "text": "AUGUST 1961",
+        "style": "navy",
+        "mono": true
+       }
+      ],
+      "cam": "follow"
+     },
+     "In August 1961, just nineteen days after it went on display, the painting disappeared from the gallery."
+    ],
+    [
+     "s06",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "detective",
+        "act": "think"
+       }
+      ],
+      "props": [
+       {
+        "type": "letter",
+        "x": 0.9,
+        "y": 2.7,
+        "z": 0.7,
+        "bob": 0.05,
+        "at": 0.3
+       }
+      ],
+      "signs": [
+       {
+        "text": "RANSOM NOTES",
+        "style": "red",
+        "at": 0.35
+       },
+       {
+        "text": "free TV for pensioners",
+        "style": "cream",
+        "at": 0.5
+       }
+      ],
+      "cam": "medium"
+     },
+     "Then came ransom notes. The thief would return it, if the money went to charity, and pensioners got free TV."
+    ]
+   ]
+  },
+  {
+   "name": "Four years",
+   "lines": [
+    [
+     "s07",
+     {
+      "set": "room",
+      "cast": [
+       {
+        "who": "KEMPTON",
+        "act": "sit",
+        "x": -0.8,
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "painting",
+        "kind": "portrait",
+        "seed": 2,
+        "x": 1.0,
+        "y": 1.8,
+        "z": -0.6,
+        "s": 0.7
+       }
+      ],
+      "signs": [
+       {
+        "text": "4 YEARS",
+        "style": "navy",
+        "mono": true
+       }
+      ],
+      "cam": "medium"
+     },
+     "For four years, nobody knew where it was. Then, in 1965, Bunton walked into a police station and confessed."
+    ]
+   ]
+  },
+  {
+   "name": "The trial",
+   "lines": [
+    [
+     "s08",
+     {
+      "set": "courtroom",
+      "cast": [
+       {
+        "who": "KEMPTON",
+        "act": "talk",
+        "mood": "happy",
+        "z": 1.0
+       }
+      ],
+      "signs": [
+       {
+        "text": "NOT GUILTY",
+        "style": "green",
+        "at": 0.25
+       },
+       {
+        "text": "…of the painting",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "At his trial, the jury found him not guilty of stealing the painting. He'd always meant to give it back."
+    ],
+    [
+     "s09",
+     {
+      "set": "courtroom",
+      "cast": [
+       {
+        "who": "KEMPTON",
+        "act": "sad",
+        "mood": "worried",
+        "z": 1.0
+       }
+      ],
+      "props": [
+       {
+        "type": "empty_frame",
+        "x": 1.3,
+        "y": 1.6,
+        "z": 0.6,
+        "s": 0.7
+       }
+      ],
+      "signs": [
+       {
+        "text": "GUILTY: THE FRAME",
+        "style": "red",
+        "pop": 1.1
+       },
+       {
+        "text": "3 MONTHS",
+        "style": "cream",
+        "at": 0.5
+       }
+      ],
+      "cam": "wide"
+     },
+     "But the frame was never returned. So he was convicted of stealing the frame, and served three months."
+    ]
+   ]
+  },
+  {
+   "name": "The twist",
+   "lines": [
+    [
+     "s10",
+     {
+      "set": "room",
+      "cast": [
+       {
+        "who": "JOHN",
+        "act": "talk",
+        "mood": "worried"
+       }
+      ],
+      "signs": [
+       {
+        "text": "PLOT TWIST",
+        "style": "gold"
+       },
+       {
+        "text": "his son confessed",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "close"
+     },
+     "Years later, his son John told police that he was the one who actually took the painting."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "s11",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "KEMPTON",
+        "act": "wave",
+        "mood": "happy"
+       }
+      ],
+      "ask": "Hero or thief?",
+      "cam": "wide"
+     },
+     "Pensioners in Britain over seventy five did later get free TV licences, for a while. Hero, or thief? Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

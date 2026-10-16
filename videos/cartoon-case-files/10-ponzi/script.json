@@ -1,0 +1,373 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 10,
+ "title": "The Original Ponzi Scheme",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "PONZI": {
+   "preset": "conman",
+   "hat": "fedora",
+   "hatCol": 15262416,
+   "band": 2763306,
+   "suit": 15262416,
+   "pants": 14209728,
+   "tie": 2775690,
+   "stache": true,
+   "hair": 1708556
+  },
+  "INV": {
+   "preset": "oldman"
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "street",
+      "cast": [
+       {
+        "who": "PONZI",
+        "act": "talk",
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "bills",
+        "y": 0.5
+       }
+      ],
+      "signs": [
+       {
+        "text": "50% IN 45 DAYS!",
+        "style": "gold"
+       }
+      ],
+      "cam": "medium"
+     },
+     "In 1920, one man promised to make people rich, fast. His name became a word for fraud."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "THE ORIGINAL",
+      "bottom": "PONZI SCHEME",
+      "case": "CASE 10",
+      "mood": "dusk",
+      "cast": [
+       {
+        "who": "PONZI"
+       }
+      ]
+     },
+     "This is Charles Ponzi."
+    ]
+   ]
+  },
+  {
+   "name": "The idea",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "PONZI",
+        "act": "think"
+       }
+      ],
+      "props": [
+       {
+        "type": "letter",
+        "x": 0.9,
+        "y": 2.6,
+        "z": 0.6,
+        "bob": 0.05
+       }
+      ],
+      "signs": [
+       {
+        "text": "REPLY COUPONS",
+        "style": "navy"
+       },
+       {
+        "text": "cheap abroad · worth more here",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "medium"
+     },
+     "Boston, 1919. Ponzi spots a loophole. Postal reply coupons bought cheaply in Europe could be swapped for more valuable stamps in America."
+    ],
+    [
+     "s04",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "PONZI",
+        "act": "point"
+       }
+      ],
+      "signs": [
+       {
+        "text": "50% IN 45 DAYS",
+        "style": "gold"
+       },
+       {
+        "text": "100% IN 90 DAYS",
+        "style": "green",
+        "at": 0.45
+       }
+      ],
+      "cam": "medium"
+     },
+     "So he promises investors fifty percent profit in forty five days. Double your money in ninety."
+    ]
+   ]
+  },
+  {
+   "name": "The rush",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "street",
+      "cast": [
+       {
+        "who": "INV",
+        "x": -1.4,
+        "act": "cheer",
+        "at": 0.3
+       },
+       {
+        "who": "dealer1",
+        "x": -0.5,
+        "act": "cheer",
+        "at": 0.35
+       },
+       {
+        "who": "woman",
+        "x": 0.4,
+        "act": "cheer",
+        "at": 0.4
+       },
+       {
+        "who": "dealer2",
+        "x": 1.3,
+        "act": "cheer",
+        "at": 0.45
+       }
+      ],
+      "props": [
+       {
+        "type": "cash",
+        "x": 0,
+        "y": 0,
+        "z": 1.4,
+        "s": 1.2
+       }
+      ],
+      "signs": [
+       {
+        "text": "CROWDS LINE UP",
+        "style": "red"
+       }
+      ],
+      "cam": "wide"
+     },
+     "The first investors really are paid. Word spreads, and soon crowds are lining up outside his office."
+    ],
+    [
+     "s06",
+     {
+      "set": "bank",
+      "cast": [
+       {
+        "who": "PONZI",
+        "act": "cheer",
+        "mood": "happy"
+       }
+      ],
+      "props": [
+       {
+        "type": "cash",
+        "x": -1,
+        "y": 1.2,
+        "z": -0.9
+       },
+       {
+        "type": "cash",
+        "x": 1,
+        "y": 1.2,
+        "z": -0.9
+       },
+       {
+        "type": "bills",
+        "y": 1
+       }
+      ],
+      "signs": [
+       {
+        "text": "${n}",
+        "count": 10000000,
+        "money": true,
+        "style": "green",
+        "mono": true
+       }
+      ],
+      "cam": "medium"
+     },
+     "By the summer of 1920, people have handed him around ten million dollars."
+    ]
+   ]
+  },
+  {
+   "name": "The trick",
+   "lines": [
+    [
+     "s07",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "PONZI",
+        "act": "carry",
+        "x": 0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "cash",
+        "carry": 0
+       }
+      ],
+      "signs": [
+       {
+        "text": "NEW MONEY →",
+        "style": "cream"
+       },
+       {
+        "text": "→ OLD INVESTORS",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "medium"
+     },
+     "But there was a secret. He wasn't really trading coupons. He paid old investors with money from new ones."
+    ]
+   ]
+  },
+  {
+   "name": "The collapse",
+   "lines": [
+    [
+     "s08",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "reporter",
+        "act": "point",
+        "x": -0.9
+       },
+       {
+        "who": "PONZI",
+        "act": "shock",
+        "at": 0.5,
+        "x": 0.9
+       }
+      ],
+      "props": [
+       {
+        "type": "newspaper",
+        "x": 0,
+        "y": 2.6,
+        "z": 0.3,
+        "text": "PONZI\nPROBED",
+        "mast": "THE BOSTON POST",
+        "at": 0.4,
+        "s": 0.8
+       }
+      ],
+      "signs": [
+       {
+        "text": "NOT ENOUGH COUPONS",
+        "style": "red",
+        "at": 0.65
+       }
+      ],
+      "cam": "wide"
+     },
+     "Then the Boston Post started digging. To back his promises, he'd need millions of coupons. Only a tiny fraction existed."
+    ],
+    [
+     "s09",
+     {
+      "set": "courtroom",
+      "cast": [
+       {
+        "who": "PONZI",
+        "act": "sad",
+        "mood": "sad",
+        "x": 0,
+        "z": 1.0
+       }
+      ],
+      "signs": [
+       {
+        "text": "ARRESTED · AUG 1920",
+        "style": "red",
+        "mono": true
+       }
+      ],
+      "cam": "wide"
+     },
+     "The scheme collapsed. Ponzi was arrested in August 1920, and thousands of people lost their savings."
+    ]
+   ]
+  },
+  {
+   "name": "The legacy",
+   "lines": [
+    [
+     "s10",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "PONZI",
+        "act": "sly",
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "PONZI SCHEME",
+        "style": "red",
+        "x": 0,
+        "y": 4.4,
+        "z": 0.5
+       }
+      ],
+      "ask": "Too good to be true?",
+      "qy": 3.6,
+      "cam": "wide"
+     },
+     "Today, any fraud that pays old investors with new money is called a Ponzi scheme. If it sounds too good to be true, it probably is. Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

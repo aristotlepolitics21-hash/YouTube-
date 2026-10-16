@@ -1,0 +1,308 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 21,
+ "title": "The Blood Test That Didn't Work",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "HOLMES": {
+   "preset": "woman",
+   "suit": 1381660,
+   "skirt": 1381660,
+   "hair": 14203000,
+   "hairStyle": "bob",
+   "iris": 3828392,
+   "brow": 0.1
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "HOLMES",
+        "act": "talk",
+        "mood": "calm"
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "🩸",
+        "style": "white",
+        "x": 1.2,
+        "y": 2.6,
+        "z": 0.6,
+        "w": 0.7,
+        "h": 0.7,
+        "size": 90
+       }
+      ],
+      "signs": [
+       {
+        "text": "$9 BILLION",
+        "style": "green"
+       }
+      ],
+      "cam": "medium"
+     },
+     "She promised hundreds of medical tests from a single drop of blood. Her company was valued at nine billion dollars. The machine never really worked."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "THE BLOOD TEST",
+      "bottom": "THAT DIDN'T WORK",
+      "case": "CASE 21",
+      "mood": "room",
+      "cast": [
+       {
+        "who": "HOLMES"
+       }
+      ]
+     },
+     "This is the story of Theranos."
+    ]
+   ]
+  },
+  {
+   "name": "The dream",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "HOLMES",
+        "act": "point"
+       }
+      ],
+      "signs": [
+       {
+        "text": "STANFORD DROPOUT",
+        "style": "cream"
+       },
+       {
+        "text": "age 19",
+        "style": "gold",
+        "at": 0.4
+       }
+      ],
+      "cam": "medium"
+     },
+     "In 2003, nineteen year old Elizabeth Holmes dropped out of Stanford to start a company called Theranos."
+    ],
+    [
+     "s04",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "HOLMES",
+        "act": "carry",
+        "x": -0.6
+       }
+      ],
+      "props": [
+       {
+        "type": "phone",
+        "x": 0.9,
+        "y": 1.2,
+        "z": 0.6,
+        "s": 1.2
+       }
+      ],
+      "signs": [
+       {
+        "text": "\"EDISON\"",
+        "style": "gold"
+       },
+       {
+        "text": "one drop · 200 tests?",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "medium"
+     },
+     "Her device, called the Edison, was supposed to run hundreds of tests from a finger prick."
+    ]
+   ]
+  },
+  {
+   "name": "The hype",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "mansion",
+      "cast": [
+       {
+        "who": "HOLMES",
+        "act": "wave",
+        "x": -0.7,
+        "mood": "happy"
+       },
+       {
+        "who": "banker",
+        "act": "cheer",
+        "at": 0.3,
+        "x": 0.9
+       }
+      ],
+      "signs": [
+       {
+        "text": "STAR INVESTORS",
+        "style": "gold"
+       },
+       {
+        "text": "$9B VALUATION",
+        "style": "green",
+        "at": 0.4
+       }
+      ],
+      "cam": "wide"
+     },
+     "Famous investors poured in money. She appeared on magazine covers. Theranos tests went into pharmacies in Arizona and California."
+    ],
+    [
+     "s06",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "scientist",
+        "act": "worried",
+        "mood": "worried"
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "ERROR",
+        "style": "red",
+        "x": 1.2,
+        "y": 2.4,
+        "z": 0.6,
+        "at": 0.3
+       }
+      ],
+      "signs": [
+       {
+        "text": "SECRET MACHINES",
+        "style": "red"
+       },
+       {
+        "text": "other companies' analyzers",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "medium"
+     },
+     "But inside, employees knew the Edison was unreliable. Most tests were secretly run on regular lab machines bought from other companies."
+    ]
+   ]
+  },
+  {
+   "name": "The exposé",
+   "lines": [
+    [
+     "s07",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "reporter",
+        "act": "talk",
+        "x": -0.8
+       },
+       {
+        "who": "scientist",
+        "act": "talk",
+        "x": 0.9
+       }
+      ],
+      "props": [
+       {
+        "type": "newspaper",
+        "x": 0,
+        "y": 2.6,
+        "z": 0.3,
+        "text": "HOT\nSTARTUP\nIN DOUBT",
+        "mast": "THE WALL ST JOURNAL",
+        "s": 0.75,
+        "at": 0.5
+       }
+      ],
+      "signs": [
+       {
+        "text": "2015",
+        "style": "navy",
+        "mono": true
+       }
+      ],
+      "cam": "wide"
+     },
+     "In 2015, whistleblowers spoke to a Wall Street Journal reporter. His articles revealed the truth, and Theranos collapsed."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "s08",
+     {
+      "set": "courtroom",
+      "cast": [
+       {
+        "who": "HOLMES",
+        "act": "sad",
+        "mood": "sad",
+        "z": 1
+       }
+      ],
+      "signs": [
+       {
+        "text": "GUILTY: FRAUD",
+        "style": "red"
+       },
+       {
+        "text": "11+ YEARS",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "In 2022, Holmes was convicted of defrauding investors, and sentenced to more than eleven years in prison."
+    ],
+    [
+     "s09",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "HOLMES",
+        "act": "look"
+       }
+      ],
+      "ask": "Fake it till you make it?",
+      "cam": "wide"
+     },
+     "Fake it till you make it doesn't work when it's people's health. Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

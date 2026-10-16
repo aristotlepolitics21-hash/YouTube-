@@ -1,0 +1,431 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 14,
+ "title": "The Crime of the Century",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "OKEEFE": {
+   "preset": "gangster",
+   "suit": 5917242,
+   "pants": 4864554,
+   "tie": 2775610,
+   "hair": 5913118,
+   "stache": false,
+   "brow": -0.4
+  },
+  "MASK": {
+   "preset": "gangster",
+   "hat": "fedora",
+   "suit": 2767450,
+   "pants": 2767450,
+   "tie": 1710618,
+   "hair": 1381660
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "vault",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "MASK",
+        "act": "carry",
+        "x": -0.7
+       },
+       {
+        "who": "MASK",
+        "act": "carry",
+        "x": 0.7
+       }
+      ],
+      "props": [
+       {
+        "type": "cash",
+        "x": -0.7,
+        "y": 0.0,
+        "z": 1.1
+       },
+       {
+        "type": "cash",
+        "x": 0.7,
+        "y": 0,
+        "z": 1.1
+       },
+       {
+        "type": "bills",
+        "y": 0.6
+       }
+      ],
+      "signs": [
+       {
+        "text": "$2.7 MILLION",
+        "style": "green",
+        "mono": true
+       }
+      ],
+      "cam": "wide"
+     },
+     "In 1950, a gang walked into an armored car company in Boston and walked out with nearly three million dollars. It was called the crime of the century."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "THE CRIME OF",
+      "bottom": "THE CENTURY",
+      "case": "CASE 14",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "MASK"
+       }
+      ]
+     },
+     "This is the Great Brink's Robbery."
+    ]
+   ]
+  },
+  {
+   "name": "The plan",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "street",
+      "mood": "dusk",
+      "cast": [
+       {
+        "who": "OKEEFE",
+        "act": "look",
+        "x": -0.8
+       },
+       {
+        "who": "MASK",
+        "act": "think",
+        "x": 0.8
+       }
+      ],
+      "props": [
+       {
+        "type": "house",
+        "x": 0,
+        "z": -2.6,
+        "w": 3,
+        "h": 2.2,
+        "color": 12095600
+       }
+      ],
+      "signs": [
+       {
+        "text": "BRINK'S DEPOT",
+        "style": "navy"
+       },
+       {
+        "text": "11 MEN",
+        "style": "red",
+        "at": 0.4
+       }
+      ],
+      "cam": "wide"
+     },
+     "A gang of eleven men spent many months studying the Brink's depot, sneaking in at night to learn its locks and routines."
+    ],
+    [
+     "s04",
+     {
+      "set": "room",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "MASK",
+        "act": "talk",
+        "x": -1.2
+       },
+       {
+        "who": "MASK",
+        "act": "look",
+        "x": 0
+       },
+       {
+        "who": "MASK",
+        "act": "look",
+        "x": 1.2
+       }
+      ],
+      "signs": [
+       {
+        "text": "REHEARSALS",
+        "style": "gold"
+       },
+       {
+        "text": "masks · matching coats",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "wide"
+     },
+     "They rehearsed the raid again and again, in matching coats and rubber Halloween masks."
+    ]
+   ]
+  },
+  {
+   "name": "The raid",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "vault",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "MASK",
+        "act": "sneak",
+        "x": -3,
+        "to": -0.9,
+        "at": 0,
+        "until": 0.4
+       },
+       {
+        "who": "MASK",
+        "act": "sneak",
+        "x": -3.8,
+        "to": 0.2,
+        "at": 0.05,
+        "until": 0.45
+       },
+       {
+        "who": "guard",
+        "act": "hands_up",
+        "x": 1.4,
+        "at": 0.45
+       }
+      ],
+      "signs": [
+       {
+        "text": "JAN 17, 1950",
+        "style": "navy",
+        "mono": true
+       }
+      ],
+      "cam": "wide"
+     },
+     "On January 17th, 1950, seven of them slipped inside, surprised the employees, and tied them up."
+    ],
+    [
+     "s06",
+     {
+      "set": "vault",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "MASK",
+        "act": "carry",
+        "x": -0.6,
+        "to": 3,
+        "at": 0.4
+       }
+      ],
+      "props": [
+       {
+        "type": "cash",
+        "carry": 0
+       }
+      ],
+      "signs": [
+       {
+        "text": "{n} DOLLARS",
+        "count": 2775000,
+        "style": "green",
+        "mono": true
+       }
+      ],
+      "cam": "wide"
+     },
+     "In less than half an hour, they were gone, with almost two point eight million dollars in cash, checks and securities."
+    ]
+   ]
+  },
+  {
+   "name": "The silence",
+   "lines": [
+    [
+     "s07",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "detective",
+        "act": "think"
+       }
+      ],
+      "props": [
+       {
+        "type": "question",
+        "x": 1.2,
+        "y": 3.4,
+        "z": 0.8,
+        "at": 0.3
+       }
+      ],
+      "signs": [
+       {
+        "text": "NO CLUES",
+        "style": "red"
+       },
+       {
+        "text": "6 YEARS",
+        "style": "navy",
+        "at": 0.5,
+        "mono": true
+       }
+      ],
+      "cam": "medium"
+     },
+     "The FBI questioned the usual suspects for years, but nobody talked. The gang had agreed to wait, and not spend the money."
+    ]
+   ]
+  },
+  {
+   "name": "The crack",
+   "lines": [
+    [
+     "s08",
+     {
+      "set": "prison",
+      "cast": [
+       {
+        "who": "OKEEFE",
+        "act": "angry",
+        "mood": "angry"
+       }
+      ],
+      "signs": [
+       {
+        "text": "CHEATED",
+        "style": "red"
+       },
+       {
+        "text": "out of his share",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "close"
+     },
+     "But one of them, Specs O'Keefe, landed in prison on another charge, and believed the others had cheated him out of his share."
+    ],
+    [
+     "s09",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "OKEEFE",
+        "act": "talk",
+        "x": -0.8
+       },
+       {
+        "who": "detective",
+        "act": "look",
+        "x": 0.9
+       }
+      ],
+      "signs": [
+       {
+        "text": "HE TALKS",
+        "style": "gold"
+       },
+       {
+        "text": "days before the deadline",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "In 1956, he told the FBI everything, just days before the statute of limitations would have run out."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "s10",
+     {
+      "set": "courtroom",
+      "cast": [
+       {
+        "who": "MASK",
+        "act": "sad",
+        "mood": "sad",
+        "x": -1,
+        "z": 1
+       },
+       {
+        "who": "MASK",
+        "act": "sad",
+        "mood": "sad",
+        "x": 0,
+        "z": 1
+       },
+       {
+        "who": "MASK",
+        "act": "sad",
+        "mood": "sad",
+        "x": 1,
+        "z": 1
+       }
+      ],
+      "signs": [
+       {
+        "text": "8 CONVICTED",
+        "style": "red"
+       },
+       {
+        "text": "LIFE SENTENCES",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "wide"
+     },
+     "Eight men were convicted and sentenced to life. But most of the money was never found."
+    ],
+    [
+     "s11",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "OKEEFE",
+        "act": "sly",
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "question",
+        "x": 1.2,
+        "y": 1.6,
+        "z": 0.8
+       }
+      ],
+      "ask": "Where's the money?",
+      "cam": "wide"
+     },
+     "The perfect crime, almost. Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

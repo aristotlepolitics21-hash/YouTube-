@@ -1,0 +1,342 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 16,
+ "title": "The Crown Jewels That Vanished",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "VICARS": {
+   "preset": "banker",
+   "belly": 1.0,
+   "hair": 3811870,
+   "tie": 2775610,
+   "brow": 0.4
+  },
+  "KING": {
+   "suit": 9050666,
+   "pants": 5904938,
+   "tie": null,
+   "shirt": 14200896,
+   "hair": 10132122,
+   "hairStyle": "bald",
+   "stache": true,
+   "belly": 1.35
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "vault",
+      "mood": "room",
+      "cast": [
+       {
+        "who": "VICARS",
+        "act": "shock",
+        "at": 0.4
+       }
+      ],
+      "props": [
+       {
+        "type": "safe",
+        "x": 0,
+        "y": 2.2,
+        "z": -1.2,
+        "r": 1.2
+       }
+      ],
+      "signs": [
+       {
+        "text": "EMPTY",
+        "style": "red",
+        "at": 0.5,
+        "pop": 1.15
+       }
+      ],
+      "cam": "medium"
+     },
+     "In 1907, the Irish Crown Jewels vanished from a locked safe inside Dublin Castle. More than a century later, nobody knows who took them."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "THE CROWN JEWELS",
+      "bottom": "THAT VANISHED",
+      "case": "CASE 16",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "VICARS"
+       }
+      ],
+      "props": [
+       {
+        "type": "gems",
+        "x": 1.4,
+        "y": 0,
+        "z": 1.0,
+        "n": 14,
+        "r": 0.5
+       }
+      ]
+     },
+     "This is the theft of the Irish Crown Jewels."
+    ]
+   ]
+  },
+  {
+   "name": "The jewels",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "mansion",
+      "props": [
+       {
+        "type": "gems",
+        "x": 0,
+        "y": 1.0,
+        "z": 0.4,
+        "n": 30,
+        "r": 0.7
+       },
+       {
+        "type": "table",
+        "x": 0,
+        "z": 0.4
+       }
+      ],
+      "signs": [
+       {
+        "text": "DIAMONDS · RUBIES · EMERALDS",
+        "style": "gold",
+        "w": 2.8
+       }
+      ],
+      "fx": "sparkle",
+      "cam": "medium"
+     },
+     "The jewels were a dazzling star and badge, covered in diamonds, rubies and emeralds, used by an order of knights."
+    ],
+    [
+     "s04",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "VICARS",
+        "act": "talk"
+       }
+      ],
+      "props": [
+       {
+        "type": "safe",
+        "x": 1.3,
+        "y": 1.3,
+        "z": -1.0,
+        "r": 0.8
+       }
+      ],
+      "signs": [
+       {
+        "text": "ARTHUR VICARS",
+        "style": "navy"
+       },
+       {
+        "text": "keeper of the keys",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "medium"
+     },
+     "They were kept in a safe at Dublin Castle, guarded by Sir Arthur Vicars, who held the keys."
+    ]
+   ]
+  },
+  {
+   "name": "The discovery",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "vault",
+      "mood": "room",
+      "cast": [
+       {
+        "who": "worker",
+        "act": "shock",
+        "at": 0.35
+       }
+      ],
+      "props": [
+       {
+        "type": "safe",
+        "x": 0,
+        "y": 2.2,
+        "z": -1.2,
+        "r": 1.2
+       }
+      ],
+      "signs": [
+       {
+        "text": "JULY 6, 1907",
+        "style": "navy",
+        "mono": true
+       },
+       {
+        "text": "SAFE UNLOCKED",
+        "style": "red",
+        "at": 0.4
+       }
+      ],
+      "cam": "medium"
+     },
+     "On July 6th, 1907, a messenger opened the safe. It was unlocked, and the jewels were gone."
+    ],
+    [
+     "s06",
+     {
+      "set": "street",
+      "mood": "day",
+      "cast": [
+       {
+        "who": "KING",
+        "act": "angry",
+        "mood": "angry"
+       }
+      ],
+      "props": [
+       {
+        "type": "crown",
+        "x": 0,
+        "y": 3.6,
+        "z": 0.3,
+        "s": 0.6,
+        "bob": 0.04
+       }
+      ],
+      "signs": [
+       {
+        "text": "4 DAYS BEFORE",
+        "style": "red"
+       },
+       {
+        "text": "the King's visit",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "medium"
+     },
+     "Worse, it was just four days before King Edward the Seventh arrived in Dublin. The King was furious."
+    ]
+   ]
+  },
+  {
+   "name": "The suspects",
+   "lines": [
+    [
+     "s07",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "detective",
+        "act": "think",
+        "x": -0.8
+       },
+       {
+        "who": "VICARS",
+        "act": "worried",
+        "mood": "worried",
+        "x": 0.9
+       }
+      ],
+      "signs": [
+       {
+        "text": "NO FORCED ENTRY",
+        "style": "red"
+       },
+       {
+        "text": "an inside job?",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "There was no sign of a break-in. Whoever did it had used the keys. Scotland Yard suspected an inside job."
+    ],
+    [
+     "s08",
+     {
+      "set": "room",
+      "cast": [
+       {
+        "who": "VICARS",
+        "act": "sad",
+        "mood": "sad"
+       }
+      ],
+      "signs": [
+       {
+        "text": "BLAMED",
+        "style": "red"
+       },
+       {
+        "text": "never charged",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "close"
+     },
+     "Vicars was blamed for carelessness and lost his job. He insisted he was innocent until the day he died. Nobody was ever charged."
+    ]
+   ]
+  },
+  {
+   "name": "Still missing",
+   "lines": [
+    [
+     "s09",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "detective",
+        "act": "look"
+       }
+      ],
+      "props": [
+       {
+        "type": "question",
+        "x": 1.2,
+        "y": 1.8,
+        "z": 0.8
+       },
+       {
+        "type": "gems",
+        "x": -1.2,
+        "y": 0,
+        "z": 1.0,
+        "n": 12,
+        "r": 0.4
+       }
+      ],
+      "ask": "Where are the jewels?",
+      "cam": "wide"
+     },
+     "The jewels have never been found. Somewhere, they may still exist. Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

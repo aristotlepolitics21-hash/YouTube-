@@ -2,7 +2,7 @@
 # usage: render.sh SCRIPT.json WORKDIR OUTNAME [voice] [rate]
 # Voices the script (offline RHVoice, ../engine/voice.py), builds the 3D page, renders it in 4 parallel segments, then muxes narration.
 set -e
-H=$(cd "$(dirname "$0")" && pwd); W=$2; FPS=30; N=2
+H=$(cd "$(dirname "$0")" && pwd); W=$2; FPS=${FPS:-30}; N=2
 VOICE=${4:-$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('voice','slt'))" $1)}
 [ -f $W/durs.json ] || python3 -I $H/../engine/voice.py $1 $W $VOICE ${5:-100}
 python3 -I $H/build_page.py $1 $W $W/page3d.html

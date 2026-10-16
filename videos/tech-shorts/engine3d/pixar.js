@@ -10,7 +10,7 @@ import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
-const W = 1080, H = 1920, RS = 2 / 3; // 3D renders at 720x1280 and is upscaled under the full-res overlay
+const W = 1080, H = 1920, RS = window.RENDER_SCALE || 2 / 3; // 3D renders at 720x1280 and is upscaled under the full-res overlay
 const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
 renderer.setPixelRatio(1); renderer.setSize(W * RS, H * RS, false);
 renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFShadowMap;
@@ -674,7 +674,7 @@ async function drawStill(el, L, i, TL, T, total) {
 function frame(TL, T, total) {
   let i = TL.findIndex(l => T < l.end); if (i < 0) i = TL.length - 1; const L = TL[i];
   const still = window.STILLS && window.STILLS[L.scene]; if (still) return drawStill(still, L, i, TL, T, total);
-  if (i !== curIdx) { if (cur) dispose(cur.scene); cur = (BUILD[L.scene] || (window.FORMAT === 'story' && BUILD.story_missing) || BUILD.title)(L.p || {}, L.scene); curIdx = i; }
+  if (i !== curIdx) { if (cur) dispose(cur.scene); cur = (BUILD[L.scene] || (L.p && L.p.set && BUILD.scene) || (window.FORMAT === 'story' && BUILD.story_missing) || BUILD.title)(L.p || {}, L.scene); curIdx = i; }
   const d = L.end - L.start, s = T - L.start, t = clamp(s / d); NOW = T;
   cur.update(t, s, d); cur.cam.aspect = W / H; cur.cam.updateProjectionMatrix();
   rpass.scene = cur.scene; rpass.camera = cur.cam; composer.render();

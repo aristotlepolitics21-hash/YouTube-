@@ -1,0 +1,312 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 17,
+ "title": "The Man Who Sold the Brooklyn Bridge",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "PARKER": {
+   "preset": "conman",
+   "suit": 5913130,
+   "pants": 4861984,
+   "tie": 14200896,
+   "hat": "fedora",
+   "hatCol": 3811870,
+   "band": 14200896,
+   "hair": 2759184
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "street",
+      "mood": "day",
+      "cast": [
+       {
+        "who": "PARKER",
+        "act": "talk",
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "BRIDGE FOR SALE",
+        "style": "red",
+        "x": 0,
+        "y": 1.4,
+        "z": 1.2,
+        "at": 0.4
+       }
+      ],
+      "signs": [
+       {
+        "text": "NEW YORK",
+        "style": "cream"
+       }
+      ],
+      "cam": "medium"
+     },
+     "There's an old saying: if you believe that, I've got a bridge to sell you. This is the man who actually did it, the story goes, again and again."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "THE MAN WHO SOLD",
+      "bottom": "THE BROOKLYN BRIDGE",
+      "case": "CASE 17",
+      "mood": "dusk",
+      "cast": [
+       {
+        "who": "PARKER"
+       }
+      ]
+     },
+     "This is George C. Parker."
+    ]
+   ]
+  },
+  {
+   "name": "The marks",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "beach",
+      "mood": "day",
+      "cast": [
+       {
+        "who": "dealer0",
+        "act": "look",
+        "x": -1
+       },
+       {
+        "who": "woman",
+        "act": "look",
+        "x": 0.2
+       },
+       {
+        "who": "dealer3",
+        "act": "look",
+        "x": 1.3
+       }
+      ],
+      "props": [
+       {
+        "type": "boat",
+        "x": 0,
+        "z": -3,
+        "s": 1.2,
+        "color": 2767450
+       }
+      ],
+      "signs": [
+       {
+        "text": "NEW ARRIVALS",
+        "style": "cream"
+       }
+      ],
+      "cam": "wide"
+     },
+     "Around 1900, ships full of immigrants arrived in New York every day, hopeful, and new to America."
+    ],
+    [
+     "s04",
+     {
+      "set": "street",
+      "mood": "day",
+      "cast": [
+       {
+        "who": "PARKER",
+        "act": "point",
+        "x": -0.8
+       },
+       {
+        "who": "dealer0",
+        "act": "cheer",
+        "at": 0.4,
+        "x": 0.9
+       }
+      ],
+      "props": [
+       {
+        "type": "letter",
+        "x": 0,
+        "y": 2.6,
+        "z": 0.8,
+        "bob": 0.05,
+        "text": "DEED"
+       }
+      ],
+      "signs": [
+       {
+        "text": "FAKE DEED",
+        "style": "red",
+        "at": 0.3
+       },
+       {
+        "text": "charge tolls!",
+        "style": "gold",
+        "at": 0.5
+       }
+      ],
+      "cam": "wide"
+     },
+     "Parker would tell a newcomer that he owned the Brooklyn Bridge, and that whoever bought it could charge tolls and get rich. He even had fake papers."
+    ]
+   ]
+  },
+  {
+   "name": "The tolls",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "road",
+      "mood": "day",
+      "cast": [
+       {
+        "who": "dealer0",
+        "act": "wave",
+        "x": -0.5
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "TOLL BOOTH",
+        "style": "gold",
+        "x": 0.9,
+        "y": 1.6,
+        "z": 0.4
+       },
+       {
+        "type": "car",
+        "x": 2.6,
+        "z": 0,
+        "s": 0.6,
+        "ry": 3.14
+       }
+      ],
+      "signs": [
+       {
+        "text": "NEW OWNER?",
+        "style": "cream"
+       }
+      ],
+      "cam": "wide"
+     },
+     "Buyers, the story goes, sometimes tried to set up toll booths on the bridge, until police came to explain they'd been conned."
+    ],
+    [
+     "s06",
+     {
+      "set": "street",
+      "mood": "dusk",
+      "cast": [
+       {
+        "who": "PARKER",
+        "act": "cheer",
+        "at": 0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "MADISON SQ GARDEN",
+        "style": "cream",
+        "x": -1.2,
+        "y": 3.0,
+        "z": 0.4,
+        "w": 2.2
+       },
+       {
+        "type": "sign",
+        "text": "GRANT'S TOMB",
+        "style": "cream",
+        "x": 1.2,
+        "y": 2.3,
+        "z": 0.4,
+        "w": 1.8
+       }
+      ],
+      "signs": [
+       {
+        "text": "ALSO FOR SALE",
+        "style": "red"
+       }
+      ],
+      "cam": "wide"
+     },
+     "Parker didn't stop at bridges. He reportedly sold Madison Square Garden, the Statue of Liberty and even Grant's Tomb."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "s07",
+     {
+      "set": "prison",
+      "cast": [
+       {
+        "who": "PARKER",
+        "act": "sad",
+        "mood": "sad"
+       }
+      ],
+      "signs": [
+       {
+        "text": "1928: LIFE",
+        "style": "red",
+        "mono": true
+       },
+       {
+        "text": "SING SING",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "close"
+     },
+     "In 1928, after a lifetime of cons, he was sentenced to life in Sing Sing prison, where he died years later."
+    ],
+    [
+     "s08",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "PARKER",
+        "act": "wave",
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "BRIDGE FOR SALE",
+        "style": "red",
+        "x": 0,
+        "y": 4.3,
+        "z": 0.4
+       }
+      ],
+      "ask": "Would you buy it?",
+      "qy": 3.5,
+      "cam": "wide"
+     },
+     "Some historians think the legend grew in the telling. But the saying lives on. Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

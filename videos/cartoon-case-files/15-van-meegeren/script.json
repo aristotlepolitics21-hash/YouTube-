@@ -1,0 +1,391 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 15,
+ "title": "The Forger Who Fooled the Nazis",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "HAN": {
+   "preset": "conman",
+   "hat": null,
+   "suit": 4868690,
+   "pants": 3816004,
+   "tie": 9054762,
+   "hair": 12103840,
+   "hairStyle": "slick",
+   "stache": true,
+   "brow": -0.2
+  },
+  "GORING": {
+   "suit": 9079418,
+   "pants": 6974042,
+   "tie": null,
+   "shirt": 9079418,
+   "belly": 1.45,
+   "hair": 6969930,
+   "hairStyle": "side",
+   "hat": "kepi",
+   "hatCol": 9079418
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "museum",
+      "cast": [
+       {
+        "who": "HAN",
+        "act": "sly",
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "painting",
+        "kind": "concert",
+        "x": 1.3,
+        "y": 1.8,
+        "z": 0.4,
+        "s": 0.8
+       }
+      ],
+      "signs": [
+       {
+        "text": "FAKE VERMEER",
+        "style": "red",
+        "at": 0.5
+       }
+      ],
+      "cam": "medium"
+     },
+     "After World War Two, a Dutch painter was arrested for selling a national treasure to the Nazis. To save his life, he had to prove it was a fake."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "THE FORGER WHO",
+      "bottom": "FOOLED THE NAZIS",
+      "case": "CASE 15",
+      "mood": "room",
+      "cast": [
+       {
+        "who": "HAN"
+       }
+      ]
+     },
+     "This is Han van Meegeren."
+    ]
+   ]
+  },
+  {
+   "name": "The forger",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "room",
+      "cast": [
+       {
+        "who": "HAN",
+        "act": "angry",
+        "mood": "angry",
+        "x": -0.6
+       }
+      ],
+      "props": [
+       {
+        "type": "newspaper",
+        "x": 0.9,
+        "y": 2.4,
+        "z": 0.4,
+        "text": "OLD-\nFASHIONED",
+        "sub": "critics pan his work",
+        "mast": "DE KUNST",
+        "s": 0.7
+       }
+      ],
+      "signs": [
+       {
+        "text": "IGNORED BY CRITICS",
+        "style": "cream"
+       }
+      ],
+      "cam": "medium"
+     },
+     "Han van Meegeren was a talented painter, but the art critics mocked his work. So he decided to fool them."
+    ],
+    [
+     "s04",
+     {
+      "set": "room",
+      "cast": [
+       {
+        "who": "HAN",
+        "act": "carry",
+        "x": -0.7
+       }
+      ],
+      "props": [
+       {
+        "type": "painting",
+        "kind": "concert",
+        "x": 0.8,
+        "y": 1.4,
+        "z": 0.5,
+        "s": 0.8
+       }
+      ],
+      "signs": [
+       {
+        "text": "OLD CANVAS",
+        "style": "gold"
+       },
+       {
+        "text": "baked to look ancient",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "medium"
+     },
+     "He painted brand new Vermeers, using old canvases and baking the paint in an oven so it would crack like a three hundred year old masterpiece."
+    ]
+   ]
+  },
+  {
+   "name": "The sales",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "museum",
+      "cast": [
+       {
+        "who": "banker",
+        "act": "cheer",
+        "at": 0.3,
+        "x": -0.8
+       },
+       {
+        "who": "HAN",
+        "act": "sly",
+        "mood": "sly",
+        "x": 0.9
+       }
+      ],
+      "signs": [
+       {
+        "text": "\"A MASTERPIECE!\"",
+        "style": "gold"
+       },
+       {
+        "text": "MILLIONS",
+        "style": "green",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "Experts were thrilled. Museums and collectors paid fortunes for his fakes."
+    ],
+    [
+     "s06",
+     {
+      "set": "mansion",
+      "cast": [
+       {
+        "who": "GORING",
+        "act": "cheer",
+        "at": 0.25,
+        "x": 0.8
+       }
+      ],
+      "props": [
+       {
+        "type": "painting",
+        "kind": "portrait",
+        "seed": 5,
+        "x": -0.9,
+        "y": 2.0,
+        "z": 0.2,
+        "s": 0.8
+       }
+      ],
+      "signs": [
+       {
+        "text": "HERMANN GÖRING",
+        "style": "red"
+       },
+       {
+        "text": "traded 137 paintings",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "One of them, a so-called Vermeer, ended up with the top Nazi leader Hermann Göring, who traded well over a hundred paintings for it."
+    ]
+   ]
+  },
+  {
+   "name": "The arrest",
+   "lines": [
+    [
+     "s07",
+     {
+      "set": "office",
+      "cast": [
+       {
+        "who": "cop",
+        "act": "point",
+        "x": -1
+       },
+       {
+        "who": "HAN",
+        "act": "shock",
+        "at": 0.3,
+        "x": 0.9
+       }
+      ],
+      "signs": [
+       {
+        "text": "1945",
+        "style": "navy",
+        "mono": true
+       },
+       {
+        "text": "TRAITOR?",
+        "style": "red",
+        "at": 0.4
+       }
+      ],
+      "cam": "wide"
+     },
+     "After the war, investigators traced the painting back to van Meegeren, and arrested him for selling Dutch treasure to the enemy. That could mean death."
+    ],
+    [
+     "s08",
+     {
+      "set": "courtroom",
+      "cast": [
+       {
+        "who": "HAN",
+        "act": "talk",
+        "mood": "sly",
+        "z": 1.0
+       }
+      ],
+      "signs": [
+       {
+        "text": "\"I PAINTED IT\"",
+        "style": "gold",
+        "pop": 1.1
+       }
+      ],
+      "cam": "wide"
+     },
+     "So he made an astonishing confession. It wasn't a Vermeer at all. He had painted it himself."
+    ]
+   ]
+  },
+  {
+   "name": "The proof",
+   "lines": [
+    [
+     "s09",
+     {
+      "set": "room",
+      "cast": [
+       {
+        "who": "HAN",
+        "act": "point",
+        "x": -0.8
+       },
+       {
+        "who": "cop",
+        "act": "shock",
+        "at": 0.55,
+        "x": 1.2
+       }
+      ],
+      "props": [
+       {
+        "type": "painting",
+        "kind": "concert",
+        "x": 0.2,
+        "y": 1.6,
+        "z": 0.6,
+        "s": 0.75,
+        "at": 0.25
+       }
+      ],
+      "signs": [
+       {
+        "text": "PAINTING UNDER GUARD",
+        "style": "cream"
+       }
+      ],
+      "cam": "wide"
+     },
+     "Nobody believed him. So, watched by witnesses, he painted one more fake Vermeer, to prove it."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "s10",
+     {
+      "set": "courtroom",
+      "cast": [
+       {
+        "who": "HAN",
+        "act": "cheer",
+        "at": 0.3,
+        "z": 1.0
+       }
+      ],
+      "signs": [
+       {
+        "text": "FORGERY: 1 YEAR",
+        "style": "red"
+       },
+       {
+        "text": "a national hero",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "He was convicted of forgery instead, and sentenced to a year. To many Dutch people, he was a hero, the man who swindled Göring. He died before serving his sentence."
+    ],
+    [
+     "s11",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "HAN",
+        "act": "wave",
+        "mood": "sly"
+       }
+      ],
+      "ask": "Villain or hero?",
+      "cam": "wide"
+     },
+     "Villain, or hero? Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

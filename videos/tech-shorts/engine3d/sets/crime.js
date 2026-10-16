@@ -1469,4 +1469,150 @@ export function register(K) {
     return { ...st, update(t, s, d) { const pos = fl.geometry.attributes.position; for (let i = 0; i < pos.count; i++) pos.setZ(i, Math.sin(pos.getX(i) * 5 + s * 3) * .05); pos.needsUpdate = true; sp.update(s); fo(t, s, d);
       aim(st.cam, [Math.sin(s * .25) * .4, 2.8, 8.4], [0, 2.2, 0]); } };
   };
+
+  // ---------- generic story scene: a whole scene described in the script line (from episode 9) ----------
+  // p: { set, mood, cast: [ {who, x, z, face, act, at, to, scale, mood, prop} ], props: [ {type, x, y, z, s, at, text, ...} ],
+  //      signs: [ {text, style, at, count} ], fx, cam }
+  const PRESETS = { conman: LUSTIG, poisson: POISSON, cooper: COOPER, attendant: ATTENDANT, peruggia: PERUGGIA, notar: NOTAR, thief: THIEF, guard: GUARD, ed: ED,
+    cop: { suit: 0x1f2c5c, pants: 0x1f2c5c, tie: null, shirt: 0x1f2c5c, hat: 'kepi', hatCol: 0x1f2c5c, stache: true, hair: 0x2a1a10, brow: -.5 },
+    detective: { suit: 0xb89a6a, pants: 0x3a3a44, tie: 0x2a2a3a, hat: 'fedora', hatCol: 0x4a4038, band: 0x2a2018, hair: 0x3a2a1e, brow: -.3 },
+    banker: { suit: 0x2a2a34, pants: 0x2a2a34, tie: 0x8a6a1a, hair: 0x9a9a9a, hairStyle: 'side', stache: true, belly: 1.25, brow: .1 },
+    judge: { suit: 0x15151c, pants: 0x15151c, tie: null, shirt: 0xf2f2f2, hair: 0xe8e8e8, hairStyle: 'curly', belly: 1.1, brow: -.3 },
+    woman: { suit: 0x9a3a5a, pants: 0xe8b8a0, skirt: 0x9a3a5a, tie: null, shirt: 0xf2ece0, hair: 0x5a3a1e, hairStyle: 'bob', skin: 0xf4c7a6 },
+    oldman: { suit: 0x6a5a4a, pants: 0x4a4038, tie: null, shirt: 0x8a7a5a, hair: 0xe8e8e8, hairStyle: 'bald', hat: 'cap', hatCol: 0x6a5240, stache: true, belly: 1.1 },
+    worker: { suit: 0x3a5a8a, pants: 0x2a3a5a, tie: null, shirt: 0x3a5a8a, hair: 0x3a2a1e, hairStyle: 'side', hat: 'cap', hatCol: 0x2a3a5a },
+    pilot: { suit: 0x1a2a4a, pants: 0x1a2a4a, tie: 0x0d0d12, shirt: 0xf2f2f2, hat: 'kepi', hatCol: 0x1a2a4a, hair: 0x3a2a1e, brow: 0 },
+    scientist: { suit: 0xf2f2f2, pants: 0x3a3a44, tie: 0x2a5a8a, hair: 0x8a8a8a, hairStyle: 'curly', stache: false, brow: .1 },
+    sailor: { suit: 0x1a2a4a, pants: 0xf2f2f2, tie: null, shirt: 0xf2f2f2, hair: 0x3a2a1e, hairStyle: 'side', hat: 'cap', hatCol: 0xf2f2f2 },
+    gangster: { suit: 0x2a2a30, pants: 0x2a2a30, tie: 0xc8202f, hat: 'fedora', hatCol: 0x1a1a20, band: 0xc8202f, hair: 0x1a120c, stache: true, brow: -.6 },
+    student: { suit: 0x5a4a3a, pants: 0x3a3a44, tie: 0x2a5a3a, hair: 0x3a2a1e, hairStyle: 'side', skin: 0xf0c8a6 },
+    reporter: { suit: 0x7a6a5a, pants: 0x4a4a52, tie: 0x2a2a5a, hat: 'fedora', hatCol: 0x6a5a4a, hair: 0x5a3a1e, brow: .2 },
+    teen: { suit: 0xd23a2a, pants: 0x3a5a8a, tie: null, shirt: 0xd23a2a, hair: 0x5a3a1e, hairStyle: 'side', headScale: 1.15, skin: 0xf4c7a6 } };
+  function castMember(c, i) {
+    const spec = typeof c.who === 'string' ? ((window.CAST || {})[c.who] || PRESETS[c.who] || (c.who.startsWith('dealer') ? null : null)) : c.who;
+    let h;
+    if (c.who === 'kid' || (spec && spec.kid)) h = kid(c.seed ?? i);
+    else if (typeof c.who === 'string' && c.who.startsWith('dealer')) h = dealer(+c.who.slice(6) || i);
+    else if (spec && spec.preset) h = makeHuman(Object.assign({}, PRESETS[spec.preset] || {}, spec));
+    else h = makeHuman(spec || PRESETS.worker);
+    if (c.scale) h.scale.multiplyScalar(c.scale); return h;
+  }
+  const FACE = { front: 0, left: -Math.PI / 2 + .3, right: Math.PI / 2 - .3, back: Math.PI, l: -.5, r: .5 };
+  function actPose(h, c, t, s, d, i) {
+    const at = c.at ?? 0, k = t > at, m = c.mood, P = { s: s + i * .7, seed: i * .23 };
+    const E = { happy: { mouth: 'smile', happy: .8 }, sad: { mouth: 'frown', brow: .7 }, shock: { mouth: 'open', open: .7, wide: 1, brow: .8 }, angry: { mouth: 'frown', brow: -.9 },
+      sly: { mouth: 'smile', happy: .3, brow: -.5 }, worried: { mouth: 'frown', brow: .6, sweat: true }, calm: { mouth: 'smile', happy: .1 }, scared: { mouth: 'open', open: .4, wide: .8, brow: .9, sweat: true } };
+    Object.assign(P, E[m] || E.calm);
+    switch (c.act) {
+      case 'talk': P.talk = 1; P.armR = [-.5, .5 + Math.sin(s * 3) * .2]; break;
+      case 'shock': if (k) Object.assign(P, E.shock, { armR: [-.4, 2.0], armL: [-.4, 2.0] }); break;
+      case 'cheer': if (k) Object.assign(P, E.happy, { upR: 1, upL: 1, hop: Math.abs(Math.sin(s * 5)) * .25 }); break;
+      case 'sad': Object.assign(P, E.sad, { lookX: .25, armR: [0, .1], armL: [0, .1] }); break;
+      case 'point': P.armR = [-1.4, .15]; P.talk = .5; break;
+      case 'carry': P.armR = [-1.0, .15]; P.armL = [-1.0, .15]; break;
+      case 'sit': P.sit = 1; P.armR = [-.8, .15]; P.armL = [-.8, .15]; break;
+      case 'wave': P.waveR = 1; P.mouth = 'smile'; P.happy = .6; break;
+      case 'think': P.armR = [-1.9, .5]; P.brow = .4; P.eyeX = Math.sin(s * .8) * .5; break;
+      case 'phone': P.armR = [-.2, 2.6]; P.talk = 1; break;
+      case 'hands_up': if (k) { P.upR = 1; P.upL = 1; Object.assign(P, E.scared); } break;
+      case 'dig': P.lean = .5; P.armR = [-1.2 + Math.sin(s * 9) * .35, .2]; P.armL = [-1.2 - Math.sin(s * 9) * .35, .2]; break;
+      case 'look': P.lookY = Math.sin(s * .9) * .6; P.eyeX = Math.sin(s * .9) * .6; break;
+    }
+    const walking = c.act === 'walk' || c.act === 'run' || c.act === 'sneak';
+    if (walking && c.to !== undefined) { const w = seg(t, at, c.until ?? 1); if (w > 0 && w < 1) { P.walk = s * (c.act === 'run' ? 14 : c.act === 'sneak' ? 6 : 8); if (c.act === 'run') P.lean = .25; if (c.act === 'sneak') { P.lean = .3; P.hop = Math.max(0, Math.sin(s * 3)) * .2; } } }
+    h.pose(P);
+  }
+  const SIGNSTY = { red: [0xc8202f, '#ffffff'], cream: [0xf3e3c3, '#2a1a12'], navy: [0x1d2442, '#ffc44d'], green: [0x2f8a48, '#ffffff'], gold: [0xffc44d, '#2a1a12'], blue: [0x0a5eb0, '#ffffff'], white: [0xffffff, '#1d2442'] };
+  function scenery(st, set) {
+    const add = (...o) => st.scene.add(...o);
+    if (set === 'street' || set === 'night' || set === 'rain') { add(parisRow(-5, 10, 18, 7), road(40, 2.6)); if (set === 'night') add(stars(70, 5)); }
+    else if (set === 'museum') { louvreWall(st); [-2.4, 0, 2.4].forEach((x, i) => { const pp = painting(1.2, 1.5, (c, cw, ch) => i === 1 ? drawStorm(c, cw, ch) : drawPortrait(c, cw, ch, i + 2)); pp.position.set(x, 2.7, -2.0); add(pp); }); }
+    else if (set === 'gallery_empty') { louvreWall(st); [-2.4, 0, 2.4].forEach(x => { const pp = painting(1.2, 1.5, () => {}); pp.userData.canvas.visible = false; pp.position.set(x, 2.7, -2.0); add(pp); }); }
+    else if (set === 'vault') { const w = boxWall(9, 7); w.position.set(0, 0, -2.0); add(w); }
+    else if (set === 'bank') { add(M(new THREE.PlaneGeometry(14, 7), matte(0xd8c8a8), { pos: [0, 3.5, -2.2], shadow: false }), M(RB(6, 1.2, .8, .05), plastic(0x6a3a22, { clearcoat: .8 }), { pos: [0, .6, -1.0] }));
+      const b = textSign(1.6, .5, 'BANK', { color: 0x1d2442, fg: '#ffc44d', size: 80 }); b.position.set(0, 4.6, -2.0); add(b); for (let i = 0; i < 3; i++) add(M(new THREE.CylinderGeometry(.03, .03, .8, 8), metal(0xd8b36a), { pos: [-1.5 + i * 1.5, 1.6, -1.0] })); }
+    else if (set === 'courtroom') { add(M(new THREE.PlaneGeometry(14, 7), matte(0x6a4a30), { pos: [0, 3.5, -2.4], shadow: false }), M(RB(3.4, 1.8, 1.0, .05), plastic(0x5a3420, { clearcoat: .6 }), { pos: [0, .9, -1.8] }));
+      const j = makeHuman(PRESETS.judge); j.position.set(0, .9, -2.3); j.scale.setScalar(.8); add(j); st.userData.judge = j;
+      const g = G(M(new THREE.CylinderGeometry(.06, .06, .35, 10), plastic(0x5a3420), { rot: [0, 0, Math.PI / 2] })); g.position.set(.8, 1.9, -1.4); add(g); }
+    else if (set === 'prison') { add(M(new THREE.PlaneGeometry(14, 7), matte(0x8a8a90), { pos: [0, 3.5, -1.6], shadow: false }), M(RB(2.6, .4, 1.0, .05), matte(0x6a6a70), { pos: [-1.6, .2, -1.0] })); st.userData.frontBars = true; }
+    else if (set === 'road' || set === 'country') add(road(60, 3), forest(30, 40, 5, -5, 17, 0x3e7a4a));
+    else if (set === 'beach') beachSet(st);
+    else if (set === 'forest') add(forest(70, 30, 10, -1, 23, 0x1f4a3a));
+    else if (set === 'airport') { const j = jet({ night: st.userData.night }); j.position.set(.5, 1.0, -3.8); j.rotation.y = .25; add(j, cityLights(60, 5)); }
+    else if (set === 'sky') { add(forest(80, 40, 16, -6, 13, 0x10261f)); const j = jet({ night: true }); j.position.set(0, 4.6, -3); j.scale.setScalar(.7); add(j); }
+    else if (set === 'desert') { const r = rng(5); for (let i = 0; i < 10; i++) { const x = (r() - .5) * 16, z = -2 - r() * 8, c = plastic(0x4a8a3a); add(G(M(new THREE.CylinderGeometry(.18, .2, 1.6, 10), c, { pos: [x, .8, z] }), M(new THREE.CylinderGeometry(.1, .1, .6, 8), c, { pos: [x + .3, 1.1, z], rot: [0, 0, -1.2] }))); } }
+    else if (set === 'abbey') gothic(st);
+    else if (set === 'sea') { add(M(new THREE.CircleGeometry(80, 48), plastic(0x2a6aa8, { roughness: .12, clearcoat: 1 }), { rot: [-Math.PI / 2, 0, 0], pos: [0, .02, 0], shadow: false })); }
+    else if (set === 'mansion') { add(M(new THREE.PlaneGeometry(14, 7), matte(0x7a2a3a), { pos: [0, 3.5, -2.4], shadow: false })); [-1, 1].forEach(sd => add(M(RB(1.2, 4.5, .2, .1), matte(0x8a1a2a), { pos: [sd * 3.4, 2.25, -2.2] })));
+      const ch = G(M(SPH(.3, 20, 14), glowM(0xffe0a0, 2)), M(new THREE.TorusGeometry(.55, .05, 8, 32), metal(0xd8b36a), { rot: [Math.PI / 2, 0, 0] })); ch.position.set(0, 5.2, -.8); add(ch); }
+    else if (set === 'room' || set === 'office') { add(M(new THREE.PlaneGeometry(14, 7), matte(set === 'office' ? 0x8a8a7a : 0xa08a6a), { pos: [0, 3.5, -2.2], shadow: false }), M(new THREE.PlaneGeometry(1.4, 1.6), glowM(0x9ac0ff, .6), { pos: [2.2, 3.0, -2.15], shadow: false })); }
+  }
+  const SETMOOD = { street: DUSK, night: NIGHT, rain: STORM, museum: LOUVRE, gallery_empty: LOUVRE, vault: VAULT, bank: ROOM, courtroom: Object.assign({}, ROOM, { top: '#3a2418', bottom: '#8a6a4a', floor: 0x6a4a30 }),
+    prison: Object.assign({}, VAULT, { top: '#3a4050', bottom: '#8a8a94', floor: 0x6a6a70 }), road: FIELDS, country: FIELDS, beach: BEACH, forest: STORM, airport: Object.assign({}, STORM, { floor: 0x2a2f3a }),
+    sky: STORM, desert: { top: '#f29a6a', bottom: '#f8d8a0', floor: 0xe8c088, fogColor: '#f2c898', key: 0xffe2b8, keyI: 2.8 }, abbey: ABBEY, sea: Object.assign({}, DUSK, { floor: null }), mansion: ROOM, room: ROOM, office: ROOM, studio: NIGHT };
+  const MOODS = { night: NIGHT, dusk: DUSK, day: FIELDS, storm: STORM, room: ROOM, vault: VAULT, beach: BEACH };
+  function makeProp(q) {
+    const T = q.type; let o;
+    if (T === 'cash') o = cashStack(q.n ?? 6); else if (T === 'gems') o = gemPile(q.n ?? 24, q.r ?? .8); else if (T === 'gold') { o = new THREE.Group(); for (let i = 0; i < (q.n ?? 6); i++) o.add(M(RB(.4, .14, .2, .02), metal(0xffc44d), { pos: [(i % 3 - 1) * .42, .07 + Math.floor(i / 3) * .15, 0] })); }
+    else if (T === 'painting') o = q.kind === 'mona' ? mona() : painting(q.w ?? 1.2, q.h ?? 1.5, (c, cw, ch) => q.kind === 'storm' ? drawStorm(c, cw, ch) : q.kind === 'concert' ? drawConcert(c, cw, ch) : drawPortrait(c, cw, ch, q.seed ?? 1));
+    else if (T === 'empty_frame') { o = painting(q.w ?? 1.2, q.h ?? 1.5, () => {}); o.userData.canvas.visible = false; }
+    else if (T === 'car') o = car(q.color ?? 0x3a4a6a); else if (T === 'van') o = van(); else if (T === 'bus') o = schoolBus(); else if (T === 'jet') o = jet({ night: q.night });
+    else if (T === 'suitcase') o = suitcase(); else if (T === 'newspaper') o = newspaper(q.text ?? 'BREAKING', q.sub ?? '', q.w ?? 2.0, q.h ?? 2.6, q.mast ?? 'THE DAILY NEWS');
+    else if (T === 'bars') o = bars(q.w ?? 3.4, q.h ?? 3.4); else if (T === 'table') o = table(q.w ?? 2.6, q.d ?? 1.2); else if (T === 'safe') o = vaultDoor(q.r ?? 1.4); else if (T === 'boxes') o = boxWall(q.c ?? 6, q.rows ?? 5);
+    else if (T === 'tower') o = tower(); else if (T === 'chair') o = coronationChair(); else if (T === 'stone') o = stoneBlock(); else if (T === 'sandwich') o = sandwich(); else if (T === 'bag') o = trashBag();
+    else if (T === 'letter') o = envelope(q.text ?? '', .8); else if (T === 'flag') o = saltire(q.w ?? 1.2, q.h ?? .75); else if (T === 'chute') o = chute(); else if (T === 'bills') { o = new THREE.Group(); for (let i = 0; i < 10; i++) o.add(bill()); o.userData.fly = true; }
+    else if (T === 'map') o = sign(3.0, 2.0, (x, w, h) => { x.fillStyle = '#e8dcbc'; x.fillRect(0, 0, w, h); x.fillStyle = '#c8d8a0'; x.beginPath(); x.ellipse(w * .5, h * .5, w * .45, h * .38, .3, 0, 7); x.fill();
+      x.strokeStyle = '#c8202f'; x.lineWidth = 8; x.setLineDash([18, 12]); x.beginPath(); x.moveTo(w * .2, h * .75); x.bezierCurveTo(w * .4, h * .3, w * .6, h * .7, w * .8, h * .25); x.stroke(); x.setLineDash([]);
+      x.fillStyle = '#c8202f'; [[.2, .75], [.8, .25]].forEach(([a, b]) => { x.beginPath(); x.arc(w * a, h * b, 16, 0, 7); x.fill(); }); label(x, q.from ?? '', w * .22, h * .9, h * .08, '#2a1a12', 900); label(x, q.to ?? '', w * .78, h * .1, h * .08, '#2a1a12', 900); }, { color: 0xe8dcbc, depth: .04 });
+    else if (T === 'question') o = textSign(.8, .8, '?', { color: 0xffc44d, fg: '#1d2442', size: 150 });
+    else if (T === 'house') o = house(0, 0, q.w ?? 1.6, q.h ?? 1.8, q.color ?? 0xf3e2c4, q.seed ?? 3);
+    else if (T === 'phone') o = G(M(RB(.5, .8, .4, .08), plastic(0x1a1a1a)), M(RB(.7, .15, .15, .07), plastic(0x1a1a1a), { pos: [0, .5, 0] }));
+    else if (T === 'crown') o = G(M(new THREE.CylinderGeometry(.35, .3, .3, 16, 1, true), metal(0xd8b040, { side: THREE.DoubleSide })), ...[0, 1, 2, 3, 4].map(i => M(new THREE.ConeGeometry(.08, .22, 6), metal(0xd8b040), { pos: [Math.cos(i * 1.26) * .32, .25, Math.sin(i * 1.26) * .32] })));
+    else if (T === 'boat') o = G(M(RB(3.0, .6, 1.1, .2), plastic(q.color ?? 0x8a3a2a), { pos: [0, .3, 0] }), M(RB(1.0, .7, .9, .1), plastic(0xf2f2f2), { pos: [-.4, .95, 0] }), M(new THREE.CylinderGeometry(.04, .04, 2.2, 8), matte(0x6a4a2a), { pos: [.5, 1.6, 0] }));
+    else if (T === 'sign') { const sty = SIGNSTY[q.style ?? 'cream']; o = textSign(q.w ?? Math.min(2.8, Math.max(1.0, (q.text || '').length * .12 + .5)), q.h ?? .5, q.text ?? '', { color: sty[0], fg: sty[1], size: q.size ?? 60, font: q.mono ? MONO : undefined }); }
+    else o = new THREE.Group();
+    o.position.set(q.x ?? 0, q.y ?? 0, q.z ?? 0); if (q.ry) o.rotation.y = q.ry; if (q.rx) o.rotation.x = q.rx; if (q.s) o.scale.setScalar(q.s); o.userData.base = o.scale.x; return o;
+  }
+  BUILD.scene = (p) => {
+    const set = p.set;
+    if (set === 'title') { const c = (p.cast || [])[0] || { who: 'detective' }; return titleSet(p, MOODS[p.mood] || NIGHT, () => castMember(c, 0), (st) => { (p.props || []).forEach(q => st.scene.add(makeProp(q))); return null; }); }
+    const st = stage(Object.assign({}, SETMOOD[set] || NIGHT, MOODS[p.mood] || {}, set === 'sea' ? { floor: null } : {}));
+    st.userData = { night: p.mood === 'night' || set === 'night' || set === 'airport' }; scenery(st, set);
+    const cast = (p.cast || []).map((c, i) => { const h = castMember(c, i), n = (p.cast || []).length; h.position.set(c.x ?? (n === 1 ? 0 : -1.3 + i * 2.6 / (n - 1)), c.y ?? 0, c.z ?? (set === 'courtroom' ? .6 : .3)); h.rotation.y = FACE[c.face ?? 'front'] ?? c.face ?? 0; st.scene.add(h); return h; });
+    const props = (p.props || []).map(q => { const o = makeProp(q); st.scene.add(o); return o; });
+    if (st.userData.frontBars) { const b = bars(4.2, 3.6, 11); b.position.set(0, 0, 1.4); st.scene.add(b); }
+    const signs = (p.signs || []).map((g, i) => { const sty = SIGNSTY[g.style ?? (i ? 'cream' : 'red')], txt = g.text ?? ''; const w = g.w ?? Math.min(2.8, Math.max(1.2, txt.replace('{n}', String(g.count ?? '')).length * .12 + .5));
+      const o = textSign(w, .5, g.count !== undefined ? '' : txt, { color: sty[0], fg: sty[1], size: g.size ?? 58, font: g.mono ? MONO : undefined }); o.position.set(g.x ?? 0, g.y ?? [4.3, 3.72, 3.14][i] ?? 3, g.z ?? .6 + i * .05); if (g.tilt) o.rotation.z = g.tilt; st.scene.add(o); return o; });
+    const fx = p.fx, rn = fx === 'rain' ? rain(260, [12, 12, 8], [0, 3, 0]) : null, snow = fx === 'snow' || fx === 'sparkle' || fx === 'dust' ? sparkles(40, [0, 2.8, .4], 2.6, fx === 'dust' ? 0xd8c8a8 : fx === 'sparkle' ? 0xfff2c0 : 0xffffff, 11) : null;
+    const conf = fx === 'confetti' ? confetti(180, [0, 4.6, .8], 9, 4) : null, flash = fx === 'flash' || fx === 'alarm' ? new THREE.AmbientLight(fx === 'alarm' ? 0xff3030 : 0xcfe0ff, 0) : null;
+    [rn, snow, conf, flash].forEach(o => o && st.scene.add(o));
+    const cam = p.cam ?? 'wide', focus = cast[p.focus ?? 0], fo = p.ask ? followOutro(st, p.ask, { qy: p.qy ?? 4.0, by: p.by ?? 1.1 }) : null;
+    return { ...st, update(t, s, d) { if (fo) fo(t, s, d);
+      (p.cast || []).forEach((c, i) => { const h = cast[i]; if (c.to !== undefined) { const w = ease(seg(t, c.at ?? 0, c.until ?? 1)); const x0 = c.x ?? h.position.x; h.position.x = lerp(c.x ?? 0, c.to, w); if (w > 0 && w < 1 && !c.face) h.rotation.y = c.to > (c.x ?? 0) ? Math.PI / 2 - .2 : -Math.PI / 2 + .2; }
+        if (c.enter !== undefined) h.visible = t >= c.enter; if (c.exit !== undefined && t > c.exit) h.visible = false; actPose(h, c, t, s, d, i); });
+      (p.props || []).forEach((q, i) => { const o = props[i]; if (q.at !== undefined) o.scale.setScalar(t > q.at ? Math.min(1, pop((t - q.at) * d)) * o.userData.base : 0); if (q.until !== undefined && t > q.until) o.scale.setScalar(0);
+        if (q.move) { const w = ease(seg(t, q.move.from ?? 0, q.move.until ?? 1)); o.position.set(lerp(q.x ?? 0, q.move.to[0], w), lerp(q.y ?? 0, q.move.to[1], w), lerp(q.z ?? 0, q.move.to[2], w)); }
+        if (q.carry !== undefined) { const h = cast[q.carry]; if (h) handProp(h, 1, o, q.off ?? [.05, -.15, .2]); }
+        if (q.spin) o.rotation.y = s * q.spin; if (q.bob) o.position.y = (q.y ?? 0) + Math.sin(s * 2 + i) * q.bob;
+        if (o.userData.fly) o.children.forEach((b, j) => { const ph = frac(s * .5 + j / 10); b.position.set(Math.sin(j * 2.1 + s) * 1.6, 3 - ph * 3, Math.cos(j) * .6); b.rotation.set(s * 2 + j, s + j, j); });
+        if (o.userData.beacon) o.userData.beacon.material.opacity = Math.sin(s * 6) > 0 ? .9 : .1; });
+      (p.signs || []).forEach((g, i) => { const o = signs[i], at = g.at ?? .05 + i * .15; o.scale.setScalar(t > at && (g.until === undefined || t < g.until) ? Math.min(g.pop ?? 1, pop((t - at) * d)) : 0);
+        if (g.count !== undefined) { const n = Math.round(lerp(g.from ?? 0, g.count, ease(seg(t, at, at + (g.dur ?? .5))))); const txt = (g.text ?? '{n}').replace('{n}', (g.money ? '$' : '') + n.toLocaleString('en-US')); const sty = SIGNSTY[g.style ?? (i ? 'cream' : 'red')];
+          o.userData.redraw((x, w, h) => { rrect(x, 0, 0, w, h, h * .25); x.fillStyle = hex(sty[0]); x.fill(); label(x, txt, w / 2, h / 2 + 4, h * .5, sty[1], 900, 'center', g.mono ? MONO : undefined); }); } });
+      if (st.userData.judge) st.userData.judge.pose({ s, brow: -.4, mouth: 'flat', armR: t > .6 ? [-1.2 + Math.max(0, Math.sin((t - .6) * 40)) * .4, .2] : [-.5, .2] });
+      if (rn) rn.update(s); if (snow) snow.update(s); if (conf) conf.update(s - (p.fxAt ?? .3) * d);
+      if (flash) flash.intensity = fx === 'alarm' ? Math.max(0, Math.sin(s * 7)) * 2.5 : (Math.max(0, 1 - Math.abs(t - (p.fxAt ?? .35)) * 25)) * 3;
+      const e = ease(t), sw = Math.sin(s * .3) * .4;
+      if (cam === 'wide') aim(st.cam, [sw, 3.0, lerp(9.4, 8.8, e)], [0, 2.3, 0]);
+      else if (cam === 'medium') aim(st.cam, [sw * .6, 3.0, lerp(7.6, 7.0, e)], [0, 2.5, 0]);
+      else if (cam === 'close') { const fx0 = focus ? focus.position.x : 0; aim(st.cam, [fx0 + sw * .3, 3.1, lerp(5.6, 5.0, e)], [fx0, 2.75, 0]); }
+      else if (cam === 'high') aim(st.cam, [0, lerp(6.5, 5.8, e), 8.6], [0, 1.2, 0]);
+      else if (cam === 'low') aim(st.cam, [sw, 1.4, lerp(7.6, 7.0, e)], [0, 2.7, 0]);
+      else if (cam === 'pan') aim(st.cam, [lerp(-1.6, 1.6, e), 3.0, 8.6], [lerp(-.8, .8, e), 2.3, 0]);
+      else if (cam === 'follow') { const fx0 = focus ? focus.position.x : 0; aim(st.cam, [fx0 + .3, 3.0, 9.2], [fx0, 2.2, 0]); }
+      else if (cam === 'down') aim(st.cam, [0, lerp(5.5, 2.8, e), lerp(10, 8.6, e)], [0, lerp(3.4, 2.3, e), -1]);
+      else if (cam === 'push') aim(st.cam, [0, 3.0, lerp(10, 6.6, e)], [0, 2.5, 0]);
+    } };
+  };
+  BUILD.outro_generic = (p) => BUILD.scene(Object.assign({}, p, { set: p.base || 'studio' }));
 }

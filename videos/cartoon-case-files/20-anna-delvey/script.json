@@ -1,0 +1,309 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 20,
+ "title": "The Fake Heiress",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "ANNA": {
+   "preset": "woman",
+   "suit": 1710618,
+   "skirt": 1710618,
+   "hair": 13146714,
+   "hairStyle": "bob",
+   "iris": 3824250
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "mansion",
+      "cast": [
+       {
+        "who": "ANNA",
+        "act": "sly",
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "€60M TRUST FUND?",
+        "style": "gold",
+        "x": 0,
+        "y": 1.3,
+        "z": 1.2,
+        "at": 0.4
+       }
+      ],
+      "signs": [
+       {
+        "text": "NEW YORK",
+        "style": "cream"
+       }
+      ],
+      "cam": "medium"
+     },
+     "She told New York she was a German heiress with a fortune waiting for her. Hotels, banks and friends believed her. None of it was true."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "THE FAKE",
+      "bottom": "HEIRESS",
+      "case": "CASE 20",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "ANNA"
+       }
+      ]
+     },
+     "This is the story of Anna Delvey."
+    ]
+   ]
+  },
+  {
+   "name": "The act",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "mansion",
+      "cast": [
+       {
+        "who": "ANNA",
+        "act": "talk",
+        "x": -0.6
+       },
+       {
+        "who": "dealer1",
+        "act": "cheer",
+        "at": 0.3,
+        "x": 0.9
+       }
+      ],
+      "signs": [
+       {
+        "text": "\"ANNA DELVEY\"",
+        "style": "gold"
+       },
+       {
+        "text": "real name: Anna Sorokin",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "Anna Sorokin, born in Russia and raised in Germany, arrived in New York calling herself Anna Delvey, a wealthy heiress."
+    ],
+    [
+     "s04",
+     {
+      "set": "mansion",
+      "cast": [
+       {
+        "who": "ANNA",
+        "act": "cheer",
+        "at": 0.2,
+        "mood": "happy"
+       }
+      ],
+      "props": [
+       {
+        "type": "bills",
+        "y": 0.5
+       }
+      ],
+      "signs": [
+       {
+        "text": "LUXURY HOTELS",
+        "style": "gold"
+       },
+       {
+        "text": "big tips · designer clothes",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "medium"
+     },
+     "She lived in luxury hotels, handed out hundred dollar tips, and talked about opening an exclusive art club."
+    ]
+   ]
+  },
+  {
+   "name": "The cons",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "bank",
+      "cast": [
+       {
+        "who": "ANNA",
+        "act": "talk",
+        "x": -0.7
+       },
+       {
+        "who": "banker",
+        "act": "look",
+        "x": 0.9
+       }
+      ],
+      "signs": [
+       {
+        "text": "FAKE DOCUMENTS",
+        "style": "red"
+       },
+       {
+        "text": "$100,000 loan",
+        "style": "green",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "Prosecutors said she used fake documents to persuade a bank to lend her a hundred thousand dollars, which she never paid back."
+    ],
+    [
+     "s06",
+     {
+      "set": "airport",
+      "mood": "day",
+      "cast": [
+       {
+        "who": "ANNA",
+        "act": "wave",
+        "x": -0.6,
+        "mood": "happy"
+       }
+      ],
+      "props": [
+       {
+        "type": "jet",
+        "x": 0.8,
+        "z": -2.6,
+        "s": 0.5
+       }
+      ],
+      "signs": [
+       {
+        "text": "PRIVATE JET",
+        "style": "gold"
+       },
+       {
+        "text": "unpaid bills",
+        "style": "red",
+        "at": 0.5
+       }
+      ],
+      "cam": "wide"
+     },
+     "She ran up huge hotel bills, chartered a private plane, and left friends and businesses to pay."
+    ]
+   ]
+  },
+  {
+   "name": "The fall",
+   "lines": [
+    [
+     "s07",
+     {
+      "set": "street",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "cop",
+        "act": "point",
+        "x": -0.8
+       },
+       {
+        "who": "ANNA",
+        "act": "shock",
+        "at": 0.35,
+        "x": 0.8
+       }
+      ],
+      "signs": [
+       {
+        "text": "ARRESTED · 2017",
+        "style": "red",
+        "mono": true
+       }
+      ],
+      "cam": "wide"
+     },
+     "In 2017, after a string of unpaid bills, she was arrested."
+    ],
+    [
+     "s08",
+     {
+      "set": "courtroom",
+      "cast": [
+       {
+        "who": "ANNA",
+        "act": "sly",
+        "mood": "calm",
+        "z": 1
+       }
+      ],
+      "signs": [
+       {
+        "text": "GUILTY",
+        "style": "red"
+       },
+       {
+        "text": "4 – 12 YEARS",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "wide"
+     },
+     "In 2019, a jury convicted her of grand larceny and theft of services. She was sentenced to four to twelve years, and ordered to repay about two hundred thousand dollars."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "s09",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "ANNA",
+        "act": "wave",
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "NETFLIX",
+        "style": "red",
+        "x": 1.2,
+        "y": 1.4,
+        "z": 0.8,
+        "w": 1.4
+       }
+      ],
+      "ask": "How did so many believe her?",
+      "cam": "wide"
+     },
+     "She was released early, and her story became a Netflix series. Fake it till you make it, until you get caught. Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

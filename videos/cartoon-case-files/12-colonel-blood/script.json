@@ -1,0 +1,396 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 12,
+ "title": "The Man Who Stole the Crown Jewels",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "BLOOD": {
+   "preset": "conman",
+   "suit": 1710618,
+   "pants": 1710618,
+   "tie": null,
+   "shirt": 15921906,
+   "hat": "fedora",
+   "hatCol": 1710618,
+   "band": 1710618,
+   "hair": 6965802,
+   "hairStyle": "curly",
+   "stache": true
+  },
+  "EDWARDS": {
+   "preset": "oldman",
+   "hat": null,
+   "suit": 5909034,
+   "hairStyle": "bald"
+  },
+  "KING": {
+   "suit": 9050666,
+   "pants": 5904938,
+   "tie": null,
+   "shirt": 14200896,
+   "hair": 1708556,
+   "hairStyle": "curly",
+   "stache": true,
+   "belly": 1.05
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "vault",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "BLOOD",
+        "act": "carry",
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "crown",
+        "carry": 0,
+        "off": [
+         0.3,
+         -0.05,
+         0.2
+        ]
+       }
+      ],
+      "signs": [
+       {
+        "text": "1671",
+        "style": "navy",
+        "mono": true
+       }
+      ],
+      "cam": "medium"
+     },
+     "In 1671, a man walked into the Tower of London, and walked out with the King's crown. Then the King forgave him."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "THE MAN WHO STOLE",
+      "bottom": "THE CROWN JEWELS",
+      "case": "CASE 12",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "BLOOD"
+       }
+      ],
+      "props": [
+       {
+        "type": "crown",
+        "x": 1.4,
+        "y": 1.2,
+        "z": 0.8,
+        "spin": 0.6
+       }
+      ]
+     },
+     "This is the story of Colonel Blood."
+    ]
+   ]
+  },
+  {
+   "name": "The parson",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "abbey",
+      "cast": [
+       {
+        "who": "BLOOD",
+        "act": "talk",
+        "mood": "calm",
+        "x": -0.8
+       },
+       {
+        "who": "EDWARDS",
+        "act": "talk",
+        "x": 0.9,
+        "mood": "happy"
+       }
+      ],
+      "signs": [
+       {
+        "text": "FAKE PARSON",
+        "style": "red"
+       }
+      ],
+      "cam": "wide"
+     },
+     "Thomas Blood, an Irish adventurer, dressed up as a parson, and befriended the elderly keeper of the jewels, Talbot Edwards."
+    ],
+    [
+     "s04",
+     {
+      "set": "mansion",
+      "cast": [
+       {
+        "who": "BLOOD",
+        "act": "talk",
+        "x": -0.8
+       },
+       {
+        "who": "EDWARDS",
+        "act": "cheer",
+        "at": 0.3,
+        "x": 0.9
+       }
+      ],
+      "signs": [
+       {
+        "text": "A FAKE NEPHEW",
+        "style": "cream"
+       }
+      ],
+      "cam": "wide"
+     },
+     "He visited again and again, and even suggested his nephew should marry Edwards' daughter."
+    ]
+   ]
+  },
+  {
+   "name": "The theft",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "vault",
+      "mood": "room",
+      "cast": [
+       {
+        "who": "BLOOD",
+        "act": "point",
+        "x": -1
+       },
+       {
+        "who": "dealer2",
+        "act": "sneak",
+        "x": 0
+       },
+       {
+        "who": "EDWARDS",
+        "act": "shock",
+        "at": 0.4,
+        "x": 1.3
+       }
+      ],
+      "props": [
+       {
+        "type": "crown",
+        "x": 0.3,
+        "y": 1.6,
+        "z": 0.4,
+        "spin": 0.5
+       }
+      ],
+      "signs": [
+       {
+        "text": "MAY 1671",
+        "style": "navy",
+        "mono": true
+       }
+      ],
+      "cam": "wide"
+     },
+     "In May 1671, Blood arrived with his gang. They overpowered Edwards and seized the royal regalia."
+    ],
+    [
+     "s06",
+     {
+      "set": "vault",
+      "mood": "room",
+      "cast": [
+       {
+        "who": "BLOOD",
+        "act": "carry"
+       }
+      ],
+      "props": [
+       {
+        "type": "crown",
+        "carry": 0,
+        "off": [
+         0.3,
+         -0.1,
+         0.2
+        ]
+       }
+      ],
+      "signs": [
+       {
+        "text": "SQUASHED",
+        "style": "red",
+        "at": 0.35
+       },
+       {
+        "text": "to hide it",
+        "style": "cream",
+        "at": 0.5
+       }
+      ],
+      "cam": "close"
+     },
+     "To hide the crown under his cloak, the story goes, Blood flattened it with a mallet."
+    ]
+   ]
+  },
+  {
+   "name": "The chase",
+   "lines": [
+    [
+     "s07",
+     {
+      "set": "street",
+      "mood": "dusk",
+      "cast": [
+       {
+        "who": "BLOOD",
+        "act": "run",
+        "x": -1,
+        "to": 3.5,
+        "at": 0.1
+       },
+       {
+        "who": "cop",
+        "act": "run",
+        "x": -3.2,
+        "to": 2.0,
+        "at": 0.2
+       }
+      ],
+      "signs": [
+       {
+        "text": "CAUGHT!",
+        "style": "red",
+        "at": 0.75,
+        "pop": 1.15
+       }
+      ],
+      "cam": "follow"
+     },
+     "But the alarm was raised. Blood and his gang were chased through the Tower, and caught before they could escape."
+    ]
+   ]
+  },
+  {
+   "name": "The pardon",
+   "lines": [
+    [
+     "s08",
+     {
+      "set": "mansion",
+      "cast": [
+       {
+        "who": "KING",
+        "act": "think",
+        "x": 0.9
+       },
+       {
+        "who": "BLOOD",
+        "act": "talk",
+        "x": -0.9,
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "crown",
+        "x": 0.9,
+        "y": 3.7,
+        "z": 0.3,
+        "s": 0.7,
+        "bob": 0.05
+       }
+      ],
+      "signs": [
+       {
+        "text": "KING CHARLES II",
+        "style": "gold"
+       }
+      ],
+      "cam": "wide"
+     },
+     "Blood refused to talk to anyone but the King. So King Charles the Second met him in person."
+    ],
+    [
+     "s09",
+     {
+      "set": "mansion",
+      "cast": [
+       {
+        "who": "KING",
+        "act": "cheer",
+        "at": 0.3,
+        "x": 0.9
+       },
+       {
+        "who": "BLOOD",
+        "act": "cheer",
+        "at": 0.35,
+        "x": -0.9
+       }
+      ],
+      "signs": [
+       {
+        "text": "PARDONED",
+        "style": "green",
+        "pop": 1.1
+       },
+       {
+        "text": "+ land in Ireland",
+        "style": "cream",
+        "at": 0.5
+       }
+      ],
+      "cam": "wide"
+     },
+     "And to everyone's amazement, the King pardoned him, and even gave him land in Ireland. Nobody knows exactly why."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "s10",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "BLOOD",
+        "act": "wave",
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "crown",
+        "x": 1.2,
+        "y": 1.0,
+        "z": 0.8,
+        "spin": 0.6
+       }
+      ],
+      "ask": "Why did the King forgive him?",
+      "cam": "wide"
+     },
+     "The only man ever to steal the Crown Jewels, and he got away with it. Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

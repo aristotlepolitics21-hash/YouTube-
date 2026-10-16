@@ -1,0 +1,498 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 9,
+ "title": "Escape From Alcatraz",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "MORRIS": {
+   "preset": "guard",
+   "suit": 5925498,
+   "pants": 5925498,
+   "tie": null,
+   "shirt": 5925498,
+   "hair": 2759184,
+   "hairStyle": "side",
+   "brow": -0.3
+  },
+  "JOHN": {
+   "preset": "guard",
+   "suit": 5925498,
+   "pants": 5925498,
+   "tie": null,
+   "shirt": 5925498,
+   "hair": 6965802,
+   "hairStyle": "slick"
+  },
+  "CLARENCE": {
+   "preset": "guard",
+   "suit": 5925498,
+   "pants": 5925498,
+   "tie": null,
+   "shirt": 5925498,
+   "hair": 6965802,
+   "hairStyle": "side",
+   "stache": true
+  },
+  "WEST": {
+   "preset": "guard",
+   "suit": 5925498,
+   "pants": 5925498,
+   "tie": null,
+   "shirt": 5925498,
+   "hair": 10123850,
+   "hairStyle": "curly"
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "prison",
+      "cast": [
+       {
+        "who": "MORRIS",
+        "act": "sly",
+        "mood": "sly"
+       }
+      ],
+      "props": [
+       {
+        "type": "question",
+        "x": 1.3,
+        "y": 3.4,
+        "z": 0.9,
+        "at": 0.6
+       }
+      ],
+      "signs": [
+       {
+        "text": "NEVER FOUND",
+        "style": "red",
+        "at": 0.7
+       }
+      ],
+      "cam": "medium"
+     },
+     "In 1962, three men escaped from Alcatraz, the prison nobody could escape. They were never seen again."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "ESCAPE FROM",
+      "bottom": "ALCATRAZ",
+      "case": "CASE 09",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "MORRIS"
+       }
+      ]
+     },
+     "This is the great Alcatraz escape."
+    ]
+   ]
+  },
+  {
+   "name": "The Rock",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "sea",
+      "mood": "storm",
+      "props": [
+       {
+        "type": "house",
+        "x": 0,
+        "z": -4,
+        "w": 4,
+        "h": 1.6,
+        "color": 14209732,
+        "s": 1.2
+       },
+       {
+        "type": "sign",
+        "text": "ALCATRAZ",
+        "style": "navy",
+        "x": 0,
+        "y": 4.4,
+        "z": -1
+       }
+      ],
+      "signs": [
+       {
+        "text": "COLD WATER",
+        "style": "blue",
+        "at": 0.4
+       },
+       {
+        "text": "STRONG CURRENTS",
+        "style": "cream",
+        "at": 0.55
+       }
+      ],
+      "fx": "rain",
+      "cam": "wide"
+     },
+     "Alcatraz sat on a rocky island in San Francisco Bay, surrounded by freezing water and fierce currents."
+    ],
+    [
+     "s04",
+     {
+      "set": "prison",
+      "cast": [
+       {
+        "who": "MORRIS",
+        "x": -1.4,
+        "act": "talk"
+       },
+       {
+        "who": "JOHN",
+        "x": -0.45,
+        "act": "look"
+       },
+       {
+        "who": "CLARENCE",
+        "x": 0.45,
+        "act": "look"
+       },
+       {
+        "who": "WEST",
+        "x": 1.4,
+        "act": "think"
+       }
+      ],
+      "signs": [
+       {
+        "text": "4 INMATES",
+        "style": "red"
+       }
+      ],
+      "cam": "wide"
+     },
+     "Four inmates had a plan. Frank Morris, the brothers John and Clarence Anglin, and Allen West."
+    ]
+   ]
+  },
+  {
+   "name": "The plan",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "prison",
+      "cast": [
+       {
+        "who": "MORRIS",
+        "act": "dig",
+        "x": 0
+       }
+      ],
+      "signs": [
+       {
+        "text": "SPOONS",
+        "style": "gold"
+       },
+       {
+        "text": "MONTHS OF DIGGING",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "fx": "dust",
+      "cam": "close"
+     },
+     "For months, they chipped away at the air vents in their cells, with spoons stolen from the dining hall."
+    ],
+    [
+     "s06",
+     {
+      "set": "prison",
+      "cast": [
+       {
+        "who": "JOHN",
+        "act": "carry",
+        "x": -0.6
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "☺",
+        "style": "white",
+        "x": 0.7,
+        "y": 1.6,
+        "z": 0.6,
+        "w": 0.7,
+        "h": 0.8,
+        "size": 90
+       }
+      ],
+      "signs": [
+       {
+        "text": "DUMMY HEADS",
+        "style": "red"
+       },
+       {
+        "text": "soap · paper · real hair",
+        "style": "cream",
+        "at": 0.35
+       }
+      ],
+      "cam": "medium"
+     },
+     "They built dummy heads from soap, paper and real hair from the prison barbershop, to fool the guards at night."
+    ],
+    [
+     "s07",
+     {
+      "set": "room",
+      "mood": "vault",
+      "cast": [
+       {
+        "who": "CLARENCE",
+        "act": "carry",
+        "x": -0.8
+       },
+       {
+        "who": "MORRIS",
+        "act": "talk",
+        "x": 0.9
+       }
+      ],
+      "props": [
+       {
+        "type": "boat",
+        "x": 0,
+        "z": 1.3,
+        "s": 0.55,
+        "color": 15251482
+       }
+      ],
+      "signs": [
+       {
+        "text": "50+ RAINCOATS",
+        "style": "gold"
+       }
+      ],
+      "cam": "medium"
+     },
+     "And they stitched more than fifty raincoats into a raft and life jackets."
+    ]
+   ]
+  },
+  {
+   "name": "The night",
+   "lines": [
+    [
+     "s08",
+     {
+      "set": "night",
+      "cast": [
+       {
+        "who": "MORRIS",
+        "act": "sneak",
+        "x": -2.4,
+        "to": 1.4,
+        "at": 0.1
+       },
+       {
+        "who": "JOHN",
+        "act": "sneak",
+        "x": -3.2,
+        "to": 0.6,
+        "at": 0.15
+       },
+       {
+        "who": "CLARENCE",
+        "act": "sneak",
+        "x": -4.0,
+        "to": -0.2,
+        "at": 0.2
+       }
+      ],
+      "signs": [
+       {
+        "text": "JUNE 11, 1962",
+        "style": "navy",
+        "mono": true
+       }
+      ],
+      "cam": "follow"
+     },
+     "On the night of June 11th, 1962, three of them crawled through the vents, climbed to the roof, and slipped down to the shore."
+    ],
+    [
+     "s09",
+     {
+      "set": "sea",
+      "mood": "night",
+      "props": [
+       {
+        "type": "boat",
+        "x": -2,
+        "z": 0,
+        "s": 0.55,
+        "color": 15251482,
+        "move": {
+         "to": [
+          2.5,
+          0,
+          -2
+         ],
+         "from": 0,
+         "until": 1
+        }
+       }
+      ],
+      "signs": [
+       {
+        "text": "INTO THE DARK",
+        "style": "cream",
+        "at": 0.5
+       }
+      ],
+      "cam": "wide"
+     },
+     "Then they paddled out into the black, freezing bay."
+    ],
+    [
+     "s10",
+     {
+      "set": "prison",
+      "cast": [
+       {
+        "who": "WEST",
+        "act": "sad",
+        "mood": "sad"
+       }
+      ],
+      "signs": [
+       {
+        "text": "LEFT BEHIND",
+        "style": "red"
+       }
+      ],
+      "cam": "close"
+     },
+     "Allen West was left behind. His vent cover wouldn't come loose in time."
+    ]
+   ]
+  },
+  {
+   "name": "The morning",
+   "lines": [
+    [
+     "s11",
+     {
+      "set": "prison",
+      "cast": [
+       {
+        "who": "cop",
+        "act": "shock",
+        "at": 0.3,
+        "x": 0.8
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "text": "☺",
+        "style": "white",
+        "x": -0.8,
+        "y": 1.0,
+        "z": 0.4,
+        "w": 0.7,
+        "h": 0.8,
+        "size": 90
+       }
+      ],
+      "signs": [
+       {
+        "text": "DUMMIES!",
+        "style": "red",
+        "at": 0.35,
+        "pop": 1.15
+       }
+      ],
+      "cam": "medium"
+     },
+     "In the morning, the guards pulled back the blankets, and found the dummy heads."
+    ],
+    [
+     "s12",
+     {
+      "set": "beach",
+      "mood": "storm",
+      "cast": [
+       {
+        "who": "detective",
+        "act": "look",
+        "x": -0.6
+       },
+       {
+        "who": "cop",
+        "act": "point",
+        "x": 0.8
+       }
+      ],
+      "signs": [
+       {
+        "text": "MASSIVE SEARCH",
+        "style": "red"
+       },
+       {
+        "text": "NO BODIES FOUND",
+        "style": "cream",
+        "at": 0.5
+       }
+      ],
+      "cam": "wide"
+     },
+     "A huge search found pieces of a raft and a paddle. But the men were never found, dead or alive."
+    ]
+   ]
+  },
+  {
+   "name": "Still a mystery",
+   "lines": [
+    [
+     "s13",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "MORRIS",
+        "act": "wave",
+        "x": -0.9,
+        "mood": "happy"
+       },
+       {
+        "who": "JOHN",
+        "act": "wave",
+        "x": 0,
+        "mood": "happy"
+       },
+       {
+        "who": "CLARENCE",
+        "act": "wave",
+        "x": 0.9,
+        "mood": "happy"
+       }
+      ],
+      "ask": "Did they make it?",
+      "cam": "wide"
+     },
+     "Did they drown, or did they get away? Nobody knows for sure. What do you think? Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}

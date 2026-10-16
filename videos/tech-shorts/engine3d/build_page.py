@@ -33,12 +33,13 @@ page = f"""<!doctype html><meta charset="utf-8"><style>body{{margin:0;background
 <script type="importmap">{{"imports":{{"three":"/three/build/three.module.js","three/addons/":"/three/examples/jsm/"}}}}</script>
 <script type="module">
 const LINES = {json.dumps(lines)}, DURS = {json.dumps(durs)}, CAPS = {json.dumps(caps)}, NAMES = {json.dumps(names)}, STEPS = {json.dumps(steps)};
+window.RENDER_SCALE = {json.dumps(float(os.environ.get('RENDER_SCALE', sc.get('render_scale', 2 / 3))))};
 await Promise.all([document.fonts.load('900 70px Inter'), document.fonts.load('700 40px Inter'), document.fonts.load('700 40px "DejaVu Sans Mono"')]);
 const {{ KIT }} = await import('/engine/pixar.js');\n{sets}
 let t0 = 0; const secStart = {{}};
 const TL = LINES.map((l, i) => {{ if (!(l[3] in secStart)) secStart[l[3]] = t0;
   const o = {{ scene: l[0], p: l[1], text: l[2], sec: l[3], start: t0, end: t0 + DURS[i], cap: CAPS[i].slice(0, 2), step: STEPS[l[3]], secName: NAMES[l[3]] }}; t0 += DURS[i]; return o; }});
-window.TL = TL; window.__total = t0; window.STYLE = {json.dumps(sc.get('style', ''))}; window.FORMAT = {json.dumps(sc.get('format', ''))};
+window.TL = TL; window.__total = t0; window.STYLE = {json.dumps(sc.get('style', ''))}; window.FORMAT = {json.dumps(sc.get('format', ''))}; window.CAST = {json.dumps(sc.get('cast', {}))};
 const SRC = {json.dumps(stills)}; window.STILLS = {{}};
 const load = u => new Promise(res => {{ const v = /[.]webm$/.test(u);
   const el = v ? Object.assign(document.createElement('video'), {{ muted: true, preload: 'auto' }}) : new Image();

@@ -1,0 +1,361 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 23,
+ "title": "The Walkie-Talkie Bank Job",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "cast": {
+  "ROWLANDS": {
+   "preset": "oldman",
+   "hat": null,
+   "suit": 8018490,
+   "hair": 5917242,
+   "hairStyle": "side",
+   "stache": false,
+   "belly": 1.0
+  },
+  "GANG": {
+   "preset": "gangster",
+   "suit": 3816004,
+   "pants": 3816004,
+   "tie": null,
+   "shirt": 3816004,
+   "hat": "cap",
+   "hatCol": 2763312
+  }
+ },
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "s01",
+     {
+      "set": "room",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "ROWLANDS",
+        "act": "sit",
+        "mood": "shock"
+       }
+      ],
+      "props": [
+       {
+        "type": "phone",
+        "x": 1.0,
+        "y": 1.2,
+        "z": 0.6
+       }
+      ],
+      "signs": [
+       {
+        "text": "\"…the vault…\"",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "medium"
+     },
+     "In 1971, a man playing with his radio in London heard a bank being robbed, live. And nobody could find which bank."
+    ],
+    [
+     "s02",
+     {
+      "set": "title",
+      "top": "THE WALKIE-TALKIE",
+      "bottom": "BANK JOB",
+      "case": "CASE 23",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "GANG"
+       }
+      ]
+     },
+     "This is the Baker Street robbery."
+    ]
+   ]
+  },
+  {
+   "name": "The tunnel",
+   "lines": [
+    [
+     "s03",
+     {
+      "set": "street",
+      "mood": "dusk",
+      "cast": [
+       {
+        "who": "GANG",
+        "act": "carry",
+        "x": -0.6
+       }
+      ],
+      "props": [
+       {
+        "type": "house",
+        "x": 0,
+        "z": -2.6,
+        "w": 3,
+        "h": 2,
+        "color": 12099712
+       },
+       {
+        "type": "sign",
+        "text": "LLOYDS BANK",
+        "style": "green",
+        "x": 1.2,
+        "y": 3.0,
+        "z": -1.4
+       }
+      ],
+      "signs": [
+       {
+        "text": "BAKER STREET",
+        "style": "navy"
+       },
+       {
+        "text": "a shop 2 doors away",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "wide"
+     },
+     "A gang rented a shop two doors from a Lloyds Bank on Baker Street, the famous home of Sherlock Holmes."
+    ],
+    [
+     "s04",
+     {
+      "set": "vault",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "GANG",
+        "act": "dig",
+        "x": -0.6
+       },
+       {
+        "who": "GANG",
+        "act": "dig",
+        "x": 0.7
+       }
+      ],
+      "signs": [
+       {
+        "text": "40-FOOT TUNNEL",
+        "style": "red"
+       },
+       {
+        "text": "under a restaurant",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "medium",
+      "fx": "dust"
+     },
+     "They dug a tunnel about forty feet long, under a restaurant, and came up through the floor of the bank vault."
+    ]
+   ]
+  },
+  {
+   "name": "The radio",
+   "lines": [
+    [
+     "s05",
+     {
+      "set": "street",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "GANG",
+        "act": "phone",
+        "x": -0.8
+       }
+      ],
+      "props": [
+       {
+        "type": "house",
+        "x": 0,
+        "z": -2.6,
+        "w": 2.6,
+        "h": 2.6,
+        "color": 10127984
+       }
+      ],
+      "signs": [
+       {
+        "text": "LOOKOUT ON A ROOF",
+        "style": "cream"
+       },
+       {
+        "text": "WALKIE-TALKIE",
+        "style": "gold",
+        "at": 0.4
+       }
+      ],
+      "cam": "wide"
+     },
+     "On the night of September 11th, a lookout on a nearby rooftop chatted to the gang below by walkie-talkie."
+    ],
+    [
+     "s06",
+     {
+      "set": "room",
+      "mood": "night",
+      "cast": [
+       {
+        "who": "ROWLANDS",
+        "act": "phone",
+        "mood": "shock"
+       }
+      ],
+      "props": [
+       {
+        "type": "phone",
+        "x": 1.0,
+        "y": 1.2,
+        "z": 0.6
+       }
+      ],
+      "signs": [
+       {
+        "text": "ROBERT ROWLANDS",
+        "style": "navy"
+       },
+       {
+        "text": "radio ham",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "medium"
+     },
+     "A few streets away, radio enthusiast Robert Rowlands picked up their voices. He called the police, and started recording."
+    ],
+    [
+     "s07",
+     {
+      "set": "night",
+      "cast": [
+       {
+        "who": "cop",
+        "act": "look",
+        "x": -0.8
+       },
+       {
+        "who": "detective",
+        "act": "think",
+        "x": 0.8
+       }
+      ],
+      "props": [
+       {
+        "type": "question",
+        "x": 0,
+        "y": 3.3,
+        "z": 0.6
+       }
+      ],
+      "signs": [
+       {
+        "text": "750 BANKS",
+        "style": "red"
+       },
+       {
+        "text": "which one?",
+        "style": "cream",
+        "at": 0.4
+       }
+      ],
+      "cam": "wide"
+     },
+     "Police searched hundreds of banks across London that night. They even checked the right one, but the vault door was locked, so they left."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "s08",
+     {
+      "set": "vault",
+      "mood": "room",
+      "cast": [
+       {
+        "who": "banker",
+        "act": "shock",
+        "at": 0.3
+       }
+      ],
+      "signs": [
+       {
+        "text": "~268 BOXES",
+        "style": "red"
+       },
+       {
+        "text": "loot: £ millions?",
+        "style": "cream",
+        "at": 0.45
+       }
+      ],
+      "cam": "medium"
+     },
+     "In the morning, the bank found hundreds of safe deposit boxes emptied. Nobody knows the true value of what was taken."
+    ],
+    [
+     "s09",
+     {
+      "set": "courtroom",
+      "cast": [
+       {
+        "who": "GANG",
+        "act": "sad",
+        "mood": "sad",
+        "x": -0.7,
+        "z": 1
+       },
+       {
+        "who": "GANG",
+        "act": "sad",
+        "mood": "sad",
+        "x": 0.7,
+        "z": 1
+       }
+      ],
+      "signs": [
+       {
+        "text": "4 JAILED · 1973",
+        "style": "red",
+        "mono": true
+       }
+      ],
+      "cam": "wide"
+     },
+     "Four men were eventually jailed in 1973. Rowlands got a reward from the bank."
+    ],
+    [
+     "s10",
+     {
+      "set": "studio",
+      "cast": [
+       {
+        "who": "ROWLANDS",
+        "act": "wave",
+        "mood": "happy"
+       }
+      ],
+      "ask": "Lucky break or bad luck?",
+      "cam": "wide"
+     },
+     "It later inspired the film The Bank Job. Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}
