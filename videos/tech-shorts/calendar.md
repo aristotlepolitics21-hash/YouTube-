@@ -12,7 +12,7 @@ One Short a day, Sat 17 Oct to Sun 15 Nov 2026. Post at the same time every day;
 | 6 | Thu 22 Oct | 01 | What Happens in the 1 Second After You Hit Enter | Your request crosses the world and back in under a second. | Done |
 | 7 | Fri 23 Oct | 07 | How a Microwave Actually Heats Food | It doesn't heat the plate. It shakes the water. | Rendering |
 | 8 | Sat 24 Oct | 08 | How QR Codes Actually Work | A square of dots that survives being torn. | Rendering |
-| 9 | Sun 25 Oct | 09 | How Your Phone Camera Takes a Photo | Millions of tiny light buckets, and a lot of maths. | To make |
+| 9 | Sun 25 Oct | 09 | How Your Phone Camera Takes a Photo | Millions of tiny light buckets, and a lot of maths. | Rendering |
 | 10 | Mon 26 Oct | 10 | How Bluetooth Actually Works | Your earbuds hop channels hundreds of times a second. | To make |
 | 11 | Tue 27 Oct | 11 | How Tap to Pay Actually Works | Your card has no battery. The reader powers it. | To make |
 | 12 | Wed 28 Oct | 12 | How Websites Store Your Password | They shouldn't know your password at all. | To make |

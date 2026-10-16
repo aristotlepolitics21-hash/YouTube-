@@ -1,0 +1,13 @@
+How Your Phone Camera Takes a Photo
+
+Every photo you take is really several photos, stacked and blended in a split second. Here's what happens when you tap the shutter, animated.
+
+1. Catching light: a tiny stack of lenses focuses light onto a sensor smaller than your fingernail, covered in millions of light buckets called photosites
+2. Light into numbers: light knocks electrons loose in each bucket, and the phone turns every bucket into a number, so a photo is a giant grid of numbers
+3. Adding colour: each bucket sits under a red, green or blue filter (twice as many green, because our eyes are most sensitive to it), and the phone estimates each pixel's full colour from its neighbours
+4. Stacking shots: the phone is often already capturing before you press, blends frames to keep detail in bright skies and dark shadows, and night mode stacks many frames to average away noise
+5. Finishing touches: portrait mode estimates depth and blurs the background, then a processor fixes colour, sharpens and compresses the file
+
+Follow for more of the tech you use every day.
+
+#shorts #phonecamera #techexplained #photography #howitworks
