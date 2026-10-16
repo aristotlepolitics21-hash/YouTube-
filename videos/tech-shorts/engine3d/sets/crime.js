@@ -1174,4 +1174,299 @@ export function register(K) {
     c.position.set(0, 2.6, 0); st.scene.add(c);
     return { ...st, update(t, s) { c.rotation.y = Math.sin(s) * .1; aim(st.cam, [0, 2.8, 8], [0, 2.6, 0]); } };
   };
+
+  // ---------- episode 7: the Mona Lisa theft (1911) ----------
+  const PERUGGIA = { suit: 0xf2f0e6, pants: 0x3a3a44, tie: null, shirt: 0xf2f0e6, hair: 0x1a120c, hairStyle: 'side', stache: true, skin: 0xe8b48e, iris: 0x3a2a1a, brow: -.2 };
+  const peruggia = () => makeHuman(PERUGGIA), peruggiaSuit = () => makeHuman(Object.assign({}, PERUGGIA, { suit: 0x4a3e34, pants: 0x3a3028, shirt: 0xf2ece0, tie: 0x6a2a2a, hat: 'fedora', hatCol: 0x3a3028 }));
+  function drawMona(x, w, h) { const g = x.createLinearGradient(0, 0, 0, h); g.addColorStop(0, '#5a6a4a'); g.addColorStop(.5, '#7a7a52'); g.addColorStop(1, '#3a3020'); x.fillStyle = g; x.fillRect(0, 0, w, h);
+    x.strokeStyle = 'rgba(60,70,50,.6)'; x.lineWidth = w * .02; x.beginPath(); x.moveTo(0, h * .38); x.bezierCurveTo(w * .2, h * .3, w * .3, h * .45, w * .1, h * .5); x.moveTo(w, h * .32); x.bezierCurveTo(w * .8, h * .4, w * .7, h * .3, w * .9, h * .48); x.stroke();
+    x.fillStyle = '#2a1e14'; x.beginPath(); x.moveTo(w * .12, h); x.bezierCurveTo(w * .15, h * .6, w * .3, h * .5, w * .5, h * .5); x.bezierCurveTo(w * .7, h * .5, w * .85, h * .6, w * .88, h); x.fill();
+    x.fillStyle = '#d8b07a'; x.beginPath(); x.ellipse(w * .5, h * .58, w * .14, h * .05, 0, 0, Math.PI); x.fill();
+    x.fillStyle = '#1a120c'; x.beginPath(); x.ellipse(w * .5, h * .33, w * .2, h * .2, 0, 0, 7); x.fill();
+    x.fillStyle = '#e0bc88'; x.beginPath(); x.ellipse(w * .5, h * .32, w * .13, h * .15, 0, 0, 7); x.fill();
+    x.fillStyle = '#3a2a1a'; [-1, 1].forEach(s => { x.beginPath(); x.ellipse(w * (.5 + s * .055), h * .3, w * .022, h * .01, 0, 0, 7); x.fill(); });
+    x.strokeStyle = '#8a5a3a'; x.lineWidth = w * .012; x.lineCap = 'round'; x.beginPath(); x.arc(w * .5, h * .345, w * .045, Math.PI * .2, Math.PI * .8); x.stroke();
+    x.fillStyle = '#e0bc88'; x.beginPath(); x.ellipse(w * .42, h * .86, w * .1, h * .04, -.2, 0, 7); x.ellipse(w * .58, h * .87, w * .1, h * .04, .2, 0, 7); x.fill(); }
+  const mona = (w = 1.2, h = 1.75) => painting(w, h, drawMona);
+  const LOUVRE = { top: '#3a2a2a', bottom: '#a07a5a', floor: 0x8a6a4a, fogColor: '#7a5a48', key: 0xffe6c0, keyI: 2.3, rim: 0xffc890, rimI: 1.4, hemi: .85 };
+  function louvreWall(st, col = 0x6a2a2a) { st.scene.add(M(new THREE.PlaneGeometry(14, 7), matte(col, { roughness: .9 }), { pos: [0, 3.5, -2.2], shadow: false })); st.scene.add(M(RB(14, .2, .3, .05), metal(0xc8a050), { pos: [0, 5.2, -2.1] })); }
+
+  BUILD.ml_hook = () => {
+    const st = stage(LOUVRE); louvreWall(st);
+    const ml = mona(); ml.position.set(0, 2.7, -2.0); st.scene.add(ml); spot(st, ml, 45, [0, 6.5, 1.5]);
+    [-2.6, 2.6].forEach((x, i) => { const p = painting(1.2, 1.5, (c, cw, ch) => drawPortrait(c, cw, ch, i + 4)); p.position.set(x, 2.6, -2.0); st.scene.add(p); });
+    const q = textSign(.8, .8, '?', { color: 0xffc44d, fg: '#1d2442', size: 150 }); q.position.set(0, 2.7, -1.6); st.scene.add(q);
+    const day = textSign(2.4, .55, 'NOBODY NOTICED', { color: 0xc8202f, fg: '#fff', size: 62 }); day.position.set(0, 4.45, -1.2); st.scene.add(day);
+    const yr = textSign(1.2, .46, '1911', { color: 0xf3e3c3, fg: '#2a1a12', size: 70, font: MONO }); yr.position.set(0, 1.0, -.8); st.scene.add(yr);
+    const sp = sparkles(20, [0, 2.7, -1.6], 1.0, 0xfff2c0, 4); st.scene.add(sp);
+    return { ...st, update(t, s, d) {
+      const gone = seg(t, .35, .45); ml.userData.canvas.visible = gone < .5; ml.userData.canvas.material.opacity = 1; sp.visible = gone > 0 && gone < 1; sp.update(s);
+      appear(q, t, .48, d); appear(day, t, .7, d, 1.1); appear(yr, t, .05, d); q.rotation.y = Math.sin(s * 1.5) * .3;
+      aim(st.cam, [0, 3.0, lerp(8.6, 7.4, ease(t))], [0, 2.7, -1]);
+    } };
+  };
+  BUILD.ml_title = (p) => titleSet(p, LOUVRE, peruggia, (st) => { louvreWall(st); const ml = mona(1.0, 1.45); ml.position.set(1.6, 2.4, -1.9); st.scene.add(ml); return null; });
+  BUILD.ml_smock = () => {
+    const st = stage(Object.assign({}, ROOM, { top: '#2a2420', bottom: '#6a5a48', floor: 0x5a4a3a }));
+    const pe = makeHuman(Object.assign({}, PERUGGIA, { suit: 0x4a3e34, shirt: 0xf2ece0 })); st.scene.add(pe);
+    const smock = M(new THREE.CylinderGeometry(.5, .75, 1.6, 24, 1, true), matte(0xf2f0e6, { side: THREE.DoubleSide }), {}); st.scene.add(smock);
+    const nm = textSign(2.6, .5, 'VINCENZO PERUGGIA', { color: 0xc8202f, fg: '#fff', size: 56 }); nm.position.set(0, 4.1, .6); st.scene.add(nm);
+    const tg = textSign(2.4, .44, 'former Louvre handyman', { color: 0xf3e3c3, fg: '#2a1a12', size: 44 }); tg.position.set(0, 3.55, .7); st.scene.add(tg);
+    const brooms = G(M(new THREE.CylinderGeometry(.03, .03, 2.2, 8), matte(0x8a6a4a), { pos: [-1.6, 1.1, -1.0], rot: [0, 0, .15] }), M(RB(.5, .3, .2, .05), matte(0xc8a86a), { pos: [-1.75, .15, -1.0] }), M(RB(1.4, 2.6, .5, .05), matte(0x5a4a3a), { pos: [1.7, 1.3, -1.4] }));
+    st.scene.add(brooms);
+    return { ...st, update(t, s, d) {
+      const on = ease(seg(t, .2, .5)); smock.position.set(0, lerp(3.6, 1.62, on), 0); smock.visible = t > .15; smock.scale.set(1, on > .99 ? 1 : 1, 1);
+      pe.pose({ s, armR: [-.3, lerp(2.4, .3, on)], armL: [-.3, lerp(2.4, .3, on)], mouth: 'smile', happy: on * .5, brow: -.3, lookY: Math.sin(s * .8) * .3 });
+      appear(nm, t, .05, d); appear(tg, t, .15, d); aim(st.cam, [0, 2.8, lerp(7.6, 7.0, t)], [0, 2.3, 0]);
+    } };
+  };
+  BUILD.ml_grab = () => {
+    const st = stage(Object.assign({}, LOUVRE, { top: '#2a2030', bottom: '#6a5a6a', keyI: 1.6 })); louvreWall(st, 0x5a2424);
+    const ml = mona(); st.scene.add(ml); const pe = peruggia(); pe.position.set(.9, 0, -.8); pe.rotation.y = -.4; st.scene.add(pe);
+    const cl = textSign(1.8, .5, 'MONDAY: CLOSED', { color: 0x1d2442, fg: '#ffc44d', size: 56 }); cl.position.set(0, 4.45, -1.0); st.scene.add(cl);
+    const hooks = [0, 1, 2, 3].map(i => { const h = M(new THREE.TorusGeometry(.05, .015, 6, 12), metal(0x2a2a2a)); h.position.set(-.45 + (i % 2) * .9, 2.0 + Math.floor(i / 2) * 1.4, -2.15); st.scene.add(h); return h; });
+    return { ...st, update(t, s, d) {
+      const lift = ease(seg(t, .2, .5)), carry = seg(t, .5, 1);
+      if (lift < 1) { ml.position.set(lerp(0, .3, lift), 2.7 + lift * .2 - lift * .9, lerp(-2.0, -.4, lift)); ml.rotation.set(0, 0, 0); }
+      else { pe.updateMatrixWorld(true); const v = pe.hand(1).getWorldPosition(new THREE.Vector3()); ml.position.set(v.x + .45, v.y - .05, v.z + .2); ml.rotation.y = -.4; }
+      pe.position.x = lerp(.9, 3.4, carry); pe.pose({ s, walk: carry > 0 ? s * 8 : undefined, armR: [-1.0, .3], armL: [-1.0, .3], mouth: 'smile', brow: -.2, eyeX: -.4, lean: .1 });
+      appear(cl, t, .03, d); aim(st.cam, [lerp(-.4, .8, t), 3.0, 8.4], [lerp(0, 1.0, carry), 2.4, -1]);
+    } };
+  };
+  BUILD.ml_out = () => {
+    const st = stage(Object.assign({}, ROOM, { top: '#3a3430', bottom: '#8a7a6a', floor: 0x6a5e52 }));
+    for (let i = 0; i < 6; i++) st.scene.add(M(RB(3, .3, .9, .05), matte(0xb8aa98), { pos: [-.8, .15 + i * .3, -1.4 + i * .0], scale: [1, 1, 1] }));
+    const fr = painting(1.2, 1.75, () => {}); fr.userData.canvas.visible = false; fr.position.set(-1.5, 1.0, -.8); fr.rotation.set(0, .5, -.3); st.scene.add(fr);
+    const pe = peruggia(); st.scene.add(pe);
+    const bulge = M(RB(.75, 1.0, .12, .05), matte(0xf2f0e6), { shadow: false }); pe.userData.body.add(bulge); bulge.position.set(0, .7, .52);
+    const door = G(M(RB(1.8, 3.2, .2, .05), plastic(0x3a2a1a), { pos: [0, 1.6, 0] }), M(RB(1.4, 2.6, .05, .05), glowM(0xfff2c0, 1.2), { pos: [0, 1.4, .12], shadow: false })); door.position.set(2.4, 0, -1.6); st.scene.add(door);
+    const ex = textSign(1.3, .44, 'EXIT', { color: 0x2f8a48, fg: '#fff', size: 66 }); ex.position.set(2.4, 3.65, -1.3); st.scene.add(ex);
+    return { ...st, update(t, s, d) {
+      const w = seg(t, .35, 1); pe.position.set(lerp(-.4, 2.6, w), 0, lerp(.3, -1.0, w)); pe.rotation.y = w > 0 ? .9 : -.3;
+      pe.pose({ s, walk: w > 0 ? s * 7 : undefined, mouth: 'smile', happy: .4, armR: [-.7, .1], armL: [-.7, .1], eyeX: Math.sin(s * 3) * .4, brow: -.2 });
+      appear(ex, t, .3, d); aim(st.cam, [lerp(-.6, .8, t), 3.0, 8.4], [lerp(0, 1.2, w), 2.0, -.6]);
+    } };
+  };
+  BUILD.ml_wall = () => {
+    const st = stage(LOUVRE); louvreWall(st);
+    const hooks = [0, 1, 2, 3].map(i => { const h = M(new THREE.TorusGeometry(.07, .02, 8, 16), metal(0x2a2a2a)); h.position.set(-.5 + (i % 2) * 1.0, 2.0 + Math.floor(i / 2) * 1.5, -2.12); st.scene.add(h); return h; });
+    const pa = makeHuman({ suit: 0x5a4a6a, pants: 0x3a3a44, tie: 0x8a2a2a, hat: 'cap', hatCol: 0x1a1a22, hair: 0x6a5a4a, stache: true, belly: 1.1 }); pa.position.set(-1.0, 0, .6); pa.rotation.y = .5; st.scene.add(pa);
+    const easel = G(M(new THREE.CylinderGeometry(.03, .03, 2.0, 6), matte(0x8a6a4a), { pos: [0, 1.0, 0], rot: [.15, 0, 0] }), M(RB(1.0, .8, .05, .02), matte(0xf2ece0), { pos: [0, 1.6, .15], rot: [-.15, 0, 0] })); easel.position.set(.4, 0, 1.0); easel.rotation.y = -.4; st.scene.add(easel);
+    const four = textSign(1.9, .5, '4 IRON HOOKS', { color: 0xf3e3c3, fg: '#2a1a12', size: 60 }); four.position.set(0, 4.2, -1.4); st.scene.add(four);
+    const q = textSign(.6, .6, '?!', { color: 0xc8202f, fg: '#fff', size: 100 }); q.position.set(-.1, 3.05, 1.2); st.scene.add(q);
+    return { ...st, update(t, s, d) {
+      pa.pose({ s, mouth: t > .4 ? 'open' : 'smile', open: .6, wide: t > .4 ? 1 : 0, brow: t > .4 ? .7 : 0, armR: t > .45 ? [-.4, 2.0] : [-.8, .3], lookY: -.3 });
+      appear(four, t, .5, d); appear(q, t, .42, d, 1.1); q.rotation.z = Math.sin(s * 6) * .1;
+      aim(st.cam, [lerp(-1.2, 0, ease(t)), 3.0, 8.4], [0, 2.6, -1]);
+    } };
+  };
+  BUILD.ml_crowds = () => {
+    const st = stage(LOUVRE); louvreWall(st);
+    [0, 1, 2, 3].forEach(i => { const h = M(new THREE.TorusGeometry(.07, .02, 8, 16), metal(0x2a2a2a)); h.position.set(-.5 + (i % 2) * 1.0, 2.2 + Math.floor(i / 2) * 1.5, -2.12); st.scene.add(h); });
+    const ppl = [0, 1, 2, 3, 4, 5].map(i => { const h = dealer(i); h.scale.setScalar(.8); h.position.set(-2.0 + (i % 3) * 2.0 + (i > 2 ? 1.0 : 0), 0, .4 + (i > 2 ? 1.2 : 0)); h.rotation.y = Math.PI; st.scene.add(h); return h; });
+    const cl = textSign(2.6, .5, 'CLOSED FOR A WEEK', { color: 0xc8202f, fg: '#fff', size: 56 }); cl.position.set(0, 4.6, -1.4); st.scene.add(cl);
+    return { ...st, update(t, s, d) {
+      ppl.forEach((h, i) => { h.visible = t > .4; h.pose({ s: s + i, lookX: -.15, armL: [-.2, .2], armR: [-.2, .2] }); }); cl.scale.setScalar(t < .4 ? Math.min(1, pop(s - .1)) : 0);
+      aim(st.cam, [0, 3.2, lerp(9.6, 8.8, t)], [0, 2.5, -1]);
+    } };
+  };
+  BUILD.ml_suspects = () => {
+    const st = stage(Object.assign({}, ROOM, { top: '#1a1a24', bottom: '#3a3448', floor: 0x2a2634, keyI: 1.2 }));
+    const wall = M(new THREE.PlaneGeometry(10, 6), matte(0x4a4a52), { pos: [0, 3, -1.5], shadow: false }); st.scene.add(wall);
+    for (let i = 0; i < 6; i++) st.scene.add(M(RB(5, .03, .02, .01), matte(0xd8d8d0), { pos: [0, 1.0 + i * .5, -1.45], shadow: false }));
+    const ap = makeHuman({ suit: 0x3a3a44, pants: 0x2a2a34, tie: 0x2a2a2a, hair: 0x2a1a10, hairStyle: 'bald', belly: 1.25, skin: 0xe8b48e }); ap.position.set(-.85, 0, 0); st.scene.add(ap);
+    const pi = makeHuman({ suit: 0x2a3a6a, pants: 0x3a3a44, tie: null, shirt: 0xf2f2f2, hair: 0x15100c, hairStyle: 'side', skin: 0xd8a07a, iris: 0x1a1410 }); pi.position.set(.85, 0, 0); pi.scale.setScalar(.92); st.scene.add(pi);
+    const a = textSign(1.6, .4, 'APOLLINAIRE', { color: 0xf3e3c3, fg: '#2a1a12', size: 48 }), b = textSign(1.6, .4, 'PICASSO', { color: 0xf3e3c3, fg: '#2a1a12', size: 52 });
+    a.position.set(-.85, 3.55, .5); b.position.set(.85, 3.55, .5); st.scene.add(a, b);
+    const inn = textSign(2.0, .55, 'INNOCENT', { color: 0x2f8a48, fg: '#fff', size: 80 }); inn.position.set(0, 4.25, .4); inn.rotation.z = -.08; st.scene.add(inn);
+    const fl = sprite(0xffffff, 6, 0); fl.position.set(0, 3, 2); st.scene.add(fl);
+    return { ...st, update(t, s, d) {
+      [ap, pi].forEach((h, i) => h.pose({ s: s + i, mouth: t > .75 ? 'smile' : 'frown', brow: t > .75 ? -.1 : .6, armR: [0, .2], armL: [0, .2], happy: t > .75 ? .5 : 0 }));
+      appear(a, t, .2, d); appear(b, t, .45, d); appear(inn, t, .78, d, 1.1); fl.material.opacity = (Math.max(0, 1 - Math.abs(t - .25) * 30) + Math.max(0, 1 - Math.abs(t - .5) * 30)) * .8;
+      aim(st.cam, [0, 2.8, lerp(7.6, 7.0, t)], [0, 2.3, 0]);
+    } };
+  };
+  BUILD.ml_trunk = () => {
+    const st = stage(Object.assign({}, ROOM, { top: '#2a2020', bottom: '#5a4438', floor: 0x5a4030, keyI: 1.6 }));
+    st.scene.add(M(RB(2.2, .5, 1.2, .05), matte(0xc8b898), { pos: [-1.8, .45, -1.2] }));
+    const tk = new THREE.Group(); tk.position.set(0, 0, .2); st.scene.add(tk);
+    tk.add(M(RB(2.0, .9, 1.0, .08), plastic(0x6a4a2a, { roughness: .6 }), { pos: [0, .45, 0] })); [-1, 1].forEach(s => tk.add(M(RB(.08, .92, 1.02, .02), metal(0xb89a5a), { pos: [s * .7, .45, 0] })));
+    const lid = new THREE.Group(); lid.position.set(0, .9, -.5); tk.add(lid); lid.add(M(RB(2.0, .2, 1.0, .08), plastic(0x6a4a2a, { roughness: .6 }), { pos: [0, .1, .5] }));
+    const ml = mona(1.0, 1.4); ml.rotation.x = -Math.PI / 2 + .25; ml.position.set(0, .85, .05); ml.scale.setScalar(.8); tk.add(ml);
+    const cnt = textSign(2.0, .55, '', { color: 0x1d2442, fg: '#ffc44d', size: 70, font: MONO }); cnt.position.set(0, 2.95, .9); st.scene.add(cnt);
+    const win = M(new THREE.PlaneGeometry(1.2, 1.4), glowM(0x9ac0ff, .6), { pos: [1.8, 2.4, -1.6], shadow: false }); st.scene.add(win);
+    return { ...st, update(t, s, d) {
+      lid.rotation.x = -ease(seg(t, .05, .3)) * 1.7 * (1 - ease(seg(t, .8, .95)));
+      const m = Math.round(lerp(0, 28, ease(seg(t, .3, .85)))); cnt.userData.redraw((x, w, h) => { x.fillStyle = '#1d2442'; x.fillRect(0, 0, w, h); label(x, `${m} MONTHS`, w / 2, h / 2 + 4, h * .55, '#ffc44d', 900, 'center', MONO); }); appear(cnt, t, .3, d);
+      win.material.emissiveIntensity = .4 + .4 * Math.sin(s * 3);
+      aim(st.cam, [0, 3.4, lerp(6.4, 5.8, t)], [0, 1.6, 0]);
+    } };
+  };
+  BUILD.ml_florence = () => {
+    const st = stage(Object.assign({}, DUSK, { top: '#7aa0d8', bottom: '#f2c890', floor: 0xc8a07a }));
+    const duomo = G(M(new THREE.CylinderGeometry(1.4, 1.5, 1.6, 8), plastic(0xf2e8d8), { pos: [0, .8, 0] }), M(new THREE.SphereGeometry(1.4, 24, 16, 0, Math.PI * 2, 0, Math.PI / 2), plastic(0xc8603a), { pos: [0, 1.6, 0], scale: [1, 1.2, 1] }), M(new THREE.CylinderGeometry(.18, .22, .5, 12), plastic(0xf2e8d8), { pos: [0, 3.5, 0] }));
+    duomo.position.set(-1.6, 0, -6); st.scene.add(duomo, parisRow(-8, 9, 18, 21));
+    const tb = table(2.4, 1.1); tb.position.set(0, 0, .3); st.scene.add(tb);
+    const pe = peruggiaSuit(); pe.position.set(-1.25, 0, .5); pe.rotation.y = .6; st.scene.add(pe);
+    const ge = dealer(1); ge.position.set(1.25, 0, .4); ge.rotation.y = -.6; st.scene.add(ge);
+    const ml = mona(.9, 1.3); ml.position.set(0, 1.9, .3); ml.rotation.x = -.2; st.scene.add(ml);
+    const pl = textSign(1.9, .5, 'FLORENCE, 1913', { color: 0xf3e3c3, fg: '#2a1a12', size: 60 }); pl.position.set(0, 4.45, -.2); st.scene.add(pl);
+    const ph = textSign(1.7, .46, '☎ UFFIZI', { color: 0x1d2442, fg: '#fff', size: 58 }); ph.position.set(1.3, 3.75, .6); st.scene.add(ph);
+    return { ...st, update(t, s, d) {
+      pe.pose({ s, talk: t < .5 ? 1 : 0, mouth: 'smile', happy: .5, armR: [-.7, .4], brow: -.2 }); ge.pose({ s: s + 1, mouth: t > .5 ? 'smile' : 'open', open: .5, wide: t < .5 ? .6 : 0, brow: .3, eyeX: t > .55 ? .6 : 0, armR: t > .6 ? [-.2, 2.0] : [-.4, .2] });
+      appear(pl, t, .03, d); appear(ph, t, .6, d); ml.position.y = 1.9 + Math.sin(s * 1.5) * .03;
+      aim(st.cam, [0, 3.0, lerp(8.6, 8.0, t)], [0, 2.3, 0]);
+    } };
+  };
+  BUILD.ml_caught = () => {
+    const st = stage(Object.assign({}, ROOM, { top: '#3a3040', bottom: '#8a7068', floor: 0x6a5048 }));
+    const pe = peruggiaSuit(); pe.position.set(0, 0, 0); st.scene.add(pe);
+    const cops = [0, 1].map(i => { const c = gendarme(); c.position.set(i ? 1.4 : -1.4, 0, .4); c.rotation.y = i ? -.5 : .5; st.scene.add(c); return c; });
+    const ok = textSign(2.2, .55, '✔ THE REAL ONE', { color: 0x2f8a48, fg: '#fff', size: 66 }); ok.position.set(0, 4.3, .4); st.scene.add(ok);
+    const ar = textSign(1.8, .55, 'ARRESTED', { color: 0xc8202f, fg: '#fff', size: 80 }); ar.position.set(0, 1.3, 1.4); ar.rotation.z = -.08; st.scene.add(ar);
+    return { ...st, update(t, s, d) {
+      const inn = ease(seg(t, .3, .55)); cops.forEach((c, i) => { c.position.x = (i ? 1 : -1) * lerp(3.5, 1.15, inn); c.pose({ s: s + i, walk: inn > 0 && inn < 1 ? s * 8 : undefined, brow: -.7, mouth: 'flat', armR: inn >= 1 ? [-1.1, .1] : [0, .2] }); });
+      pe.pose({ s, mouth: inn > .5 ? 'open' : 'smile', open: .6, wide: inn, brow: inn > .5 ? .8 : -.2, upR: inn > .9 ? .6 : 0, upL: inn > .9 ? .6 : 0 });
+      appear(ok, t, .05, d); if (t > .5) ok.scale.setScalar(Math.max(0, 1 - seg(t, .5, .55))); appear(ar, t, .62, d, 1.1);
+      aim(st.cam, [0, 2.8, lerp(8.0, 7.4, t)], [0, 2.3, 0]);
+    } };
+  };
+  BUILD.ml_home = () => {
+    const st = stage(LOUVRE); louvreWall(st);
+    const ml = mona(); ml.position.set(0, 2.7, -2.0); st.scene.add(ml); spot(st, ml, 50, [0, 6.5, 1.5]);
+    const b = bars(2.4, 2.4, 7); b.scale.setScalar(.6); b.position.set(-1.5, 2.6, -.4); st.scene.add(b);
+    const pe = makeHuman(Object.assign({}, PERUGGIA, { suit: 0xd8d2c0, shirt: 0xd8d2c0 })); pe.scale.setScalar(.45); pe.position.set(-1.5, 2.6, -.7); st.scene.add(pe);
+    const yr = textSign(1.9, .48, '< 1 YEAR', { color: 0xc8202f, fg: '#fff', size: 66 }); yr.position.set(-1.15, 4.35, -.3); st.scene.add(yr);
+    const hm = textSign(1.6, .5, 'BACK HOME', { color: 0x2f8a48, fg: '#fff', size: 66 }); hm.position.set(.9, 4.6, -1.4); st.scene.add(hm);
+    const sp = sparkles(24, [0, 2.7, -1.6], 1.3, 0xfff2c0, 8); st.scene.add(sp);
+    return { ...st, update(t, s, d) { pe.pose({ s, mouth: 'frown', brow: .5, armR: [-.5, .2], armL: [-.5, .2] }); appear(yr, t, .15, d); appear(hm, t, .62, d, 1.1); sp.visible = t > .6; sp.update(s);
+      aim(st.cam, [lerp(-.6, .3, t), 3.0, lerp(8.8, 8.0, t)], [0, 2.8, -1]); } };
+  };
+  BUILD.ml_outro = () => {
+    const st = stage(LOUVRE); louvreWall(st); const ml = mona(1.3, 1.9); ml.position.set(0, 2.9, -2.0); st.scene.add(ml); spot(st, ml, 55, [0, 6.5, 1.5]);
+    const crowd = [0, 1, 2, 3].map(i => { const h = dealer(i); h.scale.setScalar(.7); h.position.set(-1.8 + i * 1.2, 0, .6 + (i % 2) * .4); h.rotation.y = Math.PI; st.scene.add(h); return h; });
+    const btn = textSign(2.5, .75, 'FOLLOW  +', { color: 0xc8202f, fg: '#ffffff', size: 100, depth: .35 }); btn.position.set(0, 1.0, 2.0); st.scene.add(btn);
+    const fam = textSign(2.8, .5, 'WORLD\'S MOST FAMOUS', { color: 0xffc44d, fg: '#2a1a12', size: 54 }); fam.position.set(0, 4.65, -1.4); st.scene.add(fam);
+    return { ...st, update(t, s, d) { crowd.forEach((h, i) => h.pose({ s: s + i, lookX: -.2, armR: i === 1 ? [-.4, 2.2] : [0, .2] })); appear(fam, t, .3, d); btn.scale.setScalar(t > .62 ? Math.min(1, pop((t - .62) * d)) * (1 + Math.sin(s * 5) * .03) : 0);
+      aim(st.cam, [Math.sin(s * .25) * .4, 3.0, 9.0], [0, 2.7, -.6]); } };
+  };
+
+  // ---------- episode 8: the Stone of Destiny (1950) ----------
+  const ABBEY = { top: '#1a1a2a', bottom: '#4a4458', floor: 0x5a5560, fogColor: '#2a2838', key: 0xbfd0ff, keyI: 1.7, rim: 0x8aa8ff, rimI: 2.0, hemi: .55 };
+  const student = (i) => makeHuman([{ suit: 0x5a4a3a, pants: 0x3a3a44, tie: 0x2a5a3a, hair: 0x3a2a1e, hairStyle: 'side', skin: 0xf0c8a6 },
+    { suit: 0x2a3a5a, pants: 0x3a3a44, tie: 0x8a2a2a, hair: 0x1a1410, hairStyle: 'slick', skin: 0xf0bd96, stache: false },
+    { suit: 0x6a5a4a, pants: 0x4a4a52, tie: 0x2a2a5a, hair: 0x8a5a2a, hairStyle: 'curly', skin: 0xf4c7a6 },
+    { suit: 0x7a3a4a, pants: 0x3a3a52, skirt: 0x3a3a52, tie: null, shirt: 0xf2ece0, hair: 0xb5562a, hairStyle: 'bob', skin: 0xf6cfb0 }][i % 4]);
+  function gothic(st, z = -2.4) { const stone = matte(0x8a8478);
+    for (let i = -2; i <= 2; i++) { st.scene.add(M(RB(.5, 5.2, .5, .05), stone, { pos: [i * 1.8, 2.6, z] })); if (i < 2) { const ar = M(new THREE.TorusGeometry(.65, .12, 8, 20, Math.PI), stone); ar.position.set(i * 1.8 + .9, 4.4, z); st.scene.add(ar); } }
+    st.scene.add(M(new THREE.PlaneGeometry(14, 7), matte(0x5a5650), { pos: [0, 3.5, z - .3], shadow: false }));
+    [-1, 1].forEach(s => st.scene.add(M(RB(.9, 2.2, .05, .4), glowM(0x6a8aff, .5), { pos: [s * 2.7, 3.2, z - .25], shadow: false }))); }
+  function stoneBlock() { const g = new THREE.Group(), m = matte(0xb8907a, { roughness: .95 }); const a = M(RB(.75, .4, .7, .06), m, { pos: [-.38, .2, 0] }), b = M(RB(.75, .4, .7, .06), m, { pos: [.38, .2, 0] }); g.add(a, b);
+    [-1, 1].forEach(s => g.add(M(new THREE.TorusGeometry(.08, .02, 8, 16), metal(0x3a3a3a), { pos: [s * .78, .25, 0], rot: [0, Math.PI / 2, 0] }))); g.userData = { a, b }; return g; }
+  function coronationChair() { const g = new THREE.Group(), w = plastic(0x6a4a2a, { roughness: .7, clearcoat: .2 });
+    g.add(M(RB(1.8, .15, 1.2, .03), w, { pos: [0, 1.3, 0] }), M(RB(1.8, 2.4, .15, .03), w, { pos: [0, 2.6, -.55] }), M(new THREE.ConeGeometry(.9, .9, 4), w, { pos: [0, 4.2, -.55], rot: [0, Math.PI / 4, 0], scale: [1, 1, .2] }));
+    [-1, 1].forEach(s => { g.add(M(RB(.15, 1.0, 1.2, .03), w, { pos: [s * .85, 1.8, 0] })); g.add(M(RB(.2, 1.3, .2, .03), w, { pos: [s * .8, .65, .5] }), M(RB(.2, 1.3, .2, .03), w, { pos: [s * .8, .65, -.5] })); });
+    return g; }
+  function saltire(w = 1.4, h = .9) { const t = ctex(280, 180, (x, cw, ch) => { x.fillStyle = '#0a5eb0'; x.fillRect(0, 0, cw, ch); x.strokeStyle = '#fff'; x.lineWidth = ch * .2; x.beginPath(); x.moveTo(0, 0); x.lineTo(cw, ch); x.moveTo(cw, 0); x.lineTo(0, ch); x.stroke(); });
+    return M(new THREE.PlaneGeometry(w, h, 12, 6), new THREE.MeshStandardMaterial({ map: t.tex, side: THREE.DoubleSide, roughness: .8 }), { shadow: false }); }
+
+  BUILD.sd_hook = () => {
+    const st = stage(ABBEY); gothic(st); const ch = coronationChair(); ch.position.set(0, 0, -1.0); st.scene.add(ch);
+    const sb = stoneBlock(); sb.position.set(0, .7, -1.0); st.scene.add(sb);
+    const yr = textSign(2.2, .5, 'CHRISTMAS 1950', { color: 0xf3e3c3, fg: '#2a1a12', size: 60, font: MONO }); yr.position.set(0, 4.5, -.4); st.scene.add(yr);
+    const gone = textSign(1.6, .6, 'GONE!', { color: 0xc8202f, fg: '#fff', size: 100 }); gone.position.set(0, 1.4, .8); st.scene.add(gone);
+    const snow = sparkles(40, [0, 3, 0], 3, 0xffffff, 9); st.scene.add(snow);
+    return { ...st, update(t, s, d) { const pull = ease(seg(t, .4, .7)); sb.position.set(0, .7, lerp(-1.0, 3.5, pull)); sb.visible = pull < 1; appear(yr, t, .05, d); appear(gone, t, .72, d, 1.1); snow.update(s);
+      aim(st.cam, [0, 3.0, lerp(9.0, 8.2, t)], [0, 2.4, -1]); } };
+  };
+  BUILD.sd_title = (p) => titleSet(p, ABBEY, () => student(1), (st) => { gothic(st); const sb = stoneBlock(); sb.position.set(1.5, 0, .8); st.scene.add(sb); return null; });
+  BUILD.sd_stone = () => {
+    const st = stage(Object.assign({}, ABBEY, { top: '#2a2a3a', bottom: '#6a6070' })); const sb = stoneBlock(); sb.position.set(0, 1.2, 0); sb.scale.setScalar(1.8); st.scene.add(sb, K.pedestal(1.2, 0x8a8478, 0xffc44d));
+    const crown = G(M(new THREE.CylinderGeometry(.35, .3, .3, 16, 1, true), metal(0xd8b040, { side: THREE.DoubleSide })), ...[0, 1, 2, 3, 4].map(i => M(new THREE.ConeGeometry(.08, .22, 6), metal(0xd8b040), { pos: [Math.cos(i * 1.26) * .32, .25, Math.sin(i * 1.26) * .32] }))); crown.position.set(0, 2.6, 0); st.scene.add(crown);
+    const n1 = textSign(2.4, .5, 'STONE OF DESTINY', { color: 0x1d2442, fg: '#ffc44d', size: 60 }), n2 = textSign(2.2, .42, 'a.k.a. Stone of Scone', { color: 0xf3e3c3, fg: '#2a1a12', size: 48 });
+    n1.position.set(0, 4.3, .4); n2.position.set(0, 3.75, .5); st.scene.add(n1, n2); const sp = sparkles(20, [0, 1.8, 0], 1.4, 0xfff2c0, 3); st.scene.add(sp);
+    return { ...st, update(t, s, d) { crown.position.y = 2.6 + Math.sin(s * 2) * .08; crown.rotation.y = s * .5; appear(n1, t, .05, d); appear(n2, t, .25, d); sp.update(s); aim(st.cam, [Math.sin(s * .3) * 1.2, 2.6, 7.4], [0, 2.4, 0]); } };
+  };
+  BUILD.sd_chair = () => {
+    const st = stage(ABBEY); gothic(st); const ch = coronationChair(); ch.position.set(0, 0, -.6); st.scene.add(ch);
+    const sb = stoneBlock(); st.scene.add(sb);
+    const ed = makeHuman({ suit: 0x8a1a2a, pants: 0x5a1a2a, tie: null, shirt: 0xd8b040, hair: 0x8a6a4a, hairStyle: 'side', stache: true, brow: -.4 }); ed.position.set(-1.6, 0, .5); ed.rotation.y = .6; st.scene.add(ed);
+    const cr = G(M(new THREE.CylinderGeometry(.42, .38, .25, 16, 1, true), metal(0xd8b040, { side: THREE.DoubleSide }))); ed.userData.head.add(cr); cr.position.y = .6;
+    const yr = textSign(1.9, .48, '1296 → LONDON', { color: 0xf3e3c3, fg: '#2a1a12', size: 58, font: MONO }); yr.position.set(0, 4.55, -.2); st.scene.add(yr);
+    return { ...st, update(t, s, d) { const k = ease(seg(t, .2, .7)); sb.position.set(lerp(-2.6, 0, k), lerp(.4, .7, k) + (k < 1 ? Math.sin(k * Math.PI) * 1.2 : 0), lerp(1.2, -.6, k));
+      ed.pose({ s, armR: [-.6, 1.2 * (1 - k) + .3], mouth: 'smile', happy: .4, brow: -.5, lookY: .4 }); appear(yr, t, .05, d); aim(st.cam, [lerp(-1, .2, t), 3.0, 8.6], [0, 2.3, -.4]); } };
+  };
+  BUILD.sd_students = () => {
+    const st = stage(Object.assign({}, STORM, { top: '#0d1438', bottom: '#2a3460', floor: 0x3a3a44 })); st.scene.add(road(60, 3)); st.scene.add(stars(80, 31));
+    const cr = car(0x2a3a2a); cr.scale.setScalar(.9); st.scene.add(cr);
+    const kids = [0, 1, 2, 3].map(i => { const h = student(i); h.scale.setScalar(.82); h.position.set(-1.6 + i * 1.05, 0, 1.3); st.scene.add(h); return h; });
+    const gl = textSign(2.0, .5, 'GLASGOW → LONDON', { color: 0xf3e3c3, fg: '#2a1a12', size: 56 }); gl.position.set(0, 4.2, .5); st.scene.add(gl);
+    const n = textSign(1.6, .5, '4 STUDENTS', { color: 0xc8202f, fg: '#fff', size: 70 }); n.position.set(0, 3.6, .7); st.scene.add(n);
+    return { ...st, update(t, s, d) { cr.position.set(lerp(-3.5, 6, seg(t, .6, 1)), 0, -1.0); kids.forEach((h, i) => { h.visible = t < .62; h.pose({ s: s + i, mouth: 'smile', happy: .6, waveR: i === 1 ? 1 : 0, seed: i * .2 }); });
+      appear(gl, t, .05, d); appear(n, t, .2, d); aim(st.cam, [0, 2.8, 9.4], [0, 1.9, 0]); } };
+  };
+  BUILD.sd_break = () => {
+    const st = stage(ABBEY); gothic(st); const ch = coronationChair(); ch.position.set(0, 0, -.8); st.scene.add(ch);
+    const sb = stoneBlock(); st.scene.add(sb);
+    const ks = [0, 1].map(i => { const h = student(i); h.position.set(i ? .9 : -.9, 0, .7); h.rotation.y = i ? -2.6 : 2.6; st.scene.add(h); return h; });
+    const torch = new THREE.SpotLight(0xfff2c8, 40, 10, .35, .5); torch.position.set(1.5, 2.5, 3); torch.target = sb; st.scene.add(torch);
+    return { ...st, update(t, s, d) { const k = ease(seg(t, .15, .9)); sb.position.set(0, .7 - k * .5, lerp(-.8, 1.5, k));
+      ks.forEach((h, i) => { h.position.z = .7 + k * 1.6; h.pose({ s: s + i, lean: .45, armR: [-1.0, .1], armL: [-1.0, .1], mouth: 'open', open: .4 + Math.abs(Math.sin(s * 4)) * .3, brow: .5, walk: k > 0 && k < 1 ? s * 3 : undefined }); });
+      torch.position.x = 1.5 + Math.sin(s * 2) * .3; aim(st.cam, [lerp(-2.8, -2.2, t), 3.4, 9.6], [0, 1.7, .4]); } };
+  };
+  BUILD.sd_crack = () => {
+    const st = stage(Object.assign({}, ABBEY, { keyI: 1.3 })); const sb = stoneBlock(); st.scene.add(sb);
+    const k1 = student(2); k1.position.set(-1.2, 0, .3); k1.rotation.y = .5; st.scene.add(k1); const k2 = student(3); k2.position.set(1.2, 0, .3); k2.rotation.y = -.5; st.scene.add(k2);
+    const crack = textSign(1.8, .66, 'CRACK!', { color: 0xffc44d, fg: '#c8202f', size: 110 }); crack.position.set(0, 2.55, 1.2); st.scene.add(crack);
+    const dust = sparkles(24, [0, .5, .3], 1.2, 0xd8c8a8, 5); st.scene.add(dust);
+    return { ...st, update(t, s, d) { const fall = seg(t, .1, .3), split = ease(seg(t, .3, .45)); sb.position.set(0, lerp(1.5, 0, fall * fall), .3); sb.userData.a.position.x = -.38 - split * .3; sb.userData.b.position.x = .38 + split * .3; sb.userData.a.rotation.z = split * .12; sb.userData.b.rotation.z = -split * .12;
+      [k1, k2].forEach((h, i) => h.pose({ s: s + i, mouth: t > .3 ? 'open' : 'smile', open: .8, wide: t > .3 ? 1 : 0, brow: t > .3 ? .9 : 0, armR: t > .3 ? [-.5, 1.2] : [-1, .2], armL: t > .3 ? [-.5, 1.2] : [-1, .2] }));
+      appear(crack, t, .3, d, 1.15); crack.rotation.z = Math.sin(s * 8) * .08; dust.visible = t > .3 && t < .8; dust.update(s);
+      aim(st.cam, [0, 2.6, lerp(6.8, 6.2, t)], [0, 1.4, 0]); } };
+  };
+  BUILD.sd_escape = () => {
+    const st = stage(Object.assign({}, STORM, { top: '#0d1438', bottom: '#2a3460', floor: 0x3a3a44 })); st.scene.add(road(60, 3)); st.scene.add(stars(80, 33));
+    const cars = [0, 1].map(i => { const c = car(i ? 0x6a2a2a : 0x2a3a2a); c.scale.setScalar(.85); st.scene.add(c); return c; });
+    const q = textSign(2.6, .55, 'A CHRISTMAS MYSTERY', { color: 0xc8202f, fg: '#fff', size: 58 }); q.position.set(0, 4.0, .5); st.scene.add(q);
+    const pap = newspaper('STONE\nSTOLEN!', 'Westminster Abbey, Christmas Day', 2.0, 2.6, 'THE DAILY NEWS'); pap.position.set(0, 2.3, 1.0); st.scene.add(pap);
+    return { ...st, update(t, s, d) { cars.forEach((c, i) => c.position.set(lerp(-5, 7, seg(t, i * .08, .45 + i * .08)), 0, -.6 + i * .9)); appear(pap, t, .5, d, .9); pap.rotation.z = Math.sin(s * 1.5) * .05; appear(q, t, .7, d);
+      aim(st.cam, [0, 2.8, 9.4], [0, 1.8, 0]); } };
+  };
+  BUILD.sd_border = () => {
+    const st = stage(Object.assign({}, FIELDS, { top: '#a8b8c8', bottom: '#e0e0d0', floor: 0x8aa86a })); st.scene.add(road(60, 3)); st.scene.add(forest(20, 40, 4, -6, 41, 0x3a6a3a));
+    const bar = G(M(RB(3.6, .14, .14, .04), plastic(0xffffff), { pos: [0, 1.1, 0] }), ...[0, 1, 2, 3].map(i => M(RB(.4, .145, .145, .02), plastic(0xc8202f), { pos: [-1.3 + i * .85, 1.1, 0] })), M(RB(.2, 1.2, .2, .05), plastic(0x3a3a3a), { pos: [-1.9, .6, 0] })); bar.position.set(0, 0, .8); st.scene.add(bar);
+    const sgnS = textSign(1.6, .5, 'SCOTLAND', { color: 0x0a5eb0, fg: '#fff', size: 66 }); sgnS.position.set(0, 3.0, -1.6); st.scene.add(sgnS, M(new THREE.CylinderGeometry(.04, .04, 2.8, 8), metal(0x777777), { pos: [0, 1.4, -1.65] }));
+    const cops = [0, 1].map(i => { const c = gendarme(); c.scale.setScalar(.85); c.position.set(-1.45 + i * 2.9, 0, 1.5); st.scene.add(c); return c; });
+    const first = textSign(2.6, .5, 'FIRST TIME IN 400 YEARS', { color: 0xf3e3c3, fg: '#2a1a12', size: 50 }); first.position.set(0, 4.1, .6); st.scene.add(first);
+    return { ...st, update(t, s, d) { cops.forEach((c, i) => c.pose({ s: s + i, armR: i ? [-.4, 2.3] : [0, .2], brow: -.6, mouth: 'flat' })); appear(first, t, .4, d); aim(st.cam, [0, 2.6, 8.8], [0, 1.9, 0]); } };
+  };
+  BUILD.sd_hidden = () => {
+    const st = stage(Object.assign({}, ROOM, { top: '#2a2420', bottom: '#6a5a48', floor: 0x5a4a3a })); const tb = table(2.6, 1.2, 0x7a6a5a); st.scene.add(tb);
+    const sb = stoneBlock(); sb.position.set(0, 1.12, .1); st.scene.add(sb);
+    const mason = makeHuman({ suit: 0x5a6a7a, pants: 0x3a3a44, tie: null, shirt: 0x5a6a7a, hair: 0xb8b8b0, hairStyle: 'bald', stache: true, belly: 1.15, hat: 'cap', hatCol: 0x3a3a44 }); mason.position.set(0, 0, -1.0); st.scene.add(mason);
+    const mallet = G(M(new THREE.CylinderGeometry(.03, .03, .6, 8), matte(0x8a6a4a), { pos: [0, -.25, 0] }), M(RB(.3, .2, .2, .04), matte(0x6a4a2a), { pos: [0, .05, 0] })); st.scene.add(mallet);
+    const sec = textSign(1.6, .5, 'SECRET', { color: 0xc8202f, fg: '#fff', size: 76 }); sec.position.set(0, 3.45, .6); sec.rotation.z = .08; st.scene.add(sec);
+    const dust = sparkles(14, [0, 1.6, .1], .6, 0xd8c8a8, 7); st.scene.add(dust);
+    return { ...st, update(t, s, d) { const fix = ease(seg(t, .4, .8)); sb.userData.a.position.x = -.38 - .25 * (1 - fix); sb.userData.b.position.x = .38 + .25 * (1 - fix);
+      const hit = Math.max(0, Math.sin(s * 6)); mason.pose({ s, armR: [-1.2 - hit * .3, .2], armL: [-.9, .2], lookX: .3, mouth: 'flat', brow: .2, lean: .2 }); handProp(mason, 1, mallet, [0, .1, .1]);
+      dust.visible = t > .35 && t < .85; dust.update(s); appear(sec, t, .1, d, 1.1); aim(st.cam, [0, 3.4, lerp(6.8, 6.2, t)], [0, 1.8, 0]); } };
+  };
+  BUILD.sd_arbroath = () => {
+    const st = stage(Object.assign({}, DUSK, { top: '#8ab0d8', bottom: '#f2d8b0', floor: 0x7a9a5a })); const stone = matte(0xa86a5a, { roughness: .95 });
+    [-2.2, 2.2].forEach(x => st.scene.add(M(RB(.7, 5, .7, .05), stone, { pos: [x, 2.5, -2.4] }))); const ar = M(new THREE.TorusGeometry(2.2, .3, 8, 24, Math.PI), stone); ar.position.set(0, 5.0, -2.4); st.scene.add(ar);
+    const circ = M(new THREE.TorusGeometry(.6, .12, 8, 24), stone); circ.position.set(0, 4.6, -2.4); st.scene.add(circ);
+    const alt = M(RB(2.2, .9, 1.0, .05), matte(0x8a8478), { pos: [0, .45, -1.0] }); st.scene.add(alt);
+    const sb = stoneBlock(); sb.position.set(0, .9, -1.0); st.scene.add(sb); const fl = saltire(1.7, 1.0); fl.rotation.x = -1.1; fl.position.set(0, 1.4, -1.0); st.scene.add(fl);
+    const dt = textSign(1.8, .5, 'APRIL 1951', { color: 0xf3e3c3, fg: '#2a1a12', size: 64, font: MONO }); dt.position.set(0, 4.3, -.3); st.scene.add(dt);
+    const np = textSign(2.4, .5, 'NO CHARGES', { color: 0x2f8a48, fg: '#fff', size: 66 }); np.position.set(0, 3.6, .1); st.scene.add(np);
+    return { ...st, update(t, s, d) { const pos = fl.geometry.attributes.position; for (let i = 0; i < pos.count; i++) pos.setZ(i, Math.sin(pos.getX(i) * 4 + s * 3) * .04); pos.needsUpdate = true;
+      appear(dt, t, .05, d); appear(np, t, .6, d, 1.1); aim(st.cam, [lerp(-.8, .2, t), 2.8, lerp(8.4, 7.8, t)], [0, 2.2, -1]); } };
+  };
+  BUILD.sd_outro = () => {
+    const st = stage(Object.assign({}, DUSK, { top: '#7aa0d8', bottom: '#f2d8b0', floor: 0x7a9a5a })); st.scene.add(K.pedestal(1.3, 0xffffff, 0x0a5eb0));
+    const sb = stoneBlock(); sb.position.set(0, .45, 0); sb.scale.setScalar(1.3); st.scene.add(sb); const fl = saltire(1.2, .75); fl.position.set(1.1, 2.6, -.3); st.scene.add(fl, M(new THREE.CylinderGeometry(.03, .03, 2.8, 8), metal(0x888888), { pos: [.45, 1.6, -.3] }));
+    const sp = sparkles(20, [0, 1.4, 0], 1.6, 0xffffff, 2); st.scene.add(sp); const fo = followOutro(st, 'Theft, or homecoming?', { qy: 4.0, by: 1.2 });
+    return { ...st, update(t, s, d) { const pos = fl.geometry.attributes.position; for (let i = 0; i < pos.count; i++) pos.setZ(i, Math.sin(pos.getX(i) * 5 + s * 3) * .05); pos.needsUpdate = true; sp.update(s); fo(t, s, d);
+      aim(st.cam, [Math.sin(s * .25) * .4, 2.8, 8.4], [0, 2.2, 0]); } };
+  };
 }

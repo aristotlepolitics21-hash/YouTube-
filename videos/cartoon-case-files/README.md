@@ -12,6 +12,8 @@ It uses the same 3D engine as Tech Shorts (`../tech-shorts/engine3d`). The cast 
 | 4 | 13 Paintings, 81 Minutes, Still Missing (Gardner Museum, 1990) | Rendered (`13-paintings-81-minutes-still-missing.mp4`) |
 | 5 | The 26 Kids Who Dug Their Way Out (Chowchilla, 1976) | Rendered (`the-26-kids-who-dug-their-way-out.mp4`) |
 | 6 | The Grandpa Gang (Hatton Garden, 2015) | Rendered (`the-grandpa-gang.mp4`): AI-image stills with depth parallax. Shots 6–13 reuse the first images with `src`/`crop`; replace them with new images or clips any time |
+| 7 | The Man Who Stole the Mona Lisa (Louvre, 1911) | Rendering (3D) |
+| 8 | The Students Who Stole a King's Stone (Stone of Destiny, 1950) | Rendering (3D) |
 
 ## The formula (it's the one your reference clips use)
 

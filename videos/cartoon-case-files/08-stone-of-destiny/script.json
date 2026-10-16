@@ -1,0 +1,105 @@
+{
+ "series": "Cartoon Case Files",
+ "episode": 8,
+ "title": "The Students Who Stole a King's Stone",
+ "sets": "crime.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "format": "story",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "sd_hook",
+     {},
+     "On Christmas Day, 1950, a group of students broke into Westminster Abbey, and stole a stone that kings had been crowned over for centuries."
+    ],
+    [
+     "sd_title",
+     {
+      "top": "THE STUDENTS WHO",
+      "bottom": "STOLE A KING'S STONE",
+      "case": "CASE 08"
+     },
+     "This is the theft of the Stone of Destiny."
+    ]
+   ]
+  },
+  {
+   "name": "The stone",
+   "lines": [
+    [
+     "sd_stone",
+     {},
+     "The Stone of Destiny, also called the Stone of Scone, was once used to crown Scotland's kings."
+    ],
+    [
+     "sd_chair",
+     {},
+     "Over six hundred years ago, England's King Edward the First took it to London, and built it into the coronation chair in Westminster Abbey."
+    ]
+   ]
+  },
+  {
+   "name": "The plan",
+   "lines": [
+    [
+     "sd_students",
+     {},
+     "Four students from Glasgow decide to take it back to Scotland. They drive to London just before Christmas."
+    ]
+   ]
+  },
+  {
+   "name": "Christmas night",
+   "lines": [
+    [
+     "sd_break",
+     {},
+     "In the early hours of Christmas morning, they force their way into the abbey and drag the heavy stone out of the chair."
+    ],
+    [
+     "sd_crack",
+     {},
+     "Then disaster. The stone falls, and breaks into two pieces."
+    ],
+    [
+     "sd_escape",
+     {},
+     "They carry the pieces out to their cars, and drive off into the night. Britain wakes up to a Christmas mystery."
+    ]
+   ]
+  },
+  {
+   "name": "The hunt",
+   "lines": [
+    [
+     "sd_border",
+     {},
+     "Police set up roadblocks on the border between England and Scotland, for the first time in four hundred years."
+    ],
+    [
+     "sd_hidden",
+     {},
+     "But the stone is already hidden. Back in Scotland, a stonemason secretly repairs it."
+    ]
+   ]
+  },
+  {
+   "name": "The ending",
+   "lines": [
+    [
+     "sd_arbroath",
+     {},
+     "In April 1951, the stone turns up at Arbroath Abbey, draped in a Scottish flag. The students were never prosecuted."
+    ],
+    [
+     "sd_outro",
+     {},
+     "Decades later, the stone was officially returned to Scotland. Was it theft, or a homecoming? Follow for more true crime, animated."
+    ]
+   ]
+  }
+ ]
+}
