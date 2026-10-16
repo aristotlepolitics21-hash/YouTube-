@@ -1,0 +1,146 @@
+{
+ "series": "Tech Shorts",
+ "episode": 10,
+ "title": "How Bluetooth Actually Works",
+ "sets": "bluetooth.js",
+ "voice": "kokoro:af_heart",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "bt_hook",
+     {},
+     "Your earbuds and your phone are having a conversation that jumps channels sixteen hundred times a second."
+    ],
+    [
+     "bt_title",
+     {
+      "top": "HOW BLUETOOTH",
+      "bottom": "ACTUALLY WORKS"
+     },
+     "Here's how that tiny wireless link works, in five steps."
+    ]
+   ]
+  },
+  {
+   "name": "Short-range radio",
+   "lines": [
+    [
+     "bt_radio",
+     {},
+     "Step one. Bluetooth is radio, in the same two point four gigahertz band as Wi-Fi, but much weaker, so it usually reaches just a few metres."
+    ],
+    [
+     "bt_power",
+     {},
+     "That low power is the point. It saves battery for tiny gadgets, like earbuds, watches and keyboards."
+    ]
+   ]
+  },
+  {
+   "name": "Hopping channels",
+   "lines": [
+    [
+     "bt_crowd",
+     {},
+     "Step two. That band is crowded, with Wi-Fi, microwaves and other gadgets all shouting at once."
+    ],
+    [
+     "bt_hop",
+     {},
+     "So classic Bluetooth splits it into seventy-nine channels, and hops between them sixteen hundred times every second."
+    ],
+    [
+     "bt_dodge",
+     {},
+     "If one channel is noisy, the next hop dodges it. Both devices follow the same hopping pattern, so they stay in step."
+    ]
+   ]
+  },
+  {
+   "name": "Pairing",
+   "lines": [
+    [
+     "bt_pair",
+     {},
+     "Step three. The first time you connect, the devices pair. They swap secret keys, and remember each other."
+    ],
+    [
+     "bt_reconnect",
+     {},
+     "After that, they find each other automatically, and what they send is encrypted."
+    ]
+   ]
+  },
+  {
+   "name": "Sending sound",
+   "lines": [
+    [
+     "bt_codec",
+     {},
+     "Step four. Raw audio is too much data for Bluetooth, so the sound is squeezed down by a codec, then unpacked in your ears."
+    ],
+    [
+     "bt_delay",
+     {},
+     "All that packing and hopping adds a tiny delay, which is why video can look slightly out of sync with the sound."
+    ]
+   ]
+  },
+  {
+   "name": "Low energy",
+   "lines": [
+    [
+     "bt_ble",
+     {},
+     "Step five. Bluetooth Low Energy sends tiny bursts of data, then sleeps. That's how a tracker tag can run for about a year on a coin battery."
+    ],
+    [
+     "bt_name",
+     {},
+     "And the name? It comes from a Viking king, Harald Bluetooth, who united Denmark. The logo is his initials, in runes."
+    ]
+   ]
+  },
+  {
+   "name": "Recap",
+   "lines": [
+    [
+     "w_recap",
+     {
+      "items": [
+       [
+        "Short-range radio",
+        ""
+       ],
+       [
+        "Hops 79 channels",
+        ""
+       ],
+       [
+        "Pairing swaps keys",
+        ""
+       ],
+       [
+        "Codecs squeeze sound",
+        ""
+       ],
+       [
+        "Low Energy sleeps",
+        ""
+       ]
+      ]
+     },
+     "Weak radio. Seventy-nine channels, hopping in step. Pairing swaps keys, codecs squeeze the sound, and Low Energy sleeps between bursts."
+    ],
+    [
+     "outro",
+     {},
+     "Next time your earbuds connect, picture them hopping in perfect step. Follow for more of the tech you use every day."
+    ]
+   ]
+  }
+ ]
+}

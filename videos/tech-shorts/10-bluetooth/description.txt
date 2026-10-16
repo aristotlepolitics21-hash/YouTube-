@@ -1,0 +1,13 @@
+How Bluetooth Actually Works
+
+Your earbuds and phone are having a conversation that jumps channels 1,600 times a second. Here's how that tiny wireless link works, animated.
+
+1. Short-range radio: Bluetooth uses the same 2.4 GHz band as Wi-Fi but much weaker, so it usually reaches a few metres and saves battery for small gadgets
+2. Hopping channels: the band is crowded, so classic Bluetooth splits it into 79 channels and hops between them 1,600 times a second, dodging noisy ones while both devices follow the same pattern
+3. Pairing: the first time, devices swap secret keys and remember each other; after that they reconnect automatically and encrypt what they send
+4. Sending sound: audio is squeezed by a codec and unpacked in your ears, which adds a tiny delay (why video can look slightly out of sync)
+5. Low energy: Bluetooth Low Energy sends tiny bursts and sleeps, so a tracker tag can run for about a year on a coin battery. The name comes from Harald Bluetooth, the Viking king who united Denmark; the logo is his initials in runes
+
+Follow for more of the tech you use every day.
+
+#shorts #bluetooth #techexplained #earbuds #howitworks
