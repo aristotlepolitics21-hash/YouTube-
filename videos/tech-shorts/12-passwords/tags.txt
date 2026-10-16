@@ -1,0 +1,1 @@
+how passwords are stored, password hashing explained, what is a hash, password salt, bcrypt explained, why websites cant see your password, password security, password manager, two factor authentication, cybersecurity basics, tech explained, shorts

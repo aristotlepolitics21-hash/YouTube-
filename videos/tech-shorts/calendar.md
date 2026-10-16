@@ -15,7 +15,7 @@ One Short a day, Sat 17 Oct to Sun 15 Nov 2026. Post at the same time every day;
 | 9 | Sun 25 Oct | 09 | How Your Phone Camera Takes a Photo | Millions of tiny light buckets, and a lot of maths. | Rendering |
 | 10 | Mon 26 Oct | 10 | How Bluetooth Actually Works | Your earbuds hop channels hundreds of times a second. | Rendering |
 | 11 | Tue 27 Oct | 11 | How Tap to Pay Actually Works | Your card has no battery. The reader powers it. | Rendering |
-| 12 | Wed 28 Oct | 12 | How Websites Store Your Password | They shouldn't know your password at all. | To make |
+| 12 | Wed 28 Oct | 12 | How Websites Store Your Password | They shouldn't know your password at all. | Rendering |
 | 13 | Thu 29 Oct | 13 | How Face Unlock Actually Works | Your phone maps your face in invisible dots. | To make |
 | 14 | Fri 30 Oct | 14 | How Your Phone Stores Photos (Flash Memory) | Trapped electrons that stay put with the power off. | To make |
 | 15 | Sat 31 Oct | 15 | How Video Streaming Actually Works | Why a video starts instantly but sometimes buffers. | To make |

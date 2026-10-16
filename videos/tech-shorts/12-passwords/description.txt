@@ -1,0 +1,13 @@
+How Websites Store Your Password
+
+A well-built website doesn't know your password, not even the people who run it. Here's the clever trick behind every login, animated.
+
+1. The one-way blender: when you sign up, the site runs your password through a hash, saves the scrambled result and throws the password away; there's no practical way to turn a hash back into the password
+2. Checking a login: the site hashes whatever you type and compares it with the stored hash; one changed letter gives a completely different hash
+3. A pinch of salt: a random extra value added before hashing makes every hash unique, even for identical passwords
+4. Slow on purpose: good password hashes take a fraction of a second each, which barely matters to you but massively slows attackers trying billions of guesses
+5. Your part: hashing can't save an easy password, so use long, unique passwords, a password manager and two-factor login. If a site emails you your old password, it wasn't hashing it
+
+Follow for more of the tech you use every day.
+
+#shorts #cybersecurity #passwords #techexplained #howitworks
