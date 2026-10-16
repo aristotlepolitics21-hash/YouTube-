@@ -12,6 +12,7 @@ The look is a neon diagram on a dark grid, with five numbered steps and burned-i
 | 5 | How Touchscreens Actually Work (5 Steps) | Rendered (3D, Kokoro voice, lively style) |
 | 6 | How Noise Cancelling Actually Works (5 Steps) | Rendered (3D, Kokoro voice, lively style) |
 | 7 | How a Microwave Actually Heats Food | Rendered (3D, Kokoro voice, lively style) |
+| 8 | How QR Codes Actually Work | Rendered (3D, Kokoro voice, lively style) |
 
 Each episode folder holds `script.json` (one scene and one narration line per entry; an optional `"sets"` names an `engine3d/sets/` file with that episode's 3D sets), `captions.srt`, `chapters.txt`, `description.txt`, `tags.txt` and `thumbnail.jpg`.
 
