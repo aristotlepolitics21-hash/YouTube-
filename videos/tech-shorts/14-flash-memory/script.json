@@ -1,0 +1,34 @@
+{
+ "series": "Tech Shorts", "episode": 14, "title": "How Your Phone Stores Photos", "sets": "flash.js", "voice": "kokoro:af_heart", "style": "lively",
+ "sections": [
+  { "name": "Hook", "lines": [
+   ["s_hook", {}, "Every photo on your phone is stored as electrons, trapped in tiny cages that hold them even with the power off."],
+   ["s_title", {"top": "HOW YOUR PHONE", "bottom": "STORES PHOTOS"}, "Here's how flash memory works, in five steps."]
+  ]},
+  { "name": "Billions of cells", "lines": [
+   ["s_bits", {}, "Step one. A photo is just a long list of ones and zeros. Your phone keeps them in a chip called flash memory."],
+   ["s_cells", {}, "It's packed with billions of tiny memory cells. A phone with two hundred and fifty six gigabytes holds about two trillion bits."]
+  ]},
+  { "name": "Trapping electrons", "lines": [
+   ["s_cage", {}, "Step two. Each cell has a little cage, called a floating gate, wrapped in insulation."],
+   ["s_write", {}, "To store data, a jolt of voltage pushes electrons through the insulation, and into the cage."],
+   ["s_keep", {}, "Once they're in, they're stuck. That's why your photos survive when the battery dies."]
+  ]},
+  { "name": "Reading it back", "lines": [
+   ["s_read", {}, "Step three. To read a cell, the chip checks how easily current flows past the cage. Trapped electrons make it harder, and that's a different value."],
+   ["s_levels", {}, "Modern cells don't just hold one bit. By trapping different amounts of electrons, each cell can store three or four bits."]
+  ]},
+  { "name": "Stacking up", "lines": [
+   ["s_layers", {}, "Step four. To fit even more, the cells are stacked into towers, more than two hundred layers high, like a skyscraper on a chip."]
+  ]},
+  { "name": "Wearing out", "lines": [
+   ["s_wear", {}, "Step five. Every time a cell is erased and rewritten, its insulation wears a tiny bit."],
+   ["s_level", {}, "So a controller chip spreads the writing around evenly, so no single cell wears out early. It's called wear levelling."],
+   ["s_erase", {}, "Flash also erases in big blocks, not one cell at a time, so the controller shuffles data around behind the scenes."]
+  ]},
+  { "name": "Recap", "lines": [
+   ["w_recap", {"items": [["Photos are bits", ""], ["Cells trap electrons", ""], ["Charge sets the value", ""], ["Stacked in layers", ""], ["Writes spread evenly", ""]]}, "Photos are bits. Cells trap electrons. The amount of charge sets the value, the cells stack in layers, and the writing gets spread out evenly."],
+   ["outro", {}, "So your memories really are made of electrons. Follow for more of the tech you use every day."]
+  ]}
+ ]
+}
