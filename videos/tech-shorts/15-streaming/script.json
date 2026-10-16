@@ -1,0 +1,161 @@
+{
+ "series": "Tech Shorts",
+ "episode": 15,
+ "title": "How Video Streaming Actually Works",
+ "sets": "streaming.js",
+ "voice": "kokoro:af_heart",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "v_hook",
+     {},
+     "When you press play, the video isn't sent as one big file. It arrives in tiny pieces, a few seconds at a time."
+    ],
+    [
+     "v_title",
+     {
+      "top": "HOW STREAMING",
+      "bottom": "ACTUALLY WORKS"
+     },
+     "Here's what's behind every play button, in five steps."
+    ]
+   ]
+  },
+  {
+   "name": "Chopped into chunks",
+   "lines": [
+    [
+     "v_chunks",
+     {},
+     "Step one. Before you ever watch it, the video is chopped into short chunks, each just a few seconds long."
+    ],
+    [
+     "v_ladder",
+     {},
+     "Every chunk is stored in several versions, from low quality, all the way up to sharp HD and beyond."
+    ],
+    [
+     "v_why",
+     {},
+     "Small chunks mean you can start watching straight away, and skip ahead without downloading the whole thing."
+    ]
+   ]
+  },
+  {
+   "name": "A server near you",
+   "lines": [
+    [
+     "v_cdn",
+     {},
+     "Step two. Copies of popular videos sit on servers spread around the world, often in a building not far from you."
+    ],
+    [
+     "v_close",
+     {},
+     "Your request goes to the nearest one, not some faraway headquarters. Shorter trip, faster start."
+    ],
+    [
+     "v_isp",
+     {},
+     "Some services even put their own servers inside your internet provider's network."
+    ]
+   ]
+  },
+  {
+   "name": "Filling the buffer",
+   "lines": [
+    [
+     "v_buffer",
+     {},
+     "Step three. Your app downloads chunks ahead of what you're watching, and keeps them ready in a buffer."
+    ],
+    [
+     "v_ahead",
+     {},
+     "On a good connection, the buffer holds plenty of video, so a short hiccup goes unnoticed."
+    ],
+    [
+     "v_spin",
+     {},
+     "If chunks arrive slower than you watch, the buffer runs dry, and you get the spinning wheel."
+    ]
+   ]
+  },
+  {
+   "name": "Picking the quality",
+   "lines": [
+    [
+     "v_measure",
+     {},
+     "Step four. The app keeps measuring how fast the chunks are arriving."
+    ],
+    [
+     "v_switch",
+     {},
+     "Fast connection? It grabs the sharp version of the next chunk. Slow? It drops to a lower one, so the video keeps playing."
+    ],
+    [
+     "v_start",
+     {},
+     "That's why a video can look blurry for a moment, then snap into focus."
+    ]
+   ]
+  },
+  {
+   "name": "Squeezed small",
+   "lines": [
+    [
+     "v_squeeze",
+     {},
+     "Step five. Each chunk is heavily compressed. Mostly, it stores only what changes from one frame to the next."
+    ],
+    [
+     "v_together",
+     {},
+     "Then your device unpacks each chunk, and plays them back to back, so smoothly you never see the seams."
+    ]
+   ]
+  },
+  {
+   "name": "Recap",
+   "lines": [
+    [
+     "w_recap",
+     {
+      "items": [
+       [
+        "Chopped into chunks",
+        ""
+       ],
+       [
+        "Stored near you",
+        ""
+       ],
+       [
+        "Buffered ahead",
+        ""
+       ],
+       [
+        "Quality adapts",
+        ""
+       ],
+       [
+        "Squeezed small",
+        ""
+       ]
+      ]
+     },
+     "Chopped into chunks. Stored near you. Buffered ahead. The quality adapts to your connection, and every chunk is squeezed small."
+    ],
+    [
+     "outro",
+     {},
+     "Next time it buffers, you'll know your buffer just ran dry. Follow for more of the tech you use every day."
+    ]
+   ]
+  }
+ ]
+}

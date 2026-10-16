@@ -19,6 +19,7 @@ The look is a neon diagram on a dark grid, with five numbered steps and burned-i
 | 12 | How Websites Store Your Password | Rendered (3D, Kokoro voice, lively style) |
 | 13 | How Face Unlock Actually Works | Rendered (3D, Kokoro voice, lively style) |
 | 14 | How Your Phone Stores Photos | Rendered (3D, Kokoro voice, lively style) |
+| 15 | How Video Streaming Actually Works | Rendering (3D, Kokoro voice, lively style) |
 
 Each episode folder holds `script.json` (one scene and one narration line per entry; an optional `"sets"` names an `engine3d/sets/` file with that episode's 3D sets), `captions.srt`, `chapters.txt`, `description.txt`, `tags.txt` and `thumbnail.jpg`.
 

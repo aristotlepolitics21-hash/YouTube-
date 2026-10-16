@@ -18,7 +18,7 @@ One Short a day, Sat 17 Oct to Sun 15 Nov 2026. Post at the same time every day;
 | 12 | Wed 28 Oct | 12 | How Websites Store Your Password | They shouldn't know your password at all. | Rendering |
 | 13 | Thu 29 Oct | 13 | How Face Unlock Actually Works | Your phone maps your face in invisible dots. | Rendering |
 | 14 | Fri 30 Oct | 14 | How Your Phone Stores Photos (Flash Memory) | Trapped electrons that stay put with the power off. | Rendering |
-| 15 | Sat 31 Oct | 15 | How Video Streaming Actually Works | Why a video starts instantly but sometimes buffers. | To make |
+| 15 | Sat 31 Oct | 15 | How Video Streaming Actually Works | Why a video starts instantly but sometimes buffers. | Rendering |
 | 16 | Sun 01 Nov | 16 | How Wireless Charging Actually Works | Power jumps through thin air with magnets. | To make |
 | 17 | Mon 02 Nov | 17 | How Speakers Actually Make Sound | A magnet, a coil and a cone, moving thousands of times a second. | To make |
 | 18 | Tue 03 Nov | 18 | How Your Screen Makes Every Colour | Every colour you see is just red, green and blue. | To make |
