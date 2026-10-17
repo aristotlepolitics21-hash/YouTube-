@@ -1,7 +1,7 @@
 {
  "series": "Cartoon Case Files",
  "episode": 13,
- "title": "The Taxi Driver Who Stole a Goya",
+ "title": "The Pensioner Who Stole a Goya",
  "sets": "crime.js",
  "voice": "kokoro:am_michael",
  "style": "lively",
@@ -141,9 +141,12 @@
         "type": "sign",
         "text": "TV LICENCE",
         "style": "red",
-        "x": 0.9,
-        "y": 2.2,
-        "z": 0.6
+        "x": 0.75,
+        "y": 1.7,
+        "z": 0.9,
+        "w": 1.3,
+        "h": 0.4,
+        "size": 44
        }
       ],
       "signs": [

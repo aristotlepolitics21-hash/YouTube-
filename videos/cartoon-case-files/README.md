@@ -12,8 +12,23 @@ It uses the same 3D engine as Tech Shorts (`../tech-shorts/engine3d`). The cast 
 | 4 | 13 Paintings, 81 Minutes, Still Missing (Gardner Museum, 1990) | Rendered (`13-paintings-81-minutes-still-missing.mp4`) |
 | 5 | The 26 Kids Who Dug Their Way Out (Chowchilla, 1976) | Rendered (`the-26-kids-who-dug-their-way-out.mp4`) |
 | 6 | The Grandpa Gang (Hatton Garden, 2015) | Rendered (`the-grandpa-gang.mp4`): AI-image stills with depth parallax. Shots 6–13 reuse the first images with `src`/`crop`; replace them with new images or clips any time |
-| 7 | The Man Who Stole the Mona Lisa (Louvre, 1911) | Rendering (3D) |
-| 8 | The Students Who Stole a King's Stone (Stone of Destiny, 1950) | Rendering (3D) |
+| 7 | The Man Who Stole the Mona Lisa (Louvre, 1911) | Rendered (`the-man-who-stole-the-mona-lisa.mp4`) |
+| 8 | The Students Who Stole a King's Stone (Stone of Destiny, 1950) | Rendered (`the-students-who-stole-a-kings-stone.mp4`) |
+| 9 | Escape From Alcatraz | Rendering (3D) |
+| 10 | The Original Ponzi Scheme | Rendering (3D) |
+| 11 | The Great Maple Syrup Heist | Rendering (3D) |
+| 12 | The Man Who Stole the Crown Jewels | Rendering (3D) |
+| 13 | The Pensioner Who Stole a Goya | Rendering (3D) |
+| 14 | The Crime of the Century | Script ready |
+| 15 | The Forger Who Fooled the Nazis | Script ready |
+| 16 | The Crown Jewels That Vanished | Script ready |
+| 17 | The Man Who Sold the Brooklyn Bridge | Script ready |
+| 18 | The Art Thief Who Stole for Love | Script ready |
+| 19 | The Billion-Dollar Bitcoin Couple | Script ready |
+| 20 | The Fake Heiress | Script ready |
+| 21 | The Blood Test That Didn't Work | Script ready |
+| 22 | The Golden Toilet Heist | Script ready |
+| 23 | The Walkie-Talkie Bank Job | Script ready |
 
 ## The formula (it's the one your reference clips use)
 

@@ -1582,7 +1582,7 @@ export function register(K) {
     const props = (p.props || []).map(q => { const o = makeProp(q); st.scene.add(o); return o; });
     if (st.userData.frontBars) { const b = bars(4.2, 3.6, 11); b.position.set(0, 0, 1.4); st.scene.add(b); }
     const signs = (p.signs || []).map((g, i) => { const sty = SIGNSTY[g.style ?? (i ? 'cream' : 'red')], txt = g.text ?? ''; const w = g.w ?? Math.min(2.8, Math.max(1.2, txt.replace('{n}', String(g.count ?? '')).length * .12 + .5));
-      const o = textSign(w, .5, g.count !== undefined ? '' : txt, { color: sty[0], fg: sty[1], size: g.size ?? 58, font: g.mono ? MONO : undefined }); o.position.set(g.x ?? 0, g.y ?? [4.3, 3.72, 3.14][i] ?? 3, g.z ?? .6 + i * .05); if (g.tilt) o.rotation.z = g.tilt; st.scene.add(o); return o; });
+      const o = textSign(w, .5, g.count !== undefined ? '' : txt, { color: sty[0], fg: sty[1], size: g.size ?? 58, font: g.mono ? MONO : undefined }); const cl = (p.cam ?? 'wide') === 'close', fb = st.userData.frontBars; o.position.set(g.x ?? 0, g.y ?? (cl ? [3.64, 3.33, 3.02] : fb ? [3.95, 3.58, 3.21] : [4.3, 3.72, 3.14])[i] ?? 3, g.z ?? (cl ? 1.8 : fb ? 1.6 : .6) + i * .05); if (g.y === undefined && (cl || fb)) o.userData.mx = cl ? .56 : (p.cam ?? 'wide') === 'wide' ? .9 : .62; if (g.tilt) o.rotation.z = g.tilt; st.scene.add(o); return o; });
     const fx = p.fx, rn = fx === 'rain' ? rain(260, [12, 12, 8], [0, 3, 0]) : null, snow = fx === 'snow' || fx === 'sparkle' || fx === 'dust' ? sparkles(40, [0, 2.8, .4], 2.6, fx === 'dust' ? 0xd8c8a8 : fx === 'sparkle' ? 0xfff2c0 : 0xffffff, 11) : null;
     const conf = fx === 'confetti' ? confetti(180, [0, 4.6, .8], 9, 4) : null, flash = fx === 'flash' || fx === 'alarm' ? new THREE.AmbientLight(fx === 'alarm' ? 0xff3030 : 0xcfe0ff, 0) : null;
     [rn, snow, conf, flash].forEach(o => o && st.scene.add(o));
@@ -1596,9 +1596,9 @@ export function register(K) {
         if (q.spin) o.rotation.y = s * q.spin; if (q.bob) o.position.y = (q.y ?? 0) + Math.sin(s * 2 + i) * q.bob;
         if (o.userData.fly) o.children.forEach((b, j) => { const ph = frac(s * .5 + j / 10); b.position.set(Math.sin(j * 2.1 + s) * 1.6, 3 - ph * 3, Math.cos(j) * .6); b.rotation.set(s * 2 + j, s + j, j); });
         if (o.userData.beacon) o.userData.beacon.material.opacity = Math.sin(s * 6) > 0 ? .9 : .1; });
-      (p.signs || []).forEach((g, i) => { const o = signs[i], at = g.at ?? .05 + i * .15; o.scale.setScalar(t > at && (g.until === undefined || t < g.until) ? Math.min(g.pop ?? 1, pop((t - at) * d)) : 0);
+      (p.signs || []).forEach((g, i) => { const o = signs[i], at = g.at ?? .05 + i * .15; o.scale.setScalar(t > at && (g.until === undefined || t < g.until) ? Math.min(g.pop ?? o.userData.mx ?? 1, pop((t - at) * d)) : 0);
         if (g.count !== undefined) { const n = Math.round(lerp(g.from ?? 0, g.count, ease(seg(t, at, at + (g.dur ?? .5))))); const txt = (g.text ?? '{n}').replace('{n}', (g.money ? '$' : '') + n.toLocaleString('en-US')); const sty = SIGNSTY[g.style ?? (i ? 'cream' : 'red')];
-          o.userData.redraw((x, w, h) => { rrect(x, 0, 0, w, h, h * .25); x.fillStyle = hex(sty[0]); x.fill(); label(x, txt, w / 2, h / 2 + 4, h * .5, sty[1], 900, 'center', g.mono ? MONO : undefined); }); } });
+          o.userData.redraw((x, w, h) => { rrect(x, 0, 0, w, h, h * .25); x.fillStyle = '#' + sty[0].toString(16).padStart(6, '0'); x.fill(); label(x, txt, w / 2, h / 2 + 4, h * .5, sty[1], 900, 'center', g.mono ? MONO : undefined); }); } });
       if (st.userData.judge) st.userData.judge.pose({ s, brow: -.4, mouth: 'flat', armR: t > .6 ? [-1.2 + Math.max(0, Math.sin((t - .6) * 40)) * .4, .2] : [-.5, .2] });
       if (rn) rn.update(s); if (snow) snow.update(s); if (conf) conf.update(s - (p.fxAt ?? .3) * d);
       if (flash) flash.intensity = fx === 'alarm' ? Math.max(0, Math.sin(s * 7)) * 2.5 : (Math.max(0, 1 - Math.abs(t - (p.fxAt ?? .35)) * 25)) * 3;

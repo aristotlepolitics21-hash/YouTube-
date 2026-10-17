@@ -218,7 +218,7 @@
       ],
       "signs": [
        {
-        "text": "${n}",
+        "text": "{n}",
         "count": 10000000,
         "money": true,
         "style": "green",

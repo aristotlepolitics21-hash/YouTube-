@@ -11,16 +11,16 @@ import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js'
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
 const W = 1080, H = 1920, RS = window.RENDER_SCALE || 2 / 3; // 3D renders at 720x1280 and is upscaled under the full-res overlay
-const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+const renderer = new THREE.WebGLRenderer({ antialias: !window.NO_AA, preserveDrawingBuffer: true });
 renderer.setPixelRatio(1); renderer.setSize(W * RS, H * RS, false);
-renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFShadowMap;
+renderer.shadowMap.enabled = !window.NO_SHADOW; renderer.shadowMap.type = THREE.PCFShadowMap;
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05;
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 const ENV = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(renderer), .04).texture;
 const composer = new EffectComposer(renderer);
 const rpass = new RenderPass(new THREE.Scene(), new THREE.PerspectiveCamera());
 const bloom = new UnrealBloomPass(new THREE.Vector2(W * RS / 2, H * RS / 2), .42, .45, 2.2);
-composer.addPass(rpass); composer.addPass(bloom); composer.addPass(new OutputPass());
+composer.addPass(rpass); composer.addPass(bloom); bloom.enabled = !window.NO_BLOOM; composer.addPass(new OutputPass());
 
 // ---------- math ----------
 const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));

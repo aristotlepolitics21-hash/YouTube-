@@ -98,18 +98,17 @@
         "text": "🍁",
         "style": "red",
         "x": 0,
-        "y": 3.6,
-        "z": 0.4,
-        "w": 0.9,
-        "h": 0.9,
+        "y": 3.05,
+        "z": -0.3,
+        "w": 0.7,
+        "h": 0.7,
         "size": 120
        }
       ],
       "signs": [
        {
         "text": "QUEBEC",
-        "style": "cream",
-        "y": 4.5
+        "style": "cream"
        }
       ],
       "cam": "medium"
