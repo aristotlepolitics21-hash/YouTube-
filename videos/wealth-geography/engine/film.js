@@ -10,7 +10,7 @@ import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
-const W = 1920, H = 1080, RS = 2 / 3;
+const W = window.FILM_W || 1920, H = window.FILM_H || 1080, RS = 2 / 3, VERT = H > W; // VERT: a 9:16 Short
 const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
 renderer.setPixelRatio(1); renderer.setSize(W * RS, H * RS, false);
 renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
@@ -85,6 +85,16 @@ let GEO = null; const RIVERS = {
   james: [[-79.4, 37.7], [-78.5, 37.6], [-77.44, 37.54], [-76.9, 37.25], [-76.3, 36.95]], savannah: [[-82.8, 34.4], [-82.3, 33.9], [-81.97, 33.47], [-81.6, 32.8], [-80.9, 32.03]],
   chattahoochee: [[-84.2, 34.1], [-84.6, 33.5], [-84.99, 32.46], [-85.05, 31.4], [-84.86, 30.7]], potomac: [[-78.3, 39.6], [-77.5, 39.2], [-77.07, 38.9], [-77.0, 38.4], [-76.3, 38.0]],
   susquehanna: [[-76.9, 41.2], [-76.88, 40.27], [-76.2, 39.7], [-76.08, 39.54]], delaware: [[-75.1, 41.3], [-74.76, 40.22], [-75.15, 39.95], [-75.5, 39.4]],
+  hudson_erie: [[-74.0, 40.7], [-73.95, 41.5], [-73.75, 42.65], [-76.15, 43.05], [-77.6, 43.16], [-78.88, 42.89]],
+  yangtze: [[121.8, 31.4], [120.3, 31.9], [118.8, 32.05], [117.0, 30.5], [116.0, 29.7], [114.3, 30.6], [112.2, 30.3], [111.3, 30.7], [109.5, 31.0], [106.55, 29.56], [104.6, 28.8], [102.0, 26.5], [100.2, 26.9], [99.5, 28.5], [97.5, 32.0]],
+  pearl: [[113.6, 22.3], [113.3, 23.1], [112.5, 23.1], [111.3, 23.5], [110.3, 23.4], [109.4, 23.7], [107.5, 23.1], [105.5, 24.8]],
+  ganges: [[88.2, 22.0], [88.4, 23.2], [88.0, 24.5], [87.2, 25.3], [85.15, 25.6], [83.0, 25.3], [81.85, 25.43], [80.3, 26.45], [79.0, 27.6], [78.15, 29.95], [78.6, 30.9]],
+  seine: [[0.1, 49.48], [1.1, 49.44], [1.9, 49.0], [2.35, 48.86], [2.66, 48.54], [4.08, 48.3], [4.7, 47.8]],
+  po: [[12.4, 44.95], [11.6, 44.95], [10.9, 45.05], [9.7, 45.1], [8.6, 45.1], [7.7, 45.05], [7.1, 44.7]],
+  st_lawrence: [[-61.5, 49.6], [-66.0, 49.2], [-69.5, 48.0], [-71.2, 46.8], [-72.5, 46.3], [-73.55, 45.5], [-74.7, 45.0], [-75.9, 44.4], [-76.5, 44.2], [-79.4, 43.6], [-82.0, 42.6], [-83.0, 42.3]],
+  volga: [[48.03, 46.35], [44.5, 48.7], [46.0, 51.53], [48.5, 53.0], [50.1, 53.2], [49.1, 55.8], [46.5, 56.1], [44.0, 56.3], [39.87, 57.63], [35.9, 56.86], [33.0, 57.2]],
+  han: [[126.6, 37.75], [126.9, 37.55], [127.2, 37.53], [127.5, 37.5], [128.0, 37.3]],
+  meuse: [[4.1, 51.85], [5.0, 51.75], [5.85, 51.8], [6.0, 51.3], [5.7, 50.85], [5.6, 50.6], [4.85, 50.45], [4.9, 49.9]],
   roanoke: [[-79.9, 37.2], [-78.5, 36.6], [-77.6, 36.48], [-76.7, 35.9]], congaree: [[-81.8, 34.6], [-81.03, 34.0], [-80.6, 33.5], [-79.3, 33.2]],
 };
 const REGIONS = { // lon0, lon1, lat0, lat1
@@ -265,7 +275,8 @@ BUILD.globe_night = (p) => {
 };
 // ===== flat regional map, tilted =====
 BUILD.map_region = (p) => {
-  const reg = p.region, opts = { hl: p.hl, coast: p.coast, lights: p.lights || reg === 'korea' || reg === 'japan' || reg === 'egypt' || reg === 'bayarea', dark: reg === 'korea' ? ['408'] : undefined, lightScale: reg === 'bayarea' ? .35 : reg === 'world' ? .55 : 1 };
+  if (p.bbox) REGIONS[p.region] = p.bbox;
+  const reg = p.region, opts = { hl: p.hl, coast: p.coast, lights: p.lights || reg === 'korea' || reg === 'japan' || reg === 'egypt' || reg === 'bayarea', dark: reg === 'korea' ? ['408'] : p.dark, lightScale: reg === 'bayarea' ? .35 : reg === 'world' ? .55 : 1 };
   const T = mapTexture(reg, opts), P = T.P, scene = new THREE.Scene(); scene.background = new THREE.Color(0x03060c); scene.fog = new THREE.Fog(0x03060c, 14, 40);
   const plane = M(new THREE.PlaneGeometry(P.w, P.h), new THREE.MeshStandardMaterial({ map: T.tex, emissive: 0xffffff, emissiveMap: T.tex, emissiveIntensity: .55, roughness: .9 }), { rot: [-Math.PI / 2, 0, 0], shadow: false });
   scene.add(plane); scene.add(new THREE.HemisphereLight(0x9fb8e0, 0x111111, .9)); const key = new THREE.DirectionalLight(0xffd7a0, 1.4); key.position.set(-6, 10, 6); scene.add(key);
@@ -277,7 +288,8 @@ BUILD.map_region = (p) => {
   // gold towers for the biggest cities in the region
   const big = citiesIn(reg).filter(c => !(reg === 'korea' && inKoreaNorth(c[0], c[1]))).sort((a, b) => b[2] - a[2]).slice(0, reg === 'world' ? 60 : 30).map(([lo, la, pop]) => { const v = at(lo, la); return { x: v.x, z: v.z, pop }; });
   const tw = towers(big, { w: reg === 'world' ? .06 : reg === 'bayarea' ? .12 : .09, ei: 1.1 }); scene.add(tw);
-  const showTowers = reg === 'japan' || reg === 'world' || reg === 'korea' || p.lights;
+  const showTowers = p.towers ?? (reg === 'japan' || reg === 'world' || reg === 'korea' || p.lights);
+  const seam = p.seam ? tube(p.seam.map(([a, b]) => at(a, b, .04)), .035, 0xffffff, 1.8) : null; if (seam) scene.add(seam);
   const pins = (p.pins || []).map(([lo, la, name]) => { const g = G(M(new THREE.ConeGeometry(.08, .3, 16), glowM(C.gold, 2), { pos: [0, .2, 0], rot: [Math.PI, 0, 0] }), glowSprite(C.gold, .7, .6)); g.position.copy(at(lo, la)); scene.add(g); labels.push({ p: at(lo, la, .45), text: name, k: 0 }); return g; });
   // fall line: a dashed seam through the cities, then trading posts, then railways
   let fl = null, rails = [], flc = [];
@@ -286,17 +298,18 @@ BUILD.map_region = (p) => {
     flc = FL.filter(f => f[2]).map(([lo, la, n]) => { const b = M(BOX(.16, 1, .16), new THREE.MeshPhysicalMaterial({ color: 0xffa63a, emissive: 0xff8a1c, emissiveIntensity: 1, metalness: .6, roughness: .3 })); b.geometry.translate(0, .5, 0); b.position.copy(at(lo, la)); scene.add(b); const L = { p: at(lo, la, .2), text: n, k: 0, small: 1 }; labels.push(L); return { b, L, n }; });
     if (p.rail) [[[-84.39, 33.75], [-81.03, 34.0], [-80.84, 35.23], [-78.64, 35.78], [-77.44, 37.54], [-77.03, 38.9], [-76.61, 39.29], [-75.15, 39.95], [-74.0, 40.7]], [[-90.07, 29.95], [-86.8, 33.5], [-84.39, 33.75]], [[-84.39, 33.75], [-85.3, 35.05], [-86.78, 36.16]], [[-81.1, 32.08], [-83.63, 32.84], [-84.39, 33.75]]]
       .forEach(r => { const tb = tube(r.map(([a, b]) => at(a, b, .04)), .025, 0xd8dde8, 1.1); scene.add(tb); rails.push(tb); }); }
-  const cam = new THREE.PerspectiveCamera(32, W / H, .1, 200), span = Math.max(P.w, P.h * 1.6);
+  const cam = new THREE.PerspectiveCamera(VERT ? 44 : 32, W / H, .1, 200), span = VERT ? Math.max(P.w * 2.05, P.h * 1.05) : Math.max(P.w, P.h * 1.6);
   const focus = p.pulse ? at(...p.pulse) : p.pins ? at(p.pins[0][0], p.pins[0][1]) : V(0, 0, 0);
   return { scene, cam, labels, update(t, s) {
-    const k = ease(t), dist = span * lerp(.92, .74, k), tilt = lerp(.95, .8, k);
+    const k = ease(t), dist = span * lerp(.92, .74, k) * (p.zoom || 1), tilt = VERT ? lerp(1.22, 1.1, k) : lerp(.95, .8, k);
+    if (seam) seam.reveal(seg(t, .1, .6));
     const fx = lerp(0, focus.x, .5 * k), fz = lerp(0, focus.z, .5 * k);
     aim(cam, [fx + Math.sin(s * .05) * .4 - lerp(.6, .2, k), Math.sin(tilt) * dist * .78, fz + Math.cos(tilt) * dist * .78 + 1.2], [fx, 0, fz - .3], .6);
     rivers.forEach(r => r.reveal(seg(t, .08 + r.userData.d, .55 + r.userData.d)));
     falls.forEach((r, i) => { r.update(s, seg(t, .45, .55)); labels[i].k = seg(t, .45, .55); });
-    if (pulse) pulse.update(s, 1);
+    if (pulse) pulse.update(s, 1); scene.fog.far = VERT ? 80 : 40;
     tw.visible = showTowers; tw.set((it, i) => Math.pow(it.pop, .5) * (reg === 'world' ? .00035 : .00028) * out(seg(t, .15 + i * .008, .55 + i * .008)) * (reg === 'bayarea' ? 2 : 1));
-    pins.forEach((g, i) => { const kk = out(seg(t, .15 + i * .15, .3 + i * .15)); g.scale.setScalar(kk); g.position.y = (1 - kk) * .5; labels.find(l => l.text === p.pins[i][2]).k = kk; });
+    pins.forEach((g, i) => { const kk = out(seg(t, .12 + i * .1, .25 + i * .1)); g.scale.setScalar(kk); g.position.y = (1 - kk) * .5; labels.find(l => l.text === p.pins[i][2]).k = kk; });
     if (fl) { fl.reveal(p.fall === 1 ? seg(t, .2, .8) : 1); flc.forEach((c, i) => { const g = p.fall === 1 ? 0 : p.fall === 2 ? out(seg(t, .1 + i * .07, .3 + i * .07)) : 1; c.b.scale.set(1, .0001 + g * .9, 1); c.L.k = p.fall === 1 ? 0 : (['Richmond', 'Augusta', 'Columbus'].includes(c.n) ? 1 : .55) * g; c.L.hot = ['Richmond', 'Augusta', 'Columbus'].includes(c.n); });
       rails.forEach((r, i) => r.reveal(seg(t, .15 + i * .1, .55 + i * .1))); }
   } };
@@ -552,6 +565,7 @@ function txt(s, x, y, size, col, o = {}) { c2.save(); c2.font = `${o.weight ?? 6
 function wrap(s, maxW, size, font, weight = 400) { c2.font = `${weight} ${size}px ${font}`; const words = s.split(' '), lines = []; let cur = ''; words.forEach(w => { const tr = cur ? cur + ' ' + w : w; if (c2.measureText(tr).width > maxW && cur) { lines.push(cur); cur = w; } else cur = tr; }); if (cur) lines.push(cur); return lines; }
 const fmt = n => Math.round(n).toLocaleString('en-US');
 function overlay(L, T, total, cur, t, s, d) {
+  if (VERT) return overlayShort(L, T, total, cur, t, s, d);
   // projected labels
   (cur.labels || []).forEach(l => { if (!l || l.k <= .01) return; const [x, y, vis] = project(cur.cam, l.p); if (!vis) return; c2.save(); c2.globalAlpha = l.k;
     if (l.left) { c2.fillStyle = GOLD; c2.fillRect(x - 40, y - 2, 30, 3); txt(l.text, x, y + 9, 30, l.hot ? GOLD : CREAM, { weight: 700, spacing: '4px' }); }
@@ -599,6 +613,28 @@ function overlay(L, T, total, cur, t, s, d) {
     txt(L.secName.toUpperCase(), 110, 940, 58, CREAM, { weight: 800, font: DISPLAY, spacing: '5px' }); c2.restore(); } }
 }
 
+// Shorts: a progress line, the tag up top, big burned-in captions, and an end card
+function overlayShort(L, T, total, cur, t, s, d) {
+  (cur.labels || []).forEach(l => { if (!l || l.k <= .01) return; const [x, y, vis] = project(cur.cam, l.p); if (!vis) return; c2.save(); c2.globalAlpha = l.k;
+    c2.fillStyle = GOLD; c2.beginPath(); c2.arc(x, y + 10, 6, 0, 7); c2.fill(); txt(l.text, x, y - 12, 34, CREAM, { weight: 800, align: 'center', spacing: '2px', blur: 18 }); c2.restore(); });
+  c2.fillStyle = 'rgba(255,255,255,.2)'; c2.fillRect(80, 110, W - 160, 6); c2.fillStyle = GOLD; c2.fillRect(80, 110, (W - 160) * clamp(T / total), 6);
+  const p = L.p || {};
+  if (p.tag) { const k = out(seg(s, .1, .8)); c2.save(); c2.globalAlpha = k; txt(p.tag[0], W / 2, 260, 96, GOLD, { weight: 800, font: DISPLAY, align: 'center', spacing: '8px', blur: 30 });
+    wrap(p.tag[1], W - 200, 40, SANS, 600).forEach((ln, i) => txt(ln, W / 2, 330 + i * 52, 40, CREAM, { weight: 600, align: 'center' })); c2.restore(); }
+  if (p.endcard) { const k = out(seg(t, .45, .7)); c2.save(); c2.globalAlpha = k; c2.fillStyle = 'rgba(0,0,0,.7)'; c2.fillRect(0, 0, W, H);
+    txt('WHERE', W / 2, 760, 54, CREAM, { weight: 700, align: 'center', spacing: '14px' }); c2.save(); c2.font = `800 110px ${DISPLAY}`; const ew = c2.measureText(p.endcard.toUpperCase()).width; c2.restore(); txt(p.endcard.toUpperCase(), W / 2, 880, Math.min(110, 110 * (W - 140) / ew), GOLD, { weight: 800, font: DISPLAY, align: 'center', blur: 30 }); txt("MONEY LIVES", W / 2, 990, 80, CREAM, { weight: 800, font: DISPLAY, align: 'center', spacing: '6px' });
+    txt('FULL DOCUMENTARY ON THE CHANNEL', W / 2, 1110, 34, MUTED, { weight: 700, align: 'center', spacing: '4px' }); c2.restore(); }
+  if (!L.cap || T < L.cap[0] || T > L.cap[1] + .15) return;
+  const words = L.text.split(/\s+/), chunks = []; let cur_ = [];
+  words.forEach(w => { cur_.push(w); if (cur_.length >= 3 || /[.,?!:]$/.test(w)) { chunks.push(cur_.join(' ')); cur_ = []; } }); if (cur_.length) chunks.push(cur_.join(' '));
+  const tot = chunks.reduce((a, ch) => a + ch.length + 4, 0), k = (T - L.cap[0]) / (L.cap[1] - L.cap[0]) * tot; let acc = 0, idx = chunks.length - 1;
+  for (let i = 0; i < chunks.length; i++) { acc += chunks[i].length + 4; if (k < acc) { idx = i; break; } }
+  let st = 0; for (let i = 0; i < idx; i++) st += chunks[i].length + 4; const age = (k - st) / tot * (L.cap[1] - L.cap[0]);
+  const str = chunks[idx].toUpperCase(); c2.save(); c2.font = `900 84px ${DISPLAY}`; c2.textAlign = 'center'; c2.textBaseline = 'middle'; c2.lineJoin = 'round';
+  const fit = Math.min(1, (W - 120) / c2.measureText(str).width), sc = fit * (1 + .1 * Math.exp(-age * 18)); c2.translate(W / 2, 1420); c2.scale(sc, sc);
+  c2.lineWidth = 14; c2.strokeStyle = '#06080e'; c2.strokeText(str, 0, 0); c2.fillStyle = idx % 2 ? GOLD : '#ffffff'; c2.fillText(str, 0, 0); c2.restore();
+}
+
 // ---------- frame driver ----------
 let curIdx = -1, cur = null;
 function dispose(sc) { sc.traverse(o => { if (o.geometry) o.geometry.dispose(); const ms = o.material ? (Array.isArray(o.material) ? o.material : [o.material]) : []; ms.forEach(m => { ['map', 'emissiveMap'].forEach(k => { const tx = m[k]; if (tx && tx !== GLOW && !Object.values(mapTexCache).some(c => c.tex === tx) && !(NIGHT && (tx === NIGHT.base || tx === NIGHT.lights)) && tx !== WINDOWS) tx.dispose(); }); m.dispose(); }); }); }
@@ -615,7 +651,7 @@ function frame(TL, T, total) {
   c2.save(); c2.globalCompositeOperation = 'overlay'; const r = rng(Math.floor(T * 24)); c2.translate(-r() * 256, -r() * 256); c2.fillStyle = c2.createPattern(GRAIN, 'repeat'); c2.fillRect(0, 0, W + 256, H + 256); c2.restore();
   overlay(L, T, total, cur, t, s, d);
   // letterbox
-  c2.fillStyle = '#000'; c2.fillRect(0, 0, W, 64); c2.fillRect(0, H - 64, W, 64);
+  if (!VERT) { c2.fillStyle = '#000'; c2.fillRect(0, 0, W, 64); c2.fillRect(0, H - 64, W, 64); }
   // dip to black between shots, longer at chapter breaks, fade in at the start and out at the end
   const brk = (j) => j > 0 && TL[j].sec !== TL[j - 1].sec ? .7 : .22;
   let a = 0; if (i === 0) a = 1 - clamp(T / 1.2); else a = Math.max(a, 1 - s / brk(i)); if (i < TL.length - 1) a = Math.max(a, 1 - (L.end - T) / brk(i + 1)); else a = Math.max(a, seg(T, total - 2, total));

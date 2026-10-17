@@ -1,0 +1,169 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 6,
+ "title": "Where Britain's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 100,
+ "sections": [
+  {
+   "name": "the UK",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "uk",
+      "hl": [
+       "826"
+      ],
+      "bbox": [
+       -8.8,
+       2.2,
+       49.8,
+       59
+      ],
+      "pulse": [
+       -0.12,
+       51.5
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "UNITED KINGDOM",
+       "London: ~1 in 7 people, nearly 1/4 of the output"
+      ]
+     },
+     "London is home to around one in seven people in the UK, but it produces nearly a quarter of the country's economic output."
+    ],
+    [
+     "map_region",
+     {
+      "region": "uk",
+      "hl": [
+       "826"
+      ],
+      "bbox": [
+       -8.8,
+       2.2,
+       49.8,
+       59
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        -0.12,
+        51.5,
+        "London"
+       ],
+       [
+        -2.24,
+        53.48,
+        "Manchester"
+       ],
+       [
+        -1.9,
+        52.48,
+        "Birmingham"
+       ],
+       [
+        -3.19,
+        55.95,
+        "Edinburgh"
+       ]
+      ]
+     },
+     "Why does so much pool in one city?"
+    ],
+    [
+     "map_region",
+     {
+      "region": "uk",
+      "hl": [
+       "826"
+      ],
+      "bbox": [
+       -8.8,
+       2.2,
+       49.8,
+       59
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [
+       "thames"
+      ],
+      "pins": [
+       [
+        -0.12,
+        51.5,
+        "London"
+       ],
+       [
+        -2.24,
+        53.48,
+        "Manchester"
+       ]
+      ]
+     },
+     "The Thames. A tidal river deep enough for seagoing ships, facing Europe. London grew into the trading port of an empire."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "Trade needed finance: insurance, shipping, banking. The City of London grew up around the docks, and that snowball has rolled for three centuries."
+    ],
+    [
+     "map_region",
+     {
+      "region": "uk",
+      "hl": [
+       "826"
+      ],
+      "bbox": [
+       -8.8,
+       2.2,
+       49.8,
+       59
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        -2.24,
+        53.48,
+        "Manchester"
+       ],
+       [
+        -1.9,
+        52.48,
+        "Birmingham"
+       ],
+       [
+        -3.19,
+        55.95,
+        "Edinburgh"
+       ]
+      ],
+      "pulse": [
+       -2.24,
+       53.48
+      ],
+      "zoom": 0.9
+     },
+     "The north had its own boom. Coal and cotton made Manchester the world's first industrial city. But when those industries faded, the snowball rolled backwards."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Britain's"
+     },
+     "A river, a trading empire, and finance that feeds itself. That's where Britain's money lives."
+    ]
+   ]
+  }
+ ]
+}

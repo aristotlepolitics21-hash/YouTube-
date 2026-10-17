@@ -1,0 +1,169 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 5,
+ "title": "Where India's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 100,
+ "sections": [
+  {
+   "name": "India",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "india",
+      "hl": [
+       "356"
+      ],
+      "bbox": [
+       67,
+       98,
+       6,
+       36
+      ],
+      "pulse": [
+       72.88,
+       19.08
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "INDIA",
+       "Several times richer in some states than others"
+      ]
+     },
+     "India's wealth is spread very unevenly. In its richest states, the average person earns several times as much as in its poorest."
+    ],
+    [
+     "map_region",
+     {
+      "region": "india",
+      "hl": [
+       "356"
+      ],
+      "bbox": [
+       67,
+       98,
+       6,
+       36
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        72.88,
+        19.08,
+        "Mumbai"
+       ],
+       [
+        77.59,
+        12.97,
+        "Bengaluru"
+       ],
+       [
+        77.21,
+        28.61,
+        "Delhi"
+       ],
+       [
+        85.15,
+        25.6,
+        "Patna"
+       ]
+      ]
+     },
+     "Look where the money pools: Mumbai, Delhi, Bengaluru, and the south and west of the country."
+    ],
+    [
+     "map_region",
+     {
+      "region": "india",
+      "hl": [
+       "356"
+      ],
+      "bbox": [
+       67,
+       98,
+       6,
+       36
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [
+       "ganges"
+      ],
+      "pins": [
+       [
+        72.88,
+        19.08,
+        "Mumbai"
+       ],
+       [
+        77.59,
+        12.97,
+        "Bengaluru"
+       ]
+      ]
+     },
+     "Mumbai began with water. Its deep, sheltered harbour made it a hub of trade, then the home of the Bombay Stock Exchange, the oldest in Asia."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "Bengaluru is a snowball story. In 1985, Texas Instruments opened a design centre there. Other firms followed the engineers, and engineers followed the jobs."
+    ],
+    [
+     "map_region",
+     {
+      "region": "india",
+      "hl": [
+       "356"
+      ],
+      "bbox": [
+       67,
+       98,
+       6,
+       36
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        77.59,
+        12.97,
+        "Bengaluru"
+       ],
+       [
+        77.21,
+        28.61,
+        "Delhi"
+       ],
+       [
+        85.15,
+        25.6,
+        "Patna"
+       ]
+      ],
+      "pulse": [
+       85.15,
+       25.6
+      ],
+      "zoom": 0.9
+     },
+     "Meanwhile the Ganges plain, home to hundreds of millions of people, holds some of India's poorest states."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "India's"
+     },
+     "A harbour, a cluster of talent, and a lucky early bet. That's where India's money lives."
+    ]
+   ]
+  }
+ ]
+}

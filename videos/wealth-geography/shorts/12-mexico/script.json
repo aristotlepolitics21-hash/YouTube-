@@ -1,0 +1,167 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 12,
+ "title": "Where Mexico's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 103,
+ "sections": [
+  {
+   "name": "Mexico",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "mexico",
+      "hl": [
+       "484"
+      ],
+      "bbox": [
+       -118,
+       -86,
+       14,
+       33
+      ],
+      "pulse": [
+       -99.13,
+       19.43
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "MEXICO",
+       "A capital, a booming north, a poorer south"
+      ]
+     },
+     "Mexico's wealth is split three ways: a giant capital, a booming north, and a much poorer south."
+    ],
+    [
+     "map_region",
+     {
+      "region": "mexico",
+      "hl": [
+       "484"
+      ],
+      "bbox": [
+       -118,
+       -86,
+       14,
+       33
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        -99.13,
+        19.43,
+        "Mexico City"
+       ],
+       [
+        -100.31,
+        25.67,
+        "Monterrey"
+       ],
+       [
+        -117.04,
+        32.51,
+        "Tijuana"
+       ],
+       [
+        -93.12,
+        16.75,
+        "Chiapas"
+       ]
+      ]
+     },
+     "Mexico City sits on a high plateau, and it has been a centre of power since the Aztec capital, Tenochtitlan, stood on the same spot."
+    ],
+    [
+     "map_region",
+     {
+      "region": "mexico",
+      "hl": [
+       "484"
+      ],
+      "bbox": [
+       -118,
+       -86,
+       14,
+       33
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [],
+      "pins": [
+       [
+        -99.13,
+        19.43,
+        "Mexico City"
+       ],
+       [
+        -100.31,
+        25.67,
+        "Monterrey"
+       ]
+      ]
+     },
+     "Spanish rule, and then the Mexican state, kept government, money and roads pointing at the capital. The snowball made it one of the biggest cities in the Americas."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "The north has a different advantage: its neighbour. Since the 1960s, factories have clustered near the US border to make goods for American buyers."
+    ],
+    [
+     "map_region",
+     {
+      "region": "mexico",
+      "hl": [
+       "484"
+      ],
+      "bbox": [
+       -118,
+       -86,
+       14,
+       33
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        -100.31,
+        25.67,
+        "Monterrey"
+       ],
+       [
+        -117.04,
+        32.51,
+        "Tijuana"
+       ],
+       [
+        -93.12,
+        16.75,
+        "Chiapas"
+       ]
+      ],
+      "pulse": [
+       -100.31,
+       25.67
+      ],
+      "zoom": 0.9
+     },
+     "Monterrey became an industrial powerhouse. Meanwhile southern states like Chiapas and Oaxaca, far from both, stayed among the poorest."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Mexico's"
+     },
+     "An ancient capital, a rich neighbour, and distance from both. That's where Mexico's money lives."
+    ]
+   ]
+  }
+ ]
+}

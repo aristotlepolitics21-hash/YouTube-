@@ -1,0 +1,167 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 9,
+ "title": "Where Brazil's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 100,
+ "sections": [
+  {
+   "name": "Brazil",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "brazil",
+      "hl": [
+       "076"
+      ],
+      "bbox": [
+       -74.5,
+       -34,
+       -34,
+       5.5
+      ],
+      "pulse": [
+       -46.63,
+       -23.55
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "BRAZIL",
+       "One state makes ~1/3 of the economy"
+      ]
+     },
+     "São Paulo state alone produces about a third of Brazil's entire economy."
+    ],
+    [
+     "map_region",
+     {
+      "region": "brazil",
+      "hl": [
+       "076"
+      ],
+      "bbox": [
+       -74.5,
+       -34,
+       -34,
+       5.5
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        -46.63,
+        -23.55,
+        "São Paulo"
+       ],
+       [
+        -43.17,
+        -22.91,
+        "Rio de Janeiro"
+       ],
+       [
+        -47.88,
+        -15.79,
+        "Brasília"
+       ],
+       [
+        -60.02,
+        -3.12,
+        "Manaus"
+       ]
+      ]
+     },
+     "And almost all of Brazil's wealth hugs the Atlantic coast. The vast interior is far emptier."
+    ],
+    [
+     "map_region",
+     {
+      "region": "brazil",
+      "hl": [
+       "076"
+      ],
+      "bbox": [
+       -74.5,
+       -34,
+       -34,
+       5.5
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [],
+      "pins": [
+       [
+        -46.63,
+        -23.55,
+        "São Paulo"
+       ],
+       [
+        -43.17,
+        -22.91,
+        "Rio de Janeiro"
+       ]
+      ]
+     },
+     "That pattern is centuries old. Portuguese colonists clung to the shore. One writer in the 1600s said they were scratching along the coast like crabs."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "São Paulo grew rich on coffee, then used that money to build factories. Industry attracted workers, and workers attracted more industry."
+    ],
+    [
+     "map_region",
+     {
+      "region": "brazil",
+      "hl": [
+       "076"
+      ],
+      "bbox": [
+       -74.5,
+       -34,
+       -34,
+       5.5
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        -43.17,
+        -22.91,
+        "Rio de Janeiro"
+       ],
+       [
+        -47.88,
+        -15.79,
+        "Brasília"
+       ],
+       [
+        -60.02,
+        -3.12,
+        "Manaus"
+       ]
+      ],
+      "pulse": [
+       -47.88,
+       -15.79
+      ],
+      "zoom": 0.9
+     },
+     "In 1960, Brazil even opened a brand new capital, Brasília, deep in the interior, to pull wealth inland. It grew, but the coast still dominates."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Brazil's"
+     },
+     "A colonial coastline, coffee money, and a snowball of industry. That's where Brazil's money lives."
+    ]
+   ]
+  }
+ ]
+}

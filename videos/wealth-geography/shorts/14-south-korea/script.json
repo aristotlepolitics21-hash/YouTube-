@@ -1,0 +1,135 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 14,
+ "title": "Where Korea's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 100,
+ "sections": [
+  {
+   "name": "South Korea",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "korea",
+      "hl": [
+       "410"
+      ],
+      "pulse": [
+       126.98,
+       37.57
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "SOUTH KOREA",
+       "Half the population, one metro area"
+      ]
+     },
+     "Half of South Korea's population lives in and around one city: Seoul."
+    ],
+    [
+     "map_region",
+     {
+      "region": "korea",
+      "hl": [
+       "410"
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        126.98,
+        37.57,
+        "Seoul"
+       ],
+       [
+        129.04,
+        35.18,
+        "Busan"
+       ],
+       [
+        125.75,
+        39.02,
+        "Pyongyang"
+       ]
+      ]
+     },
+     "That's more than twenty-five million people in a single metropolitan region."
+    ],
+    [
+     "map_region",
+     {
+      "region": "korea",
+      "hl": [
+       "410"
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [
+       "han"
+      ],
+      "pins": [
+       [
+        126.98,
+        37.57,
+        "Seoul"
+       ],
+       [
+        129.04,
+        35.18,
+        "Busan"
+       ]
+      ]
+     },
+     "Seoul sits on the Han River near the west coast, and it has been a capital for more than six hundred years."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "When South Korea industrialised from the 1960s, government, giant companies and universities all clustered there, and each one pulled in the next."
+    ],
+    [
+     "map_region",
+     {
+      "region": "korea",
+      "hl": [
+       "410"
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        129.04,
+        35.18,
+        "Busan"
+       ],
+       [
+        125.75,
+        39.02,
+        "Pyongyang"
+       ]
+      ],
+      "pulse": [
+       125.75,
+       39.02
+      ],
+      "zoom": 0.9
+     },
+     "And just to the north, a different set of rules produced the opposite: a country almost entirely dark at night."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Korea's"
+     },
+     "An old capital, a fast snowball, and very different rules. That's where Korea's money lives."
+    ]
+   ]
+  }
+ ]
+}

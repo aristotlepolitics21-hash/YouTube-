@@ -1,0 +1,169 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 7,
+ "title": "Where France's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 100,
+ "sections": [
+  {
+   "name": "France",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "france",
+      "hl": [
+       "250"
+      ],
+      "bbox": [
+       -5.5,
+       9.8,
+       41.2,
+       51.3
+      ],
+      "pulse": [
+       2.35,
+       48.86
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "FRANCE",
+       "Paris region: under 1/5 of the people, ~1/3 of the output"
+      ]
+     },
+     "The Paris region holds less than a fifth of France's people, but it produces close to a third of the country's economic output."
+    ],
+    [
+     "map_region",
+     {
+      "region": "france",
+      "hl": [
+       "250"
+      ],
+      "bbox": [
+       -5.5,
+       9.8,
+       41.2,
+       51.3
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        2.35,
+        48.86,
+        "Paris"
+       ],
+       [
+        4.84,
+        45.76,
+        "Lyon"
+       ],
+       [
+        5.37,
+        43.3,
+        "Marseille"
+       ],
+       [
+        1.44,
+        43.6,
+        "Toulouse"
+       ]
+      ]
+     },
+     "Why Paris? Partly rivers. The Seine linked it to the sea, and to the rich farmland all around it."
+    ],
+    [
+     "map_region",
+     {
+      "region": "france",
+      "hl": [
+       "250"
+      ],
+      "bbox": [
+       -5.5,
+       9.8,
+       41.2,
+       51.3
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [
+       "seine"
+      ],
+      "pins": [
+       [
+        2.35,
+        48.86,
+        "Paris"
+       ],
+       [
+        4.84,
+        45.76,
+        "Lyon"
+       ]
+      ]
+     },
+     "But mostly, it's power. For centuries, French kings, and then Napoleon, ran the whole country from Paris."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "In 1842, a law planned France's main railway lines as a star, radiating out from Paris. Every line led to the capital."
+    ],
+    [
+     "map_region",
+     {
+      "region": "france",
+      "hl": [
+       "250"
+      ],
+      "bbox": [
+       -5.5,
+       9.8,
+       41.2,
+       51.3
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        4.84,
+        45.76,
+        "Lyon"
+       ],
+       [
+        5.37,
+        43.3,
+        "Marseille"
+       ],
+       [
+        1.44,
+        43.6,
+        "Toulouse"
+       ]
+      ],
+      "pulse": [
+       2.35,
+       48.86
+      ],
+      "zoom": 0.9
+     },
+     "Government, banks, universities and head offices all clustered in one place. The snowball did the rest."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "France's"
+     },
+     "A river, a capital, and a star of rails. That's where France's money lives."
+    ]
+   ]
+  }
+ ]
+}

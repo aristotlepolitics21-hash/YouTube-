@@ -1,0 +1,169 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 20,
+ "title": "Where Switzerland's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 103,
+ "sections": [
+  {
+   "name": "Switzerland",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "switzerland",
+      "hl": [
+       "756"
+      ],
+      "bbox": [
+       5.7,
+       10.7,
+       45.6,
+       48.0
+      ],
+      "pulse": [
+       8.54,
+       47.38
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "SWITZERLAND",
+       "No sea, few resources, one of the richest"
+      ]
+     },
+     "Switzerland has no sea, few natural resources, and the Alps cover most of it. Yet it's one of the richest countries on Earth."
+    ],
+    [
+     "map_region",
+     {
+      "region": "switzerland",
+      "hl": [
+       "756"
+      ],
+      "bbox": [
+       5.7,
+       10.7,
+       45.6,
+       48.0
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        8.54,
+        47.38,
+        "Zurich"
+       ],
+       [
+        7.59,
+        47.56,
+        "Basel"
+       ],
+       [
+        6.14,
+        46.2,
+        "Geneva"
+       ],
+       [
+        7.45,
+        46.95,
+        "Bern"
+       ]
+      ]
+     },
+     "Its wealth pools on the lowland strip north of the mountains: Zurich, Basel and Geneva."
+    ],
+    [
+     "map_region",
+     {
+      "region": "switzerland",
+      "hl": [
+       "756"
+      ],
+      "bbox": [
+       5.7,
+       10.7,
+       45.6,
+       48.0
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [
+       "rhine"
+      ],
+      "pins": [
+       [
+        8.54,
+        47.38,
+        "Zurich"
+       ],
+       [
+        7.59,
+        47.56,
+        "Basel"
+       ]
+      ]
+     },
+     "Basel sits where the Rhine becomes navigable all the way to the North Sea. Its old dye-makers grew into chemical and drug giants that are still based there."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "Zurich and Geneva built banking on rules: stable government, a strong currency, and for a long time, strict secrecy. Money came from all over the world, looking for a safe place to sit."
+    ],
+    [
+     "map_region",
+     {
+      "region": "switzerland",
+      "hl": [
+       "756"
+      ],
+      "bbox": [
+       5.7,
+       10.7,
+       45.6,
+       48.0
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        7.59,
+        47.56,
+        "Basel"
+       ],
+       [
+        6.14,
+        46.2,
+        "Geneva"
+       ],
+       [
+        7.45,
+        46.95,
+        "Bern"
+       ]
+      ],
+      "pulse": [
+       8.54,
+       47.38
+      ],
+      "zoom": 0.9
+     },
+     "Rules that protect wealth attract more wealth. The snowball does the rest."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Switzerland's"
+     },
+     "A navigable river, a safe set of rules, and a lot of trust. That's where Switzerland's money lives."
+    ]
+   ]
+  }
+ ]
+}

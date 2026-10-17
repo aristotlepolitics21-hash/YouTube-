@@ -1,0 +1,169 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 8,
+ "title": "Where Italy's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 100,
+ "sections": [
+  {
+   "name": "Italy",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "italy",
+      "hl": [
+       "380"
+      ],
+      "bbox": [
+       6.5,
+       18.8,
+       36.4,
+       47.2
+      ],
+      "pulse": [
+       9.19,
+       45.46
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "ITALY",
+       "One country, two economies"
+      ]
+     },
+     "Italy is one country with two economies. The average person in the south produces barely more than half as much as someone in the north."
+    ],
+    [
+     "map_region",
+     {
+      "region": "italy",
+      "hl": [
+       "380"
+      ],
+      "bbox": [
+       6.5,
+       18.8,
+       36.4,
+       47.2
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        9.19,
+        45.46,
+        "Milan"
+       ],
+       [
+        7.69,
+        45.07,
+        "Turin"
+       ],
+       [
+        12.5,
+        41.9,
+        "Rome"
+       ],
+       [
+        14.27,
+        40.85,
+        "Naples"
+       ]
+      ]
+     },
+     "The wealth pools in the north: Milan, Turin, and the Po Valley."
+    ],
+    [
+     "map_region",
+     {
+      "region": "italy",
+      "hl": [
+       "380"
+      ],
+      "bbox": [
+       6.5,
+       18.8,
+       36.4,
+       47.2
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [
+       "po"
+      ],
+      "pins": [
+       [
+        9.19,
+        45.46,
+        "Milan"
+       ],
+       [
+        7.69,
+        45.07,
+        "Turin"
+       ]
+      ]
+     },
+     "Geography matters. The Po Valley is Italy's biggest flat, fertile plain, and it sits close to Europe's richest markets, just across the Alps."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "Milan became Italy's capital of banking and industry, and the snowball kept on rolling."
+    ],
+    [
+     "map_region",
+     {
+      "region": "italy",
+      "hl": [
+       "380"
+      ],
+      "bbox": [
+       6.5,
+       18.8,
+       36.4,
+       47.2
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        7.69,
+        45.07,
+        "Turin"
+       ],
+       [
+        12.5,
+        41.9,
+        "Rome"
+       ],
+       [
+        14.27,
+        40.85,
+        "Naples"
+       ]
+      ],
+      "pulse": [
+       14.27,
+       40.85
+      ],
+      "zoom": 0.9
+     },
+     "History matters too. When Italy unified in 1861, north and south had been separate states for centuries, with very different economies. The gap is still there."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Italy's"
+     },
+     "A rich plain, close markets, and a long divided history. That's where Italy's money lives."
+    ]
+   ]
+  }
+ ]
+}

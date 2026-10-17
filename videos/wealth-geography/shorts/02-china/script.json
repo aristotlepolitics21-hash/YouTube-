@@ -1,0 +1,178 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 2,
+ "title": "Where China's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 108,
+ "sections": [
+  {
+   "name": "China",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "china",
+      "hl": [
+       "156"
+      ],
+      "bbox": [
+       73,
+       135,
+       17,
+       54
+      ],
+      "pulse": [
+       121.47,
+       31.23
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "CHINA",
+       "~94% of people live east of one line"
+      ]
+     },
+     "Draw a line across China, from Heihe in the north to Tengchong in the southwest. About ninety-four percent of Chinese people live east of it."
+    ],
+    [
+     "map_region",
+     {
+      "region": "china",
+      "hl": [
+       "156"
+      ],
+      "bbox": [
+       73,
+       135,
+       17,
+       54
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        121.47,
+        31.23,
+        "Shanghai"
+       ],
+       [
+        114.06,
+        22.54,
+        "Shenzhen"
+       ],
+       [
+        116.4,
+        39.9,
+        "Beijing"
+       ]
+      ]
+     },
+     "The geographer Hu Huanyong spotted it in 1935. The west is mountains, plateau and desert. The east has the rain, the plains and the rivers."
+    ],
+    [
+     "map_region",
+     {
+      "region": "china",
+      "hl": [
+       "156"
+      ],
+      "bbox": [
+       73,
+       135,
+       17,
+       54
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [
+       "yangtze",
+       "pearl"
+      ],
+      "pins": [
+       [
+        121.47,
+        31.23,
+        "Shanghai"
+       ],
+       [
+        114.06,
+        22.54,
+        "Shenzhen"
+       ]
+      ],
+      "seam": [
+       [
+        127.5,
+        50.25
+       ],
+       [
+        115.0,
+        39.0
+       ],
+       [
+        104.0,
+        30.0
+       ],
+       [
+        98.5,
+        25.0
+       ]
+      ]
+     },
+     "And the money crowds closer still, onto the coast, around two great river mouths: the Yangtze, with Shanghai, and the Pearl, with Hong Kong and Shenzhen."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "Then the rules changed. In 1980, Shenzhen, then a small town beside Hong Kong, became one of China's first Special Economic Zones."
+    ],
+    [
+     "map_region",
+     {
+      "region": "china",
+      "hl": [
+       "156"
+      ],
+      "bbox": [
+       73,
+       135,
+       17,
+       54
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        114.06,
+        22.54,
+        "Shenzhen"
+       ],
+       [
+        116.4,
+        39.9,
+        "Beijing"
+       ]
+      ],
+      "pulse": [
+       114.06,
+       22.54
+      ],
+      "zoom": 0.9
+     },
+     "Factories came, then suppliers, then engineers. The snowball rolled. Today Shenzhen is a megacity of more than seventeen million people."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "China's"
+     },
+     "Rivers, a coast open to the world, and a change of rules. That's where China's money lives."
+    ]
+   ]
+  }
+ ]
+}

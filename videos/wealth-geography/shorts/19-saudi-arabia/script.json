@@ -1,0 +1,167 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 19,
+ "title": "Where Saudi Arabia's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 103,
+ "sections": [
+  {
+   "name": "Saudi Arabia",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "saudi-arabia",
+      "hl": [
+       "682"
+      ],
+      "bbox": [
+       34,
+       56.5,
+       15.5,
+       32.5
+      ],
+      "pulse": [
+       50.1,
+       26.29
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "SAUDI ARABIA",
+       "Oil in the east, power in the centre"
+      ]
+     },
+     "Saudi Arabia's wealth comes from under the ground, and most of it from one region: the Eastern Province, along the Gulf coast."
+    ],
+    [
+     "map_region",
+     {
+      "region": "saudi-arabia",
+      "hl": [
+       "682"
+      ],
+      "bbox": [
+       34,
+       56.5,
+       15.5,
+       32.5
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        50.1,
+        26.29,
+        "Dhahran"
+       ],
+       [
+        46.72,
+        24.71,
+        "Riyadh"
+       ],
+       [
+        39.17,
+        21.54,
+        "Jeddah"
+       ],
+       [
+        39.83,
+        21.42,
+        "Mecca"
+       ]
+      ]
+     },
+     "In 1938, American geologists struck oil at Dammam, near Dhahran. Nearby Ghawar is the largest conventional oil field ever found."
+    ],
+    [
+     "map_region",
+     {
+      "region": "saudi-arabia",
+      "hl": [
+       "682"
+      ],
+      "bbox": [
+       34,
+       56.5,
+       15.5,
+       32.5
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [],
+      "pins": [
+       [
+        50.1,
+        26.29,
+        "Dhahran"
+       ],
+       [
+        46.72,
+        24.71,
+        "Riyadh"
+       ]
+      ]
+     },
+     "But the money doesn't stay where the oil is. Most of it belongs to the state, so it flows to where the state is: Riyadh, deep in the desert."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "Riyadh has grown from a small walled town into a city of millions, and the snowball keeps pulling people in."
+    ],
+    [
+     "map_region",
+     {
+      "region": "saudi-arabia",
+      "hl": [
+       "682"
+      ],
+      "bbox": [
+       34,
+       56.5,
+       15.5,
+       32.5
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        46.72,
+        24.71,
+        "Riyadh"
+       ],
+       [
+        39.17,
+        21.54,
+        "Jeddah"
+       ],
+       [
+        39.83,
+        21.42,
+        "Mecca"
+       ]
+      ],
+      "pulse": [
+       39.17,
+       21.54
+      ],
+      "zoom": 0.9
+     },
+     "On the west coast, Jeddah grew as the Red Sea port, and the gateway for pilgrims travelling to Mecca."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Saudi Arabia's"
+     },
+     "Oil in the east, power in the centre, pilgrims in the west. That's where Saudi Arabia's money lives."
+    ]
+   ]
+  }
+ ]
+}

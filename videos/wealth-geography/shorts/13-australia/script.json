@@ -1,0 +1,167 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 13,
+ "title": "Where Australia's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 100,
+ "sections": [
+  {
+   "name": "Australia",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "australia",
+      "hl": [
+       "036"
+      ],
+      "bbox": [
+       112,
+       154.5,
+       -44,
+       -10
+      ],
+      "pulse": [
+       151.21,
+       -33.87
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "AUSTRALIA",
+       "~2 in 5 people live in just two cities"
+      ]
+     },
+     "Australia is almost as big as the mainland United States. But around two in five Australians live in just two cities: Sydney and Melbourne."
+    ],
+    [
+     "map_region",
+     {
+      "region": "australia",
+      "hl": [
+       "036"
+      ],
+      "bbox": [
+       112,
+       154.5,
+       -44,
+       -10
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        151.21,
+        -33.87,
+        "Sydney"
+       ],
+       [
+        144.96,
+        -37.81,
+        "Melbourne"
+       ],
+       [
+        115.86,
+        -31.95,
+        "Perth"
+       ],
+       [
+        118.6,
+        -22.3,
+        "Pilbara"
+       ]
+      ]
+     },
+     "Most of the rest hug the coast. The interior is mostly desert."
+    ],
+    [
+     "map_region",
+     {
+      "region": "australia",
+      "hl": [
+       "036"
+      ],
+      "bbox": [
+       112,
+       154.5,
+       -44,
+       -10
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [],
+      "pins": [
+       [
+        151.21,
+        -33.87,
+        "Sydney"
+       ],
+       [
+        144.96,
+        -37.81,
+        "Melbourne"
+       ]
+      ]
+     },
+     "The cities grew where ships could land. Sydney began in 1788, on one of the world's finest natural harbours."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "Much of the country's export wealth is dug out of remote places, like the iron ore of Western Australia's Pilbara."
+    ],
+    [
+     "map_region",
+     {
+      "region": "australia",
+      "hl": [
+       "036"
+      ],
+      "bbox": [
+       112,
+       154.5,
+       -44,
+       -10
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        144.96,
+        -37.81,
+        "Melbourne"
+       ],
+       [
+        115.86,
+        -31.95,
+        "Perth"
+       ],
+       [
+        118.6,
+        -22.3,
+        "Pilbara"
+       ]
+      ],
+      "pulse": [
+       118.6,
+       -22.3
+      ],
+      "zoom": 0.9
+     },
+     "But the head offices, banks and lawyers that manage it cluster in the big coastal cities. The snowball pulls the money to the coast."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Australia's"
+     },
+     "Harbours, a dry interior, and a snowball of services. That's where Australia's money lives."
+    ]
+   ]
+  }
+ ]
+}

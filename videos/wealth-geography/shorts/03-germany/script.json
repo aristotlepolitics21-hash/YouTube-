@@ -1,0 +1,181 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 3,
+ "title": "Where Germany's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 102,
+ "sections": [
+  {
+   "name": "Germany",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "germany",
+      "hl": [
+       "276"
+      ],
+      "bbox": [
+       5.2,
+       15.8,
+       47,
+       55.2
+      ],
+      "pulse": [
+       8.68,
+       50.11
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "GERMANY",
+       "The money isn't in the capital"
+      ]
+     },
+     "Germany is strange. Its capital, Berlin, isn't its economic powerhouse. The money is spread across many cities instead."
+    ],
+    [
+     "map_region",
+     {
+      "region": "germany",
+      "hl": [
+       "276"
+      ],
+      "bbox": [
+       5.2,
+       15.8,
+       47,
+       55.2
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        11.58,
+        48.14,
+        "Munich"
+       ],
+       [
+        9.18,
+        48.78,
+        "Stuttgart"
+       ],
+       [
+        8.68,
+        50.11,
+        "Frankfurt"
+       ],
+       [
+        9.99,
+        53.55,
+        "Hamburg"
+       ],
+       [
+        13.4,
+        52.52,
+        "Berlin"
+       ]
+      ]
+     },
+     "Munich, Stuttgart, Frankfurt, Hamburg, the Rhine and the Ruhr. Why so many centres?"
+    ],
+    [
+     "map_region",
+     {
+      "region": "germany",
+      "hl": [
+       "276"
+      ],
+      "bbox": [
+       5.2,
+       15.8,
+       47,
+       55.2
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [
+       "rhine",
+       "elbe",
+       "danube"
+      ],
+      "pins": [
+       [
+        11.58,
+        48.14,
+        "Munich"
+       ],
+       [
+        9.18,
+        48.78,
+        "Stuttgart"
+       ]
+      ]
+     },
+     "Geography helped. The Rhine is one of Europe's busiest rivers, and along it grew the coal and steel of the Ruhr, and the banks of Frankfurt."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "History did the rest. Until 1871, Germany was dozens of separate states, each with its own capital, court and university. Wealth grew in all of them."
+    ],
+    [
+     "map_region",
+     {
+      "region": "germany",
+      "hl": [
+       "276"
+      ],
+      "bbox": [
+       5.2,
+       15.8,
+       47,
+       55.2
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        9.18,
+        48.78,
+        "Stuttgart"
+       ],
+       [
+        8.68,
+        50.11,
+        "Frankfurt"
+       ],
+       [
+        9.99,
+        53.55,
+        "Hamburg"
+       ],
+       [
+        13.4,
+        52.52,
+        "Berlin"
+       ]
+      ],
+      "pulse": [
+       13.4,
+       52.52
+      ],
+      "zoom": 0.9
+     },
+     "And the rules still show. For four decades the country was split in two. Long after reunification, incomes in the former East still trail the West."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Germany's"
+     },
+     "A great river, many old capitals, and a border that shaped the rules. That's where Germany's money lives."
+    ]
+   ]
+  }
+ ]
+}

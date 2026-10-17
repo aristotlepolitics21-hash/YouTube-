@@ -1,0 +1,157 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 18,
+ "title": "Where Turkey's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 100,
+ "sections": [
+  {
+   "name": "Turkey",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "turkey",
+      "hl": [
+       "792"
+      ],
+      "bbox": [
+       25.5,
+       45,
+       35.5,
+       42.5
+      ],
+      "pulse": [
+       28.98,
+       41.01
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "TURKEY",
+       "The money isn't in the capital"
+      ]
+     },
+     "Istanbul is home to nearly one in five people in Turkey, and it produces close to a third of the economy."
+    ],
+    [
+     "map_region",
+     {
+      "region": "turkey",
+      "hl": [
+       "792"
+      ],
+      "bbox": [
+       25.5,
+       45,
+       35.5,
+       42.5
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        28.98,
+        41.01,
+        "Istanbul"
+       ],
+       [
+        32.85,
+        39.93,
+        "Ankara"
+       ],
+       [
+        27.14,
+        38.42,
+        "Izmir"
+       ]
+      ]
+     },
+     "And it isn't even the capital. Ankara is."
+    ],
+    [
+     "map_region",
+     {
+      "region": "turkey",
+      "hl": [
+       "792"
+      ],
+      "bbox": [
+       25.5,
+       45,
+       35.5,
+       42.5
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [],
+      "pins": [
+       [
+        28.98,
+        41.01,
+        "Istanbul"
+       ],
+       [
+        32.85,
+        39.93,
+        "Ankara"
+       ]
+      ]
+     },
+     "Istanbul sits on the Bosphorus, the narrow strait between Europe and Asia that links the Black Sea to the Mediterranean. Every ship between them passes through."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "For around sixteen centuries it was an imperial capital, first of the Byzantine Empire, then the Ottoman. Wealth piled up for a very long time."
+    ],
+    [
+     "map_region",
+     {
+      "region": "turkey",
+      "hl": [
+       "792"
+      ],
+      "bbox": [
+       25.5,
+       45,
+       35.5,
+       42.5
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        32.85,
+        39.93,
+        "Ankara"
+       ],
+       [
+        27.14,
+        38.42,
+        "Izmir"
+       ]
+      ],
+      "pulse": [
+       32.85,
+       39.93
+      ],
+      "zoom": 0.9
+     },
+     "In 1923, the new republic moved the capital to Ankara. Power moved. The money mostly didn't."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Turkey's"
+     },
+     "A strait between two seas, and sixteen centuries of memory. That's where Turkey's money lives."
+    ]
+   ]
+  }
+ ]
+}

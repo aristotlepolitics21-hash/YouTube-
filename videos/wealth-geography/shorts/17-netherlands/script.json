@@ -1,0 +1,170 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 17,
+ "title": "Where the Netherlands' Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 108,
+ "sections": [
+  {
+   "name": "the Netherlands",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "netherlands",
+      "hl": [
+       "528"
+      ],
+      "bbox": [
+       2.8,
+       7.6,
+       50.6,
+       53.7
+      ],
+      "pulse": [
+       4.48,
+       51.92
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "NETHERLANDS",
+       "A ring of cities called the Randstad"
+      ]
+     },
+     "A small country, with its wealth pooled even tighter, in a ring of cities called the Randstad: Amsterdam, Rotterdam, The Hague and Utrecht."
+    ],
+    [
+     "map_region",
+     {
+      "region": "netherlands",
+      "hl": [
+       "528"
+      ],
+      "bbox": [
+       2.8,
+       7.6,
+       50.6,
+       53.7
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        4.9,
+        52.37,
+        "Amsterdam"
+       ],
+       [
+        4.48,
+        51.92,
+        "Rotterdam"
+       ],
+       [
+        4.3,
+        52.08,
+        "The Hague"
+       ],
+       [
+        5.12,
+        52.09,
+        "Utrecht"
+       ]
+      ]
+     },
+     "Why there? Because this is where two of Europe's great rivers, the Rhine and the Meuse, meet the North Sea."
+    ],
+    [
+     "map_region",
+     {
+      "region": "netherlands",
+      "hl": [
+       "528"
+      ],
+      "bbox": [
+       2.8,
+       7.6,
+       50.6,
+       53.7
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [
+       "rhine",
+       "meuse"
+      ],
+      "pins": [
+       [
+        4.9,
+        52.37,
+        "Amsterdam"
+       ],
+       [
+        4.48,
+        51.92,
+        "Rotterdam"
+       ]
+      ]
+     },
+     "Rotterdam sits at the mouth of the Rhine, and it's now the biggest port in Europe. Goods for much of Germany and beyond flow through it."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "In the 1600s, Amsterdam was the centre of world trade. The Dutch East India Company, founded in 1602, sold shares, and Amsterdam grew one of the first stock markets."
+    ],
+    [
+     "map_region",
+     {
+      "region": "netherlands",
+      "hl": [
+       "528"
+      ],
+      "bbox": [
+       2.8,
+       7.6,
+       50.6,
+       53.7
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        4.48,
+        51.92,
+        "Rotterdam"
+       ],
+       [
+        4.3,
+        52.08,
+        "The Hague"
+       ],
+       [
+        5.12,
+        52.09,
+        "Utrecht"
+       ]
+      ],
+      "pulse": [
+       4.9,
+       52.37
+      ],
+      "zoom": 0.9
+     },
+     "Rules that protected merchants and their money brought in more merchants. The snowball has been rolling for four hundred years."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "the Netherlands'"
+     },
+     "A river mouth, a merchant's rulebook, and a ring of cities. That's where the Netherlands' money lives."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 10,
+ "title": "Where Canada's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 100,
+ "sections": [
+  {
+   "name": "Canada",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "canada",
+      "hl": [
+       "124"
+      ],
+      "bbox": [
+       -141,
+       -52,
+       41.5,
+       66
+      ],
+      "pulse": [
+       -79.38,
+       43.65
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "CANADA",
+       "A huge country, crowded along one border"
+      ]
+     },
+     "Canada is the second-largest country on Earth. Yet most Canadians live in a thin band near the US border."
+    ],
+    [
+     "map_region",
+     {
+      "region": "canada",
+      "hl": [
+       "124"
+      ],
+      "bbox": [
+       -141,
+       -52,
+       41.5,
+       66
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        -79.38,
+        43.65,
+        "Toronto"
+       ],
+       [
+        -73.57,
+        45.5,
+        "Montreal"
+       ],
+       [
+        -123.12,
+        49.28,
+        "Vancouver"
+       ],
+       [
+        -114.07,
+        51.05,
+        "Calgary"
+       ]
+      ]
+     },
+     "And the money pools tighter still, in the corridor from Windsor to Quebec City, home to around half of all Canadians."
+    ],
+    [
+     "map_region",
+     {
+      "region": "canada",
+      "hl": [
+       "124"
+      ],
+      "bbox": [
+       -141,
+       -52,
+       41.5,
+       66
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [
+       "st_lawrence"
+      ],
+      "pins": [
+       [
+        -79.38,
+        43.65,
+        "Toronto"
+       ],
+       [
+        -73.57,
+        45.5,
+        "Montreal"
+       ]
+      ]
+     },
+     "That corridor follows the St Lawrence River and the Great Lakes, a water highway into the heart of the continent."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "The north is cold and rocky. The south has the farmland, the milder winters, and the trade with the United States."
+    ],
+    [
+     "map_region",
+     {
+      "region": "canada",
+      "hl": [
+       "124"
+      ],
+      "bbox": [
+       -141,
+       -52,
+       41.5,
+       66
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        -73.57,
+        45.5,
+        "Montreal"
+       ],
+       [
+        -123.12,
+        49.28,
+        "Vancouver"
+       ],
+       [
+        -114.07,
+        51.05,
+        "Calgary"
+       ]
+      ],
+      "pulse": [
+       -114.07,
+       51.05
+      ],
+      "zoom": 0.9
+     },
+     "Toronto became the country's financial centre, and the snowball rolled. Out west, oil made Alberta rich, and Calgary grew into an energy capital of its own."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Canada's"
+     },
+     "A great river, a milder south, and a giant neighbour. That's where Canada's money lives."
+    ]
+   ]
+  }
+ ]
+}

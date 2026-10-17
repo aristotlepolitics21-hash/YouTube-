@@ -1,0 +1,157 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 16,
+ "title": "Where Indonesia's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 100,
+ "sections": [
+  {
+   "name": "Indonesia",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "indonesia",
+      "hl": [
+       "360"
+      ],
+      "bbox": [
+       94,
+       141.5,
+       -11.5,
+       6.5
+      ],
+      "pulse": [
+       106.85,
+       -6.21
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "INDONESIA",
+       "17,000+ islands. Half the people on one."
+      ]
+     },
+     "Indonesia is made of more than seventeen thousand islands. But more than half of its people live on just one: Java."
+    ],
+    [
+     "map_region",
+     {
+      "region": "indonesia",
+      "hl": [
+       "360"
+      ],
+      "bbox": [
+       94,
+       141.5,
+       -11.5,
+       6.5
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        106.85,
+        -6.21,
+        "Jakarta"
+       ],
+       [
+        112.75,
+        -7.25,
+        "Surabaya"
+       ],
+       [
+        116.7,
+        -0.97,
+        "Nusantara"
+       ]
+      ]
+     },
+     "Java is only about seven percent of the country's land."
+    ],
+    [
+     "map_region",
+     {
+      "region": "indonesia",
+      "hl": [
+       "360"
+      ],
+      "bbox": [
+       94,
+       141.5,
+       -11.5,
+       6.5
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [],
+      "pins": [
+       [
+        106.85,
+        -6.21,
+        "Jakarta"
+       ],
+       [
+        112.75,
+        -7.25,
+        "Surabaya"
+       ]
+      ]
+     },
+     "Its volcanic soils are some of the most fertile on Earth, and for centuries they fed some of the densest populations anywhere."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "The Dutch ran their colony from Batavia, today's Jakarta, and its ports, roads and money all pointed there."
+    ],
+    [
+     "map_region",
+     {
+      "region": "indonesia",
+      "hl": [
+       "360"
+      ],
+      "bbox": [
+       94,
+       141.5,
+       -11.5,
+       6.5
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        112.75,
+        -7.25,
+        "Surabaya"
+       ],
+       [
+        116.7,
+        -0.97,
+        "Nusantara"
+       ]
+      ],
+      "pulse": [
+       116.7,
+       -0.97
+      ],
+      "zoom": 0.9
+     },
+     "Jakarta grew so big, and is sinking so fast, that Indonesia is building a new capital on the island of Borneo, called Nusantara."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Indonesia's"
+     },
+     "Fertile soil, colonial rule, and a snowball the government is now trying to push. That's where Indonesia's money lives."
+    ]
+   ]
+  }
+ ]
+}

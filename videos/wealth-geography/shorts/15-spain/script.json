@@ -1,0 +1,167 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 15,
+ "title": "Where Spain's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 101,
+ "sections": [
+  {
+   "name": "Spain",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "spain",
+      "hl": [
+       "724"
+      ],
+      "bbox": [
+       -9.8,
+       4.5,
+       35.8,
+       44
+      ],
+      "pulse": [
+       -3.7,
+       40.42
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "SPAIN",
+       "Crowded cities, an emptying middle"
+      ]
+     },
+     "Spain's people and money have crowded into a few places, while much of its interior has emptied out. Spaniards even have a name for it: empty Spain."
+    ],
+    [
+     "map_region",
+     {
+      "region": "spain",
+      "hl": [
+       "724"
+      ],
+      "bbox": [
+       -9.8,
+       4.5,
+       35.8,
+       44
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        -3.7,
+        40.42,
+        "Madrid"
+       ],
+       [
+        2.17,
+        41.39,
+        "Barcelona"
+       ],
+       [
+        -0.38,
+        39.47,
+        "Valencia"
+       ],
+       [
+        -5.98,
+        37.39,
+        "Seville"
+       ]
+      ]
+     },
+     "Madrid sits right in the middle, on a dry plateau with no great river or harbour. So why is it so rich?"
+    ],
+    [
+     "map_region",
+     {
+      "region": "spain",
+      "hl": [
+       "724"
+      ],
+      "bbox": [
+       -9.8,
+       4.5,
+       35.8,
+       44
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [],
+      "pins": [
+       [
+        -3.7,
+        40.42,
+        "Madrid"
+       ],
+       [
+        2.17,
+        41.39,
+        "Barcelona"
+       ]
+      ]
+     },
+     "The rules. In 1561, King Philip the Second made Madrid the seat of his court, and power has stayed there ever since."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "Roads and railways were laid out like spokes from Madrid. Government, banks and head offices followed, and the snowball kept rolling."
+    ],
+    [
+     "map_region",
+     {
+      "region": "spain",
+      "hl": [
+       "724"
+      ],
+      "bbox": [
+       -9.8,
+       4.5,
+       35.8,
+       44
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        2.17,
+        41.39,
+        "Barcelona"
+       ],
+       [
+        -0.38,
+        39.47,
+        "Valencia"
+       ],
+       [
+        -5.98,
+        37.39,
+        "Seville"
+       ]
+      ],
+      "pulse": [
+       2.17,
+       41.39
+      ],
+      "zoom": 0.9
+     },
+     "Barcelona took the other path: a Mediterranean port that grew rich on trade and industry."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Spain's"
+     },
+     "A capital built by kings, a port built by trade, and an emptying middle. That's where Spain's money lives."
+    ]
+   ]
+  }
+ ]
+}

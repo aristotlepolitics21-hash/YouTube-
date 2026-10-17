@@ -1,0 +1,159 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 11,
+ "title": "Where Russia's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 101,
+ "sections": [
+  {
+   "name": "Russia",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "russia",
+      "hl": [
+       "643"
+      ],
+      "bbox": [
+       20,
+       180,
+       41,
+       77
+      ],
+      "pulse": [
+       37.62,
+       55.75
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "RUSSIA",
+       "Moscow: under 1 in 10 people, ~1/5 of the output"
+      ]
+     },
+     "Fewer than one in ten Russians live in Moscow, but the city produces around a fifth of the country's economic output."
+    ],
+    [
+     "map_region",
+     {
+      "region": "russia",
+      "hl": [
+       "643"
+      ],
+      "bbox": [
+       20,
+       180,
+       41,
+       77
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        37.62,
+        55.75,
+        "Moscow"
+       ],
+       [
+        30.32,
+        59.94,
+        "St Petersburg"
+       ],
+       [
+        82.92,
+        55.03,
+        "Novosibirsk"
+       ]
+      ]
+     },
+     "Russia spans eleven time zones, yet most of its people live in the west, on the European side of the Ural Mountains."
+    ],
+    [
+     "map_region",
+     {
+      "region": "russia",
+      "hl": [
+       "643"
+      ],
+      "bbox": [
+       20,
+       180,
+       41,
+       77
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [
+       "volga"
+      ],
+      "pins": [
+       [
+        37.62,
+        55.75,
+        "Moscow"
+       ],
+       [
+        30.32,
+        59.94,
+        "St Petersburg"
+       ]
+      ]
+     },
+     "Moscow grew in the middle of that western plain, near the upper Volga, at the crossroads of old river trade routes."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "Then come the rules. Russia has long been run from the centre. Power, permits and contracts flow through Moscow, so companies put their headquarters there."
+    ],
+    [
+     "map_region",
+     {
+      "region": "russia",
+      "hl": [
+       "643"
+      ],
+      "bbox": [
+       20,
+       180,
+       41,
+       77
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        30.32,
+        59.94,
+        "St Petersburg"
+       ],
+       [
+        82.92,
+        55.03,
+        "Novosibirsk"
+       ]
+      ],
+      "pulse": [
+       37.62,
+       55.75
+      ],
+      "zoom": 0.9
+     },
+     "Even the oil and gas pumped out of Siberia is largely run by companies headquartered in Moscow and St Petersburg."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Russia's"
+     },
+     "A central plain, a powerful capital, and money that flows toward power. That's where Russia's money lives."
+    ]
+   ]
+  }
+ ]
+}

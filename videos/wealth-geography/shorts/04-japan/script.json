@@ -1,0 +1,167 @@
+{
+ "series": "Where the Money Lives: Shorts",
+ "episode": 4,
+ "title": "Where Japan's Money Lives",
+ "format": "short",
+ "voice": "kokoro:bm_george",
+ "rate": 100,
+ "sections": [
+  {
+   "name": "Japan",
+   "lines": [
+    [
+     "map_region",
+     {
+      "region": "japan",
+      "hl": [
+       "392"
+      ],
+      "bbox": [
+       128,
+       146.5,
+       30,
+       45.8
+      ],
+      "pulse": [
+       139.7,
+       35.7
+      ],
+      "lights": 1,
+      "towers": 0,
+      "tag": [
+       "JAPAN",
+       "Nearly 1 in 3 people live in Greater Tokyo"
+      ]
+     },
+     "Nearly one in three people in Japan lives in a single metropolitan area: Greater Tokyo."
+    ],
+    [
+     "map_region",
+     {
+      "region": "japan",
+      "hl": [
+       "392"
+      ],
+      "bbox": [
+       128,
+       146.5,
+       30,
+       45.8
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        139.7,
+        35.7,
+        "Tokyo"
+       ],
+       [
+        135.5,
+        34.69,
+        "Osaka"
+       ],
+       [
+        136.9,
+        35.18,
+        "Nagoya"
+       ],
+       [
+        130.4,
+        33.59,
+        "Fukuoka"
+       ]
+      ]
+     },
+     "Why? Start with the land. Around three quarters of Japan is mountains, so people crowd onto narrow coastal plains."
+    ],
+    [
+     "map_region",
+     {
+      "region": "japan",
+      "hl": [
+       "392"
+      ],
+      "bbox": [
+       128,
+       146.5,
+       30,
+       45.8
+      ],
+      "lights": 1,
+      "towers": 0,
+      "river": [],
+      "pins": [
+       [
+        139.7,
+        35.7,
+        "Tokyo"
+       ],
+       [
+        135.5,
+        34.69,
+        "Osaka"
+       ]
+      ]
+     },
+     "The biggest of those plains is the Kanto Plain, wrapped around Tokyo Bay, a huge sheltered harbour."
+    ],
+    [
+     "city_grow",
+     {
+      "phase": 1
+     },
+     "From 1603, the shoguns ruled Japan from Edo, today's Tokyo. Regional lords had to spend every other year there, so wealth flowed in from every province."
+    ],
+    [
+     "map_region",
+     {
+      "region": "japan",
+      "hl": [
+       "392"
+      ],
+      "bbox": [
+       128,
+       146.5,
+       30,
+       45.8
+      ],
+      "lights": 1,
+      "towers": 1,
+      "pins": [
+       [
+        135.5,
+        34.69,
+        "Osaka"
+       ],
+       [
+        136.9,
+        35.18,
+        "Nagoya"
+       ],
+       [
+        130.4,
+        33.59,
+        "Fukuoka"
+       ]
+      ],
+      "pulse": [
+       139.7,
+       35.7
+      ],
+      "zoom": 0.9
+     },
+     "In 1868, the emperor moved there too. Government, banks and companies followed each other, and the snowball never stopped."
+    ],
+    [
+     "tower_field",
+     {
+      "superstar": 1,
+      "endcard": "Japan's"
+     },
+     "A big plain, a sheltered bay, and centuries of power. That's where Japan's money lives."
+    ]
+   ]
+  }
+ ]
+}
