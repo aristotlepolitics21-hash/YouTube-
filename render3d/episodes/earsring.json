@@ -1,0 +1,93 @@
+{
+  "module": "earsring",
+  "title": "Why Do Your Ears Ring After a Concert?",
+  "music": "ambient",
+  "length_scale": 1.08,
+  "punch": 0.06,
+  "max_clip": 2.6,
+  "shots": [
+    {
+      "vo": "Why do your ears ring after a concert?",
+      "highlight": "#ff5ad0",
+      "scene": "concert",
+      "params": {"blast": 1},
+      "cuts": [
+        {"at": "ring", "params": {"blast": 1, "az0": -0.25, "az1": -0.15, "dist0": 30, "dist1": 26, "ty0": 0, "ty1": 0}}
+      ]
+    },
+    {
+      "vo": "Deep inside your ear is a tiny snail-shaped tube called the cochlea.",
+      "highlight": "#ff9ad0",
+      "scene": "cochlea",
+      "params": {"dist0": 40, "dist1": 34, "spin": 0.4},
+      "cuts": [
+        {"at": "snail-shaped", "params": {"labels": 0, "cells": 1, "spin": 0.3, "dist0": 30, "dist1": 28}},
+        {"at": "called", "params": {"labels": 1, "cells": 1, "spin": -0.2, "az0": -0.3, "az1": -0.25, "el0": 0.3, "el1": 0.25, "dist0": 28, "dist1": 26}}
+      ]
+    },
+    {
+      "vo": "Unroll it, and it's lined with about fifteen thousand hair cells, each topped with a tuft of tiny bristles.",
+      "highlight": "#ffe9b8",
+      "scene": "cochlea",
+      "params": {"uncoil0": 0, "uncoil1": 1, "cells": 1},
+      "cuts": [
+        {"at": "lined", "params": {"uncoil0": 1, "uncoil1": 1, "cells": 1, "az0": 0.5, "az1": 0.4, "el0": 0.3, "el1": 0.25, "dist0": 14, "dist1": 12, "ty0": 2, "ty1": 2}},
+        {"at": "hair", "scene": "hairs", "params": {"sway": 0, "labels": 1, "dist0": 30, "dist1": 27}},
+        {"at": "bristles.", "scene": "hairs", "params": {"sway": 0, "az0": 0.7, "az1": 0.6, "el0": 0.25, "el1": 0.2, "dist0": 16, "dist1": 14, "ty0": 0, "ty1": 0}}
+      ]
+    },
+    {
+      "vo": "Sound waves make those bristles sway, and that's what your brain hears as sound.",
+      "highlight": "#7fd8ff",
+      "scene": "cochlea",
+      "params": {"uncoil0": 1, "uncoil1": 1, "cells": 1, "pulse": 1, "labels": 2},
+      "cuts": [
+        {"at": "sway,", "scene": "hairs", "params": {"sway": 1}},
+        {"at": "brain", "scene": "hairs", "params": {"sway": 1, "az0": -0.2, "az1": -0.1, "el0": 0.05, "el1": 0.1, "dist0": 22, "dist1": 20, "ty0": -3.5, "ty1": -3.5}}
+      ]
+    },
+    {
+      "vo": "But a concert can blast over a hundred decibels. That much sound bends and damages the bristles.",
+      "highlight": "#ff4b4b",
+      "scene": "concert",
+      "params": {"blast": 1, "dist0": 34, "dist1": 28},
+      "cuts": [
+        {"at": "hundred", "params": {"blast": 1.4, "az0": 0.35, "az1": 0.3, "el0": -0.1, "el1": -0.08, "dist0": 18, "dist1": 15, "tx0": 3.4, "tx1": 3.4, "ty0": 0, "ty1": 0}},
+        {"at": "That", "scene": "hairs", "params": {"sway": 1.6, "bend0": 0, "bend1": 0.4}},
+        {"at": "damages", "scene": "hairs", "params": {"sway": 0.6, "bend0": 0.4, "bend1": 1, "az0": 0.6, "az1": 0.5, "el0": 0.3, "el1": 0.25, "dist0": 13, "dist1": 11, "ty0": 0, "ty1": 0}}
+      ]
+    },
+    {
+      "vo": "Damaged cells can misfire, and your brain may turn up its volume to make up for it. You hear that as ringing.",
+      "highlight": "#ffd23f",
+      "scene": "hairs",
+      "params": {"bend0": 1, "bend1": 1, "fire": 1, "el0": 0.05, "el1": 0.1, "dist0": 24, "dist1": 22, "ty0": -3, "ty1": -3},
+      "cuts": [
+        {"at": "brain", "scene": "cochlea", "params": {"uncoil0": 1, "uncoil1": 1, "cells": 1, "gain": 0.5, "pulse": 0}},
+        {"at": "volume", "scene": "cochlea", "params": {"uncoil0": 1, "uncoil1": 1, "cells": 1, "gain": 1.2, "pulse": 0, "az0": -0.5, "az1": -0.4, "el0": 0.15, "el1": 0.1, "dist0": 24, "dist1": 22, "ty0": 2, "ty1": 2}},
+        {"at": "ringing.", "scene": "cochlea", "params": {"uncoil0": 1, "uncoil1": 1, "cells": 1, "gain": 1.2, "labels": 0, "az0": 0.4, "az1": 0.3, "el0": 0.2, "el1": 0.15, "dist0": 14, "dist1": 12, "ty0": 4.5, "ty1": 4.5}}
+      ]
+    },
+    {
+      "vo": "Usually it fades within a day or two. But hair cells don't grow back, so damage that keeps repeating can be permanent.",
+      "highlight": "#c38bff",
+      "scene": "hairs",
+      "params": {"bend0": 0.8, "bend1": 0.1, "sway": 0.6},
+      "cuts": [
+        {"at": "hair", "scene": "hairs", "params": {"dead0": 0, "dead1": 0.3, "bend0": 0.5, "bend1": 0.5}},
+        {"at": "damage", "scene": "hairs", "params": {"dead0": 0.3, "dead1": 0.45, "bend0": 0.5, "bend1": 0.5, "az0": 0.9, "az1": 0.8, "el0": 0.2, "el1": 0.18, "dist0": 20, "dist1": 18}},
+        {"at": "permanent.", "scene": "hairs", "params": {"dead0": 0.45, "dead1": 0.8, "bend0": 0.6, "bend1": 0.6, "az0": -0.5, "az1": -0.4, "el0": 0.4, "el1": 0.35, "dist0": 16, "dist1": 14, "ty0": 0, "ty1": 0}}
+      ]
+    },
+    {
+      "vo": "So wear earplugs at loud shows, and if the ringing doesn't go away, see a doctor.",
+      "highlight": "#4dff9a",
+      "scene": "plug",
+      "params": {"plug0": 0, "plug1": 1, "labels": 1},
+      "cuts": [
+        {"at": "ringing", "scene": "concert", "params": {"blast": 1, "plugs": 1, "beams": 0.6, "dist0": 40, "dist1": 48}},
+        {"at": "doctor.", "scene": "plug", "params": {"plug0": 1, "plug1": 1, "labels": 0, "az0": 0.8, "az1": 0.7, "el0": 0.3, "el1": 0.25, "dist0": 22, "dist1": 24, "tx0": 0, "tx1": 0}}
+      ]
+    }
+  ]
+}
