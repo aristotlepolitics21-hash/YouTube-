@@ -1,0 +1,91 @@
+{
+ "series": "Dark Chapters",
+ "sets": "darkhistory.js",
+ "voice": "kokoro:am_michael",
+ "style": "dark",
+ "episode": 2,
+ "title": "The Morning the Deadliest War in History Began",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "w_hook",
+     {},
+     "Just before five in the morning, on the first of September, 1939, a German battleship opened fire on a small Polish fort."
+    ],
+    [
+     "w_title",
+     {
+      "top": "THE DAY IT",
+      "bottom": "ALL BEGAN",
+      "year": "1939"
+     },
+     "It was the opening shot of the deadliest war in human history."
+    ]
+   ]
+  },
+  {
+   "name": "The invasion",
+   "lines": [
+    [
+     "w_map",
+     {},
+     "Within hours, German troops poured into Poland from the west, the north, and the south."
+    ],
+    [
+     "w_planes",
+     {},
+     "Planes bombed Polish towns and cities from the air."
+    ],
+    [
+     "w_fort",
+     {},
+     "At the fort, called Westerplatte, around two hundred soldiers held out for seven days."
+    ]
+   ]
+  },
+  {
+   "name": "The world joins",
+   "lines": [
+    [
+     "w_declare",
+     {},
+     "Britain and France had promised to defend Poland. On the third of September, they declared war on Germany."
+    ],
+    [
+     "w_east",
+     {},
+     "Two weeks later, the Soviet Union invaded Poland from the east."
+    ]
+   ]
+  },
+  {
+   "name": "Six years",
+   "lines": [
+    [
+     "w_globe",
+     {},
+     "The war spread across Europe, Africa, Asia, and the Pacific."
+    ],
+    [
+     "w_toll",
+     {},
+     "By the time it ended, in 1945, somewhere between seventy and eighty-five million people had died."
+    ],
+    [
+     "w_candle",
+     {},
+     "Most of them were civilians. And it all began with one shot, at a small fort by the sea."
+    ],
+    [
+     "d_outro",
+     {
+      "tag": "#2"
+     },
+     "Follow for more moments from history you won't forget."
+    ]
+   ]
+  }
+ ]
+}

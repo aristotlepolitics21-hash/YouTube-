@@ -19,7 +19,7 @@ const {{ KIT }} = await import('/engine/pixar.js');\n{sets}
 let t0 = 0; const secStart = {{}};
 const TL = LINES.map((l, i) => {{ if (!(l[3] in secStart)) secStart[l[3]] = t0;
   const o = {{ scene: l[0], p: l[1], text: l[2], sec: l[3], start: t0, end: t0 + DURS[i], cap: CAPS[i].slice(0, 2), step: STEPS[l[3]], secName: NAMES[l[3]] }}; t0 += DURS[i]; return o; }});
-window.TL = TL; window.__total = t0; window.STYLE = {json.dumps(sc.get('style', ''))};
+window.TL = TL; window.__total = t0; window.STYLE = {json.dumps(sc.get('style', ''))}; window.META = {json.dumps({k: sc.get(k) for k in ('series', 'episode', 'title')})};
 window.__at = T => {{ let i = TL.findIndex(l => T < l.end); if (i < 0) i = TL.length - 1; TL[i].secT = T - secStart[TL[i].sec]; DOC3D.frame(TL, T, t0); }};
 window.__ready = true;
 </script>"""

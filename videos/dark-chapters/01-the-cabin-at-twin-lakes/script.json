@@ -1,0 +1,106 @@
+{
+ "series": "Dark Chapters",
+ "sets": "darkhistory.js",
+ "voice": "kokoro:am_michael",
+ "style": "dark",
+ "episode": 1,
+ "title": "He Built a Cabin by Hand in the Wilderness and Lived Alone for 30 Years",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "p_hook",
+     {},
+     "In 1968, a man in his fifties flew deep into the Alaskan wilderness, with a few hand tools, and a plan."
+    ],
+    [
+     "p_title",
+     {
+      "top": "HE BUILT IT",
+      "bottom": "BY HAND",
+      "year": "1968"
+     },
+     "His name was Dick Proenneke. And what he did next, people still talk about."
+    ]
+   ]
+  },
+  {
+   "name": "Twin Lakes",
+   "lines": [
+    [
+     "p_lake",
+     {},
+     "He picked a spot on the shore of Twin Lakes, ringed by mountains, with no road in or out."
+    ],
+    [
+     "p_logs",
+     {},
+     "The summer before, he had cut spruce logs, and left them to dry."
+    ]
+   ]
+  },
+  {
+   "name": "Every log by hand",
+   "lines": [
+    [
+     "p_axe",
+     {},
+     "Now, with an axe, a saw, and tools he made himself, he notched each log, and stacked them one by one."
+    ],
+    [
+     "p_camera",
+     {},
+     "He even filmed himself, with a camera on a tripod, so others could see how it was done."
+    ],
+    [
+     "p_cabin",
+     {},
+     "Before winter came, the cabin was finished. Roof, door, windows, and a stone fireplace."
+    ]
+   ]
+  },
+  {
+   "name": "Thirty winters",
+   "lines": [
+    [
+     "p_winter",
+     {},
+     "And then, he stayed. Through long, dark winters far below freezing."
+    ],
+    [
+     "p_journal",
+     {},
+     "He fished, gardened, watched the wildlife, and wrote in his journal almost every day."
+    ],
+    [
+     "p_plane",
+     {},
+     "A bush pilot flew in his supplies and mail. Otherwise, he was mostly alone, for about thirty years."
+    ]
+   ]
+  },
+  {
+   "name": "What he left",
+   "lines": [
+    [
+     "p_book",
+     {},
+     "His journals became a book. His film became a much-loved documentary."
+    ],
+    [
+     "p_today",
+     {},
+     "And his cabin still stands. Today, it's protected as part of a national park."
+    ],
+    [
+     "d_outro",
+     {
+      "tag": "#1"
+     },
+     "Follow for more moments from history you won't forget."
+    ]
+   ]
+  }
+ ]
+}

@@ -51,3 +51,5 @@ It renders on the CPU (SwiftShader): the 3D layer at 720×1280 under a full-reso
 ### Lively style
 
 Set `"style": "lively"` in `script.json` (from episode 5) for punch-in zoom cuts with a flash instead of soft fades, and a subtle handheld drift on every camera. Sets can also use `pose({ walk })` for Bit's walk cycle and `hop(x, dur, height)` for jumps with anticipation, stretch and landing squash.
+
+`"style": "dark"` uses the same cuts and drift with a black flash instead of a white one. A set file can replace the 2D overlay by setting `KIT.overlay = (L, T, total) => ...`; `../dark-chapters` uses both.

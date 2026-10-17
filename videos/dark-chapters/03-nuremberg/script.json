@@ -1,0 +1,101 @@
+{
+ "series": "Dark Chapters",
+ "sets": "darkhistory.js",
+ "voice": "kokoro:am_michael",
+ "style": "dark",
+ "episode": 3,
+ "title": "The Trial That Changed International Law Forever",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "n_hook",
+     {},
+     "For the first time ever, the leaders of a defeated regime were put on trial, in front of the whole world."
+    ],
+    [
+     "n_title",
+     {
+      "top": "NUREMBERG",
+      "bottom": "THE TRIAL",
+      "year": "1945"
+     },
+     "This was the Nuremberg trial. And it changed international law forever."
+    ]
+   ]
+  },
+  {
+   "name": "One court, four nations",
+   "lines": [
+    [
+     "n_flags",
+     {},
+     "In November 1945, the United States, Britain, France, and the Soviet Union set up an international military tribunal."
+    ],
+    [
+     "n_hall",
+     {},
+     "It sat in Nuremberg, Germany, in a courthouse that had survived the bombing."
+    ],
+    [
+     "n_dock",
+     {},
+     "In the dock sat twenty-one of the regime's most senior leaders. One more was tried in his absence."
+    ]
+   ]
+  },
+  {
+   "name": "The evidence",
+   "lines": [
+    [
+     "n_phones",
+     {},
+     "Every word was translated live, into four languages, through headphones."
+    ],
+    [
+     "n_docs",
+     {},
+     "Prosecutors used the regime's own records against it, and showed film from the concentration camps."
+    ]
+   ]
+  },
+  {
+   "name": "No excuse",
+   "lines": [
+    [
+     "n_orders",
+     {},
+     "Many of the accused said they had only been following orders."
+    ],
+    [
+     "n_rule",
+     {},
+     "The court said that was no excuse. A person is responsible for their crimes, even under orders."
+    ]
+   ]
+  },
+  {
+   "name": "The legacy",
+   "lines": [
+    [
+     "n_verdict",
+     {},
+     "In October 1946, twelve were sentenced to death, seven went to prison, and three were acquitted."
+    ],
+    [
+     "n_icc",
+     {},
+     "Its principles shaped the laws on genocide and crimes against humanity. And in 2002, a permanent International Criminal Court opened in The Hague."
+    ],
+    [
+     "d_outro",
+     {
+      "tag": "#3"
+     },
+     "Follow for more moments from history you won't forget."
+    ]
+   ]
+  }
+ ]
+}

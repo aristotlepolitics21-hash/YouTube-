@@ -107,7 +107,7 @@ function stage(o = {}) {
 const ZOOM = 1.17;
 let NOW = 0; // global time, for the handheld drift in the lively style
 function aim(cam, pos, look) { cam.position.set(look[0] + (pos[0] - look[0]) * ZOOM, look[1] + (pos[1] - look[1]) * ZOOM, look[2] + (pos[2] - look[2]) * ZOOM);
-  if (window.STYLE === 'lively') cam.position.add(new THREE.Vector3(Math.sin(NOW * 1.3) * .09 + Math.sin(NOW * 3.1) * .03, Math.sin(NOW * 1.7 + 1) * .07, Math.sin(NOW * .9 + 2) * .06));
+  if (window.STYLE === 'lively' || window.STYLE === 'dark') cam.position.add(new THREE.Vector3(Math.sin(NOW * 1.3) * .09 + Math.sin(NOW * 3.1) * .03, Math.sin(NOW * 1.7 + 1) * .07, Math.sin(NOW * .9 + 2) * .06));
   cam.lookAt(...look); }
 // a hop with anticipation, stretch and landing squash: returns { y, sq } for time x (seconds) into a hop of length dur
 function hop(x, dur = .7, h = .8) { if (x < 0 || x > dur + .25) return { y: 0, sq: 0 }; if (x < .12) return { y: 0, sq: .12 * Math.sin(x / .12 * Math.PI / 2) };
@@ -623,16 +623,16 @@ function frame(TL, T, total) {
   cur.update(t, s, d); cur.cam.aspect = W / H; cur.cam.updateProjectionMatrix();
   rpass.scene = cur.scene; rpass.camera = cur.cam; composer.render();
   c2.imageSmoothingQuality = 'high';
-  if (window.STYLE === 'lively') { // punch-in zoom and a flash on each cut instead of a soft fade
+  if (window.STYLE === 'lively' || window.STYLE === 'dark') { // punch-in zoom and a flash on each cut instead of a soft fade (black in the dark style)
     const kin = i > 0 ? clamp(s / .32) : 1, kout = i < TL.length - 1 ? clamp((L.end - T) / .16) : 1, z = 1 + .14 * Math.pow(1 - out(kin), 2) + .07 * Math.pow(1 - kout, 2);
     c2.fillStyle = '#000'; c2.fillRect(0, 0, W, H); c2.drawImage(renderer.domElement, W * (1 - z) / 2, H * (1 - z) / 2, W * z, H * z);
-    const fl = .6 * Math.pow(1 - kin, 3); if (fl > .01) { c2.fillStyle = `rgba(255,255,255,${fl})`; c2.fillRect(0, 0, W, H); }
+    const fl = .6 * Math.pow(1 - kin, 3); if (fl > .01) { c2.fillStyle = window.STYLE === 'dark' ? `rgba(0,0,0,${fl * 1.4})` : `rgba(255,255,255,${fl})`; c2.fillRect(0, 0, W, H); }
   } else {
     c2.drawImage(renderer.domElement, 0, 0, W, H);
     let a = 0; if (i > 0) a = Math.max(a, 1 - s / .2); if (i < TL.length - 1) a = Math.max(a, 1 - (L.end - T) / .2);
     if (a > 0) { c2.fillStyle = `rgba(255,248,240,${clamp(a) * .85})`; c2.fillRect(0, 0, W, H); }
   }
-  overlay(L, T, total);
+  (KIT.overlay || overlay)(L, T, total); // a set file can replace the overlay
 }
 window.DOC3D = { frame };
 // building blocks for episode set files (engine3d/sets/*.js): each exports register(KIT) and adds to KIT.BUILD
