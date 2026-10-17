@@ -16,6 +16,7 @@
       "hl": [
        "276"
       ],
+      "zoom": 1,
       "bbox": [
        5.2,
        15.8,
@@ -42,6 +43,7 @@
       "hl": [
        "276"
       ],
+      "zoom": 1,
       "bbox": [
        5.2,
        15.8,
@@ -87,6 +89,7 @@
       "hl": [
        "276"
       ],
+      "zoom": 1,
       "bbox": [
        5.2,
        15.8,
@@ -129,6 +132,7 @@
       "hl": [
        "276"
       ],
+      "zoom": 0.9,
       "bbox": [
        5.2,
        15.8,
@@ -162,8 +166,7 @@
       "pulse": [
        13.4,
        52.52
-      ],
-      "zoom": 0.9
+      ]
      },
      "And the rules still show. For four decades the country was split in two. Long after reunification, incomes in the former East still trail the West."
     ],

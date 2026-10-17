@@ -16,6 +16,7 @@
       "hl": [
        "682"
       ],
+      "zoom": 1,
       "bbox": [
        34,
        56.5,
@@ -42,6 +43,7 @@
       "hl": [
        "682"
       ],
+      "zoom": 1,
       "bbox": [
        34,
        56.5,
@@ -82,6 +84,7 @@
       "hl": [
        "682"
       ],
+      "zoom": 1,
       "bbox": [
        34,
        56.5,
@@ -120,6 +123,7 @@
       "hl": [
        "682"
       ],
+      "zoom": 0.9,
       "bbox": [
        34,
        56.5,
@@ -148,8 +152,7 @@
       "pulse": [
        39.17,
        21.54
-      ],
-      "zoom": 0.9
+      ]
      },
      "On the west coast, Jeddah grew as the Red Sea port, and the gateway for pilgrims travelling to Mecca."
     ],

@@ -16,6 +16,7 @@
       "hl": [
        "756"
       ],
+      "zoom": 1,
       "bbox": [
        5.7,
        10.7,
@@ -42,6 +43,7 @@
       "hl": [
        "756"
       ],
+      "zoom": 1,
       "bbox": [
        5.7,
        10.7,
@@ -82,6 +84,7 @@
       "hl": [
        "756"
       ],
+      "zoom": 1,
       "bbox": [
        5.7,
        10.7,
@@ -122,6 +125,7 @@
       "hl": [
        "756"
       ],
+      "zoom": 0.9,
       "bbox": [
        5.7,
        10.7,
@@ -150,8 +154,7 @@
       "pulse": [
        8.54,
        47.38
-      ],
-      "zoom": 0.9
+      ]
      },
      "Rules that protect wealth attract more wealth. The snowball does the rest."
     ],

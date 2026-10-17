@@ -16,6 +16,7 @@
       "hl": [
        "392"
       ],
+      "zoom": 1,
       "bbox": [
        128,
        146.5,
@@ -42,6 +43,7 @@
       "hl": [
        "392"
       ],
+      "zoom": 1,
       "bbox": [
        128,
        146.5,
@@ -82,6 +84,7 @@
       "hl": [
        "392"
       ],
+      "zoom": 1,
       "bbox": [
        128,
        146.5,
@@ -120,6 +123,7 @@
       "hl": [
        "392"
       ],
+      "zoom": 0.9,
       "bbox": [
        128,
        146.5,
@@ -148,8 +152,7 @@
       "pulse": [
        139.7,
        35.7
-      ],
-      "zoom": 0.9
+      ]
      },
      "In 1868, the emperor moved there too. Government, banks and companies followed each other, and the snowball never stopped."
     ],

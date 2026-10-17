@@ -16,6 +16,7 @@
       "hl": [
        "792"
       ],
+      "zoom": 1,
       "bbox": [
        25.5,
        45,
@@ -42,6 +43,7 @@
       "hl": [
        "792"
       ],
+      "zoom": 1,
       "bbox": [
        25.5,
        45,
@@ -77,6 +79,7 @@
       "hl": [
        "792"
       ],
+      "zoom": 1,
       "bbox": [
        25.5,
        45,
@@ -115,6 +118,7 @@
       "hl": [
        "792"
       ],
+      "zoom": 0.9,
       "bbox": [
        25.5,
        45,
@@ -138,8 +142,7 @@
       "pulse": [
        32.85,
        39.93
-      ],
-      "zoom": 0.9
+      ]
      },
      "In 1923, the new republic moved the capital to Ankara. Power moved. The money mostly didn't."
     ],

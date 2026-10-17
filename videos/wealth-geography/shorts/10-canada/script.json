@@ -16,6 +16,7 @@
       "hl": [
        "124"
       ],
+      "zoom": 1,
       "bbox": [
        -141,
        -52,
@@ -42,6 +43,7 @@
       "hl": [
        "124"
       ],
+      "zoom": 1,
       "bbox": [
        -141,
        -52,
@@ -82,6 +84,7 @@
       "hl": [
        "124"
       ],
+      "zoom": 1,
       "bbox": [
        -141,
        -52,
@@ -122,6 +125,7 @@
       "hl": [
        "124"
       ],
+      "zoom": 0.9,
       "bbox": [
        -141,
        -52,
@@ -150,8 +154,7 @@
       "pulse": [
        -114.07,
        51.05
-      ],
-      "zoom": 0.9
+      ]
      },
      "Toronto became the country's financial centre, and the snowball rolled. Out west, oil made Alberta rich, and Calgary grew into an energy capital of its own."
     ],

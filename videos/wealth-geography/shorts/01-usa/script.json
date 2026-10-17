@@ -16,6 +16,7 @@
       "hl": [
        "840"
       ],
+      "zoom": 1,
       "bbox": [
        -126,
        -66,
@@ -42,6 +43,7 @@
       "hl": [
        "840"
       ],
+      "zoom": 1,
       "bbox": [
        -126,
        -66,
@@ -82,6 +84,7 @@
       "hl": [
        "840"
       ],
+      "zoom": 1,
       "bbox": [
        -126,
        -66,
@@ -124,6 +127,7 @@
       "hl": [
        "840"
       ],
+      "zoom": 0.9,
       "bbox": [
        -126,
        -66,
@@ -152,8 +156,7 @@
       "pulse": [
        -122.15,
        37.45
-      ],
-      "zoom": 0.9
+      ]
      },
      "The same thing happened in California. A few chip labs in the 1950s grew into Silicon Valley, now one of the richest places on Earth."
     ],

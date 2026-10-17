@@ -16,6 +16,7 @@
       "hl": [
        "356"
       ],
+      "zoom": 1,
       "bbox": [
        67,
        98,
@@ -42,6 +43,7 @@
       "hl": [
        "356"
       ],
+      "zoom": 1,
       "bbox": [
        67,
        98,
@@ -82,6 +84,7 @@
       "hl": [
        "356"
       ],
+      "zoom": 1,
       "bbox": [
        67,
        98,
@@ -122,6 +125,7 @@
       "hl": [
        "356"
       ],
+      "zoom": 0.9,
       "bbox": [
        67,
        98,
@@ -150,8 +154,7 @@
       "pulse": [
        85.15,
        25.6
-      ],
-      "zoom": 0.9
+      ]
      },
      "Meanwhile the Ganges plain, home to hundreds of millions of people, holds some of India's poorest states."
     ],

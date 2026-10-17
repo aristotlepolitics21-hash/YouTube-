@@ -16,6 +16,7 @@
       "hl": [
        "380"
       ],
+      "zoom": 1,
       "bbox": [
        6.5,
        18.8,
@@ -42,6 +43,7 @@
       "hl": [
        "380"
       ],
+      "zoom": 1,
       "bbox": [
        6.5,
        18.8,
@@ -82,6 +84,7 @@
       "hl": [
        "380"
       ],
+      "zoom": 1,
       "bbox": [
        6.5,
        18.8,
@@ -122,6 +125,7 @@
       "hl": [
        "380"
       ],
+      "zoom": 0.9,
       "bbox": [
        6.5,
        18.8,
@@ -150,8 +154,7 @@
       "pulse": [
        14.27,
        40.85
-      ],
-      "zoom": 0.9
+      ]
      },
      "History matters too. When Italy unified in 1861, north and south had been separate states for centuries, with very different economies. The gap is still there."
     ],

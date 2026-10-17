@@ -16,6 +16,7 @@
       "hl": [
        "484"
       ],
+      "zoom": 1,
       "bbox": [
        -118,
        -86,
@@ -42,6 +43,7 @@
       "hl": [
        "484"
       ],
+      "zoom": 1,
       "bbox": [
        -118,
        -86,
@@ -82,6 +84,7 @@
       "hl": [
        "484"
       ],
+      "zoom": 1,
       "bbox": [
        -118,
        -86,
@@ -120,6 +123,7 @@
       "hl": [
        "484"
       ],
+      "zoom": 0.9,
       "bbox": [
        -118,
        -86,
@@ -148,8 +152,7 @@
       "pulse": [
        -100.31,
        25.67
-      ],
-      "zoom": 0.9
+      ]
      },
      "Monterrey became an industrial powerhouse. Meanwhile southern states like Chiapas and Oaxaca, far from both, stayed among the poorest."
     ],

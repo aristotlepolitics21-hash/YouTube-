@@ -276,7 +276,7 @@ BUILD.globe_night = (p) => {
 // ===== flat regional map, tilted =====
 BUILD.map_region = (p) => {
   if (p.bbox) REGIONS[p.region] = p.bbox;
-  const reg = p.region, opts = { hl: p.hl, coast: p.coast, lights: p.lights || reg === 'korea' || reg === 'japan' || reg === 'egypt' || reg === 'bayarea', dark: reg === 'korea' ? ['408'] : p.dark, lightScale: reg === 'bayarea' ? .35 : reg === 'world' ? .55 : 1 };
+  const reg = p.region, opts = { hl: p.hl, coast: p.coast, lights: p.lights || reg === 'korea' || reg === 'japan' || reg === 'egypt' || reg === 'bayarea', dark: reg === 'korea' ? ['408'] : p.dark, lightScale: reg === 'bayarea' ? .35 : reg === 'world' ? .55 : VERT ? clamp(22 / (REGIONS[reg][1] - REGIONS[reg][0]), .45, 1) : 1 };
   const T = mapTexture(reg, opts), P = T.P, scene = new THREE.Scene(); scene.background = new THREE.Color(0x03060c); scene.fog = new THREE.Fog(0x03060c, 14, 40);
   const plane = M(new THREE.PlaneGeometry(P.w, P.h), new THREE.MeshStandardMaterial({ map: T.tex, emissive: 0xffffff, emissiveMap: T.tex, emissiveIntensity: .55, roughness: .9 }), { rot: [-Math.PI / 2, 0, 0], shadow: false });
   scene.add(plane); scene.add(new THREE.HemisphereLight(0x9fb8e0, 0x111111, .9)); const key = new THREE.DirectionalLight(0xffd7a0, 1.4); key.position.set(-6, 10, 6); scene.add(key);
@@ -298,12 +298,13 @@ BUILD.map_region = (p) => {
     flc = FL.filter(f => f[2]).map(([lo, la, n]) => { const b = M(BOX(.16, 1, .16), new THREE.MeshPhysicalMaterial({ color: 0xffa63a, emissive: 0xff8a1c, emissiveIntensity: 1, metalness: .6, roughness: .3 })); b.geometry.translate(0, .5, 0); b.position.copy(at(lo, la)); scene.add(b); const L = { p: at(lo, la, .2), text: n, k: 0, small: 1 }; labels.push(L); return { b, L, n }; });
     if (p.rail) [[[-84.39, 33.75], [-81.03, 34.0], [-80.84, 35.23], [-78.64, 35.78], [-77.44, 37.54], [-77.03, 38.9], [-76.61, 39.29], [-75.15, 39.95], [-74.0, 40.7]], [[-90.07, 29.95], [-86.8, 33.5], [-84.39, 33.75]], [[-84.39, 33.75], [-85.3, 35.05], [-86.78, 36.16]], [[-81.1, 32.08], [-83.63, 32.84], [-84.39, 33.75]]]
       .forEach(r => { const tb = tube(r.map(([a, b]) => at(a, b, .04)), .025, 0xd8dde8, 1.1); scene.add(tb); rails.push(tb); }); }
-  const cam = new THREE.PerspectiveCamera(VERT ? 44 : 32, W / H, .1, 200), span = VERT ? Math.max(P.w * 2.05, P.h * 1.05) : Math.max(P.w, P.h * 1.6);
+  const cam = new THREE.PerspectiveCamera(VERT ? 44 : 32, W / H, .1, 200), span = VERT ? Math.max(Math.min(P.w * 2.05, P.w * 1.35 + P.h * .6), P.h * 1.05) : Math.max(P.w, P.h * 1.6);
   const focus = p.pulse ? at(...p.pulse) : p.pins ? at(p.pins[0][0], p.pins[0][1]) : V(0, 0, 0);
   return { scene, cam, labels, update(t, s) {
     const k = ease(t), dist = span * lerp(.92, .74, k) * (p.zoom || 1), tilt = VERT ? lerp(1.22, 1.1, k) : lerp(.95, .8, k);
     if (seam) seam.reveal(seg(t, .1, .6));
-    const fx = lerp(0, focus.x, .5 * k), fz = lerp(0, focus.z, .5 * k);
+    // a cropped vertical map pans most of the way to its focus; otherwise drift halfway there
+    const pan = VERT && span < P.w * 2 ? .8 * (.4 + .6 * k) : .5 * k, fx = focus.x * pan, fz = focus.z * pan;
     aim(cam, [fx + Math.sin(s * .05) * .4 - lerp(.6, .2, k), Math.sin(tilt) * dist * .78, fz + Math.cos(tilt) * dist * .78 + 1.2], [fx, 0, fz - .3], .6);
     rivers.forEach(r => r.reveal(seg(t, .08 + r.userData.d, .55 + r.userData.d)));
     falls.forEach((r, i) => { r.update(s, seg(t, .45, .55)); labels[i].k = seg(t, .45, .55); });

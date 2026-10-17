@@ -16,6 +16,7 @@
       "hl": [
        "724"
       ],
+      "zoom": 1,
       "bbox": [
        -9.8,
        4.5,
@@ -42,6 +43,7 @@
       "hl": [
        "724"
       ],
+      "zoom": 1,
       "bbox": [
        -9.8,
        4.5,
@@ -82,6 +84,7 @@
       "hl": [
        "724"
       ],
+      "zoom": 1,
       "bbox": [
        -9.8,
        4.5,
@@ -120,6 +123,7 @@
       "hl": [
        "724"
       ],
+      "zoom": 0.9,
       "bbox": [
        -9.8,
        4.5,
@@ -148,8 +152,7 @@
       "pulse": [
        2.17,
        41.39
-      ],
-      "zoom": 0.9
+      ]
      },
      "Barcelona took the other path: a Mediterranean port that grew rich on trade and industry."
     ],

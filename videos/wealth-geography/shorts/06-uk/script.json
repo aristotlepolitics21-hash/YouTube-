@@ -16,6 +16,7 @@
       "hl": [
        "826"
       ],
+      "zoom": 1,
       "bbox": [
        -8.8,
        2.2,
@@ -42,6 +43,7 @@
       "hl": [
        "826"
       ],
+      "zoom": 1,
       "bbox": [
        -8.8,
        2.2,
@@ -82,6 +84,7 @@
       "hl": [
        "826"
       ],
+      "zoom": 1,
       "bbox": [
        -8.8,
        2.2,
@@ -122,6 +125,7 @@
       "hl": [
        "826"
       ],
+      "zoom": 0.9,
       "bbox": [
        -8.8,
        2.2,
@@ -150,8 +154,7 @@
       "pulse": [
        -2.24,
        53.48
-      ],
-      "zoom": 0.9
+      ]
      },
      "The north had its own boom. Coal and cotton made Manchester the world's first industrial city. But when those industries faded, the snowball rolled backwards."
     ],

@@ -16,6 +16,7 @@
       "hl": [
        "643"
       ],
+      "zoom": 0.6,
       "bbox": [
        20,
        180,
@@ -42,6 +43,7 @@
       "hl": [
        "643"
       ],
+      "zoom": 0.6,
       "bbox": [
        20,
        180,
@@ -77,6 +79,7 @@
       "hl": [
        "643"
       ],
+      "zoom": 0.6,
       "bbox": [
        20,
        180,
@@ -117,6 +120,7 @@
       "hl": [
        "643"
       ],
+      "zoom": 0.54,
       "bbox": [
        20,
        180,
@@ -140,8 +144,7 @@
       "pulse": [
        37.62,
        55.75
-      ],
-      "zoom": 0.9
+      ]
      },
      "Even the oil and gas pumped out of Siberia is largely run by companies headquartered in Moscow and St Petersburg."
     ],

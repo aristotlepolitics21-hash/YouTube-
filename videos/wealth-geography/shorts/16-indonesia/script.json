@@ -16,6 +16,7 @@
       "hl": [
        "360"
       ],
+      "zoom": 1,
       "bbox": [
        94,
        141.5,
@@ -42,6 +43,7 @@
       "hl": [
        "360"
       ],
+      "zoom": 1,
       "bbox": [
        94,
        141.5,
@@ -77,6 +79,7 @@
       "hl": [
        "360"
       ],
+      "zoom": 1,
       "bbox": [
        94,
        141.5,
@@ -115,6 +118,7 @@
       "hl": [
        "360"
       ],
+      "zoom": 0.9,
       "bbox": [
        94,
        141.5,
@@ -138,8 +142,7 @@
       "pulse": [
        116.7,
        -0.97
-      ],
-      "zoom": 0.9
+      ]
      },
      "Jakarta grew so big, and is sinking so fast, that Indonesia is building a new capital on the island of Borneo, called Nusantara."
     ],

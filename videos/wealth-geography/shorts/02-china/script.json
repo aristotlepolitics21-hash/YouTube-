@@ -16,6 +16,7 @@
       "hl": [
        "156"
       ],
+      "zoom": 1,
       "bbox": [
        73,
        135,
@@ -42,6 +43,7 @@
       "hl": [
        "156"
       ],
+      "zoom": 1,
       "bbox": [
        73,
        135,
@@ -77,6 +79,7 @@
       "hl": [
        "156"
       ],
+      "zoom": 1,
       "bbox": [
        73,
        135,
@@ -136,6 +139,7 @@
       "hl": [
        "156"
       ],
+      "zoom": 0.9,
       "bbox": [
        73,
        135,
@@ -159,8 +163,7 @@
       "pulse": [
        114.06,
        22.54
-      ],
-      "zoom": 0.9
+      ]
      },
      "Factories came, then suppliers, then engineers. The snowball rolled. Today Shenzhen is a megacity of more than seventeen million people."
     ],

@@ -16,6 +16,7 @@
       "hl": [
        "250"
       ],
+      "zoom": 1,
       "bbox": [
        -5.5,
        9.8,
@@ -42,6 +43,7 @@
       "hl": [
        "250"
       ],
+      "zoom": 1,
       "bbox": [
        -5.5,
        9.8,
@@ -82,6 +84,7 @@
       "hl": [
        "250"
       ],
+      "zoom": 1,
       "bbox": [
        -5.5,
        9.8,
@@ -122,6 +125,7 @@
       "hl": [
        "250"
       ],
+      "zoom": 0.9,
       "bbox": [
        -5.5,
        9.8,
@@ -150,8 +154,7 @@
       "pulse": [
        2.35,
        48.86
-      ],
-      "zoom": 0.9
+      ]
      },
      "Government, banks, universities and head offices all clustered in one place. The snowball did the rest."
     ],

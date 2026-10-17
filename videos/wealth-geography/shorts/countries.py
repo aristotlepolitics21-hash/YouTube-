@@ -97,7 +97,7 @@ C = [
    "The north is cold and rocky. The south has the farmland, the milder winters, and the trade with the United States.",
    "Toronto became the country's financial centre, and the snowball rolled. Out west, oil made Alberta rich, and Calgary grew into an energy capital of its own.",
    "A great river, a milder south, and a giant neighbour. That's where Canada's money lives."]),
- dict(slug="russia", focus="Moscow", name="Russia", short="Russia's", hl="643", bbox=[20, 180, 41, 77], hub=[37.62, 55.75], rivers=["volga"],
+ dict(slug="russia", focus="Moscow", name="Russia", short="Russia's", hl="643", bbox=[20, 180, 41, 77], zoom=.6, hub=[37.62, 55.75], rivers=["volga"],
   tag=["RUSSIA", "Moscow: under 1 in 10 people, ~1/5 of the output"],
   pins=[[37.62, 55.75, "Moscow"], [30.32, 59.94, "St Petersburg"], [82.92, 55.03, "Novosibirsk"]],
   lines=["Fewer than one in ten Russians live in Moscow, but the city produces around a fifth of the country's economic output.",
@@ -194,7 +194,8 @@ def rate(c): w = sum(len(l.split()) for l in c["lines"]); return max(100, -(-rou
 
 def script(i, c):
     reg = c.get("region", c["slug"]); bb = None if "region" in c else c["bbox"]
-    m = lambda **kw: dict(dict(region=reg, hl=[c["hl"]], **({"bbox": bb} if bb else {})), **kw)
+    z = c.get("zoom", 1)
+    m = lambda zoom=1, **kw: dict(dict(region=reg, hl=[c["hl"]], zoom=zoom * z, **({"bbox": bb} if bb else {})), **kw)
     L = c["lines"]
     shots = [
         ["map_region", m(pulse=c["hub"], lights=1, towers=0, tag=c["tag"]), L[0]],

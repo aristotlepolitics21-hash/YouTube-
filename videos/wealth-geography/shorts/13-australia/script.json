@@ -16,6 +16,7 @@
       "hl": [
        "036"
       ],
+      "zoom": 1,
       "bbox": [
        112,
        154.5,
@@ -42,6 +43,7 @@
       "hl": [
        "036"
       ],
+      "zoom": 1,
       "bbox": [
        112,
        154.5,
@@ -82,6 +84,7 @@
       "hl": [
        "036"
       ],
+      "zoom": 1,
       "bbox": [
        112,
        154.5,
@@ -120,6 +123,7 @@
       "hl": [
        "036"
       ],
+      "zoom": 0.9,
       "bbox": [
        112,
        154.5,
@@ -148,8 +152,7 @@
       "pulse": [
        118.6,
        -22.3
-      ],
-      "zoom": 0.9
+      ]
      },
      "But the head offices, banks and lawyers that manage it cluster in the big coastal cities. The snowball pulls the money to the coast."
     ],

@@ -16,6 +16,7 @@
       "hl": [
        "410"
       ],
+      "zoom": 1,
       "pulse": [
        126.98,
        37.57
@@ -36,6 +37,7 @@
       "hl": [
        "410"
       ],
+      "zoom": 1,
       "lights": 1,
       "towers": 1,
       "pins": [
@@ -65,6 +67,7 @@
       "hl": [
        "410"
       ],
+      "zoom": 1,
       "lights": 1,
       "towers": 0,
       "river": [
@@ -99,6 +102,7 @@
       "hl": [
        "410"
       ],
+      "zoom": 0.9,
       "lights": 1,
       "towers": 1,
       "pins": [
@@ -116,8 +120,7 @@
       "pulse": [
        125.75,
        39.02
-      ],
-      "zoom": 0.9
+      ]
      },
      "And just to the north, a different set of rules produced the opposite: a country almost entirely dark at night."
     ],
