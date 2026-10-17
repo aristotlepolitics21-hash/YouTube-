@@ -1,0 +1,179 @@
+1
+00:00:00,400 --> 00:00:06,620
+Look at the Earth at night, and something strange appears. The light isn't spread out. It clumps.
+
+2
+00:00:06,970 --> 00:00:13,351
+Half of everything the world produces is made on about one and a half percent of its land.
+
+3
+00:00:13,701 --> 00:00:19,481
+In Egypt, almost everyone lives on a thin green ribbon beside a single river.
+
+4
+00:00:19,831 --> 00:00:24,671
+In Japan, nearly a third of the whole country crowds into one city.
+
+5
+00:00:25,021 --> 00:00:32,809
+So why? Why does wealth pile up in a few places, and stay there for centuries, while vast regions nearby stay dark?
+
+6
+00:00:33,159 --> 00:00:39,294
+To answer that, we have to follow the money back to the first thing it ever needed. A way to move.
+
+7
+00:00:39,994 --> 00:00:50,074
+For most of history, moving anything over land was brutally expensive. Carts were slow, roads were mud, and the animals pulling them had to be fed.
+
+8
+00:00:50,424 --> 00:00:58,525
+In the Roman Empire, shipping grain by sea could be dozens of times cheaper than hauling it the same distance by road.
+
+9
+00:00:58,875 --> 00:01:09,821
+So trade hugged the water. Cities grew where ships could reach them: in sheltered harbours, at river mouths, and along rivers deep enough to carry boats far inland.
+
+10
+00:01:10,171 --> 00:01:20,875
+Europe got lucky. Its coastline is jagged and full of sheltered bays, and long, navigable rivers like the Rhine and the Danube reach deep into the land.
+
+11
+00:01:21,225 --> 00:01:27,472
+North America got the Mississippi, a highway of water running into the heart of a continent.
+
+12
+00:01:27,822 --> 00:01:39,472
+Now look at Africa. Its coastline is remarkably smooth, with few natural harbours. And many of its great rivers tumble over rapids and waterfalls not far from the sea.
+
+13
+00:01:39,822 --> 00:01:50,039
+On the Congo, ships coming in from the ocean hit a wall of rapids long before they reach the interior. A river that could have been a highway became a barrier.
+
+14
+00:01:50,389 --> 00:01:58,206
+Geography doesn't decide everything. But it sets the starting line. And some places start hundreds of miles ahead.
+
+15
+00:01:58,906 --> 00:02:08,072
+Here's the twist. Once a city gets going, it starts pulling in wealth on its own, whether or not its original advantage still matters.
+
+16
+00:02:08,423 --> 00:02:23,707
+In 1890, the economist Alfred Marshall noticed that firms in the same trade cluster together. In those places, he wrote, the mysteries of the trade become no mysteries, but are as it were in the air.
+
+17
+00:02:24,057 --> 00:02:33,908
+Clusters share suppliers. They share a deep pool of skilled workers. And ideas leak, from desk to desk, bar to bar, and company to company.
+
+18
+00:02:34,258 --> 00:02:43,862
+Every new arrival makes the place more attractive to the next. Economists call it agglomeration. It's a snowball, and it doesn't stop on its own.
+
+19
+00:02:44,212 --> 00:02:57,710
+Take Silicon Valley. In 1956, the physicist William Shockley set up a semiconductor lab in Mountain View, California, partly to be near his mother in Palo Alto.
+
+20
+00:02:58,060 --> 00:03:08,904
+He was a famously difficult boss. In 1957, eight of his best researchers walked out and started their own company: Fairchild Semiconductor.
+
+21
+00:03:09,254 --> 00:03:22,331
+Then Fairchild's people left to start dozens more firms, including Intel and AMD. Chips created companies, companies created investors, and the investors funded the next wave.
+
+22
+00:03:22,681 --> 00:03:32,733
+A valley of fruit orchards became the most valuable patch of land in the technology world. Not because of the soil. Because of who was already there.
+
+23
+00:03:33,083 --> 00:03:46,300
+In 1991, the economist Paul Krugman showed how small accidents like this can snowball into lasting centres of industry. That work helped win him the Nobel Prize.
+
+24
+00:03:47,000 --> 00:03:56,093
+The snowball explains something even stranger. In the eastern United States, a string of cities lines up along an invisible seam.
+
+25
+00:03:56,443 --> 00:04:07,601
+It's the fall line, where rivers tumble off hard rock onto the coastal plain. Boats heading upriver had to stop, unload, and carry their cargo around the rapids.
+
+26
+00:04:07,951 --> 00:04:15,079
+Trading posts grew up at those stopping points. Places like Richmond, Augusta, and Columbus, Georgia.
+
+27
+00:04:15,429 --> 00:04:24,209
+Railways made that reason obsolete more than a century ago. But the cities are still there, and many are still bigger than their neighbours.
+
+28
+00:04:24,559 --> 00:04:32,642
+Wealth has memory. Once it pools somewhere, the roads, the money and the people stay long after the reason they came is gone.
+
+29
+00:04:33,342 --> 00:04:41,099
+But geography and history still can't explain this. Nogales is one city, cut in two by a border fence.
+
+30
+00:04:41,449 --> 00:04:54,059
+Same climate. Same soil. Families on both sides. Yet by one estimate, households in Nogales, Arizona, earn around three times as much as those in Nogales, Sonora.
+
+31
+00:04:54,409 --> 00:05:07,634
+Or look at Korea at night. One peninsula, one people, one language, divided in 1945. Today the South blazes with light. The North is almost entirely dark.
+
+32
+00:05:07,984 --> 00:05:16,029
+The difference is the rules. Whether property is safe. Whether courts are fair. Whether the people who build something get to keep it.
+
+33
+00:05:16,379 --> 00:05:29,006
+In 2024, Daron Acemoglu, Simon Johnson and James Robinson won the Nobel Prize for showing how institutions like these shape which nations grow rich.
+
+34
+00:05:29,356 --> 00:05:36,496
+Good rules turn a lucky location into lasting wealth. Bad ones can waste the finest harbour on Earth.
+
+35
+00:05:37,196 --> 00:05:46,367
+Today, the snowball is rolling faster than ever. In a knowledge economy, the most valuable thing a place can have is other skilled people.
+
+36
+00:05:46,717 --> 00:05:58,207
+So engineers move to where the engineers are. Investors follow them. Big firms follow the investors. A handful of superstar cities pull further and further ahead.
+
+37
+00:05:58,557 --> 00:06:10,350
+There's one force pushing back: the price of getting in. When homes cost a fortune, teachers, nurses and young workers get priced out of the very places with the best jobs.
+
+38
+00:06:10,700 --> 00:06:27,710
+And the snowball can roll backwards. Detroit had about one point eight five million people in 1950. When the car industry shrank, the cluster unravelled. By 2020, fewer than six hundred and fifty thousand remained.
+
+39
+00:06:28,060 --> 00:06:32,788
+Clusters build each other up. And when they break, they pull each other down.
+
+40
+00:06:33,488 --> 00:06:39,767
+So why does wealth concentrate in certain places? Three forces, stacked on top of each other.
+
+41
+00:06:40,117 --> 00:06:45,994
+First, geography. Water, harbours and open ground that make moving things cheap.
+
+42
+00:06:46,344 --> 00:06:50,958
+Second, the snowball. People attract people, and skills attract money.
+
+43
+00:06:51,308 --> 00:06:56,772
+Third, the rules. Institutions that let people keep, and grow, what they build.
+
+44
+00:06:57,122 --> 00:07:07,019
+And history locks it all in place. Wealth doesn't spread out like butter on toast. It pools like water, and it keeps flowing to wherever it pooled before.
+
+45
+00:07:07,369 --> 00:07:15,771
+So here's a question worth arguing about. Should we try to spread it out, or let the snowball roll? Tell me what you think in the comments.

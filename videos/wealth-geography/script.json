@@ -1,0 +1,67 @@
+{
+ "series": "Where the Money Lives",
+ "title": "Why Does Wealth Concentrate in Certain Places?",
+ "voice": "kokoro:bm_george",
+ "rate": 92,
+ "sections": [
+  {"name": "Cold open", "lines": [
+   ["globe_night", {"from": [20, 30], "to": [10, 35], "dist": [3.4, 3.0]}, "Look at the Earth at night, and something strange appears. The light isn't spread out. It clumps."],
+   ["globe_night", {"from": [-75, 38], "to": [-30, 40], "dist": [2.6, 2.3], "stat": ["50%", "of everything the world produces", "is made on 1.5% of its land"]}, "Half of everything the world produces is made on about one and a half percent of its land."],
+   ["map_region", {"region": "egypt", "hl": ["818"], "river": ["nile"], "tag": ["EGYPT", "~95% of people live beside the Nile"]}, "In Egypt, almost everyone lives on a thin green ribbon beside a single river."],
+   ["map_region", {"region": "japan", "hl": ["392"], "pulse": [139.7, 35.7], "tag": ["JAPAN", "Nearly 1 in 3 people live in Greater Tokyo"]}, "In Japan, nearly a third of the whole country crowds into one city."],
+   ["tower_field", {}, "So why? Why does wealth pile up in a few places, and stay there for centuries, while vast regions nearby stay dark?"],
+   ["title", {"top": "WHERE THE", "big": "MONEY LIVES", "sub": "Why wealth concentrates in certain places"}, "To answer that, we have to follow the money back to the first thing it ever needed. A way to move."]
+  ]},
+  {"name": "The water roads", "lines": [
+   ["cart_vs_ship", {"phase": 0}, "For most of history, moving anything over land was brutally expensive. Carts were slow, roads were mud, and the animals pulling them had to be fed."],
+   ["cart_vs_ship", {"phase": 1}, "In the Roman Empire, shipping grain by sea could be dozens of times cheaper than hauling it the same distance by road."],
+   ["map_region", {"region": "world", "coast": 1, "lights": 1, "tag": ["THE WATER ROADS", "Cities grow where boats can reach"]}, "So trade hugged the water. Cities grew where ships could reach them: in sheltered harbours, at river mouths, and along rivers deep enough to carry boats far inland."],
+   ["map_region", {"region": "europe", "river": ["rhine", "danube", "thames", "elbe"], "lights": 1, "tag": ["EUROPE", "A jagged coast, long navigable rivers"]}, "Europe got lucky. Its coastline is jagged and full of sheltered bays, and long, navigable rivers like the Rhine and the Danube reach deep into the land."],
+   ["map_region", {"region": "usa", "river": ["mississippi", "missouri", "ohio"], "lights": 1, "tag": ["NORTH AMERICA", "The Mississippi river system"]}, "North America got the Mississippi, a highway of water running into the heart of a continent."],
+   ["map_region", {"region": "africa", "river": ["congo", "niger", "zambezi", "nile"], "falls": [[13.9, -5.0], [32.7, -15.6]], "lights": 1, "tag": ["AFRICA", "Smooth coast, rivers broken by rapids"]}, "Now look at Africa. Its coastline is remarkably smooth, with few natural harbours. And many of its great rivers tumble over rapids and waterfalls not far from the sea."],
+   ["rapids", {}, "On the Congo, ships coming in from the ocean hit a wall of rapids long before they reach the interior. A river that could have been a highway became a barrier."],
+   ["globe_night", {"from": [10, 5], "to": [20, 20], "dist": [2.5, 2.9]}, "Geography doesn't decide everything. But it sets the starting line. And some places start hundreds of miles ahead."]
+  ]},
+  {"name": "The snowball", "lines": [
+   ["city_grow", {"phase": 0}, "Here's the twist. Once a city gets going, it starts pulling in wealth on its own, whether or not its original advantage still matters."],
+   ["quote", {"q": "The mysteries of the trade become no mysteries; but are as it were in the air.", "who": "ALFRED MARSHALL, 1890"}, "In 1890, the economist Alfred Marshall noticed that firms in the same trade cluster together. In those places, he wrote, the mysteries of the trade become no mysteries, but are as it were in the air."],
+   ["three_forces", {}, "Clusters share suppliers. They share a deep pool of skilled workers. And ideas leak, from desk to desk, bar to bar, and company to company."],
+   ["city_grow", {"phase": 1}, "Every new arrival makes the place more attractive to the next. Economists call it agglomeration. It's a snowball, and it doesn't stop on its own."],
+   ["map_region", {"region": "bayarea", "pins": [[-122.08, 37.39, "Mountain View"], [-122.14, 37.44, "Palo Alto"]], "tag": ["1956", "Shockley Semiconductor Laboratory"]}, "Take Silicon Valley. In 1956, the physicist William Shockley set up a semiconductor lab in Mountain View, California, partly to be near his mother in Palo Alto."],
+   ["walkout", {}, "He was a famously difficult boss. In 1957, eight of his best researchers walked out and started their own company: Fairchild Semiconductor."],
+   ["family_tree", {}, "Then Fairchild's people left to start dozens more firms, including Intel and AMD. Chips created companies, companies created investors, and the investors funded the next wave."],
+   ["tower_valley", {}, "A valley of fruit orchards became the most valuable patch of land in the technology world. Not because of the soil. Because of who was already there."],
+   ["quote", {"q": "Small accidents of history can snowball into permanent centres of industry.", "who": "THE IDEA BEHIND PAUL KRUGMAN'S 2008 NOBEL PRIZE", "para": 1}, "In 1991, the economist Paul Krugman showed how small accidents like this can snowball into lasting centres of industry. That work helped win him the Nobel Prize."]
+  ]},
+  {"name": "History's long shadow", "lines": [
+   ["map_region", {"region": "fallline", "fall": 1, "tag": ["THE FALL LINE", "Where rivers drop to the coastal plain"]}, "The snowball explains something even stranger. In the eastern United States, a string of cities lines up along an invisible seam."],
+   ["portage", {}, "It's the fall line, where rivers tumble off hard rock onto the coastal plain. Boats heading upriver had to stop, unload, and carry their cargo around the rapids."],
+   ["map_region", {"region": "fallline", "fall": 2, "tag": ["THE FALL LINE", "Trading posts became cities"]}, "Trading posts grew up at those stopping points. Places like Richmond, Augusta, and Columbus, Georgia."],
+   ["map_region", {"region": "fallline", "fall": 3, "rail": 1, "tag": ["THE FALL LINE", "The reason vanished. The cities stayed."]}, "Railways made that reason obsolete more than a century ago. But the cities are still there, and many are still bigger than their neighbours."],
+   ["tower_field", {"memory": 1}, "Wealth has memory. Once it pools somewhere, the roads, the money and the people stay long after the reason they came is gone."]
+  ]},
+  {"name": "A line in the sand", "lines": [
+   ["nogales", {"phase": 0}, "But geography and history still can't explain this. Nogales is one city, cut in two by a border fence."],
+   ["nogales", {"phase": 1}, "Same climate. Same soil. Families on both sides. Yet by one estimate, households in Nogales, Arizona, earn around three times as much as those in Nogales, Sonora."],
+   ["korea", {}, "Or look at Korea at night. One peninsula, one people, one language, divided in 1945. Today the South blazes with light. The North is almost entirely dark."],
+   ["three_rules", {}, "The difference is the rules. Whether property is safe. Whether courts are fair. Whether the people who build something get to keep it."],
+   ["quote", {"q": "How institutions are formed and affect prosperity.", "who": "NOBEL PRIZE IN ECONOMICS, 2024: ACEMOGLU, JOHNSON & ROBINSON"}, "In 2024, Daron Acemoglu, Simon Johnson and James Robinson won the Nobel Prize for showing how institutions like these shape which nations grow rich."],
+   ["harbour", {}, "Good rules turn a lucky location into lasting wealth. Bad ones can waste the finest harbour on Earth."]
+  ]},
+  {"name": "Winners take more", "lines": [
+   ["globe_night", {"from": [-100, 40], "to": [0, 45], "dist": [2.3, 2.6], "arcs": 1}, "Today, the snowball is rolling faster than ever. In a knowledge economy, the most valuable thing a place can have is other skilled people."],
+   ["tower_field", {"superstar": 1}, "So engineers move to where the engineers are. Investors follow them. Big firms follow the investors. A handful of superstar cities pull further and further ahead."],
+   ["housing", {}, "There's one force pushing back: the price of getting in. When homes cost a fortune, teachers, nurses and young workers get priced out of the very places with the best jobs."],
+   ["detroit", {}, "And the snowball can roll backwards. Detroit had about one point eight five million people in 1950. When the car industry shrank, the cluster unravelled. By 2020, fewer than six hundred and fifty thousand remained."],
+   ["city_grow", {"phase": 2}, "Clusters build each other up. And when they break, they pull each other down."]
+  ]},
+  {"name": "The answer", "lines": [
+   ["recap", {"n": 0}, "So why does wealth concentrate in certain places? Three forces, stacked on top of each other."],
+   ["recap", {"n": 1}, "First, geography. Water, harbours and open ground that make moving things cheap."],
+   ["recap", {"n": 2}, "Second, the snowball. People attract people, and skills attract money."],
+   ["recap", {"n": 3}, "Third, the rules. Institutions that let people keep, and grow, what they build."],
+   ["globe_night", {"from": [60, 20], "to": [100, 25], "dist": [3.0, 3.6], "end": 1}, "And history locks it all in place. Wealth doesn't spread out like butter on toast. It pools like water, and it keeps flowing to wherever it pooled before."],
+   ["outro", {}, "So here's a question worth arguing about. Should we try to spread it out, or let the snowball roll? Tell me what you think in the comments."]
+  ]}
+ ]
+}
