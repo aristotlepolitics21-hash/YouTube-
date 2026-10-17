@@ -29,15 +29,18 @@ interrupted build can simply be run again; --skip-render never renders.
 """
 import argparse, difflib, hashlib, json, math, pathlib, re, subprocess, sys, threading, wave, queue
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
+import audio_fx as afx
 
 ROOT = pathlib.Path(__file__).resolve().parent
-FPS, SR = 24, 44100
+FPS, SR = 24, afx.SR
 LEAD, GAP, TAIL = 0.25, 0.15, 0.45  # seconds of air around each shot's narration
 FONT = ROOT / 'fonts' / 'ArchivoBlack-Regular.ttf'
 
 
-def tts(text, voice, path, length_scale=1.0):
+def tts(text, voice, path, length_scale=1.0, speed=1.0):
+    if str(voice).startswith('kokoro:'):  # kokoro:<voice name>
+        return afx.kokoro_tts(text, str(voice).split(':', 1)[1], path, speed)
     if not path.exists():
         subprocess.run([sys.executable, '-m', 'piper', '-m', str(voice), '-f', str(path),
                         '--length-scale', str(length_scale)],
@@ -109,58 +112,15 @@ def chunk_words(words, max_words=4, max_chars=24):
     return chunks
 
 
-def sfx_pop():
-    t = np.arange(int(SR * 0.35)) / SR
-    thump = np.sin(2 * np.pi * (140 * np.exp(-t * 18) + 45) * t) * np.exp(-t * 14)
-    rng = np.random.default_rng(1)
-    click = rng.standard_normal(len(t)) * np.exp(-t * 160)
-    click = np.convolve(click, [1, -0.95], mode='same')  # crude high-pass
-    return (0.9 * thump + 0.5 * click).astype(np.float32)
-
-
-def sfx_boom():
-    t = np.arange(int(SR * 2.5)) / SR
-    rng = np.random.default_rng(3)
-    rumble = np.convolve(rng.standard_normal(len(t)), np.ones(200) / 200, mode='same') * 6
-    sub = np.sin(2 * np.pi * (60 * np.exp(-t * 2) + 28) * t)
-    return ((0.8 * sub + rumble) * np.exp(-t * 1.6)).astype(np.float32)
-
-
-def sfx_whoosh(dur=0.35):
-    n = int(SR * dur); t = np.arange(n) / SR
-    rng = np.random.default_rng(2)
-    noise = np.convolve(rng.standard_normal(n), np.ones(24) / 24, mode='same')
-    env = np.sin(np.pi * t / dur) ** 2
-    return (noise * env * 1.6).astype(np.float32)
-
-
-def music_ambient(total):
-    """Slow minor-key pad: four chords, 8 s each, crossfaded, with a low drone."""
-    n = int(total * SR); t = np.arange(n) / SR
-    chords = [[110, 130.81, 164.81], [87.31, 110, 130.81], [98, 123.47, 146.83], [82.41, 103.83, 123.47]]
-    out = np.zeros(n, dtype=np.float32)
-    span = 8.0
-    for k in range(int(total / span) + 2):
-        c = chords[k % 4]; start = k * span - 1.5
-        i0, i1 = max(0, int(start * SR)), min(n, int((start + span + 3) * SR))
-        if i0 >= i1: continue
-        tt = t[i0:i1] - start
-        env = np.clip(tt / 1.5, 0, 1) * np.clip((span + 3 - tt) / 1.5, 0, 1)
-        for f in c:
-            out[i0:i1] += (np.sin(2 * np.pi * f * tt) + 0.3 * np.sin(2 * np.pi * f * 2.003 * tt)) * env
-    out += 0.6 * np.sin(2 * np.pi * 55 * t) * (0.6 + 0.4 * np.sin(2 * np.pi * t / 23))
-    return out / (np.abs(out).max() + 1e-6)
-
-
 def plan(ep, voice, workdir):
-    shots, t0, ls = [], 0.0, ep.get('length_scale', 1.0)
+    shots, t0, ls, sp = [], 0.0, ep.get('length_scale', 1.0), ep.get('speed', 1.1)
     for i, s in enumerate(ep['shots']):
         segs = s['vo'] if isinstance(s['vo'], list) else [s['vo']]
         audio, starts, cur, words = [], [], LEAD, []
         for j, text in enumerate(segs):
-            key = hashlib.md5(f'{text}|{ls}'.encode()).hexdigest()[:10]  # cache by text + speed
+            key = hashlib.md5(f'{text}|{ls}|{sp}|{voice}'.encode()).hexdigest()[:10]  # cache by text + voice + speed
             wav = workdir / f'vo{i + 1}_{j}_{key}.wav'
-            a = tts(text, voice, wav, ls)
+            a = tts(text, voice, wav, ls, sp)
             for w, ws, we in word_times(text, a, wav.with_suffix('.words.json')):
                 words.append((w, cur + ws, cur + we, j))
             starts.append(cur); audio.append((cur, a)); cur += len(a) / SR + GAP
@@ -286,7 +246,11 @@ def draw_caption(words, hl_color, W, size, max_w):
         for w, hl, ww in ws:
             d.text((x, y), w, font=font, fill=hl_color if hl else '#ffffff', stroke_width=stroke, stroke_fill='#000000')
             x += ww + space
-    return img
+    # soft drop shadow so captions read on bright frames
+    a = img.getchannel('A').filter(ImageFilter.GaussianBlur(12)).point(lambda v: int(v * 0.65))
+    shadow = Image.new('RGBA', img.size, (0, 0, 0, 0)); shadow.putalpha(a)
+    out = Image.new('RGBA', img.size, (0, 0, 0, 0)); out.alpha_composite(shadow, (0, 10)); out.alpha_composite(img)
+    return out
 
 
 def ease_out_back(t, c=1.9):
@@ -304,8 +268,8 @@ def word_caption_at(s, tf, cache, W, size, max_w):
             if key not in cache:
                 cache[key] = draw_caption([(w[0].upper(), k == active) for k, w in enumerate(ch)],
                                           s['spec'].get('highlight', '#ffd23f'), W, size, max_w)
-            return cache[key], ch[0][1]
-    return None, None
+            return cache[key], ch[0][1], ch[active][1]
+    return None, None, None
 
 
 def encode(module, shots, size, out, audio_path, mode='words', punch=0.0):
@@ -317,8 +281,10 @@ def encode(module, shots, size, out, audio_path, mode='words', punch=0.0):
         cap_size, cap_w = (66, 1500) if landscape else (96, 940)
     cy = H - 150 if landscape else 1330  # lower third (16:9) / lower-middle (9:16)
     cmd = ['ffmpeg', '-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}',
-           '-r', str(FPS), '-i', '-', '-i', str(audio_path), '-c:v', 'libx264', '-preset', 'medium',
-           '-crf', '19', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-shortest',
+           '-r', str(FPS), '-i', '-', '-i', str(audio_path), '-vf', 'unsharp=5:5:0.3:3:3:0',
+           '-c:v', 'libx264', '-preset', 'slow', '-crf', '17', '-profile:v', 'high', '-pix_fmt', 'yuv420p',
+           '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',
+           '-c:a', 'aac', '-b:a', '256k', '-ar', str(SR), '-shortest',
            '-movflags', '+faststart', str(out)]
     ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     for s in shots:
@@ -336,12 +302,15 @@ def encode(module, shots, size, out, audio_path, mode='words', punch=0.0):
                 z = 1 + punch * (1 - since_cut / 6) ** 2
                 cw, ch = W / z, H / z
                 frame = frame.resize((W, H), Image.BICUBIC, box=((W - cw) / 2, (H - ch) / 2, (W + cw) / 2, (H + ch) / 2))
-            pop_start = 0.0
+            pop_start, word_start = 0.0, None
             if mode == 'words':
-                cap, pop_start = word_caption_at(s, f / FPS, cache, W, cap_size, cap_w)
+                cap, pop_start, word_start = word_caption_at(s, f / FPS, cache, W, cap_size, cap_w)
             if cap:
                 k = min(1.0, (f / FPS - pop_start) * FPS / 4)  # pop-in over 4 frames
                 sc = 0.7 + 0.3 * ease_out_back(k)
+                if word_start is not None and k >= 1:  # small bump on each new word
+                    j = (f / FPS - max(0.0, word_start - 0.03)) * FPS
+                    if 0 <= j < 3: sc *= 1 + 0.045 * (1 - j / 3)
                 c = cap if sc == 1 else cap.resize((max(1, int(cap.width * sc)), max(1, int(cap.height * sc))), Image.LANCZOS)
                 frame.paste(c, ((W - c.width) // 2, cy - c.height // 2), c)
             ff.stdin.write(frame.tobytes())
@@ -350,34 +319,35 @@ def encode(module, shots, size, out, audio_path, mode='words', punch=0.0):
 
 
 def mix(ep, shots, total, path):
-    mixbuf = np.zeros(int(math.ceil(total * SR)) + SR * 3, dtype=np.float32)
-    def add(at, clip, gain=1.0):
-        i = max(0, int(at * SR)); mixbuf[i:i + len(clip)] += clip[: len(mixbuf) - i] * gain
-    fx = {'pop': sfx_pop(), 'boom': sfx_boom()}
-    whoosh = sfx_whoosh()
+    n = int(math.ceil(total * SR)) + SR * 3
+    voice, fx = np.zeros(n, dtype=np.float32), np.zeros((n, 2), dtype=np.float32)
+    def add(buf, at, clip, gain=1.0):
+        i = max(0, int(at * SR)); L = min(len(clip), n - i); buf[i:i + L] += clip[:L] * gain
+    sounds = {'pop': afx.sfx_pop(), 'boom': afx.sfx_boom()}
+    whooshes = [afx.sfx_whoosh(seed=k, direction=1 if k % 2 else -1) for k in range(6)]
+    add(fx, 0.0, afx.sfx_impact(), 0.5)  # hook hit under the first words
+    k = 0
     for s in shots:
         for at, a in s['audio']:
-            add(s['start'] + at, a)
+            add(voice, s['start'] + at, a)
         if s['index']:
-            add(s['start'] - 0.17, whoosh, 0.12)
+            add(fx, s['start'] - 0.2, whooshes[k % 6], 0.13); k += 1
         for c in s['clips'][1:]:  # quieter whoosh on mid-shot cuts
-            add(s['start'] + c['start'] / FPS - 0.17, whoosh, ep.get('cut_whoosh', 0.07))
+            add(fx, s['start'] + c['start'] / FPS - 0.2, whooshes[k % 6], ep.get('cut_whoosh', 0.07) * 1.3); k += 1
         for e in s['spec'].get('sfx', []):
             at = (next(w[1] for w in s['words'] if norm_word(w[0]) == norm_word(e['word'])) if 'word' in e
                   else s['starts'][e.get('segment', 0)])
-            add(s['start'] + at - 0.05, fx[e['type']], 0.7)
-    voice_peak = np.abs(mixbuf).max()
-    if ep.get('music') == 'ambient':
-        mixbuf[: int(total * SR)] += music_ambient(total) * voice_peak * 0.07
-    mixbuf /= max(1e-6, np.abs(mixbuf).max()) / 0.9
-    pcm = (mixbuf[: int(total * SR)] * 32767).astype(np.int16)
-    with wave.open(str(path), 'wb') as w:
-        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes(pcm.tobytes())
+            add(fx, s['start'] + at - 0.05, sounds[e['type']], 0.7)
+    L = int(total * SR)
+    seed = int(hashlib.md5(ep['module'].encode()).hexdigest()[:6], 16)
+    music = afx.music_score(total, seed=seed, cues=[shots[-1]['start']] if len(shots) > 2 else ())[:L] if ep.get('music') else np.zeros((L, 2), np.float32)
+    if len(music) < L: music = np.pad(music, ((0, L - len(music)), (0, 0)))
+    afx.master(voice[:L], music, fx[:L], path, path.parent, music_gain=ep.get('music_gain', 0.2))
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('episode'); ap.add_argument('--voice', required=True)
+    ap.add_argument('episode'); ap.add_argument('--voice', default='kokoro:am_michael')
     ap.add_argument('-o', '--out', required=True); ap.add_argument('--skip-render', action='store_true')
     ap.add_argument('--plan-only', action='store_true', help='voiceover + timing only')
     ap.add_argument('--workers', type=int, default=2)
