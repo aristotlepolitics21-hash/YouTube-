@@ -6,7 +6,7 @@ zackdfilms short ("why your cat sits on your keyboard"). They run on the Tech Sh
 
 | # | Episode | Status |
 |---|---|---|
-| 1 | Why Your Phone Dies in the Cold | Rendered (3D, Kokoro `am_michael`) |
+| 1 | Why Your Phone Dies in the Cold | Rendered (3D, Kokoro `am_michael`, 30.8 s) |
 
 ## The formula
 

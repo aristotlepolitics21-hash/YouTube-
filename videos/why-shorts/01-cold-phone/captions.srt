@@ -1,0 +1,43 @@
+1
+00:00:00,400 --> 00:00:02,506
+You know when your phone dies in the cold,
+
+2
+00:00:02,626 --> 00:00:05,059
+even though it still had plenty of battery left?
+
+3
+00:00:05,179 --> 00:00:07,348
+Well, your battery isn't actually empty.
+
+4
+00:00:07,468 --> 00:00:11,925
+You see, it makes power by moving tiny particles called lithium ions
+
+5
+00:00:12,045 --> 00:00:14,005
+through a liquid inside the battery.
+
+6
+00:00:14,125 --> 00:00:17,736
+But when it gets cold, that liquid gets thick, almost like syrup.
+
+7
+00:00:17,856 --> 00:00:20,001
+So the ions can't move fast enough,
+
+8
+00:00:20,121 --> 00:00:23,572
+and your phone thinks the battery is dead, and shuts itself off.
+
+9
+00:00:23,692 --> 00:00:25,218
+But once it warms back up,
+
+10
+00:00:25,338 --> 00:00:27,060
+the ions start flowing again,
+
+11
+00:00:27,180 --> 00:00:29,247
+and most of that charge comes right back.
