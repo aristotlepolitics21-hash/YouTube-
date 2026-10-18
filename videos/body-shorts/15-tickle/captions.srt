@@ -1,0 +1,27 @@
+1
+00:00:00,400 --> 00:00:02,746
+Try tickling yourself. Nothing happens.
+
+2
+00:00:03,096 --> 00:00:07,097
+Your brain is always predicting what your own movements will feel like.
+
+3
+00:00:07,447 --> 00:00:12,366
+Before you move, a part at the back of your brain, the cerebellum, makes a copy of the plan.
+
+4
+00:00:12,716 --> 00:00:17,569
+So when your own fingers touch you, your brain already knows, and turns the feeling down.
+
+5
+00:00:17,919 --> 00:00:22,138
+Someone else's touch is a surprise. And surprises get the full feeling.
+
+6
+00:00:22,488 --> 00:00:27,072
+In one experiment, a robot added a tiny delay to people's own tickles.
+
+7
+00:00:27,422 --> 00:00:30,154
+And suddenly, their own touch felt more ticklish.
