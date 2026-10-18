@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 1,
+ "title": "Why Doctors Drilled Holes in Skulls",
+ "out": "why-doctors-drilled-holes-in-skulls",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "Why Doctors Drilled Holes in Skulls",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A medieval barber-surgeon in a red tunic with a white ruff leans over a frightened man lying on his side on a wooden bed, a hand-crank drill touching the top of his head, bright blue sky behind"
+     },
+     "For thousands of years, doctors had a cure for headaches. They drilled a hole in your head."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "Close-up of an ancient human skull on a stone table lit by torchlight, with a neat round hole in the top of it, an archaeologist's gloved hand pointing at it"
+     },
+     "It's called trepanation, and it's the oldest surgery we know of. Skulls with holes go back thousands of years."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "A stone age healer in furs scraping at a patient's scalp with a flint tool beside a campfire, villagers watching from the shadows"
+     },
+     "People did it to let out evil spirits, or to treat head injuries, fits and terrible headaches."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "Close-up of two ancient skulls side by side, one hole with smooth rounded healed edges, glowing soft highlight on the healed rim"
+     },
+     "And here's the wild part. Many of these skulls show the bone grew back around the hole."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "A cheerful ancient villager with a small bandage wrapped around his head walking out of a hut into morning sunlight, waving"
+     },
+     "That means a lot of patients actually survived, and lived for years afterwards."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "Modern neurosurgeon in blue scrubs in a clean operating room holding a small modern surgical drill, looking at a brain scan on a screen"
+     },
+     "Surgeons still make holes in the skull today. They just call it a craniotomy, and they use anaesthetic."
+    ]
+   ]
+  }
+ ]
+}

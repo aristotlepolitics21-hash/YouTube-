@@ -1,0 +1,41 @@
+<!doctype html><meta charset="utf-8"><style>body{margin:0;background:#000}</style>
+<canvas id="cv" width="1080" height="1920"></canvas>
+<script>
+// Weird History of Medicine: still images with slow camera moves, punch-in cuts and burned-in captions.
+// window.setup(data) loads the scenes; window.__at(T) draws the frame at T seconds. Every frame is a pure function of T.
+const W = 1080, H = 1920, cv = document.getElementById('cv'), c = cv.getContext('2d');
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x)), ease = k => (k = clamp(k), k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2), out = k => 1 - Math.pow(1 - clamp(k), 3);
+let TL = [], IMGS = [];
+window.setup = async (data) => {
+  IMGS = await Promise.all(data.images.map(src => new Promise(r => { const i = new Image(); i.onload = () => r(i); i.src = src; })));
+  let t = 0; TL = data.durs.map((d, i) => { const o = { start: t, end: t + d, cap: data.caps[i], text: data.texts[i] }; t += d; return o; });
+  await document.fonts.load('900 80px Inter'); window.__total = t; return t;
+};
+// each scene gets its own move: push in, pull out, or a slow pan, chosen by index
+function move(i, k) { const m = i % 4;
+  if (m === 0) return { z: 1.04 + .12 * k, x: 0, y: -.02 * k };
+  if (m === 1) return { z: 1.16 - .1 * k, x: 0, y: .02 * k };
+  if (m === 2) return { z: 1.12, x: -.05 + .1 * k, y: 0 };
+  return { z: 1.12, x: .05 - .1 * k, y: -.01 * k }; }
+function drawImg(img, z, ox, oy) { const s = Math.max(W / img.width, H / img.height) * z, w = img.width * s, h = img.height * s;
+  c.drawImage(img, (W - w) / 2 + ox * W, (H - h) / 2 + oy * H, w, h); }
+function caption(L, T) {
+  if (!L.cap || T < L.cap[0] || T > L.cap[1] + .2) return;
+  const words = L.text.split(/\s+/), chunks = []; let cur = [];
+  words.forEach(w => { cur.push(w); if (cur.length >= 3 || /[.,?!]$/.test(w)) { chunks.push(cur.join(' ')); cur = []; } }); if (cur.length) chunks.push(cur.join(' '));
+  const tot = chunks.reduce((a, ch) => a + ch.length + 4, 0), k = (T - L.cap[0]) / (L.cap[1] - L.cap[0]) * tot; let acc = 0, idx = chunks.length - 1;
+  for (let i = 0; i < chunks.length; i++) { acc += chunks[i].length + 4; if (k < acc) { idx = i; break; } }
+  let st = 0; for (let i = 0; i < idx; i++) st += chunks[i].length + 4; const age = (k - st) / tot * (L.cap[1] - L.cap[0]);
+  const s = chunks[idx].replace(/[.,]$/, '').toLowerCase(); c.save(); c.font = `900 92px Inter, "DejaVu Sans", sans-serif`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.lineJoin = 'round';
+  const fit = Math.min(1, (W - 120) / c.measureText(s).width), sc = fit * (1 + .1 * Math.exp(-age * 16)); c.translate(W / 2, 1440); c.scale(sc, sc);
+  c.lineWidth = 14; c.strokeStyle = 'rgba(0,0,0,.85)'; c.shadowColor = 'rgba(0,0,0,.6)'; c.shadowBlur = 24; c.shadowOffsetY = 6; c.strokeText(s, 0, 0);
+  c.shadowBlur = 0; c.shadowOffsetY = 0; c.fillStyle = '#ffffff'; c.fillText(s, 0, 0); c.restore(); }
+window.__at = T => {
+  let i = TL.findIndex(l => T < l.end); if (i < 0) i = TL.length - 1; const L = TL[i], d = L.end - L.start, s = T - L.start, k = ease(s / d), m = move(i, k);
+  const kin = i > 0 ? clamp(s / .3) : 1, punch = .1 * Math.pow(1 - out(kin), 2);
+  c.fillStyle = '#000'; c.fillRect(0, 0, W, H); drawImg(IMGS[i], m.z + punch, m.x, m.y);
+  const fl = .55 * Math.pow(1 - kin, 3); if (fl > .01) { c.fillStyle = `rgba(255,255,255,${fl})`; c.fillRect(0, 0, W, H); }
+  const g = c.createLinearGradient(0, H * .6, 0, H); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,.35)'); c.fillStyle = g; c.fillRect(0, H * .6, W, H * .4);
+  caption(L, T);
+};
+</script>

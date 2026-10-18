@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 19,
+ "title": "When People Thought Worms Caused Cavities",
+ "out": "when-people-thought-worms-caused-cavities",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "When People Thought Worms Caused Cavities",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "An ancient Babylonian healer examining a man's open mouth by oil lamp light, clay tablets on the shelves"
+     },
+     "For thousands of years, people believed toothaches were caused by a tiny worm, living inside your tooth."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "A giant stylized cartoonish worm peeking out of a hole in a big human molar, dramatic lighting, playful"
+     },
+     "The tooth worm was blamed for holes, and for the pain. People thought you could feel it wriggling."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "A medieval healer holding a candle of burning henbane seeds near a patient's mouth, smoke rising"
+     },
+     "Some healers burned seeds near the mouth, and then pointed at tiny worm-like shapes left behind, as proof."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "Close-up of burnt seeds on a dish, small curly sprouts that look like worms, a magnifying glass over them"
+     },
+     "They were actually just the burnt seeds' sprouts."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "An 18th-century French dentist in a powdered wig holding up a tooth and a quill, confident expression"
+     },
+     "In 1728, a French dentist, Pierre Fauchard, said there was no such thing."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "Microscopic view of bacteria on a tooth surface eating sugar crystals, glowing soft colours"
+     },
+     "We now know it's bacteria, feeding on sugar and making acid. Much smaller than a worm."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 17,
+ "title": "The Man Who Lived in an Iron Lung for 70 Years",
+ "out": "the-man-who-lived-in-an-iron-lung-for-70-years",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "The Man Who Lived in an Iron Lung for 70 Years",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A 1950s hospital ward with rows of large cylindrical iron lung machines, children's heads poking out, nurses walking between them"
+     },
+     "In the 1950s, hospitals were filled with rows of giant metal tubes."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "Close-up of a young boy lying inside an iron lung, only his head sticking out, a mirror above him so he can see the room"
+     },
+     "They were iron lungs. Polio could paralyse the muscles you breathe with, so the machine breathed for you."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "Cutaway view of an iron lung showing air pressure arrows pulling the boy's chest outward, blue technical glow"
+     },
+     "It changed the air pressure around your body, pulling your chest open, then letting it fall."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "A young man in the 1950s inside an iron lung reading a book held on a stand above him, determined expression"
+     },
+     "In 1952, a six year old boy called Paul Alexander was put inside one."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "An older man with grey hair inside an iron lung, smiling, a graduation cap and law books on a stand nearby"
+     },
+     "He spent most of his life in it, but still became a lawyer, and wrote a book, typing with a stick held in his mouth."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "Two children getting a polio vaccine from a smiling nurse in a 1950s school, sunlight"
+     },
+     "He lived in his iron lung for more than seventy years. Thanks to the polio vaccine, almost no one needs one now."
+    ]
+   ]
+  }
+ ]
+}

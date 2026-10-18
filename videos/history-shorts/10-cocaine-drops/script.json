@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 10,
+ "title": "When Kids Got Cocaine for Toothache",
+ "out": "when-kids-got-cocaine-for-toothache",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "When Kids Got Cocaine for Toothache",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A Victorian child with a swollen cheek and a scarf tied around his head, sitting sadly at a kitchen table"
+     },
+     "In the 1880s, if your child had a toothache, you could buy cocaine drops at the pharmacy."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "A Victorian pharmacy counter with a small box of toothache drops showing a cartoon of happy children, gaslight"
+     },
+     "They were sold as an instant cure, and the adverts showed happy children playing."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "A Victorian eye surgeon in a frock coat placing a single drop into a patient's eye with a glass dropper"
+     },
+     "Cocaine really does numb pain. In 1884, it became the first local anaesthetic used in eye surgery."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "A Victorian man at a bar holding a glass of fizzy tonic wine, looking very energetic"
+     },
+     "Soon it was in wines, tonics and even soft drinks."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "A sad Victorian doctor shaking his head over a patient who looks exhausted and jittery"
+     },
+     "But it's also highly addictive, and people started getting hooked."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "A modern dentist in a mask giving a smiling child a numbing injection, bright dental clinic"
+     },
+     "Today, dentists use safer cousins of cocaine, like lidocaine, that numb without the high."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 13,
+ "title": "The Doctor Who Told Everyone to Wash Their Hands",
+ "out": "the-doctor-who-told-everyone-to-wash-their-hands",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "The Doctor Who Told Everyone to Wash Their Hands",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A crowded 1840s Vienna hospital ward with rows of beds, worried mothers holding newborn babies, gaslight"
+     },
+     "In 1840s Vienna, women giving birth in hospital were dying of a deadly fever."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "A doctor in a dark coat walking from a dissection room straight into a maternity ward, his hands dirty, no blood visible"
+     },
+     "A young doctor, Ignaz Semmelweis, noticed something. Doctors were coming straight from autopsies to deliver babies."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "Close-up of hands scrubbing in a basin of cloudy chlorine water, a doctor watching proudly"
+     },
+     "In 1847, he made them wash their hands in chlorinated lime first."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "The doctor holding up a chart with a line dropping sharply, nurses smiling, bright window"
+     },
+     "Deaths on his ward dropped dramatically."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "A group of older 1840s doctors in top hats laughing and turning away from the young doctor"
+     },
+     "But many doctors were offended by the idea that their own hands were spreading disease."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "A modern nurse washing hands at a sink with soap foam under bright hospital lights, a poster of handwashing steps behind"
+     },
+     "Semmelweis died in 1865, mostly ignored. Today he's called the saviour of mothers."
+    ]
+   ]
+  }
+ ]
+}

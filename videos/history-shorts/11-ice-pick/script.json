@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 11,
+ "title": "The Ice Pick Surgery That Won a Nobel Prize",
+ "out": "the-ice-pick-surgery-that-won-a-nobel-prize",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "The Ice Pick Surgery That Won a Nobel Prize",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A 1940s psychiatric hospital hallway, a confident doctor in a suit and tie walking with a small leather bag"
+     },
+     "In the 1940s, an American doctor named Walter Freeman travelled the country performing a ten minute brain operation."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "Close-up of a slim steel ice pick-like surgical tool on a metal tray, cold clinical lighting"
+     },
+     "It was called the transorbital lobotomy. His tool looked a lot like an ice pick."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "A 1940s doctor seen from behind standing over a patient on a table, holding the tool near the patient's eye, nurses watching anxiously, no blood"
+     },
+     "He pushed it in above the eye, and swept it side to side to cut connections in the front of the brain."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "A 1949 award ceremony, a Portuguese doctor in a tuxedo receiving a gold medal on a stage"
+     },
+     "A different version of lobotomy even won its inventor a Nobel Prize, in 1949."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "A quiet hospital room with a patient sitting blankly by a window, a family member holding their hand"
+     },
+     "Some patients became calmer. Many were left changed forever, and some died."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "A 1950s doctor holding a small bottle of pills, the ice pick tray pushed aside"
+     },
+     "New medicines arrived in the 1950s, and lobotomy fell out of use. Freeman performed around three and a half thousand of them."
+    ]
+   ]
+  }
+ ]
+}

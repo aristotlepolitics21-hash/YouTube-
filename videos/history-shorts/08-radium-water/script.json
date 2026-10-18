@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 8,
+ "title": "The Energy Drink That Made a Man's Jaw Fall Off",
+ "out": "the-energy-drink-that-made-a-mans-jaw-fall-off",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "The Energy Drink That Made a Man's Jaw Fall Off",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A rich 1920s American businessman in a sharp suit drinking from a small glass bottle that glows faintly green, art deco office"
+     },
+     "In the 1920s, a wealthy American named Eben Byers drank a health drink every single day."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "Close-up of a 1920s glass bottle of tonic water glowing green on a silver tray, sparkles"
+     },
+     "It was called Radithor. Distilled water, with radium dissolved in it."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "A 1920s advertisement-style scene, a smiling man flexing muscles next to a giant glowing bottle, sunburst background"
+     },
+     "Radioactive drinks were sold as a source of energy and youth. Byers drank around fourteen hundred bottles."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "X-ray style view of a human skeleton glowing green in the bones, dark background"
+     },
+     "But radium acts a lot like calcium. Your body puts it in your bones, and it stays there, giving off radiation."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "The same businessman now thin and frail sitting in a dim hospital room, his jaw wrapped in bandages, a doctor looking worried"
+     },
+     "His bones began to break down. He lost most of his jaw. He died in 1932."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "A 1932 newspaper being read by a shocked man in a hat on a city street"
+     },
+     "His death shocked America, and helped bring in stronger laws about what medicines could contain."
+    ]
+   ]
+  }
+ ]
+}

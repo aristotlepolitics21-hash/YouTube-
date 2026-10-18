@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 14,
+ "title": "Why Barber Poles Are Red and White",
+ "out": "why-barber-poles-are-red-and-white",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "Why Barber Poles Are Red and White",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A classic red, white and blue striped barber pole spinning outside a modern barbershop at dusk, warm window glow"
+     },
+     "Ever wondered why barber poles have red and white stripes? It's a pretty dark story."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "A medieval barber shop interior, a barber cutting a man's hair while another customer waits with his arm bandaged"
+     },
+     "For centuries, barbers didn't just cut hair. They pulled teeth, set bones, and did surgery."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "A medieval barber-surgeon holding a patient's arm over a brass bowl, the patient gripping a wooden pole"
+     },
+     "Their most common job was bloodletting. The patient squeezed a pole to make their veins stand out."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "White linen bandages hanging out to dry on a wooden pole outside a medieval shop in the wind"
+     },
+     "Afterwards, so the story goes, the bandages were washed and hung outside on that pole to dry."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "The bandages twisting around the pole in the wind forming a spiral, sunset light"
+     },
+     "As they twisted in the wind, they formed a spiral. Red and white."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "A medieval barber shop sign transforming into a painted red and white striped pole, a barber proudly polishing it"
+     },
+     "That spiral became the barber's sign. The blue stripe was added later, in America."
+    ]
+   ]
+  }
+ ]
+}

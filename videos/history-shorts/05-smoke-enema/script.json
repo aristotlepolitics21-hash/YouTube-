@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 5,
+ "title": "Why Doctors Blew Smoke Into People",
+ "out": "why-doctors-blew-smoke-into-people",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "Why Doctors Blew Smoke Into People",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "18th-century London riverbank at dawn, two men pulling a soaking unconscious man out of the River Thames, a crowd gathering"
+     },
+     "In the 1700s, if you nearly drowned in London, a rescuer might try to save you with tobacco smoke."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "A wooden kit box opened on the riverbank showing bellows, tubes and a pipe, an 18th-century gentleman lifting the bellows"
+     },
+     "Kits were placed along the River Thames, with bellows, tubes and tobacco."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "A 18th-century doctor pumping bellows connected to a tube, smoke puffing, the unconscious man covered by a blanket, onlookers shocked"
+     },
+     "The smoke was blown into the patient, from the other end. Yes, a tobacco smoke enema."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "An 18th-century physician explaining with raised finger to a crowd, glowing warm smoke swirling around a lantern"
+     },
+     "Doctors believed the smoke would warm the body and get the heart going again."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "A 19th-century scientist in a lab coat dropping a test tube in surprise, pages about nicotine flying"
+     },
+     "In the early 1800s, scientists showed nicotine is a poison to the heart, and the kits disappeared."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "Modern paramedic in uniform doing CPR on a training dummy on a riverbank, ambulance lights glowing"
+     },
+     "Today, rescuers use something that actually works. CPR."
+    ]
+   ]
+  }
+ ]
+}

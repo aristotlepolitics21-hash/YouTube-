@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 16,
+ "title": "The Milkmaid Secret That Beat Smallpox",
+ "out": "the-milkmaid-secret-that-beat-smallpox",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "The Milkmaid Secret That Beat Smallpox",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A rosy-cheeked 18th-century English milkmaid milking a cow in a sunny barn"
+     },
+     "In the 1700s, smallpox was one of the deadliest diseases on Earth. But milkmaids seemed to be safe from it."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "Close-up of the milkmaid's hand showing a few small blisters, a curious country doctor looking at it"
+     },
+     "Country doctor Edward Jenner heard they'd caught a mild disease from cows, called cowpox."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "1796 English cottage, the doctor gently scratching a young boy's arm with a small lancet, the boy's mother watching nervously"
+     },
+     "In 1796, he took fluid from a milkmaid's cowpox blister, and scratched it into the arm of an eight year old boy."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "The doctor examining the boy weeks later, the boy smiling and healthy, sunlight through the window"
+     },
+     "Later, he exposed the boy to smallpox. The boy didn't get sick."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "A cow standing proudly in a field with a golden medal around its neck, sunset"
+     },
+     "Cow in Latin is vacca. That's where the word vaccine comes from."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "A modern lab with scientists in white coats, a world map behind them with glowing dots disappearing"
+     },
+     "In 1980, the world declared smallpox completely wiped out. The first disease ever beaten by vaccines."
+    ]
+   ]
+  }
+ ]
+}

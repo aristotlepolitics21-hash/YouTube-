@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 6,
+ "title": "Why Plague Doctors Wore Bird Masks",
+ "out": "why-plague-doctors-wore-bird-masks",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "Why Plague Doctors Wore Bird Masks",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A plague doctor in a long black waxed coat, wide-brimmed hat and white beaked bird mask walking down a foggy 17th-century cobbled street"
+     },
+     "This is one of the creepiest outfits in history. The plague doctor."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "Close-up of the beaked mask on a wooden table, the beak opened to show dried flowers, herbs and lavender stuffed inside"
+     },
+     "That long beak wasn't for show. It was stuffed with herbs, flowers and spices."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "Swirling green mist rising from a dirty medieval alley, frightened townspeople covering their noses"
+     },
+     "Doctors believed plague spread through bad air, called miasma. The herbs were meant to filter it out."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "A plague doctor holding a long wooden cane, pointing at a patient from a distance without touching him, candlelit room"
+     },
+     "They carried a cane, so they could examine patients without touching them."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "Close-up of a black rat on a ship's rope with a tiny flea glowing under soft light on its fur, harbour at night"
+     },
+     "The real culprit was much smaller. Plague was mostly spread by fleas, carried on rats."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "The plague doctor at night taking off his mask under a lantern, revealing a tired ordinary young man's face"
+     },
+     "The waxed coat may have helped a little, by keeping the fleas off. But the herbs did nothing."
+    ]
+   ]
+  }
+ ]
+}

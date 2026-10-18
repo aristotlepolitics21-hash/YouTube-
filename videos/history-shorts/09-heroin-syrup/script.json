@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 9,
+ "title": "When Heroin Was Cough Medicine",
+ "out": "when-heroin-was-cough-medicine",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "When Heroin Was Cough Medicine",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A cosy 1900s pharmacy with wooden shelves, a pharmacist in a waistcoat handing a small brown bottle to a mother holding a coughing child"
+     },
+     "In 1898, a German company started selling a brand new cough medicine. It was called Heroin."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "Close-up of an old brown glass medicine bottle with a cork on a wooden counter, warm lamp light"
+     },
+     "Bayer named it heroin, from the German word for heroic, because it was meant to be so powerful."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "A 1900s doctor in a waistcoat listening to a patient's chest with a stethoscope, the patient coughing"
+     },
+     "It really did calm coughs, at a time when diseases like tuberculosis were common."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "A pharmacist in 1900s clothes holding a bottle and a morphine bottle side by side, looking proud"
+     },
+     "It was even sold as a safer, less addictive alternative to morphine."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "A doctor in 1910s clothing frowning at a stack of patient files, a worried patient shaking in the background"
+     },
+     "Within a few years, doctors noticed patients becoming badly addicted."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "A 1920s government official locking a cabinet of medicine bottles with a big key"
+     },
+     "In the US, heroin was banned completely in 1924. Bayer's other new drug from that time did better. Aspirin."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 15,
+ "title": "What Was Actually in Snake Oil",
+ "out": "what-was-actually-in-snake-oil",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "What Was Actually in Snake Oil",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A flamboyant cowboy salesman in a wide hat and fringed jacket standing on a wagon stage holding up a bottle, a crowd gathered at a Wild West town"
+     },
+     "In the 1890s, a cowboy called Clark Stanley became famous selling snake oil."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "The salesman holding a live rattlesnake up dramatically over a pot, the crowd gasping, Chicago fair setting"
+     },
+     "He said he learned the recipe from healers, and boiled rattlesnakes in front of crowds."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "Close-up of an old glass bottle of liniment on a wooden crate, warm lantern light"
+     },
+     "He claimed it cured aches, pains, toothaches and more."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "A 1917 government lab, a chemist in a white coat holding up a test tube, the snake oil bottle on the bench"
+     },
+     "Then, in 1917, government chemists tested a bottle."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "Lab bench with separate dishes of mineral oil, beef fat, red chili peppers and turpentine, the chemist raising an eyebrow"
+     },
+     "It was mostly mineral oil, with beef fat, red pepper and turpentine. No snake at all."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "A courtroom, the cowboy salesman awkwardly paying a judge a small fine, the crowd laughing"
+     },
+     "He was fined twenty dollars. And snake oil became a word for any fake cure."
+    ]
+   ]
+  }
+ ]
+}

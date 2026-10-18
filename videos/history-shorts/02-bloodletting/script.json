@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 2,
+ "title": "The Cure That Killed George Washington",
+ "out": "the-cure-that-killed-george-washington",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "The Cure That Killed George Washington",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "An elderly George Washington-like gentleman with white hair lying sick in a canopy bed in 1799, candlelight, worried doctors in dark coats around him"
+     },
+     "In 1799, the first president of the United States woke up with a terrible sore throat."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "An 18th-century doctor holding a small lancet over a patient's bare forearm while an assistant holds a brass bowl beneath, candlelit bedroom"
+     },
+     "His doctors did what doctors had done for two thousand years. They cut him, and let him bleed."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "An ancient Greek physician in a toga pointing at a scroll showing four coloured circles, marble columns behind"
+     },
+     "The idea came from ancient Greece. Illness was blamed on too much of one of your body's four fluids."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "Several brass bowls lined up on a wooden table beside a sickbed in candlelight, doctors whispering in the background"
+     },
+     "Over about twelve hours, they drained around forty percent of his blood."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "The elderly gentleman lying pale and very weak in the canopy bed, a single candle burning low, a clock on the wall"
+     },
+     "That night, he died. Many historians think the bleeding made him weaker, and helped kill him."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "A modern nurse in scrubs smiling and holding up a blood donation bag in a bright clinic"
+     },
+     "Today, doctors only remove blood for a handful of rare conditions. And they take a lot less."
+    ]
+   ]
+  }
+ ]
+}

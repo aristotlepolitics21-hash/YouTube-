@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 12,
+ "title": "The Fastest Surgeon in History",
+ "out": "the-fastest-surgeon-in-history",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "The Fastest Surgeon in History",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A crowded 1840s operating theatre with wooden tiers of students watching a tall surgeon in a dark frock coat, gaslight"
+     },
+     "Before anaesthetic, surgery was a race against pain. And Robert Liston was the fastest surgeon alive."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "A terrified 1840s patient strapped to a wooden operating table, assistants holding his arms, a bottle of whisky nearby"
+     },
+     "Patients were awake for everything. The only painkillers were alcohol, and strong assistants."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "A tall surgeon holding a large pocket watch up, students on the tiers leaning forward, dramatic lighting"
+     },
+     "So Liston worked fast. He could take off a leg in about two and a half minutes."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "The surgeon shouting with a raised hand at the crowd of students, a big grin, gaslight"
+     },
+     "He'd shout at the students. Time me, gentlemen. Time me."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "1846 operating theatre, a surgeon holding a glass ether inhaler over a sleeping patient's face, astonished students"
+     },
+     "In 1846, he became one of the first surgeons in Britain to operate with ether, with the patient fast asleep."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "The surgeon smiling and bowing to applauding students, the patient peacefully asleep on the table"
+     },
+     "Afterwards he told the crowd, this Yankee dodge beats mesmerism hollow."
+    ]
+   ]
+  }
+ ]
+}

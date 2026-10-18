@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 4,
+ "title": "When Doctors Treated Disease With Mercury",
+ "out": "when-doctors-treated-disease-with-mercury",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "When Doctors Treated Disease With Mercury",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A Renaissance doctor in black robes holding a glass vial of shiny silver liquid mercury up to candlelight, alchemy lab behind"
+     },
+     "For about four hundred years, one of the most popular medicines in Europe was liquid metal."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "A nervous 18th-century man sitting in a steam box with only his head sticking out, a doctor feeding vapour into it from a small furnace"
+     },
+     "Doctors used mercury to treat syphilis. Patients rubbed it on, swallowed it, or sat in boxes breathing in its fumes."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "Close-up of a sick 18th-century man with a pale face holding a handkerchief to his mouth, drooling, in a dim bedroom"
+     },
+     "The side effects were brutal. Drooling, loose teeth, shaking hands, and damaged kidneys."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "A drunk Renaissance sailor laughing at a tavern table while a skeleton in a doctor's coat waits behind him holding a mercury bottle"
+     },
+     "People even had a saying for it. A night with Venus, a lifetime with mercury."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "1940s doctor in a white coat holding up a small glass vial of penicillin in a bright hospital, nurses smiling"
+     },
+     "It finally stopped in the 1940s, when penicillin arrived and cured syphilis properly."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "A modern doctor holding a broken old mercury thermometer with tweezers, placing it carefully into a hazardous waste container"
+     },
+     "Today, mercury is so toxic that even a broken thermometer gets special cleanup."
+    ]
+   ]
+  }
+ ]
+}

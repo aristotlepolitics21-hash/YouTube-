@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 20,
+ "title": "The Magic Stone That Was Tested on a Prisoner",
+ "out": "the-magic-stone-that-was-tested-on-a-prisoner",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "The Magic Stone That Was Tested on a Prisoner",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A 1500s French royal court, a king in rich robes holding up a smooth dark stone, courtiers watching in awe"
+     },
+     "For centuries, rich Europeans paid fortunes for a magic stone. A bezoar."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "A cutaway of a goat showing a smooth round stone in its stomach, soft glowing light"
+     },
+     "Bezoars are hard lumps that form in the stomachs of animals like goats. They were believed to cure any poison."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "1567 royal court, a surgeon in black robes with a beard arguing with the king while pointing at the stone"
+     },
+     "In 1567, the king's surgeon, Ambroise Paré, said he thought it was nonsense. So they tested it."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "A prison cell, a nervous cook in chains being offered a deal by a guard, candlelight"
+     },
+     "A cook was due to be executed for stealing. He was offered a deal. Take poison, then the stone. If he lived, he'd go free."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "The cook lying ill on a straw bed in a cell, the surgeon kneeling beside him, sad expression"
+     },
+     "He took the poison, then the bezoar. Hours later, he died."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "Paré holding up the stone and shaking his head in front of the king, who looks embarrassed"
+     },
+     "The bezoar did nothing. It's one of the first recorded experiments testing a medicine."
+    ]
+   ]
+  }
+ ]
+}

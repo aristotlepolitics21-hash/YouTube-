@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 18,
+ "title": "The Baby Medicine That Was Really Morphine",
+ "out": "the-baby-medicine-that-was-really-morphine",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "The Baby Medicine That Was Really Morphine",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A tired Victorian mother rocking a crying baby in a cradle by candlelight, a small medicine bottle on the table"
+     },
+     "In the 1800s, exhausted parents had a secret weapon for a crying baby. Mrs Winslow's Soothing Syrup."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "A colourful Victorian advertisement scene, a smiling mother with a happy baby and a bottle, flowers and ribbons around"
+     },
+     "It was sold for teething babies, and the adverts promised a peaceful night for the whole family."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "Close-up of the brown syrup bottle on a nightstand with a spoon, soft candlelight, slightly ominous"
+     },
+     "The problem? It contained morphine."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "A sleeping baby in a cradle under moonlight, the mother looking worried, holding the bottle"
+     },
+     "It made babies sleepy, all right. But a little too much could stop a baby from waking up at all."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "A 1911 doctor at a desk writing a report, a stack of papers and the syrup bottle beside him, serious face"
+     },
+     "In 1911, the American Medical Association called it a baby killer."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "A modern pharmacist placing a child-safe bottle with a dosing syringe on a shelf, bright pharmacy"
+     },
+     "Laws changed, labels improved, and the morphine was eventually taken out."
+    ]
+   ]
+  }
+ ]
+}

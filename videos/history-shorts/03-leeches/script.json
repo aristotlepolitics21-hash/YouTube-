@@ -1,0 +1,57 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 3,
+ "title": "Why Hospitals Still Use Leeches",
+ "out": "why-hospitals-still-use-leeches",
+ "voice": "kokoro:am_michael",
+ "style": "Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.",
+ "sections": [
+  {
+   "name": "Why Hospitals Still Use Leeches",
+   "lines": [
+    [
+     "s1",
+     {
+      "prompt": "A Victorian doctor in a top hat holding a large glass jar full of dark leeches up to the light, an apothecary shop behind him"
+     },
+     "In the 1800s, doctors were so obsessed with leeches that France imported tens of millions of them a year."
+    ],
+    [
+     "s2",
+     {
+      "prompt": "Close-up of a leech attached to a patient's arm in a Victorian clinic, the patient grimacing, gaslight"
+     },
+     "They put them on almost everything. Headaches, fevers, even bad moods."
+    ],
+    [
+     "s3",
+     {
+      "prompt": "Extreme close-up of a cute but slimy stylized leech's mouth showing a tiny three-part jaw, dark background with soft rim light"
+     },
+     "A leech has three tiny jaws with rows of teeth, and its spit is full of chemicals that stop blood from clotting."
+    ],
+    [
+     "s4",
+     {
+      "prompt": "Modern operating room, a surgeon in scrubs carefully placing a leech on a patient's reattached finger with tweezers, bright surgical light"
+     },
+     "And that's why hospitals still use them today. After a surgeon reattaches a finger or an ear, the veins can clog with blood."
+    ],
+    [
+     "s5",
+     {
+      "prompt": "Close-up of a reattached finger with a leech on it, the skin turning from dark purple to healthy pink, clinical lighting"
+     },
+     "A leech drains the extra blood, and keeps it flowing while the veins heal."
+    ],
+    [
+     "s6",
+     {
+      "prompt": "A modern pharmacy shelf with a sealed medical container of leeches next to regular medicine bottles, a pharmacist smiling"
+     },
+     "In 2004, the US even approved leeches as an official medical device."
+    ]
+   ]
+  }
+ ]
+}
