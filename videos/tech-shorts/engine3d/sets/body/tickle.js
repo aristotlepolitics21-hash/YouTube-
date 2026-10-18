@@ -27,7 +27,7 @@ export function register(K) {
     const st = set('xray'), br = brain(2.6); br.position.set(0, 2.6, 0); st.scene.add(br); const cb = br.children[2]; cb.material = glowM(0xffd23f, 0); cb.material.color = new THREE.Color(0xf07f98);
     const ghost = bigHand({ skin: 0xffd23f }); ghost.userData.mat.transparent = true; ghost.userData.mat.opacity = .6; ghost.scale.setScalar(.45); st.scene.add(ghost);
     const l1 = hud(st, tag('CEREBELLUM', 0xffd23f, '#3a2400', 2.0, .48), .62, 0, .5), l2 = hud(st, tag('COPY OF THE MOVE', 0xffffff, '#1d2442', 2.7, .44), -.25, 0, .62);
-    return { ...st, update(t, s) { br.rotation.y = -.9 + Math.sin(s * .4) * .2; cb.material.emissiveIntensity = seg(t, .1, .3) * (1.5 + Math.sin(s * 8)); const f = ease(seg(t, .4, .9)); ghost.position.set(lerp(-.6, 1.6, f), lerp(1.8, 3.6, f), lerp(-.6, 1.4, f)); ghost.visible = t > .4; ghost.rotation.y = s;
+    return { ...st, update(t, s) { br.rotation.y = -2.1 + Math.sin(s * .4) * .2; cb.material.emissiveIntensity = seg(t, .1, .3) * (2 + Math.sin(s * 8)); cb.scale.setScalar(1 + seg(t, .1, .3) * .25); const f = ease(seg(t, .4, .9)); ghost.position.set(lerp(-.6, 1.6, f), lerp(1.8, 3.6, f), lerp(-.6, 1.4, f)); ghost.visible = t > .4; ghost.rotation.y = s;
       l1.scale.setScalar(popIn(t, .15)); l2.scale.setScalar(popIn(t, .45)); shoot(st, [0, 3.0, 8.4], [0, 2.6, 0]); } };
   };
   BUILD.tk_mute = () => {
@@ -44,12 +44,12 @@ export function register(K) {
     const st = set('mint'), who = makePerson(kid); who.position.set(-.7, 0, 0); who.rotation.y = .4; st.scene.add(who); const bot = makeBit(); bot.scale.setScalar(.8); bot.position.set(1.0, 0, .3); bot.rotation.y = -.8; st.scene.add(bot);
     const fe = feather(); st.scene.add(fe); const d = hud(st, counter(2.0, .66, k => '+' + (k * .2).toFixed(1) + ' s DELAY', '#1d2442'), .62, 0, .6); d.userData.w = 2.0; const lb = hud(st, tag('1999 STUDY', 0x9b7bff, '#ffffff', 1.9, .44), .48, 0, .42);
     return { ...st, update(t, s) { who.pose({ s, smile: .5, handR: reach([.1, 1.9, .7], seg(t, .05, .2)), poleR: [1, -.5, -.3] }); bot.pose({ s, reachL: .8, lookY: .3 }); fe.position.set(.25 + Math.sin(s * 10) * .06, 1.35, .7); fe.rotation.set(0, 0, 1.2 + Math.sin(s * 10) * .2);
-      d.set(ease(seg(t, .2, .6))); d.scale.setScalar(popIn(t, .15)); lb.scale.setScalar(popIn(t, .5)); orbit(st, s, [0, 2.0, 0], 6.4, .3); } };
+      d.set(ease(seg(t, .2, .6))); d.scale.setScalar(popIn(t, .15)); lb.scale.setScalar(popIn(t, .5)); orbit(st, s, [.25, 2.0, 0], 6.8, .3); } };
   };
   BUILD.tk_works = () => {
     const st = set('warm'), who = makePerson(kid); who.position.set(-.5, 0, 0); who.rotation.y = .3; st.scene.add(who); const bot = makeBit(); bot.scale.setScalar(.8); bot.position.set(1.1, 0, .3); bot.rotation.y = -.8; st.scene.add(bot);
     const fe = feather(); st.scene.add(fe); const lb = hud(st, tag('TICKLISH!', 0xff4fa3, '#ffffff', 2.0, .6), .6, 0, .5);
     return { ...st, update(t, s) { const lk = seg(t, .15, .3); who.pose({ s, ...laugh(s, lk), handR: reach('belly', lk), handL: reach('belly', lk, -1) }); who.position.y = Math.abs(Math.sin(s * 14)) * .05 * lk; bot.pose({ s, reachL: .8, happy: 1, lookY: .3 });
-      fe.position.set(.25 + Math.sin(s * 12) * .08, 1.45, .7); fe.rotation.set(0, 0, 1.2 + Math.sin(s * 12) * .25); lb.scale.setScalar(popIn(t, .25)); lb.rotation.z = Math.sin(s * 10) * .05; orbit(st, s, [0, 2.1, 0], 6.2, .3); } };
+      fe.position.set(.25 + Math.sin(s * 12) * .08, 1.45, .7); fe.rotation.set(0, 0, 1.2 + Math.sin(s * 12) * .25); lb.scale.setScalar(popIn(t, .25)); lb.rotation.z = Math.sin(s * 10) * .05; orbit(st, s, [.3, 2.1, 0], 6.8, .3); } };
   };
 }
