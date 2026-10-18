@@ -1,0 +1,71 @@
+{
+ "series": "Why Shorts",
+ "episode": 1,
+ "title": "Why Your Phone Dies in the Cold",
+ "sets": "cold.js",
+ "voice": "kokoro:am_michael",
+ "style": "story",
+ "gap": 0.12,
+ "sections": [
+  {
+   "name": "Why your phone dies in the cold",
+   "lines": [
+    [
+     "c_snow",
+     {},
+     "You know when your phone dies in the cold,"
+    ],
+    [
+     "c_dead",
+     {},
+     "even though it still had plenty of battery left?"
+    ],
+    [
+     "c_xray",
+     {},
+     "Well, your battery isn't actually empty."
+    ],
+    [
+     "c_ions",
+     {},
+     "You see, it makes power by moving tiny particles called lithium ions"
+    ],
+    [
+     "c_flow",
+     {},
+     "through a liquid inside the battery."
+    ],
+    [
+     "c_freeze",
+     {},
+     "But when it gets cold, that liquid gets thick, almost like syrup."
+    ],
+    [
+     "c_slow",
+     {},
+     "So the ions can't move fast enough,"
+    ],
+    [
+     "c_off",
+     {},
+     "and your phone thinks the battery is dead, and shuts itself off."
+    ],
+    [
+     "c_warm",
+     {},
+     "But once it warms back up,"
+    ],
+    [
+     "c_thaw",
+     {},
+     "the ions start flowing again,"
+    ],
+    [
+     "c_back",
+     {},
+     "and most of that charge comes right back."
+    ]
+   ]
+  }
+ ]
+}

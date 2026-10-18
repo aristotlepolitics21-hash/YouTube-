@@ -107,7 +107,7 @@ function stage(o = {}) {
 const ZOOM = 1.17;
 let NOW = 0; // global time, for the handheld drift in the lively style
 function aim(cam, pos, look) { cam.position.set(look[0] + (pos[0] - look[0]) * ZOOM, look[1] + (pos[1] - look[1]) * ZOOM, look[2] + (pos[2] - look[2]) * ZOOM);
-  if (window.STYLE === 'lively') cam.position.add(new THREE.Vector3(Math.sin(NOW * 1.3) * .09 + Math.sin(NOW * 3.1) * .03, Math.sin(NOW * 1.7 + 1) * .07, Math.sin(NOW * .9 + 2) * .06));
+  if (window.STYLE === 'lively' || window.STYLE === 'story') cam.position.add(new THREE.Vector3(Math.sin(NOW * 1.3) * .09 + Math.sin(NOW * 3.1) * .03, Math.sin(NOW * 1.7 + 1) * .07, Math.sin(NOW * .9 + 2) * .06));
   cam.lookAt(...look); }
 // a hop with anticipation, stretch and landing squash: returns { y, sq } for time x (seconds) into a hop of length dur
 function hop(x, dur = .7, h = .8) { if (x < 0 || x > dur + .25) return { y: 0, sq: 0 }; if (x < .12) return { y: 0, sq: .12 * Math.sin(x / .12 * Math.PI / 2) };
@@ -590,7 +590,20 @@ BUILD.outro = () => {
 
 // ---------- 2D overlay: progress, step header, captions ----------
 const cv = document.getElementById('cv'), c2 = cv.getContext('2d');
+// story style: no HUD, just short sentence-case caption chunks low in the frame (one to three words, as spoken)
+function storyCaption(L, T) {
+  if (!L.cap || T < L.cap[0] || T > L.cap[1] + .1) return;
+  const words = L.text.split(/\s+/), chunks = []; let cur = [];
+  words.forEach(w => { cur.push(w); if (cur.length >= 3 || /[.,?!]$/.test(w)) { chunks.push(cur.join(' ')); cur = []; } }); if (cur.length) chunks.push(cur.join(' '));
+  const tot = chunks.reduce((a, ch) => a + ch.length + 3, 0), k = (T - L.cap[0]) / (L.cap[1] - L.cap[0]) * tot; let acc = 0, idx = chunks.length - 1;
+  for (let i = 0; i < chunks.length; i++) { acc += chunks[i].length + 3; if (k < acc) { idx = i; break; } }
+  const s = chunks[idx].replace(/[.,!]$/, ''); c2.save(); c2.font = `800 72px ${SANS}`; c2.textAlign = 'center'; c2.textBaseline = 'middle'; c2.lineJoin = 'round';
+  c2.translate(W / 2, 1330); const fit = Math.min(1, (W - 140) / c2.measureText(s).width); c2.scale(fit, fit);
+  c2.shadowColor = 'rgba(0,0,0,.75)'; c2.shadowBlur = 14; c2.shadowOffsetY = 4; c2.lineWidth = 4; c2.strokeStyle = 'rgba(0,0,0,.35)'; c2.strokeText(s, 0, 0);
+  c2.fillStyle = '#ffffff'; c2.fillText(s, 0, 0); c2.restore();
+}
 function overlay(L, T, total) {
+  if (window.STYLE === 'story') return storyCaption(L, T);
   c2.fillStyle = 'rgba(255,255,255,.35)'; c2.beginPath(); c2.roundRect(60, 70, W - 120, 12, 6); c2.fill();
   c2.fillStyle = '#ffffff'; c2.beginPath(); c2.roundRect(60, 70, (W - 120) * clamp(T / total), 12, 6); c2.fill();
   if (L.step) {
@@ -627,6 +640,9 @@ function frame(TL, T, total) {
     const kin = i > 0 ? clamp(s / .32) : 1, kout = i < TL.length - 1 ? clamp((L.end - T) / .16) : 1, z = 1 + .14 * Math.pow(1 - out(kin), 2) + .07 * Math.pow(1 - kout, 2);
     c2.fillStyle = '#000'; c2.fillRect(0, 0, W, H); c2.drawImage(renderer.domElement, W * (1 - z) / 2, H * (1 - z) / 2, W * z, H * z);
     const fl = .6 * Math.pow(1 - kin, 3); if (fl > .01) { c2.fillStyle = `rgba(255,255,255,${fl})`; c2.fillRect(0, 0, W, H); }
+  } else if (window.STYLE === 'story') { // hard cuts, each shot easing out of a slight push-in
+    const z = 1 + .05 * Math.pow(1 - out(clamp(s / .6)), 2);
+    c2.drawImage(renderer.domElement, W * (1 - z) / 2, H * (1 - z) / 2, W * z, H * z);
   } else {
     c2.drawImage(renderer.domElement, 0, 0, W, H);
     let a = 0; if (i > 0) a = Math.max(a, 1 - s / .2); if (i < TL.length - 1) a = Math.max(a, 1 - (L.end - T) / .2);

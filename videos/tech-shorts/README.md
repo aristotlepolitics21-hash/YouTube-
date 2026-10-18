@@ -51,3 +51,7 @@ It renders on the CPU (SwiftShader): the 3D layer at 720×1280 under a full-reso
 ### Lively style
 
 Set `"style": "lively"` in `script.json` (from episode 5) for punch-in zoom cuts with a flash instead of soft fades, and a subtle handheld drift on every camera. Sets can also use `pose({ walk })` for Bit's walk cycle and `hop(x, dur, height)` for jumps with anticipation, stretch and landing squash.
+
+### Story style
+
+Set `"style": "story"` for 30-second, one-shot-per-line shorts in the style of the Why Shorts series (`../why-shorts/`): no progress bar or step header, white sentence-case captions in short chunks low in the frame, hard cuts that ease out of a slight push-in, and the handheld drift. `"gap"` in `script.json` sets the pause between lines (default 0.35 s).

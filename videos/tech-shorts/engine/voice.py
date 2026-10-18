@@ -24,7 +24,7 @@ for i, (si, txt) in enumerate(lines):
     with wave.open(f) as w: fr = w.readframes(w.getnframes()); d = w.getnframes() / SR
     lead = 0.4 if i == 0 else 0.0
     nxt = lines[i + 1][0] if i + 1 < len(lines) else None
-    gap = 1.6 if nxt is None else (0.7 if nxt != si else 0.35)
+    gap = 1.6 if nxt is None else (0.7 if nxt != si else sc.get("gap", 0.35))
     if i == 0 or lines[i - 1][0] != si: chapters.append((t, sc["sections"][si]["name"]))
     out.writeframes(sil(lead) + fr + sil(gap)); caps.append((t + lead, t + lead + d, txt))
     durs.append(lead + d + gap); t += lead + d + gap
