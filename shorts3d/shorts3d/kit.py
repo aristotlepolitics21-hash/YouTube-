@@ -2443,7 +2443,7 @@ def tokamak(frames, plasma=(0.2, 0.5), cutaway=True, coils=16):
     return root
 
 
-def fusion_reaction(frames, hit=0.45):
+def fusion_reaction(frames, hit=0.45, spread=1.2):
     """Deuterium (1p1n) and tritium (1p2n) collide, fuse into helium-4, and fling out a fast neutron and a flash."""
     root = empty("fusion")
     pm, nm = mat("proton", (0.95, 0.2, 0.2), 0.35), mat("neutron_n", (0.3, 0.45, 0.95), 0.35)
@@ -2454,12 +2454,12 @@ def fusion_reaction(frames, hit=0.45):
         for (x, y, z), m in zip(offs, parts):
             sph("nucleon", (x, y, z), 0.06, m, parent=g)
         return g
-    d = nucleus("deuterium", [pm, nm], (-1.2, 0, 0))
-    tr = nucleus("tritium", [pm, nm, nm], (1.2, 0, 0))
+    d = nucleus("deuterium", [pm, nm], (-spread, 0, 0))
+    tr = nucleus("tritium", [pm, nm, nm], (spread, 0, 0))
     fh = key_frac(frames, hit)
-    props.key(d, 1, location=(-1.2, 0, 0))
+    props.key(d, 1, location=(-spread, 0, 0))
     props.key(d, fh, location=(-0.05, 0, 0))
-    props.key(tr, 1, location=(1.2, 0, 0))
+    props.key(tr, 1, location=(spread, 0, 0))
     props.key(tr, fh, location=(0.05, 0, 0))
     hide_keys(d, ((1, False), (fh, False), (fh + 1, True)))
     hide_keys(tr, ((1, False), (fh, False), (fh + 1, True)))
@@ -2473,7 +2473,11 @@ def fusion_reaction(frames, hit=0.45):
     props.key(n, frames, location=(2.5, 0, -0.4))
     fm, fs = fx.emissive("fusion_flash", (1.0, 0.85, 0.5), 0, clear=True)
     fl = sph("fusion_flash", (0, 0, 0), 0.25, fm, parent=root)
-    glow_keys(fs, frames, [(0, 0), (hit - 0.005, 0), (hit, 40), (min(1, hit + 0.15), 0)])
+    # Key by frame, not fraction: in a short shot hit-0.005 and hit can round to the same frame, which would
+    # let the flash fade in from the very first frame.
+    for f, v in ((1, 0), (max(1, fh - 1), 0), (fh, 40), (min(frames, fh + max(2, int(frames * 0.15))), 0)):
+        fs.default_value = v
+        fs.keyframe_insert("default_value", frame=f)
     props.key(fl, fh, scale=(0.4, 0.4, 0.4))
     props.key(fl, min(frames, fh + 8), scale=(1.6, 1.6, 1.6))
     return root
