@@ -99,7 +99,7 @@ export function body(K) {
       [[arms[1], p.handR, p.armR, p.poleR, 1, sw], [arms[0], p.handL, p.armL, p.poleL, -1, -sw]].forEach(([sh, hT, a, pole, sd, swing]) => {
         if (hT) { ik(sh, hT.isVector3 ? hT : V(...hT), pole ? V(...pole) : V(sd * .6, -.6, -.3)); return; }
         a = a ?? [0, 0]; sh.userData.el.quaternion.identity(); sh.rotation.set(-a[0] + swing, 0, sd * (.1 + a[1])); sh.userData.el.rotation.x = -(a[2] ?? (.15 + Math.abs(swing) * .3)); });
-      const sit = p.sit ?? 0; legs.forEach((l, i) => { l.rotation.x = w === undefined ? -1.5 * sit : Math.sin(w + i * Math.PI) * .45; l.userData.knee.rotation.x = w === undefined ? 1.5 * sit * (1 - (p.legsOut ?? 0)) : Math.max(0, -Math.sin(w + i * Math.PI)) * .6; l.rotation.z = (i ? 1 : -1) * (p.spread ?? 0); });
+      const sit = p.sit ?? 0; legs.forEach((l, i) => { l.rotation.x = w === undefined ? -1.5 * sit : Math.sin(w + i * Math.PI) * .45; l.userData.knee.rotation.x = w === undefined ? (p.knee ?? 1.5 * sit * (1 - (p.legsOut ?? 0))) : Math.max(0, -Math.sin(w + i * Math.PI)) * .6; l.rotation.z = (i ? 1 : -1) * (p.spread ?? 0); });
       if (p.sit !== undefined) root.position.y = (p.sitY ?? 0) - .47 * sit;
     };
     // x-ray: skin and clothes go see-through so the organs in userData.inner show
@@ -193,6 +193,18 @@ export function body(K) {
   function whiteCell(s = 1) { const g = new THREE.Group(); g.add(lumpy(.5, .08, 6, plastic(0xf4f6ff, { roughness: .5 }), 7, 48)); [-1, 1].forEach(d => g.add(M(SPH(.08, 16, 12), plastic(0x15151c, { roughness: .1 }), { pos: [d * .15, .1, .46] })));
     g.add(M(new THREE.TorusGeometry(.1, .025, 8, 20, Math.PI), plastic(0x15151c), { pos: [0, -.06, .47], rot: [0, 0, Math.PI] })); g.scale.setScalar(s); return g; }
 
+  // a block of skin cut open toward the camera: epidermis, dermis, fat. The cut face is at z=0, the surface at y=top.
+  function skinSection(o = {}) { const w = o.w ?? 8, d = o.d ?? 3, top = o.top ?? 3.2, g = new THREE.Group(), L = [[.35, skinM(o.skin ?? SKINS[0])], [1.1, matte(0xf2a0a8)], [1.3, matte(0xffd890)]];
+    let y = top; L.forEach(([h, m]) => { g.add(M(RB(w, h, d, .04), m, { pos: [0, y - h / 2, -d / 2] })); y -= h; }); g.userData.top = top; return g; }
+  // place a capsule/cylinder mesh (built along y) so it spans points a -> b
+  function link(mesh, a, b, len0 = 1) { const d = b.clone().sub(a); mesh.position.copy(a).addScaledVector(d, .5); mesh.quaternion.setFromUnitVectors(V(0, 1, 0), d.clone().normalize()); mesh.scale.set(1, d.length() / len0, 1); }
+  // music notes that float up (songs, sounds)
+  function notes(n = 4, col = 0xffd23f) { const g = new THREE.Group(); for (let i = 0; i < n; i++) g.add(G(M(SPH(.1, 16, 12), glowM(col, 1.2), { scale: [1.2, .9, .6], shadow: false }), M(new THREE.CylinderGeometry(.018, .018, .35, 8), glowM(col, 1.2), { pos: [.1, .17, 0], shadow: false })));
+    g.update = (s, k = 1) => g.children.forEach((c, i) => { const u = frac(s * .35 + i / n); c.position.set(Math.sin(i * 2.1 + s) * .5, u * 1.6, 0); c.scale.setScalar(k * Math.sin(u * Math.PI)); c.rotation.z = Math.sin(s * 3 + i) * .3; }); return g; }
+  // snow that drifts down through a box
+  function snow(n = 40, box = [6, 6, 3], seed = 5) { const R = rng(seed), g = new THREE.Group(), P = []; for (let i = 0; i < n; i++) { g.add(sprite(0xffffff, .12, .9)); P.push([(R() - .5) * box[0], R() * box[1], (R() - .5) * box[2], R() * 6]); }
+    g.update = s => g.children.forEach((c, i) => { const [x, y, z, ph] = P[i]; c.position.set(x + Math.sin(s + ph) * .2, ((y - s * .6) % box[1] + box[1]) % box[1], z); }); return g; }
+
   // a pill bottle
   function pills() { return G(M(new THREE.CylinderGeometry(.22, .22, .5, 24), plastic(0xff8a3d, { transparent: true, opacity: .85 }), { pos: [0, .25, 0] }), M(new THREE.CylinderGeometry(.24, .24, .14, 24), plastic(0xffffff), { pos: [0, .56, 0] }), M(new THREE.CylinderGeometry(.225, .225, .22, 24, 1, true), matte(0xffffff), { pos: [0, .25, 0] })); }
 
@@ -282,5 +294,5 @@ export function body(K) {
     return { ...st, update(t, s) { who.pose({ s, handR: reach('wave', seg(t, 0, .15)).add(V(Math.sin(s * 9) * .15, 0, 0)), smile: .9 }); btn.scale.setScalar(popIn(t, .15)); if (q) q.scale.setScalar(popIn(t, .3)); orbit(st, s, [0, 2.6, 0], 6.6); } };
   };
 
-  return (body.done = { ST, set, popIn, tag, titleSigns, arrow, check, warnSign, counter, makePerson, ARM, SKINS, pink, lumpy, brain, heart, lungs, stomach, tube, vessel, nerve, flow, pulse, germ, germs, rbc, floaters, eyeball, spray, bed, ivPole, table, lensRing, orbit, dolly, skinM, cloth, HAND, reach, hud, placeHuds, shoot, facePt, pimple, makeDoctor, mirror, pills, bigHand, trophy, gauge, animal, bird, insect, glass, burger, sodaCan, chair, thermometer, blanket, bandage, sweat, dizzy, soundWaves, whiteCell });
+  return (body.done = { ST, set, popIn, tag, titleSigns, arrow, check, warnSign, counter, makePerson, ARM, SKINS, pink, lumpy, brain, heart, lungs, stomach, tube, vessel, nerve, flow, pulse, germ, germs, rbc, floaters, eyeball, spray, bed, ivPole, table, lensRing, orbit, dolly, skinM, cloth, HAND, reach, hud, placeHuds, shoot, facePt, pimple, makeDoctor, mirror, pills, bigHand, trophy, gauge, animal, bird, insect, glass, burger, sodaCan, chair, thermometer, blanket, bandage, sweat, dizzy, soundWaves, whiteCell, skinSection, link, notes, snow });
 }
