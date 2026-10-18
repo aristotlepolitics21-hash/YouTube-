@@ -1,6 +1,7 @@
 """Text-to-speech providers.
 
 piper      - offline neural TTS, free. Voices download once into voiceover.piper_voice_dir.
+kokoro     - offline neural TTS (kokoro-onnx), free; more natural than piper. Model downloads once.
 elevenlabs - premium voices; needs ELEVENLABS_API_KEY and voiceover.elevenlabs.voice_id.
              UNTESTED here (no key available); follows ElevenLabs' documented REST API.
 """
@@ -41,6 +42,39 @@ class Piper:
                             "--length-scale", str(self.length_scale),
                             "--sentence-silence", str(self.sentence_silence)],
                            input=text.encode(), check=True, capture_output=True)
+            to_wav48(raw, dest)
+
+
+class Kokoro:
+    RELEASE = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
+    FILES = ("kokoro-v1.0.onnx", "voices-v1.0.bin")
+
+    def __init__(self, voice: str, voice_dir: str, speed: float = 1.0):
+        self.dir = Path(voice_dir).expanduser() / "kokoro"
+        self.dir.mkdir(parents=True, exist_ok=True)
+        for name in self.FILES:
+            if not (self.dir / name).exists():
+                r = requests.get(self.RELEASE + name, timeout=600)
+                r.raise_for_status()
+                (self.dir / name).write_bytes(r.content)
+        from kokoro_onnx import Kokoro as _K
+        self.engine = _K(str(self.dir / self.FILES[0]), str(self.dir / self.FILES[1]))
+        self.voice, self.speed = voice, speed
+        self.lang = "en-gb" if voice.startswith("b") else "en-us"
+
+    def synth(self, text: str, dest: Path) -> None:
+        import wave
+
+        import numpy as np
+        audio, rate = self.engine.create(text, voice=self.voice, speed=self.speed, lang=self.lang)
+        pcm = (np.clip(audio, -1, 1) * 32767).astype(np.int16)
+        with tempfile.TemporaryDirectory() as tmp:
+            raw = Path(tmp) / "raw.wav"
+            with wave.open(str(raw), "wb") as w:
+                w.setnchannels(1)
+                w.setsampwidth(2)
+                w.setframerate(rate)
+                w.writeframes(pcm.tobytes())
             to_wav48(raw, dest)
 
 

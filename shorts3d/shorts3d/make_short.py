@@ -25,7 +25,7 @@ import numpy as np
 from docforge import media
 from docforge.editor.audio import RATE, _pad_section, mood_family, whoosh
 from docforge.subtitles.subtitles import align, load_16k, _whisper
-from docforge.voiceover.tts import Piper
+from docforge.voiceover.tts import Kokoro, Piper
 
 HERE = Path(__file__).resolve().parent
 BLENDER_PY = os.environ.get("SHORTS3D_BLENDER_PYTHON", "/home/user/blender-venv/bin/python")
@@ -74,6 +74,9 @@ def narrate(spec: dict, work: Path) -> list[dict]:
         dest = work / "voice" / f"{shot['id']}_{key}.wav"
         dest.parent.mkdir(parents=True, exist_ok=True)
         if not dest.exists():
+            if tts is None and v.get("engine") == "kokoro":
+                tts = Kokoro(v.get("kokoro_voice", "am_michael"), v.get("dir", "~/.cache/docforge/voices"),
+                             float(v.get("speed", 1.0)))
             tts = tts or Piper(v.get("piper_voice", "en_US-ryan-high"), v.get("dir", "~/.cache/docforge/voices"),
                                float(v.get("length_scale", 0.95)), float(v.get("sentence_silence", 0.15)))
             spoken = text
@@ -394,7 +397,7 @@ def build_audio(spec: dict, plan: list[dict], work: Path) -> Path:
                     "ping": _ping, "swell": _swell, "rumble": _rumble}.get(e["type"])
             if clip:
                 place(clip(), p["start"] + dur * e.get("at", 0), e.get("gain", 0.6))
-    music = _pad_section(total + 1, mood_family(spec.get("music_mood", "reflective")), seed=11)[:n] * 0.35
+    music = _pad_section(total + 1, mood_family(spec.get("music_mood", "reflective")), seed=11)[:n] * spec.get("music_gain", 0.35)
     music = np.pad(music, ((0, max(0, n - len(music))), (0, 0)))
     # Simple ducking: lower music where the voice is active.
     env = np.convolve(np.abs(voice), np.ones(4800) / 4800, mode="same")

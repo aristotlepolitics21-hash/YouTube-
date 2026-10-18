@@ -2998,6 +2998,30 @@ def earth_globe(frames, radius=1.0, spin=20, tilt=23.0, clouds=True):
     return root
 
 
+def random_walk(frames, radius=1.0, steps=140, draw=(0.05, 0.9), seed=7, shell=True):
+    """Light's 'drunken walk' out of the Sun: a glowing zigzag path that draws itself from the centre
+    of a see-through orange sphere to its surface."""
+    rng = random.Random(seed)
+    root = empty("random_walk")
+    if shell:
+        sph("sun_shell", (0, 0, 0), radius, looks.xray("sun_shell", (1.0, 0.55, 0.15), 1.6, 0.18), parent=root)
+        sph("sun_core", (0, 0, 0), radius * 0.22, fx.emissive("sun_core", (1.0, 0.85, 0.4), 6)[0], parent=root)
+    p, pts = V((0, 0, 0)), [V((0, 0, 0))]
+    step = radius * 0.11
+    for i in range(steps):
+        d = V((rng.uniform(-1, 1), rng.uniform(-1, 1), rng.uniform(-1, 1))).normalized()
+        d = (d + p.normalized() * 0.25 * (i / steps)) if p.length > 0 else d
+        q = p + d.normalized() * step
+        if q.length > radius * 0.97:
+            q = q.normalized() * radius * 0.97
+        p = q
+        pts.append(p.copy())
+    pts.append(p.normalized() * radius * 1.6)
+    m, _ = fx.emissive("walk", (1.0, 0.95, 0.6), 8)
+    draw_on(curve_obj("walk_path", pts, 0.012 * radius, m, root), frames, draw[0], draw[1])
+    return root
+
+
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",
