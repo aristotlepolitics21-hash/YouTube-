@@ -24,7 +24,8 @@ S("Not the trip here. Crossing a hundred and fifty million kilometres of space o
 S("The slow part happens inside the Sun.",
   stage("space", WALK, props=[P("random_walk", args={"draw": [0.9, 0.95]})]), still=True, still_at=0.5)
 S("Its energy is made in the core, by nuclear fusion.",
-  stage("space", cam((0, -1.0, 0.12), (0.05, -0.85, 0.1), (0, 0, -0.14), lens=50), props=[P("fusion_reaction", args={"hit": 0.62})]))
+  stage("studio", cam((0, -1.75, 0.95), (0.08, -1.55, 0.93), (0, 0, 0.55)), props=[P("fusion_reaction", (0, 0, 0.8), args={"hit": 0.72})],
+        env_opts={"horizon": [0.06, 0.03, 0.12], "zenith": [0.01, 0.0, 0.02], "floor": [0.01, 0.01, 0.02]}))
 S("But the inside of the Sun is so dense that light can't travel in a straight line.",
   stage("space", WALK, props=[P("random_walk", args={"draw": [0.05, 0.95]})]))
 S("It's absorbed and given off again and again, zigzagging in random directions.",
