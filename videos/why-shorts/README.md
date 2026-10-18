@@ -6,7 +6,8 @@ zackdfilms short ("why your cat sits on your keyboard"). They run on the Tech Sh
 
 | # | Episode | Status |
 |---|---|---|
-| 1 | Why Your Phone Dies in the Cold | Rendered (3D, Kokoro `am_michael`, 30.8 s) |
+| 1 | Why Your Phone Dies in the Cold | Rendered (stylised 3D engine, Kokoro `am_michael`, 30.8 s) |
+| 2 | Why Dogs Spin Before Lying Down | Script, voice and shot prompts ready; waiting on AI clips |
 
 ## The formula
 
@@ -40,3 +41,18 @@ cd ../tech-shorts/engine3d && npm install
 KOKORO_DIR=DIR ./render.sh ../../why-shorts/01-cold-phone/script.json WORKDIR why-your-phone-dies-in-the-cold
 ./finalize.sh ../../why-shorts/01-cold-phone WORKDIR why-your-phone-dies-in-the-cold
 ```
+
+## Photoreal episodes (AI clips)
+
+The stylised engine can't reach the zackdfilms look (realistic animals, people and rooms), so from episode 2 each
+shot is an AI-generated clip. In `script.json`, `"visuals": "ai-clips"` marks these episodes; each line's `{"shot": ...}`
+is that clip's prompt, and `clip_style` is appended to every prompt so the shots match (photoreal CGI, soft studio
+light, sky-blue backdrop). Generate one 5-second 9:16 clip per line (Kling 3.0 Turbo), save them as `00.mp4`, `01.mp4`, ...
+then:
+
+```
+KOKORO_DIR=DIR python3 -I ../tech-shorts/engine/voice.py 02-dog-spins/script.json WORKDIR kokoro:am_michael
+python3 -I assemble.py 02-dog-spins/script.json WORKDIR CLIPDIR 02-dog-spins/why-dogs-spin-before-lying-down.mp4
+```
+
+`assemble.py` fits each clip to its narration line, crops to 1080x1920 and burns in the same short white captions.

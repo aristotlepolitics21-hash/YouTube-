@@ -1,0 +1,95 @@
+{
+ "series": "Why Shorts",
+ "episode": 2,
+ "title": "Why Dogs Spin Before Lying Down",
+ "voice": "kokoro:am_michael",
+ "style": "story",
+ "gap": 0.12,
+ "visuals": "ai-clips",
+ "clip_model": "Kling 3.0 Turbo",
+ "clip_style": "Photorealistic 3D CGI animation in the style of a Blender Cycles render, soft studio lighting, clean bright sky-blue gradient background where outdoors, shallow depth of field, smooth slow camera move, vertical 9:16, no text, no captions.",
+ "sections": [
+  {
+   "name": "Why dogs spin before lying down",
+   "lines": [
+    [
+     "d00",
+     {
+      "shot": "A fluffy golden retriever walks onto a round grey dog bed in a bright modern living room and turns around in a full circle on it, tail wagging. Camera at dog height, slowly pushing in."
+     },
+     "You know when your dog spins in circles before it lies down,"
+    ],
+    [
+     "d01",
+     {
+      "shot": "Close-up of an empty round plush dog bed on a light wooden floor, perfectly smooth and flat, a dog's paws step into frame. Slow dolly in."
+     },
+     "even though its bed is already perfectly flat?"
+    ],
+    [
+     "d02",
+     {
+      "shot": "The golden retriever on its bed lifts its head and looks off to the side; a semi-transparent glowing grey wolf silhouette fades in behind it, mirroring its pose. Slow push in."
+     },
+     "Well, it might be an instinct left over from its wild ancestors."
+    ],
+    [
+     "d03",
+     {
+      "shot": "Wide shot of a grey wolf walking through waist-high golden grass on an open plain at golden hour, wind moving the grass. Slow tracking shot."
+     },
+     "You see, long before dog beds, wild dogs slept outside in tall grass."
+    ],
+    [
+     "d04",
+     {
+      "shot": "Top-down shot of a grey wolf turning in a tight circle in tall green grass, the grass bending under its paws. Camera slowly rotating overhead."
+     },
+     "By turning around a few times,"
+    ],
+    [
+     "d05",
+     {
+      "shot": "Top-down view of a perfectly round flattened nest of pressed grass in a field of tall grass, the stems bent in a neat spiral. Slow crane down."
+     },
+     "they flattened the grass into a soft little nest,"
+    ],
+    [
+     "d06",
+     {
+      "shot": "Low macro shot at ground level in tall grass: a small snake and several beetles scurry out of the grass and away as large wolf paws press down. Shallow depth of field."
+     },
+     "chased out any bugs or snakes hiding inside,"
+    ],
+    [
+     "d07",
+     {
+      "shot": "Close-up of a wolf's face in tall grass, nose lifted and sniffing; faint translucent white wind streaks flow across the frame from left to right, grass swaying the same way."
+     },
+     "and figured out which way the wind was blowing,"
+    ],
+    [
+     "d08",
+     {
+      "shot": "A wolf lies curled up in a grass nest with its nose pointing into the wind; in the distance faint glowing orange scent trails drift toward its nose. Slow pull back."
+     },
+     "so they could smell danger coming while they slept."
+    ],
+    [
+     "d09",
+     {
+      "shot": "Back in the bright living room, the golden retriever turns a second circle on its round dog bed, viewed from a high three-quarter angle. Slow orbit."
+     },
+     "So when your dog spins on its bed,"
+    ],
+    [
+     "d10",
+     {
+      "shot": "The golden retriever curls up on its dog bed and closes its eyes; tall translucent glowing green grass softly grows up around the bed in the living room, like a memory. Slow push in."
+     },
+     "it's still making a nest in grass that isn't there."
+    ]
+   ]
+  }
+ ]
+}
