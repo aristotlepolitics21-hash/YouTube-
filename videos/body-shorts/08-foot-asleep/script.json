@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 8,
+ "title": "Why Your Foot Falls Asleep",
+ "out": "why-your-foot-falls-asleep",
+ "sets": "body/asleep.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why Your Foot Falls Asleep",
+   "lines": [
+    ["fa_hook", { "top": "WHEN YOUR FOOT", "bottom": "FALLS ASLEEP" }, "Sit on your legs for too long, and your foot goes completely numb."],
+    ["fa_nerve", {}, "Your foot isn't asleep. Its nerves are being squashed."],
+    ["fa_signal", {}, "The pressure squeezes the nerve, and the blood vessels that feed it, so its signals slow down, then stop."],
+    ["fa_wake", {}, "Move, and the nerve restarts all at once, firing off random signals."],
+    ["fa_pins", {}, "Your brain reads that static as pins and needles."],
+    ["fa_back", {}, "A minute or two later, everything's back to normal."],
+    ["fa_doctor", {}, "But if it keeps happening for no reason, get it checked by a doctor."]
+   ]
+  }
+ ]
+}

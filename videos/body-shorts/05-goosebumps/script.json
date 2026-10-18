@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 5,
+ "title": "Why You Get Goosebumps",
+ "out": "why-you-get-goosebumps",
+ "sets": "body/goosebumps.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why You Get Goosebumps",
+   "lines": [
+    ["gb_hook", { "top": "WHY YOU GET", "bottom": "GOOSEBUMPS" }, "Get cold, or hear a song you love, and your skin does this."],
+    ["gb_muscle", {}, "Every hair on your body has a tiny muscle attached to its root."],
+    ["gb_pull", {}, "When you're cold, your nerves tell those muscles to squeeze, pulling each hair straight up."],
+    ["gb_fur", {}, "For furry animals, standing hairs trap a thick layer of warm air."],
+    ["gb_cat", {}, "And when they're scared, puffed up fur makes them look bigger. Like a cat."],
+    ["gb_us", {}, "We lost most of our fur, but we kept the reflex."],
+    ["gb_end", {}, "So goosebumps are a leftover from when our ancestors were a lot hairier."]
+   ]
+  }
+ ]
+}

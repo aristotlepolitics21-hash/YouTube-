@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 19,
+ "title": "Why Hitting Your Funny Bone Hurts",
+ "out": "why-hitting-your-funny-bone-hurts",
+ "sets": "body/funnybone.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why Hitting Your Funny Bone Hurts",
+   "lines": [
+    ["fb_hook", { "top": "YOUR FUNNY BONE", "bottom": "ISN'T FUNNY" }, "Hit your funny bone, and it's anything but funny."],
+    ["fb_nerve", {}, "That's because it's not a bone at all. It's a nerve, called the ulnar nerve."],
+    ["fb_path", {}, "It runs from your neck, all the way down to your little finger."],
+    ["fb_groove", {}, "At your elbow, it passes through a groove, with almost no padding."],
+    ["fb_zap", {}, "So a knock squashes it against the bone, and it fires all at once."],
+    ["fb_tingle", {}, "That's why the tingle shoots down into your ring and little fingers."],
+    ["fb_name", {}, "And the name? It might be a pun. The bone above it is called the humerus."]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 9,
+ "title": "Why Onions Make You Cry",
+ "out": "why-onions-make-you-cry",
+ "sets": "body/onion.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why Onions Make You Cry",
+   "lines": [
+    ["on_hook", { "top": "WHY ONIONS", "bottom": "MAKE YOU CRY" }, "Why does chopping an onion make you cry?"],
+    ["on_cells", {}, "An onion is packed with cells, holding chemicals that are kept apart, until you cut them."],
+    ["on_cut", {}, "Your knife breaks the cells open, the chemicals mix, and they make a gas."],
+    ["on_gas", {}, "It floats up, and reaches your eyes."],
+    ["on_tears", {}, "Nerves in your eyes feel the sting, and flood them with tears to wash it away."],
+    ["on_defence", {}, "It's the onion's defence, to stop animals from eating it."],
+    ["on_tip", {}, "Tip: chill the onion first, and use a sharp knife. Fewer broken cells, fewer tears."]
+   ]
+  }
+ ]
+}

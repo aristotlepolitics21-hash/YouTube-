@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 10,
+ "title": "What a Mosquito Bite Really Does",
+ "out": "what-a-mosquito-bite-really-does",
+ "sets": "body/mosquito.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "What a Mosquito Bite Really Does",
+   "lines": [
+    ["mq_hook", { "top": "WHAT A MOSQUITO", "bottom": "REALLY DOES" }, "When a mosquito bites you, it's not just one needle going in."],
+    ["mq_female", {}, "Only females bite. They need your blood to make their eggs."],
+    ["mq_needles", {}, "Her mouth hides six tiny needles. Two of them saw through your skin."],
+    ["mq_vessel", {}, "Another hunts for a blood vessel, while one pumps in spit that stops your blood from clotting."],
+    ["mq_drink", {}, "She can drink up to three times her own weight."],
+    ["mq_itch", {}, "That itchy bump is your immune system, reacting to her spit."],
+    ["mq_scratch", {}, "And scratching it? That only makes it itchier."]
+   ]
+  }
+ ]
+}

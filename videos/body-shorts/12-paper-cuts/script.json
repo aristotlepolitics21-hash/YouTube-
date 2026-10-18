@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 12,
+ "title": "Why Paper Cuts Hurt So Much",
+ "out": "why-paper-cuts-hurt-so-much",
+ "sets": "body/papercut.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why Paper Cuts Hurt So Much",
+   "lines": [
+    ["pc_hook", { "top": "WHY PAPER CUTS", "bottom": "HURT SO MUCH" }, "It's such a tiny cut. So why does it hurt this much?"],
+    ["pc_nerves", {}, "Your fingertips are packed with more nerve endings than almost anywhere on your body."],
+    ["pc_saw", {}, "And a paper's edge looks smooth, but up close, it's jagged, like a saw."],
+    ["pc_tear", {}, "So it rips the skin, instead of slicing it cleanly."],
+    ["pc_open", {}, "The cut is so shallow it barely bleeds, so nothing seals it, and the nerve endings are left open to the air."],
+    ["pc_flex", {}, "And every time you bend your finger, you pull the cut open again."],
+    ["pc_fix", {}, "Cover it with a bandage, and the pain fades fast."]
+   ]
+  }
+ ]
+}

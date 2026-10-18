@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 13,
+ "title": "Why You See Stars When You Stand Up",
+ "out": "why-you-see-stars-when-you-stand-up",
+ "sets": "body/headrush.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why You See Stars When You Stand Up",
+   "lines": [
+    ["hr_hook", { "top": "WHY YOU SEE", "bottom": "STARS" }, "Stand up too fast, and everything goes dark and sparkly."],
+    ["hr_gravity", {}, "When you stand, gravity pulls blood down, into your legs."],
+    ["hr_less", {}, "So for a moment, less blood gets pumped up to your head."],
+    ["hr_sensors", {}, "Sensors in your neck notice the drop, and tell your heart to beat faster, and your vessels to tighten."],
+    ["hr_delay", {}, "But that takes a few seconds. Meanwhile, your brain and eyes run a little low on oxygen."],
+    ["hr_stars", {}, "So your vision fades, and you see stars. It's called a head rush."],
+    ["hr_slow", {}, "Stand up slowly, and your body has time to catch up."]
+   ]
+  }
+ ]
+}

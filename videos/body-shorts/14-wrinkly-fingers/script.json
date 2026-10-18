@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 14,
+ "title": "Why Your Fingers Go Wrinkly in Water",
+ "out": "why-your-fingers-go-wrinkly-in-water",
+ "sets": "body/wrinkly.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why Your Fingers Go Wrinkly in Water",
+   "lines": [
+    ["wf_hook", { "top": "WHY YOUR FINGERS", "bottom": "GO WRINKLY" }, "Stay in the bath long enough, and your fingers turn into prunes."],
+    ["wf_myth", {}, "You'd think they soak up water and swell. But it's actually your nerves doing it."],
+    ["wf_shrink", {}, "After about five minutes in water, nerves tell the blood vessels in your fingertips to shrink."],
+    ["wf_sink", {}, "The skin on top sinks down into wrinkles."],
+    ["wf_proof", {}, "The proof? People with damaged finger nerves don't get wrinkly fingers at all."],
+    ["wf_grip", {}, "One idea is they're for grip, like the tread on a tyre, draining water away."],
+    ["wf_marbles", {}, "In one study, people with wrinkly fingers moved wet marbles faster."]
+   ]
+  }
+ ]
+}

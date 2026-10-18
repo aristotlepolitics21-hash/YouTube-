@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 11,
+ "title": "Why Your Stomach Growls",
+ "out": "why-your-stomach-growls",
+ "sets": "body/growl.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why Your Stomach Growls",
+   "lines": [
+    ["sg_hook", { "top": "WHY YOUR STOMACH", "bottom": "GROWLS" }, "That noise isn't your stomach complaining. Well, not exactly."],
+    ["sg_tubes", {}, "Your stomach and intestines are tubes of muscle that squeeze in waves, to push food along."],
+    ["sg_empty", {}, "Even when they're empty, they keep squeezing, every couple of hours, to sweep out leftovers."],
+    ["sg_echo", {}, "With no food to muffle it, the gas and liquid inside gurgle and echo, loudly."],
+    ["sg_name", {}, "Doctors even have a name for it. Borborygmi."],
+    ["sg_hormone", {}, "And a hunger hormone called ghrelin makes those waves even stronger."],
+    ["sg_feed", {}, "So yes, it pretty much means, feed me."]
+   ]
+  }
+ ]
+}

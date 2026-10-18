@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 4,
+ "title": "What Actually Causes Brain Freeze",
+ "out": "what-actually-causes-brain-freeze",
+ "sets": "body/freeze.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "What Actually Causes Brain Freeze",
+   "lines": [
+    ["bf_hook", {"top": "BRAIN", "bottom": "FREEZE"}, "Drink a slushie too fast, and you get this. Brain freeze."],
+    ["bf_brain", {}, "But your brain isn't freezing. It can't even feel pain itself."],
+    ["bf_roof", {}, "The cold hits the roof of your mouth, right below some important blood vessels."],
+    ["bf_vessels", {}, "They suddenly tighten, then quickly widen again, to warm things back up."],
+    ["bf_nerve", {}, "That sudden rush is picked up by a big nerve in your face, called the trigeminal nerve."],
+    ["bf_forehead", {}, "It sends out pain signals, but your brain feels them in your forehead instead."],
+    ["bf_fix", {}, "The fix? Press your tongue to the roof of your mouth, to warm it back up."]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 17,
+ "title": "Why Bees Die When They Sting",
+ "out": "why-bees-die-when-they-sting",
+ "sets": "body/bee.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why Bees Die When They Sting",
+   "lines": [
+    ["bs_hook", { "top": "WHY BEES DIE", "bottom": "WHEN THEY STING" }, "When a honeybee stings you, it gives up its life to do it."],
+    ["bs_barbs", {}, "Her stinger is covered in tiny backward barbs, like a harpoon."],
+    ["bs_rip", {}, "In your skin, the barbs hook in. So when she flies off, the stinger rips out of her body."],
+    ["bs_pump", {}, "Its venom sac stays attached, and keeps pumping venom into you."],
+    ["bs_scrape", {}, "That's why you should get it out fast. Scrape it off with a fingernail or a card."],
+    ["bs_swell", {}, "For most people, the pain and swelling fade within a day or so."],
+    ["bs_wasp", {}, "But wasps have smooth stingers. So they can sting again, and again."]
+   ]
+  }
+ ]
+}

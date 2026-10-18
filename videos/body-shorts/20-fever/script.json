@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 20,
+ "title": "Why You Get a Fever",
+ "out": "why-you-get-a-fever",
+ "sets": "body/fever.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why You Get a Fever",
+   "lines": [
+    ["fv_hook", { "top": "WHY YOU GET", "bottom": "A FEVER" }, "When you get a fever, your body is turning up the heat on purpose."],
+    ["fv_germs", {}, "Germs get in, and your immune cells release chemical messengers."],
+    ["fv_thermostat", {}, "They travel to your hypothalamus, your brain's thermostat, and it turns the setting up."],
+    ["fv_chills", {}, "Now your normal temperature feels too cold. So you shiver and get the chills, to make more heat."],
+    ["fv_fight", {}, "Many germs struggle in the heat, and some of your immune cells work faster."],
+    ["fv_break", {}, "When the fight's over, the thermostat resets, and you sweat to cool down."],
+    ["fv_doctor", {}, "A very high fever needs a doctor. But a mild one means your body is fighting back."]
+   ]
+  }
+ ]
+}

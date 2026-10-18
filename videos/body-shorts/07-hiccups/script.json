@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 7,
+ "title": "What Actually Causes Hiccups",
+ "out": "what-actually-causes-hiccups",
+ "sets": "body/hiccups.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "What Actually Causes Hiccups",
+   "lines": [
+    ["hc_hook", { "top": "WHY WE GET", "bottom": "HICCUPS" }, "Hic! Here's what's going on inside you when you hiccup."],
+    ["hc_diaphragm", {}, "Under your lungs is a dome shaped muscle called the diaphragm. It pulls air in every time you breathe."],
+    ["hc_irritate", {}, "Eat too fast, gulp a fizzy drink, or get excited, and it can suddenly spasm."],
+    ["hc_snap", {}, "You suck in air, and a split second later, your vocal cords snap shut."],
+    ["hc_sound", {}, "That slam is the hic sound."],
+    ["hc_record", {}, "Most hiccups stop within minutes. But one man, Charles Osborne, hiccupped for sixty-eight years."],
+    ["hc_fix", {}, "Holding your breath, or slowly sipping cold water, can sometimes reset it."]
+   ]
+  }
+ ]
+}

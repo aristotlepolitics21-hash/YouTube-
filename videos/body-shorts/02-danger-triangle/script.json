@@ -1,0 +1,24 @@
+{
+ "series": "Body Shorts",
+ "episode": 2,
+ "title": "The Danger Triangle of Your Face",
+ "out": "the-danger-triangle-of-your-face",
+ "sets": "body/triangle.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "The Danger Triangle of Your Face",
+   "lines": [
+    ["dt_hook", {"top": "THE DANGER", "bottom": "TRIANGLE"}, "There's a triangle on your face that doctors call the danger triangle."],
+    ["dt_map", {}, "It runs from the bridge of your nose, down to the corners of your mouth."],
+    ["dt_pimple", {}, "And it's the worst place to pop a pimple."],
+    ["dt_veins", {}, "The veins here connect to a space right behind your eyes, next to your brain, called the cavernous sinus."],
+    ["dt_push", {}, "Squeeze a pimple, and you can push bacteria deeper, into those veins."],
+    ["dt_travel", {}, "Very rarely, an infection can travel all the way back, and cause a dangerous clot beside your brain."],
+    ["dt_doctor", {}, "It's rare, and antibiotics stop most infections early. But a red, hot, swollen spot here needs a doctor."],
+    ["dt_leave", {}, "So next time, maybe just leave that one alone."]
+   ]
+  }
+ ]
+}

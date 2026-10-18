@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 6,
+ "title": "What Happens If You Swallow Gum",
+ "out": "what-happens-if-you-swallow-gum",
+ "sets": "body/gum.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "What Happens If You Swallow Gum",
+   "lines": [
+    ["gm_hook", { "top": "SWALLOWING", "bottom": "GUM" }, "You've probably heard that swallowed gum stays in your stomach for seven years."],
+    ["gm_down", {}, "Here's what really happens."],
+    ["gm_resist", {}, "Gum is made to resist breaking down, so your stomach can't digest it like food."],
+    ["gm_move", {}, "But your gut doesn't need to digest it to move it. Muscles squeeze it along with everything else."],
+    ["gm_out", {}, "And within a few days, it comes out the other end."],
+    ["gm_risk", {}, "The only problem is swallowing lots of it, all the time. Doctors have found gum blockages in kids who did."],
+    ["gm_fine", {}, "So one piece, by accident? Totally fine."]
+   ]
+  }
+ ]
+}

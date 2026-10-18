@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 15,
+ "title": "Why You Can't Tickle Yourself",
+ "out": "why-you-cant-tickle-yourself",
+ "sets": "body/tickle.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why You Can't Tickle Yourself",
+   "lines": [
+    ["tk_hook", { "top": "WHY YOU CAN'T", "bottom": "TICKLE YOURSELF" }, "Try tickling yourself. Nothing happens."],
+    ["tk_predict", {}, "Your brain is always predicting what your own movements will feel like."],
+    ["tk_copy", {}, "Before you move, a part at the back of your brain, the cerebellum, makes a copy of the plan."],
+    ["tk_mute", {}, "So when your own fingers touch you, your brain already knows, and turns the feeling down."],
+    ["tk_other", {}, "Someone else's touch is a surprise. And surprises get the full feeling."],
+    ["tk_robot", {}, "In one experiment, a robot added a tiny delay to people's own tickles."],
+    ["tk_works", {}, "And suddenly, their own touch felt more ticklish."]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "series": "Body Shorts",
+ "episode": 1,
+ "title": "What Happens If You Hold In a Sneeze",
+ "out": "what-happens-if-you-hold-in-a-sneeze",
+ "sets": "body/sneeze.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "What Happens If You Hold In a Sneeze",
+   "lines": [
+    [
+     "sz_hook",
+     {
+      "top": "HOLDING IN",
+      "bottom": "A SNEEZE"
+     },
+     "This guy is about to hold in a sneeze. That's a really bad idea."
+    ],
+    [
+     "sz_blast",
+     {},
+     "A sneeze is your body blasting air out of your nose and mouth, to get rid of whatever's tickling inside."
+    ],
+    [
+     "sz_pressure",
+     {},
+     "Pinch your nose and shut your mouth, and all that pressure has nowhere to go."
+    ],
+    [
+     "sz_ears",
+     {},
+     "It can shoot up the tubes that link your throat to your ears, and in rare cases, burst an eardrum."
+    ],
+    [
+     "sz_eyes",
+     {},
+     "It can even pop tiny blood vessels in your eyes."
+    ],
+    [
+     "sz_hospital",
+     {},
+     "In 2018, a man in England tore the back of his throat doing this, and spent a week in hospital."
+    ],
+    [
+     "sz_elbow",
+     {},
+     "So doctors say, just let it out. Into your elbow."
+    ],
+    [
+     "sz_myth",
+     {},
+     "And no, your eyes won't pop out if you sneeze with them open."
+    ]
+   ]
+  }
+ ]
+}

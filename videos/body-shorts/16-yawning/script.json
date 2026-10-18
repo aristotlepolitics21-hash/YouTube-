@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 16,
+ "title": "Why Yawning Is Contagious",
+ "out": "why-yawning-is-contagious",
+ "sets": "body/yawn.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why Yawning Is Contagious",
+   "lines": [
+    ["yw_hook", { "top": "WHY YAWNING", "bottom": "IS CONTAGIOUS" }, "You're probably going to yawn watching this."],
+    ["yw_what", {}, "A yawn is a huge stretch of your jaw, a deep breath in, and a quick breath out."],
+    ["yw_cool", {}, "One leading idea is that it helps cool your brain, by pulling in cooler air and fresh blood."],
+    ["yw_heat", {}, "People yawn less when the air is really hot, which fits that idea."],
+    ["yw_catch", {}, "Yawns are also contagious. Seeing, hearing, or even reading about one can set you off."],
+    ["yw_dog", {}, "Even dogs can catch yawns from their owners."],
+    ["yw_you", {}, "So, did you yawn yet?"]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "series": "Body Shorts",
+ "episode": 18,
+ "title": "Why Spicy Food Burns",
+ "out": "why-spicy-food-burns",
+ "sets": "body/spicy.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why Spicy Food Burns",
+   "lines": [
+    ["sp_hook", { "top": "WHY SPICY FOOD", "bottom": "BURNS" }, "Spicy food isn't actually hot. It's tricking your nerves."],
+    ["sp_capsaicin", {}, "Chillies contain a chemical called capsaicin."],
+    ["sp_receptor", {}, "It switches on the same sensors in your mouth that detect real heat."],
+    ["sp_fire", {}, "So your brain thinks your mouth is on fire. You sweat, your face goes red, and your nose runs."],
+    ["sp_water", {}, "Water barely helps. Capsaicin is oily, so water just spreads it around."],
+    ["sp_milk", {}, "Milk works better. A protein in it, called casein, grabs the capsaicin and washes it away."],
+    ["sp_birds", {}, "And birds can't feel capsaicin at all. So they eat chillies, and spread the seeds."]
+   ]
+  }
+ ]
+}
