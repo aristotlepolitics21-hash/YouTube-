@@ -5,25 +5,25 @@ Vertical (1080×1920) 3D shorts, 30–40 seconds each, about what's really going
 | # | Episode | Status |
 |---|---|---|
 | 1 | What Happens If You Hold In a Sneeze | Rendered |
-| 2 | The Danger Triangle of Your Face | Rendering |
-| 3 | What Happens When You Crack Your Knuckles | Rendering |
-| 4 | What Actually Causes Brain Freeze | Rendering |
-| 5 | Why You Get Goosebumps | Scripted |
-| 6 | What Happens If You Swallow Gum | Scripted |
-| 7 | What Actually Causes Hiccups | Scripted |
-| 8 | Why Your Foot Falls Asleep | Scripted |
-| 9 | Why Onions Make You Cry | Scripted |
-| 10 | What a Mosquito Bite Really Does | Scripted |
-| 11 | Why Your Stomach Growls | Scripted |
-| 12 | Why Paper Cuts Hurt So Much | Scripted |
-| 13 | Why You See Stars When You Stand Up | Scripted |
-| 14 | Why Your Fingers Go Wrinkly in Water | Scripted |
-| 15 | Why You Can't Tickle Yourself | Scripted |
-| 16 | Why Yawning Is Contagious | Scripted |
-| 17 | Why Bees Die When They Sting | Scripted |
-| 18 | Why Spicy Food Burns | Scripted |
-| 19 | Why Hitting Your Funny Bone Hurts | Scripted |
-| 20 | Why You Get a Fever | Scripted |
+| 2 | The Danger Triangle of Your Face | Rendered |
+| 3 | What Happens When You Crack Your Knuckles | Rendered |
+| 4 | What Actually Causes Brain Freeze | Rendered |
+| 5 | Why You Get Goosebumps | Rendered |
+| 6 | What Happens If You Swallow Gum | Rendered |
+| 7 | What Actually Causes Hiccups | Rendered |
+| 8 | Why Your Foot Falls Asleep | Rendered |
+| 9 | Why Onions Make You Cry | Rendered |
+| 10 | What a Mosquito Bite Really Does | Rendered |
+| 11 | Why Your Stomach Growls | Rendered |
+| 12 | Why Paper Cuts Hurt So Much | Rendered |
+| 13 | Why You See Stars When You Stand Up | Rendered |
+| 14 | Why Your Fingers Go Wrinkly in Water | Rendered |
+| 15 | Why You Can't Tickle Yourself | Rendered |
+| 16 | Why Yawning Is Contagious | Rendered |
+| 17 | Why Bees Die When They Sting | Rendered |
+| 18 | Why Spicy Food Burns | Rendered |
+| 19 | Why Hitting Your Funny Bone Hurts | Rendered |
+| 20 | Why You Get a Fever | Rendered |
 
 Each episode folder holds `script.json` (one scene and one narration line per entry), the video, `captions.srt`, `description.txt`, `tags.txt` and `thumbnail.jpg`.
 
