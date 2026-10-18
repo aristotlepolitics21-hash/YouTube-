@@ -57,33 +57,17 @@
       ]
      }
     ],
-    "texts": [
-     {
-      "text": "OLDER THAN CIVILISATION",
-      "at": [
-       0,
-       -1.2,
-       1.25
-      ],
-      "size": 0.16,
-      "color": [
-       1.0,
-       0.85,
-       0.3
-      ],
-      "pop": 0.25
-     }
-    ],
+    "texts": [],
     "camera": {
      "from": [
       0,
-      -4.6,
+      -4.9,
       0.3
      ],
      "to": [
       0,
-      -3.6,
-      0.2
+      -4.3,
+      0.25
      ],
      "target": [
       0,
@@ -96,7 +80,7 @@
   },
   {
    "id": "s002",
-   "line": "Not the trip here. That part only takes about eight minutes.",
+   "line": "Not the trip here. Crossing a hundred and fifty million kilometres of space only takes about eight minutes.",
    "visual": {
     "type": "stage",
     "env": "space",
@@ -125,17 +109,17 @@
      {
       "text": "8 MINUTES",
       "at": [
-       0.4,
-       -1.0,
-       1.35
+       1.05,
+       -2.0,
+       0.72
       ],
-      "size": 0.2,
+      "size": 0.13,
       "color": [
        1.0,
        0.85,
        0.3
       ],
-      "pop": 0.3
+      "pop": 0.35
      }
     ],
     "camera": {
@@ -160,61 +144,6 @@
   },
   {
    "id": "s003",
-   "line": "Light crosses a hundred and fifty million kilometres of empty space in eight minutes and twenty seconds.",
-   "visual": {
-    "type": "stage",
-    "env": "space",
-    "cast": [],
-    "props": [
-     {
-      "prop": "earth_globe",
-      "at": [
-       0,
-       0,
-       0
-      ],
-      "scale": 0.9
-     }
-    ],
-    "texts": [
-     {
-      "text": "150,000,000 km",
-      "at": [
-       0,
-       -1.0,
-       1.25
-      ],
-      "size": 0.17,
-      "color": [
-       1.0,
-       0.85,
-       0.3
-      ],
-      "pop": 0.2
-     }
-    ],
-    "camera": {
-     "from": [
-      0,
-      -3.2,
-      0.4
-     ],
-     "to": [
-      0.3,
-      -2.8,
-      0.3
-     ],
-     "target": [
-      0,
-      0,
-      -0.5
-     ],
-     "lens": 35
-    }
-   }
-  },
-  {
-   "id": "s004",
    "line": "The slow part happens inside the Sun.",
    "visual": {
     "type": "stage",
@@ -260,11 +189,11 @@
    "still_at": 0.5
   },
   {
-   "id": "s005",
+   "id": "s004",
    "line": "Its energy is made in the core, by nuclear fusion.",
    "visual": {
     "type": "stage",
-    "env": "studio",
+    "env": "space",
     "cast": [],
     "props": [
      {
@@ -272,64 +201,36 @@
       "at": [
        0,
        0,
-       0.75
+       0
       ],
       "args": {
-       "hit": 0.5
+       "hit": 0.62
       }
      }
     ],
-    "texts": [
-     {
-      "text": "FUSION",
-      "at": [
-       0,
-       -0.3,
-       1.45
-      ],
-      "size": 0.2,
-      "color": [
-       1.0,
-       0.6,
-       0.3
-      ],
-      "pop": 0.2
-     }
-    ],
+    "texts": [],
     "camera": {
      "from": [
       0,
-      -2.6,
-      0.75
+      -1.0,
+      0.12
      ],
      "to": [
-      0.2,
-      -2.2,
-      0.7
+      0.05,
+      -0.85,
+      0.1
      ],
      "target": [
       0,
       0,
-      0.35
+      -0.14
      ],
-     "lens": 35
-    },
-    "env_opts": {
-     "horizon": [
-      0.25,
-      0.08,
-      0.02
-     ],
-     "zenith": [
-      0.02,
-      0.0,
-      0.0
-     ]
+     "lens": 50
     }
    }
   },
   {
-   "id": "s006",
+   "id": "s005",
    "line": "But the inside of the Sun is so dense that light can't travel in a straight line.",
    "visual": {
     "type": "stage",
@@ -373,7 +274,7 @@
    }
   },
   {
-   "id": "s007",
+   "id": "s006",
    "line": "It's absorbed and given off again and again, zigzagging in random directions.",
    "visual": {
     "type": "stage",
@@ -400,25 +301,25 @@
     "camera": {
      "from": [
       0.2,
-      -2.0,
+      -3.8,
       0.3
      ],
      "to": [
       0.1,
-      -1.6,
+      -3.3,
       0.2
      ],
      "target": [
       0,
       0,
-      -0.3
+      -0.4
      ],
      "lens": 35
     }
    }
   },
   {
-   "id": "s008",
+   "id": "s007",
    "line": "Scientists estimate that energy takes tens of thousands of years, maybe more than a hundred thousand, to reach the surface.",
    "visual": {
     "type": "stage",
@@ -439,10 +340,10 @@
       "text": "10,000s OF YEARS",
       "at": [
        0,
-       -1.2,
-       1.25
+       -2.0,
+       0.68
       ],
-      "size": 0.2,
+      "size": 0.13,
       "color": [
        1.0,
        0.85,
@@ -454,13 +355,13 @@
     "camera": {
      "from": [
       0,
-      -4.6,
+      -4.9,
       0.3
      ],
      "to": [
       0,
-      -3.6,
-      0.2
+      -4.3,
+      0.25
      ],
      "target": [
       0,
@@ -472,7 +373,7 @@
    }
   },
   {
-   "id": "s009",
+   "id": "s008",
    "line": "So the energy in today's sunshine set out before the first farms, cities or writing.",
    "visual": {
     "type": "stage",
@@ -555,7 +456,7 @@
    }
   },
   {
-   "id": "s010",
+   "id": "s009",
    "line": "Eight minutes to reach you. Tens of thousands of years to get out.",
    "visual": {
     "type": "stage",
@@ -582,11 +483,11 @@
      {
       "text": "8 MIN",
       "at": [
-       -0.5,
-       -1.4,
-       1.45
+       0,
+       -2.4,
+       1.05
       ],
-      "size": 0.18,
+      "size": 0.15,
       "color": [
        1.0,
        0.85,
@@ -595,13 +496,13 @@
       "pop": 0.15
      },
      {
-      "text": "10,000s YRS",
+      "text": "10,000s OF YEARS",
       "at": [
-       0.5,
-       -1.4,
-       1.2
+       0,
+       -2.4,
+       0.82
       ],
-      "size": 0.15,
+      "size": 0.12,
       "color": [
        1.0,
        0.55,
