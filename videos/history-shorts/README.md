@@ -7,7 +7,8 @@ All 20 scripts are in `scripts.py`, which writes each episode's `script.json`. E
 | # | Episode | Status |
 |---|---|---|
 | 1 | Why Doctors Drilled Holes in Skulls | Rendered |
-| 2–20 | See `scripts.py` | Scripted, waiting for images |
+| 2 | The Cure That Killed George Washington | Rendered |
+| 3–20 | See `scripts.py` | Scripted, waiting for images |
 
 ## How it's made
 

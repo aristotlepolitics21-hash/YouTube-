@@ -1,8 +1,8 @@
 # Writes NN-slug/script.json for the 20 Weird History of Medicine shorts.
 # Each line: [scene id, {"prompt": image prompt}, narration]. STYLE is appended to every image prompt.
 import json, os
-STYLE = ("Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, "
-         "detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore, vertical 9:16 framing.")
+STYLE = ("Upright vertical portrait shot, camera held normally, tall full-bleed composition filling the whole 9:16 frame edge to edge, no borders, no letterbox. Stylized realistic 3D CGI animation still, high-end animated explainer look, Pixar-meets-realism, cinematic soft lighting, "
+         "detailed skin, hair and fabric, expressive faces, shallow depth of field, no text, no letters, no gore.")
 EPS = [
  ("trepanation", "Why Doctors Drilled Holes in Skulls", [
   ("A medieval barber-surgeon in a red tunic with a white ruff leans over a frightened man lying on his side on a wooden bed, a hand-crank drill touching the top of his head, bright blue sky behind", "For thousands of years, doctors had a cure for headaches. They drilled a hole in your head."),
