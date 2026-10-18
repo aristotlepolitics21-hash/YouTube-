@@ -5,7 +5,7 @@ export function register(K) {
   const { THREE, BUILD, M, RB, SPH, G, plastic, matte, metal, glowM, sprite, label, clamp, lerp, seg, ease, frac, V } = K;
   const H = hist(K), B = H.B, { popIn, tag, titleSigns, reach, hud, shoot, orbit, spray } = B;
   const child = { skin: 0xffd9bd, shirt: 0x5b8cff, hair: 0xd9a441, eye: 0x3b6fb0 };
-  function scarfKid() { const k = H.who(child); k.userData.head.add(M(new THREE.TorusGeometry(.66, .09, 10, 40), H.B.cloth(0xffffff), { rot: [0, Math.PI / 2, 0], pos: [0, -.05, 0] }), M(SPH(.12, 12, 10), H.B.cloth(0xffffff), { pos: [0, .7, .05] })); return k; }
+  function scarfKid() { const k = H.who(child); k.userData.head.add(M(new THREE.TorusGeometry(.66, .09, 10, 40), H.B.cloth(0xffffff), { pos: [0, -.05, -.05] }), M(SPH(.12, 12, 10), H.B.cloth(0xffffff), { pos: [0, .7, .05] })); return k; }
   function dropper() { return G(M(new THREE.CylinderGeometry(.03, .015, .5, 10), plastic(0xffffff, { transparent: true, opacity: .6 }), { pos: [0, -.25, 0] }), M(SPH(.08, 12, 8), plastic(0xff4a5c), { pos: [0, .03, 0], scale: [1, 1.3, 1] })); }
   const ad = () => H.card(1.6, 1.2, (x, w, h) => { x.fillStyle = '#fff3d6'; x.fillRect(0, 0, w, h); label(x, 'TOOTHACHE DROPS', w / 2, h * .14, h * .11, '#8a2a2a', 900); [.3, .7].forEach(c => { x.fillStyle = '#ffd9bd'; x.beginPath(); x.arc(w * c, h * .55, h * .2, 0, 7); x.fill(); x.strokeStyle = '#3a2400'; x.lineWidth = 6; x.beginPath(); x.arc(w * c, h * .58, h * .1, .2, Math.PI - .2); x.stroke(); });
     label(x, 'INSTANT CURE!', w / 2, h * .88, h * .1, '#1d2442', 900); }, { color: 0xfff3d6 });
@@ -31,7 +31,7 @@ export function register(K) {
   BUILD.h10_4 = () => {
     const st = H.room('candle'), bar = M(RB(5, 1.2, 1.0, .05), plastic(0x6a3a22), { pos: [0, .6, .8] }); st.scene.add(bar); const m = H.who({ skin: 0xf2c7a5, shirt: 0x8a2a3a, hair: 0x3a2418 }, 'tophat'); st.scene.add(m);
     const gl = B.glass(.7, 0xc8a050); gl.scale.setScalar(.6); st.scene.add(gl); const bub = [0, 1, 2, 3].map(() => { const b = M(SPH(.03, 8, 6), plastic(0xffffff)); st.scene.add(b); return b; });
-    const l1 = hud(st, tag('WINES', 0x8a2a3a, '#ffffff', 1.3, .46), .62, -.3, .28), l2 = hud(st, tag('TONICS', 0xc8a050, '#ffffff', 1.4, .46), .62, 0, .3), l3 = hud(st, tag('SOFT DRINKS', 0x3fa9ff, '#ffffff', 2.0, .46), .5, .1, .42);
+    const l1 = hud(st, tag('WINES', 0x8a2a3a, '#ffffff', 1.3, .46), .62, -.45, .26), l2 = hud(st, tag('TONICS', 0xc8a050, '#ffffff', 1.4, .46), .62, .12, .28), l3 = hud(st, tag('SOFT DRINKS', 0x3fa9ff, '#ffffff', 2.0, .46), .5, .1, .42);
     return { ...st, update(t, s) { const h = reach([.6, 2.0, .6], 1); m.pose({ s, handR: h, poleR: [1, -.6, -.2], wide: .8, smile: 1, bob: 3, handL: reach('up', Math.abs(Math.sin(s * 3))) }); gl.position.copy(h).add(V(0, -.2, .1)); bub.forEach((b, i) => { const u = frac(s + i / 4); b.position.copy(gl.position).add(V(Math.sin(i * 2) * .06, .1 + u * .35, 0)); });
       [l1, l2, l3].forEach((l, i) => l.scale.setScalar(popIn(t, .1 + i * .2))); orbit(st, s, [0, 2.4, 0], 5.4, .2); } };
   };
