@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 20,
+ "title": "The Magic Stone That Was Tested on a Prisoner",
+ "out": "the-magic-stone-that-was-tested-on-a-prisoner",
+ "sets": "body/h20.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "The Magic Stone That Was Tested on a Prisoner",
+   "lines": [
+    [
+     "h20_1",
+     {
+      "top": "THE MAGIC STONE THAT WAS",
+      "bottom": "TESTED ON A PRISONER"
+     },
+     "For centuries, rich Europeans paid fortunes for a magic stone. A bezoar."
+    ],
+    [
+     "h20_2",
+     {},
+     "Bezoars are hard lumps that form in the stomachs of animals like goats. They were believed to cure any poison."
+    ],
+    [
+     "h20_3",
+     {},
+     "In 1567, the king's surgeon, Ambroise Paré, said he thought it was nonsense. So they tested it."
+    ],
+    [
+     "h20_4",
+     {},
+     "A cook was due to be executed for stealing. He was offered a deal. Take poison, then the stone. If he lived, he'd go free."
+    ],
+    [
+     "h20_5",
+     {},
+     "He took the poison, then the bezoar. Hours later, he died."
+    ],
+    [
+     "h20_6",
+     {},
+     "The bezoar did nothing. It's one of the first recorded experiments testing a medicine."
+    ]
+   ]
+  }
+ ]
+}

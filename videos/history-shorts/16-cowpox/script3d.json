@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 16,
+ "title": "The Milkmaid Secret That Beat Smallpox",
+ "out": "the-milkmaid-secret-that-beat-smallpox",
+ "sets": "body/h16.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "The Milkmaid Secret That Beat Smallpox",
+   "lines": [
+    [
+     "h16_1",
+     {
+      "top": "THE MILKMAID SECRET",
+      "bottom": "THAT BEAT SMALLPOX"
+     },
+     "In the 1700s, smallpox was one of the deadliest diseases on Earth. But milkmaids seemed to be safe from it."
+    ],
+    [
+     "h16_2",
+     {},
+     "Country doctor Edward Jenner heard they'd caught a mild disease from cows, called cowpox."
+    ],
+    [
+     "h16_3",
+     {},
+     "In 1796, he took fluid from a milkmaid's cowpox blister, and scratched it into the arm of an eight year old boy."
+    ],
+    [
+     "h16_4",
+     {},
+     "Later, he exposed the boy to smallpox. The boy didn't get sick."
+    ],
+    [
+     "h16_5",
+     {},
+     "Cow in Latin is vacca. That's where the word vaccine comes from."
+    ],
+    [
+     "h16_6",
+     {},
+     "In 1980, the world declared smallpox completely wiped out. The first disease ever beaten by vaccines."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 4,
+ "title": "When Doctors Treated Disease With Mercury",
+ "out": "when-doctors-treated-disease-with-mercury",
+ "sets": "body/h04.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "When Doctors Treated Disease With Mercury",
+   "lines": [
+    [
+     "h04_1",
+     {
+      "top": "WHEN DOCTORS TREATED",
+      "bottom": "DISEASE WITH MERCURY"
+     },
+     "For about four hundred years, one of the most popular medicines in Europe was liquid metal."
+    ],
+    [
+     "h04_2",
+     {},
+     "Doctors used mercury to treat syphilis. Patients rubbed it on, swallowed it, or sat in boxes breathing in its fumes."
+    ],
+    [
+     "h04_3",
+     {},
+     "The side effects were brutal. Drooling, loose teeth, shaking hands, and damaged kidneys."
+    ],
+    [
+     "h04_4",
+     {},
+     "People even had a saying for it. A night with Venus, a lifetime with mercury."
+    ],
+    [
+     "h04_5",
+     {},
+     "It finally stopped in the 1940s, when penicillin arrived and cured syphilis properly."
+    ],
+    [
+     "h04_6",
+     {},
+     "Today, mercury is so toxic that even a broken thermometer gets special cleanup."
+    ]
+   ]
+  }
+ ]
+}

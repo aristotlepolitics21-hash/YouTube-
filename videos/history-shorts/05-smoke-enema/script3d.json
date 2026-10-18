@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 5,
+ "title": "Why Doctors Blew Smoke Into People",
+ "out": "why-doctors-blew-smoke-into-people",
+ "sets": "body/h05.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why Doctors Blew Smoke Into People",
+   "lines": [
+    [
+     "h05_1",
+     {
+      "top": "WHY DOCTORS BLEW",
+      "bottom": "SMOKE INTO PEOPLE"
+     },
+     "In the 1700s, if you nearly drowned in London, a rescuer might try to save you with tobacco smoke."
+    ],
+    [
+     "h05_2",
+     {},
+     "Kits were placed along the River Thames, with bellows, tubes and tobacco."
+    ],
+    [
+     "h05_3",
+     {},
+     "The smoke was blown into the patient, from the other end. Yes, a tobacco smoke enema."
+    ],
+    [
+     "h05_4",
+     {},
+     "Doctors believed the smoke would warm the body and get the heart going again."
+    ],
+    [
+     "h05_5",
+     {},
+     "In the early 1800s, scientists showed nicotine is a poison to the heart, and the kits disappeared."
+    ],
+    [
+     "h05_6",
+     {},
+     "Today, rescuers use something that actually works. CPR."
+    ]
+   ]
+  }
+ ]
+}

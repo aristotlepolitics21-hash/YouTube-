@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 3,
+ "title": "Why Hospitals Still Use Leeches",
+ "out": "why-hospitals-still-use-leeches",
+ "sets": "body/h03.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why Hospitals Still Use Leeches",
+   "lines": [
+    [
+     "h03_1",
+     {
+      "top": "WHY HOSPITALS STILL",
+      "bottom": "USE LEECHES"
+     },
+     "In the 1800s, doctors were so obsessed with leeches that France imported tens of millions of them a year."
+    ],
+    [
+     "h03_2",
+     {},
+     "They put them on almost everything. Headaches, fevers, even bad moods."
+    ],
+    [
+     "h03_3",
+     {},
+     "A leech has three tiny jaws with rows of teeth, and its spit is full of chemicals that stop blood from clotting."
+    ],
+    [
+     "h03_4",
+     {},
+     "And that's why hospitals still use them today. After a surgeon reattaches a finger or an ear, the veins can clog with blood."
+    ],
+    [
+     "h03_5",
+     {},
+     "A leech drains the extra blood, and keeps it flowing while the veins heal."
+    ],
+    [
+     "h03_6",
+     {},
+     "In 2004, the US even approved leeches as an official medical device."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 17,
+ "title": "The Man Who Lived in an Iron Lung for 70 Years",
+ "out": "the-man-who-lived-in-an-iron-lung-for-70-years",
+ "sets": "body/h17.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "The Man Who Lived in an Iron Lung for 70 Years",
+   "lines": [
+    [
+     "h17_1",
+     {
+      "top": "THE MAN WHO LIVED IN AN",
+      "bottom": "IRON LUNG FOR 70 YEARS"
+     },
+     "In the 1950s, hospitals were filled with rows of giant metal tubes."
+    ],
+    [
+     "h17_2",
+     {},
+     "They were iron lungs. Polio could paralyse the muscles you breathe with, so the machine breathed for you."
+    ],
+    [
+     "h17_3",
+     {},
+     "It changed the air pressure around your body, pulling your chest open, then letting it fall."
+    ],
+    [
+     "h17_4",
+     {},
+     "In 1952, a six year old boy called Paul Alexander was put inside one."
+    ],
+    [
+     "h17_5",
+     {},
+     "He spent most of his life in it, but still became a lawyer, and wrote a book, typing with a stick held in his mouth."
+    ],
+    [
+     "h17_6",
+     {},
+     "He lived in his iron lung for more than seventy years. Thanks to the polio vaccine, almost no one needs one now."
+    ]
+   ]
+  }
+ ]
+}

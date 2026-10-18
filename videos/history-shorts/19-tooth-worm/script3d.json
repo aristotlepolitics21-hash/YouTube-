@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 19,
+ "title": "When People Thought Worms Caused Cavities",
+ "out": "when-people-thought-worms-caused-cavities",
+ "sets": "body/h19.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "When People Thought Worms Caused Cavities",
+   "lines": [
+    [
+     "h19_1",
+     {
+      "top": "WHEN PEOPLE THOUGHT",
+      "bottom": "WORMS CAUSED CAVITIES"
+     },
+     "For thousands of years, people believed toothaches were caused by a tiny worm, living inside your tooth."
+    ],
+    [
+     "h19_2",
+     {},
+     "The tooth worm was blamed for holes, and for the pain. People thought you could feel it wriggling."
+    ],
+    [
+     "h19_3",
+     {},
+     "Some healers burned seeds near the mouth, and then pointed at tiny worm-like shapes left behind, as proof."
+    ],
+    [
+     "h19_4",
+     {},
+     "They were actually just the burnt seeds' sprouts."
+    ],
+    [
+     "h19_5",
+     {},
+     "In 1728, a French dentist, Pierre Fauchard, said there was no such thing."
+    ],
+    [
+     "h19_6",
+     {},
+     "We now know it's bacteria, feeding on sugar and making acid. Much smaller than a worm."
+    ]
+   ]
+  }
+ ]
+}

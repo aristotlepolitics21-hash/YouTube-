@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 12,
+ "title": "The Fastest Surgeon in History",
+ "out": "the-fastest-surgeon-in-history",
+ "sets": "body/h12.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "The Fastest Surgeon in History",
+   "lines": [
+    [
+     "h12_1",
+     {
+      "top": "THE FASTEST SURGEON",
+      "bottom": "IN HISTORY"
+     },
+     "Before anaesthetic, surgery was a race against pain. And Robert Liston was the fastest surgeon alive."
+    ],
+    [
+     "h12_2",
+     {},
+     "Patients were awake for everything. The only painkillers were alcohol, and strong assistants."
+    ],
+    [
+     "h12_3",
+     {},
+     "So Liston worked fast. He could take off a leg in about two and a half minutes."
+    ],
+    [
+     "h12_4",
+     {},
+     "He'd shout at the students. Time me, gentlemen. Time me."
+    ],
+    [
+     "h12_5",
+     {},
+     "In 1846, he became one of the first surgeons in Britain to operate with ether, with the patient fast asleep."
+    ],
+    [
+     "h12_6",
+     {},
+     "Afterwards he told the crowd, this Yankee dodge beats mesmerism hollow."
+    ]
+   ]
+  }
+ ]
+}

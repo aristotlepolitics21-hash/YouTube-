@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 14,
+ "title": "Why Barber Poles Are Red and White",
+ "out": "why-barber-poles-are-red-and-white",
+ "sets": "body/h14.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why Barber Poles Are Red and White",
+   "lines": [
+    [
+     "h14_1",
+     {
+      "top": "WHY BARBER POLES ARE",
+      "bottom": "RED AND WHITE"
+     },
+     "Ever wondered why barber poles have red and white stripes? It's a pretty dark story."
+    ],
+    [
+     "h14_2",
+     {},
+     "For centuries, barbers didn't just cut hair. They pulled teeth, set bones, and did surgery."
+    ],
+    [
+     "h14_3",
+     {},
+     "Their most common job was bloodletting. The patient squeezed a pole to make their veins stand out."
+    ],
+    [
+     "h14_4",
+     {},
+     "Afterwards, so the story goes, the bandages were washed and hung outside on that pole to dry."
+    ],
+    [
+     "h14_5",
+     {},
+     "As they twisted in the wind, they formed a spiral. Red and white."
+    ],
+    [
+     "h14_6",
+     {},
+     "That spiral became the barber's sign. The blue stripe was added later, in America."
+    ]
+   ]
+  }
+ ]
+}

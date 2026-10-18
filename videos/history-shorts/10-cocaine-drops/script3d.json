@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 10,
+ "title": "When Kids Got Cocaine for Toothache",
+ "out": "when-kids-got-cocaine-for-toothache",
+ "sets": "body/h10.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "When Kids Got Cocaine for Toothache",
+   "lines": [
+    [
+     "h10_1",
+     {
+      "top": "WHEN KIDS GOT",
+      "bottom": "COCAINE FOR TOOTHACHE"
+     },
+     "In the 1880s, if your child had a toothache, you could buy cocaine drops at the pharmacy."
+    ],
+    [
+     "h10_2",
+     {},
+     "They were sold as an instant cure, and the adverts showed happy children playing."
+    ],
+    [
+     "h10_3",
+     {},
+     "Cocaine really does numb pain. In 1884, it became the first local anaesthetic used in eye surgery."
+    ],
+    [
+     "h10_4",
+     {},
+     "Soon it was in wines, tonics and even soft drinks."
+    ],
+    [
+     "h10_5",
+     {},
+     "But it's also highly addictive, and people started getting hooked."
+    ],
+    [
+     "h10_6",
+     {},
+     "Today, dentists use safer cousins of cocaine, like lidocaine, that numb without the high."
+    ]
+   ]
+  }
+ ]
+}

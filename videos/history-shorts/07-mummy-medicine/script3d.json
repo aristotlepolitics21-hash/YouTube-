@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 7,
+ "title": "When People Ate Mummies as Medicine",
+ "out": "when-people-ate-mummies-as-medicine",
+ "sets": "body/h07.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "When People Ate Mummies as Medicine",
+   "lines": [
+    [
+     "h07_1",
+     {
+      "top": "WHEN PEOPLE ATE",
+      "bottom": "MUMMIES AS MEDICINE"
+     },
+     "For hundreds of years, Europeans ate dead people as medicine. Specifically, Egyptian mummies."
+    ],
+    [
+     "h07_2",
+     {},
+     "Mummies were ground into a powder called mumia, and sold in apothecary shops."
+    ],
+    [
+     "h07_3",
+     {},
+     "People mixed it into drinks to treat bruises, headaches and almost anything else."
+    ],
+    [
+     "h07_4",
+     {},
+     "It may have started with a translation mix up. Mumia was originally a word for a natural black tar used as medicine."
+    ],
+    [
+     "h07_5",
+     {},
+     "Demand got so high that some sellers made fake mummies from recently dead bodies."
+    ],
+    [
+     "h07_6",
+     {},
+     "The trend only faded in the 1700s. Today, mummies go to museums instead of medicine cabinets."
+    ]
+   ]
+  }
+ ]
+}

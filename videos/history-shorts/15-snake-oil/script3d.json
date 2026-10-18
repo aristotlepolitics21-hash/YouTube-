@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 15,
+ "title": "What Was Actually in Snake Oil",
+ "out": "what-was-actually-in-snake-oil",
+ "sets": "body/h15.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "What Was Actually in Snake Oil",
+   "lines": [
+    [
+     "h15_1",
+     {
+      "top": "WHAT WAS ACTUALLY",
+      "bottom": "IN SNAKE OIL"
+     },
+     "In the 1890s, a cowboy called Clark Stanley became famous selling snake oil."
+    ],
+    [
+     "h15_2",
+     {},
+     "He said he learned the recipe from healers, and boiled rattlesnakes in front of crowds."
+    ],
+    [
+     "h15_3",
+     {},
+     "He claimed it cured aches, pains, toothaches and more."
+    ],
+    [
+     "h15_4",
+     {},
+     "Then, in 1917, government chemists tested a bottle."
+    ],
+    [
+     "h15_5",
+     {},
+     "It was mostly mineral oil, with beef fat, red pepper and turpentine. No snake at all."
+    ],
+    [
+     "h15_6",
+     {},
+     "He was fined twenty dollars. And snake oil became a word for any fake cure."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 13,
+ "title": "The Doctor Who Told Everyone to Wash Their Hands",
+ "out": "the-doctor-who-told-everyone-to-wash-their-hands",
+ "sets": "body/h13.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "The Doctor Who Told Everyone to Wash Their Hands",
+   "lines": [
+    [
+     "h13_1",
+     {
+      "top": "THE DOCTOR WHO TOLD EVERYONE",
+      "bottom": "TO WASH THEIR HANDS"
+     },
+     "In 1840s Vienna, women giving birth in hospital were dying of a deadly fever."
+    ],
+    [
+     "h13_2",
+     {},
+     "A young doctor, Ignaz Semmelweis, noticed something. Doctors were coming straight from autopsies to deliver babies."
+    ],
+    [
+     "h13_3",
+     {},
+     "In 1847, he made them wash their hands in chlorinated lime first."
+    ],
+    [
+     "h13_4",
+     {},
+     "Deaths on his ward dropped dramatically."
+    ],
+    [
+     "h13_5",
+     {},
+     "But many doctors were offended by the idea that their own hands were spreading disease."
+    ],
+    [
+     "h13_6",
+     {},
+     "Semmelweis died in 1865, mostly ignored. Today he's called the saviour of mothers."
+    ]
+   ]
+  }
+ ]
+}

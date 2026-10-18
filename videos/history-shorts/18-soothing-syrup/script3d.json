@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 18,
+ "title": "The Baby Medicine That Was Really Morphine",
+ "out": "the-baby-medicine-that-was-really-morphine",
+ "sets": "body/h18.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "The Baby Medicine That Was Really Morphine",
+   "lines": [
+    [
+     "h18_1",
+     {
+      "top": "THE BABY MEDICINE THAT",
+      "bottom": "WAS REALLY MORPHINE"
+     },
+     "In the 1800s, exhausted parents had a secret weapon for a crying baby. Mrs Winslow's Soothing Syrup."
+    ],
+    [
+     "h18_2",
+     {},
+     "It was sold for teething babies, and the adverts promised a peaceful night for the whole family."
+    ],
+    [
+     "h18_3",
+     {},
+     "The problem? It contained morphine."
+    ],
+    [
+     "h18_4",
+     {},
+     "It made babies sleepy, all right. But a little too much could stop a baby from waking up at all."
+    ],
+    [
+     "h18_5",
+     {},
+     "In 1911, the American Medical Association called it a baby killer."
+    ],
+    [
+     "h18_6",
+     {},
+     "Laws changed, labels improved, and the morphine was eventually taken out."
+    ]
+   ]
+  }
+ ]
+}

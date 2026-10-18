@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 6,
+ "title": "Why Plague Doctors Wore Bird Masks",
+ "out": "why-plague-doctors-wore-bird-masks",
+ "sets": "body/h06.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Why Plague Doctors Wore Bird Masks",
+   "lines": [
+    [
+     "h06_1",
+     {
+      "top": "WHY PLAGUE DOCTORS",
+      "bottom": "WORE BIRD MASKS"
+     },
+     "This is one of the creepiest outfits in history. The plague doctor."
+    ],
+    [
+     "h06_2",
+     {},
+     "That long beak wasn't for show. It was stuffed with herbs, flowers and spices."
+    ],
+    [
+     "h06_3",
+     {},
+     "Doctors believed plague spread through bad air, called miasma. The herbs were meant to filter it out."
+    ],
+    [
+     "h06_4",
+     {},
+     "They carried a cane, so they could examine patients without touching them."
+    ],
+    [
+     "h06_5",
+     {},
+     "The real culprit was much smaller. Plague was mostly spread by fleas, carried on rats."
+    ],
+    [
+     "h06_6",
+     {},
+     "The waxed coat may have helped a little, by keeping the fleas off. But the herbs did nothing."
+    ]
+   ]
+  }
+ ]
+}

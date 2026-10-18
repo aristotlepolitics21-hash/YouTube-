@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 9,
+ "title": "When Heroin Was Cough Medicine",
+ "out": "when-heroin-was-cough-medicine",
+ "sets": "body/h09.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "When Heroin Was Cough Medicine",
+   "lines": [
+    [
+     "h09_1",
+     {
+      "top": "WHEN HEROIN WAS",
+      "bottom": "COUGH MEDICINE"
+     },
+     "In 1898, a German company started selling a brand new cough medicine. It was called Heroin."
+    ],
+    [
+     "h09_2",
+     {},
+     "Bayer named it heroin, from the German word for heroic, because it was meant to be so powerful."
+    ],
+    [
+     "h09_3",
+     {},
+     "It really did calm coughs, at a time when diseases like tuberculosis were common."
+    ],
+    [
+     "h09_4",
+     {},
+     "It was even sold as a safer, less addictive alternative to morphine."
+    ],
+    [
+     "h09_5",
+     {},
+     "Within a few years, doctors noticed patients becoming badly addicted."
+    ],
+    [
+     "h09_6",
+     {},
+     "In the US, heroin was banned completely in 1924. Bayer's other new drug from that time did better. Aspirin."
+    ]
+   ]
+  }
+ ]
+}

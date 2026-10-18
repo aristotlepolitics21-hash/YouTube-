@@ -1,0 +1,49 @@
+{
+ "series": "Weird History of Medicine",
+ "episode": 11,
+ "title": "The Ice Pick Surgery That Won a Nobel Prize",
+ "out": "the-ice-pick-surgery-that-won-a-nobel-prize",
+ "sets": "body/h11.js",
+ "voice": "kokoro:am_michael",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "The Ice Pick Surgery That Won a Nobel Prize",
+   "lines": [
+    [
+     "h11_1",
+     {
+      "top": "THE ICE PICK SURGERY THAT",
+      "bottom": "WON A NOBEL PRIZE"
+     },
+     "In the 1940s, an American doctor named Walter Freeman travelled the country performing a ten minute brain operation."
+    ],
+    [
+     "h11_2",
+     {},
+     "It was called the transorbital lobotomy. His tool looked a lot like an ice pick."
+    ],
+    [
+     "h11_3",
+     {},
+     "He pushed it in above the eye, and swept it side to side to cut connections in the front of the brain."
+    ],
+    [
+     "h11_4",
+     {},
+     "A different version of lobotomy even won its inventor a Nobel Prize, in 1949."
+    ],
+    [
+     "h11_5",
+     {},
+     "Some patients became calmer. Many were left changed forever, and some died."
+    ],
+    [
+     "h11_6",
+     {},
+     "New medicines arrived in the 1950s, and lobotomy fell out of use. Freeman performed around three and a half thousand of them."
+    ]
+   ]
+  }
+ ]
+}
