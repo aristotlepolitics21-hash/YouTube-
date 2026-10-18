@@ -156,7 +156,7 @@ export function body(K) {
     const wings = [-1, 1].map(d => { const w = new THREE.Group(); w.position.set(d * .35, .05, 0); w.add(M(SPH(.25, 20, 12), m, { pos: [d * .12, 0, -.05], scale: [.4, .8, 1.2] })); g.add(w); return w; });
     g.flap = s => wings.forEach((w, i) => w.rotation.z = (i ? -1 : 1) * Math.sin(s * 18) * .6); return g; }
   // an insect: kind 'bee' | 'wasp' | 'mosquito'. flap(s) beats the wings; userData.abdomen for swelling
-  function insect(kind = 'bee') { const g = new THREE.Group(), yl = plastic(kind === 'mosquito' ? 0x5a5040 : 0xffc21a), dk = plastic(0x1d1a16), wingM = plastic(0xe8f6ff, { transparent: true, opacity: .45, roughness: .05, side: THREE.DoubleSide, depthWrite: false });
+  function insect(kind = 'bee') { const g = new THREE.Group(), yl = plastic(kind === 'mosquito' ? 0x5a5040 : 0xffc21a), dk = plastic(0x1d1a16), wingM = plastic(0xe8f6ff, { transparent: true, opacity: .28, roughness: .05, side: THREE.DoubleSide, depthWrite: false });
     const abd = new THREE.Group(); abd.position.set(0, 0, -.55); g.add(abd);
     if (kind === 'mosquito') abd.add(M(new THREE.CapsuleGeometry(.12, .7, 8, 16), yl, { rot: [Math.PI / 2, 0, 0] }));
     else { abd.add(M(SPH(.36, 32, 24), yl, { scale: [1, 1, kind === 'wasp' ? 1.5 : 1.3] })); for (let i = 0; i < 3; i++) abd.add(M(new THREE.TorusGeometry(.33 - i * .05, .05, 10, 32), dk, { pos: [0, 0, -.12 - i * .17] })); }
@@ -164,7 +164,7 @@ export function body(K) {
     [-1, 1].forEach(d => g.add(M(SPH(.08, 16, 12), plastic(kind === 'mosquito' ? 0x8a1a1a : 0x2a2a3a, { roughness: .05 }), { pos: [d * .13, .12, .45] })));
     const sting = M(new THREE.ConeGeometry(.04, .25, 12), dk, { pos: [0, 0, kind === 'mosquito' ? -.95 : -1.08], rot: [-Math.PI / 2, 0, 0] }); if (kind !== 'mosquito') g.add(sting);
     if (kind === 'mosquito') g.add(M(new THREE.CylinderGeometry(.012, .012, .7, 8), dk, { pos: [0, -.18, .75], rot: [Math.PI / 2 + .5, 0, 0] }));
-    const wings = [-1, 1].map(d => { const w = new THREE.Group(); w.position.set(d * .1, .2, .0); w.add(M(new THREE.CircleGeometry(.4, 24), wingM, { pos: [d * .35, 0, -.1], rot: [-Math.PI / 2, 0, 0], scale: [.55, 1.2, 1], shadow: false })); g.add(w); return w; });
+    const wings = [-1, 1].map(d => { const w = new THREE.Group(); w.position.set(d * .1, .2, .0); w.add(M(new THREE.CircleGeometry(.4, 24), wingM, { pos: [d * .35, 0, -.15], rot: [-Math.PI / 2, 0, 0], scale: [.42, 1.1, 1], shadow: false })); g.add(w); return w; });
     for (let i = 0; i < 3; i++) [-1, 1].forEach(d => g.add(M(new THREE.CylinderGeometry(.02, .02, kind === 'mosquito' ? .9 : .45, 6), dk, { pos: [d * (kind === 'mosquito' ? .35 : .22), -.2, .15 - i * .15], rot: [0, 0, d * (kind === 'mosquito' ? 1.0 : .5)] })));
     g.userData = { abdomen: abd, sting }; g.flap = s => wings.forEach((w, i) => w.rotation.z = (i ? -1 : 1) * (Math.sin(s * 40) * .5 + .2)); return g; }
 
@@ -204,6 +204,13 @@ export function body(K) {
   // snow that drifts down through a box
   function snow(n = 40, box = [6, 6, 3], seed = 5) { const R = rng(seed), g = new THREE.Group(), P = []; for (let i = 0; i < n; i++) { g.add(sprite(0xffffff, .12, .9)); P.push([(R() - .5) * box[0], R() * box[1], (R() - .5) * box[2], R() * 6]); }
     g.update = s => g.children.forEach((c, i) => { const [x, y, z, ph] = P[i]; c.position.set(x + Math.sin(s + ph) * .2, ((y - s * .6) % box[1] + box[1]) % box[1], z); }); return g; }
+
+  // a fat gut tube along x with squeezing rings that travel along it; squeeze(u) returns the ring pinch at x
+  function gut(len = 9, r = 1.0) { const g = new THREE.Group(); const t = M(new THREE.CylinderGeometry(r, r, len, 48, 1, true), plastic(0xff9fb0, { transparent: true, opacity: .4, side: THREE.DoubleSide, depthWrite: false, roughness: .3 }), { rot: [0, 0, Math.PI / 2], shadow: false }); g.add(t);
+    const back = M(new THREE.CylinderGeometry(r * 1.01, r * 1.01, len, 48, 1, true, Math.PI * .5, Math.PI), matte(0xc84a5c, { side: THREE.BackSide }), { rot: [0, 0, Math.PI / 2], shadow: false }); g.add(back);
+    const rings = [0, 1, 2].map(() => { const m = M(new THREE.TorusGeometry(r, .16, 16, 48), plastic(0xe2475a, { roughness: .4 }), { rot: [0, Math.PI / 2, 0] }); g.add(m); return m; });
+    g.update = s => rings.forEach((m, i) => { const x = ((s * 1.6 + i * 3) % len) - len / 2; m.position.x = x; m.scale.setScalar(.75); });
+    g.ringX = s => rings.map((_, i) => ((s * 1.6 + i * 3) % len) - len / 2); return g; }
 
   // a pill bottle
   function pills() { return G(M(new THREE.CylinderGeometry(.22, .22, .5, 24), plastic(0xff8a3d, { transparent: true, opacity: .85 }), { pos: [0, .25, 0] }), M(new THREE.CylinderGeometry(.24, .24, .14, 24), plastic(0xffffff), { pos: [0, .56, 0] }), M(new THREE.CylinderGeometry(.225, .225, .22, 24, 1, true), matte(0xffffff), { pos: [0, .25, 0] })); }
@@ -294,5 +301,5 @@ export function body(K) {
     return { ...st, update(t, s) { who.pose({ s, handR: reach('wave', seg(t, 0, .15)).add(V(Math.sin(s * 9) * .15, 0, 0)), smile: .9 }); btn.scale.setScalar(popIn(t, .15)); if (q) q.scale.setScalar(popIn(t, .3)); orbit(st, s, [0, 2.6, 0], 6.6); } };
   };
 
-  return (body.done = { ST, set, popIn, tag, titleSigns, arrow, check, warnSign, counter, makePerson, ARM, SKINS, pink, lumpy, brain, heart, lungs, stomach, tube, vessel, nerve, flow, pulse, germ, germs, rbc, floaters, eyeball, spray, bed, ivPole, table, lensRing, orbit, dolly, skinM, cloth, HAND, reach, hud, placeHuds, shoot, facePt, pimple, makeDoctor, mirror, pills, bigHand, trophy, gauge, animal, bird, insect, glass, burger, sodaCan, chair, thermometer, blanket, bandage, sweat, dizzy, soundWaves, whiteCell, skinSection, link, notes, snow });
+  return (body.done = { ST, set, popIn, tag, titleSigns, arrow, check, warnSign, counter, makePerson, ARM, SKINS, pink, lumpy, brain, heart, lungs, stomach, tube, vessel, nerve, flow, pulse, germ, germs, rbc, floaters, eyeball, spray, bed, ivPole, table, lensRing, orbit, dolly, skinM, cloth, HAND, reach, hud, placeHuds, shoot, facePt, pimple, makeDoctor, mirror, pills, bigHand, trophy, gauge, animal, bird, insect, glass, burger, sodaCan, chair, thermometer, blanket, bandage, sweat, dizzy, soundWaves, whiteCell, skinSection, link, notes, snow, gut });
 }

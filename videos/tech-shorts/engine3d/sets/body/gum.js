@@ -3,20 +3,13 @@ import { body } from './common.js';
 
 export function register(K) {
   const { THREE, BUILD, M, RB, SPH, G, plastic, matte, glowM, sprite, clamp, lerp, seg, ease, frac, pop, V, rng } = K;
-  const B = body(K), { set, popIn, tag, titleSigns, makePerson, reach, hud, shoot, orbit, tube, lumpy, stomach, check, counter, warnSign } = B;
+  const B = body(K), { set, popIn, tag, titleSigns, makePerson, reach, hud, shoot, orbit, tube, lumpy, stomach, check, counter, warnSign, gut } = B;
   const kid = { skin: 0xa8714e, shirt: 0xff6fb1, hair: 0x1a120c, eye: 0x2a1a10 };
   const GUM = 0xff8fc8;
   const gumBlob = (s = 1, seed = 2) => { const g = lumpy(.3, .1, 7, plastic(GUM, { roughness: .45 }), seed, 40); g.scale.setScalar(s); return g; };
   const ESO = [[0, 2.42, .45], [0, 2.3, .05], [0, 2.0, 0], [0, 1.7, .05], [.1, 1.42, .15]];
   function toilet() { const w = plastic(0xffffff, { roughness: .2 }); return G(M(new THREE.CylinderGeometry(.55, .4, .8, 40), w, { pos: [0, .4, 0], scale: [1, 1, 1.25] }), M(new THREE.TorusGeometry(.5, .08, 12, 40), w, { pos: [0, .82, 0], rot: [Math.PI / 2, 0, 0], scale: [1, 1.25, 1] }),
     M(RB(1.0, 1.0, .4, .1), w, { pos: [0, 1.1, -.75] }), M(RB(.2, .06, .1, .02), plastic(0xc9cdd8), { pos: [.3, 1.5, -.55] })); }
-  // a fat gut tube along x with squeezing rings that travel along it; squeeze(u) returns the ring pinch at x
-  function gut(len = 9, r = 1.0) { const g = new THREE.Group(); const t = M(new THREE.CylinderGeometry(r, r, len, 48, 1, true), plastic(0xff9fb0, { transparent: true, opacity: .4, side: THREE.DoubleSide, depthWrite: false, roughness: .3 }), { rot: [0, 0, Math.PI / 2], shadow: false }); g.add(t);
-    const back = M(new THREE.CylinderGeometry(r * 1.01, r * 1.01, len, 48, 1, true, Math.PI * .5, Math.PI), matte(0xc84a5c, { side: THREE.BackSide }), { rot: [0, 0, Math.PI / 2], shadow: false }); g.add(back);
-    const rings = [0, 1, 2].map(() => { const m = M(new THREE.TorusGeometry(r, .16, 16, 48), plastic(0xe2475a, { roughness: .4 }), { rot: [0, Math.PI / 2, 0] }); g.add(m); return m; });
-    g.update = s => rings.forEach((m, i) => { const x = ((s * 1.6 + i * 3) % len) - len / 2; m.position.x = x; m.scale.setScalar(.75); });
-    g.ringX = s => rings.map((_, i) => ((s * 1.6 + i * 3) % len) - len / 2); return g; }
-
   BUILD.gm_hook = (p) => {
     const st = set('lilac'), who = makePerson(kid); st.scene.add(who); const bub = M(SPH(.3, 40, 28), plastic(GUM, { roughness: .25, transparent: true, opacity: .92 }), { pos: [0, 2.43, .7] }); st.scene.add(bub);
     const ts = hud(st, titleSigns(p.top, p.bottom, 0xe84d9a), .66, 0, .86), yrs = hud(st, tag('7 YEARS?', 0xffd23f, '#3a2400', 1.8, .55), -.05, .45, .4);
