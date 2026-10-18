@@ -2998,6 +2998,53 @@ def earth_globe(frames, radius=1.0, spin=20, tilt=23.0, clouds=True):
     return root
 
 
+def _linear(obj):
+    ad = obj.animation_data
+    if ad and ad.action:
+        for fc in getattr(ad.action, "fcurves", []):
+            for kp in fc.keyframe_points:
+                kp.interpolation = "LINEAR"
+
+
+def planet(frames, radius=1.0, colors=((0.95, 0.85, 0.55), (0.85, 0.65, 0.35), (0.98, 0.92, 0.75)), scale=2.5,
+           spin=40.0, tilt=0.0, marker=True, glow=None):
+    """A cloudy planet turning steadily about its axis (spin = degrees over the shot; negative turns the other
+    way). A red pin on the equator makes the direction of spin easy to see."""
+    root = empty("planet")
+    root.rotation_euler = (0, R(tilt), 0)
+    body = empty("planet_spin")
+    body.parent = root
+    sph("planet_body", (0, 0, 0), radius, space.planet_material("venus_clouds", list(colors), scale), parent=body)
+    if marker:
+        pm = mat("pin", (1.0, 0.15, 0.1), 0.3, emit=2)
+        cyl("pin_stem", (0, -radius * 1.06, 0), radius * 0.02, radius * 0.14, pm, rot=(R(90), 0, 0), parent=body)
+        sph("pin_head", (0, -radius * 1.14, 0), radius * 0.06, pm, parent=body)
+    if glow:
+        sph("planet_haze", (0, 0, 0), radius * 1.06, looks.xray("haze", tuple(glow), 1.2, 0.15), parent=root)
+    props.key(body, 1, rotation_euler=(0, 0, 0))
+    props.key(body, frames, rotation_euler=(0, 0, R(spin)))
+    _linear(body)
+    return root
+
+
+def orbit(frames, radius=1.6, travel=(0.0, 0.5), start=-90.0, planet_r=0.12, color=(0.95, 0.8, 0.45), sun=True):
+    """A dashed orbit ring around a small sun, with a planet moving along it: `travel` is the fraction of a lap
+    covered over the shot (from, to), counter-clockwise seen from above, starting at angle `start`."""
+    root = empty("orbit")
+    ring = space.dashed_circle("orbit_ring", (0, 0, 0), radius, (0.6, 0.75, 1.0), dashes=72, strength=1.5, width=0.008)
+    ring.parent = root
+    if sun:
+        for o in space.glowing_sun((0, 0, 0), radius * 0.22):
+            o.parent = root
+    arm = empty("orbit_arm")
+    arm.parent = root
+    sph("orbit_planet", (radius, 0, 0), planet_r, space.planet_material("orbit_planet", [color, tuple(c * 0.8 for c in color)], 3), parent=arm)
+    props.key(arm, 1, rotation_euler=(0, 0, R(start + 360 * travel[0])))
+    props.key(arm, frames, rotation_euler=(0, 0, R(start + 360 * travel[1])))
+    _linear(arm)
+    return root
+
+
 def random_walk(frames, radius=1.0, steps=140, draw=(0.05, 0.9), seed=7, shell=True):
     """Light's 'drunken walk' out of the Sun: a glowing zigzag path that draws itself from the centre
     of a see-through orange sphere to its surface."""
@@ -3025,4 +3072,4 @@ def random_walk(frames, radius=1.0, steps=140, draw=(0.05, 0.9), seed=7, shell=T
 PROPS = {name: fn for name, fn in globals().items()
          if callable(fn) and not name.startswith("_") and fn.__module__ == __name__
          and name not in ("mat", "empty", "child", "box", "cyl", "sph", "curve_obj", "lathe", "key_frac", "draw_on",
-                          "glow_keys", "visible_from", "_fuzzy", "_nucleus", "_tree", "hide_keys", "_wing", "propeller", "BASE_COLORS")}
+                          "glow_keys", "visible_from", "_linear", "_fuzzy", "_nucleus", "_tree", "hide_keys", "_wing", "propeller", "BASE_COLORS")}

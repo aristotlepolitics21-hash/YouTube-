@@ -5,7 +5,7 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 sys.path.insert(0, str(HERE.parent))
-from common_short import P, ShotList, T, cam, stage, who, write  # noqa: E402
+from common_short import STAND, P, ShotList, T, cam, stage, who, write  # noqa: E402
 
 SPACE = {}
 GAZER = {"hair": [0.25, 0.15, 0.08], "sleeves": "long",

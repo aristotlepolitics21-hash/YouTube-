@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "longform"))
-from common import P, ShotList, T, cam, stage, who  # noqa: E402,F401
+from common import STAND, P, ShotList, T, cam, stage, who  # noqa: E402,F401
 import json  # noqa: E402
 
 SHORT_DEFAULTS = {

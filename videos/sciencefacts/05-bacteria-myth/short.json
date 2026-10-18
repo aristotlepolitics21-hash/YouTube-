@@ -1,0 +1,725 @@
+{
+ "format": "short",
+ "render": {
+  "width": 1080,
+  "height": 1920,
+  "samples": 16,
+  "fps": 24
+ },
+ "still_render": {
+  "width": 1080,
+  "height": 1920,
+  "samples": 24
+ },
+ "output_fps": 24,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael",
+  "speed": 1.0
+ },
+ "music_gain": 0.18,
+ "whisper_model": "small.en",
+ "gap_seconds": 0.15,
+ "lead_seconds": 0.3,
+ "burn_captions": true,
+ "slug": "bacteria-myth",
+ "title": "You're Not 90% Bacteria",
+ "description": "The famous 10-to-1 bacteria ratio is a myth. A 2016 recount found it's closer to 1 to 1. #shorts #science #biology #microbiome",
+ "music_mood": "wonder",
+ "tags": [
+  "science facts",
+  "bacteria",
+  "microbiome",
+  "human body",
+  "biology",
+  "shorts"
+ ],
+ "sources": [
+  "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002533",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC4991899/",
+  "https://wis-wander.weizmann.ac.il/life-sciences/germs-humans-and-numbers"
+ ],
+ "shots": [
+  {
+   "id": "s001",
+   "line": "You've probably heard that bacteria in your body outnumber your own cells ten to one.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bacteria",
+      "at": [
+       0,
+       0,
+       0.9
+      ],
+      "args": {
+       "n": 40,
+       "area": 0.8
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "10 : 1 ?",
+      "at": [
+       0,
+       -0.8,
+       1.6
+      ],
+      "size": 0.22,
+      "color": [
+       0.55,
+       0.95,
+       0.4
+      ],
+      "pop": 0.4
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.0
+     ],
+     "to": [
+      0.2,
+      -2.1,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.16,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.02,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s002",
+   "line": "It's one of the most repeated facts in biology. And it's wrong.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bacteria",
+      "at": [
+       0,
+       0,
+       0.9
+      ],
+      "args": {
+       "n": 40,
+       "area": 0.8,
+       "seed": 2
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "WRONG",
+      "at": [
+       0,
+       -0.8,
+       1.6
+      ],
+      "size": 0.22,
+      "color": [
+       1.0,
+       0.35,
+       0.3
+      ],
+      "pop": 0.55
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.0
+     ],
+     "to": [
+      0.2,
+      -2.1,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.16,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.02,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s003",
+   "line": "That ratio came from a rough estimate back in the nineteen seventies.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.1,
+       0.08,
+       0.06
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.6,
+        0.42,
+        0.32
+       ],
+       "shirt": [
+        0.9,
+        0.92,
+        0.95
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.25
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 40,
+        "R": 40
+       }
+      }
+     }
+    ],
+    "props": [
+     {
+      "prop": "table",
+      "at": [
+       0,
+       -0.1,
+       0
+      ]
+     },
+     {
+      "prop": "microscope",
+      "at": [
+       0.3,
+       -0.2,
+       0.875
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.9,
+      -2.5,
+      1.6
+     ],
+     "to": [
+      0.6,
+      -2.1,
+      1.5
+     ],
+     "target": [
+      0,
+      0,
+      1.15
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ]
+    }
+   },
+   "still": true
+  },
+  {
+   "id": "s004",
+   "line": "In twenty sixteen, scientists in Israel recounted, using far better data.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "petri_dish",
+      "at": [
+       0,
+       0,
+       0.9
+      ],
+      "args": {
+       "mould": false
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -1.6,
+      1.3
+     ],
+     "to": [
+      0.2,
+      -1.4,
+      1.25
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.16,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.02,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s005",
+   "line": "A typical adult has about thirty trillion human cells, and about thirty-eight trillion bacteria.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "blood_cells",
+      "at": [
+       -0.55,
+       0,
+       0.9
+      ],
+      "scale": 0.6
+     },
+     {
+      "prop": "bacteria",
+      "at": [
+       0.55,
+       0,
+       0.9
+      ],
+      "args": {
+       "n": 30,
+       "area": 0.4
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "30 TRILLION",
+      "at": [
+       -0.55,
+       -0.6,
+       1.5
+      ],
+      "size": 0.1,
+      "color": [
+       1.0,
+       0.45,
+       0.4
+      ],
+      "pop": 0.3
+     },
+     {
+      "text": "38 TRILLION",
+      "at": [
+       0.55,
+       -0.6,
+       1.5
+      ],
+      "size": 0.1,
+      "color": [
+       0.55,
+       0.95,
+       0.4
+      ],
+      "pop": 0.65
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.0
+     ],
+     "to": [
+      0.2,
+      -2.7,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.16,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.02,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s006",
+   "line": "That's not ten to one. It's roughly one to one.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "blood_cells",
+      "at": [
+       -0.4,
+       0,
+       0.9
+      ],
+      "scale": 0.5
+     },
+     {
+      "prop": "bacteria",
+      "at": [
+       0.4,
+       0,
+       0.9
+      ],
+      "args": {
+       "n": 24,
+       "area": 0.35
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "1 : 1",
+      "at": [
+       0,
+       -0.8,
+       1.6
+      ],
+      "size": 0.26,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.35
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      1.0
+     ],
+     "to": [
+      0.2,
+      -2.1,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.55
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.16,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.02,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s007",
+   "line": "Most of those bacteria live in your large intestine. And most of your own cells are red blood cells.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "blood_cells",
+      "at": [
+       0,
+       0,
+       0.9
+      ],
+      "args": {
+       "n": 14
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.3,
+      -2.2,
+      1.0
+     ],
+     "to": [
+      0.1,
+      -1.9,
+      0.95
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.16,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.02,
+      0.02
+     ]
+    }
+   }
+  },
+  {
+   "id": "s008",
+   "line": "The ratio even shifts every time you go to the toilet. Afterwards, your human cells may briefly win.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.1,
+       0.08,
+       0.06
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.6,
+        0.42,
+        0.32
+       ],
+       "shirt": [
+        0.9,
+        0.92,
+        0.95
+       ],
+       "pants": [
+        0.2,
+        0.2,
+        0.25
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": 10
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -2.2,
+      1.5
+     ],
+     "to": [
+      0.4,
+      -1.9,
+      1.45
+     ],
+     "target": [
+      0,
+      0,
+      1.1
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.55,
+      0.6,
+      0.62
+     ]
+    }
+   }
+  },
+  {
+   "id": "s009",
+   "line": "So you're not mostly bacteria. It's about an even split.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "bacteria",
+      "at": [
+       0,
+       0,
+       0.9
+      ],
+      "args": {
+       "n": 40,
+       "area": 0.8,
+       "seed": 9
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -1.6,
+      1.0
+     ],
+     "to": [
+      0,
+      -3.0,
+      1.1
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 35,
+     "target_to": [
+      0,
+      0,
+      0.8
+     ]
+    },
+    "env_opts": {
+     "horizon": [
+      0.04,
+      0.16,
+      0.12
+     ],
+     "zenith": [
+      0.0,
+      0.02,
+      0.02
+     ]
+    }
+   }
+  }
+ ]
+}
