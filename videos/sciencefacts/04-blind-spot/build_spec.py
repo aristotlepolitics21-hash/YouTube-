@@ -17,12 +17,12 @@ S = ShotList()
 S("Right now, there's a hole in your vision, and you can't see it.",
   stage("studio", EYE, props=[P("eye", (0, 0, 0.95), args={"look": [[0, [0, -10]], [1, [8, 10]]]})], env_opts=DARK))
 S("At the back of each eye, the optic nerve exits through one small patch of the retina.",
-  stage("studio", cam((1.8, 0.6, 1.1), (1.6, 0.9, 1.05), (0, 0.3, 0.7)), props=[P("eye", (0, 0, 0.95)), P("neuron", (0.1, 0.9, 0.95), scale=0.5, rot=[0, 0, 90], args={"fire": [0.2, 0.8]})], env_opts=DARK))
+  stage("studio", cam((3.6, -0.9, 1.35), (3.3, -0.5, 1.3), (0, 0.55, 0.8)), props=[P("eye", (0, 0, 0.95)), P("neuron", (0, 1.05, 0.95), scale=0.9, rot=[0, 0, 90], args={"fire": [0.2, 0.8]})], env_opts=DARK))
 S("That patch has no light sensors at all. Light landing there is never detected.",
-  stage("studio", EYE, props=[P("eye", (0, 0, 0.95))], texts=[T("NO SENSORS", (0, -1.0, 1.55), 0.13, (1.0, 0.45, 0.4), pop=0.35)], env_opts=DARK))
+  stage("studio", cam((0, -3.2, 1.0), (0.2, -2.9, 0.98), (0, 0, 0.75)), props=[P("eye", (0, 0, 0.95))], texts=[T("NO SENSORS", (0, -0.7, 1.62), 0.13, (1.0, 0.45, 0.4), pop=0.35)], env_opts=DARK))
 S("It's called the blind spot, and every human eye has one.",
-  stage("studio", cam((0, -3.0, 1.0), (0.2, -2.7, 0.95), (0, 0, 0.6)), props=[P("eye", (-0.55, 0, 0.95), scale=0.8), P("eye", (0.55, 0, 0.95), scale=0.8)],
-        texts=[T("BLIND SPOT", (0, -0.8, 1.6), 0.16, GOLD, pop=0.3)], env_opts=DARK))
+  stage("studio", cam((0, -4.0, 1.05), (0.2, -3.7, 1.0), (0, 0, 0.8)), props=[P("eye", (-0.5, 0, 0.95), scale=0.7), P("eye", (0.5, 0, 0.95), scale=0.7)],
+        texts=[T("BLIND SPOT", (0, -0.6, 1.62), 0.16, GOLD, pop=0.3)], env_opts=DARK))
 S("So why don't you notice a gap? With both eyes open, each eye fills in what the other one misses.",
   stage("lab", cam((0.4, -1.8, 1.6), (0.3, -1.5, 1.58), (0, 0, 1.45)), cast=[who(VIEWER, at=(0, 0.35, 0))],
         env_opts={"wall": [0.5, 0.55, 0.6]}))
