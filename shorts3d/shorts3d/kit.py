@@ -2307,7 +2307,10 @@ def dna_helix(frames, length=2.4, turns=3.0, spin=60, cut=None, edit=None, seed=
         props.key(root, 1, rotation_euler=(0, 0, 0))
         props.key(root, frames, rotation_euler=(R(spin), 0, 0))
         fx._linear(root)
-    return root
+    # Return a wrapper so a shot's own "rot" (e.g. standing the helix upright) isn't overwritten by the spin keys.
+    outer = empty("dna_outer")
+    root.parent = outer
+    return outer
 
 
 def cas9(frames, slide=None, guide=True):
