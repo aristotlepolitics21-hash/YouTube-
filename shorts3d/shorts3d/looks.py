@@ -104,7 +104,9 @@ def render_settings(scene, width=540, height=960, samples=12, fps=24):
     c.use_denoising = True
     c.max_bounces, c.diffuse_bounces, c.glossy_bounces = 4, 2, 2
     c.transmission_bounces, c.transparent_max_bounces = 2, 12
-    scene.render.use_persistent_data = True
+    # Persistent data reuses scene state between frames; with animated props it intermittently renders
+    # objects solid black for long runs of frames, so keep it off.
+    scene.render.use_persistent_data = False
     scene.render.resolution_x, scene.render.resolution_y = width, height
     scene.render.fps = fps
     scene.view_settings.view_transform = "AgX"
