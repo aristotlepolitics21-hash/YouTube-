@@ -4,10 +4,10 @@
 import * as THREE from 'three';
 import { getStage, Male, Female } from 'mannequin';
 
-export const W = 1280, H = 720, RS = .75;
+export const W = 1280, H = 720, RS = .6;
 const { renderer, scene, camera } = getStage();
 renderer.setAnimationLoop(null); renderer.setPixelRatio(1); renderer.setSize(W * RS, H * RS, false);
-renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFShadowMap;
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.0; renderer.outputColorSpace = THREE.SRGBColorSpace;
 camera.fov = 35; camera.aspect = W / H; camera.near = .05; camera.far = 400; camera.updateProjectionMatrix();
 export { THREE, scene, camera, renderer };
@@ -30,7 +30,7 @@ export function lights({ amb = .5, ambc = '#fff4e6', hemi = null, sun = null, sp
   scene.add(new THREE.AmbientLight(ambc, amb)); if (hemi) scene.add(new THREE.HemisphereLight(hemi[0], hemi[1], hemi[2]));
   if (sun) { const d = new THREE.DirectionalLight(sun.c || '#ffffff', sun.i ?? 2); d.position.set(...(sun.pos || [4, 8, 6])); d.castShadow = true; const s = sun.size || 8; Object.assign(d.shadow.camera, { left: -s, right: s, top: s, bottom: -s, near: .5, far: 60 }); d.shadow.mapSize.set(1024, 1024); d.shadow.bias = -.0005; scene.add(d, d.target); if (sun.target) d.target.position.set(...sun.target); }
   const out = [];
-  for (const s of spots) { const l = new THREE.SpotLight(s.c || '#ffe2b0', s.i ?? 40, s.d ?? 30, s.a ?? .4, s.pen ?? .5, 1.2); l.position.set(...s.pos); l.target.position.set(...(s.target || [0, 0, 0])); l.castShadow = s.shadow !== false; l.shadow.mapSize.set(1024, 1024); l.shadow.bias = -.0005; scene.add(l, l.target); out.push(l); }
+  spots.forEach((s, k) => { const l = new THREE.SpotLight(s.c || '#ffe2b0', s.i ?? 40, s.d ?? 30, s.a ?? .4, s.pen ?? .5, 1.2); l.position.set(...s.pos); l.target.position.set(...(s.target || [0, 0, 0])); l.castShadow = s.shadow ?? (k === 0 && !sun); l.shadow.mapSize.set(1024, 1024); l.shadow.bias = -.0005; scene.add(l, l.target); out.push(l); });
   for (const s of points) { const l = new THREE.PointLight(s.c || '#ffc880', s.i ?? 6, s.d ?? 12, 1.5); l.position.set(...s.pos); l.castShadow = !!s.shadow; scene.add(l); out.push(l); }
   return out;
 }
@@ -45,12 +45,13 @@ export const WOOD = ['#e7cfa6', '#6b4f33', '#d9bc8c', '#a27b4f', '#e7cfa6', '#e0
 const COATS = { military: '#5a5e3c', khaki: '#9a8a5a', suit: '#2b2b30', black: '#1c1b19', mao: '#77766a', robe: '#7a2a22', fur: '#6a4a30', tunic: '#e8e0cc', shirt: '#c8c0ae', armour: '#8a8a86', grey: '#55524a', prison: '#7d8088', red: '#9a2a20', navy: '#2a3346' };
 export const coatColor = c => COATS[c] || c;
 const HAIR = '#2a2420';
+let figCount = 0;
 export function fig(o = {}) {
-  const m = new (o.female ? Female : Male)(o.h || 1);
+  const m = new (o.female ? Female : Male)(o.h || 1), far = o.far ?? (figCount++ >= 4);
   if (o.coat) { const c = coatColor(o.coat), dk = new THREE.Color(c).multiplyScalar(.75).getStyle(); m.recolor(WOOD[0], o.shoes || '#1a1a1a', c, dk, o.bare ? WOOD[4] : c, c, WOOD[6]); if (o.bare) { m.l_arm.recolor && 0; } }
   else if (o.color) m.recolor(WOOD[0], '#2a2420', o.color, o.color, o.color, o.color, WOOD[6]);
   else m.recolor(...WOOD);
-  m.traverse(q => { if (q.isMesh) { q.castShadow = true; q.receiveShadow = !!o.recv; } });
+  m.traverse(q => { if (q.isMesh) { q.castShadow = !far; q.receiveShadow = !!o.recv; } }); if (far) for (const sd of "lr") for (let i = 0; i < 5; i++) m[sd + "_finger_" + i].visible = false;
   m.turn = 0; scene.updateMatrixWorld(true); const bb = new THREE.Box3().setFromObject(m); m.position.set(o.x || 0, (o.y || 0) - bb.min.y, o.z || 0);
   m.turn = o.turn || 0; scene.updateMatrixWorld(true); look(m, o); return m;
 }
@@ -138,9 +139,11 @@ export const breathe = (m, T, i = 0) => { m.torso.bend = (m.userData.bend0 ?? (m
 // ---------- frame cache ----------
 export const BUILD = {};
 let cur = null, curKey = null;
-function reset() { const kids = [...scene.children]; for (const k of kids) { scene.remove(k); k.traverse(o => { if (o.geometry && !o.geometry.userData.keep) o.geometry.dispose(); }); } scene.background = null; scene.fog = null; renderer.toneMappingExposure = 1.0; }
+function reset() { figCount = 0; const kids = [...scene.children]; for (const k of kids) { scene.remove(k); k.traverse(o => { if (o.geometry && !o.geometry.userData.keep) o.geometry.dispose(); }); } scene.background = null; scene.fog = null; renderer.toneMappingExposure = 1.0; }
+export const FPS3 = 12; let lastTq = null;
 export function render(name, p, t, T) {
-  const key = name + '|' + JSON.stringify(p);
-  if (key !== curKey) { reset(); cur = BUILD[name](p || {}) || {}; curKey = key; }
-  cur.update && cur.update(t, T); renderer.render(scene, camera); return renderer.domElement;
+  const key = name + '|' + JSON.stringify(p), Tq = Math.floor(T * FPS3 + 1e-6) / FPS3, tq = T > 0 ? t * Tq / T : 0;
+  if (key !== curKey) { reset(); cur = BUILD[name](p || {}) || {}; curKey = key; lastTq = null; }
+  if (Tq !== lastTq) { cur.update && cur.update(tq, Tq); renderer.render(scene, camera); lastTq = Tq; }
+  return renderer.domElement;
 }

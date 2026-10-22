@@ -42,7 +42,7 @@ BUILD.podium = p => { const night = p.night !== 0;
   const nb = p.banners ?? 4; for (let i = 0; i < nb; i++) box(1.0, 4.4, .05, p.bannerc || '#8a1f17', (i - (nb - 1) / 2) * 1.7, 3.2, -2.9);
   box(.55, .62, .45, '#5a4430', 0, 1.51, -.85);
   const L = fig({ x: 0, y: 1.2, z: -1.45, turn: FACE, coat: p.coat || 'military', hat: p.hat, hair: p.hair || 'side', stache: p.stache });
-  const crowd = [], R = rng(7); for (let r = 0; r < 4; r++) for (let i = -6; i <= 6; i++) { const m = fig({ x: i * .62 + (r % 2) * .31, z: 1.0 + r * .75, turn: 90 + (R() - .5) * 20, h: .95 + R() * .1 }); crowd.push(m); }
+  const crowd = [], R = rng(7); for (let r = 0; r < 3; r++) for (let i = -5; i <= 5; i++) { const m = fig({ x: i * .7 + (r % 2) * .35, z: 1.0 + r * .8, turn: 90 + (R() - .5) * 20, h: .95 + R() * .1 }); crowd.push(m); }
   const spots = lights({ amb: night ? .25 : .7, sun: night ? null : { pos: [5, 9, 7], i: 1.8, size: 9 }, spots: night ? [{ pos: [0, 7, 4], target: [0, 1.6, -1.4], i: 120, a: .3 }, { pos: [-5, 6, -1], target: [-1, 3, -3], i: 25, a: .5, c: '#ffd8a0', shadow: false }, { pos: [5, 6, -1], target: [1, 3, -3], i: 25, a: .5, c: '#ffd8a0', shadow: false }] : [] });
   return { update(t, T) { POSE.speech(L, T); crowd.forEach((m, i) => p.cheer ? POSE.cheer(m, T, i) : POSE.stand(m)); shot([1.6, 2.0, 7.0], [.9, 1.9, 6.0], t, [0, 1.3, -1]); } }; };
 BUILD.people = p => { const night = !!p.night, n = Math.min(p.n || 8, 12);
@@ -54,7 +54,7 @@ BUILD.people = p => { const night = !!p.night, n = Math.min(p.n || 8, 12);
 BUILD.inquiry = p => { scene.background = new THREE.Color('#2a2018'); ground('#6a5038'); backdrop('#5a4430', -4, 30, 10);
   box(6, 1.1, 1, '#7a5a3a', 0, .55, -2.6); box(6.2, .1, 1.2, '#8a6a48', 0, 1.12, -2.6); const judges = []; for (let i = 0; i < 5; i++) { const j = fig({ x: (i - 2) * 1.05, y: .45, z: -3.2, turn: FACE, coat: '#1c1b19' }); POSE.sit(j); judges.push(j); }
   box(1, 1, .8, '#7a5a3a', -3.4, .5, -.6); const w = fig({ x: -3.4, z: -1.1, turn: FACE + 40, coat: 'suit' }); POSE.headDown(w);
-  const aud = []; for (let r = 0; r < 2; r++) { box(7, .45, .5, '#5a4030', 0, .22, 1.6 + r * 1.1); for (let i = 0; i < 7; i++) { const a = fig({ x: (i - 3) * .95, y: .0, z: 2.0 + r * 1.1, turn: 90 }); POSE.sit(a); aud.push(a); } }
+  const aud = []; for (let r = 0; r < 2; r++) { box(7, .45, .5, '#5a4030', 0, .22, 1.6 + r * 1.1); for (let i = 0; i < 5; i++) { const a = fig({ x: (i - 2) * 1.2, y: .0, z: 2.0 + r * 1.1, turn: 90 }); POSE.sit(a); aud.push(a); } }
   lights({ amb: .5, spots: [{ pos: [0, 6, 3], target: [0, 1, -2.5], i: 60, a: .6 }, { pos: [-4, 5, 2], target: [-3.4, 1, -1], i: 30, a: .35 }] });
   return { update(t, T) { judges.forEach((j, i) => breathe(j, T, i)); shot([2.5, 2.6, 7.5], [1.2, 2.3, 6.5], t, [-.5, 1.0, -1.5]); } }; };
 BUILD.versus = p => { scene.background = new THREE.Color('#141210'); ground('#2a2622');
@@ -79,7 +79,7 @@ BUILD.army = p => { const night = !!p.night, dir = p.dir === -1 ? -1 : 1;
   if (night) { scene.background = new THREE.Color('#0f141b'); fog('#0f141b', 10, 40); } else { sky('#a8b4bc', '#ddd5c4'); fog('#ddd5c4', 14, 50); }
   ground(night ? '#1a1e24' : '#a89a80');
   if (p.ruins) for (let i = 0; i < 6; i++) ruin(-12 + i * 5, -7, 3.5, 4 + (i % 3), 1.5, night ? '#2a3240' : '#b9ab92', i + 3);
-  const rows = Math.min(p.rows || 3, 4), cols = 9, sp = 1.25, men = [];
+  const rows = Math.min(p.rows || 3, 3), cols = 7, sp = 1.4, men = [];
   for (let r = 0; r < rows; r++) for (let i = 0; i < cols; i++) { const m = fig(Object.assign({ z: -r * .9, turn: dir > 0 ? 0 : 180 }, SOLDIER)); gun(m); men.push([m, r, i]); }
   const tanks = p.tanks ? [tank(0, -4.5, 1, dir > 0 ? 0 : PI), tank(0, -7.5, 1, dir > 0 ? 0 : PI)] : [];
   const planes = p.planes ? [0, 1, 2, 3].map(i => plane3(0, 8 + i % 2 * 1.5, -6 - i * 2.5, .9)) : [];
