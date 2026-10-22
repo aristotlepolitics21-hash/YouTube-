@@ -1,0 +1,166 @@
+{
+ "series": "Tech Shorts",
+ "episode": 16,
+ "title": "How Wireless Charging Actually Works",
+ "sets": "wcharge.js",
+ "voice": "kokoro:af_heart",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "c_hook",
+     {},
+     "You put your phone down on a pad, and it starts charging. No plug, no metal touching. So how does the power get across?"
+    ],
+    [
+     "c_title",
+     {
+      "top": "WIRELESS CHARGING",
+      "bottom": "ACTUALLY WORKS"
+     },
+     "It's all magnets, in five steps."
+    ]
+   ]
+  },
+  {
+   "name": "A coil in the pad",
+   "lines": [
+    [
+     "c_coil",
+     {},
+     "Step one. Inside the charging pad is a flat coil of copper wire, wound round and round like a spiral."
+    ],
+    [
+     "c_phonecoil",
+     {},
+     "And inside your phone, just behind the back glass, is a matching coil."
+    ],
+    [
+     "c_ping",
+     {},
+     "The pad stays quiet until it senses a phone. It sends out tiny test pulses, and only powers up when something answers."
+    ]
+   ]
+  },
+  {
+   "name": "A flipping field",
+   "lines": [
+    [
+     "c_field",
+     {},
+     "Step two. The pad pushes electricity through its coil, and current in a coil makes a magnetic field."
+    ],
+    [
+     "c_flip",
+     {},
+     "But the pad keeps flipping the current back and forth, more than a hundred thousand times every second."
+    ],
+    [
+     "c_pulse",
+     {},
+     "So the magnetic field keeps growing, shrinking and flipping too, reaching up through the glass into your phone."
+    ]
+   ]
+  },
+  {
+   "name": "Induction",
+   "lines": [
+    [
+     "c_induce",
+     {},
+     "Step three. Here's the trick. A changing magnetic field pushes electrons around any coil it passes through."
+    ],
+    [
+     "c_flow",
+     {},
+     "So the field from the pad makes a current flow in your phone's coil, with no wires in between. That's called induction."
+    ],
+    [
+     "c_brush",
+     {},
+     "It's the same idea in an electric toothbrush stand, and even in some kitchen hobs."
+    ]
+   ]
+  },
+  {
+   "name": "Into the battery",
+   "lines": [
+    [
+     "c_rect",
+     {},
+     "Step four. That current flips back and forth too, but batteries need it flowing one way."
+    ],
+    [
+     "c_dc",
+     {},
+     "So a chip in your phone straightens it out, and controls exactly how much goes into the battery."
+    ],
+    [
+     "c_talk",
+     {},
+     "The phone and pad keep talking the whole time, asking for more power or less as the battery fills."
+    ]
+   ]
+  },
+  {
+   "name": "Line it up",
+   "lines": [
+    [
+     "c_align",
+     {},
+     "Step five. The coils have to line up. Slide the phone off centre, and most of the field misses."
+    ],
+    [
+     "c_magnets",
+     {},
+     "That's why some phones have a ring of magnets that snaps them into exactly the right spot."
+    ],
+    [
+     "c_heat",
+     {},
+     "Even then, some energy is lost as heat, which is why wireless charging is a little slower and warmer than a cable."
+    ]
+   ]
+  },
+  {
+   "name": "Recap",
+   "lines": [
+    [
+     "w_recap",
+     {
+      "items": [
+       [
+        "A coil in the pad",
+        ""
+       ],
+       [
+        "A flipping field",
+        ""
+       ],
+       [
+        "Induction",
+        ""
+       ],
+       [
+        "Into the battery",
+        ""
+       ],
+       [
+        "Line it up",
+        ""
+       ]
+      ]
+     },
+     "A coil in the pad. A field that flips. Induction makes a current in your phone. A chip feeds the battery. And the coils must line up."
+    ],
+    [
+     "outro",
+     {},
+     "Next time your phone charges on a pad, you'll know it's catching a magnetic field. Follow for more of the tech you use every day."
+    ]
+   ]
+  }
+ ]
+}
