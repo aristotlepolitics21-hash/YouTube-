@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 41,
+  "title": "Hirohito",
+  "subtitle": "The emperor at the centre of Japan's war",
+  "say": {"Hirohito": "Heero heetoh", "Hirohito's": "Heero heetoh's", "Shōwa": "Show wah", "Meiji": "May jee", "Nanjing": "Nan jing", "Manchuria": "Manchooria", "Tojo": "Toe joe", "Hideki": "Heedeckee", "Fumimaro": "Foomeemahro", "Konoe": "Konoh ay", "Yasukuni": "Yassoo koonee", "Hiroshima": "Hirroshima", "Nagasaki": "Nagga sahkee", "Kawamura": "Kahwa moorah", "Noriko": "Noreeko", "Bix": "Bicks", "Potsdam": "Potsdam"},
+  "package": {
+    "thumb_line": 30,
+    "thumb": ["GUILTY", "OR SPARED?"],
+    "intro": "Emperor Hirohito reigned over Japan through fourteen years of war that killed many millions across Asia and the Pacific, then reigned for more than forty years after it. Was he a powerless figurehead or a willing war leader? This documentary sets out what is known, and why historians still disagree.",
+    "facts": ["Born 29 April 1901 in Tokyo, grandson of Emperor Meiji", "Became regent in 1921 and emperor on 25 December 1926; his reign was named Shōwa", "Under the Meiji Constitution of 1889 the emperor was sovereign and supreme commander of the army and navy", "Japan seized Manchuria in 1931 and began full-scale war with China in July 1937", "An imperial conference on 1 December 1941 approved war with the United States, Britain and the Netherlands", "Broke the cabinet's deadlock in August 1945; his surrender broadcast aired on 15 August 1945", "Never charged by the International Military Tribunal for the Far East (1946–1948)", "Became 'the symbol of the State' under the 1947 constitution; died 7 January 1989, aged 87"],
+    "sources": "Encyclopaedia Britannica; Herbert P. Bix, Hirohito and the Making of Modern Japan (2000); Noriko Kawamura, Emperor Hirohito and the Pacific War (2015); John W. Dower, Embracing Defeat; records of the International Military Tribunal for the Far East.",
+    "hashtags": "#History #Documentary #WW2",
+    "tags": "hirohito, emperor hirohito, emperor showa, imperial japan, pacific war, world war 2, japanese surrender, tokyo trial, macarthur, nanjing massacre, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "HIROHITO", "sub": "The emperor at the centre of Japan's war", "art": "city", "artp": {"state": "ruin", "night": 1}}, "At noon on the fifteenth of August 1945, people across Japan gathered around radios. For the first time, they heard the voice of their emperor."],
+      ["tv", {"text": "15 AUGUST 1945 · NOON"}, "In formal court language that many listeners struggled to follow, Emperor Hirohito told them that Japan would accept the Allies' terms. The war was over."],
+      ["quote", {"text": "The war situation has developed not necessarily to Japan's advantage.", "who": "Hirohito, surrender broadcast, 15 August 1945"}, "He never used the word surrender. The war situation, he said, had developed not necessarily to Japan's advantage."],
+      ["stat", {"value": "~3,100,000", "label": "Japanese war dead · 1937 – 1945 · Japanese government estimate"}, "By then, around three million Japanese had died. Across Asia and the Pacific, the war Japan had begun killed many millions more, most of them Chinese."],
+      ["lesson", {"text": "Figurehead, or war leader?"}, "Hirohito had reigned through all of it, and would reign for another forty-three years. Whether he was a powerless figurehead or a willing war leader is still argued over today."]
+    ]},
+    { "name": "Heir to a god-king", "lines": [
+      ["date", {"date": "29 April 1901", "place": "Tokyo · Japan"}, "Hirohito was born in Tokyo on the twenty-ninth of April 1901. His grandfather was the Emperor Meiji, under whom Japan had turned itself into a modern industrial and military power."],
+      ["decree", {"title": "Meiji Constitution", "lines": ["The Emperor is sacred and inviolable", "Sovereignty rests with the Emperor", "Supreme command of army and navy"], "date": "1889"}, "Under the constitution of 1889, the emperor was sacred and inviolable, held sovereign power, and was supreme commander of the army and navy. In practice, ministers and generals made most decisions in his name."],
+      ["people", {"n": 6, "pose": "look", "label": "Imperial Japan"}, "He was raised to embody that system: dutiful and reserved. Official teaching held that the imperial line descended from the sun goddess."],
+      ["bust", {"name": "Crown Prince Hirohito", "years": "1901 – 1989", "role": "Regent from 1921. The first Japanese crown prince to tour Europe.", "hair": "side", "glasses": "round", "coat": "military"}, "In 1921, he became the first Japanese crown prince to travel abroad, touring Europe. He was much impressed by the British monarchy."],
+      ["date", {"date": "25 December 1926", "place": "Tokyo · the Shōwa era begins"}, "That same year, he became regent for his ailing father. On Christmas Day 1926, he became emperor. His reign was named Shōwa: enlightened peace."],
+      ["lesson", {"text": "Emperor, and marine biologist"}, "A shy, studious man, his great private passion was marine biology. He would publish scientific work on small sea creatures for the rest of his life."]
+    ]},
+    { "name": "The road to war", "lines": [
+      ["army", {"label": "Manchuria · September 1931"}, "In 1931, officers of Japan's army in Manchuria staged a bombing on a railway, blamed it on China, and seized the entire region without orders from Tokyo."],
+      ["lesson", {"text": "The conquest was accepted."}, "Hirohito was uneasy, but the officers were not punished. The conquest was accepted, and the army learned that defiance could pay."],
+      ["city", {"state": "normal", "night": 1, "seed": 4, "label": "Tokyo · 26 February 1936"}, "In February 1936, young army officers attempted a coup in Tokyo and murdered several senior officials. This time Hirohito acted firmly. He demanded the revolt be crushed, and it was."],
+      ["army", {"tanks": 1, "fire": 1, "label": "China · July 1937"}, "In July 1937, a clash near Beijing grew into full-scale war with China. Hirohito approved the sending of troops and followed the campaigns closely."]
+    ]},
+    { "name": "War in Asia", "lines": [
+      ["city", {"state": "ruin", "night": 1, "seed": 9, "label": "Nanjing · December 1937"}, "When Japanese forces took the Chinese capital, Nanjing, that December, they carried out mass killings and widespread rape over several weeks. Estimates of the dead range from tens of thousands to three hundred thousand."],
+      ["stat", {"value": "10 – 20 million", "label": "estimated Chinese deaths · 1937 – 1945"}, "Historians' estimates of all Chinese deaths in the war, from fighting, massacres, famine and disease, range from about ten million to twenty million."],
+      ["checklist", {"head": "Crimes of Japan's forces", "items": ["Massacres of civilians", "Forced labour", "Sexual slavery: 'comfort women'", "Abuse of prisoners of war"]}, "Across the occupied territories, Japanese forces massacred civilians, used forced labour, forced women into military brothels, and starved and abused prisoners of war."],
+      ["camp", {"label": "Unit 731 · Manchuria"}, "In Manchuria, a secret army unit, Unit 731, carried out lethal experiments on prisoners."],
+      ["decree", {"title": "Imperial General Headquarters", "lines": ["Orders issued under", "the emperor's supreme command"], "date": "1937 – 1945"}, "How much Hirohito knew of each atrocity is debated. But he received detailed military briefings, and army orders permitting the use of poison gas in China were issued under his supreme command."]
+    ]},
+    { "name": "The Pacific War", "lines": [
+      ["bunker", {"n": 5, "label": "imperial conferences · 1941"}, "By 1941, the war in China had stalled, and the United States had cut off Japan's oil. At a series of imperial conferences, the government moved towards war with America, Britain and the Netherlands."],
+      ["quote", {"text": "Why do the winds and waves rise, when all the seas are brothers?", "who": "paraphrase of a Meiji poem Hirohito read aloud, 6 September 1941"}, "At one meeting he read aloud a poem by his grandfather, asking why winds and waves should rise when all the world's seas are brothers: a hint that he preferred peace. But on the first of December, he sanctioned war."],
+      ["army", {"planes": 1, "fire": 1, "label": "Pearl Harbor · 7 December 1941"}, "On the seventh of December 1941, Japan attacked the American fleet at Pearl Harbor, and began invading American, British and Dutch territories across south-east Asia and the Pacific."],
+      ["bust", {"name": "Emperor Hirohito", "years": "1941 – 1945", "role": "Supreme commander under the constitution. Followed the war in detail.", "hair": "side", "glasses": "round", "stache": "thin", "coat": "military", "hat": "peak", "medals": 3}, "Throughout the war, he was briefed constantly by his generals and admirals, and often asked sharp questions. He was not a bystander."],
+      ["city", {"state": "fire", "planes": 1, "seed": 2, "label": "Tokyo · March 1945"}, "From late 1944, American bombers were burning Japan's cities. A single raid on Tokyo, in March 1945, killed an estimated eighty to a hundred thousand people."],
+      ["lesson", {"text": "'One more victory'"}, "Even so, in February 1945, when a former prime minister, Fumimaro Konoe, urged him to seek peace, Hirohito replied that it would be difficult without one more military success."]
+    ]},
+    { "name": "Surrender", "lines": [
+      ["city", {"state": "ruin", "seed": 7, "label": "Hiroshima · 6 August 1945"}, "In August 1945, the United States dropped atomic bombs on Hiroshima and Nagasaki, and the Soviet Union declared war on Japan."],
+      ["bunker", {"n": 7, "label": "beneath the Imperial Palace · 9 – 10 August 1945"}, "Japan's war leaders were deadlocked. At a meeting in an air-raid shelter beneath the palace, Hirohito broke the deadlock: Japan would accept the Allies' terms."],
+      ["army", {"night": 1, "label": "the Imperial Palace · 14 – 15 August 1945"}, "Even then, a group of army officers tried to stop the surrender, breaking into the palace to seize the recording of his broadcast. They failed."]
+    ]},
+    { "name": "Spared", "lines": [
+      ["bust", {"name": "Douglas MacArthur", "years": "1880 – 1964", "role": "US general. Supreme Commander of the Allied occupation of Japan.", "hair": "back", "hat": "peak", "coat": "khaki", "glasses": "dark"}, "Japan was occupied by the Allies under the American general Douglas MacArthur. A photograph of the two men together, the tall general relaxed beside the stiff emperor, shocked the Japanese public."],
+      ["inquiry", {"label": "International Military Tribunal for the Far East · 1946 – 1948"}, "Many in the Allied countries wanted Hirohito tried as a war criminal. MacArthur and Washington decided he was more useful on the throne, helping to keep Japan calm. He was never charged."],
+      ["decree", {"title": "Tokyo Trial · verdicts", "lines": ["Hideki Tojo · death", "Six others · death", "Sixteen · life imprisonment"], "date": "November 1948"}, "His wartime prime minister, Hideki Tojo, and six others were sentenced to death, and sixteen more to life imprisonment."],
+      ["lesson", {"text": "The emperor's absence from the dock"}, "The court's own president, the Australian judge William Webb, noted that the emperor's immunity had been decided in the Allies' interests, despite his authority over the war."],
+      ["paper", {"mast": "TOKYO", "head": "Not a living god", "sub": "New Year rescript", "date": "1 January 1946"}, "On New Year's Day 1946, he had issued a statement rejecting the idea that the emperor was a living god. Its exact meaning is still debated."],
+      ["decree", {"title": "Constitution of Japan", "lines": ["The Emperor shall be", "the symbol of the State", "and of the unity of the people"], "date": "1947"}, "Under a new constitution, drafted largely by the Americans, he became the symbol of the state, with no political power."]
+    ]},
+    { "name": "The symbol emperor", "lines": [
+      ["city", {"state": "normal", "seed": 11, "label": "Japan · 1950s – 1980s"}, "In the decades that followed, he appeared as a mild, bespectacled marine biologist, while Japan rebuilt itself into one of the world's richest nations."],
+      ["people", {"n": 8, "pose": "up", "label": "Europe · 1971"}, "When he visited Europe in 1971, he was met by protests from veterans and former prisoners of war, especially in Britain and the Netherlands."],
+      ["memorial", {"n": 120, "date": "Yasukuni Shrine"}, "He stopped visiting the Yasukuni Shrine, which honours Japan's war dead, after 1975. Notes by a palace official, published in 2006, suggest he objected to its decision to honour convicted war criminals."],
+      ["date", {"date": "7 January 1989", "place": "Tokyo"}, "He died on the seventh of January 1989, aged eighty-seven, after sixty-two years on the throne, the longest reign of any Japanese emperor in recorded history."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["versus", {"left": "FIGUREHEAD", "right": "WAR LEADER", "mid": "?", "red": "r"}, "For decades, the official story was that he had been a powerless constitutional monarch who wanted peace, and who in the end saved Japan by choosing surrender."],
+      ["inquiry", {"label": "the historians' debate"}, "Diaries and records released since his death have complicated that picture. The historian Herbert Bix argued that he was an active, informed war leader. Others, such as Noriko Kawamura, stress the real limits on his power, and his part in ending the war."],
+      ["memorial", {"n": 400, "date": "Asia and the Pacific · 1931 – 1945"}, "Most historians now see something in between: a man with real influence, who could have done more to stop the war, and did not until millions were dead. That he kept his throne while others were hanged is why his name still divides opinion."]
+    ]}
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 23,
+  "title": "Enver Hoxha",
+  "subtitle": "The dictator who sealed Albania off from the world",
+  "say": {"Hoxha": "Hodja", "Hoxha's": "Hodja's", "Enver": "En-vair", "Gjirokastër": "Jeero-kaster", "Korçë": "Kor-chuh", "Sigurimi": "Seegoo-reemee", "Shehu": "Sheh-hoo", "Spaç": "Spahch", "Koçi Xoxe": "Kochee Dzodzeh", "Ramiz Alia": "Rameez Aleeya", "Nexhmije": "Nedj-mee-yeh", "Shtjefën Kurti": "Shtyeffen Koortee", "Tirana": "Tee-rahna", "Zog": "Zog", "Durrës": "Doo-ress", "Khrushchev": "Kroosh-chof", "Tito": "Teeto"},
+  "package": {
+    "thumb_line": 19,
+    "thumb": ["NO WAY", "OUT"],
+    "intro": "For four decades Enver Hoxha ruled Albania as the most isolated communist state on earth. He banned religion, forbade travel, jailed tens of thousands and covered the country in concrete bunkers against an invasion that never came. This documentary tells how he did it, and what Albanians lived through.",
+    "facts": ["Born 16 October 1908 in Gjirokastër, then in the Ottoman Empire", "Leader of the Albanian Communist Party from the early 1940s; head of government from 1944", "Broke in turn with Yugoslavia (1948), the Soviet Union (1961) and China (1978)", "Declared Albania the world's first atheist state in 1967", "Around 173,000 concrete bunkers were built across Albania under his rule", "Albanian estimates put political executions at around 6,000, with tens of thousands imprisoned or interned", "Died 11 April 1985 in Tirana, aged 76", "His statue in Tirana was pulled down on 20 February 1991"],
+    "sources": "Encyclopaedia Britannica, Albania's Institute for the Study of Communist Crimes and Consequences, the BunkArt and House of Leaves museums in Tirana, Amnesty International reports on Albania (1984), Miranda Vickers's The Albanians: A Modern History, Fred Abrahams's Modern Albania.",
+    "hashtags": "#History #Documentary #ColdWar",
+    "tags": "enver hoxha, hoxha documentary, communist albania, albania bunkers, sigurimi, atheist state albania, cold war history, eastern europe history, albanian history, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "ENVER HOXHA", "sub": "The dictator who sealed Albania off from the world", "art": "camp", "artp": {"night": 1}}, "Travel through Albania today and you will see them everywhere: small concrete domes on beaches, in fields, beside roads and on mountainsides. They are bunkers, built against an invasion that never came."],
+      ["stat", {"value": "~173,000", "label": "concrete bunkers built across Albania"}, "Around one hundred and seventy thousand of them were built, in a country smaller than Belgium."],
+      ["podium", {"night": 1, "banners": 2, "label": "Enver Hoxha · 1944 – 1985"}, "They were ordered by Enver Hoxha, who ruled Albania for four decades as the most isolated communist state on earth."],
+      ["stat", {"value": "~6,000", "label": "political executions, by later Albanian estimates"}, "According to later Albanian estimates, around six thousand people were executed for political reasons, and tens of thousands were imprisoned or sent to labour camps and internal exile."],
+      ["lesson", {"text": "A whole country behind a wall"}, "He cut his people off from the world, from religion, and from one another. This is how he did it."]
+    ]},
+    { "name": "The teacher", "lines": [
+      ["date", {"date": "16 October 1908", "place": "Gjirokastër · Ottoman Empire"}, "Enver Hoxha was born on the sixteenth of October 1908, in Gjirokastër, a stone-built town in the south of what was then still part of the Ottoman Empire."],
+      ["bust", {"name": "Enver Hoxha", "years": "1908 – 1985", "role": "Son of a merchant family. Studied in France; taught French.", "hair": "full", "coat": "suit", "tie": "#2b2b30"}, "He won a state scholarship to study in France, but lost it after neglecting his studies. He worked for a while at the Albanian consulate in Brussels. Back home, he taught French at a school in the town of Korçë."],
+      ["throne", {"label": "King Zog · 1928 – 1939"}, "Albania was then one of the poorest countries in Europe, ruled by a self-proclaimed king, Zog, whose government depended heavily on loans from Fascist Italy."]
+    ]},
+    { "name": "War", "lines": [
+      ["army", {"label": "Italian invasion · 7 April 1939"}, "In April 1939, Mussolini's Italy invaded, and Zog fled. Hoxha, by then a communist, lost his teaching post and opened a tobacco shop in the capital, Tirana. It became a meeting place for communists."],
+      ["decree", {"title": "Communist Party of Albania", "lines": ["Founded in Tirana", "with Yugoslav help"], "date": "8 November 1941"}, "In 1941, with help from Yugoslav communists, the Albanian Communist Party was founded. Hoxha soon became its leader."],
+      ["people", {"n": 7, "pose": "walk", "label": "Partisans · 1942 – 1944"}, "His partisans fought the Italian and then German occupiers, and also their Albanian rivals, nationalists and royalists. By November 1944, the Germans had gone, and the communists held the country."],
+      ["bust", {"name": "Colonel General Hoxha", "years": "1944", "role": "Partisan commander. Head of Albania's new government.", "hair": "back", "coat": "military", "hat": "peak"}, "Hoxha, thirty-six years old, became head of the new government. He would never give up power."]
+    ]},
+    { "name": "The terror", "lines": [
+      ["inquiry", {"label": "Special Court · Tirana · 1945"}, "Opponents were tried in show trials or simply shot. Landowners, clergy, nationalists and anyone linked to the old order were purged."],
+      ["web", {"nodes": [["Hoxha", 0.5, 0.18, 1], ["Sigurimi", 0.5, 0.48, 0], ["Informers", 0.2, 0.8, 0], ["Prisons and camps", 0.8, 0.8, 0]], "links": [[0, 1], [1, 2], [1, 3]], "label": "the secret police"}, "His secret police, the Sigurimi, built a network of informers that reached into every workplace and village. A careless joke about the leader could mean years in prison."],
+      ["camp", {"night": 0, "label": "Spaç labour camp · 1968 – 1990"}, "Political prisoners were sent to camps such as Spaç, in the northern mountains, where they mined copper and pyrite in brutal conditions."],
+      ["people", {"n": 8, "pose": "look", "red": 3, "label": "internal exile"}, "Punishment fell on whole families. The relatives of anyone who fled or was condemned could be sent into internal exile in remote villages, sometimes for decades."],
+      ["army", {"night": 1, "planes": 1, "label": "Western infiltration · 1949 – 1953"}, "Between 1949 and 1953, Britain and the United States sent Albanian exiles into the country by sea and by parachute to start an uprising. Almost all were caught or killed. The operation had been betrayed, partly by the Soviet spy Kim Philby."]
+    ]},
+    { "name": "Friends and enemies", "lines": [
+      ["timeline", {"events": [["Yugoslavia · to 1948", 0.15], ["Soviet Union · to 1961", 0.5], ["China · to 1978", 0.85]]}, "Hoxha chose powerful friends, and then dropped them. First Yugoslavia, until Tito broke with Stalin in 1948. Then the Soviet Union, until he quarrelled with Khrushchev in 1961. Then Mao's China, until 1978."],
+      ["quote", {"text": "Stalin was right; his successors betrayed communism.", "who": "summary of Hoxha's position after 1956"}, "Hoxha revered Stalin. When Khrushchev denounced Stalin's crimes, Hoxha refused to follow, and he stayed loyal to Stalin's memory for the rest of his life."],
+      ["wall", {"night": 1, "label": "Purges · 1948 – 1981"}, "Each break brought a purge at home. In 1949, his interior minister, Koçi Xoxe, accused of serving Yugoslavia, was executed. Over the years, ministers, generals and party leaders followed him."],
+      ["paper", {"mast": "TIRANA", "head": "Prime Minister Shehu dead", "sub": "Officially a suicide", "date": "December 1981"}, "In 1981, his prime minister of twenty-seven years, Mehmet Shehu, died of a gunshot wound. The regime called it suicide, then denounced him as a foreign spy. His family was imprisoned."]
+    ]},
+    { "name": "War on God", "lines": [
+      ["decree", {"title": "The atheist state", "lines": ["All religion banned", "Mosques and churches closed", "Clergy imprisoned"], "date": "1967"}, "In 1967, Hoxha declared Albania the world's first atheist state. Every mosque and church in the country was closed. Many were demolished or turned into warehouses, cinemas and sports halls."],
+      ["cell", {"night": 1, "label": "Imprisoned clergy"}, "Priests and imams were imprisoned, and some were executed. In 1971, a Catholic priest, Shtjefën Kurti, was shot for secretly baptising a baby in a labour camp."],
+      ["checklist", {"head": "Also forbidden", "items": ["Travel abroad", "Private cars", "Foreign loans and investment", "Criticising the leader"]}, "Private property was abolished, and ordinary Albanians could not own cars. Travel abroad was forbidden, and trying to flee was treated as treason. Many who tried were shot at the border."]
+    ]},
+    { "name": "Fortress Albania", "lines": [
+      ["decree", {"title": "Constitution of 1976", "lines": ["No foreign loans", "No foreign investment", "Religion forbidden"], "date": "1976"}, "The 1976 constitution banned foreign loans and investment. Albania would rely on itself alone."],
+      ["bust", {"name": "Comrade Enver", "years": "1970s", "role": "First Secretary of the Party of Labour. The only voice in Albania.", "hair": "back", "hairc": "#9a9a92", "coat": "suit", "tie": "#2b2b30"}, "Hoxha's speeches and memoirs filled dozens of volumes, and Albanians were expected to study them. His portrait hung in every office and classroom."],
+      ["bunker", {"n": 3, "label": "A country of bunkers · 1970s – 1980s"}, "Convinced that the Americans, the Soviets or Albania's neighbours would invade, he ordered bunkers built across the country, mostly in the 1970s and early 1980s. They swallowed concrete and steel that a poor country badly needed."],
+      ["tv", {"text": "RADIO TIRANA"}, "State media told Albanians they lived in a socialist paradise, surrounded by enemies. Some secretly tuned in to Italian television. Being reported for it could be dangerous."],
+      ["podium", {"night": 1, "banners": 0, "label": "Song festival · December 1972"}, "Even culture was dangerous. After a song festival on state television in 1972 was judged too Western, its organisers and their political patrons were purged, and some were imprisoned."],
+      ["field", {"n": 6, "guard": 1, "label": "Collective farms"}, "By the 1980s, Albania was still the poorest country in Europe. Food was rationed and queues were long."],
+      ["checklist", {"head": "What admirers point to", "items": ["Mass literacy", "Electricity to every village", "Rights for women", "No foreign master"]}, "His defenders point to real changes. Literacy, once rare, became almost universal. By 1970, electricity reached every village. Women gained rights unheard of in traditional Albanian society, and the country answered to no foreign power."]
+    ]},
+    { "name": "Collapse", "lines": [
+      ["date", {"date": "11 April 1985", "place": "Tirana · aged 76"}, "Enver Hoxha died on the eleventh of April 1985, after years of illness. He was seventy-six."],
+      ["people", {"n": 9, "pose": "mourn", "label": "State funeral · Tirana · 1985"}, "The country went into official mourning. His chosen successor, Ramiz Alia, promised continuity, and for a few years he kept the system as Hoxha had left it."],
+      ["city", {"state": "normal", "seed": 4, "label": "Tirana · July 1990"}, "But communism was collapsing across Eastern Europe. In July 1990, thousands of Albanians climbed into foreign embassies in Tirana, desperate to leave."],
+      ["ruler", {"pose": "up", "label": "Hoxha's statue · Tirana · 20 February 1991"}, "In February 1991, crowds in the main square of Tirana pulled down a giant statue of Hoxha."],
+      ["paper", {"mast": "BARI", "head": "Albanian ship reaches Italy", "sub": "Thousands crowd the decks", "date": "August 1991"}, "Tens of thousands fled to Italy on overcrowded ships from ports such as Durrës. That spring, Albania held its first multi-party elections."],
+      ["inquiry", {"label": "Tirana · 1993"}, "His widow, Nexhmije, was convicted of misusing state funds and imprisoned. His body was dug up from the national martyrs' cemetery and reburied in an ordinary grave."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["city", {"state": "normal", "seed": 6, "label": "Tirana · today"}, "Today Albania is a democracy and a member of NATO, and hopes to join the European Union."],
+      ["bunker", {"n": 0, "label": "BunkArt museum · Tirana"}, "Some of the bunkers have become museums. One, built for Hoxha's government, now tells the story of the Sigurimi and its victims."],
+      ["tv", {"text": "HOUSE OF LEAVES MUSEUM"}, "Another museum fills the secret police's old surveillance headquarters, known as the House of Leaves, with the bugs, cameras and files used to spy on ordinary Albanians."],
+      ["lesson", {"text": "The fortress became a prison."}, "Hoxha said he was protecting Albania from its enemies. He built a fortress so complete that its own people could not get out. The bunkers were never used against an invader. They stand as monuments to the fear that kept him in power."],
+      ["memorial", {"n": 400, "date": "Victims of communism · Albania"}, "Many families are still searching for the remains of relatives who were executed in those years and buried in unmarked graves."]
+    ]}
+  ]
+}

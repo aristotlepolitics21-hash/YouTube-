@@ -1,0 +1,80 @@
+{
+  "series": "Infamous",
+  "episode": 46,
+  "title": "King John",
+  "subtitle": "England's most hated king, and the charter he never meant to keep",
+  "say": {"Aquitaine": "Akwi-tane", "Runnymede": "Runny-meed", "Angoulême": "Ong-goo-lem", "Châlus": "Shah-loo", "Bouvines": "Boo-veen", "Rouen": "Roo-on", "Château Gaillard": "Shatto Guy-ar", "Braose": "Brayoze", "Worcester": "Wooster", "Newark": "Nyoo-erk", "scutage": "skew-tij", "Wendover": "Wendover", "Plantagenet": "Plan-taj-enet"},
+  "package": {
+    "thumb_line": 38,
+    "thumb": ["WORST KING", "EVER?"],
+    "intro": "King John lost Normandy, quarrelled with the pope, probably had his own nephew murdered, and was forced by rebel barons to agree to Magna Carta in 1215. For eight centuries he has been remembered as one of England's worst kings. This documentary weighs the case against him, and the historians who have tried to defend him.",
+    "facts": ["Born 24 December 1166, the youngest son of Henry II and Eleanor of Aquitaine", "Plotted against his brother Richard I while Richard was held captive in Germany, 1192 – 1194", "Became king on Richard's death, 6 April 1199", "His nephew Arthur of Brittany disappeared in captivity in 1203", "Normandy fell to Philip II of France in 1204", "England was under a papal interdict from 1208 to 1214", "Agreed to Magna Carta at Runnymede, 15 June 1215; Pope Innocent III annulled it on 24 August 1215", "Died at Newark Castle on the night of 18 – 19 October 1216; Magna Carta was reissued in 1216, 1217 and 1225"],
+    "sources": "The British Library (Magna Carta collection), The National Archives (UK), Encyclopaedia Britannica, W. L. Warren's King John, Marc Morris's King John, Stephen Church's King John, J. C. Holt's Magna Carta.",
+    "hashtags": "#History #Documentary #MagnaCarta",
+    "tags": "king john, magna carta, king john documentary, runnymede, plantagenets, richard the lionheart, medieval england, english history, barons war, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "KING JOHN", "sub": "England's most hated king, and the charter he never meant to keep", "art": "throne", "artp": {"night": 1}}, "In June 1215, in a meadow beside the River Thames called Runnymede, the King of England met rebel barons who had already taken his capital."],
+      ["field", {"n": 5, "label": "Runnymede · 15 June 1215"}, "There he agreed to a long list of promises, written in Latin on a single sheet of parchment. It became known as Magna Carta, the Great Charter."],
+      ["stat", {"value": "10 weeks", "label": "until the pope declared the charter void"}, "Ten weeks later, the pope had declared it void at John's request, and England was at war."],
+      ["lesson", {"text": "Tyrant, or unlucky king?"}, "For eight centuries, John has been remembered as one of England's worst kings: cruel, treacherous and a loser of wars. Some historians have tried to rescue him. This is the case on both sides."]
+    ]},
+    { "name": "The youngest son", "lines": [
+      ["date", {"date": "24 December 1166", "place": "Oxford · Kingdom of England"}, "John was born on Christmas Eve 1166, the youngest son of King Henry the Second and Eleanor of Aquitaine, who together ruled England and much of western France."],
+      ["web", {"nodes": [["Henry II", 0.3, 0.2, 0], ["Eleanor of Aquitaine", 0.7, 0.2, 0], ["Henry", 0.14, 0.68, 0], ["Richard", 0.38, 0.68, 0], ["Geoffrey", 0.62, 0.68, 0], ["John", 0.86, 0.68, 1]], "links": [[0, 1], [0, 2], [0, 3], [0, 4], [0, 5]], "label": "the Plantagenet sons"}, "With older brothers ahead of him, he was not expected to inherit much, and was nicknamed John Lackland."],
+      ["bust", {"name": "Prince John", "years": "1166 – 1216", "role": "Youngest son of Henry II. Nicknamed 'Lackland'.", "hair": "long", "beard": "stubble", "coat": "robe"}, "In 1185 his father sent him to rule Ireland. The expedition was a fiasco, and he was home within the year."],
+      ["throne", {"label": "Chinon · 1189"}, "In 1189, when Richard rebelled against their father, John secretly changed sides and joined him. Henry the Second learned of it shortly before he died."]
+    ]},
+    { "name": "Brother and rival", "lines": [
+      ["bust", {"name": "Richard I", "years": "1157 – 1199", "role": "'The Lionheart'. King of England, 1189 – 1199.", "hair": "long", "beard": "full", "hat": "crown", "coat": "armour"}, "Richard, called the Lionheart, became king and almost at once left on crusade. In ten years as king, he spent only about six months in England."],
+      ["cell", {"label": "Richard held captive · 1192 – 1194"}, "On his way home in 1192, he was captured in Austria and handed over to the Holy Roman Emperor. John plotted with the King of France to take his brother's lands, and tried to seize the throne."],
+      ["stat", {"value": "150,000 marks", "label": "Richard's ransom"}, "England raised a vast ransom of a hundred and fifty thousand marks. When Richard returned in 1194, he forgave his brother."],
+      ["date", {"date": "6 April 1199", "place": "Châlus · France"}, "In 1199, Richard died of a crossbow wound while besieging a castle in France. He had no children, and John became king."]
+    ]},
+    { "name": "Losing Normandy", "lines": [
+      ["versus", {"left": "John", "right": "Arthur", "mid": "1199", "red": "r"}, "Not everyone accepted him. Many of his French vassals backed his twelve-year-old nephew, Arthur of Brittany, the son of John's late brother Geoffrey."],
+      ["decree", {"title": "Court of Philip II", "lines": ["John's French lands", "declared forfeit"], "date": "1202"}, "In 1200, John married Isabella of Angoulême, a young girl already engaged to one of his own vassals. The jilted family appealed to King Philip the Second of France, who declared John's French lands forfeit and went to war."],
+      ["cell", {"night": 1, "label": "Rouen · 1203"}, "In 1202 John captured Arthur. By the next spring the boy had vanished in his custody. Most historians believe he was murdered on John's orders. One monastic chronicle says John killed him with his own hands."],
+      ["army", {"ruins": 1, "label": "Château Gaillard · March 1204"}, "Many of John's French nobles deserted him. Richard's great fortress in Normandy, Château Gaillard, fell after a long siege."],
+      ["paper", {"mast": "ROUEN", "head": "Normandy falls to France", "sub": "Critics call the king 'Softsword'", "date": "June 1204"}, "Rouen surrendered that summer. Normandy, the homeland of England's royal line since the Conquest of 1066, was gone. Critics mocked him as John Softsword."]
+    ]},
+    { "name": "King against pope", "lines": [
+      ["decree", {"title": "Interdict", "lines": ["Church services suspended", "across England"], "date": "1208 – 1214"}, "Next came a fight with Pope Innocent the Third over who should be Archbishop of Canterbury. In 1208 the pope placed England under an interdict. Most church services stopped for six years."],
+      ["lesson", {"text": "Excommunicated, and richer than ever."}, "John was excommunicated in 1209. He answered by seizing the Church's lands and income, which made him richer than ever."],
+      ["decree", {"title": "Submission to the Pope", "lines": ["England and Ireland", "held from the Pope", "1,000 marks a year"], "date": "May 1213", "seal": 1}, "Then, in 1213, facing a threatened French invasion, he suddenly submitted. He made England a fief of the papacy, paying a yearly tribute. The pope became his ally."]
+    ]},
+    { "name": "Squeezing England", "lines": [
+      ["bust", {"name": "King John", "years": "r. 1199 – 1216", "role": "King of England. Lost Normandy. Agreed to Magna Carta.", "hair": "long", "beard": "full", "hat": "crown", "coat": "robe", "frown": 1}, "To win back his French lands, John needed money, and he squeezed it out of his subjects with relentless skill."],
+      ["checklist", {"head": "How John raised money", "items": ["Record taxes and scutage", "Huge fees to inherit land", "Selling rich widows' marriages", "Hostages from his barons"]}, "He raised taxes to record levels, charged barons huge sums to inherit their fathers' lands, sold the right to marry rich widows, and took hostages to guarantee loyalty."],
+      ["people", {"n": 2, "pose": "mourn", "night": 1, "label": "Matilda de Braose · 1210"}, "When one great baron, William de Braose, fell out with him, John hunted the family down. Braose's wife Matilda and their eldest son died in John's prisons, almost certainly starved to death."],
+      ["army", {"label": "Bouvines · 27 July 1214"}, "In 1214 he spent a fortune on a grand alliance to retake his French lands. It ended in disaster at the Battle of Bouvines, where King Philip crushed John's allies."]
+    ]},
+    { "name": "Magna Carta", "lines": [
+      ["people", {"n": 7, "pose": "up", "label": "London · May 1215"}, "The barons had had enough. In May 1215, rebels seized London."],
+      ["field", {"n": 6, "label": "Runnymede · June 1215"}, "In June, at Runnymede, John gave way. The charter limited the king's power to take money, promised fair justice, and protected the Church and the City of London."],
+      ["stat", {"value": "63 clauses", "label": "Magna Carta, 1215, as traditionally numbered"}, "It ran to sixty-three clauses. Most dealt with feudal dues, inheritance and the rights of barons, not of ordinary people."],
+      ["quote", {"text": "No free man shall be seized or imprisoned … except by the lawful judgement of his peers or by the law of the land.", "who": "Magna Carta, clause 39 (1215), in translation"}, "But its most famous clause promised that no free man would be imprisoned or stripped of his rights except by the lawful judgement of his equals, or by the law of the land."],
+      ["decree", {"title": "Clause 61", "lines": ["Twenty-five barons", "may seize the king's lands", "if he breaks the charter"], "date": "1215"}, "Another clause set up a council of twenty-five barons with the right to seize the king's property if he broke his word. No king would accept that for long."],
+      ["paper", {"mast": "ROME", "head": "Pope annuls the charter", "sub": "Declared null and void", "date": "24 August 1215"}, "John never meant to keep it. He appealed to the pope, who annulled the charter in August. The barons went back to war."]
+    ]},
+    { "name": "War and death", "lines": [
+      ["army", {"night": 1, "label": "First Barons' War · 1215 – 1217"}, "The rebels offered the crown to Prince Louis of France, who landed in 1216 and was welcomed in London. Much of eastern England slipped out of John's control."],
+      ["people", {"n": 6, "pose": "walk", "night": 1, "label": "The Wash · October 1216"}, "In October 1216, crossing the tidal estuary of the Wash, part of his baggage train was lost. Legend says the crown jewels went with it. How much really vanished is disputed."],
+      ["date", {"date": "18 – 19 October 1216", "place": "Newark Castle"}, "Days later, ill with dysentery, John died at Newark Castle, aged forty-nine."],
+      ["bust", {"name": "William Marshal", "years": "c. 1146 – 1219", "role": "Knight who served four kings. Regent for the boy Henry III.", "hair": "crop", "beard": "full", "beardc": "#9a9a92", "hairc": "#9a9a92", "coat": "armour"}, "His son, King Henry the Third, was nine years old. The regent, William Marshal, an elderly knight who had served four kings, set out to win the barons back."],
+      ["decree", {"title": "Magna Carta reissued", "lines": ["1216", "1217", "1225"], "date": "in the name of Henry III"}, "He reissued Magna Carta, and Louis eventually gave up and went home. The charter survived the king who had tried to kill it."]
+    ]},
+    { "name": "The verdict", "lines": [
+      ["quote", {"text": "Cruel, greedy, lustful, treacherous and godless.", "who": "summary of the monastic chroniclers' verdict"}, "John's reputation was set by monastic chroniclers like Roger of Wendover and Matthew Paris, writing after his death. They loathed him, and they repeated every story against him."],
+      ["checklist", {"head": "The case for John", "items": ["Tireless administrator", "Detailed royal records", "Built up a navy", "Faced a richer France"]}, "In the twentieth century, some historians pushed back. Government records, which survive in far more detail from his reign, show a hard-working king who travelled constantly, heard cases himself, and built up a fleet. He also faced a French king with growing wealth."],
+      ["versus", {"left": "Defenders", "right": "Critics", "mid": "VERDICT"}, "Recent biographers, such as Marc Morris, have largely swung back. Skill at administration does not explain away the death of his nephew, the starving of prisoners, or the fact that almost no one trusted his word."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["ruler", {"hat": "crown", "cape": 1, "label": "the villain of Robin Hood"}, "Later storytellers made him the villain of the Robin Hood legend, although the earliest surviving ballads name a King Edward, not John."],
+      ["checklist", {"head": "Magna Carta today", "items": ["4 copies of 1215 survive", "3 clauses still English law", "Inspired the US Bill of Rights", "Echoed in human rights law"]}, "Magna Carta outlived him by eight centuries. Four copies of the 1215 charter survive. Three clauses from its later versions remain in English law, and its ideas echo in the American Bill of Rights and modern human rights law."],
+      ["lesson", {"text": "No English king has been named John since."}, "No English or British monarch has been called John since."],
+      ["memorial", {"n": 800, "date": "Runnymede · 1215"}, "John agreed to the charter to buy time, and broke it within weeks. But by trying to escape it, he helped prove the idea it stood for: that even a king is bound by the law."]
+    ]}
+  ]
+}

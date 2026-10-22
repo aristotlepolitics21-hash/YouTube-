@@ -1,0 +1,76 @@
+{
+  "series": "Infamous",
+  "episode": 33,
+  "title": "Ted Bundy",
+  "subtitle": "The women he killed, and the ordinary police work that stopped him",
+  "say": {"Sammamish": "Suh-mammish", "Naslund": "Nazlund", "DaRonch": "Da-Ronch", "Chi Omega": "Kye Omega", "Kleiner": "Kliner", "Neary": "Neery", "Rancourt": "Rankort", "Georgann": "Jorjan", "Healy": "Heelee", "Aime": "Aim", "Cowell": "Cowell", "Tallahassee": "Tallahassee", "ViCAP": "Vye-cap", "Bountiful": "Bountiful", "Viewmont": "Viewmont", "Snowmass": "Snowmass", "Glenwood": "Glenwood", "Pensacola": "Pensacola", "Starke": "Stark", "Johnnie": "Johnny", "Suwannee": "Swonnee"},
+  "package": {
+    "thumb_line": 10,
+    "thumb": ["HOW THEY", "CAUGHT HIM"],
+    "intro": "Between 1974 and 1978, Ted Bundy murdered young women and girls across several US states, from Washington to Florida, escaping from custody twice along the way. This documentary centres the people whose lives he took, the survivors who fought back, and the ordinary police work that finally stopped him.",
+    "facts": ["Born Theodore Robert Cowell on 24 November 1946 in Burlington, Vermont", "Janice Ott and Denise Naslund were abducted from Lake Sammamish State Park, Washington, on 14 July 1974", "Carol DaRonch escaped from him in Murray, Utah, on 8 November 1974", "Arrested by Utah Highway Patrol Sgt Bob Hayward on 16 August 1975; convicted of kidnapping DaRonch in 1976", "Escaped from custody in Aspen (June 1977) and Glenwood Springs (December 1977), Colorado", "Lisa Levy and Margaret Bowman were murdered at the Chi Omega house, Florida State University, on 15 January 1978", "Kimberly Leach, 12, was abducted in Lake City, Florida, on 9 February 1978", "Arrested in Pensacola on 15 February 1978; executed at Florida State Prison on 24 January 1989"],
+    "sources": "Federal Bureau of Investigation (Ted Bundy records and ViCAP history), Florida Supreme Court opinions (Bundy v. State), Ann Rule's The Stranger Beside Me, Robert Keppel's The Riverman, Encyclopaedia Britannica.",
+    "hashtags": "#History #Documentary #TrueCrime",
+    "tags": "ted bundy, ted bundy victims, ted bundy investigation, chi omega, lake sammamish, carol daronch, kimberly leach, serial killer investigation, true crime history, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "TED BUNDY", "sub": "The women he killed, and the police work that stopped him", "art": "city", "artp": {"state": "normal", "seed": 3, "night": 1}}, "In the early hours of the fifteenth of January, 1978, a student named Nita Neary came home to her sorority house at Florida State University, in Tallahassee. She saw a man in a dark cap leaving by the front door."],
+      ["date", {"date": "15 January 1978", "place": "Chi Omega house · Florida State University"}, "Upstairs, four of her housemates had been attacked as they slept. Two of them, Lisa Levy and Margaret Bowman, were dead. Within the hour, another student was attacked a few blocks away. She survived."],
+      ["stat", {"value": "30", "label": "murders he confessed to, in seven states, 1974 – 1978"}, "The man responsible had already escaped from custody twice. Before his execution, he confessed to around thirty murders in seven states. The true number is unknown."],
+      ["lesson", {"text": "This is their story, and how he was caught."}, "His name was Ted Bundy. Many films and books have been fascinated by him. This one is about the women and girls whose lives he took, and the people who stopped him."]
+    ]},
+    { "name": "An ordinary surface", "lines": [
+      ["date", {"date": "24 November 1946", "place": "Burlington · Vermont"}, "He was born Theodore Robert Cowell on the twenty-fourth of November, 1946, in Burlington, Vermont, at a home for unmarried mothers."],
+      ["people", {"n": 4, "label": "Tacoma · Washington · 1950s"}, "He was raised at first by his grandparents, and reportedly grew up believing his mother was his older sister. In 1951 she moved with him to Tacoma, Washington, and married Johnnie Bundy, whose surname he took."],
+      ["bust", {"name": "Ted Bundy", "years": "1946 – 1989", "role": "Psychology graduate, political volunteer, law student.", "hair": "side", "coat": "suit", "tie": "#2b2b30"}, "He studied psychology at the University of Washington and graduated in 1972. He volunteered for the Republican party, and went on to law school."],
+      ["bunker", {"n": 2, "label": "Seattle crisis line · 1971"}, "For a time he worked night shifts on a Seattle crisis telephone line. Beside him sat Ann Rule, a former police officer who would later write a book about him, The Stranger Beside Me."],
+      ["people", {"n": 7, "pose": "walk", "label": "Seattle · early 1970s"}, "To the people around him, nothing in his public life suggested what he was about to do."]
+    ]},
+    { "name": "Washington, 1974", "lines": [
+      ["date", {"date": "January 1974", "place": "University District · Seattle"}, "In January 1974, a young woman in Seattle was attacked in her basement bedroom. She survived, with serious injuries."],
+      ["city", {"state": "normal", "night": 1, "seed": 6, "label": "Pacific Northwest · 1974"}, "Then young women in the Pacific Northwest began to disappear. Most were students, and most vanished at night."],
+      ["checklist", {"head": "Missing · early 1974", "items": ["Lynda Ann Healy", "Donna Gail Manson", "Susan Rancourt", "Roberta Kathleen Parks"]}, "Lynda Ann Healy, a university student who read the ski report on local radio, vanished from her room. Donna Manson, Susan Rancourt and Roberta Kathleen Parks disappeared from college campuses that spring."],
+      ["people", {"n": 6, "pose": "mourn", "label": "Brenda Ball · Georgann Hawkins · June 1974"}, "In June, Brenda Ball disappeared after leaving a tavern near Seattle, and Georgann Hawkins vanished while walking the short distance to her sorority house."],
+      ["date", {"date": "14 July 1974", "place": "Lake Sammamish State Park · Washington"}, "On the fourteenth of July, a sunny Sunday, Janice Ott and Denise Naslund were taken from a crowded lakeside park east of Seattle, hours apart."],
+      ["quote", {"text": "A young man called 'Ted', with his arm in a sling, asking for help with his sailboat.", "who": "summary of witness accounts, Lake Sammamish"}, "Witnesses described a polite young man with his arm in a sling who called himself Ted, and asked women to help him with his sailboat. He drove a Volkswagen Beetle."],
+      ["stat", {"value": "Thousands", "label": "tips received by detectives after the sketch was published"}, "Police published a sketch, and thousands of tips poured in. Several people, including his girlfriend and Ann Rule, gave the name Ted Bundy. But he was a clean-cut law student, and his name was lost among the rest."]
+    ]},
+    { "name": "Utah and Colorado", "lines": [
+      ["city", {"state": "normal", "seed": 10, "label": "Salt Lake City · autumn 1974"}, "That autumn he moved to Salt Lake City to study law at the University of Utah. Soon, girls and young women began disappearing there too."],
+      ["checklist", {"head": "Utah and Colorado · 1974 – 75", "items": ["Melissa Smith, 17", "Laura Aime, 17", "Debra Kent, 17", "Caryn Campbell, 23"]}, "Among them were Melissa Smith, the daughter of a local police chief, and Laura Aime, both seventeen. In January 1975, Caryn Campbell, a nurse, vanished from a ski resort hotel in Colorado."],
+      ["date", {"date": "8 November 1974", "place": "Murray · Utah"}, "On the eighth of November, 1974, he approached eighteen-year-old Carol DaRonch at a shopping centre, pretending to be a police officer. In his car, she fought back, and escaped."],
+      ["people", {"n": 6, "pose": "mourn", "label": "Viewmont High School · Bountiful · Utah"}, "That same evening, seventeen-year-old Debra Kent disappeared after leaving a school play in nearby Bountiful."],
+      ["city", {"state": "normal", "night": 1, "seed": 12, "label": "Granger · Utah · 16 August 1975"}, "In August 1975, a Utah Highway Patrol sergeant, Bob Hayward, saw a Volkswagen driving slowly through a quiet suburb before dawn. When he followed it, the driver sped off, then pulled over."],
+      ["decree", {"title": "Items found in the car", "lines": ["Ski mask", "Handcuffs", "Crowbar"], "date": "16 August 1975", "seal": 0}, "In the car were a ski mask, handcuffs and a crowbar. Detectives linked the driver to the DaRonch case, and she picked him out of a line-up."],
+      ["inquiry", {"label": "Salt Lake City · 1976"}, "In 1976, he was convicted of kidnapping Carol DaRonch and sentenced to up to fifteen years. Colorado then charged him with the murder of Caryn Campbell."]
+    ]},
+    { "name": "Two escapes", "lines": [
+      ["date", {"date": "7 June 1977", "place": "Pitkin County Courthouse · Aspen · Colorado"}, "He chose to act as his own lawyer, which let him use the courthouse library. In June 1977 he jumped from one of its windows in Aspen. He was caught six days later."],
+      ["cell", {"night": 1, "label": "Garfield County jail · Glenwood Springs"}, "On the thirtieth of December, 1977, he escaped again, through a hole in the ceiling of his cell. By the time guards noticed he was gone, he was on his way to Florida."],
+      ["timeline", {"events": [["Aspen · Jun 1977", 0.15], ["Glenwood Springs · Dec 1977", 0.5], ["Tallahassee · Jan 1978", 0.85]]}, "He settled in Tallahassee under a false name. A week later came the attack on the Chi Omega house."]
+    ]},
+    { "name": "Florida", "lines": [
+      ["memorial", {"n": 200, "date": "Lisa Levy · Margaret Bowman"}, "Lisa Levy was twenty, and Margaret Bowman twenty-one. Karen Chandler, Kathy Kleiner and Cheryl Thomas survived serious injuries."],
+      ["date", {"date": "9 February 1978", "place": "Lake City · Florida"}, "On the ninth of February, he abducted twelve-year-old Kimberly Leach from her school in Lake City, Florida. She was his last known victim."],
+      ["city", {"state": "normal", "night": 1, "seed": 9, "label": "Pensacola · 15 February 1978"}, "Six days later, in the early hours, a Pensacola police officer, David Lee, checked the plates of a Volkswagen and found it was stolen. After a struggle, he arrested the driver."],
+      ["paper", {"mast": "FLORIDA", "head": "Arrested man is fugitive Bundy", "sub": "On the FBI's Ten Most Wanted list", "date": "February 1978"}, "The driver gave a false name. Within days, police confirmed he was Ted Bundy, one of the FBI's ten most wanted fugitives."],
+      ["people", {"n": 7, "pose": "mourn", "label": "Lake City · April 1978"}, "After a long search, Kimberly Leach's remains were found in April 1978, in a park near the Suwannee River."]
+    ]},
+    { "name": "Trials", "lines": [
+      ["inquiry", {"label": "Miami · June – July 1979"}, "His trial for the Chi Omega murders was among the first to be televised across the United States. Once again, he acted as his own lawyer."],
+      ["checklist", {"head": "The evidence", "items": ["Nita Neary saw him leave", "A bite-mark comparison", "His movements in Tallahassee"]}, "Nita Neary identified him as the man she had seen leaving the house. A forensic dentist matched an injury on one victim to his teeth. Bite-mark evidence is now widely questioned, but the jury convicted him."],
+      ["bust", {"name": "Ted Bundy", "years": "on trial · 1979", "role": "Convicted of three murders in Florida, 1979 and 1980.", "hair": "side", "coat": "suit", "tie": "#2b2b30", "frown": 1}, "He was sentenced to death. In 1980 he was also convicted of the murder of Kimberly Leach, and sentenced to death a third time."],
+      ["cell", {"night": 1, "label": "Florida State Prison · 1980 – 1989"}, "For nearly a decade he fought his sentences through appeals. In his final days, he confessed to detectives to around thirty murders, in what many saw as a last attempt to delay his execution."],
+      ["date", {"date": "24 January 1989", "place": "Florida State Prison · Starke"}, "He was executed on the twenty-fourth of January, 1989. He was forty-two."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["tv", {"text": "FASCINATION", "speaker": 0}, "Since then, he has been the subject of countless books, documentaries and films, often presenting him as a charming and brilliant monster. Survivors and families have said that image hurts them."],
+      ["people", {"n": 5, "pose": "look", "label": "survivors"}, "Kathy Kleiner, who survived the Chi Omega attack, has spoken publicly for years, asking that the victims be remembered rather than their killer."],
+      ["web", {"nodes": [["Washington", 0.15, 0.35, 0], ["Utah", 0.4, 0.65, 0], ["Colorado", 0.6, 0.35, 0], ["Florida", 0.85, 0.65, 0]], "links": [], "label": "four states · no shared records"}, "He moved between states, and in the 1970s police forces in different states had no easy way to share what they knew."],
+      ["decree", {"title": "ViCAP", "lines": ["FBI Violent Criminal", "Apprehension Program"], "date": "launched 1985", "seal": 0}, "Cases like his helped persuade the FBI to launch a national database for linking violent crimes across state lines, known as ViCAP, in 1985."],
+      ["memorial", {"n": 400, "date": "In memory"}, "Lynda Ann Healy. Donna Manson. Susan Rancourt. Roberta Kathleen Parks. Brenda Ball. Georgann Hawkins. Janice Ott. Denise Naslund. Melissa Smith. Laura Aime. Debra Kent. Caryn Campbell. Lisa Levy. Margaret Bowman. Kimberly Leach. And others, some whose names may never be known."],
+      ["lesson", {"text": "He was caught by ordinary people doing their jobs."}, "Bundy was not caught by a genius. He was caught by a patrolman who noticed a car, a young woman who fought back and testified, a student who saw his face, and an officer on a night shift in Pensacola. That is the part of the story worth remembering."]
+    ]}
+  ]
+}

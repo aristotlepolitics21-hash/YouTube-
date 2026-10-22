@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 25,
+  "title": "Lavrentiy Beria",
+  "subtitle": "Stalin's secret police chief, and the purge that finally caught him",
+  "say": {"Beria": "Bear-ee-a", "Beria's": "Bear-ee-a's", "Lavrentiy": "Lav-rent-ee", "Abkhazia": "Ab-kah-zia", "Yezhov": "Yezh-off", "NKVD": "N K V D", "Katyn": "Kah-tin", "Khrushchev": "Kroosh-chof", "Zhukov": "Zhoo-kof", "Malenkov": "Malen-kof", "Cheka": "Chekka", "Ingush": "In-goosh", "Kalmyks": "Kal-micks", "Gulag": "Goo-lag", "Svetlana": "Svet-lahna", "Baku": "Ba-koo", "Kremlin": "Kremlin", "Mingrelia": "Min-greelia", "Batitsky": "Ba-titsky"},
+  "package": {
+    "thumb_line": 13,
+    "thumb": ["STALIN'S", "EXECUTIONER"],
+    "intro": "Lavrentiy Beria ran Stalin's secret police from 1938. Under his command the NKVD shot some 22,000 Polish prisoners at Katyn, deported entire nations and ran the Gulag. After Stalin died, his own colleagues arrested him and had him shot. This documentary tells the story of the most feared man in the Soviet Union.",
+    "facts": ["Born 29 March 1899 in Abkhazia, Georgia, then part of the Russian Empire", "Became head of the NKVD in November 1938, replacing Nikolai Yezhov", "Proposed the execution of Polish prisoners in a memo approved by the Politburo on 5 March 1940; about 22,000 were killed in the Katyn massacre", "Organised the deportation of the Chechen and Ingush peoples in February 1944", "Oversaw the Soviet atomic bomb project; the first Soviet test took place on 29 August 1949", "Arrested at a Kremlin meeting on 26 June 1953", "Sentenced to death by a special session of the Supreme Court and shot on 23 December 1953", "Russia's Supreme Court refused to rehabilitate him in 2000"],
+    "sources": "Encyclopaedia Britannica, Amy Knight's Beria: Stalin's First Lieutenant, Simon Sebag Montefiore's Stalin: The Court of the Red Tsar, the Katyn documents released by Russia (1990 and 1992), Memorial (Russian human rights society) archives, Yale University Press Annals of Communism series.",
+    "hashtags": "#History #Documentary #SovietUnion",
+    "tags": "lavrentiy beria, beria documentary, stalin secret police, nkvd, katyn massacre, gulag, soviet deportations, soviet atomic bomb, stalin's death 1953, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "LAVRENTIY BERIA", "sub": "Stalin's secret police chief", "art": "wall", "artp": {"night": 1}}, "On the twenty-sixth of June 1953, at a meeting in the Kremlin, the most feared man in the Soviet Union was suddenly arrested by his own colleagues."],
+      ["bunker", {"n": 6, "label": "The Kremlin · 26 June 1953"}, "According to those who were there, army officers led by Marshal Georgy Zhukov burst into the room on a signal and took him away."],
+      ["stat", {"value": "~22,000", "label": "Polish prisoners shot in the Katyn massacre, 1940"}, "Lavrentiy Beria had run Stalin's secret police. Under his command, it shot around twenty-two thousand Polish prisoners in the Katyn massacre."],
+      ["stat", {"value": "1,000,000+", "label": "people deported as whole nations, 1941 – 1944"}, "It deported entire nations from their homelands, more than a million people, and ran a vast system of labour camps."],
+      ["lesson", {"text": "Stalin's most efficient executioner"}, "Six months after his arrest, he was shot, by the kind of firing squad he had sent so many others to. This is the story of Stalin's most powerful policeman."]
+    ]},
+    { "name": "The Georgian", "lines": [
+      ["date", {"date": "29 March 1899", "place": "Abkhazia · Georgia · Russian Empire"}, "Lavrentiy Beria was born on the twenty-ninth of March 1899, to a poor peasant family in Abkhazia, on Georgia's Black Sea coast, then part of the Russian Empire."],
+      ["bust", {"name": "Lavrentiy Beria", "years": "1899 – 1953", "role": "Georgian Bolshevik. A secret policeman from his early twenties.", "hair": "crop", "glasses": "round", "coat": "suit", "tie": 0}, "He studied at a technical school in Baku and joined the Bolsheviks in 1917. After the revolution, he found his calling in the Cheka, the new secret police."],
+      ["wall", {"night": 1, "label": "Georgia · 1924"}, "In 1924, he helped crush a nationalist uprising in Georgia. Thousands were killed or executed."],
+      ["versus", {"left": "Stalin", "right": "Beria", "mid": "Georgia", "red": "r"}, "Like Stalin, Beria was Georgian, and he worked hard to win his favour. By 1931 he ran the Communist Party in Georgia, and he put his name to a history book that inflated Stalin's role in the revolution."],
+      ["inquiry", {"label": "Tbilisi · 1937 – 1938"}, "In the Great Terror of 1937 and 1938, he purged Georgia's party officials, writers and intellectuals with enthusiasm. Thousands were shot."]
+    ]},
+    { "name": "The NKVD", "lines": [
+      ["decree", {"title": "Appointment", "lines": ["L. P. Beria", "People's Commissar", "for Internal Affairs"], "date": "November 1938"}, "In 1938, Stalin brought him to Moscow. That November, Beria replaced Nikolai Yezhov as head of the NKVD, the secret police that had carried out the Terror. Yezhov was arrested and later shot."],
+      ["bust", {"name": "Commissar Beria", "years": "1938 – 1945", "role": "Head of the NKVD: secret police, prisons and the Gulag.", "hair": "bald", "glasses": "round", "coat": "military", "hat": "peak", "band": "#3a5a8a"}, "The mass killing slowed after he arrived, and some prisoners were released. Many hoped the worst was over. In fact, the machine had simply become more orderly."],
+      ["cell", {"night": 1, "label": "Lubyanka · 1939"}, "Torture remained official policy. In January 1939, Stalin confirmed in a telegram to regional party chiefs that physical pressure on prisoners was permitted."],
+      ["camp", {"snow": 1, "label": "The Gulag · 1940s"}, "Beria ran the Gulag, the vast system of labour camps, as an economic empire. Prisoners mined gold, cut timber, and built canals, railways and factories. Hundreds of thousands died in the camps during the war years."],
+      ["paper", {"mast": "MEXICO CITY", "head": "Trotsky murdered", "sub": "Attacked at his home by a Soviet agent", "date": "21 August 1940"}, "His agents also hunted Stalin's enemies abroad. In August 1940, an NKVD agent killed Leon Trotsky, Stalin's exiled rival, at his home in Mexico City."]
+    ]},
+    { "name": "Katyn", "lines": [
+      ["people", {"n": 9, "pose": "walk", "night": 1, "label": "Eastern Poland · 1939 – 1941"}, "In 1939, the Soviet Union and Nazi Germany divided Poland between them. From the lands the Soviets seized, and later from the Baltic states, the NKVD deported hundreds of thousands of people to Siberia and Central Asia."],
+      ["decree", {"title": "Proposal to the Politburo", "lines": ["Polish prisoners", "to be shot", "Proposed by L. Beria"], "date": "5 March 1940"}, "The NKVD also held thousands of captured Polish officers, police and professionals. In March 1940, Beria proposed that they be shot. Stalin and the Politburo approved."],
+      ["people", {"n": 9, "pose": "mourn", "night": 1, "label": "Katyn Forest · spring 1940"}, "That spring, around twenty-two thousand were executed, in the Katyn forest near Smolensk and at other sites."],
+      ["tv", {"text": "BERLIN RADIO · APRIL 1943"}, "In 1943, the Germans found the mass graves at Katyn and announced them to the world. Moscow blamed the Nazis, and its Western allies chose not to challenge it."],
+      ["paper", {"mast": "MOSCOW", "head": "USSR admits Katyn crime", "sub": "Blamed on the Nazis for fifty years", "date": "April 1990"}, "The lie held for almost half a century. The Soviet Union finally admitted the truth in 1990."]
+    ]},
+    { "name": "War", "lines": [
+      ["army", {"tanks": 1, "label": "1941 – 1945"}, "When Germany invaded in 1941, Beria joined the small State Defence Committee that ran the war effort. He oversaw weapons production and the NKVD units that stopped soldiers from retreating."],
+      ["wall", {"night": 1, "label": "NKVD prisons · June 1941"}, "As the German armies advanced, NKVD guards shot tens of thousands of prisoners in jails across western Ukraine, Belarus and the Baltic states, rather than let them fall into German hands."],
+      ["people", {"n": 9, "pose": "walk", "label": "Chechnya · February 1944"}, "He also organised the deportation of entire peoples accused of collaborating with Germany. In February 1944, almost the whole Chechen and Ingush nations, around half a million people, were loaded onto trains and sent to Central Asia within days."],
+      ["checklist", {"head": "Peoples deported", "items": ["Volga Germans · 1941", "Chechens and Ingush · 1944", "Crimean Tatars · 1944", "Kalmyks, Karachays, Balkars"]}, "The Crimean Tatars, the Kalmyks and others suffered the same fate. Tens of thousands died on the journeys and in the first years of exile."],
+      ["bust", {"name": "Marshal Beria", "years": "1945", "role": "Marshal of the Soviet Union. Head of the atomic bomb project.", "hair": "bald", "glasses": "round", "coat": "military", "medals": 6}, "In 1945, Stalin made him a Marshal of the Soviet Union, and put him in charge of building an atomic bomb."],
+      ["date", {"date": "29 August 1949", "place": "Semipalatinsk test site · Kazakhstan"}, "Using German scientists, prisoner labour and secrets stolen by Soviet spies from the American programme, Beria's project tested the first Soviet atomic bomb on the twenty-ninth of August 1949."]
+    ]},
+    { "name": "The predator", "lines": [
+      ["city", {"state": "normal", "night": 1, "seed": 3, "label": "Moscow · 1940s"}, "Beria also had a private reputation that frightened Moscow. According to many accounts, including testimony from his own bodyguards, he had women and young girls picked up from the streets and brought to his house, where he sexually assaulted them."],
+      ["quote", {"text": "The accusations were used against him, but many historians accept the core of them.", "who": "summary of the historians' view"}, "These accusations formed part of the case at his trial. Some historians caution that his enemies had reasons to exaggerate, but most accept that the abuse was real."]
+    ]},
+    { "name": "Stalin's death", "lines": [
+      ["decree", {"title": "The Mingrelian Affair", "lines": ["Georgian officials arrested", "Beria's allies targeted"], "date": "1951 – 1952"}, "By the early 1950s, Stalin was ageing and suspicious. In 1951 he launched a purge in Georgia aimed at Beria's own allies, from his home region of Mingrelia."],
+      ["bunker", {"n": 4, "label": "Stalin's dacha · March 1953"}, "Even Beria may have been in danger. When Stalin collapsed in March 1953, Beria was among the inner circle at his bedside. Stalin's daughter, Svetlana, later wrote that Beria could barely hide his excitement."],
+      ["date", {"date": "5 March 1953", "place": "Moscow"}, "Stalin died on the fifth of March 1953. Beria emerged as one of the three most powerful men in the country, alongside Georgy Malenkov and Nikita Khrushchev."],
+      ["decree", {"title": "Beria's reforms", "lines": ["Amnesty: over a million freed", "'Doctors' Plot' dropped", "Torture of suspects banned"], "date": "March – April 1953"}, "Then he surprised everyone. He freed more than a million prisoners in an amnesty, most of them minor criminals. He dropped the antisemitic case against Jewish doctors known as the Doctors' Plot, and banned the torture of suspects."],
+      ["lesson", {"text": "Reformer, or a bid for power?"}, "Historians still debate whether these were genuine reforms or a bid for power. To his colleagues, it hardly mattered. They feared that the man who held everyone's secret files would soon turn on them."]
+    ]},
+    { "name": "The fall", "lines": [
+      ["versus", {"left": "Khrushchev", "right": "Beria", "mid": "June 1953", "red": "r"}, "Khrushchev quietly won over the others. When workers in East Germany rose up in June 1953, Beria's rivals had another charge to throw at him: that he had wanted to give the country away."],
+      ["cell", {"night": 1, "label": "Military bunker · Moscow · 1953"}, "After his arrest, he was held in an army bunker. He wrote letters begging his former comrades to spare his life."],
+      ["inquiry", {"label": "Special session of the Supreme Court · December 1953"}, "In December, a closed special court found him guilty of treason and terrorism. Some charges, such as spying for Britain, were invented. His real crimes, committed on Stalin's orders alongside the men now judging him, were mostly left out."],
+      ["wall", {"night": 1, "label": "23 December 1953"}, "He was shot the same day, the twenty-third of December 1953, by a general, Pavel Batitsky, in the bunker where he was held. He was fifty-four."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["paper", {"mast": "MOSCOW", "head": "Encyclopaedia entry replaced", "sub": "Readers told to remove the article on Beria", "date": "1954"}, "His name was wiped from Soviet history. Owners of the Great Soviet Encyclopedia were sent a replacement page, with an expanded article on the Bering Sea, and told to cut out his entry."],
+      ["city", {"state": "normal", "seed": 7, "label": "Malaya Nikitskaya Street · Moscow"}, "His mansion in central Moscow, where so many of those women were taken, later became the embassy of Tunisia."],
+      ["decree", {"title": "Supreme Court of Russia", "lines": ["Rehabilitation refused", "Responsible for mass repression"], "date": "2000"}, "In 2000, Russia's Supreme Court refused to rehabilitate him, ruling that he had organised mass repression against his own people."],
+      ["lesson", {"text": "The system made him, and he made it worse."}, "Beria did not invent Stalin's terror, and he never acted alone. But for fifteen years he was its most capable manager, and the men who killed him had signed many of the same orders."],
+      ["memorial", {"n": 500, "date": "Katyn · Chechnya · Crimea"}, "The victims of Katyn and of the deported nations are remembered today at memorials from Poland to Chechnya and Crimea. Beria has no known grave."]
+    ]}
+  ]
+}

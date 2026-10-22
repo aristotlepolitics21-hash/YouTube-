@@ -1,7 +1,8 @@
 # Infamous scene catalogue
 
-A script line is `[scene, params, narration]`. Every scene draws on a 1280×720 canvas in the
-ink-on-paper stickman style; red is the only accent. Coordinates in params are 0–1 fractions of
+A script line is `[scene, params, narration]`. Scenes with people (portraits, places and events) are
+rendered in 3D with wooden mannequins by `engine3d/`; documents and data are aged-paper cards with one
+red accent. Both draw on a 1280×720 canvas. Coordinates in params are 0–1 fractions of
 the frame. Night scenes (`night: 1`) fade through black instead of paper.
 
 ## Portraits

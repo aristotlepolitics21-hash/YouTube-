@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 47,
+  "title": "Henry VIII",
+  "subtitle": "The king who broke with Rome in search of a son",
+  "say": {"Aragon": "Arragon", "Wolsey": "Woolzy", "Boleyn": "Bullin", "Cleves": "Cleevz", "Seymour": "Seemor", "Greenwich": "Grennitch", "Calais": "Kalay", "Boulogne": "Boo-loyn", "Kimbolton": "Kimbolton", "Leviticus": "Leviticus", "Clement": "Clement"},
+  "package": {
+    "thumb_line": 32,
+    "thumb": ["SIX WIVES", "ONE SON"],
+    "intro": "Henry VIII married six times, executed two of his wives, broke England away from the Church of Rome and closed more than eight hundred monasteries, all in the search for a male heir. This documentary follows the golden young prince who became one of England's most feared kings, and weighs what he left behind.",
+    "facts": ["Born 28 June 1491 at Greenwich, the second son of Henry VII", "Became king in April 1509, aged 17, and married Catherine of Aragon that June", "Given the title 'Defender of the Faith' by Pope Leo X in 1521", "Married Anne Boleyn in January 1533; Elizabeth was born that September", "The Act of Supremacy (1534) made the king Supreme Head of the Church of England", "Sir Thomas More was executed on 6 July 1535; Anne Boleyn on 19 May 1536", "More than 800 religious houses were dissolved between 1536 and 1540", "Died at Whitehall on 28 January 1547, aged 55"],
+    "sources": "Encyclopaedia Britannica, Historic Royal Palaces, the Mary Rose Trust, J. J. Scarisbrick's Henry VIII, David Starkey's Six Wives, Diarmaid MacCulloch's Thomas Cromwell, Eamon Duffy's The Stripping of the Altars.",
+    "hashtags": "#History #Documentary #Tudors",
+    "tags": "henry viii, henry 8th documentary, six wives of henry viii, anne boleyn, tudors, english reformation, dissolution of the monasteries, thomas cromwell, tudor history, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "HENRY VIII", "sub": "The king who broke with Rome in search of a son", "art": "throne", "artp": {"night": 1}}, "On the nineteenth of May 1536, inside the Tower of London, a queen of England was executed with a sword. Her husband, the king, had married her only three years earlier."],
+      ["cell", {"pose": "stand", "label": "Tower of London · May 1536"}, "Anne Boleyn had been convicted of adultery, incest and treason. Most historians believe the charges were false. Eleven days after her death, the king married again."],
+      ["stat", {"value": "6 wives", "label": "two annulled · two beheaded · one died · one survived"}, "Henry the Eighth married six times. Two marriages were annulled, two wives were beheaded, one died after giving birth, and one outlived him."],
+      ["lesson", {"text": "Renaissance prince, or tyrant?"}, "He is remembered as a Renaissance prince who remade England's church, and as a tyrant who destroyed anyone in his way. Both are true."]
+    ]},
+    { "name": "The spare", "lines": [
+      ["date", {"date": "28 June 1491", "place": "Greenwich Palace"}, "Henry was born at Greenwich in June 1491, the second son of Henry the Seventh, the first Tudor king, who had won his crown on a battlefield six years before."],
+      ["people", {"n": 3, "pose": "mourn", "label": "Prince Arthur · died 1502"}, "He was not meant to be king. But in 1502 his elder brother Arthur died, aged fifteen, months after marrying a Spanish princess, Catherine of Aragon."],
+      ["decree", {"title": "Papal dispensation", "lines": ["Henry may marry", "his brother's widow"], "date": "1503"}, "To keep the alliance with Spain, it was agreed that Henry would one day marry his brother's widow. The pope granted a special dispensation to allow it."]
+    ]},
+    { "name": "The golden prince", "lines": [
+      ["bust", {"name": "Henry VIII", "years": "1491 – 1547", "role": "King at seventeen. Athlete, scholar and musician.", "hair": "crop", "hat": "tudor", "coat": "fur"}, "In April 1509 his father died, and Henry became king at seventeen. Within weeks he married Catherine. He was tall, athletic, learned and musical, and foreign ambassadors praised him."],
+      ["throne", {"label": "Cardinal Wolsey · Lord Chancellor"}, "He left much of the work of government to Thomas Wolsey, a butcher's son who rose to be a cardinal and the king's chief minister."],
+      ["army", {"label": "France and Flodden · 1513"}, "He longed for glory and spent heavily on war with France. In 1513, while he campaigned there, his army at home crushed a Scottish invasion at Flodden, killing the Scottish king."],
+      ["people", {"n": 7, "pose": "up", "label": "Field of the Cloth of Gold · 1520"}, "In 1520 he met the King of France near Calais at a festival so lavish it became known as the Field of the Cloth of Gold."],
+      ["paper", {"mast": "ROME", "head": "Defender of the Faith", "sub": "Pope honours Henry's book against Luther", "date": "1521"}, "In 1521 he published a book attacking Martin Luther, and the pope rewarded him with the title Defender of the Faith. British monarchs still use it."]
+    ]},
+    { "name": "The King's Great Matter", "lines": [
+      ["counter", {"n": 6, "label": "pregnancies · one child survived"}, "Catherine was pregnant at least six times. Only one child survived infancy: a daughter, Mary, born in 1516."],
+      ["lesson", {"text": "No son, he feared, meant civil war."}, "Henry was desperate for a son. His family's hold on the crown was only one generation old, and England had no tradition of a reigning queen."],
+      ["bust", {"name": "Anne Boleyn", "years": "c. 1501 – 1536", "role": "Courtier. Refused to be the king's mistress. Queen, 1533 – 1536.", "hair": "long", "coat": "robe"}, "By 1526 he had fallen for Anne Boleyn, a sharp, well-educated woman at his court. She would not settle for being his mistress."],
+      ["decree", {"title": "Leviticus 20:21", "lines": ["If a man shall take", "his brother's wife…", "they shall be childless"], "date": "the king's argument", "seal": 0}, "Henry convinced himself his marriage was cursed, citing a verse in the Book of Leviticus against marrying a brother's wife. He asked the pope to annul it."],
+      ["versus", {"left": "Henry VIII", "right": "Pope Clement VII", "mid": "ANNUL?"}, "The pope, Clement the Seventh, would not do it. He was under the power of Catherine's nephew, the Emperor Charles the Fifth, whose troops had sacked Rome in 1527."],
+      ["date", {"date": "1529", "place": "the fall of Cardinal Wolsey"}, "Wolsey failed to get the annulment. He was stripped of power in 1529 and died the next year, on his way to face charges of treason."]
+    ]},
+    { "name": "Break with Rome", "lines": [
+      ["bust", {"name": "Thomas Cromwell", "years": "c. 1485 – 1540", "role": "Lawyer and chief minister. Architect of the break with Rome.", "hair": "crop", "coat": "black", "tie": 0}, "A new chief minister, Thomas Cromwell, found a way out. If the pope would not grant an annulment, England would stop obeying the pope."],
+      ["date", {"date": "January 1533", "place": "a secret wedding"}, "Henry secretly married Anne in January 1533. His new Archbishop of Canterbury, Thomas Cranmer, declared the first marriage void. In September, Anne gave birth to a daughter, Elizabeth."],
+      ["decree", {"title": "Act of Supremacy", "lines": ["The King is", "Supreme Head", "of the Church of England"], "date": "1534"}, "In 1534, Parliament's Act of Supremacy declared the king Supreme Head of the Church of England."],
+      ["lesson", {"text": "Words alone could now be treason."}, "A new Treasons Act made it a capital crime even to call the king a heretic or a tyrant."],
+      ["cell", {"label": "Sir Thomas More · Tower of London · 1535"}, "Henry's former Lord Chancellor, the scholar Sir Thomas More, refused to swear the oath the new order demanded. He was executed in July 1535, weeks after Bishop John Fisher."]
+    ]},
+    { "name": "The terror", "lines": [
+      ["stat", {"value": "800+", "label": "religious houses dissolved, 1536 – 1540"}, "Cromwell then turned to the Church's wealth. Between 1536 and 1540, more than eight hundred monasteries, nunneries and friaries were closed, and their lands taken by the crown."],
+      ["people", {"n": 6, "pose": "walk", "label": "the Dissolution of the Monasteries"}, "Thousands of monks, nuns and friars were turned out. Libraries, shrines and centuries of art were destroyed, and most of the land was sold to nobles and gentry."],
+      ["army", {"label": "Pilgrimage of Grace · 1536"}, "In 1536, tens of thousands in the north rose in protest, in the Pilgrimage of Grace. Henry promised pardons and a hearing. After further unrest, around two hundred people were executed."],
+      ["date", {"date": "7 January 1536", "place": "Kimbolton Castle"}, "Catherine of Aragon, banished from court, died in January 1536, still insisting she was Henry's true wife."],
+      ["inquiry", {"label": "Trial of Anne Boleyn · May 1536"}, "Anne, too, had failed to produce a living son. Within months she was accused of adultery with five men, one of them her own brother. All of them were executed."],
+      ["stat", {"value": "12 days", "label": "between Prince Edward's birth and his mother's death"}, "Henry married Jane Seymour eleven days after Anne's death. In October 1537 she gave him the son he wanted, Edward. Twelve days later, she died."]
+    ]},
+    { "name": "The later wives", "lines": [
+      ["paper", {"mast": "LONDON", "head": "Cromwell executed", "sub": "After the king's fourth marriage fails", "date": "28 July 1540"}, "His fourth marriage, to a German princess, Anne of Cleves, was annulled after six months. Henry blamed Cromwell, who had arranged it, and had him executed."],
+      ["people", {"n": 1, "pose": "mourn", "night": 1, "label": "Catherine Howard · 13 February 1542"}, "That same day, Henry married Catherine Howard, still a teenager. Eighteen months later, she was executed for adultery."],
+      ["bust", {"name": "Henry VIII", "years": "in the 1540s", "role": "Obese, in pain, and increasingly suspicious.", "hair": "crop", "hat": "tudor", "beard": "full", "beardc": "#b5652b", "coat": "fur", "round": 1, "frown": 1}, "By now Henry was hugely overweight, with a painful ulcerated leg. A heavy fall while jousting in 1536 may have made it worse. Some historians think that fall changed him. Others say the cruelty was always there."],
+      ["throne", {"label": "Catherine Parr · queen 1543 – 1547"}, "His sixth wife, Catherine Parr, a widow and a published religious writer, outlived him."]
+    ]},
+    { "name": "The last years", "lines": [
+      ["army", {"label": "Boulogne · 1544"}, "He spent his last years at war with France and Scotland. To pay for it, he sold off monastery lands and debased the coinage, mixing cheaper metal into the silver."],
+      ["fleet", {"n": 4, "cannon": 1, "label": "the Mary Rose · 19 July 1545"}, "He also built up the navy. In 1545 he watched from the shore as his warship, the Mary Rose, sank in the Solent with most of her crew."],
+      ["wall", {"n": 1, "night": 1, "label": "Tower Hill · January 1547"}, "The killing went on to the end. Days before Henry died, the young poet Henry Howard, Earl of Surrey, was executed for treason."],
+      ["date", {"date": "28 January 1547", "place": "Palace of Whitehall"}, "Henry died at Whitehall on the twenty-eighth of January 1547, aged fifty-five. His nine-year-old son became Edward the Sixth."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["timeline", {"events": [["Edward VI · 1547", 0.1], ["Mary I · 1553", 0.45], ["Elizabeth I · 1558", 0.85]]}, "All three of his surviving children reigned. Edward pushed England further towards Protestantism. Mary, Catherine's daughter, tried to restore Catholicism, and nearly three hundred Protestants were burned. Then came Elizabeth."],
+      ["quote", {"text": "Two wives, two of his closest ministers and hundreds of others went to their deaths.", "who": "summary of the case against Henry"}, "Critics see a vain, cruel king who executed two wives, two of his closest ministers and hundreds of others, poured his father's fortune into wars, and destroyed centuries of monastic heritage."],
+      ["checklist", {"head": "What he left behind", "items": ["The Church of England", "A stronger Parliament", "A larger navy", "Wales joined to England in law"]}, "Defenders point to what lasted: a national church, a Parliament strengthened by the laws it passed for him, a larger navy, and the union of Wales with England in law."],
+      ["lesson", {"text": "He wanted a son. History remembers his daughter."}, "Henry tore England away from Rome, and married and discarded wife after wife, in his search for a male heir."],
+      ["memorial", {"n": 500, "date": "1491 – 1547"}, "His son died at fifteen. The daughter he had declared illegitimate, Elizabeth, became one of the most celebrated monarchs England ever had."]
+    ]}
+  ]
+}

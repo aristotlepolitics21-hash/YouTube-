@@ -1,0 +1,1 @@
+{ "name": "infamous-3d", "private": true, "dependencies": { "three": "0.160.1", "mannequin-js": "5.2.3" } }

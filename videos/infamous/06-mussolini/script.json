@@ -1,0 +1,76 @@
+{
+  "series": "Infamous",
+  "episode": 6,
+  "title": "Benito Mussolini",
+  "subtitle": "The man who invented fascism",
+  "say": {"Mussolini": "Moossoleeni", "Benito": "Beneeto", "Predappio": "Predahpyo", "Avanti": "Avahntee", "Fasci": "Fahshee", "Matteotti": "Mattay-ottee", "Giacomo": "Jahkomo", "Duce": "Doochay", "Gramsci": "Gramshee", "Pontine": "Ponteen", "Cyrenaica": "Sirenay-ika", "Omar Mukhtar": "Omar Mookhtar", "Yekatit": "Yekateet", "Addis Ababa": "Addis Abbaba", "Gran Sasso": "Grahn Sasso", "Salò": "Sahlo", "Galeazzo": "Gallay-atso", "Ciano": "Chahno", "Petacci": "Petahchee"},
+  "package": {
+    "thumb_line": 12,
+    "thumb": ["THE FIRST", "FASCIST"],
+    "intro": "Benito Mussolini founded the fascist movement in 1919 and ruled Italy as dictator from 1922 to 1943. He crushed opposition at home, waged brutal colonial wars in Libya and Ethiopia, passed racial laws against Italy's Jews, and took his country into a disastrous war as Hitler's ally. This documentary tells how he took power, and how it ended.",
+    "facts": ["Born 29 July 1883 near Predappio, Italy", "Expelled from the Italian Socialist Party in 1914 for supporting entry into the First World War", "Founded the Fasci di Combattimento in Milan on 23 March 1919", "Appointed prime minister by King Victor Emmanuel III after the March on Rome, October 1922", "Socialist deputy Giacomo Matteotti was kidnapped and murdered by fascists on 10 June 1924", "Italy invaded Ethiopia on 3 October 1935 and used poison gas", "Racial laws against Italy's Jews were passed in 1938", "Deposed and arrested on 25 July 1943; shot by partisans on 28 April 1945"],
+    "sources": "Encyclopaedia Britannica, R. J. B. Bosworth's Mussolini, Denis Mack Smith's Mussolini, Christopher Duggan's Fascist Voices, Ian Campbell's The Addis Ababa Massacre, the Fondazione CDEC (Centre for Contemporary Jewish Documentation, Milan).",
+    "hashtags": "#History #Documentary #WW2",
+    "tags": "benito mussolini, mussolini documentary, fascism, fascist italy, march on rome, blackshirts, ethiopia invasion, world war 2 italy, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "BENITO MUSSOLINI", "sub": "The man who invented fascism", "art": "bunker", "artp": {"n": 6}}, "On the night of the twenty-fourth of July 1943, in a grand hall in Rome, the leaders of Italy's Fascist Party did something unthinkable. They voted against their own leader."],
+      ["date", {"date": "25 July 1943", "place": "Villa Savoia · Rome"}, "The next afternoon, Benito Mussolini went to see the king. He was told he had been replaced, and was led out to a waiting ambulance, under arrest."],
+      ["stat", {"value": "21 years", "label": "Mussolini in power, 1922 – 1943"}, "He had ruled Italy for almost twenty-one years. He invented fascism, the movement that inspired Hitler and gave its name to a whole family of dictatorships."],
+      ["stat", {"value": "~470,000", "label": "estimated Italian deaths in the Second World War"}, "He waged brutal colonial wars in Africa, passed laws against Italy's Jews, and led his country into a war that killed nearly half a million Italians."],
+      ["lesson", {"text": "Fascism began here."}, "This is the story of the man who invented fascism, how he took power, and how it ended."]
+    ]},
+    { "name": "The young socialist", "lines": [
+      ["date", {"date": "29 July 1883", "place": "Predappio · Romagna · Italy"}, "Benito Mussolini was born on the twenty-ninth of July 1883, near Predappio in northern Italy. His father was a blacksmith and a passionate socialist. His mother was a schoolteacher."],
+      ["bust", {"name": "Benito Mussolini", "years": "1883 – 1945", "role": "Blacksmith's son. Socialist agitator and journalist.", "hair": "full", "stache": "thin", "coat": "suit", "tie": "#2b2b30"}, "He was a clever, restless and often violent boy, repeatedly in trouble at school. He qualified as a teacher, but his real talent was for agitation."],
+      ["city", {"state": "normal", "seed": 3, "label": "Switzerland · 1902 – 1904"}, "As a young man he drifted around Switzerland, doing odd jobs, reading revolutionary books and getting arrested. Back in Italy, he became a socialist journalist."],
+      ["paper", {"mast": "AVANTI!", "head": "The Socialist daily", "sub": "Editor: Benito Mussolini", "date": "1912"}, "By 1912 he was editor of Avanti!, the Socialist Party's national newspaper, and one of the best-known socialists in Italy."],
+      ["decree", {"title": "Expelled", "lines": ["Italian Socialist Party", "Benito Mussolini", "for supporting the war"], "date": "November 1914"}, "Then he broke with his party. He demanded that Italy join the First World War, was expelled from the Socialists, and started a newspaper of his own."],
+      ["army", {"label": "Italian front · 1915 – 1918"}, "He served in the army, and was wounded in 1917 when a mortar exploded during training. By the end of the war, more than six hundred thousand Italian soldiers were dead."]
+    ]},
+    { "name": "Blackshirts", "lines": [
+      ["podium", {"night": 1, "banners": 1, "label": "Milan · 23 March 1919"}, "Italy came out of the war angry. It had won, but felt cheated at the peace talks. Prices soared, and strikes spread. In March 1919, in Milan, Mussolini founded a new movement: the fascists."],
+      ["city", {"state": "fire", "seed": 6, "label": "Blackshirt violence · 1920 – 1922"}, "His armed squads, the Blackshirts, beat socialists and trade unionists, forced opponents to drink castor oil, and burned union halls and party offices. Hundreds of people were killed."],
+      ["checklist", {"head": "Who backed the squads", "items": ["Landowners", "Industrialists", "Many police and army officers", "Voters afraid of revolution"]}, "Landowners and industrialists, frightened of a socialist revolution, paid for the squads. Police and army officers often looked the other way."],
+      ["army", {"rows": 3, "label": "March on Rome · 28 October 1922"}, "In October 1922, thousands of Blackshirts converged on Rome. The army could have stopped them. But King Victor Emmanuel the Third refused to sign an order for martial law."],
+      ["decree", {"title": "Prime Minister", "lines": ["Benito Mussolini", "invited to form a government"], "date": "October 1922"}, "Instead, the king invited Mussolini to form a government. He arrived in Rome by overnight train. At thirty-nine, he was Italy's youngest prime minister."]
+    ]},
+    { "name": "Dictator", "lines": [
+      ["bust", {"name": "Giacomo Matteotti", "years": "1885 – 1924", "role": "Socialist deputy. Denounced fascist violence and fraud.", "hair": "back", "coat": "suit", "tie": "#2b2b30"}, "In 1924, after elections marred by violence, the socialist deputy Giacomo Matteotti denounced the fraud in parliament. Eleven days later, he was kidnapped in Rome by a fascist squad and murdered."],
+      ["quote", {"text": "I, and I alone, assume the political, moral and historical responsibility for all that has happened.", "who": "Mussolini to the Chamber of Deputies, 3 January 1925"}, "The scandal nearly brought him down. Instead, in January 1925, he told parliament that he alone took responsibility for all that had happened, and dared it to act. Nobody did."],
+      ["decree", {"title": "Laws of 1925 – 1926", "lines": ["Opposition parties banned", "Free press ended", "Special Tribunal created", "A secret police"], "date": "1925 – 1926"}, "Within two years, opposition parties and free trade unions were banned, the press was muzzled, and a secret police and special courts hunted down dissent."],
+      ["cell", {"label": "political prisoners · 1926 – 1943"}, "Thousands of opponents were sent into internal exile on remote islands. The Marxist thinker Antonio Gramsci spent more than a decade in prison and prison clinics, and died in 1937."],
+      ["podium", {"banners": 3, "cheer": 1, "night": 0, "label": "Il Duce"}, "Mussolini became Il Duce, the Leader. His face was everywhere. Children joined fascist youth groups, and a popular slogan declared that Mussolini was always right."],
+      ["checklist", {"head": "The regime's showpieces", "items": ["Treaty with the Vatican, 1929", "Draining the Pontine Marshes", "New roads and new towns"]}, "He made peace with the Catholic Church in 1929, drained marshes south of Rome, and built roads and new towns. The famous claim that he made the trains run on time was largely propaganda."]
+    ]},
+    { "name": "Empire", "lines": [
+      ["camp", {"n": 6, "night": 0, "label": "Cyrenaica · Libya · 1930 – 1933"}, "In Libya, already an Italian colony, his commanders crushed a rebellion by forcing around a hundred thousand people into desert camps. Tens of thousands died."],
+      ["people", {"n": 8, "pose": "look", "label": "Omar Mukhtar · 16 September 1931"}, "The rebel leader, Omar Mukhtar, an elderly teacher of the Koran, was captured and hanged in front of thousands of camp inmates."],
+      ["army", {"tanks": 1, "planes": 1, "fire": 1, "label": "Invasion of Ethiopia · 3 October 1935"}, "In October 1935, Mussolini invaded Ethiopia, one of the last independent countries in Africa. The League of Nations imposed sanctions, but they did little."],
+      ["decree", {"title": "Geneva Protocol", "lines": ["The use of poison gas", "in war is prohibited"], "date": "1925 · ratified by Italy 1928"}, "His air force dropped poison gas, including mustard gas, on Ethiopian soldiers and civilians, in breach of a treaty Italy had ratified. Addis Ababa fell in May 1936, and Mussolini proclaimed an empire."],
+      ["people", {"n": 8, "pose": "mourn", "night": 1, "label": "Addis Ababa · February 1937"}, "After an attempt on the life of the Italian viceroy in February 1937, Italian troops and Blackshirts killed thousands of people in Addis Ababa over three days. Ethiopians remember it as Yekatit Twelve."]
+    ]},
+    { "name": "Hitler's ally", "lines": [
+      ["versus", {"left": "Mussolini", "right": "Hitler", "mid": "AXIS"}, "Isolated by the sanctions, he drew closer to Hitler, who had long admired him. In 1936 they announced the Rome-Berlin Axis, and in 1939 the Pact of Steel bound Italy to Germany."],
+      ["decree", {"title": "Racial Laws", "lines": ["Jews expelled from schools", "Barred from public jobs", "Mixed marriages banned"], "date": "1938"}, "In 1938 his regime passed racial laws against Italy's Jews, expelling them from schools, universities and public jobs, and banning marriages with non-Jews."],
+      ["army", {"tanks": 1, "planes": 1, "label": "10 June 1940 · Italy enters the war"}, "In June 1940, with France already collapsing, he declared war on Britain and France, expecting a short war and an easy share of the spoils."],
+      ["army", {"fire": 1, "ruins": 1, "dir": -1, "label": "Greece · North Africa · Russia"}, "Instead, his armies were badly beaten in Greece and North Africa, and Germany had to rescue them. Tens of thousands of Italian soldiers died in the Russian winter."],
+      ["city", {"state": "ruin", "planes": 1, "label": "Italy · summer 1943"}, "In July 1943, the Allies landed in Sicily and bombed Rome. Fascism's own leaders turned on him, and the king had him arrested."]
+    ]},
+    { "name": "The end", "lines": [
+      ["cell", {"bars": 0, "label": "Gran Sasso · September 1943"}, "He was held in a mountain hotel at Gran Sasso. In September 1943, German commandos landed gliders on the mountain and freed him."],
+      ["bust", {"name": "Mussolini", "years": "1943 – 1945", "role": "Puppet ruler of German-occupied northern Italy.", "hair": "bald", "coat": "military", "frown": 1}, "Hitler installed him at the head of a puppet state in German-occupied northern Italy, based at Salò. Italy collapsed into civil war between fascists and partisans."],
+      ["wall", {"night": 1, "n": 5, "label": "Verona · 11 January 1944"}, "His new regime shot five of the men who had voted against him, including his own son-in-law, Galeazzo Ciano. Its police helped round up Jews, and thousands were deported to Auschwitz and other camps."],
+      ["date", {"date": "28 April 1945", "place": "near Lake Como"}, "In April 1945, as German forces collapsed, he tried to escape in a German convoy. Partisans caught him near Lake Como and shot him the next day, with his lover, Clara Petacci."],
+      ["people", {"n": 8, "pose": "look", "label": "Milan · 29 April 1945"}, "Their bodies were taken to Milan and hung upside down in a square, before a jeering crowd. The next day, in Berlin, Hitler took his own life."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["decree", {"title": "Constitution of Italy", "lines": ["Reorganising the dissolved", "Fascist Party is forbidden"], "date": "1 January 1948"}, "In 1946, Italians voted to abolish the monarchy that had appointed him. The new constitution, in force from 1948, banned the reorganisation of the Fascist Party."],
+      ["city", {"state": "normal", "seed": 1, "label": "Predappio"}, "But fascism did not simply vanish. Former fascists founded a new party in 1946, and admirers still visit his tomb at Predappio, especially on anniversaries."],
+      ["checklist", {"head": "Myths historians reject", "items": ["'A harmless buffoon'", "'Not as bad as Hitler'", "'Good for Italy until 1938'"]}, "Some Italians remember him fondly, for public works and order. Historians push back against the comforting idea of a clownish dictator, gentler than Hitler, pointing to the squads, the camps in Libya, the gas in Ethiopia and the racial laws."],
+      ["lesson", {"text": "He showed how a democracy can be taken apart."}, "Mussolini's real legacy is a method. He showed that a democracy could be dismantled from the inside, with violence in the streets and the cooperation of the powerful."],
+      ["memorial", {"n": 500, "date": "1922 – 1945"}, "Others studied that method closely, and copied it. That is why the word he gave the world, fascism, is still used as a warning."]
+    ]}
+  ]
+}

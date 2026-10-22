@@ -1,0 +1,76 @@
+{
+  "series": "Infamous",
+  "episode": 29,
+  "title": "Joseph Kony",
+  "subtitle": "The warlord who made an army out of stolen children",
+  "say": {"Kony": "Konee", "Aboke": "Abokay", "Rachele Fassera": "Rakeleh Fasseyra", "Acholi": "Acholee", "Odek": "Oddek", "Gulu": "Gooloo", "Museveni": "Moosevenee", "Yoweri": "Yowairee", "Lakwena": "Lakwayna", "Atiak": "Atee-ak", "Barlonyo": "Barlonyo", "Juba": "Jooba", "Garamba": "Garamba", "Ongwen": "Ongwen", "Kampala": "Kampahla", "Kafia Kingi": "Kafeeya Kingee", "LRA": "L R A", "ICC": "I C C"},
+  "package": {
+    "thumb_line": 12,
+    "thumb": ["STOLEN", "CHILDREN"],
+    "intro": "Joseph Kony's Lord's Resistance Army abducted tens of thousands of children in northern Uganda and turned many of them into soldiers. In 2005 he became one of the first people charged by the International Criminal Court. As of 2025, he has never been caught. This documentary tells the story of the war, its victims, and the long hunt for the man behind it.",
+    "facts": ["Born around 1961 in Odek, near Gulu, northern Uganda", "Led the Lord's Resistance Army from the late 1980s", "139 girls abducted from St Mary's College, Aboke, on 10 October 1996; 109 were released the same day", "Nearly two million people in northern Uganda lived in displacement camps by 2005", "ICC arrest warrant issued 8 July 2005 for crimes against humanity and war crimes (charges, not a conviction)", "Human Rights Watch documented more than 800 civilians killed in the LRA's 'Christmas massacres' of 2008–09", "The Kony 2012 film was viewed about 100 million times in under a week", "Former LRA commander Dominic Ongwen was convicted by the ICC in 2021 and sentenced to 25 years"],
+    "sources": "International Criminal Court case records (The Prosecutor v. Joseph Kony; The Prosecutor v. Dominic Ongwen), Human Rights Watch reports on northern Uganda and the LRA, UNICEF, World Health Organization / Uganda Ministry of Health mortality survey (2005), Encyclopaedia Britannica, Tim Allen's Trial Justice: The International Criminal Court and the Lord's Resistance Army.",
+    "hashtags": "#History #Documentary #Uganda",
+    "tags": "joseph kony, kony documentary, lord's resistance army, lra, child soldiers, northern uganda, kony 2012, international criminal court, dominic ongwen, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "JOSEPH KONY", "sub": "The warlord who made an army out of stolen children", "art": "jungle", "artp": {"night": 1, "n": 5}}, "In the early hours of the tenth of October, 1996, armed rebels broke into a girls' boarding school at Aboke, in northern Uganda."],
+      ["date", {"date": "10 October 1996", "place": "St Mary's College · Aboke · northern Uganda"}, "They tied the pupils together and marched them into the bush. One hundred and thirty-nine girls were taken."],
+      ["people", {"n": 7, "night": 1, "pose": "walk", "label": "the march from Aboke"}, "The school's deputy head, an Italian nun named Sister Rachele Fassera, followed them on foot. She persuaded the rebel commander to release a hundred and nine. He kept thirty."],
+      ["stat", {"value": "Tens of thousands", "label": "children abducted by the Lord's Resistance Army, by most estimates"}, "Those girls were among tens of thousands of children abducted by the Lord's Resistance Army over two decades."],
+      ["stat", {"value": "~1.8 million", "label": "people living in camps in northern Uganda at the height of the war"}, "The war it fought drove most of the population of northern Uganda into camps."],
+      ["lesson", {"text": "Why has no one ever caught him?"}, "Its leader, Joseph Kony, is one of the most wanted men in the world. As of 2025, he has never been arrested. This is his story."]
+    ]},
+    { "name": "Northern Uganda", "lines": [
+      ["date", {"date": "c. 1961", "place": "Odek · near Gulu · northern Uganda"}, "Joseph Kony was born around 1961 in Odek, a village near the town of Gulu. He is Acholi, from the main ethnic group of the region."],
+      ["bust", {"name": "Joseph Kony", "years": "born c. 1961", "role": "Former altar boy. Claimed to be possessed by spirits.", "hair": "crop", "beard": "goatee", "coat": "shirt"}, "He served as an altar boy as a child, and dropped out of school. As a young man he became known locally as a healer who claimed to be possessed by spirits."],
+      ["army", {"label": "Kampala · January 1986"}, "In 1986, a rebel army led by Yoweri Museveni seized power in Uganda. As of 2025, he is still the country's president."],
+      ["people", {"n": 6, "pose": "look", "label": "Acholiland · 1986"}, "Many soldiers of the defeated government were Acholi, and they fled north. Museveni's troops followed them, and abuses against civilians bred fear and resentment."],
+      ["army", {"dir": -1, "label": "Holy Spirit Movement · 1987"}, "A spirit medium named Alice Lakwena raised a rebel force, the Holy Spirit Movement, and marched on the capital. It was crushed in 1987."],
+      ["decree", {"title": "Lord's Resistance Army", "lines": ["Leader: Joseph Kony", "Stated aim: to rule Uganda", "by the Ten Commandments"], "date": "late 1980s", "seal": 0}, "Kony gathered his own band of fighters, which became the Lord's Resistance Army. He said he would rule Uganda according to the Ten Commandments."]
+    ]},
+    { "name": "War on the Acholi", "lines": [
+      ["jungle", {"night": 1, "n": 6, "label": "northern Uganda · 1990s"}, "The LRA never won wide support. Short of recruits, it turned on the very people it claimed to fight for: the Acholi."],
+      ["ruler", {"pose": "up", "night": 1, "label": "orders from the spirits"}, "Kony ran the LRA like a cult. He claimed that spirits spoke through him, and his fighters were bound by strict rules and rituals."],
+      ["people", {"n": 8, "night": 1, "pose": "walk", "label": "abducted"}, "Its main weapon was abduction. Fighters raided villages and schools at night and took children. Boys were made to fight and carry loads. Girls were forced to become the so-called wives of commanders."],
+      ["quote", {"text": "Children were forced to commit atrocities, sometimes against their own communities, so that they could never go home.", "who": "summary of findings by Human Rights Watch and others"}, "New recruits were often forced to take part in killings, sometimes in their own villages, so that they would feel they could never go home."],
+      ["wall", {"night": 1, "n": 5, "label": "Atiak · 1995 · Barlonyo · 2004"}, "Civilians suspected of helping the government were killed or maimed. At Atiak in 1995, and at Barlonyo in 2004, LRA fighters killed hundreds of people in a single day."],
+      ["web", {"nodes": [["Sudan government", 0.25, 0.25, 0], ["LRA", 0.25, 0.7, 1], ["Uganda government", 0.75, 0.25, 0], ["South Sudan rebels", 0.75, 0.7, 0]], "links": [[0, 1], [2, 3]], "label": "a proxy war · 1990s"}, "In the 1990s, the government of Sudan armed and sheltered the LRA, in retaliation for Uganda's support for rebels in southern Sudan. The war became a proxy war."],
+      ["decree", {"title": "Peace talks", "lines": ["Government envoy: Betty Bigombe", "LRA leader: Joseph Kony", "Talks collapsed"], "date": "1994", "seal": 0}, "In 1994, a government minister, Betty Bigombe, met Kony in the bush and came close to a peace deal. The talks collapsed, and the war went on for more than a decade."]
+    ]},
+    { "name": "The camps", "lines": [
+      ["camp", {"night": 0, "n": 9, "label": "displacement camp · Gulu district"}, "The Ugandan government's answer was to move civilians into camps, often by force. By 2005, nearly two million people in northern Uganda lived in them."],
+      ["stat", {"value": "~1,000", "label": "excess deaths a week in the camps (2005 survey)"}, "Conditions were desperate. A 2005 survey by Uganda's health ministry and the World Health Organization estimated about a thousand excess deaths a week, mostly from disease and malnutrition."],
+      ["people", {"n": 9, "pose": "walk", "night": 1, "label": "night commuters · Gulu"}, "Every evening, thousands of children walked into the towns to sleep on verandas, in bus stations and in church compounds, where they were safer from abduction. They became known as night commuters."],
+      ["checklist", {"head": "Also documented", "items": ["Abuses by government soldiers", "Camps poorly protected", "A war ignored abroad"]}, "Human rights groups also documented killings, rapes and beatings by Ugandan government soldiers. For years, the outside world paid little attention. A senior UN official called it one of the world's most neglected crises."]
+    ]},
+    { "name": "Charged", "lines": [
+      ["inquiry", {"label": "International Criminal Court · The Hague"}, "In 2003, Uganda's government referred the situation to the new International Criminal Court. In 2005, the court issued its first-ever arrest warrants: for Kony and four of his commanders."],
+      ["decree", {"title": "Warrant of arrest", "lines": ["Joseph Kony", "Crimes against humanity", "War crimes", "Charges, not a conviction"], "date": "8 July 2005"}, "Kony was charged with crimes against humanity and war crimes, including murder, enslavement, sexual slavery and forcing children to fight. He has never been tried, and these remain charges, not convictions."],
+      ["date", {"date": "July 2006", "place": "peace talks · Juba · southern Sudan"}, "In 2006, peace talks began in Juba, in southern Sudan, with mediators from the region and the UN."],
+      ["bust", {"name": "Joseph Kony", "years": "LRA leader", "role": "Charged by the ICC in 2005. Never arrested.", "hair": "crop", "beard": "goatee", "coat": "military", "frown": 1}, "Kony met journalists in the jungle that year. He denied that his fighters had committed atrocities."],
+      ["people", {"n": 8, "pose": "up", "label": "northern Uganda · 2006 – 2008"}, "A ceasefire brought calm to northern Uganda. But Kony never came out to sign the final agreement. Even so, the fighting in Uganda was over, and people slowly began leaving the camps."]
+    ]},
+    { "name": "Into the forests", "lines": [
+      ["jungle", {"n": 8, "label": "Garamba · northeastern Congo"}, "By then the LRA had moved into the forests where Congo, South Sudan and the Central African Republic meet. In December 2008, a regional offensive, backed by the United States, attacked its camps. Kony escaped."],
+      ["stat", {"value": "800+", "label": "civilians killed around Christmas 2008 (Human Rights Watch)"}, "His fighters took revenge on villagers. Human Rights Watch documented more than eight hundred civilians killed around Christmas 2008 alone."],
+      ["people", {"n": 8, "pose": "mourn", "label": "Makombo · December 2009"}, "A year later, around Makombo in Congo, LRA fighters killed more than three hundred people in four days, according to Human Rights Watch."],
+      ["tv", {"text": "KONY 2012", "speaker": 0}, "In March 2012, an American charity, Invisible Children, released a film called Kony 2012. It was watched about a hundred million times in under a week."],
+      ["paper", {"mast": "WORLD", "head": "Viral film sparks debate", "sub": "Critics say it oversimplifies the war", "date": "March 2012"}, "Critics said the film oversimplified the conflict, and arrived years after the LRA had left Uganda. But it pushed governments to act."],
+      ["army", {"planes": 1, "label": "US advisers · 2011 – 2017"}, "The United States had sent about a hundred special forces advisers to help hunt him, and later offered up to five million dollars for information. The mission ended in 2017 without finding him."]
+    ]},
+    { "name": "Victim and perpetrator", "lines": [
+      ["bust", {"name": "Dominic Ongwen", "years": "born c. 1975", "role": "Abducted as a boy. Became an LRA commander. Convicted by the ICC.", "hair": "crop", "coat": "military"}, "One of the men charged alongside Kony shows the LRA's double tragedy. Dominic Ongwen was abducted as a boy of about ten, on his way to school. He rose to become a senior commander."],
+      ["paper", {"mast": "THE HAGUE", "head": "Former child soldier convicted", "sub": "Dominic Ongwen sentenced to 25 years", "date": "2021"}, "He surrendered in 2015. In 2021, the court convicted him of sixty-one crimes, including murder and sexual slavery, and sentenced him to twenty-five years."],
+      ["quote", {"text": "He suffered as a child. He was judged for what he chose to do as an adult.", "who": "summary of the ICC judgment, 2021"}, "His defence argued that he was a victim too. The judges accepted that he had suffered as a child, but found him responsible for the crimes he committed as an adult."],
+      ["checklist", {"head": "Charged with Kony in 2005", "items": ["Raska Lukwiya · killed 2006", "Vincent Otti · reported killed 2007", "Okot Odhiambo · killed", "Dominic Ongwen · convicted"]}, "Of the others charged in 2005, Raska Lukwiya and Okot Odhiambo were killed. Vincent Otti, Kony's deputy, was reportedly killed on Kony's own orders in 2007."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["jungle", {"night": 1, "n": 3, "label": "Central African Republic – Sudan borderlands"}, "As of 2025, Kony is still at large. He is believed to be hiding with a small band of followers in the remote borderlands between the Central African Republic and Sudan."],
+      ["inquiry", {"label": "ICC · hearing on the charges, in his absence · 2025"}, "In 2025, ICC judges held a hearing on the charges against him in his absence, the first of its kind at the court. A trial still cannot begin unless he is caught."],
+      ["memorial", {"n": 500, "date": "northern Uganda"}, "In northern Uganda, the abducted children are now adults. Thousands came home under an amnesty, and many still live with what they were forced to do, and with the fear and suspicion of their neighbours."],
+      ["lesson", {"text": "Fame is not the same as justice."}, "In 2012, millions of people learned Joseph Kony's name in a few days. More than a decade later, he is still free. Being famous, it turns out, is not the same as being brought to justice."]
+    ]}
+  ]
+}

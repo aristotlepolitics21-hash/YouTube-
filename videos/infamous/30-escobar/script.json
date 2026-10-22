@@ -1,0 +1,76 @@
+{
+  "series": "Infamous",
+  "episode": 30,
+  "title": "Pablo Escobar",
+  "subtitle": "The drug lord who made war on a nation",
+  "say": {"Gaviria": "Gaveeria", "Rionegro": "Reeo-negro", "Envigado": "Envigahdo", "Medellín": "Medeh-yeen", "Antioquia": "Antee-okia", "Nápoles": "Napoless", "Hacienda": "Ah-see-enda", "Lara Bonilla": "Lara Boneeya", "Galán": "Gahlan", "Avianca": "Aveeanca", "La Catedral": "La Katedral", "Los Pepes": "Loss Pepays", "Extraditables": "Extradeetahblays", "Guillermo": "Geeyermo", "El Espectador": "El Espektador", "Bogotá": "Bogota", "Cali": "Kahlee", "Ochoa": "Ochoa", "César": "Sesar", "Rodríguez Gacha": "Rodreeges Gacha", "Lehder": "Layder", "Plata o plomo": "Plahta o plomo", "García Márquez": "Garseea Markes", "Soacha": "So-acha", "Magdalena": "Magdalayna", "DAS": "D A S", "Los Olivos": "Loss Oleevos", "Pablo Emilio": "Pablo Emeelio", "Barco": "Barko", "Virgilio": "Veerheelio"},
+  "package": {
+    "thumb_line": 24,
+    "thumb": ["SILVER", "OR LEAD"],
+    "intro": "Pablo Escobar built the Medellín cartel into one of the richest criminal organisations in history, and when Colombia tried to extradite him, he went to war with the state. He bombed a passenger jet, killed a presidential candidate, judges, journalists and hundreds of police officers. This documentary tells how he rose, how he fell, and why Medellín now remembers his victims instead of him.",
+    "facts": ["Born 1 December 1949 in Rionegro, Antioquia, Colombia", "Arrested with cocaine in 1976; the case collapsed", "Elected an alternate member of Colombia's Congress in 1982; forced out in 1984", "Justice Minister Rodrigo Lara Bonilla was assassinated on 30 April 1984", "Presidential candidate Luis Carlos Galán was assassinated on 18 August 1989", "Avianca Flight 203 was bombed on 27 November 1989, killing 107 on board and 3 on the ground", "Surrendered in June 1991 to La Catedral prison; escaped in July 1992", "Shot dead by Colombian police in Medellín on 2 December 1993, a day after his 44th birthday"],
+    "sources": "Encyclopaedia Britannica, Mark Bowden's Killing Pablo, Gabriel García Márquez's News of a Kidnapping, US Drug Enforcement Administration history, Colombia's Centro Nacional de Memoria Histórica, Medellín city government (Parque Memorial Inflexión).",
+    "hashtags": "#History #Documentary #Colombia",
+    "tags": "pablo escobar, escobar documentary, medellin cartel, colombia history, cocaine trade, avianca flight 203, la catedral, narcos true story, drug war, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "PABLO ESCOBAR", "sub": "The drug lord who made war on a nation", "art": "city", "artp": {"state": "fire", "seed": 6, "night": 1}}, "On the morning of the twenty-seventh of November, 1989, Avianca Flight 203 took off from Bogotá, Colombia's capital, bound for the city of Cali."],
+      ["date", {"date": "27 November 1989", "place": "Avianca Flight 203 · near Bogotá"}, "About five minutes after take-off, a bomb exploded on board. The plane broke apart and fell onto the hills below."],
+      ["stat", {"value": "110", "label": "killed: all 107 on board and 3 on the ground"}, "All one hundred and seven people on board were killed, and three more on the ground. The politician the bombers hoped to kill was not even on the plane."],
+      ["stat", {"value": "Thousands", "label": "killed in the violence he unleashed, by most estimates"}, "Estimates of the deaths he was responsible for run into the thousands: police officers, judges, journalists, politicians and people who happened to be passing by."],
+      ["lesson", {"text": "A drug lord who made war on a country."}, "The bombing was ordered by Pablo Escobar, the head of the Medellín cocaine cartel, in his war against the Colombian state. This is how a small-time crook became the world's most notorious drug lord, and what it cost Colombia."]
+    ]},
+    { "name": "A small-time crook", "lines": [
+      ["date", {"date": "1 December 1949", "place": "Rionegro · Antioquia · Colombia"}, "Pablo Emilio Escobar Gaviria was born on the first of December, 1949, in Rionegro, in the Antioquia region of Colombia. His mother was a schoolteacher and his father a farmer."],
+      ["city", {"state": "normal", "seed": 3, "label": "Envigado · Medellín"}, "He grew up in Envigado, on the edge of the city of Medellín. As a young man he turned to crime: stealing cars, smuggling contraband and running scams."],
+      ["bust", {"name": "Pablo Escobar", "years": "1949 – 1993", "role": "Small-time smuggler from Medellín.", "hair": "curly", "stache": "big", "round": 1, "coat": "shirt"}, "In the 1970s he moved into a new and fast-growing business. Cocaine, refined from coca grown mostly in Peru and Bolivia, was becoming fashionable in the United States."],
+      ["cell", {"pose": "stand", "label": "Medellín · 1976"}, "In 1976 he was arrested with a load of cocaine. His police mugshot later became famous around the world. The case against him fell apart."]
+    ]},
+    { "name": "The cartel", "lines": [
+      ["web", {"nodes": [["Escobar", 0.5, 0.25, 1], ["Ochoa brothers", 0.2, 0.7, 0], ["Rodríguez Gacha", 0.5, 0.75, 0], ["Carlos Lehder", 0.8, 0.7, 0]], "links": [[0, 1], [0, 2], [0, 3]], "label": "the Medellín cartel"}, "With partners including the Ochoa brothers, Gonzalo Rodríguez Gacha and Carlos Lehder, he built what became known as the Medellín cartel."],
+      ["city", {"state": "normal", "planes": 1, "seed": 9, "label": "Miami · early 1980s"}, "They flew cocaine north by the tonne, through islands in the Caribbean and into Florida. Miami became the hub of the trade, and its streets saw a wave of drug killings."],
+      ["paper", {"mast": "BILLIONAIRES", "head": "Colombian cocaine boss on rich list", "date": "1987"}, "The money was almost beyond counting. From 1987, Forbes magazine included him in its annual list of the world's billionaires."],
+      ["field", {"village": 1, "n": 4, "label": "Hacienda Nápoles"}, "He bought a vast estate, Hacienda Nápoles, and filled it with a private zoo of imported animals, including hippopotamuses."],
+      ["quote", {"text": "Plata o plomo: silver or lead. Take the bribe, or take the bullet.", "who": "the choice the cartel offered officials"}, "To police, judges and officials, his cartel offered a simple choice, known in Spanish as plata o plomo: silver or lead. Take a bribe, or be killed."]
+    ]},
+    { "name": "Robin Hood and politics", "lines": [
+      ["people", {"n": 8, "pose": "up", "label": "Barrio Pablo Escobar · Medellín"}, "In Medellín's poorest districts he paid for hundreds of homes, football pitches and street lighting. Many people there saw him as a Robin Hood, and some still do."],
+      ["ballot", {"value": "1982", "label": "elected an alternate member of Colombia's Congress"}, "In 1982 he was elected to Colombia's Congress as an alternate member. It gave him standing, and, he hoped, protection."],
+      ["bust", {"name": "Rodrigo Lara Bonilla", "years": "1946 – 1984", "role": "Justice minister. Exposed Escobar's drug money.", "hair": "side", "coat": "suit", "glasses": "square"}, "The justice minister, Rodrigo Lara Bonilla, and the newspaper El Espectador exposed where his fortune came from. In 1984, Escobar was forced out of politics."],
+      ["paper", {"mast": "BOGOTÁ", "head": "Justice minister assassinated", "date": "30 April 1984"}, "On the thirtieth of April, 1984, Lara Bonilla was shot dead in Bogotá by a gunman on a motorbike, sent by the cartel. The government responded by approving extraditions to the United States."]
+    ]},
+    { "name": "War on the state", "lines": [
+      ["quote", {"text": "We prefer a grave in Colombia to a prison cell in the United States.", "who": "slogan of 'the Extraditables', led by Escobar"}, "Extradition was what Escobar feared most. He and his allies, calling themselves the Extraditables, declared war on anyone who supported it."],
+      ["cell", {"night": 1, "label": "Carlos Lehder · Florida · 1988"}, "His partner Carlos Lehder showed what extradition meant. Sent to the United States in 1987, he was sentenced in Florida the next year to life without parole, plus a hundred and thirty-five years."],
+      ["paper", {"mast": "EL ESPECTADOR", "head": "Editor Guillermo Cano murdered", "date": "17 December 1986"}, "Judges, police officers, politicians and journalists were murdered. In 1986, Guillermo Cano, the editor of El Espectador, was shot dead as he drove away from his office."],
+      ["podium", {"night": 1, "banners": 2, "label": "Soacha · 18 August 1989"}, "On the eighteenth of August, 1989, Luis Carlos Galán, the favourite to become president and a fierce opponent of the cartels, was shot dead at a campaign rally."],
+      ["decree", {"title": "Emergency decree", "lines": ["Extradition restored", "Cartel property seized"], "date": "August 1989"}, "After Galán's murder, President Virgilio Barco's government launched a crackdown and restored extradition by emergency decree. Escobar answered with bombs."],
+      ["city", {"state": "normal", "planes": 1, "night": 1, "seed": 2, "label": "Bogotá · late 1989"}, "His campaign was taken over by César Gaviria. It was Gaviria the bombers of Flight 203 had been trying to kill. He had not boarded the plane."],
+      ["city", {"state": "fire", "seed": 4, "label": "DAS headquarters · Bogotá · 6 December 1989"}, "Nine days after the plane bombing, a huge truck bomb outside the headquarters of the national security agency, the DAS, in Bogotá killed dozens of people and injured hundreds."],
+      ["wall", {"night": 1, "n": 6, "label": "Medellín · 1990"}, "In Medellín, the cartel paid its gunmen a bounty for every police officer they killed. Hundreds of police officers died."],
+      ["bunker", {"n": 2, "label": "hostages · 1990 – 1991"}, "He also kidnapped journalists and members of powerful families to pressure the government. The novelist Gabriel García Márquez later told their story in his book News of a Kidnapping."]
+    ]},
+    { "name": "The prison he built", "lines": [
+      ["decree", {"title": "Constitution of 1991", "lines": ["Extradition of Colombian", "citizens is prohibited"], "date": "June 1991"}, "In June 1991, the assembly writing Colombia's new constitution voted to ban the extradition of Colombian citizens. The same day, Escobar surrendered."],
+      ["camp", {"night": 0, "n": 3, "label": "La Catedral · above Envigado"}, "His prison, La Catedral, sat on a hillside above his home town, and was built to his own requirements. Inside, he received visitors, held parties and kept running his business."],
+      ["bust", {"name": "Pablo Escobar", "years": "1991 – 1993", "role": "Surrendered in 1991. Escaped in July 1992.", "hair": "curly", "stache": "big", "beard": "full", "round": 1, "coat": "shirt", "frown": 1}, "In July 1992, after reports that he had had associates murdered at the prison, the government moved to transfer him somewhere more secure. He escaped."]
+    ]},
+    { "name": "The hunt", "lines": [
+      ["army", {"night": 1, "label": "the Search Bloc · 1992 – 1993"}, "A special police unit, the Search Bloc, hunted him, helped by American intelligence and surveillance teams."],
+      ["city", {"state": "fire", "night": 1, "seed": 11, "label": "Bogotá · 1993"}, "As the net closed, he set off car bombs in Bogotá and Medellín. In early 1993, they killed dozens of civilians, including children."],
+      ["web", {"nodes": [["Los Pepes", 0.5, 0.25, 1], ["Cali cartel", 0.2, 0.7, 0], ["Ex-associates", 0.5, 0.75, 0], ["Paramilitaries", 0.8, 0.7, 0]], "links": [[0, 1], [0, 2], [0, 3]], "label": "Los Pepes"}, "A vigilante group calling itself Los Pepes began killing his associates and lawyers and destroying his property. It drew in rival traffickers from Cali and former allies, and was accused of links to the police."],
+      ["date", {"date": "2 December 1993", "place": "Los Olivos · Medellín"}, "On the second of December, 1993, a day after his forty-fourth birthday, police traced a phone call he made to his son. They found him in a house in a middle-class district of Medellín."],
+      ["city", {"state": "normal", "night": 1, "seed": 7, "label": "rooftops · Medellín"}, "He tried to escape across the rooftops and was shot dead. Members of his family later claimed he had shot himself. He was forty-four."],
+      ["people", {"n": 9, "pose": "mourn", "label": "his funeral · Medellín"}, "Thousands of people from the neighbourhoods he had paid for crowded around his coffin."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["checklist", {"head": "After Escobar", "items": ["The Cali cartel took over", "The cocaine trade went on", "Armed groups moved in"]}, "His death did not end the cocaine trade. Rival cartels and armed groups took it over, and Colombia's violence went on for years."],
+      ["stat", {"value": "100+", "label": "hippos descended from his private zoo, by recent estimates"}, "Even his hippos outlived him. Their descendants now number well over a hundred along the Magdalena River, and in 2022 Colombia declared them an invasive species."],
+      ["tv", {"text": "NARCO FAME", "speaker": 0}, "Films and television series have made him a pop-culture figure, and tourists visit his grave and his old haunts in Medellín. Many Colombians find that deeply painful."],
+      ["city", {"state": "ruin", "seed": 5, "label": "Monaco building · Medellín · 2019"}, "In 2019, Medellín demolished the Monaco building, his former fortified home. In its place, the city built a memorial park to the victims of the drug war."],
+      ["memorial", {"n": 600, "date": "Medellín · 2019"}, "The memorial counts more than forty-six thousand victims of narco-terrorism in Colombia between 1983 and 1994."],
+      ["lesson", {"text": "Remember the victims, not the legend."}, "Escobar is often remembered as a legend: the billionaire, the outlaw, the Robin Hood. The city that knew him best has chosen to remember the people he killed instead."]
+    ]}
+  ]
+}

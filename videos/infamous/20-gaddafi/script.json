@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 20,
+  "title": "Muammar Gaddafi",
+  "subtitle": "Forty-two years of the colonel's Libya",
+  "say": {"Gaddafi": "Ga-daffy", "Gaddafi's": "Ga-daffy's", "Muammar": "Moo-ammar", "Sirte": "Seert", "Idris": "Id-reess", "Jamahiriya": "Jamma-hee-reeya", "Abu Salim": "Abu Saleem", "Megrahi": "Meg-rah-hee", "Abdelbaset": "Abdel-basset", "Nasser": "Nasser", "Misrata": "Mis-rahta", "Benghazi": "Ben-gahzi", "UTA": "U T A"},
+  "package": {
+    "thumb_line": 20,
+    "thumb": ["THE MAD", "DOG"],
+    "intro": "Muammar Gaddafi seized Libya in a coup at the age of twenty-seven and ruled it for forty-two years. His regime was blamed for the Lockerbie bombing, and it jailed, tortured and killed its critics at home. This documentary tells how a Bedouin boy became the West's most notorious dictator, and how it ended in a drainage pipe outside Sirte.",
+    "facts": ["Born around 1942 near Sirte, in Italian-ruled Libya", "Overthrew King Idris in a coup on 1 September 1969, aged 27", "Declared Libya a 'Jamahiriya' (state of the masses) in 1977", "Pan Am Flight 103 was bombed over Lockerbie on 21 December 1988, killing 270 people", "A Scottish court convicted Libyan intelligence officer Abdelbaset al-Megrahi in 2001", "Human Rights Watch estimates about 1,200 prisoners were killed at Abu Salim prison in June 1996", "UN Security Council Resolution 1973 authorised action to protect Libyan civilians on 17 March 2011", "Captured and killed near Sirte on 20 October 2011"],
+    "sources": "Encyclopaedia Britannica, Human Rights Watch reports on Abu Salim (2006) and 'Death of a Dictator' (2012), UN Security Council Resolution 1973, the High Court of Justiciary judgment in the Lockerbie trial (2001), International Criminal Court case records, Alison Pargeter's Libya: The Rise and Fall of Qaddafi.",
+    "hashtags": "#History #Documentary #Libya",
+    "tags": "muammar gaddafi, gaddafi documentary, libya history, lockerbie bombing, pan am 103, abu salim, arab spring libya, 2011 libyan civil war, green book, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "MUAMMAR GADDAFI", "sub": "Forty-two years of the colonel's Libya", "art": "army", "artp": {"night": 1, "fire": 1}}, "On the morning of the twentieth of October 2011, a convoy of cars tried to break out of the besieged city of Sirte, on the coast of Libya. NATO aircraft struck it."],
+      ["date", {"date": "20 October 2011", "place": "Sirte · Libya"}, "Among the survivors was the man who had ruled Libya for forty-two years. Rebel fighters found Muammar Gaddafi hiding in a drainage pipe. Within the hour, he was dead."],
+      ["stat", {"value": "42 years", "label": "in power, 1969 – 2011"}, "He had seized power at twenty-seven, and by the end he had ruled longer than any other leader in the Arab world."],
+      ["stat", {"value": "270", "label": "killed in the Lockerbie bombing, 1988"}, "His regime was held responsible for the bombing of an airliner over Lockerbie that killed two hundred and seventy people, and for decades of fear at home."],
+      ["lesson", {"text": "Revolutionary, showman, killer"}, "To some Libyans and Africans, he was a revolutionary who shared out oil wealth and defied the West. To many more, he was a tyrant. This is how he earned both reputations."]
+    ]},
+    { "name": "A desert boy", "lines": [
+      ["date", {"date": "c. 1942", "place": "near Sirte · Italian-ruled Libya"}, "Muammar Gaddafi was born around 1942, into a family of Bedouin herders in the desert near Sirte, when Libya was still an Italian colony."],
+      ["tv", {"text": "VOICE OF THE ARABS · CAIRO"}, "As a boy he listened to radio broadcasts from Egypt by President Gamal Abdel Nasser, who preached Arab unity and defiance of the West. Nasser became his hero."],
+      ["bust", {"name": "Muammar Gaddafi", "years": "c. 1942 – 2011", "role": "Young army officer. Admirer of Egypt's President Nasser.", "hair": "curly", "coat": "khaki"}, "He joined the army, and at the military academy in Benghazi he built a secret circle of young officers who planned to overthrow the king."]
+    ]},
+    { "name": "The coup", "lines": [
+      ["throne", {"label": "King Idris · 1951 – 1969"}, "Libya was then a kingdom under King Idris, an elderly monarch whose poor desert country had suddenly grown rich from oil, discovered in 1959."],
+      ["army", {"tanks": 1, "night": 1, "label": "1 September 1969"}, "On the first of September 1969, while the king was abroad for medical treatment, Gaddafi's officers took over in an almost bloodless coup. He was twenty-seven."],
+      ["ruler", {"pose": "point", "label": "Colonel Gaddafi · 1969"}, "The young captain promoted himself to colonel. He kept that modest rank for the rest of his life, even as he ruled the country alone."],
+      ["decree", {"title": "Revolutionary Command Council", "lines": ["Monarchy abolished", "British and US bases closed", "Italian settlers expelled", "Oil companies squeezed"], "date": "1969 – 1970"}, "He closed British and American military bases, expelled the remaining Italian settlers, and forced the foreign oil companies to pay Libya far more."],
+      ["city", {"state": "normal", "seed": 3, "label": "Tripoli · 1970s"}, "Oil money paid for housing, schools, hospitals and cheap food. By 2010, according to the United Nations, Libya had the highest standard of human development in Africa."]
+    ]},
+    { "name": "The Brother Leader", "lines": [
+      ["decree", {"title": "The Green Book", "lines": ["Parliaments are a fraud", "Rule by people's congresses", "Partners, not wage-workers"], "date": "1975 – 1979"}, "In the mid-1970s he published the Green Book, his own political philosophy. It rejected both capitalism and communism, and called parliaments a fraud."],
+      ["podium", {"banners": 2, "bannerc": "#3a7a4a", "night": 0, "label": "The Jamahiriya · 1977"}, "In 1977 he declared Libya a Jamahiriya, a state of the masses, supposedly run directly by people's committees. He claimed to hold no office at all. In practice, every important decision was his."],
+      ["bust", {"name": "Brother Leader", "years": "1970s – 2011", "role": "Claimed no official title. Held all real power.", "hair": "wild", "glasses": "dark", "coat": "military", "medals": 8}, "He called himself the Brother Leader and Guide of the Revolution. He wore elaborate uniforms and robes, pitched a Bedouin tent on foreign trips, and travelled with a guard of female bodyguards."],
+      ["wall", {"night": 1, "label": "Revolutionary committees · 1970s – 1980s"}, "Behind the theatre there was fear. Revolutionary committees spied on ordinary people. Critics were jailed, and in the late 1970s and 1980s some were hanged in public, with the executions shown on television."],
+      ["checklist", {"head": "Hunting critics abroad", "items": ["Exiles called 'stray dogs'", "Dissidents killed in Europe", "PC Yvonne Fletcher · London 1984"]}, "Exiles who spoke out were hunted abroad; he called them stray dogs. In 1984, shots fired from the Libyan embassy in London killed a young police officer, Yvonne Fletcher."]
+    ]},
+    { "name": "Terror abroad", "lines": [
+      ["web", {"nodes": [["Tripoli", 0.5, 0.18, 1], ["IRA weapons", 0.18, 0.78, 0], ["Palestinian factions", 0.5, 0.82, 0], ["African rebels", 0.82, 0.78, 0]], "links": [[0, 1], [0, 2], [0, 3]], "label": "money and guns"}, "Gaddafi poured money and weapons into armed groups around the world, from the IRA in Northern Ireland to militant factions across the Middle East and rebel armies in Africa."],
+      ["paper", {"mast": "BERLIN", "head": "Bomb hits nightclub", "sub": "Two US soldiers and a Turkish woman killed", "date": "5 April 1986"}, "In April 1986, a bomb in a West Berlin nightclub killed two American soldiers and a Turkish woman. The United States blamed Libya. President Ronald Reagan called Gaddafi the mad dog of the Middle East."],
+      ["city", {"state": "fire", "planes": 1, "night": 1, "label": "Tripoli · 15 April 1986"}, "Days later, American bombers struck Tripoli and Benghazi, hitting his compound. Gaddafi survived."],
+      ["paper", {"mast": "LOCKERBIE", "head": "Airliner destroyed over Scotland", "sub": "259 on board and 11 on the ground killed", "date": "22 December 1988"}, "On the twenty-first of December 1988, a bomb destroyed Pan Am Flight 103 over the Scottish town of Lockerbie. All two hundred and fifty-nine people on board were killed, and eleven people on the ground."],
+      ["stat", {"value": "170", "label": "killed on UTA Flight 772 over Niger, 1989"}, "Less than a year later, a French airliner, UTA Flight 772, was bombed over the Sahara, killing all one hundred and seventy on board. A French court later convicted six Libyans in their absence."],
+      ["inquiry", {"label": "Scottish court at Camp Zeist · Netherlands · 2001"}, "In 2001, a Scottish court sitting in the Netherlands convicted a Libyan intelligence officer, Abdelbaset al-Megrahi, of the Lockerbie murders. He always denied it. Libya later accepted responsibility and paid compensation to the families."]
+    ]},
+    { "name": "Out of the cold", "lines": [
+      ["camp", {"night": 1, "label": "Abu Salim prison · June 1996"}, "At home, nothing softened. In June 1996, guards at Tripoli's Abu Salim prison killed around twelve hundred prisoners in two days, according to Human Rights Watch. Families were told nothing for years."],
+      ["decree", {"title": "Libya renounces", "lines": ["Nuclear weapons programme", "Chemical weapons", "Long-range missiles"], "date": "19 December 2003"}, "But abroad, he changed course. After years of sanctions, and months after the American invasion of Iraq, Gaddafi announced in 2003 that he would give up his programmes for weapons of mass destruction."],
+      ["versus", {"left": "Gaddafi", "right": "Western leaders", "mid": "2004"}, "Sanctions were lifted. Western leaders came to visit him in his tent, among them Britain's Tony Blair in 2004, and oil and arms deals followed."],
+      ["tv", {"text": "UN GENERAL ASSEMBLY · 2009"}, "In 2009 he addressed the United Nations General Assembly for the first time, in a rambling speech that ran for more than an hour and a half."],
+      ["podium", {"cheer": 1, "night": 0, "banners": 2, "bannerc": "#3a7a4a", "label": "Tripoli · August 2009"}, "That same year, Scotland released Megrahi on compassionate grounds, because he had terminal cancer. He was given a hero's welcome in Tripoli, and died in 2012."]
+    ]},
+    { "name": "The uprising", "lines": [
+      ["people", {"n": 9, "pose": "up", "label": "Benghazi · February 2011"}, "In February 2011, inspired by revolutions in neighbouring Tunisia and Egypt, Libyans rose up. It began in Benghazi, after the arrest of a lawyer representing the families of the Abu Salim dead."],
+      ["quote", {"text": "Inch by inch, house by house, alley by alley.", "who": "Muammar Gaddafi, televised speech, 22 February 2011"}, "His forces fired on the crowds. In a rambling televised speech, he vowed to hunt down his opponents, in his words, inch by inch, house by house, alley by alley."],
+      ["versus", {"left": "Loyalists", "right": "Rebels", "mid": "2011"}, "Some of his own ministers, diplomats and army units defected. In Benghazi, the rebels set up a National Transitional Council, and Libya slid into civil war."],
+      ["decree", {"title": "UN Security Council Resolution 1973", "lines": ["No-fly zone over Libya", "All necessary measures", "to protect civilians"], "date": "17 March 2011"}, "As his army closed in on Benghazi, the United Nations Security Council authorised military action to protect civilians. NATO aircraft began striking his forces."],
+      ["inquiry", {"label": "International Criminal Court · June 2011"}, "In June, the International Criminal Court issued a warrant for his arrest on charges of crimes against humanity. He never stood trial."],
+      ["army", {"dir": -1, "label": "Tripoli · August 2011"}, "In August, rebel fighters took Tripoli. Gaddafi went into hiding, and ended up in his home town of Sirte."]
+    ]},
+    { "name": "The end", "lines": [
+      ["people", {"n": 7, "pose": "look", "night": 1, "label": "Sirte · 20 October 2011"}, "When his convoy was hit, he was captured alive by fighters from the city of Misrata. Phone footage shows him wounded and surrounded by an angry crowd. He died soon afterwards, in their custody."],
+      ["paper", {"mast": "TRIPOLI", "head": "Gaddafi is dead", "sub": "Former leader killed near Sirte", "date": "21 October 2011"}, "Human Rights Watch later found evidence that dozens of captured members of his convoy were also executed. No one has been held to account for his death."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["city", {"state": "ruin", "seed": 8, "label": "Libya · 2014 – today"}, "Libya did not become the democracy many had hoped for. Armed groups competed for power, and from 2014 the country split between rival governments. As of 2025, it remains divided."],
+      ["quote", {"text": "He kept Libya united and shared its oil wealth.", "who": "summary of his defenders' case"}, "Some Libyans now look back on his rule with nostalgia, remembering free healthcare, cheap fuel and order. His defenders also argue that NATO went beyond protecting civilians, and helped overthrow him."],
+      ["checklist", {"head": "Remembered differently", "items": ["Lockerbie · 270 dead", "UTA 772 · 170 dead", "Abu Salim · about 1,200 dead", "42 years of fear"]}, "But the families of Lockerbie, of the French airliner, and of Abu Salim remember a different man. So do the Libyans who spent four decades afraid to speak."],
+      ["lesson", {"text": "A state built around one man"}, "Gaddafi built a country with no parliament, no parties and no independent institutions. Only himself. When he fell, there was nothing left to hold it together, and that emptiness is part of his legacy too."],
+      ["memorial", {"n": 270, "date": "Lockerbie · 21 December 1988"}, "In 2022, a second Libyan suspect, accused of making the Lockerbie bomb, was brought to the United States to face trial. As of 2025, the families are still waiting."]
+    ]}
+  ]
+}

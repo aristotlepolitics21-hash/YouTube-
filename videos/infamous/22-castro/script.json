@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 22,
+  "title": "Fidel Castro",
+  "subtitle": "The revolutionary who defied a superpower, and never let Cubans choose",
+  "say": {"Fidel": "Fee-del", "Birán": "Bee-rahn", "Batista": "Ba-teesta", "Batista's": "Ba-teesta's", "Fulgencio": "Fool-hen-see-oh", "Moncada": "Mon-kahda", "Sierra Maestra": "See-erra My-estra", "Guevara": "Geh-vahra", "Raúl": "Ra-ool", "Mariel": "Mah-ree-el", "Khrushchev": "Kroosh-chof", "Granma": "Granma", "Ifigenia": "Ifi-hen-ee-a"},
+  "package": {
+    "thumb_line": 19,
+    "thumb": ["HERO OR", "DICTATOR?"],
+    "intro": "Fidel Castro overthrew a dictator in 1959, survived a US-backed invasion and repeated CIA assassination plots, and ruled Cuba for forty-nine years. Admirers credit him with free healthcare and education; critics remember firing squads, political prisoners and a million exiles. This documentary sets out both sides of one of the twentieth century's most divisive leaders.",
+    "facts": ["Born 13 August 1926 in Birán, eastern Cuba, son of a wealthy Spanish-born sugar planter", "Led the failed attack on the Moncada Barracks on 26 July 1953", "Batista fled Cuba on 1 January 1959; Castro ruled until 2008", "The Bay of Pigs invasion by about 1,400 CIA-trained exiles was defeated on 17–19 April 1961", "The Cuban Missile Crisis took place in October 1962", "The US Senate's Church Committee (1975) documented at least eight CIA plots to kill him", "About 125,000 Cubans left in the Mariel boatlift of 1980", "Handed power to his brother Raúl in 2006 (formally in 2008); died 25 November 2016, aged 90"],
+    "sources": "Encyclopaedia Britannica, US Senate Select Committee on Intelligence Activities (Church Committee) interim report on assassination plots (1975), Human Rights Watch and Amnesty International reports on Cuba, UNESCO on the 1961 literacy campaign, Hugh Thomas's Cuba: The Pursuit of Freedom, Tad Szulc's Fidel: A Critical Portrait.",
+    "hashtags": "#History #Documentary #Cuba",
+    "tags": "fidel castro, castro documentary, cuban revolution, cuba history, che guevara, bay of pigs, cuban missile crisis, mariel boatlift, cold war, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "FIDEL CASTRO", "sub": "The revolutionary who defied a superpower", "art": "podium", "artp": {"cheer": 1, "banners": 2}}, "On the eighth of January 1959, a bearded thirty-two-year-old lawyer rode into Havana at the head of a column of rebels, cheered by enormous crowds. The dictator he had fought had fled a week earlier."],
+      ["people", {"n": 9, "pose": "up", "label": "Havana · 8 January 1959"}, "Fidel Castro promised Cubans freedom, honest government and elections."],
+      ["stat", {"value": "49 years", "label": "as Cuba's leader, 1959 – 2008"}, "He went on to rule Cuba for forty-nine years. In all that time, he never faced a free election."],
+      ["stat", {"value": "1,000,000+", "label": "Cubans who emigrated during his rule"}, "More than a million Cubans left the island, many risking their lives at sea. Thousands of his opponents were imprisoned."],
+      ["lesson", {"text": "Liberator, or dictator?"}, "To his admirers he was a hero who gave the poor schools and doctors, and stood up to the United States. To his critics, above all the Cubans who fled, he was a dictator who jailed his own people. Both views have evidence behind them."]
+    ]},
+    { "name": "The planter's son", "lines": [
+      ["date", {"date": "13 August 1926", "place": "Birán · eastern Cuba"}, "Fidel Castro was born on the thirteenth of August, 1926, in Birán, in eastern Cuba. His father was a wealthy sugar planter who had come from Spain."],
+      ["bust", {"name": "Fidel Castro", "years": "1926 – 2016", "role": "Lawyer and student radical. Son of a wealthy planter.", "hair": "back", "coat": "suit", "tie": "#2b2b30"}, "He was sent to elite Jesuit schools, excelled at sport, and studied law at the University of Havana, where he threw himself into the rough, often violent world of student politics."],
+      ["decree", {"title": "Coup d'état", "lines": ["General Fulgencio Batista", "seizes power", "Elections cancelled"], "date": "10 March 1952"}, "In 1952, months before an election, a former army sergeant turned general, Fulgencio Batista, seized power in a coup. Castro had been a candidate for parliament. He decided the answer was armed revolt."]
+    ]},
+    { "name": "Revolution", "lines": [
+      ["army", {"night": 1, "label": "Moncada Barracks · 26 July 1953"}, "On the twenty-sixth of July 1953, he led more than a hundred young men in an attack on the Moncada army barracks in Santiago de Cuba. It failed badly. Many of the rebels who were captured were killed."],
+      ["quote", {"text": "Condemn me. It does not matter. History will absolve me.", "who": "Fidel Castro, at his trial, October 1953"}, "At his trial he defended himself in a long speech that ended with words that became famous."],
+      ["cell", {"label": "Isle of Pines prison · 1953 – 1955"}, "He was sentenced to fifteen years, but was freed in an amnesty after less than two. He went into exile in Mexico."],
+      ["bust", {"name": "Ernesto 'Che' Guevara", "years": "1928 – 1967", "role": "Argentine doctor. Castro's comrade and commander.", "hair": "long", "beard": "stubble", "hat": "beret", "coat": "military"}, "There he met Ernesto Guevara, a young Argentine doctor known as Che, who joined his movement."],
+      ["date", {"date": "2 December 1956", "place": "The Granma lands · eastern Cuba"}, "In December 1956, eighty-two rebels crossed to Cuba on an overloaded yacht called the Granma. Batista's army was waiting. Only a small band survived and escaped into the Sierra Maestra mountains."],
+      ["jungle", {"n": 6, "label": "Sierra Maestra · 1957 – 1958"}, "From there they fought a guerrilla war. Batista's brutality and corruption drove more and more Cubans to support them, and the rebels grew into an army."],
+      ["paper", {"mast": "HAVANA", "head": "Batista flees", "sub": "Rebels take power", "date": "1 January 1959"}, "On New Year's Day 1959, Batista fled the country. The revolution had won."]
+    ]},
+    { "name": "Power", "lines": [
+      ["bust", {"name": "Comandante Castro", "years": "1959", "role": "Prime minister and leader of the revolution.", "hair": "full", "beard": "full", "hat": "peak", "band": "#5a5e3c", "coat": "military"}, "Castro became prime minister. His charisma was enormous, and he could hold a crowd for hours."],
+      ["wall", {"night": 1, "label": "Revolutionary tribunals · 1959"}, "Within months, revolutionary tribunals had tried and executed hundreds of Batista's police and soldiers, many after hasty trials."],
+      ["decree", {"title": "Revolutionary laws", "lines": ["Large estates broken up", "Rents cut", "US-owned firms nationalised", "Elections postponed"], "date": "1959 – 1960"}, "He broke up large estates, slashed rents and seized American-owned businesses. The promised elections never came."],
+      ["checklist", {"head": "The literacy campaign · 1961", "items": ["Young volunteers sent to the countryside", "Hundreds of thousands taught to read", "Illiteracy cut to about 4%"]}, "In 1961 he sent hundreds of thousands of volunteers, many of them teenagers, into the countryside to teach reading. By the end of that year, Cuba reported that illiteracy had fallen to about four percent."]
+    ]},
+    { "name": "The superpowers", "lines": [
+      ["army", {"dir": -1, "label": "Bay of Pigs · 17 – 19 April 1961"}, "The United States cut trade with Cuba and, in April 1961, backed an invasion by about fourteen hundred Cuban exiles trained by the CIA at the Bay of Pigs. Castro's forces crushed it within three days."],
+      ["versus", {"left": "Kennedy", "right": "Khrushchev", "mid": "Oct 1962", "red": "r"}, "Castro declared his revolution socialist and allied with the Soviet Union. In October 1962, the discovery of Soviet nuclear missiles in Cuba set President Kennedy against the Soviet leader, Nikita Khrushchev, and brought the world closer to nuclear war than ever before or since."],
+      ["decree", {"title": "Church Committee findings", "lines": ["At least eight CIA plots", "to assassinate Fidel Castro", "1960 – 1965"], "date": "1975", "seal": 0}, "The CIA, a US Senate committee later found, plotted repeatedly to kill him, at one point with help from the Mafia. He survived them all, and held power through ten American presidencies."],
+      ["jungle", {"n": 4, "night": 1, "label": "Bolivia · October 1967"}, "Che Guevara left Cuba to spread revolution abroad. In 1967 he was captured by the Bolivian army, with CIA help, and executed. He became an icon; Castro remained in power."]
+    ]},
+    { "name": "The price", "lines": [
+      ["tv", {"text": "STATE TELEVISION"}, "The price was freedom. Cuba became a one-party communist state. The press, radio and television were controlled by the state, and independent parties and unions were banned."],
+      ["web", {"nodes": [["Communist Party", 0.5, 0.18, 1], ["Block committees", 0.2, 0.8, 0], ["State security", 0.8, 0.8, 0]], "links": [[0, 1], [0, 2], [1, 2]], "label": "watching the neighbours"}, "From 1960, Committees for the Defence of the Revolution were set up on almost every street, to organise residents and report signs of disloyalty."],
+      ["camp", {"night": 0, "label": "Labour camps · 1965 – 1968"}, "Over the decades, thousands of political prisoners passed through his jails. In the 1960s, gay men, religious believers and others judged unfit were sent to forced labour camps. Late in life, Castro called this a great injustice, and said he was responsible."],
+      ["cell", {"night": 1, "label": "Political prisoners"}, "Some prisoners of conscience spent twenty years or more behind bars. Human rights groups were not allowed to inspect the prisons."],
+      ["paper", {"mast": "MIAMI", "head": "Boatlift from Mariel", "sub": "Thousands of Cubans reach Florida", "date": "1980"}, "In 1980, he suddenly let anyone who wanted to leave depart from the port of Mariel. About a hundred and twenty-five thousand people left in six months."],
+      ["people", {"n": 8, "pose": "walk", "label": "Cuban exiles · Miami"}, "Over the decades more than a million Cubans emigrated, most to Florida, where they built a powerful exile community that never forgave him."]
+    ]},
+    { "name": "Admirers and critics", "lines": [
+      ["army", {"label": "Angola · 1975 – 1991"}, "Castro also exported revolution. Cuban troops fought in Africa, above all in Angola, where they faced the army of apartheid South Africa. Nelson Mandela later thanked Cuba for its part in the struggle against apartheid."],
+      ["checklist", {"head": "What admirers point to", "items": ["Free healthcare for all", "Free education, to university", "Doctors sent around the world"]}, "At home, healthcare and education were free. Cuba trained huge numbers of doctors and sent them to work across the developing world, and its life expectancy came to match that of far richer countries."],
+      ["stat", {"value": "about −35%", "label": "fall in Cuba's economy after Soviet aid ended, 1990 – 1993"}, "But the economy depended on Soviet subsidies. When the Soviet Union collapsed in 1991, Cuba's economy shrank by about a third. Cubans call it the Special Period: years of hunger, blackouts and bicycles."],
+      ["paper", {"mast": "HAVANA", "head": "Thousands flee on rafts", "sub": "Rafter crisis grips the Florida Strait", "date": "August 1994"}, "In 1994, after rare riots in Havana, tens of thousands of Cubans set out for Florida on rafts and inner tubes."]
+    ]},
+    { "name": "The long goodbye", "lines": [
+      ["tv", {"text": "HAVANA · 31 JULY 2006"}, "In July 2006, after emergency intestinal surgery, Castro handed power temporarily to his younger brother, Raúl. In 2008, the handover became permanent."],
+      ["bust", {"name": "Fidel Castro", "years": "2008 – 2016", "role": "Retired. Wrote newspaper columns; received visiting leaders.", "hair": "full", "beard": "full", "hairc": "#9a9a92", "coat": "shirt"}, "In retirement he wrote newspaper columns and received visiting leaders, often in a tracksuit. He lived to see the United States and Cuba restore diplomatic relations in 2015."],
+      ["date", {"date": "25 November 2016", "place": "Havana · aged 90"}, "Fidel Castro died on the twenty-fifth of November 2016, aged ninety."],
+      ["versus", {"left": "Havana", "right": "Miami", "mid": "Nov 2016"}, "In Havana, crowds queued for days to pay their respects. In Miami, exiles celebrated in the streets."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["quote", {"text": "He gave the poor dignity, schools and doctors, and defied an empire.", "who": "summary of his admirers' case"}, "His admirers, especially across Latin America and Africa, remember a leader who gave the poor dignity, and a small island that stood up to a superpower for half a century."],
+      ["quote", {"text": "He silenced dissent, divided families and left Cubans poor.", "who": "summary of his critics' case"}, "His critics remember the firing squads, the prisons and the families split by the Florida Strait, and an economy that left Cubans poor and dependent."],
+      ["people", {"n": 9, "pose": "look", "label": "Cuba · 2020s"}, "As of 2025, the system he built survives, but Cuba is suffering severe shortages and blackouts, and hundreds of thousands of Cubans have left in recent years."],
+      ["lesson", {"text": "The promise, and the price"}, "Castro's revolution made real promises to the poor, and kept some of them. The price was that Cubans were never allowed to vote on whether it was worth it."],
+      ["memorial", {"n": 300, "date": "Santa Ifigenia · Santiago de Cuba"}, "His ashes lie inside a large granite boulder in the cemetery of Santa Ifigenia, in Santiago de Cuba, the city where his revolution began."]
+    ]}
+  ]
+}
