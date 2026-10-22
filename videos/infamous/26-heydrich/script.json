@@ -1,0 +1,81 @@
+{
+  "series": "Infamous",
+  "episode": 26,
+  "title": "Reinhard Heydrich",
+  "subtitle": "The administrator who organised the Holocaust",
+  "say": {"Heydrich": "Hydrick", "Reinhard": "Rinehart", "Halle": "Hahleh", "Wannsee": "Vahnzay", "Einsatzgruppen": "Ine-zats-groopen", "Gleiwitz": "Glyvitz", "Lidice": "Lidditseh", "Gabčík": "Gabcheek", "Kubiš": "Koobish", "Jozef": "Yozef", "Čurda": "Choorda", "Chełmno": "Khelmno", "Libeň": "Libenyeh", "Bulovka": "Boolofka", "Göring": "Gerring", "Belzec": "Belzhets", "Sobibor": "Sobeebor", "Treblinka": "Trebleenka", "Lina von Osten": "Leena fon Osten", "Bruno": "Broono", "SD": "S D", "Ležáky": "Lezhahkee"},
+  "package": {
+    "thumb_line": 25,
+    "thumb": ["HE RAN", "WANNSEE"],
+    "intro": "Reinhard Heydrich ran the Nazi police state, commanded the killing squads in the east and chaired the Wannsee Conference, where the murder of Europe's Jews was coordinated. In 1942 two Czechoslovak parachutists ambushed his car in Prague. This documentary tells how a dismissed naval officer became one of the chief organisers of the Holocaust, and what his death cost the Czech people.",
+    "facts": ["Born 7 March 1904 in Halle an der Saale, Germany", "Dismissed from the German navy by a court of honour in 1931; joined the SS the same year", "Head of the Gestapo from 1934 and of the Reich Main Security Office from September 1939", "Göring authorised him to prepare a 'total solution of the Jewish question' on 31 July 1941", "Chaired the Wannsee Conference on 20 January 1942; the minutes listed 11 million Jews", "Attacked in Prague by Jozef Gabčík and Jan Kubiš on 27 May 1942; died 4 June 1942", "Lidice destroyed on 10 June 1942; 173 men shot and most of its children murdered", "About 1.7 million Jews were murdered in Operation Reinhard, named after him"],
+    "sources": "United States Holocaust Memorial Museum (Holocaust Encyclopedia), House of the Wannsee Conference memorial, Lidice Memorial, Encyclopaedia Britannica, Robert Gerwarth's biography Hitler's Hangman: The Life of Heydrich.",
+    "hashtags": "#History #Documentary #WW2",
+    "tags": "reinhard heydrich, heydrich documentary, wannsee conference, operation anthropoid, lidice, holocaust, nazi germany, gestapo, world war 2, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "REINHARD HEYDRICH", "sub": "The administrator who organised the Holocaust", "art": "city", "artp": {"state": "normal", "seed": 5, "night": 1}}, "On the morning of the twenty-seventh of May, 1942, an open-topped Mercedes slowed at a sharp bend in a Prague suburb. Two men were waiting by the tram stop."],
+      ["date", {"date": "27 May 1942", "place": "Libeň · Prague"}, "In the car sat one of the most feared men in occupied Europe. He was Heinrich Himmler's right-hand man and the head of the Nazi police state."],
+      ["stat", {"value": "11,000,000", "label": "Jews listed for destruction at the meeting he chaired"}, "Four months earlier, he had chaired the meeting at Wannsee, near Berlin, where the murder of Europe's Jews was coordinated. His office counted eleven million of them."],
+      ["stat", {"value": "6,000,000", "label": "Jews murdered in the Holocaust"}, "By the end of the war, about six million had been killed."],
+      ["lesson", {"text": "Not the face of the regime. One of its engineers."}, "Reinhard Heydrich was not the face of the Nazi regime. He was one of its engineers: cold, ambitious and very efficient. This is how he built the machine."]
+    ]},
+    { "name": "A sailor dismissed", "lines": [
+      ["date", {"date": "7 March 1904", "place": "Halle an der Saale · Germany"}, "Reinhard Heydrich was born on the seventh of March, 1904, in Halle, in central Germany. His father, Bruno, was an opera singer and composer who ran a music school."],
+      ["bust", {"name": "Reinhard Heydrich", "years": "1904 – 1942", "role": "Naval officer. Gifted violinist, fierce competitor.", "hair": "back", "coat": "military"}, "He grew up a gifted violinist and a ferocious competitor at sport, especially fencing. After Germany's defeat in the First World War, as a teenager, he drifted into right-wing nationalist groups."],
+      ["timeline", {"events": [["Navy cadet · 1922", 0.12], ["Signals officer", 0.5], ["Dismissed · 1931", 0.88]]}, "In 1922 he joined the navy as a cadet and became a signals officer. He was ambitious, and widely disliked."],
+      ["decree", {"title": "Court of honour", "lines": ["Lieutenant R. Heydrich", "Dismissed from the navy"], "date": "April 1931"}, "In 1931 his career ended in scandal. A young woman said he had promised to marry her, but he became engaged to someone else. A naval court of honour judged his conduct unworthy of an officer, and he was dismissed."],
+      ["people", {"n": 2, "label": "Lina von Osten · married December 1931"}, "His new fiancée, Lina von Osten, was already a committed Nazi. She urged him to try a small party organisation that was looking for talent: the SS."]
+    ]},
+    { "name": "Himmler's man", "lines": [
+      ["bust", {"name": "Heinrich Himmler", "years": "1900 – 1945", "role": "Leader of the SS. Heydrich's patron and superior.", "hair": "crop", "glasses": "round", "stache": "thin", "coat": "black", "tie": "#1c1b19"}, "In June 1931 he met Heinrich Himmler, the head of the SS. Himmler asked him to sketch out a plan for an intelligence service. He was hired."],
+      ["web", {"nodes": [["Himmler", 0.5, 0.2, 0], ["Heydrich", 0.5, 0.45, 1], ["SD", 0.25, 0.75, 0], ["Gestapo", 0.5, 0.75, 0], ["Criminal Police", 0.75, 0.75, 0]], "links": [[0, 1], [1, 2], [1, 3], [1, 4]], "label": "Heydrich's police empire"}, "That plan became the SD, the party's own security service. Its job was to spy on the Nazis' enemies, and on fellow Nazis too."],
+      ["date", {"date": "April 1934", "place": "Gestapo headquarters · Berlin"}, "After Hitler took power in 1933, Heydrich rose fast. In 1934 he took charge of the Gestapo, the secret state police."],
+      ["wall", {"night": 1, "label": "Night of the Long Knives · June 1934"}, "That summer, he helped prepare the lists for the Night of the Long Knives, when Hitler had the leaders of his own street army, the SA, and other rivals murdered."],
+      ["camp", {"label": "protective custody", "n": 6}, "Under Heydrich, the Gestapo could seize people without trial and send them to concentration camps. Communists, socialists, priests, gay men and Jews filled them."]
+    ]},
+    { "name": "Building the machine", "lines": [
+      ["city", {"state": "fire", "seed": 3, "night": 1, "label": "Kristallnacht · 9 – 10 November 1938"}, "During Kristallnacht, in November 1938, Heydrich sent urgent orders to police across Germany. They were not to stop the attacks on synagogues and Jewish shops, and they were to arrest as many Jewish men as the prisons could hold."],
+      ["date", {"date": "31 August 1939", "place": "Gleiwitz radio station · German–Polish border"}, "On the last night of August 1939, his men staged a fake Polish attack on a German radio station at Gleiwitz. The next morning, Germany invaded Poland, pointing to incidents like this one."],
+      ["decree", {"title": "Reich Main Security Office", "lines": ["Gestapo", "Criminal Police", "SD"], "date": "27 September 1939"}, "That September, his police and intelligence agencies were merged into one office: the Reich Main Security Office. Heydrich ran it. It became the headquarters of Nazi terror."],
+      ["army", {"label": "Poland · autumn 1939", "rows": 2}, "In Poland, special units under his command, the Einsatzgruppen, followed the army. They shot tens of thousands of civilians, among them teachers, priests, officials and Jews."]
+    ]},
+    { "name": "The killing squads", "lines": [
+      ["army", {"tanks": 1, "label": "Soviet Union · June 1941"}, "In June 1941, Germany invaded the Soviet Union. Behind the troops came four Einsatzgruppen, about three thousand men, reporting to Heydrich's office."],
+      ["people", {"n": 8, "pose": "mourn", "night": 1}, "Town by town, they rounded up Jewish men, then women and children, and shot them outside town. Local police and German army units often helped."],
+      ["stat", {"value": "1,000,000+", "label": "people shot by the killing squads and their helpers, mostly Jews"}, "Historians estimate that the killing squads and their helpers shot more than a million people, most of them Jews. Heydrich's office received their reports, which counted the dead."],
+      ["decree", {"title": "Authorisation", "lines": ["To Heydrich:", "prepare a total solution", "of the Jewish question", "in Europe"], "date": "31 July 1941"}, "On the thirty-first of July, 1941, Hermann Göring, Hitler's deputy, signed a letter instructing Heydrich to prepare what it called a total solution of the Jewish question in Europe."]
+    ]},
+    { "name": "Prague", "lines": [
+      ["date", {"date": "27 September 1941", "place": "Prague Castle · Bohemia and Moravia"}, "In September 1941, Hitler sent him to Prague as Deputy Reich Protector of Bohemia and Moravia, the occupied Czech lands. In practice, he was their ruler."],
+      ["bust", {"name": "Reinhard Heydrich", "years": "1941 – 1942", "role": "Deputy Reich Protector of Bohemia and Moravia.", "hair": "back", "coat": "black", "tie": "#1c1b19", "hat": "peak", "band": "#1c1b19", "frown": 1}, "He declared martial law the day after he arrived. Within weeks, hundreds of people had been sentenced to death and thousands more arrested. Czechs called him the Butcher of Prague."],
+      ["wall", {"night": 1, "n": 5, "label": "Prague · autumn 1941"}, "Resistance networks were rounded up one by one, and the executions announced on posters across the city."],
+      ["field", {"village": 1, "n": 6, "label": "Czech factories and farms"}, "At the same time, he raised food rations and pensions for Czech workers. The aim was simple: keep the arms factories running for Germany, and crush everyone who resisted."]
+    ]},
+    { "name": "Wannsee", "lines": [
+      ["date", {"date": "20 January 1942", "place": "A lakeside villa · Wannsee, Berlin"}, "On the twentieth of January, 1942, Heydrich and fourteen other senior officials met at a lakeside villa at Wannsee, on the edge of Berlin."],
+      ["web", {"nodes": [["Heydrich", 0.5, 0.2, 1], ["Interior", 0.15, 0.6, 0], ["Justice", 0.35, 0.75, 0], ["Foreign Office", 0.65, 0.75, 0], ["Party", 0.85, 0.6, 0], ["SS and police", 0.5, 0.5, 0]], "links": [[0, 1], [0, 2], [0, 3], [0, 4], [0, 5]], "label": "Wannsee · 20 January 1942"}, "Around the table sat men from government ministries, the Nazi party and the SS. The meeting took about ninety minutes."],
+      ["paper", {"mast": "WANNSEE MINUTES", "head": "11 million Jews listed, country by country", "sub": "Including Britain and Ireland", "date": "January 1942"}, "The minutes, written by Adolf Eichmann, one of Heydrich's officers, listed eleven million Jews across Europe. They even counted Jews in countries Germany had not conquered, such as Britain and Ireland."],
+      ["quote", {"text": "The killing had already begun. Wannsee was about who would do what, and under whose command.", "who": "summary of the meeting's purpose"}, "Wannsee did not start the Holocaust. The shootings and the first gassings had already begun. Its purpose was to bring the whole state into the plan, under Heydrich's lead."]
+    ]},
+    { "name": "Operation Anthropoid", "lines": [
+      ["people", {"n": 2, "label": "Jozef Gabčík · Jan Kubiš"}, "In London, the Czechoslovak government in exile had a plan. British special forces trained two Czechoslovak soldiers, Jozef Gabčík, a Slovak, and Jan Kubiš, a Czech. In December 1941 they parachuted into the occupied country."],
+      ["city", {"state": "normal", "seed": 8, "label": "Libeň · Prague · 27 May 1942"}, "On the twenty-seventh of May, Heydrich was driven to work without an armed escort. At the bend, Gabčík stepped out and aimed his gun. It jammed."],
+      ["cell", {"label": "Bulovka Hospital · June 1942", "bars": 0, "night": 1}, "Kubiš threw a bomb. It exploded beside the car, and both attackers escaped. Heydrich was badly wounded. He seemed to be recovering in hospital, but infection set in, and he died on the fourth of June."],
+      ["quote", {"text": "the man with the iron heart", "who": "Adolf Hitler, at Heydrich's funeral, June 1942"}, "At his state funeral in Berlin, Hitler called him the man with the iron heart."]
+    ]},
+    { "name": "Revenge", "lines": [
+      ["city", {"state": "ruin", "seed": 2, "label": "Lidice · 10 June 1942"}, "Hitler demanded revenge. The village of Lidice was falsely linked to the attackers. On the tenth of June, its men, one hundred and seventy-three of them, were shot. The village was burned and levelled."],
+      ["people", {"n": 7, "pose": "mourn", "label": "the women and children of Lidice"}, "Its women were sent to concentration camps. Most of its children were murdered at Chełmno, in occupied Poland. Two weeks later, the village of Ležáky was destroyed too."],
+      ["bunker", {"n": 3, "label": "Church of Saints Cyril and Methodius · Prague"}, "The parachutists hid in the crypt of a Prague church. A fellow parachutist, Karel Čurda, betrayed them for a reward. On the eighteenth of June, after hours of fighting, all seven men in the church were dead."],
+      ["stat", {"value": "1,000+", "label": "Czechs killed in the reprisals, by most estimates"}, "By most estimates, well over a thousand Czechs were killed in the reprisals for Heydrich's death."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["camp", {"label": "Belzec · Sobibor · Treblinka", "n": 5}, "The machine he built outlived him. The death camps of Belzec, Sobibor and Treblinka were part of a programme the SS named after him: Operation Reinhard."],
+      ["icons", {"total": 2000000, "per": 50000, "red": 1700000, "cols": 10, "label": "about 1.7 million Jews murdered in Operation Reinhard"}, "According to the United States Holocaust Memorial Museum, about one point seven million Jews were murdered in it."],
+      ["memorial", {"n": 340, "date": "Lidice"}, "Lidice became a symbol around the world. Towns in the Americas took its name, and miners in Stoke-on-Trent raised money to rebuild it. Today a rose garden and a memorial to its eighty-two murdered children stand near where the village was."],
+      ["lesson", {"text": "Genocide needs managers as well as killers."}, "Heydrich rarely pulled a trigger. His tools were offices, card files, telegrams and meetings. That is the lesson of his life: genocide needs managers as well as killers, and Heydrich was one of the most effective it ever had."]
+    ]}
+  ]
+}

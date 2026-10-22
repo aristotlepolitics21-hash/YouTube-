@@ -50,9 +50,9 @@ The drawing engine is shared with Historic Disasters (`../historic-disasters/eng
 and `sets.js`); `engine/bio.js` adds the biography scenes listed in `engine/SCENES.md`.
 
 - `engine/voice.py SCRIPT OUTDIR` voices each line with Kokoro and writes timings, captions and chapters.
-- `engine/render_ep.sh OUTDIR SCRIPT NAME` builds the page, renders three segments in parallel with Playwright and muxes the narration.
+- `engine/render_ep.sh OUTDIR SCRIPT NAME` builds the page, renders three segments in parallel (`engine/seg.cjs`) with Playwright and muxes the narration.
 - `engine/package.py EPDIR OUTDIR` makes the thumbnail, description and tags and copies the render in.
-- `engine/queue.sh` does all three for every episode that has a script but no video yet.
+- `engine/queue.sh` does all three for every episode listed in `$WORK/approved.txt` whose video is missing or older than its script.
 - `engine/fmt.py SCRIPT` normalises a script's layout and prints its word count.
 
 `$WORK` must contain `voices/kokoro-q8.onnx` (from the `kokoro-q8-shards` npm package),

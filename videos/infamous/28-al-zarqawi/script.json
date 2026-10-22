@@ -1,0 +1,76 @@
+{
+  "series": "Infamous",
+  "episode": 28,
+  "title": "Abu Musab al-Zarqawi",
+  "subtitle": "The man who set out to start a civil war",
+  "say": {"Zarqawi": "Zarkahwee", "Zarqa": "Zarka", "Abu Musab": "Aboo Moosab", "Khalayleh": "Kalayleh", "Maqdisi": "Makdeesee", "Herat": "Herraht", "Sérgio Vieira de Mello": "Serzhio Vyayra de Mello", "Najaf": "Nahjaf", "Askari": "Askaree", "Samarra": "Samahra", "Baqubah": "Bakooba", "Zawahiri": "Zawaheeree", "Ayman": "Aymahn", "Shia": "Sheeah", "Sunni": "Soonee", "Sunnis": "Soonees", "Ansar al-Islam": "Ansar al Islam", "Fallujah": "Falooja", "Amman": "Ammahn", "Imam Ali": "Eemahm Ali", "Swaqa": "Swakka", "emir": "emeer", "Quran": "Koran", "Bigley": "Bigly"},
+  "package": {
+    "thumb_line": 30,
+    "thumb": ["HE WANTED", "CIVIL WAR"],
+    "intro": "Abu Musab al-Zarqawi was a petty criminal from Jordan who became the leader of al-Qaeda in Iraq. His bombings of the UN, of Shia shrines and of hotels in Amman were designed to set Iraqis against each other, and his movement later became ISIS. This documentary tells how he rose, what he did, and why his strategy outlived him.",
+    "facts": ["Born Ahmad Fadil al-Khalayleh in Zarqa, Jordan, on 30 October 1966", "Jailed in Jordan in 1994; freed in a royal amnesty in 1999", "Named by Colin Powell at the UN Security Council on 5 February 2003; a 2006 US Senate report found Saddam's regime did not harbour him", "UN headquarters in Baghdad bombed on 19 August 2003; 22 killed, including Sérgio Vieira de Mello", "Pledged allegiance to Osama bin Laden in October 2004; his group became al-Qaeda in Iraq", "US reward for him reached $25 million", "Amman hotel bombings of 9 November 2005 killed more than 50 people, mostly Jordanians", "Killed in a US air strike near Baqubah, Iraq, on 7 June 2006"],
+    "sources": "Encyclopaedia Britannica, US Senate Select Committee on Intelligence report (September 2006), United Nations (Canal Hotel bombing), Iraq Body Count, Mary Anne Weaver's 'The Short, Violent Life of Abu Musab al-Zarqawi' (The Atlantic, 2006), Jean-Charles Brisard's Zarqawi: The New Face of al-Qaeda.",
+    "hashtags": "#History #Documentary #Iraq",
+    "tags": "abu musab al-zarqawi, zarqawi documentary, al-qaeda in iraq, iraq war, origins of isis, sectarian war, canal hotel bombing, amman bombings, middle east history, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "AL-ZARQAWI", "sub": "The man who set out to start a civil war", "art": "city", "artp": {"state": "fire", "seed": 3, "night": 1}}, "On the nineteenth of August, 2003, a truck packed with explosives pulled up beside the United Nations headquarters in Baghdad."],
+      ["date", {"date": "19 August 2003", "place": "Canal Hotel · UN headquarters · Baghdad"}, "The blast tore through the building, just below the office of the UN's top envoy in Iraq, Sérgio Vieira de Mello."],
+      ["stat", {"value": "22", "label": "people killed, including the UN's envoy to Iraq"}, "Twenty-two people were killed, de Mello among them. Within weeks, the UN began pulling most of its foreign staff out of the country."],
+      ["stat", {"value": "$25,000,000", "label": "US reward for Abu Musab al-Zarqawi"}, "The attack was the work of a Jordanian militant on whom the United States would soon put a twenty-five-million-dollar reward, the same as for Osama bin Laden."],
+      ["lesson", {"text": "He set out to start a civil war."}, "His aim was not only to drive out the Americans. It was to set Iraq's Sunni and Shia Muslims against each other. This is the story of Abu Musab al-Zarqawi, whose movement became the Islamic State."]
+    ]},
+    { "name": "A street tough", "lines": [
+      ["date", {"date": "30 October 1966", "place": "Zarqa · Jordan"}, "He was born Ahmad Fadil al-Khalayleh in 1966, in Zarqa, a poor industrial city near Amman, the capital of Jordan. He later took his fighting name from his home town."],
+      ["bust", {"name": "Ahmad al-Khalayleh", "years": "1966 – 2006", "role": "School dropout and street tough from Zarqa, Jordan.", "hair": "crop", "round": 1, "coat": "shirt"}, "He left school at seventeen and drifted into petty crime and heavy drinking. He was arrested more than once, and spent time in jail."],
+      ["people", {"n": 6, "label": "Zarqa · late 1980s"}, "Worried, his mother sent him to religious classes at a local mosque. He took up a hard-line form of Islam with the same intensity he had brought to the streets."],
+      ["army", {"ruins": 1, "label": "Afghanistan · 1989"}, "In 1989 he travelled to Afghanistan to fight the Soviet occupation, but arrived as the Soviet troops were leaving. He stayed on among the foreign jihadists."],
+      ["bust", {"name": "Abu Muhammad al-Maqdisi", "years": "born 1959", "role": "Jordanian cleric. Zarqawi's early mentor, later his critic.", "hair": "crop", "beard": "long", "hat": "kufi", "coat": "shirt"}, "There he came to know Abu Muhammad al-Maqdisi, a Jordanian cleric whose writings condemned Arab governments as un-Islamic. Maqdisi became his mentor."]
+    ]},
+    { "name": "Prison", "lines": [
+      ["cell", {"label": "Jordan · 1994", "pose": "stand"}, "Back in Jordan, the two men were arrested in 1994 for plotting attacks and possessing weapons. Zarqawi was sentenced to fifteen years."],
+      ["quote", {"text": "In prison he became an enforcer: devout, disciplined and feared by other inmates.", "who": "summary of accounts by fellow prisoners and officials"}, "In prison he hardened. Fellow inmates and officials later described a man who memorised the Quran, lifted weights, and bullied the other prisoners into line."],
+      ["decree", {"title": "Royal amnesty", "lines": ["Prisoners released to mark", "the accession of King Abdullah II"], "date": "March 1999"}, "In 1999, Jordan's new king, Abdullah the Second, declared a general amnesty to mark his accession. Zarqawi walked free after about five years, and soon left the country."],
+      ["camp", {"night": 0, "n": 4, "label": "training camp · Herat · Afghanistan"}, "He returned to Afghanistan and ran a training camp near Herat, with help from al-Qaeda. But he did not swear loyalty to Osama bin Laden. He wanted his own movement."]
+    ]},
+    { "name": "Into Iraq", "lines": [
+      ["army", {"planes": 1, "label": "Afghanistan · late 2001"}, "After the attacks of September the eleventh, the United States invaded Afghanistan. Zarqawi fled through Iran and reached Iraq."],
+      ["field", {"village": 1, "n": 3, "label": "Kurdish mountains · northern Iraq"}, "For a time he was linked to Ansar al-Islam, a militant group based in the Kurdish mountains of northern Iraq, beyond the control of Saddam's government."],
+      ["paper", {"mast": "JORDAN", "head": "US diplomat shot dead in Amman", "sub": "Laurence Foley killed outside his home", "date": "28 October 2002"}, "In October 2002, an American diplomat, Laurence Foley, was shot dead outside his home in Amman. A Jordanian court later sentenced Zarqawi to death in his absence for organising it."],
+      ["inquiry", {"label": "UN Security Council · 5 February 2003"}, "In February 2003, the US Secretary of State, Colin Powell, told the UN Security Council that Zarqawi was a link between Saddam Hussein's regime and al-Qaeda. It was part of the case for war."],
+      ["decree", {"title": "US Senate Intelligence Committee", "lines": ["Saddam's regime did not", "have a relationship with", "or harbour Zarqawi"], "date": "September 2006"}, "A US Senate investigation later found that Saddam's government had no such relationship with him. But the speech had made an obscure militant famous."],
+      ["army", {"tanks": 1, "planes": 1, "label": "US-led invasion of Iraq · March 2003"}, "The invasion came in March 2003, and Saddam's government fell within three weeks. Into the chaos that followed, Zarqawi brought fighters, money and a plan."],
+      ["decree", {"title": "Coalition Provisional Authority", "lines": ["Order 1: Baath party purged", "Order 2: Iraqi army dissolved"], "date": "May 2003"}, "American decisions in May 2003 to purge members of Saddam's party and dissolve the army left hundreds of thousands of angry, armed men without work. Many were Sunnis."]
+    ]},
+    { "name": "Terror in Iraq", "lines": [
+      ["city", {"state": "fire", "seed": 5, "label": "Imam Ali shrine · Najaf · 29 August 2003"}, "Ten days after the UN attack, a car bomb outside the Imam Ali shrine in Najaf, one of Shia Islam's holiest sites, killed a leading Shia cleric and more than eighty other people. Zarqawi's group later claimed both attacks."],
+      ["quote", {"text": "Attack the Shia, provoke them into revenge, and drive frightened Sunnis to our side.", "who": "summary of the strategy in his letter seized in 2004"}, "In a letter seized by US forces in early 2004, he set out his strategy. Attack Iraq's Shia majority, provoke them into revenge, and drive frightened Sunnis to his side."],
+      ["people", {"n": 8, "pose": "mourn", "label": "Iraq · 2004"}, "His suicide bombers struck markets, mosques, funerals, and police recruits queuing for jobs. Most of the victims were ordinary Iraqis."],
+      ["tv", {"text": "HOSTAGES", "speaker": 0}, "He also seized foreign hostages and filmed their murders. In 2004 his group killed an American, Nicholas Berg, and a British engineer from Liverpool, Kenneth Bigley, among others."],
+      ["army", {"fire": 1, "ruins": 1, "label": "Fallujah · November 2004"}, "His fighters helped make the city of Fallujah an insurgent stronghold. American and Iraqi forces stormed it in November 2004, in some of the heaviest street fighting of the war. Zarqawi escaped."],
+      ["decree", {"title": "Pledge of allegiance", "lines": ["To Osama bin Laden", "Group renamed:", "al-Qaeda in Iraq"], "date": "October 2004"}, "That October he finally pledged allegiance to bin Laden, and his group became known as al-Qaeda in Iraq."],
+      ["bust", {"name": "Abu Musab al-Zarqawi", "years": "2004 – 2006", "role": "Leader of al-Qaeda in Iraq. The most wanted man in the country.", "hair": "crop", "beard": "full", "round": 1, "coat": "#1c1b19", "frown": 1}, "He was now the most wanted man in Iraq. Yet he kept moving, mostly through the Sunni towns west and north of Baghdad."]
+    ]},
+    { "name": "Too far", "lines": [
+      ["decree", {"title": "Letter from al-Zawahiri", "lines": ["Do not attack Shia mosques", "Do not film killings", "(summary)"], "date": "July 2005", "seal": 0}, "Even al-Qaeda's leaders worried. In 2005, US officials released a letter they said came from bin Laden's deputy, Ayman al-Zawahiri, urging him to stop attacking Shia mosques and filming killings. He did not stop."],
+      ["paper", {"mast": "AMMAN", "head": "Old mentor criticises Zarqawi", "sub": "Maqdisi condemns killing of Muslim civilians", "date": "July 2005"}, "His old mentor, Maqdisi, also criticised him in public, arguing that bombings which killed Muslim civilians and attacks on ordinary Shia were wrong."],
+      ["city", {"state": "fire", "seed": 8, "night": 1, "label": "Amman · 9 November 2005"}, "In November 2005, his suicide bombers attacked three hotels in Amman, in his own country. More than fifty people were killed, many of them guests at a wedding."],
+      ["people", {"n": 9, "pose": "up", "label": "Amman · November 2005"}, "Jordanians were horrified. Thousands marched against him, and members of his own family publicly disowned him."],
+      ["city", {"state": "ruin", "seed": 1, "label": "Askari Shrine · Samarra · 22 February 2006"}, "In February 2006, bombers destroyed the golden dome of the Askari Shrine in Samarra, another sacred Shia site. The attack was blamed on al-Qaeda in Iraq."],
+      ["wall", {"night": 1, "n": 6, "label": "Baghdad · 2006"}, "It unleashed what he had wanted. Shia militias and Sunni insurgents killed each other's communities, and over the following year tens of thousands of Iraqi civilians died."]
+    ]},
+    { "name": "The end", "lines": [
+      ["tv", {"text": "APRIL 2006", "speaker": 0}, "In April 2006 he showed his face on video for the first time, firing a machine gun in the desert. American forces later released unused footage of him fumbling with the weapon."],
+      ["army", {"planes": 1, "night": 1, "label": "near Baqubah · 7 June 2006"}, "US forces tracked one of his religious advisers to a house near Baqubah, north-east of Baghdad. On the seventh of June, 2006, an American jet dropped two bombs on it."],
+      ["paper", {"mast": "BAGHDAD", "head": "Zarqawi killed in air strike", "date": "8 June 2006"}, "Zarqawi was found in the rubble still alive, and died shortly afterwards. He was thirty-nine."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["web", {"nodes": [["al-Zarqawi", 0.15, 0.3, 1], ["al-Qaeda in Iraq · 2004", 0.4, 0.5, 0], ["Islamic State of Iraq · 2006", 0.65, 0.3, 0], ["ISIS · 2013", 0.85, 0.6, 0]], "links": [[0, 1], [1, 2], [2, 3]], "label": "from al-Qaeda in Iraq to ISIS"}, "His movement survived him. Months later, it renamed itself the Islamic State of Iraq. Under a later leader, Abu Bakr al-Baghdadi, it became ISIS."],
+      ["checklist", {"head": "What ISIS inherited", "items": ["War on the Shia", "Killings filmed as propaganda", "Defiance of al-Qaeda's leaders"]}, "ISIS inherited his methods: war on the Shia, killings filmed as propaganda, and defiance even of al-Qaeda's own leaders."],
+      ["bars", {"items": [["2004 · approx.", 12000, ""], ["2005 · approx.", 17000, ""], ["2006 · approx.", 30000, ""]], "max": 32000, "red": 1}, "The monitoring group Iraq Body Count recorded about twelve thousand civilian deaths from violence in 2004, and around thirty thousand in 2006, the year he died."],
+      ["memorial", {"n": 400, "date": "Iraq · 2003 – 2006"}, "Most of the people killed by his movement were Iraqis: worshippers at prayer, shoppers, police recruits, and labourers waiting for work."],
+      ["lesson", {"text": "He wanted the killing to outlive him. It did."}, "Zarqawi's goal was never only to kill. It was to turn neighbours against each other, so that the killing would go on without him. For years after his death, it did."]
+    ]}
+  ]
+}

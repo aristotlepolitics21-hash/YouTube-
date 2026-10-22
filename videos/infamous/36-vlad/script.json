@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 36,
+  "title": "Vlad the Impaler",
+  "subtitle": "The real prince behind the Dracula legend",
+  "say": {"Wallachia": "Wollaykia", "Wallachian": "Wollaykian", "Târgoviște": "Tergoveeshteh", "Sighișoara": "Seegeeshwara", "Dracul": "Drahkool", "Dracula": "Drakyoola", "Mehmed": "Mehmet", "Radu": "Rahdoo", "Mircea": "Meercha", "Hunyadi": "Hoonyoddy", "Corvinus": "Corveenus", "Chalkokondyles": "Kalko kon deeleez", "Laonikos": "Lah onikos", "boyars": "boyarz", "Țepeș": "Tsepesh", "Brașov": "Brashov", "Sibiu": "Seebyoo", "Poenari": "Poyenari", "Snagov": "Snahgov", "Bran": "Brahn", "Whitby": "Witby", "Matthias": "Matthias"},
+  "package": {
+    "thumb_line": 23,
+    "thumb": ["THE REAL", "DRACULA"],
+    "intro": "Vlad III of Wallachia ruled a small principality on the edge of the Ottoman Empire in the fifteenth century, and his cruelty terrified his enemies. Four centuries later, Bram Stoker borrowed his name for a vampire. This documentary separates the history from the legend.",
+    "facts": ["Born around 1431, probably in Sighișoara, Transylvania", "His father, Vlad II, joined the Order of the Dragon and took the name Dracul; 'Dracula' means 'son of Dracul'", "Held as a hostage at the Ottoman court with his brother Radu in the 1440s", "Ruled Wallachia three times: briefly in 1448, from 1456 to 1462, and in 1476", "In a letter of February 1462 to Matthias Corvinus, he counted 23,884 people killed in his Danube campaign", "Night Attack on Mehmed II's camp near Târgoviște, June 1462", "Held in Hungary for about twelve years after 1462", "Killed in battle around the turn of 1476–1477; his burial place is unknown", "Bram Stoker's Dracula was published in 1897"],
+    "sources": "Encyclopaedia Britannica; Radu R. Florescu and Raymond T. McNally, Dracula, Prince of Many Faces; Kurt W. Treptow, Vlad III Dracula; Elizabeth Miller, Dracula: Sense and Nonsense; Laonikos Chalkokondyles, The Histories.",
+    "hashtags": "#History #Documentary #Dracula",
+    "tags": "vlad the impaler, vlad dracula, real dracula, wallachia, vlad tepes, ottoman empire, mehmed ii, bram stoker, romania history, medieval history, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "VLAD THE IMPALER", "sub": "The real prince behind the Dracula legend", "art": "army", "artp": {"night": 1}}, "In June 1462, the army of the Ottoman sultan, Mehmed the Second, marched on Târgoviște, the capital of a small Christian principality called Wallachia, in what is now Romania."],
+      ["field", {"famine": 1, "label": "outside Târgoviște · June 1462"}, "Outside the city, according to a Greek historian of the time, the sultan's soldiers came upon a field of stakes, where thousands of prisoners had been put to death."],
+      ["stat", {"value": "23,884", "label": "people killed in one winter campaign · by Vlad's own count"}, "The prince responsible was Vlad the Third. In a letter that still survives, he counted twenty-three thousand, eight hundred and eighty-four people killed in a single winter campaign."],
+      ["lesson", {"text": "Prince, monster, hero, vampire?"}, "Today the world knows him by another name: Dracula. But the real man was no vampire, and in Romania many still remember him as a hero. This is how both reputations were made."]
+    ]},
+    { "name": "Son of the Dragon", "lines": [
+      ["date", {"date": "c. 1431", "place": "Sighișoara · Transylvania"}, "Vlad was born around 1431, probably in the Transylvanian town of Sighișoara, which was then part of the Kingdom of Hungary."],
+      ["decree", {"title": "Order of the Dragon", "lines": ["Founded by King Sigismund", "Sworn to fight the Ottomans", "Vlad II admitted, 1431"], "date": "founded 1408"}, "His father, Vlad the Second, had been admitted to the Order of the Dragon, a brotherhood of Christian nobles sworn to fight the Ottoman Turks. He took the name Dracul, the Dragon."],
+      ["lesson", {"text": "Dracula: son of the Dragon"}, "So his son became Dracula: son of the Dragon. In Romanian, the word drac can also mean devil, which only darkened the name over time."],
+      ["versus", {"left": "HUNGARY", "right": "OTTOMANS", "mid": "WALLACHIA", "red": "r"}, "Wallachia lay between two great powers: Catholic Hungary to the north, and the expanding Ottoman Empire to the south. Its princes survived by changing sides."]
+    ]},
+    { "name": "The hostage", "lines": [
+      ["throne", {"label": "the Ottoman court · 1440s"}, "In the early 1440s, to guarantee his own loyalty, Vlad's father sent two of his sons to the Ottoman sultan as hostages: Vlad and his younger brother, Radu."],
+      ["people", {"n": 2, "pose": "look", "label": "Vlad and Radu"}, "They spent several years at the Ottoman court and were educated there. Radu grew close to the Ottomans. Vlad, by most accounts, never did."],
+      ["wall", {"night": 1, "label": "Wallachia · 1447"}, "In 1447, Hungarian forces under John Hunyadi, the regent of Hungary, invaded Wallachia. Vlad's father was killed, and his elder brother, Mircea, was murdered by the boyars, Wallachia's powerful nobles."],
+      ["date", {"date": "1448", "place": "Târgoviște · Wallachia"}, "In 1448, still a young man, Vlad seized the throne with Ottoman help. He lost it again within about two months."]
+    ]},
+    { "name": "Prince of Wallachia", "lines": [
+      ["throne", {"label": "Prince of Wallachia · 1456 – 1462"}, "After years in exile, he took power again in 1456, this time with Hungarian backing. This, his main reign, lasted six years."],
+      ["bust", {"name": "Vlad III Dracula", "years": "c. 1431 – 1476", "role": "Prince of Wallachia in 1448, from 1456 to 1462, and in 1476.", "hair": "long", "stache": "big", "hat": "fur", "coat": "fur", "frown": 1}, "His best-known portrait, a copy made long after his death, shows a stern man with long dark hair, a heavy moustache and a jewelled cap."],
+      ["decree", {"title": "The boyars", "lines": ["Rival families executed", "Lands given to loyal men", "New men in high office"], "date": "1456 – 1462"}, "He set out to break the power of the boyars, the noble families who had made and unmade princes. Many were executed, and their lands and offices went to men loyal to him."],
+      ["quote", {"text": "Nobles seized at an Easter feast and forced to rebuild the fortress of Poenari.", "who": "later legend, treated with caution by historians"}, "A later story says he seized nobles at an Easter feast and forced them to rebuild his mountain fortress at Poenari. Historians treat it with caution."]
+    ]},
+    { "name": "The Impaler", "lines": [
+      ["cell", {"night": 1, "label": "justice in Wallachia · 1450s"}, "His preferred punishment was death on a sharpened stake. It later gave him the name Romanians still use for him: Țepeș, the Impaler."],
+      ["checklist", {"head": "Who was put to death", "items": ["Thieves and criminals", "Rival nobles", "Enemy prisoners", "Merchants of hostile towns"]}, "He used it on thieves, rivals and prisoners of war. The point was terror, and it worked."],
+      ["city", {"state": "fire", "seed": 6, "label": "Brașov · Sibiu · 1457 – 1460"}, "He also raided the Saxon towns of Transylvania, German-speaking trading cities such as Brașov and Sibiu, which had sheltered his rivals. Townspeople and villagers were killed."],
+      ["paper", {"mast": "PAMPHLET", "head": "Dracole Wayda", "sub": "Tales of a cruel tyrant", "date": "1460s – 1500s"}, "Survivors carried their stories west. German pamphlets about him, first written in the 1460s and later printed in many editions, became some of the earliest bestsellers of the printing age."],
+      ["lesson", {"text": "Propaganda, but not pure invention."}, "Historians read these pamphlets carefully. They were written by his enemies, often to sell copies, and some details are clearly exaggerated. But Ottoman, Greek and Russian writers describe the same cruelty."],
+      ["quote", {"text": "A golden cup left at a public fountain, and no one dared to steal it.", "who": "Romanian folk legend"}, "Romanian folk memory tells a different story: of a stern judge who stamped out theft so completely that a golden cup could be left at a public fountain, and no one dared to take it."]
+    ]},
+    { "name": "War with the Sultan", "lines": [
+      ["bust", {"name": "Mehmed II", "years": "1432 – 1481", "role": "Ottoman sultan. Conquered Constantinople in 1453.", "hat": "turban", "beard": "full", "coat": "robe"}, "The great power to the south was ruled by Mehmed the Second, the sultan who had conquered Constantinople in 1453. Vlad stopped paying him tribute."],
+      ["army", {"fire": 1, "night": 1, "label": "along the Danube · winter 1461 – 1462"}, "In the winter of 1461, Vlad crossed the Danube into Ottoman territory and destroyed towns and forts along the river. This was the campaign he described in his letter to the king of Hungary."],
+      ["riders", {"n": 12, "flip": 1, "label": "the Ottoman invasion · June 1462"}, "In the summer of 1462, Mehmed invaded Wallachia with a far larger army. Vlad could not face him in open battle, so he burned the crops, poisoned wells and fell back."],
+      ["army", {"night": 1, "dir": -1, "label": "the Night Attack · June 1462"}, "In June, he led a night raid into the Ottoman camp, hoping to kill the sultan himself. It caused chaos, but it failed."],
+      ["field", {"famine": 1, "label": "the field of stakes"}, "Then the sultan reached Târgoviște and the field of stakes. The Greek historian Laonikos Chalkokondyles put the number of dead there at about twenty thousand. Even if that is exaggerated, the sight shook the invaders."]
+    ]},
+    { "name": "Prisoner", "lines": [
+      ["throne", {"crown": 0, "label": "Radu the Handsome · 1462"}, "But Mehmed did not need to win a battle. He placed Vlad's brother Radu, who had stayed loyal to the Ottomans, on the Wallachian throne, and many nobles went over to him."],
+      ["cell", {"label": "Hungary · 1462 – c. 1474"}, "Vlad fled to Hungary to seek help from its young king, Matthias Corvinus. Instead, Matthias had him arrested, and kept him a prisoner for about twelve years."],
+      ["date", {"date": "1476", "place": "Wallachia · third reign"}, "Released at last, he married a cousin of King Matthias, and in 1476 he fought his way back onto the throne of Wallachia, for the third time."],
+      ["army", {"ruins": 1, "label": "winter 1476 – 1477"}, "Within weeks, around the turn of the year, he was killed in battle against the Ottomans and their Wallachian allies. Accounts of exactly how he died differ."],
+      ["paper", {"mast": "CONSTANTINOPLE", "head": "The prince's head sent to the sultan", "sub": "according to several accounts", "date": "1477"}, "According to several accounts, his head was sent to the sultan in Constantinople. Where his body lies is unknown. The monastery at Snagov, long named as his grave, is disputed."]
+    ]},
+    { "name": "Becoming Dracula", "lines": [
+      ["bust", {"name": "Bram Stoker", "years": "1847 – 1912", "role": "Irish theatre manager and author of Dracula (1897).", "hair": "crop", "beard": "full", "coat": "suit", "tie": "#2b2b30"}, "Four centuries later, an Irish theatre manager named Bram Stoker was working on a vampire novel."],
+      ["quote", {"text": "Dracula in the Wallachian language means Devil.", "who": "Stoker's notes, from William Wilkinson's 1820 book on Wallachia"}, "In 1890, in a library in the English seaside town of Whitby, he read an old book about Wallachia, which claimed that Dracula meant devil. He took the name for his villain."],
+      ["paper", {"mast": "LONDON", "head": "Dracula", "sub": "A novel by Bram Stoker", "date": "1897"}, "Dracula was published in 1897. Scholars who have studied Stoker's working notes find that he knew very little about the real Vlad beyond his name."],
+      ["lesson", {"text": "No vampire in the historical record."}, "Count Dracula is a fictional Transylvanian nobleman. Vlad was a Wallachian prince, and nothing in the historical record connects him to vampires."],
+      ["city", {"state": "normal", "seed": 8, "label": "Bran Castle · Transylvania"}, "Even so, tourists now visit Bran Castle in Transylvania as Dracula's castle, though there is little evidence that Vlad ever spent time there."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["people", {"n": 6, "pose": "look", "label": "Romania"}, "In Romania, the picture is different. Many remember him as a defender of his country against the Ottomans, and a ruler who brought harsh order to a lawless age."],
+      ["ruler", {"hat": "crown", "cape": 1, "pose": "point", "label": "a national hero"}, "Communist Romania celebrated him as a national hero, and statues and busts of him still stand in towns associated with his life."],
+      ["stat", {"value": "tens of thousands", "label": "estimated victims · figures rest largely on hostile sources"}, "Some modern writers estimate that he killed tens of thousands of people. Those figures rest largely on hostile sources, but even the numbers in his own letter are grim."],
+      ["lesson", {"text": "Two Draculas: one invented, one real."}, "There are really two Draculas. One is a fictional count who never lived. The other was a real prince, brutal even by the standards of a brutal age."],
+      ["memorial", {"n": 300, "date": "Wallachia · 1456 – 1476"}, "The vampire is the one people remember. But the real man needed no legend to be frightening. His enemies, and his own letters, recorded that well enough."]
+    ]}
+  ]
+}

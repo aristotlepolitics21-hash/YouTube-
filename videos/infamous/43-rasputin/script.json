@@ -1,0 +1,76 @@
+{
+  "series": "Infamous",
+  "episode": 43,
+  "title": "Grigori Rasputin",
+  "subtitle": "The peasant healer who haunted the last tsar",
+  "say": {"Rasputin": "Rass-pyoo-tin", "Grigori": "Grigory", "Yefimovich": "Yeffeemovitch", "Pokrovskoye": "Pokrofskoya", "Praskovya": "Praskovia", "strannik": "strahnnik", "Petrograd": "Petro-grad", "Peterhof": "Peterhoff", "Alexei": "Alexay", "Spała": "Spahwa", "Yusupov": "Yoosoopoff", "Purishkevich": "Poorish-kayvitch", "Pavlovich": "Pavlovitch", "Milyukov": "Milyookoff", "Duma": "Dooma", "Stolypin": "Stoleepin", "Yekaterinburg": "Yekaterinburg", "Romanov": "Romahnoff", "Romanovs": "Romahnoffs", "Nevka": "Nyevka", "Militsa": "Mileetsa", "Bolshevik": "Bolshevik"},
+  "package": {
+    "thumb_line": 30,
+    "thumb": ["MAD MONK?", "THE TRUTH"],
+    "intro": "Grigori Rasputin has been called a mad monk, a hypnotist, the empress's lover and the man who destroyed Russia. Most of that is myth. This documentary separates the legend from the record: the Siberian peasant, the sick heir, the scandal and the murder in a palace cellar.",
+    "facts": ["Born in 1869 in Pokrovskoye, western Siberia, to a peasant family", "Never a monk or a priest; he was a wandering lay pilgrim (strannik)", "First met Nicholas II and Alexandra on 1 November 1905 (Old Style)", "Heir Alexei, born 1904, had haemophilia; the illness was kept secret", "Stabbed and badly wounded in Pokrovskoye in the summer of 1914", "Killed at the Yusupov Palace, Petrograd, on 17 December 1916 (Old Style; 30 December New Style)", "The autopsy found he had been shot three times, including once in the forehead", "Nicholas II abdicated in March 1917; the family was killed in Yekaterinburg in July 1918"],
+    "sources": "Encyclopaedia Britannica, Douglas Smith's Rasputin: Faith, Power, and the Twilight of the Romanovs, Orlando Figes's A People's Tragedy, Robert K. Massie's Nicholas and Alexandra.",
+    "hashtags": "#History #Documentary #Russia",
+    "tags": "grigori rasputin, rasputin documentary, mad monk, rasputin murder, romanovs, nicholas ii, tsarina alexandra, russian revolution, russian history, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "GRIGORI RASPUTIN", "sub": "The peasant healer who haunted the last tsar", "art": "throne", "artp": {"night": 1}}, "In the early hours of a December morning in 1916, in a palace in Petrograd, a group of aristocrats invited a Siberian peasant to a late-night visit. By dawn he was dead."],
+      ["city", {"state": "normal", "night": 1, "seed": 5, "label": "Petrograd · December 1916"}, "His body was pulled from a frozen river a few days later. The killers believed they had saved the Russian monarchy."],
+      ["stat", {"value": "304 years", "label": "of Romanov rule, 1613 – 1917"}, "Instead, within three months, the Romanov dynasty, which had ruled Russia for three hundred and four years, had fallen."],
+      ["lesson", {"text": "Holy man, fraud, or scapegoat?"}, "Grigori Rasputin has been called a mad monk, a hypnotist, the empress's lover and the man who destroyed Russia. Much of that is myth. This is what the record actually shows."]
+    ]},
+    { "name": "A Siberian peasant", "lines": [
+      ["date", {"date": "1869", "place": "Pokrovskoye · western Siberia"}, "Grigori Yefimovich Rasputin was born in 1869 in Pokrovskoye, a village on the Tura River in western Siberia, to a peasant family."],
+      ["field", {"village": 1, "n": 4, "label": "Western Siberia · 1880s"}, "He had little schooling and could barely read or write. At about eighteen he married a local woman, Praskovya. Three of their children survived into adulthood."],
+      ["bust", {"name": "Grigori Rasputin", "years": "1869 – 1916", "role": "Siberian peasant and wandering pilgrim. Never a monk or a priest.", "hair": "long", "beard": "long", "coat": "tunic"}, "In his late twenties, something changed. He went on a long pilgrimage to a monastery and came home a man of intense, unconventional faith."],
+      ["people", {"n": 5, "pose": "walk", "label": "a strannik · wandering pilgrim"}, "He became a strannik, a wandering holy man, walking huge distances between shrines and monasteries, preaching and praying with anyone who would listen."],
+      ["lesson", {"text": "The 'mad monk' was never a monk."}, "He was never ordained. He never became a monk or a priest. He remained a married layman with a reputation, in some villages, as a healer."]
+    ]},
+    { "name": "The healer", "lines": [
+      ["city", {"state": "normal", "seed": 2, "label": "St Petersburg · early 1900s"}, "In the early 1900s he reached St Petersburg, the imperial capital. High society was fascinated by mystics, and the rough Siberian was passed from salon to salon."],
+      ["date", {"date": "1 November 1905", "place": "Peterhof · first meeting with the tsar"}, "Two princesses from Montenegro, Militsa and her sister Anastasia, both close to the empress, introduced him at court. In November 1905 he met Tsar Nicholas the Second and the Empress Alexandra."],
+      ["bust", {"name": "Empress Alexandra", "years": "1872 – 1918", "role": "Wife of Nicholas II. Mother of the heir, Alexei.", "hair": "full", "hat": "crown", "coat": "robe"}, "The couple had a secret. Their only son and heir, Alexei, born in 1904, had haemophilia, a disease in which the blood does not clot properly. A small fall could bring days of agony."],
+      ["lesson", {"text": "The heir's illness was a state secret."}, "The illness was kept from the public. So most Russians never understood why a peasant from Siberia had become so close to the royal family."],
+      ["date", {"date": "October 1912", "place": "Spała · a hunting lodge in Poland"}, "In 1912, at a royal hunting lodge in Poland, Alexei suffered a severe bleed and was given the last rites. Rasputin, in Siberia, sent a telegram saying the boy would not die. Soon afterwards, he began to recover."],
+      ["quote", {"text": "His calm may have soothed the boy and his frantic mother. No one can say for certain.", "who": "summary of historians' explanations"}, "Nobody knows how, or whether he did anything at all. Historians suggest his calm confidence may have eased the boy's distress. To Alexandra, it was proof that God had sent him."]
+    ]},
+    { "name": "Scandal", "lines": [
+      ["paper", {"mast": "PETERSBURG", "head": "The holy man and the palace", "sub": "Rumours spread through the capital", "date": "1910s"}, "Away from the palace, his behaviour was another matter. Police surveillance reports described heavy drinking, brawls and affairs with women who came to him for blessings."],
+      ["counter", {"n": 5, "label": "petitions passed to the palace"}, "He also took money and gifts from people seeking favours at court, and passed their requests on. To his enemies, it looked like corruption at the heart of the state."],
+      ["inquiry", {"label": "Church investigations · 1907 – 1912"}, "Churchmen accused him of belonging to a forbidden religious sect. Investigations failed to prove it, but the accusation never went away."],
+      ["people", {"n": 7, "pose": "look", "label": "the capital gossips"}, "The worst rumour was that he was the empress's lover. There is no evidence for it. But gossip and crude cartoons carried the claim across Russia, and it did the monarchy enormous damage."],
+      ["bust", {"name": "Nicholas II", "years": "1868 – 1918", "role": "Last tsar of Russia. Ignored repeated warnings about Rasputin.", "hair": "crop", "beard": "full", "coat": "military", "medals": 2}, "Ministers, churchmen and relatives warned Nicholas. In 1911, Prime Minister Pyotr Stolypin had Rasputin sent away from the capital, but he soon returned. The tsar treated attacks on Rasputin as attacks on his family."],
+      ["date", {"date": "Summer 1914", "place": "Pokrovskoye · an attempt on his life"}, "In the summer of 1914, a woman stabbed him in the stomach in his home village. He survived, but was still recovering when the First World War began."]
+    ]},
+    { "name": "War", "lines": [
+      ["army", {"label": "Eastern Front · 1914 – 1917"}, "Rasputin had warned against war. Russia went in anyway, and suffered millions of casualties in the first year alone."],
+      ["people", {"n": 6, "pose": "mourn", "label": "1915 · the Great Retreat"}, "By the summer of 1915, the army was in retreat, and Russian Poland had been lost."],
+      ["ruler", {"hat": "peak", "guards": 3, "label": "Nicholas II takes command · 1915"}, "In 1915, Nicholas left for army headquarters to take personal command. It meant he would be blamed for every defeat."],
+      ["web", {"nodes": [["Nicholas II · at the front", 0.2, 0.25, 0], ["Alexandra · in the capital", 0.5, 0.5, 0], ["Rasputin", 0.8, 0.25, 1], ["Ministers", 0.5, 0.82, 0]], "links": [[0, 1], [1, 2], [1, 3], [2, 3]], "label": "how power ran · 1915 – 1916"}, "That left Alexandra running affairs in the capital, and she trusted Rasputin's advice. Ministers were appointed and sacked at bewildering speed: Russia had four prime ministers between 1914 and 1917."],
+      ["decree", {"title": "New appointments", "lines": ["Boris Stürmer · prime minister", "Alexander Protopopov · interior"], "date": "1916", "seal": 0}, "In 1916 the empress pressed for men Rasputin was known to favour, including a prime minister, Boris Stürmer, and an interior minister, Alexander Protopopov. Both were widely seen as disastrous."],
+      ["lesson", {"text": "How much power did he really have?"}, "How much of this was Rasputin's doing is still argued. Many historians now think Alexandra was the real decision-maker and his influence was exaggerated. But millions of Russians believed a drunken peasant was running the country."],
+      ["quote", {"text": "Is this stupidity, or is it treason?", "who": "Pavel Milyukov, speech in the Duma, November 1916"}, "In November 1916, the liberal leader Pavel Milyukov listed the government's failures in the Duma, Russia's parliament, and asked whether they were stupidity or treason. His target was the government and the circle around the empress."]
+    ]},
+    { "name": "The murder", "lines": [
+      ["podium", {"banners": 0, "night": 0, "label": "the Duma · November 1916"}, "Weeks later, Vladimir Purishkevich, a fiercely monarchist deputy, gave his own speech in the Duma, attacking the dark forces around the throne. Prince Felix Yusupov approached him soon afterwards."],
+      ["bust", {"name": "Prince Felix Yusupov", "years": "1887 – 1967", "role": "Married to the tsar's niece. Organised the murder.", "hair": "back", "coat": "suit", "tie": "#2b2b30"}, "Yusupov wanted to save the monarchy by removing Rasputin. He was heir to one of the greatest fortunes in Russia, and was married to the tsar's niece."],
+      ["bunker", {"n": 3, "label": "Yusupov Palace · 17 December 1916 (O.S.)"}, "He recruited Purishkevich and the tsar's cousin, Grand Duke Dmitri Pavlovich. In the early hours of the seventeenth of December 1916, by the old Russian calendar, they lured Rasputin to the Yusupov Palace."],
+      ["quote", {"text": "Poisoned cakes, poisoned wine, bullets, and a man still alive when he went into the river.", "who": "the legend, largely from Yusupov's own memoirs"}, "The famous version comes mostly from Yusupov himself. Rasputin ate cakes and drank wine laced with cyanide, and did not die. He was shot, rose again, was shot again, and was still alive when thrown into the river."],
+      ["checklist", {"head": "What the evidence shows", "items": ["Shot three times", "Final shot to the forehead", "No poison reported at autopsy", "The killers' stories conflict"]}, "The evidence is plainer. The autopsy found he had been shot three times, the last time in the forehead at close range, which would have killed him at once. It reportedly found no poison, and the killers' accounts contradict each other."],
+      ["city", {"state": "normal", "night": 1, "seed": 9, "label": "the Malaya Nevka · Petrograd"}, "His body was thrown from a bridge into the icy river and found a few days later. A later theory, that a British agent fired the final shot, has never been proven."]
+    ]},
+    { "name": "Revolution", "lines": [
+      ["paper", {"mast": "PETROGRAD", "head": "Rasputin found dead", "sub": "Body recovered from the river", "date": "December 1916"}, "None of the killers was ever put on trial. Yusupov and Dmitri were simply sent away from the capital. And the murder did not save the monarchy."],
+      ["people", {"n": 8, "pose": "up", "label": "Petrograd · February 1917 (O.S.)"}, "Two months later, bread protests in Petrograd turned into a revolution. Soldiers refused to fire on the crowds, and joined them instead."],
+      ["field", {"famine": 1, "label": "Tsarskoye Selo · March 1917"}, "In March 1917, by our calendar, Nicholas abdicated. That same month, soldiers dug up Rasputin's body from its grave near the palace and burned it."],
+      ["wall", {"n": 7, "night": 1, "label": "Yekaterinburg · July 1918"}, "In July 1918, Bolshevik guards shot Nicholas, Alexandra, Alexei and his four sisters, along with four members of their household, in a cellar in Yekaterinburg."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["tv", {"text": "THE MAD MONK", "speaker": 0}, "In death, Rasputin became a legend: the hypnotic mad monk of films, novels and even a 1978 disco hit. Most of those versions owe more to Yusupov's memoirs than to the evidence."],
+      ["checklist", {"head": "Myth and record", "items": ["Mad monk: never a monk", "Empress's lover: no evidence", "Unkillable: shot dead", "Ruled Russia: disputed"]}, "Strip the myth away, and what is left is a devout, strange and often badly behaved man, who seemed to help a sick child and used his access to the palace to influence appointments."],
+      ["lesson", {"text": "He was a symptom, not the cause."}, "He did not bring down the Romanovs. A disastrous war, hunger in the cities and a tsar who refused to share power did that. But Rasputin became the symbol of everything that was wrong at the top."],
+      ["memorial", {"n": 300, "date": "1869 – 1916"}, "The real scandal was never one Siberian healer. It was a system in which the fate of an empire could turn on whether one anxious family trusted him."]
+    ]}
+  ]
+}

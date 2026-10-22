@@ -1,0 +1,79 @@
+{
+  "series": "Infamous",
+  "episode": 3,
+  "title": "Pol Pot",
+  "subtitle": "The quiet schoolteacher who emptied a country",
+  "say": {"Saloth Sar": "Salot Sar", "Khmer Rouge": "Kmair Roozh", "Khmer": "Kmair", "Khmers": "Kmairs", "Phnom Penh": "Pnom Pen", "Kampong Thom": "Kompong Tom", "Sihanouk": "Seeanook", "Norodom": "Noroddom", "Lon Nol": "Lon Noll", "Kampuchea": "Kampootcheea", "Angkar": "Ongkar", "Tuol Sleng": "Tool Sleng", "Choeung Ek": "Chung Ek", "Cham": "Chahm", "Son Sen": "Sonn Senn", "Duch": "Doyk", "Nuon Chea": "Noo-on Chear", "Khieu Samphan": "Kyoo Samphan", "stupa": "stoopa"},
+  "package": {
+    "thumb_line": 25,
+    "thumb": ["YEAR", "ZERO"],
+    "intro": "In April 1975, the Khmer Rouge took Cambodia's capital and ordered everyone out. In less than four years, between one and a half and two million people died. This documentary tells how a soft-spoken former schoolteacher, Saloth Sar, became Pol Pot, and what his attempt to remake a society from nothing cost.",
+    "facts": ["Born Saloth Sar, probably in 1925, in Kampong Thom province, French-ruled Cambodia", "Studied in Paris from 1949, where he joined the French Communist Party", "The Khmer Rouge captured Phnom Penh on 17 April 1975 and emptied the city", "An estimated 1.5–2 million people died under Democratic Kampuchea (1975–1979), roughly a quarter of the population", "At least 12,000 people were held at the S-21 (Tuol Sleng) prison; only a handful survived", "Vietnam invaded on 25 December 1978 and took Phnom Penh on 7 January 1979", "Pol Pot died on 15 April 1998 under house arrest by his own movement, never tried", "The UN-backed Khmer Rouge Tribunal convicted three people, including Nuon Chea and Khieu Samphan for genocide (2018)"],
+    "sources": "Encyclopaedia Britannica, Documentation Center of Cambodia (DC-Cam), Extraordinary Chambers in the Courts of Cambodia (ECCC), Yale University Cambodian Genocide Program, Philip Short's Pol Pot: Anatomy of a Nightmare, David Chandler's Brother Number One, Ben Kiernan's The Pol Pot Regime.",
+    "hashtags": "#History #Documentary #Cambodia",
+    "tags": "pol pot, khmer rouge, cambodia genocide, killing fields, year zero, tuol sleng, s-21, democratic kampuchea, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "POL POT", "sub": "The quiet schoolteacher who emptied a country", "art": "people", "artp": {"n": 9, "pose": "walk"}}, "On the seventeenth of April 1975, young soldiers in black marched into Phnom Penh, the capital of Cambodia. Crowds came out to greet them. The civil war, people thought, was over."],
+      ["city", {"state": "normal", "seed": 6, "label": "Phnom Penh · 17 April 1975"}, "Within hours, the soldiers ordered everyone out. Homes, hospitals and schools were emptied, and around two million people were marched into the countryside."],
+      ["stat", {"value": "1.5 – 2 million", "label": "estimated deaths in Cambodia, 1975 – 1979"}, "In less than four years, the regime that took the city that day caused the deaths of between one and a half and two million people."],
+      ["icons", {"total": 8000000, "per": 100000, "red": 1800000, "cols": 16, "label": "nearly one in four Cambodians died"}, "That was nearly one in every four Cambodians. The man in charge was a soft-spoken former schoolteacher who called himself Pol Pot."],
+      ["lesson", {"text": "Tear a society down. Start again from nothing."}, "His movement, the Khmer Rouge, tried to tear down an entire society and start again from nothing. This is how it happened."]
+    ]},
+    { "name": "A quiet boy", "lines": [
+      ["date", {"date": "c. 1925", "place": "Kampong Thom province · French-ruled Cambodia"}, "He was born Saloth Sar, probably in 1925, to a well-off farming family in Kampong Thom province, in what was then French-ruled Cambodia."],
+      ["throne", {"label": "Royal Palace · Phnom Penh · 1930s"}, "His family had connections at the royal court, where a cousin was one of the king's wives. As a boy he was sent to live with relatives in Phnom Penh, and went to a French Catholic school."],
+      ["bust", {"name": "Saloth Sar", "years": "1925 – 1998", "role": "A farmer's son with royal connections. An unremarkable student.", "hair": "side", "round": 1, "coat": "shirt"}, "He was an average student, polite and well liked. Few who knew him then imagined what he would become."],
+      ["city", {"state": "normal", "seed": 3, "label": "Paris · 1949 – 1953"}, "In 1949 he won a scholarship to study radio electronics in Paris. He failed his exams, but he joined a circle of Cambodian students drawn to communism, and the French Communist Party."],
+      ["people", {"n": 6, "pose": "look", "label": "Phnom Penh · 1950s"}, "Back home, he taught history and French literature at a private school, while working secretly for the underground communist movement. Former pupils remembered a gentle, soft-spoken teacher."]
+    ]},
+    { "name": "Into the jungle", "lines": [
+      ["jungle", {"n": 5, "label": "Northeast Cambodia · from 1963"}, "In 1963 he became leader of Cambodia's small Communist Party. That same year, with the police closing in, he fled to the jungle."],
+      ["bust", {"name": "Norodom Sihanouk", "years": "1922 – 2012", "role": "King, then head of state of Cambodia. Overthrown in 1970.", "hair": "crop", "round": 1, "coat": "suit", "tie": "#2b2b30"}, "Cambodia's ruler, Prince Norodom Sihanouk, called these communist rebels the Khmer Rouge, the Red Khmers. For years they were a few thousand fighters with little support, while Sihanouk kept Cambodia out of the war raging next door in Vietnam."],
+      ["army", {"planes": 1, "fire": 1, "label": "US bombing of Cambodia · 1969 – 1973"}, "That did not last. From 1969, the United States bombed Cambodia heavily, targeting Vietnamese communist bases and supply routes. By many estimates, tens of thousands of Cambodian civilians were killed."],
+      ["decree", {"title": "Coup", "lines": ["Prince Sihanouk deposed", "General Lon Nol takes power"], "date": "18 March 1970"}, "In March 1970, a pro-American general, Lon Nol, overthrew Sihanouk. The prince, in exile, allied himself with his old enemies, the Khmer Rouge, and urged Cambodians to join them."],
+      ["army", {"rows": 2, "label": "Civil war · 1970 – 1975"}, "Many did. With help from North Vietnam and China, the Khmer Rouge grew into a hardened army. After five years of civil war, they closed in on the capital."]
+    ]},
+    { "name": "Year Zero", "lines": [
+      ["people", {"n": 9, "pose": "walk", "label": "Phnom Penh evacuated · April 1975"}, "When they took Phnom Penh, they told people to leave for a few days, because the Americans would bomb the city. It was a lie. Nobody was allowed back."],
+      ["checklist", {"head": "Abolished", "items": ["Money and markets", "Schools", "Religion", "Private property"]}, "The new state, which called itself Democratic Kampuchea, abolished money, markets, schools, religion and private property. Outsiders came to call it Year Zero."],
+      ["field", {"guard": 1, "n": 7, "label": "Democratic Kampuchea · 1975 – 1979"}, "Almost the whole population was put to work on collective farms and irrigation projects, often twelve hours a day or more, under armed guard."],
+      ["people", {"n": 6, "red": 2, "pose": "look", "label": "communal life"}, "Families were split up. Meals were eaten in communal halls. Children were taught that their loyalty belonged to the revolution, not to their parents."],
+      ["quote", {"text": "To keep you is no gain. To lose you is no loss.", "who": "Khmer Rouge slogan, as remembered by survivors"}, "Former city dwellers were called new people, and treated as suspects. A slogan many survivors remember told them: to keep you is no gain, to lose you is no loss."],
+      ["bust", {"name": "Pol Pot", "years": "Prime minister · 1976 – 1979", "role": "'Brother Number One'. Ruled in secret through 'Angkar', the Organisation.", "hair": "back", "round": 1, "coat": "mao"}, "The leaders hid behind a faceless name, Angkar, the Organisation. Saloth Sar became Pol Pot, prime minister, known inside the party as Brother Number One. For a long time, most Cambodians did not know who ruled them."]
+    ]},
+    { "name": "The killing fields", "lines": [
+      ["field", {"famine": 1, "guard": 1, "label": "Famine · 1975 – 1979"}, "Rice quotas were impossible, and workers were fed thin rice soup. Hundreds of thousands died of starvation, exhaustion and diseases that went untreated."],
+      ["checklist", {"head": "Targeted", "items": ["Officials of the old regime", "Teachers, doctors, the educated", "Buddhist monks", "Vietnamese, Cham, Chinese"]}, "Others were killed outright. Soldiers and officials of the old government were hunted down. So were many teachers, doctors and other educated people, Buddhist monks, and ethnic minorities such as the Vietnamese and the Muslim Cham."],
+      ["cell", {"night": 1, "label": "S-21 · Tuol Sleng · Phnom Penh"}, "In a former school in Phnom Penh, the regime set up a secret prison called S-21. Prisoners were photographed, tortured into confessing to imaginary plots, and then killed."],
+      ["stat", {"value": "12,000 – 20,000", "label": "people held at S-21 · only a handful survived"}, "Estimates of how many people passed through S-21 range from twelve to twenty thousand. Only a handful are known to have survived."],
+      ["wall", {"night": 1, "n": 5, "label": "the killing fields"}, "Most were taken to Choeung Ek, outside the city. Across Cambodia, researchers have since mapped around twenty thousand mass grave pits, the places now known as the killing fields."],
+      ["bunker", {"n": 4, "label": "Party purges · 1977 – 1978"}, "As the revolution failed, Pol Pot blamed hidden traitors. Purges tore through the party itself, and thousands of Khmer Rouge cadres were sent to S-21."]
+    ]},
+    { "name": "The fall", "lines": [
+      ["army", {"tanks": 1, "dir": -1, "label": "Vietnam invades · 25 December 1978"}, "He also sent troops across the border to raid Vietnamese villages. On Christmas Day 1978, Vietnam invaded in force."],
+      ["date", {"date": "7 January 1979", "place": "Phnom Penh falls"}, "Phnom Penh fell within two weeks, on the seventh of January 1979. Pol Pot fled towards the Thai border."],
+      ["tv", {"text": "CAMBODIA · 1979"}, "Vietnam installed a new government, and the world began to see the evidence: empty cities, mass graves, and the meticulous files of S-21."],
+      ["jungle", {"n": 6, "night": 1, "label": "Thai border · 1979 – 1990s"}, "Yet the Khmer Rouge survived. Because Vietnam was allied to the Soviet Union, China, Thailand and Western governments backed the Cambodian resistance, and a coalition including the Khmer Rouge held Cambodia's seat at the United Nations through the 1980s."],
+      ["paper", {"mast": "WORLD NEWS", "head": "Peace deal for Cambodia", "sub": "Signed in Paris", "date": "23 October 1991"}, "In 1991, a peace agreement was signed in Paris, and the United Nations organised elections. The Khmer Rouge boycotted them and fought on, but its fighters slowly defected."]
+    ]},
+    { "name": "The end", "lines": [
+      ["inquiry", {"label": "Anlong Veng · July 1997"}, "In 1997, Pol Pot ordered the killing of his long-time comrade Son Sen and his family. His own commanders turned on him. They put him before a show trial in the jungle and sentenced him to house arrest for life."],
+      ["bust", {"name": "Pol Pot", "years": "1997", "role": "Held under house arrest by his own movement.", "hair": "back", "hairc": "#9a9a92", "round": 1, "coat": "shirt"}, "An American journalist, Nate Thayer, filmed the trial, and later interviewed him. Frail and ill, Pol Pot admitted mistakes, but insisted that he had come to carry out a struggle, not to kill people."],
+      ["quote", {"text": "My conscience is clear.", "who": "Pol Pot, interview with Nate Thayer, October 1997"}, "Then he said: my conscience is clear."],
+      ["date", {"date": "15 April 1998", "place": "Anlong Veng · Cambodia"}, "He died in April 1998, officially of heart failure, though some suspected otherwise. His body was burned on a pile of old tyres. He never faced a court."]
+    ]},
+    { "name": "Justice", "lines": [
+      ["decree", {"title": "Khmer Rouge Tribunal", "lines": ["Cambodian and UN judges", "Crimes against humanity", "Genocide"], "date": "2006 – 2022"}, "Justice came slowly. In 2006, a tribunal backed by the United Nations began work in Phnom Penh, with Cambodian and international judges."],
+      ["checklist", {"head": "Convicted", "items": ["Duch · head of S-21", "Nuon Chea · 'Brother Number Two'", "Khieu Samphan · head of state"]}, "It convicted Duch, the head of S-21, and the regime's two most senior surviving leaders, Nuon Chea and Khieu Samphan, of crimes against humanity. In 2018, both leaders were also convicted of genocide against Cambodia's Vietnamese minority."],
+      ["stat", {"value": "3", "label": "people convicted by the tribunal"}, "Three convictions, after sixteen years and more than three hundred million dollars. Some survivors called it too little, too late. Others valued seeing the leaders judged at all."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["people", {"n": 8, "pose": "mourn", "label": "Choeung Ek memorial"}, "Today, S-21 and Choeung Ek are memorials. At Choeung Ek, a tall Buddhist stupa holds the remains of thousands of victims, so that no one can deny what happened."],
+      ["field", {"village": 1, "n": 5, "label": "Cambodia today"}, "Most Cambodians alive today were born after the Khmer Rouge fell. For years the period was barely taught in schools. Since 2009, it has been part of the national curriculum."],
+      ["lesson", {"text": "He tried to build a perfect society from nothing."}, "Pol Pot believed he could build a perfect society by destroying everything that came before it: cities, money, books, faith and family."],
+      ["memorial", {"n": 500, "date": "1975 – 1979"}, "What he proved instead is what happens when a few people are so certain they know the future that any number of human lives seems a price worth paying."]
+    ]}
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "series": "Infamous",
+  "episode": 2,
+  "title": "Joseph Stalin",
+  "subtitle": "How a Georgian seminary student built a state that ran on fear",
+  "say": {"Jughashvili": "Joogashveelee", "Ioseb": "Yoseb", "Keke": "Kekay", "Tiflis": "Tiflees", "Bolshevik": "Bolsheveek", "Bolsheviks": "Bolsheveeks", "kulaks": "koolahks", "Holodomor": "Hollodomor", "Kirov": "Keerov", "Gulag": "Goolahg", "Katyn": "Kateen", "Kuntsevo": "Koontsevo", "Lavrentiy": "Lavrentee", "Beria": "Bairia", "Khrushchev": "Krooshchoff", "Levada": "Levahda", "Generalissimo": "Generaleesimo"},
+  "package": {
+    "thumb_line": 24,
+    "thumb": ["30 YEARS", "OF FEAR"],
+    "intro": "Joseph Stalin ruled the Soviet Union for almost thirty years. He industrialised a peasant country and led it to victory over Hitler, and he presided over a famine, a terror and a camp system that cost millions of lives. This documentary tells how a cobbler's son from Georgia became one of the most feared rulers in history.",
+    "facts": ["Born Ioseb Jughashvili on 18 December 1878 in Gori, Georgia, then part of the Russian Empire", "Became General Secretary of the Communist Party in April 1922", "Lenin's note of January 1923 suggested removing him from that post", "The famine of 1932–33 killed an estimated 5–8 million people, including around 4 million in Ukraine", "NKVD records show about 1.5 million arrests and about 680,000 executions in 1937–38", "Around 18 million people passed through the Gulag between 1930 and 1953", "Signed a pact with Nazi Germany on 23 August 1939; Germany invaded the USSR on 22 June 1941", "Died on 5 March 1953 after a stroke; denounced by Khrushchev on 25 February 1956"],
+    "sources": "Encyclopaedia Britannica, Stephen Kotkin's Stalin biography, Simon Sebag Montefiore's Stalin: The Court of the Red Tsar, Robert Conquest's The Great Terror, Anne Applebaum's Gulag and Red Famine, Oleg Khlevniuk's Stalin: New Biography of a Dictator.",
+    "hashtags": "#History #Documentary #SovietUnion",
+    "tags": "joseph stalin, stalin documentary, soviet union, great terror, gulag, holodomor, ussr history, ww2 eastern front, cold war, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "JOSEPH STALIN", "sub": "The man of steel who ruled by fear", "art": "camp", "artp": {"snow": 1}}, "On the first of March 1953, at a country house near Moscow, the guards waited outside a closed door. Their master had not called them all day, and they were too frightened to go in."],
+      ["date", {"date": "1 March 1953", "place": "Kuntsevo dacha · near Moscow"}, "When they went in that night, they found him on the floor after a stroke. His own staff had been afraid to check on him."],
+      ["stat", {"value": "~30 years", "label": "Stalin's rule over the Soviet Union"}, "Joseph Stalin had ruled for almost thirty years. He turned a peasant country into an industrial power, and led it to victory over Nazi Germany."],
+      ["stat", {"value": "18,000,000", "label": "people sent through the Gulag labour camps, 1930 – 1953"}, "He also sent some eighteen million people through labour camps, presided over a famine that killed millions, and had hundreds of thousands of his own citizens shot."],
+      ["lesson", {"text": "Fear was how the system worked."}, "The guards' fear at that door was not an accident. It was how his whole system worked. This is how he built it."]
+    ]},
+    { "name": "The seminary boy", "lines": [
+      ["date", {"date": "18 December 1878", "place": "Gori · Georgia · Russian Empire"}, "He was born Ioseb Jughashvili on the eighteenth of December 1878, in Gori, a small town in Georgia, then part of the Russian Empire."],
+      ["bust", {"name": "Ioseb Jughashvili", "years": "1878 – 1953", "role": "A shoemaker's son from Georgia. Trained to be a priest.", "hair": "full", "stache": "thin", "coat": "shirt"}, "His father was a shoemaker who drank and beat him. His mother, Keke, was determined that her son would become a priest."],
+      ["city", {"state": "normal", "seed": 2, "label": "Tiflis seminary · 1894 – 1899"}, "In 1894 he won a place at the Orthodox seminary in Tiflis, the Georgian capital. There he discovered Marxism, and in 1899 he left without finishing."],
+      ["checklist", {"head": "A young revolutionary", "items": ["Strikes and protests", "Underground newspapers", "Robberies to fund the party", "Arrest and exile"]}, "He became a full-time revolutionary, organising strikes, writing for underground papers, and helping to fund the party through armed robberies."],
+      ["camp", {"snow": 1, "n": 4, "label": "Siberian exile · 1902 – 1917"}, "He was arrested again and again and exiled to Siberia, escaping several times. His last exile, near the Arctic Circle, lasted until 1917."]
+    ]},
+    { "name": "Man of steel", "lines": [
+      ["bust", {"name": "Stalin", "years": "from about 1912", "role": "Bolshevik organiser. Took a new name: 'man of steel'.", "hair": "full", "stache": "big", "coat": "black", "tie": 0}, "By then he had joined Lenin's radical faction, the Bolsheviks, and taken a new name. Stalin comes from the Russian word for steel."],
+      ["podium", {"banners": 2, "night": 1, "label": "Petrograd · October 1917"}, "In 1917 the Tsar fell, and that October the Bolsheviks seized power. Stalin was no great speaker, but he was the organiser who got things done."],
+      ["army", {"label": "Russian Civil War · 1918 – 1921"}, "In the civil war that followed, he served as a political commissar, and gained a reputation for ruthlessness, ordering suspected traitors shot."],
+      ["decree", {"title": "General Secretary", "lines": ["Joseph Stalin", "General Secretary of the", "Communist Party"], "date": "April 1922"}, "In 1922 he became the party's General Secretary. It sounded like a clerk's job, but it let him appoint officials across the country, and they owed their careers to him."],
+      ["quote", {"text": "Stalin is too rude... I suggest that the comrades think about a way of removing Stalin from that post.", "who": "Lenin, note added to his 'Testament', January 1923"}, "Lenin, weakened by strokes, came to distrust him. In a note in January 1923, he warned that Stalin was too rude, and suggested removing him from the post."],
+      ["versus", {"left": "Stalin", "right": "Trotsky", "mid": "VS", "red": "r"}, "Lenin died in January 1924, and the note was kept quiet. Stalin outmanoeuvred his rivals one by one, above all Leon Trotsky, founder of the Red Army, who was expelled in 1929 and murdered by a Soviet agent in 1940."]
+    ]},
+    { "name": "Revolution from above", "lines": [
+      ["decree", {"title": "First Five-Year Plan", "lines": ["Steel, coal and tractors", "New factories and cities", "Targets at any cost"], "date": "1928"}, "By 1929, Stalin was the undisputed leader. His Five-Year Plans were a crash programme to make the Soviet Union an industrial power within a decade."],
+      ["field", {"village": 1, "guard": 1, "n": 6, "label": "Collectivisation · 1929 – 1933"}, "To feed the cities and pay for the factories, he forced the peasants off their own plots and into giant collective farms run by the state."],
+      ["people", {"n": 7, "pose": "walk", "label": "Deportation of 'kulaks' · 1930 – 1931"}, "Better-off peasants, labelled kulaks, were treated as class enemies. Around two million people were deported in 1930 and 1931 alone, and thousands were shot."],
+      ["field", {"famine": 1, "guard": 1, "label": "Famine · 1932 – 1933"}, "The state kept taking grain even as villages starved. In 1932 and 1933, famine swept Ukraine, Kazakhstan, southern Russia and other regions."],
+      ["decree", {"title": "Directive", "lines": ["Peasants of Ukraine", "and the Kuban", "may not leave to seek bread"], "date": "22 January 1933"}, "In January 1933, a directive signed by Stalin stopped starving peasants in Ukraine and the Kuban from leaving to look for food. Grain exports continued."],
+      ["stat", {"value": "5 – 8 million", "label": "estimated famine deaths, 1932 – 1933"}, "Historians estimate that five to eight million people died, around four million in Ukraine, where the famine is remembered as the Holodomor. Ukraine and many other countries recognise it as genocide; some historians question whether it was aimed at Ukrainians as a nation."]
+    ]},
+    { "name": "The Great Terror", "lines": [
+      ["paper", {"mast": "LENINGRAD", "head": "Kirov assassinated", "date": "1 December 1934"}, "In December 1934, Sergei Kirov, the Leningrad party chief, was shot dead. Whether Stalin was involved is debated, but he used the killing to launch a hunt for enemies."],
+      ["inquiry", {"label": "Moscow show trials · 1936 – 1938"}, "At show trials in Moscow, old Bolshevik leaders, Lenin's own comrades, confessed to absurd crimes after threats and beatings. Almost all were shot."],
+      ["wall", {"night": 1, "n": 5, "label": "The Great Terror · 1937 – 1938"}, "The trials were only the visible part. In 1937 and 1938, the secret police, the NKVD, arrested people to quotas, region by region."],
+      ["stat", {"value": "~680,000", "label": "people shot in 1937 – 1938, according to NKVD records"}, "Secret police records show that about one and a half million people were arrested in those two years, and nearly seven hundred thousand of them were shot."],
+      ["checklist", {"head": "Among the victims", "items": ["Party leaders", "Army commanders", "Engineers and writers", "Ordinary workers and peasants"]}, "Three of the army's five marshals were killed. Engineers, writers and workers disappeared at night. Stalin personally signed execution lists bearing tens of thousands of names."],
+      ["camp", {"snow": 1, "n": 8, "label": "The Gulag"}, "Millions more were sent to the Gulag, labour camps stretching from the Arctic to Central Asia. The camps' own files record more than one and a half million deaths."]
+    ]},
+    { "name": "War", "lines": [
+      ["decree", {"title": "Nazi–Soviet Pact", "lines": ["Non-aggression for ten years", "Secret protocol:", "Eastern Europe divided"], "date": "23 August 1939"}, "In August 1939, Stalin stunned the world by signing a pact with Hitler. A secret protocol divided Eastern Europe between them."],
+      ["army", {"tanks": 1, "label": "Eastern Poland · 17 September 1939"}, "Weeks later, the Red Army marched into eastern Poland. In 1940, the secret police shot about twenty-two thousand Polish officers and other prisoners, in what is known as the Katyn massacre."],
+      ["army", {"tanks": 1, "planes": 1, "fire": 1, "dir": -1, "label": "22 June 1941 · Germany invades"}, "Stalin trusted the pact and brushed aside repeated warnings. On the twenty-second of June 1941, Germany invaded, and within months millions of Soviet soldiers had been killed or captured."],
+      ["people", {"n": 8, "pose": "walk", "night": 1, "label": "Deportations · 1941 – 1944"}, "Even in wartime, he deported whole peoples he accused of disloyalty, including the Chechens and the Crimean Tatars. Hundreds of thousands died in exile."],
+      ["city", {"state": "ruin", "label": "Stalingrad · 1942 – 1943"}, "But the Soviet Union held on. At Stalingrad, in the winter of 1942, the Red Army encircled a German army and forced its surrender, then began the long push west."],
+      ["stat", {"value": "~27 million", "label": "Soviet war dead, 1941 – 1945"}, "Soviet troops took Berlin in May 1945, at a staggering cost. Around twenty-seven million Soviet citizens died in the war, more than in any other country."],
+      ["bust", {"name": "Generalissimo Stalin", "years": "1945", "role": "Victor over Nazi Germany. Master of half of Europe.", "hair": "back", "stache": "big", "coat": "military", "medals": 2, "hairc": "#6a6a64", "beardc": "#6a6a64"}, "For many Soviet citizens, victory made him a hero. At Yalta and Potsdam he bargained as an equal with the American and British leaders."]
+    ]},
+    { "name": "The last years", "lines": [
+      ["timeline", {"events": [["Eastern Europe · 1945–48", 0.15], ["Soviet atomic bomb · 1949", 0.5], ["Korean War · 1950", 0.85]]}, "After the war, communist governments loyal to Moscow took over Eastern Europe. The Soviet Union tested its first atomic bomb in 1949. The Cold War had begun."],
+      ["paper", {"mast": "PRAVDA", "head": "'Plot' by Kremlin doctors", "sub": "Arrests follow", "date": "13 January 1953"}, "In January 1953, the state press announced an invented plot by Kremlin doctors, most of them Jewish, to murder Soviet leaders. Arrests followed."],
+      ["bunker", {"n": 5, "label": "Kuntsevo · night of 28 February 1953"}, "On the last night of February, he dined late with his inner circle, including his secret police chief, Lavrentiy Beria. Then he went to bed."],
+      ["tv", {"text": "MOSCOW · 6 MARCH 1953"}, "He lingered for four days, with some of the country's best doctors under arrest. He died on the fifth of March 1953, aged seventy-four."],
+      ["people", {"n": 8, "pose": "mourn", "label": "Moscow · March 1953"}, "Millions wept. In the crush of mourners trying to see his body in Moscow, many people were killed."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["podium", {"night": 1, "banners": 1, "label": "20th Party Congress · February 1956"}, "In 1956, his successor, Nikita Khrushchev, denounced his personality cult and the terror against loyal communists in a secret speech. In 1961, his body was removed from Lenin's mausoleum."],
+      ["stat", {"value": "6 – 20 million", "label": "range of historians' estimates of deaths caused by his policies"}, "Historians still argue over the total. Estimates of the deaths caused by his policies range from around six million to twenty million, depending on what is counted."],
+      ["checklist", {"head": "His defenders point to", "items": ["Rapid industrialisation", "Victory over Nazi Germany", "A nuclear superpower"]}, "His defenders point to the factories, the defeat of Hitler and the superpower he left behind. Polls by Russia's independent Levada Center show many Russians now see his role positively."],
+      ["lesson", {"text": "The price was paid by his own people."}, "Many historians answer that the famine was not the price of progress, and that the terror gutted the army just before the war it nearly lost."],
+      ["memorial", {"n": 500, "date": "In memory of the victims"}, "Stalin built a state in which even his guards were afraid to open a door. Millions paid for that fear with their freedom or their lives. For many families in the former Soviet Union, his name is not history. It is a missing grandparent."]
+    ]}
+  ]
+}

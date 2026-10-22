@@ -1,0 +1,79 @@
+{
+  "series": "Infamous",
+  "episode": 37,
+  "title": "Nero",
+  "subtitle": "The emperor blamed for burning Rome",
+  "say": {"Agrippina": "Agrippeena", "Ahenobarbus": "Ah heeno barbus", "Antium": "Antee um", "Britannicus": "Britannicus", "Seneca": "Senneka", "Burrus": "Burrus", "Poppaea": "Poppeea", "Pandateria": "Pandatairia", "Tacitus": "Tassitus", "Suetonius": "Sweetonius", "Cassius Dio": "Cassius Deeo", "Calpurnius": "Calpurnius", "Piso": "Peeso", "Vindex": "Vindex", "Galba": "Galba", "Boudica": "Boodicka", "Judaea": "Joodeea", "Vespasian": "Vespayzhian", "Olympia": "Olympia", "Champlin": "Champlin", "Circus Maximus": "Circus Maximus"},
+  "package": {
+    "thumb_line": 1,
+    "thumb": ["ROME", "BURNS"],
+    "intro": "In July AD 64, a great fire swept through Rome, and the emperor Nero has been blamed for it ever since. But almost everything we know about him was written by his enemies, decades later. This documentary separates what is well attested from what is rumour.",
+    "facts": ["Born Lucius Domitius Ahenobarbus on 15 December AD 37 at Antium", "His mother, Agrippina the Younger, married the emperor Claudius in AD 49; Claudius adopted Nero in AD 50", "Became emperor in October AD 54, aged sixteen", "Had his mother, Agrippina, killed in AD 59", "The Great Fire of Rome began on the night of 18–19 July AD 64; Tacitus says three of fourteen districts were destroyed and seven badly damaged", "Tacitus records that Nero blamed and punished Rome's Christians", "Declared an enemy of the state by the Senate and died by suicide on 9 June AD 68, aged thirty", "The main ancient sources (Tacitus, Suetonius, Cassius Dio) wrote between about 50 and 150 years after his death"],
+    "sources": "Tacitus, Annals (books 13–16); Suetonius, Life of Nero; Cassius Dio, Roman History; Encyclopaedia Britannica; Edward Champlin, Nero (2003); Miriam T. Griffin, Nero: The End of a Dynasty.",
+    "hashtags": "#History #Documentary #AncientRome",
+    "tags": "nero, emperor nero, great fire of rome, nero fiddled while rome burned, ancient rome, roman emperors, agrippina, seneca, tacitus, roman history, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "NERO", "sub": "The emperor blamed for burning Rome", "art": "city", "artp": {"state": "fire", "seed": 4}}, "On the night of the eighteenth of July, AD 64, a fire broke out among the shops beside the Circus Maximus, Rome's great chariot-racing track."],
+      ["city", {"state": "fire", "seed": 7, "label": "Rome · July AD 64"}, "Driven by the wind, it burned for six days. The crowded wooden tenements of the city went up street by street."],
+      ["stat", {"value": "10 of 14", "label": "districts destroyed or badly damaged · according to Tacitus"}, "According to the historian Tacitus, of the city's fourteen districts, three were completely destroyed and seven more were left in ruins."],
+      ["lesson", {"text": "Did Nero fiddle while Rome burned?"}, "The emperor, Nero, has been blamed for it ever since. The story says he fiddled while Rome burned. But the fiddle had not been invented yet."],
+      ["decree", {"title": "Our main sources", "lines": ["Tacitus · c. AD 115", "Suetonius · c. AD 120", "Cassius Dio · early 200s"], "seal": 0}, "Almost everything we know about Nero comes from three writers: Tacitus, Suetonius and Cassius Dio. All wrote decades or more after his death, and all shared the outlook of Rome's governing class, which hated him. Keep that in mind."]
+    ]},
+    { "name": "Agrippina's son", "lines": [
+      ["date", {"date": "15 December AD 37", "place": "Antium · Italy"}, "Nero was born on the fifteenth of December, AD 37, at Antium, on the coast south of Rome. His birth name was Lucius Domitius Ahenobarbus."],
+      ["web", {"nodes": [["Augustus", 0.5, 0.15, 0], ["Caligula", 0.22, 0.5, 0], ["Agrippina", 0.5, 0.5, 1], ["Claudius", 0.78, 0.5, 0], ["Nero", 0.5, 0.85, 1]], "links": [[0, 2], [1, 2], [2, 3], [2, 4]], "label": "the family of Augustus"}, "His mother, Agrippina the Younger, was a great-granddaughter of Rome's first emperor, Augustus, and the sister of the emperor Caligula."],
+      ["cell", {"label": "Agrippina in exile · AD 39"}, "When Nero was a toddler, Caligula sent Agrippina into exile, and soon afterwards Nero's father died. For a time, the boy was raised by an aunt."],
+      ["throne", {"crown": 0, "label": "the emperor Claudius · AD 49"}, "Agrippina was recalled under the next emperor, Claudius. In AD 49 she married him, though he was her own uncle, and persuaded him to adopt her son, who took the name Nero."],
+      ["versus", {"left": "NERO", "right": "BRITANNICUS", "mid": "HEIR?", "red": "l"}, "Claudius already had a younger son, Britannicus. Agrippina made sure Nero was promoted ahead of him, and married him to Claudius's daughter, Octavia."]
+    ]},
+    { "name": "The boy emperor", "lines": [
+      ["date", {"date": "13 October AD 54", "place": "Rome"}, "In October AD 54, Claudius died suddenly. The ancient historians say Agrippina poisoned him with a dish of mushrooms. Modern historians think it possible, but cannot be sure."],
+      ["bust", {"name": "Nero", "years": "AD 37 – 68", "role": "Emperor of Rome at sixteen. Guided at first by Seneca and Burrus.", "hair": "curly", "hat": "laurel", "coat": "robe"}, "Nero became emperor at sixteen, the youngest Rome had yet seen."],
+      ["bust", {"name": "Seneca", "years": "c. 4 BC – AD 65", "role": "Philosopher and playwright. Nero's tutor and chief adviser.", "hair": "bald", "beard": "full", "coat": "robe"}, "His old tutor, the philosopher Seneca, and the commander of the guard, Burrus, helped him govern. Even later critics remembered his first years as a time of sound government."],
+      ["podium", {"night": 0, "cheer": 1, "banners": 0, "label": "games for the people"}, "He staged lavish games, and once even proposed abolishing some taxes. With ordinary Romans, he was popular."],
+      ["army", {"fire": 1, "label": "Britain · AD 60 – 61"}, "His reign also saw a great revolt in the new province of Britain, led by Queen Boudica. Roman towns were burned before the legions crushed it."]
+    ]},
+    { "name": "Murder in the family", "lines": [
+      ["lesson", {"text": "AD 55: Britannicus dies at dinner."}, "In AD 55, Britannicus collapsed at a palace dinner and died. The sources say Nero had him poisoned. He was not yet fourteen."],
+      ["fleet", {"n": 1, "night": 1, "label": "Bay of Naples · AD 59"}, "Agrippina had expected to rule through her son. As he pulled away from her, the relationship turned bitter. According to the sources, Nero first tried to drown her in a boat built to collapse."],
+      ["wall", {"night": 1, "n": 1, "label": "AD 59"}, "She swam to safety. Soldiers were sent to her villa to finish the job. On this, the ancient writers all agree: Nero had his own mother killed."],
+      ["decree", {"title": "Octavia", "lines": ["Divorced", "Exiled to Pandateria", "Put to death"], "date": "AD 62"}, "In AD 62, he divorced his wife, Octavia, exiled her to a small island, and had her put to death. He then married Poppaea Sabina."],
+      ["ruler", {"cape": 1, "pose": "up", "label": "Nero alone · AD 62"}, "That same year, Burrus died and Seneca withdrew from public life. Without them, Nero ruled more and more as he pleased."]
+    ]},
+    { "name": "The fire", "lines": [
+      ["date", {"date": "18 – 19 July AD 64", "place": "Rome"}, "Two years later came the Great Fire. When it began, Nero was at his villa in Antium. He hurried back to the city."],
+      ["people", {"n": 8, "pose": "walk", "label": "the homeless of Rome · AD 64"}, "According to Tacitus, he opened his own gardens and public buildings to the homeless, brought in food, and cut the price of grain."],
+      ["quote", {"text": "A rumour spread that he had sung of the fall of Troy while the city burned.", "who": "Tacitus, Annals, reporting a rumour"}, "But a rumour spread that while the city burned, he had sung on a private stage about the destruction of Troy. Tacitus reports it only as a rumour. Later writers treated it as fact."],
+      ["city", {"state": "ruin", "seed": 3, "label": "the Golden House · after AD 64"}, "What came next made things worse. On land cleared by the fire, Nero began a vast new palace, the Golden House, with gardens and an artificial lake."],
+      ["lesson", {"text": "Did he start it? Probably not."}, "So did he start the fire? Most modern historians think not. Fires were common in Rome, and this one also destroyed his own palace."]
+    ]},
+    { "name": "The Christians", "lines": [
+      ["people", {"n": 6, "pose": "mourn", "night": 1, "label": "Rome's Christians"}, "Nero needed someone to blame. According to Tacitus, he chose the Christians, then a small and distrusted sect in the city."],
+      ["wall", {"night": 1, "label": "Rome · AD 64"}, "Many were arrested and put to death in cruel public spectacles. Christian tradition holds that the apostles Peter and Paul were also killed in Rome under Nero."]
+    ]},
+    { "name": "The performer", "lines": [
+      ["podium", {"night": 1, "banners": 0, "label": "the emperor on stage"}, "Nero's real passion was performance. He sang, played the lyre and drove chariots in public, which shocked Rome's upper class, who looked down on performers."],
+      ["web", {"nodes": [["Piso", 0.5, 0.2, 1], ["Seneca", 0.2, 0.6, 0], ["Lucan", 0.5, 0.75, 0], ["officers", 0.8, 0.6, 0]], "links": [[0, 1], [0, 2], [0, 3]], "label": "the Pisonian conspiracy · AD 65"}, "In AD 65, a plot to kill him was uncovered, named after a senator, Gaius Calpurnius Piso. Many were executed or ordered to kill themselves, including Seneca and his nephew, the poet Lucan."],
+      ["quote", {"text": "Poppaea died after he kicked her in a fit of anger.", "who": "claim of Tacitus and Suetonius · doubted by some historians"}, "That year, Poppaea died while pregnant. The ancient writers claim he kicked her in a rage. Some modern historians suspect illness, or a miscarriage."],
+      ["date", {"date": "AD 66 – 67", "place": "Greece"}, "In AD 66, he left for a long tour of Greece, competing at its great festivals. Suetonius says he fell from his chariot at Olympia, but the judges declared him the winner anyway."],
+      ["timeline", {"events": [["Britain · AD 60", 0.15], ["Great Fire · AD 64", 0.5], ["Judaea · AD 66", 0.85]]}, "Meanwhile the empire was under strain. In AD 66, a major Jewish revolt broke out in Judaea, and Nero sent the general Vespasian to put it down."],
+      ["bust", {"name": "Nero", "years": "AD 68", "role": "Emperor and performer, now hated by much of Rome's elite.", "hair": "curly", "hat": "laurel", "beard": "stubble", "coat": "robe", "round": 1, "frown": 1}, "Back in Rome, money was running short. Confiscations and heavy demands angered the provinces, and the army's commanders were losing patience."]
+    ]},
+    { "name": "The fall", "lines": [
+      ["army", {"label": "Gaul and Spain · AD 68"}, "In AD 68, Gaius Julius Vindex, a governor in Gaul, rebelled, and Galba, the governor in Spain, joined him. Vindex was soon defeated, but the revolt spread."],
+      ["decree", {"title": "Senate of Rome", "lines": ["Nero declared", "an enemy of the state"], "date": "June AD 68"}, "The palace guard abandoned Nero, and the Senate declared him an enemy of the state."],
+      ["city", {"state": "normal", "night": 1, "seed": 12, "label": "a villa outside Rome · 9 June AD 68"}, "He fled to a freedman's villa outside the city. On the ninth of June, AD 68, as horsemen approached, he took his own life, with help from his secretary. He was thirty."],
+      ["quote", {"text": "What an artist dies in me!", "who": "Nero's last words, according to Suetonius"}, "According to Suetonius, his last words were: what an artist dies in me."],
+      ["army", {"ruins": 1, "label": "the Year of the Four Emperors · AD 69"}, "His death ended the dynasty of Augustus. Within a year, four men had claimed the throne, in a civil war known as the Year of the Four Emperors."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["people", {"n": 7, "pose": "mourn", "label": "flowers on his tomb"}, "Not everyone celebrated. Suetonius records that for a long time people laid flowers on his tomb. Several impostors later claimed to be Nero returned, and found followers in the east."],
+      ["stat", {"value": "666", "label": "Book of Revelation · widely read as a code for Nero"}, "Many scholars believe that the number of the beast in the Book of Revelation, six hundred and sixty-six, is a coded reference to Nero."],
+      ["checklist", {"head": "Well attested", "items": ["His mother's killing", "Octavia's execution", "Punishing Christians", "Seneca's forced suicide"]}, "Some things about Nero are not in doubt. He had his mother and his first wife killed, he persecuted Christians, and he had critics and rivals put to death."],
+      ["inquiry", {"label": "the historians' verdict"}, "But modern historians, such as Edward Champlin, point out that the elite writers who told his story had every reason to make him a monster, and that many ordinary Romans seem to have liked him."],
+      ["lesson", {"text": "He did not fiddle while Rome burned."}, "Nero was vain and murderous. But he did not fiddle while Rome burned. The monster of the legend was written by his enemies. The real man was bad enough, and more complicated."]
+    ]}
+  ]
+}

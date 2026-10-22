@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 13,
+  "title": "Kim Jong-il",
+  "subtitle": "The Dear Leader, the famine and the bomb",
+  "say": {"Jong-il": "Jong Ill", "Il-sung": "Ill Soong", "Jong-un": "Jong Oon", "Pyongyang": "Pyong Yang", "Paektu": "Pek Too", "Khabarovsk": "Khabarofsk", "Vyatskoye": "Vyatskoyeh", "Choi Eun-hee": "Chway Oon Hee", "Shin Sang-ok": "Shin Sahng Ok", "Kim Dae-jung": "Kim Day Jung", "Koizumi": "Koh-ee-zoomee", "Junichiro": "Joonichiro", "Kim Hyon-hui": "Kim Hyon Hee", "Cheonan": "Chonahn", "Yeonpyeong": "Yon Pyong", "Jilin": "Jee Lin"},
+  "package": {
+    "thumb_line": 1,
+    "thumb": ["GUNS", "NOT RICE"],
+    "intro": "Kim Jong-il inherited North Korea from his father in 1994, just as a famine began that killed hundreds of thousands of people. He put the army first, kidnapped film stars, and gave his country the bomb. This documentary tells the story of the second ruler of the Kim dynasty.",
+    "facts": ["Born 16 February 1941 in the Soviet Far East, according to Soviet records; North Korea claims 1942 on Mount Paektu", "Publicly confirmed as Kim Il-sung's successor at the Sixth Party Congress in 1980", "South Korean actress Choi Eun-hee and director Shin Sang-ok were abducted in 1978 and escaped in Vienna in 1986", "Korean Air Flight 858 was bombed on 29 November 1987, killing all 115 people on board", "Took power after Kim Il-sung died on 8 July 1994", "Famine of 1994–1998: estimates range from about 240,000 to over 2 million deaths; many scholars estimate 600,000–1 million", "Admitted to Japan on 17 September 2002 that North Korea had abducted 13 Japanese citizens", "North Korea's first nuclear test took place on 9 October 2006", "Died 17 December 2011, according to state media"],
+    "sources": "Encyclopaedia Britannica, Report of the UN Commission of Inquiry on Human Rights in the DPRK (2014), Stephan Haggard and Marcus Noland's Famine in North Korea, Bradley K. Martin's Under the Loving Care of the Fatherly Leader, BBC News.",
+    "hashtags": "#History #Documentary #NorthKorea",
+    "tags": "kim jong il, kim jong il documentary, north korea, north korean famine, arduous march, kim dynasty, north korea nuclear test, korean air 858, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "KIM JONG-IL", "sub": "The Dear Leader, the famine and the bomb", "art": "people", "artp": {"n": 8, "pose": "mourn"}}, "In July 1994, the founder of North Korea, Kim Il-sung, died. Crowds wept in the streets. His son, Kim Jong-il, inherited a country that was about to starve."],
+      ["field", {"famine": 1, "n": 4, "label": "North Korea · 1994 – 1998"}, "Over the next four years, famine swept the country. Rations stopped. People ate grass and tree bark to survive."],
+      ["stat", {"value": "600,000 – 1,000,000", "label": "a common scholarly estimate of famine deaths, 1994 – 1998"}, "No one knows how many died. Estimates range from about a quarter of a million to more than two million. Many scholars put the figure between six hundred thousand and one million."],
+      ["lesson", {"text": "The army came first."}, "Through it all, the new leader kept the army first in line. This is the story of Kim Jong-il, who turned his father's state into a family inheritance, and armed it with the bomb."]
+    ]},
+    { "name": "Two birthplaces", "lines": [
+      ["date", {"date": "16 February 1941", "place": "Vyatskoye · near Khabarovsk · USSR"}, "According to Soviet records, Kim Jong-il was born on the sixteenth of February 1941, at a camp in the Soviet Far East, where his father was serving with Soviet forces."],
+      ["decree", {"title": "The official version", "lines": ["Born in 1942", "on Mount Paektu", "under a double rainbow", "and a new star"], "date": "state biography"}, "North Korean propaganda tells a different story. It says he was born in 1942 in a secret guerrilla camp on Mount Paektu, Korea's sacred mountain, under a double rainbow and a new star."],
+      ["bust", {"name": "Kim Il-sung", "years": "1912 – 1994", "role": "Founder of North Korea. Ruled from 1948 until his death.", "hair": "back", "coat": "mao", "round": 1}, "His father, Kim Il-sung, became North Korea's leader in 1948, with Soviet backing. His mother died when he was a small boy."],
+      ["army", {"tanks": 1, "label": "Korean War · 1950 – 1953"}, "During the Korean War, the boy was reportedly sent to safety in China. The war ended in 1953 with Korea still divided. His father then purged his rivals until no one could challenge him."]
+    ]},
+    { "name": "The propagandist", "lines": [
+      ["bust", {"name": "Kim Jong-il", "years": "1941 – 2011", "role": "Son and heir of Kim Il-sung. Ran the party's propaganda and culture work.", "hair": "curly", "coat": "mao", "round": 1}, "After graduating from Kim Il-sung University in 1964, he went to work in the ruling party's central committee. He rose through its propaganda and culture departments."],
+      ["tv", {"text": "THE CULT OF THE LEADER"}, "He made himself the chief builder of his father's personality cult. Portraits, monuments, songs and slogans multiplied, and homes were required to display the leader's picture."],
+      ["people", {"n": 8, "pose": "look", "night": 1, "label": "the private cinema"}, "He was obsessed with film. He reportedly kept a huge collection of foreign movies, and in 1973 he published a book on the art of cinema."],
+      ["date", {"date": "1978", "place": "Hong Kong"}, "In 1978, North Korean agents kidnapped one of South Korea's best-known actresses, Choi Eun-hee, in Hong Kong. Months later, they seized her former husband, the director Shin Sang-ok."],
+      ["cell", {"label": "Shin Sang-ok · prison · 1978 – 1983"}, "Shin tried to escape and spent years in prison. Then Kim Jong-il brought the couple together and put them to work making films for North Korea."],
+      ["city", {"state": "normal", "seed": 2, "label": "Vienna · March 1986"}, "In 1986, on a trip to Vienna, they slipped away to the American embassy. They brought with them secret recordings they had made of Kim Jong-il himself."]
+    ]},
+    { "name": "The heir", "lines": [
+      ["podium", {"banners": 2, "night": 1, "cheer": 1, "label": "Sixth Party Congress · 1980"}, "In 1980, at a party congress, he was publicly confirmed as his father's heir. It was the first hereditary succession in the communist world."],
+      ["web", {"nodes": [["Kim Jong-il", 0.5, 0.2, 1], ["Security services", 0.2, 0.65, 0], ["The army", 0.5, 0.8, 0], ["Room 39", 0.8, 0.65, 0]], "links": [[0, 1], [0, 2], [0, 3]], "label": "a power base answering to one man"}, "He built a power base that answered only to him: the security services, the army, and a secretive party office known as Room 39, which US and South Korean officials say raises foreign money for the leader."],
+      ["paper", {"mast": "SEOUL", "head": "Korean Air Flight 858 lost", "sub": "115 people on board", "date": "November 1987"}, "In November 1987, a Korean Air flight exploded over the Andaman Sea, killing all one hundred and fifteen people on board."],
+      ["inquiry", {"label": "Seoul · 1988 – 1990"}, "One of the bombers, Kim Hyon-hui, survived and confessed that she was a North Korean agent. She said the order had come from Kim Jong-il personally. North Korea has always denied it."]
+    ]},
+    { "name": "The Arduous March", "lines": [
+      ["people", {"n": 8, "pose": "mourn", "night": 1, "label": "Pyongyang · July 1994"}, "When his father died in July 1994, Kim Jong-il took control. He held back from the top formal titles during three years of official mourning."],
+      ["checklist", {"head": "Why the famine came", "items": ["Soviet aid gone, 1991", "Floods, 1995 – 1996", "A failing farm system", "Food steered to army and elite"]}, "Many things went wrong at once. Cheap Soviet oil and fertiliser had vanished with the Soviet Union. Floods wiped out harvests. The collective farms were failing."],
+      ["decree", {"title": "Public Distribution System", "lines": ["State food rations", "cut, then halted", "across much of the country"], "date": "mid-1990s", "seal": 0}, "The state rationing system, which most people depended on, broke down. The regime called the crisis the Arduous March, and told people to endure."],
+      ["people", {"n": 9, "pose": "walk", "label": "the Tumen river · late 1990s"}, "Millions foraged for food. Thousands crossed the river into China. Many were caught, sent back and punished."],
+      ["army", {"night": 1, "label": "military first · 1990s"}, "Kim Jong-il's answer was a policy he called military first. The armed forces were placed at the centre of the state, ahead of everyone else."],
+      ["lesson", {"text": "Guns before rice."}, "Critics argue the regime made the famine far worse. It restricted aid workers, steered food to the army and the capital, and refused real reform. The regime blamed natural disasters and its enemies."]
+    ]},
+    { "name": "Brinkmanship", "lines": [
+      ["decree", {"title": "Constitution", "lines": ["Kim Il-sung: Eternal President", "Kim Jong-il: Chairman,", "National Defence Commission"], "date": "1998"}, "In 1998, a revised constitution made his dead father Eternal President. Kim Jong-il ruled as chairman of the National Defence Commission, now called the highest post of state."],
+      ["versus", {"left": "Kim Jong-il", "right": "Kim Dae-jung", "mid": "2000"}, "In June 2000 he welcomed South Korea's president, Kim Dae-jung, to Pyongyang for the first summit between the two Koreas. It later emerged that hundreds of millions of dollars had been secretly paid to the North beforehand."],
+      ["date", {"date": "17 September 2002", "place": "Pyongyang · summit with Japan"}, "In 2002, meeting Japan's prime minister, Junichiro Koizumi, he admitted that North Korean agents had abducted thirteen Japanese citizens in the 1970s and 1980s, and apologised. Japan believes there were more."],
+      ["bust", {"name": "The Dear Leader", "years": "1994 – 2011", "role": "Ruled North Korea for seventeen years under a military-first policy.", "hair": "curly", "glasses": "square", "coat": "khaki", "round": 1}, "To the outside world, with his bouffant hair, large glasses and khaki suits, he was a figure of mystery and mockery. At home, he was the Dear Leader."],
+      ["decree", {"title": "Non-Proliferation Treaty", "lines": ["North Korea announces", "its withdrawal"], "date": "January 2003"}, "In 2003, after the United States accused it of running a secret uranium programme, North Korea announced it was leaving the Nuclear Non-Proliferation Treaty."],
+      ["paper", {"mast": "WORLD", "head": "North Korea tests a nuclear bomb", "date": "9 October 2006"}, "On the ninth of October 2006, North Korea carried out its first nuclear test. A second followed in 2009. The UN Security Council imposed sanctions each time."],
+      ["fleet", {"night": 1, "n": 1, "label": "Yellow Sea · 26 March 2010"}, "In March 2010, a South Korean warship, the Cheonan, sank after an explosion, killing forty-six sailors. An international investigation concluded it had been hit by a North Korean torpedo. Pyongyang denied it."],
+      ["city", {"state": "fire", "seed": 12, "label": "Yeonpyeong Island · November 2010"}, "That November, North Korean artillery shelled a South Korean island, killing two marines and two civilians."]
+    ]},
+    { "name": "The camps", "lines": [
+      ["camp", {"night": 1, "label": "political prison camps"}, "Throughout his rule, North Korea ran a system of political prison camps. Former prisoners and guards who escaped described forced labour, starvation and executions."],
+      ["people", {"n": 9, "pose": "walk", "red": 3, "label": "guilt by association"}, "Relatives of the accused could be sent to the camps too, sometimes across three generations of one family."],
+      ["inquiry", {"label": "UN Commission of Inquiry · 2014"}, "In 2014, a UN Commission of Inquiry found that crimes against humanity had been committed in North Korea, under policies set at the highest level of the state, over decades that included his rule."]
+    ]},
+    { "name": "The end", "lines": [
+      ["date", {"date": "August 2008", "place": "Pyongyang"}, "In 2008 he reportedly suffered a stroke. He appeared in public thinner and frailer, and began preparing his youngest son, Kim Jong-un, as his heir."],
+      ["paper", {"mast": "PYONGYANG", "head": "The Dear Leader is dead", "date": "19 December 2011"}, "On the seventeenth of December 2011, according to state media, he died of a heart attack while travelling on his train. He was seventy."],
+      ["people", {"n": 8, "pose": "mourn", "night": 1, "label": "Pyongyang · December 2011"}, "Television showed crowds weeping in the snow. Within days, his son, still in his twenties, had taken his place."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["ruler", {"pose": "up", "guards": 2, "label": "Day of the Shining Star · 16 February"}, "In North Korea, he is still revered. His birthday is a national holiday, the Day of the Shining Star, and his statue stands beside his father's in Pyongyang."],
+      ["timeline", {"events": [["Kim Il-sung · 1948", 0.1], ["Kim Jong-il · 1994", 0.5], ["Kim Jong-un · 2011", 0.88]]}, "In the regime's own terms, his great success was the succession itself. He took power from his father and handed it to his son, and North Korea became a communist state ruled by one family for three generations."],
+      ["lesson", {"text": "He kept power. His people paid for it."}, "Outside the country, he is remembered for the famine, the camps, the kidnappings and the bomb. He left his son a nuclear weapon and a system of total control."],
+      ["memorial", {"n": 600, "date": "North Korea · 1994 – 1998"}, "He was never called to account. The people who paid were the ones who starved in the 1990s, while the guns came first."]
+    ]}
+  ]
+}
