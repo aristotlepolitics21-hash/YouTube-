@@ -73,7 +73,7 @@ function look(m, o) {
       const spec = { side: .98, full: 1.08, back: .92, crop: .86, long: 1.12, wild: 1.15, curly: 1.05, wig: 1.15 }[hair] || 1.0;
       const capm = sphereCap(r * 1.07, spec, hair === 'wig' ? '#efece4' : hc); capm.scale.set(1, g.userData.k * 1.02, 1); capm.rotation.z = .22; add(g, capm, -r * .08, r * .02, 0);
       if (hair === 'side') { const f = new THREE.Mesh(new THREE.SphereGeometry(r * .5, 14, 8), mat(hc, .9)); f.scale.set(.35, .4, 1.2); f.rotation.x = -.45; add(g, f, r * .72, r * .62 * g.userData.k, -r * .22); }
-      if (hair === 'long') { const b = new THREE.Mesh(new THREE.BoxGeometry(r * 1.2, r * 2.2, r * 2.0), mat(hc, .9)); add(g, b, -r * .45, -r * .8, 0); }
+      if (hair === 'long') { const b = new THREE.Mesh(new THREE.BoxGeometry(r * 1.1, r * 2.2, r * 1.7), mat(hc, .9)); add(g, b, -r * .55, -r * .8, 0); }
       if (hair === 'wild' || hair === 'curly') { const R = rng(3); for (let i = 0; i < 14; i++) { const a = R() * Math.PI * 2, e = R() * .9 + .2; add(g, new THREE.Mesh(new THREE.SphereGeometry(r * .28, 10, 8), mat(hc, .95)), Math.cos(a) * Math.cos(e) * r * .95 - r * .1, Math.sin(e) * r * .95 + r * .1, Math.sin(a) * Math.cos(e) * r * .95); } }
       if (hair === 'wig') for (const sz of [-1, 1]) for (let i = 0; i < 2; i++) { const roll = new THREE.Mesh(new THREE.CylinderGeometry(r * .18, r * .18, r * .7, 12), mat('#efece4', .9)); roll.rotation.z = Math.PI / 2; add(g, roll, -r * .15, -r * .05 - i * r * .35, sz * r * .98); }
     }
