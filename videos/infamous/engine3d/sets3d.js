@@ -1,6 +1,6 @@
 // Infamous 3D sets. Each BUILD[name](p) lays out a set once and returns { update(t, T) } for camera and motion.
 // Floor is y = 0, a figure is about 1.8 tall, and FACE turns a figure to look at a camera on +z.
-import { THREE, scene, camera, BUILD, fig, headPos, POSE, breathe, gun, mat, glow, mesh, box, cyl, ball, ground, backdrop, sky, lights, fog, shot, rng, lerp, ease, clamp, seg, stick } from './r3.js';
+import { THREE, scene, camera, BUILD, fig, headPos, MODE, POSE, breathe, gun, mat, glow, mesh, box, cyl, ball, ground, backdrop, sky, lights, fog, shot, rng, lerp, ease, clamp, seg, stick } from './r3.js';
 const FACE = -90, PI = Math.PI;
 const SOLDIER = { coat: 'military', hat: 'helmet' };
 const looks = p => { const o = {}; for (const k of ['hair', 'stache', 'beard', 'hat', 'glasses', 'coat', 'medals', 'sash', 'hairc', 'beardc', 'hatc', 'band', 'spike', 'cape']) if (p[k] != null) o[k] = p[k]; if (o.coat === 'suit' || o.coat === 'black') o.shoes = '#111'; return o; };
@@ -34,7 +34,7 @@ function horse(s = 1) { const g = new THREE.Group(); g.scale.setScalar(s); scene
 BUILD.bust = p => { backdrop('#cdbfa3', -1.6, 12, 6); ground('#a8977a');
   const m = fig(Object.assign({ turn: FACE }, looks(p))); POSE.stand(m); m.l_arm.straddle = m.r_arm.straddle = 4; const h = headPos(m), y = h.y - .12;
   lights({ amb: .7, spots: [{ pos: [-1.4, h.y + 1.0, 2.2], target: [0, y, 0], i: 7, a: .45, c: '#ffe8c8' }, { pos: [1.6, h.y + .6, -1], target: [0, y, 0], i: 4, a: .6, c: '#fff2dc', shadow: false }] });
-  return { update(t, T) { m.head.turn = Math.sin(T * .35) * 7; m.head.nod = -2 + Math.sin(T * .27) * 3; breathe(m, T); shot([.3, y + .12, .95], [.27, y + .11, .8], t, [.24, y + .06, 0]); } }; };
+  return { update(t, T) { m.head.turn = Math.sin(T * .35) * 7; m.head.nod = -2 + Math.sin(T * .27) * 3; breathe(m, T); if (MODE.vertical) shot([0, y + .1, 1.25], [0, y + .1, 1.0], t, [0, y - .02, 0]); else shot([.3, y + .12, .95], [.27, y + .11, .8], t, [.24, y + .06, 0]); } }; };
 // ---------- gatherings ----------
 BUILD.podium = p => { const night = p.night !== 0;
   if (night) { scene.background = new THREE.Color('#0d1015'); fog('#0d1015', 9, 24); } else { sky('#9fb4c2', '#e2d8c4'); fog('#d8d2c4', 18, 60); box(30, 9, 1, '#bfb19a', 0, 4.5, -5); }
@@ -84,7 +84,7 @@ BUILD.army = p => { const night = !!p.night, dir = p.dir === -1 ? -1 : 1;
   const tanks = p.tanks ? [tank(0, -4.5, 1, dir > 0 ? 0 : PI), tank(0, -7.5, 1, dir > 0 ? 0 : PI)] : [];
   const planes = p.planes ? [0, 1, 2, 3].map(i => plane3(0, 8 + i % 2 * 1.5, -6 - i * 2.5, .9)) : [];
   const fires = p.fire ? [flame(-5, 0, -5, 1.4, 1), flame(6, 0, -6, 1.6, 2), smoke(-5, 1.5, -5, 10, 1.2, 3), smoke(6, 1.5, -6, 10, 1.3, 4)] : [];
-  lights({ amb: night ? .25 : .6, sun: { pos: [5, 10, 7], i: night ? .5 : 2.0, c: night ? '#9fb0d0' : '#fff6e6', size: 14 } });
+  lights({ amb: night ? .5 : .6, sun: { pos: [5, 10, 7], i: night ? 1.1 : 2.0, c: night ? '#9fb0d0' : '#fff6e6', size: 14 } });
   return { update(t, T) { const off = (T * 1.1) % sp; men.forEach(([m, r, i]) => { m.position.x = dir * ((i - cols / 2) * sp + off + r * .3); POSE.march(m, T * 5.5 + i * .3); });
       tanks.forEach((k, i) => k.position.x = dir * lerp(-14, 6 - i * 5, ease(seg(t, 0, 1)))); planes.forEach((pl, i) => { pl.position.x = ((T * 6 + i * 7) % 40) - 20; pl.rotation.y = 0; }); fires.forEach(f => f(T));
       shot([3, 2.2, 8], [1.5, 2.0, 6.8], t, [0, 1.2, -2]); } }; };

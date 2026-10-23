@@ -11,6 +11,9 @@ renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFShadowMap;
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.0; renderer.outputColorSpace = THREE.SRGBColorSpace;
 camera.fov = 35; camera.aspect = W / H; camera.near = .05; camera.far = 400; camera.updateProjectionMatrix();
 export { THREE, scene, camera, renderer };
+// Shorts render vertical: a 9:16 target with a wider lens, so sets built for 16:9 still hold their subject.
+export const MODE = { vertical: false };
+export function setVertical(rs = .5) { MODE.vertical = true; renderer.setSize(Math.round(1080 * rs), Math.round(1920 * rs), false); camera.aspect = 9 / 16; camera.fov = 58; camera.updateProjectionMatrix(); }
 
 // ---------- small helpers ----------
 export const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v)), lerp = (a, b, t) => a + (b - a) * t;

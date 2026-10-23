@@ -1,0 +1,370 @@
+{
+ "id": "01-hitler",
+ "say": {
+  "Mein Kampf": "Mine Kampf"
+ },
+ "scenes": [
+  {
+   "text": "THEY HANDED HIM THE KEYS.",
+   "red": [
+    "KEYS"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "stamp": 1,
+      "light": "bulb",
+      "cam": "down",
+      "fig": {
+       "look": {
+        "coat": "military",
+        "hair": "bald",
+        "stache": "big",
+        "hairc": "#cfcfc8",
+        "beardc": "#cfcfc8",
+        "medals": 6
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.36
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "stache": "brush",
+        "coat": "khaki"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "light": "bulb",
+      "swing": 1,
+      "shadows": 3,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "stache": "brush",
+        "coat": "grey"
+       },
+       "pose": "sitSlump",
+       "at": [
+        0,
+        -1.2
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "state": "fire",
+      "planes": 1
+     }
+    }
+   ]
+  },
+  {
+   "text": "REJECTED. GASSED. HUMILIATED.",
+   "red": [
+    "HUMILIATED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "close",
+      "light": "cold",
+      "cam": "low",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "coat": "suit"
+       },
+       "yaw": 180,
+       "at": [
+        0,
+        -1.6
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "mirror",
+       "bed"
+      ],
+      "light": "dark",
+      "flicker": 1,
+      "cam": "still",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "coat": "shirt"
+       },
+       "yaw": 120,
+       "at": [
+        -1.3,
+        -1.9
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "army",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "night": 1,
+      "ruins": 1,
+      "fire": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "paper",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "mast": "BERLIN",
+      "head": "Germany surrenders",
+      "sub": "Armistice signed",
+      "date": "November 1918"
+     }
+    }
+   ]
+  },
+  {
+   "text": "NEVER A MAJORITY. DIDN'T MATTER.",
+   "red": [
+    "MAJORITY"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "podium",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "cheer": 1,
+      "banners": 2
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "typewriter",
+       "bars"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "stache": "brush",
+        "coat": "shirt"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "chart",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "title": "Nazi share of the vote",
+      "x": "1928 \u2013 1932",
+      "y": "share",
+      "points": [
+       [
+        0,
+        0.06
+       ],
+       [
+        0.33,
+        0.43
+       ],
+       [
+        0.66,
+        0.87
+       ],
+       [
+        1,
+        0.77
+       ]
+      ],
+      "notes": [
+       [
+        0,
+        0.06,
+        "2.6%"
+       ],
+       [
+        0.33,
+        0.43,
+        "18.3%"
+       ],
+       [
+        0.66,
+        0.87,
+        "37.3%"
+       ],
+       [
+        1,
+        0.77,
+        "33.1%"
+       ]
+      ]
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "title": "Enabling Act",
+      "lines": [
+       "The government may pass laws",
+       "without the Reichstag"
+      ],
+      "date": "23 March 1933"
+     }
+    }
+   ]
+  },
+  {
+   "text": "6,000,000 \u00b7 NEVER AGAIN",
+   "red": [
+    "NEVER",
+    "AGAIN"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "army",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "tanks": 1,
+      "planes": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "shoes:140"
+      ],
+      "deep": 1,
+      "light": "dark",
+      "amb": 0.2,
+      "cam": "track"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [],
+     "p": {
+      "props": [
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "dies": 0.7,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "value": "6,000,000",
+      "label": "Jewish men, women and children murdered"
+     }
+    }
+   ]
+  }
+ ]
+}
