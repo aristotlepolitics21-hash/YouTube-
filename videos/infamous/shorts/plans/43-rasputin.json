@@ -1,0 +1,376 @@
+{
+ "id": "43-rasputin",
+ "say": {
+  "Rasputin": "Rass-pyoo-tin"
+ },
+ "scenes": [
+  {
+   "text": "BY DAWN HE WAS DEAD.",
+   "red": [
+    "DEAD"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "stamp": 1,
+      "light": "bulb",
+      "amb": 0.2,
+      "cam": "down",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "coat": "suit",
+        "tie": "#2b2b30"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "amb": 0.25,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "beard": "long",
+        "coat": "tunic",
+        "hairc": "#2a2420",
+        "beardc": "#2a2420"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "cold",
+      "amb": 0.3,
+      "floor": "#8a9098",
+      "cam": "low"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "chairs:1",
+       "candles"
+      ],
+      "light": "bulb",
+      "dies": 0.75,
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE \"MAD MONK\" WAS NEVER A MONK.",
+   "red": [
+    "NEVER"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "light": "cold",
+      "floor": "#c8ccd0",
+      "cam": "dolly",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "beard": "long",
+        "coat": "tunic",
+        "hairc": "#2a2420",
+        "beardc": "#2a2420"
+       },
+       "yaw": 180,
+       "at": [
+        0,
+        -1.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "coats:1"
+      ],
+      "light": "bulb",
+      "amb": 0.5,
+      "flicker": 1,
+      "cam": "still",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "beard": "long",
+        "coat": "shirt",
+        "hairc": "#2a2420",
+        "beardc": "#2a2420"
+       },
+       "at": [
+        1.0,
+        -1.6
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "portrait"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "shadows": 1,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash",
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "typewriter"
+      ],
+      "light": "cold",
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "WHO WAS REALLY IN CHARGE?",
+   "red": [
+    "CHARGE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "mirror",
+       "chairs:3"
+      ],
+      "light": "bulb",
+      "shadows": 3,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "beard": "long",
+        "coat": "tunic",
+        "hairc": "#2a2420",
+        "beardc": "#2a2420"
+       },
+       "at": [
+        -1.6,
+        -2.3
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "checklist",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "head": "Police reports",
+      "items": [
+       "Drinking",
+       "Brawls",
+       "Favours"
+      ]
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "chairs:4"
+      ],
+      "light": "bulb",
+      "dies": 0.85,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "shadows": 1,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "full",
+        "coat": "robe"
+       },
+       "pose": "desk",
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE MONARCHY FELL ANYWAY.",
+   "red": [
+    "FELL"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "amb": 0.2,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "glitch",
+      "punch"
+     ],
+     "p": {
+      "value": "3",
+      "label": "gunshots, according to the autopsy"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "portrait"
+      ],
+      "light": "bulb",
+      "dies": 0.7,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "stamp": 1,
+      "light": "bulb",
+      "amb": 0.2,
+      "cam": "down",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "coat": "suit",
+        "tie": "#2b2b30"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

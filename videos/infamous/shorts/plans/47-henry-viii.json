@@ -1,0 +1,330 @@
+{
+ "id": "47-henry-viii",
+ "say": {
+  "Seymour": "Seemor"
+ },
+ "scenes": [
+  {
+   "text": "11 DAYS LATER, HE REMARRIED.",
+   "red": [
+    "REMARRIED"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#b8bcc0",
+      "light": "bulb",
+      "amb": 0.3,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "bulb",
+      "amb": 0.3,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "hat": "tudor",
+        "beard": "full",
+        "beardc": "#b5652b",
+        "coat": "fur",
+        "round": 1,
+        "frown": 1,
+        "medals": 3
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "candles"
+      ],
+      "light": "bulb",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "stat",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "value": "11 DAYS",
+      "label": "from Anne Boleyn's execution to the king's next wedding"
+     }
+    }
+   ]
+  },
+  {
+   "text": "ONE CHILD SURVIVED. A DAUGHTER.",
+   "red": [
+    "DAUGHTER"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "bed"
+      ],
+      "light": "bulb",
+      "amb": 0.3,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "hat": "tudor",
+        "coat": "fur"
+       },
+       "at": [
+        0.6,
+        -1.2
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "throne",
+     "fx": [
+      "glitch"
+     ],
+     "p": {}
+    },
+    {
+     "d": 5,
+     "scene": "icons",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "total": 6,
+      "per": 1,
+      "red": 1,
+      "cols": 6,
+      "label": "at least six pregnancies · one surviving child"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "light": "bulb",
+      "amb": 0.25,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "hat": "tudor",
+        "beard": "full",
+        "beardc": "#b5652b",
+        "coat": "fur",
+        "round": 1,
+        "frown": 1,
+        "medals": 3
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "SO HE BROKE WITH ROME.",
+   "red": [
+    "ROME"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "versus",
+     "fx": [
+      "punch",
+      "shake"
+     ],
+     "p": {
+      "left": "Henry VIII",
+      "right": "Pope Clement VII",
+      "mid": "ANNUL?"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "close",
+      "light": "bulb",
+      "amb": 0.3,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "coat": "black",
+        "tie": 0
+       },
+       "pose": "lean",
+       "at": [
+        0.8,
+        -1.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "chairs:1",
+       "bars"
+      ],
+      "light": "bulb",
+      "dies": 0.8,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "value": "800+",
+      "label": "religious houses closed"
+     }
+    }
+   ]
+  },
+  {
+   "text": "HISTORY REMEMBERS HIS DAUGHTER.",
+   "red": [
+    "DAUGHTER"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "checklist",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "head": "Six wives",
+      "items": [
+       "Two annulled",
+       "Two beheaded",
+       "One died",
+       "One survived him"
+      ]
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "bed"
+      ],
+      "light": "bulb",
+      "dies": 0.8,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "bust",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "name": "Elizabeth I",
+      "years": "1533 – 1603",
+      "role": "Daughter of Henry VIII and Anne Boleyn. Queen, 1558 – 1603.",
+      "hair": "curly",
+      "hairc": "#b5652b",
+      "hat": "crown",
+      "coat": "robe"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#b8bcc0",
+      "light": "bulb",
+      "amb": 0.3,
+      "cam": "still"
+     }
+    }
+   ]
+  }
+ ]
+}

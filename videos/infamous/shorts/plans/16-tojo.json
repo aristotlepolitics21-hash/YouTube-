@@ -1,0 +1,299 @@
+{
+ "id": "16-tojo",
+ "say": {
+  "Tojo": "Tohjoh"
+ },
+ "scenes": [
+  {
+   "text": "THEY SAVED HIM FOR TRIAL.",
+   "red": [
+    "TRIAL"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "cam": "push",
+      "doorc": "#f4ecd8"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "light": "cold",
+      "shadows": 3,
+      "cam": "face",
+      "fig": {
+       "pose": "sit",
+       "at": [
+        0,
+        -0.4
+       ],
+       "look": {
+        "hair": "bald",
+        "stache": "thin",
+        "glasses": "round",
+        "coat": "shirt"
+       }
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "smash",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "cam": "down",
+      "floor": "#5a5038"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "bed"
+      ],
+      "light": "cold",
+      "amb": 0.7,
+      "cam": "push",
+      "fig": {
+       "turnTo": 1,
+       "at": [
+        0.6,
+        -1.0
+       ],
+       "look": {
+        "hair": "bald",
+        "stache": "thin",
+        "glasses": "round",
+        "coat": "shirt"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE REFUSED.",
+   "red": [
+    "REFUSED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "red",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "decree",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "title": "Field Service Code",
+      "lines": [
+       "Do not live to suffer",
+       "the shame of being taken prisoner"
+      ],
+      "date": "January 1941"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "timeline",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "events": [
+       [
+        "US oil embargo, Aug 1941",
+        0.15
+       ],
+       [
+        "Talks stall over China",
+        0.5
+       ],
+       [
+        "Tojo prime minister, Oct 1941",
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "chairs:1"
+      ],
+      "shadows": 2,
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "still"
+     }
+    }
+   ]
+  },
+  {
+   "text": "27% OF PRISONERS DIED.",
+   "red": [
+    "DIED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "city",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "planes": 1
+     }
+    },
+    {
+     "d": 3,
+     "scene": "stat",
+     "fx": [
+      "shake",
+      "punch"
+     ],
+     "p": {
+      "value": "2,400+",
+      "label": "Americans killed at Pearl Harbor"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "stat",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.43
+     ],
+     "p": {
+      "value": "27%",
+      "label": "of Western prisoners held by Japan died"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "portrait"
+      ],
+      "shadows": 3,
+      "light": "bulb",
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "MANY HANDS. ONE FACE.",
+   "red": [
+    "FACE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "chairs:6"
+      ],
+      "light": "bulb",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "throne",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "night": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "inquiry",
+     "fx": [
+      "shake",
+      "smash"
+     ],
+     "p": {}
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "cam": "push",
+      "doorc": "#f4ecd8"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,319 @@
+{
+ "id": "12-kim-jong-un",
+ "say": {
+  "Kuala Lumpur": "Kwahla Loompoor",
+  "VX": "V X",
+  "Pyongyang": "Pyong Yang"
+ },
+ "scenes": [
+  {
+   "text": "THEY LED HIS UNCLE OUT.",
+   "red": [
+    "UNCLE"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "tv",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "text": "State television · December 2013",
+      "speaker": 0
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.55
+     ],
+     "p": {
+      "props": [
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "at": [
+       0,
+       0.5,
+       -1
+      ],
+      "from": [
+       0,
+       1.3,
+       2.6
+      ],
+      "fig": {
+       "yaw": 180,
+       "at": [
+        1.0,
+        -1.8
+       ],
+       "look": {
+        "hair": "back",
+        "hairc": "#9a9a92",
+        "coat": "mao"
+       }
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "people",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "n": 12,
+      "pose": "look",
+      "night": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "light": "dark",
+      "cam": "face",
+      "fig": {
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ],
+       "look": {
+        "hair": "crop",
+        "coat": "mao",
+        "round": 1
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "NO EXPERIENCE. FOUR STARS.",
+   "red": [
+    "STARS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "bulb",
+      "amb": 0.5,
+      "cam": "low",
+      "fig": {
+       "yaw": 180,
+       "at": [
+        0,
+        -1.2
+       ],
+       "look": {
+        "hair": "crop",
+        "coat": "mao",
+        "round": 1
+       }
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "coats:6"
+      ],
+      "light": "bulb",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "light": "red",
+      "cam": "push",
+      "fig": {
+       "pose": "stand",
+       "at": [
+        0,
+        -0.8
+       ],
+       "look": {
+        "hair": "crop",
+        "coat": "military",
+        "medals": 4,
+        "round": 1
+       }
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "portrait",
+       "candles"
+      ],
+      "light": "cold",
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "INSTEAD, HE MADE IT ABSOLUTE.",
+   "red": [
+    "ABSOLUTE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "bunker",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 1
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "portrait"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "suitcases:1"
+      ],
+      "light": "bulb",
+      "amb": 0.6,
+      "cam": "low"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "value": "DENIED",
+      "label": "Pyongyang's answer"
+     }
+    }
+   ]
+  },
+  {
+   "text": "CRIMES AGAINST HUMANITY · UN, 2014",
+   "red": [
+    "CRIMES"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "stat",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "value": "4",
+      "label": "nuclear tests under Kim Jong-un"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "title": "UN Commission of Inquiry",
+      "lines": [
+       "Crimes against humanity",
+       "80,000 – 120,000 political prisoners"
+      ],
+      "date": "February 2014"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "bars"
+      ],
+      "light": "bulb",
+      "dies": 0.7,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "light": "bulb",
+      "cam": "low"
+     }
+    }
+   ]
+  }
+ ]
+}

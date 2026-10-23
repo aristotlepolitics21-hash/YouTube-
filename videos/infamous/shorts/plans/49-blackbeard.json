@@ -1,0 +1,292 @@
+{
+ "id": "49-blackbeard",
+ "say": {
+  "Ocracoke": "Okra-coke"
+ },
+ "scenes": [
+  {
+   "text": "ONLY ABOUT TWO YEARS.",
+   "red": [
+    "TWO",
+    "YEARS"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "fleet",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 2
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "amb": 0.25,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "beard": "long",
+        "hat": "tricorn",
+        "coat": "black",
+        "tie": 0,
+        "hairc": "#151515",
+        "beardc": "#151515"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "fleet",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "n": 2,
+      "cannon": 1
+     }
+    },
+    {
+     "d": 5,
+     "scene": "fleet",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "n": 1
+     }
+    }
+   ]
+  },
+  {
+   "text": "NO RECORDED KILLING BEFORE HIS LAST FIGHT.",
+   "red": [
+    "KILLING"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "bust",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "name": "Edward Teach",
+      "years": "c. 1680 – 1718",
+      "role": "Known as Blackbeard. Pirate captain, c. 1716 – 1718.",
+      "hair": "long",
+      "beard": "long",
+      "hat": "tricorn",
+      "coat": "black",
+      "tie": 0
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "light": "red",
+      "amb": 0.45,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "beard": "long",
+        "hat": "tricorn",
+        "coat": "black",
+        "tie": 0,
+        "hairc": "#151515",
+        "beardc": "#151515"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "fleet",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 2,
+      "pirate": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "flash",
+      "smash"
+     ],
+     "p": {
+      "value": "0",
+      "label": "reliable records of him killing anyone before his last fight"
+     }
+    }
+   ]
+  },
+  {
+   "text": "NOT GOLD. MEDICINE.",
+   "red": [
+    "MEDICINE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "shoes:30"
+      ],
+      "light": "bulb",
+      "swing": 1,
+      "amb": 0.3,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "date",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "date": "1717",
+      "place": "La Concorde becomes Queen Anne's Revenge"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "fleet",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 4,
+      "pirate": 1,
+      "cannon": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "freeze",
+      "glitch"
+     ],
+     "circle": [
+      0.5,
+      0.45
+     ],
+     "p": {
+      "title": "Ransom demand",
+      "lines": [
+       "One chest of medicines"
+      ],
+      "date": "Charleston, May 1718"
+     }
+    }
+   ]
+  },
+  {
+   "text": "NO TREASURE CHEST. EVER.",
+   "red": [
+    "TREASURE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "light": "bulb",
+      "flicker": 1,
+      "amb": 0.35,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hat": "tricorn",
+        "hair": "crop",
+        "coat": "military"
+       },
+       "at": [
+        0,
+        -1.6
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "quote",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "text": "Fourteen wives. Buried treasure.",
+      "who": "A General History of the Pyrates, 1724"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "suitcases:1"
+      ],
+      "light": "cold",
+      "amb": 0.3,
+      "floor": "#8a8070",
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "fleet",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "n": 2
+     }
+    }
+   ]
+  }
+ ]
+}

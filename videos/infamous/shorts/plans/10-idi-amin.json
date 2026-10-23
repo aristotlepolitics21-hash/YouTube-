@@ -1,0 +1,329 @@
+{
+ "id": "10-idi-amin",
+ "say": {
+  "Amin": "Ahmeen"
+ },
+ "scenes": [
+  {
+   "text": "GOD TOLD HIM IN A DREAM.",
+   "red": [
+    "DREAM"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "radio"
+      ],
+      "light": "red",
+      "cam": "face",
+      "fig": {
+       "pose": "speech",
+       "at": [
+        0,
+        -0.4
+       ],
+       "look": {
+        "hair": "crop",
+        "coat": "military",
+        "round": 1
+       }
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "door",
+       "chairs:1"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push",
+      "doorc": "#d8dce0"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "suitcases:14"
+      ],
+      "light": "bulb",
+      "amb": 0.5,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "props": [
+       "radio"
+      ],
+      "light": "red",
+      "cam": "face",
+      "fig": {
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ],
+       "look": {
+        "hair": "crop",
+        "coat": "military",
+        "round": 1
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE COOK NOBODY PROSECUTED.",
+   "red": [
+    "PROSECUTED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "light": "bulb",
+      "swing": 1,
+      "cam": "push",
+      "fig": {
+       "pose": "headDown",
+       "at": [
+        0,
+        -0.8
+       ],
+       "look": {
+        "hair": "crop",
+        "coat": "shirt",
+        "round": 1
+       }
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "low",
+      "fig": {
+       "pose": "point",
+       "at": [
+        0,
+        -0.8
+       ],
+       "look": {
+        "hair": "crop",
+        "coat": "shirt",
+        "round": 1
+       }
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "stamp": 1,
+      "light": "bulb",
+      "dies": 0.7,
+      "cam": "down"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "army",
+     "fx": [
+      "ramp"
+     ],
+     "p": {}
+    }
+   ]
+  },
+  {
+   "text": "THEN THE CARS CAME AT NIGHT.",
+   "red": [
+    "NIGHT"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "city",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "night": 1,
+      "tanks": 1
+     }
+    },
+    {
+     "d": 3,
+     "scene": "people",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "n": 12,
+      "pose": "up",
+      "night": 1
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "chairs:1",
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.62
+     ],
+     "p": {
+      "props": [
+       "door",
+       "shoes:2"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "NEVER TRIED.",
+   "red": [
+    "TRIED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "pose": "stand",
+       "at": [
+        0,
+        -0.8
+       ],
+       "look": {
+        "hair": "crop",
+        "coat": "military",
+        "hat": "peak",
+        "medals": 8,
+        "round": 1,
+        "frown": 1
+       }
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "value": "100,000 – 500,000",
+      "label": "Ugandans killed, human rights groups estimate"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "shake",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "chairs:1",
+       "window"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "shadows": 2,
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "bed"
+      ],
+      "light": "cold",
+      "dies": 0.6,
+      "cam": "still"
+     }
+    }
+   ]
+  }
+ ]
+}
