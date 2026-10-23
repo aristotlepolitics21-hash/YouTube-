@@ -1,0 +1,354 @@
+{
+ "id": "02-stalin",
+ "say": {},
+ "scenes": [
+  {
+   "text": "TOO AFRAID TO OPEN THE DOOR.",
+   "red": [
+    "AFRAID"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "light": "bulb",
+      "amb": 0.45,
+      "cam": "low"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "coat": "military",
+        "hat": "peak",
+        "band": "#2a3346",
+        "stache": "thin"
+       },
+       "at": [
+        0,
+        -0.4
+       ],
+       "yaw": 40
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "door",
+       "chairs:1"
+      ],
+      "door": "open",
+      "doorc": "#e8c878",
+      "light": "cold",
+      "amb": 0.6,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "camp",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "snow": 1
+     }
+    }
+   ]
+  },
+  {
+   "text": "IT SOUNDED LIKE A CLERK'S JOB.",
+   "red": [
+    "CLERK'S"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "candles"
+      ],
+      "light": "dark",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "full",
+        "coat": "black"
+       },
+       "yaw": 180,
+       "at": [
+        0,
+        -1.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "title",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "title": "STALIN",
+      "sub": "born Ioseb Jughashvili \u00b7 'man of steel'",
+      "art": "camp",
+      "artp": {
+       "snow": 1
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "portrait"
+      ],
+      "stamp": 1,
+      "light": "bulb",
+      "cam": "dolly",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "stache": "big",
+        "coat": "grey",
+        "hairc": "#6a6a64",
+        "beardc": "#6a6a64"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "light": "bulb",
+      "dies": 0.8,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "stache": "big",
+        "coat": "grey",
+        "hairc": "#6a6a64",
+        "beardc": "#6a6a64"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "ARRESTS. BY QUOTA.",
+   "red": [
+    "QUOTA"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "bed"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "bald",
+        "beard": "goatee",
+        "stache": "thin",
+        "coat": "shirt"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "field",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "famine": 1,
+      "village": 1,
+      "guard": 1,
+      "n": 4
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "value": "680,000",
+      "label": "shot in the Great Terror, 1937 \u2013 1938"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "stamp": 1,
+      "light": "bulb",
+      "dies": 0.75,
+      "cam": "down",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "stache": "big",
+        "coat": "grey",
+        "hairc": "#6a6a64",
+        "beardc": "#6a6a64"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "18,000,000 THROUGH THE GULAG",
+   "red": [
+    "GULAG"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "camp",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "snow": 1,
+      "night": 0
+     }
+    },
+    {
+     "d": 4,
+     "scene": "army",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "tanks": 1,
+      "rows": 3
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "portrait",
+       "chairs:3"
+      ],
+      "light": "bulb",
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "light": "bulb",
+      "amb": 0.45,
+      "cam": "low",
+      "fig": {
+       "look": {
+        "coat": "military",
+        "hat": "peak",
+        "band": "#2a3346",
+        "hair": "crop"
+       },
+       "pose": "point",
+       "yaw": 180,
+       "at": [
+        0.5,
+        -1.8
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

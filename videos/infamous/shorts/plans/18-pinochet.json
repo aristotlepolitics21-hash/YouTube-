@@ -1,0 +1,325 @@
+{
+ "id": "18-pinochet",
+ "say": {
+  "Allende": "Ah-yen-day",
+  "DINA": "Deena"
+ },
+ "scenes": [
+  {
+   "text": "HE CHOSE THE GENERAL HIMSELF.",
+   "red": [
+    "GENERAL"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "city",
+     "fx": [
+      "flash",
+      "shake"
+     ],
+     "p": {
+      "state": "fire",
+      "planes": 1,
+      "seed": 4
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "radio",
+       "chairs:1"
+      ],
+      "light": "red",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "glitch",
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.46
+     ],
+     "p": {
+      "props": [
+       "portrait"
+      ],
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "stache": "thin",
+        "hat": "peak",
+        "glasses": "dark",
+        "coat": "military",
+        "medals": 4,
+        "frown": 1
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 9
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE TRUSTED HIM.",
+   "red": [
+    "TRUSTED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "shadows": 1,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "stache": "thin",
+        "coat": "military"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "paper",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "mast": "SANTIAGO",
+      "head": "Chile in crisis",
+      "sub": "Strikes, shortages and queues",
+      "date": "1973"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "stache": "thin",
+        "hat": "peak",
+        "coat": "military",
+        "medals": 2
+       },
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "bunker",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "n": 4
+     }
+    }
+   ]
+  },
+  {
+   "text": "THEY CALLED THEM THE DISAPPEARED.",
+   "red": [
+    "DISAPPEARED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "chairs:18"
+      ],
+      "light": "cold",
+      "amb": 0.3,
+      "cam": "down"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "close",
+      "doorc": "#e8dcc0",
+      "light": "bulb",
+      "dies": 0.75,
+      "amb": 0.3,
+      "cam": "low"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "chairs:1",
+       "window"
+      ],
+      "light": "cold",
+      "amb": 0.4,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "people",
+     "fx": [
+      "ramp",
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.45
+     ],
+     "p": {
+      "n": 8,
+      "night": 1,
+      "pose": "look"
+     }
+    }
+   ]
+  },
+  {
+   "text": "NEVER CONVICTED. STILL SEARCHING.",
+   "red": [
+    "CONVICTED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "ballot",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "value": "56% NO",
+      "label": "Chile's 1988 vote on his rule"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "cold",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "stache": "thin",
+        "hairc": "#9a9a92",
+        "beardc": "#9a9a92",
+        "coat": "suit",
+        "tie": "#2b2b30"
+       },
+       "pose": "sit",
+       "yaw": 40,
+       "at": [
+        -0.3,
+        -0.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "candles"
+      ],
+      "light": "dark",
+      "dies": 0.7,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "people",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "n": 10,
+      "night": 1,
+      "pose": "mourn"
+     }
+    }
+   ]
+  }
+ ]
+}

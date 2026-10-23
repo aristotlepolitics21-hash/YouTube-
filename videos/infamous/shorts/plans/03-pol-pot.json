@@ -1,0 +1,303 @@
+{
+ "id": "03-pol-pot",
+ "say": {
+  "Angkar": "Ongkar"
+ },
+ "scenes": [
+  {
+   "text": "A WHOLE CITY. EMPTIED IN HOURS.",
+   "red": [
+    "EMPTIED"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "people",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 10,
+      "pose": "up"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "coat": "black",
+        "hat": "cap",
+        "hatc": "#1c1b19"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "radio",
+       "chairs:2"
+      ],
+      "light": "cold",
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "state": "normal",
+      "night": 1,
+      "seed": 5
+     }
+    }
+   ]
+  },
+  {
+   "text": "A RULER WITHOUT A FACE.",
+   "red": [
+    "FACE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "chairs:6"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "round": 1,
+        "coat": "shirt"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -1.6
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "window",
+       "mirror"
+      ],
+      "light": "bulb",
+      "amb": 0.5,
+      "cam": "still",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "round": 1,
+        "coat": "suit"
+       },
+       "yaw": 120,
+       "at": [
+        -1.3,
+        -1.9
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "jungle",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "night": 1,
+      "n": 5
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "title": "ANGKAR",
+      "lines": [
+       "'The Organisation'",
+       "Its leaders were not named"
+      ],
+      "date": "Democratic Kampuchea \u00b7 1976"
+     }
+    }
+   ]
+  },
+  {
+   "text": "TO LOSE YOU IS NO LOSS.",
+   "red": [
+    "LOSS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#cfd6dc",
+      "light": "bulb",
+      "amb": 0.45,
+      "cam": "low"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "date",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "date": "YEAR ZERO",
+      "place": "Cambodia \u00b7 17 April 1975"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "field",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "guard": 1,
+      "n": 9
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "chairs:6"
+      ],
+      "light": "bulb",
+      "cam": "down"
+     }
+    }
+   ]
+  },
+  {
+   "text": "NEARLY 1 IN 4 \u00b7 NEVER TRIED",
+   "red": [
+    "NEVER",
+    "TRIED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "cell",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "night": 1,
+      "label": "S-21 \u00b7 Tuol Sleng \u00b7 Phnom Penh"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "value": "2,000,000",
+      "label": "up to two million dead \u00b7 nearly one Cambodian in four"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.46
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "hairc": "#9a9a92",
+        "round": 1,
+        "coat": "shirt"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "people",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "n": 10,
+      "pose": "up"
+     }
+    }
+   ]
+  }
+ ]
+}

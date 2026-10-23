@@ -1,0 +1,299 @@
+{
+ "id": "08-bin-laden",
+ "say": {
+  "bin Laden": "bin Lahden",
+  "Bin Laden": "Bin Lahden",
+  "al-Qaeda": "al-Kyda",
+  "Qaeda": "Kyda"
+ },
+ "scenes": [
+  {
+   "text": "2,977 KILLED IN ONE MORNING.",
+   "red": [
+    "KILLED"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "date",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "date": "8:46 a.m.",
+      "place": "Tuesday \u00b7 11 September 2001"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "city",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "state": "normal",
+      "seed": 5
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "phone",
+       "window"
+      ],
+      "light": "cold",
+      "amb": 0.6,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "wall": "#4a4034",
+      "floor": "#3a3026",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "beard": "long",
+        "beardc": "#77766a",
+        "hat": "turban",
+        "coat": "tunic"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE CALLED IT A DUTY.",
+   "red": [
+    "DUTY"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "light": "red",
+      "cam": "low",
+      "fig": {
+       "look": {
+        "hair": "full",
+        "coat": "tunic",
+        "hat": "kufi",
+        "h": 0.85
+       },
+       "at": [
+        0,
+        -1.5
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "phone"
+      ],
+      "light": "bulb",
+      "swing": 1,
+      "shadows": 2,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "light": "bulb",
+      "shadows": 4,
+      "wall": "#6a5a48",
+      "floor": "#4a4034",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "freeze",
+      "smash"
+     ],
+     "circle": [
+      0.5,
+      0.45
+     ],
+     "p": {
+      "title": "Statement",
+      "lines": [
+       "To kill the Americans",
+       "and their allies,",
+       "civilians and military,",
+       "is a duty"
+      ],
+      "date": "23 February 1998"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THEY MISSED SEVERAL CHANCES.",
+   "red": [
+    "MISSED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "stat",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "value": "224",
+      "label": "killed at two US embassies in East Africa \u00b7 August 1998"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "typewriter",
+       "coats:4"
+      ],
+      "light": "bulb",
+      "dies": 0.7,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "tv",
+     "fx": [
+      "ramp",
+      "smash"
+     ],
+     "p": {
+      "text": "2004 \u00b7 he admits ordering the attacks"
+     }
+    }
+   ]
+  },
+  {
+   "text": "HIDDEN IN PLAIN SIGHT.",
+   "red": [
+    "HIDDEN"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "bed"
+      ],
+      "light": "cold",
+      "amb": 0.6,
+      "wall": "#4a4034",
+      "floor": "#3a3026",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "state": "normal",
+      "night": 1,
+      "seed": 7
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "shake",
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "bulb",
+      "dies": 0.6,
+      "shadows": 3,
+      "cam": "low"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "memorial",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "n": 2977,
+      "date": "New York \u00b7 every September"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,312 @@
+{
+ "id": "20-gaddafi",
+ "say": {
+  "Sirte": "Seert",
+  "Abu Salim": "Abu Saleem"
+ },
+ "scenes": [
+  {
+   "text": "42 YEARS IN POWER. ONE PIPE.",
+   "red": [
+    "PIPE"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "light": "dark",
+      "flicker": 1,
+      "amb": 0.25,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "wild",
+        "hairc": "#4a4a44",
+        "coat": "black",
+        "frown": 1
+       },
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.4
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#f2e8c8",
+      "light": "bulb",
+      "amb": 0.5,
+      "shadows": 3,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "portrait"
+      ],
+      "light": "bulb",
+      "wall": "#5a4a30",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "curly",
+        "coat": "khaki"
+       },
+       "pose": "sit",
+       "at": [
+        0,
+        -1.0
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "cold",
+      "amb": 0.4,
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "NO OFFICE. ALL THE POWER.",
+   "red": [
+    "POWER"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "army",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "tanks": 1,
+      "rows": 1
+     }
+    },
+    {
+     "d": 3,
+     "scene": "city",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "seed": 4
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "chairs:12"
+      ],
+      "light": "bulb",
+      "amb": 0.5,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "wild",
+        "glasses": "dark",
+        "coat": "robe"
+       },
+       "pose": "speech",
+       "at": [
+        0,
+        -2.1
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.46
+     ],
+     "p": {
+      "props": [
+       "chairs:6"
+      ],
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "wild",
+        "glasses": "dark",
+        "coat": "military",
+        "medals": 8
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "270 DEAD. THEN THEY CAME TO VISIT.",
+   "red": [
+    "VISIT"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "city",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 7
+     }
+    },
+    {
+     "d": 3,
+     "scene": "stat",
+     "fx": [
+      "flash",
+      "punch"
+     ],
+     "p": {
+      "value": "270",
+      "label": "killed: Pan Am 103, Lockerbie, 1988"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "bars",
+       "bed"
+      ],
+      "light": "bulb",
+      "dies": 0.8,
+      "amb": 0.35,
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "versus",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "lcoat": "suit",
+      "rcoat": "robe",
+      "mid": ""
+     }
+    }
+   ]
+  },
+  {
+   "text": "HOUSE BY HOUSE. ALLEY BY ALLEY.",
+   "red": [
+    "ALLEY"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "people",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 10,
+      "pose": "up",
+      "red": 3
+     }
+    },
+    {
+     "d": 4,
+     "scene": "tv",
+     "fx": [
+      "glitch",
+      "shake"
+     ],
+     "p": {
+      "text": "\"Inch by inch. House by house. Alley by alley.\""
+     }
+    },
+    {
+     "d": 4,
+     "scene": "army",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "planes": 1,
+      "tanks": 1,
+      "rows": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "cold",
+      "flicker": 1,
+      "amb": 0.4,
+      "cam": "push"
+     }
+    }
+   ]
+  }
+ ]
+}

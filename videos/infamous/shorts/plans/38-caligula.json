@@ -1,0 +1,368 @@
+{
+ "id": "38-caligula",
+ "say": {
+  "Caligula": "Caligyoola",
+  "Tacitus": "Tassitus"
+ },
+ "scenes": [
+  {
+   "text": "HIS OWN GUARD WAS WAITING.",
+   "red": [
+    "GUARD"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "close",
+      "light": "bulb",
+      "cam": "low",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "hat": "laurel",
+        "coat": "robe",
+        "sash": "#a3291f"
+       },
+       "at": [
+        0,
+        -1.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hat": "helmet",
+        "coat": "armour"
+       },
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "dies": 0.8,
+      "cam": "low"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "bust",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "name": "Caligula",
+      "years": "AD 12 – 41",
+      "role": "Emperor of Rome for 3 years and 10 months. Killed at twenty-eight.",
+      "hair": "crop",
+      "hat": "laurel",
+      "coat": "robe",
+      "sash": "#a3291f"
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE SURVIVED BY STAYING SILENT.",
+   "red": [
+    "SILENT"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "light": "red",
+      "flicker": 1,
+      "shadows": 3,
+      "cam": "low",
+      "fig": {
+       "look": {
+        "h": 0.72,
+        "hair": "crop",
+        "coat": "military"
+       },
+       "at": [
+        0,
+        -0.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "h": 0.72,
+        "hair": "crop",
+        "coat": "military"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "chairs:4"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "throne",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "crown": 0,
+      "night": 1,
+      "label": "Capri · AD 31 – 37"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE HORSE? IT NEVER HAPPENED.",
+   "red": [
+    "NEVER",
+    "HAPPENED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "podium",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "night": 0,
+      "cheer": 1,
+      "banners": 2,
+      "bannerc": "#8a1f17",
+      "label": "Rome · AD 37"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash",
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "window"
+      ],
+      "light": "cold",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "hat": "laurel",
+        "coat": "robe",
+        "sash": "#a3291f"
+       },
+       "pose": "sitSlump",
+       "at": [
+        0.4,
+        -1.2
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "chairs:12"
+      ],
+      "light": "cold",
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "freeze",
+      "glitch"
+     ],
+     "circle": [
+      0.5,
+      0.35
+     ],
+     "p": {
+      "title": "CONSUL?",
+      "lines": [
+       "The emperor's racehorse",
+       "Never made consul"
+      ],
+      "date": "It never happened"
+     }
+    }
+   ]
+  },
+  {
+   "text": "MAD? OR WRITTEN THAT WAY?",
+   "red": [
+    "MAD",
+    "WRITTEN"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "red",
+      "flicker": 1,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hat": "helmet",
+        "coat": "armour",
+        "beard": "stubble",
+        "frown": 1,
+        "hairc": "#9a9a92"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "timeline",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "events": [
+       [
+        "Caligula dies · AD 41",
+        0
+       ],
+       [
+        "Tacitus · lost",
+        0.38
+       ],
+       [
+        "Suetonius · c. 121",
+        0.42
+       ],
+       [
+        "Cassius Dio · c. 230",
+        1
+       ]
+      ]
+     }
+    },
+    {
+     "d": 4,
+     "scene": "ruler",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "cape": 1,
+      "pose": "point",
+      "label": "his statues recarved"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "cam": "push"
+     }
+    }
+   ]
+  }
+ ]
+}

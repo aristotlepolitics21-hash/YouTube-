@@ -1,0 +1,330 @@
+{
+ "id": "27-al-baghdadi",
+ "say": {
+  "Mosul": "Mowsul",
+  "Samarra": "Samahra",
+  "Quranic": "Koranic",
+  "Bucca": "Booka",
+  "Sinjar": "Sinjar",
+  "Yazidis": "Yazeedeez"
+ },
+ "scenes": [
+  {
+   "text": "NOBODY KNEW HIS FACE.",
+   "red": [
+    "FACE"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "low",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "full",
+        "hat": "turban",
+        "hatc": "#1c1b19",
+        "coat": "#1c1b19",
+        "frown": 1
+       },
+       "yaw": 180,
+       "at": [
+        0,
+        -1.2
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "full",
+        "hat": "turban",
+        "hatc": "#1c1b19",
+        "coat": "#1c1b19",
+        "frown": 1
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.6
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "tv",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "text": "Mosul \u00b7 4 July 2014"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 7
+     }
+    }
+   ]
+  },
+  {
+   "text": "THEY HAD HIM. THEY LET HIM GO.",
+   "red": [
+    "LET",
+    "GO"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "dolly",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "stubble",
+        "hat": "kufi",
+        "coat": "shirt"
+       },
+       "pose": "headDown",
+       "at": [
+        0,
+        -0.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "portrait"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "stubble",
+        "hat": "kufi",
+        "coat": "shirt"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "camp",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 30
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "title": "Camp Bucca \u00b7 Release",
+      "lines": [
+       "Detainee: Ibrahim al-Badri",
+       "Assessed: low-level threat",
+       "Released"
+      ],
+      "date": "2004"
+     }
+    }
+   ]
+  },
+  {
+   "text": "A UN COMMISSION FOUND GENOCIDE.",
+   "red": [
+    "GENOCIDE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "cell",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "pose": "stand",
+      "coat": "prison"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "state": "normal",
+      "seed": 4
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "door",
+       "shoes:3"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "dies": 0.8,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "punch",
+      "glitch"
+     ],
+     "p": {
+      "title": "UN Commission of Inquiry on Syria",
+      "lines": [
+       "\"They came to destroy\"",
+       "ISIS crimes against the Yazidis",
+       "Finding: genocide"
+      ],
+      "date": "15 June 2016"
+     }
+    }
+   ]
+  },
+  {
+   "text": "IT HELD ITS CITIES BARELY THREE YEARS.",
+   "red": [
+    "THREE",
+    "YEARS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "city",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "state": "ruin",
+      "seed": 7
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#ff3a2a",
+      "light": "red",
+      "amb": 0.5,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash",
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#f2e8c8",
+      "light": "bulb",
+      "dies": 0.7,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "low",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "full",
+        "hat": "turban",
+        "hatc": "#1c1b19",
+        "coat": "#1c1b19",
+        "frown": 1
+       },
+       "yaw": 180,
+       "at": [
+        0,
+        -1.2
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,308 @@
+{
+ "id": "37-nero",
+ "say": {
+  "Antium": "Antee um",
+  "Tacitus": "Tassitus"
+ },
+ "scenes": [
+  {
+   "text": "HE DIDN'T FIDDLE.",
+   "red": [
+    "FIDDLE"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "suitcases:8"
+      ],
+      "light": "red",
+      "flicker": 1,
+      "amb": 0.8,
+      "cam": "push",
+      "floor": "#4a4038"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "state": "fire",
+      "label": "Rome · July AD 64"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.43
+     ],
+     "p": {
+      "value": "10 OF 14",
+      "label": "districts of Rome destroyed or ruined · Tacitus"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "light": "red",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "curly",
+        "hat": "laurel",
+        "coat": "robe"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE HAD HIS OWN MOTHER KILLED.",
+   "red": [
+    "MOTHER"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "bunker",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "n": 5,
+      "label": "a palace dinner · AD 55"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "fleet",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "n": 1,
+      "label": "the Bay of Naples · AD 59"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "window",
+       "door"
+      ],
+      "light": "bulb",
+      "shadows": 3,
+      "dies": 0.75,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.45
+     ],
+     "p": {
+      "props": [
+       "mirror"
+      ],
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "curly",
+        "hat": "laurel",
+        "coat": "robe",
+        "frown": 1
+       },
+       "pose": "sit",
+       "at": [
+        0,
+        -0.6
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE NEEDED SOMEONE TO BLAME.",
+   "red": [
+    "BLAME"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "riders",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 1,
+      "bow": 0,
+      "label": "from Antium to Rome · AD 64"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "people",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 12,
+      "pose": "walk",
+      "night": 1,
+      "label": "Nero's gardens, opened to the homeless"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "freeze",
+      "glitch"
+     ],
+     "circle": [
+      0.5,
+      0.35
+     ],
+     "p": {
+      "title": "CHRISTIANS",
+      "lines": [
+       "blamed for the fire",
+       "according to Tacitus"
+      ],
+      "date": "AD 64"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "light": "red",
+      "amb": 0.6,
+      "dies": 0.6,
+      "shadows": 5,
+      "cam": "push",
+      "floor": "#6a5a40",
+      "wall": "#4a4038"
+     }
+    }
+   ]
+  },
+  {
+   "text": "WRITTEN BY HIS ENEMIES.",
+   "red": [
+    "ENEMIES"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "inquiry",
+     "fx": [
+      "punch",
+      "shake"
+     ],
+     "p": {
+      "label": "ENEMY OF THE STATE · AD 68"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "swing": 1,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "timeline",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "events": [
+       [
+        "Nero dies · AD 68",
+        0
+       ],
+       [
+        "Tacitus · c. 116",
+        0.32
+       ],
+       [
+        "Suetonius · c. 121",
+        0.36
+       ],
+       [
+        "Cassius Dio · c. 230",
+        1
+       ]
+      ]
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "suitcases:8"
+      ],
+      "light": "red",
+      "flicker": 1,
+      "amb": 0.8,
+      "cam": "push",
+      "floor": "#4a4038"
+     }
+    }
+   ]
+  }
+ ]
+}

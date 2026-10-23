@@ -1,0 +1,357 @@
+{
+ "id": "19-mugabe",
+ "say": {
+  "Mugabe": "Moo-gah-bee",
+  "Zimbabwe": "Zim-bahbway",
+  "Gukurahundi": "Goo-koo-ra-hoondee",
+  "Matabeleland": "Matta-beely-land"
+ },
+ "scenes": [
+  {
+   "text": "HAILED AS A STATESMAN.",
+   "red": [
+    "STATESMAN"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "date",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "date": "18 April 1980",
+      "place": "Midnight: Zimbabwe is born"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "glasses": "square",
+        "stache": "brush",
+        "coat": "suit"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "chairs:6"
+      ],
+      "light": "bulb",
+      "amb": 0.5,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "glasses": "square",
+        "stache": "brush",
+        "coat": "suit",
+        "tie": "#2b2b30",
+        "hairc": "#9a9a92",
+        "beardc": "#9a9a92",
+        "frown": 1
+       },
+       "pose": "speech",
+       "at": [
+        0,
+        -1.9
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "timeline",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "events": [
+       [
+        "1980",
+        0
+       ],
+       [
+        "1987",
+        0.2
+       ],
+       [
+        "2000",
+        0.54
+       ],
+       [
+        "2008",
+        0.76
+       ],
+       [
+        "2017",
+        1
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE RAIN THAT WASHES AWAY THE CHAFF.",
+   "red": [
+    "RAIN"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "decree",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "title": "Fifth Brigade",
+      "lines": [
+       "North Korean-trained",
+       "Sent into Matabeleland"
+      ],
+      "date": "1983"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "light": "bulb",
+      "swing": 1,
+      "shadows": 4,
+      "amb": 0.4,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#e8dcc0",
+      "light": "bulb",
+      "amb": 0.5,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "bust",
+     "fx": [
+      "glitch",
+      "freeze"
+     ],
+     "circle": [
+      0.52,
+      0.52
+     ],
+     "p": {
+      "hair": "crop",
+      "glasses": "square",
+      "stache": "brush",
+      "coat": "suit",
+      "medals": 1,
+      "name": "Robert Mugabe",
+      "years": "1994",
+      "role": "Given an honorary knighthood by Britain."
+     }
+    }
+   ]
+  },
+  {
+   "text": "100 TRILLION DOLLARS. ONE NOTE.",
+   "red": [
+    "NOTE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "ballot",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "value": "NO",
+      "label": "2000: voters reject his new constitution"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "field",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "famine": 1,
+      "village": 1,
+      "n": 1
+     }
+    },
+    {
+     "d": 5,
+     "scene": "chart",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "title": "Prices in Zimbabwe",
+      "x": "2007 \u2013 2008",
+      "y": "prices",
+      "points": [
+       [
+        0,
+        0.02
+       ],
+       [
+        0.4,
+        0.05
+       ],
+       [
+        0.7,
+        0.15
+       ],
+       [
+        0.85,
+        0.4
+       ],
+       [
+        1,
+        0.95
+       ]
+      ],
+      "notes": [
+       [
+        1,
+        0.95,
+        "doubling roughly every day"
+       ]
+      ]
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "value": "$100 TRILLION",
+      "label": "One banknote: 100,000,000,000,000 Zimbabwe dollars"
+     }
+    }
+   ]
+  },
+  {
+   "text": "NO ONE PROSECUTED FOR GUKURAHUNDI.",
+   "red": [
+    "PROSECUTED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "ballot",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "value": "UNOPPOSED",
+      "label": "2008: his rival withdrew from the run-off"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "night": 1,
+      "tanks": 1,
+      "seed": 6
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "light": "bulb",
+      "dies": 0.6,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "glasses": "square",
+        "stache": "brush",
+        "coat": "suit",
+        "tie": "#2b2b30",
+        "hairc": "#9a9a92",
+        "beardc": "#9a9a92",
+        "frown": 1
+       },
+       "pose": "sit",
+       "at": [
+        0,
+        -0.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "field",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "famine": 1,
+      "n": 3
+     }
+    }
+   ]
+  }
+ ]
+}

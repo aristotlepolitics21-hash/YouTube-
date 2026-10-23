@@ -1,0 +1,328 @@
+{
+ "id": "24-franco",
+ "say": {
+  "Guernica": "Gair-neeka"
+ },
+ "scenes": [
+  {
+   "text": "SPAIN WANTED HIM OUT.",
+   "red": [
+    "OUT"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "cam": "low",
+      "props": [
+       "candles"
+      ],
+      "light": "dark",
+      "wall": "#4a4844",
+      "floor": "#3a3834",
+      "amb": 0.35
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "shake",
+      "glitch"
+     ],
+     "p": {
+      "cam": "down",
+      "flicker": 1,
+      "props": [
+       "candles"
+      ],
+      "light": "dark",
+      "wall": "#4a4844",
+      "floor": "#3a3834",
+      "amb": 0.35
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.46
+     ],
+     "p": {
+      "light": "bulb",
+      "amb": 0.4,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "hairc": "#9a9a92",
+        "beardc": "#9a9a92",
+        "stache": "thin",
+        "coat": "military",
+        "round": 1,
+        "medals": 3,
+        "frown": 1
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "field",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "famine": 1,
+      "n": 2
+     }
+    }
+   ]
+  },
+  {
+   "text": "HALF A MILLION DEAD.",
+   "red": [
+    "MILLION"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#e8dcc0",
+      "light": "bulb",
+      "amb": 0.5,
+      "shadows": 4,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "stache": "thin",
+        "coat": "military",
+        "hat": "peak",
+        "round": 1,
+        "sash": "#b8323a",
+        "medals": 3
+       },
+       "at": [
+        0,
+        -1.6
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "paper",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "mast": "MADRID",
+      "head": "Army rises against the Republic",
+      "sub": "Spain splits in two",
+      "date": "July 1936"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "state": "fire",
+      "planes": 1,
+      "seed": 2
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "value": "500,000",
+      "label": "died in the civil war: historians' estimate"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE WAR ENDED. THE KILLING DIDN'T.",
+   "red": [
+    "KILLING"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "people",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "n": 8,
+      "night": 1,
+      "pose": "look"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "typewriter"
+      ],
+      "light": "cold",
+      "amb": 0.4,
+      "cam": "down"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "podium",
+     "fx": [
+      "ramp",
+      "flash"
+     ],
+     "p": {
+      "night": 0,
+      "cheer": 1,
+      "banners": 3,
+      "bannerc": "#2a2a2a",
+      "coat": "military",
+      "hat": "peak",
+      "stache": "thin"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "chairs:6"
+      ],
+      "light": "cold",
+      "dies": 0.7,
+      "amb": 0.3,
+      "cam": "still"
+     }
+    }
+   ]
+  },
+  {
+   "text": "NO ONE WAS EVER TRIED.",
+   "red": [
+    "TRIED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "bed"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "hairc": "#9a9a92",
+        "beardc": "#9a9a92",
+        "stache": "thin",
+        "coat": "military",
+        "round": 1,
+        "medals": 3,
+        "frown": 1
+       },
+       "pose": "sit",
+       "at": [
+        0.4,
+        -0.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "title": "Amnesty Law",
+      "lines": [
+       "Political crimes are pardoned",
+       "No one will stand trial"
+      ],
+      "date": "October 1977"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "field",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "famine": 1,
+      "n": 3
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "cam": "low",
+      "props": [
+       "candles"
+      ],
+      "light": "dark",
+      "wall": "#4a4844",
+      "floor": "#3a3834",
+      "amb": 0.35
+     }
+    }
+   ]
+  }
+ ]
+}

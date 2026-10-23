@@ -1,0 +1,322 @@
+{
+ "id": "33-bundy",
+ "say": {
+  "Tallahassee": "Tallahassee",
+  "Naslund": "Nazlund",
+  "DaRonch": "Da-Ronch",
+  "Pensacola": "Pensacola"
+ },
+ "scenes": [
+  {
+   "text": "SHE SAW HIS FACE.",
+   "red": [
+    "FACE"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.36
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "close",
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "hat": "cap",
+        "hatc": "#1c1b19",
+        "coat": "#1c1b19"
+       },
+       "at": [
+        0,
+        -2.3
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "close",
+      "light": "bulb",
+      "dies": 0.75,
+      "cam": "low"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "bars",
+       "bed"
+      ],
+      "light": "bulb",
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THEY HAD HIS NAME.",
+   "red": [
+    "NAME"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "people",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 6,
+      "pose": "look"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "coat": "suit",
+        "tie": "#2b2b30"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.6
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "phone",
+       "typewriter"
+      ],
+      "light": "bulb",
+      "shadows": 3,
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "title": "Tip card",
+      "lines": [
+       "Name given: Ted Bundy",
+       "Filed with thousands of others"
+      ],
+      "date": "1974",
+      "seal": 0
+     }
+    }
+   ]
+  },
+  {
+   "text": "SHE FOUGHT BACK. HE GOT OUT. TWICE.",
+   "red": [
+    "TWICE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "shake",
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "cam": "low"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 15
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.66,
+      0.48
+     ],
+     "p": {
+      "props": [
+       "mirror"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "female": 1,
+        "hair": "long",
+        "hairc": "#5a4030",
+        "coat": "#6a5a48"
+       },
+       "pose": "point",
+       "at": [
+        0,
+        -0.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "low"
+     }
+    }
+   ]
+  },
+  {
+   "text": "REMEMBER THEM. NOT HIM.",
+   "red": [
+    "THEM"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "coats:6",
+       "suitcases:1"
+      ],
+      "light": "bulb",
+      "dies": 0.8,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "punch",
+      "shake"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 18
+     }
+    },
+    {
+     "d": 4,
+     "scene": "people",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "n": 3,
+      "pose": "look",
+      "night": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "title": "Remember them",
+      "lines": [
+       "Lynda Ann Healy \u00b7 Janice Ott",
+       "Denise Naslund \u00b7 Caryn Campbell",
+       "Lisa Levy \u00b7 Margaret Bowman",
+       "Kimberly Leach"
+      ],
+      "seal": 0
+     }
+    }
+   ]
+  }
+ ]
+}

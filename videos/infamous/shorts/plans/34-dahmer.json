@@ -1,0 +1,348 @@
+{
+ "id": "34-dahmer",
+ "say": {
+  "Dahmer": "Dahmer",
+  "Konerak": "Konnerack"
+ },
+ "scenes": [
+  {
+   "text": "THEY WALKED HIM BACK.",
+   "red": [
+    "BACK"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "people",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 2,
+      "pose": "up",
+      "night": 1,
+      "label": "Milwaukee · 27 May 1991"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "hairc": "#b59a5a",
+        "glasses": "square",
+        "coat": "shirt"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "light": "bulb",
+      "shadows": 4,
+      "cam": "dolly",
+      "amb": 0.5
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "close",
+      "light": "bulb",
+      "flicker": 1,
+      "dies": 0.6,
+      "cam": "still"
+     }
+    }
+   ]
+  },
+  {
+   "text": "CONVICTED. LET OUT EVERY DAY.",
+   "red": [
+    "EVERY",
+    "DAY"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "light": "cold",
+      "cam": "low",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "hairc": "#5a4430",
+        "coat": "shirt"
+       },
+       "pose": "point",
+       "yaw": 70,
+       "at": [
+        0,
+        -1.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "chairs:4"
+      ],
+      "light": "bulb",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "decree",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "title": "Sentence · May 1989",
+      "lines": [
+       "1 year in jail",
+       "Work-release",
+       "5 years' probation"
+      ],
+      "date": "Milwaukee County"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash",
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door",
+       "bars"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "hairc": "#b59a5a",
+        "glasses": "square",
+        "coat": "shirt"
+       },
+       "at": [
+        0,
+        -1.8
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "SAME FAMILY. SAME MAN.",
+   "red": [
+    "FAMILY"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "decree",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "title": "27 May 1991",
+      "lines": [
+       "[  ] Check the boy's age",
+       "[  ] Run the man's name",
+       "[  ] Search the flat",
+       "[  ] Listen to the witnesses"
+      ],
+      "seal": 0
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.55,
+      0.38
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#050505",
+      "light": "bulb",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "radio",
+       "phone"
+      ],
+      "light": "cold",
+      "amb": 0.6,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "window",
+       "phone"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "female": 1,
+        "hair": "curly",
+        "hairc": "#2a2420",
+        "coat": "shirt"
+       },
+       "pose": "stand",
+       "yaw": -50,
+       "at": [
+        0.6,
+        -1.2
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "17 NAMES. REMEMBER THEM.",
+   "red": [
+    "REMEMBER"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "chairs:4"
+      ],
+      "light": "bulb",
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash",
+      "shake"
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "hairc": "#2a2420",
+        "coat": "shirt"
+       },
+       "pose": "up",
+       "at": [
+        0,
+        -0.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "shadows": 2,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "value": "17",
+      "label": "names · Steven Hicks first, Joseph Bradehoft last"
+     }
+    }
+   ]
+  }
+ ]
+}

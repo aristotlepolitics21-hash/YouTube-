@@ -1,0 +1,327 @@
+{
+ "id": "09-saddam-hussein",
+ "say": {
+  "Tikrit": "Tikreet"
+ },
+ "scenes": [
+  {
+   "text": "EVERY NAME READ OUT. FILMED.",
+   "red": [
+    "FILMED"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "light": "red",
+      "amb": 0.2,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "full",
+        "stache": "big",
+        "coat": "suit"
+       },
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "podium",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.4
+     ],
+     "p": {
+      "night": 1,
+      "banners": 1,
+      "coat": "suit",
+      "hair": "full",
+      "stache": "big"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "chairs:12"
+      ],
+      "light": "bulb",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "portrait"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "SECOND IN COMMAND. IN CONTROL.",
+   "red": [
+    "CONTROL"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#f2e8c8",
+      "light": "bulb",
+      "cam": "low",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "coat": "shirt",
+        "h": 0.8
+       },
+       "at": [
+        0,
+        -1.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "city",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "state": "normal",
+      "night": 1,
+      "seed": 3
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "portrait"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "full",
+        "stache": "big",
+        "coat": "military"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "cam": "still"
+     }
+    }
+   ]
+  },
+  {
+   "text": "ABOUT 5,000 DEAD IN ONE DAY.",
+   "red": [
+    "DEAD"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "army",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "ruins": 1,
+      "tanks": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "state": "normal",
+      "planes": 1,
+      "seed": 9
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "window",
+       "coats:4"
+      ],
+      "light": "bulb",
+      "amb": 0.5,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "freeze",
+      "smash"
+     ],
+     "circle": [
+      0.5,
+      0.55
+     ],
+     "p": {
+      "title": "Diplomatic note",
+      "lines": [
+       "Protest: chemical weapons",
+       "used at Halabja"
+      ],
+      "date": "March 1988"
+     }
+    }
+   ]
+  },
+  {
+   "text": "A COUNTRY HOLLOWED OUT BY FEAR.",
+   "red": [
+    "FEAR"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "ruler",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "pose": "point",
+      "label": "Baghdad \u00b7 April 2003"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "punch",
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "full",
+        "hairc": "#77766a",
+        "beard": "full",
+        "beardc": "#9a9a92",
+        "coat": "shirt"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "field",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "famine": 1,
+      "n": 6
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "light": "red",
+      "amb": 0.2,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "full",
+        "stache": "big",
+        "coat": "suit"
+       },
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

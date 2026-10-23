@@ -1,0 +1,324 @@
+{
+ "id": "28-al-zarqawi",
+ "say": {
+  "Zarqa": "Zarka",
+  "Shia": "Sheeah",
+  "Sunnis": "Soonees",
+  "Amman": "Ammahn"
+ },
+ "scenes": [
+  {
+   "text": "HE WANTED IRAQIS TO KILL EACH OTHER.",
+   "red": [
+    "EACH",
+    "OTHER"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "city",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 9
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.72,
+      0.63
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "phone",
+       "window"
+      ],
+      "light": "bulb",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "flash",
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "chairs:2",
+       "window"
+      ],
+      "light": "bulb",
+      "swing": 1,
+      "amb": 0.3,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "state": "fire",
+      "seed": 9
+     }
+    }
+   ]
+  },
+  {
+   "text": "SENTENCED TO FIFTEEN. FREE AFTER ABOUT FIVE.",
+   "red": [
+    "FIFTEEN",
+    "FIVE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "round": 1,
+        "coat": "#2a2420"
+       },
+       "pose": "lean",
+       "at": [
+        0,
+        -0.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "chairs:12"
+      ],
+      "light": "cold",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "round": 1,
+        "coat": "shirt"
+       },
+       "pose": "sit",
+       "at": [
+        0.4,
+        -0.1
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "cell",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "pose": "stand",
+      "coat": "prison"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "title": "Royal Amnesty",
+      "lines": [
+       "Hashemite Kingdom of Jordan",
+       "Sentence: 15 years",
+       "Released"
+      ],
+      "date": "1999"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE LINK WASN'T REAL. HE WAS.",
+   "red": [
+    "REAL"
+   ],
+   "shots": [
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "hairc": "#9a9a92",
+        "coat": "suit",
+        "tie": "#7a2a22",
+        "glasses": "square"
+       },
+       "pose": "speech",
+       "at": [
+        0,
+        -1.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "full",
+        "round": 1,
+        "coat": "#1c1b19",
+        "frown": 1
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.6
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "paper",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "mast": "WASHINGTON",
+      "head": "No Saddam\u2013Zarqawi link",
+      "sub": "Senate intelligence report",
+      "date": "September 2006"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "stamp": 1,
+      "light": "bulb",
+      "cam": "down"
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE DIED. THE KILLING DIDN'T.",
+   "red": [
+    "DIDN'T"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "chairs:12"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "dies": 0.75,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "state": "ruin",
+      "seed": 12
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash",
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "chairs:2"
+      ],
+      "light": "bulb",
+      "dies": 0.75,
+      "cam": "rise"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 9
+     }
+    }
+   ]
+  }
+ ]
+}

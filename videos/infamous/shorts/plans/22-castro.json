@@ -1,0 +1,262 @@
+{
+ "id": "22-castro",
+ "say": {
+  "Batista's": "Ba-teesta's"
+ },
+ "scenes": [
+  {
+   "text": "HE PROMISED ELECTIONS.",
+   "red": [
+    "ELECTIONS"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "podium",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "night": 0,
+      "cheer": 1,
+      "banners": 0,
+      "coat": "military",
+      "hat": "peak",
+      "hair": "full"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.46
+     ],
+     "p": {
+      "light": "bulb",
+      "amb": 0.45,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "full",
+        "beard": "full",
+        "hat": "peak",
+        "band": "#5a5e3c",
+        "coat": "military"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "ballot",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "value": "0",
+      "label": "free elections he faced, 1959 \u2013 2008"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 3
+     }
+    }
+   ]
+  },
+  {
+   "text": "HISTORY WILL ABSOLVE ME.",
+   "red": [
+    "ABSOLVE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "army",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "fire": 1,
+      "rows": 2
+     }
+    },
+    {
+     "d": 3,
+     "scene": "inquiry",
+     "fx": [
+      "punch"
+     ],
+     "p": {}
+    },
+    {
+     "d": 5,
+     "scene": "fleet",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "n": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "window"
+      ],
+      "light": "cold",
+      "amb": 0.4,
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE ELECTIONS NEVER CAME.",
+   "red": [
+    "NEVER"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "chairs:6"
+      ],
+      "light": "cold",
+      "amb": 0.35,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "paper",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "mast": "HAVANA",
+      "head": "Invasion crushed",
+      "sub": "CIA-backed landing fails at the Bay of Pigs",
+      "date": "April 1961"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "stat",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "value": "8",
+      "label": "CIA plots to kill him, at least: US Senate committee"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "ballot",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.45
+     ],
+     "p": {
+      "value": "NEVER",
+      "label": "the promised free elections"
+     }
+    }
+   ]
+  },
+  {
+   "text": "1,000,000+ LEFT. MANY BY SEA.",
+   "red": [
+    "SEA"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "city",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 8
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "bars",
+       "bed"
+      ],
+      "light": "bulb",
+      "swing": 1,
+      "amb": 0.4,
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "shake",
+      "flash"
+     ],
+     "p": {
+      "value": "1,000,000+",
+      "label": "Cubans who left, many by sea"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "podium",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "night": 0,
+      "cheer": 1,
+      "banners": 0,
+      "coat": "military",
+      "hat": "peak",
+      "hair": "full"
+     }
+    }
+   ]
+  }
+ ]
+}

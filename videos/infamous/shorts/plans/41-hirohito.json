@@ -1,0 +1,299 @@
+{
+ "id": "41-hirohito",
+ "say": {},
+ "scenes": [
+  {
+   "text": "HE NEVER SAID SURRENDER.",
+   "red": [
+    "SURRENDER"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "radio"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "down"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "people",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.5
+     ],
+     "p": {
+      "n": 10,
+      "pose": "mourn",
+      "night": 1,
+      "label": "Noon · 15 August 1945"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "quote",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "text": "The war situation has developed not necessarily to Japan's advantage.",
+      "who": "Emperor Hirohito · 15 August 1945"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "light": "dark",
+      "amb": 0.35,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "glasses": "round",
+        "stache": "thin",
+        "coat": "military",
+        "hat": "peak",
+        "medals": 3
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "SUPREME COMMANDER. BY LAW.",
+   "red": [
+    "LAW"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "throne",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "crown": 0,
+      "label": "Tokyo · 1926"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "title": "Constitution · 1889",
+      "lines": [
+       "The Emperor is sacred and inviolable",
+       "He has supreme command",
+       "of the Army and Navy"
+      ],
+      "date": "11 February 1889"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "stamp": 1,
+      "light": "bulb",
+      "shadows": 4,
+      "cam": "down"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "army",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "tanks": 1,
+      "label": "China · 1937"
+     }
+    }
+   ]
+  },
+  {
+   "text": "ONE MORE MILITARY SUCCESS.",
+   "red": [
+    "SUCCESS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "stat",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "value": "10–20 million",
+      "label": "Chinese dead, historians estimate"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "shadows": 4,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "glasses": "round",
+        "stache": "thin",
+        "coat": "military",
+        "hat": "peak",
+        "medals": 3
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "quote",
+     "fx": [
+      "freeze",
+      "smash"
+     ],
+     "circle": [
+      0.5,
+      0.47
+     ],
+     "p": {
+      "text": "It would be very difficult without one more military success.",
+      "who": "Hirohito, urged to seek peace · February 1945"
+     }
+    }
+   ]
+  },
+  {
+   "text": "NEVER CHARGED. KEPT HIS THRONE.",
+   "red": [
+    "NEVER",
+    "CHARGED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "bunker",
+     "fx": [
+      "punch",
+      "shake"
+     ],
+     "p": {
+      "n": 6,
+      "label": "beneath the palace · August 1945"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "versus",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.5
+     ],
+     "p": {
+      "left": "MACARTHUR",
+      "right": "HIROHITO",
+      "mid": "1945",
+      "lcoat": "khaki",
+      "rcoat": "black"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "chairs:7"
+      ],
+      "light": "bulb",
+      "dies": 0.7,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "radio",
+       "window"
+      ],
+      "light": "cold",
+      "cam": "push"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,320 @@
+{
+ "id": "31-el-chapo",
+ "say": {
+  "Joaqu\u00edn": "Hwakeen",
+  "Guzm\u00e1n": "Goosmahn",
+  "Sinaloa": "Seenalo-a",
+  "Chapo": "Chahpo"
+ },
+ "scenes": [
+  {
+   "text": "MEXICO'S MOST SECURE PRISON. GONE.",
+   "red": [
+    "GONE"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "bars"
+      ],
+      "light": "cold",
+      "amb": 0.8,
+      "flicker": 1,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.47,
+      0.45
+     ],
+     "p": {
+      "props": [
+       "bed"
+      ],
+      "light": "bulb",
+      "cam": "still",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "stache": "thin",
+        "round": 1,
+        "coat": "prison"
+       },
+       "pose": "headDown",
+       "at": [
+        0.6,
+        -1.2
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#f2e8c8",
+      "light": "bulb",
+      "swing": 1,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "shake",
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "swing"
+      ],
+      "light": "bulb",
+      "swing": 1,
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THEY CALLED HIM SHORTY.",
+   "red": [
+    "SHORTY"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "field",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 1
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "stache": "thin",
+        "round": 1,
+        "coat": "shirt"
+       },
+       "at": [
+        0.8,
+        -2.2
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "suitcases:6",
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#f2e8c8",
+      "light": "bulb",
+      "dies": 0.7,
+      "cam": "low"
+     }
+    }
+   ]
+  },
+  {
+   "text": "CAUGHT. THEN GONE AGAIN.",
+   "red": [
+    "AGAIN"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.66,
+      0.55
+     ],
+     "p": {
+      "props": [
+       "bars",
+       "suitcases:1"
+      ],
+      "seed": 5,
+      "light": "bulb",
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "timeline",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "events": [
+       [
+        "Jailed \u00b7 1993",
+        0.0
+       ],
+       [
+        "Escapes \u00b7 2001",
+        0.36
+       ],
+       [
+        "Caught \u00b7 2014",
+        0.9
+       ],
+       [
+        "Gone \u00b7 2015",
+        1.0
+       ]
+      ]
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash",
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "window"
+      ],
+      "light": "red",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "punch",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "bars"
+      ],
+      "light": "bulb",
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "LIFE + 30. HIS CARTEL LIVES ON.",
+   "red": [
+    "LIFE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "city",
+     "fx": [
+      "ramp",
+      "flash"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 3
+     }
+    },
+    {
+     "d": 4,
+     "scene": "inquiry",
+     "fx": [
+      "punch"
+     ],
+     "p": {}
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "value": "LIFE + 30",
+      "label": "years \u00b7 guilty on all ten counts, 2019"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "bars"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "still"
+     }
+    }
+   ]
+  }
+ ]
+}
