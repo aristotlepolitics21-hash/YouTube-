@@ -23,7 +23,7 @@
     { "name": "Out of the steppe", "lines": [
       ["riders", {"n": 14, "label": "the steppe · 4th century"}, "The Huns were nomadic horsemen from the steppes of central Asia. Exactly where they came from is still debated. They were superb mounted archers."],
       ["timeline", {"events": [["Huns reach Europe · c. 370", 0.15], ["Goths cross the Danube · 376", 0.5], ["Goths sack Rome · 410", 0.85]]}, "Around 370, they burst into eastern Europe, driving the Goths before them. Fleeing Goths crossed into the Roman Empire, setting off a chain of events that shook Rome to its foundations."],
-      ["army", {"label": "the Hungarian plain · 420s"}, "By the 420s, the Huns had settled on the great plain of what is now Hungary. Rome sometimes fought them, and sometimes hired them as mercenaries."],
+      ["army", {"era": "steppe", "label": "the Hungarian plain · 420s"}, "By the 420s, the Huns had settled on the great plain of what is now Hungary. Rome sometimes fought them, and sometimes hired them as mercenaries."],
       ["date", {"date": "c. 406", "place": "Hunnic lands · north of the Danube"}, "Attila was probably born around 406. Almost nothing is known of his childhood. His uncle, Rugila, ruled the Huns."]
     ]},
     { "name": "Two brothers", "lines": [
@@ -37,7 +37,7 @@
       ["bust", {"name": "Attila", "years": "c. 406 – 453", "role": "King of the Huns. Ruled with Bleda from c. 434, alone from c. 445.", "hair": "crop", "beard": "goatee", "hat": "fur", "coat": "fur", "frown": 1}, "Priscus described him as short and broad-chested, with a large head, small deep-set eyes, and a thin beard flecked with grey."],
       ["people", {"n": 6, "pose": "look", "label": "Attila's court"}, "Priscus watched him sit outside his hall, judging disputes brought to him by his people. His followers treated him with a mixture of devotion and fear."],
       ["web", {"nodes": [["Attila", 0.5, 0.2, 1], ["Huns", 0.2, 0.6, 0], ["Ostrogoths", 0.4, 0.82, 0], ["Gepids", 0.6, 0.82, 0], ["others", 0.8, 0.6, 0]], "links": [[0, 1], [0, 2], [0, 3], [0, 4]], "label": "Attila's empire"}, "His empire was not only Huns. It included Germanic peoples such as the Ostrogoths and Gepids, and many others, held together by loyalty, fear and a share of the plunder."],
-      ["army", {"night": 1, "fire": 1, "label": "the Balkans · 447"}, "In 447, he struck the Balkans again, reaching as far south as Thermopylae in Greece. Constantinople's great walls, hastily repaired after an earthquake, kept him out of the capital."],
+      ["army", {"era": "steppe", "night": 1, "fire": 1, "label": "the Balkans · 447"}, "In 447, he struck the Balkans again, reaching as far south as Thermopylae in Greece. Constantinople's great walls, hastily repaired after an earthquake, kept him out of the capital."],
       ["quote", {"text": "A Roman official plotted to have Attila murdered. Attila found out.", "who": "summary of Priscus's account, 449"}, "The Romans tried another way. While Priscus's embassy was at the Hun court, a senior Roman official was secretly plotting to have Attila assassinated. Attila found out, and sent envoys to shame the emperor."]
     ]},
     { "name": "Gaul", "lines": [
@@ -47,7 +47,7 @@
       ["riders", {"n": 16, "flip": 1, "label": "Gaul · spring 451"}, "In 451, he crossed the Rhine into Gaul, modern France, with a huge army. Cities such as Metz were sacked, and Orléans was besieged."],
       ["bust", {"name": "Flavius Aetius", "years": "c. 391 – 454", "role": "Roman general. Had lived among the Huns as a young hostage.", "hair": "crop", "hat": "helmet", "coat": "armour"}, "Against him stood Flavius Aetius, the Western Empire's leading general. As a young man, Aetius had lived among the Huns as a hostage, and knew them well."],
       ["versus", {"left": "ATTILA", "right": "AETIUS", "mid": "451", "red": "l"}, "Aetius allied with the Visigoths, a Germanic people settled in southern Gaul. In the summer of 451, the two sides met at the Battle of the Catalaunian Plains."],
-      ["army", {"fire": 1, "rows": 3, "label": "the Catalaunian Plains · 451"}, "It was one of the bloodiest battles of the age, and the Visigothic king, Theodoric, was killed. A later historian claimed a hundred and sixty-five thousand died, surely an exaggeration."],
+      ["army", {"era": "steppe", "fire": 1, "rows": 3, "label": "the Catalaunian Plains · 451"}, "It was one of the bloodiest battles of the age, and the Visigothic king, Theodoric, was killed. A later historian claimed a hundred and sixty-five thousand died, surely an exaggeration."],
       ["lesson", {"text": "Checked, but not destroyed"}, "Attila was forced to retreat, but his army survived. Aetius let him go, perhaps wanting the Huns to remain as a counterweight to the Visigoths."]
     ]},
     { "name": "Italy", "lines": [

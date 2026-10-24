@@ -28,7 +28,7 @@
     { "name": "The golden prince", "lines": [
       ["bust", {"name": "Henry VIII", "years": "1491 – 1547", "role": "King at seventeen. Athlete, scholar and musician.", "hair": "crop", "hat": "tudor", "coat": "fur"}, "In April 1509 his father died, and Henry became king at seventeen. Within weeks he married Catherine. He was tall, athletic, learned and musical, and foreign ambassadors praised him."],
       ["throne", {"label": "Cardinal Wolsey · Lord Chancellor"}, "He left much of the work of government to Thomas Wolsey, a butcher's son who rose to be a cardinal and the king's chief minister."],
-      ["army", {"label": "France and Flodden · 1513"}, "He longed for glory and spent heavily on war with France. In 1513, while he campaigned there, his army at home crushed a Scottish invasion at Flodden, killing the Scottish king."],
+      ["army", {"era": "medieval", "label": "France and Flodden · 1513"}, "He longed for glory and spent heavily on war with France. In 1513, while he campaigned there, his army at home crushed a Scottish invasion at Flodden, killing the Scottish king."],
       ["people", {"n": 7, "pose": "up", "label": "Field of the Cloth of Gold · 1520"}, "In 1520 he met the King of France near Calais at a festival so lavish it became known as the Field of the Cloth of Gold."],
       ["paper", {"mast": "ROME", "head": "Defender of the Faith", "sub": "Pope honours Henry's book against Luther", "date": "1521"}, "In 1521 he published a book attacking Martin Luther, and the pope rewarded him with the title Defender of the Faith. British monarchs still use it."]
     ]},
@@ -50,7 +50,7 @@
     { "name": "The terror", "lines": [
       ["stat", {"value": "800+", "label": "religious houses dissolved, 1536 – 1540"}, "Cromwell then turned to the Church's wealth. Between 1536 and 1540, more than eight hundred monasteries, nunneries and friaries were closed, and their lands taken by the crown."],
       ["people", {"n": 6, "pose": "walk", "label": "the Dissolution of the Monasteries"}, "Thousands of monks, nuns and friars were turned out. Libraries, shrines and centuries of art were destroyed, and most of the land was sold to nobles and gentry."],
-      ["army", {"label": "Pilgrimage of Grace · 1536"}, "In 1536, tens of thousands in the north rose in protest, in the Pilgrimage of Grace. Henry promised pardons and a hearing. After further unrest, around two hundred people were executed."],
+      ["army", {"era": "medieval", "label": "Pilgrimage of Grace · 1536"}, "In 1536, tens of thousands in the north rose in protest, in the Pilgrimage of Grace. Henry promised pardons and a hearing. After further unrest, around two hundred people were executed."],
       ["date", {"date": "7 January 1536", "place": "Kimbolton Castle"}, "Catherine of Aragon, banished from court, died in January 1536, still insisting she was Henry's true wife."],
       ["inquiry", {"label": "Trial of Anne Boleyn · May 1536"}, "Anne, too, had failed to produce a living son. Within months she was accused of adultery with five men, one of them her own brother. All of them were executed."],
       ["stat", {"value": "12 days", "label": "between Prince Edward's birth and his mother's death"}, "Henry married Jane Seymour eleven days after Anne's death. In October 1537 she gave him the son he wanted, Edward. Twelve days later, she died."]
@@ -62,7 +62,7 @@
       ["throne", {"label": "Catherine Parr · queen 1543 – 1547"}, "His sixth wife, Catherine Parr, a widow and a published religious writer, outlived him."]
     ]},
     { "name": "The last years", "lines": [
-      ["army", {"label": "Boulogne · 1544"}, "He spent his last years at war with France and Scotland. To pay for it, he sold off monastery lands and debased the coinage, mixing cheaper metal into the silver."],
+      ["army", {"era": "medieval", "label": "Boulogne · 1544"}, "He spent his last years at war with France and Scotland. To pay for it, he sold off monastery lands and debased the coinage, mixing cheaper metal into the silver."],
       ["fleet", {"n": 4, "cannon": 1, "label": "the Mary Rose · 19 July 1545"}, "He also built up the navy. In 1545 he watched from the shore as his warship, the Mary Rose, sank in the Solent with most of her crew."],
       ["wall", {"n": 1, "night": 1, "label": "Tower Hill · January 1547"}, "The killing went on to the end. Days before Henry died, the young poet Henry Howard, Earl of Surrey, was executed for treason."],
       ["date", {"date": "28 January 1547", "place": "Palace of Whitehall"}, "Henry died at Whitehall on the twenty-eighth of January 1547, aged fifty-five. His nine-year-old son became Edward the Sixth."]

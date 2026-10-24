@@ -36,7 +36,7 @@
       ["versus", {"left": "John", "right": "Arthur", "mid": "1199", "red": "r"}, "Not everyone accepted him. Many of his French vassals backed his twelve-year-old nephew, Arthur of Brittany, the son of John's late brother Geoffrey."],
       ["decree", {"title": "Court of Philip II", "lines": ["John's French lands", "declared forfeit"], "date": "1202"}, "In 1200, John married Isabella of Angoulême, a young girl already engaged to one of his own vassals. The jilted family appealed to King Philip the Second of France, who declared John's French lands forfeit and went to war."],
       ["cell", {"night": 1, "label": "Rouen · 1203"}, "In 1202 John captured Arthur. By the next spring the boy had vanished in his custody. Most historians believe he was murdered on John's orders. One monastic chronicle says John killed him with his own hands."],
-      ["army", {"ruins": 1, "label": "Château Gaillard · March 1204"}, "Many of John's French nobles deserted him. Richard's great fortress in Normandy, Château Gaillard, fell after a long siege."],
+      ["army", {"era": "medieval", "ruins": 1, "label": "Château Gaillard · March 1204"}, "Many of John's French nobles deserted him. Richard's great fortress in Normandy, Château Gaillard, fell after a long siege."],
       ["paper", {"mast": "ROUEN", "head": "Normandy falls to France", "sub": "Critics call the king 'Softsword'", "date": "June 1204"}, "Rouen surrendered that summer. Normandy, the homeland of England's royal line since the Conquest of 1066, was gone. Critics mocked him as John Softsword."]
     ]},
     { "name": "King against pope", "lines": [
@@ -48,7 +48,7 @@
       ["bust", {"name": "King John", "years": "r. 1199 – 1216", "role": "King of England. Lost Normandy. Agreed to Magna Carta.", "hair": "long", "beard": "full", "hat": "crown", "coat": "robe", "frown": 1}, "To win back his French lands, John needed money, and he squeezed it out of his subjects with relentless skill."],
       ["checklist", {"head": "How John raised money", "items": ["Record taxes and scutage", "Huge fees to inherit land", "Selling rich widows' marriages", "Hostages from his barons"]}, "He raised taxes to record levels, charged barons huge sums to inherit their fathers' lands, sold the right to marry rich widows, and took hostages to guarantee loyalty."],
       ["people", {"n": 2, "pose": "mourn", "night": 1, "label": "Matilda de Braose · 1210"}, "When one great baron, William de Braose, fell out with him, John hunted the family down. Braose's wife Matilda and their eldest son died in John's prisons, almost certainly starved to death."],
-      ["army", {"label": "Bouvines · 27 July 1214"}, "In 1214 he spent a fortune on a grand alliance to retake his French lands. It ended in disaster at the Battle of Bouvines, where King Philip crushed John's allies."]
+      ["army", {"era": "medieval", "label": "Bouvines · 27 July 1214"}, "In 1214 he spent a fortune on a grand alliance to retake his French lands. It ended in disaster at the Battle of Bouvines, where King Philip crushed John's allies."]
     ]},
     { "name": "Magna Carta", "lines": [
       ["people", {"n": 7, "pose": "up", "label": "London · May 1215"}, "The barons had had enough. In May 1215, rebels seized London."],
@@ -59,7 +59,7 @@
       ["paper", {"mast": "ROME", "head": "Pope annuls the charter", "sub": "Declared null and void", "date": "24 August 1215"}, "John never meant to keep it. He appealed to the pope, who annulled the charter in August. The barons went back to war."]
     ]},
     { "name": "War and death", "lines": [
-      ["army", {"night": 1, "label": "First Barons' War · 1215 – 1217"}, "The rebels offered the crown to Prince Louis of France, who landed in 1216 and was welcomed in London. Much of eastern England slipped out of John's control."],
+      ["army", {"era": "medieval", "night": 1, "label": "First Barons' War · 1215 – 1217"}, "The rebels offered the crown to Prince Louis of France, who landed in 1216 and was welcomed in London. Much of eastern England slipped out of John's control."],
       ["people", {"n": 6, "pose": "walk", "night": 1, "label": "The Wash · October 1216"}, "In October 1216, crossing the tidal estuary of the Wash, part of his baggage train was lost. Legend says the crown jewels went with it. How much really vanished is disputed."],
       ["date", {"date": "18 – 19 October 1216", "place": "Newark Castle"}, "Days later, ill with dysentery, John died at Newark Castle, aged forty-nine."],
       ["bust", {"name": "William Marshal", "years": "c. 1146 – 1219", "role": "Knight who served four kings. Regent for the boy Henry III.", "hair": "crop", "beard": "full", "beardc": "#9a9a92", "hairc": "#9a9a92", "coat": "armour"}, "His son, King Henry the Third, was nine years old. The regent, William Marshal, an elderly knight who had served four kings, set out to win the barons back."],

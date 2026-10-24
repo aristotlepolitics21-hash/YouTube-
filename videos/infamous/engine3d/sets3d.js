@@ -1,6 +1,6 @@
 // Infamous 3D sets. Each BUILD[name](p) lays out a set once and returns { update(t, T) } for camera and motion.
 // Floor is y = 0, a figure is about 1.8 tall, and FACE turns a figure to look at a camera on +z.
-import { THREE, scene, camera, BUILD, fig, headPos, MODE, POSE, breathe, gun, mat, glow, mesh, box, cyl, ball, ground, backdrop, sky, lights, fog, shot, rng, lerp, ease, clamp, seg, stick } from './r3.js';
+import { THREE, scene, camera, BUILD, fig, headPos, MODE, POSE, breathe, gun, spear, shield, mat, glow, mesh, box, cyl, ball, ground, backdrop, sky, lights, fog, shot, rng, lerp, ease, clamp, seg, stick } from './r3.js';
 const FACE = -90, PI = Math.PI;
 const SOLDIER = { coat: 'military', hat: 'helmet' };
 const looks = p => { const o = {}; for (const k of ['hair', 'stache', 'beard', 'hat', 'glasses', 'coat', 'medals', 'sash', 'hairc', 'beardc', 'hatc', 'band', 'spike', 'cape']) if (p[k] != null) o[k] = p[k]; if (o.coat === 'suit' || o.coat === 'black') o.shoes = '#111'; return o; };
@@ -80,7 +80,8 @@ BUILD.army = p => { const night = !!p.night, dir = p.dir === -1 ? -1 : 1;
   ground(night ? '#1a1e24' : '#a89a80');
   if (p.ruins) for (let i = 0; i < 6; i++) ruin(-12 + i * 5, -7, 3.5, 4 + (i % 3), 1.5, night ? '#2a3240' : '#b9ab92', i + 3);
   const rows = Math.min(p.rows || 3, 3), cols = 7, sp = 1.4, men = [];
-  for (let r = 0; r < rows; r++) for (let i = 0; i < cols; i++) { const m = fig(Object.assign({ z: -r * .9, turn: dir > 0 ? 0 : 180 }, SOLDIER)); gun(m); men.push([m, r, i]); }
+  const ERA = { ancient: [{ coat: '#7a5a3a', hat: 'helmet', hatc: '#8a6a3a' }, '#6a2a1e'], steppe: [{ coat: '#6a5038', hat: 'fur', hatc: '#4a3226' }, '#5a4430'], medieval: [{ coat: '#7a7c80', hat: 'helmet', hatc: '#9a9ca0', spike: 1 }, '#7a1f1a'], musket: [{ coat: '#2a3a6a', hat: 'bicorne' }] }[p.era];
+  for (let r = 0; r < rows; r++) for (let i = 0; i < cols; i++) { const m = fig(Object.assign({ z: -r * .9, turn: dir > 0 ? 0 : 180 }, ERA ? ERA[0] : SOLDIER)); if (ERA && ERA[1]) { spear(m); shield(m, ERA[1]); } else gun(m); men.push([m, r, i]); }
   const tanks = p.tanks ? [tank(0, -4.5, 1, dir > 0 ? 0 : PI), tank(0, -7.5, 1, dir > 0 ? 0 : PI)] : [];
   const planes = p.planes ? [0, 1, 2, 3].map(i => plane3(0, 8 + i % 2 * 1.5, -6 - i * 2.5, .9)) : [];
   const fires = p.fire ? [flame(-5, 0, -5, 1.4, 1), flame(6, 0, -6, 1.6, 2), smoke(-5, 1.5, -5, 10, 1.2, 3), smoke(6, 1.5, -6, 10, 1.3, 4)] : [];

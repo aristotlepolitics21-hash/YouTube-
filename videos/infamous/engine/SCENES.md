@@ -28,7 +28,7 @@ the frame. Night scenes (`night: 1`) fade through black instead of paper.
 | scene | what it shows | params |
 |---|---|---|
 | `podium` | speaker at a lectern above a crowd, banners, spotlights | `cheer`, `banners` (count), `bannerc`, `night: 0` for daylight, `label` |
-| `army` | soldiers marching | `tanks`, `planes`, `fire`, `ruins`, `rows`, `dir: -1`, `night`, `label` |
+| `army` | soldiers marching (`era`: `ancient`, `steppe`, `medieval` for spears and shields; `musket` for 1790s line infantry) | `era`, `tanks`, `planes`, `fire`, `ruins`, `rows`, `dir: -1`, `night`, `label` |
 | `camp` | huts, watchtower, barbed wire, prisoners | `snow` (gulag), `n`, `night: 0` for daylight, `label` |
 | `wall` | people against a wall, armed soldiers in silhouette (purges, executions; nothing graphic) | `n`, `night`, `label` |
 | `cell` | prison cell, seated prisoner | `pose: "stand"`, `bars: 0`, `night: 0`, `label` |

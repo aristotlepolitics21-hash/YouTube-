@@ -22,7 +22,7 @@
     ]},
     { "name": "Little Boot", "lines": [
       ["date", {"date": "31 August AD 12", "place": "Antium · Italy"}, "He was born Gaius Julius Caesar on the thirty-first of August, AD 12, at Antium, the same town where his nephew Nero would later be born."],
-      ["army", {"label": "the Rhine frontier · AD 14 – 16"}, "His father, Germanicus, was Rome's most popular general. As a small boy, Gaius lived among the legions on the Rhine, dressed in a miniature uniform."],
+      ["army", {"era": "ancient", "label": "the Rhine frontier · AD 14 – 16"}, "His father, Germanicus, was Rome's most popular general. As a small boy, Gaius lived among the legions on the Rhine, dressed in a miniature uniform."],
       ["lesson", {"text": "Caligula: 'Little Boot'"}, "The soldiers called him Caligula, Little Boot, after the small army boots he wore. He came to dislike the name, but it stuck."],
       ["date", {"date": "AD 19", "place": "Antioch · Syria"}, "In AD 19, Germanicus died suddenly in the east, aged thirty-three. Many Romans believed he had been poisoned with the emperor's blessing. It was never proven."],
       ["people", {"n": 8, "pose": "mourn", "label": "Germanicus's ashes return to Rome"}, "Crowds lined the route as his ashes were carried back to Rome. His widow and children were now dangerous to the emperor, simply because they were so loved."]
@@ -46,7 +46,7 @@
       ["stat", {"value": "2.7 billion", "label": "sesterces left by Tiberius · gone within a year, says Suetonius"}, "According to Suetonius, he burned through the vast surplus Tiberius had left in under a year. New taxes and confiscations followed."],
       ["cell", {"night": 1, "label": "Rome · AD 39 – 40"}, "Suetonius and Dio describe cruel jokes and casual executions. Some of these stories are probably exaggerated, but the fear among Rome's elite was real."],
       ["decree", {"title": "Treason trials", "lines": ["Revived", "Senators accused", "Estates confiscated"], "date": "AD 39"}, "In AD 39, he revived the treason trials he had once halted, and turned on the Senate. Several senators were executed or driven to suicide."],
-      ["army", {"label": "the Channel coast · AD 40"}, "In AD 40 he marched north, apparently to invade Britain, but turned back. Suetonius claims he ordered his soldiers to gather seashells on the beach as spoils from the ocean."],
+      ["army", {"era": "ancient", "label": "the Channel coast · AD 40"}, "In AD 40 he marched north, apparently to invade Britain, but turned back. Suetonius claims he ordered his soldiers to gather seashells on the beach as spoils from the ocean."],
       ["lesson", {"text": "A joke, a punishment, or a garbled story?"}, "Historians still argue about that story. It may have been a joke, a humiliation for mutinous troops, or a garbled account of something else entirely."]
     ]},
     { "name": "A living god", "lines": [
@@ -72,7 +72,7 @@
     { "name": "Legacy", "lines": [
       ["decree", {"title": "After his death", "lines": ["Statues taken down", "Portraits recarved", "Coins melted down"], "seal": 0}, "In Rome, his memory was quietly dismantled. Many of his statues were removed or recarved, and his bronze coins were later melted down."],
       ["tv", {"text": "I, CLAUDIUS · 1976"}, "His name became shorthand for the mad tyrant, in novels, films and television, from the 1976 drama I, Claudius onwards."],
-      ["army", {"night": 1, "label": "the Praetorian Guard"}, "Rome's emperors learned a lesson too. The guard that protected them could also remove them, and over the next two centuries it did so again."],
+      ["army", {"era": "ancient", "night": 1, "label": "the Praetorian Guard"}, "Rome's emperors learned a lesson too. The guard that protected them could also remove them, and over the next two centuries it did so again."],
       ["ruler", {"cape": 1, "pose": "point", "label": "absolute power"}, "Mad or not, Caligula showed how much harm one unchecked young man could do with absolute power, and how little anyone could do to stop him, short of murder."]
     ]}
   ]

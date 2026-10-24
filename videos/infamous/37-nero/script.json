@@ -33,7 +33,7 @@
       ["bust", {"name": "Nero", "years": "AD 37 – 68", "role": "Emperor of Rome at sixteen. Guided at first by Seneca and Burrus.", "hair": "curly", "hat": "laurel", "coat": "robe"}, "Nero became emperor at sixteen, the youngest Rome had yet seen."],
       ["bust", {"name": "Seneca", "years": "c. 4 BC – AD 65", "role": "Philosopher and playwright. Nero's tutor and chief adviser.", "hair": "bald", "beard": "full", "coat": "robe"}, "His old tutor, the philosopher Seneca, and the commander of the guard, Burrus, helped him govern. Even later critics remembered his first years as a time of sound government."],
       ["podium", {"night": 0, "cheer": 1, "banners": 0, "label": "games for the people"}, "He staged lavish games, and once even proposed abolishing some taxes. With ordinary Romans, he was popular."],
-      ["army", {"fire": 1, "label": "Britain · AD 60 – 61"}, "His reign also saw a great revolt in the new province of Britain, led by Queen Boudica. Roman towns were burned before the legions crushed it."]
+      ["army", {"era": "ancient", "fire": 1, "label": "Britain · AD 60 – 61"}, "His reign also saw a great revolt in the new province of Britain, led by Queen Boudica. Roman towns were burned before the legions crushed it."]
     ]},
     { "name": "Murder in the family", "lines": [
       ["lesson", {"text": "AD 55: Britannicus dies at dinner."}, "In AD 55, Britannicus collapsed at a palace dinner and died. The sources say Nero had him poisoned. He was not yet fourteen."],
@@ -62,11 +62,11 @@
       ["bust", {"name": "Nero", "years": "AD 68", "role": "Emperor and performer, now hated by much of Rome's elite.", "hair": "curly", "hat": "laurel", "beard": "stubble", "coat": "robe", "round": 1, "frown": 1}, "Back in Rome, money was running short. Confiscations and heavy demands angered the provinces, and the army's commanders were losing patience."]
     ]},
     { "name": "The fall", "lines": [
-      ["army", {"label": "Gaul and Spain · AD 68"}, "In AD 68, Gaius Julius Vindex, a governor in Gaul, rebelled, and Galba, the governor in Spain, joined him. Vindex was soon defeated, but the revolt spread."],
+      ["army", {"era": "ancient", "label": "Gaul and Spain · AD 68"}, "In AD 68, Gaius Julius Vindex, a governor in Gaul, rebelled, and Galba, the governor in Spain, joined him. Vindex was soon defeated, but the revolt spread."],
       ["decree", {"title": "Senate of Rome", "lines": ["Nero declared", "an enemy of the state"], "date": "June AD 68"}, "The palace guard abandoned Nero, and the Senate declared him an enemy of the state."],
       ["city", {"state": "normal", "night": 1, "seed": 12, "label": "a villa outside Rome · 9 June AD 68"}, "He fled to a freedman's villa outside the city. On the ninth of June, AD 68, as horsemen approached, he took his own life, with help from his secretary. He was thirty."],
       ["quote", {"text": "What an artist dies in me!", "who": "Nero's last words, according to Suetonius"}, "According to Suetonius, his last words were: what an artist dies in me."],
-      ["army", {"ruins": 1, "label": "the Year of the Four Emperors · AD 69"}, "His death ended the dynasty of Augustus. Within a year, four men had claimed the throne, in a civil war known as the Year of the Four Emperors."]
+      ["army", {"era": "ancient", "ruins": 1, "label": "the Year of the Four Emperors · AD 69"}, "His death ended the dynasty of Augustus. Within a year, four men had claimed the throne, in a civil war known as the Year of the Four Emperors."]
     ]},
     { "name": "Legacy", "lines": [
       ["people", {"n": 7, "pose": "mourn", "label": "flowers on his tomb"}, "Not everyone celebrated. Suetonius records that for a long time people laid flowers on his tomb. Several impostors later claimed to be Nero returned, and found followers in the east."],

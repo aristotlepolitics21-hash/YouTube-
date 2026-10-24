@@ -114,6 +114,12 @@ function hatOn(g, hat, r, o) {
   if (hat === 'wrap') { const c = o.hatc || '#1c1b19'; A(new THREE.SphereGeometry(r * 1.12, 24, 14, 0, Math.PI * 2, 0, Math.PI * .6), c, -r * .05, r * .02, 0, .95); A(new THREE.BoxGeometry(r * 1.3, r * 1.8, r * 2.3), c, -r * .55, -r * .7, 0, .95); }
   if (hat === 'leopard') { const cv = document.createElement('canvas'); cv.width = 128; cv.height = 64; const x = cv.getContext('2d'); x.fillStyle = '#c8984a'; x.fillRect(0, 0, 128, 64); const R = rng(9); x.fillStyle = '#2a1c10'; for (let i = 0; i < 60; i++) { x.beginPath(); x.arc(R() * 128, R() * 64, 2 + R() * 3, 0, 7); x.fill(); } const tx = new THREE.CanvasTexture(cv); tx.colorSpace = THREE.SRGBColorSpace; A(new THREE.CylinderGeometry(r * 1.05, r * 1.0, r * .8, 24), new THREE.MeshStandardMaterial({ map: tx, roughness: 1 }), -r * .05, r * .9, 0); }
 }
+// a spear in the right hand (point up) and a round shield on the left arm, for pre-modern armies
+export function spear(m, side = 'r') { const w = m[side + '_wrist']; scene.updateMatrixWorld(true); const p = new THREE.Vector3(); (w.image || w).getWorldPosition(p); const g = new THREE.Group(); g.position.copy(p);
+  const shaft = new THREE.Mesh(new THREE.CylinderGeometry(.012, .012, 1.5, 6), mat('#5a4430', .8)); shaft.position.y = .45; const tip = new THREE.Mesh(new THREE.ConeGeometry(.03, .12, 6), mat('#9a9ca0', .4, { metalness: .5 })); tip.position.y = 1.26;
+  for (const o of [shaft, tip]) { o.castShadow = true; g.add(o); } scene.add(g); stick(w, g); return g; }
+export function shield(m, c = '#6a2a1e', side = 'l') { const w = m[side + '_wrist']; scene.updateMatrixWorld(true); const p = new THREE.Vector3(); (w.image || w).getWorldPosition(p);
+  const g = new THREE.Mesh(new THREE.CylinderGeometry(.2, .2, .03, 20), mat(c, .7)); g.position.copy(p); g.rotation.set(Math.PI / 2, 0, THREE.MathUtils.degToRad(m.turn || 0)); g.castShadow = true; scene.add(g); stick(w, g); return g; }
 export function gun(m, side = 'r') { const w = m[side + '_wrist']; scene.updateMatrixWorld(true); const p = new THREE.Vector3(); (w.image || w).getWorldPosition(p); const g = new THREE.Mesh(new THREE.BoxGeometry(.03, .03, .7), mat('#2a2420', .6)); g.position.copy(p); g.rotation.y = THREE.MathUtils.degToRad(m.turn || 0) + Math.PI / 2; g.rotation.x = -1.2; g.castShadow = true; scene.add(g); stick(w, g); return g; }
 
 // ---------- poses (degrees; ph = phase for cycles) ----------

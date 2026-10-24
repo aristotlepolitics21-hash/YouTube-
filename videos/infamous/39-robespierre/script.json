@@ -32,7 +32,7 @@
       ["podium", {"night": 1, "banners": 0, "label": "the Jacobin Club · Paris"}, "In the new National Assembly, and at the Jacobin Club, a political society in Paris, Robespierre became known as an uncompromising democrat."],
       ["checklist", {"head": "Robespierre argued for", "items": ["The vote for all men", "Rights for Jews", "Rights for free people of colour", "An end to the death penalty"]}, "He argued for the vote for all men, not just the wealthy, and for equal rights for Jews and free people of colour. In 1791, he called for the death penalty to be abolished."],
       ["lesson", {"text": "'The Incorruptible'"}, "He lived modestly, took no bribes, and was nicknamed the Incorruptible. His admirers loved his purity. His enemies found it chilling."],
-      ["army", {"label": "war with Austria · April 1792"}, "In 1792, he opposed going to war with Austria, warning that no one loves armed missionaries. He lost the argument, and France went to war."]
+      ["army", {"era": "musket", "label": "war with Austria · April 1792"}, "In 1792, he opposed going to war with Austria, warning that no one loves armed missionaries. He lost the argument, and France went to war."]
     ]},
     { "name": "The king must die", "lines": [
       ["cell", {"night": 1, "label": "Paris · August – September 1792"}, "That August, crowds stormed the royal palace and the monarchy fell. In September, more than a thousand prisoners were murdered in the jails of Paris."],
@@ -40,7 +40,7 @@
       ["paper", {"mast": "PARIS", "head": "The king is executed", "sub": "Louis Capet guillotined", "date": "21 January 1793"}, "The king was guillotined on the twenty-first of January 1793."]
     ]},
     { "name": "The Committee", "lines": [
-      ["army", {"fire": 1, "label": "1793 · war and civil war"}, "By the spring of 1793, France was at war with most of Europe, and rebellions had broken out in the west and in several major cities."],
+      ["army", {"era": "musket", "fire": 1, "label": "1793 · war and civil war"}, "By the spring of 1793, France was at war with most of Europe, and rebellions had broken out in the west and in several major cities."],
       ["wall", {"night": 1, "label": "the Girondins · 1793"}, "In June, the Convention expelled the Girondins, the moderate faction that had rivalled Robespierre's Jacobins. Many of their leaders were later executed."],
       ["decree", {"title": "Committee of Public Safety", "lines": ["Twelve members", "Robespierre joins", "27 July 1793"], "date": "1793 – 1794"}, "In July 1793, Robespierre joined the Committee of Public Safety, a body of twelve men that became, in effect, the government of France. He was not a dictator, but he was its most famous voice."],
       ["bust", {"name": "Robespierre", "years": "1793 – 1794", "role": "Committee of Public Safety. The voice of the Revolutionary government.", "hair": "wig", "coat": "suit", "tie": 0, "glasses": "round", "frown": 1}, "Fastidious and austere, he still powdered his hair in the old style. He saw the Republic as a struggle of virtue against its enemies, and he saw enemies everywhere."]
@@ -60,7 +60,7 @@
       ["stat", {"value": "1,000+", "label": "guillotined in Paris · 10 June – 27 July 1794"}, "In the seven weeks that followed, known as the Great Terror, well over a thousand people were guillotined in Paris alone."]
     ]},
     { "name": "Thermidor", "lines": [
-      ["army", {"label": "Fleurus · 26 June 1794"}, "Meanwhile, the war had turned. In June 1794, French armies won a major victory at Fleurus. To many deputies, the emergency that had justified the Terror seemed to be over."],
+      ["army", {"era": "musket", "label": "Fleurus · 26 June 1794"}, "Meanwhile, the war had turned. In June 1794, French armies won a major victory at Fleurus. To many deputies, the emergency that had justified the Terror seemed to be over."],
       ["podium", {"night": 1, "banners": 0, "label": "the Convention · 26 July 1794"}, "On the twenty-sixth of July, he gave a long speech warning of traitors in the Convention, but refused to name them. Every deputy with something to fear assumed he meant them."],
       ["versus", {"left": "ROBESPIERRE", "right": "CONVENTION", "mid": "9 THERMIDOR", "red": "l"}, "The next day, the ninth of Thermidor in the revolutionary calendar, they shouted him down and voted for his arrest."],
       ["city", {"state": "normal", "night": 1, "seed": 8, "label": "Hôtel de Ville · night of 27 July 1794"}, "Supporters freed him, and he took refuge in the city hall. In the early hours, troops loyal to the Convention stormed it."],

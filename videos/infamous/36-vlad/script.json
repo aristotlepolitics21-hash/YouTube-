@@ -48,16 +48,16 @@
     ]},
     { "name": "War with the Sultan", "lines": [
       ["bust", {"name": "Mehmed II", "years": "1432 – 1481", "role": "Ottoman sultan. Conquered Constantinople in 1453.", "hat": "turban", "beard": "full", "coat": "robe"}, "The great power to the south was ruled by Mehmed the Second, the sultan who had conquered Constantinople in 1453. Vlad stopped paying him tribute."],
-      ["army", {"fire": 1, "night": 1, "label": "along the Danube · winter 1461 – 1462"}, "In the winter of 1461, Vlad crossed the Danube into Ottoman territory and destroyed towns and forts along the river. This was the campaign he described in his letter to the king of Hungary."],
+      ["army", {"era": "medieval", "fire": 1, "night": 1, "label": "along the Danube · winter 1461 – 1462"}, "In the winter of 1461, Vlad crossed the Danube into Ottoman territory and destroyed towns and forts along the river. This was the campaign he described in his letter to the king of Hungary."],
       ["riders", {"n": 12, "flip": 1, "label": "the Ottoman invasion · June 1462"}, "In the summer of 1462, Mehmed invaded Wallachia with a far larger army. Vlad could not face him in open battle, so he burned the crops, poisoned wells and fell back."],
-      ["army", {"night": 1, "dir": -1, "label": "the Night Attack · June 1462"}, "In June, he led a night raid into the Ottoman camp, hoping to kill the sultan himself. It caused chaos, but it failed."],
+      ["army", {"era": "medieval", "night": 1, "dir": -1, "label": "the Night Attack · June 1462"}, "In June, he led a night raid into the Ottoman camp, hoping to kill the sultan himself. It caused chaos, but it failed."],
       ["field", {"famine": 1, "label": "the field of stakes"}, "Then the sultan reached Târgoviște and the field of stakes. The Greek historian Laonikos Chalkokondyles put the number of dead there at about twenty thousand. Even if that is exaggerated, the sight shook the invaders."]
     ]},
     { "name": "Prisoner", "lines": [
       ["throne", {"crown": 0, "label": "Radu the Handsome · 1462"}, "But Mehmed did not need to win a battle. He placed Vlad's brother Radu, who had stayed loyal to the Ottomans, on the Wallachian throne, and many nobles went over to him."],
       ["cell", {"label": "Hungary · 1462 – c. 1474"}, "Vlad fled to Hungary to seek help from its young king, Matthias Corvinus. Instead, Matthias had him arrested, and kept him a prisoner for about twelve years."],
       ["date", {"date": "1476", "place": "Wallachia · third reign"}, "Released at last, he married a cousin of King Matthias, and in 1476 he fought his way back onto the throne of Wallachia, for the third time."],
-      ["army", {"ruins": 1, "label": "winter 1476 – 1477"}, "Within weeks, around the turn of the year, he was killed in battle against the Ottomans and their Wallachian allies. Accounts of exactly how he died differ."],
+      ["army", {"era": "medieval", "ruins": 1, "label": "winter 1476 – 1477"}, "Within weeks, around the turn of the year, he was killed in battle against the Ottomans and their Wallachian allies. Accounts of exactly how he died differ."],
       ["paper", {"mast": "CONSTANTINOPLE", "head": "The prince's head sent to the sultan", "sub": "according to several accounts", "date": "1477"}, "According to several accounts, his head was sent to the sultan in Constantinople. Where his body lies is unknown. The monastery at Snagov, long named as his grave, is disputed."]
     ]},
     { "name": "Becoming Dracula", "lines": [

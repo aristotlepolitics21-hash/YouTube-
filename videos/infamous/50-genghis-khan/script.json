@@ -43,8 +43,8 @@
       ["lesson", {"text": "Surrender and be spared. Resist and be destroyed."}, "His method was simple and brutal. Cities that surrendered were usually spared, though heavily taxed. Cities that resisted were often destroyed, and their people killed or enslaved, as a warning to the next."]
     ]},
     { "name": "China", "lines": [
-      ["army", {"label": "northern China · 1211"}, "In 1209 he forced the Western Xia kingdom to submit. In 1211 he invaded the Jin dynasty, which ruled northern China."],
-      ["army", {"fire": 1, "night": 1, "label": "Zhongdu (Beijing) · 1215"}, "In 1215 the Jin capital, Zhongdu, today's Beijing, fell after a long siege, and was sacked and burned."],
+      ["army", {"era": "steppe", "label": "northern China · 1211"}, "In 1209 he forced the Western Xia kingdom to submit. In 1211 he invaded the Jin dynasty, which ruled northern China."],
+      ["army", {"era": "steppe", "fire": 1, "night": 1, "label": "Zhongdu (Beijing) · 1215"}, "In 1215 the Jin capital, Zhongdu, today's Beijing, fell after a long siege, and was sacked and burned."],
       ["field", {"n": 5, "guard": 1, "label": "engineers and craftsmen"}, "He was also a fast learner. Captured Chinese engineers taught the Mongols siege warfare, and skilled craftsmen were often spared and put to work."]
     ]},
     { "name": "The western war", "lines": [
@@ -55,7 +55,7 @@
       ["bars", {"items": [["Ibn al-Athir's claim", 700000, ""], ["Juvayni's claim", 1300000, ""]], "max": 1400000, "red": 1, "label": "claimed deaths at Merv, 1221"}, "Chroniclers recorded death tolls of hundreds of thousands, even more than a million, for single cities. Ibn al-Athir and Juvayni gave these figures for Merv. Modern historians consider them impossible, but agree the slaughter was immense."],
       ["field", {"famine": 1, "village": 1, "label": "Khorasan · after 1221"}, "Irrigation systems were wrecked and farmland turned to waste. Some historians argue parts of the region took centuries to recover."],
       ["people", {"n": 3, "pose": "walk", "label": "the Shah's flight"}, "The Shah fled west and died on an island in the Caspian Sea, his empire gone."],
-      ["army", {"dir": -1, "label": "the Kalka River · 1223"}, "Two of Genghis Khan's generals rode on around the Caspian, through the Caucasus, and defeated an army of Rus' princes in 1223, before turning home."]
+      ["army", {"era": "steppe", "dir": -1, "label": "the Kalka River · 1223"}, "Two of Genghis Khan's generals rode on around the Caspian, through the Caucasus, and defeated an army of Rus' princes in 1223, before turning home."]
     ]},
     { "name": "Death", "lines": [
       ["date", {"date": "August 1227", "place": "campaign against the Western Xia"}, "In 1226 he turned on the Western Xia, who had refused to send troops for his western war. He died during the campaign, in August 1227. The cause is unknown. One account says he never recovered from a fall from his horse."],
