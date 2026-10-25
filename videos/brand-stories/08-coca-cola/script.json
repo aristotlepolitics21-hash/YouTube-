@@ -1,0 +1,256 @@
+{
+ "series": "Brand Stories",
+ "episode": 8,
+ "title": "Coca-Cola Sold Its Bottling Rights for 1 Dollar",
+ "out": "coca-cola-sold-its-bottling-rights-for-1-dollar",
+ "cast": {
+  "pemberton": {
+   "skin": "#ecbf9a",
+   "hairCol": "#5a4a3a",
+   "hair": "slick",
+   "facial": "beard",
+   "outfit": "period",
+   "top": "#3a3a30",
+   "tie": "#5a3a2a",
+   "seed": 1
+  },
+  "candler": {
+   "skin": "#e6b48e",
+   "hairCol": "#8a8a8a",
+   "hair": "bald",
+   "facial": "mustache",
+   "facialCol": "#6a6a6a",
+   "outfit": "period",
+   "top": "#2a2a30",
+   "tie": "#7a2a2a",
+   "seed": 2
+  },
+  "bottler": {
+   "skin": "#e9b48c",
+   "hairCol": "#3a2a20",
+   "hair": "side",
+   "outfit": "suit",
+   "top": "#5a4a3a",
+   "tie": "#2a4a3a",
+   "seed": 3
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Coca-Cola Sold Its Bottling Rights for 1 Dollar",
+   "lines": [
+    [
+     "b08_1",
+     {
+      "bg": "shop",
+      "cast": [
+       {
+        "id": "pemberton",
+        "x": 1350,
+        "y": 420,
+        "s": 0.86,
+        "pose": "hold",
+        "expr": "smile",
+        "turn": -0.3,
+        "hold": {
+         "type": "glass",
+         "s": 0.45,
+         "y": 480
+        }
+       }
+      ],
+      "props": []
+     },
+     "In 1886, an Atlanta pharmacist named John Pemberton mixed a new syrup, and sold it at a soda fountain."
+    ],
+    [
+     "b08_2",
+     {
+      "bg": "diner",
+      "cast": [],
+      "props": [
+       {
+        "type": "glass",
+        "x": 960,
+        "y": 860,
+        "s": 1.4
+       }
+      ],
+      "counter": {
+       "label": "GLASSES PER DAY",
+       "from_": 0,
+       "to": 9
+      }
+     },
+     "In its first year, it sold about nine glasses a day."
+    ],
+    [
+     "b08_3",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "pemberton",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "neck",
+        "expr": "tired",
+        "turn": 0
+       }
+      ],
+      "props": [
+       {
+        "type": "papers",
+        "x": 960,
+        "y": 820,
+        "s": 1.4,
+        "n": 8,
+        "front": true
+       }
+      ]
+     },
+     "Pemberton was ill and short of money. He sold the rights off in pieces, and died in 1888."
+    ],
+    [
+     "b08_4",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "candler",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "hold",
+        "expr": "proud",
+        "turn": 0,
+        "hold": {
+         "type": "cheque",
+         "s": 0.4,
+         "y": 430,
+         "amount": "$2,300"
+        }
+       }
+      ],
+      "props": []
+     },
+     "A businessman, Asa Candler, gained control for around two thousand three hundred dollars."
+    ],
+    [
+     "b08_5",
+     {
+      "bg": "street",
+      "cast": [
+       {
+        "id": "candler",
+        "x": 1450,
+        "y": 300,
+        "s": 0.45,
+        "pose": "present",
+        "expr": "grin",
+        "turn": -0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "coupon",
+        "x": 720,
+        "y": 800,
+        "s": 1
+       }
+      ]
+     },
+     "Candler handed out coupons for free glasses, so people would try it, and come back."
+    ],
+    [
+     "b08_6",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "candler",
+        "x": 680,
+        "y": 420,
+        "s": 0.86,
+        "pose": "shake",
+        "expr": "smug",
+        "turn": 0.3
+       },
+       {
+        "id": "bottler",
+        "x": 1300,
+        "y": 420,
+        "s": 0.86,
+        "pose": "shake",
+        "expr": "grin",
+        "turn": -0.3,
+        "flip": true
+       }
+      ],
+      "props": [],
+      "counter": {
+       "label": "BOTTLING RIGHTS",
+       "from_": 0,
+       "to": 1,
+       "pre": "$"
+      }
+     },
+     "In 1899, he sold the rights to bottle it across most of America, for one dollar."
+    ],
+    [
+     "b08_7",
+     {
+      "bg": "factory",
+      "cast": [
+       {
+        "id": "bottler",
+        "x": 1400,
+        "y": 420,
+        "s": 0.86,
+        "pose": "cheer",
+        "expr": "grin",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "bottle",
+        "x": 640,
+        "y": 1000,
+        "s": 1,
+        "n": 5
+       }
+      ]
+     },
+     "He thought bottles were a passing fad. The bottlers became millionaires."
+    ],
+    [
+     "b08_8",
+     {
+      "bg": "studio",
+      "cast": [],
+      "props": [
+       {
+        "type": "bottle",
+        "x": 960,
+        "y": 900,
+        "s": 1.2,
+        "n": 7
+       }
+      ],
+      "cam": "out",
+      "counter": {
+       "label": "SERVINGS PER DAY",
+       "from_": 0,
+       "to": 2000000000,
+       "suf": "+"
+      }
+     },
+     "Today, the company's drinks are served around two billion times a day."
+    ]
+   ]
+  }
+ ]
+}

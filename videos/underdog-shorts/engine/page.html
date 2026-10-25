@@ -51,7 +51,7 @@ function caption(S, T) { if (!S.cap || T < S.cap[0] || T > S.cap[1] + .25) retur
 window.__at = (T) => { let i = SHOTS.findIndex(s => T < s.end); if (i < 0) i = SHOTS.length - 1; const S = SHOTS[i];
   c.fillStyle = '#000'; c.fillRect(0, 0, W, H);
   // title block above the panel
-  c.save(); c.textAlign = 'center'; c.fillStyle = '#8a7a64'; c.font = '600 26px Inter, "DejaVu Sans", sans-serif'; c.fillText(`UNDERDOGS  ·  ${String(EP.num).padStart(2, '0')}`, W / 2, PY - 150);
+  c.save(); c.textAlign = 'center'; c.fillStyle = '#8a7a64'; c.font = '600 26px Inter, "DejaVu Sans", sans-serif'; c.fillText(`${EP.series || 'UNDERDOGS'}  ·  ${String(EP.num).padStart(2, '0')}`, W / 2, PY - 150);
   c.fillStyle = '#f2e8d2'; c.font = 'italic 64px IS'; c.fillText(EP.title, W / 2, PY - 70); c.restore();
   drawShot(S, T); c.drawImage(SC, 0, PY, W, PH);
   const fade = T - S.start; if (i > 0 && fade < .3) { drawShot(SHOTS[i - 1], T); c.save(); c.globalAlpha = 1 - fade / .3; c.drawImage(SC, 0, PY, W, PH); c.restore(); }

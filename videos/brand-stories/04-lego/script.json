@@ -1,0 +1,250 @@
+{
+ "series": "Brand Stories",
+ "episode": 4,
+ "title": "How LEGO Survived Bankruptcy, Fire and Plastic",
+ "out": "how-lego-survived-bankruptcy-fire-and-plastic",
+ "cast": {
+  "ole": {
+   "skin": "#ecbf9a",
+   "hairCol": "#6a5a4a",
+   "hair": "slick",
+   "facial": "mustache",
+   "outfit": "apron",
+   "shirt": "#e8e2d4",
+   "apron": "#8a6a4a",
+   "seed": 1,
+   "eye": "#5a8aba"
+  },
+  "godtfred": {
+   "skin": "#f0c6a4",
+   "hairCol": "#8a6a3a",
+   "hair": "side",
+   "outfit": "suit",
+   "top": "#3a4a5a",
+   "tie": "#c84a3a",
+   "seed": 2
+  },
+  "clerk": {
+   "skin": "#e6b48e",
+   "hairCol": "#5a4030",
+   "hair": "side",
+   "outfit": "shirt",
+   "top": "#6a7a8a",
+   "shirt": "#8a9aa8",
+   "seed": 9
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How LEGO Survived Bankruptcy, Fire and Plastic",
+   "lines": [
+    [
+     "b04_1",
+     {
+      "bg": "workshop",
+      "cast": [
+       {
+        "id": "ole",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "neck",
+        "expr": "worried",
+        "turn": 0.1
+       }
+      ],
+      "props": [
+       {
+        "type": "table",
+        "x": 960,
+        "y": 830,
+        "s": 1.6,
+        "front": true
+       }
+      ]
+     },
+     "In 1932, during the Great Depression, a Danish carpenter named Ole Kirk Christiansen was running out of work."
+    ],
+    [
+     "b04_2",
+     {
+      "bg": "workshop",
+      "cast": [
+       {
+        "id": "ole",
+        "x": 1350,
+        "y": 420,
+        "s": 0.86,
+        "pose": "hold",
+        "expr": "smile",
+        "turn": -0.3,
+        "hold": {
+         "type": "duck",
+         "s": 0.35,
+         "y": 480
+        }
+       }
+      ],
+      "props": [
+       {
+        "type": "duck",
+        "x": 600,
+        "y": 900,
+        "s": 0.9
+       }
+      ]
+     },
+     "To survive, he started making wooden toys. Ducks, cars, and yo-yos."
+    ],
+    [
+     "b04_3",
+     {
+      "bg": "workshop",
+      "cast": [],
+      "props": [
+       {
+        "type": "sign",
+        "x": 960,
+        "y": 980,
+        "s": 1.2,
+        "text": "LEG GODT = PLAY WELL",
+        "w": 760,
+        "size": 54
+       }
+      ]
+     },
+     "He called the company LEGO, from the Danish words leg godt. Play well."
+    ],
+    [
+     "b04_4",
+     {
+      "bg": "factory",
+      "cast": [
+       {
+        "id": "ole",
+        "x": 1350,
+        "y": 420,
+        "s": 0.86,
+        "pose": "present",
+        "expr": "determined",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "gears",
+        "x": 620,
+        "y": 960,
+        "s": 1
+       }
+      ]
+     },
+     "In 1947, he took a huge risk, and bought an expensive plastic moulding machine."
+    ],
+    [
+     "b04_5",
+     {
+      "bg": "shop",
+      "cast": [
+       {
+        "id": "clerk",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "crossed",
+        "expr": "skeptical",
+        "turn": 0
+       }
+      ],
+      "props": [
+       {
+        "type": "boxes",
+        "x": 960,
+        "y": 1060,
+        "s": 0.8,
+        "n": 4,
+        "label": "RETURNS",
+        "front": true
+       }
+      ],
+      "stamp": "SENT BACK"
+     },
+     "At first, plastic toys did not sell well. Some shops sent them back."
+    ],
+    [
+     "b04_6",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "godtfred",
+        "x": 1350,
+        "y": 420,
+        "s": 0.86,
+        "pose": "present",
+        "expr": "grin",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "bricks",
+        "x": 600,
+        "y": 960,
+        "s": 1
+       }
+      ]
+     },
+     "In 1958, his son Godtfred patented the stud and tube brick, so the pieces locked together firmly."
+    ],
+    [
+     "b04_7",
+     {
+      "bg": "ruins",
+      "cast": [
+       {
+        "id": "godtfred",
+        "x": 960,
+        "y": 400,
+        "s": 0.86,
+        "pose": "head",
+        "expr": "sad",
+        "turn": 0
+       }
+      ],
+      "props": [
+       {
+        "type": "rubble",
+        "x": 960,
+        "y": 1080,
+        "s": 1.2,
+        "front": true
+       }
+      ],
+      "stamp": "FIRE"
+     },
+     "Then, in 1960, a fire destroyed their wooden toy warehouse. They decided to focus on plastic bricks."
+    ],
+    [
+     "b04_8",
+     {
+      "bg": "studio",
+      "cast": [],
+      "props": [
+       {
+        "type": "bricks",
+        "x": 960,
+        "y": 900,
+        "s": 1.6,
+        "n": 14
+       }
+      ],
+      "cam": "out"
+     },
+     "Today, LEGO is one of the biggest toy companies in the world."
+    ]
+   ]
+  }
+ ]
+}

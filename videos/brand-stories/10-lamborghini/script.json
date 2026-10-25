@@ -1,0 +1,239 @@
+{
+ "series": "Brand Stories",
+ "episode": 10,
+ "title": "A Tractor Maker Took On Ferrari",
+ "out": "a-tractor-maker-took-on-ferrari",
+ "cast": {
+  "ferruccio": {
+   "skin": "#e6b48e",
+   "hairCol": "#3a2a1c",
+   "hair": "side",
+   "facial": "mustache",
+   "outfit": "shirt",
+   "top": "#5a6a7a",
+   "shirt": "#9aa8b8",
+   "seed": 1
+  },
+  "enzo": {
+   "skin": "#ecbf9a",
+   "hairCol": "#e8e8e8",
+   "hair": "swept",
+   "glasses": "heavy",
+   "outfit": "suit",
+   "top": "#2a2a30",
+   "tie": "#2a2a3a",
+   "seed": 2
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "A Tractor Maker Took On Ferrari",
+   "lines": [
+    [
+     "b10_1",
+     {
+      "bg": "workshop",
+      "cast": [
+       {
+        "id": "ferruccio",
+        "x": 1350,
+        "y": 420,
+        "s": 0.86,
+        "pose": "present",
+        "expr": "determined",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "tractor",
+        "x": 640,
+        "y": 1000,
+        "s": 0.8
+       }
+      ]
+     },
+     "After World War Two, an Italian mechanic named Ferruccio Lamborghini built tractors from old military machines."
+    ],
+    [
+     "b10_2",
+     {
+      "bg": "road",
+      "cast": [
+       {
+        "id": "ferruccio",
+        "x": 1450,
+        "y": 300,
+        "s": 0.45,
+        "pose": "cheer",
+        "expr": "grin",
+        "turn": -0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "sports",
+        "x": 720,
+        "y": 1000,
+        "s": 0.8,
+        "col": "#c83a2a"
+       }
+      ]
+     },
+     "His tractor company made him rich. Rich enough to buy a Ferrari."
+    ],
+    [
+     "b10_3",
+     {
+      "bg": "road",
+      "cast": [
+       {
+        "id": "ferruccio",
+        "x": 1450,
+        "y": 300,
+        "s": 0.45,
+        "pose": "head",
+        "expr": "annoyed",
+        "turn": -0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "sports",
+        "x": 720,
+        "y": 1000,
+        "s": 0.8,
+        "col": "#c83a2a",
+        "smoke": true
+       }
+      ]
+     },
+     "But the clutch on his Ferrari kept failing."
+    ],
+    [
+     "b10_4",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "ferruccio",
+        "x": 680,
+        "y": 420,
+        "s": 0.86,
+        "pose": "point",
+        "expr": "annoyed",
+        "turn": 0.3
+       },
+       {
+        "id": "enzo",
+        "x": 1300,
+        "y": 420,
+        "s": 0.86,
+        "pose": "crossed",
+        "expr": "smug",
+        "turn": -0.3
+       }
+      ],
+      "props": [],
+      "stamp": "STICK TO TRACTORS"
+     },
+     "The story goes, he complained to Enzo Ferrari himself, who told him to stick to making tractors."
+    ],
+    [
+     "b10_5",
+     {
+      "bg": "workshop",
+      "cast": [
+       {
+        "id": "ferruccio",
+        "x": 1350,
+        "y": 420,
+        "s": 0.86,
+        "pose": "hold",
+        "expr": "skeptical",
+        "turn": -0.3,
+        "hold": {
+         "type": "rings",
+         "s": 0.3,
+         "y": 480,
+         "n": 2
+        }
+       }
+      ],
+      "props": [
+       {
+        "type": "gears",
+        "x": 620,
+        "y": 960,
+        "s": 0.9
+       }
+      ]
+     },
+     "He later said he found the clutch was much the same part as in his tractors, sold at a much higher price."
+    ],
+    [
+     "b10_6",
+     {
+      "bg": "factory",
+      "cast": [
+       {
+        "id": "ferruccio",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "hips",
+        "expr": "determined",
+        "turn": 0
+       }
+      ],
+      "props": []
+     },
+     "So in 1963, he started his own sports car company."
+    ],
+    [
+     "b10_7",
+     {
+      "bg": "studio",
+      "cast": [],
+      "props": [
+       {
+        "type": "sports",
+        "x": 960,
+        "y": 900,
+        "s": 1.2,
+        "col": "#e2a82a"
+       }
+      ],
+      "cam": "in"
+     },
+     "In 1966 came the Miura, one of the first mid-engined road supercars. It stunned the car world."
+    ],
+    [
+     "b10_8",
+     {
+      "bg": "road",
+      "cast": [],
+      "props": [
+       {
+        "type": "tractor",
+        "x": 560,
+        "y": 1000,
+        "s": 0.6
+       },
+       {
+        "type": "sports",
+        "x": 1300,
+        "y": 1000,
+        "s": 0.7,
+        "col": "#e2a82a"
+       }
+      ],
+      "cam": "out"
+     },
+     "An angry tractor maker built one of the most famous supercar brands on Earth."
+    ]
+   ]
+  }
+ ]
+}

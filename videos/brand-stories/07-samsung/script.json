@@ -1,0 +1,247 @@
+{
+ "series": "Brand Stories",
+ "episode": 7,
+ "title": "Samsung Started Selling Dried Fish",
+ "out": "samsung-started-selling-dried-fish",
+ "cast": {
+  "lee": {
+   "skin": "#e6b88e",
+   "hairCol": "#2a2420",
+   "hair": "slick",
+   "outfit": "suit",
+   "top": "#3a3a44",
+   "tie": "#2a3a5a",
+   "seed": 1,
+   "eye": "#2a1d14"
+  },
+  "kunhee": {
+   "skin": "#e2b088",
+   "hairCol": "#15110e",
+   "hair": "side",
+   "glasses": "rect",
+   "outfit": "suit",
+   "top": "#2a2a30",
+   "tie": "#6a2a2a",
+   "seed": 2,
+   "eye": "#2a1d14"
+  },
+  "exec1": {
+   "skin": "#e9b48c",
+   "hairCol": "#3a2a20",
+   "hair": "side",
+   "outfit": "suit",
+   "top": "#2e3440",
+   "tie": "#6a2a2a",
+   "seed": 7
+  },
+  "exec2": {
+   "skin": "#d9a07a",
+   "hairCol": "#8a8a8a",
+   "hair": "bald",
+   "facial": "mustache",
+   "facialCol": "#6a6a6a",
+   "outfit": "suit",
+   "top": "#4a3a30",
+   "tie": "#2a4a6a",
+   "seed": 8
+  },
+  "buyer": {
+   "skin": "#e6b48e",
+   "hairCol": "#5a4030",
+   "hair": "side",
+   "outfit": "shirt",
+   "top": "#6a7a8a",
+   "shirt": "#8a9aa8",
+   "seed": 9
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Samsung Started Selling Dried Fish",
+   "lines": [
+    [
+     "b07_1",
+     {
+      "bg": "shop",
+      "cast": [
+       {
+        "id": "lee",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "present",
+        "expr": "smile",
+        "turn": 0
+       }
+      ],
+      "props": []
+     },
+     "In 1938, Lee Byung-chul opened a small trading shop in Daegu, Korea."
+    ],
+    [
+     "b07_2",
+     {
+      "bg": "shop",
+      "cast": [
+       {
+        "id": "lee",
+        "x": 1400,
+        "y": 420,
+        "s": 0.86,
+        "pose": "hips",
+        "expr": "proud",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "crates",
+        "x": 640,
+        "y": 1000,
+        "s": 0.9
+       }
+      ]
+     },
+     "It sold dried fish, vegetables, and noodles."
+    ],
+    [
+     "b07_3",
+     {
+      "bg": "oldoffice",
+      "cast": [],
+      "props": [
+       {
+        "type": "sign",
+        "x": 960,
+        "y": 980,
+        "s": 1.2,
+        "text": "SAMSUNG = THREE STARS",
+        "w": 820,
+        "size": 52
+       }
+      ]
+     },
+     "He called it Samsung, which means three stars."
+    ],
+    [
+     "b07_4",
+     {
+      "bg": "factory",
+      "cast": [
+       {
+        "id": "lee",
+        "x": 1350,
+        "y": 420,
+        "s": 0.86,
+        "pose": "present",
+        "expr": "determined",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "boxes",
+        "x": 640,
+        "y": 1000,
+        "s": 0.9,
+        "n": 8,
+        "label": "SUGAR"
+       }
+      ]
+     },
+     "After the Korean War, he moved into sugar, textiles, and insurance."
+    ],
+    [
+     "b07_5",
+     {
+      "bg": "office",
+      "cast": [
+       {
+        "id": "lee",
+        "x": 1350,
+        "y": 420,
+        "s": 0.86,
+        "pose": "present",
+        "expr": "smile",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "screen",
+        "x": 640,
+        "y": 600,
+        "s": 0.8,
+        "glow": "#c8c8c8"
+       }
+      ]
+     },
+     "In 1969, Samsung started making electronics. Early products included black and white TVs."
+    ],
+    [
+     "b07_6",
+     {
+      "bg": "shop",
+      "cast": [
+       {
+        "id": "buyer",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "crossed",
+        "expr": "skeptical",
+        "turn": 0
+       }
+      ],
+      "props": []
+     },
+     "For years, its electronics were seen as cheap and second rate."
+    ],
+    [
+     "b07_7",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "kunhee",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "point",
+        "expr": "determined",
+        "turn": 0.1
+       }
+      ],
+      "props": [],
+      "stamp": "CHANGE"
+     },
+     "In 1993, his son, chairman Lee Kun-hee, told managers to change everything, except their wives and children."
+    ],
+    [
+     "b07_8",
+     {
+      "bg": "studio",
+      "cast": [],
+      "props": [
+       {
+        "type": "phone",
+        "x": 760,
+        "y": 620,
+        "s": 1.6
+       },
+       {
+        "type": "phone",
+        "x": 1160,
+        "y": 620,
+        "s": 1.6
+       }
+      ],
+      "cam": "out"
+     },
+     "Today, Samsung is one of the biggest phone and chip makers in the world. It began with dried fish."
+    ]
+   ]
+  }
+ ]
+}

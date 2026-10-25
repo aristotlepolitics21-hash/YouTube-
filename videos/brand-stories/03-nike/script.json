@@ -1,0 +1,264 @@
+{
+ "series": "Brand Stories",
+ "episode": 3,
+ "title": "How Nike Started From a Car Boot",
+ "out": "how-nike-started-from-a-car-boot",
+ "cast": {
+  "knight": {
+   "skin": "#ecc29e",
+   "hairCol": "#8a6a3a",
+   "hair": "side",
+   "outfit": "shirt",
+   "top": "#5a7a9a",
+   "shirt": "#9ab8d0",
+   "seed": 1
+  },
+  "bowerman": {
+   "skin": "#e6b48e",
+   "hairCol": "#9a9a9a",
+   "hair": "bald",
+   "outfit": "sweater",
+   "top": "#2a5a3a",
+   "seed": 2
+  },
+  "carolyn": {
+   "skin": "#f2c8a8",
+   "hairCol": "#3a2a1c",
+   "hair": "bob",
+   "fem": 1,
+   "outfit": "blouse",
+   "top": "#c86a3a",
+   "seed": 3
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How Nike Started From a Car Boot",
+   "lines": [
+    [
+     "b03_1",
+     {
+      "bg": "street",
+      "cast": [
+       {
+        "id": "knight",
+        "x": 1450,
+        "y": 300,
+        "s": 0.45,
+        "pose": "hold",
+        "expr": "smile",
+        "turn": -0.2,
+        "hold": {
+         "type": "shoe",
+         "s": 0.35,
+         "y": 480
+        }
+       }
+      ],
+      "props": [
+       {
+        "type": "car",
+        "x": 700,
+        "y": 1000,
+        "s": 0.8,
+        "col": "#5a7a5a"
+       }
+      ]
+     },
+     "In 1964, a young runner named Phil Knight sold Japanese running shoes out of the back of his car, at track meets."
+    ],
+    [
+     "b03_2",
+     {
+      "bg": "office",
+      "cast": [
+       {
+        "id": "knight",
+        "x": 680,
+        "y": 420,
+        "s": 0.86,
+        "pose": "shake",
+        "expr": "grin",
+        "turn": 0.3
+       },
+       {
+        "id": "bowerman",
+        "x": 1300,
+        "y": 420,
+        "s": 0.86,
+        "pose": "shake",
+        "expr": "smile",
+        "turn": -0.3,
+        "flip": true
+       }
+      ],
+      "props": [],
+      "counter": {
+       "label": "EACH PUT IN",
+       "from_": 0,
+       "to": 500,
+       "pre": "$"
+      }
+     },
+     "He and his old running coach, Bill Bowerman, each put in five hundred dollars."
+    ],
+    [
+     "b03_3",
+     {
+      "bg": "kitchen",
+      "cast": [
+       {
+        "id": "bowerman",
+        "x": 1300,
+        "y": 420,
+        "s": 0.86,
+        "pose": "hold",
+        "expr": "think",
+        "turn": -0.3,
+        "hold": {
+         "type": "shoe",
+         "s": 0.35,
+         "y": 480
+        }
+       }
+      ],
+      "props": [
+       {
+        "type": "waffle",
+        "x": 640,
+        "y": 860,
+        "s": 1
+       }
+      ]
+     },
+     "Bowerman was obsessed with lighter shoes. One morning, he poured rubber into his wife's waffle iron."
+    ],
+    [
+     "b03_4",
+     {
+      "bg": "workshop",
+      "cast": [],
+      "props": [
+       {
+        "type": "shoe",
+        "x": 960,
+        "y": 760,
+        "s": 1.6
+       }
+      ],
+      "cam": "in"
+     },
+     "The bumpy waffle sole gripped the track, and it became one of their first big hits."
+    ],
+    [
+     "b03_5",
+     {
+      "bg": "classroom",
+      "cast": [
+       {
+        "id": "carolyn",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "write",
+        "expr": "smile",
+        "turn": 0.1
+       }
+      ],
+      "props": [
+       {
+        "type": "notebook",
+        "x": 960,
+        "y": 830,
+        "s": 1,
+        "front": true
+       }
+      ],
+      "counter": {
+       "label": "LOGO DESIGN FEE",
+       "from_": 0,
+       "to": 35,
+       "pre": "$"
+      }
+     },
+     "For a logo, they paid a design student, Carolyn Davidson, thirty five dollars."
+    ],
+    [
+     "b03_6",
+     {
+      "bg": "office",
+      "cast": [
+       {
+        "id": "knight",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "chin",
+        "expr": "skeptical",
+        "turn": 0.2
+       }
+      ],
+      "props": []
+     },
+     "Knight wasn't sure about it. He reportedly said, I don't love it, but it will grow on me."
+    ],
+    [
+     "b03_7",
+     {
+      "bg": "studio",
+      "cast": [
+       {
+        "id": "knight",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "cheer",
+        "expr": "grin",
+        "turn": 0
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "x": 1500,
+        "y": 980,
+        "s": 0.8,
+        "text": "NIKE = VICTORY",
+        "w": 440,
+        "size": 46
+       }
+      ]
+     },
+     "They named the brand after the Greek goddess of victory. Nike."
+    ],
+    [
+     "b03_8",
+     {
+      "bg": "office",
+      "cast": [
+       {
+        "id": "carolyn",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "hold",
+        "expr": "happy",
+        "turn": 0,
+        "hold": {
+         "type": "cheque",
+         "s": 0.4,
+         "y": 430,
+         "amount": "SHARES"
+        }
+       }
+      ],
+      "props": [],
+      "cam": "out"
+     },
+     "Years later, Knight thanked Davidson with company shares. They were later reported to be worth over a million dollars."
+    ]
+   ]
+  }
+ ]
+}

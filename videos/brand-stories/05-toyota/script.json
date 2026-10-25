@@ -1,0 +1,249 @@
+{
+ "series": "Brand Stories",
+ "episode": 5,
+ "title": "Toyota Started With Weaving Looms",
+ "out": "toyota-started-with-weaving-looms",
+ "cast": {
+  "sakichi": {
+   "skin": "#e2b088",
+   "hairCol": "#3a3a3a",
+   "hair": "slick",
+   "facial": "mustache",
+   "outfit": "period",
+   "top": "#3a3a30",
+   "tie": "#4a3a2a",
+   "seed": 1,
+   "eye": "#2a1d14"
+  },
+  "kiichiro": {
+   "skin": "#e6b88e",
+   "hairCol": "#15110e",
+   "hair": "slick",
+   "glasses": "round",
+   "outfit": "suit",
+   "top": "#2e3440",
+   "tie": "#3a3a3a",
+   "seed": 2,
+   "eye": "#2a1d14"
+  },
+  "brit": {
+   "skin": "#ecc29e",
+   "hairCol": "#8a6a4a",
+   "hair": "side",
+   "facial": "mustache",
+   "outfit": "period",
+   "top": "#2a2a30",
+   "tie": "#6a2a2a",
+   "seed": 3
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Toyota Started With Weaving Looms",
+   "lines": [
+    [
+     "b05_1",
+     {
+      "bg": "factory",
+      "cast": [
+       {
+        "id": "sakichi",
+        "x": 1400,
+        "y": 420,
+        "s": 0.86,
+        "pose": "present",
+        "expr": "smile",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "loom",
+        "x": 640,
+        "y": 960,
+        "s": 1
+       }
+      ]
+     },
+     "Before Toyota made cars, it made weaving looms."
+    ],
+    [
+     "b05_2",
+     {
+      "bg": "workshop",
+      "cast": [
+       {
+        "id": "sakichi",
+        "x": 1350,
+        "y": 420,
+        "s": 0.86,
+        "pose": "chin",
+        "expr": "think",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "loom",
+        "x": 620,
+        "y": 960,
+        "s": 0.9
+       }
+      ]
+     },
+     "Sakichi Toyoda invented automatic looms. His best one stopped by itself the moment a thread broke."
+    ],
+    [
+     "b05_3",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "brit",
+        "x": 680,
+        "y": 420,
+        "s": 0.86,
+        "pose": "shake",
+        "expr": "smile",
+        "turn": 0.3
+       },
+       {
+        "id": "sakichi",
+        "x": 1300,
+        "y": 420,
+        "s": 0.86,
+        "pose": "shake",
+        "expr": "proud",
+        "turn": -0.3,
+        "flip": true
+       }
+      ],
+      "props": [],
+      "counter": {
+       "label": "PATENT RIGHTS",
+       "from_": 0,
+       "to": 100000,
+       "pre": "\u00a3"
+      }
+     },
+     "In 1929, he sold the patent rights to a British company, Platt Brothers, for about a hundred thousand pounds."
+    ],
+    [
+     "b05_4",
+     {
+      "bg": "workshop",
+      "cast": [
+       {
+        "id": "kiichiro",
+        "x": 1400,
+        "y": 420,
+        "s": 0.86,
+        "pose": "present",
+        "expr": "determined",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "car",
+        "x": 640,
+        "y": 1000,
+        "s": 0.8,
+        "col": "#2a2a30"
+       }
+      ]
+     },
+     "His son Kiichiro used money from the loom business to start building cars."
+    ],
+    [
+     "b05_5",
+     {
+      "bg": "oldoffice",
+      "cast": [],
+      "props": [
+       {
+        "type": "sign",
+        "x": 960,
+        "y": 980,
+        "s": 1.2,
+        "text": "TOYODA  \u2192  TOYOTA",
+        "w": 760
+       }
+      ],
+      "counter": {
+       "label": "STROKES TO WRITE",
+       "from_": 0,
+       "to": 8
+      }
+     },
+     "The name changed from Toyoda to Toyota. In Japanese it took eight strokes to write, and eight is a lucky number."
+    ],
+    [
+     "b05_6",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "kiichiro",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "head",
+        "expr": "sad",
+        "turn": 0
+       }
+      ],
+      "props": [
+       {
+        "type": "papers",
+        "x": 960,
+        "y": 820,
+        "s": 1.4,
+        "n": 8,
+        "front": true
+       }
+      ],
+      "stamp": "NEAR BANKRUPT"
+     },
+     "Early cars struggled, and by 1950, the company was close to bankruptcy."
+    ],
+    [
+     "b05_7",
+     {
+      "bg": "factory",
+      "cast": [],
+      "props": [
+       {
+        "type": "line",
+        "x": 960,
+        "y": 1000,
+        "s": 1
+       }
+      ]
+     },
+     "It survived, and rebuilt around a new idea. Make only what is needed, and stop the line to fix every problem."
+    ],
+    [
+     "b05_8",
+     {
+      "bg": "road",
+      "cast": [],
+      "props": [
+       {
+        "type": "car",
+        "x": 960,
+        "y": 1000,
+        "s": 0.9,
+        "col": "#c8c8cc"
+       }
+      ],
+      "cam": "out",
+      "stamp": "NO.1"
+     },
+     "Today, Toyota sells more cars than any other company in the world. It all started with a loom."
+    ]
+   ]
+  }
+ ]
+}

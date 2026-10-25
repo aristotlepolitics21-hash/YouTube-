@@ -1,0 +1,289 @@
+{
+ "series": "Brand Stories",
+ "episode": 2,
+ "title": "How IKEA Began With Pens",
+ "out": "how-ikea-began-with-pens",
+ "cast": {
+  "ingvar": {
+   "skin": "#f0c6a4",
+   "hairCol": "#c9a06a",
+   "hair": "side",
+   "outfit": "sweater",
+   "top": "#4a6a8a",
+   "seed": 1,
+   "eye": "#5a8aba"
+  },
+  "gillis": {
+   "skin": "#ecc29e",
+   "hairCol": "#6a5040",
+   "hair": "slick",
+   "glasses": "rect",
+   "outfit": "shirt",
+   "top": "#8a6a4a",
+   "shirt": "#c8b090",
+   "seed": 2
+  },
+  "exec1": {
+   "skin": "#e9b48c",
+   "hairCol": "#3a2a20",
+   "hair": "side",
+   "outfit": "suit",
+   "top": "#2e3440",
+   "tie": "#6a2a2a",
+   "seed": 7
+  },
+  "exec2": {
+   "skin": "#d9a07a",
+   "hairCol": "#8a8a8a",
+   "hair": "bald",
+   "facial": "mustache",
+   "facialCol": "#6a6a6a",
+   "outfit": "suit",
+   "top": "#4a3a30",
+   "tie": "#2a4a6a",
+   "seed": 8
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How IKEA Began With Pens",
+   "lines": [
+    [
+     "b02_1",
+     {
+      "bg": "home",
+      "cast": [
+       {
+        "id": "ingvar",
+        "x": 1300,
+        "y": 460,
+        "s": 0.78,
+        "pose": "hold",
+        "expr": "smile",
+        "turn": -0.3,
+        "hold": {
+         "type": "letter",
+         "s": 0.4,
+         "y": 430
+        }
+       }
+      ],
+      "props": [
+       {
+        "type": "papers",
+        "x": 600,
+        "y": 900,
+        "s": 1.2,
+        "n": 6
+       }
+      ]
+     },
+     "In 1943, a seventeen year old Swede named Ingvar Kamprad started a business selling pens, wallets and picture frames by mail."
+    ],
+    [
+     "b02_2",
+     {
+      "bg": "home",
+      "cast": [],
+      "props": [
+       {
+        "type": "note",
+        "x": 960,
+        "y": 560,
+        "s": 1.4,
+        "lines": [
+         "I.K. = Ingvar Kamprad",
+         "E = Elmtaryd farm",
+         "A = Agunnaryd village"
+        ]
+       }
+      ]
+     },
+     "He called it IKEA. His initials, plus the farm and village where he grew up."
+    ],
+    [
+     "b02_3",
+     {
+      "bg": "office",
+      "cast": [
+       {
+        "id": "ingvar",
+        "x": 1300,
+        "y": 420,
+        "s": 0.86,
+        "pose": "hold",
+        "expr": "grin",
+        "turn": -0.3,
+        "hold": {
+         "type": "book",
+         "s": 0.5,
+         "y": 430,
+         "col": "#2a5a9a",
+         "title": "CATALOGUE"
+        }
+       }
+      ],
+      "props": [
+       {
+        "type": "stack",
+        "x": 620,
+        "y": 960,
+        "s": 1.2,
+        "n": 6,
+        "cols": [
+         "#2a5a9a",
+         "#f2c032"
+        ]
+       }
+      ]
+     },
+     "A few years later he added furniture, made by local workshops and sold cheaply through his catalogue."
+    ],
+    [
+     "b02_4",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "exec1",
+        "x": 700,
+        "y": 400,
+        "s": 0.88,
+        "pose": "crossed",
+        "expr": "annoyed",
+        "turn": 0.3
+       },
+       {
+        "id": "exec2",
+        "x": 1250,
+        "y": 420,
+        "s": 0.88,
+        "pose": "crossed",
+        "expr": "skeptical",
+        "turn": -0.3
+       }
+      ],
+      "props": [],
+      "stamp": "BOYCOTT"
+     },
+     "Rival furniture sellers were furious. They pressured suppliers to stop working with him."
+    ],
+    [
+     "b02_5",
+     {
+      "bg": "workshop",
+      "cast": [
+       {
+        "id": "ingvar",
+        "x": 1300,
+        "y": 420,
+        "s": 0.86,
+        "pose": "write",
+        "expr": "determined",
+        "turn": -0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "sketch",
+        "x": 600,
+        "y": 430,
+        "s": 0.7,
+        "kind": "lines"
+       },
+       {
+        "type": "desk",
+        "x": 960,
+        "y": 820,
+        "s": 1.6,
+        "col": "#8a6a4a",
+        "front": true
+       }
+      ]
+     },
+     "So IKEA started designing its own furniture, and found new factories, including in Poland, where costs were lower."
+    ],
+    [
+     "b02_6",
+     {
+      "bg": "street",
+      "cast": [
+       {
+        "id": "gillis",
+        "x": 1500,
+        "y": 300,
+        "s": 0.45,
+        "pose": "neck",
+        "expr": "think",
+        "turn": -0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "car",
+        "x": 760,
+        "y": 1000,
+        "s": 0.8,
+        "col": "#8a2a2a"
+       },
+       {
+        "type": "tablepiece",
+        "x": 760,
+        "y": 700,
+        "s": 0.6
+       }
+      ]
+     },
+     "Then an employee, Gillis Lundgren, could not fit a table into his car. So he took the legs off."
+    ],
+    [
+     "b02_7",
+     {
+      "bg": "workshop",
+      "cast": [
+       {
+        "id": "gillis",
+        "x": 1350,
+        "y": 420,
+        "s": 0.86,
+        "pose": "present",
+        "expr": "grin",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "flatbox",
+        "x": 640,
+        "y": 1000,
+        "s": 1,
+        "n": 4,
+        "legs": true
+       }
+      ]
+     },
+     "That became the flat pack. Cheaper to ship, cheaper to store, and the customer builds it at home."
+    ],
+    [
+     "b02_8",
+     {
+      "bg": "studio",
+      "cast": [],
+      "props": [
+       {
+        "type": "globe",
+        "x": 960,
+        "y": 560,
+        "s": 1.4
+       }
+      ],
+      "cam": "out",
+      "stamp": "NO.1"
+     },
+     "Today, IKEA is the biggest furniture retailer in the world. It started with pens."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,275 @@
+{
+ "series": "Brand Stories",
+ "episode": 9,
+ "title": "McDonald's Is Really a Property Business",
+ "out": "mcdonald-s-is-really-a-property-business",
+ "cast": {
+  "kroc": {
+   "skin": "#ecbf9a",
+   "hairCol": "#4a4a4a",
+   "hair": "slick",
+   "outfit": "suit",
+   "top": "#3a3a44",
+   "tie": "#7a2a2a",
+   "seed": 1
+  },
+  "dick": {
+   "skin": "#e6b48e",
+   "hairCol": "#6a6a6a",
+   "hair": "bald",
+   "glasses": "round",
+   "outfit": "apron",
+   "shirt": "#f2ede2",
+   "apron": "#f2ede2",
+   "seed": 2
+  },
+  "mac": {
+   "skin": "#e9b48c",
+   "hairCol": "#5a5a5a",
+   "hair": "side",
+   "outfit": "apron",
+   "shirt": "#f2ede2",
+   "apron": "#f2ede2",
+   "tie": "#2a2a3a",
+   "seed": 3
+  },
+  "sonneborn": {
+   "skin": "#e2aa86",
+   "hairCol": "#2a2420",
+   "hair": "slick",
+   "glasses": "rect",
+   "outfit": "suit",
+   "top": "#2e3440",
+   "tie": "#3a3a5a",
+   "seed": 4
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "McDonald's Is Really a Property Business",
+   "lines": [
+    [
+     "b09_1",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "kroc",
+        "x": 1350,
+        "y": 420,
+        "s": 0.86,
+        "pose": "present",
+        "expr": "smile",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "mixer",
+        "x": 620,
+        "y": 960,
+        "s": 0.9
+       }
+      ]
+     },
+     "In 1954, Ray Kroc was a fifty two year old salesman, selling milkshake mixers."
+    ],
+    [
+     "b09_2",
+     {
+      "bg": "road",
+      "cast": [
+       {
+        "id": "kroc",
+        "x": 1400,
+        "y": 300,
+        "s": 0.45,
+        "pose": "chin",
+        "expr": "think",
+        "turn": -0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "x": 700,
+        "y": 980,
+        "s": 0.9,
+        "text": "8 MIXERS?",
+        "w": 360
+       }
+      ]
+     },
+     "One small restaurant in California had ordered eight of them. He drove out to see why."
+    ],
+    [
+     "b09_3",
+     {
+      "bg": "diner",
+      "cast": [
+       {
+        "id": "dick",
+        "x": 680,
+        "y": 420,
+        "s": 0.86,
+        "pose": "present",
+        "expr": "smile",
+        "turn": 0.3
+       },
+       {
+        "id": "mac",
+        "x": 1300,
+        "y": 420,
+        "s": 0.86,
+        "pose": "hold",
+        "expr": "grin",
+        "turn": -0.3,
+        "hold": {
+         "type": "burger",
+         "s": 0.3,
+         "y": 480
+        }
+       }
+      ],
+      "props": []
+     },
+     "Brothers Dick and Mac McDonald had built a super fast kitchen. A short menu, made like a factory line."
+    ],
+    [
+     "b09_4",
+     {
+      "bg": "diner",
+      "cast": [
+       {
+        "id": "kroc",
+        "x": 680,
+        "y": 420,
+        "s": 0.86,
+        "pose": "shake",
+        "expr": "grin",
+        "turn": 0.3
+       },
+       {
+        "id": "mac",
+        "x": 1300,
+        "y": 420,
+        "s": 0.86,
+        "pose": "shake",
+        "expr": "smile",
+        "turn": -0.3,
+        "flip": true
+       }
+      ],
+      "props": []
+     },
+     "Kroc convinced them to let him sell franchises."
+    ],
+    [
+     "b09_5",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "kroc",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "shrug",
+        "expr": "worried",
+        "turn": 0
+       }
+      ],
+      "props": [
+       {
+        "type": "money",
+        "x": 960,
+        "y": 830,
+        "s": 1,
+        "n": 2,
+        "front": true
+       }
+      ]
+     },
+     "But the franchise fees barely made him any money."
+    ],
+    [
+     "b09_6",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "sonneborn",
+        "x": 1350,
+        "y": 420,
+        "s": 0.86,
+        "pose": "point",
+        "expr": "smug",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "deed",
+        "x": 620,
+        "y": 600,
+        "s": 0.8
+       }
+      ]
+     },
+     "His finance man, Harry Sonneborn, had an idea. Own or lease the land under each restaurant, and charge the owners rent."
+    ],
+    [
+     "b09_7",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "kroc",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "hold",
+        "expr": "proud",
+        "turn": 0,
+        "hold": {
+         "type": "cheque",
+         "s": 0.4,
+         "y": 430,
+         "amount": "$2,700,000"
+        }
+       }
+      ],
+      "props": []
+     },
+     "In 1961, Kroc bought out the brothers for two point seven million dollars."
+    ],
+    [
+     "b09_8",
+     {
+      "bg": "street",
+      "cast": [],
+      "props": [
+       {
+        "type": "buildings",
+        "x": 960,
+        "y": 1000,
+        "s": 1,
+        "n": 4,
+        "label": "RENT"
+       },
+       {
+        "type": "burger",
+        "x": 1600,
+        "y": 700,
+        "s": 0.6
+       }
+      ],
+      "cam": "out"
+     },
+     "Today, McDonald's owns a huge amount of property. Some say it's a real estate business that happens to sell burgers."
+    ]
+   ]
+  }
+ ]
+}

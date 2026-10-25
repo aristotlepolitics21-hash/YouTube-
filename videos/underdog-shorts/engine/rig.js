@@ -21,6 +21,7 @@ const EXPR = {   // brows: [inner raise, outer raise] per side; mouth: curve, op
   surprised: { bi: .8, bo: .6, sk: 0, mc: 0, mo: .7, lid: 0, look: [0, 0] },
   think: { bi: .3, bo: .1, sk: .5, mc: 0, mo: 0, lid: .25, look: [.7, -.6] },
   proud: { bi: 0, bo: .2, sk: 0, mc: .5, mo: 0, lid: .4, look: [0, 0] },
+  smug: { bi: -.2, bo: .3, sk: .7, mc: .55, mo: 0, lid: .45, look: [.7, 0] },
   tired: { bi: .5, bo: -.2, sk: 0, mc: -.25, mo: 0, lid: .6, look: [0, .4] },
   annoyed: { bi: -.8, bo: .3, sk: .3, mc: -.35, mo: 0, lid: .35, look: [.4, 0] },
 };
@@ -150,7 +151,7 @@ const POSE = {   // hand targets in local units (L = viewer-left arm) and hand s
 function crossedArms(P) { const sl = P.top || '#3a4a6a'; [[-1, 470], [1, 500]].forEach(([s, y]) => { X.beginPath(); X.roundRect(-210, y - 40, 420, 80, 40); inkFill(s < 0 ? sl : shade(sl, .06), 3.4);
     X.save(); X.translate(s * 190, y); handShape('fist', 1, P); X.restore(); }); }
 // P: look; o: { pose, expr, turn, holding(fn) }; T: time for blink/breath
-function person(P, o, T) { const ex = EXPR[o.expr || 'neutral'], br = Math.sin(T * 1.6 + (P.seed || 0)) * 3;
+function person(P, o, T) { const ex = EXPR[o.expr] || (o.expr === 'happy' ? EXPR.grin : EXPR.neutral), br = Math.sin(T * 1.6 + (P.seed || 0)) * 3;
   X.save(); if (o.flip) X.scale(-1, 1);
   if (P.legs) legs(P);
   X.save(); X.translate(0, br * .6); torso(P); X.restore();

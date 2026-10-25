@@ -1,0 +1,296 @@
+{
+ "series": "Brand Stories",
+ "episode": 1,
+ "title": "How Volkswagen Began",
+ "out": "how-volkswagen-began",
+ "cast": {
+  "porsche": {
+   "skin": "#ecbf9a",
+   "hairCol": "#3a2a1c",
+   "hair": "slick",
+   "facial": "mustache",
+   "outfit": "suit",
+   "top": "#4a4a44",
+   "tie": "#2a2a3a",
+   "seed": 1
+  },
+  "saver": {
+   "skin": "#e6b48e",
+   "hairCol": "#6a4a2a",
+   "hair": "side",
+   "outfit": "shirt",
+   "top": "#8a7a5a",
+   "shirt": "#b8a888",
+   "seed": 2
+  },
+  "hirst": {
+   "skin": "#ecc29e",
+   "hairCol": "#6a5040",
+   "hair": "side",
+   "facial": "mustache",
+   "outfit": "suit",
+   "top": "#7a7048",
+   "tie": "#4a4430",
+   "hat": "cap",
+   "hatCol": "#6a6440",
+   "seed": 3
+  },
+  "nordhoff": {
+   "skin": "#e2b088",
+   "hairCol": "#9a9a9a",
+   "hair": "slick",
+   "glasses": "round",
+   "outfit": "suit",
+   "top": "#2e3440",
+   "tie": "#3a3a5a",
+   "seed": 4
+  },
+  "exec1": {
+   "skin": "#e9b48c",
+   "hairCol": "#3a2a20",
+   "hair": "side",
+   "outfit": "suit",
+   "top": "#2e3440",
+   "tie": "#6a2a2a",
+   "seed": 7
+  },
+  "exec2": {
+   "skin": "#d9a07a",
+   "hairCol": "#8a8a8a",
+   "hair": "bald",
+   "facial": "mustache",
+   "facialCol": "#6a6a6a",
+   "outfit": "suit",
+   "top": "#4a3a30",
+   "tie": "#2a4a6a",
+   "seed": 8
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How Volkswagen Began",
+   "lines": [
+    [
+     "b01_1",
+     {
+      "bg": "street",
+      "cast": [
+       {
+        "id": "saver",
+        "x": 1400,
+        "y": 300,
+        "s": 0.45,
+        "pose": "neck",
+        "expr": "sad",
+        "turn": -0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "bike",
+        "x": 600,
+        "y": 980,
+        "s": 0.9
+       }
+      ]
+     },
+     "In the 1930s, most Germans could not afford a car. The government wanted a cheap one for everyone. A people's car. In German, a Volkswagen."
+    ],
+    [
+     "b01_2",
+     {
+      "bg": "workshop",
+      "cast": [
+       {
+        "id": "porsche",
+        "x": 1350,
+        "y": 400,
+        "s": 0.88,
+        "pose": "present",
+        "expr": "determined",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "beetle",
+        "x": 640,
+        "y": 960,
+        "s": 1,
+        "col": "#7a9ab0"
+       }
+      ]
+     },
+     "Engineer Ferdinand Porsche designed it. Small, round, cheap to run, and big enough for a family."
+    ],
+    [
+     "b01_3",
+     {
+      "bg": "home",
+      "cast": [
+       {
+        "id": "saver",
+        "x": 1350,
+        "y": 400,
+        "s": 0.88,
+        "pose": "hold",
+        "expr": "smile",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "stamps",
+        "x": 640,
+        "y": 560,
+        "s": 0.9
+       }
+      ],
+      "counter": {
+       "label": "SAVERS",
+       "from_": 0,
+       "to": 336000,
+       "suf": "+"
+      }
+     },
+     "Workers bought savings stamps, a few marks a week, to pay for one. Over three hundred thousand people signed up."
+    ],
+    [
+     "b01_4",
+     {
+      "bg": "factory",
+      "cast": [
+       {
+        "id": "saver",
+        "x": 960,
+        "y": 400,
+        "s": 0.88,
+        "pose": "head",
+        "expr": "sad",
+        "turn": 0
+       }
+      ],
+      "props": [],
+      "bgo": {},
+      "stamp": "NO CARS"
+     },
+     "Then war broke out in 1939. The factory, run by the Nazi regime, built military vehicles instead, using forced labour. Not one saver got a car."
+    ],
+    [
+     "b01_5",
+     {
+      "bg": "ruins",
+      "cast": [
+       {
+        "id": "hirst",
+        "x": 960,
+        "y": 400,
+        "s": 0.88,
+        "pose": "hips",
+        "expr": "determined",
+        "turn": 0.1
+       }
+      ],
+      "props": [
+       {
+        "type": "rubble",
+        "x": 960,
+        "y": 1080,
+        "s": 1.2,
+        "front": true
+       }
+      ]
+     },
+     "In 1945, the bombed factory fell under British control. A British officer, Major Ivan Hirst, got it building cars again."
+    ],
+    [
+     "b01_6",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "exec1",
+        "x": 700,
+        "y": 400,
+        "s": 0.88,
+        "pose": "crossed",
+        "expr": "skeptical",
+        "turn": 0.3
+       },
+       {
+        "id": "exec2",
+        "x": 1250,
+        "y": 420,
+        "s": 0.88,
+        "pose": "shrug",
+        "expr": "annoyed",
+        "turn": -0.3
+       }
+      ],
+      "props": [],
+      "stamp": "NO FUTURE"
+     },
+     "British car makers were offered the whole factory for free. They looked at the car, and decided it had no future."
+    ],
+    [
+     "b01_7",
+     {
+      "bg": "road",
+      "cast": [],
+      "props": [
+       {
+        "type": "beetle",
+        "x": 960,
+        "y": 1000,
+        "s": 0.8,
+        "col": "#d9603a"
+       }
+      ]
+     },
+     "Under new boss Heinrich Nordhoff, the little car was sold all over the world. Americans nicknamed it the Beetle."
+    ],
+    [
+     "b01_8",
+     {
+      "bg": "street",
+      "cast": [
+       {
+        "id": "nordhoff",
+        "x": 1450,
+        "y": 300,
+        "s": 0.45,
+        "pose": "present",
+        "expr": "proud",
+        "turn": -0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "beetle",
+        "x": 520,
+        "y": 1000,
+        "s": 0.7,
+        "col": "#3a8a6a"
+       },
+       {
+        "type": "beetle",
+        "x": 1000,
+        "y": 1000,
+        "s": 0.55,
+        "col": "#e2b04a"
+       }
+      ],
+      "counter": {
+       "label": "BEETLES SOLD BY 1972",
+       "from_": 0,
+       "to": 15007034
+      },
+      "cam": "out"
+     },
+     "In 1972, the Beetle overtook the Ford Model T as the best selling car ever made. The car nobody wanted had sold over fifteen million."
+    ]
+   ]
+  }
+ ]
+}
