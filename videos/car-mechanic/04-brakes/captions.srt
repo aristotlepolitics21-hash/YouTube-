@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:04,272
+How can one foot stop a two tonne car? Hydraulics, and friction.
+
+2
+00:00:04,622 --> 00:00:12,087
+The pedal pushes brake fluid through sealed pipes. Liquid barely compresses, so the push travels instantly to every wheel.
+
+3
+00:00:12,437 --> 00:00:21,177
+A small piston at the pedal pushes bigger pistons at the wheels, multiplying the force. A vacuum or electric booster adds even more.
+
+4
+00:00:21,527 --> 00:00:25,718
+At the wheel, the caliper squeezes friction pads onto a spinning steel disc.
+
+5
+00:00:26,068 --> 00:00:32,196
+Friction turns all that movement into heat. Race car discs can glow at over a thousand degrees.
+
+6
+00:00:32,546 --> 00:00:40,418
+A locked wheel skids, and you cannot steer. ABS senses this, and releases and reapplies the brake many times a second.
+
+7
+00:00:40,768 --> 00:00:47,673
+Squealing or grinding, a soft or spongy pedal, or the car pulling to one side. Get them checked straight away.
+
+8
+00:00:48,023 --> 00:00:52,730
+Fluid carries the force, friction does the work, and heat is where your speed goes.

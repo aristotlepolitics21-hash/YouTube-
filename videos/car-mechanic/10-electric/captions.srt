@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:06,128
+No pistons, no gearbox full of gears, no exhaust. So how does an electric car work?
+
+2
+00:00:06,478 --> 00:00:12,817
+Hundreds or even thousands of cells sit in a flat pack under the floor, storing energy as direct current.
+
+3
+00:00:13,167 --> 00:00:20,032
+The inverter turns that DC into alternating current for the motor, and controls exactly how fast it spins.
+
+4
+00:00:20,382 --> 00:00:27,281
+Inside the motor, magnetic fields push and pull the rotor around. Full pulling power from zero rpm.
+
+5
+00:00:27,631 --> 00:00:34,636
+When you lift off, the motor works in reverse as a generator, slowing the car and sending energy back to the battery.
+
+6
+00:00:34,986 --> 00:00:41,330
+No oil changes, no spark plugs, no clutch, no exhaust. Far fewer moving parts to wear out.
+
+7
+00:00:41,680 --> 00:00:47,506
+Tyres, suspension and brakes still need care. And EVs are heavy, so tyres can wear faster.
+
+8
+00:00:47,856 --> 00:00:53,701
+Battery stores it, inverter controls it, motor turns it into motion. That is an electric car.

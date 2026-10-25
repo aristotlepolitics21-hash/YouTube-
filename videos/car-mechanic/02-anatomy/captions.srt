@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:03,819
+Let's strip a car down to the systems that actually make it work.
+
+2
+00:00:04,169 --> 00:00:10,618
+The engine, or the motor in an electric car, makes the power. The radiator keeps it from cooking itself.
+
+3
+00:00:10,968 --> 00:00:16,821
+The gearbox trades engine speed for pulling power, so you can pull away slowly or cruise fast.
+
+4
+00:00:17,171 --> 00:00:23,013
+The driveshaft and differential carry that power to the driven wheels. This one is rear wheel drive.
+
+5
+00:00:23,363 --> 00:00:29,616
+Steering points the wheels, suspension keeps the tyres on the road, and the brakes turn your speed into heat.
+
+6
+00:00:29,966 --> 00:00:33,754
+The body shell ties everything together, and protects you in a crash.
+
+7
+00:00:34,104 --> 00:00:41,764
+A battery starts the car, then the alternator keeps it charged, powering lights, sensors and dozens of small computers.
+
+8
+00:00:42,114 --> 00:00:47,074
+Six systems working as one. Over the next episodes, we will open each of them up.

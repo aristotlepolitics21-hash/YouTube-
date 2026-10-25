@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:05,916
+A turbo makes extra power from something your engine would otherwise throw away. Its exhaust.
+
+2
+00:00:06,266 --> 00:00:12,553
+Engines burn fuel with air. Squeeze in more air, and you can burn more fuel, and make more power.
+
+3
+00:00:12,903 --> 00:00:19,109
+Hot exhaust gas rushes past a turbine wheel, spinning it at well over a hundred thousand rpm.
+
+4
+00:00:19,459 --> 00:00:24,412
+On the same shaft, a compressor wheel crams fresh air into the engine, under pressure.
+
+5
+00:00:24,762 --> 00:00:30,607
+That lets a small engine make the power of a much bigger one, while using less fuel when you are cruising.
+
+6
+00:00:30,957 --> 00:00:36,184
+The catch is turbo lag. A short delay while the exhaust builds up enough flow to spin it up.
+
+7
+00:00:36,534 --> 00:00:43,959
+Warm the engine up before driving hard, and after a hard run, drive gently for a minute so oil can cool the bearings.
+
+8
+00:00:44,309 --> 00:00:50,782
+Exhaust spins the turbine, the turbine spins the compressor, and the compressor feeds the engine more air.

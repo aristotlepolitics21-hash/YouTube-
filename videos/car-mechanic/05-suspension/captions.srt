@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:03,526
+Hit a bump in a car, and it barely moves. Here is why.
+
+2
+00:00:03,876 --> 00:00:09,152
+Springs between the wheel and the body compress over a bump, so the body does not get the full hit.
+
+3
+00:00:09,502 --> 00:00:14,168
+On their own, springs would keep bouncing after every bump, like a pogo stick.
+
+4
+00:00:14,518 --> 00:00:22,360
+Shock absorbers, or dampers, force oil through tiny holes. That turns the bounce into heat, and the car settles at once.
+
+5
+00:00:22,710 --> 00:00:28,680
+The real job is not comfort. It keeps the tyres pressed onto the road, so you can steer and brake.
+
+6
+00:00:29,030 --> 00:00:34,645
+Worn dampers can make your stopping distance longer, and make the car wallow and float over bumps.
+
+7
+00:00:34,995 --> 00:00:41,548
+Push down hard on one corner and let go. If it bounces more than once or twice, get your shocks checked.
+
+8
+00:00:41,898 --> 00:00:47,324
+Springs hold the car up. Dampers control the bounce. Together, they keep you on the road.

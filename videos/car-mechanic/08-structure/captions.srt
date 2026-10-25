@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:04,680
+Your car is designed to crush in a crash. On purpose. Here is why.
+
+2
+00:00:05,030 --> 00:00:10,836
+Older cars, and many trucks, bolt the body onto a heavy steel ladder frame. Tough, but heavy.
+
+3
+00:00:11,186 --> 00:00:18,213
+Most modern cars use a monocoque, or unibody. The body shell itself is the frame. Lighter and stiffer.
+
+4
+00:00:18,563 --> 00:00:24,641
+The front and back are built to fold up in a crash, soaking up energy, so your body does not have to.
+
+5
+00:00:24,992 --> 00:00:29,868
+The passenger cell uses ultra high strength steel, built to keep its shape around you.
+
+6
+00:00:30,218 --> 00:00:36,342
+Crumpling makes the stop take a little longer. Spreading it out over more time means much lower forces on you.
+
+7
+00:00:36,692 --> 00:00:41,536
+Seatbelts and airbags hold you in place, while the car absorbs the crash around you.
+
+8
+00:00:41,886 --> 00:00:44,458
+A crushed car is often a car that did its job.

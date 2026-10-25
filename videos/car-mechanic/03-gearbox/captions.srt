@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:04,230
+Why can a bicycle have one gear, but a car needs five or six?
+
+2
+00:00:04,580 --> 00:00:14,201
+A petrol engine only makes useful power in a band, roughly fifteen hundred to six thousand rpm. The wheels need to go from stopped to very fast.
+
+3
+00:00:14,551 --> 00:00:22,049
+In first gear, a small gear drives a much bigger one. The wheels turn slowly, but with lots of force to get you moving.
+
+4
+00:00:22,399 --> 00:00:29,201
+In top gear, the gears are closer in size. The wheels spin fast while the engine stays relaxed on the motorway.
+
+5
+00:00:29,551 --> 00:00:36,413
+In a manual car, the clutch briefly unhooks the engine from the gearbox, so gears can change without grinding.
+
+6
+00:00:36,763 --> 00:00:43,668
+Automatics use planetary gearsets and hydraulics, or computer controlled clutches, to change gear on their own.
+
+7
+00:00:44,018 --> 00:00:50,910
+Electric motors work well across a huge range of speeds, so most electric cars get by with a single gear.
+
+8
+00:00:51,260 --> 00:00:57,378
+Every gearbox does the same job. Trade speed for force, so the engine stays in its happy zone.

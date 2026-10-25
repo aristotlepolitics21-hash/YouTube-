@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:04,799
+Every time you turn a corner, your left and right wheels spin at different speeds.
+
+2
+00:00:05,149 --> 00:00:10,597
+In a turn, the outer wheel travels a longer path than the inner wheel, in the same amount of time.
+
+3
+00:00:10,947 --> 00:00:18,188
+If both driven wheels were locked together, one would have to skid. Tyres would wear, and the car would fight every corner.
+
+4
+00:00:18,538 --> 00:00:24,986
+The differential, a clever set of gears, lets the two wheels turn at different speeds while both are still driven.
+
+5
+00:00:25,336 --> 00:00:32,352
+A simple open diff sends power where it is easiest to go. On ice or mud, that is the wheel that is spinning.
+
+6
+00:00:32,702 --> 00:00:40,239
+Limited slip and locking differentials push power to the wheel with grip, which is why off roaders and sports cars use them.
+
+7
+00:00:40,589 --> 00:00:45,672
+All wheel drive cars may have a differential at the front, the rear, and one in the middle.
+
+8
+00:00:46,022 --> 00:00:51,691
+No differential, no smooth corners. A small box of gears doing a very clever job.

@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:06,394
+A petrol engine turns only around a third of its fuel into movement. Most of the rest becomes heat.
+
+2
+00:00:06,744 --> 00:00:10,540
+Coolant flows through passages around the cylinders, soaking up heat.
+
+3
+00:00:10,890 --> 00:00:15,883
+A water pump, driven by the engine or an electric motor, keeps it circulating.
+
+4
+00:00:16,233 --> 00:00:24,137
+Hot coolant flows through the radiator, where air rushing through thin fins carries the heat away. A fan helps when you are stopped.
+
+5
+00:00:24,487 --> 00:00:31,381
+When the engine is cold, the thermostat stays shut so it warms up fast. At around ninety degrees, it opens.
+
+6
+00:00:31,731 --> 00:00:38,975
+Overheating can warp the cylinder head and blow the head gasket. If the temperature gauge climbs high, pull over safely.
+
+7
+00:00:39,325 --> 00:00:45,893
+The system is under pressure. Opening it hot can spray scalding coolant. Always wait for it to cool down.
+
+8
+00:00:46,244 --> 00:00:50,668
+Pump it round, cool it in the radiator, and let the thermostat decide when.

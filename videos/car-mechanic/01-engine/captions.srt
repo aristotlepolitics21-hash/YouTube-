@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:05,860
+Every time you drive, your engine is setting off thousands of tiny explosions every minute.
+
+2
+00:00:06,210 --> 00:00:14,219
+Inside each cylinder, a piston slides up and down. A rod connects it to the crankshaft, which turns that motion into spinning.
+
+3
+00:00:14,569 --> 00:00:20,060
+Stroke one, intake. The piston moves down, and the intake valve lets in air and fuel.
+
+4
+00:00:20,410 --> 00:00:26,590
+Stroke two, compression. Both valves close, and the piston squeezes the mixture into a tiny space.
+
+5
+00:00:26,940 --> 00:00:35,026
+Stroke three, power. The spark plug fires, the mixture burns, and the pressure shoves the piston down. This is what drives the car.
+
+6
+00:00:35,376 --> 00:00:42,670
+Stroke four, exhaust. The exhaust valve opens, and the piston pushes the burnt gas out. Then it all starts again.
+
+7
+00:00:43,020 --> 00:00:51,985
+Each cylinder fires once every two turns. So at three thousand rpm, that is fifteen hundred power strokes a minute, in every cylinder.
+
+8
+00:00:52,335 --> 00:00:55,422
+Mechanics remember it as suck, squeeze, bang, blow.
