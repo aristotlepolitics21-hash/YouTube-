@@ -1,0 +1,345 @@
+{
+ "slug": "gravity",
+ "title": "Gravity Isn't a Pull",
+ "voice": {
+  "piper_voice": "en_US-ryan-high",
+  "length_scale": 0.92,
+  "sentence_silence": 0.12,
+  "pronunciations": {
+   "GPS": "G P S"
+  }
+ },
+ "render": {
+  "width": 540,
+  "height": 960,
+  "samples": 12,
+  "fps": 24
+ },
+ "music_mood": "wonder",
+ "gap_seconds": 0.1,
+ "sources": [
+  "https://www.nasa.gov/general/what-is-gravity/",
+  "https://www.astronomy.ohio-state.edu/pogge.1/Ast162/Unit5/gps.html",
+  "https://www.techforspace.com/missions/galileo/gps-and-relativity/",
+  "https://morgridge.org/blue-sky/why-is-there-gravity-on-earth-but-not-in-space/",
+  "https://en.wikipedia.org/wiki/General_relativity"
+ ],
+ "shots": [
+  {
+   "id": "s01",
+   "line": "Drop an apple, and it falls. Newton said the Earth pulls it down.",
+   "visual": {
+    "type": "character",
+    "env": "sky",
+    "sky": {
+     "horizon": [
+      1.0,
+      0.45,
+      0.2
+     ],
+     "zenith": [
+      0.05,
+      0.2,
+      0.75
+     ],
+     "strength": 1.0
+    },
+    "floor_color": [
+     0.12,
+     0.45,
+     0.08
+    ],
+    "look": "clay",
+    "outfit": {
+     "skin": [
+      0.62,
+      0.42,
+      0.32
+     ],
+     "shirt": [
+      0.75,
+      0.08,
+      0.05
+     ],
+     "pants": [
+      0.04,
+      0.06,
+      0.2
+     ],
+     "boots": [
+      0.9,
+      0.9,
+      0.9
+     ]
+    },
+    "pose": {
+     "raise_arm": {
+      "L": -22,
+      "R": -22
+     },
+     "arm_inward": {
+      "L": -6,
+      "R": -6
+     },
+     "elbow": {
+      "L": 15,
+      "R": 15
+     },
+     "curl": {
+      "L": 25,
+      "R": 25
+     },
+     "head_nod": -5
+    },
+    "pose_to": {
+     "head_nod": 28
+    },
+    "drop": {
+     "at": 0.12,
+     "offset": [
+      0.18,
+      -0.3,
+      0.55
+     ],
+     "slow": 0.3
+    },
+    "camera": {
+     "from": {
+      "anchor": "head",
+      "offset": [
+       0.4,
+       -1.7,
+       0.15
+      ],
+      "lens": 40
+     },
+     "to": {
+      "anchor": "chest",
+      "offset": [
+       0.6,
+       -2.6,
+       -0.2
+      ],
+      "lens": 35
+     }
+    }
+   }
+  },
+  {
+   "id": "s02",
+   "line": "But Einstein figured out something much stranger.",
+   "visual": {
+    "type": "spacetime",
+    "mode": "flat",
+    "camera": {
+     "from": [
+      0,
+      -3.0,
+      1.0
+     ],
+     "to": [
+      0,
+      -6.0,
+      3.0
+     ],
+     "target": [
+      0,
+      0,
+      0
+     ],
+     "lens": 30
+    }
+   }
+  },
+  {
+   "id": "s03",
+   "line": "Mass bends space and time, like a bowling ball on a trampoline.",
+   "visual": {
+    "type": "spacetime",
+    "mode": "sun",
+    "bend": [
+     0.15,
+     0.75
+    ],
+    "camera": {
+     "from": [
+      0,
+      -6.5,
+      3.4
+     ],
+     "to": [
+      1.5,
+      -5.0,
+      2.4
+     ],
+     "target": [
+      0,
+      0,
+      -0.6
+     ],
+     "lens": 32
+    }
+   }
+  },
+  {
+   "id": "s04",
+   "line": "Planets aren't really being pulled. They're just following the curve.",
+   "visual": {
+    "type": "spacetime",
+    "mode": "orbits",
+    "bent_from_start": true,
+    "camera": {
+     "from": [
+      2.5,
+      -6.0,
+      2.8
+     ],
+     "to": [
+      -1.0,
+      -5.6,
+      3.4
+     ],
+     "target": [
+      0,
+      0,
+      -0.6
+     ],
+     "lens": 30
+    }
+   }
+  },
+  {
+   "id": "s05",
+   "line": "The Moon is falling toward Earth right now. It's just moving sideways so fast that it keeps missing.",
+   "visual": {
+    "type": "orbit",
+    "body": "moon",
+    "arrows": true,
+    "period_s": 11,
+    "camera": {
+     "from": [
+      0.8,
+      -7.8,
+      2.6
+     ],
+     "to": [
+      0.2,
+      -6.6,
+      1.8
+     ],
+     "target": [
+      0,
+      0,
+      0.3
+     ],
+     "lens": 40
+    }
+   }
+  },
+  {
+   "id": "s06",
+   "line": "Astronauts float for the same reason. They're falling too, all the time.",
+   "visual": {
+    "type": "orbit",
+    "body": "station",
+    "period_s": 6,
+    "scale": 0.11,
+    "trail": false,
+    "tilt": 12,
+    "camera": {
+     "lens": 35
+    },
+    "follow": true,
+    "lens": 35
+   }
+  },
+  {
+   "id": "s07",
+   "line": "Gravity even slows down time. A clock on the ground ticks slower than one far up in space.",
+   "visual": {
+    "type": "clocks",
+    "rates": [
+     1.0,
+     1.35
+    ]
+   }
+  },
+  {
+   "id": "s08",
+   "line": "GPS satellites feel it. Their clocks gain about thirty-eight millionths of a second every day.",
+   "visual": {
+    "type": "gps",
+    "mode": "signals",
+    "label": "+38 µs / day"
+   }
+  },
+  {
+   "id": "s09",
+   "line": "If engineers didn't correct for that, your map would drift about ten kilometres a day.",
+   "visual": {
+    "type": "gps",
+    "mode": "drift",
+    "label": "10 km / day"
+   }
+  },
+  {
+   "id": "s10",
+   "line": "Pack enough mass into a tiny space, and the curve becomes a bottomless pit.",
+   "visual": {
+    "type": "spacetime",
+    "mode": "blackhole",
+    "bend": [
+     0.1,
+     0.8
+    ],
+    "camera": {
+     "from": [
+      0,
+      -6.5,
+      3.2
+     ],
+     "to": [
+      0.8,
+      -4.6,
+      1.6
+     ],
+     "target": [
+      0,
+      0,
+      -1.0
+     ],
+     "lens": 30
+    }
+   }
+  },
+  {
+   "id": "s11",
+   "line": "A black hole. Not even light can climb back out.",
+   "visual": {
+    "type": "spacetime",
+    "mode": "blackhole",
+    "bent_from_start": true,
+    "light_beam": true,
+    "camera": {
+     "from": [
+      1.2,
+      -4.4,
+      2.6
+     ],
+     "to": [
+      0.4,
+      -3.4,
+      2.0
+     ],
+     "target": [
+      0,
+      0,
+      -0.6
+     ],
+     "lens": 30
+    }
+   },
+   "hold": 0.8
+  }
+ ]
+}

@@ -1,0 +1,957 @@
+1
+00:00:00,250 --> 00:00:03,060
+The phone in your pocket can do
+billions of calculations
+
+2
+00:00:03,070 --> 00:00:04,430
+every second.
+
+3
+00:00:05,250 --> 00:00:08,480
+Eighty years ago, a machine that
+could do just five
+
+4
+00:00:08,490 --> 00:00:11,340
+thousand calculations a second
+filled an entire
+
+5
+00:00:11,350 --> 00:00:12,150
+room,
+
+6
+00:00:12,590 --> 00:00:16,040
+weighed thirty tonnes, and drew
+a hundred and fifty kilowatts
+
+7
+00:00:16,050 --> 00:00:16,850
+of power.
+
+8
+00:00:17,333 --> 00:00:20,123
+It was called ENIAC, and it was
+one of the first
+
+9
+00:00:20,133 --> 00:00:22,313
+general-purpose electronic
+computers.
+
+10
+00:00:23,333 --> 00:00:26,803
+This is the story of how it was
+built, the women who programmed
+
+11
+00:00:26,813 --> 00:00:27,543
+it,
+
+12
+00:00:27,553 --> 00:00:28,793
+and how it changed the world.
+
+13
+00:00:30,400 --> 00:00:33,600
+For centuries, a computer wasn't
+a machine at all.
+
+14
+00:00:34,060 --> 00:00:37,210
+It was a job title: a person who
+did calculations
+
+15
+00:00:37,220 --> 00:00:38,340
+by hand.
+
+16
+00:00:39,083 --> 00:00:42,013
+In the eighteen twenties, the
+English mathematician
+
+17
+00:00:42,023 --> 00:00:45,213
+Charles Babbage designed a
+mechanical calculator
+
+18
+00:00:45,223 --> 00:00:48,653
+called the Difference Engine,
+made of thousands of brass
+
+19
+00:00:48,663 --> 00:00:49,463
+gears.
+
+20
+00:00:50,000 --> 00:00:51,680
+Babbage never finished it.
+
+21
+00:00:52,160 --> 00:00:55,530
+But in nineteen ninety one,
+engineers at London's Science
+
+22
+00:00:55,540 --> 00:00:58,750
+Museum built his second
+Difference Engine from his
+original
+
+23
+00:00:58,760 --> 00:00:59,560
+drawings,
+
+24
+00:00:59,920 --> 00:01:00,860
+and it worked perfectly.
+
+25
+00:01:01,750 --> 00:01:05,220
+Later, he designed a far more
+ambitious Analytical
+
+26
+00:01:05,230 --> 00:01:06,030
+Engine,
+
+27
+00:01:06,530 --> 00:01:09,010
+which could be programmed with
+punched cards.
+
+28
+00:01:09,550 --> 00:01:12,700
+Ada Lovelace wrote what's often
+called the first
+
+29
+00:01:12,710 --> 00:01:14,510
+computer program for it.
+
+30
+00:01:14,630 --> 00:01:15,870
+But it was never built.
+
+31
+00:01:16,667 --> 00:01:19,997
+A century later, war created an
+urgent need for
+
+32
+00:01:20,007 --> 00:01:20,807
+calculation.
+
+33
+00:01:21,500 --> 00:01:24,970
+In Britain, codebreakers at
+Bletchley Park built
+
+34
+00:01:24,980 --> 00:01:25,780
+Colossus,
+
+35
+00:01:26,200 --> 00:01:29,020
+an electronic machine that
+helped crack German codes.
+
+36
+00:01:29,760 --> 00:01:31,260
+It was kept secret for decades.
+
+37
+00:01:32,250 --> 00:01:35,540
+Its designer, a Post Office
+engineer named
+
+38
+00:01:35,550 --> 00:01:38,320
+Tommy Flowers, used around two
+and a half thousand
+
+39
+00:01:38,330 --> 00:01:41,780
+vacuum tubes, and paid for some
+of
+
+40
+00:01:41,790 --> 00:01:43,330
+the parts out of his own pocket.
+
+41
+00:01:43,830 --> 00:01:46,390
+By the end of the war, ten of
+them were running.
+
+42
+00:01:47,167 --> 00:01:50,257
+In Germany, Konrad Zuse had
+already built the
+
+43
+00:01:50,267 --> 00:01:53,417
+Z3 in nineteen forty one, a
+programmable
+
+44
+00:01:53,427 --> 00:01:56,707
+machine that used thousands of
+clicking telephone relays.
+
+45
+00:01:57,500 --> 00:02:00,990
+And in Iowa, John Atanasoff and
+Clifford Berry
+
+46
+00:02:01,000 --> 00:02:04,240
+built an electronic calculator
+for solving equations.
+
+47
+00:02:05,380 --> 00:02:08,570
+Who built the first computer
+depends on exactly how you
+define
+
+48
+00:02:08,580 --> 00:02:09,380
+one.
+
+49
+00:02:10,817 --> 00:02:13,497
+In America, the army had a
+different problem:
+
+50
+00:02:14,017 --> 00:02:14,817
+artillery.
+
+51
+00:02:15,250 --> 00:02:18,220
+To aim a big gun, soldiers
+needed firing
+
+52
+00:02:18,230 --> 00:02:19,030
+tables:
+
+53
+00:02:19,330 --> 00:02:22,440
+books of numbers telling them
+the angle to use for every
+
+54
+00:02:22,450 --> 00:02:23,250
+distance,
+
+55
+00:02:23,470 --> 00:02:24,710
+wind and temperature.
+
+56
+00:02:25,500 --> 00:02:28,590
+Each trajectory took a human
+computer, with a desk
+
+57
+00:02:28,600 --> 00:02:29,110
+calculator,
+
+58
+00:02:29,120 --> 00:02:32,120
+about a day or more to work out.
+
+59
+00:02:32,580 --> 00:02:34,820
+A single table needed thousands
+of them.
+
+60
+00:02:35,500 --> 00:02:38,830
+At the University of
+Pennsylvania, dozens of women
+
+61
+00:02:38,840 --> 00:02:40,380
+worked on these calculations.
+
+62
+00:02:41,160 --> 00:02:42,000
+They couldn't keep up.
+
+63
+00:02:43,400 --> 00:02:46,580
+A physicist named John Mauchly
+had an idea:
+
+64
+00:02:47,200 --> 00:02:50,370
+build a calculator that used
+electronic vacuum tubes
+
+65
+00:02:50,380 --> 00:02:52,020
+instead of moving parts.
+
+66
+00:02:52,917 --> 00:02:56,027
+The project was based at the
+university's Moore School
+
+67
+00:02:56,037 --> 00:02:59,207
+of Electrical Engineering, under
+the code name
+
+68
+00:02:59,217 --> 00:03:00,477
+Project PX.
+
+69
+00:03:01,137 --> 00:03:03,657
+It eventually cost about half a
+million dollars.
+
+70
+00:03:04,500 --> 00:03:07,950
+A vacuum tube is like a light
+bulb that can act as a
+
+71
+00:03:07,960 --> 00:03:08,760
+switch,
+
+72
+00:03:08,840 --> 00:03:12,340
+turning a current on and off
+thousands of times a second,
+
+73
+00:03:12,660 --> 00:03:14,020
+with nothing moving at all.
+
+74
+00:03:14,833 --> 00:03:17,093
+With a brilliant young engineer,
+J.
+
+75
+00:03:17,553 --> 00:03:20,883
+Presper Eckert, Mauchly
+convinced the army to pay
+
+76
+00:03:20,893 --> 00:03:23,031
+for it in nineteen forty three.
+
+77
+00:03:23,500 --> 00:03:25,400
+Experts warned that it would
+never work.
+
+78
+00:03:25,800 --> 00:03:29,130
+With so many tubes, they said,
+one would burn out
+
+79
+00:03:29,140 --> 00:03:30,080
+every few seconds.
+
+80
+00:03:31,000 --> 00:03:33,970
+Eckert solved it by running the
+tubes well below their limits,
+
+81
+00:03:33,980 --> 00:03:35,540
+and choosing them carefully.
+
+82
+00:03:36,080 --> 00:03:39,100
+Failures fell to about one tube
+every two days.
+
+83
+00:03:39,917 --> 00:03:43,367
+The finished machine had almost
+eighteen thousand vacuum
+
+84
+00:03:43,377 --> 00:03:44,177
+tubes,
+
+85
+00:03:44,257 --> 00:03:47,447
+seventy thousand resistors, and
+around five million
+
+86
+00:03:47,457 --> 00:03:48,737
+hand-soldered joints.
+
+87
+00:03:49,667 --> 00:03:50,467
+Surprisingly,
+
+88
+00:03:51,267 --> 00:03:52,797
+it didn't count in binary.
+
+89
+00:03:52,807 --> 00:03:56,037
+ENIAC worked in ordinary decimal
+numbers,
+
+90
+00:03:56,047 --> 00:03:58,927
+using rings of ten tubes to
+store each digit.
+
+91
+00:03:59,833 --> 00:04:03,263
+Its panels, arranged in a giant
+U, stretched about
+
+92
+00:04:03,273 --> 00:04:06,433
+thirty metres, and the whole
+machine weighed thirty tonnes.
+
+93
+00:04:08,233 --> 00:04:11,663
+Six women were chosen from the
+human computers to program
+
+94
+00:04:11,673 --> 00:04:12,473
+it:
+
+95
+00:04:12,673 --> 00:04:14,873
+Kay McNulty, Betty Jennings,
+
+96
+00:04:15,513 --> 00:04:16,313
+Betty Snyder,
+
+97
+00:04:16,893 --> 00:04:17,753
+Marlyn Wescoff,
+
+98
+00:04:18,813 --> 00:04:20,753
+Frances Bilas, and Ruth
+Lichterman.
+
+99
+00:04:21,667 --> 00:04:24,347
+There were no programming
+languages, no keyboards,
+
+100
+00:04:25,227 --> 00:04:26,147
+and no manuals.
+
+101
+00:04:26,767 --> 00:04:28,697
+They were given the machine's
+wiring diagrams,
+
+102
+00:04:28,707 --> 00:04:30,607
+and told to work it out.
+
+103
+00:04:31,333 --> 00:04:34,433
+Programming ENIAC meant
+physically rewiring it:
+
+104
+00:04:34,853 --> 00:04:38,163
+plugging hundreds of cables and
+setting thousands of switches
+
+105
+00:04:38,173 --> 00:04:38,993
+by hand.
+
+106
+00:04:39,653 --> 00:04:42,113
+A new program could take days to
+set up.
+
+107
+00:04:42,833 --> 00:04:46,293
+They also invented techniques
+that programmers still use,
+
+108
+00:04:46,933 --> 00:04:49,103
+like breaking a problem into
+sub-routines,
+
+109
+00:04:49,113 --> 00:04:52,373
+and hunting down bugs by
+stepping through the machine.
+
+110
+00:04:53,250 --> 00:04:54,070
+Over at Harvard,
+
+111
+00:04:54,710 --> 00:04:57,880
+Grace Hopper's team later taped
+a real moth into a
+
+112
+00:04:57,890 --> 00:05:00,090
+logbook after it jammed a
+computer:
+
+113
+00:05:00,730 --> 00:05:03,330
+the first actual case of bug
+being found.
+
+114
+00:05:05,067 --> 00:05:07,387
+ENIAC was finished too late for
+the war.
+
+115
+00:05:07,787 --> 00:05:11,177
+But on the fifteenth of
+February, nineteen forty
+
+116
+00:05:11,187 --> 00:05:11,937
+six,
+
+117
+00:05:11,947 --> 00:05:13,307
+it was unveiled to the press.
+
+118
+00:05:14,250 --> 00:05:15,050
+For the demonstration,
+
+119
+00:05:15,790 --> 00:05:19,180
+it calculated the path of a
+shell that takes thirty seconds
+
+120
+00:05:19,190 --> 00:05:21,870
+to reach its target, in just
+twenty seconds.
+
+121
+00:05:22,470 --> 00:05:24,430
+Faster than the shell itself
+could fly.
+
+122
+00:05:25,250 --> 00:05:28,700
+The engineers had fitted
+ping-pong balls cut in half over
+
+123
+00:05:28,710 --> 00:05:29,830
+the indicator lights,
+
+124
+00:05:30,490 --> 00:05:33,070
+so the blinking would look more
+dramatic for the cameras.
+
+125
+00:05:34,083 --> 00:05:37,203
+Newspapers called it a giant
+electronic brain.
+
+126
+00:05:37,683 --> 00:05:39,963
+Yet at the celebration dinner
+afterwards,
+
+127
+00:05:40,443 --> 00:05:42,463
+the six programmers were not
+invited.
+
+128
+00:05:43,417 --> 00:05:46,737
+Their contribution was
+overlooked for half a century,
+
+129
+00:05:47,157 --> 00:05:50,547
+until historians and a new
+generation of programmers
+
+130
+00:05:50,557 --> 00:05:52,777
+brought their story back to
+light.
+
+131
+00:05:54,400 --> 00:05:56,120
+ENIAC had a big weakness.
+
+132
+00:05:56,940 --> 00:06:00,150
+Its program lived in its wiring,
+so changing the task
+
+133
+00:06:00,160 --> 00:06:02,020
+meant rebuilding the machine.
+
+134
+00:06:02,917 --> 00:06:06,127
+The team, joined by the
+mathematician John von
+
+135
+00:06:06,137 --> 00:06:06,937
+Neumann,
+
+136
+00:06:07,317 --> 00:06:10,767
+came up with a better design:
+store the program in the
+
+137
+00:06:10,777 --> 00:06:13,117
+computer's memory, just like
+data.
+
+138
+00:06:13,917 --> 00:06:17,087
+Alan Turing in Britain had
+imagined such a
+
+139
+00:06:17,097 --> 00:06:20,333
+universal machine back in
+nineteen thirty
+
+140
+00:06:20,343 --> 00:06:20,987
+six.
+
+141
+00:06:20,997 --> 00:06:24,027
+In nineteen forty eight, a small
+machine in
+
+142
+00:06:24,037 --> 00:06:24,837
+Manchester,
+
+143
+00:06:25,197 --> 00:06:28,217
+nicknamed the Baby, ran the
+first stored program.
+
+144
+00:06:29,000 --> 00:06:32,300
+Almost every computer since has
+been built on that idea.
+
+145
+00:06:33,167 --> 00:06:35,477
+Eckert and Mauchly started their
+own company,
+
+146
+00:06:35,487 --> 00:06:38,577
+and built UNIVAC, one of the
+first computers
+
+147
+00:06:38,587 --> 00:06:39,627
+sold to businesses.
+
+148
+00:06:40,407 --> 00:06:43,803
+The first one went to the US
+Census Bureau in nineteen
+
+149
+00:06:43,813 --> 00:06:44,977
+fifty one.
+
+150
+00:06:44,987 --> 00:06:47,797
+In nineteen fifty two, it
+correctly predicted
+
+151
+00:06:47,807 --> 00:06:50,717
+Eisenhower's landslide in the US
+election,
+
+152
+00:06:50,727 --> 00:06:52,087
+live on television.
+
+153
+00:06:53,083 --> 00:06:55,743
+Betty Holberton, one of the
+original six,
+
+154
+00:06:56,183 --> 00:06:58,943
+went on to help develop early
+programming languages,
+
+155
+00:06:59,543 --> 00:07:02,793
+including COBOL, which still
+runs many banking
+
+156
+00:07:02,803 --> 00:07:03,843
+systems today.
+
+157
+00:07:05,483 --> 00:07:07,823
+Next, the machines began to
+shrink.
+
+158
+00:07:08,383 --> 00:07:11,673
+In nineteen forty seven,
+scientists at Bell Labs
+
+159
+00:07:11,683 --> 00:07:13,023
+invented the transistor,
+
+160
+00:07:13,863 --> 00:07:17,333
+a tiny solid switch that could
+replace the fragile vacuum
+
+161
+00:07:17,343 --> 00:07:18,143
+tube.
+
+162
+00:07:18,333 --> 00:07:21,603
+Its inventors, John Bardeen,
+Walter Brattain and
+
+163
+00:07:21,613 --> 00:07:25,083
+William Shockley, shared the
+Nobel Prize in Physics
+
+164
+00:07:25,093 --> 00:07:27,110
+in nineteen fifty six.
+
+165
+00:07:27,583 --> 00:07:30,733
+In the late nineteen fifties,
+Jack Kilby and
+
+166
+00:07:30,743 --> 00:07:33,853
+Robert Noyce worked out how to
+put many transistors
+
+167
+00:07:33,863 --> 00:07:36,083
+onto a single chip of silicon:
+
+168
+00:07:36,903 --> 00:07:38,063
+the integrated circuit.
+
+169
+00:07:38,663 --> 00:07:42,153
+Noyce went on to co-found Intel
+with Gordon Moore,
+
+170
+00:07:42,163 --> 00:07:44,763
+and Kilby later won a Nobel
+Prize.
+
+171
+00:07:45,750 --> 00:07:49,180
+In nineteen sixty five, Gordon
+Moore predicted that
+
+172
+00:07:49,190 --> 00:07:52,680
+the number of transistors on a
+chip would keep doubling
+
+173
+00:07:52,690 --> 00:07:54,610
+roughly every year or two.
+
+174
+00:07:55,110 --> 00:07:55,910
+For decades,
+
+175
+00:07:56,270 --> 00:07:57,070
+he was right.
+
+176
+00:07:57,417 --> 00:08:00,627
+In nineteen seventy one, Intel
+squeezed an entire
+
+177
+00:08:00,637 --> 00:08:03,867
+computer processor onto one
+chip, the
+
+178
+00:08:03,877 --> 00:08:07,347
+four zero zero four, with about
+two thousand three hundred
+
+179
+00:08:07,357 --> 00:08:08,257
+transistors.
+
+180
+00:08:09,167 --> 00:08:12,537
+By the late nineteen seventies,
+computers had shrunk enough
+
+181
+00:08:12,547 --> 00:08:14,407
+to sit on a desk at home.
+
+182
+00:08:15,167 --> 00:08:18,217
+A modern smartphone chip holds
+billions of
+
+183
+00:08:18,227 --> 00:08:19,027
+transistors,
+
+184
+00:08:19,527 --> 00:08:21,247
+each smaller than most viruses.
+
+185
+00:08:23,233 --> 00:08:26,493
+ENIAC itself went on to
+calculate weather forecasts,
+
+186
+00:08:27,133 --> 00:08:30,563
+the design of nuclear weapons,
+and the behaviour of wind
+
+187
+00:08:30,573 --> 00:08:32,373
+tunnels and cosmic rays.
+
+188
+00:08:33,250 --> 00:08:36,010
+In nineteen forty seven, it was
+taken apart,
+
+189
+00:08:36,430 --> 00:08:39,640
+moved to the army's Aberdeen
+Proving Ground in
+
+190
+00:08:39,650 --> 00:08:40,420
+Maryland,
+
+191
+00:08:40,430 --> 00:08:41,230
+and rebuilt.
+
+192
+00:08:41,610 --> 00:08:45,080
+It ran there, almost around the
+clock, for eight more
+
+193
+00:08:45,090 --> 00:08:45,890
+years.
+
+194
+00:08:46,250 --> 00:08:49,300
+And in nineteen seventy three, a
+court ruled that
+
+195
+00:08:49,310 --> 00:08:50,910
+ENIAC's patent was invalid,
+
+196
+00:08:51,790 --> 00:08:55,180
+partly because Atanasoff had got
+there first with key
+
+197
+00:08:55,190 --> 00:08:56,090
+ideas.
+
+198
+00:08:57,000 --> 00:09:00,290
+It was switched off for the last
+time in October nineteen
+
+199
+00:09:00,300 --> 00:09:01,530
+fifty five.
+
+200
+00:09:01,540 --> 00:09:04,060
+Parts of it survive in museums
+today.
+
+201
+00:09:04,833 --> 00:09:08,123
+In about eighty years, we went
+from a thirty tonne machine that
+
+202
+00:09:08,133 --> 00:09:11,543
+filled a room, to computers in
+our pockets millions of
+
+203
+00:09:11,553 --> 00:09:12,653
+times more powerful.
+
+204
+00:09:14,400 --> 00:09:17,630
+Every app, every search, every
+video you watch,
+
+205
+00:09:17,640 --> 00:09:21,130
+traces its family tree back to a
+room full of glowing
+
+206
+00:09:21,140 --> 00:09:21,590
+tubes,
+
+207
+00:09:21,600 --> 00:09:24,360
+and six women with a wiring
+diagram.

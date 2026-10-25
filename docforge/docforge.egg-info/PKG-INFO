@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: docforge
+Version: 0.1.0
+Summary: Resumable, modular pipeline for long-form documentary videos
+Requires-Python: >=3.10
+Requires-Dist: requests
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: PyYAML
+Requires-Dist: pydantic
+Requires-Dist: piper-tts
+Provides-Extra: whisper
+Requires-Dist: faster-whisper; extra == "whisper"
+Provides-Extra: claude
+Requires-Dist: anthropic>=1.0; extra == "claude"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"

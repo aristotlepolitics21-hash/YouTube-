@@ -1,0 +1,976 @@
+1
+00:00:00,250 --> 00:00:03,600
+Every light you have ever
+switched on, every phone you
+have ever
+
+2
+00:00:03,610 --> 00:00:04,410
+charged,
+
+3
+00:00:04,550 --> 00:00:07,180
+every train, fridge and hospital
+machine,
+
+4
+00:00:07,190 --> 00:00:09,210
+depends on one simple trick.
+
+5
+00:00:09,917 --> 00:00:12,927
+It's a trick so simple you could
+do it with a magnet and a coil
+
+6
+00:00:12,937 --> 00:00:13,737
+of wire.
+
+7
+00:00:14,250 --> 00:00:16,170
+Without it there would be no
+electric light,
+
+8
+00:00:16,710 --> 00:00:17,510
+no internet,
+
+9
+00:00:17,770 --> 00:00:19,350
+and almost none of modern
+medicine.
+
+10
+00:00:20,167 --> 00:00:23,357
+And it was found by a poor
+bookbinder's boy who left
+
+11
+00:00:23,367 --> 00:00:26,657
+school at thirteen, and never
+learned advanced
+
+12
+00:00:26,667 --> 00:00:27,467
+mathematics.
+
+13
+00:00:28,167 --> 00:00:29,567
+His name was Michael Faraday.
+
+14
+00:00:30,107 --> 00:00:33,337
+And this is how he turned
+electricity from a party trick
+into
+
+15
+00:00:33,347 --> 00:00:34,867
+the power that runs the world.
+
+16
+00:00:36,400 --> 00:00:39,260
+People had seen electricity for
+thousands of years.
+
+17
+00:00:40,083 --> 00:00:41,543
+Around six hundred B.C.,
+
+18
+00:00:42,143 --> 00:00:45,253
+Greek thinkers noticed that
+rubbed amber could pick up
+feathers
+
+19
+00:00:45,263 --> 00:00:46,323
+and bits of dust.
+
+20
+00:00:47,167 --> 00:00:50,232
+The Greek word for amber was
+elektron.
+
+21
+00:00:50,750 --> 00:00:54,000
+In sixteen hundred, the English
+physician William Gilbert
+
+22
+00:00:54,010 --> 00:00:56,200
+borrowed it to coin a new Latin
+word,
+
+23
+00:00:56,210 --> 00:00:58,157
+electricus.
+
+24
+00:00:58,667 --> 00:01:02,117
+In seventeen fifty two, Benjamin
+Franklin flew a
+
+25
+00:01:02,127 --> 00:01:05,217
+kite into a storm, and showed
+that lightning was
+
+26
+00:01:05,227 --> 00:01:06,267
+electricity too.
+
+27
+00:01:06,917 --> 00:01:09,477
+Franklin went on to invent the
+lightning rod,
+
+28
+00:01:09,857 --> 00:01:13,167
+a simple metal spike that gives
+lightning a safe path into
+
+29
+00:01:13,177 --> 00:01:13,977
+the ground.
+
+30
+00:01:14,500 --> 00:01:17,750
+Then in eighteen hundred,
+Alessandro Volta stacked
+
+31
+00:01:17,760 --> 00:01:21,150
+discs of zinc and copper,
+separated by cloth
+
+32
+00:01:21,160 --> 00:01:22,836
+soaked in salt water.
+
+33
+00:01:23,333 --> 00:01:26,693
+It was the first battery: a
+steady flow of electric current.
+
+34
+00:01:27,583 --> 00:01:30,263
+It was so important that the
+unit of electrical pressure,
+
+35
+00:01:30,703 --> 00:01:32,523
+the volt, is named after him.
+
+36
+00:01:33,167 --> 00:01:36,577
+But it was weak, expensive, and
+nobody really understood what
+
+37
+00:01:36,587 --> 00:01:37,387
+it was.
+
+38
+00:01:37,750 --> 00:01:40,570
+Electricity was a curiosity for
+lecture halls.
+
+39
+00:01:41,090 --> 00:01:42,710
+A show, not a power source.
+
+40
+00:01:44,567 --> 00:01:47,877
+Michael Faraday was born in
+seventeen ninety one,
+
+41
+00:01:47,887 --> 00:01:50,227
+near London, the son of a
+blacksmith.
+
+42
+00:01:51,083 --> 00:01:52,223
+His family was poor.
+
+43
+00:01:52,763 --> 00:01:56,003
+At times he had a single loaf of
+bread to last him a week.
+
+44
+00:01:56,750 --> 00:01:59,830
+At fourteen, he became an
+apprentice to a bookbinder.
+
+45
+00:02:00,583 --> 00:02:03,163
+And instead of just binding the
+books, he read them.
+
+46
+00:02:03,833 --> 00:02:06,903
+His master, George Riebau,
+encouraged him,
+
+47
+00:02:06,913 --> 00:02:09,833
+and even let him use the shop
+for experiments.
+
+48
+00:02:10,750 --> 00:02:13,900
+At night he went to lectures at
+a small club called the City
+
+49
+00:02:13,910 --> 00:02:16,800
+Philosophical Society, where he
+learned chemistry,
+
+50
+00:02:16,810 --> 00:02:19,750
+and how to explain science to an
+audience.
+
+51
+00:02:20,667 --> 00:02:23,977
+One of them was an encyclopedia,
+with a long article on
+
+52
+00:02:23,987 --> 00:02:24,787
+electricity.
+
+53
+00:02:25,250 --> 00:02:28,180
+He built his own simple
+electrical machines from scraps,
+
+54
+00:02:28,190 --> 00:02:29,570
+in the back of the shop.
+
+55
+00:02:30,250 --> 00:02:33,740
+In eighteen twelve, a customer
+gave him tickets to hear
+
+56
+00:02:33,750 --> 00:02:37,150
+the most famous chemist in
+Britain, Sir Humphry Davy,
+
+57
+00:02:37,350 --> 00:02:38,390
+at the Royal Institution.
+
+58
+00:02:39,417 --> 00:02:40,517
+Davy was a celebrity.
+
+59
+00:02:41,157 --> 00:02:44,097
+Using huge batteries, he had
+discovered new elements,
+
+60
+00:02:44,497 --> 00:02:46,077
+including sodium and potassium.
+
+61
+00:02:47,250 --> 00:02:50,720
+Crowds were so big that the
+street outside the Royal
+Institution
+
+62
+00:02:50,730 --> 00:02:53,930
+is said to have become London's
+first one-way street.
+
+63
+00:02:54,750 --> 00:02:57,390
+Faraday took careful notes,
+rewrote them neatly,
+
+64
+00:02:57,790 --> 00:02:58,970
+and bound them into a book.
+
+65
+00:02:59,667 --> 00:03:02,187
+Then he sent it to Davy, and
+asked him for a job.
+
+66
+00:03:03,000 --> 00:03:06,310
+Davy had recently been hurt in a
+laboratory explosion
+
+67
+00:03:06,320 --> 00:03:09,460
+that damaged his eyesight, and
+for a short time,
+
+68
+00:03:09,700 --> 00:03:11,460
+Faraday helped him as a
+secretary.
+
+69
+00:03:12,333 --> 00:03:15,583
+A few months later, one of
+Davy's lab assistants was
+
+70
+00:03:15,593 --> 00:03:16,973
+sacked after a fight.
+
+71
+00:03:17,373 --> 00:03:19,593
+And Davy hired Faraday to wash
+bottles.
+
+72
+00:03:21,400 --> 00:03:22,980
+Faraday worked his way up.
+
+73
+00:03:23,420 --> 00:03:26,890
+He travelled across Europe with
+Davy, sometimes treated like a
+
+74
+00:03:26,900 --> 00:03:27,700
+servant,
+
+75
+00:03:27,720 --> 00:03:30,380
+but meeting the greatest
+scientists of the age.
+
+76
+00:03:31,333 --> 00:03:33,783
+In Paris they met André-Marie
+Ampère.
+
+77
+00:03:33,793 --> 00:03:36,833
+In Italy, Faraday met Alessandro
+Volta himself.
+
+78
+00:03:37,833 --> 00:03:41,023
+In Florence, they used a giant
+magnifying glass to
+
+79
+00:03:41,033 --> 00:03:43,793
+focus sunlight on a diamond, and
+burned it,
+
+80
+00:03:44,013 --> 00:03:46,093
+proving that diamond is made of
+carbon.
+
+81
+00:03:47,000 --> 00:03:50,490
+Then, in eighteen twenty, the
+Danish scientist Hans
+
+82
+00:03:50,500 --> 00:03:52,900
+Christian Oersted noticed
+something strange.
+
+83
+00:03:53,833 --> 00:03:57,083
+A wire carrying electric current
+made a nearby compass needle
+
+84
+00:03:57,093 --> 00:03:57,893
+swing.
+
+85
+00:03:58,333 --> 00:04:00,393
+Electricity could create
+magnetism.
+
+86
+00:04:00,813 --> 00:04:02,633
+The scientific world went wild.
+
+87
+00:04:03,417 --> 00:04:06,407
+In eighteen twenty one, Faraday
+built a small
+
+88
+00:04:06,417 --> 00:04:07,217
+device:
+
+89
+00:04:07,457 --> 00:04:10,807
+a wire dangling into a cup of
+mercury, beside an
+
+90
+00:04:10,817 --> 00:04:11,617
+upright magnet.
+
+91
+00:04:12,417 --> 00:04:15,817
+When current flowed, the wire
+spun round and round the magnet.
+
+92
+00:04:16,583 --> 00:04:19,263
+Electricity had been turned into
+continuous motion.
+
+93
+00:04:19,863 --> 00:04:22,163
+It was the ancestor of every
+electric motor.
+
+94
+00:04:23,000 --> 00:04:26,250
+He was so excited that he danced
+around the laboratory table
+
+95
+00:04:26,260 --> 00:04:27,574
+with his brother-in-law.
+
+96
+00:04:28,083 --> 00:04:30,383
+That same year he married Sarah
+Barnard.
+
+97
+00:04:30,763 --> 00:04:32,563
+They were together for forty six
+years.
+
+98
+00:04:33,333 --> 00:04:36,473
+But instead of praise, Faraday
+faced suspicion.
+
+99
+00:04:36,933 --> 00:04:40,363
+Some, including Davy, felt he
+had used another
+
+100
+00:04:40,373 --> 00:04:42,893
+scientist's ideas without giving
+credit.
+
+101
+00:04:43,750 --> 00:04:44,850
+It hurt him deeply.
+
+102
+00:04:46,650 --> 00:04:48,690
+Faraday became convinced of
+something.
+
+103
+00:04:49,417 --> 00:04:52,327
+If electricity could make
+magnetism, then surely
+
+104
+00:04:52,337 --> 00:04:53,957
+magnetism could make
+electricity.
+
+105
+00:04:55,000 --> 00:04:56,020
+For years he tried.
+
+106
+00:04:56,420 --> 00:04:57,940
+He put magnets next to wires.
+
+107
+00:04:58,520 --> 00:04:59,320
+Nothing.
+
+108
+00:04:59,500 --> 00:05:01,170
+He wound wires around magnets.
+
+109
+00:05:01,180 --> 00:05:02,392
+Nothing.
+
+110
+00:05:02,917 --> 00:05:06,067
+Between other work, he liquefied
+chlorine gas
+
+111
+00:05:06,077 --> 00:05:08,837
+and discovered a new chemical
+called benzene.
+
+112
+00:05:09,277 --> 00:05:11,237
+But the magnet problem would not
+go away.
+
+113
+00:05:12,000 --> 00:05:15,030
+In eighteen twenty four, he was
+elected to the Royal
+
+114
+00:05:15,040 --> 00:05:15,840
+Society,
+
+115
+00:05:16,180 --> 00:05:18,340
+reportedly against Davy's
+wishes.
+
+116
+00:05:18,940 --> 00:05:22,110
+A year later, he was running the
+Royal Institution's
+
+117
+00:05:22,120 --> 00:05:22,920
+laboratory.
+
+118
+00:05:24,317 --> 00:05:27,747
+Then, on the twenty ninth of
+August, eighteen thirty one,
+
+119
+00:05:27,757 --> 00:05:31,247
+he took an iron ring, and
+wrapped two separate coils of
+wire
+
+120
+00:05:31,257 --> 00:05:32,057
+around it.
+
+121
+00:05:32,500 --> 00:05:34,900
+One coil was connected to a
+battery.
+
+122
+00:05:35,320 --> 00:05:38,320
+The other was connected to a
+needle that could detect
+current.
+
+123
+00:05:39,250 --> 00:05:41,560
+When he connected the battery,
+the needle jumped...
+
+124
+00:05:41,570 --> 00:05:43,350
+and then fell back to zero.
+
+125
+00:05:44,083 --> 00:05:46,883
+When he disconnected it, the
+needle jumped the other way.
+
+126
+00:05:47,667 --> 00:05:50,607
+The current only appeared when
+the magnetism was changing.
+
+127
+00:05:51,417 --> 00:05:54,647
+Weeks later, he pushed a bar
+magnet into a coil of
+
+128
+00:05:54,657 --> 00:05:55,457
+wire.
+
+129
+00:05:55,477 --> 00:05:56,277
+The needle moved.
+
+130
+00:05:56,917 --> 00:05:57,757
+He pulled it out.
+
+131
+00:05:58,237 --> 00:05:59,617
+The needle moved the other way.
+
+132
+00:06:00,333 --> 00:06:01,753
+Moving magnets make electricity.
+
+133
+00:06:02,433 --> 00:06:04,633
+This is called electromagnetic
+induction.
+
+134
+00:06:05,667 --> 00:06:08,327
+He wrote down every experiment
+in numbered paragraphs.
+
+135
+00:06:09,367 --> 00:06:12,677
+By the end of his life, his
+notebooks held more than sixteen
+
+136
+00:06:12,687 --> 00:06:13,867
+thousand entries.
+
+137
+00:06:14,667 --> 00:06:17,667
+And it is the trick behind
+nearly every power station on
+Earth.
+
+138
+00:06:19,233 --> 00:06:22,683
+Faraday then spun a copper disc
+between the poles of a
+
+139
+00:06:22,693 --> 00:06:23,493
+magnet.
+
+140
+00:06:23,833 --> 00:06:27,063
+A steady current flowed out of
+it, for as long as the disc
+
+141
+00:06:27,073 --> 00:06:27,873
+kept turning.
+
+142
+00:06:28,583 --> 00:06:30,423
+It was the first electric
+generator.
+
+143
+00:06:30,963 --> 00:06:32,763
+Turn something, and you get
+electricity.
+
+144
+00:06:33,750 --> 00:06:36,220
+Within a year, a French
+instrument maker,
+
+145
+00:06:36,230 --> 00:06:39,700
+Hippolyte Pixii, built a
+hand-cranked generator
+
+146
+00:06:39,710 --> 00:06:41,450
+using Faraday's principle.
+
+147
+00:06:42,417 --> 00:06:45,137
+It didn't matter what did the
+turning: falling water,
+
+148
+00:06:45,457 --> 00:06:46,257
+steam,
+
+149
+00:06:46,517 --> 00:06:47,167
+wind,
+
+150
+00:06:47,177 --> 00:06:49,657
+or later, the heat from nuclear
+reactions.
+
+151
+00:06:50,667 --> 00:06:53,757
+Today almost all the electricity
+we use comes from
+
+152
+00:06:53,767 --> 00:06:56,877
+Faraday's idea: magnets and
+coils
+
+153
+00:06:56,887 --> 00:06:59,957
+of wire, moving past each other
+in giant
+
+154
+00:06:59,967 --> 00:07:00,767
+generators.
+
+155
+00:07:02,400 --> 00:07:04,160
+Faraday couldn't do advanced
+maths.
+
+156
+00:07:04,760 --> 00:07:06,540
+So he pictured what he couldn't
+calculate.
+
+157
+00:07:07,500 --> 00:07:09,810
+He sprinkled iron filings around
+magnets,
+
+158
+00:07:09,820 --> 00:07:12,400
+and watched them snap into
+curved patterns.
+
+159
+00:07:13,417 --> 00:07:15,997
+He believed these lines of force
+were real things,
+
+160
+00:07:16,357 --> 00:07:19,257
+filling the space around every
+magnet and every current.
+
+161
+00:07:20,083 --> 00:07:22,033
+Most scientists thought this was
+childish.
+
+162
+00:07:22,043 --> 00:07:25,533
+But a young Scottish physicist,
+James Clerk
+
+163
+00:07:25,543 --> 00:07:26,173
+Maxwell,
+
+164
+00:07:26,183 --> 00:07:29,303
+turned Faraday's pictures into
+mathematics.
+
+165
+00:07:30,333 --> 00:07:32,653
+His equations showed something
+astonishing:
+
+166
+00:07:33,333 --> 00:07:36,303
+light itself is a wave of
+electricity and
+
+167
+00:07:36,313 --> 00:07:37,113
+magnetism.
+
+168
+00:07:37,667 --> 00:07:41,157
+Faraday had already shown, in
+eighteen forty five,
+
+169
+00:07:41,167 --> 00:07:43,467
+that a magnet could twist a beam
+of light.
+
+170
+00:07:43,947 --> 00:07:46,587
+It was a clue that light and
+magnetism were connected.
+
+171
+00:07:47,333 --> 00:07:50,743
+Radio, television, Wi-Fi and
+mobile phones all
+
+172
+00:07:50,753 --> 00:07:51,933
+grew from that insight.
+
+173
+00:07:53,650 --> 00:07:55,130
+Faraday became famous.
+
+174
+00:07:55,630 --> 00:07:58,840
+He also found that a closed
+metal cage shields whatever is
+
+175
+00:07:58,850 --> 00:08:00,390
+inside from electric charge.
+
+176
+00:08:01,250 --> 00:08:03,530
+Which is why we still call it a
+Faraday cage.
+
+177
+00:08:04,130 --> 00:08:07,140
+It's why you're safe inside a
+car or a plane in a
+
+178
+00:08:07,150 --> 00:08:07,950
+thunderstorm.
+
+179
+00:08:08,417 --> 00:08:11,787
+He started the Royal
+Institution's Christmas Lectures
+for young
+
+180
+00:08:11,797 --> 00:08:12,597
+people,
+
+181
+00:08:12,717 --> 00:08:13,697
+which still run today.
+
+182
+00:08:14,500 --> 00:08:15,860
+But he turned down a knighthood.
+
+183
+00:08:16,200 --> 00:08:19,290
+And twice, he refused to become
+President of the Royal
+
+184
+00:08:19,300 --> 00:08:20,100
+Society.
+
+185
+00:08:20,833 --> 00:08:23,323
+He said he wanted to remain
+plain Michael Faraday,
+
+186
+00:08:23,333 --> 00:08:24,133
+to the last.
+
+187
+00:08:24,833 --> 00:08:28,203
+He was deeply religious, and in
+the eighteen fifties he refused
+
+188
+00:08:28,213 --> 00:08:31,123
+to help the British government
+develop poison gas for the
+
+189
+00:08:31,133 --> 00:08:31,933
+Crimean War.
+
+190
+00:08:33,483 --> 00:08:36,281
+Faraday died in eighteen sixty
+seven.
+
+191
+00:08:36,750 --> 00:08:39,900
+A few years later, Thomas Edison
+and others
+
+192
+00:08:39,910 --> 00:08:43,280
+used generators built on his
+principle to light up whole
+
+193
+00:08:43,290 --> 00:08:44,090
+streets.
+
+194
+00:08:44,500 --> 00:08:47,300
+The unit of electrical
+capacitance, the farad,
+
+195
+00:08:47,580 --> 00:08:48,820
+is named in his honour.
+
+196
+00:08:49,500 --> 00:08:52,570
+From nineteen ninety one to two
+thousand and one,
+
+197
+00:08:52,580 --> 00:08:55,040
+his portrait was on the British
+twenty pound note.
+
+198
+00:08:55,750 --> 00:08:59,220
+And Albert Einstein kept a
+picture of Faraday on his study
+
+199
+00:08:59,230 --> 00:08:59,640
+wall,
+
+200
+00:08:59,650 --> 00:09:02,740
+alongside Isaac Newton and James
+Clerk
+
+201
+00:09:02,750 --> 00:09:03,550
+Maxwell.
+
+202
+00:09:05,233 --> 00:09:06,853
+He didn't discover electricity.
+
+203
+00:09:07,473 --> 00:09:08,273
+Nobody did.
+
+204
+00:09:09,000 --> 00:09:11,020
+But Michael Faraday discovered
+how to make it,
+
+205
+00:09:11,280 --> 00:09:13,280
+how to move it, and how to think
+about it.
+
+206
+00:09:13,917 --> 00:09:17,407
+So the next time you flip a
+switch, remember the
+bookbinder's
+
+207
+00:09:17,417 --> 00:09:17,607
+boy,
+
+208
+00:09:17,617 --> 00:09:20,077
+with a magnet and a coil of
+wire.

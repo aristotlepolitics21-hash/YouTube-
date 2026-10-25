@@ -1,0 +1,927 @@
+1
+00:00:00,250 --> 00:00:03,460
+Albert Einstein is the most
+famous scientist who ever
+
+2
+00:00:03,470 --> 00:00:04,270
+lived.
+
+3
+00:00:04,290 --> 00:00:07,560
+But for thirty years, one man
+kept telling him he was
+
+4
+00:00:07,570 --> 00:00:08,370
+wrong.
+
+5
+00:00:08,667 --> 00:00:11,207
+Their argument was about the
+deepest question in physics:
+
+6
+00:00:11,827 --> 00:00:14,217
+is the universe, at its smallest
+scale,
+
+7
+00:00:14,227 --> 00:00:15,027
+certain?
+
+8
+00:00:15,667 --> 00:00:16,867
+Or is it ruled by chance?
+
+9
+00:00:17,833 --> 00:00:21,233
+Einstein famously said: God does
+not play dice.
+
+10
+00:00:22,033 --> 00:00:23,053
+His rival's reply?
+
+11
+00:00:23,593 --> 00:00:25,273
+Stop telling God what to do.
+
+12
+00:00:26,000 --> 00:00:29,370
+The man who challenged Einstein
+was the Danish physicist
+
+13
+00:00:29,380 --> 00:00:30,600
+Niels Bohr.
+
+14
+00:00:30,860 --> 00:00:33,660
+And in the end, experiments
+proved Bohr right.
+
+15
+00:00:35,317 --> 00:00:38,507
+Bohr was born in Copenhagen in
+eighteen eighty five,
+
+16
+00:00:38,517 --> 00:00:40,357
+into a family of scholars.
+
+17
+00:00:41,117 --> 00:00:43,777
+He was also a talented football
+goalkeeper.
+
+18
+00:00:44,437 --> 00:00:47,197
+His brother Harald played for
+Denmark at the Olympics.
+
+19
+00:00:48,250 --> 00:00:50,750
+In the early nineteen hundreds,
+nobody understood atoms.
+
+20
+00:00:51,430 --> 00:00:54,620
+Experiments showed a tiny, heavy
+nucleus with
+
+21
+00:00:54,630 --> 00:00:57,780
+electrons around it, but by the
+known laws of
+
+22
+00:00:57,790 --> 00:00:58,590
+physics,
+
+23
+00:00:58,810 --> 00:01:02,200
+the electrons should spiral
+inwards and crash in a
+
+24
+00:01:02,210 --> 00:01:03,450
+fraction of a second.
+
+25
+00:01:04,250 --> 00:01:07,430
+In nineteen thirteen, Bohr
+proposed a bold fix.
+
+26
+00:01:08,130 --> 00:01:11,250
+Electrons could only travel in
+certain fixed orbits,
+
+27
+00:01:11,810 --> 00:01:12,890
+like rungs on a ladder.
+
+28
+00:01:13,667 --> 00:01:16,917
+When an electron jumped down
+from a higher orbit to a lower
+
+29
+00:01:16,927 --> 00:01:17,727
+one,
+
+30
+00:01:17,747 --> 00:01:20,547
+it gave out a flash of light of
+one exact colour.
+
+31
+00:01:21,333 --> 00:01:24,463
+It explained the strange
+bar-code of colours that
+hydrogen
+
+32
+00:01:24,473 --> 00:01:26,213
+gives off when it glows.
+
+33
+00:01:26,593 --> 00:01:29,671
+Bohr won the Nobel Prize in
+nineteen twenty two.
+
+34
+00:01:31,067 --> 00:01:33,147
+But Bohr's model was only a
+start.
+
+35
+00:01:33,807 --> 00:01:36,447
+In the nineteen twenties, a
+group of young physicists,
+
+36
+00:01:37,367 --> 00:01:40,567
+many of them working at Bohr's
+institute in Copenhagen,
+
+37
+00:01:41,347 --> 00:01:42,627
+built a whole new theory:
+
+38
+00:01:43,307 --> 00:01:44,107
+quantum mechanics.
+
+39
+00:01:44,750 --> 00:01:48,110
+Bohr and Einstein first met in
+Berlin in nineteen
+
+40
+00:01:48,120 --> 00:01:48,500
+twenty,
+
+41
+00:01:48,510 --> 00:01:50,270
+and liked each other at once.
+
+42
+00:01:51,130 --> 00:01:54,300
+Einstein wrote that not often in
+life had a person given him
+
+43
+00:01:54,310 --> 00:01:55,930
+such joy just by being there.
+
+44
+00:01:56,583 --> 00:01:58,823
+Years later, on a visit to
+Copenhagen,
+
+45
+00:01:59,443 --> 00:02:02,833
+they got so absorbed arguing on
+a tram that they missed their
+
+46
+00:02:02,843 --> 00:02:03,613
+stop,
+
+47
+00:02:03,623 --> 00:02:05,463
+rode back, and missed it again.
+
+48
+00:02:06,250 --> 00:02:09,420
+Quantum mechanics made
+astonishingly accurate
+
+49
+00:02:09,430 --> 00:02:10,230
+predictions.
+
+50
+00:02:10,790 --> 00:02:13,770
+But it described the world in a
+deeply strange way.
+
+51
+00:02:14,417 --> 00:02:17,807
+Fire single particles, like
+electrons, at a wall with
+
+52
+00:02:17,817 --> 00:02:20,907
+two slits, and they land one by
+one on the
+
+53
+00:02:20,917 --> 00:02:23,337
+screen behind, like tiny
+bullets.
+
+54
+00:02:24,250 --> 00:02:27,170
+But as more arrive, they build
+up a pattern of stripes,
+
+55
+00:02:27,750 --> 00:02:31,060
+the kind of pattern only waves
+make, as if each particle
+
+56
+00:02:31,070 --> 00:02:32,890
+went through both slits at once.
+
+57
+00:02:33,750 --> 00:02:36,370
+According to quantum mechanics,
+before you look,
+
+58
+00:02:36,830 --> 00:02:39,310
+a particle doesn't have one
+definite position.
+
+59
+00:02:39,950 --> 00:02:41,150
+It has only probabilities.
+
+60
+00:02:42,230 --> 00:02:45,540
+Measurement forces a result, and
+which result is
+
+61
+00:02:45,550 --> 00:02:46,850
+down to pure chance.
+
+62
+00:02:47,750 --> 00:02:51,040
+Werner Heisenberg showed that
+you can't even know a
+
+63
+00:02:51,050 --> 00:02:54,340
+particle's exact position and
+its exact speed
+
+64
+00:02:54,350 --> 00:02:55,470
+at the same time.
+
+65
+00:02:56,010 --> 00:02:57,750
+This is the uncertainty
+principle.
+
+66
+00:02:58,667 --> 00:03:00,167
+Bohr embraced all of this.
+
+67
+00:03:00,887 --> 00:03:01,687
+Einstein,
+
+68
+00:03:01,767 --> 00:03:03,767
+who had helped to start quantum
+physics,
+
+69
+00:03:04,287 --> 00:03:05,247
+could not accept it.
+
+70
+00:03:05,833 --> 00:03:09,123
+In nineteen oh five, Einstein
+had shown that light
+
+71
+00:03:09,133 --> 00:03:12,363
+comes in little packets of
+energy, which we now call
+
+72
+00:03:12,373 --> 00:03:13,173
+photons.
+
+73
+00:03:13,793 --> 00:03:15,853
+That's what won him his own
+Nobel Prize.
+
+74
+00:03:16,917 --> 00:03:18,367
+But a universe run on chance?
+
+75
+00:03:18,377 --> 00:03:21,867
+Einstein believed there must be
+a deeper reality
+
+76
+00:03:21,877 --> 00:03:22,307
+underneath,
+
+77
+00:03:22,317 --> 00:03:24,517
+where everything had a definite
+cause.
+
+78
+00:03:25,417 --> 00:03:28,867
+In a letter in nineteen twenty
+six, he wrote that he was
+
+79
+00:03:28,877 --> 00:03:30,837
+convinced God does not throw
+dice.
+
+80
+00:03:31,750 --> 00:03:32,550
+He wasn't alone.
+
+81
+00:03:33,030 --> 00:03:33,830
+Erwin Schrödinger,
+
+82
+00:03:34,350 --> 00:03:37,650
+who had written quantum
+mechanics' most famous equation,
+
+83
+00:03:38,030 --> 00:03:41,530
+imagined a cat in a box that,
+according to the theory,
+
+84
+00:03:41,850 --> 00:03:45,030
+would be both alive and dead
+until someone looked.
+
+85
+00:03:46,483 --> 00:03:49,513
+The showdown came in October
+nineteen twenty seven,
+
+86
+00:03:49,523 --> 00:03:52,043
+at the Solvay Conference in
+Brussels.
+
+87
+00:03:53,083 --> 00:03:56,273
+It was perhaps the most famous
+gathering in the history of
+
+88
+00:03:56,283 --> 00:03:57,083
+science.
+
+89
+00:03:57,443 --> 00:04:00,613
+Seventeen of the twenty nine
+people in the official
+photograph
+
+90
+00:04:00,623 --> 00:04:03,883
+won a Nobel Prize, including
+Marie Curie,
+
+91
+00:04:04,103 --> 00:04:04,903
+who won two.
+
+92
+00:04:05,583 --> 00:04:08,063
+The official topic was electrons
+and photons.
+
+93
+00:04:08,983 --> 00:04:12,373
+The real topic, everyone knew,
+was whether quantum mechanics
+
+94
+00:04:12,383 --> 00:04:14,423
+told the whole truth about
+nature.
+
+95
+00:04:15,167 --> 00:04:16,327
+Each morning at breakfast,
+
+96
+00:04:16,987 --> 00:04:20,157
+Einstein would present a clever
+thought experiment designed
+
+97
+00:04:20,167 --> 00:04:22,047
+to break quantum mechanics.
+
+98
+00:04:23,083 --> 00:04:24,763
+Bohr would worry about it all
+day.
+
+99
+00:04:25,343 --> 00:04:27,583
+And by dinner, he usually had an
+answer.
+
+100
+00:04:29,233 --> 00:04:32,143
+Einstein came back in nineteen
+thirty with his
+
+101
+00:04:32,153 --> 00:04:34,953
+cleverest challenge: a box full
+of light,
+
+102
+00:04:35,393 --> 00:04:38,803
+hanging from a spring scale,
+with a clock inside that
+
+103
+00:04:38,813 --> 00:04:41,253
+opens a shutter to let out a
+single photon.
+
+104
+00:04:42,250 --> 00:04:44,610
+By weighing the box before and
+after, he argued,
+
+105
+00:04:44,790 --> 00:04:47,760
+you could know both the exact
+energy of the photon and the
+exact
+
+106
+00:04:47,770 --> 00:04:48,730
+time it left.
+
+107
+00:04:49,090 --> 00:04:51,730
+That would break Heisenberg's
+uncertainty principle.
+
+108
+00:04:52,583 --> 00:04:53,383
+Bohr was shaken.
+
+109
+00:04:53,823 --> 00:04:56,403
+A colleague said he looked like
+a man in shock.
+
+110
+00:04:57,250 --> 00:04:59,900
+But after a sleepless night, he
+found the flaw,
+
+111
+00:04:59,910 --> 00:05:03,270
+using Einstein's own theory of
+general relativity.
+
+112
+00:05:03,990 --> 00:05:05,330
+When the box moves in gravity,
+
+113
+00:05:06,250 --> 00:05:08,710
+its clock runs at a slightly
+different rate.
+
+114
+00:05:09,270 --> 00:05:10,810
+The uncertainty was restored.
+
+115
+00:05:12,567 --> 00:05:14,087
+Einstein changed tactics.
+
+116
+00:05:14,867 --> 00:05:18,177
+In nineteen thirty five, with
+Boris Podolsky and
+
+117
+00:05:18,187 --> 00:05:18,987
+Nathan Rosen,
+
+118
+00:05:19,587 --> 00:05:23,057
+he published a paper arguing
+that quantum mechanics must be
+
+119
+00:05:23,067 --> 00:05:23,867
+incomplete.
+
+120
+00:05:24,500 --> 00:05:27,680
+The theory predicts that two
+particles can become entangled.
+
+121
+00:05:28,400 --> 00:05:31,870
+Separate them, even by vast
+distances, and measuring
+
+122
+00:05:31,880 --> 00:05:35,370
+one instantly affects what you
+will find when you measure
+
+123
+00:05:35,380 --> 00:05:36,180
+the other.
+
+124
+00:05:36,500 --> 00:05:38,440
+Einstein thought that was
+absurd.
+
+125
+00:05:39,040 --> 00:05:41,720
+He later called it spooky action
+at a distance.
+
+126
+00:05:42,420 --> 00:05:45,890
+Surely, he said, the particles
+must have carried hidden
+
+127
+00:05:45,900 --> 00:05:47,240
+instructions all along.
+
+128
+00:05:48,083 --> 00:05:51,333
+Bohr replied that it makes no
+sense to talk about properties
+
+129
+00:05:51,343 --> 00:05:52,803
+that haven't been measured.
+
+130
+00:05:53,303 --> 00:05:56,463
+For the rest of their lives,
+neither man convinced the other.
+
+131
+00:05:57,167 --> 00:06:00,277
+Einstein spent his last years
+searching for a deeper
+
+132
+00:06:00,287 --> 00:06:02,347
+theory that would make chance
+disappear.
+
+133
+00:06:03,067 --> 00:06:06,507
+He died in nineteen fifty five,
+without finding it.
+
+134
+00:06:07,167 --> 00:06:08,827
+Yet they remained deep friends.
+
+135
+00:06:09,507 --> 00:06:12,377
+And when Bohr died in nineteen
+sixty two,
+
+136
+00:06:12,387 --> 00:06:15,697
+the last drawing on his
+blackboard was a sketch of
+
+137
+00:06:15,707 --> 00:06:17,087
+Einstein's light box.
+
+138
+00:06:18,900 --> 00:06:22,190
+During the Second World War,
+Bohr, whose mother was
+
+139
+00:06:22,200 --> 00:06:23,000
+Jewish,
+
+140
+00:06:23,080 --> 00:06:26,310
+fled Nazi-occupied Denmark by
+fishing boat to
+
+141
+00:06:26,320 --> 00:06:28,327
+Sweden in nineteen forty three.
+
+142
+00:06:28,833 --> 00:06:32,243
+He was then flown to Britain
+lying in the empty bomb bay of
+
+143
+00:06:32,253 --> 00:06:33,853
+a fast Mosquito aircraft.
+
+144
+00:06:34,433 --> 00:06:37,243
+His oxygen mask didn't fit his
+large head,
+
+145
+00:06:37,253 --> 00:06:38,813
+and he passed out on the way.
+
+146
+00:06:39,500 --> 00:06:42,330
+Earlier, when the Nazis invaded
+Denmark in
+
+147
+00:06:42,340 --> 00:06:45,120
+nineteen forty, a chemist at
+Bohr's institute,
+
+148
+00:06:45,820 --> 00:06:49,190
+George de Hevesy, dissolved two
+colleagues' gold Nobel
+
+149
+00:06:49,200 --> 00:06:51,260
+medals in acid to hide them.
+
+150
+00:06:51,700 --> 00:06:54,350
+After the war, the gold was
+recovered and the medals
+
+151
+00:06:54,360 --> 00:06:55,291
+recast.
+
+152
+00:06:55,750 --> 00:06:58,960
+Bohr went on to Los Alamos,
+under the false name
+
+153
+00:06:58,970 --> 00:07:02,000
+Nicholas Baker, as an adviser on
+the atomic
+
+154
+00:07:02,010 --> 00:07:02,810
+bomb.
+
+155
+00:07:03,090 --> 00:07:06,220
+He urged Churchill and Roosevelt
+to share atomic
+
+156
+00:07:06,230 --> 00:07:09,610
+secrets with the world, to avoid
+an arms race.
+
+157
+00:07:10,610 --> 00:07:11,630
+Churchill wanted him watched.
+
+158
+00:07:13,483 --> 00:07:16,943
+For decades, the Bohr-Einstein
+debate seemed like philosophy.
+
+159
+00:07:17,703 --> 00:07:19,543
+Nobody could see how to test it.
+
+160
+00:07:20,167 --> 00:07:23,257
+Then, in nineteen sixty four,
+the Northern Irish
+
+161
+00:07:23,267 --> 00:07:25,807
+physicist John Bell found a way.
+
+162
+00:07:26,187 --> 00:07:29,277
+He showed that hidden
+instructions and quantum
+mechanics
+
+163
+00:07:29,287 --> 00:07:31,387
+predict measurably different
+results.
+
+164
+00:07:32,333 --> 00:07:34,943
+Bell worked at the particle
+physics lab CERN,
+
+165
+00:07:34,953 --> 00:07:35,893
+near Geneva.
+
+166
+00:07:36,633 --> 00:07:39,233
+He did this work on the side,
+almost as a hobby,
+
+167
+00:07:39,753 --> 00:07:42,333
+and it became one of the most
+important results in physics.
+
+168
+00:07:43,250 --> 00:07:46,210
+Experiments by John Clauser in
+the nineteen
+
+169
+00:07:46,220 --> 00:07:46,880
+seventies,
+
+170
+00:07:46,890 --> 00:07:49,680
+and Alain Aspect in the nineteen
+eighties,
+
+171
+00:07:49,690 --> 00:07:53,020
+tested Bell's idea with
+entangled particles of
+
+172
+00:07:53,030 --> 00:07:53,830
+light.
+
+173
+00:07:54,000 --> 00:07:57,000
+Again and again, quantum
+mechanics won.
+
+174
+00:07:57,440 --> 00:08:00,420
+The universe really is as
+strange as Bohr said.
+
+175
+00:08:01,083 --> 00:08:04,553
+In twenty twenty two, Aspect,
+Clauser and
+
+176
+00:08:04,563 --> 00:08:07,733
+Anton Zeilinger shared the Nobel
+Prize in Physics
+
+177
+00:08:07,743 --> 00:08:08,563
+for this work.
+
+178
+00:08:09,250 --> 00:08:12,450
+Today, entanglement is no longer
+just an argument.
+
+179
+00:08:13,010 --> 00:08:16,400
+It's the basis of quantum
+computers and ultra-secure
+
+180
+00:08:16,410 --> 00:08:17,470
+quantum communication.
+
+181
+00:08:18,583 --> 00:08:22,013
+In twenty seventeen, a Chinese
+satellite called
+
+182
+00:08:22,023 --> 00:08:25,293
+Micius sent entangled particles
+of light to two ground
+
+183
+00:08:25,303 --> 00:08:28,403
+stations more than twelve
+hundred kilometres apart.
+
+184
+00:08:29,023 --> 00:08:32,333
+They stayed linked, just as
+Bohr's quantum mechanics
+
+185
+00:08:32,343 --> 00:08:33,143
+predicted.
+
+186
+00:08:33,667 --> 00:08:35,967
+When Denmark gave Bohr its
+highest honour,
+
+187
+00:08:36,507 --> 00:08:39,497
+he designed his own coat of
+arms, with the Chinese
+
+188
+00:08:39,507 --> 00:08:41,807
+yin-yang symbol and a Latin
+motto:
+
+189
+00:08:42,427 --> 00:08:43,647
+opposites are complementary.
+
+190
+00:08:44,667 --> 00:08:47,645
+Element number one hundred and
+seven,
+
+191
+00:08:47,655 --> 00:08:48,197
+bohrium,
+
+192
+00:08:48,207 --> 00:08:49,467
+is named after him.
+
+193
+00:08:49,907 --> 00:08:53,397
+And the institute he founded in
+Copenhagen still carries his
+
+194
+00:08:53,407 --> 00:08:54,207
+name.
+
+195
+00:08:55,400 --> 00:08:56,900
+Einstein lost the argument.
+
+196
+00:08:57,420 --> 00:09:00,890
+But by pushing so hard, he
+forced quantum mechanics to
+
+197
+00:09:00,900 --> 00:09:03,920
+explain itself, and revealed its
+strangest feature.
+
+198
+00:09:04,833 --> 00:09:08,203
+Sometimes, the greatest gift a
+scientist can give
+
+199
+00:09:08,213 --> 00:09:09,493
+is a really good objection.

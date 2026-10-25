@@ -1,0 +1,506 @@
+{
+  "themeConfig": {
+    "primaryColor": "#0A3D91",
+    "accentColor": "#FFC700",
+    "backgroundColor": "#0B1026",
+    "surfaceColor": "#17214A",
+    "textColor": "#F7F8FC",
+    "mutedTextColor": "#A9B1CF",
+    "chartColors": [
+      "#FFC700",
+      "#4C8DFF",
+      "#E5484D",
+      "#7DD3C0",
+      "#B79CFF",
+      "#A9B1CF"
+    ],
+    "captionHighlightColor": "#FFC700",
+    "captionBackgroundColor": "rgba(11, 16, 38, 0.8)"
+  },
+  "cuts": [
+    {
+      "id": "s01",
+      "source": "",
+      "in_seconds": 0.0,
+      "out_seconds": 6.798,
+      "type": "stat_card",
+      "stat": "Sept 2000",
+      "subtitle": "Dallas, Texas. Blockbuster headquarters."
+    },
+    {
+      "id": "s02",
+      "source": "",
+      "in_seconds": 6.798,
+      "out_seconds": 11.532,
+      "type": "stat_card",
+      "stat": "$50M",
+      "subtitle": "The asking price"
+    },
+    {
+      "id": "s03",
+      "source": "",
+      "in_seconds": 11.532,
+      "out_seconds": 14.589,
+      "type": "hero_title",
+      "text": "The answer was no.",
+      "subtitle": "The startup was Netflix"
+    },
+    {
+      "id": "s04",
+      "source": "",
+      "in_seconds": 14.589,
+      "out_seconds": 21.175,
+      "type": "text_card",
+      "text": "Blockbuster fought back. For a moment, it was winning."
+    },
+    {
+      "id": "s05",
+      "source": "",
+      "in_seconds": 21.175,
+      "out_seconds": 25.968,
+      "type": "hero_title",
+      "text": "BLOCKBUSTER",
+      "subtitle": "Built & Broken · Episode 3"
+    },
+    {
+      "id": "s06",
+      "source": "",
+      "in_seconds": 25.968,
+      "out_seconds": 34.289,
+      "type": "stat_card",
+      "stat": "1985",
+      "subtitle": "David Cook opens the first Blockbuster in Dallas"
+    },
+    {
+      "id": "s07",
+      "source": "",
+      "in_seconds": 34.289,
+      "out_seconds": 43.662,
+      "type": "comparison",
+      "title": "A new kind of video shop",
+      "leftLabel": "Typical shop",
+      "leftValue": "Small, cramped",
+      "rightLabel": "Blockbuster",
+      "rightValue": "~8,000 tapes"
+    },
+    {
+      "id": "s08",
+      "source": "",
+      "in_seconds": 43.662,
+      "out_seconds": 52.007,
+      "type": "text_card",
+      "text": "1987: Wayne Huizenga takes control. Expand. Fast."
+    },
+    {
+      "id": "s09",
+      "source": "",
+      "in_seconds": 52.007,
+      "out_seconds": 61.189,
+      "type": "hero_title",
+      "text": "Friday night",
+      "subtitle": "Walk the aisles. Pick a movie. Popcorn at the counter."
+    },
+    {
+      "id": "s10",
+      "source": "",
+      "in_seconds": 61.189,
+      "out_seconds": 69.313,
+      "type": "stat_card",
+      "stat": "$8.4B",
+      "subtitle": "Viacom buys Blockbuster, 1994"
+    },
+    {
+      "id": "s11",
+      "source": "",
+      "in_seconds": 69.313,
+      "out_seconds": 80.01,
+      "type": "kpi_grid",
+      "title": "Blockbuster at its peak, 2004",
+      "columns": 3,
+      "chartData": [
+        {
+          "label": "Stores (thousands)",
+          "value": 9,
+          "suffix": "K+"
+        },
+        {
+          "label": "Employees (thousands)",
+          "value": 84,
+          "suffix": "K"
+        },
+        {
+          "label": "Revenue ($ billions)",
+          "value": 6,
+          "prefix": "$",
+          "suffix": "B"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "source": "",
+      "in_seconds": 80.01,
+      "out_seconds": 84.878,
+      "type": "hero_title",
+      "text": "Late fees.",
+      "subtitle": "The secret every customer knew"
+    },
+    {
+      "id": "s13",
+      "source": "",
+      "in_seconds": 84.878,
+      "out_seconds": 92.52,
+      "type": "stat_card",
+      "stat": "~$800M",
+      "subtitle": "Late fees collected in 2000"
+    },
+    {
+      "id": "s14",
+      "source": "",
+      "in_seconds": 92.52,
+      "out_seconds": 98.967,
+      "type": "pie_chart",
+      "title": "Blockbuster revenue, 2000",
+      "donut": true,
+      "centerLabel": "Late fees",
+      "centerValue": "16%",
+      "showLegend": true,
+      "chartData": [
+        {
+          "label": "Late fees",
+          "value": 16
+        },
+        {
+          "label": "Everything else",
+          "value": 84
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "source": "",
+      "in_seconds": 98.967,
+      "out_seconds": 106.238,
+      "type": "callout",
+      "callout_type": "warning",
+      "title": "Remember this",
+      "text": "A business that profits when its customers are unhappy is waiting for a competitor."
+    },
+    {
+      "id": "s16",
+      "source": "",
+      "in_seconds": 106.238,
+      "out_seconds": 114.462,
+      "type": "comparison",
+      "title": "Two ways to rent a movie",
+      "leftLabel": "Blockbuster",
+      "leftValue": "Late fees",
+      "rightLabel": "Netflix",
+      "rightValue": "No late fees"
+    },
+    {
+      "id": "s17",
+      "source": "",
+      "in_seconds": 114.462,
+      "out_seconds": 125.553,
+      "type": "text_card",
+      "text": "Reed Hastings, Marc Randolph and Barry McCarthy fly to Dallas"
+    },
+    {
+      "id": "s18",
+      "source": "",
+      "in_seconds": 125.553,
+      "out_seconds": 131.779,
+      "type": "callout",
+      "callout_type": "info",
+      "title": "The pitch",
+      "text": "Netflix becomes Blockbuster's online business. Price: $50 million."
+    },
+    {
+      "id": "s19",
+      "source": "",
+      "in_seconds": 131.779,
+      "out_seconds": 138.115,
+      "type": "callout",
+      "callout_type": "quote",
+      "title": "Marc Randolph, Netflix co-founder",
+      "text": "John Antioco was struggling not to laugh."
+    },
+    {
+      "id": "s20",
+      "source": "",
+      "in_seconds": 138.115,
+      "out_seconds": 141.741,
+      "type": "callout",
+      "callout_type": "quote",
+      "title": "Barry McCarthy, 2008",
+      "text": "They laughed us out of their office."
+    },
+    {
+      "id": "s21",
+      "source": "",
+      "in_seconds": 141.741,
+      "out_seconds": 149.982,
+      "type": "comparison",
+      "title": "Why it looked sensible in 2000",
+      "leftLabel": "Netflix",
+      "leftValue": "Losing money",
+      "rightLabel": "Blockbuster",
+      "rightValue": "Billions a year"
+    },
+    {
+      "id": "s22",
+      "source": "",
+      "in_seconds": 149.982,
+      "out_seconds": 158.124,
+      "type": "stat_card",
+      "stat": "6M",
+      "subtitle": "Netflix subscribers by the end of 2006"
+    },
+    {
+      "id": "s23",
+      "source": "",
+      "in_seconds": 158.124,
+      "out_seconds": 163.212,
+      "type": "text_card",
+      "text": "Blockbuster did not ignore Netflix forever."
+    },
+    {
+      "id": "s24",
+      "source": "",
+      "in_seconds": 163.212,
+      "out_seconds": 172.231,
+      "type": "comparison",
+      "title": "Blockbuster fights back",
+      "leftLabel": "2004",
+      "leftValue": "Online launch",
+      "rightLabel": "1 Jan 2005",
+      "rightValue": "No more late fees"
+    },
+    {
+      "id": "s25",
+      "source": "",
+      "in_seconds": 172.231,
+      "out_seconds": 181.778,
+      "type": "bar_chart",
+      "title": "Estimated cost of the fight back ($ millions)",
+      "showValues": true,
+      "chartData": [
+        {
+          "label": "Ending late fees",
+          "value": 200
+        },
+        {
+          "label": "Launching online",
+          "value": 200
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "source": "",
+      "in_seconds": 181.778,
+      "out_seconds": 188.26,
+      "type": "hero_title",
+      "text": "Its stores.",
+      "subtitle": "The one card Netflix could never match"
+    },
+    {
+      "id": "s27",
+      "source": "",
+      "in_seconds": 188.26,
+      "out_seconds": 197.609,
+      "type": "callout",
+      "callout_type": "tip",
+      "title": "Total Access, 2006",
+      "text": "Rent online. Return it in a store. Walk out with another movie, free."
+    },
+    {
+      "id": "s28",
+      "source": "",
+      "in_seconds": 197.609,
+      "out_seconds": 208.358,
+      "type": "stat_card",
+      "stat": "2M+",
+      "subtitle": "Total Access subscribers"
+    },
+    {
+      "id": "s29",
+      "source": "",
+      "in_seconds": 208.358,
+      "out_seconds": 210.689,
+      "type": "text_card",
+      "text": "And then Blockbuster turned on itself."
+    },
+    {
+      "id": "s30",
+      "source": "",
+      "in_seconds": 210.689,
+      "out_seconds": 220.781,
+      "type": "text_card",
+      "text": "Debt. Heavy spending. An activist investor on the board: Carl Icahn."
+    },
+    {
+      "id": "s31",
+      "source": "",
+      "in_seconds": 220.781,
+      "out_seconds": 225.352,
+      "type": "stat_card",
+      "stat": "2007",
+      "subtitle": "John Antioco leaves after a fight with the board"
+    },
+    {
+      "id": "s32",
+      "source": "",
+      "in_seconds": 225.352,
+      "out_seconds": 233.46,
+      "type": "comparison",
+      "title": "A new direction",
+      "leftLabel": "Antioco",
+      "leftValue": "Online + stores",
+      "rightLabel": "Keyes",
+      "rightValue": "Stores first"
+    },
+    {
+      "id": "s33",
+      "source": "",
+      "in_seconds": 233.46,
+      "out_seconds": 243.965,
+      "type": "text_card",
+      "text": "Marketing cut back. Prices up. Growth stalled."
+    },
+    {
+      "id": "s34",
+      "source": "",
+      "in_seconds": 243.965,
+      "out_seconds": 249.453,
+      "type": "hero_title",
+      "text": "Foot off the pedal",
+      "subtitle": "Blockbuster stops pushing its own answer"
+    },
+    {
+      "id": "s35",
+      "source": "",
+      "in_seconds": 249.453,
+      "out_seconds": 260.237,
+      "type": "stat_card",
+      "stat": "Jan 2007",
+      "subtitle": "Netflix launches streaming"
+    },
+    {
+      "id": "s36",
+      "source": "",
+      "in_seconds": 260.237,
+      "out_seconds": 272.123,
+      "type": "comparison",
+      "title": "Squeezed from both sides",
+      "leftLabel": "Above",
+      "leftValue": "Streaming",
+      "rightLabel": "Below",
+      "rightValue": "$1 kiosks"
+    },
+    {
+      "id": "s37",
+      "source": "",
+      "in_seconds": 272.123,
+      "out_seconds": 281.775,
+      "type": "text_card",
+      "text": "Its greatest strength became its biggest cost."
+    },
+    {
+      "id": "s38",
+      "source": "",
+      "in_seconds": 281.775,
+      "out_seconds": 287.101,
+      "type": "stat_card",
+      "stat": "Sept 2010",
+      "subtitle": "Blockbuster files for Chapter 11 bankruptcy"
+    },
+    {
+      "id": "s39",
+      "source": "",
+      "in_seconds": 287.101,
+      "out_seconds": 291.022,
+      "type": "stat_card",
+      "stat": "20M",
+      "subtitle": "Netflix subscribers at the end of 2010"
+    },
+    {
+      "id": "s40",
+      "source": "",
+      "in_seconds": 291.022,
+      "out_seconds": 303.553,
+      "type": "comparison",
+      "title": "What was left",
+      "leftLabel": "2011",
+      "leftValue": "Dish buys ~$320M",
+      "rightLabel": "2014",
+      "rightValue": "Stores closed"
+    },
+    {
+      "id": "s41",
+      "source": "",
+      "in_seconds": 303.553,
+      "out_seconds": 312.821,
+      "type": "hero_title",
+      "text": "One left.",
+      "subtitle": "Bend, Oregon"
+    },
+    {
+      "id": "s42",
+      "source": "",
+      "in_seconds": 312.821,
+      "out_seconds": 316.667,
+      "type": "comparison",
+      "title": "Built & Broken so far",
+      "leftLabel": "Kodak",
+      "leftValue": "Protected profits",
+      "rightLabel": "Nokia",
+      "rightValue": "Wrong scoreboard"
+    },
+    {
+      "id": "s43",
+      "source": "",
+      "in_seconds": 316.667,
+      "out_seconds": 323.678,
+      "type": "text_card",
+      "text": "It found the answer. It paid for it. It was winning. Then it stopped."
+    },
+    {
+      "id": "s44",
+      "source": "",
+      "in_seconds": 323.678,
+      "out_seconds": 330.694,
+      "type": "callout",
+      "callout_type": "tip",
+      "title": "The lesson",
+      "text": "Fighting a disruptor costs money now. The reward comes later. Blockbuster blinked."
+    },
+    {
+      "id": "s45",
+      "source": "",
+      "in_seconds": 330.694,
+      "out_seconds": 337.118,
+      "type": "stat_card",
+      "stat": "$50M",
+      "subtitle": "The cheapest chance Blockbuster ever had"
+    },
+    {
+      "id": "s46",
+      "source": "",
+      "in_seconds": 337.118,
+      "out_seconds": 345.578,
+      "type": "hero_title",
+      "text": "Built & Broken",
+      "subtitle": "Subscribe for the next episode"
+    }
+  ],
+  "overlays": [],
+  "captions": [],
+  "audio": {
+    "narration": {
+      "src": "episodes/built-and-broken-03-blockbuster/narration.mp3",
+      "volume": 1.0
+    }
+  }
+}

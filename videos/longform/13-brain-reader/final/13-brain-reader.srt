@@ -1,0 +1,873 @@
+1
+00:00:00,250 --> 00:00:03,560
+Right now, around eighty six
+billion nerve cells
+
+2
+00:00:03,570 --> 00:00:06,250
+in your brain are firing tiny
+electrical signals,
+
+3
+00:00:06,650 --> 00:00:08,430
+thousands of times a second.
+
+4
+00:00:09,167 --> 00:00:11,917
+Every thought, every memory,
+every movement you make,
+
+5
+00:00:11,927 --> 00:00:13,607
+is written in those signals.
+
+6
+00:00:14,500 --> 00:00:17,220
+And it does all of this on about
+twenty watts of power,
+
+7
+00:00:17,520 --> 00:00:18,880
+less than a dim light bulb.
+
+8
+00:00:19,667 --> 00:00:22,727
+For most of history, that code
+was completely private.
+
+9
+00:00:23,207 --> 00:00:26,477
+Now, scientists are building
+machines that can read it,
+
+10
+00:00:26,487 --> 00:00:27,807
+and turn it into action.
+
+11
+00:00:28,750 --> 00:00:31,770
+People who cannot move or speak
+are typing,
+
+12
+00:00:32,210 --> 00:00:34,350
+talking and moving robotic arms,
+
+13
+00:00:35,050 --> 00:00:35,890
+just by thinking.
+
+14
+00:00:36,490 --> 00:00:39,250
+This is the story of the machine
+that can read your brain.
+
+15
+00:00:40,983 --> 00:00:44,393
+In seventeen ninety one, the
+Italian scientist
+
+16
+00:00:44,403 --> 00:00:47,713
+Luigi Galvani made a dead frog's
+leg kick,
+
+17
+00:00:47,723 --> 00:00:49,063
+using electricity.
+
+18
+00:00:49,843 --> 00:00:53,343
+Nerves and muscles, it turned
+out, run on electrical signals.
+
+19
+00:00:54,167 --> 00:00:57,557
+In nineteen twenty four, a
+German psychiatrist named
+
+20
+00:00:57,567 --> 00:01:00,537
+Hans Berger stuck electrodes on
+his patients' heads,
+
+21
+00:01:00,547 --> 00:01:03,987
+and recorded faint waves of
+electricity from the brain
+itself.
+
+22
+00:01:04,917 --> 00:01:08,367
+He was so unsure of his strange
+results that he kept them
+
+23
+00:01:08,377 --> 00:01:11,827
+to himself for five years,
+before finally publishing
+
+24
+00:01:11,837 --> 00:01:13,987
+in nineteen twenty nine.
+
+25
+00:01:13,997 --> 00:01:15,917
+Many scientists didn't believe
+him.
+
+26
+00:01:16,583 --> 00:01:19,733
+He called it the
+electroencephalogram, or
+
+27
+00:01:19,743 --> 00:01:20,413
+EEG.
+
+28
+00:01:20,423 --> 00:01:23,423
+For the first time, we could
+watch a living brain at work.
+
+29
+00:01:24,167 --> 00:01:27,397
+But EEG is like listening to a
+stadium crowd from
+
+30
+00:01:27,407 --> 00:01:28,207
+outside:
+
+31
+00:01:28,727 --> 00:01:31,327
+you can hear the roar, but not
+individual conversations.
+
+32
+00:01:32,583 --> 00:01:34,283
+To read the brain in detail,
+
+33
+00:01:34,903 --> 00:01:37,353
+scientists needed to listen to
+single neurons,
+
+34
+00:01:37,363 --> 00:01:38,203
+up close.
+
+35
+00:01:39,083 --> 00:01:42,353
+In nineteen seventy three, a
+computer scientist at
+
+36
+00:01:42,363 --> 00:01:43,163
+UCLA,
+
+37
+00:01:43,483 --> 00:01:46,793
+Jacques Vidal, coined the phrase
+brain-computer interface,
+
+38
+00:01:46,803 --> 00:01:50,083
+and asked whether brain signals
+could control machines.
+
+39
+00:01:51,167 --> 00:01:54,597
+The first brain-computer
+interfaces most people have
+heard of
+
+40
+00:01:54,607 --> 00:01:55,827
+don't read thoughts at all.
+
+41
+00:01:56,107 --> 00:01:59,497
+Cochlear implants turn sound
+into signals for the hearing
+
+42
+00:01:59,507 --> 00:02:00,307
+nerve,
+
+43
+00:02:00,367 --> 00:02:02,467
+and over a million people now
+use them.
+
+44
+00:02:03,983 --> 00:02:07,393
+A strip of brain called the
+motor cortex controls
+
+45
+00:02:07,403 --> 00:02:08,203
+movement.
+
+46
+00:02:08,563 --> 00:02:11,123
+Each part of it handles a
+different part of the body:
+
+47
+00:02:11,583 --> 00:02:12,883
+hands, lips, legs.
+
+48
+00:02:13,833 --> 00:02:17,233
+In the nineteen eighties, the
+neuroscientist Apostolos
+
+49
+00:02:17,243 --> 00:02:20,303
+Georgopoulos showed that when a
+monkey moves its
+
+50
+00:02:20,313 --> 00:02:21,113
+arm,
+
+51
+00:02:21,553 --> 00:02:23,533
+groups of neurons vote on the
+direction.
+
+52
+00:02:24,113 --> 00:02:26,553
+Average their votes, and you can
+predict the movement.
+
+53
+00:02:27,417 --> 00:02:30,727
+The key point: those signals
+keep firing even in
+
+54
+00:02:30,737 --> 00:02:31,957
+people who are paralysed.
+
+55
+00:02:32,697 --> 00:02:34,377
+The brain still sends the
+command.
+
+56
+00:02:35,037 --> 00:02:36,397
+It just never reaches the
+muscles.
+
+57
+00:02:37,417 --> 00:02:39,747
+So what if you could intercept
+the command,
+
+58
+00:02:39,757 --> 00:02:41,677
+and send it somewhere else?
+
+59
+00:02:42,583 --> 00:02:45,853
+In nineteen ninety eight, the
+neurologist Phil Kennedy
+
+60
+00:02:45,863 --> 00:02:49,113
+implanted an electrode in a
+paralysed man named
+
+61
+00:02:49,123 --> 00:02:52,563
+Johnny Ray, who learned to move
+a cursor with his brain signals.
+
+62
+00:02:53,333 --> 00:02:56,523
+In two thousand and eight,
+monkeys at the University
+
+63
+00:02:56,533 --> 00:02:59,923
+of Pittsburgh fed themselves
+marshmallows using
+
+64
+00:02:59,933 --> 00:03:03,273
+a robotic arm, controlled
+directly by their brains.
+
+65
+00:03:05,150 --> 00:03:08,440
+The tool for that job is a tiny
+chip called the Utah
+
+66
+00:03:08,450 --> 00:03:09,250
+array:
+
+67
+00:03:09,490 --> 00:03:12,700
+four millimetres across, with a
+hundred hair-thin needles
+
+68
+00:03:12,710 --> 00:03:14,810
+that sit in the brain's surface.
+
+69
+00:03:15,750 --> 00:03:18,820
+It was invented by the
+bioengineer Richard Normann at
+the
+
+70
+00:03:18,830 --> 00:03:22,320
+University of Utah, and versions
+of it are still used
+
+71
+00:03:22,330 --> 00:03:24,510
+in most of the patients you're
+about to meet.
+
+72
+00:03:25,250 --> 00:03:28,110
+In two thousand and four,
+Matthew Nagle,
+
+73
+00:03:28,550 --> 00:03:31,840
+a young man paralysed from the
+neck down after a knife
+
+74
+00:03:31,850 --> 00:03:32,650
+attack,
+
+75
+00:03:32,710 --> 00:03:35,360
+had one implanted, in a research
+trial called
+
+76
+00:03:35,370 --> 00:03:36,245
+BrainGate.
+
+77
+00:03:36,750 --> 00:03:40,120
+Just by imagining moving his
+hand, he could move a cursor
+
+78
+00:03:40,130 --> 00:03:43,300
+on a screen, open emails, and
+play a simple
+
+79
+00:03:43,310 --> 00:03:44,110
+video game.
+
+80
+00:03:44,917 --> 00:03:48,077
+In twenty twelve, a woman named
+Cathy Hutchinson,
+
+81
+00:03:48,517 --> 00:03:51,237
+paralysed by a stroke fifteen
+years earlier,
+
+82
+00:03:51,717 --> 00:03:55,027
+used a BrainGate implant to
+control a robotic arm,
+
+83
+00:03:55,037 --> 00:03:57,837
+and lift a bottle of coffee to
+her lips.
+
+84
+00:03:58,750 --> 00:04:01,860
+It was the first time in fifteen
+years she had served
+
+85
+00:04:01,870 --> 00:04:02,870
+herself a drink.
+
+86
+00:04:03,583 --> 00:04:05,643
+Signals can flow the other way
+too.
+
+87
+00:04:06,263 --> 00:04:09,513
+In twenty sixteen, Nathan
+Copeland, paralysed
+
+88
+00:04:09,523 --> 00:04:12,893
+in a car crash, felt pressure in
+his fingers
+
+89
+00:04:12,903 --> 00:04:16,233
+when a robotic hand was touched,
+thanks to tiny
+
+90
+00:04:16,243 --> 00:04:18,123
+pulses sent into his brain.
+
+91
+00:04:18,703 --> 00:04:21,163
+He later fist-bumped President
+Obama with it.
+
+92
+00:04:22,567 --> 00:04:24,267
+Then the machines learned to
+write.
+
+93
+00:04:24,907 --> 00:04:27,937
+In twenty twenty one, a Stanford
+team asked a
+
+94
+00:04:27,947 --> 00:04:31,287
+paralysed man to imagine writing
+letters by hand.
+
+95
+00:04:32,000 --> 00:04:35,190
+An AI decoder turned his
+imagined pen strokes into
+
+96
+00:04:35,200 --> 00:04:38,660
+text on a screen, at around
+ninety characters a minute,
+
+97
+00:04:39,020 --> 00:04:41,300
+close to the speed of texting on
+a phone.
+
+98
+00:04:42,167 --> 00:04:43,207
+Speech came next.
+
+99
+00:04:43,927 --> 00:04:46,777
+In twenty twenty three, two
+teams in California
+
+100
+00:04:46,787 --> 00:04:50,177
+decoded attempted speech,
+directly from the brains
+
+101
+00:04:50,187 --> 00:04:53,287
+of women who had lost the
+ability to speak.
+
+102
+00:04:54,083 --> 00:04:54,883
+Pat Bennett,
+
+103
+00:04:55,163 --> 00:04:55,963
+who has ALS,
+
+104
+00:04:56,503 --> 00:04:59,223
+a disease that slowly paralyses
+the body,
+
+105
+00:04:59,563 --> 00:05:02,323
+could communicate at about sixty
+words a minute.
+
+106
+00:05:02,783 --> 00:05:06,173
+A second woman, Ann Johnson,
+paralysed by
+
+107
+00:05:06,183 --> 00:05:09,373
+a stroke, spoke through a
+digital avatar on
+
+108
+00:05:09,383 --> 00:05:10,183
+screen.
+
+109
+00:05:10,500 --> 00:05:13,910
+In twenty twenty four, a team at
+UC Davis gave
+
+110
+00:05:13,920 --> 00:05:17,140
+a man with ALS a voice that
+sounded like his own,
+
+111
+00:05:17,740 --> 00:05:19,280
+recreated from old recordings.
+
+112
+00:05:20,060 --> 00:05:22,700
+When he first heard it, he and
+his family wept.
+
+113
+00:05:24,233 --> 00:05:26,073
+Private companies have joined
+the race.
+
+114
+00:05:26,833 --> 00:05:27,633
+One of them,
+
+115
+00:05:27,993 --> 00:05:31,203
+Neuralink, founded by Elon Musk,
+uses a robot
+
+116
+00:05:31,213 --> 00:05:33,733
+to sew ultra-thin threads into
+the brain.
+
+117
+00:05:34,500 --> 00:05:37,910
+Its implant, about the size of a
+coin, sits in a
+
+118
+00:05:37,920 --> 00:05:40,970
+hole in the skull and records
+from more than a thousand
+
+119
+00:05:40,980 --> 00:05:41,550
+electrodes,
+
+120
+00:05:41,560 --> 00:05:43,920
+spread across sixty four
+threads.
+
+121
+00:05:44,833 --> 00:05:47,233
+In twenty twenty four, its first
+patient,
+
+122
+00:05:47,653 --> 00:05:50,903
+Noland Arbaugh, paralysed in a
+diving accident,
+
+123
+00:05:50,913 --> 00:05:54,163
+used his implant to play online
+chess and
+
+124
+00:05:54,173 --> 00:05:57,153
+video games, controlling the
+cursor with his thoughts.
+
+125
+00:05:58,000 --> 00:06:01,490
+Another company, Synchron,
+avoids open brain
+
+126
+00:06:01,500 --> 00:06:02,300
+surgery.
+
+127
+00:06:02,640 --> 00:06:06,130
+Its device is a tiny mesh tube,
+threaded up through a blood
+
+128
+00:06:06,140 --> 00:06:09,580
+vessel from the neck, to sit
+right next to the motor cortex.
+
+129
+00:06:10,667 --> 00:06:13,387
+Most implants still need a cable
+through the skull,
+
+130
+00:06:13,807 --> 00:06:15,087
+connected to a computer.
+
+131
+00:06:15,607 --> 00:06:17,047
+Newer devices are wireless,
+
+132
+00:06:17,987 --> 00:06:19,427
+charging through the skin like a
+phone.
+
+133
+00:06:20,250 --> 00:06:23,740
+Patients with Synchron implants
+have sent texts and
+
+134
+00:06:23,750 --> 00:06:24,000
+emails,
+
+135
+00:06:24,010 --> 00:06:26,730
+and shopped online, by thought
+alone.
+
+136
+00:06:27,583 --> 00:06:30,813
+In twenty twenty three, a Dutch
+man named Gert-Jan
+
+137
+00:06:30,823 --> 00:06:31,623
+Oskam,
+
+138
+00:06:32,043 --> 00:06:34,903
+paralysed in a cycling accident,
+walked again,
+
+139
+00:06:35,343 --> 00:06:38,653
+using implants that read his
+brain's intentions and
+
+140
+00:06:38,663 --> 00:06:41,933
+passed them wirelessly to a
+stimulator on his spinal
+
+141
+00:06:41,943 --> 00:06:42,743
+cord.
+
+142
+00:06:42,923 --> 00:06:44,883
+The team called it a digital
+bridge.
+
+143
+00:06:45,833 --> 00:06:46,733
+Similar implants,
+
+144
+00:06:47,353 --> 00:06:50,743
+called deep brain stimulators,
+are already used by
+
+145
+00:06:50,753 --> 00:06:53,213
+more than a hundred and sixty
+thousand people,
+
+146
+00:06:53,553 --> 00:06:56,593
+mostly to calm the tremors of
+Parkinson's disease.
+
+147
+00:06:58,483 --> 00:07:00,463
+What about reading thoughts
+without surgery?
+
+148
+00:07:01,023 --> 00:07:04,393
+Brain scanners called fMRI can
+see which
+
+149
+00:07:04,403 --> 00:07:07,803
+areas of the brain are working,
+by tracking blood flow.
+
+150
+00:07:08,583 --> 00:07:11,973
+As early as twenty eleven, a
+Berkeley team used
+
+151
+00:07:11,983 --> 00:07:15,373
+fMRI to make blurry
+reconstructions of
+
+152
+00:07:15,383 --> 00:07:17,683
+movie clips that volunteers were
+watching.
+
+153
+00:07:18,500 --> 00:07:21,690
+In twenty twenty three, a team
+at the University
+
+154
+00:07:21,700 --> 00:07:24,790
+of Texas trained an AI on many
+
+155
+00:07:24,800 --> 00:07:27,970
+hours of a volunteer's brain
+scans as they
+
+156
+00:07:27,980 --> 00:07:29,220
+listened to podcasts.
+
+157
+00:07:30,020 --> 00:07:33,280
+It could then produce the rough
+gist of new stories they heard,
+
+158
+00:07:33,780 --> 00:07:34,580
+or even imagined.
+
+159
+00:07:35,333 --> 00:07:38,543
+It only worked on people who had
+spent hours training
+
+160
+00:07:38,553 --> 00:07:38,943
+it,
+
+161
+00:07:38,953 --> 00:07:40,333
+and who cooperated.
+
+162
+00:07:40,833 --> 00:07:43,453
+When volunteers thought about
+something else on purpose,
+
+163
+00:07:44,053 --> 00:07:44,853
+it failed.
+
+164
+00:07:45,053 --> 00:07:47,313
+True mind reading is still
+science fiction.
+
+165
+00:07:49,067 --> 00:07:50,367
+But it raises new questions.
+
+166
+00:07:51,147 --> 00:07:52,547
+Who owns the data from your
+brain?
+
+167
+00:07:53,107 --> 00:07:56,107
+Could it be sold, hacked, or
+used against you?
+
+168
+00:07:56,750 --> 00:08:00,140
+In twenty twenty one, Chile
+became the first country
+
+169
+00:08:00,150 --> 00:08:03,190
+to protect brain activity in its
+constitution.
+
+170
+00:08:04,070 --> 00:08:07,000
+In twenty twenty four, the US
+state of Colorado
+
+171
+00:08:07,010 --> 00:08:09,450
+passed a law protecting neural
+data.
+
+172
+00:08:10,167 --> 00:08:13,107
+Implants also carry the risks of
+brain surgery,
+
+173
+00:08:13,727 --> 00:08:15,947
+and some early devices have had
+problems.
+
+174
+00:08:16,667 --> 00:08:19,877
+In Neuralink's first patient,
+many of the threads pulled
+
+175
+00:08:19,887 --> 00:08:23,297
+back out of the brain within
+weeks, although the team
+recovered
+
+176
+00:08:23,307 --> 00:08:25,387
+much of the performance with
+software.
+
+177
+00:08:27,233 --> 00:08:30,583
+A century ago, Hans Berger could
+barely detect a
+
+178
+00:08:30,593 --> 00:08:31,953
+whisper of brain electricity.
+
+179
+00:08:33,083 --> 00:08:36,353
+Today, machines can turn the
+signals in a paralysed
+
+180
+00:08:36,363 --> 00:08:39,753
+person's brain into words,
+movement and a
+
+181
+00:08:39,763 --> 00:08:40,563
+voice.
+
+182
+00:08:40,833 --> 00:08:43,173
+The machine that can read your
+brain isn't coming.
+
+183
+00:08:43,533 --> 00:08:46,563
+For a small number of people,
+it's already here,
+
+184
+00:08:46,573 --> 00:08:48,553
+and it's giving them back their
+lives.

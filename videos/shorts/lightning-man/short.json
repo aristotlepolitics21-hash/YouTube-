@@ -1,0 +1,738 @@
+{
+ "slug": "lightning-man",
+ "title": "Struck by Lightning 7 Times... and Survived",
+ "voice": {
+  "piper_voice": "en_US-ryan-high",
+  "length_scale": 0.92,
+  "sentence_silence": 0.12,
+  "pronunciations": {
+   "Lichtenberg": "Lick-ten-berg",
+   "CPR": "C P R"
+  }
+ },
+ "render": {
+  "width": 540,
+  "height": 960,
+  "samples": 10,
+  "fps": 24
+ },
+ "music_mood": "tense",
+ "gap_seconds": 0.1,
+ "sources": [
+  "https://en.wikipedia.org/wiki/Roy_Sullivan",
+  "https://www.weather.gov/media/pah/WeatherEducation/lightningsafety.pdf",
+  "https://www.torro.org.uk/research/lightning/impacts",
+  "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7746318/",
+  "https://en.wikipedia.org/wiki/Lichtenberg_figure"
+ ],
+ "shots": [
+  {
+   "id": "s01",
+   "line": "This park ranger was struck by lightning seven times, and survived every single one.",
+   "visual": {
+    "type": "character",
+    "env": "storm",
+    "look": "clay",
+    "outfit": {
+     "skin": [
+      0.62,
+      0.42,
+      0.32
+     ],
+     "shirt": [
+      0.34,
+      0.25,
+      0.1
+     ],
+     "pants": [
+      0.05,
+      0.08,
+      0.035
+     ],
+     "boots": [
+      0.14,
+      0.06,
+      0.025
+     ]
+    },
+    "hat": [
+     0.5,
+     0.32,
+     0.12
+    ],
+    "pose": {
+     "raise_arm": {
+      "L": -22,
+      "R": -22
+     },
+     "arm_inward": {
+      "L": -6,
+      "R": -6
+     },
+     "elbow": {
+      "L": 15,
+      "R": 15
+     },
+     "curl": {
+      "L": 25,
+      "R": 25
+     }
+    },
+    "rain": true,
+    "bolt": {
+     "at": 0.47,
+     "seed": 3
+    },
+    "camera": {
+     "from": {
+      "anchor": "chest",
+      "offset": [
+       0.9,
+       -4.4,
+       0.7
+      ],
+      "lens": 28
+     },
+     "to": {
+      "anchor": "chest",
+      "offset": [
+       0.45,
+       -2.6,
+       0.3
+      ],
+      "lens": 35
+     }
+    }
+   }
+  },
+  {
+   "id": "s02",
+   "line": "A lightning bolt is about five times hotter than the surface of the sun.",
+   "visual": {
+    "type": "compare",
+    "ratio": 5
+   }
+  },
+  {
+   "id": "s03",
+   "line": "So how did he survive?",
+   "visual": {
+    "type": "character",
+    "env": "storm",
+    "look": "clay",
+    "outfit": {
+     "skin": [
+      0.62,
+      0.42,
+      0.32
+     ],
+     "shirt": [
+      0.34,
+      0.25,
+      0.1
+     ],
+     "pants": [
+      0.05,
+      0.08,
+      0.035
+     ],
+     "boots": [
+      0.14,
+      0.06,
+      0.025
+     ]
+    },
+    "hat": [
+     0.5,
+     0.32,
+     0.12
+    ],
+    "pose": {
+     "raise_arm": {
+      "L": -22,
+      "R": -22
+     },
+     "arm_inward": {
+      "L": -6,
+      "R": -6
+     },
+     "elbow": {
+      "L": 15,
+      "R": 15
+     },
+     "curl": {
+      "L": 25,
+      "R": 25
+     },
+     "head_nod": 0
+    },
+    "rain": true,
+    "pose_to": {
+     "head_nod": -22
+    },
+    "camera": {
+     "from": {
+      "anchor": "head",
+      "offset": [
+       0.45,
+       -1.1,
+       -0.35
+      ],
+      "lens": 40
+     },
+     "to": {
+      "anchor": "head",
+      "offset": [
+       0.2,
+       -0.8,
+       -0.3
+      ],
+      "lens": 45
+     }
+    }
+   }
+  },
+  {
+   "id": "s04",
+   "line": "Often, most of the current doesn't go through your body. It races over your wet skin instead.",
+   "visual": {
+    "type": "character",
+    "env": "storm",
+    "look": "clay",
+    "outfit": {
+     "skin": [
+      0.62,
+      0.42,
+      0.32
+     ],
+     "shirt": [
+      0.34,
+      0.25,
+      0.1
+     ],
+     "pants": [
+      0.05,
+      0.08,
+      0.035
+     ],
+     "boots": [
+      0.14,
+      0.06,
+      0.025
+     ]
+    },
+    "hat": [
+     0.5,
+     0.32,
+     0.12
+    ],
+    "pose": {
+     "raise_arm": {
+      "L": -22,
+      "R": -22
+     },
+     "arm_inward": {
+      "L": -6,
+      "R": -6
+     },
+     "elbow": {
+      "L": 15,
+      "R": 15
+     },
+     "curl": {
+      "L": 25,
+      "R": 25
+     }
+    },
+    "rain": true,
+    "flashover": {
+     "at": [
+      0.12,
+      0.95
+     ]
+    },
+    "camera": {
+     "from": {
+      "anchor": "chest",
+      "offset": [
+       0.7,
+       -2.5,
+       0.3
+      ],
+      "lens": 35
+     },
+     "to": {
+      "anchor": "chest",
+      "offset": [
+       0.3,
+       -1.8,
+       0.15
+      ],
+      "lens": 40
+     }
+    }
+   }
+  },
+  {
+   "id": "s05",
+   "line": "That's called a flashover.",
+   "visual": {
+    "type": "character",
+    "env": "storm",
+    "look": "clay",
+    "outfit": {
+     "skin": [
+      0.62,
+      0.42,
+      0.32
+     ],
+     "shirt": [
+      0.34,
+      0.25,
+      0.1
+     ],
+     "pants": [
+      0.05,
+      0.08,
+      0.035
+     ],
+     "boots": [
+      0.14,
+      0.06,
+      0.025
+     ]
+    },
+    "hat": [
+     0.5,
+     0.32,
+     0.12
+    ],
+    "pose": {
+     "raise_arm": {
+      "L": -22,
+      "R": -22
+     },
+     "arm_inward": {
+      "L": -6,
+      "R": -6
+     },
+     "elbow": {
+      "L": 15,
+      "R": 15
+     },
+     "curl": {
+      "L": 25,
+      "R": 25
+     }
+    },
+    "rain": true,
+    "flashover": {
+     "at": [
+      0.0,
+      1.0
+     ],
+     "strength": 1.6
+    },
+    "camera": {
+     "from": {
+      "anchor": "chest",
+      "offset": [
+       -0.6,
+       -1.2,
+       0.05
+      ],
+      "lens": 45
+     },
+     "to": {
+      "anchor": "chest",
+      "offset": [
+       -0.4,
+       -0.9,
+       0.05
+      ],
+      "lens": 45
+     }
+    }
+   }
+  },
+  {
+   "id": "s06",
+   "line": "But the current that gets inside can stop your heart.",
+   "visual": {
+    "type": "character",
+    "env": "storm",
+    "look": "xray",
+    "pose": {
+     "raise_arm": {
+      "L": -22,
+      "R": -22
+     },
+     "arm_inward": {
+      "L": -6,
+      "R": -6
+     },
+     "elbow": {
+      "L": 15,
+      "R": 15
+     },
+     "curl": {
+      "L": 25,
+      "R": 25
+     }
+    },
+    "heart": {
+     "beats": [
+      [
+       0,
+       0.45
+      ]
+     ]
+    },
+    "camera": {
+     "from": {
+      "anchor": "chest",
+      "offset": [
+       0.18,
+       -1.25,
+       0.2
+      ],
+      "lens": 45,
+      "aim_offset": [
+       0,
+       0,
+       0.12
+      ]
+     },
+     "to": {
+      "anchor": "chest",
+      "offset": [
+       0.05,
+       -0.95,
+       0.15
+      ],
+      "lens": 45,
+      "aim_offset": [
+       0,
+       0,
+       0.12
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s07",
+   "line": "Sometimes it restarts on its own, but breathing often doesn't. That's why fast CPR saves lives.",
+   "visual": {
+    "type": "character",
+    "env": "storm",
+    "look": "xray",
+    "pose": {
+     "raise_arm": {
+      "L": -22,
+      "R": -22
+     },
+     "arm_inward": {
+      "L": -6,
+      "R": -6
+     },
+     "elbow": {
+      "L": 15,
+      "R": 15
+     },
+     "curl": {
+      "L": 25,
+      "R": 25
+     }
+    },
+    "heart": {
+     "beats": [
+      [
+       0.18,
+       1.0
+      ]
+     ]
+    },
+    "camera": {
+     "from": {
+      "anchor": "chest",
+      "offset": [
+       -0.1,
+       -0.95,
+       0.15
+      ],
+      "lens": 45,
+      "aim_offset": [
+       0,
+       0,
+       0.12
+      ]
+     },
+     "to": {
+      "anchor": "chest",
+      "offset": [
+       -0.2,
+       -1.15,
+       0.2
+      ],
+      "lens": 45,
+      "aim_offset": [
+       0,
+       0,
+       0.12
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s08",
+   "line": "Survivors can also be left with these strange red ferns on their skin, called Lichtenberg figures.",
+   "visual": {
+    "type": "character",
+    "env": "storm",
+    "look": "clay",
+    "outfit": {
+     "skin": [
+      0.62,
+      0.42,
+      0.32
+     ],
+     "shirt": null,
+     "pants": [
+      0.05,
+      0.08,
+      0.035
+     ],
+     "boots": [
+      0.14,
+      0.06,
+      0.025
+     ]
+    },
+    "pose": {
+     "raise_arm": {
+      "L": -22,
+      "R": -22
+     },
+     "arm_inward": {
+      "L": -6,
+      "R": -6
+     },
+     "elbow": {
+      "L": 15,
+      "R": 15
+     },
+     "curl": {
+      "L": 25,
+      "R": 25
+     }
+    },
+    "lichtenberg": {
+     "reveal": [
+      0.08,
+      0.8
+     ]
+    },
+    "camera": {
+     "from": {
+      "anchor": "chest",
+      "offset": [
+       0.45,
+       1.5,
+       0.3
+      ],
+      "lens": 40
+     },
+     "to": {
+      "anchor": "chest",
+      "offset": [
+       0.2,
+       1.05,
+       0.15
+      ],
+      "lens": 42
+     }
+    }
+   }
+  },
+  {
+   "id": "s09",
+   "line": "They're not burns, and they fade within a day or two.",
+   "visual": {
+    "type": "character",
+    "env": "storm",
+    "look": "clay",
+    "outfit": {
+     "skin": [
+      0.62,
+      0.42,
+      0.32
+     ],
+     "shirt": null,
+     "pants": [
+      0.05,
+      0.08,
+      0.035
+     ],
+     "boots": [
+      0.14,
+      0.06,
+      0.025
+     ]
+    },
+    "pose": {
+     "raise_arm": {
+      "L": -22,
+      "R": -22
+     },
+     "arm_inward": {
+      "L": -6,
+      "R": -6
+     },
+     "elbow": {
+      "L": 15,
+      "R": 15
+     },
+     "curl": {
+      "L": 25,
+      "R": 25
+     }
+    },
+    "lichtenberg": {
+     "reveal": [
+      0.0,
+      0.06
+     ],
+     "fade": [
+      0.35,
+      0.95
+     ]
+    },
+    "camera": {
+     "from": {
+      "anchor": "chest",
+      "offset": [
+       -0.25,
+       1.0,
+       0.12
+      ],
+      "lens": 42
+     },
+     "to": {
+      "anchor": "chest",
+      "offset": [
+       -0.4,
+       1.4,
+       0.25
+      ],
+      "lens": 40
+     }
+    }
+   }
+  },
+  {
+   "id": "s10",
+   "line": "About nine in ten people struck by lightning survive.",
+   "visual": {
+    "type": "crowd",
+    "count": 10,
+    "cols": 5,
+    "flash_at": 0.55,
+    "victim": 2
+   }
+  },
+  {
+   "id": "s11",
+   "line": "But only one man has ever survived it seven times.",
+   "visual": {
+    "type": "count",
+    "count": 7,
+    "span": [
+     0.15,
+     0.85
+    ]
+   }
+  },
+  {
+   "id": "s12",
+   "line": "Roy Sullivan. The human lightning rod.",
+   "visual": {
+    "type": "character",
+    "env": "storm",
+    "look": "clay",
+    "outfit": {
+     "skin": [
+      0.62,
+      0.42,
+      0.32
+     ],
+     "shirt": [
+      0.34,
+      0.25,
+      0.1
+     ],
+     "pants": [
+      0.05,
+      0.08,
+      0.035
+     ],
+     "boots": [
+      0.14,
+      0.06,
+      0.025
+     ]
+    },
+    "hat": [
+     0.5,
+     0.32,
+     0.12
+    ],
+    "pose": {
+     "raise_arm": {
+      "L": -22,
+      "R": -22
+     },
+     "arm_inward": {
+      "L": -6,
+      "R": -6
+     },
+     "elbow": {
+      "L": 15,
+      "R": 15
+     },
+     "curl": {
+      "L": 25,
+      "R": 25
+     }
+    },
+    "rain": true,
+    "bolt": {
+     "at": 0.3,
+     "seed": 9
+    },
+    "camera": {
+     "from": {
+      "anchor": "head",
+      "offset": [
+       0.3,
+       -1.0,
+       0.0
+      ],
+      "lens": 45
+     },
+     "to": {
+      "anchor": "chest",
+      "offset": [
+       0.8,
+       -4.0,
+       0.6
+      ],
+      "lens": 30
+     }
+    }
+   },
+   "hold": 0.7
+  }
+ ]
+}

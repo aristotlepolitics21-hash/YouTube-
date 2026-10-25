@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DocForge</title>
+<style>
+  :root { --bg:#f6f7f9; --card:#fff; --text:#16191d; --muted:#667085; --line:#e4e7ec; --accent:#b7791f; --ok:#12805c; --bad:#c4321c; --bar:#eef0f3; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0b0f14; --card:#141a21; --text:#eef1f5; --muted:#98a2b3; --line:#232b35; --accent:#e8b04b; --ok:#3ccf91; --bad:#f2735e; --bar:#1d252f; } }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.5 system-ui, -apple-system, Segoe UI, sans-serif; background:var(--bg); color:var(--text); }
+  main { max-width: 1040px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 22px; margin: 0 0 4px; } h2 { font-size: 17px; margin: 0 0 12px; }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+  form { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px 16px; }
+  label { display: grid; gap: 4px; font-size: 13px; color: var(--muted); }
+  label.wide { grid-column: 1 / -1; }
+  input, select { font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; width: 100%; }
+  button { font: inherit; font-weight: 600; border: 0; border-radius: 8px; padding: 10px 16px; background: var(--accent); color: #111; cursor: pointer; }
+  button.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
+  .stages { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; margin: 12px 0; }
+  .stage { font-size: 12px; } .stage b { display:block; font-weight:600; text-transform: capitalize; }
+  .bar { height: 6px; border-radius: 3px; background: var(--bar); overflow: hidden; margin-top: 4px; }
+  .bar i { display:block; height:100%; background: var(--accent); }
+  .done .bar i { background: var(--ok); } .failed .bar i { background: var(--bad); width: 100% !important; }
+  .meta { display:flex; flex-wrap: wrap; gap: 16px; color: var(--muted); font-size: 13px; }
+  .alert { border-left: 3px solid var(--accent); padding: 8px 12px; background: var(--bg); border-radius: 6px; margin: 12px 0; font-size: 14px; }
+  .alert.bad { border-color: var(--bad); }
+  pre { background: var(--bg); border-radius: 8px; padding: 10px; font-size: 12px; overflow-x: auto; max-height: 220px; margin: 12px 0 0; }
+  .outputs a { margin-right: 12px; color: var(--accent); }
+  .outputs img { max-width: 320px; width: 100%; border-radius: 8px; display: block; margin-top: 10px; }
+  .row { display:flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+</style>
+</head>
+<body>
+<main>
+  <h1>DocForge</h1>
+  <p class="sub">Research → Script → Scene breakdown → Asset generation → Voiceover → Subtitles → Editing → Quality control → Final render</p>
+
+  <section class="card">
+    <h2>New documentary</h2>
+    <form id="new">
+      <label class="wide">TOPIC <input name="topic" required placeholder="Singapore: How a Tiny Country Became Rich Without Natural Resources"></label>
+      <label>TARGET LENGTH (minutes)
+        <select name="minutes"><option>10</option><option selected>15</option><option>20</option><option>30</option><option>45</option><option>60</option></select></label>
+      <label>STYLE <input name="style" value="premium cinematic documentary"></label>
+      <label>LANGUAGE <select name="language"><option value="en">English</option></select></label>
+      <label>VOICE <select name="voice"><option value="en_US-ryan-high">Ryan (US, offline)</option><option value="en_US-lessac-high">Lessac (US, offline)</option><option value="en_GB-alan-medium">Alan (UK, offline)</option></select></label>
+      <label>VIDEO MODEL <select name="video_model"><option value="none">None: photos, maps &amp; graphics (free)</option><option value="fal-ai/kling-video/v2.1/standard/image-to-video">Kling 2.1 via fal (needs FAL_KEY)</option></select></label>
+      <label>ASPECT RATIO <select name="aspect_ratio"><option>16:9</option></select></label>
+      <label>RESOLUTION <select name="resolution"><option>1920x1080</option><option value="3840x2160">3840x2160 (upscaled)</option></select></label>
+      <label>WRITER <select name="llm"><option value="manual">Manual (supply research &amp; script files)</option><option value="claude">Claude (needs ANTHROPIC_API_KEY)</option></select></label>
+      <div class="row"><button type="submit">Create &amp; start</button></div>
+    </form>
+  </section>
+
+  <div id="projects"></div>
+</main>
+<script>
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+$("#new").addEventListener("submit", async e => {
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(e.target));
+  const r = await fetch("/api/projects", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(data)});
+  const j = await r.json();
+  if (j.error) alert(j.error); else refresh();
+});
+
+async function run(slug, confirm) {
+  await fetch(`/api/projects/${slug}/run`, {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({confirm})});
+  refresh();
+}
+
+function card(p) {
+  const stages = p.stages.map(s => `
+    <div class="stage ${s.status}"><b>${esc(s.name.replace("_", " "))}</b>
+      ${esc(s.status)}${s.failed_scenes ? ` · ${s.failed_scenes} failed` : ""}
+      <div class="bar"><i style="width:${Math.round(100 * (s.progress || 0))}%"></i></div></div>`).join("");
+  const job = p.job || {};
+  let alert = "";
+  if (job.state === "awaiting_confirmation")
+    alert = `<div class="alert">${esc(job.message)}<div class="row" style="margin-top:8px"><button onclick="run('${p.slug}', true)">Approve cost &amp; continue</button></div></div>`;
+  else if (job.state === "stopped")
+    alert = `<div class="alert bad">Stopped: ${esc(job.message)}</div>`;
+  const o = p.outputs || {};
+  const files = ["video_1080p", "video_2160p", "srt", "youtube_kit"].filter(k => o[k])
+    .map(k => `<a href="/files/${p.slug}/${o[k]}" target="_blank">${k.replace("_", " ")}</a>`).join("")
+    + (o.shorts || []).map((s, i) => `<a href="/files/${p.slug}/${s}" target="_blank">short ${i + 1}</a>`).join("");
+  return `<section class="card">
+    <h2>${esc(p.topic)}</h2>
+    <div class="meta"><span>TOTAL SCENES ${p.scenes || "–"}</span><span>LENGTH ${p.minutes ? p.minutes + " min" : "–"}</span>
+      <span>ESTIMATED API COST ${p.estimate != null ? "$" + p.estimate.toFixed(2) : "–"}</span><span>spent $${(p.spent || 0).toFixed(2)}</span>
+      <span>status: ${esc(job.state)}</span></div>
+    <div class="stages">${stages}</div>${alert}
+    <div class="row">${job.state !== "running" ? `<button class="ghost" onclick="run('${p.slug}', false)">Resume</button>` : ""}</div>
+    ${files ? `<div class="outputs" style="margin-top:12px">${files}${o.thumbnail ? `<img src="/files/${p.slug}/${o.thumbnail}" alt="Thumbnail">` : ""}</div>` : ""}
+    <pre>${esc((p.log || []).join("\n"))}</pre></section>`;
+}
+
+async function refresh() {
+  const r = await fetch("/api/projects");
+  const list = await r.json();
+  $("#projects").innerHTML = list.reverse().map(card).join("") || "";
+}
+refresh();
+setInterval(refresh, 3000);
+</script>
+</body>
+</html>

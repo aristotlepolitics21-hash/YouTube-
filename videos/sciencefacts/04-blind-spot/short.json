@@ -1,0 +1,754 @@
+{
+ "format": "short",
+ "render": {
+  "width": 1080,
+  "height": 1920,
+  "samples": 16,
+  "fps": 24
+ },
+ "still_render": {
+  "width": 1080,
+  "height": 1920,
+  "samples": 24
+ },
+ "output_fps": 24,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael",
+  "speed": 1.0
+ },
+ "music_gain": 0.18,
+ "whisper_model": "small.en",
+ "gap_seconds": 0.15,
+ "lead_seconds": 0.3,
+ "burn_captions": true,
+ "slug": "blind-spot",
+ "title": "You Have a Hole in Your Vision",
+ "description": "Every human eye has a blind spot where the optic nerve leaves the retina. Here's how to find yours. #shorts #science #eyes #brain",
+ "music_mood": "wonder",
+ "tags": [
+  "science facts",
+  "blind spot",
+  "eyes",
+  "vision",
+  "brain",
+  "shorts"
+ ],
+ "sources": [
+  "https://www.britannica.com/science/blind-spot",
+  "https://www.scientificamerican.com/article/mind-the-gap-2008-05/",
+  "https://michaelbach.de/ot/cog-blindSpot/"
+ ],
+ "shots": [
+  {
+   "id": "s001",
+   "line": "Right now, there's a hole in your vision, and you can't see it.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eye",
+      "at": [
+       0,
+       0,
+       0.95
+      ],
+      "args": {
+       "look": [
+        [
+         0,
+         [
+          0,
+          -10
+         ]
+        ],
+        [
+         1,
+         [
+          8,
+          10
+         ]
+        ]
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -2.4,
+      0.95
+     ],
+     "to": [
+      0.2,
+      -2.1,
+      0.92
+     ],
+     "target": [
+      0,
+      0,
+      0.6
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.08,
+      0.05,
+      0.18
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s002",
+   "line": "At the back of each eye, the optic nerve exits through one small patch of the retina.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eye",
+      "at": [
+       0,
+       0,
+       0.95
+      ]
+     },
+     {
+      "prop": "neuron",
+      "at": [
+       0,
+       1.05,
+       0.95
+      ],
+      "scale": 0.9,
+      "rot": [
+       0,
+       0,
+       90
+      ],
+      "args": {
+       "fire": [
+        0.2,
+        0.8
+       ]
+      }
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      3.6,
+      -0.9,
+      1.35
+     ],
+     "to": [
+      3.3,
+      -0.5,
+      1.3
+     ],
+     "target": [
+      0,
+      0.55,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.08,
+      0.05,
+      0.18
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s003",
+   "line": "That patch has no light sensors at all. Light landing there is never detected.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eye",
+      "at": [
+       0,
+       0,
+       0.95
+      ]
+     }
+    ],
+    "texts": [
+     {
+      "text": "NO SENSORS",
+      "at": [
+       0,
+       -0.7,
+       1.62
+      ],
+      "size": 0.13,
+      "color": [
+       1.0,
+       0.45,
+       0.4
+      ],
+      "pop": 0.35
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -3.2,
+      1.0
+     ],
+     "to": [
+      0.2,
+      -2.9,
+      0.98
+     ],
+     "target": [
+      0,
+      0,
+      0.75
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.08,
+      0.05,
+      0.18
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s004",
+   "line": "It's called the blind spot, and every human eye has one.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eye",
+      "at": [
+       -0.5,
+       0,
+       0.95
+      ],
+      "scale": 0.7
+     },
+     {
+      "prop": "eye",
+      "at": [
+       0.5,
+       0,
+       0.95
+      ],
+      "scale": 0.7
+     }
+    ],
+    "texts": [
+     {
+      "text": "BLIND SPOT",
+      "at": [
+       0,
+       -0.6,
+       1.62
+      ],
+      "size": 0.16,
+      "color": [
+       1.0,
+       0.85,
+       0.3
+      ],
+      "pop": 0.3
+     }
+    ],
+    "camera": {
+     "from": [
+      0,
+      -4.0,
+      1.05
+     ],
+     "to": [
+      0.2,
+      -3.7,
+      1.0
+     ],
+     "target": [
+      0,
+      0,
+      0.8
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "horizon": [
+      0.08,
+      0.05,
+      0.18
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.03
+     ]
+    }
+   }
+  },
+  {
+   "id": "s005",
+   "line": "So why don't you notice a gap? With both eyes open, each eye fills in what the other one misses.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.62,
+        0.45,
+        0.35
+       ],
+       "shirt": [
+        0.75,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.15,
+        0.18,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.4,
+      -1.8,
+      1.6
+     ],
+     "to": [
+      0.3,
+      -1.5,
+      1.58
+     ],
+     "target": [
+      0,
+      0,
+      1.45
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.5,
+      0.55,
+      0.6
+     ]
+    }
+   }
+  },
+  {
+   "id": "s006",
+   "line": "And even with one eye shut, your brain doesn't show you a hole.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.62,
+        0.45,
+        0.35
+       ],
+       "shirt": [
+        0.75,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.15,
+        0.18,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       },
+       "head_nod": 5
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0.6,
+      -1.6,
+      1.62
+     ],
+     "to": [
+      0.4,
+      -1.4,
+      1.6
+     ],
+     "target": [
+      0,
+      0,
+      1.5
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.5,
+      0.55,
+      0.6
+     ]
+    }
+   }
+  },
+  {
+   "id": "s007",
+   "line": "Try it. Close your left eye and stare straight ahead with your right.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.62,
+        0.45,
+        0.35
+       ],
+       "shirt": [
+        0.75,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.15,
+        0.18,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": -22
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": -6
+       },
+       "elbow": {
+        "L": 15,
+        "R": 15
+       },
+       "curl": {
+        "L": 25,
+        "R": 25
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -1.5,
+      1.6
+     ],
+     "to": [
+      0,
+      -1.3,
+      1.58
+     ],
+     "target": [
+      0,
+      0.35,
+      1.5
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.5,
+      0.55,
+      0.6
+     ]
+    }
+   }
+  },
+  {
+   "id": "s008",
+   "line": "Hold a fingertip in front of you, and slowly move it to the right. At one point, the tip vanishes.",
+   "visual": {
+    "type": "stage",
+    "env": "lab",
+    "cast": [
+     {
+      "hair": [
+       0.3,
+       0.18,
+       0.08
+      ],
+      "sleeves": "long",
+      "outfit": {
+       "skin": [
+        0.62,
+        0.45,
+        0.35
+       ],
+       "shirt": [
+        0.75,
+        0.2,
+        0.25
+       ],
+       "pants": [
+        0.15,
+        0.18,
+        0.3
+       ],
+       "boots": [
+        0.1,
+        0.08,
+        0.06
+       ]
+      },
+      "at": [
+       0,
+       0.35,
+       0
+      ],
+      "turn": 0,
+      "pose": {
+       "raise_arm": {
+        "L": -22,
+        "R": 10
+       },
+       "arm_inward": {
+        "L": -6,
+        "R": 10
+       },
+       "elbow": {
+        "L": 15,
+        "R": 10
+       },
+       "curl": {
+        "L": 25,
+        "R": 0
+       },
+       "arm_forward": {
+        "L": 0,
+        "R": 75
+       }
+      },
+      "pose_to": {
+       "arm_inward": {
+        "L": -6,
+        "R": -40
+       }
+      }
+     }
+    ],
+    "props": [],
+    "texts": [],
+    "camera": {
+     "from": [
+      -0.6,
+      -1.4,
+      1.65
+     ],
+     "to": [
+      -0.5,
+      -1.2,
+      1.62
+     ],
+     "target": [
+      0.2,
+      0.35,
+      1.45
+     ],
+     "lens": 35
+    },
+    "env_opts": {
+     "wall": [
+      0.5,
+      0.55,
+      0.6
+     ]
+    }
+   }
+  },
+  {
+   "id": "s009",
+   "line": "That's your blind spot. It's been there all along.",
+   "visual": {
+    "type": "stage",
+    "env": "studio",
+    "cast": [],
+    "props": [
+     {
+      "prop": "eye",
+      "at": [
+       0,
+       0,
+       0.95
+      ]
+     }
+    ],
+    "texts": [],
+    "camera": {
+     "from": [
+      0,
+      -1.6,
+      0.95
+     ],
+     "to": [
+      0,
+      -3.0,
+      1.0
+     ],
+     "target": [
+      0,
+      0,
+      0.9
+     ],
+     "lens": 35,
+     "target_to": [
+      0,
+      0,
+      0.85
+     ]
+    },
+    "env_opts": {
+     "horizon": [
+      0.08,
+      0.05,
+      0.18
+     ],
+     "zenith": [
+      0.01,
+      0.0,
+      0.03
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,547 @@
+1
+00:00:00,600 --> 00:00:05,755
+At the end of 2007, four out of every ten mobile phones sold on Earth were made by
+
+2
+00:00:05,755 --> 00:00:06,509
+one company.
+
+3
+00:00:06,959 --> 00:00:09,465
+That November, Forbes put it on the cover.
+
+4
+00:00:09,465 --> 00:00:10,778
+One billion customers.
+
+5
+00:00:10,778 --> 00:00:12,986
+Can anyone catch the cell phone king?
+
+6
+00:00:13,436 --> 00:00:18,429
+Six years later, Nokia sold its entire phone business to Microsoft for five point
+
+7
+00:00:18,429 --> 00:00:19,601
+four billion euros.
+
+8
+00:00:20,051 --> 00:00:22,133
+Nokia didn't lose to a better phone.
+
+9
+00:00:22,133 --> 00:00:24,910
+It lost to a different idea of what a phone was.
+
+10
+00:00:25,360 --> 00:00:27,466
+This is Built and Broken.
+
+11
+00:00:27,466 --> 00:00:28,477
+Episode two.
+
+12
+00:00:28,477 --> 00:00:28,983
+Nokia.
+
+13
+00:00:30,083 --> 00:00:32,793
+The story starts in 1865, in Finland,
+
+14
+00:00:32,793 --> 00:00:38,801
+with a mining engineer named Fredrik Idestam and a mill that ground wood into pulp
+
+15
+00:00:38,801 --> 00:00:39,533
+for paper.
+
+16
+00:00:39,983 --> 00:00:45,274
+He built a second mill near a small town on the Nokianvirta river.
+
+17
+00:00:45,274 --> 00:00:48,640
+In 1871, the company took the town's name.
+
+18
+00:00:48,640 --> 00:00:49,121
+Nokia.
+
+19
+00:00:49,571 --> 00:00:53,121
+For the next century, Nokia was not a technology company.
+
+20
+00:00:53,121 --> 00:00:57,855
+In 1967 it merged with the Finnish Rubber Works and the Finnish Cable Works.
+
+21
+00:00:58,305 --> 00:01:02,424
+The new Nokia made paper, rubber boots, car tires, power cables,
+
+22
+00:01:02,424 --> 00:01:04,740
+and later televisions and computers.
+
+23
+00:01:04,740 --> 00:01:06,156
+It was a conglomerate.
+
+24
+00:01:06,156 --> 00:01:07,443
+A bit of everything.
+
+25
+00:01:07,893 --> 00:01:11,409
+But inside the cable business was a small electronics division,
+
+26
+00:01:11,409 --> 00:01:13,698
+and it started building radio telephones.
+
+27
+00:01:14,148 --> 00:01:18,205
+In 1987 it released the Mobira Cityman, a brick-sized phone.
+
+28
+00:01:18,205 --> 00:01:23,818
+Two years later, Soviet leader Mikhail Gorbachev was photographed in Helsinki using
+
+29
+00:01:23,818 --> 00:01:25,102
+one to call Moscow.
+
+30
+00:01:25,552 --> 00:01:28,234
+In Finland, people nicknamed the phone the Gorba.
+
+31
+00:01:29,334 --> 00:01:31,215
+Then everything went wrong at once.
+
+32
+00:01:31,665 --> 00:01:37,517
+In 1988, Nokia's chairman, Kari Kairamo, the man who had pushed it into electronics,
+
+33
+00:01:37,517 --> 00:01:38,631
+died by suicide.
+
+34
+00:01:39,081 --> 00:01:44,924
+In 1991, the Soviet Union collapsed, and Finland, which had traded heavily with it,
+
+35
+00:01:44,924 --> 00:01:46,825
+fell into a deep recession.
+
+36
+00:01:47,275 --> 00:01:48,706
+Nokia was losing money.
+
+37
+00:01:48,706 --> 00:01:50,821
+One of its bank owners wanted out.
+
+38
+00:01:50,821 --> 00:01:54,927
+And that year, the Swedish rival Ericsson held talks to buy Nokia.
+
+39
+00:01:55,377 --> 00:01:56,452
+The deal fell apart.
+
+40
+00:01:56,452 --> 00:01:58,816
+Ericsson wanted the phones and the networks,
+
+41
+00:01:58,816 --> 00:02:02,256
+but not the loss-making television business that came with them.
+
+42
+00:02:02,706 --> 00:02:06,573
+It may be the most important deal that never happened in the history of mobile
+
+43
+00:02:06,573 --> 00:02:06,920
+phones.
+
+44
+00:02:07,370 --> 00:02:10,646
+In 1992, a new chief executive took over.
+
+45
+00:02:10,646 --> 00:02:11,685
+Jorma Ollila.
+
+46
+00:02:11,685 --> 00:02:14,162
+His plan was simple and brutal.
+
+47
+00:02:14,162 --> 00:02:17,118
+Sell everything that is not telecoms.
+
+48
+00:02:17,568 --> 00:02:20,072
+Paper, rubber, cables, televisions.
+
+49
+00:02:20,072 --> 00:02:21,145
+All of it went.
+
+50
+00:02:21,145 --> 00:02:23,792
+Nokia bet the company on one product.
+
+51
+00:02:24,892 --> 00:02:26,533
+The timing was perfect.
+
+52
+00:02:26,533 --> 00:02:28,388
+On the first of July 1991,
+
+53
+00:02:28,388 --> 00:02:33,954
+the world's first call on a GSM network was made in Finland, on a Nokia phone.
+
+54
+00:02:34,404 --> 00:02:38,483
+GSM was the new digital standard for Europe, and soon most of the world.
+
+55
+00:02:38,483 --> 00:02:40,749
+Nokia knew it better than almost anyone.
+
+56
+00:02:41,199 --> 00:02:47,184
+In 1994 came the Nokia 2110, and with it a ringtone you can probably hear right now.
+
+57
+00:02:47,184 --> 00:02:48,252
+The Nokia tune.
+
+58
+00:02:48,702 --> 00:02:52,055
+Nokia's phones were cheap to make, tough, easy to use,
+
+59
+00:02:52,055 --> 00:02:54,477
+and they lasted for days on one charge.
+
+60
+00:02:54,477 --> 00:02:59,320
+In 1998, Nokia passed Motorola to become the biggest phone maker in the world.
+
+61
+00:02:59,770 --> 00:03:02,164
+In 2000, at the peak of the dot-com boom,
+
+62
+00:03:02,164 --> 00:03:05,667
+Nokia was worth about three hundred and three billion euros,
+
+63
+00:03:05,667 --> 00:03:07,769
+the most valuable company in Europe.
+
+64
+00:03:08,219 --> 00:03:11,628
+For a country of five million people, it was enormous.
+
+65
+00:03:11,628 --> 00:03:16,741
+At its peak, Nokia was about four percent of Finland's economy and around a fifth
+
+66
+00:03:16,741 --> 00:03:17,688
+of its exports.
+
+67
+00:03:18,138 --> 00:03:21,079
+Then came the phones people still remember.
+
+68
+00:03:21,079 --> 00:03:22,242
+The 3310 in 2000.
+
+69
+00:03:22,242 --> 00:03:24,089
+And the Nokia 1100 in 2003,
+
+70
+00:03:24,089 --> 00:03:27,988
+which sold more than two hundred and fifty million units,
+
+71
+00:03:27,988 --> 00:03:30,793
+one of the best-selling phones ever made.
+
+72
+00:03:31,243 --> 00:03:35,556
+By the end of 2007, Nokia sold forty percent of all phones on the planet.
+
+73
+00:03:35,556 --> 00:03:38,923
+One hundred and thirty three million in a single quarter.
+
+74
+00:03:40,023 --> 00:03:41,849
+Here is the part people get wrong.
+
+75
+00:03:41,849 --> 00:03:43,675
+Nokia did not miss the smartphone.
+
+76
+00:03:44,125 --> 00:03:45,936
+It practically invented it.
+
+77
+00:03:45,936 --> 00:03:49,156
+In 1996 it launched the Nokia 9000 Communicator,
+
+78
+00:03:49,156 --> 00:03:53,315
+a phone that opened up into a keyboard with email and the web.
+
+79
+00:03:53,765 --> 00:03:57,199
+Around 2004, according to a former Nokia engineer,
+
+80
+00:03:57,199 --> 00:04:02,007
+a team built a prototype with a large touchscreen and internet access.
+
+81
+00:04:02,007 --> 00:04:05,578
+Management decided it was too risky, and shelved it.
+
+82
+00:04:06,028 --> 00:04:11,665
+And in 2007, Nokia's Symbian software ran on roughly six in ten smartphones in the
+
+83
+00:04:11,665 --> 00:04:12,077
+world.
+
+84
+00:04:12,527 --> 00:04:14,121
+So what was the problem?
+
+85
+00:04:14,121 --> 00:04:18,040
+Nokia was the best company in the world at building phones.
+
+86
+00:04:18,040 --> 00:04:18,638
+Hardware.
+
+87
+00:04:18,638 --> 00:04:19,302
+Factories.
+
+88
+00:04:19,302 --> 00:04:20,232
+Supply chains.
+
+89
+00:04:20,232 --> 00:04:23,553
+Dozens of models for every price and every market.
+
+90
+00:04:24,003 --> 00:04:26,692
+Software was something you put inside the phone.
+
+91
+00:04:26,692 --> 00:04:28,541
+And Nokia kept score the old way.
+
+92
+00:04:28,541 --> 00:04:30,110
+How many phones did we ship?
+
+93
+00:04:31,210 --> 00:04:34,181
+In January 2007, Apple announced the iPhone.
+
+94
+00:04:34,181 --> 00:04:38,368
+A year and a half later, the first Android phone went on sale.
+
+95
+00:04:38,818 --> 00:04:41,608
+By Nokia's old scoreboard, nothing looked wrong.
+
+96
+00:04:41,608 --> 00:04:44,223
+It was still selling more phones than anyone.
+
+97
+00:04:44,673 --> 00:04:49,156
+But the new scoreboard was apps, touchscreens, and developers.
+
+98
+00:04:49,156 --> 00:04:51,759
+And there, Symbian was falling fast.
+
+99
+00:04:51,759 --> 00:04:54,869
+Forty seven percent of smartphones in 2009.
+
+100
+00:04:54,869 --> 00:04:56,387
+Thirty eight in 2010.
+
+101
+00:04:56,387 --> 00:04:58,339
+Under four percent by 2012.
+
+102
+00:04:58,789 --> 00:05:03,658
+In September 2010, Nokia hired a new chief executive from Microsoft.
+
+103
+00:05:03,658 --> 00:05:04,589
+Stephen Elop.
+
+104
+00:05:05,039 --> 00:05:08,362
+In February 2011, an internal memo from Elop leaked.
+
+105
+00:05:08,362 --> 00:05:12,197
+He told staff that Nokia was standing on a burning platform.
+
+106
+00:05:12,647 --> 00:05:17,104
+Days later, Nokia announced it would abandon Symbian and switch to Microsoft's
+
+107
+00:05:17,104 --> 00:05:17,904
+Windows Phone.
+
+108
+00:05:17,904 --> 00:05:20,304
+Its shares fell fourteen percent that day.
+
+109
+00:05:20,754 --> 00:05:21,640
+Here's the trap.
+
+110
+00:05:21,640 --> 00:05:25,903
+Nokia had announced the end of its old phones before the new ones were ready.
+
+111
+00:05:25,903 --> 00:05:28,173
+Why would anyone buy a Symbian phone now?
+
+112
+00:05:28,623 --> 00:05:31,558
+The Lumia phones that followed were well reviewed,
+
+113
+00:05:31,558 --> 00:05:35,666
+but Windows Phone never caught up with the apps on iPhone and Android.
+
+114
+00:05:35,666 --> 00:05:37,368
+By the third quarter of 2012,
+
+115
+00:05:37,368 --> 00:05:40,890
+Nokia had three and a half percent of the smartphone market.
+
+116
+00:05:41,340 --> 00:05:46,362
+In September 2013, Microsoft agreed to buy Nokia's phone business for five point
+
+117
+00:05:46,362 --> 00:05:47,869
+four four billion euros.
+
+118
+00:05:47,869 --> 00:05:51,133
+About thirty two thousand people moved to Microsoft.
+
+119
+00:05:51,583 --> 00:05:52,579
+It didn't work.
+
+120
+00:05:52,579 --> 00:05:57,623
+In 2015, Microsoft wrote off seven point six billion dollars on the deal and
+
+121
+00:05:57,623 --> 00:06:02,003
+announced seven thousand eight hundred job cuts, mostly in phones.
+
+122
+00:06:03,103 --> 00:06:05,855
+But this is where Nokia's story is different from Kodak's.
+
+123
+00:06:06,305 --> 00:06:07,418
+Nokia didn't die.
+
+124
+00:06:07,418 --> 00:06:09,841
+It did what Jorma Ollila did in 1992.
+
+125
+00:06:09,841 --> 00:06:15,146
+It cut down to the thing it was still best at, the networks that carry the calls,
+
+126
+00:06:15,146 --> 00:06:18,682
+and in 2016 it bought the French rival Alcatel-Lucent.
+
+127
+00:06:19,132 --> 00:06:23,411
+Today, Nokia builds the equipment behind mobile networks around the world.
+
+128
+00:06:23,411 --> 00:06:26,534
+The name on the phones is licensed to another company.
+
+129
+00:06:27,634 --> 00:06:30,118
+Kodak lost because it protected its profits.
+
+130
+00:06:30,118 --> 00:06:32,771
+Nokia lost because it measured the wrong thing.
+
+131
+00:06:33,221 --> 00:06:36,992
+It counted phones shipped, while the market started counting apps, developers,
+
+132
+00:06:36,992 --> 00:06:38,829
+and what you could do with the screen.
+
+133
+00:06:39,279 --> 00:06:42,861
+Being the best at the old game is not the same as winning the new one.
+
+134
+00:06:42,861 --> 00:06:46,749
+And sometimes, being the best at the old game is exactly what stops you from
+
+135
+00:06:46,749 --> 00:06:47,772
+playing the new one.
+
+136
+00:06:48,222 --> 00:06:50,039
+This has been Built and Broken.
+
+137
+00:06:50,039 --> 00:06:54,962
+If you want the next story of a giant that saw the future and still fell, subscribe.

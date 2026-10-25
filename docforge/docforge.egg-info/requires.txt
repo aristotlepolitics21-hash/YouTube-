@@ -1,0 +1,15 @@
+requests
+Pillow
+numpy
+PyYAML
+pydantic
+piper-tts
+
+[claude]
+anthropic>=1.0
+
+[dev]
+pytest
+
+[whisper]
+faster-whisper

@@ -1,0 +1,905 @@
+1
+00:00:00,250 --> 00:00:03,660
+Inside almost every cell of your
+body is a set
+
+2
+00:00:03,670 --> 00:00:04,490
+of instructions,
+
+3
+00:00:05,270 --> 00:00:06,730
+three billion letters long.
+
+4
+00:00:07,470 --> 00:00:08,270
+Your DNA.
+
+5
+00:00:08,583 --> 00:00:11,493
+A single wrong letter in that
+code can cause a
+
+6
+00:00:11,503 --> 00:00:12,643
+devastating disease.
+
+7
+00:00:13,750 --> 00:00:16,770
+For most of history, there was
+nothing we could do about it.
+
+8
+00:00:17,070 --> 00:00:20,560
+Then, scientists found a tool
+that can find any spot
+
+9
+00:00:20,570 --> 00:00:23,610
+in the genome, and cut it, with
+incredible precision.
+
+10
+00:00:24,583 --> 00:00:25,783
+It's called CRISPR.
+
+11
+00:00:26,223 --> 00:00:27,583
+And it was borrowed from
+bacteria.
+
+12
+00:00:29,567 --> 00:00:31,647
+DNA is a long, twisted ladder.
+
+13
+00:00:32,247 --> 00:00:34,467
+Each rung is a pair of chemical
+letters:
+
+14
+00:00:34,907 --> 00:00:36,847
+A, T, G and C.
+
+15
+00:00:37,407 --> 00:00:38,847
+Their order spells out genes,
+
+16
+00:00:39,667 --> 00:00:41,387
+the recipes for making proteins.
+
+17
+00:00:42,667 --> 00:00:45,487
+If you printed out the DNA in
+one human cell,
+
+18
+00:00:46,047 --> 00:00:48,487
+it would fill around two hundred
+thick phone books.
+
+19
+00:00:49,127 --> 00:00:52,527
+And if you stretched it out, it
+would be about two metres long.
+
+20
+00:00:53,333 --> 00:00:55,413
+Just reading it was a colossal
+task.
+
+21
+00:00:55,993 --> 00:00:59,283
+The Human Genome Project took
+thirteen years and about
+
+22
+00:00:59,293 --> 00:01:02,629
+three billion dollars, finishing
+in two thousand
+
+23
+00:01:02,639 --> 00:01:03,439
+and three.
+
+24
+00:01:03,917 --> 00:01:04,717
+Some diseases,
+
+25
+00:01:05,337 --> 00:01:08,307
+like sickle cell disease, come
+from a single
+
+26
+00:01:08,317 --> 00:01:10,537
+misspelled letter in a single
+gene.
+
+27
+00:01:11,333 --> 00:01:12,333
+In sickle cell disease,
+
+28
+00:01:13,013 --> 00:01:15,893
+red blood cells bend into stiff
+crescent shapes.
+
+29
+00:01:16,353 --> 00:01:19,283
+They get stuck in blood vessels,
+causing terrible
+
+30
+00:01:19,293 --> 00:01:21,193
+pain and organ damage.
+
+31
+00:01:22,000 --> 00:01:24,460
+It affects millions of people
+around the world,
+
+32
+00:01:24,920 --> 00:01:25,880
+many with African,
+
+33
+00:01:26,520 --> 00:01:28,840
+Middle Eastern or South Asian
+ancestry.
+
+34
+00:01:29,580 --> 00:01:32,730
+Strangely, carrying one copy of
+the gene helps
+
+35
+00:01:32,740 --> 00:01:35,810
+protect against malaria, which
+is why it became
+
+36
+00:01:35,820 --> 00:01:36,660
+so common.
+
+37
+00:01:37,500 --> 00:01:40,750
+For decades, scientists dreamed
+of fixing
+
+38
+00:01:40,760 --> 00:01:42,540
+faulty genes directly.
+
+39
+00:01:43,000 --> 00:01:45,860
+But the early tools for editing
+DNA were slow,
+
+40
+00:01:46,160 --> 00:01:46,960
+expensive,
+
+41
+00:01:47,320 --> 00:01:48,120
+and hard to aim.
+
+42
+00:01:48,917 --> 00:01:52,307
+Tools called zinc fingers and
+TALENs could be built
+
+43
+00:01:52,317 --> 00:01:53,557
+to cut chosen spots,
+
+44
+00:01:54,177 --> 00:01:57,527
+but designing each one could
+take months of specialist
+
+45
+00:01:57,537 --> 00:01:58,337
+work.
+
+46
+00:01:59,650 --> 00:02:01,770
+The answer came from somewhere
+unexpected.
+
+47
+00:02:02,410 --> 00:02:05,700
+In the nineteen nineties, a
+Spanish microbiologist
+
+48
+00:02:05,710 --> 00:02:08,820
+named Francisco Mojica was
+studying microbes
+
+49
+00:02:08,830 --> 00:02:10,130
+from salt marshes.
+
+50
+00:02:10,917 --> 00:02:11,717
+In their DNA,
+
+51
+00:02:12,297 --> 00:02:15,567
+he noticed strange repeated
+sequences, separated
+
+52
+00:02:15,577 --> 00:02:17,157
+by unique spacers.
+
+53
+00:02:17,637 --> 00:02:21,047
+A Japanese team led by Yoshizumi
+Ishino had
+
+54
+00:02:21,057 --> 00:02:24,490
+first spotted similar repeats in
+nineteen eighty seven.
+
+55
+00:02:25,000 --> 00:02:27,990
+He and colleagues named them
+CRISPR: clustered
+
+56
+00:02:28,000 --> 00:02:31,360
+regularly interspaced short
+palindromic repeats.
+
+57
+00:02:32,333 --> 00:02:35,723
+Around two thousand and five,
+Mojica worked
+
+58
+00:02:35,733 --> 00:02:39,123
+out what the spacers were:
+snippets of DNA from
+
+59
+00:02:39,133 --> 00:02:41,993
+viruses that had attacked the
+bacteria before.
+
+60
+00:02:42,917 --> 00:02:46,387
+Bacteria are in a never-ending
+war with viruses
+
+61
+00:02:46,397 --> 00:02:47,477
+called phages.
+
+62
+00:02:47,977 --> 00:02:51,027
+Phages are thought to be the
+most numerous biological
+
+63
+00:02:51,037 --> 00:02:54,207
+entities on Earth, outnumbering
+bacteria
+
+64
+00:02:54,217 --> 00:02:56,077
+by around ten to one.
+
+65
+00:02:56,833 --> 00:02:58,373
+CRISPR was an immune system.
+
+66
+00:02:58,833 --> 00:03:02,153
+The bacteria kept a library of
+mugshots of their enemies.
+
+67
+00:03:03,000 --> 00:03:04,900
+If the same virus attacked
+again,
+
+68
+00:03:05,520 --> 00:03:08,950
+the bacteria copied the matching
+mugshot into a short
+
+69
+00:03:08,960 --> 00:03:10,200
+strand of RNA.
+
+70
+00:03:11,140 --> 00:03:14,250
+That strand guided a cutting
+protein to the virus's
+
+71
+00:03:14,260 --> 00:03:14,710
+DNA,
+
+72
+00:03:14,720 --> 00:03:15,920
+and chopped it up.
+
+73
+00:03:16,417 --> 00:03:19,407
+In two thousand and seven,
+Rodolphe
+
+74
+00:03:19,417 --> 00:03:19,987
+Barrangou,
+
+75
+00:03:19,997 --> 00:03:23,127
+Philippe Horvath and colleagues
+at the yoghurt company
+
+76
+00:03:23,137 --> 00:03:26,367
+Danisco confirmed it, while
+trying to protect
+
+77
+00:03:26,377 --> 00:03:29,547
+the bacteria they used to make
+yoghurt and cheese
+
+78
+00:03:29,557 --> 00:03:30,417
+from viruses.
+
+79
+00:03:32,233 --> 00:03:35,573
+The most important cutting
+protein is called Cas nine.
+
+80
+00:03:36,417 --> 00:03:39,587
+It comes from Streptococcus
+pyogenes, the
+
+81
+00:03:39,597 --> 00:03:41,737
+bacterium that causes strep
+throat.
+
+82
+00:03:42,583 --> 00:03:46,073
+In two thousand and eleven, the
+French microbiologist
+
+83
+00:03:46,083 --> 00:03:48,953
+Emmanuelle Charpentier met the
+American
+
+84
+00:03:48,963 --> 00:03:52,333
+biochemist Jennifer Doudna at a
+conference in Puerto
+
+85
+00:03:52,343 --> 00:03:53,143
+Rico.
+
+86
+00:03:53,303 --> 00:03:54,723
+They decided to work together.
+
+87
+00:03:55,583 --> 00:03:57,803
+Charpentier was working in
+Sweden,
+
+88
+00:03:58,483 --> 00:04:00,023
+Doudna in California.
+
+89
+00:04:00,683 --> 00:04:03,173
+They collaborated across nine
+time zones,
+
+90
+00:04:03,183 --> 00:04:05,483
+by email and video calls.
+
+91
+00:04:06,417 --> 00:04:09,737
+In June twenty twelve, they
+published a landmark paper.
+
+92
+00:04:10,157 --> 00:04:13,327
+They showed that Cas nine could
+be reprogrammed with a guide
+
+93
+00:04:13,337 --> 00:04:16,257
+RNA to cut any DNA sequence they
+chose.
+
+94
+00:04:17,167 --> 00:04:18,407
+Here's how it works.
+
+95
+00:04:18,927 --> 00:04:21,087
+Scientists write a short guide
+sequence,
+
+96
+00:04:21,487 --> 00:04:22,827
+about twenty letters long,
+
+97
+00:04:23,427 --> 00:04:24,427
+that matches the target.
+
+98
+00:04:25,250 --> 00:04:27,410
+Cas nine slides along the DNA.
+
+99
+00:04:27,970 --> 00:04:29,980
+When the guide finds its perfect
+match,
+
+100
+00:04:29,990 --> 00:04:33,000
+Cas nine cuts both strands of
+the double
+
+101
+00:04:33,010 --> 00:04:33,810
+helix.
+
+102
+00:04:34,500 --> 00:04:36,620
+The cell then rushes to repair
+the break.
+
+103
+00:04:37,660 --> 00:04:40,570
+Scientists can use that moment
+to switch a gene off,
+
+104
+00:04:40,580 --> 00:04:44,030
+or to slip in a new, corrected
+piece of
+
+105
+00:04:44,040 --> 00:04:44,840
+DNA.
+
+106
+00:04:45,417 --> 00:04:47,337
+It's like a word processor for
+genes:
+
+107
+00:04:47,997 --> 00:04:48,787
+find,
+
+108
+00:04:48,797 --> 00:04:49,777
+cut, and replace.
+
+109
+00:04:50,750 --> 00:04:53,920
+Within months, teams led by Feng
+Zhang and George
+
+110
+00:04:53,930 --> 00:04:57,050
+Church showed that it worked in
+human cells too.
+
+111
+00:04:57,833 --> 00:05:00,293
+CRISPR was cheap, fast and easy.
+
+112
+00:05:00,693 --> 00:05:04,023
+Labs all over the world began
+using it almost
+
+113
+00:05:04,033 --> 00:05:04,833
+overnight.
+
+114
+00:05:05,500 --> 00:05:08,290
+The discovery also sparked a
+long legal battle,
+
+115
+00:05:08,300 --> 00:05:11,190
+between the University of
+California, where
+
+116
+00:05:11,200 --> 00:05:14,070
+Doudna works, and the Broad
+Institute in
+
+117
+00:05:14,080 --> 00:05:14,770
+Massachusetts,
+
+118
+00:05:14,780 --> 00:05:16,940
+over who owns the patents.
+
+119
+00:05:17,833 --> 00:05:21,203
+In twenty twenty, Charpentier
+and Doudna
+
+120
+00:05:21,213 --> 00:05:23,373
+won the Nobel Prize in
+Chemistry.
+
+121
+00:05:24,073 --> 00:05:27,503
+It was the first time a science
+Nobel had been shared only by
+
+122
+00:05:27,513 --> 00:05:28,313
+women.
+
+123
+00:05:29,483 --> 00:05:32,883
+The first big medical success
+came for sickle cell disease.
+
+124
+00:05:33,833 --> 00:05:37,003
+Doctors take a patient's own
+blood stem cells,
+
+125
+00:05:37,013 --> 00:05:40,503
+and use CRISPR to switch on a
+gene for a type of
+
+126
+00:05:40,513 --> 00:05:43,453
+haemoglobin we all make before
+we're born.
+
+127
+00:05:44,333 --> 00:05:47,743
+Those edited cells are put back,
+and begin making healthy
+
+128
+00:05:47,753 --> 00:05:48,813
+red blood cells.
+
+129
+00:05:49,750 --> 00:05:53,220
+Victoria Gray, from Mississippi,
+was the first American
+
+130
+00:05:53,230 --> 00:05:56,020
+with sickle cell disease to be
+treated this way,
+
+131
+00:05:56,030 --> 00:05:57,920
+in twenty nineteen.
+
+132
+00:05:57,930 --> 00:05:59,250
+Her pain crises stopped.
+
+133
+00:06:00,167 --> 00:06:03,257
+In late twenty twenty three,
+regulators in Britain
+
+134
+00:06:03,267 --> 00:06:05,837
+and the United States approved
+the treatment,
+
+135
+00:06:05,847 --> 00:06:07,997
+called Casgevy.
+
+136
+00:06:08,007 --> 00:06:10,487
+It was the world's first
+approved CRISPR medicine.
+
+137
+00:06:11,417 --> 00:06:14,627
+Scientists are now testing
+CRISPR against inherited
+
+138
+00:06:14,637 --> 00:06:15,437
+blindness,
+
+139
+00:06:15,757 --> 00:06:16,557
+high cholesterol,
+
+140
+00:06:17,177 --> 00:06:19,697
+some cancers, and other genetic
+diseases.
+
+141
+00:06:20,667 --> 00:06:22,847
+Newer versions are even more
+precise.
+
+142
+00:06:23,707 --> 00:06:27,177
+Base editing, invented in David
+Liu's lab in
+
+143
+00:06:27,187 --> 00:06:30,457
+twenty sixteen, can change a
+single letter without
+
+144
+00:06:30,467 --> 00:06:31,807
+cutting both strands.
+
+145
+00:06:32,787 --> 00:06:35,367
+Prime editing can search and
+replace short passages.
+
+146
+00:06:36,417 --> 00:06:39,367
+CRISPR has even been turned into
+fast diagnostic
+
+147
+00:06:39,377 --> 00:06:40,347
+tests,
+
+148
+00:06:40,357 --> 00:06:43,677
+which can detect the genetic
+material of viruses,
+
+149
+00:06:44,257 --> 00:06:46,597
+like the one that causes COVID
+nineteen.
+
+150
+00:06:47,500 --> 00:06:50,930
+In twenty twenty five, doctors
+in Philadelphia treated
+
+151
+00:06:50,940 --> 00:06:54,230
+a baby boy named KJ, born with a
+rare
+
+152
+00:06:54,240 --> 00:06:57,470
+and deadly liver disorder, with
+a gene-editing
+
+153
+00:06:57,480 --> 00:06:59,360
+therapy designed just for him.
+
+154
+00:07:00,900 --> 00:07:03,080
+CRISPR is also changing farming.
+
+155
+00:07:03,680 --> 00:07:06,920
+Researchers are using it to make
+crops that resist disease,
+
+156
+00:07:07,380 --> 00:07:10,320
+survive drought, or simply keep
+fresh for longer.
+
+157
+00:07:11,167 --> 00:07:14,377
+Some scientists want to use it
+to spread genes through
+
+158
+00:07:14,387 --> 00:07:17,307
+wild mosquitoes that stop them
+carrying malaria,
+
+159
+00:07:18,067 --> 00:07:21,417
+a disease that kills hundreds of
+thousands of people every
+
+160
+00:07:21,427 --> 00:07:22,227
+year.
+
+161
+00:07:22,417 --> 00:07:25,347
+In twenty twenty four, surgeons
+in Boston
+
+162
+00:07:25,357 --> 00:07:28,387
+transplanted a kidney from a
+gene-edited pig
+
+163
+00:07:28,397 --> 00:07:31,767
+into a living patient, part of a
+push to solve
+
+164
+00:07:31,777 --> 00:07:34,057
+the shortage of organs for
+transplant.
+
+165
+00:07:35,983 --> 00:07:38,383
+But CRISPR also raises hard
+questions.
+
+166
+00:07:39,417 --> 00:07:42,777
+Editing a patient's blood cells
+affects only that person.
+
+167
+00:07:43,237 --> 00:07:45,897
+But editing an embryo would
+change every cell,
+
+168
+00:07:46,317 --> 00:07:49,687
+including eggs and sperm, so the
+changes would pass
+
+169
+00:07:49,697 --> 00:07:50,717
+to future generations.
+
+170
+00:07:51,917 --> 00:07:54,537
+In twenty eighteen, a Chinese
+scientist,
+
+171
+00:07:54,997 --> 00:07:58,367
+He Jiankui, announced that he
+had secretly edited the DNA
+
+172
+00:07:58,377 --> 00:08:01,477
+of human embryos, and that twin
+girls had been born.
+
+173
+00:08:02,333 --> 00:08:05,383
+Scientists around the world
+condemned it as reckless
+
+174
+00:08:05,393 --> 00:08:06,393
+and unethical.
+
+175
+00:08:07,013 --> 00:08:09,133
+He was sentenced to three years
+in prison.
+
+176
+00:08:10,000 --> 00:08:12,980
+The twins were known by the
+names Lulu and Nana.
+
+177
+00:08:13,540 --> 00:08:16,910
+He was released in twenty twenty
+two, and the long-term effects
+
+178
+00:08:16,920 --> 00:08:19,240
+of his edits on the girls are
+still unknown.
+
+179
+00:08:20,167 --> 00:08:23,097
+Most countries now ban or
+tightly restrict
+
+180
+00:08:23,107 --> 00:08:24,967
+editing embryos for pregnancy.
+
+181
+00:08:25,607 --> 00:08:29,057
+Deciding where the limits should
+be is a question for all of
+
+182
+00:08:29,067 --> 00:08:29,737
+us,
+
+183
+00:08:29,747 --> 00:08:30,867
+not just scientists.
+
+184
+00:08:31,917 --> 00:08:32,937
+There are other worries,
+
+185
+00:08:33,677 --> 00:08:34,427
+too.
+
+186
+00:08:34,437 --> 00:08:36,717
+CRISPR can sometimes cut the
+wrong place.
+
+187
+00:08:37,297 --> 00:08:39,947
+And the first approved treatment
+costs over two million dollars
+
+188
+00:08:39,957 --> 00:08:42,437
+per patient in the United
+States,
+
+189
+00:08:43,057 --> 00:08:43,857
+so who can afford it?
+
+190
+00:08:45,317 --> 00:08:48,787
+A defence system that bacteria
+evolved to fight viruses
+
+191
+00:08:48,797 --> 00:08:52,047
+has become one of the most
+powerful tools in the
+
+192
+00:08:52,057 --> 00:08:53,097
+history of medicine.
+
+193
+00:08:54,000 --> 00:08:55,860
+We can now rewrite the code of
+life.
+
+194
+00:08:56,320 --> 00:08:58,660
+The question is no longer
+whether we can.
+
+195
+00:08:59,140 --> 00:09:01,160
+It's how wisely we choose to.

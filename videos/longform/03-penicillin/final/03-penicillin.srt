@@ -1,0 +1,957 @@
+1
+00:00:00,250 --> 00:00:03,700
+A hundred years ago, a scratch
+from a rose bush could kill
+
+2
+00:00:03,710 --> 00:00:04,510
+you.
+
+3
+00:00:04,667 --> 00:00:07,397
+So could a sore throat, a cut
+while shaving,
+
+4
+00:00:07,407 --> 00:00:08,567
+or giving birth.
+
+5
+00:00:09,333 --> 00:00:12,683
+In nineteen twenty four, the
+sixteen year old son
+
+6
+00:00:12,693 --> 00:00:16,043
+of the American president got a
+blister playing tennis at
+
+7
+00:00:16,053 --> 00:00:16,853
+the White House.
+
+8
+00:00:17,213 --> 00:00:19,793
+A week later, he was dead from
+blood poisoning.
+
+9
+00:00:20,583 --> 00:00:23,513
+Doctors had nothing that could
+stop a bacterial infection
+
+10
+00:00:23,523 --> 00:00:25,263
+once it spread through the body.
+
+11
+00:00:26,000 --> 00:00:28,080
+Then, in a messy London
+laboratory,
+
+12
+00:00:28,860 --> 00:00:31,050
+a scientist came back from his
+holiday,
+
+13
+00:00:31,060 --> 00:00:34,430
+and noticed something odd on a
+dish he had forgotten
+
+14
+00:00:34,440 --> 00:00:35,240
+to clean.
+
+15
+00:00:35,750 --> 00:00:37,760
+That accident gave the world
+penicillin,
+
+16
+00:00:37,770 --> 00:00:39,250
+the first true antibiotic.
+
+17
+00:00:40,310 --> 00:00:42,630
+It has saved many millions of
+lives.
+
+18
+00:00:43,583 --> 00:00:46,753
+But the story of how it got from
+that dish into hospitals is far
+
+19
+00:00:46,763 --> 00:00:47,293
+stranger,
+
+20
+00:00:47,303 --> 00:00:50,323
+and took far longer, than most
+people know.
+
+21
+00:00:51,900 --> 00:00:55,270
+Alexander Fleming was born on a
+farm in Scotland in
+
+22
+00:00:55,280 --> 00:00:56,556
+eighteen eighty one.
+
+23
+00:00:57,083 --> 00:01:00,383
+He moved to London, trained as a
+doctor at St Mary's Hospital,
+
+24
+00:01:00,803 --> 00:01:02,593
+and stayed there for the rest of
+his career,
+
+25
+00:01:02,603 --> 00:01:03,683
+studying bacteria.
+
+26
+00:01:04,750 --> 00:01:08,180
+In the First World War, he
+worked in battlefield hospitals
+in
+
+27
+00:01:08,190 --> 00:01:08,500
+France,
+
+28
+00:01:08,510 --> 00:01:11,170
+and watched soldiers die of
+infected wounds.
+
+29
+00:01:12,083 --> 00:01:15,193
+The antiseptics of the day often
+did more harm
+
+30
+00:01:15,203 --> 00:01:16,003
+than good.
+
+31
+00:01:16,303 --> 00:01:18,123
+They killed the body's own
+defences,
+
+32
+00:01:18,743 --> 00:01:19,903
+along with the germs.
+
+33
+00:01:20,583 --> 00:01:22,883
+Fleming spent years searching
+for something better.
+
+34
+00:01:23,583 --> 00:01:26,623
+In nineteen twenty two, he
+discovered lysozyme,
+
+35
+00:01:27,043 --> 00:01:30,303
+a natural germ killer found in
+tears and mucus.
+
+36
+00:01:30,683 --> 00:01:32,883
+But it was too weak to stop
+serious infections.
+
+37
+00:01:34,000 --> 00:01:35,180
+He was a brilliant scientist,
+
+38
+00:01:36,020 --> 00:01:37,870
+but famously untidy.
+
+39
+00:01:37,880 --> 00:01:40,880
+His bench was always covered in
+old culture plates.
+
+40
+00:01:41,833 --> 00:01:43,903
+He even made paintings out of
+bacteria,
+
+41
+00:01:43,913 --> 00:01:47,093
+using germs that grew in
+different colours on the dish.
+
+42
+00:01:48,733 --> 00:01:51,023
+In the summer of nineteen twenty
+eight,
+
+43
+00:01:51,033 --> 00:01:54,403
+Fleming left a stack of dishes
+growing Staphylococcus
+
+44
+00:01:54,413 --> 00:01:56,853
+bacteria on his bench, and went
+on holiday.
+
+45
+00:01:57,667 --> 00:02:00,027
+When he came back, on the third
+of September,
+
+46
+00:02:00,447 --> 00:02:01,927
+he started sorting through them.
+
+47
+00:02:02,583 --> 00:02:06,020
+One dish was contaminated with a
+fluffy blue-green mould.
+
+48
+00:02:06,500 --> 00:02:08,960
+Mould on a culture plate was
+nothing unusual.
+
+49
+00:02:09,520 --> 00:02:12,340
+But around this mould, the
+bacteria had vanished.
+
+50
+00:02:13,250 --> 00:02:15,410
+Something leaking out of the
+mould was killing them.
+
+51
+00:02:16,083 --> 00:02:19,173
+The mould spores had probably
+drifted up from a laboratory
+
+52
+00:02:19,183 --> 00:02:22,313
+on the floor below, where
+another scientist was
+
+53
+00:02:22,323 --> 00:02:23,123
+studying fungi.
+
+54
+00:02:23,723 --> 00:02:26,553
+And a spell of cool weather let
+the mould grow before the
+
+55
+00:02:26,563 --> 00:02:27,443
+bacteria did.
+
+56
+00:02:28,167 --> 00:02:31,347
+Fleming is often quoted as
+saying: that's funny.
+
+57
+00:02:31,917 --> 00:02:34,157
+The mould was a species of
+Penicillium,
+
+58
+00:02:34,477 --> 00:02:37,437
+a relative of the mould you
+might find on old bread.
+
+59
+00:02:37,977 --> 00:02:40,437
+So he called the mystery
+substance penicillin.
+
+60
+00:02:41,167 --> 00:02:44,397
+He found it could kill many of
+the bacteria that cause disease,
+
+61
+00:02:44,407 --> 00:02:47,187
+and that it seemed harmless to
+white blood cells.
+
+62
+00:02:48,167 --> 00:02:50,895
+He published his results in
+nineteen twenty nine.
+
+63
+00:02:52,317 --> 00:02:54,157
+And then, almost nothing
+happened.
+
+64
+00:02:55,000 --> 00:02:56,260
+Penicillin was fragile.
+
+65
+00:02:56,800 --> 00:03:00,190
+It broke down quickly, and
+Fleming's team could not purify
+
+66
+00:03:00,200 --> 00:03:00,570
+it,
+
+67
+00:03:00,580 --> 00:03:02,360
+or make more than tiny amounts.
+
+68
+00:03:03,333 --> 00:03:06,203
+Fleming mostly used it as a tool
+in his lab,
+
+69
+00:03:06,213 --> 00:03:08,773
+to sort one kind of bacteria
+from another.
+
+70
+00:03:09,500 --> 00:03:12,890
+For about ten years, one of the
+most important discoveries
+
+71
+00:03:12,900 --> 00:03:14,980
+in medical history sat on a
+shelf.
+
+72
+00:03:16,650 --> 00:03:19,870
+In nineteen thirty nine, at the
+University of Oxford,
+
+73
+00:03:20,390 --> 00:03:23,860
+an Australian scientist named
+Howard Florey and a German-born
+
+74
+00:03:23,870 --> 00:03:27,060
+chemist named Ernst Chain dug up
+Fleming's old
+
+75
+00:03:27,070 --> 00:03:27,870
+paper.
+
+76
+00:03:28,250 --> 00:03:31,720
+Chain, a brilliant biochemist,
+worked out how to
+
+77
+00:03:31,730 --> 00:03:33,710
+extract and concentrate the
+drug.
+
+78
+00:03:34,417 --> 00:03:37,347
+But they needed huge amounts of
+mould juice to make even a
+
+79
+00:03:37,357 --> 00:03:38,197
+little penicillin.
+
+80
+00:03:38,657 --> 00:03:40,037
+And Britain was at war.
+
+81
+00:03:40,750 --> 00:03:43,330
+So their colleague Norman
+Heatley improvised.
+
+82
+00:03:44,030 --> 00:03:46,100
+He grew the mould in anything he
+could find:
+
+83
+00:03:46,110 --> 00:03:49,610
+bedpans, milk churns, baths, and
+food tins.
+
+84
+00:03:50,500 --> 00:03:53,350
+He even designed special ceramic
+culture vessels,
+
+85
+00:03:53,360 --> 00:03:55,460
+and the team hired young women,
+
+86
+00:03:56,080 --> 00:03:58,790
+nicknamed the penicillin girls,
+to tend them.
+
+87
+00:03:59,250 --> 00:04:02,300
+On the twenty fifth of May,
+nineteen forty,
+
+88
+00:04:02,310 --> 00:04:03,770
+they ran a decisive test.
+
+89
+00:04:04,450 --> 00:04:07,700
+Eight mice were injected with
+deadly streptococcus
+
+90
+00:04:07,710 --> 00:04:08,510
+bacteria.
+
+91
+00:04:09,083 --> 00:04:11,343
+Four of them were also given
+penicillin.
+
+92
+00:04:11,783 --> 00:04:12,923
+The other four were not.
+
+93
+00:04:13,750 --> 00:04:16,830
+By the next morning, all four
+untreated mice were dead.
+
+94
+00:04:17,290 --> 00:04:18,970
+All four treated mice were
+alive.
+
+95
+00:04:19,750 --> 00:04:21,690
+Chain reportedly danced with
+excitement.
+
+96
+00:04:22,310 --> 00:04:23,910
+Florey said it looked like a
+miracle.
+
+97
+00:04:24,833 --> 00:04:27,863
+They published the results in
+August nineteen forty.
+
+98
+00:04:27,873 --> 00:04:30,303
+And they were so worried about a
+German invasion that they
+
+99
+00:04:30,313 --> 00:04:32,803
+rubbed mould spores into the
+linings of their coats,
+
+100
+00:04:32,813 --> 00:04:34,553
+so the work could survive.
+
+101
+00:04:36,233 --> 00:04:37,033
+Next came people.
+
+102
+00:04:37,453 --> 00:04:40,803
+In February nineteen forty one,
+a forty three year old
+
+103
+00:04:40,813 --> 00:04:44,223
+policeman named Albert Alexander
+lay dying in an Oxford
+
+104
+00:04:44,233 --> 00:04:45,033
+hospital.
+
+105
+00:04:45,750 --> 00:04:49,220
+A small scratch near his mouth,
+often said to be from a
+
+106
+00:04:49,230 --> 00:04:52,460
+rose thorn, had become a raging
+infection that spread
+
+107
+00:04:52,470 --> 00:04:54,530
+to his eyes, face and lungs.
+
+108
+00:04:55,500 --> 00:04:57,790
+He was given penicillin, and
+within a day,
+
+109
+00:04:57,800 --> 00:04:58,880
+he began to improve.
+
+110
+00:04:59,833 --> 00:05:00,933
+But there wasn't enough.
+
+111
+00:05:01,393 --> 00:05:04,623
+The team even recovered
+penicillin from his urine to use
+
+112
+00:05:04,633 --> 00:05:05,433
+again.
+
+113
+00:05:05,750 --> 00:05:08,170
+After five days, the supply ran
+out.
+
+114
+00:05:08,630 --> 00:05:12,080
+The infection came back, and
+Albert Alexander died
+
+115
+00:05:12,090 --> 00:05:12,890
+in March.
+
+116
+00:05:13,500 --> 00:05:14,300
+It was heartbreaking.
+
+117
+00:05:14,680 --> 00:05:16,660
+But it proved the drug worked in
+humans.
+
+118
+00:05:17,380 --> 00:05:18,960
+The problem was making enough of
+it.
+
+119
+00:05:19,583 --> 00:05:21,223
+A year later, in New Haven,
+
+120
+00:05:22,043 --> 00:05:22,693
+Connecticut,
+
+121
+00:05:22,703 --> 00:05:25,833
+a woman named Anne Miller was
+dying of blood poisoning
+
+122
+00:05:25,843 --> 00:05:26,943
+after a miscarriage.
+
+123
+00:05:27,803 --> 00:05:28,883
+Penicillin saved her.
+
+124
+00:05:29,583 --> 00:05:32,593
+Her treatment used about half of
+all the penicillin in the
+
+125
+00:05:32,603 --> 00:05:33,843
+United States at the time.
+
+126
+00:05:34,223 --> 00:05:35,983
+She lived to the age of ninety.
+
+127
+00:05:36,917 --> 00:05:40,267
+Later that year, after a
+terrible nightclub fire
+
+128
+00:05:40,277 --> 00:05:41,077
+in Boston,
+
+129
+00:05:41,357 --> 00:05:43,577
+penicillin was used to treat
+burn victims,
+
+130
+00:05:44,157 --> 00:05:46,857
+and the public began to hear
+about the new miracle drug.
+
+131
+00:05:48,483 --> 00:05:51,973
+To make penicillin in bulk,
+Florey and Heatley flew to the
+
+132
+00:05:51,983 --> 00:05:55,453
+United States in nineteen forty
+one, carrying samples
+
+133
+00:05:55,463 --> 00:05:56,263
+of the mould.
+
+134
+00:05:56,917 --> 00:05:59,657
+At a government lab in Peoria,
+Illinois,
+
+135
+00:06:00,137 --> 00:06:02,687
+scientists grew the mould in
+huge tanks,
+
+136
+00:06:02,697 --> 00:06:05,987
+fed with corn steep liquor, a
+cheap leftover
+
+137
+00:06:05,997 --> 00:06:07,617
+from making corn starch.
+
+138
+00:06:08,417 --> 00:06:09,217
+Yields soared.
+
+139
+00:06:09,437 --> 00:06:12,507
+Then a lab worker named Mary
+Hunt brought in a mouldy
+
+140
+00:06:12,517 --> 00:06:14,537
+cantaloupe from a local market.
+
+141
+00:06:15,333 --> 00:06:18,723
+Its mould produced far more
+penicillin than Fleming's
+original
+
+142
+00:06:18,733 --> 00:06:19,533
+strain.
+
+143
+00:06:19,693 --> 00:06:23,123
+Most penicillin made since then
+comes from descendants of
+
+144
+00:06:23,133 --> 00:06:23,993
+that melon mould.
+
+145
+00:06:24,750 --> 00:06:27,150
+American drug companies scaled
+up fast.
+
+146
+00:06:28,130 --> 00:06:31,340
+Production rose from almost
+nothing in early nineteen forty
+two
+
+147
+00:06:31,350 --> 00:06:33,010
+to millions of doses.
+
+148
+00:06:33,917 --> 00:06:36,707
+By the time Allied troops landed
+in Normandy on
+
+149
+00:06:36,717 --> 00:06:37,627
+D-Day,
+
+150
+00:06:37,637 --> 00:06:40,927
+in June nineteen forty four,
+there was enough penicillin
+
+151
+00:06:40,937 --> 00:06:41,817
+to treat the wounded.
+
+152
+00:06:42,583 --> 00:06:44,613
+Soldiers called it the miracle
+drug.
+
+153
+00:06:44,623 --> 00:06:47,233
+Infected wounds that would once
+have meant
+
+154
+00:06:47,243 --> 00:06:49,763
+amputation or death could now
+heal.
+
+155
+00:06:51,400 --> 00:06:53,660
+So how does penicillin actually
+kill bacteria?
+
+156
+00:06:54,750 --> 00:06:57,810
+Most bacteria are wrapped in a
+tough cell wall,
+
+157
+00:06:58,230 --> 00:07:01,230
+which they constantly rebuild as
+they grow and divide.
+
+158
+00:07:02,083 --> 00:07:04,963
+Penicillin jams the machinery
+that builds that wall.
+
+159
+00:07:05,667 --> 00:07:09,097
+The wall weakens, water rushes
+in, and the bacterium
+
+160
+00:07:09,107 --> 00:07:09,357
+bursts,
+
+161
+00:07:09,367 --> 00:07:12,837
+while our own cells, which have
+no such wall,
+
+162
+00:07:12,847 --> 00:07:14,007
+are left alone.
+
+163
+00:07:14,833 --> 00:07:17,850
+In nineteen forty five, Dorothy
+Hodgkin used
+
+164
+00:07:17,860 --> 00:07:20,903
+X-ray crystallography to reveal
+penicillin's
+
+165
+00:07:20,913 --> 00:07:21,713
+structure,
+
+166
+00:07:21,833 --> 00:07:24,113
+including its unusual four-sided
+ring.
+
+167
+00:07:25,650 --> 00:07:28,820
+That same year, Fleming, Florey
+and Chain shared the Nobel Prize
+
+168
+00:07:28,830 --> 00:07:30,470
+in Physiology or Medicine.
+
+169
+00:07:31,333 --> 00:07:34,383
+Norman Heatley, whose improvised
+bedpans made it all
+
+170
+00:07:34,393 --> 00:07:35,193
+possible,
+
+171
+00:07:35,333 --> 00:07:36,133
+was left out.
+
+172
+00:07:36,613 --> 00:07:37,473
+Decades later,
+
+173
+00:07:38,093 --> 00:07:41,363
+Oxford gave him its first
+honorary doctorate in medicine
+in its
+
+174
+00:07:41,373 --> 00:07:42,593
+eight hundred year history.
+
+175
+00:07:43,333 --> 00:07:46,723
+Fleming became world famous, and
+he always insisted that
+
+176
+00:07:46,733 --> 00:07:48,433
+luck had played a big part.
+
+177
+00:07:49,167 --> 00:07:51,997
+Fleming was knighted in nineteen
+forty four.
+
+178
+00:07:52,007 --> 00:07:55,357
+When he died in nineteen fifty
+five, he was buried in
+
+179
+00:07:55,367 --> 00:07:57,207
+St Paul's Cathedral in London.
+
+180
+00:07:57,917 --> 00:08:00,157
+And in his Nobel lecture, he
+gave a warning.
+
+181
+00:08:00,833 --> 00:08:04,023
+If people took too little
+penicillin, or stopped too
+
+182
+00:08:04,033 --> 00:08:04,833
+soon,
+
+183
+00:08:04,893 --> 00:08:06,733
+bacteria could learn to resist
+it.
+
+184
+00:08:08,233 --> 00:08:09,033
+He was right.
+
+185
+00:08:09,313 --> 00:08:10,373
+Bacteria evolve.
+
+186
+00:08:10,733 --> 00:08:14,223
+Each time we use an antibiotic,
+the few that happen to
+
+187
+00:08:14,233 --> 00:08:15,413
+survive can multiply.
+
+188
+00:08:16,333 --> 00:08:19,563
+Today, drug-resistant infections
+are one of the biggest
+
+189
+00:08:19,573 --> 00:08:21,013
+threats to global health.
+
+190
+00:08:21,573 --> 00:08:25,038
+In twenty nineteen, they
+directly caused an estimated one
+
+191
+00:08:25,048 --> 00:08:27,353
+point two seven million deaths.
+
+192
+00:08:28,250 --> 00:08:31,720
+That's why doctors ask us to
+take antibiotics only when
+
+193
+00:08:31,730 --> 00:08:34,330
+we need them, and exactly as
+prescribed.
+
+194
+00:08:35,000 --> 00:08:38,450
+Penicillin and the antibiotics
+that followed it changed
+medicine
+
+195
+00:08:38,460 --> 00:08:39,260
+completely.
+
+196
+00:08:39,720 --> 00:08:42,430
+They made surgery, cancer
+treatment and organ
+
+197
+00:08:42,440 --> 00:08:43,920
+transplants far safer.
+
+198
+00:08:44,750 --> 00:08:47,130
+Penicillin also started a gold
+rush.
+
+199
+00:08:47,990 --> 00:08:51,110
+Within a few years scientists
+found streptomycin,
+
+200
+00:08:51,490 --> 00:08:54,180
+the first drug that could cure
+tuberculosis,
+
+201
+00:08:54,190 --> 00:08:56,650
+and dozens more antibiotics
+followed.
+
+202
+00:08:58,233 --> 00:09:01,323
+It all began with a dirty dish,
+and a scientist curious
+
+203
+00:09:01,333 --> 00:09:02,593
+enough to look twice.
+
+204
+00:09:03,500 --> 00:09:06,950
+As Fleming later said: one
+sometimes finds what one
+
+205
+00:09:06,960 --> 00:09:07,960
+is not looking for.

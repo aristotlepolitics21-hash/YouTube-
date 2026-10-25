@@ -1,0 +1,12 @@
+# Core (all stages that run offline)
+requests>=2.31
+Pillow>=10.0
+numpy>=1.26
+PyYAML>=6.0
+pydantic>=2.6
+piper-tts>=1.2          # offline narration
+faster-whisper>=1.0     # subtitle timing + narration check (optional: set subtitles.aligner: proportional)
+# Claude research/script/scenes (optional: llm.provider: claude)
+anthropic>=1.0
+# Tests
+pytest>=8.0

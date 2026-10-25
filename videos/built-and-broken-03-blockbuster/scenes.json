@@ -1,0 +1,277 @@
+{
+  "title": "Blockbuster Could Have Bought Netflix for $50 Million",
+  "theme": {
+    "primaryColor": "#0A3D91",
+    "accentColor": "#FFC700",
+    "backgroundColor": "#0B1026",
+    "surfaceColor": "#17214A",
+    "textColor": "#F7F8FC",
+    "mutedTextColor": "#A9B1CF",
+    "chartColors": ["#FFC700", "#4C8DFF", "#E5484D", "#7DD3C0", "#B79CFF", "#A9B1CF"],
+    "captionHighlightColor": "#FFC700",
+    "captionBackgroundColor": "rgba(11, 16, 38, 0.8)"
+  },
+  "caption_text": {
+    "Seven-Eleven": "7-Eleven"
+  },
+  "sections": {
+    "hook": "The hook",
+    "rise": "Friday night, 1985",
+    "empire": "The empire of late fees",
+    "offer": "The $50 million meeting",
+    "fight": "Blockbuster fights back",
+    "turn": "The turn",
+    "fall": "The fall",
+    "lesson": "The lesson"
+  },
+  "scenes": [
+    {
+      "section": "hook",
+      "narration": "In September 2000, three men from a small, money-losing startup flew to Dallas with an offer.",
+      "visual": {"type": "stat_card", "stat": "Sept 2000", "subtitle": "Dallas, Texas. Blockbuster headquarters."}
+    },
+    {
+      "section": "hook",
+      "narration": "Buy us for fifty million dollars, they said, and we'll run your business online.",
+      "visual": {"type": "stat_card", "stat": "$50M", "subtitle": "The asking price"}
+    },
+    {
+      "section": "hook",
+      "narration": "The startup was Netflix. The answer was no.",
+      "visual": {"type": "hero_title", "text": "The answer was no.", "subtitle": "The startup was Netflix"}
+    },
+    {
+      "section": "hook",
+      "narration": "Everyone knows that part. What most people don't know is that Blockbuster fought back, and for a moment, it was winning.",
+      "visual": {"type": "text_card", "text": "Blockbuster fought back. For a moment, it was winning."}
+    },
+    {
+      "section": "hook",
+      "narration": "This is Built and Broken. Episode three. Blockbuster.",
+      "visual": {"type": "hero_title", "text": "BLOCKBUSTER", "subtitle": "Built & Broken · Episode 3"}
+    },
+
+    {
+      "section": "rise",
+      "narration": "On the nineteenth of October 1985, a businessman named David Cook opened the first Blockbuster store in Dallas, Texas.",
+      "visual": {"type": "stat_card", "stat": "1985", "subtitle": "David Cook opens the first Blockbuster in Dallas"}
+    },
+    {
+      "section": "rise",
+      "narration": "Most video shops back then were small and cramped. Cook's store was big and bright, with around eight thousand tapes on the shelves and a computerized checkout.",
+      "visual": {"type": "comparison", "title": "A new kind of video shop", "leftLabel": "Typical shop", "leftValue": "Small, cramped", "rightLabel": "Blockbuster", "rightValue": "~8,000 tapes"}
+    },
+    {
+      "section": "rise",
+      "narration": "In 1987, an entrepreneur named Wayne Huizenga took control and did what he did best. He expanded. Fast.",
+      "visual": {"type": "text_card", "text": "1987: Wayne Huizenga takes control. Expand. Fast."}
+    },
+    {
+      "section": "rise",
+      "narration": "Blockbuster spread across America and then the world. Friday night meant one thing. Walk the aisles, pick a movie, grab some popcorn at the counter.",
+      "visual": {"type": "hero_title", "text": "Friday night", "subtitle": "Walk the aisles. Pick a movie. Popcorn at the counter."}
+    },
+    {
+      "section": "rise",
+      "narration": "In 1994, the media giant Viacom bought Blockbuster in a deal worth eight point four billion dollars.",
+      "visual": {"type": "stat_card", "stat": "$8.4B", "subtitle": "Viacom buys Blockbuster, 1994"}
+    },
+
+    {
+      "section": "empire",
+      "narration": "By 2004, Blockbuster was at its peak. More than nine thousand stores. Eighty four thousand employees. Six point one billion dollars in revenue in a single year.",
+      "visual": {"type": "kpi_grid", "title": "Blockbuster at its peak, 2004", "columns": 3, "chartData": [
+        {"label": "Stores (thousands)", "value": 9, "suffix": "K+"},
+        {"label": "Employees (thousands)", "value": 84, "suffix": "K"},
+        {"label": "Revenue ($ billions)", "value": 6, "prefix": "$", "suffix": "B"}
+      ]},
+      "note": "2004 10-K: 9,094 stores, about 84,300 employees, $6.1 billion revenue. Grid values are rounded because the KPI grid only animates whole numbers."
+    },
+    {
+      "section": "empire",
+      "narration": "But there was a secret inside that business, and every customer knew it. Late fees.",
+      "visual": {"type": "hero_title", "text": "Late fees.", "subtitle": "The secret every customer knew"}
+    },
+    {
+      "section": "empire",
+      "narration": "Return a tape a day late, and you paid. In 2000, Blockbuster collected nearly eight hundred million dollars in late fees.",
+      "visual": {"type": "stat_card", "stat": "~$800M", "subtitle": "Late fees collected in 2000"}
+    },
+    {
+      "section": "empire",
+      "narration": "That was about sixteen percent of its revenue. One dollar in every six came from customers making a mistake.",
+      "visual": {"type": "pie_chart", "title": "Blockbuster revenue, 2000", "donut": true, "centerLabel": "Late fees", "centerValue": "16%", "showLegend": true, "chartData": [
+        {"label": "Late fees", "value": 16},
+        {"label": "Everything else", "value": 84}
+      ]}
+    },
+    {
+      "section": "empire",
+      "narration": "Remember that number. A business that makes money when its customers are unhappy is a business waiting for a competitor.",
+      "visual": {"type": "callout", "callout_type": "warning", "title": "Remember this", "text": "A business that profits when its customers are unhappy is waiting for a competitor."}
+    },
+
+    {
+      "section": "offer",
+      "narration": "That competitor started in 1997. Netflix rented DVDs by mail, and, eventually, with no late fees at all.",
+      "visual": {"type": "comparison", "title": "Two ways to rent a movie", "leftLabel": "Blockbuster", "leftValue": "Late fees", "rightLabel": "Netflix", "rightValue": "No late fees"}
+    },
+    {
+      "section": "offer",
+      "narration": "By 2000, the dot-com bubble had burst, and Netflix was losing money. So its founders, Reed Hastings and Marc Randolph, with their finance chief Barry McCarthy, went to Dallas.",
+      "visual": {"type": "text_card", "text": "Reed Hastings, Marc Randolph and Barry McCarthy fly to Dallas"}
+    },
+    {
+      "section": "offer",
+      "narration": "Their pitch: Netflix would become Blockbuster's online business. The price, fifty million dollars.",
+      "visual": {"type": "callout", "callout_type": "info", "title": "The pitch", "text": "Netflix becomes Blockbuster's online business. Price: $50 million."}
+    },
+    {
+      "section": "offer",
+      "narration": "Marc Randolph later wrote that Blockbuster's chief executive, John Antioco, was struggling not to laugh.",
+      "visual": {"type": "callout", "callout_type": "quote", "title": "Marc Randolph, Netflix co-founder", "text": "John Antioco was struggling not to laugh."}
+    },
+    {
+      "section": "offer",
+      "narration": "McCarthy put it more bluntly. They laughed us out of their office.",
+      "visual": {"type": "callout", "callout_type": "quote", "title": "Barry McCarthy, 2008", "text": "They laughed us out of their office."}
+    },
+    {
+      "section": "offer",
+      "narration": "To be fair, it looked like a sensible decision at the time. Netflix was tiny and unprofitable. Blockbuster was making billions.",
+      "visual": {"type": "comparison", "title": "Why it looked sensible in 2000", "leftLabel": "Netflix", "leftValue": "Losing money", "rightLabel": "Blockbuster", "rightValue": "Billions a year"}
+    },
+    {
+      "section": "offer",
+      "narration": "Netflix flew home and decided to beat them instead. By the end of 2006, it had six million subscribers.",
+      "visual": {"type": "stat_card", "stat": "6M", "subtitle": "Netflix subscribers by the end of 2006"}
+    },
+
+    {
+      "section": "fight",
+      "narration": "Here is the part that usually gets left out. Blockbuster did not ignore Netflix forever.",
+      "visual": {"type": "text_card", "text": "Blockbuster did not ignore Netflix forever."}
+    },
+    {
+      "section": "fight",
+      "narration": "In 2004 it launched Blockbuster Online. And on the first of January 2005, it did something remarkable. It scrapped late fees.",
+      "visual": {"type": "comparison", "title": "Blockbuster fights back", "leftLabel": "2004", "leftValue": "Online launch", "rightLabel": "1 Jan 2005", "rightValue": "No more late fees"}
+    },
+    {
+      "section": "fight",
+      "narration": "It was expensive. By one estimate, ending late fees cost about two hundred million dollars, and launching the online business cost about two hundred million more.",
+      "visual": {"type": "bar_chart", "title": "Estimated cost of the fight back ($ millions)", "showValues": true, "chartData": [
+        {"label": "Ending late fees", "value": 200},
+        {"label": "Launching online", "value": 200}
+      ]}
+    },
+    {
+      "section": "fight",
+      "narration": "Then, in late 2006, Blockbuster played the one card Netflix could never match. Its stores.",
+      "visual": {"type": "hero_title", "text": "Its stores.", "subtitle": "The one card Netflix could never match"}
+    },
+    {
+      "section": "fight",
+      "narration": "It was called Total Access. Rent a DVD online, and when you were done, you could return it to any Blockbuster store and walk out with another movie for free.",
+      "visual": {"type": "callout", "callout_type": "tip", "title": "Total Access, 2006", "text": "Rent online. Return it in a store. Walk out with another movie, free."}
+    },
+    {
+      "section": "fight",
+      "narration": "Customers loved it. Total Access passed two million subscribers, and inside Netflix, people were worried. Blockbuster was spending heavily, and it was working.",
+      "visual": {"type": "stat_card", "stat": "2M+", "subtitle": "Total Access subscribers"}
+    },
+
+    {
+      "section": "turn",
+      "narration": "And then Blockbuster turned on itself.",
+      "visual": {"type": "text_card", "text": "And then Blockbuster turned on itself."}
+    },
+    {
+      "section": "turn",
+      "narration": "The fight with Netflix was costing money, and the company was in debt. The activist investor Carl Icahn, who held a large stake and sat on the board, questioned the spending.",
+      "visual": {"type": "text_card", "text": "Debt. Heavy spending. An activist investor on the board: Carl Icahn."}
+    },
+    {
+      "section": "turn",
+      "narration": "Antioco clashed with the board over his pay, and in 2007 he left.",
+      "visual": {"type": "stat_card", "stat": "2007", "subtitle": "John Antioco leaves after a fight with the board"}
+    },
+    {
+      "section": "turn",
+      "narration": "His replacement was Jim Keyes, the former boss of the convenience store chain Seven-Eleven. He believed the future was still in stores.",
+      "visual": {"type": "comparison", "title": "A new direction", "leftLabel": "Antioco", "leftValue": "Online + stores", "rightLabel": "Keyes", "rightValue": "Stores first"}
+    },
+    {
+      "section": "turn",
+      "narration": "Money was running short. Marketing for the online service had already been cut back, and under Keyes, Total Access became more expensive. Subscriber growth stalled.",
+      "visual": {"type": "text_card", "text": "Marketing cut back. Prices up. Growth stalled."}
+    },
+    {
+      "section": "turn",
+      "narration": "Blockbuster had built a real answer to Netflix, and then it took its foot off the pedal.",
+      "visual": {"type": "hero_title", "text": "Foot off the pedal", "subtitle": "Blockbuster stops pushing its own answer"}
+    },
+
+    {
+      "section": "fall",
+      "narration": "Meanwhile, the ground was moving. In January 2007, Netflix launched streaming. Just a thousand films at first, but no disc, no envelope, no store.",
+      "visual": {"type": "stat_card", "stat": "Jan 2007", "subtitle": "Netflix launches streaming"}
+    },
+    {
+      "section": "fall",
+      "narration": "And from the other side came Redbox. Red kiosks outside supermarkets, renting DVDs for a dollar a night. By 2008, Redbox had more locations in America than Blockbuster.",
+      "visual": {"type": "comparison", "title": "Squeezed from both sides", "leftLabel": "Above", "leftValue": "Streaming", "rightLabel": "Below", "rightValue": "$1 kiosks"}
+    },
+    {
+      "section": "fall",
+      "narration": "Blockbuster was squeezed between the convenience of streaming and the price of a vending machine. Its stores, once its greatest strength, were now a giant fixed cost.",
+      "visual": {"type": "text_card", "text": "Its greatest strength became its biggest cost."}
+    },
+    {
+      "section": "fall",
+      "narration": "On the twenty third of September 2010, Blockbuster filed for bankruptcy.",
+      "visual": {"type": "stat_card", "stat": "Sept 2010", "subtitle": "Blockbuster files for Chapter 11 bankruptcy"}
+    },
+    {
+      "section": "fall",
+      "narration": "That same year, Netflix passed twenty million subscribers.",
+      "visual": {"type": "stat_card", "stat": "20M", "subtitle": "Netflix subscribers at the end of 2010"}
+    },
+    {
+      "section": "fall",
+      "narration": "In 2011, the satellite TV company Dish bought what was left of Blockbuster at auction for about three hundred and twenty million dollars. In 2014, Dish closed the last company-owned stores.",
+      "visual": {"type": "comparison", "title": "What was left", "leftLabel": "2011", "leftValue": "Dish buys ~$320M", "rightLabel": "2014", "rightValue": "Stores closed"}
+    },
+    {
+      "section": "fall",
+      "narration": "By 2019, there was just one Blockbuster left on Earth. An independently owned store in Bend, Oregon, that kept the name.",
+      "visual": {"type": "hero_title", "text": "One left.", "subtitle": "Bend, Oregon"}
+    },
+
+    {
+      "section": "lesson",
+      "narration": "Kodak protected its profits. Nokia measured the wrong thing.",
+      "visual": {"type": "comparison", "title": "Built & Broken so far", "leftLabel": "Kodak", "leftValue": "Protected profits", "rightLabel": "Nokia", "rightValue": "Wrong scoreboard"}
+    },
+    {
+      "section": "lesson",
+      "narration": "Blockbuster's story is stranger. It found the right answer. It paid for it. It was winning. And then it stopped.",
+      "visual": {"type": "text_card", "text": "It found the answer. It paid for it. It was winning. Then it stopped."}
+    },
+    {
+      "section": "lesson",
+      "narration": "Fighting a disruptor costs money, and the bill arrives long before the reward. Blockbuster blinked when the bill arrived.",
+      "visual": {"type": "callout", "callout_type": "tip", "title": "The lesson", "text": "Fighting a disruptor costs money now. The reward comes later. Blockbuster blinked."}
+    },
+    {
+      "section": "lesson",
+      "narration": "Fifty million dollars was the cheapest chance it ever had. Every chance after that cost more, and it took fewer of them.",
+      "visual": {"type": "stat_card", "stat": "$50M", "subtitle": "The cheapest chance Blockbuster ever had"}
+    },
+    {
+      "section": "lesson",
+      "narration": "This has been Built and Broken. Subscribe for the next story of a giant that saw the future, and still fell.",
+      "visual": {"type": "hero_title", "text": "Built & Broken", "subtitle": "Subscribe for the next episode"}
+    }
+  ]
+}
