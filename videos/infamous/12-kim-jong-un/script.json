@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 12,
+  "title": "Kim Jong-un",
+  "subtitle": "The third ruler of the Kim dynasty",
+  "say": {"Jong-un": "Jong Oon", "Jong-il": "Jong Ill", "Il-sung": "Ill Soong", "Jang Song-thaek": "Jahng Song Tack", "Jang": "Jahng", "Jong-nam": "Jong Nahm", "Ju-ae": "Joo Ay", "Pyongyang": "Pyong Yang", "Panmunjom": "Pahn Moon Jom", "Moon Jae-in": "Moon Jay In", "Kaesong": "Kay Song", "Paektu": "Pek Too", "Kuala Lumpur": "Kwahla Loompoor", "Warmbier": "Warm Beer", "Kursk": "Koorsk", "VX": "V X"},
+  "package": {
+    "thumb_line": 19,
+    "thumb": ["THE BOMB", "THE CAMPS"],
+    "intro": "Kim Jong-un became North Korea's leader in 2011, in his late twenties. Since then he has tested nuclear weapons, executed his own uncle, met an American president and sent troops to fight for Russia. This documentary sets out what is documented about his rule, including the findings of the 2014 UN Commission of Inquiry.",
+    "facts": ["North Korea was founded in 1948; Kim Il-sung was its first leader, followed by Kim Jong-il (1994–2011)", "Kim Jong-un's birth date is given as 8 January; the year (1982, 1983 or 1984) is disputed", "Became leader after Kim Jong-il's death on 17 December 2011", "State media announced the execution of his uncle Jang Song-thaek in December 2013", "The 2014 UN Commission of Inquiry found crimes against humanity and estimated 80,000–120,000 political prisoners", "North Korea carried out four of its six nuclear tests under Kim Jong-un (2013, 2016 twice, 2017)", "Kim Jong-nam was killed with VX nerve agent at Kuala Lumpur airport on 13 February 2017", "Met Donald Trump in Singapore on 12 June 2018, the first meeting of a sitting US president and a North Korean leader", "North Korea confirmed in April 2025 that it had sent troops to fight for Russia"],
+    "sources": "Report of the UN Commission of Inquiry on Human Rights in the Democratic People's Republic of Korea (A/HRC/25/63, 2014), Encyclopaedia Britannica, BBC News, Council on Foreign Relations, Anna Fifield's The Great Successor.",
+    "hashtags": "#History #Documentary #NorthKorea",
+    "tags": "kim jong un, kim jong un documentary, north korea, north korea explained, kim dynasty, un commission of inquiry north korea, north korea nuclear weapons, trump kim summit, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "KIM JONG-UN", "sub": "The third ruler of the Kim dynasty", "art": "podium", "artp": {"cheer": 1}}, "In December 2013, North Korean television showed a meeting of the ruling party. Guards stepped forward, took a senior official by the arms, and led him out of the hall."],
+      ["bust", {"name": "Jang Song-thaek", "years": "1946 – 2013", "role": "Kim Jong-un's uncle by marriage. Seen as the regime's second most powerful man.", "hair": "back", "hairc": "#9a9a92", "coat": "mao"}, "The man was Jang Song-thaek, the uncle of the young leader, Kim Jong-un, and widely seen as the second most powerful figure in the country. Days later, state media announced that he had been executed as a traitor."],
+      ["stat", {"value": "80,000 – 120,000", "label": "estimated political prisoners · UN Commission of Inquiry, 2014"}, "That same winter, a United Nations commission was finishing a year-long investigation into North Korea. It estimated that between eighty and one hundred and twenty thousand people were held in political prison camps."],
+      ["lesson", {"text": "What does the record show?"}, "Kim Jong-un has ruled North Korea since 2011. He has built nuclear weapons, met an American president and sent soldiers to fight in Europe. This is what is documented about him."]
+    ]},
+    { "name": "The family state", "lines": [
+      ["date", {"date": "9 September 1948", "place": "Democratic People's Republic of Korea"}, "North Korea was founded in 1948, after Korea was divided at the end of the Second World War. Its first leader was Kim Jong-un's grandfather, Kim Il-sung."],
+      ["army", {"tanks": 1, "label": "Korean War · 1950 – 1953"}, "In 1950, Kim Il-sung invaded the South and started the Korean War. It ended in 1953 with an armistice, not a peace treaty. The peninsula is still divided."],
+      ["ruler", {"pose": "up", "guards": 4, "label": "Pyongyang"}, "Kim Il-sung built the state around his own family. Propaganda calls them the Paektu bloodline, after a sacred mountain, and teaches citizens to revere them."],
+      ["bust", {"name": "Kim Jong-il", "years": "1941 – 2011", "role": "Kim Jong-un's father. Ruled North Korea from 1994 until his death.", "hair": "curly", "glasses": "square", "coat": "khaki", "round": 1}, "When Kim Il-sung died in 1994, his son Kim Jong-il took over. He ruled through a famine that killed hundreds of thousands of people, and he built the country's first nuclear bombs."]
+    ]},
+    { "name": "The heir", "lines": [
+      ["date", {"date": "8 January", "place": "year disputed · 1982, 1983 or 1984"}, "Kim Jong-un was born on the eighth of January, in 1982, 1983 or 1984. Even his birth year is uncertain. He was one of Kim Jong-il's younger sons."],
+      ["city", {"state": "normal", "seed": 8, "label": "Bern · Switzerland · late 1990s"}, "As a teenager, he was reportedly sent to school in Bern, Switzerland, under a false name. Classmates later remembered a shy boy who loved basketball."],
+      ["bust", {"name": "Kim Jong-un", "years": "born 1980s", "role": "Third leader of North Korea. Took power in his late twenties.", "hair": "crop", "coat": "mao", "round": 1}, "His older half-brother, Kim Jong-nam, had once been seen as a possible heir, but he fell from favour. In 2010, Kim Jong-un was suddenly made a four-star general, with no military experience."],
+      ["paper", {"mast": "PYONGYANG", "head": "Kim Jong-il dies", "sub": "Son hailed as the Great Successor", "date": "December 2011"}, "On the seventeenth of December 2011, his father died. Within two weeks, Kim Jong-un was named supreme commander of the armed forces."],
+      ["people", {"n": 8, "pose": "mourn", "label": "Pyongyang · December 2011"}, "The outside world knew almost nothing about him. Many experts predicted that older generals would rule from behind the scenes, or that the regime would crack."]
+    ]},
+    { "name": "Taking control", "lines": [
+      ["wall", {"night": 1, "n": 5, "label": "purges · 2012 – 2017"}, "Instead, he made his power absolute. In his first years he removed many of the senior officials he had inherited. South Korean intelligence reported that some of them were executed."],
+      ["decree", {"title": "State media announcement", "lines": ["Jang Song-thaek", "condemned as a traitor", "and executed"], "date": "13 December 2013"}, "The most dramatic case was his uncle. State media called Jang a traitor and announced that he had been executed straight after a special military trial."],
+      ["date", {"date": "13 February 2017", "place": "Kuala Lumpur International Airport · Malaysia"}, "In February 2017, his half-brother Kim Jong-nam, who lived in exile, was killed at Kuala Lumpur airport with VX, a banned chemical weapon."],
+      ["paper", {"mast": "KUALA LUMPUR", "head": "Kim Jong-nam killed", "sub": "VX nerve agent used at airport", "date": "February 2017"}, "South Korea and the United States said the North Korean state was behind the killing. North Korea denied any role."],
+      ["inquiry", {"label": "Shah Alam High Court · Malaysia · 2017 – 2019"}, "Two young women were charged with his murder. They said they thought they were taking part in a television prank. Neither was convicted of murder, and both were freed."]
+    ]},
+    { "name": "The bomb", "lines": [
+      ["bars", {"items": [["Under Kim Jong-il", 2, "tests"], ["Under Kim Jong-un", 4, "tests"]], "max": 5, "red": 1}, "His father had carried out two nuclear tests. Kim Jong-un carried out four more between 2013 and 2017, each in defiance of the UN Security Council."],
+      ["army", {"tanks": 1, "night": 1, "label": "missile parade · Pyongyang"}, "The largest, in September 2017, was claimed by North Korea to be a hydrogen bomb. That November, it tested a missile that analysts said could reach the whole of the United States."],
+      ["checklist", {"head": "His stated line, 2013", "items": ["Build nuclear weapons", "Build the economy", "At the same time"]}, "In 2013 he announced a policy of building nuclear weapons and the economy side by side. Many analysts believe he sees the bomb as the ultimate guarantee that his regime will survive."],
+      ["decree", {"title": "UN Security Council", "lines": ["Bans on coal, iron,", "textiles and seafood exports", "Oil imports capped"], "date": "2016 – 2017"}, "The UN Security Council answered with some of the toughest sanctions it has ever imposed, banning many of North Korea's main exports and capping its oil imports."]
+    ]},
+    { "name": "The UN findings", "lines": [
+      ["inquiry", {"label": "UN Commission of Inquiry · Geneva · February 2014"}, "In February 2014, a UN Commission of Inquiry led by the Australian judge Michael Kirby published its report. It drew on public testimony from more than eighty witnesses and hundreds of confidential interviews."],
+      ["quote", {"text": "The gravity, scale and nature of these violations reveal a State that does not have any parallel in the contemporary world.", "who": "UN Commission of Inquiry on the DPRK · 2014"}, "Its conclusion was stark. The gravity, scale and nature of these violations reveal a State that does not have any parallel in the contemporary world."],
+      ["camp", {"night": 1, "label": "political prison camps"}, "The commission found that crimes against humanity had been committed, including murder, enslavement, torture, imprisonment and knowingly causing prolonged starvation. Many took place in the political prison camps."],
+      ["people", {"n": 8, "pose": "walk", "label": "guilt by association"}, "It found that whole families could be sent to the camps for one relative's offence, and that people forcibly returned from China faced harsh punishment."],
+      ["decree", {"title": "Letter to Kim Jong-un", "lines": ["Those responsible should", "be held accountable,", "possibly including yourself"], "date": "2014", "seal": 0}, "The commission wrote to Kim Jong-un, warning that he himself might be held responsible, and urged a referral to the International Criminal Court. North Korea rejected the report as lies. As of 2025, no referral has happened."],
+      ["memorial", {"n": 30, "date": "Otto Warmbier · 1994 – 2017"}, "In 2016, an American student, Otto Warmbier, was sentenced to fifteen years of hard labour for allegedly trying to take a propaganda poster. He was sent home in a coma in 2017, and died days later."]
+    ]},
+    { "name": "The summits", "lines": [
+      ["date", {"date": "27 April 2018", "place": "Panmunjom · the border between the Koreas"}, "Then, in 2018, he changed course. In April he stepped across the border to meet South Korea's president, Moon Jae-in, in front of the cameras."],
+      ["versus", {"left": "Kim Jong-un", "right": "Donald Trump", "mid": "SINGAPORE"}, "In June 2018, in Singapore, he met Donald Trump. It was the first meeting between a sitting American president and a North Korean leader. They signed a short, vague statement on denuclearisation."],
+      ["paper", {"mast": "HANOI", "head": "Summit ends early", "sub": "No deal on sanctions or nuclear weapons", "date": "February 2019"}, "A second summit, in Hanoi in 2019, broke up without a deal. A brief meeting at the border followed that summer, and then the talks faded away."],
+      ["bust", {"name": "Kim Jong-un", "years": "2019", "role": "Supreme Leader. Summits with the US, South Korea, China and Russia.", "hair": "crop", "coat": "suit", "tie": "#2b2b30", "round": 1}, "He gave up none of his weapons. Critics say the summits handed him prestige and time. Supporters of the talks argue that they lowered the danger of war, at least for a while."]
+    ]},
+    { "name": "Turning to Moscow", "lines": [
+      ["field", {"famine": 1, "n": 3, "guard": 1, "label": "borders sealed · 2020 – 2023"}, "When Covid arrived in 2020, he sealed the borders almost completely. Even trade with China nearly stopped. UN experts warned of serious food shortages."],
+      ["city", {"state": "ruin", "seed": 4, "label": "Kaesong · 16 June 2020"}, "That June, North Korea blew up the liaison office it had shared with South Korea since 2018."],
+      ["stat", {"value": "2022", "label": "a record year for North Korean missile launches"}, "In 2022 it launched more missiles than in any year before, and passed a law allowing the use of nuclear weapons first, if the leadership was threatened."],
+      ["decree", {"title": "Policy shift", "lines": ["South Korea declared", "the principal enemy"], "date": "January 2024"}, "In January 2024, he declared South Korea the country's principal enemy and dropped the long-standing official goal of peaceful reunification."],
+      ["versus", {"left": "Kim Jong-un", "right": "Vladimir Putin", "mid": "2024"}, "He turned instead to Russia. In June 2024, Vladimir Putin visited Pyongyang, and the two countries signed a treaty promising each other military help if attacked."],
+      ["army", {"night": 1, "label": "Kursk region · Russia · 2024 – 2025"}, "Late in 2024, according to South Korean, Ukrainian and Western intelligence, thousands of North Korean soldiers were sent to fight for Russia against Ukraine. In April 2025, Pyongyang confirmed it."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["people", {"n": 6, "pose": "look", "label": "Pyongyang · 2025"}, "As of 2025, Kim Jong-un had ruled for more than thirteen years. A young daughter often appears at his side, and South Korea's intelligence service has suggested she may be his chosen successor."],
+      ["lesson", {"text": "The dynasty comes first."}, "Many analysts describe him as ruthless but calculating. His purges, his missiles and his summits can all be read as serving one goal: keeping his family in power."],
+      ["stat", {"value": "26 million", "label": "people living under the Kim dynasty"}, "Around twenty-six million people live under that system. They cannot vote him out, read foreign news freely, or leave the country without permission."],
+      ["memorial", {"n": 400, "date": "North Korea · 1948 – today"}, "Kim Jong-un has never faced a court. But in 2014 the United Nations wrote down his country's crimes in detail, and addressed its warning to him by name. That record will outlast him."]
+    ]}
+  ]
+}

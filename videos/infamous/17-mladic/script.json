@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 17,
+  "title": "Ratko Mladić",
+  "subtitle": "The general convicted of genocide at Srebrenica",
+  "say": {"Ratko": "Rahtko", "Mladić": "Mladich", "Mladić's": "Mladich's", "Kalinovik": "Kahleenovik", "Ustaše": "Oostasheh", "Srebrenica": "Srebreneetsa", "Potočari": "Potochahree", "Sarajevo": "Sarayevo", "Sarajevans": "Sarayevans", "Karadžić": "Karajich", "Radovan": "Rahdovahn", "Milošević": "Miloshevich", "Milošević's": "Miloshevich's", "Markale": "Markahleh", "Bosniak": "Bosnyak", "Bosniaks": "Bosnyaks", "Knin": "Kneen", "Republika Srpska": "Republika Sirpska", "Krstić": "Kirstich", "Tito's": "Teeto's", "Tito": "Teeto", "Kofi Annan": "Kofee Annan"},
+  "package": {
+    "thumb_line": 22,
+    "thumb": ["SAFE AREA", "BETRAYED"],
+    "intro": "In July 1995, forces under General Ratko Mladić overran the UN safe area of Srebrenica and killed more than eight thousand Bosniak men and boys. After sixteen years on the run, he was arrested in 2011, and in 2017 a UN tribunal convicted him of genocide. This documentary tells his story, from a career army officer to a convicted war criminal.",
+    "facts": ["Born 12 March 1942 near Kalinovik, Bosnia", "Became commander of the Bosnian Serb army on 12 May 1992", "The siege of Sarajevo lasted from April 1992 to February 1996; around 11,000 people were killed", "Bosnian Serb forces took more than 200 UN personnel hostage in May–June 1995", "Srebrenica fell on 11 July 1995; more than 8,000 Bosniak men and boys were killed", "Indicted by the ICTY in July 1995, with genocide charges for Srebrenica added in November 1995", "Arrested in Serbia on 26 May 2011 after 16 years as a fugitive", "Convicted by the ICTY on 22 November 2017 of genocide, crimes against humanity and war crimes; sentenced to life", "Conviction and life sentence upheld on appeal by the UN Residual Mechanism on 8 June 2021"],
+    "sources": "International Criminal Tribunal for the former Yugoslavia (case IT-09-92, Mladić judgment, 2017), UN International Residual Mechanism for Criminal Tribunals (appeal judgment, 2021), Report of the UN Secretary-General on the fall of Srebrenica (A/54/549, 1999), Srebrenica-Potočari Memorial Centre, Encyclopaedia Britannica.",
+    "hashtags": "#History #Documentary #Balkans",
+    "tags": "ratko mladic, mladic documentary, srebrenica genocide, siege of sarajevo, bosnian war, icty, yugoslav wars, war crimes trial, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "RATKO MLADIĆ", "sub": "The general convicted of genocide at Srebrenica", "art": "army", "artp": {"night": 1}}, "On the eleventh of July 1995, a stocky general in combat fatigues walked into the empty streets of Srebrenica, a small town in eastern Bosnia. A television camera followed him."],
+      ["city", {"state": "normal", "seed": 6, "label": "Srebrenica · 11 July 1995"}, "Srebrenica was supposed to be protected. The United Nations had declared it a safe area two years earlier, and a battalion of Dutch peacekeepers was stationed there."],
+      ["stat", {"value": "8,000+", "label": "Bosniak men and boys killed after the fall of Srebrenica, July 1995"}, "Within days, forces under his command had killed more than eight thousand Bosniak Muslim men and boys. It was the worst mass killing in Europe since the Second World War."],
+      ["lesson", {"text": "Convicted of genocide."}, "In 2017, a UN tribunal convicted Ratko Mladić of genocide and sentenced him to life in prison. This is how a career army officer came to that verdict."]
+    ]},
+    { "name": "A soldier's son", "lines": [
+      ["date", {"date": "12 March 1942", "place": "near Kalinovik · Bosnia"}, "Ratko Mladić was born on the twelfth of March 1942 in a village near Kalinovik, in Bosnia. The region was then part of the Independent State of Croatia, a fascist puppet state allied with Nazi Germany."],
+      ["people", {"n": 4, "pose": "mourn", "night": 1, "label": "Bosnia · 1945"}, "His father fought with Tito's communist Partisans and was killed in 1945, in fighting against the Croatian fascists, the Ustaše. Ratko was two years old."],
+      ["field", {"village": 1, "n": 4, "label": "Bosnia · after 1945"}, "In the Yugoslavia that Tito built after the war, Serbs, Croats and Bosniaks lived side by side in Bosnia, often in the same villages, and many intermarried."],
+      ["army", {"label": "Yugoslav People's Army · 1960s – 1980s"}, "Mladić trained at the military academy in Belgrade and joined the Communist Party. For a quarter of a century he served in the Yugoslav People's Army, rising steadily through the ranks."]
+    ]},
+    { "name": "Into war", "lines": [
+      ["date", {"date": "1991", "place": "Knin · Croatia"}, "When Yugoslavia began to break apart in 1991, he was sent to Knin, the centre of a Serb rebellion in Croatia, where he commanded Yugoslav army units in the fighting."],
+      ["bars", {"items": [["Bosniaks", 44, "%"], ["Serbs", 31, "%"], ["Croats", 17, "%"]], "max": 50, "red": 0}, "Bosnia was the most mixed of all the republics. In 1991, about forty-four percent of its people were Bosniak, thirty-one percent Serb and seventeen percent Croat."],
+      ["decree", {"title": "Army of Republika Srpska", "lines": ["Commander:", "General Ratko Mladić"], "date": "12 May 1992"}, "In 1992, Bosnia voted for independence in a referendum that most Bosnian Serbs boycotted. In May, Bosnian Serb leaders created their own army, and Mladić became its commander."],
+      ["bust", {"name": "General Ratko Mladić", "years": "born 1942", "role": "Commander of the Bosnian Serb army, 1992 – 1996.", "hair": "crop", "hairc": "#9a9a92", "coat": "military", "hat": "peak", "round": 1, "frown": 1}, "Colleagues described him as tough, blunt and close to his men. His army was built largely from the old Yugoslav army's soldiers and weapons, and Belgrade went on paying many of its officers."],
+      ["bust", {"name": "Radovan Karadžić", "years": "born 1945", "role": "Political leader of the Bosnian Serbs. Convicted of genocide in 2016.", "hair": "wild", "hairc": "#9a9a92", "coat": "suit", "tie": "#7a2a22"}, "His political leader was Radovan Karadžić, a psychiatrist turned nationalist politician. Both men had the backing of Serbia's president, Slobodan Milošević."],
+      ["people", {"n": 9, "pose": "walk", "label": "eastern and northern Bosnia · 1992"}, "That spring and summer, Bosnian Serb forces took about two thirds of Bosnia. They drove Bosniaks and Croats from town after town, killing many and holding thousands in camps. It became known as ethnic cleansing."]
+    ]},
+    { "name": "The siege", "lines": [
+      ["city", {"state": "fire", "night": 1, "seed": 7, "label": "Sarajevo · 1992 – 1996"}, "His forces surrounded Sarajevo, Bosnia's capital, from the hills around it. The siege lasted almost four years, the longest siege of a capital city in modern times."],
+      ["people", {"n": 8, "pose": "walk", "night": 1, "label": "Sarajevo · 'Sniper Alley'"}, "People ran across open junctions to avoid snipers. Shells struck markets, queues and playgrounds. For years, Sarajevans lived without reliable water, heating or electricity."],
+      ["stat", {"value": "~11,000", "label": "people killed in Sarajevo during the siege"}, "Around eleven thousand people were killed in the city during the siege, more than a thousand of them children."],
+      ["date", {"date": "5 February 1994", "place": "Markale market · Sarajevo"}, "On the fifth of February 1994, a single shell struck the crowded Markale market, killing sixty-eight people."]
+    ]},
+    { "name": "Hostages", "lines": [
+      ["army", {"planes": 1, "night": 1, "label": "NATO air strikes · May 1995"}, "In May 1995, after NATO aircraft struck Bosnian Serb positions, Mladić's forces seized more than two hundred UN peacekeepers and military observers as hostages."],
+      ["cell", {"pose": "stand", "label": "UN hostages · May – June 1995"}, "Some were chained to likely targets as human shields and filmed for television. The air strikes stopped, and the hostages were released over the following weeks."]
+    ]},
+    { "name": "Srebrenica", "lines": [
+      ["date", {"date": "6 – 11 July 1995", "place": "Srebrenica enclave · eastern Bosnia"}, "In July 1995, his forces attacked the Srebrenica enclave. The Dutch peacekeepers were few and lightly armed, and the air support they requested came too little and too late. On the eleventh, the town fell."],
+      ["people", {"n": 9, "pose": "look", "label": "Potočari · 12 July 1995"}, "Tens of thousands of refugees, most of them women, children and old people, crowded around the UN base at nearby Potočari. Mladić walked among them, telling them on camera that no one would be harmed."],
+      ["wall", {"night": 1, "n": 6, "label": "around Srebrenica · 12 – 16 July 1995"}, "His forces then separated the men and older boys from their families. The women and children were bussed away."],
+      ["memorial", {"n": 300, "date": "Srebrenica · 12 – 16 July 1995"}, "Over the following days, more than eight thousand men and boys were killed at execution sites across the area."],
+      ["field", {"n": 2, "label": "eastern Bosnia · autumn 1995"}, "Weeks later, many of the mass graves were dug up and the remains moved to other sites, to hide the crime. Investigators are still identifying the dead through DNA."],
+      ["quote", {"text": "By seeking to eliminate a part of the Bosnian Muslims, the Bosnian Serb forces committed genocide.", "who": "ICTY Appeals Chamber · Krstić judgment · 2004"}, "In 2004, judges at the UN tribunal ruled that the killings at Srebrenica were genocide. By seeking to eliminate a part of the Bosnian Muslims, they wrote, the Bosnian Serb forces committed genocide."]
+    ]},
+    { "name": "Sixteen years on the run", "lines": [
+      ["army", {"planes": 1, "label": "Operation Deliberate Force · Aug – Sep 1995"}, "In August 1995, another shell hit the Markale market, killing forty-three people. NATO launched a major bombing campaign against Bosnian Serb forces, and the war moved towards its end."],
+      ["decree", {"title": "Indictment", "lines": ["Ratko Mladić", "Genocide, crimes against humanity", "and war crimes"], "date": "July and November 1995"}, "The UN war crimes tribunal had already indicted Mladić in July 1995. In November, it added charges of genocide for Srebrenica. The Dayton Agreement ended the war that same month."],
+      ["city", {"state": "normal", "seed": 3, "label": "Belgrade · late 1990s"}, "For years he lived openly in Belgrade, under the protection of Milošević's government, and was seen at football matches and restaurants."],
+      ["bunker", {"n": 1, "label": "in hiding · 2000s"}, "After Milošević fell, Mladić went into hiding. According to Serbian investigators, he was sheltered by networks of supporters, and for a time by members of the army."],
+      ["date", {"date": "21 July 2008", "place": "Belgrade"}, "Karadžić was caught first, in 2008, living in Belgrade disguised as an alternative-medicine healer with a long white beard. He was later convicted of genocide and sentenced to life."],
+      ["paper", {"mast": "BELGRADE", "head": "Mladić arrested", "sub": "Found in a village in northern Serbia", "date": "26 May 2011"}, "Serbia was under pressure from the European Union to hand Mladić over. On the twenty-sixth of May 2011, after sixteen years on the run, he was arrested at a relative's house in northern Serbia."]
+    ]},
+    { "name": "The verdict", "lines": [
+      ["inquiry", {"label": "ICTY · The Hague · 2012 – 2017"}, "His trial opened in The Hague in May 2012. Hundreds of witnesses gave evidence, including survivors of Srebrenica and Sarajevo."],
+      ["bust", {"name": "The defendant", "years": "2012 – 2017", "role": "On trial for genocide, crimes against humanity and war crimes.", "hair": "crop", "hairc": "#e8e2d4", "coat": "suit", "tie": "#2b2b30", "round": 1, "frown": 1}, "Mladić rejected the court's authority. His lawyers argued that he had not ordered the killings at Srebrenica, and that much of the evidence against him was unreliable."],
+      ["decree", {"title": "Verdict", "lines": ["Genocide at Srebrenica", "Crimes against humanity", "Terror against Sarajevo", "Hostage-taking", "Sentence: life imprisonment"], "date": "22 November 2017"}, "On the twenty-second of November 2017, he was found guilty on ten of eleven counts, including genocide at Srebrenica, terrorising the people of Sarajevo, and taking UN peacekeepers hostage. He was sentenced to life."],
+      ["checklist", {"head": "One acquittal", "items": ["Genocide in other towns, 1992", "Ruled: crimes against humanity", "Genocidal intent not proven"]}, "He was acquitted on one count: genocide in other Bosnian towns in 1992. Judges ruled the crimes there were crimes against humanity, but genocidal intent was not proven."],
+      ["date", {"date": "8 June 2021", "place": "UN Residual Mechanism · The Hague"}, "In June 2021, appeal judges upheld his conviction and his life sentence. As of 2025, he remained in UN custody, in poor health."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["people", {"n": 8, "pose": "mourn", "label": "Srebrenica-Potočari Memorial"}, "At Potočari, a memorial cemetery holds the graves of more than six thousand identified victims. Every July, more are buried as further remains are identified."],
+      ["decree", {"title": "UN General Assembly", "lines": ["11 July: International Day", "of Reflection and Commemoration", "of the 1995 Genocide in Srebrenica"], "date": "23 May 2024"}, "In May 2024, the UN General Assembly named the eleventh of July an international day to remember the Srebrenica genocide. Serbia's government opposed the resolution."],
+      ["versus", {"left": "Hero", "right": "War criminal", "mid": "?"}, "In parts of Serbia and in Republika Srpska, the Bosnian Serb entity, Mladić still appears on murals as a hero. His supporters point to Serb suffering in the war, which was real. Some Serb leaders still reject the word genocide."],
+      ["quote", {"text": "The tragedy of Srebrenica will haunt our history forever.", "who": "UN Secretary-General Kofi Annan · report on Srebrenica, 1999"}, "Srebrenica was also a failure of the outside world. In 1999, the UN admitted it had not protected the people it promised to keep safe. The tragedy of Srebrenica, its report said, will haunt our history forever."],
+      ["memorial", {"n": 600, "date": "Srebrenica · July 1995"}, "Mladić was finally judged, sixteen years after he was charged. For the families of Srebrenica, the verdict could not bring anyone back. But it put on record, beyond appeal, what was done to them."]
+    ]}
+  ]
+}

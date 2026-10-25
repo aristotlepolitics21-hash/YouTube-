@@ -1,0 +1,71 @@
+1
+00:00:00,400 --> 00:00:06,040
+You tap your phone hundreds of times a day. But it isn't feeling your touch. It's feeling your electricity.
+
+2
+00:00:06,390 --> 00:00:09,206
+Here's what happens in that split second, in five steps.
+
+3
+00:00:09,906 --> 00:00:15,504
+Step one. Under the glass is a grid of see-through wires. Rows running one way, columns the other.
+
+4
+00:00:15,854 --> 00:00:21,530
+They're made of a metal oxide so thin you can see right through it, sandwiched between the glass and the display.
+
+5
+00:00:21,880 --> 00:00:27,530
+Where they cross, the screen holds a tiny electric field. Hundreds of little sensors, all waiting.
+
+6
+00:00:28,230 --> 00:00:34,474
+Step two. Your body conducts electricity. So when your finger gets close, it pulls a little of that field away.
+
+7
+00:00:34,824 --> 00:00:37,874
+The change is tiny, but the screen is built to notice it.
+
+8
+00:00:38,224 --> 00:00:44,681
+That's why gloves don't work, and a pencil won't either. Touchscreen gloves have metal thread sewn into the fingertips.
+
+9
+00:00:45,381 --> 00:00:50,950
+Step three. A controller chip checks every crossing, row by row, many times every second.
+
+10
+00:00:51,300 --> 00:00:56,505
+A full scan takes just a few thousandths of a second, so it keeps up even when you scroll fast.
+
+11
+00:00:56,855 --> 00:01:03,307
+It finds the spots with the biggest change, and works out the centre. That's where you touched, to within about a millimetre.
+
+12
+00:01:04,007 --> 00:01:09,417
+Step four. Every crossing is measured on its own, so the screen can track several fingers at once.
+
+13
+00:01:09,767 --> 00:01:14,432
+It can even ignore your palm resting on the glass, by the size and shape of the touch.
+
+14
+00:01:14,782 --> 00:01:22,092
+Software watches how those points move. Two fingers spreading apart? Pinch to zoom. One sliding fast? That's a swipe.
+
+15
+00:01:22,792 --> 00:01:29,246
+Step five. Water conducts too. So raindrops on your screen can look like fingers, and cause ghost touches.
+
+16
+00:01:29,596 --> 00:01:36,399
+Older screens worked differently. Two flexible layers had to be pressed together, which is why you used to push so hard.
+
+17
+00:01:37,099 --> 00:01:44,581
+A hidden grid. Your finger steals a little charge. A chip scans every crossing, tracks every finger, and turns it into a tap.
+
+18
+00:01:44,931 --> 00:01:50,287
+So every tap is a tiny electrical event. Follow for more of the tech you use every day.

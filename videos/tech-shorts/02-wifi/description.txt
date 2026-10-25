@@ -1,0 +1,15 @@
+How Wi-Fi Actually Works (in 5 Steps)
+
+Invisible waves are flying through your room right now. Here is how they carry every video, message and game, animated.
+
+1. Cable to radio: the router turns data from the internet cable into radio waves
+2. Riding the wave: 2.4 GHz and 5 GHz waves, with data carried in tiny changes to the wave's height and timing
+3. Taking turns: devices listen for a quiet moment before they talk, and newer routers serve several at once
+4. Keeping it private: your password creates keys that scramble everything (WPA2/WPA3)
+5. Why it slows down: walls, metal, water, distance, and microwave ovens running near 2.4 GHz
+
+Best spot for your router: high up, near the middle of your home, out in the open.
+
+Follow for more of the tech you use every day.
+
+#shorts #wifi #techexplained #howitworks #router

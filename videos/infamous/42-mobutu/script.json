@@ -1,0 +1,79 @@
+{
+  "series": "Infamous",
+  "episode": 42,
+  "title": "Mobutu Sese Seko",
+  "subtitle": "The leopard-skin dictator of Zaire",
+  "say": {"Mobutu": "Moh boo too", "Mobutu's": "Moh boo too's", "Sese Seko": "Seh seh Seh koh", "Joseph-Désiré": "Joseph Dezeeray", "Laurent-Désiré": "Lorron Dezeeray", "Lisala": "Leesahla", "Kinshasa": "Kinshahsa", "Léopoldville": "Leeopoldville", "Lumumba": "Loo moom ba", "Kasa-Vubu": "Kassa Voo boo", "Katanga": "Katanga", "Katangan": "Katangan", "Zaire": "Zah eer", "Zaireans": "Zah eerians", "Zairianisation": "Zah eerianisation", "Gbadolite": "Badoh leetay", "Kabila": "Kabeela", "Kabila's": "Kabeela's", "Shaba": "Shahba", "Kolwezi": "Kol wayzee", "Mulele": "Moo lelay", "Force Publique": "Force Publeek", "Hutu": "Hootoo", "débrouillez-vous": "day brooyay voo", "Rabat": "Rabaht", "Leopold": "Leeopold"},
+  "package": {
+    "thumb_line": 27,
+    "thumb": ["HE STOLE", "A COUNTRY"],
+    "intro": "Mobutu Sese Seko ruled Congo, which he renamed Zaire, for thirty-two years. Backed by Western governments as a Cold War ally, he became one of the world's richest men while his country sank into poverty. This documentary tells how he took power, how he kept it, and what he left behind.",
+    "facts": ["Born Joseph-Désiré Mobutu on 14 October 1930 in Lisala, Belgian Congo", "Congo became independent on 30 June 1960, with Patrice Lumumba as prime minister", "Mobutu, then army chief of staff, took power briefly in September 1960; Lumumba was killed in Katanga on 17 January 1961", "Seized power in a coup on 24 November 1965", "Renamed the country Zaire in 1971 and himself Mobutu Sese Seko in 1972", "Hosted the 'Rumble in the Jungle' between Muhammad Ali and George Foreman in Kinshasa, 30 October 1974", "Transparency International (2004) estimated he embezzled up to US$5 billion", "Fled Kinshasa on 16 May 1997 as Laurent-Désiré Kabila's forces advanced; died in Rabat, Morocco, on 7 September 1997"],
+    "sources": "Encyclopaedia Britannica; Michela Wrong, In the Footsteps of Mr Kurtz (2000); David Van Reybrouck, Congo: The Epic History of a People; Belgian Parliamentary Commission of Inquiry into the death of Patrice Lumumba (2001); Transparency International, Global Corruption Report 2004.",
+    "hashtags": "#History #Documentary #Africa",
+    "tags": "mobutu, mobutu sese seko, zaire, congo history, kleptocracy, patrice lumumba, cold war africa, rumble in the jungle, laurent kabila, african dictators, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "MOBUTU SESE SEKO", "sub": "The leopard-skin dictator of Zaire", "art": "jungle", "artp": {"night": 1}}, "In May 1997, as rebel armies closed in on the capital, Kinshasa, a sick old man in a leopard-skin hat flew out of the country he had ruled for thirty-two years."],
+      ["jungle", {"n": 6, "night": 1, "label": "Zaire · May 1997"}, "Behind him lay one of the richest lands on earth, full of copper, cobalt and diamonds, and some of the poorest people in the world."],
+      ["stat", {"value": "up to $5 billion", "label": "estimated embezzled by Mobutu · Transparency International, 2004"}, "Transparency International later estimated that he had embezzled up to five billion dollars."],
+      ["lesson", {"text": "How do you steal a country?"}, "His name became shorthand for kleptocracy: rule by a thief who treats a whole nation as his personal property. This is how he did it, and who helped him."]
+    ]},
+    { "name": "The sergeant", "lines": [
+      ["date", {"date": "14 October 1930", "place": "Lisala · Belgian Congo"}, "Joseph-Désiré Mobutu was born on the fourteenth of October 1930 in Lisala, in the Belgian Congo, a colony that King Leopold the Second had once run as his private property."],
+      ["army", {"label": "Force Publique · 1950 – 1956"}, "Expelled from a mission school, he was conscripted into the colonial army as a punishment. He rose to sergeant-major, the highest rank then open to Congolese."],
+      ["paper", {"mast": "LÉOPOLDVILLE", "head": "A new voice", "sub": "Congolese journalists of the 1950s", "date": "1950s"}, "He then worked as a journalist in the capital, Léopoldville, now Kinshasa, and joined the circle of a charismatic independence leader, Patrice Lumumba."],
+      ["bust", {"name": "Joseph-Désiré Mobutu", "years": "1950s", "role": "Former army sergeant turned journalist. Ambitious and watchful.", "hair": "crop", "glasses": "square", "coat": "suit", "tie": "#2b2b30"}, "Tall, bespectacled and watchful, he was ambitious, and good at making himself useful to powerful people."]
+    ]},
+    { "name": "Independence", "lines": [
+      ["bust", {"name": "Patrice Lumumba", "years": "1925 – 1961", "role": "Independence leader. First prime minister of Congo, 1960.", "hair": "crop", "beard": "goatee", "glasses": "square", "coat": "suit", "tie": "#2b2b30"}, "On the thirtieth of June 1960, Congo became independent, and Lumumba became its first prime minister. Mobutu was made a senior officer in the new army."],
+      ["army", {"fire": 1, "label": "Congo · July 1960"}, "Within days, the army mutinied against its Belgian officers. Belgian troops intervened, and the mineral-rich province of Katanga declared itself independent."],
+      ["versus", {"left": "LUMUMBA", "right": "KASA-VUBU", "mid": "1960"}, "In September, the president, Joseph Kasa-Vubu, and Lumumba tried to dismiss each other. Mobutu, now the army's chief of staff, stepped in and took control, saying he was neutralising the politicians."],
+      ["web", {"nodes": [["Mobutu", 0.5, 0.2, 1], ["CIA", 0.2, 0.65, 0], ["Belgium", 0.5, 0.82, 0], ["Kasa-Vubu", 0.8, 0.65, 0]], "links": [[0, 1], [0, 2], [0, 3]], "label": "September 1960"}, "He had the quiet support of the United States, whose CIA saw Lumumba as dangerously close to the Soviet Union, and of Belgium."],
+      ["cell", {"label": "Lumumba under arrest · 1960"}, "Lumumba was placed under arrest. In January 1961, he was flown to Katanga and handed over to his bitterest enemies."],
+      ["wall", {"night": 1, "label": "Katanga · 17 January 1961"}, "That night he was shot, with two companions, by Katangan forces, with Belgian officers present. A Belgian parliamentary inquiry later found Belgium morally responsible."],
+      ["lesson", {"text": "He helped deliver Lumumba to his killers."}, "Mobutu did not pull the trigger. But he had helped deliver Lumumba to the men who killed him."]
+    ]},
+    { "name": "Taking power", "lines": [
+      ["date", {"date": "24 November 1965", "place": "Léopoldville"}, "After five years of rebellions and weak governments, Mobutu seized power outright on the twenty-fourth of November 1965. He said he would rule for five years. He stayed for thirty-two."],
+      ["people", {"n": 12, "pose": "look", "label": "Léopoldville · June 1966"}, "In June 1966, four former ministers accused of plotting against him were hanged in public, in front of a huge crowd. The message was clear."],
+      ["decree", {"title": "One-party state", "lines": ["Popular Movement of the Revolution", "The only legal party"], "date": "1967 – 1990"}, "In 1967, he founded the Popular Movement of the Revolution. It soon became the only legal party, and every citizen was, by law, a member from birth."],
+      ["cell", {"night": 1, "label": "opponents"}, "Rivals were bought off with jobs and money, or jailed and killed. One rebel leader, Pierre Mulele, returned home under a promise of amnesty, and was executed."]
+    ]},
+    { "name": "Zaire", "lines": [
+      ["decree", {"title": "Authenticity", "lines": ["Congo becomes Zaire", "Christian names dropped", "Western suits banned"], "date": "1971 – 1972"}, "In 1971, he renamed the country Zaire. Under a campaign he called authenticity, citizens had to drop their Christian names, and Western suits and ties gave way to a Mao-style jacket."],
+      ["bust", {"name": "Mobutu Sese Seko", "years": "1930 – 1997", "role": "President of Zaire, 1965 – 1997. Leopard-skin hat, thick glasses, carved cane.", "hat": "leopard", "glasses": "square", "coat": "mao"}, "He renamed himself too: Mobutu Sese Seko, short for a longer name usually translated as the all-powerful warrior who goes from conquest to conquest, leaving fire in his wake."],
+      ["tv", {"text": "EVENING NEWS · ZAIRE"}, "On the evening television news, his face appeared descending through the clouds, as if from heaven. He was the Guide, the Helmsman, the father of the nation."],
+      ["podium", {"night": 0, "cheer": 1, "banners": 0, "label": "songs of praise"}, "His portrait hung in every office. Workers and schoolchildren were made to sing and dance in his honour, in mass sessions of what was called political animation."],
+      ["ballot", {"value": "99%+", "label": "official result · sole candidate"}, "At presidential elections he was the only candidate, and official results gave him close to one hundred percent of the vote."],
+      ["paper", {"mast": "KINSHASA", "head": "Rumble in the Jungle", "sub": "Ali defeats Foreman", "date": "30 October 1974"}, "He understood spectacle. In 1974, his government paid for the Rumble in the Jungle, the famous boxing match in Kinshasa between Muhammad Ali and George Foreman."]
+    ]},
+    { "name": "The kleptocrat", "lines": [
+      ["decree", {"title": "Zairianisation", "lines": ["Foreign-owned firms seized", "Handed to Zairean owners"], "date": "November 1973"}, "In 1973, he seized foreign-owned businesses and handed many of them to relatives and allies, who often stripped them bare and let them collapse."],
+      ["city", {"state": "ruin", "seed": 5, "label": "Zaire · 1980s"}, "When world copper prices crashed in the mid-1970s, the economy went into a long decline. Inflation soared, and roads, hospitals and schools crumbled."],
+      ["throne", {"label": "Gbadolite · 'Versailles of the jungle'"}, "Meanwhile, Mobutu built palaces, including a vast complex in his home region at Gbadolite, nicknamed the Versailles of the jungle, with an airport long enough for chartered Concorde jets."],
+      ["lesson", {"text": "Villas abroad, and Swiss bank accounts"}, "He bought luxury homes in Europe, and kept money in Swiss bank accounts, while state employees went unpaid for months."],
+      ["quote", {"text": "Article 15: débrouillez-vous. Fend for yourselves.", "who": "popular Zairean saying"}, "Zaireans joked about Article Fifteen, an imaginary clause of the constitution which said: débrouillez-vous, fend for yourselves. Unpaid soldiers and officials lived off bribes."]
+    ]},
+    { "name": "Friends abroad", "lines": [
+      ["checklist", {"head": "His foreign backers", "items": ["United States", "France", "Belgium", "International lenders"]}, "Why did the world put up with it? Because Mobutu was a reliable Cold War ally. The United States, France and Belgium saw him as a bulwark against Soviet influence in Africa, and supported him with aid, loans and weapons."],
+      ["city", {"state": "normal", "seed": 12, "label": "Washington · 1970s – 1980s"}, "He helped American-backed rebels in neighbouring Angola, and was welcomed at the White House by several American presidents."],
+      ["army", {"planes": 1, "label": "Kolwezi · May 1978"}, "When rebels invaded the mining province of Shaba in 1977 and again in 1978, Moroccan, French and Belgian troops came to his rescue."]
+    ]},
+    { "name": "The fall", "lines": [
+      ["date", {"date": "24 April 1990", "place": "Zaire"}, "When the Cold War ended, his friends lost interest. In 1990, under pressure, he announced a return to multi-party politics, then manipulated the process for years."],
+      ["city", {"state": "fire", "seed": 8, "label": "Kinshasa · 1991 and 1993"}, "Unpaid soldiers rioted and looted Kinshasa in 1991, and again in 1993."],
+      ["people", {"n": 10, "pose": "walk", "label": "refugees · eastern Zaire · 1994"}, "In 1994, after the genocide in neighbouring Rwanda, more than a million Hutu refugees poured into eastern Zaire. Among them were many of the men who had carried out the killings."],
+      ["jungle", {"n": 8, "label": "the rebel advance · 1996 – 1997"}, "In 1996, Rwanda and Uganda backed a rebellion led by a veteran Congolese rebel, Laurent-Désiré Kabila. Zaire's unpaid army barely fought."],
+      ["date", {"date": "16 – 17 May 1997", "place": "Kinshasa"}, "Mobutu, by now seriously ill with prostate cancer, fled Kinshasa on the sixteenth of May 1997. Kabila's forces entered the next day, and renamed the country the Democratic Republic of the Congo."],
+      ["memorial", {"n": 30, "date": "Rabat · 7 September 1997"}, "Mobutu died in exile in Morocco on the seventh of September 1997, aged sixty-six."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["field", {"famine": 1, "label": "Congo · after 1997"}, "He left behind a state that barely functioned. Within a year, Congo was plunged into a new war that drew in armies from across the region."],
+      ["stat", {"value": "millions", "label": "estimated deaths in Congo's wars · figures disputed"}, "Surveys by the International Rescue Committee estimated that millions died, mostly from hunger and disease, though their figures have been disputed."],
+      ["people", {"n": 6, "pose": "look", "label": "Congo · today"}, "Some Congolese remember his rule with a certain nostalgia, for its relative order, and for building a sense of one nation across hundreds of ethnic groups."],
+      ["lesson", {"text": "Theft on the scale of a nation"}, "But the price of that unity was a country hollowed out from within. Mobutu showed how a ruler with powerful friends abroad could treat a nation's wealth as his own, and leave its people to fend for themselves."]
+    ]}
+  ]
+}

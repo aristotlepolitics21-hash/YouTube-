@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 24,
+  "title": "Francisco Franco",
+  "subtitle": "The general who won a civil war and ruled Spain for thirty-six years",
+  "say": {"Ferrol": "Feh-roll", "Guernica": "Gair-neeka", "Caudillo": "Cow-dee-yo", "Asturias": "As-too-ree-as", "Hendaye": "On-dye", "Juan Carlos": "Hwan Carlos", "Cuelgamuros": "Kwel-ga-mooros", "Carrero Blanco": "Ka-rairo Blanko", "Toledo": "Toh-lay-doh", "Ebro": "Ay-bro", "Catalan": "Catalan", "Picasso's": "Pi-kasso's", "Calvo Sotelo": "Calvo So-tay-lo", "José": "Ho-say"},
+  "package": {
+    "thumb_line": 15,
+    "thumb": ["WAR ON", "HIS PEOPLE"],
+    "intro": "Francisco Franco led the army revolt that plunged Spain into civil war in 1936, won it with help from Hitler and Mussolini, and ruled as dictator until his death in 1975. Tens of thousands of his opponents were executed, and Spain is still searching for the missing. This documentary tells his story and why Spaniards remain divided over it.",
+    "facts": ["Born 4 December 1892 in Ferrol, Galicia", "Became one of Europe's youngest generals in 1926, aged 33", "The military uprising against the Spanish Republic began on 17–18 July 1936", "German and Italian aircraft bombed Guernica on 26 April 1937", "Franco declared the Civil War over on 1 April 1939", "Historians estimate around 500,000 deaths in the war, and well over 100,000 killings behind the lines and in the post-war repression by Franco's side", "Died in Madrid on 20 November 1975, aged 82", "His remains were moved from the Valley of the Fallen on 24 October 2019"],
+    "sources": "Encyclopaedia Britannica, Paul Preston's Franco: A Biography and The Spanish Holocaust, Antony Beevor's The Battle for Spain, Hugh Thomas's The Spanish Civil War, Spain's Democratic Memory Law (2022).",
+    "hashtags": "#History #Documentary #Spain",
+    "tags": "francisco franco, franco documentary, spanish civil war, franco dictatorship, guernica, valley of the fallen, spanish history, fascism in spain, historical memory spain, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "FRANCISCO FRANCO", "sub": "The general who won a civil war and ruled Spain for 36 years", "art": "army", "artp": {"fire": 1, "night": 1}}, "In October 2019, a helicopter lifted off from a vast monument carved into a mountain outside Madrid. It carried the coffin of a man who had been buried there with full state honours almost forty-four years earlier."],
+      ["date", {"date": "24 October 2019", "place": "Valley of the Fallen · Spain"}, "Spain's government had decided that Francisco Franco, the dictator who ruled the country until 1975, should no longer lie in a state monument."],
+      ["stat", {"value": "~500,000", "label": "estimated deaths in the Spanish Civil War, 1936 – 1939"}, "The civil war he helped to start killed, by historians' estimates, around half a million people."],
+      ["stat", {"value": "100,000+", "label": "estimated killings by Franco's side away from the front"}, "Historians estimate that his side killed well over a hundred thousand people away from the battlefield, during the war and after it. Many still lie in unmarked graves."],
+      ["lesson", {"text": "Saviour of Spain, or its jailer?"}, "To his supporters, he saved Spain from communism and chaos. To his opponents, he was a dictator who made war on his own people. This is his story."]
+    ]},
+    { "name": "The soldier", "lines": [
+      ["date", {"date": "4 December 1892", "place": "Ferrol · Galicia"}, "Francisco Franco was born on the fourth of December 1892, in the naval town of Ferrol, in north-western Spain."],
+      ["bust", {"name": "Francisco Franco", "years": "1892 – 1975", "role": "Infantry officer, hardened in Spain's colonial war in Morocco.", "hair": "back", "stache": "thin", "coat": "military", "round": 1}, "He wanted to join the navy, like his father, but the naval academy had stopped taking new cadets. So at fourteen he went to the infantry academy at Toledo instead."],
+      ["army", {"label": "Morocco · 1912 – 1926"}, "In Spain's brutal colonial war in Morocco, he proved brave, ruthless and lucky. He survived a serious stomach wound, commanded the Spanish Foreign Legion, and at thirty-three became one of the youngest generals in Europe."]
+    ]},
+    { "name": "The Republic", "lines": [
+      ["ballot", {"value": "1931", "label": "the king leaves · Spain becomes a republic"}, "In 1931, after local elections went heavily against the monarchy in the cities, the king left Spain and a republic was declared. It brought sweeping reforms, and bitter conflict: left against right, Church against anticlericals, landowners against the landless."],
+      ["army", {"night": 1, "label": "Asturias · October 1934"}, "In 1934, when miners in Asturias rose in revolt, Franco helped direct a harsh suppression, using colonial troops brought over from Morocco."],
+      ["paper", {"mast": "MADRID", "head": "Popular Front wins election", "sub": "Generals plot in secret", "date": "February 1936"}, "In February 1936, a left-wing coalition, the Popular Front, narrowly won elections. Distrusting Franco, the new government posted him far away, to the Canary Islands. Right-wing generals began to plot a coup."],
+      ["city", {"state": "normal", "night": 1, "seed": 2, "label": "Madrid · 13 July 1936"}, "On the thirteenth of July 1936, a leading right-wing politician, José Calvo Sotelo, was murdered in Madrid by left-wing police officers and militants. Four days later, the plotters struck."]
+    ]},
+    { "name": "Civil war", "lines": [
+      ["date", {"date": "17 – 18 July 1936", "place": "Spanish Morocco · Canary Islands"}, "On the seventeenth and eighteenth of July 1936, the army rose against the Republic. Franco flew from the Canaries to Morocco to take command of Spain's toughest troops, the Army of Africa."],
+      ["army", {"planes": 1, "label": "Strait of Gibraltar · 1936"}, "The coup failed in Madrid and Barcelona, and Spain split in two. German and Italian planes ferried Franco's troops across to the mainland. The coup had become a civil war."],
+      ["bust", {"name": "Generalísimo Franco", "years": "1936", "role": "Head of state of Nationalist Spain. Took the title Caudillo.", "hair": "back", "stache": "thin", "coat": "military", "hat": "peak", "round": 1, "sash": "#b8323a", "medals": 3}, "In the autumn of 1936, his fellow generals made him supreme commander and head of state. He took the title Caudillo, meaning leader."],
+      ["city", {"state": "fire", "planes": 1, "label": "Guernica · 26 April 1937"}, "Hitler and Mussolini sent troops, aircraft and weapons. The Soviet Union aided the Republic. In April 1937, German and Italian bombers destroyed the Basque town of Guernica, and Picasso's painting made it a symbol of the war."],
+      ["podium", {"night": 0, "banners": 2, "label": "International Brigades · 1936 – 1938"}, "Around thirty-five thousand foreign volunteers came to fight for the Republic in the International Brigades, from Britain, France, the United States and dozens of other countries."],
+      ["wall", {"night": 1, "label": "Behind the lines · 1936 – 1939"}, "Behind the lines, both sides killed civilians. In Franco's zone, the killing was systematic: trade unionists, teachers, left-wing politicians and suspected sympathisers were taken from their homes and shot."],
+      ["people", {"n": 7, "pose": "mourn", "label": "Republican zone · 1936"}, "In the Republican zone, revolutionary militias also killed tens of thousands, among them nearly seven thousand priests, monks and nuns."],
+      ["army", {"tanks": 1, "fire": 1, "dir": -1, "label": "Battle of the Ebro · 1938"}, "Madrid held out for nearly three years. But the Republic was divided and outgunned, and in 1938 its last great offensive, on the river Ebro, was ground down."],
+      ["paper", {"mast": "BURGOS", "head": "The war is over", "sub": "Franco's forces enter Madrid", "date": "1 April 1939"}, "Madrid fell at the end of March 1939. On the first of April, Franco declared the war over."]
+    ]},
+    { "name": "Victory without peace", "lines": [
+      ["people", {"n": 9, "pose": "walk", "label": "The flight to France · early 1939"}, "Nearly half a million Republicans fled across the border into France that winter."],
+      ["camp", {"night": 0, "label": "Prisons and camps · 1939 – 1940s"}, "For those who stayed, there was no reconciliation. Hundreds of thousands passed through prisons and camps, and historians estimate that around twenty thousand people were executed after the war ended."],
+      ["decree", {"title": "Law of Political Responsibilities", "lines": ["Republican supporters punished", "Property confiscated", "Backdated to October 1934"], "date": "9 February 1939"}, "A law made it an offence, backdated to 1934, to have supported the Republic. Political parties and trade unions were banned, and the Catalan and Basque languages were driven out of public life."],
+      ["field", {"n": 6, "guard": 1, "label": "Valley of the Fallen · 1940 – 1958"}, "Republican prisoners were put to work on vast building projects, among them the Valley of the Fallen, the basilica and giant cross near Madrid where Franco himself would be buried."]
+    ]},
+    { "name": "The world war", "lines": [
+      ["versus", {"left": "Franco", "right": "Hitler", "mid": "Hendaye 1940"}, "In October 1940, Franco met Hitler at Hendaye, on the French border. He wanted French colonies in Africa as the price for joining the war. Hitler would not pay it, and Spain stayed out."],
+      ["army", {"night": 1, "label": "The Blue Division · 1941 – 1943"}, "Still, Franco sent a division of Spanish volunteers to fight for Germany against the Soviet Union. When the Axis began to lose, he presented himself to the West as a reliable anti-communist."],
+      ["decree", {"title": "Pact of Madrid", "lines": ["US military bases in Spain", "American aid for Franco"], "date": "1953"}, "After 1945, Spain was shunned. Then the Cold War rescued him. In 1953 the United States signed a deal for military bases in Spain, and two years later Spain joined the United Nations."]
+    ]},
+    { "name": "The long dictatorship", "lines": [
+      ["chart", {"title": "Spain's economy", "x": "1950 – 1975", "y": "output", "points": [[0, 0.1], [0.36, 0.2], [0.7, 0.55], [1, 0.9]], "notes": [[0.36, 0.2, "1959 · Stabilisation Plan"]]}, "In 1959, technocrat ministers opened up the economy. Foreign investment and tourists poured in, and in the 1960s Spain grew faster than almost any country in Europe."],
+      ["city", {"state": "normal", "seed": 5, "label": "The Spanish coast · 1960s"}, "Package holidays brought sun-seekers from all over Europe. By the early 1970s, more than thirty million tourists a year were visiting Spain."],
+      ["bust", {"name": "The Caudillo", "years": "1960s – 1975", "role": "Head of state for life. Named Juan Carlos his successor in 1969.", "hair": "back", "hairc": "#9a9a92", "stache": "thin", "coat": "military", "round": 1}, "But the dictatorship barely softened. Strikes were illegal, the press was censored, and the Church shaped schools and morals. In 1969, he named Juan Carlos, grandson of the last king, as his successor."],
+      ["checklist", {"head": "Women under Franco", "items": ["Divorce abolished", "Husband's permission to work", "Husband's permission to travel"]}, "Women lost the rights the Republic had given them. Divorce was abolished, and a married woman needed her husband's permission to take a job, open a bank account or travel."],
+      ["paper", {"mast": "MADRID", "head": "Prime minister killed by bomb", "sub": "Carrero Blanco assassinated by ETA", "date": "20 December 1973"}, "Violent opposition grew. In 1973, the Basque separatist group ETA killed his prime minister and closest ally, Luis Carrero Blanco, with a bomb in Madrid."],
+      ["wall", {"night": 1, "label": "27 September 1975"}, "Even in his final weeks, the regime kept killing. In September 1975, five men convicted of killing police officers were executed by firing squad, despite appeals from across Europe and from the Pope."]
+    ]},
+    { "name": "Death and democracy", "lines": [
+      ["date", {"date": "20 November 1975", "place": "Madrid · aged 82"}, "Franco died on the twentieth of November 1975, after a long illness. He was eighty-two."],
+      ["ballot", {"value": "88%", "label": "voted yes to the new constitution · 6 December 1978"}, "To the surprise of many, Juan Carlos steered Spain to democracy. In 1978, Spaniards approved a democratic constitution by a huge margin."],
+      ["decree", {"title": "Amnesty Law", "lines": ["Political crimes before 1977", "will not be prosecuted"], "date": "October 1977"}, "But the price of a peaceful transition was silence. A 1977 amnesty law meant that no one was ever put on trial for the crimes of the dictatorship."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["people", {"n": 8, "pose": "look", "label": "Exhumations · 2000 – today"}, "Since 2000, families have opened mass graves across Spain, searching for their relatives. Thousands of bodies have been recovered, but many tens of thousands of victims are still missing."],
+      ["decree", {"title": "Democratic Memory Law", "lines": ["The Franco regime condemned", "The state to search for the missing"], "date": "2022"}, "In 2022, a democratic memory law formally condemned the regime and made the search for the missing a duty of the state. The monument where Franco had lain was renamed the Valley of Cuelgamuros."],
+      ["quote", {"text": "He saved Spain from communism and left it prosperous and at peace.", "who": "summary of his admirers' case"}, "Some Spaniards still defend him, arguing that he saved the country from revolution, kept it out of the Second World War, and left it richer than he found it. Spain remains divided over how to remember him."],
+      ["lesson", {"text": "Order is not the same as peace."}, "Franco gave Spain thirty-six years of order. But it was the order of the victors over the defeated, and Spain is still digging up the cost."],
+      ["memorial", {"n": 500, "date": "The missing of the Civil War"}, "In villages across the country, families are still waiting to bury their dead, more than eighty years after the war ended."]
+    ]}
+  ]
+}

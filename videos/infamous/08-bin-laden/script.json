@@ -1,0 +1,76 @@
+{
+  "series": "Infamous",
+  "episode": 8,
+  "title": "Osama bin Laden",
+  "subtitle": "The man behind the September 11th attacks",
+  "say": {"Osama": "Oh-sahma", "bin Laden": "bin Lahden", "Riyadh": "Ree-yahd", "Jeddah": "Jedda", "mujahideen": "moojah-hideen", "Abdullah Azzam": "Abdoolah Azzahm", "Peshawar": "Pesh-ahwar", "al-Qaeda": "al-Kyda", "Qaeda": "Kyda", "Khalid Sheikh Mohammed": "Kahlid Shake Mohammed", "Dar es Salaam": "Dahr es Salahm", "Aden": "Ayden", "Abbottabad": "Abbot-abad", "Ayman al-Zawahiri": "Ayman al-Zawah-heeri", "Zawahiri": "Zawah-heeri", "Guantánamo": "Gwahn-tahnamo", "Kabul": "Kahbul"},
+  "package": {
+    "thumb_line": 32,
+    "thumb": ["THE MOST", "WANTED"],
+    "intro": "On 11 September 2001, al-Qaeda hijackers killed 2,977 people in the United States. This documentary tells how Osama bin Laden, the son of a Saudi construction magnate, built a terrorist network, declared war on America, and was finally found and killed in Pakistan in 2011, and what his attacks set in motion.",
+    "facts": ["Born in Riyadh, Saudi Arabia, in 1957", "Founded al-Qaeda with a small group of followers in 1988", "Stripped of Saudi citizenship in 1994; moved from Sudan to Afghanistan in 1996", "Signed a February 1998 statement calling on Muslims to kill Americans and their allies, civilians included", "Al-Qaeda bombed the US embassies in Kenya and Tanzania on 7 August 1998, killing 224 people", "The 11 September 2001 attacks killed 2,977 people, not counting the 19 hijackers", "Escaped US and Afghan forces at Tora Bora in December 2001", "Killed by US special forces in Abbottabad, Pakistan, on 2 May 2011 (local time)"],
+    "sources": "The 9/11 Commission Report (2004), Encyclopaedia Britannica, Lawrence Wright's The Looming Tower, Peter Bergen's The Rise and Fall of Osama bin Laden, the National September 11 Memorial & Museum, Brown University's Costs of War project, the US Senate Intelligence Committee report on CIA detention and interrogation (2014).",
+    "hashtags": "#History #Documentary #911",
+    "tags": "osama bin laden, bin laden documentary, al qaeda, september 11, 9/11 attacks, war on terror, abbottabad raid, afghanistan war, terrorism history, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "OSAMA BIN LADEN", "sub": "The man behind the September 11th attacks", "art": "city", "artp": {"towers": 1}}, "At eight forty-six on the morning of Tuesday the eleventh of September 2001, a hijacked passenger jet flew into the North Tower of the World Trade Center in New York."],
+      ["city", {"towers": 1, "planes": 1, "label": "New York · 11 September 2001"}, "Seventeen minutes later, a second plane hit the South Tower. A third struck the Pentagon, near Washington. A fourth crashed in a field in Pennsylvania after its passengers fought back."],
+      ["stat", {"value": "2,977", "label": "people killed on 11 September 2001, not counting the hijackers"}, "Two thousand nine hundred and seventy-seven people were killed. It remains the deadliest terrorist attack in history."],
+      ["people", {"n": 8, "pose": "mourn", "label": "New York · September 2001"}, "The attacks were the work of al-Qaeda, a network led by a tall, soft-spoken son of one of Saudi Arabia's richest families: Osama bin Laden."],
+      ["lesson", {"text": "How does a rich man's son declare war on America?"}, "His attacks set off two decades of war. This is how he came to declare war on the United States, and how it ended."]
+    ]},
+    { "name": "A builder's son", "lines": [
+      ["date", {"date": "1957", "place": "Riyadh · Saudi Arabia"}, "Osama bin Laden was born in Riyadh in 1957. His father, Mohammed bin Laden, had come from Yemen as a poor labourer and built the kingdom's biggest construction company."],
+      ["bust", {"name": "Osama bin Laden", "years": "1957 – 2011", "role": "Son of a Saudi construction magnate. Devout from his teens.", "hair": "full", "beard": "full", "coat": "tunic", "hat": "kufi"}, "Osama was one of more than fifty children. His parents separated when he was small, and his father died in a plane crash when Osama was about ten."],
+      ["city", {"state": "normal", "seed": 5, "label": "Jeddah · 1970s"}, "He grew up in Jeddah, a shy and devout teenager. At university he studied economics, and was drawn to preachers who called for a stricter, more political Islam."],
+      ["army", {"tanks": 1, "dir": -1, "label": "Soviet invasion of Afghanistan · December 1979"}, "In December 1979, the Soviet Union invaded Afghanistan. Across the Muslim world, the Afghan resistance fighters, the mujahideen, became a cause."],
+      ["bust", {"name": "Abdullah Azzam", "years": "1941 – 1989", "role": "Palestinian cleric. Recruited Arab volunteers for the Afghan war.", "beard": "full", "hair": "crop", "coat": "robe"}, "Bin Laden went to Pakistan to help. With a Palestinian cleric, Abdullah Azzam, he set up an office in Peshawar to recruit and fund Arab volunteers to fight the Soviets."]
+    ]},
+    { "name": "The Base", "lines": [
+      ["jungle", {"n": 5, "label": "Afghanistan · 1980s"}, "The United States and Saudi Arabia poured billions into the Afghan resistance, through Pakistan. There is no evidence that American money went to bin Laden himself, but his Arab volunteers fought in the same war."],
+      ["bunker", {"n": 5, "label": "Peshawar · August 1988"}, "In 1988, as the Soviets prepared to withdraw, bin Laden and a small circle of followers founded a new organisation. They called it al-Qaeda, the Base."],
+      ["date", {"date": "24 November 1989", "place": "Peshawar · Pakistan"}, "In November 1989, Abdullah Azzam was killed by a roadside bomb in Peshawar. His killers were never identified. Bin Laden was now the best-known leader of the Arab volunteers."],
+      ["army", {"tanks": 1, "planes": 1, "label": "Saudi Arabia · 1990"}, "In 1990, Iraq invaded Kuwait. Bin Laden offered to defend Saudi Arabia with his veterans. Instead, the Saudi king invited in hundreds of thousands of American troops. Bin Laden was outraged."],
+      ["decree", {"title": "Citizenship revoked", "lines": ["Osama bin Laden", "Kingdom of Saudi Arabia"], "date": "1994"}, "He moved to Sudan and turned on the Saudi royal family. In 1994, Saudi Arabia stripped him of his citizenship, and his family publicly disowned him."],
+      ["people", {"n": 5, "pose": "walk", "label": "Sudan to Afghanistan · 1996"}, "Under American and Saudi pressure, Sudan expelled him in 1996. He flew to Afghanistan, where the Taliban, a hardline Islamist movement, were taking power. They gave him shelter."]
+    ]},
+    { "name": "War on America", "lines": [
+      ["bust", {"name": "Osama bin Laden", "years": "1998", "role": "Leader of al-Qaeda. Declared war on the United States.", "beard": "long", "hat": "turban", "coat": "khaki"}, "From Afghanistan, he declared war on the United States, demanding that American troops leave Saudi Arabia and that America end its support for Israel."],
+      ["quote", {"text": "The ruling to kill the Americans and their allies, civilians and military, is an individual duty for every Muslim who can do it...", "who": "Statement signed by bin Laden and others, February 1998"}, "In February 1998 he went further. A statement he signed with other militant leaders declared it the duty of every Muslim to kill Americans and their allies, civilians included."],
+      ["city", {"state": "fire", "seed": 7, "label": "Nairobi · Dar es Salaam · 7 August 1998"}, "Six months later, al-Qaeda truck bombs struck the American embassies in Kenya and Tanzania within minutes of each other. Two hundred and twenty-four people were killed, most of them Africans."],
+      ["army", {"planes": 1, "fire": 1, "label": "US missile strikes · 20 August 1998"}, "Thirteen days later, the United States fired cruise missiles at his camps in Afghanistan and at a factory in Sudan. He was not hit."],
+      ["paper", {"mast": "WORLD NEWS", "head": "Bomb attack on USS Cole", "sub": "17 sailors killed", "date": "12 October 2000"}, "In October 2000, suicide bombers in a small boat blew a hole in an American warship, the USS Cole, in the port of Aden in Yemen. Seventeen sailors died."]
+    ]},
+    { "name": "The plot", "lines": [
+      ["web", {"nodes": [["Bin Laden", 0.5, 0.18, 1], ["Khalid Sheikh Mohammed", 0.5, 0.48, 0], ["Hamburg cell", 0.25, 0.8, 0], ["Flight schools · USA", 0.75, 0.8, 0]], "links": [[0, 1], [1, 2], [1, 3]], "label": "the 9/11 plot"}, "Meanwhile a bigger plan was taking shape. Its main architect, Khalid Sheikh Mohammed, proposed using hijacked airliners as missiles. Bin Laden approved it and helped choose the hijackers."],
+      ["icons", {"total": 19, "per": 1, "red": 15, "cols": 19, "label": "19 hijackers · 15 of them Saudi citizens"}, "Nineteen men took part, fifteen of them Saudi citizens. Several learned to fly at flight schools in the United States."],
+      ["inquiry", {"label": "The 9/11 Commission · 2004"}, "In 2004, an independent American commission concluded that the intelligence agencies had missed several chances to stop the plot, and had failed to share what they knew."],
+      ["tv", {"text": "11 SEPTEMBER 2001"}, "On the morning itself, the world watched on live television as the towers burned and collapsed. Among the dead were three hundred and forty-three New York firefighters."],
+      ["bunker", {"n": 3, "night": 1, "label": "Afghanistan · late 2001"}, "At first, bin Laden denied involvement. Later he praised the attacks, and in a video released in 2004 he said openly that he had ordered them."]
+    ]},
+    { "name": "The hunt", "lines": [
+      ["army", {"planes": 1, "tanks": 1, "label": "Afghanistan · 7 October 2001"}, "On the seventh of October 2001, the United States and its allies attacked Afghanistan. Within weeks, the Taliban government had fallen."],
+      ["army", {"fire": 1, "planes": 1, "night": 1, "label": "Tora Bora · December 2001"}, "In December, American and Afghan forces cornered bin Laden in the mountain caves of Tora Bora, near the Pakistani border. He escaped, probably into Pakistan."],
+      ["timeline", {"events": [["Bali · 2002", 0.12], ["Madrid · 2004", 0.42], ["London · 2005", 0.72]]}, "He became the world's most wanted man, with a twenty-five million dollar reward on his head. Groups linked to or inspired by al-Qaeda carried out bombings in Bali, Madrid, London and elsewhere."],
+      ["army", {"tanks": 1, "label": "Iraq · March 2003"}, "In 2003, the United States also invaded Iraq. The 9/11 Commission had found no evidence that Saddam Hussein's regime had worked with al-Qaeda on any attack, but the war gave the movement a new battlefield."],
+      ["cell", {"label": "Guantánamo Bay · from 2002"}, "The hunt also led America into practices it later regretted. Suspects were held without trial at Guantánamo Bay, and a 2014 Senate report condemned the CIA's brutal interrogations. Khalid Sheikh Mohammed, captured in 2003, had still not faced trial as of 2025."],
+      ["stat", {"value": "900,000+", "label": "direct deaths in the post-9/11 wars · Costs of War project"}, "The wars launched after September the eleventh cost far more lives than the attacks themselves. Brown University's Costs of War project estimates more than nine hundred thousand direct deaths."]
+    ]},
+    { "name": "Abbottabad", "lines": [
+      ["city", {"state": "normal", "seed": 12, "night": 1, "label": "Abbottabad · Pakistan"}, "For years, bin Laden seemed to have vanished. American intelligence eventually traced one of his trusted couriers to a walled compound in Abbottabad, a Pakistani garrison town, not far from the country's main military academy."],
+      ["date", {"date": "2 May 2011", "place": "Abbottabad · Pakistan"}, "Shortly after midnight on the second of May 2011, American special forces flew in by helicopter from Afghanistan. In a raid lasting about forty minutes, bin Laden was shot dead."],
+      ["paper", {"mast": "WORLD NEWS", "head": "Bin Laden killed", "sub": "US forces raid compound in Pakistan", "date": "2 May 2011"}, "His body was buried at sea from an American aircraft carrier within a day. Pakistan denied knowing he had been living there."],
+      ["people", {"n": 8, "pose": "up", "label": "May 2011"}, "Crowds gathered outside the White House and at the site of the World Trade Center. Elsewhere, many asked how the world's most wanted man had hidden in plain sight for so long."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["checklist", {"head": "After bin Laden", "items": ["Zawahiri leads al-Qaeda", "Islamic State rises", "Zawahiri killed, 2022"]}, "Al-Qaeda outlived him. His deputy, Ayman al-Zawahiri, took over, until an American drone killed him in Kabul in 2022. One of al-Qaeda's offshoots grew into the so-called Islamic State."],
+      ["date", {"date": "15 August 2021", "place": "Kabul · Afghanistan"}, "And in August 2021, twenty years after they were driven out, the Taliban took power in Afghanistan again."],
+      ["people", {"n": 8, "pose": "mourn", "label": "the victims"}, "Bin Laden claimed to be defending Muslims. Yet most of the people killed by al-Qaeda and its offshoots were Muslims, in Iraq, Afghanistan, Pakistan, Yemen and beyond."],
+      ["checklist", {"head": "What changed", "items": ["Airport security", "Mass surveillance", "Two long wars"]}, "His attacks also changed daily life far from any battlefield: airport security, mass surveillance, and a long argument in democracies about how much freedom to trade for safety."],
+      ["lesson", {"text": "He wanted to provoke. In part, he succeeded."}, "He said openly that he hoped to bleed America into bankruptcy through long wars in Muslim lands. In part, he succeeded."],
+      ["memorial", {"n": 600, "date": "11 September 2001"}, "But he never won the following he wanted. What he left behind were graves on every side, and the names that are read aloud in New York every September."]
+    ]}
+  ]
+}

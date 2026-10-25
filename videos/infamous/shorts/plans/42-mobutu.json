@@ -1,0 +1,356 @@
+{
+ "id": "42-mobutu",
+ "say": {
+  "Mobutu": "Moh boo too",
+  "Lumumba": "Loo moom ba"
+ },
+ "scenes": [
+  {
+   "text": "32 YEARS. THEN HE FLEW.",
+   "red": [
+    "FLEW"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hat": "leopard",
+        "glasses": "square",
+        "coat": "mao"
+       },
+       "pose": "sit",
+       "at": [
+        0,
+        -0.6
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "state": "fire",
+      "label": "May 1997"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "jungle",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "n": 3,
+      "label": "copper · cobalt · diamonds"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.38
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hat": "leopard",
+        "glasses": "square",
+        "coat": "mao"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE HELPED DELIVER HIM.",
+   "red": [
+    "DELIVER"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "podium",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "night": 0,
+      "cheer": 1,
+      "banners": 2,
+      "bannerc": "#3a5a8a",
+      "label": "Independence · 30 June 1960"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "low",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "glasses": "square",
+        "coat": "suit",
+        "tie": "#2b2b30"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "chairs:1"
+      ],
+      "deep": 1,
+      "light": "bulb",
+      "amb": 0.5,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze",
+      "smash"
+     ],
+     "circle": [
+      0.5,
+      0.45
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "glasses": "square",
+        "coat": "suit",
+        "tie": "#2b2b30"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE SAID FIVE YEARS.",
+   "red": [
+    "FIVE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "timeline",
+     "fx": [
+      "ramp",
+      "punch"
+     ],
+     "p": {
+      "events": [
+       [
+        "1965 · seizes power",
+        0
+       ],
+       [
+        "1970 · five years up",
+        0.16
+       ],
+       [
+        "1997 · still in power",
+        1
+       ]
+      ]
+     }
+    },
+    {
+     "d": 4,
+     "scene": "tv",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "text": "The evening news · Zaire"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "throne",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "label": "Gbadolite · 'Versailles of the jungle'"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "counter",
+     "fx": [
+      "freeze",
+      "smash"
+     ],
+     "circle": [
+      0.5,
+      0.43
+     ],
+     "p": {
+      "n": 6,
+      "label": "state workers, unpaid for months"
+     }
+    }
+   ]
+  },
+  {
+   "text": "UP TO $5 BILLION, ESTIMATED.",
+   "red": [
+    "BILLION"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "versus",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "left": "WHITE HOUSE",
+      "right": "MOBUTU",
+      "mid": "ALLY",
+      "lcoat": "suit",
+      "rcoat": "mao"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "web",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "nodes": [
+       [
+        "Washington",
+        0.2,
+        0.3,
+        0
+       ],
+       [
+        "Paris",
+        0.45,
+        0.2,
+        0
+       ],
+       [
+        "Brussels",
+        0.6,
+        0.15,
+        0
+       ],
+       [
+        "Kinshasa",
+        0.55,
+        0.72,
+        1
+       ]
+      ],
+      "links": [
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        3
+       ]
+      ],
+      "label": "Cold War friends"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "punch",
+      "shake"
+     ],
+     "p": {
+      "value": "$5,000,000,000",
+      "label": "embezzled, up to · Transparency International estimate"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "state": "fire",
+      "planes": 1,
+      "label": "Kinshasa · May 1997"
+     }
+    }
+   ]
+  }
+ ]
+}

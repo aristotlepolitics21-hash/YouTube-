@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 39,
+  "title": "Maximilien Robespierre",
+  "subtitle": "The Incorruptible, and the Reign of Terror",
+  "say": {"Robespierre": "Rohbspyair", "Robespierre's": "Rohbspyair's", "Maximilien": "Maxeemilyan", "Arras": "Arrass", "Lycée": "Leesay", "Louis-le-Grand": "Lwee luh Grahn", "Jacobin": "Jackobin", "Jacobins": "Jackobins", "Girondins": "Jirondins", "Vendée": "Vonday", "Danton": "Dontawn", "Danton's": "Dontawn's", "Desmoulins": "Day moolan", "Desmoulins's": "Day moolan's", "Hébert": "Ay bair", "Saint-Just": "San Zhoost", "Augustin": "Oh goostan", "Thermidor": "Termeedor", "Prairial": "Prairee al", "Hôtel de Ville": "Oh tel duh Veel", "Montreuil": "Montroy", "Marie Antoinette": "Marie Antwanet", "Tuileries": "Tweeluhree", "Bastille": "Basteel", "Estates-General": "Estates General", "Versailles": "Vair sigh"},
+  "package": {
+    "thumb_line": 27,
+    "thumb": ["THE TERROR", "TURNS"],
+    "intro": "Maximilien Robespierre once argued for abolishing the death penalty. A few years later, he was the best-known face of the Reign of Terror, until the Terror consumed him too. This documentary tells how it happened, and why historians still argue about how much of it was his.",
+    "facts": ["Born 6 May 1758 in Arras, northern France", "Elected to the Estates-General in 1789 as a deputy of the Third Estate", "Argued in the National Assembly in 1791 for abolishing the death penalty", "Told the Convention on 3 December 1792 that 'Louis must die, so that the country may live'; Louis XVI was executed on 21 January 1793", "Joined the twelve-member Committee of Public Safety on 27 July 1793", "About 17,000 people were officially sentenced to death during the Terror; many more died in prison or without trial", "The Law of 22 Prairial (10 June 1794) removed the right to defence counsel before the Revolutionary Tribunal", "Arrested on 9 Thermidor (27 July 1794) and guillotined on 28 July 1794, aged thirty-six"],
+    "sources": "Encyclopaedia Britannica; Peter McPhee, Robespierre: A Revolutionary Life (2012); Ruth Scurr, Fatal Purity (2006); William Doyle, The Oxford History of the French Revolution; Donald Greer, The Incidence of the Terror during the French Revolution (1935).",
+    "hashtags": "#History #Documentary #FrenchRevolution",
+    "tags": "robespierre, maximilien robespierre, reign of terror, french revolution, guillotine, committee of public safety, jacobins, danton, thermidor, french history, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "ROBESPIERRE", "sub": "The Incorruptible, and the Reign of Terror", "art": "people", "artp": {"n": 12, "night": 1}}, "On the evening of the twenty-eighth of July 1794, a cart rolled through the streets of Paris towards the guillotine. In it sat a slight man of thirty-six, his shattered jaw bound with a bandage."],
+      ["people", {"n": 10, "pose": "up", "label": "Paris · 28 July 1794"}, "Crowds lined the route, and many cheered. The prisoner was Maximilien Robespierre. Days earlier, he had been one of the most powerful men in France."],
+      ["stat", {"value": "~17,000", "label": "official death sentences in France · 1793 – 1794"}, "During the Reign of Terror, around seventeen thousand people were officially sentenced to death in France. Many thousands more died in prison, or were killed without any trial."],
+      ["lesson", {"text": "From opponent of the death penalty to face of the Terror"}, "Yet this was a man who had once argued for abolishing the death penalty. This is how he became the face of the Terror, and why historians still argue about how much of it was his."]
+    ]},
+    { "name": "The boy from Arras", "lines": [
+      ["date", {"date": "6 May 1758", "place": "Arras · northern France"}, "Maximilien Robespierre was born in Arras, in northern France, on the sixth of May 1758. His mother died when he was six, and his father soon abandoned the family."],
+      ["bust", {"name": "Maximilien Robespierre", "years": "1758 – 1794", "role": "Scholarship boy, then a lawyer in Arras. Neat, earnest and serious.", "hair": "wig", "coat": "suit", "tie": 0}, "Raised by relatives, he was a serious, studious boy, and won a scholarship to one of the best schools in Paris, the Lycée Louis-le-Grand."],
+      ["throne", {"label": "Louis XVI · 1775"}, "In 1775, chosen as one of the school's best pupils, he read out a Latin address in honour of the new king, Louis the Sixteenth."],
+      ["inquiry", {"label": "the courts of Arras · 1780s"}, "He went home to Arras and became a lawyer, with a reputation for taking on the cases of poor clients."]
+    ]},
+    { "name": "The Incorruptible", "lines": [
+      ["date", {"date": "May 1789", "place": "Versailles · the Estates-General"}, "In 1789, with France bankrupt, the king summoned the Estates-General, an old assembly of clergy, nobles and commoners. Robespierre was elected to represent the commoners of his region."],
+      ["city", {"state": "fire", "seed": 5, "label": "the Bastille · 14 July 1789"}, "That summer, Parisians stormed the Bastille fortress. The Revolution had begun."],
+      ["podium", {"night": 1, "banners": 0, "label": "the Jacobin Club · Paris"}, "In the new National Assembly, and at the Jacobin Club, a political society in Paris, Robespierre became known as an uncompromising democrat."],
+      ["checklist", {"head": "Robespierre argued for", "items": ["The vote for all men", "Rights for Jews", "Rights for free people of colour", "An end to the death penalty"]}, "He argued for the vote for all men, not just the wealthy, and for equal rights for Jews and free people of colour. In 1791, he called for the death penalty to be abolished."],
+      ["lesson", {"text": "'The Incorruptible'"}, "He lived modestly, took no bribes, and was nicknamed the Incorruptible. His admirers loved his purity. His enemies found it chilling."],
+      ["army", {"era": "musket", "label": "war with Austria · April 1792"}, "In 1792, he opposed going to war with Austria, warning that no one loves armed missionaries. He lost the argument, and France went to war."]
+    ]},
+    { "name": "The king must die", "lines": [
+      ["cell", {"night": 1, "label": "Paris · August – September 1792"}, "That August, crowds stormed the royal palace and the monarchy fell. In September, more than a thousand prisoners were murdered in the jails of Paris."],
+      ["quote", {"text": "Louis must die, so that the country may live.", "who": "Robespierre to the National Convention, 3 December 1792"}, "Robespierre was elected to the new National Convention. When it put the king on trial, he argued there should be no trial at all. Louis must die, he said, so that the country may live."],
+      ["paper", {"mast": "PARIS", "head": "The king is executed", "sub": "Louis Capet guillotined", "date": "21 January 1793"}, "The king was guillotined on the twenty-first of January 1793."]
+    ]},
+    { "name": "The Committee", "lines": [
+      ["army", {"era": "musket", "fire": 1, "label": "1793 · war and civil war"}, "By the spring of 1793, France was at war with most of Europe, and rebellions had broken out in the west and in several major cities."],
+      ["wall", {"night": 1, "label": "the Girondins · 1793"}, "In June, the Convention expelled the Girondins, the moderate faction that had rivalled Robespierre's Jacobins. Many of their leaders were later executed."],
+      ["decree", {"title": "Committee of Public Safety", "lines": ["Twelve members", "Robespierre joins", "27 July 1793"], "date": "1793 – 1794"}, "In July 1793, Robespierre joined the Committee of Public Safety, a body of twelve men that became, in effect, the government of France. He was not a dictator, but he was its most famous voice."],
+      ["bust", {"name": "Robespierre", "years": "1793 – 1794", "role": "Committee of Public Safety. The voice of the Revolutionary government.", "hair": "wig", "coat": "suit", "tie": 0, "glasses": "round", "frown": 1}, "Fastidious and austere, he still powdered his hair in the old style. He saw the Republic as a struggle of virtue against its enemies, and he saw enemies everywhere."]
+    ]},
+    { "name": "The Terror", "lines": [
+      ["decree", {"title": "Law of Suspects", "lines": ["Arrest of anyone suspected", "of hostility to the Revolution"], "date": "17 September 1793"}, "That September, the Law of Suspects allowed the arrest of almost anyone thought hostile to the Revolution. Historians estimate that hundreds of thousands were imprisoned."],
+      ["inquiry", {"label": "the Revolutionary Tribunal · Paris"}, "In Paris, the Revolutionary Tribunal tried suspects in hearings that grew ever shorter. The former queen, Marie Antoinette, was executed in October."],
+      ["quote", {"text": "Terror is nothing other than justice, prompt, severe, inflexible.", "who": "Robespierre to the Convention, 5 February 1794"}, "Robespierre defended it openly. Terror, he told the Convention, is nothing other than justice, prompt, severe and inflexible. It was, he said, an emanation of virtue."],
+      ["field", {"village": 1, "famine": 1, "label": "the Vendée · 1793 – 1794"}, "The worst killing was in the provinces. In the Vendée, in western France, historians estimate that the war against a royalist uprising left well over a hundred thousand people dead, many of them civilians."]
+    ]},
+    { "name": "Friends and enemies", "lines": [
+      ["bust", {"name": "Georges Danton", "years": "1759 – 1794", "role": "Revolutionary leader. By 1794, he wanted the Terror eased.", "hair": "wild", "coat": "suit", "tie": 0, "round": 1}, "By early 1794, some revolutionaries wanted the Terror to slow down. Their leading figure was Georges Danton, a hero of 1792."],
+      ["web", {"nodes": [["Robespierre", 0.5, 0.2, 1], ["Hébert", 0.2, 0.7, 0], ["Danton", 0.5, 0.8, 0], ["Desmoulins", 0.8, 0.7, 0]], "links": [[0, 1], [0, 2], [0, 3]], "label": "spring 1794"}, "The Committee struck first at the radicals around the journalist Jacques Hébert, and then at Danton's moderates. Among them was Camille Desmoulins, Robespierre's old school friend."],
+      ["wall", {"night": 1, "label": "5 April 1794"}, "Danton and Desmoulins were guillotined in April 1794. Robespierre had been a witness at Desmoulins's wedding."],
+      ["podium", {"night": 0, "cheer": 1, "banners": 0, "label": "Festival of the Supreme Being · 8 June 1794"}, "In June, Robespierre presided over the Festival of the Supreme Being, a vast ceremony for a new civic religion he had championed. Some colleagues mocked it, and wondered if he saw himself as its high priest."],
+      ["decree", {"title": "Law of 22 Prairial", "lines": ["No defence lawyers", "Witnesses optional", "Two verdicts: acquittal or death"], "date": "10 June 1794"}, "Two days later came the Law of Twenty-Two Prairial, backed by Robespierre. It removed the right to a defence lawyer, and left the tribunal only two verdicts: acquittal or death."],
+      ["stat", {"value": "1,000+", "label": "guillotined in Paris · 10 June – 27 July 1794"}, "In the seven weeks that followed, known as the Great Terror, well over a thousand people were guillotined in Paris alone."]
+    ]},
+    { "name": "Thermidor", "lines": [
+      ["army", {"era": "musket", "label": "Fleurus · 26 June 1794"}, "Meanwhile, the war had turned. In June 1794, French armies won a major victory at Fleurus. To many deputies, the emergency that had justified the Terror seemed to be over."],
+      ["podium", {"night": 1, "banners": 0, "label": "the Convention · 26 July 1794"}, "On the twenty-sixth of July, he gave a long speech warning of traitors in the Convention, but refused to name them. Every deputy with something to fear assumed he meant them."],
+      ["versus", {"left": "ROBESPIERRE", "right": "CONVENTION", "mid": "9 THERMIDOR", "red": "l"}, "The next day, the ninth of Thermidor in the revolutionary calendar, they shouted him down and voted for his arrest."],
+      ["city", {"state": "normal", "night": 1, "seed": 8, "label": "Hôtel de Ville · night of 27 July 1794"}, "Supporters freed him, and he took refuge in the city hall. In the early hours, troops loyal to the Convention stormed it."],
+      ["cell", {"night": 1, "label": "28 July 1794"}, "His jaw was shattered by a pistol shot. Whether he tried to kill himself, or was shot by a gendarme, is still debated."],
+      ["memorial", {"n": 22, "date": "28 July 1794"}, "That evening, he was guillotined with twenty-one others, including his younger brother, Augustin, and his ally Saint-Just. More than eighty of his supporters followed over the next two days."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["paper", {"mast": "PARIS", "head": "The Terror ends", "sub": "Prisons begin to empty", "date": "1794"}, "Within weeks, the machinery of the Terror was dismantled. The men who had brought Robespierre down blamed him for all of it, including much that they had done themselves."],
+      ["checklist", {"head": "The case against him", "items": ["Defended terror as virtue", "Backed the Law of Prairial", "Sent old friends to their deaths"]}, "The case against him is serious. He justified terror in public, backed the law that sped up the killing, and helped send former friends to their deaths."],
+      ["people", {"n": 6, "pose": "look", "label": "the debate"}, "His defenders, including some modern historians, point out that he was one of twelve on the Committee, that France faced invasion and civil war, and that he believed sincerely in democracy and equality."],
+      ["city", {"state": "normal", "seed": 3, "label": "Paris · today"}, "In France, the argument has never ended. A metro station in a Paris suburb bears his name, but no street in Paris does today."],
+      ["lesson", {"text": "Virtue, enforced by the guillotine"}, "Robespierre's story is a warning about certainty. He wanted a republic of virtue, and came to believe that those who stood in its way deserved to die. In the end, the machine he defended consumed him too."]
+    ]}
+  ]
+}

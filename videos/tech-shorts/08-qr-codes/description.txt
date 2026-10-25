@@ -1,0 +1,13 @@
+How QR Codes Actually Work
+
+You can rip a chunk off a QR code and it still works. Here's the trick, animated.
+
+1. Finding the code: three finder squares show where the code is and which way up; dotted timing lines act as a ruler; a smaller square straightens codes seen at an angle
+2. Ones and zeros: every dark square is a 1 and every light one a 0, read in a zigzag so groups of eight bits become text or a link; a few squares describe the layout
+3. Spare copies: error correction adds mathematical backup data, so at the highest setting up to about 30% of a code can be damaged and still scan (that's why logos fit in the middle)
+4. The mask: one of eight masks breaks up big blocks of one colour, and your phone undoes it before reading
+5. Size and safety: 40 sizes, from 21×21 to 177×177 squares; a QR code can point anywhere, so check the link before you tap. Invented in 1994 to track car parts in a Japanese factory
+
+Follow for more of the tech you use every day.
+
+#shorts #qrcode #techexplained #howitworks #coding

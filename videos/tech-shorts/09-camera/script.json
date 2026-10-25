@@ -1,0 +1,35 @@
+{
+ "series": "Tech Shorts", "episode": 9, "title": "How Your Phone Camera Takes a Photo", "sets": "camera.js", "voice": "kokoro:af_heart", "style": "lively",
+ "sections": [
+  { "name": "Hook", "lines": [
+   ["c_hook", {}, "Every photo you take is really several photos, stacked and blended by your phone in a split second."],
+   ["c_title", {"top": "HOW YOUR CAMERA", "bottom": "ACTUALLY WORKS"}, "Here's what happens when you tap the shutter, in five steps."]
+  ]},
+  { "name": "Catching light", "lines": [
+   ["c_lens", {}, "Step one. A tiny stack of lenses bends the light from the scene, and focuses it onto a sensor smaller than your fingernail."],
+   ["c_sensor", {}, "That sensor is covered in millions of tiny light buckets, called photosites. One for every pixel."]
+  ]},
+  { "name": "Light into numbers", "lines": [
+   ["c_photons", {}, "Step two. Light hitting each bucket knocks electrons loose. The brighter the light, the more electrons collect."],
+   ["c_numbers", {}, "The phone measures every bucket and turns it into a number. A photo is really just a giant grid of numbers."]
+  ]},
+  { "name": "Adding colour", "lines": [
+   ["c_bayer", {}, "Step three. The buckets only measure brightness, not colour. So each one sits under a tiny red, green or blue filter."],
+   ["c_green", {}, "There are twice as many green ones, because our eyes are most sensitive to green."],
+   ["c_demosaic", {}, "Then the phone estimates the full colour of every pixel, by looking at its neighbours."]
+  ]},
+  { "name": "Stacking shots", "lines": [
+   ["c_stack", {}, "Step four. Your phone is often already capturing frames before you even press the button."],
+   ["c_hdr", {}, "It blends several of them, keeping detail in the bright sky and the dark shadows at the same time."],
+   ["c_night", {}, "In the dark, night mode stacks many frames, averaging away the grainy noise that a tiny sensor makes."]
+  ]},
+  { "name": "Finishing touches", "lines": [
+   ["c_portrait", {}, "Step five. Portrait mode works out how far away everything is, then blurs the background, like a big camera lens."],
+   ["c_finish", {}, "Finally, a processor fixes the colours, sharpens the edges, and squeezes it all into a small file. All in about a second."]
+  ]},
+  { "name": "Recap", "lines": [
+   ["w_recap", {"items": [["Lenses focus the light", ""], ["Buckets count the light", ""], ["Filters add colour", ""], ["Frames get stacked", ""], ["Then it's polished", ""]]}, "Lenses focus the light. Millions of buckets count it. Filters add the colour, and your phone stacks and polishes the result."],
+   ["outro", {}, "So every snapshot is a little bit of science, and a lot of maths. Follow for more of the tech you use every day."]
+  ]}
+ ]
+}

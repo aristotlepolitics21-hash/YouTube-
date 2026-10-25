@@ -1,0 +1,302 @@
+{
+ "id": "30-escobar",
+ "say": {
+  "Bogot\u00e1": "Bogota",
+  "Avianca": "Aveeanca",
+  "Medell\u00edn": "Medeh-yeen"
+ },
+ "scenes": [
+  {
+   "text": "HIS TARGET WASN'T EVEN ON BOARD.",
+   "red": [
+    "BOARD"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "chairs:12",
+       "window"
+      ],
+      "light": "bulb",
+      "cam": "low"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.52
+     ],
+     "p": {
+      "props": [
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "field",
+     "fx": [
+      "flash",
+      "smash"
+     ],
+     "p": {
+      "n": 1
+     }
+    },
+    {
+     "d": 5,
+     "scene": "stat",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "value": "107",
+      "label": "people killed aboard Avianca Flight 203"
+     }
+    }
+   ]
+  },
+  {
+   "text": "SILVER OR LEAD.",
+   "red": [
+    "LEAD"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "curly",
+        "stache": "big",
+        "round": 1,
+        "coat": "shirt"
+       },
+       "pose": "lean",
+       "at": [
+        0,
+        -0.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "light": "cold",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "curly",
+        "stache": "big",
+        "round": 1,
+        "coat": "shirt"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.6
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "suitcases:18"
+      ],
+      "light": "bulb",
+      "dies": 0.85,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "punch",
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "down",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "coat": "suit",
+        "glasses": "square",
+        "tie": "#2b2b30"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE PAID FOR HOMES. AND FOR KILLINGS.",
+   "red": [
+    "KILLINGS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "city",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 8
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "coats:8"
+      ],
+      "light": "bulb",
+      "dies": 0.8,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "shake",
+      "smash"
+     ],
+     "p": {
+      "state": "fire",
+      "seed": 4
+     }
+    }
+   ]
+  },
+  {
+   "text": "REMEMBER THE VICTIMS. NOT HIM.",
+   "red": [
+    "VICTIMS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "radio",
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "flash",
+      "smash"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 6
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "value": "46,000+",
+      "label": "victims of the drug war, honoured where his building stood"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "chairs:12",
+       "window"
+      ],
+      "light": "bulb",
+      "cam": "rise"
+     }
+    }
+   ]
+  }
+ ]
+}

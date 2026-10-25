@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 10,
+  "title": "Idi Amin",
+  "subtitle": "The colonial soldier who ruled Uganda by fear",
+  "say": {"Idi": "Eedee", "Amin": "Ahmeen", "Amin's": "Ahmeen's", "Kakwa": "Kahkwa", "Obote": "Obohtay", "Buganda": "Boogahnda", "Mengo": "Mengoh", "Acholi": "Achohlee", "Langi": "Lahngee", "Nakasero": "Nahkahsairoh", "Kiwanuka": "Keewahnooka", "Janani": "Jahnahnee", "Luwum": "Loowoom", "Entebbe": "Entebbeh", "Yonatan": "Yonahtahn", "Nyerere": "Nyerairay", "Kagera": "Kahgairah", "Mau Mau": "Mow Mow", "Jeddah": "Jeddah", "Turkana": "Toorkahna"},
+  "package": {
+    "thumb_line": 16,
+    "thumb": ["RULE BY", "FEAR"],
+    "intro": "Idi Amin seized power in Uganda in 1971 and ruled for eight years. Abroad he was often treated as a joke; at home, human rights groups estimate that between one hundred thousand and half a million people were killed. This documentary tells how a cook in Britain's colonial army became one of Africa's most notorious dictators.",
+    "facts": ["Born around 1925 in the West Nile region of Uganda; the exact date is unknown", "Joined the King's African Rifles in 1946; one of the first Ugandans commissioned as an officer, in 1961", "Uganda became independent on 9 October 1962", "Seized power in a coup on 25 January 1971 while Milton Obote was in Singapore", "Ordered the expulsion of Uganda's Asian community in August 1972, with 90 days to leave", "Archbishop Janani Luwum died in custody in February 1977", "Israeli commandos rescued hostages at Entebbe on 3–4 July 1976", "Kampala fell to Tanzanian and Ugandan exile forces on 11 April 1979", "Died in Jeddah, Saudi Arabia, on 16 August 2003, never tried for his crimes"],
+    "sources": "Encyclopaedia Britannica, Amnesty International reports on Uganda (1970s), BBC News archive, Uganda Commission of Inquiry into Violations of Human Rights (1986), Henry Kyemba's memoir State of Blood, Mark Leopold's Idi Amin: The Story of Africa's Icon of Evil.",
+    "hashtags": "#History #Documentary #Africa",
+    "tags": "idi amin, idi amin documentary, uganda history, uganda asians expulsion 1972, entebbe raid, african dictators, cold war africa, history documentary, dictator documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "IDI AMIN", "sub": "The colonial soldier who ruled Uganda by fear", "art": "army", "artp": {"night": 1}}, "In August 1972, the president of Uganda announced that God had spoken to him in a dream. The message, he said, was clear. The country's Asian minority had to go, and they had ninety days to leave."],
+      ["people", {"n": 8, "pose": "walk", "label": "Kampala · autumn 1972"}, "Tens of thousands of people, many of them born in Uganda, packed what they could carry and left. Their homes and businesses were handed out to the president's supporters."],
+      ["stat", {"value": "100,000 – 500,000", "label": "estimated killings under Amin, 1971 – 1979"}, "The expulsion was only the most visible part of his rule. Over eight years, human rights groups estimate that between one hundred thousand and half a million Ugandans were killed."],
+      ["lesson", {"text": "How did a soldier-cook become a tyrant?"}, "Abroad, he was often treated as a joke, a boastful giant who sent strange telegrams to world leaders. At home, he was no joke at all. This is the story of Idi Amin."]
+    ]},
+    { "name": "A soldier of the empire", "lines": [
+      ["date", {"date": "c. 1925", "place": "West Nile · Uganda Protectorate"}, "Idi Amin was born around 1925 in the far north-west of Uganda, then a British protectorate. No birth record survives, and even the year is uncertain."],
+      ["field", {"village": 1, "n": 4, "label": "West Nile region"}, "He belonged to the Kakwa, a small ethnic group, and was raised mainly by his mother. He had very little formal schooling."],
+      ["army", {"label": "King's African Rifles · 1946"}, "In 1946 he joined the King's African Rifles, Britain's colonial army in East Africa. By most accounts, he started as an assistant cook."],
+      ["bust", {"name": "Idi Amin", "years": "c. 1925 – 2003", "role": "Soldier in Britain's colonial army. Uganda heavyweight boxing champion.", "hair": "crop", "coat": "military", "round": 1}, "He was tall, powerful and eager to please his British officers. He became Uganda's heavyweight boxing champion, and in 1961 he was one of the first two Ugandans to be commissioned as officers."],
+      ["jungle", {"n": 5, "label": "Kenya · 1950s"}, "He served in Kenya during Britain's war against the Mau Mau uprising. In 1962, troops under his command were accused of killing villagers in Kenya's Turkana region."],
+      ["paper", {"mast": "UGANDA", "head": "Independence", "sub": "Milton Obote becomes prime minister", "date": "9 October 1962"}, "With Ugandan independence only months away, the British decided not to prosecute him. Uganda became independent on the ninth of October 1962, and Amin's career kept climbing."]
+    ]},
+    { "name": "The coup", "lines": [
+      ["bust", {"name": "Milton Obote", "years": "1925 – 2005", "role": "Uganda's first prime minister, then president. Amin's patron, then his enemy.", "hair": "side", "stache": "thin", "coat": "suit"}, "The new prime minister, Milton Obote, needed a loyal army. He found a willing ally in Amin, who was promoted again and again."],
+      ["throne", {"night": 1, "label": "Mengo palace · May 1966"}, "In 1966, Obote suspended the constitution and moved against the king of Buganda, the largest of Uganda's traditional kingdoms. Amin led the assault on the king's palace. The king escaped into exile."],
+      ["versus", {"left": "Obote", "right": "Amin", "mid": "1970", "red": "r"}, "Amin was made commander of the army. But by 1970 the two men had fallen out, and Obote was asking hard questions about army spending."],
+      ["date", {"date": "25 January 1971", "place": "Kampala · Uganda"}, "In January 1971, while Obote was abroad at a Commonwealth summit in Singapore, soldiers loyal to Amin seized the capital."],
+      ["people", {"n": 8, "pose": "up", "label": "Kampala · January 1971"}, "Crowds celebrated in the streets of Kampala. Britain, which had clashed with Obote, was quick to recognise the new government."],
+      ["decree", {"title": "The promises", "lines": ["A caretaker military government", "Release of political prisoners", "Return to civilian rule"], "date": "1971"}, "Amin promised that military rule would be temporary, and he released some political prisoners. The return to civilian rule never came."]
+    ]},
+    { "name": "The killing", "lines": [
+      ["wall", {"night": 1, "n": 6, "label": "army barracks · 1971"}, "Within months, the killing began. Soldiers from the Acholi and Langi peoples, groups seen as loyal to Obote, were massacred in their barracks."],
+      ["web", {"nodes": [["President Amin", 0.5, 0.2, 1], ["State Research Bureau", 0.22, 0.62, 0], ["Public Safety Unit", 0.78, 0.62, 0], ["Military Police", 0.5, 0.85, 0]], "links": [[0, 1], [0, 2], [0, 3]], "label": "the machinery of fear"}, "Amin built new agencies of fear. The most notorious was the State Research Bureau, an intelligence service headquartered in Nakasero, close to the president's lodge in Kampala."],
+      ["cell", {"night": 1, "label": "Nakasero · 1970s"}, "People were taken away in unmarked cars and never seen again. Prisoners were held in cells beneath the building, and many were killed there."],
+      ["checklist", {"head": "Among the victims", "items": ["Chief Justice Benedicto Kiwanuka", "Archbishop Janani Luwum", "Ministers, officers, students", "Ordinary citizens"]}, "No one was safe. In 1972 the chief justice, Benedicto Kiwanuka, was seized from his own courtroom by soldiers. He was never seen again."],
+      ["bust", {"name": "Janani Luwum", "years": "1922 – 1977", "role": "Anglican Archbishop of Uganda. Protested the killings. Died in custody.", "hair": "crop", "coat": "robe"}, "In 1977, the Anglican archbishop, Janani Luwum, and his bishops sent Amin a letter protesting against the killings. Days later, Luwum was arrested and died in custody. The government claimed he had been killed in a car crash."],
+      ["people", {"n": 7, "pose": "mourn", "night": 1, "label": "Uganda · 1970s"}, "Many families never learned what had happened to their fathers, sons and brothers. Ministers fled abroad and described what they had seen."]
+    ]},
+    { "name": "The expulsion", "lines": [
+      ["decree", {"title": "Expulsion order", "lines": ["Uganda's Asian community", "to leave the country", "within 90 days"], "date": "August 1972"}, "Then came the dream. Most of Uganda's Asians were descended from people brought from British India generations earlier. They ran many of the country's shops and businesses."],
+      ["stat", {"value": "90 days", "label": "to leave Uganda · August – November 1972"}, "The order at first targeted those without Ugandan citizenship, but in practice almost the whole community was forced out. Britain took in more than twenty-five thousand of them."],
+      ["city", {"state": "normal", "seed": 5, "label": "Kampala · 1973"}, "Their shops, factories and farms were given to soldiers and supporters, many of whom had no experience of running a business."],
+      ["field", {"famine": 1, "n": 3, "label": "Uganda · mid-1970s"}, "The economy collapsed. Basic goods like sugar, salt and soap became scarce, and prices soared."]
+    ]},
+    { "name": "Entebbe", "lines": [
+      ["date", {"date": "27 June 1976", "place": "Air France Flight 139 · Tel Aviv to Paris"}, "In June 1976, Palestinian and German hijackers seized an Air France airliner flying from Tel Aviv to Paris, and forced it to land at Entebbe airport in Uganda."],
+      ["people", {"n": 8, "pose": "look", "night": 1, "label": "Entebbe airport · hostages"}, "Amin welcomed the hijackers, and his troops helped guard the passengers. Most were released, but Israelis and other Jewish passengers were kept as hostages, along with the French crew."],
+      ["army", {"planes": 1, "night": 1, "label": "Entebbe · 3 – 4 July 1976"}, "On the night of the third of July, Israeli commandos flew some four thousand kilometres and stormed the terminal. They rescued more than a hundred hostages. Three hostages and the Israeli commander, Yonatan Netanyahu, were killed."],
+      ["memorial", {"n": 40, "date": "Dora Bloch · 1976"}, "One hostage, seventy-five-year-old Dora Bloch, had been taken to hospital in Kampala before the raid. After it, she was murdered by Ugandan officers, reportedly on Amin's orders."]
+    ]},
+    { "name": "The showman", "lines": [
+      ["bust", {"name": "Field Marshal Amin", "years": "1976", "role": "\"President for Life\". Gave himself a medal so he could write VC after his name.", "hair": "crop", "coat": "military", "hat": "peak", "medals": 8, "round": 1, "frown": 1}, "Amin heaped titles on himself. He became a field marshal and, in 1976, President for Life. He even created a medal he called the Victorious Cross, so that he could put the letters VC after his name."],
+      ["quote", {"text": "Conqueror of the British Empire in Africa in General and Uganda in Particular", "who": "part of Idi Amin's self-awarded official title"}, "His full official title ran to several lines. It ended by calling him Conqueror of the British Empire in Africa in General and Uganda in Particular."],
+      ["tv", {"text": "THE SHOWMAN"}, "He loved the cameras. In 1975 he had British businessmen carry him in a chair at a reception in Kampala. In 1972 he even sent a telegram to the head of the United Nations praising Hitler."],
+      ["lesson", {"text": "The comedy was a mask."}, "Foreign newspapers often played him for laughs. For Ugandans, the comedy was a mask over a state that was murdering its own citizens."]
+    ]},
+    { "name": "War and exile", "lines": [
+      ["army", {"tanks": 1, "label": "Kagera · Tanzania · October 1978"}, "By 1978 his regime was weakening, and parts of the army were in revolt. That October, Amin's forces invaded neighbouring Tanzania and declared part of its territory annexed."],
+      ["army", {"tanks": 1, "dir": -1, "fire": 1, "label": "Tanzanian army and Ugandan exiles · 1979"}, "Tanzania's president, Julius Nyerere, struck back. His army, joined by Ugandan exiles, drove the invaders out and pushed deep into Uganda. Libya sent troops to save Amin, but they too were beaten."],
+      ["city", {"state": "normal", "tanks": 1, "label": "Kampala · 11 April 1979"}, "On the eleventh of April 1979, Kampala fell. Amin fled, first to Libya and later to Saudi Arabia."],
+      ["date", {"date": "16 August 2003", "place": "Jeddah · Saudi Arabia"}, "He lived there in quiet, comfortable exile for more than twenty years. He was never brought to trial, and he died in a hospital in Jeddah in August 2003."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["inquiry", {"label": "Commission of Inquiry into Violations of Human Rights · 1986"}, "Uganda's suffering did not end with his fall. Obote returned to power, and the killing went on into the 1980s. In 1986, a new government set up a commission to investigate abuses since independence."],
+      ["city", {"state": "normal", "seed": 2, "label": "Kampala · 1990s"}, "In the 1990s, Uganda invited the expelled Asians to reclaim their property. Some came back and rebuilt their businesses."],
+      ["lesson", {"text": "A ridiculous man can still be a deadly one."}, "The world remembers the boasts, the titles and the strange telegrams. Ugandans remember the cars that came at night and the people who never came home."],
+      ["memorial", {"n": 500, "date": "Uganda · 1971 – 1979"}, "Idi Amin's story is a warning that a tyrant can look like a clown. Laughing at him did nothing to protect the people he ruled."]
+    ]}
+  ]
+}

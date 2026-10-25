@@ -1,0 +1,290 @@
+{
+ "id": "15-mengistu",
+ "say": {
+  "Derg": "Derg"
+ },
+ "scenes": [
+  {
+   "text": "THE RED MEANT BLOOD.",
+   "red": [
+    "BLOOD"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "light": "red",
+      "amb": 0.6,
+      "cam": "push",
+      "fig": {
+       "pose": "up",
+       "at": [
+        0,
+        -0.8
+       ],
+       "look": {
+        "hair": "crop",
+        "stache": "thin",
+        "coat": "military",
+        "hat": "peak",
+        "medals": 4,
+        "frown": 1
+       }
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "podium",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "cheer": 1,
+      "banners": 3,
+      "bannerc": "#8a1a14"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "night": 1
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ],
+       "look": {
+        "hair": "crop",
+        "stache": "thin",
+        "coat": "military",
+        "hat": "peak",
+        "medals": 4,
+        "frown": 1
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "SIXTY. ONE NIGHT. NO TRIAL.",
+   "red": [
+    "SIXTY"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "throne",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "night": 1
+     }
+    },
+    {
+     "d": 3,
+     "scene": "date",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "date": "12 September 1974",
+      "place": "The emperor is deposed"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "coats:6"
+      ],
+      "light": "bulb",
+      "dies": 0.75,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "bunker",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "n": 1
+     }
+    }
+   ]
+  },
+  {
+   "text": "THEY PAID FOR THE BULLETS.",
+   "red": [
+    "BULLETS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "stamp": 1,
+      "light": "bulb",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "cam": "push",
+      "doorc": "#a3291f"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "pose": "sitSlump",
+       "at": [
+        -0.6,
+        -0.8
+       ],
+       "look": {
+        "hair": "crop",
+        "coat": "shirt"
+       }
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze",
+      "smash"
+     ],
+     "circle": [
+      0.5,
+      0.53
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "red",
+      "cam": "down"
+     }
+    }
+   ]
+  },
+  {
+   "text": "CONVICTED. NEVER SERVED A DAY.",
+   "red": [
+    "NEVER"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "chairs:6",
+       "candles"
+      ],
+      "light": "bulb",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "value": "400,000 – 1,000,000",
+      "label": "estimated famine deaths"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "inquiry",
+     "fx": [
+      "glitch"
+     ],
+     "p": {}
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push"
+     }
+    }
+   ]
+  }
+ ]
+}

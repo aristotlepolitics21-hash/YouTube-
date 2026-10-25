@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 14,
+  "title": "Slobodan Milošević",
+  "subtitle": "The Serbian leader who rode nationalism into war",
+  "say": {"Slobodan": "Slobodahn", "Milošević": "Miloshevich", "Milošević's": "Miloshevich's", "Požarevac": "Pozharevats", "Stambolić": "Stambolich", "Mirjana": "Meeryahna", "Marković": "Markovich", "Kosovo Polje": "Kosovo Polyeh", "Gazimestan": "Gahzeemestahn", "Vojvodina": "Voyvodeena", "Tuđman": "Toojman", "Franjo": "Franyo", "Vukovar": "Vookovar", "Srebrenica": "Srebreneetsa", "Sarajevo": "Sarayevo", "Karadžić": "Karajich", "Mladić": "Mladich", "Bosniak": "Bosnyak", "Bosniaks": "Bosnyaks", "Arkan's": "Arkahn's", "Račak": "Rahchak", "Koštunica": "Koshtooneetsa", "Vojislav": "Voyislav", "Đinđić": "Jinjich", "Scheveningen": "Skayvening-en", "Tito": "Teeto"},
+  "package": {
+    "thumb_line": 16,
+    "thumb": ["FROM CROWD", "TO WAR"],
+    "intro": "In 1987 one sentence to a crowd in Kosovo turned a grey Communist official into the most powerful man in Serbia. Within four years Yugoslavia was at war. This documentary tells how Slobodan Milošević rose on a wave of nationalism, why he became the first sitting head of state charged by an international war crimes tribunal, and why he was never convicted.",
+    "facts": ["Born 20 August 1941 in Požarevac, Serbia", "Spoke to Serbs at Kosovo Polje on 24 April 1987: 'No one should dare to beat you'", "Slovenia and Croatia declared independence on 25 June 1991", "The Bosnian war (1992–1995) killed about 100,000 people; the Dayton Agreement was signed on 14 December 1995", "NATO bombed Yugoslavia for 78 days, 24 March to 10 June 1999", "Indicted by the ICTY in May 1999, the first sitting head of state charged by an international war crimes tribunal", "Conceded defeat on 6 October 2000 after mass protests in Belgrade", "Transferred to The Hague on 28 June 2001; trial began 12 February 2002", "Died in custody on 11 March 2006 before a verdict; never convicted"],
+    "sources": "International Criminal Tribunal for the former Yugoslavia (ICTY case IT-02-54), International Court of Justice (Bosnia and Herzegovina v. Serbia and Montenegro, 2007), Encyclopaedia Britannica, Laura Silber and Allan Little's The Death of Yugoslavia, Adam LeBor's Milosevic: A Biography.",
+    "hashtags": "#History #Documentary #Balkans",
+    "tags": "slobodan milosevic, milosevic documentary, yugoslav wars, breakup of yugoslavia, bosnian war, kosovo war, icty trial, serbia history, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "SLOBODAN MILOŠEVIĆ", "sub": "The Serbian leader who rode nationalism into war", "art": "podium", "artp": {"cheer": 1}}, "On the twenty-fourth of April 1987, a grey Communist official was sent to calm an angry crowd of Serbs at Kosovo Polje, in Serbia's southern province of Kosovo. Police were pushing them back with batons."],
+      ["quote", {"text": "No one should dare to beat you!", "who": "Slobodan Milošević · Kosovo Polje · 24 April 1987"}, "He stepped out and told them: no one should dare to beat you. The moment was broadcast across Serbia, and it made him a hero almost overnight."],
+      ["stat", {"value": "~140,000", "label": "estimated deaths in the wars of Yugoslavia's break-up, 1991 – 2001"}, "Within four years, Yugoslavia was at war with itself. The conflicts of the 1990s killed an estimated one hundred and forty thousand people and drove millions from their homes."],
+      ["lesson", {"text": "Charged with war crimes. Never convicted."}, "Slobodan Milošević became the first sitting head of state to be charged by an international war crimes tribunal. He died before a verdict. This is his story."]
+    ]},
+    { "name": "The apparatchik", "lines": [
+      ["date", {"date": "20 August 1941", "place": "Požarevac · occupied Serbia"}, "Slobodan Milošević was born on the twentieth of August 1941 in Požarevac, a town east of Belgrade, during the German occupation of Yugoslavia."],
+      ["people", {"n": 3, "pose": "mourn", "night": 1, "label": "Požarevac"}, "His family life was marked by tragedy. His father left the family and later took his own life. Years afterwards, so did his mother."],
+      ["bust", {"name": "Slobodan Milošević", "years": "1941 – 2006", "role": "Communist official and banker. Rose as Ivan Stambolić's protégé.", "hair": "back", "coat": "suit", "tie": "#2b2b30", "round": 1}, "At school he met Mirjana Marković, who became his wife and his closest political partner. He studied law in Belgrade and joined the Communist Party."],
+      ["bust", {"name": "Ivan Stambolić", "years": "1936 – 2000", "role": "Serbian Communist leader. Milošević's mentor and friend.", "hair": "side", "hairc": "#9a9a92", "coat": "suit", "tie": "#7a2a22"}, "His great patron was his friend Ivan Stambolić, a rising Communist leader. Stambolić helped him run a state gas company, and then one of Belgrade's biggest banks."],
+      ["web", {"nodes": [["Yugoslavia", 0.5, 0.18, 1], ["Serbia", 0.12, 0.7, 0], ["Croatia", 0.27, 0.7, 0], ["Slovenia", 0.42, 0.7, 0], ["Bosnia", 0.58, 0.7, 0], ["Montenegro", 0.73, 0.7, 0], ["Macedonia", 0.88, 0.7, 0]], "links": [[0, 1], [0, 2], [0, 3], [0, 4], [0, 5], [0, 6]], "label": "a federation of six republics"}, "Yugoslavia, rebuilt after the Second World War by the Communist leader Tito, was a federation of six republics. After Tito died in 1980, it was held together by a weak collective leadership and a failing economy."]
+    ]},
+    { "name": "The rise", "lines": [
+      ["date", {"date": "September 1987", "place": "Eighth Session · League of Communists of Serbia"}, "Stambolić had helped make him head of Serbia's Communist party. In 1987, months after the speech at Kosovo Polje, Milošević turned on his mentor and forced him out."],
+      ["podium", {"banners": 3, "night": 0, "cheer": 1, "label": "mass rallies · 1988 – 1989"}, "Then came huge rallies, which his supporters called the anti-bureaucratic revolution. Crowds brought down the leaders of Vojvodina, Kosovo and Montenegro, and his allies replaced them."],
+      ["decree", {"title": "Serbian constitution", "lines": ["Autonomy of Kosovo", "and Vojvodina", "sharply reduced"], "date": "March 1989"}, "In 1989, Kosovo's autonomy was cut back. Its Albanian majority lost control of its own police and courts, and in the years that followed, many Albanians were dismissed from state jobs."],
+      ["quote", {"text": "They are not armed battles, although such things cannot yet be excluded.", "who": "Milošević at Gazimestan, Kosovo · 28 June 1989"}, "In June 1989, on the six hundredth anniversary of a medieval battle against the Ottomans, he told a vast crowd in Kosovo that Serbs again faced battles. They are not armed battles, he said, although such things cannot yet be excluded."]
+    ]},
+    { "name": "The wars", "lines": [
+      ["date", {"date": "25 June 1991", "place": "Slovenia and Croatia declare independence"}, "In 1990, elections brought nationalist leaders to power in other republics too, including Franjo Tuđman in Croatia. On the twenty-fifth of June 1991, Slovenia and Croatia declared independence."],
+      ["army", {"tanks": 1, "fire": 1, "label": "Croatia · 1991"}, "Serbs in Croatia, fearful of the new Croatian state, rebelled. They were backed by the Yugoslav army, increasingly under Belgrade's control, and large parts of Croatia were seized."],
+      ["city", {"state": "ruin", "label": "Vukovar · November 1991"}, "The town of Vukovar was besieged for three months and reduced to ruins. After it fell, around two hundred prisoners taken from its hospital were murdered at a nearby farm."],
+      ["city", {"state": "fire", "night": 1, "seed": 7, "label": "Sarajevo · 1992 – 1996"}, "In 1992 the war spread to Bosnia. Bosnian Serb forces led by Radovan Karadžić and General Ratko Mladić besieged Sarajevo, and drove Bosniaks and Croats out of large areas in what became known as ethnic cleansing."],
+      ["camp", {"label": "detention camps · northern Bosnia · 1992"}, "Prison camps were set up in northern Bosnia. When journalists filmed starving prisoners behind wire in the summer of 1992, the pictures shocked the world."],
+      ["web", {"nodes": [["Milošević · Belgrade", 0.5, 0.2, 1], ["Yugoslav Army", 0.2, 0.62, 0], ["Bosnian Serb forces", 0.8, 0.62, 0], ["Paramilitaries", 0.5, 0.85, 0]], "links": [[0, 1], [0, 2], [0, 3]], "label": "what prosecutors alleged"}, "Milošević insisted Serbia was not at war. Prosecutors later argued that Belgrade armed, paid and directed the Bosnian Serb army and paramilitary groups such as Arkan's Tigers."],
+      ["memorial", {"n": 300, "date": "Srebrenica · July 1995"}, "In July 1995, Mladić's forces overran the UN safe area of Srebrenica and killed more than eight thousand Bosniak men and boys. International courts have ruled that it was genocide."],
+      ["stat", {"value": "313,000,000%", "label": "estimated monthly inflation in Yugoslavia, January 1994"}, "At home, UN sanctions and war spending wrecked the economy. In January 1994, prices were rising by an estimated three hundred million percent a month, one of the worst bouts of hyperinflation ever recorded."]
+    ]},
+    { "name": "The peacemaker", "lines": [
+      ["army", {"tanks": 1, "dir": -1, "label": "Operation Storm · August 1995"}, "In 1995 the tide turned. Croatia's army retook most of its lost territory, and around two hundred thousand Serbs fled or were driven out. NATO bombed Bosnian Serb positions."],
+      ["bunker", {"n": 3, "label": "Dayton, Ohio · November 1995"}, "Milošević now presented himself as a peacemaker. At talks on an American air base in Dayton, Ohio, he negotiated on behalf of the Bosnian Serbs."],
+      ["decree", {"title": "Dayton Agreement", "lines": ["Bosnia and Herzegovina:", "one state, two entities"], "date": "14 December 1995"}, "The Dayton Agreement ended the Bosnian war. About one hundred thousand people had been killed in Bosnia alone, and more than two million had fled their homes."],
+      ["people", {"n": 8, "pose": "up", "night": 1, "label": "Belgrade · winter 1996 – 1997"}, "At home, his government tried to overturn opposition wins in local elections in 1996. Months of street protests forced him to back down. In 1997 he became president of what remained of Yugoslavia: Serbia and Montenegro."]
+    ]},
+    { "name": "Kosovo", "lines": [
+      ["field", {"village": 1, "n": 3, "guard": 1, "label": "Kosovo · 1998 – 1999"}, "In 1998, fighting broke out in Kosovo between an Albanian guerrilla army and Serbian forces. In January 1999, forty-five Albanians were killed in the village of Račak."],
+      ["army", {"planes": 1, "night": 1, "label": "NATO air campaign · 24 March – 10 June 1999"}, "When peace talks failed, NATO began bombing Yugoslavia in March 1999, without the approval of the UN Security Council. The campaign lasted seventy-eight days, and hundreds of civilians were killed by the bombing."],
+      ["people", {"n": 9, "pose": "walk", "label": "Kosovo · spring 1999"}, "On the ground, Serbian forces drove out Kosovo's Albanians. Around eight hundred and fifty thousand people fled or were expelled, and thousands of civilians were killed."],
+      ["paper", {"mast": "THE HAGUE", "head": "Milošević indicted", "sub": "Crimes against humanity in Kosovo", "date": "May 1999"}, "In May 1999, the UN war crimes tribunal for the former Yugoslavia charged him with crimes against humanity in Kosovo. In June, he agreed to pull his forces out."]
+    ]},
+    { "name": "The fall", "lines": [
+      ["date", {"date": "25 August 2000", "place": "Belgrade"}, "In August 2000, his old mentor Ivan Stambolić, by then a critic, vanished while out jogging in Belgrade. His remains were found in 2003, and members of a state security unit were later convicted of his murder."],
+      ["ballot", {"value": "2000", "label": "Vojislav Koštunica defeats Milošević"}, "That September, Milošević lost a presidential election to the opposition candidate, Vojislav Koštunica, and tried to force a second round."],
+      ["city", {"state": "fire", "seed": 9, "label": "Belgrade · 5 October 2000"}, "On the fifth of October, hundreds of thousands of people poured into Belgrade. Protesters stormed the parliament, part of it caught fire, and the police stood aside. The next day, he conceded."],
+      ["cell", {"label": "Belgrade · April 2001"}, "In April 2001 he was arrested at his villa after a standoff. That June, Serbia's prime minister, Zoran Đinđić, had him handed over to the tribunal in The Hague."]
+    ]},
+    { "name": "The trial", "lines": [
+      ["inquiry", {"label": "ICTY · The Hague · 2002 – 2006"}, "His trial opened in February 2002. He faced sixty-six counts covering Croatia, Bosnia and Kosovo, including genocide in Bosnia."],
+      ["bust", {"name": "The defendant", "years": "2002 – 2006", "role": "Defended himself and called the tribunal illegal. Faced 66 counts.", "hair": "back", "hairc": "#9a9a92", "coat": "suit", "tie": "#2b2b30", "round": 1, "frown": 1}, "He refused a lawyer, defended himself, and called the court illegitimate. Many Serbs watched on television and agreed with him."],
+      ["date", {"date": "11 March 2006", "place": "UN Detention Unit · Scheveningen"}, "The trial dragged on for four years. On the eleventh of March 2006, with a verdict still months away, he was found dead in his cell. He had suffered a heart attack."],
+      ["lesson", {"text": "Charged. Never convicted."}, "Because he died, he was never convicted of anything. The case against him was never tested by a final judgment."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["people", {"n": 8, "pose": "mourn", "label": "Požarevac · March 2006"}, "Tens of thousands of supporters attended a farewell rally in Belgrade. He was buried under a tree in the garden of his family home in Požarevac."],
+      ["checklist", {"head": "What the courts did decide", "items": ["Srebrenica was genocide", "Karadžić: life sentence", "Mladić: life sentence", "Serbia failed to prevent genocide"]}, "Other courts did reach verdicts. Karadžić and Mladić were convicted of genocide and sentenced to life. In 2007, the International Court of Justice ruled that Serbia had failed to prevent the genocide at Srebrenica."],
+      ["versus", {"left": "Defender of Serbs", "right": "Architect of war", "mid": "?"}, "In Serbia, opinion is still divided. Some see him as a leader who stood up for Serbs as Yugoslavia collapsed, and point out that all sides committed crimes."],
+      ["lesson", {"text": "Old fears, new wars."}, "Most historians see him as the politician who did more than anyone to turn those fears into war."],
+      ["memorial", {"n": 600, "date": "Yugoslavia · 1991 – 2001"}, "Milošević did not create the old fears of the Balkans. He discovered, in a crowd at Kosovo Polje, that they could carry him to power. The price was paid by others."]
+    ]}
+  ]
+}

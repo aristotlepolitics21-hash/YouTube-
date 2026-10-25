@@ -1,0 +1,328 @@
+{
+ "id": "05-mao",
+ "say": {
+  "Mao": "Mow",
+  "Tiananmen": "Tyen-ahn-men"
+ },
+ "scenes": [
+  {
+   "text": "THE DEADLIEST FAMINE IN RECORDED HISTORY.",
+   "red": [
+    "FAMINE"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "bust",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "name": "Mao Zedong",
+      "years": "1893 \u2013 1976",
+      "role": "Chairman of the Communist Party. His portrait still hangs over Tiananmen.",
+      "hair": "back",
+      "round": 1,
+      "coat": "mao"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "round": 1,
+        "coat": "mao"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "stamp": 1,
+      "light": "bulb",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "field",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "famine": 1,
+      "village": 1,
+      "n": 3
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE HARVESTS WERE LIES.",
+   "red": [
+    "LIES"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "people",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 9,
+      "pose": "walk",
+      "night": 1
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "candles"
+      ],
+      "light": "red",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "coat": "mao",
+        "glasses": "square"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "close",
+      "doorc": "#e8dcc0",
+      "light": "bulb",
+      "amb": 0.45,
+      "cam": "low"
+     }
+    }
+   ]
+  },
+  {
+   "text": "ONE MAN WARNED HIM. THEN SILENCE.",
+   "red": [
+    "SILENCE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "chairs:6"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "coat": "military",
+        "frown": 1
+       },
+       "pose": "speech",
+       "at": [
+        0,
+        -2.0
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "chairs:6"
+      ],
+      "light": "bulb",
+      "dies": 0.6,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "window",
+       "chairs:1"
+      ],
+      "light": "cold",
+      "amb": 0.6,
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "value": "30,000,000",
+      "label": "famine dead, a common estimate (range 15 to over 45 million)"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE FACE HONOURED. THE GRAVES UNMARKED.",
+   "red": [
+    "UNMARKED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "podium",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "cheer": 1,
+      "banners": 3,
+      "night": 0,
+      "hair": "back",
+      "coat": "mao"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "chart",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "title": "Life expectancy in China",
+      "x": "1949 \u2013 1976",
+      "y": "years",
+      "points": [
+       [
+        0,
+        0.35
+       ],
+       [
+        0.5,
+        0.48
+       ],
+       [
+        1,
+        0.64
+       ]
+      ],
+      "notes": [
+       [
+        0,
+        0.35,
+        "35"
+       ],
+       [
+        1,
+        0.64,
+        "60+"
+       ]
+      ]
+     }
+    },
+    {
+     "d": 4,
+     "scene": "field",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "famine": 1,
+      "n": 3
+     }
+    },
+    {
+     "d": 4,
+     "scene": "bust",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "name": "Mao Zedong",
+      "years": "1893 \u2013 1976",
+      "role": "Chairman of the Communist Party. His portrait still hangs over Tiananmen.",
+      "hair": "back",
+      "round": 1,
+      "coat": "mao"
+     }
+    }
+   ]
+  }
+ ]
+}

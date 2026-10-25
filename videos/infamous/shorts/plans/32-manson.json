@@ -1,0 +1,417 @@
+{
+ "id": "32-manson",
+ "say": {
+  "Cielo": "See-yelo"
+ },
+ "scenes": [
+  {
+   "text": "HE WASN'T EVEN THERE.",
+   "red": [
+    "THERE"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "city",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "state": "normal",
+      "seed": 21
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.38
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "female": 1,
+        "hair": "crop",
+        "hairc": "#2a2420",
+        "coat": "#2a3346"
+       },
+       "pose": "mourn",
+       "at": [
+        0,
+        -0.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "shake",
+      "smash"
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "rise",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "beard": "full",
+        "coat": "shirt",
+        "frown": 1
+       },
+       "pose": "look",
+       "at": [
+        0,
+        -0.6
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "HALF HIS LIFE LOCKED UP.",
+   "red": [
+    "LOCKED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "door",
+       "suitcases:1"
+      ],
+      "door": "close",
+      "light": "bulb",
+      "cam": "low",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "coat": "shirt"
+       },
+       "at": [
+        0.6,
+        -1.2
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "cell",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "coat": "prison"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "chairs:12"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "beard": "full",
+        "coat": "shirt",
+        "frown": 1
+       },
+       "pose": "speech",
+       "at": [
+        0,
+        -2.2
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door",
+       "window"
+      ],
+      "light": "bulb",
+      "shadows": 2,
+      "cam": "dolly"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE PRODUCER HAD MOVED OUT.",
+   "red": [
+    "MOVED",
+    "OUT"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "radio"
+      ],
+      "light": "red",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "date",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "date": "10050 Cielo Drive",
+      "place": "Benedict Canyon \u00b7 Los Angeles"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "portrait",
+       "chairs:2",
+       "phone"
+      ],
+      "light": "bulb",
+      "dies": 0.8,
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "radio"
+      ],
+      "light": "red",
+      "flicker": 1,
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "REMEMBER THEIR NAMES. NOT HIS.",
+   "red": [
+    "NAMES"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "web",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "nodes": [
+       [
+        "Cielo Drive",
+        0.22,
+        0.3,
+        0
+       ],
+       [
+        "Case file",
+        0.22,
+        0.7,
+        0
+       ],
+       [
+        "Waverly Drive",
+        0.78,
+        0.3,
+        0
+       ],
+       [
+        "Case file",
+        0.78,
+        0.7,
+        0
+       ]
+      ],
+      "links": [
+       [
+        0,
+        1
+       ],
+       [
+        2,
+        3
+       ]
+      ],
+      "label": "Two investigations. No connection."
+     }
+    },
+    {
+     "d": 4,
+     "scene": "web",
+     "fx": [
+      "punch",
+      "flash"
+     ],
+     "p": {
+      "nodes": [
+       [
+        "Cielo Drive",
+        0.22,
+        0.3,
+        0
+       ],
+       [
+        "Case file",
+        0.22,
+        0.7,
+        0
+       ],
+       [
+        "Waverly Drive",
+        0.78,
+        0.3,
+        0
+       ],
+       [
+        "Case file",
+        0.78,
+        0.7,
+        0
+       ],
+       [
+        "Manson Family",
+        0.5,
+        0.5,
+        1
+       ]
+      ],
+      "links": [
+       [
+        0,
+        1
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "label": "A jailhouse confession joins the cases"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "female": 1,
+        "hair": "crop",
+        "hairc": "#9a9a92",
+        "coat": "#4a3a2a"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "title": "Their names",
+      "lines": [
+       "Sharon Tate \u00b7 Jay Sebring",
+       "Abigail Folger \u00b7 Wojciech Frykowski",
+       "Steven Parent",
+       "Leno & Rosemary LaBianca",
+       "Gary Hinman \u00b7 Donald Shea"
+      ],
+      "seal": 0
+     }
+    }
+   ]
+  }
+ ]
+}

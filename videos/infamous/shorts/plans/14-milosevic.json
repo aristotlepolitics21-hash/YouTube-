@@ -1,0 +1,329 @@
+{
+ "id": "14-milosevic",
+ "say": {
+  "Milošević": "Miloshevich",
+  "Sarajevo": "Sarayevo",
+  "Bosniaks": "Bosnyaks"
+ },
+ "scenes": [
+  {
+   "text": "ONE SENTENCE. FOUR YEARS. WAR.",
+   "red": [
+    "WAR"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "people",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 12,
+      "pose": "up",
+      "night": 1
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "pose": "stand",
+       "at": [
+        0,
+        -1.2
+       ],
+       "look": {
+        "hair": "back",
+        "coat": "suit",
+        "tie": "#2b2b30",
+        "round": 1
+       }
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "tv",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "text": "April 1987"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ],
+       "look": {
+        "hair": "back",
+        "coat": "suit",
+        "tie": "#2b2b30",
+        "round": 1
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "\"CANNOT YET BE EXCLUDED.\"",
+   "red": [
+    "EXCLUDED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "versus",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "left": "Milošević",
+      "right": "Stambolić"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "close",
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "yaw": 180,
+       "at": [
+        0,
+        -1.6
+       ],
+       "look": {
+        "hair": "side",
+        "hairc": "#9a9a92",
+        "coat": "suit",
+        "tie": "#7a2a22"
+       }
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "podium",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "cheer": 1,
+      "banners": 3
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze",
+      "smash"
+     ],
+     "circle": [
+      0.5,
+      0.47
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "pose": "speech",
+       "at": [
+        0,
+        -0.4
+       ],
+       "look": {
+        "hair": "back",
+        "coat": "suit",
+        "tie": "#2b2b30",
+        "round": 1
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE INSISTED SERBIA WASN'T AT WAR.",
+   "red": [
+    "WAR"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "timeline",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "events": [
+       [
+        "1991 Slovenia, Croatia secede",
+        0.1
+       ],
+       [
+        "1992 Sarajevo besieged",
+        0.45
+       ],
+       [
+        "1995 Srebrenica",
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "d": 3,
+     "scene": "city",
+     "fx": [
+      "flash",
+      "shake"
+     ],
+     "p": {
+      "night": 1,
+      "state": "fire"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "chairs:2",
+       "desk",
+       "radio",
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ],
+       "look": {
+        "hair": "back",
+        "coat": "suit",
+        "tie": "#2b2b30",
+        "round": 1
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "CHARGED. NEVER CONVICTED.",
+   "red": [
+    "CONVICTED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "inquiry",
+     "fx": [
+      "punch"
+     ],
+     "p": {}
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "value": "66",
+      "label": "counts: genocide, crimes against humanity, war crimes"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "desk",
+       "bars"
+      ],
+      "light": "bulb",
+      "dies": 0.6,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "people",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "n": 12,
+      "pose": "up",
+      "night": 1
+     }
+    }
+   ]
+  }
+ ]
+}

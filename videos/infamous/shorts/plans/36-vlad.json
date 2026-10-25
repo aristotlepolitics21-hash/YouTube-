@@ -1,0 +1,318 @@
+{
+ "id": "36-vlad",
+ "say": {
+  "Wallachia": "Wollaykia",
+  "Dracul": "Drahkool",
+  "Dracula": "Drakyoola"
+ },
+ "scenes": [
+  {
+   "text": "A FIELD OF STAKES.",
+   "red": [
+    "STAKES"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "army",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "night": 1,
+      "fire": 1,
+      "label": "Wallachia · June 1462",
+      "era": "medieval"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "riders",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 6,
+      "bow": 0
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "light": "red",
+      "flicker": 1,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hat": "turban",
+        "beard": "full",
+        "coat": "robe"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "bust",
+     "fx": [
+      "freeze",
+      "shake"
+     ],
+     "circle": [
+      0.5,
+      0.4
+     ],
+     "p": {
+      "name": "Vlad III Dracula",
+      "years": "c. 1431 – 1476",
+      "role": "Prince of Wallachia. Today, we call him Dracula.",
+      "hair": "long",
+      "hairc": "#1c1b19",
+      "stache": "big",
+      "hat": "fur",
+      "coat": "fur",
+      "frown": 1
+     }
+    }
+   ]
+  },
+  {
+   "text": "SON OF THE DRAGON.",
+   "red": [
+    "DRAGON"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "candles",
+       "portrait"
+      ],
+      "light": "dark",
+      "amb": 0.3,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "decree",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "title": "DRACULA",
+      "lines": [
+       "His father: Dracul, the Dragon",
+       "The son: Dracula",
+       "son of the Dragon"
+      ],
+      "date": "Order of the Dragon"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "close",
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "h": 0.8,
+        "hair": "long",
+        "hairc": "#1c1b19",
+        "coat": "tunic"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "chairs:1",
+       "candles"
+      ],
+      "light": "bulb",
+      "dies": 0.7,
+      "shadows": 3,
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE COUNTED THEM HIMSELF.",
+   "red": [
+    "HIMSELF"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "throne",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "night": 1,
+      "crown": 0,
+      "label": "Prince of Wallachia · 1456 – 1462"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "paper",
+     "fx": [
+      "shake",
+      "ramp"
+     ],
+     "p": {
+      "mast": "PAMPHLET",
+      "head": "Dracole Wayda",
+      "sub": "The cruel prince of Wallachia",
+      "date": "Printed in Germany"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.43
+     ],
+     "p": {
+      "value": "23,884",
+      "label": "dead, counted by Vlad himself · letter to the king of Hungary"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "glitch",
+      "smash"
+     ],
+     "p": {
+      "title": "To the King of Hungary",
+      "lines": [
+       "One winter's campaign",
+       "counted in his own letter"
+      ],
+      "date": "11 February 1462"
+     }
+    }
+   ]
+  },
+  {
+   "text": "NO VAMPIRE. NO LEGEND NEEDED.",
+   "red": [
+    "VAMPIRE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "cell",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "label": "Hungary · 1462 – c. 1474"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "field",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "famine": 1,
+      "n": 1,
+      "label": "died in battle · 1476"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "typewriter"
+      ],
+      "light": "bulb",
+      "shadows": 1,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "full",
+        "hairc": "#7a5a3a",
+        "coat": "suit",
+        "tie": "#2b2b30"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "ruler",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "hat": "fur",
+      "cape": 1,
+      "pose": "point",
+      "label": "a national hero"
+     }
+    }
+   ]
+  }
+ ]
+}

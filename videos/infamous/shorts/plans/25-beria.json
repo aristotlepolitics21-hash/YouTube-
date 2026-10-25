@@ -1,0 +1,352 @@
+{
+ "id": "25-beria",
+ "say": {
+  "Beria": "Bear-ee-a",
+  "Lavrentiy": "Lav-rent-ee",
+  "NKVD": "N K V D",
+  "Katyn": "Kah-tin",
+  "Ingush": "In-goosh",
+  "Kremlin": "Kremlin"
+ },
+ "scenes": [
+  {
+   "text": "THE MOST FEARED MAN. ARRESTED.",
+   "red": [
+    "ARRESTED"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "bunker",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 5
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.46
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "bald",
+        "glasses": "round",
+        "coat": "suit",
+        "tie": "#2b2b30"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "shake",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#e8dcc0",
+      "light": "bulb",
+      "swing": 1,
+      "shadows": 5,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "bald",
+        "glasses": "round",
+        "coat": "suit",
+        "tie": "#2b2b30"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "cam": "still"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE MACHINE JUST GOT ORDERLY.",
+   "red": [
+    "ORDERLY"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "decree",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "title": "NKVD",
+      "lines": [
+       "People's Commissar",
+       "for Internal Affairs:",
+       "L. P. Beria"
+      ],
+      "date": "November 1938"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "window"
+      ],
+      "light": "bulb",
+      "amb": 0.4,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "bald",
+        "glasses": "round",
+        "coat": "military",
+        "hat": "peak",
+        "band": "#3a5a8a"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "checklist",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "head": "NKVD, 1939",
+      "items": [
+       "Mass arrests: slowed",
+       "Files: in order",
+       "Torture: still official policy"
+      ]
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.6
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "cold",
+      "amb": 0.35,
+      "cam": "down"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE LIE HELD FOR ALMOST 50 YEARS.",
+   "red": [
+    "LIE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "decree",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "title": "Proposal to Stalin",
+      "lines": [
+       "Polish officers held as prisoners",
+       "Proposed: the supreme penalty"
+      ],
+      "date": "March 1940"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "coats:6"
+      ],
+      "light": "bulb",
+      "dies": 0.6,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "stat",
+     "fx": [
+      "ramp",
+      "smash"
+     ],
+     "p": {
+      "value": "22,000",
+      "label": "Polish prisoners killed, 1940"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "timeline",
+     "fx": [
+      "flash",
+      "freeze"
+     ],
+     "circle": [
+      0.8,
+      0.47
+     ],
+     "p": {
+      "events": [
+       [
+        "1943",
+        0
+       ],
+       [
+        "Moscow blames the Nazis",
+        0.4
+       ],
+       [
+        "1990",
+        1
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE HELD EVERYONE'S SECRETS.",
+   "red": [
+    "SECRETS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "people",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 10,
+      "night": 1,
+      "pose": "walk"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "bed"
+      ],
+      "light": "bulb",
+      "amb": 0.4,
+      "shadows": 3,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "bald",
+        "glasses": "round",
+        "coat": "suit",
+        "tie": "#2b2b30"
+       },
+       "yaw": -30,
+       "at": [
+        0.3,
+        -0.9
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "shake",
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#e8dcc0",
+      "light": "bulb",
+      "amb": 0.5,
+      "shadows": 4,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "bunker",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "n": 5
+     }
+    }
+   ]
+  }
+ ]
+}

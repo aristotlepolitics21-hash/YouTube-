@@ -1,0 +1,292 @@
+{
+ "id": "45-cortes",
+ "say": {
+  "Cortés": "Kor-tez",
+  "Tenochtitlan": "Tenotch-teetlan",
+  "Moctezuma": "Mok-teh-zooma",
+  "Cholula": "Cho-loola"
+ },
+ "scenes": [
+  {
+   "text": "ONE OF THE LARGEST CITIES ON EARTH.",
+   "red": [
+    "LARGEST"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "candles"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "amb": 0.3,
+      "shadows": 5,
+      "cam": "low"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "amb": 0.25,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "full",
+        "coat": "armour"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 7
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "state": "ruin",
+      "night": 1,
+      "seed": 7
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE DIDN'T BURN HIS SHIPS.",
+   "red": [
+    "BURN"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "bald",
+        "beard": "full",
+        "beardc": "#9a9a92",
+        "coat": "black",
+        "tie": 0
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "fleet",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "land": 1,
+      "n": 4
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "candles"
+      ],
+      "light": "dark",
+      "dies": 0.85,
+      "cam": "rise"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "title": "PLOT?",
+      "lines": [],
+      "date": "Cholula, 1519"
+     }
+    }
+   ]
+  },
+  {
+   "text": "WELCOMED. THEN TAKEN HOSTAGE.",
+   "red": [
+    "HOSTAGE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "versus",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "left": "Cortés",
+      "right": "Moctezuma II",
+      "mid": "8 NOV 1519"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "close",
+      "light": "bulb",
+      "shadows": 1,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "people",
+     "fx": [
+      "shake",
+      "ramp"
+     ],
+     "p": {
+      "n": 12,
+      "pose": "up",
+      "night": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "versus",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "left": "Spanish accounts",
+      "right": "Indigenous accounts",
+      "mid": "?"
+     }
+    }
+   ]
+  },
+  {
+   "text": "TENS OF THOUSANDS OF ALLIES.",
+   "red": [
+    "ALLIES"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "dies": 0.85,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "people",
+     "fx": [
+      "ramp",
+      "punch"
+     ],
+     "p": {
+      "n": 12,
+      "pose": "walk",
+      "label": "1521 · the siege"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "state": "ruin",
+      "seed": 7
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "candles"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "amb": 0.3,
+      "shadows": 5,
+      "cam": "low"
+     }
+    }
+   ]
+  }
+ ]
+}

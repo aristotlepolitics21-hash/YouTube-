@@ -1,0 +1,80 @@
+{
+  "series": "Infamous",
+  "episode": 18,
+  "title": "Augusto Pinochet",
+  "subtitle": "The general who seized Chile and spent his last years running from justice",
+  "say": {"Pinochet": "Peeno-chet", "Pinochet's": "Peeno-chet's", "Allende": "Ah-yen-day", "Valparaíso": "Valpara-eeso", "La Moneda": "La Monayda", "Víctor Jara": "Victor Hara", "Letelier": "Letel-yair", "Garzón": "Gar-thon", "Aylwin": "Ile-ween", "DINA": "Deena", "Grimaldi": "Grimahldi"},
+  "package": {
+    "thumb_line": 13,
+    "thumb": ["THE COUP", "IN CHILE"],
+    "intro": "On 11 September 1973, the Chilean armed forces bombed their own presidential palace and overthrew an elected government. The general at their head, Augusto Pinochet, ruled Chile for seventeen years. This documentary tells how he took power, what his regime did to its opponents, and why Chileans are still divided over him.",
+    "facts": ["Born 25 November 1915 in Valparaíso, Chile", "Appointed army commander by President Salvador Allende on 23 August 1973", "Led the military coup of 11 September 1973; ruled until 11 March 1990", "Chile's official truth commissions recognised more than 40,000 victims, including over 3,000 killed or disappeared", "Orlando Letelier and Ronni Moffitt were killed by a DINA car bomb in Washington on 21 September 1976", "Lost the plebiscite of 5 October 1988, with about 56% voting No", "Arrested in London on a Spanish warrant on 16 October 1998; released on health grounds in March 2000", "Died in Santiago on 10 December 2006, aged 91, without being convicted of any crime"],
+    "sources": "Encyclopaedia Britannica, Chile's National Commission for Truth and Reconciliation (Rettig Report, 1991) and National Commission on Political Imprisonment and Torture (Valech Report, 2004 and 2011), Museum of Memory and Human Rights (Santiago), US National Security Archive declassified Chile documents, Peter Kornbluh's The Pinochet File.",
+    "hashtags": "#History #Documentary #Chile",
+    "tags": "augusto pinochet, pinochet documentary, chile coup 1973, salvador allende, chilean dictatorship, the disappeared, dina, operation condor, pinochet arrest london, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "AUGUSTO PINOCHET", "sub": "The general who seized Chile", "art": "city", "artp": {"state": "fire", "planes": 1}}, "On the morning of the eleventh of September 1973, jets of the Chilean air force fired rockets into La Moneda, the presidential palace in Santiago. Inside, the elected president refused to surrender."],
+      ["date", {"date": "11 September 1973", "place": "La Moneda Palace · Santiago"}, "By the afternoon he was dead, and the army commander he had appointed less than three weeks earlier was in charge of the country."],
+      ["stat", {"value": "17 years", "label": "of military rule in Chile, 1973 – 1990"}, "That commander was Augusto Pinochet. He would rule Chile for the next seventeen years."],
+      ["stat", {"value": "40,000+", "label": "victims recognised by Chile's official commissions"}, "Chile's official commissions later recognised more than forty thousand victims of his regime. Over three thousand were killed or disappeared. Tens of thousands more were imprisoned and tortured for their politics."],
+      ["lesson", {"text": "A dictator, or a saviour?"}, "To millions he was a dictator who murdered his opponents. To others he was the man who saved Chile from communism and rebuilt its economy. This is the story of both reputations."]
+    ]},
+    { "name": "A quiet soldier", "lines": [
+      ["date", {"date": "25 November 1915", "place": "Valparaíso · Chile"}, "Augusto Pinochet was born on the twenty-fifth of November, 1915, in the port city of Valparaíso, into a middle-class family."],
+      ["bust", {"name": "Augusto Pinochet", "years": "1915 – 2006", "role": "Career army officer. Seen as dutiful, cautious and no threat.", "hair": "back", "stache": "thin", "hat": "peak", "coat": "military"}, "He entered the military academy as a young man and spent the next four decades rising steadily through the army. Colleagues saw him as dutiful, cautious and uninterested in politics."],
+      ["army", {"label": "Chilean Army · 1930s – 1970s"}, "He taught at the war academy, wrote books on geography and geopolitics, and by 1971 commanded the army garrison in Santiago."]
+    ]},
+    { "name": "Allende's Chile", "lines": [
+      ["ballot", {"value": "36.6%", "label": "Salvador Allende · presidential election 1970"}, "In 1970, Chileans elected Salvador Allende, a Marxist doctor, as president. He won just over a third of the vote, and Congress confirmed him."],
+      ["bust", {"name": "Salvador Allende", "years": "1908 – 1973", "role": "Socialist president of Chile, elected 1970.", "hair": "back", "stache": "thin", "glasses": "square", "coat": "suit"}, "Allende nationalised the copper mines and the banks and broke up large estates. His supporters saw a peaceful, democratic road to socialism. His opponents feared Chile was becoming another Cuba."],
+      ["quote", {"text": "Make the economy scream.", "who": "Richard Nixon, 1970, in CIA director Richard Helms's notes"}, "So did the United States. In 1970, according to the notes of the CIA's director, President Richard Nixon ordered the agency to make Chile's economy scream. Declassified documents show Washington worked against Allende from the start."],
+      ["paper", {"mast": "SANTIAGO", "head": "Shortages, strikes and inflation", "sub": "A country split in two", "date": "1973"}, "By 1973 Chile was in crisis. Inflation was running at hundreds of percent, shops were short of food, and strikes and street clashes divided the nation."],
+      ["decree", {"title": "Appointment", "lines": ["General Augusto Pinochet", "Commander-in-Chief of the Army"], "date": "23 August 1973"}, "On the twenty-third of August 1973, Allende made Pinochet commander of the army, believing him loyal. Only days before the coup did Pinochet join the officers plotting to overthrow him."]
+    ]},
+    { "name": "The coup", "lines": [
+      ["city", {"state": "fire", "planes": 1, "tanks": 1, "label": "La Moneda · 11 September 1973"}, "On the eleventh of September, the armed forces moved. Tanks surrounded the palace, and the air force bombed it."],
+      ["tv", {"text": "RADIO MAGALLANES · 11 SEPT 1973"}, "Allende gave a final, defiant radio address. Then, as soldiers entered the building, he shot himself. A forensic investigation in 2011 confirmed that his death was suicide."],
+      ["bust", {"name": "General Pinochet", "years": "1973", "role": "Head of the military junta. Took the title of president in 1974.", "hair": "back", "stache": "thin", "hat": "peak", "glasses": "dark", "coat": "military", "medals": 4, "frown": 1}, "A four-man junta took control, led by Pinochet as head of the army. Within fifteen months he had pushed the others aside and taken the title of president."],
+      ["decree", {"title": "Junta decrees", "lines": ["Congress closed", "Left-wing parties banned", "Press censored", "Curfew imposed"], "date": "September 1973"}, "Congress was closed. Left-wing parties were banned and the rest suspended. Newspapers were censored and a curfew imposed."]
+    ]},
+    { "name": "The terror", "lines": [
+      ["camp", {"night": 0, "label": "National Stadium · Santiago · 1973"}, "In the weeks after the coup, thousands of people were rounded up. The National Stadium in Santiago became a mass detention camp."],
+      ["people", {"n": 6, "pose": "mourn", "label": "Víctor Jara · 1932 – 1973"}, "Among those killed was Víctor Jara, a much-loved folk singer, who was detained at another Santiago stadium and shot days after the coup. In 2018, a Chilean court convicted retired army officers of his murder."],
+      ["wall", {"night": 1, "label": "The Caravan of Death · October 1973"}, "In October, a group of army officers toured the provinces by helicopter. In what became known as the Caravan of Death, dozens of political prisoners were taken from their cells and executed."],
+      ["web", {"nodes": [["Pinochet", 0.5, 0.18, 1], ["DINA", 0.5, 0.48, 0], ["Torture centres", 0.22, 0.8, 0], ["Villa Grimaldi", 0.78, 0.8, 0]], "links": [[0, 1], [1, 2], [2, 3]], "label": "the secret police"}, "In 1974 the regime formalised a secret police, known as DINA, under Colonel Manuel Contreras, who reported to Pinochet. It ran secret torture centres, such as Villa Grimaldi in Santiago."],
+      ["decree", {"title": "Operation Condor", "lines": ["Chile · Argentina · Uruguay", "Paraguay · Bolivia · Brazil", "Exiles tracked across borders"], "date": "1975 onwards", "seal": 0}, "DINA also helped build Operation Condor, a secret network of South American military governments that tracked, seized and killed each other's exiles."],
+      ["people", {"n": 7, "pose": "look", "red": 2, "label": "the disappeared"}, "Many prisoners were never seen again. Their families called them the disappeared. For years, the state denied knowing anything about them."],
+      ["checklist", {"head": "Killed abroad by DINA", "items": ["Gen. Carlos Prats and his wife · 1974", "Orlando Letelier · 1976", "Ronni Moffitt · 1976"]}, "DINA reached abroad too. In 1974 a car bomb in Buenos Aires killed General Carlos Prats, Pinochet's predecessor as army chief, and his wife. In 1976 a bomb in Washington killed the exiled former minister Orlando Letelier and his young American colleague, Ronni Moffitt."]
+    ]},
+    { "name": "The Chicago Boys", "lines": [
+      ["paper", {"mast": "SANTIAGO", "head": "The Chicago Boys take charge", "sub": "Free-market reform under military rule", "date": "1975"}, "Pinochet handed the economy to a group of economists trained at the University of Chicago, known as the Chicago Boys. They cut spending, sold state companies, opened Chile to trade and later privatised pensions."],
+      ["stat", {"value": "1982", "label": "banking crisis · output falls by about a seventh"}, "In 1982 the economy crashed. Output fell by roughly fourteen percent, banks failed, and unemployment soared."],
+      ["city", {"state": "normal", "seed": 2, "label": "Santiago · late 1980s"}, "The reforms were adjusted, and from the mid-1980s Chile grew fast. Admirers abroad called it an economic miracle. Critics point to deep inequality, and to the fact that it was imposed on a country where nobody could safely object."]
+    ]},
+    { "name": "The vote", "lines": [
+      ["decree", {"title": "Constitution of 1980", "lines": ["Approved by plebiscite", "Pinochet president to 1989", "Yes-or-no vote in 1988"], "date": "11 September 1980"}, "In 1980, a new constitution was approved in a plebiscite held without electoral rolls or a free press. It kept Pinochet in power, but promised a yes-or-no vote on his rule in 1988."],
+      ["podium", {"night": 0, "banners": 2, "cheer": 1, "label": "The campaign for No · 1988"}, "Opposition parties, banned or harassed for years, united behind a campaign for No. Its television adverts were cheerful and hopeful, and they worked."],
+      ["ballot", {"value": "56%", "label": "voted No · plebiscite of 5 October 1988"}, "On the fifth of October 1988, about fifty-six percent of voters said no to Pinochet. Other members of the junta made clear they would not help him ignore the result, and he accepted it."],
+      ["date", {"date": "11 March 1990", "place": "Santiago · return to democracy"}, "In March 1990 he handed the presidency to an elected civilian, Patricio Aylwin. But he stayed on as head of the army for eight more years, then became a senator for life, protected by parliamentary immunity."]
+    ]},
+    { "name": "Arrest in London", "lines": [
+      ["paper", {"mast": "LONDON", "head": "Pinochet arrested", "sub": "Spanish judge seeks his extradition", "date": "17 October 1998"}, "In October 1998, while recovering from surgery in London, Pinochet was arrested on a warrant from a Spanish judge, Baltasar Garzón, who wanted to try him for torture and murder."],
+      ["inquiry", {"label": "House of Lords · 1998 – 1999"}, "Britain's highest court ruled that a former head of state had no immunity from extradition for torture. It was a landmark in international law."],
+      ["cell", {"bars": 0, "label": "House arrest · Surrey · 1998 – 2000"}, "He spent sixteen months under house arrest outside London. In March 2000, the British government released him on medical grounds, and he flew home to Chile."]
+    ]},
+    { "name": "The end", "lines": [
+      ["decree", {"title": "Cases in Chile", "lines": ["Immunity removed", "Charged over killings", "and disappearances"], "date": "2000 – 2006"}, "Back home, judges stripped him of his immunity, and he was charged in several cases. Each time, his lawyers argued that he was too ill to stand trial."],
+      ["paper", {"mast": "WASHINGTON", "head": "Pinochet's secret accounts", "sub": "US Senate report on Riggs Bank", "date": "July 2004"}, "Then, in 2004, a United States Senate investigation found he had hidden millions of dollars in secret bank accounts. Even some loyal supporters were shaken."],
+      ["date", {"date": "10 December 2006", "place": "Santiago · aged 91"}, "He died on the tenth of December 2006, aged ninety-one. It was International Human Rights Day. He was never convicted of any crime."],
+      ["versus", {"left": "Mourners", "right": "Celebrations", "mid": "2006"}, "Thousands of supporters filed past his coffin. In other streets, people celebrated. He received military honours, but the government refused him a state funeral."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["inquiry", {"label": "Chilean courts · 2000s – today"}, "Hundreds of former officers and agents have since been charged or convicted. Manuel Contreras, the head of DINA, died in custody in 2015, serving sentences of hundreds of years."],
+      ["quote", {"text": "He saved Chile from chaos and built its modern economy.", "who": "summary of his defenders' case"}, "His defenders still credit him with rescuing Chile from chaos and laying the foundations of one of Latin America's strongest economies. Chileans voted down two attempts to replace his constitution, in 2022 and 2023, though it had long since been heavily amended."],
+      ["lesson", {"text": "Rulers can be made to answer."}, "Pinochet never stood trial for the killings. But his arrest in London changed something. Former rulers can no longer assume that a title will protect them from justice."],
+      ["memorial", {"n": 500, "date": "The disappeared · Santiago General Cemetery"}, "In Santiago's General Cemetery, a long stone wall carries the names of the dead and the disappeared. Half a century on, some families are still searching."]
+    ]}
+  ]
+}

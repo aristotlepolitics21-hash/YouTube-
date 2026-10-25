@@ -1,0 +1,307 @@
+{
+ "id": "39-robespierre",
+ "say": {
+  "Robespierre": "Rohbspyair",
+  "Desmoulins": "Day moolan"
+ },
+ "scenes": [
+  {
+   "text": "HE ONCE OPPOSED THE DEATH PENALTY.",
+   "red": [
+    "OPPOSED"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "people",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 12,
+      "pose": "up",
+      "label": "Paris · 28 July 1794"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "red",
+      "shadows": 4,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "wig",
+        "coat": "suit",
+        "tie": 0
+       },
+       "pose": "sit",
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#a3291f",
+      "light": "bulb",
+      "amb": 0.5,
+      "dies": 0.8,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "stat",
+     "fx": [
+      "glitch",
+      "shake"
+     ],
+     "p": {
+      "value": "~17,000",
+      "label": "official death sentences in the Terror"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE INCORRUPTIBLE.",
+   "red": [
+    "INCORRUPTIBLE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "podium",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "cheer": 0,
+      "banners": 0,
+      "label": "National Assembly · 1791"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "checklist",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "head": "He argued for",
+      "items": [
+       "The vote for all men",
+       "Rights for Jews and free people of colour",
+       "An end to the death penalty"
+      ]
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "shadows": 1,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "wig",
+        "coat": "suit",
+        "tie": 0
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "quote",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "text": "Louis must die, so that the country may live.",
+      "who": "Robespierre · December 1792"
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE WAS A WITNESS AT HIS WEDDING.",
+   "red": [
+    "WITNESS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "bunker",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 12,
+      "label": "Committee of Public Safety · 1793"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "door",
+       "bars"
+      ],
+      "door": "close",
+      "deep": 1,
+      "light": "bulb",
+      "amb": 0.5,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.45
+     ],
+     "p": {
+      "title": "Marriage register",
+      "lines": [
+       "Camille Desmoulins",
+       "Lucile Duplessis",
+       "Witness: Robespierre"
+      ],
+      "date": "29 December 1790"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "versus",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "left": "ROBESPIERRE",
+      "right": "DESMOULINS",
+      "mid": "SCHOOL FRIENDS",
+      "red": "r"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE MACHINE TOOK HIM TOO.",
+   "red": [
+    "MACHINE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "decree",
+     "fx": [
+      "punch",
+      "ramp"
+     ],
+     "p": {
+      "title": "Law of 22 Prairial",
+      "lines": [
+       "Two verdicts only:",
+       "acquittal or death"
+      ],
+      "date": "10 June 1794"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "light": "bulb",
+      "shadows": 4,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "wig",
+        "coat": "suit",
+        "tie": 0,
+        "glasses": "round",
+        "frown": 1
+       },
+       "pose": "sit",
+       "at": [
+        0,
+        -0.5
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "podium",
+     "fx": [
+      "smash",
+      "shake"
+     ],
+     "p": {
+      "cheer": 0,
+      "banners": 0,
+      "label": "9 Thermidor · 27 July 1794"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "people",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "n": 12,
+      "pose": "up",
+      "label": "Paris · 28 July 1794"
+     }
+    }
+   ]
+  }
+ ]
+}

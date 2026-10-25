@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 49,
+  "title": "Blackbeard",
+  "subtitle": "The pirate whose legend outgrew the man",
+  "say": {"Ocracoke": "Okra-coke", "Teach": "Teech", "Thache": "Thatch", "Hornigold": "Hornigold", "Martinique": "Martin-eek", "La Concorde": "Lah Kon-cord", "Stede": "Steed", "Spotswood": "Spots-wood", "Maynard": "May-nard", "Williamsburg": "Williamsburg", "Beaufort": "Bo-fert", "Woodes": "Woods", "Pyrates": "Pirates", "Bonnet": "Bonnet"},
+  "package": {
+    "thumb_line": 17,
+    "thumb": ["BLACKBEARD", "THE TRUTH"],
+    "intro": "Edward Teach, better known as Blackbeard, was a pirate captain for only about two years, yet he is the most famous pirate in history. This documentary separates the record from the legend: the captured slave ship, the blockade of Charleston, the pardon, and the last fight at Ocracoke.",
+    "facts": ["Probably born around 1680; his birthplace is uncertain, possibly Bristol, England", "Sailed under pirate captain Benjamin Hornigold out of Nassau, Bahamas, from about 1716", "Captured the French slave ship La Concorde near Martinique in November 1717 and renamed it Queen Anne's Revenge", "Blockaded Charles Town (Charleston), South Carolina, for about a week in May 1718, ransoming hostages for a chest of medicines", "Queen Anne's Revenge ran aground at Beaufort Inlet, North Carolina, in June 1718", "Accepted a royal pardon from North Carolina's governor, Charles Eden, in 1718", "Killed by a Royal Navy force under Lt Robert Maynard at Ocracoke Inlet on 22 November 1718", "The wreck found in 1996 was confirmed as Queen Anne's Revenge by North Carolina in 2011"],
+    "sources": "North Carolina Department of Natural and Cultural Resources (Queen Anne's Revenge project), Encyclopaedia Britannica, Colin Woodard's The Republic of Pirates, Angus Konstam's Blackbeard: America's Most Notorious Pirate, A General History of the Pyrates (1724).",
+    "hashtags": "#History #Documentary #Pirates",
+    "tags": "blackbeard, edward teach, blackbeard documentary, queen annes revenge, golden age of piracy, pirates, nassau pirates, ocracoke, real pirates, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "BLACKBEARD", "sub": "The pirate whose legend outgrew the man", "art": "fleet", "artp": {"n": 2, "pirate": 1, "night": 1}}, "Early on the morning of the twenty-second of November 1718, two small sloops crept into Ocracoke Inlet, on the coast of North Carolina. Waiting for them was the most feared pirate in the Americas."],
+      ["fleet", {"n": 2, "pirate": 1, "cannon": 1, "label": "Ocracoke Inlet · 22 November 1718"}, "After a short, savage fight, Edward Teach, known as Blackbeard, was dead."],
+      ["stat", {"value": "~2 years", "label": "Blackbeard's career as a pirate, c. 1716 – 1718"}, "His career as a pirate had lasted only about two years. Three centuries later, he is probably the most famous pirate who ever lived."],
+      ["lesson", {"text": "How much of the legend is true?"}, "The smoking beard, the fourteen wives, the buried treasure: much of it comes from a single book published after his death. This is what the record shows."]
+    ]},
+    { "name": "Origins", "lines": [
+      ["date", {"date": "c. 1680", "place": "birthplace uncertain · perhaps Bristol"}, "Almost nothing is certain about his early life. His name was written as Teach, Thatch or Thache. He was probably born around 1680, possibly in Bristol, England, though some researchers link his family to Jamaica."],
+      ["fleet", {"n": 3, "cannon": 1, "label": "Queen Anne's War · 1702 – 1713"}, "He may have sailed on a privateer, a privately owned ship licensed to raid enemy shipping, during Britain's long war with France and Spain."],
+      ["people", {"n": 6, "pose": "walk", "label": "1713 · sailors out of work"}, "When that war ended in 1713, thousands of sailors were thrown out of work. Many turned to piracy, in what became known as the Golden Age of Piracy."],
+      ["jungle", {"n": 5, "label": "Nassau · New Providence · 1716"}, "Their base was Nassau, on the island of New Providence in the Bahamas, a lawless harbour where pirates could sell their loot and repair their ships."],
+      ["bust", {"name": "Edward Teach", "years": "c. 1680 – 1718", "role": "Known as Blackbeard. Pirate captain, c. 1716 – 1718.", "hair": "long", "beard": "long", "hat": "tricorn", "coat": "black", "tie": 0}, "Around 1716, Teach joined the crew of a pirate captain named Benjamin Hornigold. He learned fast, and was soon commanding a captured sloop of his own."],
+      ["web", {"nodes": [["Benjamin Hornigold", 0.5, 0.18, 0], ["Edward Teach", 0.5, 0.52, 1], ["Stede Bonnet", 0.2, 0.85, 0]], "links": [[0, 1], [1, 2]], "label": "the Nassau pirates"}, "Nassau's pirates formed a loose network. When Hornigold refused to attack British ships, his crew voted him out. He later took a pardon and became a pirate hunter."]
+    ]},
+    { "name": "Queen Anne's Revenge", "lines": [
+      ["versus", {"left": "Teach", "right": "Bonnet", "mid": "1717"}, "In 1717 Teach joined forces with Stede Bonnet, a wealthy Barbados landowner who had bought a ship and turned pirate, though he knew little about the sea."],
+      ["fleet", {"n": 2, "pirate": 1, "land": 1, "label": "near Martinique · November 1717"}, "In November 1717, near the island of Martinique, Teach captured a large French ship, La Concorde. It was a slave ship, carrying hundreds of enslaved Africans."],
+      ["people", {"n": 8, "pose": "look", "label": "La Concorde · 1717"}, "Accounts suggest that some of the captives were left ashore with the French crew, and others were taken by the pirates. What became of most of them is unknown."],
+      ["stat", {"value": "40 guns", "label": "Queen Anne's Revenge"}, "Teach armed the ship with up to forty cannon and renamed it the Queen Anne's Revenge. It made him one of the most powerful pirates in the Americas."]
+    ]},
+    { "name": "The image", "lines": [
+      ["quote", {"text": "Lit fuses tucked under his hat, his beard twisted into braids, three pairs of pistols across his chest.", "who": "summary of the 1724 description in A General History of the Pyrates"}, "A book published in 1724 described him going into action with burning fuses tucked under his hat, his huge black beard twisted into braids, and three pairs of pistols slung across his chest."],
+      ["lesson", {"text": "Fear was cheaper than fighting."}, "Whether or not every detail is true, the image had a purpose. A crew that surrendered without a fight saved the pirates powder, lives, and damage to the ship they wanted."],
+      ["checklist", {"head": "What the record shows", "items": ["Dozens of ships taken", "Hostages held for ransom", "Threats and robbery", "No proven murders of captives"]}, "Historians such as Colin Woodard have found no reliable record of him killing anyone before his final battle. His victims reported threats, robbery and hostage-taking."]
+    ]},
+    { "name": "Charleston", "lines": [
+      ["fleet", {"n": 4, "pirate": 1, "land": 1, "label": "off Charles Town · May 1718"}, "His boldest act came in May 1718. With four ships, he blockaded the harbour of Charles Town, now Charleston, South Carolina, for about a week, seizing vessels as they came and went."],
+      ["decree", {"title": "The pirates' demand", "lines": ["One chest of medicines", "or the hostages die"], "date": "May 1718"}, "He took passengers hostage, including a member of the colony's council, and demanded a strange ransom: not gold, but a chest of medicines. The colony paid. The hostages were released, robbed but alive."],
+      ["date", {"date": "June 1718", "place": "Beaufort Inlet · North Carolina"}, "Weeks later, the Queen Anne's Revenge ran aground off North Carolina. Some of his own men believed he had wrecked her on purpose, to break up his large company and keep more of the plunder."],
+      ["people", {"n": 5, "pose": "look", "label": "marooned"}, "He sailed off in a smaller sloop with a chosen crew and most of the loot, leaving many of his men stranded."]
+    ]},
+    { "name": "The pardon", "lines": [
+      ["decree", {"title": "Proclamation for Suppressing of Pirates", "lines": ["A royal pardon", "for pirates who surrender"], "date": "5 September 1717"}, "King George the First had offered a pardon to pirates who surrendered. Teach went to the governor of North Carolina, Charles Eden, and accepted it."],
+      ["ruler", {"hat": "peak", "guards": 3, "label": "Woodes Rogers · Nassau · July 1718"}, "The pirate world was shrinking. That July, a new royal governor, Woodes Rogers, arrived in Nassau with warships, and the pirates' haven began to close."],
+      ["field", {"village": 1, "n": 3, "label": "Bath · North Carolina · 1718"}, "Teach settled in the small town of Bath, and was said to have married a local woman. It did not last."],
+      ["fleet", {"n": 2, "pirate": 1, "label": "near Bermuda · August 1718"}, "Within weeks he was back at sea. He returned with a captured French ship, claimed he had found it abandoned, and the colony's court let him keep it. One of Eden's officials, Tobias Knight, was later accused of helping him, but was acquitted."]
+    ]},
+    { "name": "The hunt", "lines": [
+      ["cell", {"label": "Stede Bonnet · Charles Town · December 1718"}, "The net was closing. His former partner, Stede Bonnet, was captured that autumn and hanged in Charles Town in December."],
+      ["bust", {"name": "Alexander Spotswood", "years": "1676 – 1740", "role": "Governor of Virginia. Sent the expedition against Blackbeard.", "hair": "wig", "coat": "suit", "tie": 0}, "In neighbouring Virginia, Governor Alexander Spotswood decided to act, even though North Carolina was not his colony. He hired two sloops at his own expense."],
+      ["bust", {"name": "Lt Robert Maynard", "years": "Royal Navy", "role": "Commanded the sloops sent to Ocracoke.", "hat": "tricorn", "hair": "crop", "coat": "military"}, "They sailed with about sixty Royal Navy sailors, under Lieutenant Robert Maynard."],
+      ["jungle", {"n": 4, "night": 1, "label": "Ocracoke Island · 21 November 1718"}, "Blackbeard was anchored off Ocracoke Island in his sloop, the Adventure, with only about twenty men."],
+      ["fleet", {"n": 2, "pirate": 1, "cannon": 1, "night": 1, "label": "Ocracoke · 22 November 1718"}, "When the navy sloops attacked the next morning, Blackbeard's first broadside caused heavy casualties."],
+      ["versus", {"left": "Maynard", "right": "Blackbeard", "mid": "VS", "red": "r"}, "Maynard hid most of his men below deck. When the pirates boarded, thinking the fight was won, the sailors rushed up. Blackbeard was killed in the fighting that followed. Maynard reported that he had suffered more than twenty wounds."],
+      ["paper", {"mast": "THE COLONIES", "head": "Blackbeard killed", "sub": "Pirate slain at Ocracoke", "date": "1719"}, "Maynard sailed back with Blackbeard's head hung from his bowsprit, as proof. News of his death spread through the colonies."],
+      ["inquiry", {"label": "Williamsburg, Virginia · March 1719"}, "His surviving men were tried in Williamsburg, Virginia, in 1719. Most were hanged."]
+    ]},
+    { "name": "The legend", "lines": [
+      ["paper", {"mast": "LONDON", "head": "A General History of the Pyrates", "sub": "by 'Captain Charles Johnson'", "date": "1724"}, "Five years after his death, a London book, A General History of the Pyrates, made him a star. Its author called himself Captain Charles Johnson. His true identity is still unknown."],
+      ["checklist", {"head": "Legend, not record", "items": ["Fourteen wives", "Buried treasure", "The horned skeleton flag", "A trail of murders"]}, "Many famous details come only from that book, or from later writers: the fourteen wives, the treasure only he and the devil could find. The horned skeleton flag often linked to him has no evidence from his own time."],
+      ["timeline", {"events": [["La Concorde · Nov 1717", 0.1], ["Charles Town · May 1718", 0.48], ["Ocracoke · Nov 1718", 0.9]]}, "The real career at the top was astonishingly short. From capturing his great flagship to dying at Ocracoke took just one year."],
+      ["date", {"date": "1996", "place": "Beaufort Inlet · the wreck is found"}, "In 1996, divers found a wreck off Beaufort Inlet. In 2011, North Carolina's archaeologists confirmed it was the Queen Anne's Revenge."],
+      ["lesson", {"text": "No treasure chest has ever been found."}, "Its cannon, anchors and medical instruments, and even flecks of gold dust, are now in museums. No treasure chest has ever been found."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["people", {"n": 7, "pose": "up", "label": "novels · films · festivals"}, "Blackbeard became the model for the fictional pirate. Robert Louis Stevenson even borrowed the name of one of his real crewmen, Israel Hands, for Treasure Island."],
+      ["jungle", {"n": 3, "label": "Teach's Hole · Ocracoke"}, "On Ocracoke, the channel where he died is still called Teach's Hole, and the wreck's finds are displayed at the North Carolina Maritime Museum in Beaufort."],
+      ["lesson", {"text": "His victims were real."}, "But piracy was no adventure for those it touched. Sailors were robbed, terrorised and held hostage, and his flagship began its life carrying enslaved people across the Atlantic."],
+      ["memorial", {"n": 300, "date": "Ocracoke · 22 November 1718"}, "The real Blackbeard understood that a frightening story could do the work of a gun. Three hundred years on, the story is still working, long after the man is gone."]
+    ]}
+  ]
+}

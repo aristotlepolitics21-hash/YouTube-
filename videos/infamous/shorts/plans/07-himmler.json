@@ -1,0 +1,357 @@
+{
+ "id": "07-himmler",
+ "say": {
+  "Heinrich": "Hine-rikh"
+ },
+ "scenes": [
+  {
+   "text": "HE LOOKED LIKE A CLERK.",
+   "red": [
+    "CLERK"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "glasses": "round",
+        "coat": "grey"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "cell",
+     "fx": [
+      "ramp",
+      "smash"
+     ],
+     "p": {
+      "night": 1,
+      "pose": "stand",
+      "label": "British custody \u00b7 23 May 1945"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "camp",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "night": 1,
+      "n": 1
+     }
+    }
+   ]
+  },
+  {
+   "text": "A FAILED CHICKEN FARMER.",
+   "red": [
+    "FAILED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "candles"
+      ],
+      "light": "dark",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "side",
+        "glasses": "round",
+        "coat": "shirt",
+        "h": 0.85
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "field",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "n": 1,
+      "village": 1
+     }
+    },
+    {
+     "d": 5,
+     "scene": "stat",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "value": "FEWER THAN 300",
+      "label": "men in the SS when Hitler gave it to him \u00b7 1929"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "web",
+     "fx": [
+      "shake",
+      "smash"
+     ],
+     "p": {
+      "nodes": [
+       [
+        "Himmler",
+        0.5,
+        0.5,
+        1
+       ],
+       [
+        "SS",
+        0.2,
+        0.2,
+        0
+       ],
+       [
+        "Gestapo",
+        0.8,
+        0.2,
+        0
+       ],
+       [
+        "Criminal police",
+        0.2,
+        0.8,
+        0
+       ],
+       [
+        "Order police",
+        0.8,
+        0.8,
+        0
+       ]
+      ],
+      "links": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "label": "All German police \u00b7 1936"
+     }
+    }
+   ]
+  },
+  {
+   "text": "EASIER. FOR THE KILLERS.",
+   "red": [
+    "KILLERS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "light": "bulb",
+      "shadows": 5,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "shoes:60",
+       "suitcases:5"
+      ],
+      "light": "bulb",
+      "cam": "low"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "glasses": "round",
+        "stache": "thin",
+        "coat": "black",
+        "hat": "peak",
+        "hatc": "#1c1b19",
+        "band": "#77766a"
+       },
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.72
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "down",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "glasses": "round",
+        "stache": "thin",
+        "coat": "black",
+        "hat": "peak",
+        "hatc": "#1c1b19",
+        "band": "#77766a"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "PLANNED AT DESKS.",
+   "red": [
+    "DESKS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "suitcases:8"
+      ],
+      "light": "bulb",
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "value": "6,000,000",
+      "label": "Jewish men, women and children murdered"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "quote",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "text": "A page of glory in our history which has never been written and never shall be written.",
+      "who": "Heinrich Himmler \u00b7 Posen \u00b7 October 1943"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash",
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "dies": 0.6,
+      "cam": "still"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+  "series": "Infamous",
+  "episode": 27,
+  "title": "Abu Bakr al-Baghdadi",
+  "subtitle": "The quiet scholar who declared a terror state",
+  "say": {"Baghdadi": "Bagdahdee", "Abu Bakr": "Aboo Bakker", "Samarra": "Samahra", "Ibrahim": "Ibraheem", "Awwad": "Awahd", "al-Badri": "al Badree", "Mosul": "Mowsul", "Raqqa": "Rakka", "Yazidi": "Yazeedee", "Yazidis": "Yazeedeez", "Sinjar": "Sinjar", "Baghouz": "Bahgooz", "Barisha": "Bareesha", "Idlib": "Idlib", "Bucca": "Booka", "Zarqawi": "Zarkahwee", "al-Nuri": "al Nooree", "al-Sham": "al Shahm", "Shia": "Sheeah", "Sunni": "Soonee", "Kayla Mueller": "Kayla Muller", "Nineveh": "Ninnevah", "al-Hol": "al Hole", "Quranic": "Koranic", "ISIS": "Eye-sis"},
+  "package": {
+    "thumb_line": 18,
+    "thumb": ["SELF-MADE", "CALIPH"],
+    "intro": "In July 2014, a man almost nobody had seen stood in a Mosul mosque and declared himself caliph. Abu Bakr al-Baghdadi turned a beaten insurgent group into a self-declared state that enslaved Yazidi women, filled mass graves and inspired attacks around the world. This documentary tells how he rose, how his state fell, and what it left behind.",
+    "facts": ["Born Ibrahim Awwad Ibrahim al-Badri in 1971 near Samarra, Iraq", "Detained by US forces at Camp Bucca in 2004; released in December 2004", "Became leader of the Islamic State of Iraq in May 2010", "Announced the Islamic State of Iraq and al-Sham (ISIS) in April 2013", "Group declared a 'caliphate' on 29 June 2014; he preached at Mosul's al-Nuri mosque on 4 July 2014", "Attack on Sinjar began 3 August 2014; a UN commission found genocide against the Yazidis in June 2016", "Mosul retaken July 2017; last territory lost at Baghouz, March 2019", "Died during a US special forces raid in Barisha, Syria, 26–27 October 2019"],
+    "sources": "UN Independent International Commission of Inquiry on Syria ('They came to destroy', 2016), UNAMI/OHCHR report on mass graves in Iraq (2018), International Centre for the Study of Radicalisation at King's College London, Encyclopaedia Britannica, US Department of Defense statements (October 2019), William McCants's The ISIS Apocalypse.",
+    "hashtags": "#History #Documentary #ISIS",
+    "tags": "abu bakr al-baghdadi, baghdadi documentary, isis, islamic state, rise of isis, mosul, yazidi genocide, iraq war, syria war, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "AL-BAGHDADI", "sub": "The quiet scholar who declared a terror state", "art": "podium", "artp": {"night": 1, "banners": 2, "bannerc": "#1c1b19"}}, "On the fourth of July, 2014, a man in a black robe and a black turban climbed the pulpit of the Great Mosque of al-Nuri, in Mosul, Iraq's second-largest city."],
+      ["date", {"date": "4 July 2014", "place": "Great Mosque of al-Nuri · Mosul · Iraq"}, "Until that day, almost no one outside his movement knew what he looked like. Now, in front of the cameras, he claimed to be the leader of all Muslims: a caliph."],
+      ["stat", {"value": "40,000+", "label": "foreigners who travelled to join his self-declared state"}, "Over the next few years, more than forty thousand people from around the world travelled to Iraq and Syria to join him."],
+      ["stat", {"value": "$25,000,000", "label": "US reward offered for information leading to him"}, "The United States offered twenty-five million dollars for information leading to him."],
+      ["lesson", {"text": "How did a shy scholar build a terror state?"}, "Abu Bakr al-Baghdadi turned a beaten insurgent group into a self-declared state that ruled millions of people and inspired murder around the world. This is how."]
+    ]},
+    { "name": "The student", "lines": [
+      ["date", {"date": "1971", "place": "near Samarra · Iraq"}, "He was born Ibrahim Awwad Ibrahim al-Badri in 1971, near Samarra, north of Baghdad, into a religious Sunni Muslim family."],
+      ["bust", {"name": "Ibrahim al-Badri", "years": "1971 – 2019", "role": "Religious student from Samarra. Doctorate in Quranic studies.", "hair": "crop", "beard": "stubble", "hat": "kufi", "coat": "shirt"}, "People who knew him as a young man described someone quiet and shy, who loved football and Quranic recitation. He studied in Baghdad and went on to earn a doctorate in Quranic studies."],
+      ["city", {"state": "normal", "seed": 6, "label": "Baghdad · 1990s"}, "Through the 1990s, under the dictatorship of Saddam Hussein, he lived modestly in Baghdad, studying and leading prayers at a local mosque."],
+      ["army", {"tanks": 1, "planes": 1, "label": "US-led invasion of Iraq · March 2003"}, "Everything changed in 2003, when a US-led coalition invaded Iraq and overthrew Saddam. Sunni Arabs, who had dominated the old regime, lost power, and an insurgency spread."]
+    ]},
+    { "name": "Prison and insurgency", "lines": [
+      ["camp", {"night": 0, "n": 8, "label": "Camp Bucca · southern Iraq · 2004"}, "He helped found a small militant group. In early 2004 he was detained by American forces and held at Camp Bucca, a huge prison camp in the desert."],
+      ["web", {"nodes": [["Militants", 0.2, 0.3, 0], ["Ex-army officers", 0.8, 0.3, 0], ["Camp Bucca", 0.5, 0.55, 1], ["Ordinary detainees", 0.25, 0.8, 0], ["Future ISIS leaders", 0.75, 0.8, 0]], "links": [[0, 2], [1, 2], [3, 2], [2, 4]], "label": "Camp Bucca"}, "Bucca held thousands of men: committed militants, officers from Saddam's disbanded army, and ordinary people swept up in raids. Analysts later called it a meeting place for the future leaders of the Islamic State."],
+      ["decree", {"title": "Release", "lines": ["Detainee: Ibrahim al-Badri", "Assessed as low-level"], "date": "December 2004"}, "He was released in December 2004, judged a low-level threat. Later he joined the network of al-Qaeda in Iraq, the group founded by the Jordanian militant Abu Musab al-Zarqawi."],
+      ["city", {"state": "fire", "seed": 2, "label": "Iraq · 2006"}, "Al-Qaeda in Iraq bombed markets, mosques and crowds, deliberately targeting Shia Muslims to provoke a sectarian war. By 2006, Iraq was in exactly that kind of war."]
+    ]},
+    { "name": "Taking over", "lines": [
+      ["paper", {"mast": "IRAQ", "head": "Insurgent leaders killed", "sub": "Islamic State of Iraq loses its top two commanders", "date": "April 2010"}, "By 2010 the group, now calling itself the Islamic State of Iraq, had been badly beaten by American troops and Sunni tribal fighters. In April, its top two leaders were killed."],
+      ["bust", {"name": "Abu Bakr al-Baghdadi", "years": "Leader from 2010", "role": "Head of the Islamic State of Iraq. Rarely seen in public.", "hair": "crop", "beard": "full", "hat": "turban", "hatc": "#1c1b19", "coat": "#1c1b19", "frown": 1}, "In May 2010, the group named a new leader: a little-known scholar who now called himself Abu Bakr al-Baghdadi. Even many of his own fighters had never seen his face."],
+      ["wall", {"night": 1, "n": 5, "label": "Iraq · 2010 – 2013"}, "He rebuilt the group by killing rivals and informers, recruiting former officers of Saddam's army, and breaking members out of prisons."],
+      ["timeline", {"events": [["US troops leave Iraq · Dec 2011", 0.15], ["Syrian civil war", 0.5], ["ISIS announced · Apr 2013", 0.85]]}, "Two events helped him. American troops left Iraq at the end of 2011. And across the border, Syria collapsed into civil war."],
+      ["army", {"ruins": 1, "dir": -1, "label": "Syria · 2013"}, "He sent fighters into Syria. In April 2013 he announced that his group now spanned both countries: the Islamic State of Iraq and al-Sham, known in English as ISIS. In early 2014, al-Qaeda's leadership publicly cut ties with him."]
+    ]},
+    { "name": "The caliphate", "lines": [
+      ["army", {"tanks": 1, "fire": 1, "label": "Mosul · June 2014"}, "In June 2014, ISIS attacked Mosul. Iraqi army units many times larger than the attacking force collapsed and fled, abandoning weapons and vehicles."],
+      ["decree", {"title": "Declaration", "lines": ["A 'caliphate' proclaimed", "al-Baghdadi named 'caliph'"], "date": "29 June 2014"}, "On the twenty-ninth of June, the group declared a caliphate, a state claiming authority over all Muslims, with al-Baghdadi as its caliph. Muslim scholars and governments almost everywhere rejected the claim."],
+      ["podium", {"night": 1, "banners": 2, "bannerc": "#1c1b19", "label": "Mosul · 4 July 2014"}, "His sermon at al-Nuri was filmed and posted online. For years, it was the only time most of the world saw him speak."],
+      ["city", {"state": "normal", "seed": 9, "night": 1, "label": "Raqqa · the group's capital in Syria"}, "At its height, the self-declared state held cities across Iraq and Syria, from Mosul to Raqqa, and ruled over millions of people."],
+      ["checklist", {"head": "Life under ISIS", "items": ["Public executions", "Music and smoking banned", "Ancient sites destroyed", "Minorities expelled or killed"]}, "It ran courts, collected taxes and printed school textbooks. It also staged public executions, punished people for smoking or playing music, and blew up ancient monuments."]
+    ]},
+    { "name": "Genocide", "lines": [
+      ["date", {"date": "3 August 2014", "place": "Sinjar · northern Iraq"}, "On the third of August, 2014, ISIS fighters attacked Sinjar, in northern Iraq, the homeland of the Yazidis, an ancient religious minority that ISIS regarded as unbelievers to be wiped out."],
+      ["people", {"n": 8, "pose": "mourn", "night": 1, "label": "Sinjar · August 2014"}, "Thousands of Yazidi men and older women were killed. Thousands of women and girls were taken and sold into sexual slavery, and boys were forced to train as fighters."],
+      ["inquiry", {"label": "UN Commission of Inquiry on Syria · June 2016"}, "In 2016, a United Nations commission of inquiry found that ISIS had committed genocide against the Yazidis. Years later, thousands of the abducted were still missing."],
+      ["people", {"n": 9, "pose": "walk", "label": "fleeing the Nineveh Plains · 2014"}, "Christians, Shia Muslims and other minorities were driven from their homes or killed. Sunni Muslims who resisted were killed too."],
+      ["stat", {"value": "200+", "label": "mass graves found in areas ISIS held in Iraq (UN, 2018)"}, "In 2018 the United Nations reported more than two hundred mass graves in areas of Iraq that ISIS had held, which it said could contain up to twelve thousand victims."]
+    ]},
+    { "name": "Terror abroad", "lines": [
+      ["tv", {"text": "PROPAGANDA", "speaker": 0}, "Al-Baghdadi's group recruited through slick videos and social media. Its films of hostages being murdered were made to shock the world, and to draw in new followers."],
+      ["icons", {"total": 41000, "per": 1000, "red": 41000, "cols": 14, "label": "about 41,000 foreigners from 80 countries joined (ICSR, 2018)"}, "According to a 2018 study by King's College London, about forty-one thousand foreigners from some eighty countries joined it, including thousands of women and children."],
+      ["paper", {"mast": "PARIS", "head": "130 killed in coordinated attacks", "sub": "Islamic State claims responsibility", "date": "14 November 2015"}, "It also directed or inspired attacks abroad. In November 2015, gunmen and suicide bombers killed one hundred and thirty people in Paris."],
+      ["checklist", {"head": "Claimed or inspired", "items": ["Brussels · March 2016", "Nice · July 2016", "Manchester · May 2017", "Sri Lanka · April 2019"]}, "Brussels, Nice, Manchester and Sri Lanka followed, among many others. Far more people died in its attacks in Iraq, Syria, Afghanistan and Africa."]
+    ]},
+    { "name": "The fall", "lines": [
+      ["army", {"planes": 1, "label": "Global coalition · from 2014"}, "From 2014, a coalition led by the United States bombed ISIS, while Iraqi troops, Kurdish fighters and others fought it on the ground."],
+      ["city", {"state": "ruin", "seed": 4, "label": "Mosul · July 2017"}, "Mosul was retaken in July 2017, after nine months of fighting that left its old city in ruins. The al-Nuri mosque, where he had preached, had been blown up by ISIS fighters as Iraqi forces closed in."],
+      ["date", {"date": "23 March 2019", "place": "Baghouz · eastern Syria"}, "Raqqa fell that October. In March 2019, at the Syrian village of Baghouz, the self-declared caliphate lost the last of its land."],
+      ["tv", {"text": "APRIL 2019", "speaker": 0}, "Al-Baghdadi was still at large. That April, he appeared on video for the first time in nearly five years."]
+    ]},
+    { "name": "The raid", "lines": [
+      ["bunker", {"n": 2, "label": "Barisha · Idlib province · Syria"}, "He was hiding in a compound in northwest Syria, close to the Turkish border. On the night of the twenty-sixth of October, 2019, American special forces raided it."],
+      ["decree", {"title": "Operation Kayla Mueller", "lines": ["US special forces raid", "Barisha · Syria"], "date": "26 – 27 October 2019", "seal": 0}, "The raid was named after Kayla Mueller, an American aid worker who died in ISIS captivity in 2015. US officials said al-Baghdadi had held her personally."],
+      ["paper", {"mast": "WORLD NEWS", "head": "ISIS leader dead in US raid", "date": "27 October 2019"}, "Cornered in a tunnel, he set off an explosive vest. According to the US military, he killed himself and two young children he had taken with him."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["memorial", {"n": 300, "date": "Sinjar"}, "In Sinjar, families are still searching for the missing, and the dead are still being identified."],
+      ["checklist", {"head": "As of 2025", "items": ["Affiliates active in Africa", "Affiliate active in Afghanistan", "Detention camps in Syria", "Yazidis still missing"]}, "His movement did not die with him. As of 2025, Islamic State affiliates remain active in parts of Africa and in Afghanistan, and thousands of former members and their families are still held in camps in Syria."],
+      ["lesson", {"text": "The state fell. The harm did not."}, "Al-Baghdadi promised a caliphate that would last for ever. It held its cities for barely three years. What lasts far longer is the harm it did: the missing, the bereaved, and the towns still being rebuilt."]
+    ]}
+  ]
+}

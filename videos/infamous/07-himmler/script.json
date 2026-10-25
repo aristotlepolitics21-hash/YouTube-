@@ -1,0 +1,77 @@
+{
+  "series": "Infamous",
+  "episode": 7,
+  "title": "Heinrich Himmler",
+  "subtitle": "The chicken farmer who ran the SS",
+  "say": {"Heinrich": "Hine-rikh", "Lüneburg": "Lewneburg", "Reichsführer": "Ryekhs-fyoorer", "Dachau": "Dakhow", "Gestapo": "Gestahpo", "Heydrich": "Hydrikh", "Wewelsburg": "Vayvelsboorg", "Lebensborn": "Laybensborn", "Einsatzgruppen": "Ine-zats-groopen", "Belzec": "Belzhets", "Sobibor": "Sobeebor", "Wannsee": "Vahnzay", "Posen": "Pozen", "Waffen": "Vaffen", "Bernadotte": "Bernadot", "Hitzinger": "Hitsinger", "Kristallnacht": "Kristahlnakt", "Wartheland": "Vartaland", "Margarete": "Margareta", "Sinti": "Sintee"},
+  "package": {
+    "thumb_line": 24,
+    "thumb": ["THE SS", "CHIEF"],
+    "intro": "Heinrich Himmler looked like a mild, bespectacled clerk. As head of the SS, the police and the concentration camps, he did more than anyone except Hitler to organise the Holocaust. This documentary tells how an agriculture graduate built the machinery of Nazi terror, and how he tried to escape justice.",
+    "facts": ["Born 7 October 1900 in Munich", "Took part in the Beer Hall Putsch in November 1923", "Appointed Reichsführer-SS on 6 January 1929, when the SS had fewer than 300 members", "Announced the opening of Dachau concentration camp in March 1933", "Became Chief of German Police on 17 June 1936", "Spoke openly of the 'extermination of the Jewish people' in a speech to SS officers at Posen on 4 October 1943", "Stripped of all offices by Hitler in April 1945 after secretly offering surrender to the Western Allies", "Died by suicide with cyanide in British custody near Lüneburg on 23 May 1945"],
+    "sources": "United States Holocaust Memorial Museum (Holocaust Encyclopedia), Encyclopaedia Britannica, Peter Longerich's Heinrich Himmler, Richard J. Evans's Third Reich trilogy, the Topography of Terror documentation centre (Berlin), Nuremberg trial records (Avalon Project, Yale Law School).",
+    "hashtags": "#History #Documentary #WW2",
+    "tags": "heinrich himmler, himmler documentary, ss, gestapo, holocaust, nazi germany, final solution, world war 2, third reich, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "HEINRICH HIMMLER", "sub": "The chicken farmer who ran the SS", "art": "camp", "artp": {"night": 1}}, "On the twenty-third of May 1945, at a British camp near Lüneburg in northern Germany, a prisoner with an eyepatch and a freshly shaved lip took off his disguise."],
+      ["date", {"date": "23 May 1945", "place": "British camp · near Lüneburg"}, "He was Heinrich Himmler, head of the SS. As a doctor examined his mouth, he bit into a hidden capsule of cyanide. Within minutes, he was dead."],
+      ["stat", {"value": "6,000,000", "label": "Jews murdered in the Holocaust"}, "Apart from Hitler himself, no one did more to organise the Holocaust, the murder of six million Jews."],
+      ["web", {"nodes": [["Himmler", 0.5, 0.18, 1], ["SS", 0.17, 0.52, 0], ["Gestapo", 0.39, 0.52, 0], ["Police", 0.61, 0.52, 0], ["Camps", 0.83, 0.52, 0], ["Waffen-SS", 0.5, 0.84, 0]], "links": [[0, 1], [0, 2], [0, 3], [0, 4], [1, 5]], "label": "Himmler's empire"}, "He controlled the SS, the Gestapo, the German police and the concentration camps: the machinery of terror and murder across Nazi-occupied Europe."],
+      ["lesson", {"text": "He looked like a mild clerk."}, "He looked like a mild, bespectacled clerk. That is part of what makes him so disturbing. This is how an agriculture graduate became an organiser of genocide."]
+    ]},
+    { "name": "A schoolmaster's son", "lines": [
+      ["date", {"date": "7 October 1900", "place": "Munich · Bavaria"}, "Heinrich Himmler was born in Munich on the seventh of October 1900. His father was a strict, conservative Catholic schoolmaster who had once tutored a Bavarian prince."],
+      ["bust", {"name": "Heinrich Himmler", "years": "1900 – 1945", "role": "Schoolmaster's son. Studied agriculture.", "hair": "crop", "glasses": "round", "coat": "suit", "tie": "#2b2b30"}, "He was a sickly, studious boy who kept a meticulous diary. He longed to be a soldier and trained as an officer cadet, but the First World War ended before he saw action."],
+      ["field", {"n": 5, "label": "Munich · 1919 – 1922"}, "He studied agriculture in Munich, and joined the right-wing paramilitary groups that roamed Bavaria after the war, fighting the left."],
+      ["podium", {"night": 1, "banners": 2, "label": "Munich · November 1923"}, "In 1923 he joined the Nazi Party, and took part in Hitler's failed Beer Hall Putsch, holding a flag at a barricade."],
+      ["field", {"village": 1, "n": 2, "label": "poultry farm · near Munich · 1928"}, "Afterwards he worked as a party organiser, married a nurse named Margarete, and tried to run a chicken farm outside Munich. It did not do well."]
+    ]},
+    { "name": "Building the SS", "lines": [
+      ["decree", {"title": "Appointment", "lines": ["Heinrich Himmler", "Reichsführer-SS"], "date": "6 January 1929"}, "In January 1929, Hitler made him leader of the SS, a small unit of party bodyguards with fewer than three hundred men."],
+      ["bars", {"items": [["SS · 1929", 280, ""], ["SS · end of 1932", 52000, ""]], "max": 52000, "red": 1}, "Himmler set out to make it an elite. Members had to prove their racial ancestry back generations. By the end of 1932, the SS had more than fifty thousand men."],
+      ["camp", {"night": 0, "label": "Dachau · March 1933"}, "When Hitler took power in 1933, Himmler became police chief in Munich. Within weeks he announced a concentration camp at Dachau for political opponents. It became the model for the camps that followed."],
+      ["wall", {"night": 1, "n": 5, "label": "Night of the Long Knives · 30 June 1934"}, "In 1934 he took over the Gestapo, the secret state police. That summer, SS men carried out most of the killings on the Night of the Long Knives, when Hitler purged his rivals."],
+      ["decree", {"title": "Chief of German Police", "lines": ["Heinrich Himmler", "Reichsführer-SS and", "Chief of German Police"], "date": "17 June 1936"}, "By 1936 he was chief of all German police. The police and the SS were becoming a single instrument, answerable only to Hitler."]
+    ]},
+    { "name": "Race and terror", "lines": [
+      ["bust", {"name": "Reinhard Heydrich", "years": "1904 – 1942", "role": "Himmler's deputy. Head of the security police and SS intelligence.", "hair": "back", "coat": "black", "tie": "#1c1b19"}, "His deputy, Reinhard Heydrich, ran the security police and the SS intelligence service. Together they built a vast system of surveillance, arrest and imprisonment."],
+      ["checklist", {"head": "Himmler's obsessions", "items": ["Racial 'purity'", "Germanic myth and ritual", "A castle for the SS", "Breeding an 'elite'"]}, "Himmler was obsessed with race and myth. He funded pseudo-scientific research into Germanic ancestry, turned Wewelsburg castle into an SS shrine, and set up the Lebensborn homes to raise more children he considered racially valuable."],
+      ["people", {"n": 7, "red": 2, "pose": "walk", "label": "persecution · 1930s"}, "His police hunted communists, Jews, Roma, gay men and people the regime labelled asocial."],
+      ["city", {"state": "fire", "night": 1, "seed": 3, "label": "Kristallnacht · 9 – 10 November 1938"}, "After Kristallnacht, in November 1938, his police arrested around thirty thousand Jewish men and sent them to Dachau, Buchenwald and Sachsenhausen."]
+    ]},
+    { "name": "War and murder", "lines": [
+      ["army", {"tanks": 1, "label": "Poland · September 1939"}, "When Germany invaded Poland in 1939, SS units followed the army, shooting Polish teachers, priests and officials."],
+      ["people", {"n": 8, "pose": "walk", "label": "western Poland · 1939 – 1941"}, "Himmler was put in charge of resettling conquered land with ethnic Germans. Hundreds of thousands of Poles and Jews were driven from their homes."],
+      ["wall", {"night": 1, "n": 6, "label": "occupied Soviet Union · 1941"}, "In June 1941, Germany invaded the Soviet Union. Behind the front, SS and police killing squads, the Einsatzgruppen, began shooting Jewish men, and within weeks women and children too."],
+      ["stat", {"value": "1,000,000+", "label": "Jews shot by SS and police units in the occupied east"}, "By the end of the war, SS and police units and their local helpers had shot well over a million Jews in the east."],
+      ["date", {"date": "15 August 1941", "place": "near Minsk"}, "In August 1941, Himmler watched a mass shooting near Minsk. According to witnesses, he was shaken. His conclusion was to look for a method that would be easier on the killers."],
+      ["camp", {"night": 1, "label": "Belzec · Sobibor · Treblinka · Auschwitz"}, "That method was gas. Under Himmler's authority, the SS built death camps in occupied Poland, at Belzec, Sobibor and Treblinka, and turned Auschwitz into the largest killing centre of all."],
+      ["bunker", {"n": 6, "label": "Wannsee · 20 January 1942"}, "In January 1942, Heydrich chaired the Wannsee Conference, to coordinate what officials called the Final Solution across the German government."],
+      ["date", {"date": "17 – 18 July 1942", "place": "Auschwitz"}, "That July, Himmler inspected Auschwitz, watched the killing process from start to finish, and afterwards promoted the camp's commandant."],
+      ["stat", {"value": "~437,000", "label": "Jews deported from Hungary, May – July 1944"}, "The machine ran until the end. In the spring and summer of 1944, around four hundred and thirty-seven thousand Jews were deported from Hungary, most of them to their deaths at Auschwitz."]
+    ]},
+    { "name": "In his own words", "lines": [
+      ["quote", {"text": "I am referring here to the evacuation of the Jews, the extermination of the Jewish people.", "who": "Himmler to SS officers, Posen, 4 October 1943"}, "In October 1943, speaking to SS officers at Posen, he spoke openly of what they were doing: the extermination of the Jewish people. He called it a page of glory in their history that would never be written."],
+      ["checklist", {"head": "Also persecuted by his SS", "items": ["Roma and Sinti", "Political prisoners", "Slave labourers", "Gay men"]}, "In December 1942, he ordered Roma to be deported to Auschwitz. Hundreds of thousands of others, from political prisoners to slave labourers, died in the camps his SS ran."],
+      ["army", {"tanks": 1, "rows": 2, "label": "Waffen-SS"}, "His armed SS, the Waffen-SS, grew to nearly a million men. Its units committed many massacres of civilians and prisoners of war."]
+    ]},
+    { "name": "The fall", "lines": [
+      ["bust", {"name": "Reichsführer-SS", "years": "1929 – 1945", "role": "Head of the SS, the police and the camps. Interior minister from 1943.", "hair": "crop", "glasses": "round", "stache": "thin", "coat": "black", "tie": "#1c1b19", "hat": "peak", "hatc": "#1c1b19", "band": "#77766a"}, "By 1944 he was also interior minister and head of the reserve army, perhaps the second most powerful man in Germany. Then Hitler gave him command of armies at the front, and he failed badly."],
+      ["wall", {"night": 1, "n": 4, "label": "after 20 July 1944"}, "After army officers tried to kill Hitler in July 1944, Himmler's Gestapo arrested thousands of suspects, and around two hundred were executed."],
+      ["people", {"n": 8, "pose": "walk", "night": 1, "label": "death marches · 1944 – 1945"}, "As Allied armies closed in, the SS forced camp prisoners on death marches into Germany. Tens of thousands died on the roads."],
+      ["city", {"state": "ruin", "label": "Germany · spring 1945"}, "With Germany collapsing, Himmler tried to save himself. Through a Swedish Red Cross official, Count Folke Bernadotte, he secretly offered to surrender to the Western Allies."],
+      ["paper", {"mast": "WORLD NEWS", "head": "Himmler offers surrender", "sub": "Allies refuse", "date": "28 April 1945"}, "The Allies refused, and the offer leaked. In his bunker, Hitler called it treachery, stripped Himmler of all his offices and ordered his arrest. Two days later, Hitler was dead."],
+      ["people", {"n": 6, "pose": "walk", "label": "northern Germany · May 1945"}, "After Germany surrendered, Himmler shaved off his moustache, put on an eyepatch, and set off with false papers, as a sergeant named Heinrich Hitzinger."],
+      ["cell", {"night": 1, "label": "British custody · 22 – 23 May 1945"}, "British soldiers stopped him at a checkpoint and held him. At the camp near Lüneburg he revealed who he was, and took the poison before he could be questioned or tried."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["inquiry", {"label": "International Military Tribunal · Nuremberg · 1946"}, "At Nuremberg, the international tribunal declared the whole SS a criminal organisation. Many of his subordinates faced trial. Himmler had escaped judgement."],
+      ["people", {"n": 8, "pose": "walk", "label": "after 1945"}, "Most of the SS men who had carried out his orders went back to ordinary lives. Only a small fraction were ever convicted."],
+      ["city", {"state": "normal", "seed": 9, "label": "Topography of Terror · Berlin"}, "Today, the site of the former SS and Gestapo headquarters in Berlin houses the Topography of Terror, a museum that documents their crimes in detail."],
+      ["lesson", {"text": "Genocide was organised at desks."}, "Himmler was not a battlefield commander or a great speaker. He was an administrator: tidy, pedantic, obsessed with files, rules and his own health."],
+      ["memorial", {"n": 600, "date": "1933 – 1945"}, "That is his lasting lesson. The worst crime in modern history was not only the work of fanatics with guns. It was planned, budgeted and organised, by people sitting at desks."]
+    ]}
+  ]
+}

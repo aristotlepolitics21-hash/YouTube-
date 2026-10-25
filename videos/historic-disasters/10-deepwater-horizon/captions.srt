@@ -1,0 +1,175 @@
+1
+00:00:01,000 --> 00:00:09,916
+At about a quarter to ten on the night of the twentieth of April, 2010, mud began shooting out of the drill floor of an oil rig in the Gulf of Mexico.
+
+2
+00:00:11,216 --> 00:00:17,805
+Behind the mud came gas. It spread across the decks, into the engine rooms, and found something to ignite it.
+
+3
+00:00:19,105 --> 00:00:28,769
+Two huge explosions tore through the Deepwater Horizon. Within minutes, the rig was a tower of fire, burning in the middle of the night, forty miles from the coast.
+
+4
+00:00:30,069 --> 00:00:33,151
+Eleven men were killed. Their bodies were never found.
+
+5
+00:00:34,451 --> 00:00:42,491
+And a mile below the burning rig, on the sea floor, an oil well was now open to the ocean. It would take eighty-seven days to stop it.
+
+6
+00:00:44,891 --> 00:00:59,281
+The Deepwater Horizon was a floating drilling rig, as wide as a football field, owned by the drilling company Transocean. It could hold its position over a well using thrusters and satellite navigation, in water up to two miles deep.
+
+7
+00:01:00,581 --> 00:01:10,849
+In 2010, it was working for the oil company B P, drilling an exploratory well known as Macondo, about forty miles off the coast of Louisiana.
+
+8
+00:01:12,149 --> 00:01:23,068
+The water there was about five thousand feet deep. From the sea floor, the well went down more than thirteen thousand feet further, into rock holding oil and gas under enormous pressure.
+
+9
+00:01:24,368 --> 00:01:40,434
+Macondo had been a difficult well. There had been problems with gas and with lost drilling fluid. By April, the job was weeks behind schedule and many millions of dollars over budget. Every day the rig was there cost B P around a million dollars.
+
+10
+00:01:41,734 --> 00:01:56,680
+On the night of the twentieth, there were one hundred and twenty-six people on board: Transocean's crew, B P's company men, and contractors from other firms. The drilling was finished. They were preparing to seal the well and move on.
+
+11
+00:01:59,080 --> 00:02:12,802
+To seal a well like this, cement is pumped down to the bottom, to plug the gap between the steel pipe and the rock. If the cement is good, oil and gas cannot get in. It is the main barrier at the bottom of the well.
+
+12
+00:02:14,102 --> 00:02:27,383
+The cement job was done by the contractor Halliburton. It used a special foamed cement, mixed with nitrogen gas. Halliburton's own laboratory tests had raised questions about whether the mix would be stable.
+
+13
+00:02:28,683 --> 00:02:40,977
+To keep the pipe centred in the hole, so the cement would fill evenly around it, Halliburton's computer model suggested using twenty-one devices called centralisers. B P used six.
+
+14
+00:02:42,277 --> 00:02:52,602
+There was a test that could check how well the cement had bonded. A team was on the rig to carry it out. B P decided it was not needed, and the team flew home that morning.
+
+15
+00:02:53,902 --> 00:03:06,115
+Each of these decisions saved time or money. Investigators later found that none of them, on its own, was obviously reckless. But each one made the well a little less safe, and nobody added up the risk.
+
+16
+00:03:08,515 --> 00:03:22,955
+That evening, the crew ran a final check called a negative pressure test. They reduced the pressure inside the well, and watched. If the cement was holding, the pressure should stay steady. It did not. It kept building back up.
+
+17
+00:03:24,255 --> 00:03:29,555
+This was a clear sign that oil and gas were leaking into the well. The cement had failed.
+
+18
+00:03:30,855 --> 00:03:44,902
+But the men on the rig floor talked about it, and settled on an explanation. One reading was blamed on something called the bladder effect, a theory that investigators later found had no real basis. The test was accepted as a success.
+
+19
+00:03:46,202 --> 00:04:02,553
+The crew then began replacing the heavy drilling mud in the riser pipe with lighter seawater. Without the weight of the mud, the gas and oil below began pushing upward. For around forty minutes, the instruments showed signs of this, a kick. They were not noticed in time.
+
+20
+00:04:04,953 --> 00:04:12,121
+At about a quarter to ten, mud and seawater burst out of the drill floor, shooting up into the derrick. Then came the gas.
+
+21
+00:04:13,421 --> 00:04:23,440
+The crew diverted the flow into a system designed to separate small amounts of gas from mud. It was overwhelmed. Gas poured out across the rig, and alarms sounded.
+
+22
+00:04:24,740 --> 00:04:36,110
+The gas reached the engines. They raced, and then it ignited. Two explosions destroyed the drill floor and knocked out the power. The men working closest to the well had no chance.
+
+23
+00:04:37,410 --> 00:04:46,761
+On the bridge, a twenty-three-year-old officer, Andrea Fleytas, sent out the mayday call by radio. In the confusion, no one had yet given the order.
+
+24
+00:04:48,061 --> 00:04:55,984
+Most of the crew made it to the lifeboats. Some, cut off by the flames, jumped more than sixty feet into the dark water below.
+
+25
+00:04:57,284 --> 00:05:10,320
+A supply ship, the Damon B. Bankston, was alongside. Its crew pulled survivors out of the water and took in the lifeboats. One hundred and fifteen people were saved. Eleven were missing.
+
+26
+00:05:12,720 --> 00:05:26,599
+There was one last line of defence: the blowout preventer, a five-storey stack of valves sitting on the well at the sea floor. In an emergency, its blind shear rams were supposed to cut through the drill pipe and seal the well shut.
+
+27
+00:05:27,899 --> 00:05:39,067
+They did not. Investigators later found that the force of the blowout had buckled the drill pipe, pushing it off centre, so the shear rams could not cut it cleanly. The well stayed open.
+
+28
+00:05:40,367 --> 00:05:49,893
+The Deepwater Horizon burned for a day and a half. On the twenty-second of April, it capsized and sank, five thousand feet down to the sea floor.
+
+29
+00:05:52,293 --> 00:06:06,229
+With the rig gone, oil and gas flowed freely from the broken well, a mile underwater. At first, B P said the leak was about a thousand barrels a day. Independent scientists soon showed it was far, far more.
+
+30
+00:06:07,529 --> 00:06:25,389
+The industry had no tested way to stop a blowout at this depth. Engineers tried one idea after another, using remote-controlled submarines. A containment dome clogged with ice crystals. An attempt to choke the well with heavy mud and junk, called the top kill, failed.
+
+31
+00:06:26,689 --> 00:06:42,267
+B P's chief executive, Tony Hayward, became the face of the disaster. In late May, speaking to reporters on the coast, he said that he would like his life back. He later apologised. Eleven families would never have theirs back.
+
+32
+00:06:43,567 --> 00:06:53,906
+Finally, on the fifteenth of July, a new capping stack was bolted on top of the well, and the flow stopped. In September, a relief well sealed Macondo for good.
+
+33
+00:06:55,206 --> 00:07:08,161
+A federal court later found that about three point two million barrels had entered the Gulf. The government's own estimate was four point nine million. Either way, it was the largest marine oil spill in American history.
+
+34
+00:07:10,561 --> 00:07:22,008
+Oil washed up along more than a thousand miles of coastline, from Louisiana to Florida. It coated marshes, beaches and wetlands. Huge areas of the Gulf were closed to fishing.
+
+35
+00:07:23,308 --> 00:07:33,269
+To break up the oil, nearly two million gallons of chemical dispersant were sprayed on the surface and injected at the wellhead, an experiment on a scale never tried before.
+
+36
+00:07:34,569 --> 00:07:49,672
+Fishing communities lost their season, and for some, their livelihoods. Tens of thousands of people worked on the cleanup. Scientists are still studying the long-term damage to wildlife, from dolphins and sea turtles to deep-sea corals.
+
+37
+00:07:52,072 --> 00:08:05,533
+A presidential commission reported in January 2011. It found that the blowout was not a freak event. It could have been prevented. Its causes were systemic, in the companies and in the government that regulated them.
+
+38
+00:08:06,833 --> 00:08:19,719
+The government agency that oversaw offshore drilling also collected the money from oil leases. It was understaffed, and had come to rely on the industry to police itself. It was broken up and replaced.
+
+39
+00:08:21,019 --> 00:08:40,795
+B P pleaded guilty to criminal charges, including eleven counts of manslaughter, one for each man killed. In 2015, it agreed to pay more than twenty billion dollars in a settlement with the federal government and five states. In total, the disaster has cost the company more than sixty billion dollars.
+
+40
+00:08:43,195 --> 00:08:56,091
+A well behind schedule. A cement job with known doubts. A failed test explained away. Warning signs on the instruments that nobody saw. And a last line of defence that could not do its job.
+
+41
+00:08:57,391 --> 00:09:08,862
+New rules followed: stricter standards for well design and cement, for testing blowout preventers, and for having equipment ready to cap a deep-water well quickly if the worst happened again.
+
+42
+00:09:10,162 --> 00:09:24,608
+Across this series, we have seen ships, reactors, rockets, dams and wells. The technology changes. The story does not. Warnings are given. Doubts are raised. Pressure, money and habit win the argument.
+
+43
+00:09:25,908 --> 00:09:34,655
+Safety is not the absence of disaster. It is the willingness to stop, when stopping is expensive, because the signs say something is wrong.
+
+44
+00:09:35,955 --> 00:09:46,293
+Eleven men died on the Deepwater Horizon. They are remembered in Louisiana, Mississippi and Texas, by the families who still ask why the warnings were not enough.

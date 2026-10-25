@@ -1,0 +1,167 @@
+1
+00:00:00,000 --> 00:00:06,645
+In 1975, an engineer at Kodak built the world's first digital camera.
+
+2
+00:00:06,645 --> 00:00:14,289
+Kodak had the invention. It had the patents. It had the money, the brand, and the distribution in nearly every country on Earth.
+
+3
+00:00:14,289 --> 00:00:17,859
+And thirty-seven years later, it filed for bankruptcy.
+
+4
+00:00:17,859 --> 00:00:22,727
+This is not the story of a company that missed the future. Kodak saw it first.
+
+5
+00:00:22,727 --> 00:00:28,011
+This is the story of a company that saw the future clearly, and chose the past anyway.
+
+6
+00:00:28,011 --> 00:00:35,575
+In the 1880s, photography was for experts. You needed glass plates, chemicals, and patience.
+
+7
+00:00:35,575 --> 00:00:45,124
+George Eastman changed that. In 1888 he launched a simple box camera with a promise: you press the button, we do the rest.
+
+8
+00:00:45,124 --> 00:00:50,948
+You took the pictures, mailed the whole camera back, and got your prints and a reloaded camera in return.
+
+9
+00:00:50,948 --> 00:00:56,887
+In 1900 came the Brownie, priced at one dollar. Photography was now for everyone.
+
+10
+00:00:56,887 --> 00:01:02,568
+But the real genius was the business model. Kodak sold cameras cheaply, almost as bait.
+
+11
+00:01:02,568 --> 00:01:09,018
+The profit was in the film, the chemicals, and the paper. Every photo someone took paid Kodak again.
+
+12
+00:01:09,018 --> 00:01:16,744
+By 1976, Kodak sold about 90 percent of the film and 85 percent of the cameras in the United States.
+
+13
+00:01:16,744 --> 00:01:23,879
+Kodak moment entered the language. The yellow box was one of the most recognisable things in millions of households.
+
+14
+00:01:23,879 --> 00:01:29,473
+Remember this model. It made Kodak rich. It is also what would trap it.
+
+15
+00:01:29,473 --> 00:01:39,788
+In 1975, a young Kodak engineer named Steven Sasson was handed a loose assignment: see what you can do with a new kind of sensor called a CCD.
+
+16
+00:01:39,788 --> 00:01:44,626
+He built a camera from a lens, a handful of circuit boards, and a cassette tape.
+
+17
+00:01:44,626 --> 00:01:54,535
+It weighed about eight pounds. It captured a black and white image of 0.01 megapixels, and it took 23 seconds to record one photo.
+
+18
+00:01:54,535 --> 00:02:04,955
+Sasson showed it to Kodak's executives. As he later told the New York Times, it was filmless photography, so the reaction was: that's cute, but don't tell anyone about it.
+
+19
+00:02:04,955 --> 00:02:10,030
+It wasn't stupidity. It was arithmetic. Kodak earned its profits from film.
+
+20
+00:02:10,030 --> 00:02:16,241
+A camera that needed no film was not a gift. It was a threat to the company's own profit engine.
+
+21
+00:02:16,241 --> 00:02:20,485
+Here is the part people get wrong. Kodak did not ignore digital.
+
+22
+00:02:20,485 --> 00:02:26,293
+It poured money into it. It built a portfolio of more than a thousand digital imaging patents.
+
+23
+00:02:26,293 --> 00:02:37,572
+In 2005, Kodak was the number one seller of digital cameras in the United States. It had even bought an online photo sharing site, Ofoto, in 2001.
+
+24
+00:02:37,572 --> 00:02:46,374
+But look at how it used these things. Kodak treated digital as a way to sell more prints. Ofoto existed to get you to order paper photos.
+
+25
+00:02:46,374 --> 00:02:51,339
+The company was still running the old razor and blades model on new technology.
+
+26
+00:02:51,339 --> 00:02:59,168
+The problem: digital cameras had no film margin. Every digital camera Kodak sold meant fewer rolls of film sold.
+
+27
+00:02:59,168 --> 00:03:04,981
+So inside the company, digital was always competing with the product that paid everyone's salaries.
+
+28
+00:03:04,981 --> 00:03:15,088
+Meanwhile, rival Fuji went the other way. It cut back its own film business, moved into chemicals, cosmetics, and medical imaging, and survived.
+
+29
+00:03:15,088 --> 00:03:18,849
+And then the real disruptor arrived. The phone.
+
+30
+00:03:18,849 --> 00:03:26,051
+Once cameras were built into phones, the standalone camera market collapsed. Film sales fell off a cliff.
+
+31
+00:03:26,051 --> 00:03:31,016
+Kodak's profits, built on decades of film, shrank year after year.
+
+32
+00:03:31,016 --> 00:03:36,086
+In January 2012, Kodak filed for Chapter 11 bankruptcy.
+
+33
+00:03:36,086 --> 00:03:44,230
+Three months later, Facebook bought Instagram, a photo sharing app with 13 employees, for about one billion dollars.
+
+34
+00:03:44,230 --> 00:03:53,642
+A company that had defined photography for a century was in bankruptcy court in the same season that the new version of photography got its first big price tag.
+
+35
+00:03:53,642 --> 00:04:06,229
+Kodak sold its digital imaging patents for about 525 million dollars, and emerged from bankruptcy in 2013 as a much smaller company, focused largely on commercial printing.
+
+36
+00:04:06,229 --> 00:04:16,426
+At its peak in 1988, Kodak employed about 145,000 people. Entire neighbourhoods in Rochester, New York were built around the company.
+
+37
+00:04:16,426 --> 00:04:21,048
+Over the decades of its decline, most of those jobs disappeared.
+
+38
+00:04:21,048 --> 00:04:28,726
+Kodak's fall isn't about a lack of vision. It's about a very hard question: what do you do when the thing that makes you rich is the thing that has to die?
+
+39
+00:04:28,726 --> 00:04:34,906
+Kodak had the answer in a lab in 1975. It had thirty-seven years to act on it.
+
+40
+00:04:34,906 --> 00:04:39,860
+Its leaders chose to protect the business they had instead of building the one that was coming.
+
+41
+00:04:39,860 --> 00:04:48,144
+The warning sign isn't a rival getting stronger. It's the moment you catch yourself hiding your own best idea, because it threatens your profits.
+
+42
+00:04:48,144 --> 00:04:55,054
+Built and Broken. Next week: another giant, another collapse.

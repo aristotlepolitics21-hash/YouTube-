@@ -1,0 +1,80 @@
+{
+  "series": "Infamous",
+  "episode": 19,
+  "title": "Robert Mugabe",
+  "subtitle": "From liberation hero to the ruler who would not leave",
+  "say": {"Mugabe": "Moo-gah-bee", "Mugabe's": "Moo-gah-bee's", "Zimbabwe": "Zim-bahbway", "Zimbabwe's": "Zim-bahbway's", "Zimbabweans": "Zim-bahbway-ans", "Kutama": "Koo-tah-ma", "Gukurahundi": "Goo-koo-ra-hoondee", "Matabeleland": "Matta-beely-land", "Ndebele": "En-de-beleh", "Nkomo": "En-komo", "Tsvangirai": "Chvan-gi-rye", "Mnangagwa": "Mm-nan-gahgwa", "Harare": "Ha-rah-ray", "ZANU": "Zahnoo", "Shona": "Showna", "Hayfron": "Hayfron"},
+  "package": {
+    "thumb_line": 15,
+    "thumb": ["HERO TO", "TYRANT"],
+    "intro": "In 1980 Robert Mugabe was hailed around the world as the liberator of Zimbabwe. By the time the army pushed him out in 2017, his rule had brought massacre, a collapsed economy and one of the worst hyperinflations ever recorded. This documentary tells how one man came to be remembered as both hero and tyrant.",
+    "facts": ["Born 21 February 1924 at Kutama Mission, Southern Rhodesia", "Spent about a decade in Rhodesian detention, 1964 – 1974", "Became prime minister at independence on 18 April 1980; executive president from 1987", "The Gukurahundi killings in Matabeleland and the Midlands, 1983 – 1987, are commonly estimated to have killed about 20,000 civilians", "Fast-track land seizures of white-owned commercial farms began in 2000", "Inflation peaked at an estimated 79.6 billion percent a month in November 2008", "Forced to resign on 21 November 2017 after a military takeover, aged 93", "Died in Singapore on 6 September 2019, aged 95"],
+    "sources": "Encyclopaedia Britannica, Catholic Commission for Justice and Peace in Zimbabwe report 'Breaking the Silence' (1997), UN Special Envoy report on Operation Murambatsvina (2005), Human Rights Watch reports on Zimbabwe, Steve Hanke's hyperinflation estimates (Cato Institute), Martin Meredith's Mugabe: Power, Plunder and the Struggle for Zimbabwe.",
+    "hashtags": "#History #Documentary #Zimbabwe",
+    "tags": "robert mugabe, mugabe documentary, zimbabwe history, gukurahundi, zimbabwe hyperinflation, rhodesia, land reform zimbabwe, 2017 zimbabwe coup, african history, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "ROBERT MUGABE", "sub": "From liberation hero to the ruler who would not leave", "art": "podium", "artp": {"cheer": 1, "night": 1}}, "At midnight on the eighteenth of April 1980, the British flag came down over Salisbury, and the new nation of Zimbabwe was born. Its first prime minister was a former teacher and political prisoner named Robert Mugabe."],
+      ["people", {"n": 9, "pose": "up", "label": "Independence · 18 April 1980"}, "He offered reconciliation to the white minority who had fought for years to keep him from power. Around the world, he was hailed as a statesman."],
+      ["stat", {"value": "37 years", "label": "in power, 1980 – 2017"}, "He would rule Zimbabwe for thirty-seven years."],
+      ["stat", {"value": "79.6 billion %", "label": "estimated monthly inflation, November 2008"}, "By the end, his government had carried out a massacre of thousands of civilians, wrecked one of Africa's most promising economies, and presided over one of the worst hyperinflations ever recorded."],
+      ["lesson", {"text": "Liberator, or tyrant?"}, "To some Africans he remains a hero of liberation. To many Zimbabweans he is the man who ruined their country. This is how one man came to be both."]
+    ]},
+    { "name": "The mission boy", "lines": [
+      ["date", {"date": "21 February 1924", "place": "Kutama Mission · Southern Rhodesia"}, "Robert Mugabe was born on the twenty-first of February, 1924, at Kutama, a Catholic mission in the British colony of Southern Rhodesia."],
+      ["bust", {"name": "Robert Mugabe", "years": "1924 – 2019", "role": "Mission-educated teacher. Later, a liberation leader.", "hair": "crop", "glasses": "square", "stache": "brush", "coat": "suit"}, "His father left the family when he was a boy. Jesuit priests noticed a quiet, studious child, and he trained as a teacher."],
+      ["city", {"state": "normal", "seed": 5, "label": "Accra · Ghana · 1958 – 1960"}, "He studied at Fort Hare University in South Africa, and later taught in Ghana, the first colony in sub-Saharan Africa to win independence. There he met his first wife, Sally Hayfron."]
+    ]},
+    { "name": "Prison and war", "lines": [
+      ["decree", {"title": "Unilateral Declaration of Independence", "lines": ["Rhodesia breaks with Britain", "White minority rule continues"], "date": "11 November 1965"}, "Back home, a small white minority held power and refused to share it. In 1965, under Prime Minister Ian Smith, Rhodesia declared independence from Britain rather than accept majority rule."],
+      ["cell", {"label": "Rhodesian detention · 1964 – 1974"}, "Mugabe, by then a nationalist leader, had already been arrested. He spent about a decade in detention, earning several degrees by correspondence. When his young son died in Ghana in 1966, he was not allowed to attend the funeral."],
+      ["jungle", {"n": 6, "label": "The liberation war · 1970s"}, "Released in 1974, he crossed into Mozambique and became leader of ZANU, one of two guerrilla movements fighting a bitter bush war against the Rhodesian government. Tens of thousands of people died."],
+      ["inquiry", {"label": "Lancaster House · London · 1979"}, "In 1979, talks at Lancaster House in London ended the war. Elections followed in February 1980, and Mugabe's party won a clear majority."]
+    ]},
+    { "name": "The promise", "lines": [
+      ["checklist", {"head": "The early years", "items": ["Schools built across the country", "Clinics in rural areas", "Literacy among Africa's highest"]}, "The early years brought real gains. Schools and clinics spread across the countryside, and Zimbabwe's literacy rate became one of the highest in Africa."],
+      ["decree", {"title": "Honorary knighthood", "lines": ["Robert Gabriel Mugabe", "Awarded 1994", "Revoked June 2008"]}, "Western governments treated him as a model African leader. In 1994, Britain even gave him an honorary knighthood. It would be taken away in 2008."]
+    ]},
+    { "name": "Gukurahundi", "lines": [
+      ["versus", {"left": "Mugabe · ZANU", "right": "Nkomo · ZAPU", "mid": "1980s"}, "But Mugabe tolerated no rival. His old ally in the liberation war, Joshua Nkomo, led a party with strong support among the Ndebele people of Matabeleland, in the west."],
+      ["army", {"night": 1, "label": "Fifth Brigade · Matabeleland · 1983"}, "In 1983, claiming to fight a small number of armed dissidents, he sent in the Fifth Brigade, an army unit trained by North Korea that answered to him rather than the normal chain of command."],
+      ["field", {"village": 1, "famine": 1, "label": "Gukurahundi · 1983 – 1987"}, "The operation was called Gukurahundi, a Shona word for the early rain that washes away the chaff. Villagers were beaten, starved and shot, many in front of their neighbours."],
+      ["stat", {"value": "~20,000", "label": "civilians estimated killed, 1983 – 1987"}, "Estimates of the dead vary. The figure most often cited, based on church and human rights investigations, is around twenty thousand civilians."],
+      ["decree", {"title": "Unity Accord", "lines": ["ZAPU merges into ZANU-PF", "Nkomo joins the government"], "date": "22 December 1987"}, "In 1987 Nkomo gave in and merged his party into Mugabe's. Zimbabwe became, in effect, a one-party state, and Mugabe made himself executive president. He later called the killings a moment of madness, and never apologised."]
+    ]},
+    { "name": "The land", "lines": [
+      ["ballot", {"value": "NO", "label": "constitutional referendum · February 2000"}, "By the late 1990s the economy was struggling, and a new opposition party, the Movement for Democratic Change, was rising. In February 2000, voters rejected a new constitution Mugabe had backed. It was his first national defeat."],
+      ["field", {"n": 5, "guard": 1, "label": "Commercial farms · 2000"}, "Within weeks, gangs led by men calling themselves war veterans began invading white-owned farms. Land ownership was genuinely unfair: a few thousand white farmers held much of the best land, a legacy of colonial rule."],
+      ["field", {"famine": 1, "label": "Fast-track land reform · 2000 – 2002"}, "The government made the seizures official policy. Most white farmers lost their land, often violently, and many farms went to party loyalists rather than the landless poor. Hundreds of thousands of farm workers lost their jobs and homes."],
+      ["people", {"n": 8, "pose": "look", "label": "Queues for food"}, "Commercial farming collapsed. Zimbabwe, once a food exporter, came to depend on food aid."],
+      ["decree", {"title": "Sanctions", "lines": ["EU travel ban and asset freeze", "US targeted sanctions", "Zimbabwe quits the Commonwealth"], "date": "2002 – 2003"}, "In 2002 and 2003, the European Union and the United States imposed travel bans and asset freezes on Mugabe and his allies. Zimbabwe left the Commonwealth."]
+    ]},
+    { "name": "Collapse", "lines": [
+      ["chart", {"title": "Prices in Zimbabwe", "x": "2000 – 2008", "y": "inflation", "points": [[0, 0.04], [0.4, 0.08], [0.7, 0.25], [0.9, 0.6], [1, 0.97]], "notes": [[0, 0.04, "2000"], [1, 0.97, "2008"]]}, "To pay its bills, the government printed money. Prices began to rise, then to race."],
+      ["stat", {"value": "Z$100 trillion", "label": "banknote issued in January 2009"}, "By November 2008, prices were estimated to be doubling roughly every day. In January 2009 the central bank issued a one-hundred-trillion-dollar note. Within months, the Zimbabwe dollar was abandoned."],
+      ["city", {"state": "ruin", "seed": 6, "label": "Operation Murambatsvina · 2005"}, "In 2005, police bulldozed urban settlements and markets, many in opposition strongholds. A United Nations envoy reported that some seven hundred thousand people lost their homes, their livelihoods, or both."],
+      ["people", {"n": 8, "pose": "walk", "label": "The exodus"}, "Millions of Zimbabweans, by many estimates, left to find work in South Africa, Britain and elsewhere."]
+    ]},
+    { "name": "Stealing 2008", "lines": [
+      ["ballot", {"value": "47.9%", "label": "Morgan Tsvangirai · first round · March 2008"}, "In March 2008, the opposition leader, Morgan Tsvangirai, beat Mugabe in the first round of the presidential election, according to official results released only after five weeks' delay."],
+      ["wall", {"night": 1, "label": "Run-off campaign · 2008"}, "Before the run-off, a campaign of violence swept the country. Human rights groups documented killings, abductions and thousands of beatings, mostly of opposition supporters. Tsvangirai withdrew, and Mugabe won unopposed."],
+      ["quote", {"text": "Only God, who appointed me, will remove me.", "who": "Robert Mugabe, June 2008, as widely reported"}, "At a rally that June, he was widely reported as saying that only God, who had appointed him, could remove him."],
+      ["decree", {"title": "Power-sharing agreement", "lines": ["Mugabe remains president", "Tsvangirai becomes prime minister"], "date": "September 2008"}, "Under pressure from neighbouring states, he agreed to share power, with Tsvangirai as prime minister. But the army, the police and the security services stayed in his hands."]
+    ]},
+    { "name": "The fall", "lines": [
+      ["bust", {"name": "President Mugabe", "years": "2017", "role": "Aged 93. Rival factions fought over who would succeed him.", "hair": "crop", "glasses": "square", "stache": "brush", "coat": "suit", "tie": "#2b2b30", "frown": 1}, "By 2017 he was ninety-three, and his party was split over who would succeed him."],
+      ["bust", {"name": "Grace Mugabe", "years": "born 1965", "role": "Married Mugabe in 1996. Led a faction seeking the succession.", "hair": "long", "coat": "shirt"}, "One faction backed his wife, Grace, forty-one years younger than him. That November, he sacked his vice-president and long-time enforcer, Emmerson Mnangagwa, clearing her path."],
+      ["army", {"tanks": 1, "label": "Harare · 15 November 2017"}, "Within days, the army moved into the capital, Harare. Soldiers took over the state broadcaster and placed Mugabe under house arrest, while insisting that this was not a coup."],
+      ["people", {"n": 9, "pose": "up", "label": "Harare · 18 November 2017"}, "Huge crowds marched through the capital, celebrating. His own party removed him as its leader."],
+      ["paper", {"mast": "HARARE", "head": "Mugabe resigns", "sub": "Ends 37 years in power", "date": "21 November 2017"}, "On the twenty-first of November, as parliament began proceedings to impeach him, he resigned. Mnangagwa took his place."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["date", {"date": "6 September 2019", "place": "Singapore · aged 95"}, "Robert Mugabe died in a hospital in Singapore on the sixth of September 2019, aged ninety-five."],
+      ["checklist", {"head": "What he left", "items": ["A shattered economy", "Gukurahundi unpunished", "The same party in power"]}, "He left a broken economy and a ruling party still in power. As of 2025, no one has been prosecuted for the Gukurahundi killings."],
+      ["quote", {"text": "He freed us from colonial rule and gave back the land.", "who": "summary of his admirers' case"}, "His admirers, across Africa, still honour him as a liberator who defied the West and took back land seized by colonists. He blamed Zimbabwe's troubles on Western sanctions, which critics note were mostly aimed at him and his inner circle."],
+      ["lesson", {"text": "The liberator became what he fought."}, "Mugabe's life is a warning about how a liberation hero can become the thing he fought against: a ruler who believed the country belonged to him."],
+      ["memorial", {"n": 400, "date": "Matabeleland · 1983 – 1987"}, "In Matabeleland, families still remember the dead of the 1980s, many buried in unmarked graves. For them, the ruin of Zimbabwe began long before the economy collapsed."]
+    ]}
+  ]
+}

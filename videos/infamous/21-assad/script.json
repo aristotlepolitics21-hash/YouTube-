@@ -1,0 +1,76 @@
+{
+  "series": "Infamous",
+  "episode": 21,
+  "title": "Bashar al-Assad",
+  "subtitle": "The eye doctor who went to war with his own people",
+  "say": {"Assad": "Ah-sad", "Assad's": "Ah-sad's", "Bashar": "Ba-shar", "Hafez": "Hah-fez", "Hama": "Hah-ma", "Daraa": "Dar-ah", "Ghouta": "Goo-ta", "Saydnaya": "Sayd-nye-ya", "Bassel": "Bassel", "Alawite": "Ala-wite", "Khan Shaykhun": "Kahn Shy-koon", "Hezbollah": "Hez-bollah", "Hayat Tahrir al-Sham": "Hayat Tah-reer al-Sham", "Sharaa": "Sha-rah", "Akhras": "Akh-rass", "Homs": "Homs", "Caesar": "Caesar", "OPCW": "O P C W"},
+  "package": {
+    "thumb_line": 21,
+    "thumb": ["HE CHOSE", "WAR"],
+    "intro": "Bashar al-Assad trained as an eye doctor in London and was never meant to rule Syria. When his people rose up in 2011, he answered with force, and the war that followed killed hundreds of thousands of people. This documentary tells how he came to power, how the war was fought, and how his regime collapsed in eleven days in December 2024.",
+    "facts": ["Born 11 September 1965 in Damascus, son of Hafez al-Assad, president of Syria from 1971 to 2000", "Trained in ophthalmology in London before his elder brother Bassel died in a car crash in January 1994", "Became president in July 2000 after parliament lowered the minimum age from 40 to 34", "Protests began in March 2011; the UN human rights office estimated over 306,000 civilians were killed between March 2011 and March 2021", "A UN mission confirmed sarin was used in Ghouta on 21 August 2013", "A joint UN–OPCW mechanism found the Syrian government responsible for the sarin attack on Khan Shaykhun in April 2017", "Rebels led by Hayat Tahrir al-Sham entered Damascus on 8 December 2024; Assad fled to Russia", "As of 2025 he lives in Russia and has not faced trial"],
+    "sources": "UN Independent International Commission of Inquiry on the Syrian Arab Republic, UN Office of the High Commissioner for Human Rights (2022 civilian casualty estimate), UNHCR, OPCW and the OPCW–UN Joint Investigative Mechanism reports, Amnesty International's 'Human Slaughterhouse' report on Saydnaya (2017), Human Rights Watch, Encyclopaedia Britannica.",
+    "hashtags": "#History #Documentary #Syria",
+    "tags": "bashar al-assad, assad documentary, syrian civil war, syria history, hafez al-assad, fall of assad 2024, ghouta chemical attack, saydnaya prison, arab spring syria, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "BASHAR AL-ASSAD", "sub": "The eye doctor who went to war with his own people", "art": "city", "artp": {"state": "ruin", "night": 1}}, "On the eighth of December 2024, rebel fighters entered Damascus almost unopposed. The presidential palace was empty. The president had fled to Moscow."],
+      ["date", {"date": "8 December 2024", "place": "Damascus · Syria"}, "Bashar al-Assad's family had ruled Syria for more than half a century. The end came in eleven days."],
+      ["stat", {"value": "306,000+", "label": "civilians killed, 2011 – 2021 · UN human rights office estimate"}, "In the civil war that began in 2011, the UN human rights office estimated that more than three hundred thousand civilians were killed in the first ten years alone. Monitoring groups put the total death toll, fighters included, at around half a million or more."],
+      ["stat", {"value": "13 million+", "label": "Syrians forced from their homes, according to the UN"}, "According to the United Nations, more than half of Syria's pre-war population was driven from their homes."],
+      ["lesson", {"text": "The heir who chose war"}, "Assad was never meant to rule at all. He was a quiet eye doctor in London. This is how he came to preside over one of the bloodiest wars of the century."]
+    ]},
+    { "name": "The father", "lines": [
+      ["bust", {"name": "Hafez al-Assad", "years": "1930 – 2000", "role": "Air force officer. Seized power in 1970 and ruled Syria for 30 years.", "hair": "back", "stache": "thin", "coat": "suit", "tie": "#2b2b30", "round": 1, "hairc": "#4a4a44"}, "His father, Hafez al-Assad, was an air force officer from Syria's Alawite minority. He seized power in 1970 and built one of the most feared police states in the Middle East."],
+      ["city", {"state": "ruin", "seed": 9, "label": "Hama · February 1982"}, "In 1982, when an Islamist uprising broke out in the city of Hama, his forces besieged and shelled it for weeks. Estimates of the dead range from ten thousand to forty thousand."],
+      ["date", {"date": "11 September 1965", "place": "Damascus · Syria"}, "Bashar, his second son, was born in Damascus on the eleventh of September 1965. He was shy and bookish, and studied medicine."],
+      ["city", {"state": "normal", "seed": 1, "label": "London · 1992 – 1994"}, "In 1992 he moved to London to train as an eye doctor. His older brother, Bassel, a flamboyant army officer, was being groomed to succeed their father."],
+      ["paper", {"mast": "DAMASCUS", "head": "Bassel al-Assad killed in car crash", "sub": "The president's heir is dead", "date": "January 1994"}, "Then, in January 1994, Bassel was killed in a car crash near Damascus. Bashar was called home, sent to military college, and prepared to be the heir."]
+    ]},
+    { "name": "The heir", "lines": [
+      ["decree", {"title": "Constitutional amendment", "lines": ["Minimum age of president", "lowered from 40 to 34"], "date": "June 2000"}, "Hafez died in June 2000. Within hours, parliament lowered the minimum age for a president from forty to thirty-four: exactly Bashar's age."],
+      ["ballot", {"value": "97%", "label": "official result · referendum with one candidate · July 2000"}, "He was confirmed in a referendum with no other candidate, officially winning ninety-seven percent."],
+      ["bust", {"name": "Bashar al-Assad", "years": "born 1965", "role": "President of Syria, 2000 – 2024. Trained as an eye doctor.", "hair": "back", "stache": "thin", "coat": "suit", "tie": "#2b2b30"}, "Many hoped the young, Western-educated president would be a reformer. He married Asma Akhras, a British-born former banker, and spoke of modernisation."],
+      ["people", {"n": 6, "pose": "look", "label": "Damascus Spring · 2000 – 2001"}, "For a few months, Syrians held open political discussions in private homes, in what became known as the Damascus Spring. By 2001, its leading figures were being arrested."],
+      ["army", {"dir": -1, "label": "Syrian troops leave Lebanon · April 2005"}, "In 2005, the former Lebanese prime minister Rafik Hariri was killed by a huge bomb in Beirut. Many blamed Damascus, which denied it. International pressure forced Syria to pull its troops out of Lebanon after almost thirty years."],
+      ["checklist", {"head": "Syria in the 2000s", "items": ["Economy partly opened", "Wealth for regime insiders", "Emergency law still in force", "Secret police everywhere"]}, "The economy was partly opened up, mostly enriching relatives and allies. The emergency law in force since 1963 remained, and so did the secret police."]
+    ]},
+    { "name": "The uprising", "lines": [
+      ["paper", {"mast": "DARAA", "head": "Boys arrested over graffiti", "sub": "Protests spread across Syria", "date": "March 2011"}, "In early 2011, uprisings swept the Arab world. In the southern town of Daraa, security forces arrested a group of boys for spraying anti-government graffiti. They were reportedly tortured."],
+      ["people", {"n": 9, "pose": "up", "label": "Syria · spring 2011"}, "Their families protested, and protests spread across Syria. They were mostly peaceful at first, calling for reform, then for the fall of the regime."],
+      ["wall", {"night": 1, "label": "Security forces fire on protesters · 2011"}, "The regime answered with live fire and mass arrests, and called the protesters terrorists. Soldiers began to defect, and by the end of the year the uprising was turning into an armed rebellion."],
+      ["army", {"tanks": 1, "fire": 1, "label": "Civil war · 2012"}, "By 2012, Syria was at war, and outside powers were piling in. Iran and the Lebanese militia Hezbollah fought for Assad. Turkey, Gulf states and the United States backed various rebel groups."],
+      ["tv", {"text": "THE ISLAMIC STATE GROUP · 2014"}, "In 2014, the extremist Islamic State group seized large parts of Syria and Iraq. Its atrocities allowed Assad to present himself to the world as the lesser evil."]
+    ]},
+    { "name": "How the war was fought", "lines": [
+      ["city", {"state": "fire", "planes": 1, "label": "Aleppo · 2012 – 2016"}, "The government used its air force against rebel-held areas, including barrel bombs: drums packed with explosives, dropped from helicopters onto towns. A UN commission of inquiry documented repeated attacks on hospitals, markets and homes."],
+      ["decree", {"title": "UN mission findings", "lines": ["Sarin used on a large scale", "Ghouta, near Damascus", "21 August 2013"], "seal": 0}, "On the twenty-first of August 2013, rockets carrying the nerve agent sarin struck the Ghouta suburbs near Damascus, killing hundreds of people. UN inspectors confirmed sarin had been used. Western governments blamed the regime, which denied it."],
+      ["inquiry", {"label": "OPCW–UN Joint Investigative Mechanism · 2017"}, "Under threat of American strikes, Assad agreed to give up his chemical weapons. But in 2017, a joint inquiry by the UN and the chemical weapons watchdog, the OPCW, found his forces had dropped sarin on the town of Khan Shaykhun, killing dozens."],
+      ["field", {"famine": 1, "label": "Sieges · 2013 – 2018"}, "Rebel-held towns and suburbs were besieged for months or years. The UN commission of inquiry found that starvation was being used as a weapon of war."],
+      ["camp", {"night": 1, "label": "Saydnaya Military Prison"}, "Inside the regime's prisons, tens of thousands disappeared. Amnesty International estimated that between five and thirteen thousand people were executed at Saydnaya prison alone between 2011 and 2015."],
+      ["stat", {"value": "~53,000", "label": "photographs smuggled out by the defector 'Caesar'"}, "A military photographer, known only as Caesar, defected with tens of thousands of photographs documenting the deaths of detainees. They became key evidence for war crimes investigators."],
+      ["people", {"n": 9, "pose": "walk", "label": "Syrian refugees · 2015"}, "Millions fled. By 2015, Syrian refugees were crossing the sea to Europe in huge numbers, and the crisis reshaped politics across the continent."]
+    ]},
+    { "name": "Survival", "lines": [
+      ["army", {"planes": 1, "dir": -1, "label": "Russian intervention · September 2015"}, "By 2015, his army was losing ground. Then Russia intervened with its air force, and the tide turned. In December 2016, government forces retook eastern Aleppo."],
+      ["city", {"state": "ruin", "seed": 4, "label": "Eastern Ghouta · 2018"}, "In 2018, his forces retook eastern Ghouta and the south. By 2020, a deal between Russia and Turkey had frozen the front line around Idlib, the last major rebel stronghold, in the north-west."],
+      ["ballot", {"value": "95%", "label": "official result · presidential election 2021"}, "He held presidential elections in 2014 and 2021, officially winning both by huge margins. Western governments and the opposition dismissed them as a sham."],
+      ["paper", {"mast": "JEDDAH", "head": "Syria returns to the Arab League", "sub": "Assad welcomed at summit", "date": "May 2023"}, "By 2023 he seemed to have won. Syria was readmitted to the Arab League, and Assad was welcomed at its summit in Saudi Arabia."]
+    ]},
+    { "name": "Eleven days", "lines": [
+      ["army", {"dir": -1, "label": "Rebel offensive · 27 November 2024"}, "But his state was hollow. His army was poorly paid and demoralised. His allies were distracted: Russia by its war in Ukraine, Hezbollah by its war with Israel. On the twenty-seventh of November 2024, rebels led by Hayat Tahrir al-Sham, an Islamist group once linked to al-Qaeda, attacked from the north-west."],
+      ["timeline", {"events": [["Aleppo", 0.12], ["Hama", 0.4], ["Homs", 0.66], ["Damascus · 8 Dec", 0.9]]}, "Aleppo fell within days. Then Hama. Then Homs. On the eighth of December, the rebels reached Damascus."],
+      ["people", {"n": 8, "pose": "up", "label": "Saydnaya · December 2024"}, "Prison doors were thrown open. Crowds searched Saydnaya for missing relatives, and families across Syria began looking for the disappeared."],
+      ["paper", {"mast": "MOSCOW", "head": "Assad given asylum in Russia", "sub": "Former president flees Syria", "date": "December 2024"}, "Assad had flown to Moscow, where Russia gave him and his family asylum. In a statement a week later, he claimed he had never planned to leave."],
+      ["podium", {"night": 0, "banners": 2, "label": "Damascus · 2025"}, "In January 2025, the rebel leader, Ahmed al-Sharaa, was named interim president. As of 2025, Syria's future remains uncertain, and outbreaks of sectarian killing have shaken the country."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["checklist", {"head": "What he left behind", "items": ["Hundreds of thousands dead", "Over 100,000 missing", "Cities in ruins", "Millions still displaced"]}, "He left behind a ruined country. More than one hundred thousand people are still missing, according to UN estimates, and whole districts of Aleppo, Homs and the Damascus suburbs lie in rubble."],
+      ["inquiry", {"label": "War crimes trials in Europe · 2020s"}, "Investigators have gathered vast amounts of evidence, and some of his officials have been convicted in German and French courts. As of 2025, Assad himself lives in Russia and has not faced trial."],
+      ["quote", {"text": "Without him, the extremists would have taken Syria.", "who": "summary of his supporters' case"}, "His supporters, and his allies in Moscow and Tehran, argued that he alone stood between Syria and extremist rule, and that a secular state that protected minorities was worth defending."],
+      ["lesson", {"text": "He chose force, and kept choosing it."}, "But when his people asked for reform in 2011, he answered with bullets, prisons and bombs. He chose force, and kept choosing it. That is the choice his name will carry."],
+      ["memorial", {"n": 600, "date": "The missing of Syria"}, "In the months after his fall, Syrians gathered outside prisons and at mass graves, holding up photographs of the missing. Many are still waiting for an answer."]
+    ]}
+  ]
+}

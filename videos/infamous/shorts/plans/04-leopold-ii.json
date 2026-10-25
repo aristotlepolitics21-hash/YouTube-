@@ -1,0 +1,356 @@
+{
+ "id": "04-leopold-ii",
+ "say": {
+  "Nsala": "Nsahla"
+ },
+ "scenes": [
+  {
+   "text": "HE NEVER SET FOOT THERE.",
+   "red": [
+    "NEVER"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "light": "cold",
+      "cam": "still",
+      "fig": {
+       "look": {
+        "female": 1,
+        "hair": "long",
+        "coat": "#efe9dc"
+       },
+       "at": [
+        0.3,
+        -1.2
+       ],
+       "yaw": 30
+      },
+      "amb": 0.6
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.62,
+      0.62
+     ],
+     "p": {
+      "light": "cold",
+      "amb": 0.6,
+      "cam": "still",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "coat": "shirt"
+       },
+       "pose": "mourn",
+       "yaw": 180,
+       "at": [
+        -0.5,
+        -1.0
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "bald",
+        "beard": "long",
+        "hairc": "#c8c8c0",
+        "beardc": "#c8c8c0",
+        "coat": "military",
+        "medals": 3,
+        "sash": "#a8322a"
+       },
+       "turnTo": 1,
+       "at": [
+        0.9,
+        -1.6
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "stamp": 1,
+      "light": "red",
+      "cam": "down"
+     }
+    }
+   ]
+  },
+  {
+   "text": "NOT BELGIUM'S. HIS.",
+   "red": [
+    "HIS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "inquiry",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "label": "Belgian parliament"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "candles"
+      ],
+      "light": "dark",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "stache": "big",
+        "coat": "khaki",
+        "hat": "helmet",
+        "hatc": "#e8e0cc"
+       },
+       "pose": "point",
+       "at": [
+        0.6,
+        -1.2
+       ],
+       "yaw": -30
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "title": "Congo Free State",
+      "lines": [
+       "Sovereign: King Leopold II",
+       "Not a Belgian colony"
+      ],
+      "date": "1885"
+     }
+    }
+   ]
+  },
+  {
+   "text": "QUOTAS. HOSTAGES. PROFIT.",
+   "red": [
+    "PROFIT"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "jungle",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 3
+     }
+    },
+    {
+     "d": 4,
+     "scene": "bars",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "items": [
+       [
+        "1890",
+        100,
+        "tonnes"
+       ],
+       [
+        "1901",
+        6000,
+        "tonnes"
+       ]
+      ],
+      "max": 6000,
+      "red": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "field",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "famine": 1,
+      "village": 1,
+      "guard": 1,
+      "n": 2
+     }
+    },
+    {
+     "d": 4,
+     "scene": "city",
+     "fx": [
+      "shake",
+      "smash"
+     ],
+     "p": {
+      "state": "normal",
+      "night": 1,
+      "seed": 8
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE TOLL: UNKNOWN. THE RECORDS: BURNED.",
+   "red": [
+    "BURNED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.68
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "cold",
+      "cam": "down",
+      "fig": {
+       "look": {
+        "hair": "full",
+        "stache": "big",
+        "coat": "suit"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "window"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "full",
+        "beard": "full",
+        "coat": "#cfc8b8"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "candles",
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#ffb04a",
+      "light": "red",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "mirror",
+       "candles"
+      ],
+      "light": "bulb",
+      "dies": 0.85,
+      "cam": "push"
+     }
+    }
+   ]
+  }
+ ]
+}

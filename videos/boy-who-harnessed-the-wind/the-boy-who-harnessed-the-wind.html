@@ -1,0 +1,570 @@
+<title>The Boy Who Harnessed the Wind</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a cinema-style 16:9 stage, a transport bar under it, then the chapter list. Single dark theme by choice: it is a screening room. */
+:root {
+  color-scheme: dark;
+  --night: #12131f;
+  --panel: #1c1d2c;
+  --line: #34364a;
+  --fg: #ece6d6;
+  --muted: #a7a3b5;
+  --maize: #f2b33d;
+  --earth: #b4532a;
+  --display: "Gloock", Georgia, "Times New Roman", serif;
+  --body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { background: var(--night); color: var(--fg); }
+body { font-family: var(--body); font-size: 15px; line-height: 1.55; padding-inline: 16px; padding-block: 24px 48px; }
+.wrap { max-width: 1040px; margin-inline: auto; display: grid; gap: 20px; }
+header { display: grid; gap: 4px; }
+.eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--maize); }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(26px, 4.4vw, 42px); line-height: 1.1; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); margin: 0; max-width: 62ch; }
+
+.stage { position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 6px; overflow: hidden; }
+canvas { display: block; width: 100%; height: 100%; }
+.caption { position: absolute; left: 50%; bottom: 5%; transform: translateX(-50%); width: 86%; text-align: center;
+  font-size: clamp(12px, 2.1vw, 21px); line-height: 1.35; font-weight: 500; color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.9), 0 0 12px rgba(0,0,0,.6); pointer-events: none; text-wrap: balance; }
+.bigplay { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(10,10,18,.35); border: 0; cursor: pointer; color: var(--fg); font: inherit; }
+.bigplay span { display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 999px; background: var(--maize); color: #1a1408; font-weight: 600; font-size: 16px; }
+.bigplay:focus-visible span { outline: 3px solid var(--fg); outline-offset: 3px; }
+
+.transport { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.transport button { font: inherit; font-weight: 500; color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 7px 12px; cursor: pointer; }
+.transport button:hover { border-color: var(--maize); }
+.transport button[aria-pressed="true"] { background: var(--maize); color: #1a1408; border-color: var(--maize); }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--maize); outline-offset: 2px; }
+.scrub { flex: 1 1 260px; min-width: 0; accent-color: var(--maize); }
+.time { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
+
+.chapters { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 8px; list-style: none; padding: 0; margin: 0; }
+.chapters button { width: 100%; text-align: left; font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; cursor: pointer; display: grid; gap: 2px; }
+.chapters button:hover { border-color: var(--maize); }
+.chapters button.on { border-color: var(--maize); box-shadow: inset 3px 0 0 var(--maize); }
+.chapters .tc { font-variant-numeric: tabular-nums; font-size: 12px; color: var(--maize); }
+.chapters .nm { font-weight: 500; }
+h2 { font-family: var(--display); font-weight: 400; font-size: 22px; margin: 8px 0 0; }
+.notes { color: var(--muted); max-width: 70ch; display: grid; gap: 8px; margin: 0; padding-left: 18px; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Animated story · about 4½ minutes</div>
+    <h1>The Boy Who Harnessed the Wind</h1>
+    <p class="lede">William Kamkwamba's windmill, scene by scene, timed to the script. Turn on the voice for a read-through, or keep it muted and record your own narration over it.</p>
+  </header>
+
+  <div class="stage" id="stage">
+    <canvas id="cv" width="1280" height="720" aria-label="Animated illustration of the story"></canvas>
+    <div class="caption" id="cap" aria-live="polite"></div>
+    <button class="bigplay" id="bigplay" aria-label="Play the story"><span>▶ Play the story</span></button>
+  </div>
+
+  <div class="transport">
+    <button id="play" aria-label="Play">▶ Play</button>
+    <button id="restart">⟲ Restart</button>
+    <input class="scrub" id="scrub" type="range" min="0" max="100" step="0.1" value="0" aria-label="Seek">
+    <span class="time" id="time">0:00 / 0:00</span>
+    <button id="voice" aria-pressed="true">Voice</button>
+    <button id="caps" aria-pressed="true">Captions</button>
+  </div>
+
+  <section>
+    <h2>Chapters</h2>
+    <ul class="chapters" id="chapters"></ul>
+  </section>
+
+  <section>
+    <h2>Using it in your video</h2>
+    <ul class="notes">
+      <li>Screen-record the player at full width, for example with OBS or your computer's built-in recorder. Turn captions off if you'll add them in your editor.</li>
+      <li>The voice is your browser's built-in text-to-speech, so it sounds different on every device. Use it for timing, then record your own narration.</li>
+      <li>The illustrations are stylised, so nothing here claims to be a photo of William, his village or his windmill.</li>
+      <li>Check the dates and quotes against the book before you publish.</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+(() => {
+const W = 1280, H = 720;
+const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const DISPLAY = 'Gloock, Georgia, serif', BODY = '"Instrument Sans", system-ui, sans-serif';
+const C = { night:'#12131f', ink:'#0b0b12', maize:'#f2b33d', earth:'#b4532a', clay:'#7a3a22', wood:'#6b4a2e', cream:'#ece6d6', sky1:'#f08a4b', sky2:'#3b2f5c', leaf:'#5f7f3a', steel:'#8d93a3' };
+
+const SCENES = [
+  'The question', 'Meet William', 'Malawi, 2001', 'The famine', 'The library', 'How wind becomes light',
+  'Why it matters', 'The parts list', 'Misala', 'First light', 'The real point', 'The world finds out', 'He went back', 'The ending'
+];
+const LINES = [
+  [0,"You are 14, your family is starving, and you just lost your place at school."],
+  [0,"Nobody in your village has power. What do you build?"],
+  [1,"This is the true story of William Kamkwamba, the boy who harnessed the wind."],
+  [1,"And the part everyone remembers, the windmill, is not the most impressive thing he did."],
+  [1,"By the end of this video you will know exactly how he built it, what he built it from, and why the hardest part had nothing to do with engineering."],
+  [2,"Malawi, 2001. William lives in a farming village where almost nobody has electricity."],
+  [2,"When the sun goes down, the day is over."],
+  [2,"His family grows maize. That is their food and their income."],
+  [3,"Then the rains fail. A drought, and then a famine. Families cut down to one meal a day."],
+  [3,"William's father can no longer pay his school fees, so William has to leave school."],
+  [3,"For most kids, that is the end of the story. Here is where William's begins."],
+  [4,"He can't go to class, so he goes to the small library at his old primary school."],
+  [4,"He doesn't have the English to read most of the books, so he reads the pictures. Diagrams."],
+  [4,"And one book has a picture of a windmill on the cover."],
+  [5,"The book is called Using Energy. And it explains something nobody around him had told him:"],
+  [5,"wind can turn a blade, the blade can turn a generator, and a generator makes electricity."],
+  [6,"So William does the maths a hungry kid does. Electricity means light at night. It means a radio."],
+  [6,"And if it can pump water, it means a second harvest in the dry season."],
+  [6,"Which means the famine doesn't have to happen again."],
+  [7,"But he has no money. So he goes to the scrapyard."],
+  [7,"Here is the parts list, and every piece of it was something other people had thrown away."],
+  [7,"A broken bicycle frame. A fan blade from an old tractor."],
+  [7,"PVC pipe, which he heats and flattens into blades."],
+  [7,"A small bicycle dynamo, the kind that powers a bike light. And for the tower, wood from blue gum trees."],
+  [8,"And this is the part I find hardest to imagine. Every day he walks to the dump. The village watches."],
+  [8,"And they decide he has gone mad. The word they use is misala. Crazy."],
+  [8,"He keeps going anyway. No teacher. No internet."],
+  [8,"A book he can only half read, and parts he can't afford to replace if he breaks them."],
+  [9,"Then he raises the tower, and the wind turns the blades, and a single bulb lights up."],
+  [9,"Then a radio. In a house that has never had either."],
+  [9,"The crowd that called him crazy turns up to charge their phones."],
+  [10,"Here is the thing the film can't really show you. The windmill was the proof."],
+  [10,"What William actually did was decide that being out of school was not the same as being finished learning."],
+  [11,"Word gets out. A journalist writes about him. In 2007 he is invited to speak at TED, in Tanzania."],
+  [11,"He has never been on a plane. He has never used a computer. He tells the room: I try, and I made it."],
+  [11,"After that, there is a book, then a place at Dartmouth College in the United States, and in 2019 a Netflix film directed by Chiwetel Ejiofor."],
+  [12,"And he went back. He built more windmills, a solar-powered pump for the village well,"],
+  [12,"and he has spent years helping other young people build things of their own."],
+  [13,"So that is the story. A bicycle, a tractor fan, a library book,"],
+  [13,"and a kid who kept walking to the dump when everyone was laughing at him."],
+  [13,"If you want the full version, read the book, The Boy Who Harnessed the Wind. It is linked in the description."]
+];
+
+// Timeline: 150 words per minute plus a short breath per line.
+let t0 = 0;
+const lines = LINES.map(([s, text]) => {
+  const dur = text.split(/\s+/).length / 2.5 + 0.45;
+  const l = { s, text, start: t0, dur, end: t0 + dur }; t0 += dur; return l;
+});
+const TOTAL = t0;
+const scenes = SCENES.map((name, i) => {
+  const ls = lines.filter(l => l.s === i);
+  return { name, start: ls[0].start, end: ls[ls.length - 1].end };
+});
+
+// ---------- helpers ----------
+const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+const seg = (t, a, b) => clamp((t - a) / (b - a)); // 0..1 progress of t across [a,b]
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function mixHex(a, b, t) {
+  const p = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)); const A = p(a), B = p(b);
+  return '#' + A.map((v, i) => Math.round(lerp(v, B[i], t)).toString(16).padStart(2, '0')).join('');
+}
+function sky(top, bottom, y1 = H) { const g = ctx.createLinearGradient(0, 0, 0, y1); g.addColorStop(0, top); g.addColorStop(1, bottom); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); }
+function rect(x, y, w, h, c) { ctx.fillStyle = c; ctx.fillRect(x, y, w, h); }
+function circle(x, y, r, c) { ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fillStyle = c; ctx.fill(); }
+function text(s, x, y, size, opt = {}) {
+  ctx.save(); ctx.globalAlpha *= opt.a ?? 1; ctx.fillStyle = opt.c || C.cream; ctx.textAlign = opt.align || 'center'; ctx.textBaseline = 'middle';
+  ctx.font = `${opt.w || 400} ${size}px ${opt.f || DISPLAY}`;
+  if (opt.ls) ctx.letterSpacing = opt.ls + 'px';
+  ctx.fillText(s, x, y); ctx.restore();
+}
+function hut(x, y, s, wall = '#8a5a3a', roof = '#c9a15a') {
+  rect(x - 40 * s, y - 50 * s, 80 * s, 50 * s, wall);
+  rect(x - 9 * s, y - 30 * s, 18 * s, 30 * s, '#2a1a12');
+  ctx.beginPath(); ctx.moveTo(x - 58 * s, y - 46 * s); ctx.lineTo(x, y - 100 * s); ctx.lineTo(x + 58 * s, y - 46 * s); ctx.closePath(); ctx.fillStyle = roof; ctx.fill();
+}
+function person(x, y, s, c = C.ink) {
+  circle(x, y - 62 * s, 11 * s, c);
+  ctx.beginPath(); ctx.moveTo(x - 15 * s, y - 46 * s); ctx.lineTo(x + 15 * s, y - 46 * s); ctx.lineTo(x + 11 * s, y); ctx.lineTo(x - 11 * s, y); ctx.closePath(); ctx.fillStyle = c; ctx.fill();
+}
+function blades(x, y, r, ang, n = 4, c = C.cream) {
+  ctx.save(); ctx.translate(x, y); ctx.rotate(ang);
+  for (let i = 0; i < n; i++) {
+    ctx.rotate(Math.PI * 2 / n);
+    ctx.beginPath(); ctx.moveTo(0, -4); ctx.quadraticCurveTo(r * .55, -r * .22, r, -r * .1); ctx.lineTo(r, r * .06); ctx.quadraticCurveTo(r * .5, 4, 0, 4); ctx.closePath(); ctx.fillStyle = c; ctx.fill();
+  }
+  ctx.restore(); circle(x, y, r * .1, C.wood);
+}
+function tower(x, base, h, c = C.wood, lw = 7) {
+  ctx.save(); ctx.strokeStyle = c; ctx.lineWidth = lw; ctx.lineCap = 'round';
+  const top = base - h, w = h * .16;
+  ctx.beginPath(); ctx.moveTo(x - w, base); ctx.lineTo(x - 6, top); ctx.moveTo(x + w, base); ctx.lineTo(x + 6, top);
+  for (let i = 1; i < 5; i++) { const yy = base - h * i / 5, ww = lerp(w, 6, i / 5); ctx.moveTo(x - ww, yy); ctx.lineTo(x + ww, yy); }
+  ctx.moveTo(x - w, base); ctx.lineTo(x + lerp(w, 6, .4), base - h * .4); ctx.moveTo(x + w, base); ctx.lineTo(x - lerp(w, 6, .4), base - h * .4);
+  ctx.stroke(); ctx.restore();
+}
+function windmill(x, base, h, ang, c = C.wood, bc = C.cream) { tower(x, base, h, c); blades(x, base - h, h * .38, ang, 4, bc); }
+function bulb(x, y, r, on) {
+  if (on > 0) {
+    const g = ctx.createRadialGradient(x, y, 0, x, y, r * 7); g.addColorStop(0, `rgba(255,214,120,${.55 * on})`); g.addColorStop(1, 'rgba(255,214,120,0)');
+    ctx.fillStyle = g; ctx.fillRect(x - r * 7, y - r * 7, r * 14, r * 14);
+  }
+  circle(x, y, r, on > 0 ? mixHex('#3a3a46', '#ffe7a6', on) : '#3a3a46');
+  ctx.save(); ctx.strokeStyle = on > .3 ? '#c9781f' : '#55556a'; ctx.lineWidth = r * .1;
+  ctx.beginPath(); ctx.moveTo(x - r * .3, y + r * .2); ctx.lineTo(x - r * .1, y - r * .3); ctx.lineTo(x + r * .1, y + r * .1); ctx.lineTo(x + r * .3, y - r * .3); ctx.stroke(); ctx.restore();
+  rect(x - r * .45, y + r * .85, r * .9, r * .55, '#8d93a3'); rect(x - r * .35, y + r * 1.4, r * .7, r * .2, '#6a6f7e');
+}
+function radio(x, y, s, waves = 0) {
+  ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+  rect(-60, -35, 120, 70, '#7a3a22'); rect(-48, -24, 50, 48, '#3a2418');
+  for (let i = 0; i < 5; i++) rect(-46, -20 + i * 9, 46, 3, '#5c3a26');
+  circle(28, -6, 12, C.cream); circle(28, 18, 6, C.maize);
+  ctx.strokeStyle = C.steel; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(40, -35); ctx.lineTo(70, -90); ctx.stroke();
+  ctx.strokeStyle = C.maize; ctx.lineWidth = 4;
+  for (let i = 0; i < 3; i++) { const a = clamp(waves * 3 - i); if (a <= 0) continue; ctx.globalAlpha = a; ctx.beginPath(); ctx.arc(70, -90, 16 + i * 14, -Math.PI * .8, -Math.PI * .2); ctx.stroke(); }
+  ctx.restore();
+}
+function stars(a, seed = 7) { const r = rng(seed); ctx.save(); ctx.globalAlpha = a; for (let i = 0; i < 90; i++) circle(r() * W, r() * H * .55, r() * 1.6 + .4, '#fff6dc'); ctx.restore(); }
+function maize(x, base, h, sway, c = C.leaf) {
+  ctx.save(); ctx.strokeStyle = c; ctx.lineWidth = 4; ctx.lineCap = 'round';
+  ctx.beginPath(); ctx.moveTo(x, base); ctx.quadraticCurveTo(x + sway * .5, base - h * .5, x + sway, base - h); ctx.stroke();
+  for (let i = 1; i < 4; i++) { const yy = base - h * i / 4, xx = x + sway * i / 4, d = i % 2 ? 1 : -1;
+    ctx.beginPath(); ctx.moveTo(xx, yy); ctx.quadraticCurveTo(xx + d * 22, yy - 14, xx + d * 34, yy + 4); ctx.stroke(); }
+  ctx.restore();
+}
+function vignette() { const g = ctx.createRadialGradient(W / 2, H / 2, H * .35, W / 2, H / 2, H * .95); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); }
+
+// Precomputed shapes
+const cracks = (() => { const r = rng(11), out = []; for (let i = 0; i < 26; i++) { let x = r() * W, y = 380 + r() * 340; const pts = [[x, y]]; for (let j = 0; j < 7; j++) { x += (r() - .5) * 120; y += (r() - .5) * 60; pts.push([x, y]); } out.push(pts); } return out; })();
+const spines = (() => { const r = rng(3), out = [], cols = ['#7a3a22', '#3f5a6b', '#b4532a', '#5f7f3a', '#8a6d3b', '#4b3b5c', '#a88b4a']; for (let row = 0; row < 3; row++) { let x = 150; while (x < 1130) { const w = 18 + r() * 22, h = 110 + r() * 40; out.push({ x, row, w, h, c: cols[Math.floor(r() * cols.length)] }); x += w + 3; } } return out; })();
+const junk = (() => { const r = rng(21), out = []; for (let i = 0; i < 40; i++) out.push({ x: r() * W, y: 520 + r() * 160, w: 40 + r() * 120, h: 20 + r() * 60, rot: (r() - .5) * .6, c: ['#4a4d58', '#5a4a3e', '#3d4048', '#6b5644'][Math.floor(r() * 4)] }); return out; })();
+function drawJunk() { for (const j of junk) { ctx.save(); ctx.translate(j.x, j.y); ctx.rotate(j.rot); rect(-j.w / 2, -j.h / 2, j.w, j.h, j.c); ctx.restore(); } }
+function drawPoly(pts, frac) {
+  const n = (pts.length - 1) * frac; ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]);
+  for (let i = 1; i <= Math.ceil(n); i++) { const f = Math.min(1, n - (i - 1)); ctx.lineTo(lerp(pts[i - 1][0], pts[i][0], f), lerp(pts[i - 1][1], pts[i][1], f)); }
+  ctx.stroke();
+}
+
+// Part icons for the parts list
+const PARTS = [
+  ['Bicycle frame', (x, y) => { ctx.save(); ctx.strokeStyle = C.steel; ctx.lineWidth = 6; ctx.beginPath(); ctx.arc(x - 55, y + 20, 34, 0, 7); ctx.stroke(); ctx.beginPath(); ctx.arc(x + 55, y + 20, 34, 0, 7); ctx.stroke();
+      ctx.strokeStyle = C.earth; ctx.beginPath(); ctx.moveTo(x - 55, y + 20); ctx.lineTo(x - 10, y - 25); ctx.lineTo(x + 40, y - 25); ctx.lineTo(x + 55, y + 20); ctx.moveTo(x - 10, y - 25); ctx.lineTo(x + 5, y + 20); ctx.lineTo(x + 40, y - 25); ctx.stroke(); ctx.restore(); }],
+  ['Tractor fan blade', (x, y) => blades(x, y, 55, .4, 4, C.steel)],
+  ['PVC pipe → blades', (x, y) => { rect(x - 70, y - 30, 70, 22, '#d8d4c6'); circle(x - 70, y - 19, 11, '#b8b3a3'); ctx.save(); ctx.translate(x + 30, y + 15); ctx.rotate(-.3); ctx.beginPath(); ctx.moveTo(-40, -8); ctx.quadraticCurveTo(0, -22, 40, -6); ctx.lineTo(40, 6); ctx.quadraticCurveTo(0, 2, -40, 8); ctx.closePath(); ctx.fillStyle = '#d8d4c6'; ctx.fill(); ctx.restore(); text('→', x - 2, y - 18, 26, { f: BODY, c: C.maize }); }],
+  ['Bicycle dynamo', (x, y) => { ctx.save(); ctx.translate(x, y); ctx.rotate(-.5); rect(-22, -45, 44, 80, C.steel); rect(-22, -45, 44, 10, '#6a6f7e'); circle(0, -52, 12, '#4a4d58'); rect(-4, 35, 8, 18, '#6a6f7e'); ctx.restore(); }],
+  ['Blue gum poles', (x, y) => { for (let i = 0; i < 3; i++) { ctx.save(); ctx.translate(x - 40 + i * 40, y); ctx.rotate(-.1 + i * .1); rect(-9, -60, 18, 120, ['#8a6d4a', '#7a5d3e', '#9a7c55'][i]); ctx.restore(); } }],
+];
+
+// ---------- scenes ----------
+const DRAW = [
+  // 0 The question
+  (t, T) => {
+    rect(0, 0, W, H, '#05050a');
+    let on = 0;
+    if (t > .18) on = reduce ? 1 : (t < .45 ? (Math.sin(T * 37) + Math.sin(T * 23) > .4 ? 1 : .15) : 1);
+    ctx.save(); ctx.strokeStyle = '#3a3a46'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(W / 2, 0); ctx.lineTo(W / 2, 250); ctx.stroke(); ctx.restore();
+    bulb(W / 2, 300, 52, on);
+    text('14 years old.', 260, 520, 40, { a: seg(t, .05, .2), c: C.cream });
+    text('No school.', W / 2, 560, 40, { a: seg(t, .2, .35) });
+    text('No power.', W - 260, 520, 40, { a: seg(t, .55, .7) });
+  },
+  // 1 Meet William
+  (t, T) => {
+    sky('#2b2550', C.sky1, 560); rect(0, 560, W, 160, '#3b2418');
+    windmill(980, 580, 330, T * 1.2, '#1a1220', '#1a1220');
+    person(820, 580, 1.3, '#1a1220');
+    const a = ease(seg(t, 0, .25));
+    text('THE BOY WHO', 420, 230, 30, { f: BODY, w: 600, ls: 6, a, c: C.maize });
+    text('Harnessed the Wind', 420, 300, 74, { a });
+    text('The true story of William Kamkwamba', 420, 360, 24, { f: BODY, a: a * .9 });
+    ['How', 'What from', 'The hardest part'].forEach((w, i) => {
+      const b = ease(seg(t, .55 + i * .1, .65 + i * .1));
+      ctx.save(); ctx.globalAlpha = b; ctx.fillStyle = 'rgba(18,19,31,.75)'; ctx.fillRect(160 + i * 190 - (i === 2 ? 0 : 0), 430, i === 2 ? 230 : 170, 54); ctx.restore();
+      text(w, 160 + i * 190 + (i === 2 ? 115 : 85), 457, 24, { f: BODY, w: 600, a: b, c: C.maize });
+    });
+  },
+  // 2 Malawi, 2001
+  (t, T) => {
+    const d = ease(seg(t, .25, .65));
+    sky(mixHex('#f2a55a', '#151735', d), mixHex('#f6c886', '#3b2f5c', d), 520);
+    stars(d);
+    circle(W * .72, lerp(330, 600, d), 60, mixHex('#ffd27a', '#ff7a3a', d));
+    rect(0, 500, W, 220, mixHex('#9c5a32', '#2a1a14', d));
+    hut(260, 520, 1.1, mixHex('#8a5a3a', '#2a1c14', d), mixHex('#c9a15a', '#3a2c1c', d));
+    hut(470, 530, .9, mixHex('#8a5a3a', '#2a1c14', d), mixHex('#c9a15a', '#3a2c1c', d));
+    hut(900, 525, 1, mixHex('#8a5a3a', '#2a1c14', d), mixHex('#c9a15a', '#3a2c1c', d));
+    const fade = seg(t, .7, .85);
+    for (let i = 0; i < 16; i++) maize(60 + i * 80, 720, 150 + (i % 3) * 20, Math.sin(T * 1.5 + i) * 10, mixHex(C.leaf, '#1e2a16', d * (1 - fade * .5)));
+    text('MALAWI · 2001', 70, 70, 28, { f: BODY, w: 600, ls: 5, align: 'left', a: 1 - seg(t, .85, 1) * .3, c: '#fff' });
+    text('No electricity after dark', W / 2, 140, 34, { a: seg(t, .35, .45) * (1 - seg(t, .68, .74)) });
+    text('Maize: food and income', W / 2, 140, 34, { a: seg(t, .74, .82) });
+  },
+  // 3 The famine
+  (t, T) => {
+    sky('#e7a14c', '#c1652e', 420); circle(W * .5, 170, 90, '#ffe6a0');
+    rect(0, 380, W, 340, '#a35b2c');
+    ctx.save(); ctx.strokeStyle = '#4a2410'; ctx.lineWidth = 3; ctx.lineJoin = 'round';
+    const g = ease(seg(t, 0, .45)); cracks.forEach((p, i) => drawPoly(p, clamp(g * 1.3 - i * .01))); ctx.restore();
+    for (let i = 0; i < 9; i++) maize(80 + i * 140, 450, 90, 25 + Math.sin(T + i) * 3, '#8a7a3a');
+    const labels = [['DROUGHT', .02], ['FAMINE', .14], ['ONE MEAL A DAY', .26], ['NO MONEY FOR SCHOOL FEES', .5]];
+    labels.forEach(([s, a], i) => {
+      const k = ease(seg(t, a, a + .08));
+      ctx.save(); ctx.globalAlpha = k; ctx.fillStyle = 'rgba(18,10,6,.78)'; ctx.font = `600 30px ${BODY}`; ctx.letterSpacing = '4px';
+      const w = ctx.measureText(s).width + 40; ctx.fillRect(W / 2 - w / 2, 470 + i * 56, w, 46); ctx.restore();
+      text(s, W / 2, 494 + i * 56, 30, { f: BODY, w: 600, ls: 4, a: k, c: i === 3 ? C.maize : C.cream });
+    });
+  },
+  // 4 The library
+  (t) => {
+    rect(0, 0, W, H, '#2a1d17');
+    for (let row = 0; row < 3; row++) rect(130, 200 + row * 170, 1020, 14, '#5a3b26');
+    for (const s of spines) {
+      if (s === spines[17]) continue;
+      rect(s.x, 200 + s.row * 170 - s.h, s.w, s.h, s.c); rect(s.x, 200 + s.row * 170 - s.h + 18, s.w, 4, 'rgba(255,255,255,.15)');
+    }
+    const p = ease(seg(t, .55, .85)), b = spines[17];
+    const bx = lerp(b.x + b.w / 2, W / 2, p), by = lerp(200 + b.row * 170 - b.h / 2, H / 2, p);
+    const bw = lerp(b.w, 300, p), bh = lerp(b.h, 400, p);
+    ctx.save(); ctx.fillStyle = 'rgba(0,0,0,' + .55 * p + ')'; ctx.fillRect(0, 0, W, H); ctx.restore();
+    rect(bx - bw / 2, by - bh / 2, bw, bh, '#2f5a6e');
+    if (p > .6) {
+      ctx.save(); ctx.globalAlpha = seg(p, .6, 1);
+      rect(bx - bw / 2 + 16, by - bh / 2 + 16, bw - 32, bh - 32, '#3e7088');
+      windmill(bx, by + 110, 170, t * 6, '#ece6d6', '#ece6d6');
+      text('USING ENERGY', bx, by - 150, 26, { f: BODY, w: 600, ls: 4 });
+      ctx.restore();
+    }
+    const rp = seg(t, .3, .4) * (1 - seg(t, .5, .56));
+    ctx.save(); ctx.globalAlpha = rp; ctx.fillStyle = 'rgba(18,12,8,.85)'; ctx.fillRect(W / 2 - 220, 640, 440, 60); ctx.restore();
+    text('Reading the pictures', W / 2, 670, 34, { a: rp });
+  },
+  // 5 How wind becomes light
+  (t, T) => {
+    rect(0, 0, W, H, '#16243a');
+    ctx.save(); ctx.strokeStyle = 'rgba(236,230,214,.06)'; ctx.lineWidth = 1; for (let x = 0; x < W; x += 40) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); } for (let y = 0; y < H; y += 40) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); } ctx.restore();
+    text('USING ENERGY', W / 2, 90, 30, { f: BODY, w: 600, ls: 8, c: C.maize, a: seg(t, 0, .1) });
+    const xs = [190, 490, 790, 1090], y = 380, step = i => seg(t, .32 + i * .14, .42 + i * .14);
+    // wind
+    ctx.save(); ctx.strokeStyle = C.cream; ctx.lineWidth = 4; ctx.lineCap = 'round';
+    for (let i = 0; i < 4; i++) { const off = (T * 160 + i * 50) % 140; ctx.globalAlpha = .4 + .5 * step(0); ctx.beginPath(); ctx.moveTo(110 + off * .3, y - 60 + i * 38); ctx.lineTo(200 + off * .3, y - 60 + i * 38); ctx.stroke(); }
+    ctx.restore();
+    const spin = T * lerp(.2, 5, step(1));
+    blades(xs[1], y, 80, spin, 3, C.cream);
+    ctx.save(); ctx.globalAlpha = .3 + .7 * step(2); rect(xs[2] - 55, y - 45, 110, 90, C.steel); ctx.strokeStyle = C.maize; ctx.lineWidth = 3;
+    for (let i = 0; i < 6; i++) { ctx.beginPath(); ctx.ellipse(xs[2], y, 30, 34 - i * 2, 0, 0, 7); ctx.stroke(); } ctx.restore();
+    bulb(xs[3], y - 10, 50, step(3));
+    ['Wind', 'Blade', 'Generator', 'Electricity'].forEach((s, i) => text(s, xs[i], y + 130, 28, { f: BODY, w: 600, a: .35 + .65 * (i ? step(i) : step(0)) }));
+    ctx.save(); ctx.strokeStyle = C.maize; ctx.lineWidth = 4;
+    for (let i = 0; i < 3; i++) { const k = step(i + 1); if (!k) continue; const a = xs[i] + 100, b = xs[i + 1] - 100; ctx.beginPath(); ctx.moveTo(a, y); ctx.lineTo(lerp(a, b, k), y); ctx.stroke();
+      if (k === 1) { ctx.beginPath(); ctx.moveTo(b - 12, y - 10); ctx.lineTo(b, y); ctx.lineTo(b - 12, y + 10); ctx.stroke(); } }
+    ctx.restore();
+  },
+  // 6 Why it matters
+  (t, T) => {
+    rect(0, 0, W, H, '#1a1a2a');
+    const k = i => ease(seg(t, .12 + i * .2, .24 + i * .2));
+    ctx.save(); ctx.globalAlpha = k(0); bulb(250, 290, 60, 1); ctx.restore();
+    text('Light at night', 250, 470, 30, { f: BODY, w: 600, a: k(0) });
+    ctx.save(); ctx.globalAlpha = k(1); radio(640, 310, 1.4, (T % 1.5) / 1.5); ctx.restore();
+    text('A radio', 640, 470, 30, { f: BODY, w: 600, a: k(1) });
+    ctx.save(); ctx.globalAlpha = k(2);
+    rect(990, 250, 80, 110, C.steel); rect(1060, 260, 70, 14, C.steel);
+    for (let i = 0; i < 3; i++) { const yy = 290 + ((T * 120 + i * 40) % 120); ctx.beginPath(); ctx.arc(1125, yy, 9, 0, 7); ctx.fillStyle = '#6fb6e0'; ctx.fill(); }
+    maize(1000, 420, 60, 5); maize(1060, 420, 70, -4); maize(1120, 420, 60, 3);
+    ctx.restore();
+    text('A second harvest', 1040, 470, 30, { f: BODY, w: 600, a: k(2) });
+    text('No more famine.', W / 2, 600, 52, { a: ease(seg(t, .82, .92)), c: C.maize });
+  },
+  // 7 The parts list
+  (t) => {
+    sky('#9aa0a8', '#c9b79a', 520); rect(0, 500, W, 220, '#6b5a48'); drawJunk();
+    ctx.save(); ctx.fillStyle = 'rgba(18,19,31,.86)'; ctx.fillRect(60, 60, W - 120, 470); ctx.restore();
+    text('THE PARTS LIST', 110, 110, 26, { f: BODY, w: 600, ls: 6, align: 'left', c: C.maize, a: seg(t, .05, .12) });
+    text('All of it thrown away by someone else', W - 110, 110, 22, { f: BODY, align: 'right', c: '#c9c4d6', a: seg(t, .12, .22) });
+    const times = [.33, .43, .58, .74, .88];
+    PARTS.forEach(([name, draw], i) => {
+      const k = ease(seg(t, times[i], times[i] + .06)), cx = 180 + i * 230;
+      ctx.save(); ctx.globalAlpha = k; ctx.translate(0, (1 - k) * 20); draw(cx, 290);
+      ctx.strokeStyle = C.maize; ctx.lineWidth = 3; ctx.strokeRect(cx - 90, 420, 26, 26);
+      ctx.beginPath(); ctx.moveTo(cx - 85, 433); ctx.lineTo(cx - 78, 441); ctx.lineTo(cx - 67, 425); ctx.stroke();
+      ctx.restore();
+      text(name, cx - 54, 433, 20, { f: BODY, w: 600, align: 'left', a: k });
+    });
+  },
+  // 8 Misala
+  (t, T) => {
+    sky('#3b2f5c', '#d9784a', 540); rect(0, 540, W, 180, '#3a2216');
+    ctx.save(); ctx.globalAlpha = .6; drawJunk(); ctx.restore();
+    for (let i = 0; i < 6; i++) person(880 + i * 58, 560 + (i % 2) * 10, 1 + (i % 3) * .08, '#1a1018');
+    const wx = lerp(80, 700, (t * 1.0) % 1), bob = Math.sin(T * 8) * 3;
+    person(wx, 600 + bob, 1.25, '#0e0a10'); ctx.save(); ctx.strokeStyle = '#0e0a10'; ctx.lineWidth = 6; ctx.beginPath(); ctx.arc(wx + 30, 540 + bob, 22, 0, 7); ctx.stroke(); ctx.restore();
+    const m = ease(seg(t, .3, .42));
+    text('MISALA', W / 2, 220, 140, { a: m, c: C.cream, ls: 10 });
+    text('“crazy”', W / 2, 320, 40, { f: BODY, a: m * .9, c: C.maize });
+    ['No teacher', 'No internet', 'Half a book', 'No spare parts'].forEach((s, i) =>
+      text(s, 220 + i * 280, 420, 26, { f: BODY, w: 600, a: ease(seg(t, .55 + i * .08, .62 + i * .08)) }));
+  },
+  // 9 First light
+  (t, T) => {
+    const dusk = ease(seg(t, 0, .3));
+    sky(mixHex('#2b2550', '#0f1026', dusk), mixHex('#c96b44', '#3b2f5c', dusk), 560); stars(dusk * .8, 9);
+    rect(0, 560, W, 160, '#22150f');
+    hut(330, 580, 1.2, '#3a2418', '#4a3622');
+    const raise = ease(seg(t, .02, .22)), cx = 760, base = 580, h = 340;
+    ctx.save(); ctx.translate(cx, base); ctx.rotate(lerp(-Math.PI / 2, 0, raise)); ctx.translate(-cx, -base);
+    const speed = lerp(0, 4, seg(t, .2, .35));
+    windmill(cx, base, h, T * speed, '#a07850', C.cream);
+    ctx.restore();
+    if (raise === 1) { ctx.save(); ctx.strokeStyle = '#3a3a46'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(cx, base - h + 20); ctx.quadraticCurveTo(560, 420, 360, 470); ctx.stroke(); ctx.restore(); }
+    const on = ease(seg(t, .3, .38));
+    bulb(330, 470, 26, on);
+    ctx.save(); ctx.globalAlpha = seg(t, .5, .56); radio(220, 540, .55, (T % 1.4) / 1.4); ctx.restore();
+    const crowd = ease(seg(t, .72, .82));
+    for (let i = 0; i < 7; i++) { const px = lerp(1300, 940 + i * 46, crowd); person(px, 620, 1, '#0b0810');
+      if (crowd > .9) { rect(px + 10, 572, 12, 18, '#9ee7ff'); const g = ctx.createRadialGradient(px + 16, 580, 0, px + 16, 580, 30); g.addColorStop(0, 'rgba(158,231,255,.35)'); g.addColorStop(1, 'rgba(158,231,255,0)'); ctx.fillStyle = g; ctx.fillRect(px - 14, 550, 60, 60); } }
+  },
+  // 10 The real point
+  (t) => {
+    rect(0, 0, W, H, '#14152a');
+    ctx.save(); ctx.translate(W / 2, 420);
+    ctx.fillStyle = '#e8dfc6'; ctx.beginPath(); ctx.moveTo(-360, -150); ctx.quadraticCurveTo(-180, -180, 0, -150); ctx.lineTo(0, 170); ctx.quadraticCurveTo(-180, 140, -360, 170); ctx.closePath(); ctx.fill();
+    ctx.beginPath(); ctx.moveTo(360, -150); ctx.quadraticCurveTo(180, -180, 0, -150); ctx.lineTo(0, 170); ctx.quadraticCurveTo(180, 140, 360, 170); ctx.closePath(); ctx.fill();
+    ctx.strokeStyle = 'rgba(60,40,30,.25)'; ctx.lineWidth = 2;
+    for (let i = 0; i < 9; i++) { ctx.beginPath(); ctx.moveTo(-320, -100 + i * 30); ctx.lineTo(-40, -100 + i * 30); ctx.moveTo(40, -100 + i * 30); ctx.lineTo(320, -100 + i * 30); ctx.stroke(); }
+    ctx.restore();
+    text('The windmill was the proof.', W / 2, 140, 46, { a: ease(seg(t, .02, .12)) });
+    const s = 'Out of school ≠ finished learning', n = Math.floor(s.length * ease(seg(t, .45, .8)));
+    text(s.slice(0, n), W / 2, 420, 40, { c: '#2a1a12' });
+  },
+  // 11 The world finds out
+  (t, T) => {
+    rect(0, 0, W, H, '#0c0c14');
+    const st = 1 - seg(t, .62, .7);
+    if (st > 0) {
+      ctx.save(); ctx.globalAlpha = st;
+      const g = ctx.createRadialGradient(W / 2, 430, 10, W / 2, 430, 360); g.addColorStop(0, 'rgba(255,230,180,.35)'); g.addColorStop(1, 'rgba(255,230,180,0)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+      rect(0, 560, W, 160, '#2a0f10'); circle(W / 2, 600, 220, 'rgba(180,40,40,.35)');
+      person(W / 2, 580, 1.4, '#1a1418');
+      text('2007 · ARUSHA, TANZANIA', W / 2, 90, 26, { f: BODY, w: 600, ls: 6, c: C.maize, a: seg(t, .05, .12) });
+      text('First flight. First computer.', W / 2, 160, 36, { a: seg(t, .3, .38) });
+      text('“I try, and I made it.”', W / 2, 250, 56, { a: ease(seg(t, .45, .53)) });
+      ctx.restore();
+    }
+    const cards = [['The book', 'with Bryan Mealer'], ['Dartmouth College', 'United States'], ['2019 film', 'dir. Chiwetel Ejiofor']];
+    cards.forEach(([a, b], i) => {
+      const k = ease(seg(t, .7 + i * .08, .78 + i * .08)), x = 200 + i * 340;
+      ctx.save(); ctx.globalAlpha = k; ctx.translate(0, (1 - k) * 30); rect(x - 130, 250, 300, 200, '#1f2034'); rect(x - 130, 250, 300, 6, C.maize); ctx.restore();
+      text(a, x + 20, 330, 32, { a: k }); text(b, x + 20, 385, 20, { f: BODY, a: k, c: '#c9c4d6' });
+    });
+  },
+  // 12 He went back
+  (t, T) => {
+    sky('#7fb6d9', '#f3e0b0', 520); circle(1080, 120, 50, '#fff2c0');
+    rect(0, 500, W, 220, '#8a5a32');
+    for (let i = 0; i < 12; i++) maize(40 + i * 110, 720, 120, Math.sin(T + i) * 8);
+    [[200, 260, 0], [470, 220, .4], [1120, 240, .8]].forEach(([x, h, o], i) => { const k = ease(seg(t, .05 + i * .1, .15 + i * .1)); ctx.save(); ctx.globalAlpha = k; windmill(x, 520, h, T * 2 + o, C.wood, C.cream); ctx.restore(); });
+    const s = ease(seg(t, .3, .45));
+    ctx.save(); ctx.globalAlpha = s; ctx.translate(760, 430); ctx.transform(1, 0, -.4, 1, 0, 0); rect(-80, -40, 160, 70, '#23365c');
+    ctx.strokeStyle = '#7fa4d9'; ctx.lineWidth = 2; for (let i = 1; i < 4; i++) { ctx.beginPath(); ctx.moveTo(-80 + i * 40, -40); ctx.lineTo(-80 + i * 40, 30); ctx.stroke(); } ctx.restore();
+    ctx.save(); ctx.globalAlpha = s; rect(752, 460, 8, 60, C.steel);
+    rect(860, 440, 40, 80, C.steel); rect(895, 448, 50, 10, C.steel);
+    for (let i = 0; i < 3; i++) { const yy = 470 + ((T * 100 + i * 25) % 60); circle(938, yy, 6, '#3a8cc9'); } ctx.restore();
+    for (let i = 0; i < 4; i++) { const k = ease(seg(t, .6 + i * .06, .7 + i * .06)); ctx.save(); ctx.globalAlpha = k; person(560 + i * 70, 640, .8, '#3a2418'); ctx.restore(); }
+    text('Back home', W / 2, 70, 40, { c: '#1a1220', a: seg(t, 0, .1) });
+  },
+  // 13 The ending
+  (t, T) => {
+    rect(0, 0, W, H, C.night);
+    const items = ['A bicycle', 'A tractor fan', 'A library book', 'A kid who kept walking'];
+    items.forEach((s, i) => {
+      const k = ease(seg(t, .04 + i * .1, .12 + i * .1)), y = 170 + i * 72;
+      ctx.save(); ctx.globalAlpha = k; ctx.strokeStyle = C.maize; ctx.lineWidth = 3; ctx.strokeRect(300, y - 16, 32, 32);
+      ctx.beginPath(); ctx.moveTo(306, y); ctx.lineTo(314, y + 9); ctx.lineTo(328, y - 10); ctx.stroke(); ctx.restore();
+      text(s, 360, y, 40, { align: 'left', a: k });
+    });
+    const b = ease(seg(t, .55, .7));
+    ctx.save(); ctx.globalAlpha = b; rect(900, 150, 220, 300, '#2f5a6e'); rect(912, 162, 196, 276, '#3e7088'); windmill(1010, 410, 150, T * 1.5, C.cream, C.cream); ctx.restore();
+    text('Read the book', 1010, 500, 30, { a: b });
+    text('Link in the description', 1010, 540, 20, { f: BODY, a: b, c: C.maize });
+    text('The Boy Who Harnessed the Wind', W / 2, 640, 34, { a: ease(seg(t, .8, .95)), c: '#c9c4d6' });
+  },
+];
+
+// ---------- playback ----------
+const $ = id => document.getElementById(id);
+const cap = $('cap'), scrub = $('scrub'), timeEl = $('time');
+scrub.max = TOTAL.toFixed(1);
+const fmt = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
+let time = 0, playing = false, last = 0, voiceOn = true, capsOn = true, spokenIdx = -1, speaking = false, token = 0;
+const synth = 'speechSynthesis' in window ? window.speechSynthesis : null;
+let voice = null;
+function pickVoice() { if (!synth) return; const v = synth.getVoices(); voice = v.find(x => /en(-|_)(GB|ZA|KE|NG)/i.test(x.lang)) || v.find(x => /^en/i.test(x.lang)) || null; }
+if (synth) { pickVoice(); synth.onvoiceschanged = pickVoice; } else { voiceOn = false; $('voice').setAttribute('aria-pressed', 'false'); $('voice').disabled = true; $('voice').title = 'Your browser has no built-in voice'; }
+
+const lineAt = s => { for (let i = lines.length - 1; i >= 0; i--) if (s >= lines[i].start) return i; return 0; };
+const sceneAt = s => { for (let i = scenes.length - 1; i >= 0; i--) if (s >= scenes[i].start) return i; return 0; };
+
+function speak(i) {
+  if (!synth) return;
+  const my = ++token; synth.cancel();
+  const u = new SpeechSynthesisUtterance(lines[i].text); if (voice) u.voice = voice; u.rate = .95;
+  u.onend = u.onerror = () => { if (my !== token) return; speaking = false;
+    if (playing && i + 1 < lines.length && time < lines[i + 1].start) time = lines[i + 1].start; };
+  speaking = true; spokenIdx = i;
+  try { synth.speak(u); } catch (e) { speaking = false; }
+}
+function stopVoice() { token++; speaking = false; spokenIdx = -1; if (synth) try { synth.cancel(); } catch (e) {} }
+
+function render() {
+  const si = sceneAt(time), sc = scenes[si];
+  const t = clamp((time - sc.start) / (sc.end - sc.start));
+  ctx.save(); DRAW[si](t, time); ctx.restore(); vignette();
+  // scene crossfade from black
+  const fadeIn = clamp((time - sc.start) / .5), fadeOut = clamp((sc.end - time) / .5);
+  const k = si === 0 ? fadeOut : si === scenes.length - 1 ? fadeIn : Math.min(fadeIn, fadeOut);
+  if (k < 1) { ctx.fillStyle = `rgba(0,0,0,${1 - k})`; ctx.fillRect(0, 0, W, H); }
+  cap.textContent = capsOn && (playing || time > 0) ? lines[lineAt(time)].text : '';
+  scrub.value = time.toFixed(1); timeEl.textContent = `${fmt(time)} / ${fmt(TOTAL)}`;
+  document.querySelectorAll('#chapters button').forEach((b, i) => b.classList.toggle('on', i === si));
+}
+function tick(now) {
+  if (!playing) return;
+  const dt = Math.min(.1, (now - last) / 1000); last = now;
+  let next = time + dt;
+  if (voiceOn && synth) {
+    const i = lineAt(time);
+    if (i !== spokenIdx) speak(i);
+    if (speaking && next >= lines[i].end - .02) next = lines[i].end - .02; // wait for the voice to finish the line
+  }
+  time = next;
+  if (time >= TOTAL) { time = TOTAL; setPlaying(false); }
+  render(); requestAnimationFrame(tick);
+}
+function setPlaying(p) {
+  playing = p; $('bigplay').hidden = true;
+  $('play').textContent = p ? '❚❚ Pause' : '▶ Play'; $('play').setAttribute('aria-label', p ? 'Pause' : 'Play');
+  if (p) { if (time >= TOTAL) time = 0; time = lines[lineAt(time)].start; last = performance.now(); requestAnimationFrame(tick); }
+  else stopVoice();
+  render();
+}
+function seek(s) { stopVoice(); time = clamp(s, 0, TOTAL); if (playing) time = lines[lineAt(time)].start; render(); }
+
+$('bigplay').onclick = () => setPlaying(true);
+$('play').onclick = () => setPlaying(!playing);
+$('restart').onclick = () => { seek(0); if (!playing) setPlaying(true); };
+scrub.oninput = () => seek(parseFloat(scrub.value));
+$('voice').onclick = () => { voiceOn = !voiceOn; $('voice').setAttribute('aria-pressed', voiceOn); if (!voiceOn) stopVoice(); };
+$('caps').onclick = () => { capsOn = !capsOn; $('caps').setAttribute('aria-pressed', capsOn); render(); };
+
+const ul = $('chapters');
+scenes.forEach((s, i) => { const li = document.createElement('li'), b = document.createElement('button');
+  b.innerHTML = `<span class="tc">${fmt(s.start)}</span><span class="nm"></span>`; b.querySelector('.nm').textContent = s.name;
+  b.onclick = () => { seek(s.start); if (!playing) setPlaying(true); }; li.appendChild(b); ul.appendChild(li); });
+
+// Resting frame: the title scene, so the page reads before anyone presses play.
+function poster() { const sc = scenes[1]; ctx.save(); DRAW[1](.9, 2); ctx.restore(); vignette(); timeEl.textContent = `0:00 / ${fmt(TOTAL)}`; }
+poster();
+if (document.fonts) document.fonts.ready.then(() => { if (!playing && time === 0) poster(); });
+document.addEventListener('keydown', e => { if (e.code === 'Space' && !/INPUT|BUTTON/.test(document.activeElement.tagName)) { e.preventDefault(); setPlaying(!playing); } });
+})();
+</script>

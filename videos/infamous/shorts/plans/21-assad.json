@@ -1,0 +1,336 @@
+{
+ "id": "21-assad",
+ "say": {
+  "Daraa": "Dar-ah",
+  "Khan Shaykhun": "Kahn Shy-koon",
+  "OPCW": "O P C W"
+ },
+ "scenes": [
+  {
+   "text": "THE PALACE WAS EMPTY.",
+   "red": [
+    "EMPTY"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#9fb8d8",
+      "light": "bulb",
+      "amb": 0.45,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "chairs:1",
+       "window"
+      ],
+      "light": "cold",
+      "amb": 0.35,
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.47
+     ],
+     "p": {
+      "props": [
+       "portrait"
+      ],
+      "light": "bulb",
+      "amb": 0.4,
+      "cam": "push",
+      "from": [
+       0,
+       1.9,
+       1.2
+      ],
+      "at": [
+       0,
+       2.05,
+       -2.9
+      ]
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 5
+     }
+    }
+   ]
+  },
+  {
+   "text": "NEVER MEANT TO RULE.",
+   "red": [
+    "RULE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "cold",
+      "amb": 0.4,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "stache": "thin",
+        "coat": "tunic"
+       },
+       "at": [
+        0,
+        -0.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "paper",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "mast": "DAMASCUS",
+      "head": "Heir killed in car crash",
+      "sub": "Bassel al-Assad, the president's eldest son",
+      "date": "January 1994"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "bars",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "items": [
+       [
+        "Minimum age before",
+        40,
+        ""
+       ],
+       [
+        "Minimum age after",
+        34,
+        ""
+       ]
+      ],
+      "max": 45,
+      "red": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.46
+     ],
+     "p": {
+      "props": [
+       "mirror"
+      ],
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "stache": "thin",
+        "coat": "suit",
+        "tie": "#2b2b30"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE REFORMER ANSWERED WITH FIRE.",
+   "red": [
+    "FIRE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "quote",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "text": "\"It's your turn, Doctor.\"",
+      "who": "Graffiti on a school wall, Daraa, 2011"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "people",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "n": 10,
+      "pose": "up"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "night": 1,
+      "seed": 12
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "door",
+       "bars"
+      ],
+      "door": "close",
+      "light": "bulb",
+      "dies": 0.7,
+      "amb": 0.3,
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "306,000+ CIVILIANS. NO TRIAL.",
+   "red": [
+    "TRIAL"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "stat",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "value": "306,000+",
+      "label": "civilians killed in ten years: UN estimate"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash",
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "shadows": 3,
+      "door": "open",
+      "doorc": "#e8dcc0",
+      "light": "bulb",
+      "amb": 0.5,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "light": "bulb",
+      "flicker": 1,
+      "dies": 0.7,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "stache": "thin",
+        "hairc": "#5a5a54",
+        "beardc": "#5a5a54",
+        "coat": "black",
+        "frown": 1
+       },
+       "pose": "sit",
+       "at": [
+        0,
+        -0.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#9fb8d8",
+      "light": "bulb",
+      "amb": 0.45,
+      "cam": "push"
+     }
+    }
+   ]
+  }
+ ]
+}

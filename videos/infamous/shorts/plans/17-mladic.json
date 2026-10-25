@@ -1,0 +1,291 @@
+{
+ "id": "17-mladic",
+ "say": {
+  "Srebrenica": "Srebreneetsa",
+  "Sarajevo": "Sarayevo"
+ },
+ "scenes": [
+  {
+   "text": "A SAFE AREA. SUPPOSEDLY.",
+   "red": [
+    "SUPPOSEDLY"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "city",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "seed": 4
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "low",
+      "fig": {
+       "pose": "stand",
+       "at": [
+        0,
+        -1.0
+       ],
+       "look": {
+        "hair": "crop",
+        "hairc": "#9a9a92",
+        "coat": "khaki",
+        "hat": "peak",
+        "round": 1,
+        "frown": 1
+       }
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "paper",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "mast": "UNITED NATIONS",
+      "head": "Srebrenica declared a safe area",
+      "sub": "Security Council Resolution 819",
+      "date": "April 1993"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ],
+       "look": {
+        "hair": "crop",
+        "hairc": "#9a9a92",
+        "coat": "khaki",
+        "hat": "peak",
+        "round": 1,
+        "frown": 1
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "11,000 KILLED. 1,000+ CHILDREN.",
+   "red": [
+    "CHILDREN"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "city",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "tanks": 1,
+      "night": 1
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "swing"
+      ],
+      "light": "cold",
+      "amb": 0.7,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "stat",
+     "fx": [
+      "flash",
+      "ramp"
+     ],
+     "p": {
+      "value": "11,000",
+      "label": "killed in the siege of Sarajevo, more than 1,000 of them children"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "shake",
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "coats:5",
+       "bars"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "\"NO ONE WILL BE HARMED.\"",
+   "red": [
+    "HARMED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "people",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 12,
+      "pose": "look"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.47
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "pose": "speech",
+       "at": [
+        0,
+        -0.4
+       ],
+       "look": {
+        "hair": "crop",
+        "hairc": "#9a9a92",
+        "coat": "khaki",
+        "hat": "peak",
+        "round": 1,
+        "frown": 1
+       }
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "suitcases:6"
+      ],
+      "light": "bulb",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "value": "8,000+",
+      "label": "men and boys killed at Srebrenica"
+     }
+    }
+   ]
+  },
+  {
+   "text": "GUILTY OF GENOCIDE. LIFE.",
+   "red": [
+    "GENOCIDE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "field",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "famine": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "bulb",
+      "dies": 0.75,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "inquiry",
+     "fx": [
+      "punch",
+      "shake"
+     ],
+     "p": {}
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "candles"
+      ],
+      "light": "cold",
+      "amb": 0.6,
+      "cam": "push"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+  "series": "Infamous",
+  "episode": 31,
+  "title": "Joaquín \"El Chapo\" Guzmán",
+  "subtitle": "The farm boy who built a drug empire, and escaped twice",
+  "say": {"Joaquín": "Hwakeen", "Guzmán": "Goosmahn", "Chapo": "Chahpo", "Archivaldo": "Archeevaldo", "Loera": "Lo-erra", "Sinaloa": "Seenalo-a", "Badiraguato": "Badeeragwahto", "La Tuna": "La Toona", "Félix Gallardo": "Felix Gayardo", "Miguel Ángel": "Meegel Ahnhel", "Guadalajara": "Gwadalahara", "Posadas Ocampo": "Posahdas Okampo", "Juan Jesús": "Hwan Hessoos", "Puente Grande": "Pwentay Grahnday", "Altiplano": "Altiplahno", "Mazatlán": "Masatlahn", "Los Mochis": "Loss Mochees", "Culiacán": "Kooleeakahn", "Calderón": "Kalderon", "Ciudad Juárez": "Seeoodad Hwahres", "Juárez": "Hwahres", "Zambada": "Sambahda", "Ismael": "Eesmah-el", "Arellano Félix": "Arayahno Felix", "Agua Prieta": "Agwa Preeyeta", "Chapitos": "Chahpeetos", "Mayo": "Myo", "Emma Coronel Aispuro": "Emma Koronel Ice-pooro", "narcocorridos": "narco-correedos", "Sierra Madre": "Seeyerra Madray", "Guzmán López": "Goosmahn Lopez", "Felipe": "Feleepay", "Beltrán Leyva": "Beltrahn Layva", "Genaro García Luna": "Hennaro Garseea Loona"},
+  "package": {
+    "thumb_line": 16,
+    "thumb": ["ESCAPED", "TWICE"],
+    "intro": "Joaquín 'El Chapo' Guzmán grew up poor in the mountains of Sinaloa and built one of the largest drug-trafficking organisations in the world. He escaped from maximum-security prisons twice before he was extradited to the United States, where a jury convicted him in 2019. This documentary tells how he rose, how he was caught, and what his cartel left behind.",
+    "facts": ["Born, by most accounts, in 1957 in La Tuna, Badiraguato, Sinaloa, Mexico", "Arrested in Guatemala in 1993 and imprisoned in Mexico", "Escaped from Puente Grande prison on 19 January 2001", "Recaptured in Mazatlán on 22 February 2014", "Escaped from Altiplano prison through a tunnel about 1.5 km long on 11 July 2015", "Recaptured in Los Mochis on 8 January 2016; extradited to the US on 19 January 2017", "Convicted on all ten counts in Brooklyn federal court on 12 February 2019", "Sentenced on 17 July 2019 to life plus 30 years and ordered to forfeit $12.6 billion"],
+    "sources": "US Department of Justice (Eastern District of New York) press releases and trial record, US Drug Enforcement Administration, Encyclopaedia Britannica, Mexico's National Registry of Missing Persons, Malcolm Beith's The Last Narco, Alan Feuer's El Jefe: The Stalking of Chapo Guzmán.",
+    "hashtags": "#History #Documentary #Mexico",
+    "tags": "el chapo, joaquin guzman, el chapo documentary, sinaloa cartel, mexican drug war, el chapo escape, el chapo trial, drug cartels, true crime history, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "EL CHAPO", "sub": "The farm boy who built a drug empire, and escaped twice", "art": "cell", "artp": {"night": 1}}, "On the evening of the eleventh of July, 2015, a prisoner in Mexico's most secure prison walked to the shower area of his cell, crouched behind a low wall, and vanished."],
+      ["date", {"date": "11 July 2015", "place": "Altiplano prison · near Mexico City"}, "Beneath the shower was a tunnel about one and a half kilometres long, with lighting, ventilation, and a motorbike running on rails."],
+      ["stat", {"value": "2", "label": "escapes from Mexican maximum-security prisons"}, "It was the second time he had escaped from a maximum-security prison."],
+      ["stat", {"value": "Life + 30 years", "label": "his US prison sentence, July 2019"}, "Four years later, he was serving a life sentence in the United States."],
+      ["lesson", {"text": "From farm boy to the world's most wanted drug lord."}, "Joaquín Guzmán, known as El Chapo, became the most famous drug lord since Pablo Escobar. In 2019 a jury in New York convicted him of running one of the largest drug-trafficking organisations in the world. This is how he built it."]
+    ]},
+    { "name": "Sinaloa", "lines": [
+      ["date", {"date": "1957", "place": "La Tuna · Badiraguato · Sinaloa · Mexico"}, "Joaquín Archivaldo Guzmán Loera was born, by most accounts in 1957, in La Tuna, a hamlet in the mountains of Sinaloa, in north-western Mexico."],
+      ["field", {"village": 1, "n": 5, "label": "the Sierra Madre · Sinaloa"}, "His family was poor. As a boy he worked in the fields, and in these mountains, opium poppies and marijuana were among the crops."],
+      ["bust", {"name": "Joaquín Guzmán", "years": "born 1957", "role": "Farm boy from the mountains of Sinaloa. Nicknamed 'El Chapo': Shorty.", "hair": "crop", "stache": "thin", "round": 1, "coat": "shirt"}, "He left school early. Because he was short, about one metre sixty-eight, he was nicknamed El Chapo, which means Shorty."],
+      ["web", {"nodes": [["Félix Gallardo", 0.5, 0.25, 0], ["Guzmán", 0.25, 0.7, 1], ["Tijuana group", 0.5, 0.75, 0], ["Juárez group", 0.75, 0.7, 0]], "links": [[0, 1], [0, 2], [0, 3]], "label": "the Guadalajara network · 1980s"}, "As a young man he went to work for Miguel Ángel Félix Gallardo, the most powerful trafficker in Mexico, whose network became known as the Guadalajara cartel."]
+    ]},
+    { "name": "The rise", "lines": [
+      ["timeline", {"events": [["Colombian cocaine via Mexico · 1980s", 0.15], ["Félix Gallardo arrested · 1989", 0.5], ["Sinaloa faction · 1990s", 0.85]]}, "In the 1980s, Colombian cartels began moving cocaine through Mexico to reach the United States. Mexican traffickers carried it across the border, and soon took a share of the drugs as payment."],
+      ["paper", {"mast": "MEXICO", "head": "Top drug boss Félix Gallardo arrested", "date": "April 1989"}, "When Félix Gallardo was arrested in 1989, his network split into rival groups. Guzmán and his partners took control of the routes run from Sinaloa."],
+      ["bust", {"name": "Ismael 'El Mayo' Zambada", "years": "born 1948", "role": "Guzmán's long-time partner in the Sinaloa cartel.", "hair": "crop", "stache": "thin", "coat": "shirt", "hairc": "#9a9a92"}, "His most important partner was Ismael Zambada, known as El Mayo, a cautious trafficker who would stay free for decades."],
+      ["bunker", {"n": 2, "label": "border tunnel · Agua Prieta to Arizona · 1990"}, "He became known for innovation. In 1990, American agents found a tunnel running under the border, from a house in Agua Prieta in Mexico to a warehouse in Arizona. It had been built for his organisation."],
+      ["paper", {"mast": "GUADALAJARA", "head": "Cardinal killed in airport shootout", "date": "24 May 1993"}, "His feud with the Arellano Félix brothers of Tijuana turned deadly. In May 1993, gunmen opened fire at Guadalajara airport, killing a Catholic cardinal, Juan Jesús Posadas Ocampo, and six others. Investigators concluded the cardinal had been caught up in an attack aimed at Guzmán."],
+      ["cell", {"label": "Puente Grande prison · 1993 – 2001"}, "Weeks later, Guzmán was arrested in Guatemala and handed over to Mexico. He was sentenced to about twenty years."]
+    ]},
+    { "name": "On the run", "lines": [
+      ["date", {"date": "19 January 2001", "place": "Puente Grande prison · Jalisco"}, "In prison, he paid off guards and lived in comfort. On the nineteenth of January, 2001, he escaped, reportedly hidden in a laundry cart, with help from prison staff."],
+      ["jungle", {"night": 1, "n": 4, "label": "Sierra Madre · 2001 – 2014"}, "For the next thirteen years he lived on the run, mostly in the mountains of Sinaloa, moving between hideouts and protected by bribes and loyal gunmen."],
+      ["bust", {"name": "El Chapo", "years": "2001 – 2014", "role": "Leader of the Sinaloa cartel. A fugitive for thirteen years.", "hair": "crop", "stache": "thin", "round": 1, "hat": "cap", "hatc": "#1c1b19", "coat": "shirt"}, "In those years, the Sinaloa cartel grew into one of the largest drug-trafficking organisations in the world, moving cocaine, heroin, marijuana and methamphetamine into the United States."],
+      ["paper", {"mast": "BILLIONAIRES", "head": "Fugitive drug lord on rich list", "date": "2009"}, "In 2009, Forbes magazine estimated his fortune at about a billion dollars, and put him on its list of the world's billionaires."],
+      ["people", {"n": 8, "pose": "up", "label": "Sinaloa"}, "In parts of Sinaloa he was treated as a hero. Ballads known as narcocorridos celebrated him, and the cartel handed out money and favours."]
+    ]},
+    { "name": "The drug war", "lines": [
+      ["army", {"tanks": 1, "label": "Mexico · December 2006"}, "In December 2006, President Felipe Calderón sent the army against the cartels. The cartels fought the state, and each other."],
+      ["wall", {"night": 1, "n": 5, "label": "Sinaloa · 2008"}, "In 2008 the cartel itself split. Guzmán's former allies, the Beltrán Leyva brothers, turned against him, and the killing spread through Sinaloa."],
+      ["stat", {"value": "~3,000", "label": "people murdered in Ciudad Juárez in 2010"}, "Guzmán's cartel fought its rivals for control of the border crossings. In Ciudad Juárez, where Sinaloa fought the Juárez cartel, about three thousand people were murdered in 2010 alone."],
+      ["checklist", {"head": "How the cartel worked", "items": ["Bribes for police and officials", "Tunnels, planes and submarines", "Hitmen for rivals and informers"]}, "His organisation bribed police, soldiers and officials. It moved drugs by tunnel, plane, truck and even home-made submarine, and used hitmen against rivals and suspected informers."],
+      ["people", {"n": 9, "pose": "mourn", "label": "Mexico · 2006 – 2012"}, "Across Mexico, tens of thousands of people were killed in drug-related violence during Calderón's six years in office, and thousands more disappeared."]
+    ]},
+    { "name": "Caught, and gone again", "lines": [
+      ["date", {"date": "22 February 2014", "place": "Mazatlán · Sinaloa"}, "On the twenty-second of February, 2014, Mexican marines, working with American agents, caught him in a beachfront apartment in Mazatlán, without a shot being fired."],
+      ["cell", {"night": 1, "label": "Altiplano prison · 2014 – 2015"}, "He was held at Altiplano, the country's most secure prison. Seventeen months later, he disappeared through the tunnel under his shower."],
+      ["paper", {"mast": "MEXICO", "head": "El Chapo escapes again", "date": "July 2015"}, "The escape humiliated the Mexican government. Investigators said it could not have happened without help from inside the prison."],
+      ["date", {"date": "8 January 2016", "place": "Los Mochis · Sinaloa"}, "In January 2016, marines tracked him to a house in Los Mochis. After a gunfight, he fled through the city's drains, and was caught on a highway in a stolen car."],
+      ["tv", {"text": "THE INTERVIEW", "speaker": 0}, "Officials said his contacts with actors and producers, for a film about his life, had helped them find him. The day after his capture, a magazine published an interview he had given the American actor Sean Penn."]
+    ]},
+    { "name": "Trial in New York", "lines": [
+      ["date", {"date": "19 January 2017", "place": "extradited to New York"}, "On the nineteenth of January, 2017, Mexico extradited him to the United States."],
+      ["inquiry", {"label": "US federal court · Brooklyn · 2018 – 2019"}, "His trial in Brooklyn lasted about three months. Former associates testified against him, describing bribes, drug shipments and killings."],
+      ["quote", {"text": "Witnesses claimed bribes reached the top of Mexican politics. Most of those named denied it.", "who": "summary of testimony at his trial"}, "Some witnesses claimed that bribes had reached the highest levels of Mexican politics. Most of the officials named denied it. One, the former security minister Genaro García Luna, was later convicted in a US court of taking cartel bribes."],
+      ["decree", {"title": "Verdict", "lines": ["Guilty on all ten counts", "Including running a continuing", "criminal enterprise"], "date": "12 February 2019"}, "On the twelfth of February, 2019, the jury found him guilty on all ten counts, including running a continuing criminal enterprise."],
+      ["stat", {"value": "$12.6 billion", "label": "forfeiture ordered by the court, July 2019"}, "That July, he was sentenced to life in prison plus thirty years, and ordered to forfeit twelve point six billion dollars. His appeals have failed."],
+      ["paper", {"mast": "WASHINGTON", "head": "El Chapo's wife sentenced", "sub": "Emma Coronel Aispuro gets three years", "date": "November 2021"}, "In 2021, his wife, Emma Coronel Aispuro, was sentenced to three years in a US prison after admitting she had helped his drug business and his 2015 escape."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["web", {"nodes": [["Sinaloa cartel", 0.5, 0.25, 1], ["Los Chapitos", 0.25, 0.7, 0], ["'El Mayo' Zambada", 0.75, 0.7, 0]], "links": [[0, 1], [0, 2]], "label": "after El Chapo"}, "His cartel did not collapse. His sons, known as Los Chapitos, and his long-time partner Ismael Zambada, known as El Mayo, kept it running."],
+      ["city", {"state": "fire", "night": 1, "seed": 7, "label": "Culiacán · 2024 – 2025"}, "In July 2024, Zambada and one of Guzmán's sons were arrested in Texas after landing in a small plane. Zambada said he had been kidnapped. Their arrest set off a war between cartel factions in Sinaloa that has killed hundreds of people."],
+      ["decree", {"title": "Terrorist designation", "lines": ["Sinaloa cartel designated", "a Foreign Terrorist Organization", "by the United States"], "date": "February 2025", "seal": 0}, "US authorities say the Sinaloa cartel is now one of the main suppliers of fentanyl, the drug behind most American overdose deaths. In 2025, the United States designated it a terrorist organisation."],
+      ["stat", {"value": "100,000+", "label": "people listed as missing in Mexico's official register"}, "Mexico's official register lists more than a hundred thousand missing people, most of them since the drug war began."],
+      ["memorial", {"n": 600, "date": "Mexico"}, "For all the songs and television series about him, his story is mostly lived by others: the murdered, the disappeared, and the families still searching for them."],
+      ["lesson", {"text": "Catching the kingpin was the easy part."}, "El Chapo was caught three times, and is now locked away for life. His trade is not. Catching the man at the top, it turned out, was the easy part."]
+    ]}
+  ]
+}

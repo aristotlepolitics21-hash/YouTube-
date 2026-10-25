@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 15,
+  "title": "Mengistu Haile Mariam",
+  "subtitle": "The officer who brought the Red Terror to Ethiopia",
+  "say": {"Mengistu": "Mengistoo", "Mengistu's": "Mengistoo's", "Haile Mariam": "Hylay Mahreeam", "Haile Selassie": "Hylay Selassie", "Addis Ababa": "Addis Ahbaba", "Derg": "Derg", "Wollo": "Wolloh", "Holeta": "Holetta", "Teferi Bante": "Teffery Bahntay", "kebeles": "kebbelehs", "Ogaden": "Ogahden", "Tigray": "Teegray", "Harare": "Harahray", "Mugabe's": "Moogahbee's", "EPRP": "E P R P"},
+  "package": {
+    "thumb_line": 18,
+    "thumb": ["THE RED", "TERROR"],
+    "intro": "Mengistu Haile Mariam helped overthrow Ethiopia's last emperor in 1974 and ruled the country for seventeen years. His Red Terror killed tens of thousands or more, and his government's war tactics deepened one of the worst famines of the century. This documentary tells his story, and why, as of 2025, he has never served his sentence.",
+    "facts": ["Emperor Haile Selassie was deposed by the military committee known as the Derg on 12 September 1974", "Sixty former officials were executed without trial on 23 November 1974", "Mengistu became sole leader of the Derg in February 1977", "The Red Terror of 1977–1978 killed tens of thousands; Amnesty International has estimated up to 500,000", "Somalia's invasion of the Ogaden (1977–1978) was defeated with Soviet arms and Cuban troops", "The famine of 1983–1985 killed an estimated 400,000 to 1 million people", "Fled to Zimbabwe on 21 May 1991", "Convicted of genocide in absentia by Ethiopia's Federal High Court in December 2006; sentenced to death on appeal in 2008"],
+    "sources": "Encyclopaedia Britannica, Africa Watch (Human Rights Watch) report Evil Days: Thirty Years of War and Famine in Ethiopia (1991), Amnesty International, BBC News, Ryszard Kapuściński's The Emperor (on the fall of Haile Selassie).",
+    "hashtags": "#History #Documentary #Africa",
+    "tags": "mengistu haile mariam, mengistu documentary, red terror ethiopia, derg, ethiopia history, haile selassie, ethiopian famine 1984, african dictators, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "MENGISTU", "sub": "The officer who brought the Red Terror to Ethiopia", "art": "podium", "artp": {"cheer": 1}}, "In April 1977, in Revolution Square in Addis Ababa, Ethiopia's military leader stood before a huge crowd. He raised bottles filled with red liquid, and smashed them on the ground."],
+      ["people", {"n": 8, "pose": "up", "label": "Revolution Square · Addis Ababa · 1977"}, "The red stood for the blood of the revolution's enemies. Over the next two years, a campaign known as the Red Terror swept through Ethiopia's cities."],
+      ["stat", {"value": "Up to 500,000", "label": "Amnesty International's upper estimate of Red Terror deaths"}, "Estimates of the dead range from tens of thousands to, according to Amnesty International, as many as half a million. And the famine was still to come."],
+      ["lesson", {"text": "From army major to dictator."}, "Mengistu Haile Mariam ruled Ethiopia for seventeen years. In 2006, an Ethiopian court convicted him of genocide. As of 2025, he was still living in exile. This is his story."]
+    ]},
+    { "name": "The old empire", "lines": [
+      ["throne", {"label": "Addis Ababa · 1930 – 1974"}, "For more than four decades, Ethiopia was ruled by Emperor Haile Selassie. Abroad, he was admired as a statesman. At home, most people were poor peasants working land owned by nobles and the church."],
+      ["bust", {"name": "Haile Selassie", "years": "1892 – 1975", "role": "Last emperor of Ethiopia. Crowned 1930, deposed 1974.", "hair": "crop", "beard": "full", "coat": "military", "medals": 6}, "In the early 1970s, a famine in the northern province of Wollo killed tens of thousands of people. The government tried to keep it hidden."],
+      ["tv", {"text": "THE UNKNOWN FAMINE · 1973"}, "A British television documentary exposed it in 1973. Later, on the eve of the emperor's fall, Ethiopian television broadcast that film, cut together with scenes of palace luxury."],
+      ["date", {"date": "c. 1937", "place": "southern Ethiopia"}, "Mengistu was born around 1937, into a family of modest means. He joined the army as a teenager and trained at the Holeta military academy."],
+      ["bust", {"name": "Mengistu Haile Mariam", "years": "born c. 1937", "role": "Army officer. Trained partly in the United States. A major by 1974.", "hair": "crop", "stache": "thin", "coat": "military"}, "He was ambitious, and resented the aristocrats who dominated the officer corps. He received some military training in the United States, and by 1974 he was a major."]
+    ]},
+    { "name": "Revolution", "lines": [
+      ["people", {"n": 8, "pose": "up", "night": 1, "label": "Addis Ababa · early 1974"}, "In 1974, discontent boiled over. Soldiers mutinied over pay and conditions, and students, teachers and taxi drivers went on strike."],
+      ["web", {"nodes": [["The Derg", 0.5, 0.2, 1], ["Army", 0.2, 0.65, 0], ["Police", 0.5, 0.82, 0], ["Air force and navy", 0.8, 0.65, 0]], "links": [[0, 1], [0, 2], [0, 3]], "label": "the Derg · 'the committee'"}, "Junior officers formed a committee of about a hundred and twenty men, known as the Derg, which simply means committee. Mengistu became one of its leading figures."],
+      ["paper", {"mast": "ADDIS ABABA", "head": "Emperor deposed", "sub": "Military committee takes power", "date": "12 September 1974"}, "On the twelfth of September 1974, the Derg deposed Haile Selassie. The emperor was driven away from his palace in the back of a small Volkswagen."],
+      ["wall", {"night": 1, "n": 6, "label": "Addis Ababa · 23 November 1974"}, "Two months later, the Derg executed sixty former officials in a single night, without trial, including two former prime ministers."],
+      ["decree", {"title": "Land reform", "lines": ["All rural land", "becomes public property"], "date": "March 1975"}, "The new regime declared itself socialist. In 1975 it nationalised all rural land, breaking the power of the old landlords. Many peasants welcomed it."],
+      ["checklist", {"head": "The revolution's promises", "items": ["Land to the tiller", "Mass literacy", "An end to the nobility"]}, "It launched mass literacy campaigns that won international praise. For a while, many Ethiopians believed in the revolution."],
+      ["date", {"date": "27 August 1975", "place": "Addis Ababa"}, "In August 1975, the old emperor died in custody. The regime said he had died of natural causes. It is widely believed that he was murdered."]
+    ]},
+    { "name": "The Red Terror", "lines": [
+      ["versus", {"left": "Mengistu", "right": "Rivals", "mid": "1977"}, "Inside the Derg, Mengistu removed his rivals one by one. In February 1977, after a shootout at a Derg meeting, the head of state, Teferi Bante, and several others were killed. Mengistu was now in sole charge."],
+      ["city", {"state": "normal", "night": 1, "seed": 4, "label": "Addis Ababa · 1976 – 1977"}, "His fiercest opponents were Marxists too. A civilian group, the Ethiopian People's Revolutionary Party, the EPRP, had begun assassinating supporters of the regime."],
+      ["army", {"night": 1, "label": "kebele militias · 1977 – 1978"}, "Mengistu answered with the Red Terror. Neighbourhood associations, called kebeles, were armed and given the power to arrest and to kill."],
+      ["people", {"n": 7, "pose": "mourn", "night": 1, "label": "Addis Ababa · 1977 – 1978"}, "Young people suspected of opposition were rounded up and shot, and their bodies left in the streets as a warning. According to survivors and human rights groups, some families were made to pay for the bullets before they could bury their children."],
+      ["cell", {"night": 1, "label": "prisons · Addis Ababa"}, "Tens of thousands were imprisoned, and torture was widespread. Rival left-wing groups were destroyed, along with much of a generation of educated young Ethiopians."]
+    ]},
+    { "name": "Wars on every front", "lines": [
+      ["army", {"tanks": 1, "label": "Ogaden · 1977 – 1978"}, "In 1977, Somalia invaded Ethiopia's Ogaden region. The Soviet Union switched sides to back Mengistu, sending weapons, advisers and thousands of Cuban troops. Somalia was driven back in 1978."],
+      ["field", {"village": 1, "n": 3, "guard": 1, "label": "Eritrea and Tigray · 1970s – 1980s"}, "In the north, wars against rebels in Eritrea and Tigray dragged on for years. Mengistu built one of the largest armies in Africa to fight them."],
+      ["bust", {"name": "Chairman Mengistu", "years": "1977 – 1991", "role": "Head of state. Leader of the Workers' Party. Backed by the Soviet Union.", "hair": "crop", "stache": "thin", "coat": "military", "hat": "peak", "medals": 4, "frown": 1}, "He ruled through the Derg, and from 1984 through a new Workers' Party of Ethiopia, modelled on Soviet communism."]
+    ]},
+    { "name": "Famine", "lines": [
+      ["field", {"famine": 1, "n": 4, "label": "northern Ethiopia · 1983 – 1985"}, "In 1983, drought struck northern Ethiopia again. It hit hardest in Wollo and in the war zones of Tigray and Eritrea."],
+      ["podium", {"banners": 3, "cheer": 1, "night": 1, "label": "tenth anniversary of the revolution · September 1984"}, "In September 1984, as people starved in the north, the regime staged lavish celebrations for the tenth anniversary of the revolution. News of the famine was played down."],
+      ["tv", {"text": "OCTOBER 1984"}, "Then, in October 1984, BBC television reports showed the world the camps of the starving."],
+      ["people", {"n": 8, "pose": "up", "label": "Live Aid · 13 July 1985"}, "The response led to Band Aid, and in July 1985 to the Live Aid concerts, which raised huge sums for famine relief."],
+      ["stat", {"value": "400,000 – 1,000,000", "label": "estimated deaths in the famine of 1983 – 1985"}, "Estimates of the dead range from about four hundred thousand to one million."],
+      ["people", {"n": 9, "pose": "walk", "label": "resettlement · 1984 – 1986"}, "The regime used the crisis to move hundreds of thousands of people from the north to the south, often by force. Many died on the way or in the new settlements."],
+      ["quote", {"text": "Government war tactics made the famine far deadlier than drought alone.", "who": "summary of Africa Watch's report Evil Days, 1991"}, "A 1991 report by Africa Watch, part of Human Rights Watch, concluded that the government's counter-insurgency tactics, including blocking food and trade in rebel areas, made the famine far deadlier."]
+    ]},
+    { "name": "The fall", "lines": [
+      ["date", {"date": "May 1989", "place": "a failed coup"}, "By the late 1980s, the Soviet Union was cutting back its support. In 1989, senior officers tried to overthrow Mengistu while he was abroad. The coup failed, and many of its leaders were killed or executed."],
+      ["army", {"tanks": 1, "dir": -1, "label": "rebel advance · 1991"}, "Rebel armies from Tigray and Eritrea kept advancing. By May 1991, they were closing in on the capital."],
+      ["paper", {"mast": "ADDIS ABABA", "head": "Mengistu flees", "sub": "Leader leaves for Zimbabwe", "date": "21 May 1991"}, "On the twenty-first of May 1991, Mengistu fled to Zimbabwe. A week later, the rebels took Addis Ababa. Eritrea later became an independent country."]
+    ]},
+    { "name": "Judgment", "lines": [
+      ["inquiry", {"label": "Federal High Court · Addis Ababa · 1994 – 2006"}, "The new government set up a special prosecutor to try members of the Derg. The trial of Mengistu and dozens of his officials began in 1994 and lasted twelve years. He was tried in his absence."],
+      ["date", {"date": "12 December 2006", "place": "Federal High Court · Addis Ababa"}, "In December 2006, the court found him guilty of genocide. Ethiopian law, unlike the international definition, includes the destruction of political groups."],
+      ["decree", {"title": "Sentence", "lines": ["Mengistu Haile Mariam", "Life imprisonment, 2007", "Death, on appeal, 2008"], "date": "2007 – 2008"}, "He was sentenced to life in prison. In 2008, on appeal, Ethiopia's Supreme Court changed the sentence to death."],
+      ["city", {"state": "normal", "seed": 5, "label": "Harare · Zimbabwe"}, "Zimbabwe refused to hand him over. He was protected for years by Robert Mugabe's government, and he stayed in Harare after Mugabe fell."],
+      ["bust", {"name": "Mengistu in exile", "years": "1991 –", "role": "Convicted of genocide in absentia. Living in Zimbabwe as of 2025.", "hair": "crop", "hairc": "#9a9a92", "stache": "thin", "coat": "suit", "tie": "#2b2b30"}, "In interviews, Mengistu has denied genocide. He has said he was defending the revolution and the unity of Ethiopia against its enemies."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["people", {"n": 7, "pose": "look", "label": "Red Terror Martyrs' Memorial Museum · Addis Ababa"}, "In Addis Ababa, a museum dedicated to the victims of the Red Terror opened in 2010. Its walls are covered with the photographs of the dead."],
+      ["lesson", {"text": "The revolution was no excuse."}, "Some Ethiopians still credit his era with land reform, literacy and defending the country's borders. But those achievements cannot be separated from the terror used to hold power."],
+      ["memorial", {"n": 600, "date": "Ethiopia · 1974 – 1991"}, "The bottles smashed in Revolution Square were a promise of blood, and Ethiopians paid it. As of 2025, the man who made that promise had never served a day of his sentence."]
+    ]}
+  ]
+}

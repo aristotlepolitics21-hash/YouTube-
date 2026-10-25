@@ -1,0 +1,75 @@
+{
+  "series": "Infamous",
+  "episode": 4,
+  "title": "Leopold II of Belgium",
+  "subtitle": "The king who owned the Congo",
+  "say": {"Nsala": "Nsahla", "Laeken": "Lahken", "Force Publique": "Forss Poobleek", "chicotte": "shicott", "ABIR": "Ahbeer", "Anversoise": "Onvairswahz", "Morel": "Morrel", "Hochschild": "Hokeshild", "Tervuren": "Tervooren", "Philippe": "Feeleep", "Swahili": "Swaheelee"},
+  "package": {
+    "thumb_line": 21,
+    "thumb": ["HE OWNED", "A COUNTRY"],
+    "intro": "From 1885 to 1908, the Congo Free State was not a Belgian colony. It was the private property of one man, King Leopold II, who never set foot there. This documentary tells how he acquired it, what the rubber trade did to its people, and how a shipping clerk, a consul and a missionary with a camera exposed him.",
+    "facts": ["Born 9 April 1835 in Brussels; King of the Belgians from 1865 to 1909", "Hired the explorer Henry Morton Stanley, who collected treaties with local chiefs from 1879 to 1884", "The Congo Free State, Leopold's personal possession, was recognised in 1885", "Rubber exports rose from about 100 tonnes in 1890 to about 6,000 tonnes by 1901", "Roger Casement's report on abuses was published by the British government in 1904", "Belgium annexed the Congo on 15 November 1908", "Leopold died at Laeken on 17 December 1909", "The death toll is unknown; estimates of population loss run as high as about 10 million and are disputed"],
+    "sources": "Encyclopaedia Britannica, Adam Hochschild's King Leopold's Ghost, Roger Casement's 1904 report, Royal Museum for Central Africa (AfricaMuseum, Tervuren), Anti-Slavery International's archive of Alice Seeley Harris's photographs, David Van Reybrouck's Congo: The Epic History of a People.",
+    "hashtags": "#History #Documentary #Congo",
+    "tags": "leopold ii, king leopold, congo free state, belgian congo, red rubber, colonialism, scramble for africa, congo reform association, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "LEOPOLD II", "sub": "The king who owned the Congo", "art": "jungle", "artp": {"n": 5, "night": 1}}, "In May 1904, an English missionary in the Congo, Alice Seeley Harris, took a photograph of a man named Nsala. He was sitting beside the remains of his five-year-old daughter, killed by sentries working for a rubber company."],
+      ["date", {"date": "15 May 1904", "place": "Baringa · Congo Free State"}, "The land where it happened did not belong to a country. It belonged to one man: King Leopold the Second of Belgium, who never once set foot there."],
+      ["stat", {"value": "~76 ×", "label": "the size of Belgium · Leopold's private colony"}, "His private colony was around seventy-six times the size of Belgium. For twenty-three years, he ran it as a business."],
+      ["stat", {"value": "Millions", "label": "estimated deaths · the exact toll is disputed"}, "Through killing, starvation, exhaustion and disease, its population fell by millions. Exactly how many is still argued over."],
+      ["lesson", {"text": "He called it a humanitarian mission."}, "And through all of it, Leopold presented himself to the world as a humanitarian. This is how he got away with it, and how he was finally exposed."]
+    ]},
+    { "name": "A king without an empire", "lines": [
+      ["date", {"date": "9 April 1835", "place": "Brussels · Belgium"}, "Leopold was born in Brussels on the ninth of April 1835. His father was the first King of the Belgians, ruling a country that had won its independence only a few years before."],
+      ["fleet", {"n": 2, "label": "travels · 1850s – 1860s"}, "As a young prince, he travelled to Egypt, India and China, and came home convinced that colonies were what made a nation rich."],
+      ["bust", {"name": "Leopold II", "years": "1835 – 1909", "role": "King of the Belgians from 1865. Wanted an empire of his own.", "hair": "crop", "beard": "full", "coat": "military", "medals": 3, "sash": "#a8322a"}, "He became king in 1865. Belgium's parliament had no interest in colonies, so Leopold went looking for one himself, and for years he tried to buy or lease territory around the world."],
+      ["podium", {"night": 0, "banners": 2, "label": "Geographic conference · Brussels · 1876"}, "In 1876 he invited explorers and geographers to his palace, and founded an association that would, he said, bring science and civilisation to Central Africa and fight the slave trade."],
+      ["quote", {"text": "I do not want to miss a good chance of getting us a slice of this magnificent African cake.", "who": "Leopold II, letter to his ambassador in London, 1877"}, "Privately, he was blunter. In 1877 he wrote to his ambassador in London that he did not want to miss the chance of a slice of what he called this magnificent African cake."]
+    ]},
+    { "name": "The Free State", "lines": [
+      ["bust", {"name": "Henry Morton Stanley", "years": "1841 – 1904", "role": "Welsh-born explorer. Staked out the Congo for Leopold.", "hair": "crop", "stache": "big", "coat": "khaki"}, "He hired the famous explorer Henry Morton Stanley, who had just travelled the length of the Congo River."],
+      ["jungle", {"n": 5, "label": "Congo River · 1879 – 1884"}, "Over five years, Stanley built stations along the river and collected hundreds of treaties from local chiefs, many of whom could not have understood that they were signing away their land."],
+      ["decree", {"title": "Berlin Conference", "lines": ["European powers set rules", "for claiming Africa", "Free trade on the Congo"], "date": "1884 – 1885"}, "In 1884 and 1885, at a conference in Berlin, the European powers agreed rules for carving up Africa. Leopold had already won over the United States and Germany, promising free trade and humane rule."],
+      ["throne", {"label": "Congo Free State · 1885"}, "In 1885, the Congo Free State was born. Its sovereign was not Belgium, but Leopold himself, as a private owner. He ruled it from Brussels."],
+      ["army", {"rows": 2, "label": "Force Publique"}, "A decree claimed all so-called vacant land, and what it produced, for the state. To enforce it, he built a private army, the Force Publique: African soldiers, many of them conscripts, under European officers."],
+      ["army", {"fire": 1, "dir": -1, "label": "eastern Congo · 1892 – 1894"}, "His forces also fought the Swahili-Arab slave traders of the east, a campaign Leopold held up as proof of his good intentions."]
+    ]},
+    { "name": "Red rubber", "lines": [
+      ["jungle", {"n": 4, "label": "ivory · late 1880s"}, "At first the money came from ivory. Agents were paid a commission on what they collected, which encouraged them to take it by force."],
+      ["bars", {"items": [["1890", 100, "t"], ["1901", 6000, "t"]], "max": 6000, "red": 1}, "Then came the inflatable rubber tyre. Demand exploded, and the Congo's forests were full of wild rubber vines. Exports rose from about a hundred tonnes in 1890 to around six thousand by 1901."],
+      ["field", {"village": 1, "guard": 1, "n": 5, "label": "rubber quotas"}, "Villages were given rubber quotas. Men had to go deep into the forest for days or weeks at a time to tap enough vines."],
+      ["web", {"nodes": [["Leopold II", 0.5, 0.18, 1], ["Free State", 0.22, 0.5, 0], ["ABIR", 0.5, 0.5, 0], ["Anversoise", 0.78, 0.5, 0], ["Villages", 0.5, 0.84, 0]], "links": [[0, 1], [0, 2], [0, 3], [1, 4], [2, 4], [3, 4]], "label": "who profited"}, "Large areas were leased to companies such as ABIR and the Anversoise, in which the Free State held shares. Their agents were paid by results."],
+      ["people", {"n": 6, "red": 3, "pose": "mourn", "label": "hostages"}, "To force the men to work, soldiers often held their wives and children hostage until the rubber came in. Those who fell short were flogged with a hippo-hide whip, the chicotte."],
+      ["wall", {"night": 1, "n": 5, "label": "punitive raids"}, "Villages that resisted were attacked and burned. Soldiers had to account for their bullets, and severed hands were sometimes taken as proof of a kill, even from people who were still alive."],
+      ["field", {"famine": 1, "label": "famine and disease"}, "With the men in the forest and food taken for the soldiers, fields went untended. Famine followed, and sleeping sickness and smallpox swept through weakened communities."],
+      ["city", {"state": "normal", "seed": 8, "label": "Brussels · Ostend · Laeken"}, "The profits flowed to Leopold. He spent much of them in Belgium, on a triumphal arch in Brussels, seafront galleries in Ostend, and vast glasshouses at his palace in Laeken."]
+    ]},
+    { "name": "Exposed", "lines": [
+      ["paper", {"mast": "OPEN LETTER", "head": "To King Leopold", "sub": "George Washington Williams", "date": "1890"}, "The first warning came in 1890, when an African American visitor, George Washington Williams, published an open letter to Leopold accusing his regime of crimes."],
+      ["city", {"state": "normal", "seed": 9, "label": "Antwerp docks · around 1900"}, "Then a young clerk for a Liverpool shipping firm, Edmund Dene Morel, noticed something at the port of Antwerp."],
+      ["bust", {"name": "E. D. Morel", "years": "1873 – 1924", "role": "Shipping clerk turned campaigner against the Congo regime.", "hair": "full", "stache": "big", "coat": "suit", "tie": "#2b2b30"}, "Ships from the Congo came in loaded with rubber and ivory. Ships going back carried mostly guns, ammunition and officers. Nothing was being paid for. Morel concluded that the trade ran on forced labour."],
+      ["decree", {"title": "The Casement Report", "lines": ["British consul in the Congo", "Witness accounts of abuse", "Published in London"], "date": "1904"}, "In 1903, the British consul in the Congo, Roger Casement, travelled up the river to investigate. His report, published in 1904, confirmed the abuses in detail."],
+      ["podium", {"night": 0, "banners": 1, "label": "Congo Reform Association · 1904"}, "With Casement's backing, Morel founded the Congo Reform Association. Public meetings across Britain and America showed Alice Seeley Harris's photographs, projected onto screens."],
+      ["checklist", {"head": "Writers join in", "items": ["Mark Twain · King Leopold's Soliloquy", "Conan Doyle · The Crime of the Congo", "Conrad · Heart of Darkness"]}, "Famous writers joined in. Mark Twain mocked the king in a pamphlet, and Arthur Conan Doyle wrote The Crime of the Congo. Joseph Conrad's novel Heart of Darkness drew on his own journey up the river."],
+      ["inquiry", {"label": "Commission of inquiry · 1904 – 1905"}, "Leopold denied everything and paid for friendly press coverage. But a commission he appointed himself ended up confirming many of the abuses."]
+    ]},
+    { "name": "The handover", "lines": [
+      ["decree", {"title": "Annexation", "lines": ["The Congo Free State", "becomes the Belgian Congo"], "date": "15 November 1908"}, "Under international pressure, Belgium took the Congo over from its king in November 1908, and agreed to pay him generously for it."],
+      ["city", {"state": "fire", "seed": 5, "night": 1, "label": "Brussels · 1908"}, "Before the handover, Leopold had the Free State's archives destroyed. One of his aides later recalled that the furnaces burned for eight days."],
+      ["bust", {"name": "Leopold II", "years": "1909", "role": "Died still king, and still a very rich man.", "hair": "bald", "beard": "long", "hairc": "#c8c8c0", "beardc": "#c8c8c0", "coat": "black", "tie": 0}, "He died at Laeken on the seventeenth of December 1909, aged seventy-four. Crowds reportedly booed his funeral procession."],
+      ["people", {"n": 6, "pose": "walk", "label": "Belgian Congo · 1908 – 1913"}, "Under Belgian rule, the worst of the rubber terror slowly eased. The Congo Reform Association, its main goal achieved, wound itself up in 1913."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["checklist", {"head": "Counting the dead", "items": ["No census was taken", "The archives were burned", "Estimates up to ~10 million", "Disease played a large part"]}, "How many died will never be known: there was no census, and the records were burned. Adam Hochschild and others have put the population loss at around ten million. Other historians think that too high, and stress disease. Few doubt it was a catastrophe."],
+      ["timeline", {"events": [["Belgian Congo · 1908", 0.12], ["Independence · 1960", 0.5], ["Royal regrets · 2020", 0.88]]}, "Belgium ruled the Congo until independence in 1960. Forced labour did not end overnight, and for decades Belgian schools and monuments celebrated Leopold as a builder and civiliser."],
+      ["people", {"n": 7, "pose": "up", "label": "Belgium · June 2020"}, "That has changed. In 2020, during worldwide protests against racism, statues of Leopold were defaced, and the city of Antwerp removed one."],
+      ["decree", {"title": "King Philippe to the Congo", "lines": ["'Deepest regrets'", "for the wounds of the past"], "date": "30 June 2020"}, "On the sixtieth anniversary of Congolese independence, King Philippe wrote of his deepest regrets for the violence and cruelty of the Free State. It was not a formal apology."],
+      ["inquiry", {"label": "Belgian parliament · 2020 – 2022"}, "A Belgian parliamentary commission on the colonial past spent two years on the question, and broke up in 2022 without agreeing whether to apologise."],
+      ["city", {"state": "normal", "seed": 11, "label": "AfricaMuseum · Tervuren · 2018"}, "The colonial museum Leopold created at Tervuren reopened in 2018 after a long renovation, rebuilt to tell a far more critical story."],
+      ["lesson", {"text": "Cruelty, sold to the world as charity."}, "Leopold's defenders once pointed to the railways and buildings he left behind. But he is remembered for something else: how easily a vast crime could be dressed up as philanthropy."],
+      ["memorial", {"n": 500, "date": "Congo Free State · 1885 – 1908"}, "It took a shipping clerk, a consul, a missionary with a camera, and thousands of ordinary people at public meetings to see through it. Historians have called their campaign one of the first great international human rights movements."]
+    ]}
+  ]
+}

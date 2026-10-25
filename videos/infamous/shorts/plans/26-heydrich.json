@@ -1,0 +1,321 @@
+{
+ "id": "26-heydrich",
+ "say": {
+  "Wannsee": "Vahnzay",
+  "Lidice": "Lidditseh"
+ },
+ "scenes": [
+  {
+   "text": "NINETY MINUTES. ELEVEN MILLION LISTED.",
+   "red": [
+    "ELEVEN",
+    "MILLION"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "chairs:12"
+      ],
+      "light": "bulb",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "props": [
+       "window"
+      ],
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "coat": "grey",
+        "frown": 1
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.6
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "stat",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "value": "11,000,000",
+      "label": "Jews listed in the Wannsee minutes"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "chairs:12",
+       "window"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "still"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THROWN OUT. THEN HANDED THE GESTAPO.",
+   "red": [
+    "GESTAPO"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "inquiry",
+     "fx": [
+      "punch"
+     ],
+     "p": {}
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "dies": 0.85,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "female": 1,
+        "hair": "long",
+        "hairc": "#b89a6a",
+        "coat": "#2a3346"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "typewriter",
+       "phone"
+      ],
+      "light": "bulb",
+      "shadows": 3,
+      "cam": "dolly",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "coat": "black",
+        "tie": "#1c1b19",
+        "frown": 1
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "close",
+      "light": "bulb",
+      "swing": 1,
+      "cam": "low"
+     }
+    }
+   ]
+  },
+  {
+   "text": "IT DIDN'T START AT WANNSEE.",
+   "red": [
+    "WANNSEE"
+   ],
+   "shots": [
+    {
+     "d": 4,
+     "scene": "army",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "rows": 4
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "typewriter"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "coat": "black",
+        "tie": "#1c1b19",
+        "frown": 1
+       },
+       "pose": "desk",
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "title": "Wannsee Conference",
+      "lines": [
+       "Minutes of the meeting",
+       "Coordination of the 'Final Solution'",
+       "11,000,000 Jews listed"
+      ],
+      "date": "20 January 1942"
+     }
+    }
+   ]
+  },
+  {
+   "text": "1,700,000 \u00b7 REMEMBER LIDICE",
+   "red": [
+    "LIDICE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "city",
+     "fx": [
+      "flash",
+      "shake"
+     ],
+     "p": {
+      "state": "normal",
+      "seed": 5
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "chairs:12"
+      ],
+      "light": "bulb",
+      "dies": 0.7,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "value": "1,700,000",
+      "label": "murdered in the death camps of Operation Reinhard"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "chairs:12"
+      ],
+      "light": "bulb",
+      "cam": "down"
+     }
+    }
+   ]
+  }
+ ]
+}

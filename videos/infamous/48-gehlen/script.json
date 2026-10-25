@@ -1,0 +1,78 @@
+{
+  "series": "Infamous",
+  "episode": 48,
+  "title": "Reinhard Gehlen",
+  "subtitle": "Hitler's eastern spymaster, who built West Germany's secret service",
+  "say": {"Gehlen": "Gaylen", "Gehlen's": "Gaylen's", "Reinhard": "Rine-hart", "Erfurt": "Air-foort", "Pullach": "Poolakh", "Felfe": "Felfa", "Wehrmacht": "Vair-makht", "Adenauer": "Ahden-ower", "Globke": "Glopka", "Bormann": "Bor-man", "Starnberg": "Shtarnbairg", "Eichmann": "Ike-man", "Guderian": "Goo-dairian", "Bundesnachrichtendienst": "Boondes-nakh-rikhten-deenst", "Clemens": "Clemmens", "Vistula": "Vistyoola"},
+  "package": {
+    "thumb_line": 1,
+    "thumb": ["HITLER'S", "SPYMASTER"],
+    "intro": "Reinhard Gehlen ran the German army's intelligence on the Soviet Union for Hitler. Within a year of Germany's defeat he was working for the Americans, and for twenty-two years he ran West Germany's foreign intelligence, hiring former SS and Gestapo men along the way. This documentary tells how the Cold War turned Hitler's spymaster into an ally, and what that bargain cost.",
+    "facts": ["Born 3 April 1902 in Erfurt, Germany", "Head of Foreign Armies East, the army's intelligence department for the Soviet front, from April 1942", "Dismissed by Hitler in April 1945; surrendered to US forces in Bavaria on 22 May 1945", "Ran the Gehlen Organization under US Army control from 1946; the CIA took it over in 1949", "First president of West Germany's Federal Intelligence Service (BND) from 1 April 1956 to 1968", "BND officer and former SS man Heinz Felfe was arrested as a Soviet spy in November 1961 and sentenced to 14 years in 1963", "CIA files released in 2006 show West German intelligence told the CIA in 1958 that Adolf Eichmann was living in Argentina under a false name", "Died 8 June 1979 in Berg on Lake Starnberg, Bavaria"],
+    "sources": "Encyclopaedia Britannica, the US National Archives (Nazi War Crimes Disclosure Act records), Richard Breitman and Norman Goda's Hitler's Shadow, the BND's Independent Historians' Commission publications, Mary Ellen Reese's General Reinhard Gehlen: The CIA Connection.",
+    "hashtags": "#History #Documentary #ColdWar",
+    "tags": "reinhard gehlen, gehlen organization, bnd, cold war espionage, cia history, nazi war criminals, heinz felfe, west germany, spy history, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "REINHARD GEHLEN", "sub": "Hitler's eastern spymaster, who built West Germany's secret service", "art": "army", "artp": {"night": 1}}, "In the spring of 1945, as Germany collapsed, a general on the army's intelligence staff had his most valuable files packed into watertight drums and buried in the Alps."],
+      ["bunker", {"n": 2, "label": "the Alps · spring 1945"}, "They held much of what Germany knew about the Soviet army. They were his insurance policy."],
+      ["stat", {"value": "22 years", "label": "running German foreign intelligence for the West, 1946 – 1968"}, "Within a year he was working for the Americans. For the next twenty-two years, he ran West Germany's foreign intelligence, first for the United States and then for the new West German state."],
+      ["lesson", {"text": "Hitler's spy, America's ally."}, "Reinhard Gehlen is not infamous for killing anyone. He is infamous for what his career revealed: how quickly the West made use of men who had served Hitler, once the enemy became the Soviet Union."]
+    ]},
+    { "name": "A staff officer", "lines": [
+      ["date", {"date": "3 April 1902", "place": "Erfurt · Germany"}, "Gehlen was born in Erfurt, in central Germany, in 1902. In 1920, at eighteen, he joined the small army that the Treaty of Versailles allowed Germany to keep."],
+      ["bust", {"name": "Reinhard Gehlen", "years": "1902 – 1979", "role": "Army staff officer. Head of Foreign Armies East from 1942.", "hair": "back", "coat": "military", "hat": "peak"}, "Quiet, hard-working and ambitious, he rose into the general staff, the army's planning elite. He was a career officer, never a Nazi Party official."],
+      ["date", {"date": "1939 – 1940", "place": "Poland · France"}, "He served as a staff officer during the invasions of Poland in 1939 and France in 1940."],
+      ["army", {"tanks": 1, "label": "invasion of the Soviet Union · June 1941"}, "In June 1941, Germany invaded the Soviet Union. Gehlen was working on the planning staff of the army high command."]
+    ]},
+    { "name": "Foreign Armies East", "lines": [
+      ["web", {"nodes": [["Army High Command", 0.5, 0.18, 0], ["Foreign Armies East", 0.5, 0.5, 1], ["Prisoner interrogations", 0.2, 0.82, 0], ["Captured documents", 0.5, 0.85, 0], ["Radio intercepts", 0.8, 0.82, 0]], "links": [[0, 1], [1, 2], [1, 3], [1, 4]], "label": "Foreign Armies East · 1942"}, "In April 1942 he took over Foreign Armies East, the army's intelligence department for the Soviet front. It built up a picture of the enemy from captured documents, radio intercepts and the questioning of prisoners."],
+      ["bunker", {"n": 4, "label": "Foreign Armies East · headquarters"}, "He was good at it. He reorganised the department, brought in specialists, and turned scattered reports into clear, detailed estimates of Soviet strength."],
+      ["camp", {"snow": 1, "n": 8, "label": "Soviet prisoners of war · 1941 – 1945"}, "Those prisoners were held in appalling conditions. Of about five point seven million Soviet soldiers captured by Germany, historians estimate around three point three million died. Gehlen's department did not run the camps, but it drew on that system."],
+      ["quote", {"text": "The greatest imposture since Genghis Khan!", "who": "Hitler, January 1945, as recalled by Guderian"}, "As the Soviet army advanced, Gehlen's reports grew gloomier, and more accurate. In January 1945, according to General Heinz Guderian, Hitler dismissed his estimate of Soviet strength as the greatest imposture since Genghis Khan."],
+      ["army", {"dir": -1, "tanks": 1, "night": 1, "label": "the Vistula–Oder offensive · January 1945"}, "The Soviet offensive came as Gehlen had predicted, and swept across Poland towards Berlin. In April 1945, Hitler sacked him."]
+    ]},
+    { "name": "Changing sides", "lines": [
+      ["people", {"n": 3, "pose": "walk", "label": "Bavarian Alps · May 1945"}, "With a few loyal officers, he retreated to a remote mountain hut and waited for the war to end."],
+      ["date", {"date": "22 May 1945", "place": "Bavaria · surrender to the Americans"}, "On the twenty-second of May 1945, he surrendered to the US Army and offered it his files, his expertise and his network of agents."],
+      ["versus", {"left": "United States", "right": "Soviet Union", "mid": "1945"}, "At first, the Americans barely knew who he was. But their wartime alliance with the Soviet Union was already cracking, and they knew very little about the Red Army."],
+      ["people", {"n": 3, "pose": "look", "label": "Fort Hunt, Virginia · 1945"}, "That summer he was flown to the United States and questioned at a secret interrogation centre at Fort Hunt, Virginia. The Americans liked what they heard."]
+    ]},
+    { "name": "The Org", "lines": [
+      ["decree", {"title": "The Gehlen Organization", "lines": ["US Army control · 1946", "Taken over by the CIA · 1949", "Headquarters: Pullach"], "date": "1946 – 1956"}, "In 1946 he was back in Germany, running a spy service paid for by the United States. It became known simply as the Gehlen Organization, or the Org. In 1949 the CIA took it over."],
+      ["city", {"state": "normal", "night": 1, "seed": 8, "label": "Berlin · blockade 1948 – 1949"}, "As the Cold War deepened, with the Soviet blockade of Berlin in 1948, the Org became one of America's main sources on Soviet forces in East Germany."],
+      ["army", {"rows": 1, "label": "Soviet forces in East Germany"}, "Its agents watched railways, airfields and barracks across East Germany, counting Soviet troops, tanks and aircraft."],
+      ["checklist", {"head": "Who the Org hired", "items": ["Former Wehrmacht officers", "Former SS and SD men", "Former Gestapo officers", "Some tied to Nazi crimes"]}, "To staff it, Gehlen turned to people he knew: former army officers, but also former members of the SS, its intelligence arm the SD, and the Gestapo. Some had taken part in Nazi crimes in the occupied east."],
+      ["lesson", {"text": "The enemy of my enemy."}, "Many American officials knew about these men. Some objected. But in the early Cold War, experience against the Soviet Union was valued above almost anything else."]
+    ]},
+    { "name": "West Germany's spymaster", "lines": [
+      ["date", {"date": "1 April 1956", "place": "Federal Intelligence Service · BND"}, "In 1956 the Org became West Germany's official foreign intelligence service, the Bundesnachrichtendienst, or BND. Gehlen was its first president."],
+      ["bust", {"name": "Konrad Adenauer", "years": "1876 – 1967", "role": "First chancellor of West Germany, 1949 – 1963.", "hair": "bald", "coat": "suit", "tie": "#2b2b30"}, "He worked closely with the chancellor, Konrad Adenauer. He was hardly alone in having a past: Adenauer's own chief of staff, Hans Globke, had co-written an official legal commentary on the Nazis' Nuremberg race laws."],
+      ["bust", {"name": "Reinhard Gehlen", "years": "BND president, 1956 – 1968", "role": "West Germany's first spy chief. Rarely photographed.", "hair": "back", "coat": "suit", "tie": "#2b2b30", "glasses": "dark"}, "Gehlen himself was famously secretive, and rarely allowed himself to be photographed."],
+      ["inquiry", {"label": "the BND's history commission"}, "Historians later commissioned by the BND found that his organisation had also spied on West German politicians, including Adenauer's opponents, the Social Democrats, and passed what it learned to the chancellor's office."],
+      ["paper", {"mast": "WASHINGTON", "head": "CIA knew Eichmann's alias", "sub": "Files show West Germans told the CIA in 1958", "date": "June 2006"}, "CIA documents released in 2006 showed that in 1958, West German intelligence told the CIA that Adolf Eichmann, a chief organiser of the Holocaust, was living in Argentina under a false name. Israeli agents captured him there in 1960."]
+    ]},
+    { "name": "The mole", "lines": [
+      ["bust", {"name": "Heinz Felfe", "years": "1918 – 2008", "role": "Former SS officer. BND counter-intelligence. Soviet double agent.", "hair": "side", "coat": "suit", "tie": "#2b2b30"}, "Hiring former SS men had a cost. Heinz Felfe, a former SS officer, rose to a senior post in the BND's counter-intelligence, hunting Soviet spies."],
+      ["cell", {"label": "Heinz Felfe arrested · 6 November 1961"}, "He was a Soviet spy himself, working for the KGB. By the time he was arrested in 1961, he had been betraying agents and operations for about ten years."],
+      ["stat", {"value": "14 years", "label": "Felfe's prison sentence, 1963"}, "In 1963 he was sentenced to fourteen years. Another former SS man in the service, Hans Clemens, was convicted alongside him. The scandal badly damaged Gehlen's standing."],
+      ["versus", {"left": "East", "right": "West", "mid": "1969"}, "In 1969 Felfe was released in a prisoner exchange with East Germany, where he later became a university professor."],
+      ["lesson", {"text": "A past can be used as a lever."}, "Critics argued that men with hidden Nazi pasts were easy targets for Soviet recruiters. The policy that gave Gehlen experienced staff also left his service exposed."]
+    ]},
+    { "name": "Retirement", "lines": [
+      ["date", {"date": "1968", "place": "Pullach · retirement"}, "Gehlen retired in 1968, his reputation dented by the Felfe affair."],
+      ["paper", {"mast": "MEMOIRS", "head": "Gehlen's memoirs", "sub": "'The Service'", "date": "1971"}, "In 1971 he published his memoirs, The Service. In them he claimed that Martin Bormann, Hitler's private secretary, had been a Soviet agent. Historians reject the claim. Bormann died in Berlin in 1945."],
+      ["date", {"date": "8 June 1979", "place": "Berg · Lake Starnberg · Bavaria"}, "Gehlen died at his home in Bavaria in 1979, aged seventy-seven. He was never charged with any crime."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["decree", {"title": "Nazi War Crimes Disclosure Act", "lines": ["US Congress", "Opens secret files on", "Nazi war criminals"], "date": "1998"}, "In 1998, the US Congress ordered the release of secret files on Nazi war criminals. Historians found that American intelligence had used or protected dozens of them, many through the Org."],
+      ["people", {"n": 6, "pose": "look", "label": "opening the archives · 2011"}, "In 2011 the BND itself opened its archives to independent historians. Their studies confirmed that former SS, SD and Gestapo men had been recruited in considerable numbers."],
+      ["city", {"state": "normal", "seed": 4, "label": "BND headquarters · Berlin"}, "The service itself survived him. Today the BND works under parliamentary oversight, and since 2019 its headquarters have been in Berlin."],
+      ["checklist", {"head": "The case for Gehlen", "items": ["A soldier, not a party man", "Warned of Soviet strength", "Built a lasting service", "Valued by Washington"]}, "His defenders said he was a professional soldier, not a Nazi, who gave the West intelligence it badly needed at the start of the Cold War, and built a service that still exists."],
+      ["quote", {"text": "A new career, and protection from justice, for men with something to hide.", "who": "summary of the critics' case"}, "His critics say his organisation gave men implicated in Nazi crimes a comfortable new career, shielded them from justice, and let Soviet spies in through the same door."],
+      ["lesson", {"text": "The price of pragmatism."}, "Gehlen's story is not about one man's crimes. It is about a bargain: that in the Cold War, the past could be overlooked if the intelligence was good enough."],
+      ["memorial", {"n": 300, "date": "1945 – 1968"}, "The bargain bought less than it promised. The service built to keep secrets from Moscow was riddled with Moscow's spies. And the price was paid by victims whose persecutors were never brought to justice."]
+    ]}
+  ]
+}

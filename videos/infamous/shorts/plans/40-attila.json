@@ -1,0 +1,311 @@
+{
+ "id": "40-attila",
+ "say": {
+  "Bleda": "Blayda"
+ },
+ "scenes": [
+  {
+   "text": "ROME PAID HIM TO STAY AWAY.",
+   "red": [
+    "PAID"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "riders",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 3,
+      "bow": 0,
+      "label": "the Danube · 449"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "throne",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "night": 1,
+      "crown": 0,
+      "label": "Attila's court · 449"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "red",
+      "flicker": 1,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "goatee",
+        "hat": "fur",
+        "coat": "fur",
+        "frown": 1
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "stat",
+     "fx": [
+      "shake",
+      "glitch"
+     ],
+     "p": {
+      "value": "2,100 lb",
+      "label": "of gold, every year, from Rome's eastern empire"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THEN HIS BROTHER DIED.",
+   "red": [
+    "BROTHER"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "riders",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 12
+     }
+    },
+    {
+     "d": 3,
+     "scene": "versus",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "left": "ATTILA",
+      "right": "BLEDA",
+      "mid": "&",
+      "red": "l"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "army",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "night": 1,
+      "fire": 1,
+      "label": "Roman cities stormed · 440s",
+      "era": "steppe"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "freeze",
+      "smash"
+     ],
+     "circle": [
+      0.56,
+      0.52
+     ],
+     "p": {
+      "props": [
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE CALLED IT A PROPOSAL.",
+   "red": [
+    "PROPOSAL"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "candles"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "female": 1,
+        "hair": "long",
+        "hairc": "#5a4430",
+        "coat": "robe"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "goatee",
+        "hat": "fur",
+        "coat": "fur",
+        "frown": 1
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "title": "Honoria's dowry",
+      "lines": [
+       "Attila's demand:",
+       "the emperor's sister,",
+       "and half the Western Empire"
+      ],
+      "date": "450"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "fleet",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "n": 4,
+      "label": "the Adriatic · 452"
+     }
+    }
+   ]
+  },
+  {
+   "text": "HIS GRAVE WAS NEVER FOUND.",
+   "red": [
+    "NEVER",
+    "FOUND"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "throne",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "night": 1,
+      "crown": 0,
+      "label": "a wedding feast · 453"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "shake",
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#1a1a1a",
+      "light": "bulb",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "suitcases:3"
+      ],
+      "light": "cold",
+      "amb": 0.7,
+      "cam": "down",
+      "floor": "#1a1612"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "title": "ATTILA",
+      "lines": [
+       "King of the Huns",
+       "as recorded by a Roman diplomat"
+      ],
+      "date": "449"
+     }
+    }
+   ]
+  }
+ ]
+}

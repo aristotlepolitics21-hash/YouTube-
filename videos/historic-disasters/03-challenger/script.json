@@ -1,0 +1,412 @@
+{
+ "series": "Historic Disasters",
+ "episode": 3,
+ "title": "Challenger",
+ "subtitle": "The engineers who said no",
+ "sections": [
+  {
+   "name": "Cold open",
+   "lines": [
+    [
+     "title",
+     {
+      "title": "CHALLENGER",
+      "sub": "The engineers who said no",
+      "art": "shuttle",
+      "artp": {
+       "state": "pad"
+      }
+     },
+     "On the evening before the launch, a group of engineers in Utah tried to stop it."
+    ],
+    [
+     "meeting",
+     {
+      "object": 1,
+      "text": "Do not launch below 53 \u00b0F.",
+      "red": 1
+     },
+     "They told NASA, on a conference call, that the space shuttle Challenger should not fly in the cold that was forecast for the next morning."
+    ],
+    [
+     "shuttle",
+     {
+      "state": "launch"
+     },
+     "By the next morning, their recommendation had been reversed. Challenger launched at eleven thirty-eight a.m. on the twenty-eighth of January, 1986."
+    ],
+    [
+     "shuttle",
+     {
+      "state": "breakup"
+     },
+     "Seventy-three seconds later, millions of people watched it break apart in the sky."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The warning was given. It was not heard."
+     },
+     "This is not a story about a failure nobody saw coming. It is a story about a warning that was given, clearly, the night before, and about how it was talked away."
+    ]
+   ]
+  },
+  {
+   "name": "The mission",
+   "lines": [
+    [
+     "date",
+     {
+      "date": "28 January 1986",
+      "place": "Kennedy Space Center \u00b7 Florida"
+     },
+     "The mission was called S T S fifty-one L. It was the twenty-fifth flight of the space shuttle programme, and Challenger's tenth."
+    ],
+    [
+     "people",
+     {
+      "n": 7,
+      "label": "the crew of STS-51-L",
+      "face": 1
+     },
+     "There were seven people aboard. Commander Dick Scobee. Pilot Michael Smith. Mission specialists Ellison Onizuka, Judith Resnik and Ronald McNair. Payload specialist Gregory Jarvis. And Christa McAuliffe."
+    ],
+    [
+     "portrait",
+     {
+      "name": "Christa McAuliffe",
+      "role": "Teacher in Space \u00b7 Concord, New Hampshire"
+     },
+     "McAuliffe was a high school social studies teacher from New Hampshire, chosen from more than eleven thousand applicants to be the first teacher in space. Schoolchildren across America would be watching the launch live in their classrooms."
+    ],
+    [
+     "lesson",
+     {
+      "text": "NASA had promised a launch almost every two weeks."
+     },
+     "NASA was under pressure. It had promised Congress that the shuttle would fly often and cheaply, almost like an airline. In 1986 it planned a record fifteen flights. Challenger's launch had already been delayed several times."
+    ],
+    [
+     "date",
+     {
+      "date": "27 January 1986",
+      "place": "Launch scrubbed"
+     },
+     "On the twenty-seventh, the crew had already been strapped in. Then the countdown was stopped, first by a stuck bolt on the hatch handle, and then by strong crosswinds. The launch was moved to the next morning."
+    ]
+   ]
+  },
+  {
+   "name": "The joint",
+   "lines": [
+    [
+     "shuttle",
+     {
+      "state": "pad"
+     },
+     "The shuttle was launched by two solid rocket boosters, strapped to the sides of a huge external fuel tank. Each booster was built in sections, stacked on top of each other and joined together."
+    ],
+    [
+     "oring",
+     {},
+     "Each joint was sealed by two rubber rings, called O-rings, that were supposed to stop burning gas at thousands of degrees from escaping through the gap."
+    ],
+    [
+     "oring",
+     {
+      "blow": 1
+     },
+     "On earlier flights, engineers had found that hot gas had sometimes got past the first ring and scorched it. The worst damage had come on a flight launched in January 1985, in the coldest weather the shuttle had flown in. The temperature at launch was fifty-three degrees Fahrenheit."
+    ],
+    [
+     "shuttle",
+     {
+      "state": "pad"
+     },
+     "The boosters were recovered from the ocean after every flight and taken apart, so engineers could see exactly what had happened inside each joint. They kept finding soot and burned rubber where none should have been."
+    ],
+    [
+     "portrait",
+     {
+      "name": "Roger Boisjoly",
+      "role": "Seal engineer, Morton Thiokol"
+     },
+     "Roger Boisjoly was an engineer at Morton Thiokol, the company in Utah that built the boosters. In July 1985, he wrote a memo warning that if the problem was not fixed, the result could be a catastrophe of the highest order, loss of human life."
+    ],
+    [
+     "oring",
+     {
+      "cold": 1
+     },
+     "The physics was simple. Rubber gets stiff when it is cold. A stiff O-ring takes longer to spring into the gap and seal it, and in a rocket booster, a fraction of a second is enough for hot gas to get past."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The damage became normal."
+     },
+     "But every time a shuttle came back safely, the damage was treated less as a warning, and more as an accepted risk. A sociologist who later studied the disaster gave this a name: the normalisation of deviance."
+    ]
+   ]
+  },
+  {
+   "name": "The night before",
+   "lines": [
+    [
+     "shuttle",
+     {
+      "state": "ice",
+      "temp": "below 0 \u00b0C",
+      "sub": "forecast overnight"
+     },
+     "On the twenty-seventh of January, an unusual cold front swept across Florida. Overnight temperatures were forecast to drop well below freezing."
+    ],
+    [
+     "meeting",
+     {
+      "text": "We have never flown this cold."
+     },
+     "That evening, engineers at Thiokol asked for a teleconference with NASA managers in Florida and Alabama. They faxed over their charts."
+    ],
+    [
+     "meeting",
+     {
+      "object": 1,
+      "text": "Recommendation: do not launch below 53 \u00b0F.",
+      "red": 1
+     },
+     "Their recommendation was not to launch if the temperature was below fifty-three degrees, the coldest launch they had any experience of."
+    ],
+    [
+     "meeting",
+     {
+      "text": "When do you want me to launch, next April?"
+     },
+     "NASA's managers pushed back hard. The data, they said, did not prove that cold caused the damage. One of them asked, in frustration, when Thiokol wanted him to launch. Next April?"
+    ],
+    [
+     "meeting",
+     {
+      "text": "Take off your engineering hat and put on your management hat."
+     },
+     "Thiokol asked for a few minutes off the line. In that private meeting, a senior manager told the head of engineering to take off his engineering hat, and put on his management hat."
+    ],
+    [
+     "meeting",
+     {
+      "text": "Recommendation reversed: launch.",
+      "red": 1
+     },
+     "When the call resumed, Thiokol's managers reversed the recommendation. The engineers were not asked to vote. NASA accepted the new advice, and the people above them were never told how fierce the argument had been."
+    ],
+    [
+     "portrait",
+     {
+      "name": "Allan McDonald",
+      "role": "Thiokol's senior representative at Kennedy Space Center"
+     },
+     "In Florida, Thiokol's senior man at the Cape, Allan McDonald, refused to sign the written recommendation to launch. His boss in Utah signed it instead."
+    ],
+    [
+     "portrait",
+     {
+      "name": "Roger Boisjoly",
+      "role": "\u201cI fought like hell to stop that launch.\u201d"
+     },
+     "Boisjoly later said he went home that night convinced the shuttle would explode on the pad."
+    ]
+   ]
+  },
+  {
+   "name": "Launch morning",
+   "lines": [
+    [
+     "shuttle",
+     {
+      "state": "ice",
+      "temp": "36 \u00b0F"
+     },
+     "On the morning of the twenty-eighth, there was ice on the launch tower. Long icicles hung from the gantry. At liftoff, the air temperature was thirty-six degrees Fahrenheit, seventeen degrees colder than any previous launch."
+    ],
+    [
+     "people",
+     {
+      "n": 5,
+      "label": "the ice team on the pad",
+      "hats": 1
+     },
+     "An ice inspection team walked the pad before dawn. Engineers from Rockwell, the company that built the orbiter, said they could not be sure falling ice would not damage the shuttle at launch. But they did not formally ask for a stop. Nobody discussed the boosters' O-rings."
+    ],
+    [
+     "clock",
+     {
+      "time": "11:38 AM",
+      "date": "28 January",
+      "year": 1986
+     },
+     "At eleven thirty-eight, Challenger left the pad."
+    ],
+    [
+     "shuttle",
+     {
+      "state": "launch",
+      "puff": 1
+     },
+     "In the first second after ignition, cameras recorded puffs of dark grey smoke from the aft joint of the right booster. The cold O-rings had not sealed. Burning gas was escaping."
+    ],
+    [
+     "oring",
+     {
+      "blow": 1,
+      "cold": 1
+     },
+     "For a while, by luck, the hole was plugged by melted residue from the burning fuel itself. The shuttle climbed normally."
+    ],
+    [
+     "shuttle",
+     {
+      "state": "launch"
+     },
+     "About a minute after launch, the shuttle flew through strong wind shear. The seal broke open again. A flame appeared at the joint, and played across the strut holding the booster to the external tank."
+    ],
+    [
+     "clock",
+     {
+      "time": "11:39 AM",
+      "date": "73 seconds after liftoff",
+      "year": 0
+     },
+     "Seventy-three seconds after liftoff, the tank failed. The booster swung loose, and the shuttle was torn apart by aerodynamic forces."
+    ],
+    [
+     "shuttle",
+     {
+      "state": "breakup"
+     },
+     "On television, a cloud spread across the sky, with the two boosters flying off on their own. For a long moment, the commentator said nothing."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The crew cabin fell for nearly three minutes."
+     },
+     "The crew cabin broke away largely intact and fell to the ocean. Evidence recovered later suggested that some of the crew were alive and conscious for at least part of the fall. None could have survived the impact."
+    ]
+   ]
+  },
+  {
+   "name": "The commission",
+   "lines": [
+    [
+     "inquiry",
+     {
+      "label": "Presidential Commission on the Space Shuttle Challenger Accident \u00b7 1986"
+     },
+     "President Reagan appointed a commission, led by former Secretary of State William Rogers, to find out what had happened."
+    ],
+    [
+     "portrait",
+     {
+      "name": "Richard Feynman",
+      "role": "Physicist \u00b7 member of the Rogers Commission"
+     },
+     "One of its members was the physicist Richard Feynman. At a televised hearing, he took a piece of O-ring rubber, squeezed it in a clamp, and dropped it into a glass of ice water."
+    ],
+    [
+     "oring",
+     {
+      "cold": 1
+     },
+     "When he took it out, it stayed squeezed. It did not spring back. In a few seconds, he had shown what the engineers had tried to explain the night before."
+    ],
+    [
+     "lesson",
+     {
+      "text": "\u201cNature cannot be fooled.\u201d"
+     },
+     "In his own appendix to the report, Feynman wrote that for a successful technology, reality must take precedence over public relations, for nature cannot be fooled."
+    ],
+    [
+     "timeline",
+     {
+      "events": [
+       [
+        "Flawed joint design",
+        0.1
+       ],
+       [
+        "Damage accepted",
+        0.3
+       ],
+       [
+        "Schedule pressure",
+        0.5
+       ],
+       [
+        "Engineers overruled",
+        0.7
+       ],
+       [
+        "Warnings not passed up",
+        0.9
+       ]
+      ]
+     },
+     "The commission found a flawed joint design, known for years. Damage that had been accepted as normal. Pressure to keep to the schedule. And a decision-making process in which serious warnings never reached the people at the top."
+    ]
+   ]
+  },
+  {
+   "name": "After",
+   "lines": [
+    [
+     "stat",
+     {
+      "value": "32 months",
+      "label": "the shuttle fleet stayed grounded"
+     },
+     "The shuttle fleet was grounded for thirty-two months. The boosters were redesigned, with a third O-ring and heaters at the joints. NASA created a new office of safety."
+    ],
+    [
+     "portrait",
+     {
+      "name": "Roger Boisjoly",
+      "role": "Testified before the commission"
+     },
+     "Roger Boisjoly and Allan McDonald told the commission what had happened on the call. Afterwards, both were moved away from the work they knew best. Boisjoly left the company, and spent years speaking to engineering students about ethics and the duty to speak up."
+    ],
+    [
+     "lesson",
+     {
+      "text": "In 2003, it happened again."
+     },
+     "But the deeper problem proved harder to fix. In 2003, the shuttle Columbia broke up on its way home, after foam struck its wing during launch. Foam strikes had happened before. They had come to be seen as normal. The investigators said the lessons of Challenger had not been learned."
+    ],
+    [
+     "people",
+     {
+      "n": 7,
+      "pose": "mourn",
+      "label": "28 January 1986"
+     },
+     "Seven people died on Challenger. The engineers who had tried to stop the launch spent the rest of their lives asking whether they could have done more."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The warning was right."
+     },
+     "The warning had been right. It had been made clearly, by the people who knew the most. It lost, because it could not prove, with certainty, that disaster would come. It only showed that nobody knew it would not."
+    ],
+    [
+     "memorial",
+     {
+      "n": 7,
+      "date": "28 January 1986"
+     },
+     "When an organisation demands proof that something is dangerous, rather than proof that it is safe, it has already made its decision."
+    ]
+   ]
+  }
+ ]
+}

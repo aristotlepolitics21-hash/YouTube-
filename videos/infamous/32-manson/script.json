@@ -1,0 +1,76 @@
+{
+  "series": "Infamous",
+  "episode": 32,
+  "title": "Charles Manson",
+  "subtitle": "The cult leader who sent others to kill",
+  "say": {"Cielo": "See-yelo", "Wojciech Frykowski": "Voy-check Frikofski", "LaBianca": "La Bee-anka", "Leno": "Lenno", "Spahn": "Spahn", "Krenwinkel": "Krenwinkel", "Kasabian": "Kasaybian", "Bugliosi": "Bool-yosee", "Van Houten": "Van Howten", "Los Feliz": "Loss Feeliz", "Beausoleil": "Bowsoleil", "Didion": "Diddeeon", "Sebring": "Seebring", "Folger": "Folger", "Maddox": "Maddox", "Corcoran": "Corcoran", "Sybil": "Sibbil", "Karpis": "Karpiss"},
+  "package": {
+    "thumb_line": 18,
+    "thumb": ["THE MANSON", "MURDERS"],
+    "intro": "In August 1969, followers of Charles Manson murdered seven people in two nights in Los Angeles, among them the actress Sharon Tate. Manson was not at the house on Cielo Drive, but he was convicted of murder for sending the killers. This documentary tells how a lifelong prisoner built a cult, how detectives finally solved the case, and why the victims, not Manson, deserve to be remembered.",
+    "facts": ["Born 12 November 1934 in Cincinnati, Ohio", "Released from prison in March 1967, having spent more than half his life in institutions", "Sharon Tate, Jay Sebring, Abigail Folger, Wojciech Frykowski and Steven Parent were murdered at 10050 Cielo Drive on 8–9 August 1969", "Leno and Rosemary LaBianca were murdered on 10 August 1969", "Police announced arrests in the case on 1 December 1969", "Manson, Susan Atkins, Patricia Krenwinkel and Leslie Van Houten were convicted on 25 January 1971", "Death sentences became life terms after California's Supreme Court struck down the death penalty in 1972", "Manson died in custody on 19 November 2017, aged 83, after being denied parole 12 times"],
+    "sources": "Vincent Bugliosi and Curt Gentry's Helter Skelter, Jeff Guinn's Manson: The Life and Times of Charles Manson, Encyclopaedia Britannica, Los Angeles Times archive coverage, California Department of Corrections and Rehabilitation parole records, Joan Didion's The White Album.",
+    "hashtags": "#History #Documentary #TrueCrime",
+    "tags": "charles manson, manson family, sharon tate, tate labianca murders, cielo drive, helter skelter, 1969, true crime history, vincent bugliosi, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "CHARLES MANSON", "sub": "The cult leader who sent others to kill", "art": "city", "artp": {"state": "normal", "seed": 4, "night": 1}}, "On the morning of the ninth of August, 1969, a housekeeper arrived for work at a house on Cielo Drive, in the hills above Los Angeles. What she found made her run to the neighbours for help."],
+      ["date", {"date": "9 August 1969", "place": "10050 Cielo Drive · Los Angeles"}, "Five people had been murdered there during the night. One of them was the actress Sharon Tate, who was eight and a half months pregnant."],
+      ["stat", {"value": "9", "label": "people murdered by members of the Manson Family, 1969"}, "The next night, a married couple were killed across the city. That summer, members of a commune murdered nine people in all."],
+      ["lesson", {"text": "He was not at the house. He was convicted anyway."}, "The man behind them, Charles Manson, was not at Cielo Drive that night. He sent others. This is how he came to hold that power over them, and how he was caught."]
+    ]},
+    { "name": "A life locked up", "lines": [
+      ["date", {"date": "12 November 1934", "place": "Cincinnati · Ohio"}, "Charles Manson was born on the twelfth of November, 1934, in Cincinnati, Ohio. His mother, Kathleen Maddox, was sixteen."],
+      ["bust", {"name": "Charles Manson", "years": "1934 – 2017", "role": "Spent most of his youth in reform schools and prisons.", "hair": "side", "coat": "shirt"}, "His childhood was unstable. When he was five, his mother was jailed for robbery, and he was passed between relatives."],
+      ["cell", {"label": "reform schools and prisons · 1940s – 1960s"}, "From the age of about thirteen he was in and out of reform schools, and then prisons, for burglary, car theft, forging cheques and pimping."],
+      ["bunker", {"n": 2, "label": "McNeil Island prison · 1960s"}, "In prison he learned to play the guitar, reportedly taught by an old gangster, Alvin Karpis, and began to dream of a career in music."],
+      ["stat", {"value": "Over half", "label": "of his life spent in institutions by his release in 1967"}, "When he was released in March 1967, aged thirty-two, he had spent more than half his life locked up. According to the prosecutor in his later trial, he had asked to stay in prison."]
+    ]},
+    { "name": "The Family", "lines": [
+      ["city", {"state": "normal", "seed": 8, "label": "San Francisco · 1967"}, "He went to San Francisco during the Summer of Love, when thousands of young people were drifting there. He was older, persuasive and manipulative, and he began to gather followers."],
+      ["people", {"n": 8, "label": "the Family"}, "His followers, mostly young women, called themselves the Family. He controlled them with drugs, sex, isolation and constant talk, and hinted that he was a kind of Christ."],
+      ["timeline", {"events": [["San Francisco · 1967", 0.15], ["The bus · 1967 – 68", 0.5], ["Spahn Ranch · 1968", 0.85]]}, "In 1967 and 1968, the group travelled around California in an old school bus, before settling near Los Angeles."],
+      ["field", {"village": 1, "n": 4, "label": "Spahn Ranch · Chatsworth · Los Angeles"}, "By 1968 they were living at Spahn Ranch, a run-down former set for western films on the edge of Los Angeles."],
+      ["web", {"nodes": [["Manson", 0.5, 0.25, 1], ["Dennis Wilson", 0.25, 0.7, 0], ["Terry Melcher", 0.75, 0.7, 0]], "links": [[0, 1], [0, 2]], "label": "the music business · 1968"}, "Manson wanted to be a rock star. He befriended Dennis Wilson of the Beach Boys, whose band recorded a reworked version of one of his songs. But a record producer, Terry Melcher, decided not to sign him."],
+      ["decree", {"title": "10050 Cielo Drive", "lines": ["Once rented by Terry Melcher", "From 1969: Roman Polanski", "and Sharon Tate"], "date": "1969", "seal": 0}, "Melcher had lived at 10050 Cielo Drive. By 1969 he had moved out, and the house was rented by the film director Roman Polanski and his wife, Sharon Tate."]
+    ]},
+    { "name": "Helter Skelter", "lines": [
+      ["quote", {"text": "Manson preached that a race war he called 'Helter Skelter' was coming.", "who": "summary of the prosecution's case"}, "Manson preached that an apocalyptic race war was coming, which he called Helter Skelter, after a Beatles song. The prosecution later argued that the murders were meant to help start it."],
+      ["checklist", {"head": "Other suggested motives", "items": ["Drug deals gone wrong", "Freeing a jailed Family member", "Manson's own grudges"]}, "Others have pointed to more ordinary motives, including drug deals and an attempt to free a Family member who had already been arrested."],
+      ["cell", {"night": 1, "label": "Bobby Beausoleil arrested · 6 August 1969"}, "That July, a Family member, Bobby Beausoleil, had killed a musician named Gary Hinman, who had befriended the group. Beausoleil was arrested on the sixth of August."]
+    ]},
+    { "name": "Two nights in August", "lines": [
+      ["city", {"state": "normal", "night": 1, "seed": 2, "label": "Cielo Drive · 8 – 9 August 1969"}, "Two days later, Manson sent four followers to Cielo Drive: Charles Watson, known as Tex, Susan Atkins, Patricia Krenwinkel and Linda Kasabian. They were told to kill everyone there."],
+      ["memorial", {"n": 120, "date": "Sharon Tate · Jay Sebring"}, "Sharon Tate was twenty-six. She and her unborn son died, along with her close friend Jay Sebring, a well-known hairstylist."],
+      ["checklist", {"head": "Also killed at Cielo Drive", "items": ["Abigail Folger, 25", "Wojciech Frykowski, 32", "Steven Parent, 18"]}, "Abigail Folger, a coffee heiress who volunteered with the city's poor, was killed, and so was her partner, the Polish writer Wojciech Frykowski. Steven Parent, eighteen, had been visiting the caretaker and was leaving when the killers arrived."],
+      ["date", {"date": "10 August 1969", "place": "Waverly Drive · Los Feliz · Los Angeles"}, "The next night, Manson went along himself. At a house in Los Feliz, he tied up Leno LaBianca, who ran a chain of grocery stores, and his wife Rosemary, who ran a dress shop. Then he left, and three of his followers killed them."],
+      ["paper", {"mast": "LOS ANGELES", "head": "Fear grips the city", "sub": "Seven killed in two nights", "date": "August 1969"}, "Los Angeles was terrified. People who had never locked their doors began to, and many bought guns and guard dogs."]
+    ]},
+    { "name": "The investigation", "lines": [
+      ["web", {"nodes": [["Tate case", 0.2, 0.4, 0], ["LaBianca case", 0.5, 0.65, 0], ["Hinman case", 0.8, 0.4, 0]], "links": [], "label": "three cases · three teams"}, "At first, detectives did not connect the crimes. Separate teams worked the Tate and LaBianca cases, and Hinman's murder belonged to the county sheriff."],
+      ["army", {"night": 1, "label": "Spahn Ranch raid · 16 August 1969"}, "A week after the murders, police raided Spahn Ranch over stolen cars and arrested the Family. They were released within days, because of a problem with the warrant."],
+      ["field", {"famine": 1, "n": 3, "label": "Barker Ranch · Death Valley · October 1969"}, "In October 1969, officers raided a remote ranch near Death Valley, looking for stolen vehicles. They arrested Manson and members of the Family, without yet knowing what they had done."],
+      ["cell", {"night": 1, "label": "Sybil Brand jail · November 1969"}, "The breakthrough came from a jail. Susan Atkins, held over Hinman's murder, told two fellow inmates about the killings at Cielo Drive. They went to the authorities."],
+      ["paper", {"mast": "LOS ANGELES", "head": "Arrests announced in Tate case", "date": "1 December 1969"}, "On the first of December, 1969, the Los Angeles police announced that the cases had been solved."]
+    ]},
+    { "name": "The trial", "lines": [
+      ["bust", {"name": "Vincent Bugliosi", "years": "1934 – 2015", "role": "Deputy district attorney. Prosecuted Manson.", "hair": "side", "coat": "suit", "tie": "#2b2b30"}, "The prosecutor, Vincent Bugliosi, faced a hard task: convicting a man of murders he had not carried out with his own hands."],
+      ["inquiry", {"label": "Los Angeles · June 1970 – January 1971"}, "His star witness was Linda Kasabian, who had stood lookout and was given immunity. She described the two nights, and how Manson had sent the killers."],
+      ["bust", {"name": "Charles Manson", "years": "on trial · 1970", "role": "Convicted of murder and conspiracy. Killed no one at the two houses himself.", "hair": "long", "beard": "full", "coat": "shirt", "frown": 1}, "Manson turned the trial into a performance. He carved an X into his forehead, and followers keeping vigil outside the court copied him."],
+      ["paper", {"mast": "WASHINGTON", "head": "President calls Manson guilty", "sub": "Remark made during the trial", "date": "August 1970"}, "Even the President, Richard Nixon, told reporters that Manson was guilty, while the trial was still under way. Manson held the headline up to the jury. The judge questioned the jurors, and the trial went on."],
+      ["decree", {"title": "Verdict", "lines": ["Manson, Atkins, Krenwinkel,", "Van Houten: guilty", "Sentence: death"], "date": "25 January 1971"}, "On the twenty-fifth of January, 1971, Manson, Atkins, Krenwinkel and Leslie Van Houten were convicted of murder and conspiracy, and later sentenced to death. Tex Watson, tried separately, was convicted too."],
+      ["paper", {"mast": "CALIFORNIA", "head": "Death sentences become life", "sub": "State Supreme Court strikes down death penalty", "date": "February 1972"}, "In 1972, California's Supreme Court struck down the state's death penalty, and their sentences became life in prison. Manson was also convicted of the murders of Gary Hinman and Donald Shea, a ranch hand at Spahn Ranch."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["cell", {"night": 1, "label": "California prisons · 1971 – 2017"}, "Manson was denied parole twelve times. He died in hospital on the nineteenth of November, 2017, aged eighty-three, still a prisoner."],
+      ["checklist", {"head": "The followers", "items": ["Susan Atkins · died in prison, 2009", "Leslie Van Houten · paroled, 2023"]}, "Susan Atkins died in prison in 2009. Leslie Van Houten was released on parole in 2023, after more than fifty years."],
+      ["people", {"n": 6, "pose": "look", "label": "victims' families"}, "Sharon Tate's mother, Doris, became a campaigner for victims' rights. She was among the first relatives of a murder victim in California to speak at a killer's parole hearing."],
+      ["inquiry", {"label": "parole hearings · California"}, "After Doris died in 1992, Sharon's sister Debra took up the cause, attending parole hearings for decades to speak for the victims."],
+      ["quote", {"text": "Many people I know in Los Angeles believe that the Sixties ended abruptly on August 9, 1969.", "who": "Joan Didion, The White Album (1979)"}, "The murders became a symbol of the end of an era. The writer Joan Didion said that many people she knew believed the Sixties ended abruptly on the ninth of August, 1969."],
+      ["tv", {"text": "CELEBRITY", "speaker": 0}, "Manson became a grim celebrity, the subject of books, songs and films. The people who died were too often reduced to footnotes in his story."],
+      ["memorial", {"n": 300, "date": "In memory of the nine"}, "Their names were Sharon Tate, Jay Sebring, Abigail Folger, Wojciech Frykowski, Steven Parent, Leno and Rosemary LaBianca, Gary Hinman and Donald Shea."],
+      ["lesson", {"text": "Remember their names, not his."}, "Manson wanted fame, and in the end he got it. But the story was never really his. It belongs to the people whose lives were taken, and to the families who have kept their memory."]
+    ]}
+  ]
+}

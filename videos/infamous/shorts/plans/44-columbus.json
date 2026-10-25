@@ -1,0 +1,345 @@
+{
+ "id": "44-columbus",
+ "say": {
+  "Taíno": "Tie-eeno"
+ },
+ "scenes": [
+  {
+   "text": "HE THOUGHT IT WAS ASIA.",
+   "red": [
+    "ASIA"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "light": "bulb",
+      "swing": 1,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "stubble",
+        "coat": "shirt"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "fleet",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.84,
+      0.52
+     ],
+     "p": {
+      "land": 1,
+      "n": 1
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "amb": 0.25,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "coat": "black",
+        "tie": 0
+       },
+       "pose": "lean",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "fleet",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {
+      "land": 1,
+      "n": 3
+     }
+    }
+   ]
+  },
+  {
+   "text": "\"THEY WOULD MAKE GOOD SERVANTS.\"",
+   "red": [
+    "SERVANTS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "down",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "coat": "black",
+        "tie": 0
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "fleet",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 3
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "suitcases:3"
+      ],
+      "light": "bulb",
+      "amb": 0.4,
+      "floor": "#cfc6b0",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "quote",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "text": "They would make good servants.",
+      "who": "Columbus's log, in a friar's summary"
+     }
+    }
+   ]
+  },
+  {
+   "text": "HIS OWN KINGDOM CHAINED HIM.",
+   "red": [
+    "CHAINED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "bars"
+      ],
+      "light": "bulb",
+      "swing": 1,
+      "amb": 0.25,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "bars",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "items": [
+       [
+        "Shipped to Spain",
+        500,
+        ""
+       ],
+       [
+        "Died at sea",
+        200,
+        ""
+       ]
+      ],
+      "max": 500,
+      "red": 1
+     }
+    },
+    {
+     "d": 5,
+     "scene": "stat",
+     "fx": [
+      "ramp",
+      "flash"
+     ],
+     "p": {
+      "value": "14+",
+      "label": "every Taíno this age owed gold every 3 months"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze",
+      "glitch"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "props": [
+       "bars"
+      ],
+      "light": "bulb",
+      "amb": 0.3,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "hairc": "#9a9a92",
+        "coat": "black",
+        "sash": "#a33333",
+        "tie": 0
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "UP TO MILLIONS. THEN TENS OF THOUSANDS.",
+   "red": [
+    "MILLIONS",
+    "THOUSANDS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "timeline",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "events": [
+       [
+        "1492 · Columbus lands",
+        0.05
+       ],
+       [
+        "1495 · captives shipped",
+        0.3
+       ],
+       [
+        "1500 · in chains",
+        0.55
+       ],
+       [
+        "Later · tens of thousands",
+        0.85
+       ]
+      ]
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "swing"
+      ],
+      "light": "cold",
+      "dies": 0.85,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "versus",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "left": "Defenders",
+      "right": "Critics",
+      "mid": "?"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "light": "bulb",
+      "swing": 1,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "stubble",
+        "coat": "shirt"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

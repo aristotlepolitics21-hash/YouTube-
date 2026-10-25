@@ -1,0 +1,67 @@
+1
+00:00:00,400 --> 00:00:04,910
+Right now, invisible waves are flying through your room, through the walls, and through you.
+
+2
+00:00:05,260 --> 00:00:10,820
+They carry every video, message and game you load over Wi-Fi. Here is how, in five steps.
+
+3
+00:00:11,520 --> 00:00:16,576
+Step one. The internet arrives at your home through a cable, into a box called a router.
+
+4
+00:00:16,926 --> 00:00:22,356
+The router's job is to turn that data into radio waves, and send them out through its antennas.
+
+5
+00:00:23,056 --> 00:00:31,936
+Step two. Wi-Fi waves wiggle billions of times every second. About two point four billion times, or five billion, depending on the band.
+
+6
+00:00:32,286 --> 00:00:39,894
+To carry data, the router changes the wave's height and timing, in tiny steps. Each change stands for a few ones and zeros.
+
+7
+00:00:40,244 --> 00:00:48,265
+Your phone's antenna catches the wave, reads those changes, and turns them back into data. Its replies travel back the same way.
+
+8
+00:00:48,965 --> 00:00:56,958
+Step three. Phones, laptops, TVs and speakers all share the same airwaves. If they all talked at once, nobody would be heard.
+
+9
+00:00:57,308 --> 00:01:05,675
+So they take turns. Each device listens for a quiet moment before it talks, and newer routers can serve several devices at the same time.
+
+10
+00:01:06,375 --> 00:01:12,026
+Step four. Radio waves don't stop at your front door, so your neighbour's phone can pick up your Wi-Fi too.
+
+11
+00:01:12,376 --> 00:01:19,291
+That's why there's a password. It's used to create secret keys that scramble everything, so only your devices can read it.
+
+12
+00:01:19,991 --> 00:01:26,187
+Step five. Walls, metal, and even water get in the way. The signal gets weaker with every obstacle.
+
+13
+00:01:26,537 --> 00:01:33,395
+Two point four gigahertz reaches further and gets through walls better. Five gigahertz is faster, but fades sooner.
+
+14
+00:01:33,745 --> 00:01:41,408
+And a microwave oven heats food with waves very close to two point four gigahertz, so it can drown out your Wi-Fi while it runs.
+
+15
+00:01:41,758 --> 00:01:46,026
+Best spot for your router? High up, near the middle of your home, out in the open.
+
+16
+00:01:46,726 --> 00:01:53,989
+Cable in, radio out. Waves carry the bits. Devices take turns. Passwords keep it private. And keep the path clear.
+
+17
+00:01:54,339 --> 00:01:59,617
+Next time a video buffers, you'll know what's in the way. Follow for more of the tech you use every day.

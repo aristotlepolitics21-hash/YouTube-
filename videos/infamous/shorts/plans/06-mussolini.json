@@ -1,0 +1,334 @@
+{
+ "id": "06-mussolini",
+ "say": {
+  "Mussolini": "Moossoleeni",
+  "Matteotti": "Mattay-ottee",
+  "Giacomo": "Jahkomo"
+ },
+ "scenes": [
+  {
+   "text": "HIS OWN PARTY TURNED ON HIM.",
+   "red": [
+    "TURNED"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "bunker",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.45
+     ],
+     "p": {
+      "n": 5
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#eef0f0",
+      "light": "bulb",
+      "amb": 0.5,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "bald",
+        "coat": "military",
+        "frown": 1,
+        "medals": 2
+       },
+       "yaw": 180,
+       "at": [
+        0,
+        -1.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "state": "normal",
+      "seed": 4
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE ARMY COULD HAVE STOPPED THEM.",
+   "red": [
+    "STOPPED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "typewriter"
+      ],
+      "light": "bulb",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "full",
+        "stache": "thin",
+        "coat": "suit"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "light": "bulb",
+      "shadows": 4,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "window",
+       "chairs:1"
+      ],
+      "light": "red",
+      "flicker": 1,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze",
+      "smash"
+     ],
+     "circle": [
+      0.5,
+      0.7
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "down",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "stache": "big",
+        "hairc": "#9a9a92",
+        "beardc": "#9a9a92",
+        "coat": "military",
+        "medals": 5,
+        "sash": "#2a3346"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE DARED THEM. NOBODY ACTED.",
+   "red": [
+    "NOBODY"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "suitcases:2"
+      ],
+      "light": "red",
+      "cam": "low",
+      "fig": {
+       "look": {
+        "hair": "bald",
+        "coat": "black",
+        "frown": 1
+       },
+       "at": [
+        0,
+        -1.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "coat": "suit",
+        "glasses": "round"
+       },
+       "pose": "speech",
+       "at": [
+        0,
+        -1.6
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "doorc": "#9fb8d8",
+      "light": "bulb",
+      "amb": 0.45,
+      "cam": "low"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "podium",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "night": 1,
+      "banners": 2,
+      "coat": "black",
+      "hair": "bald"
+     }
+    }
+   ]
+  },
+  {
+   "text": "GAS. RACE LAWS. WAR.",
+   "red": [
+    "GAS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "army",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "planes": 1,
+      "fire": 1,
+      "rows": 2
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "title": "Racial Laws",
+      "lines": [
+       "Jews barred from state schools,",
+       "the armed forces",
+       "and public office"
+      ],
+      "date": "1938"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "value": "NEARLY 500,000",
+      "label": "Italians killed in his war"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "cam": "down"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "id": "13-kim-jong-il",
+ "say": {
+  "Jong-il": "Jong Ill"
+ },
+ "scenes": [
+  {
+   "text": "PEOPLE ATE BARK. THE ARMY CAME FIRST.",
+   "red": [
+    "BARK",
+    "ARMY"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "ruler",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "pose": "up",
+      "night": 1
+     }
+    },
+    {
+     "d": 3,
+     "scene": "people",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "n": 12,
+      "pose": "mourn"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "glitch",
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "swing": 1,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "army",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.55
+     ],
+     "p": {
+      "tanks": 1
+     }
+    }
+   ]
+  },
+  {
+   "text": "KIDNAPPED. THEN PUT TO WORK.",
+   "red": [
+    "KIDNAPPED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "chairs:12",
+       "window"
+      ],
+      "light": "dark",
+      "cam": "push",
+      "wall": "#3a2224"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "fleet",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "n": 2
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "cam": "still",
+      "fig": {
+       "pose": "point",
+       "at": [
+        1.2,
+        -1.6
+       ],
+       "look": {
+        "hair": "curly",
+        "glasses": "square",
+        "coat": "khaki",
+        "round": 1
+       }
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze",
+      "smash"
+     ],
+     "circle": [
+      0.6,
+      0.5
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "radio"
+      ],
+      "light": "bulb",
+      "cam": "down"
+     }
+    }
+   ]
+  },
+  {
+   "text": "MILITARY FIRST.",
+   "red": [
+    "MILITARY"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "field",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "famine": 1
+     }
+    },
+    {
+     "d": 3,
+     "scene": "stat",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "value": "600,000 – 1,000,000",
+      "label": "estimated famine deaths, many scholars say"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "field",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "famine": 1,
+      "guard": 1,
+      "village": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch",
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "radio",
+       "desk"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "NEVER CALLED TO ACCOUNT.",
+   "red": [
+    "ACCOUNT"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "date",
+     "fx": [
+      "shake",
+      "punch"
+     ],
+     "p": {
+      "date": "9 October 2006",
+      "place": "First nuclear test"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "portrait"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "chairs:1",
+       "window"
+      ],
+      "light": "bulb",
+      "dies": 0.6,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "people",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "n": 12,
+      "pose": "mourn",
+      "night": 1
+     }
+    }
+   ]
+  }
+ ]
+}

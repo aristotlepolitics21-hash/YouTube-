@@ -1,0 +1,85 @@
+{
+  "series": "Infamous",
+  "episode": 1,
+  "title": "Adolf Hitler",
+  "subtitle": "How a failed painter took a nation to war and genocide",
+  "say": {"Führer": "Fyoorer", "Reichstag": "Ryekstahg", "Braunau": "Brownow", "Landsberg": "Lahndsberg", "Mein Kampf": "Mine Kampf", "Anschluss": "Anshlooss", "Wannsee": "Vahnzay", "Kristallnacht": "Kristahlnakt", "Stauffenberg": "Shtowfenberg", "Hindenburg": "Hindenburg", "Barbarossa": "Barbarossa"},
+  "package": {
+    "thumb_line": 14,
+    "thumb": ["HOW HE", "GOT POWER"],
+    "intro": "Adolf Hitler was handed power legally in January 1933. Twelve years later, his regime had murdered six million Jews and Europe lay in ruins. This documentary tells how a failed art student from Austria rose to dictator, step by step, and how many people helped him on the way.",
+    "facts": ["Born 20 April 1889 in Braunau am Inn, Austria-Hungary", "Rejected twice by the Vienna Academy of Fine Arts (1907 and 1908)", "Beer Hall Putsch, 8–9 November 1923; served about nine months of a five-year sentence", "Nazi vote rose from 2.6% (1928) to 37.3% (July 1932); never a majority in a free election", "Appointed chancellor 30 January 1933; Enabling Act passed 23 March 1933", "Germany invaded Poland on 1 September 1939", "About six million Jews were murdered in the Holocaust", "Died by suicide in the Führerbunker, Berlin, 30 April 1945; Germany surrendered 8 May 1945"],
+    "sources": "United States Holocaust Memorial Museum (Holocaust Encyclopedia), Encyclopaedia Britannica, Ian Kershaw's Hitler biography, Richard J. Evans's Third Reich trilogy.",
+    "hashtags": "#History #Documentary #WW2",
+    "tags": "adolf hitler, hitler documentary, how hitler rose to power, nazi germany, holocaust, world war 2, third reich, weimar republic, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "ADOLF HITLER", "sub": "The failed painter who took a nation to war and genocide", "art": "podium", "artp": {"cheer": 1}}, "In the spring of 1945, Berlin was a ruin. Soviet artillery was falling on the government quarter, and fifteen metres underground, in a concrete bunker, the man who had started it all was running out of time."],
+      ["bunker", {"label": "Führerbunker · Berlin · April 1945"}, "Twelve years earlier, he had been handed power legally, by the president of a democracy."],
+      ["stat", {"value": "6,000,000", "label": "Jewish men, women and children murdered in the Holocaust"}, "In those twelve years, his regime murdered six million Jews."],
+      ["stat", {"value": "~70 million", "label": "estimated deaths in the Second World War"}, "And it started a war in Europe that helped make the Second World War the deadliest conflict in human history."],
+      ["lesson", {"text": "How did one man get there?"}, "Adolf Hitler is the name the world reaches for when it wants to describe evil. But he did not do it alone, and he did not do it all at once. This is how it happened."]
+    ]},
+    { "name": "A failed artist", "lines": [
+      ["date", {"date": "20 April 1889", "place": "Braunau am Inn · Austria-Hungary"}, "Adolf Hitler was born on the twentieth of April, 1889, in Braunau am Inn, a small Austrian town on the border with Germany."],
+      ["bust", {"name": "Adolf Hitler", "years": "1889 – 1945", "role": "Born in Austria. Wanted to be a painter.", "hair": "side", "coat": "suit", "tie": "#2b2b30"}, "His father was a customs official with a temper. His mother, Klara, doted on him. As a teenager he drifted out of school and dreamed of becoming an artist."],
+      ["counter", {"n": 2, "label": "times rejected by the Vienna Academy of Fine Arts"}, "In 1907, and again in 1908, the Academy of Fine Arts in Vienna turned him down. His mother died of cancer in between."],
+      ["city", {"state": "normal", "seed": 4, "label": "Vienna · 1908 – 1913"}, "For the next five years he lived in Vienna on very little, at times in a men's hostel, selling small paintings of city scenes to get by."],
+      ["paper", {"mast": "VIENNA", "head": "A city of hatreds", "sub": "Pamphlets, rallies and a populist mayor", "date": "1900s"}, "Vienna was a city full of nationalist pamphlets and a mayor who used hatred of Jews to win votes. Hitler later claimed this was where his worldview formed."]
+    ]},
+    { "name": "War and defeat", "lines": [
+      ["army", {"label": "Western Front · 1914 – 1918"}, "In 1913 he moved to Munich. When war broke out the next year, he volunteered for the Bavarian army."],
+      ["bust", {"name": "Corporal Hitler", "years": "1914 – 1918", "role": "Dispatch runner on the Western Front. Iron Cross, First Class.", "hair": "side", "stache": "big", "coat": "military"}, "He served for four years as a regimental dispatch runner, carrying messages near the front lines, and was awarded the Iron Cross."],
+      ["cell", {"label": "military hospital · November 1918", "bars": 0, "night": 1}, "In October 1918 he was temporarily blinded in a gas attack. He was in a hospital bed when he heard that Germany had surrendered."],
+      ["decree", {"title": "Treaty of Versailles", "lines": ["Germany accepts responsibility", "Territory surrendered", "Army limited to 100,000 men", "Reparations to be paid"], "date": "28 June 1919"}, "The peace treaty that followed took territory from Germany, limited its army, and demanded huge reparations. Many Germans believed a lie: that their army had not really lost, but had been stabbed in the back by traitors at home. Hitler believed it, and he blamed Jews and communists."]
+    ]},
+    { "name": "The rise", "lines": [
+      ["podium", {"banners": 2, "night": 1, "label": "Munich beer halls · 1920s"}, "Back in Munich, the army sent him to watch a tiny political group called the German Workers' Party. He joined it instead. He discovered he had one great talent. He could hold a crowd."],
+      ["bust", {"name": "Party leader", "years": "1921", "role": "Leader of the National Socialist German Workers' Party: the Nazis.", "hair": "side", "stache": "brush", "coat": "khaki"}, "The party renamed itself the National Socialist German Workers' Party, the Nazis. By 1921, Hitler was its leader."],
+      ["date", {"date": "8 – 9 November 1923", "place": "The Beer Hall Putsch · Munich"}, "In November 1923, he tried to seize power by force in Munich. The coup collapsed in a single day. Sixteen of his followers and four police officers were killed."],
+      ["cell", {"label": "Landsberg Prison · 1924"}, "He was convicted of treason and sentenced to five years. He served about nine months, in comfortable conditions, and used the time to dictate a book: Mein Kampf, My Struggle."],
+      ["quote", {"text": "Mein Kampf laid it all out: racial struggle, conquest of land in the east, and the Jews cast as the enemy.", "who": "summary of the book's programme"}, "The book set out almost everything he would later try to do. A world of racial struggle. Conquest of living space in the east. And Jews cast as the enemy behind every problem."],
+      ["lesson", {"text": "He decided to take power through the ballot box."}, "When he got out, he changed tactics. He would not storm power again. He would win it through elections."]
+    ]},
+    { "name": "Taking power", "lines": [
+      ["chart", {"x": "Reichstag elections, 1928 – 1932", "y": "Nazi share of the vote", "title": "Nazi share of the vote", "points": [[0, 0.06], [0.33, 0.43], [0.66, 0.87], [1, 0.77]], "notes": [[0, 0.06, "1928 · 2.6%"], [0.33, 0.43, "1930 · 18.3%"], [0.66, 0.87, "Jul 1932 · 37.3%"], [1, 0.77, "Nov 1932 · 33.1%"]]}, "In 1928 the Nazis won less than three percent of the vote. Then came the Great Depression. Millions of Germans lost their jobs, and the extremes grew."],
+      ["ballot", {"value": "37%", "label": "July 1932 · largest party in the Reichstag"}, "By July 1932, the Nazis were the largest party in parliament, with about thirty-seven percent. They never won a majority in a free election."],
+      ["decree", {"title": "Appointment", "lines": ["Adolf Hitler", "Chancellor of the German Reich"], "date": "30 January 1933"}, "Conservative politicians believed they could use him and control him. On the thirtieth of January 1933, President Hindenburg appointed Hitler chancellor."],
+      ["city", {"state": "fire", "seed": 7, "label": "Reichstag fire · 27 February 1933"}, "Four weeks later, the parliament building burned. Hitler used the fire as a pretext. Civil liberties were suspended, and thousands of political opponents were arrested."],
+      ["decree", {"title": "Enabling Act", "lines": ["The government may pass laws", "without the Reichstag"], "date": "23 March 1933"}, "In March, the Enabling Act let his government make laws without parliament. Within months, every other party was banned."],
+      ["wall", {"night": 1, "label": "Night of the Long Knives · June 1934"}, "In the summer of 1934, he had rivals inside his own movement murdered, along with old enemies. When Hindenburg died that August, Hitler merged the offices of president and chancellor. He was now the Führer, and the army swore an oath to him personally."]
+    ]},
+    { "name": "Persecution", "lines": [
+      ["decree", {"title": "Nuremberg Laws", "lines": ["Jews stripped of citizenship", "Marriage with Jews forbidden"], "date": "15 September 1935"}, "Persecution began at once and grew step by step. Jews were pushed out of jobs. In 1935, the Nuremberg Laws stripped them of citizenship."],
+      ["city", {"state": "fire", "seed": 3, "label": "Kristallnacht · 9 – 10 November 1938"}, "In November 1938, on Kristallnacht, synagogues were burned and Jewish shops smashed across the country. Around thirty thousand Jewish men were sent to concentration camps."],
+      ["tv", {"text": "PROPAGANDA"}, "All the while, a propaganda machine told Germans that their Führer had restored jobs, pride and order. Many believed it."]
+    ]},
+    { "name": "War", "lines": [
+      ["timeline", {"events": [["Austria · Mar 1938", 0.15], ["Sudetenland · Sep 1938", 0.48], ["Poland · Sep 1939", 0.85]]}, "Next came expansion. Austria was annexed in March 1938. That September, Britain and France agreed at Munich to let him take part of Czechoslovakia, hoping to keep the peace."],
+      ["army", {"tanks": 1, "planes": 1, "label": "1 September 1939 · invasion of Poland"}, "It did not work. On the first of September 1939, Germany invaded Poland. Two days later, Britain and France declared war."],
+      ["army", {"tanks": 1, "fire": 1, "label": "1940 – 1941"}, "Within two years, his armies had conquered most of Europe, from France to Greece. In June 1941, he invaded the Soviet Union."],
+      ["paper", {"mast": "WORLD AT WAR", "head": "Germany declares war on the United States", "date": "11 December 1941"}, "And in December 1941, after Japan attacked Pearl Harbor, he declared war on the United States as well."]
+    ]},
+    { "name": "The Holocaust", "lines": [
+      ["camp", {"label": "the camps"}, "Behind the front lines, the regime carried out the systematic murder of Europe's Jews."],
+      ["people", {"n": 8}, "Mobile killing squads shot more than a million people in the occupied east. Then came the death camps: Auschwitz, Treblinka, Sobibor, Belzec, Chelmno, Majdanek."],
+      ["decree", {"title": "Wannsee Conference", "lines": ["Coordination of the", "'Final Solution of the Jewish Question'"], "date": "20 January 1942", "seal": 0}, "In January 1942, senior officials met at a villa at Wannsee, near Berlin, to coordinate what they called the Final Solution."],
+      ["icons", {"total": 9500000, "per": 100000, "red": 6000000, "label": "about two in three of Europe's Jews were murdered", "cols": 19}, "About six million Jews were murdered. Roughly two out of every three Jews living in Europe."],
+      ["checklist", {"head": "The regime also murdered", "items": ["Roma and Sinti", "Disabled people", "Soviet prisoners of war", "Poles, political opponents, gay men"]}, "Hundreds of thousands of Roma, disabled people, political prisoners and others were also killed, along with millions of Soviet prisoners of war."]
+    ]},
+    { "name": "The fall", "lines": [
+      ["city", {"state": "ruin", "label": "Stalingrad · winter 1942 – 1943"}, "The tide turned at Stalingrad, where an entire German army surrendered in February 1943."],
+      ["bust", {"name": "20 July 1944", "years": "Wolf's Lair, East Prussia", "role": "An officer's bomb exploded under the map table. Hitler survived.", "hair": "back", "coat": "military", "hat": "peak"}, "In July 1944, an officer, Claus von Stauffenberg, planted a bomb at his headquarters. It went off, but Hitler survived. Thousands of suspects were arrested and around two hundred were executed."],
+      ["city", {"state": "fire", "planes": 1, "label": "Berlin · April 1945"}, "By April 1945, Soviet troops were fighting in the streets of Berlin. Hitler refused to surrender and blamed the German people for failing him."],
+      ["bunker", {"n": 2, "label": "29 – 30 April 1945"}, "On the twenty-ninth of April, he married his long-time companion, Eva Braun. The next afternoon, they both took their own lives."],
+      ["paper", {"mast": "VICTORY IN EUROPE", "head": "Germany surrenders", "date": "8 May 1945"}, "Eight days later, Germany surrendered unconditionally."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["inquiry", {"label": "International Military Tribunal · Nuremberg · 1945 – 1946"}, "At Nuremberg, the surviving leaders of his regime were put on trial before an international court. It helped establish that crimes against humanity could be prosecuted."],
+      ["checklist", {"head": "What came after", "items": ["The Nuremberg trials", "The Genocide Convention, 1948", "Germany's reckoning with its past"]}, "In 1948, the United Nations adopted the Genocide Convention. Germany, over decades, confronted what had been done in its name."],
+      ["lesson", {"text": "He was given power legally."}, "The hardest lesson of Hitler's story is not that one evil man rose to power. It is how many ordinary people, institutions and politicians helped him get there, believing at each step that it would not go further."],
+      ["memorial", {"n": 600, "date": "Never again"}, "It did go further. That is why the world still says his name, and why it still says: never again."]
+    ]}
+  ]
+}

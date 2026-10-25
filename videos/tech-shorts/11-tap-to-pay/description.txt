@@ -1,0 +1,13 @@
+How Tap to Pay Actually Works
+
+Your bank card has no battery. The reader powers it, through thin air. Here's what happens in that one-second tap, animated.
+
+1. Power from the reader: the reader's coil makes a magnetic field flipping 13.56 million times a second, which drives a current in a loop of wire around the edge of your card and wakes its chip (so it only works within a few centimetres)
+2. Talking back: the chip replies by flickering how much power it draws, which the reader reads as data. This short-range link is NFC, near field communication
+3. A one-time code: the chip creates a code that's only valid for this payment, so copying it is useless
+4. Phones and watches: your phone stores a stand-in number called a token instead of your real card number, and only pays after face, fingerprint or passcode. Watches and rings work the same way
+5. The approval: the details travel through the payment network to your bank, which says yes or no, usually in a second or two. Bigger amounts often ask for your PIN too
+
+Follow for more of the tech you use every day.
+
+#shorts #contactless #nfc #techexplained #howitworks

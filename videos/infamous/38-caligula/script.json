@@ -1,0 +1,79 @@
+{
+  "series": "Infamous",
+  "episode": 38,
+  "title": "Caligula",
+  "subtitle": "The emperor history calls mad",
+  "say": {"Caligula": "Caligyoola", "Germanicus": "Jermannicus", "Antium": "Antee um", "Tiberius": "Tybeerius", "Agrippina": "Agrippeena", "Capri": "Kahpree", "Misenum": "Mysenum", "Macro": "Mackro", "Gemellus": "Jemellus", "Drusilla": "Droosilla", "Baiae": "By eye", "Incitatus": "Inkitahtus", "Cassius Chaerea": "Cassius Kairea", "Chaerea": "Kairea", "Claudius": "Clawdius", "Philo": "Fylo", "Seneca": "Senneka", "Suetonius": "Sweetonius", "Cassius Dio": "Cassius Deeo", "Tacitus": "Tassitus", "Winterling": "Vinterling", "Caesonia": "Seezonia", "Palatine": "Palatine", "sesterces": "sestersiz"},
+  "package": {
+    "thumb_line": 1,
+    "thumb": ["MAD", "OR NOT?"],
+    "intro": "Caligula ruled Rome for less than four years before officers of his own guard killed him in AD 41. His name became a byword for madness and cruelty. This documentary looks at what he really did, and at why so many of the famous stories may not be true.",
+    "facts": ["Born Gaius Julius Caesar on 31 August AD 12 at Antium", "Nicknamed 'Caligula' ('Little Boot') by his father's soldiers on the Rhine", "His mother, Agrippina the Elder, and two older brothers died in exile or prison under Tiberius", "Became emperor on Tiberius's death in March AD 37, aged twenty-four", "Fell seriously ill in the autumn of AD 37", "Ordered his statue set up in the Temple in Jerusalem in AD 40; the order was delayed and never carried out", "Killed by officers of the Praetorian Guard led by Cassius Chaerea on 24 January AD 41, aged twenty-eight", "Tacitus's account of his reign is lost; the main surviving narratives are by Suetonius and Cassius Dio"],
+    "sources": "Suetonius, Life of Gaius (Caligula); Cassius Dio, Roman History, book 59; Philo of Alexandria, On the Embassy to Gaius; Encyclopaedia Britannica; Anthony A. Barrett, Caligula: The Abuse of Power; Aloys Winterling, Caligula: A Biography.",
+    "hashtags": "#History #Documentary #AncientRome",
+    "tags": "caligula, emperor caligula, ancient rome, roman emperors, mad emperor, incitatus, tiberius, praetorian guard, suetonius, roman history, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "CALIGULA", "sub": "The emperor history calls mad", "art": "throne", "artp": {"night": 1}}, "On the twenty-fourth of January, AD 41, the emperor of Rome left a theatre on the Palatine Hill to take a break from the games."],
+      ["wall", {"night": 1, "label": "Palatine Hill · 24 January AD 41"}, "In a narrow passage, officers of his own guard were waiting. They cut him down. His wife and baby daughter were killed soon afterwards."],
+      ["stat", {"value": "3 years, 10 months", "label": "Caligula's reign · AD 37 – 41"}, "He was twenty-eight, and had ruled for less than four years. In that time, his name became a byword for madness, cruelty and excess."],
+      ["lesson", {"text": "Was Caligula really mad?"}, "But the most famous stories about him come from writers who hated him, and the finest historian of the age, Tacitus, wrote an account of his reign that has been lost. So how much of the legend is true?"]
+    ]},
+    { "name": "Little Boot", "lines": [
+      ["date", {"date": "31 August AD 12", "place": "Antium · Italy"}, "He was born Gaius Julius Caesar on the thirty-first of August, AD 12, at Antium, the same town where his nephew Nero would later be born."],
+      ["army", {"era": "ancient", "label": "the Rhine frontier · AD 14 – 16"}, "His father, Germanicus, was Rome's most popular general. As a small boy, Gaius lived among the legions on the Rhine, dressed in a miniature uniform."],
+      ["lesson", {"text": "Caligula: 'Little Boot'"}, "The soldiers called him Caligula, Little Boot, after the small army boots he wore. He came to dislike the name, but it stuck."],
+      ["date", {"date": "AD 19", "place": "Antioch · Syria"}, "In AD 19, Germanicus died suddenly in the east, aged thirty-three. Many Romans believed he had been poisoned with the emperor's blessing. It was never proven."],
+      ["people", {"n": 8, "pose": "mourn", "label": "Germanicus's ashes return to Rome"}, "Crowds lined the route as his ashes were carried back to Rome. His widow and children were now dangerous to the emperor, simply because they were so loved."]
+    ]},
+    { "name": "The survivor", "lines": [
+      ["bust", {"name": "Tiberius", "years": "42 BC – AD 37", "role": "Second emperor of Rome. Suspicious and reclusive; ruled from Capri.", "hair": "crop", "hairc": "#9a9a92", "hat": "laurel", "coat": "robe", "frown": 1}, "That emperor was Tiberius, the successor of Augustus. He was suspicious and increasingly reclusive, and Gaius's family fell under his shadow."],
+      ["cell", {"label": "AD 29 – 33"}, "Gaius's mother, Agrippina the Elder, and his two older brothers were arrested. All three died in exile or in prison."],
+      ["throne", {"crown": 0, "label": "Capri · AD 31 – 37"}, "Gaius survived by keeping quiet. From the age of about nineteen, he lived with Tiberius at his villa on the island of Capri, hiding whatever he felt."],
+      ["date", {"date": "16 March AD 37", "place": "Misenum · Italy"}, "In March AD 37, Tiberius died, aged seventy-seven. Some ancient writers said Gaius, or the commander of the guard, Macro, helped him on his way. Others said he died naturally."]
+    ]},
+    { "name": "A golden start", "lines": [
+      ["bust", {"name": "Caligula", "years": "AD 12 – 41", "role": "Emperor of Rome at twenty-four. Hailed at first as a fresh start.", "hair": "crop", "hat": "laurel", "coat": "robe"}, "Gaius became emperor at twenty-four. After the gloomy last years of Tiberius, Rome greeted him with joy."],
+      ["podium", {"night": 0, "cheer": 1, "banners": 0, "label": "Rome · AD 37"}, "He recalled exiles, halted the treason trials, paid bonuses to the soldiers and staged spectacular games. For a few months, he was hugely popular."],
+      ["people", {"n": 7, "pose": "look", "night": 1, "label": "vigils · autumn AD 37"}, "Then, in the autumn of AD 37, he fell gravely ill. Crowds kept vigil outside the palace."],
+      ["lesson", {"text": "A different man?"}, "He recovered. According to the ancient writers, the man who rose from that sickbed was different. Modern historians are far less sure that the illness changed anything."]
+    ]},
+    { "name": "The turn", "lines": [
+      ["wall", {"night": 1, "label": "AD 37 – 38"}, "Within months, his young cousin and co-heir, Tiberius Gemellus, was put to death, and Macro, who had helped him to power, was forced to kill himself."],
+      ["memorial", {"n": 60, "date": "Drusilla · AD 38"}, "In AD 38, his favourite sister, Drusilla, died. He had her declared a goddess, the first Roman woman to be made one."],
+      ["fleet", {"n": 6, "label": "Bay of Baiae · AD 39"}, "His spending became legendary. Suetonius says he built a bridge of boats about five kilometres long across the Bay of Baiae, just to ride over it."],
+      ["stat", {"value": "2.7 billion", "label": "sesterces left by Tiberius · gone within a year, says Suetonius"}, "According to Suetonius, he burned through the vast surplus Tiberius had left in under a year. New taxes and confiscations followed."],
+      ["cell", {"night": 1, "label": "Rome · AD 39 – 40"}, "Suetonius and Dio describe cruel jokes and casual executions. Some of these stories are probably exaggerated, but the fear among Rome's elite was real."],
+      ["decree", {"title": "Treason trials", "lines": ["Revived", "Senators accused", "Estates confiscated"], "date": "AD 39"}, "In AD 39, he revived the treason trials he had once halted, and turned on the Senate. Several senators were executed or driven to suicide."],
+      ["army", {"era": "ancient", "label": "the Channel coast · AD 40"}, "In AD 40 he marched north, apparently to invade Britain, but turned back. Suetonius claims he ordered his soldiers to gather seashells on the beach as spoils from the ocean."],
+      ["lesson", {"text": "A joke, a punishment, or a garbled story?"}, "Historians still argue about that story. It may have been a joke, a humiliation for mutinous troops, or a garbled account of something else entirely."]
+    ]},
+    { "name": "A living god", "lines": [
+      ["throne", {"label": "Palatine Hill · AD 40"}, "He demanded to be honoured as a living god, and is said to have appeared in public dressed as gods and heroes."],
+      ["decree", {"title": "Order of Gaius", "lines": ["A statue of the emperor", "to be set up in the", "Temple in Jerusalem"], "date": "AD 40"}, "He ordered a statue of himself placed in the Temple in Jerusalem. The governor of Syria stalled, knowing it would spark a revolt, and Caligula died before it was done."],
+      ["bust", {"name": "Philo of Alexandria", "years": "c. 20 BC – c. AD 50", "role": "Jewish philosopher. Met Caligula as an envoy in AD 40.", "hair": "bald", "beard": "long", "hairc": "#9a9a92", "beardc": "#9a9a92", "coat": "robe"}, "One of the few writers who actually met him was Philo, a Jewish philosopher who led a delegation from Alexandria that year. He described an emperor who mocked them and barely listened."],
+      ["quote", {"text": "He is said to have planned to make his horse a consul.", "who": "Suetonius, reporting what was said"}, "Then there is the horse. Suetonius says Caligula gave his favourite racehorse, Incitatus, a marble stable and an ivory manger, and was said to have planned to make him a consul."],
+      ["lesson", {"text": "It never happened."}, "It never happened. Some historians think it was a joke at the Senate's expense: a way of saying that even a horse could do their job."]
+    ]},
+    { "name": "Murder", "lines": [
+      ["web", {"nodes": [["Cassius Chaerea", 0.5, 0.2, 1], ["guard officers", 0.2, 0.65, 0], ["senators", 0.5, 0.8, 0], ["palace staff", 0.8, 0.65, 0]], "links": [[0, 1], [0, 2], [0, 3]], "label": "the plot · AD 41"}, "By AD 41, plots were multiplying. The leader of the final one was Cassius Chaerea, an officer of the guard whom Caligula had repeatedly mocked."],
+      ["date", {"date": "24 January AD 41", "place": "Palatine Hill · Rome"}, "On the twenty-fourth of January, Chaerea and other officers struck. The emperor's German bodyguards arrived too late."],
+      ["throne", {"crown": 0, "night": 1, "label": "Claudius proclaimed · AD 41"}, "In the confusion, soldiers found his uncle, Claudius, hiding behind a curtain in the palace, and proclaimed him emperor."],
+      ["inquiry", {"label": "Senate of Rome · January AD 41"}, "For a moment, the Senate debated restoring the old Republic. The guard had already decided otherwise."],
+      ["cell", {"label": "Cassius Chaerea · AD 41"}, "Claudius owed his throne to the murder, but he could not let the killers of an emperor go free. Chaerea was executed."]
+    ]},
+    { "name": "The sources", "lines": [
+      ["decree", {"title": "Who wrote his story", "lines": ["Seneca · knew him", "Philo · met him", "Suetonius · c. AD 120", "Cassius Dio · early 200s"], "seal": 0}, "So who tells us all this? Seneca and Philo knew him, but both had reasons to hate him. Suetonius and Cassius Dio wrote between eighty and nearly two hundred years later."],
+      ["paper", {"mast": "ROMAN GOSSIP", "head": "Palace scandal", "sub": "collected by Suetonius", "date": "c. AD 120"}, "Suetonius in particular collected gossip. Many of his most lurid stories, including claims of incest with his sisters, are doubted by modern historians."],
+      ["inquiry", {"label": "modern historians"}, "Some historians, such as Aloys Winterling, argue that Caligula was not mad at all. They see a ruler who openly humiliated the Senate, and whose victims took their revenge in the history books."],
+      ["people", {"n": 5, "pose": "look", "label": "the debate"}, "Others, like Anthony Barrett, see an arrogant young man corrupted by absolute power. Either way, real people died on his orders, and the Senate lived in fear."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["decree", {"title": "After his death", "lines": ["Statues taken down", "Portraits recarved", "Coins melted down"], "seal": 0}, "In Rome, his memory was quietly dismantled. Many of his statues were removed or recarved, and his bronze coins were later melted down."],
+      ["tv", {"text": "I, CLAUDIUS · 1976"}, "His name became shorthand for the mad tyrant, in novels, films and television, from the 1976 drama I, Claudius onwards."],
+      ["army", {"era": "ancient", "night": 1, "label": "the Praetorian Guard"}, "Rome's emperors learned a lesson too. The guard that protected them could also remove them, and over the next two centuries it did so again."],
+      ["ruler", {"cape": 1, "pose": "point", "label": "absolute power"}, "Mad or not, Caligula showed how much harm one unchecked young man could do with absolute power, and how little anyone could do to stop him, short of murder."]
+    ]}
+  ]
+}

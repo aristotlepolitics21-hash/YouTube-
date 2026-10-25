@@ -1,0 +1,9 @@
+// ---------- 3D overrides (inserted after bio.js): character scenes are drawn by R3, captions by the 2D engine ----------
+const S3 = ['bust', 'podium', 'people', 'inquiry', 'versus', 'throne', 'ruler', 'army', 'camp', 'wall', 'cell', 'bunker', 'city', 'field', 'jungle', 'fleet', 'riders'];
+function cap3(s, y = 46) { if (!s) return; ctx.save(); ctx.font = `700 17px ${SANS}`; ctx.letterSpacing = '3px'; const w = ctx.measureText(s.toUpperCase()).width + 48; ctx.restore(); ctx.fillStyle = 'rgba(12,12,14,.55)'; ctx.fillRect(W / 2 - w / 2, y - 18, w, 36); label(s, W / 2, y, { c: P.gold, size: 17 }); }
+for (const name of S3) SC[name] = (t, T, p) => { ctx.drawImage(window.R3.render(name, p, t, T), 0, 0, W, H); finish(true);
+  if (name === 'bust') { const a1 = fade(t, .05, .25), a2 = fade(t, .12, .3), a3 = fade(t, .2, .4); ctx.fillStyle = `rgba(232,225,210,${.82 * a1})`; ctx.fillRect(660, 190, 560, 340); rect(660, 190, 6, 340, P.red);
+    if (p.name) text(p.name, 700, 262, p.name.length > 18 ? 50 : 62, { align: 'left', f: BIG, a: a1 }); if (p.years) text(p.years, 700, 330, 30, { align: 'left', c: P.soft, a: a2 });
+    if (p.role) { ctx.save(); ctx.globalAlpha = a3; ctx.textAlign = 'left'; ctx.font = `400 26px ${SERIF}`; ctx.fillStyle = P.ink; let cur = '', y = 390; for (const wd of p.role.split(' ')) { const tr = cur ? cur + ' ' + wd : wd; if (ctx.measureText(tr).width > 480) { ctx.fillText(cur, 700, y); y += 36; cur = wd; } else cur = tr; } ctx.fillText(cur, 700, y); ctx.restore(); } return true; }
+  if (name === 'versus') { text(p.left, 400, 640, 34, { w: 700, c: P.paper, a: fade(t, .05, .2) }); text(p.right, 880, 640, 34, { w: 700, c: p.red === 'r' ? '#e0705a' : P.paper, a: fade(t, .1, .25) }); if (p.mid) text(p.mid, W / 2, 110, 64, { f: BIG, c: P.red, a: fade(t, .2, .35) }); return true; }
+  cap3(p.label, name === 'cell' ? 674 : 46); return true; };

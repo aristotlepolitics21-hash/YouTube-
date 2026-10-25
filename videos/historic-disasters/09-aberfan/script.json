@@ -1,0 +1,423 @@
+{
+ "series": "Historic Disasters",
+ "episode": 9,
+ "title": "Aberfan",
+ "subtitle": "The mountain that came down on a school",
+ "sections": [
+  {
+   "name": "Cold open",
+   "lines": [
+    [
+     "title",
+     {
+      "title": "ABERFAN",
+      "sub": "The mountain that came down on a school",
+      "art": "tip",
+      "artp": {
+       "state": "village",
+       "fog": 1
+      }
+     },
+     "On the morning of Friday, the twenty-first of October, 1966, the children of Pantglas Junior School, in the Welsh mining village of Aberfan, had just finished morning assembly."
+    ],
+    [
+     "tip",
+     {
+      "state": "village",
+      "fog": 1
+     },
+     "They had sung All Things Bright and Beautiful. It was the last day before the half-term holiday. They were due to go home at midday."
+    ],
+    [
+     "clock",
+     {
+      "time": "9:15 AM",
+      "date": "21 October",
+      "year": 1966
+     },
+     "At about a quarter past nine, high on the mountainside above the village, a huge heap of colliery waste began to move."
+    ],
+    [
+     "tip",
+     {
+      "state": "slide",
+      "fog": 1
+     },
+     "It came down the slope as a black, liquid avalanche of coal waste, rock and mud, and hit the school."
+    ],
+    [
+     "stat",
+     {
+      "value": "144",
+      "label": "people killed · 116 of them children"
+     },
+     "One hundred and forty-four people died. One hundred and sixteen of them were children, most of them between seven and ten years old."
+    ],
+    [
+     "lesson",
+     {
+      "text": "It was not an accident of nature."
+     },
+     "The official inquiry would find that the disaster was not an act of God. It could, and should, have been prevented."
+    ]
+   ]
+  },
+  {
+   "name": "The valley",
+   "lines": [
+    [
+     "tip",
+     {
+      "state": "village"
+     },
+     "Aberfan lies in a narrow valley in South Wales, a few miles from Merthyr Tydfil. Like hundreds of villages in the valleys, it had grown up around a coal mine, the Merthyr Vale colliery."
+    ],
+    [
+     "people",
+     {
+      "n": 10,
+      "hats": 1,
+      "label": "miners · Merthyr Vale colliery"
+     },
+     "Coal mining produces enormous amounts of waste: rock, shale, ash and fine coal dust. In the valleys, it was dumped in great heaps called tips, on the hillsides above the villages."
+    ],
+    [
+     "people",
+     {
+      "n": 10,
+      "scarf": 1,
+      "label": "a close-knit mining village"
+     },
+     "It was a close community. Men worked underground, families went to chapel, and the children walked to school together, past the terraced streets, in the shadow of the mountain."
+    ],
+    [
+     "tip",
+     {
+      "state": "village",
+      "label": "seven tips on the mountain above the village"
+     },
+     "By 1966, there were seven tips on the mountain above Aberfan. Since 1947, they had belonged, like the mines themselves, to a state-owned body: the National Coal Board."
+    ],
+    [
+     "tip",
+     {
+      "state": "village",
+      "spring": 1
+     },
+     "Tip number seven, the one that would fail, had been started in 1958. It was built on sandstone that let water through, and over natural springs, which were marked on old maps of the area."
+    ],
+    [
+     "tip",
+     {
+      "state": "village",
+      "label": "Pantglas Junior School"
+     },
+     "Directly below tip seven, at the bottom of the slope, stood Pantglas Junior School, with a row of terraced houses on Moy Road beside it. On the morning of the disaster, about two hundred and forty children were inside."
+    ],
+    [
+     "lesson",
+     {
+      "text": "Tip 7 included fine, wet waste called tailings."
+     },
+     "Some of the waste dumped on it was fine, wet material called tailings. When saturated with water, it can behave less like solid ground, and more like a liquid."
+    ]
+   ]
+  },
+  {
+   "name": "Warnings",
+   "lines": [
+    [
+     "date",
+     {
+      "date": "1944 · 1963",
+      "place": "earlier slides on the mountain"
+     },
+     "The tips had moved before. In 1944, another tip on the same mountain had slid downhill. In 1963, part of tip seven slipped too. Nobody was hurt, and the tipping continued."
+    ],
+    [
+     "portrait",
+     {
+      "name": "The Borough Council",
+      "role": "Merthyr Tydfil · letters to the Coal Board, 1963–64"
+     },
+     "Local officials were worried. In 1963, the borough engineer wrote to the Coal Board about the danger of the tips above the school, especially the dumping of slurry. Councillors raised it again in 1964."
+    ],
+    [
+     "quote",
+     {
+      "text": "…the danger of slurry being tipped behind the Pantglas schools.",
+      "who": "Letter to the National Coal Board, 1963"
+     },
+     "The letter specifically mentioned the danger to the Pantglas schools."
+    ],
+    [
+     "inquiry",
+     {
+      "label": "meetings · reassurances"
+     },
+     "There were meetings. There were reassurances. The Coal Board's local staff believed the tips were safe, or at least that nothing serious would happen. Nobody with the right expertise ever properly investigated what was underneath tip seven."
+    ],
+    [
+     "lesson",
+     {
+      "text": "Nobody was really responsible for the tips."
+     },
+     "The investigation would later find that there was no national policy on tip safety at all. Tips were treated as heaps of rubbish, not as engineering structures that could fail."
+    ]
+   ]
+  },
+  {
+   "name": "The slide",
+   "lines": [
+    [
+     "tip",
+     {
+      "state": "rain"
+     },
+     "In the autumn of 1966, it had rained heavily for weeks. Water soaked into the base of tip seven."
+    ],
+    [
+     "tip",
+     {
+      "state": "rain",
+      "fog": 1,
+      "label": "the tip had sunk overnight"
+     },
+     "Early on the morning of the twenty-first, the tipping gang who worked on the mountain found that the top of tip seven had sunk by about ten feet overnight. They sent a man down to report it."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The telephone cable had been stolen."
+     },
+     "They could not phone a warning down the mountain. The telephone cable to the tip had been stolen some time before, and never replaced."
+    ],
+    [
+     "tip",
+     {
+      "state": "slide",
+      "fog": 1
+     },
+     "At about nine fifteen, a mass of saturated waste broke away from the base of the tip and began to flow downhill. It moved fast, with a roar that people in the village later compared to a jet plane or a train."
+    ],
+    [
+     "tip",
+     {
+      "state": "slide",
+      "fog": 1,
+      "label": "they heard it, but could not see it"
+     },
+     "There was fog on the mountain. People in the village heard the noise, but could not see what was coming."
+    ],
+    [
+     "tip",
+     {
+      "state": "slide"
+     },
+     "The slide crossed a canal and a railway embankment, and buried the school and a row of houses in a matter of seconds."
+    ]
+   ]
+  },
+  {
+   "name": "The rescue",
+   "lines": [
+    [
+     "tip",
+     {
+      "state": "rescue"
+     },
+     "Parents, neighbours and miners from the colliery ran to the school and began digging with shovels and their bare hands."
+    ],
+    [
+     "people",
+     {
+      "n": 12,
+      "pose": "walk",
+      "hats": 1,
+      "label": "miners came from across South Wales"
+     },
+     "Within hours, miners and rescue workers had come from all over South Wales. Thousands of volunteers worked through the day and into the night."
+    ],
+    [
+     "lesson",
+     {
+      "text": "No one was found alive after 11 o'clock."
+     },
+     "But the people who would be saved were found early. After about eleven o'clock that morning, no one else was brought out alive."
+    ],
+    [
+     "lesson",
+     {
+      "text": "Some children were saved by their teachers."
+     },
+     "Inside the school, some teachers had shielded children with their own bodies. The deputy headmaster, David Beynon, was found dead, holding five children in his arms, as if to protect them."
+    ],
+    [
+     "stat",
+     {
+      "value": "116",
+      "label": "children · 28 adults"
+     },
+     "One hundred and sixteen children died, and twenty-eight adults, among them five of the school's teachers. In the village, almost every family lost someone, or knew a family that had."
+    ],
+    [
+     "people",
+     {
+      "n": 10,
+      "pose": "mourn",
+      "label": "a generation of the village's children"
+     },
+     "Aberfan lost a generation of its children in a single morning."
+    ]
+   ]
+  },
+  {
+   "name": "The tribunal",
+   "lines": [
+    [
+     "inquiry",
+     {
+      "label": "Aberfan Tribunal · chaired by Lord Justice Edmund Davies · 1967"
+     },
+     "A tribunal of inquiry, chaired by Lord Justice Edmund Davies, heard evidence for seventy-six days."
+    ],
+    [
+     "quote",
+     {
+      "text": "…bungling ineptitude by many men charged with tasks for which they were totally unfitted…",
+      "who": "Aberfan Tribunal report, 1967"
+     },
+     "Its report, in 1967, put the blame squarely on the National Coal Board. It spoke of bungling ineptitude, by many men charged with tasks for which they were totally unfitted, who failed to heed clear warnings."
+    ],
+    [
+     "portrait",
+     {
+      "name": "Lord Robens",
+      "role": "Chairman, National Coal Board"
+     },
+     "The Coal Board had at first suggested that the slide was caused by springs that nobody could have known about. The tribunal rejected that. The springs were on the maps. The Board's chairman, Lord Robens, offered to resign. His offer was refused."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The chairman did not come at once."
+     },
+     "Lord Robens did not go to Aberfan on the day of the disaster. He went ahead with a ceremony to install him as chancellor of a university, and visited the village the following day. Many people in the valley never forgave him."
+    ],
+    [
+     "lesson",
+     {
+      "text": "No one was prosecuted. No one was sacked."
+     },
+     "No one was prosecuted. No one lost their job."
+    ]
+   ]
+  },
+  {
+   "name": "The fund",
+   "lines": [
+    [
+     "people",
+     {
+      "n": 8,
+      "pose": "mourn",
+      "label": "the Queen visited eight days later"
+     },
+     "Eight days after the disaster, the Queen visited Aberfan. She later said that waiting so long was one of her greatest regrets."
+    ],
+    [
+     "stat",
+     {
+      "value": "£1.75 m",
+      "label": "given by the public to the disaster fund"
+     },
+     "People across Britain and the world sent donations to a disaster fund. It raised about one and three quarter million pounds."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The fund was made to pay to remove the tips."
+     },
+     "Then the remaining tips above the village still had to be removed. The government and the Coal Board insisted that the disaster fund, money donated for the bereaved, contribute one hundred and fifty thousand pounds towards the cost."
+    ],
+    [
+     "date",
+     {
+      "date": "1997 · 2007",
+      "place": "the money was returned"
+     },
+     "It took more than thirty years for that money to be returned, in 1997, and another ten for an additional payment in recognition of its true value, in 2007."
+    ],
+    [
+     "people",
+     {
+      "n": 10,
+      "label": "survivors carried it all their lives"
+     },
+     "For the children who survived, the trauma lasted a lifetime. Many later spoke of survivor's guilt, of nightmares, of empty desks and classrooms. A study decades later found that about half of the survivors who took part had experienced post-traumatic stress at some point in their lives."
+    ]
+   ]
+  },
+  {
+   "name": "The lesson",
+   "lines": [
+    [
+     "checklist",
+     {
+      "head": "After Aberfan",
+      "items": [
+       "Tips treated as engineering structures",
+       "New law on the safety of mine tips · 1969",
+       "Regular inspection by experts",
+       "Waste never tipped over springs"
+      ]
+     },
+     "In 1969, a new law made the owners of tips responsible for their safety, with regular inspections by qualified engineers. Tips were finally treated as structures that could fail."
+    ],
+    [
+     "timeline",
+     {
+      "events": [
+       [
+        "Built over springs",
+        0.1
+       ],
+       [
+        "Earlier slides",
+        0.3
+       ],
+       [
+        "Letters ignored",
+        0.5
+       ],
+       [
+        "No tip policy",
+        0.7
+       ],
+       [
+        "No way to warn",
+        0.9
+       ]
+      ]
+     },
+     "Aberfan happened because a tip was built over springs, because earlier slides were treated as minor, because warnings in writing were reassured away, and because nobody in the organisation saw tips as their responsibility."
+    ],
+    [
+     "lesson",
+     {
+      "text": "The people below were the ones who knew."
+     },
+     "Once again, the people who understood the danger were the people living beneath it. They wrote letters. They raised it at meetings. They were told not to worry."
+    ],
+    [
+     "memorial",
+     {
+      "n": 144,
+      "date": "21 October 1966"
+     },
+     "Today, the site of the school is a memorial garden. In the hillside cemetery above Aberfan, two long rows of white arches mark the graves of the children."
+    ]
+   ]
+  }
+ ]
+}

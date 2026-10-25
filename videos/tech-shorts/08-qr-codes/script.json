@@ -1,0 +1,161 @@
+{
+ "series": "Tech Shorts",
+ "episode": 8,
+ "title": "How QR Codes Actually Work",
+ "sets": "qr.js",
+ "voice": "kokoro:af_heart",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "q_hook",
+     {},
+     "You can rip a chunk off a QR code, and it still works. Here's the trick."
+    ],
+    [
+     "q_title",
+     {
+      "top": "HOW QR CODES",
+      "bottom": "ACTUALLY WORK"
+     },
+     "It's all hidden in plain sight, in five steps."
+    ]
+   ]
+  },
+  {
+   "name": "Finding the code",
+   "lines": [
+    [
+     "q_finders",
+     {},
+     "Step one. Those three big squares in the corners tell your camera where the code is, and which way up it's sitting."
+    ],
+    [
+     "q_timing",
+     {},
+     "Thin dotted lines between them act like a ruler, so the camera knows how big each little square is."
+    ],
+    [
+     "q_align",
+     {},
+     "And a smaller square near the fourth corner helps straighten out a code seen at an angle."
+    ]
+   ]
+  },
+  {
+   "name": "Ones and zeros",
+   "lines": [
+    [
+     "q_bits",
+     {},
+     "Step two. Every little square is a bit. Dark means one. Light means zero."
+    ],
+    [
+     "q_bytes",
+     {},
+     "Read in a set zigzag order, groups of eight bits become letters, numbers, or a web address."
+    ],
+    [
+     "q_format",
+     {},
+     "A few squares by the corners aren't data at all. They describe how the rest of the code is laid out."
+    ]
+   ]
+  },
+  {
+   "name": "Spare copies",
+   "lines": [
+    [
+     "q_errors",
+     {},
+     "Step three. Part of the code is extra data, a kind of mathematical backup, called error correction."
+    ],
+    [
+     "q_torn",
+     {},
+     "At the highest setting, up to about thirty percent of the code can be scratched, torn or covered, and it still scans."
+    ],
+    [
+     "q_logo",
+     {},
+     "That's why brands can stick a logo right in the middle."
+    ]
+   ]
+  },
+  {
+   "name": "The mask",
+   "lines": [
+    [
+     "q_mask",
+     {},
+     "Step four. Big blocks of one colour would confuse the scanner. So the pattern is shuffled with one of eight masks, and the code notes which one it used."
+    ],
+    [
+     "q_unmask",
+     {},
+     "Your phone simply undoes the mask before reading the bits."
+    ]
+   ]
+  },
+  {
+   "name": "Size and safety",
+   "lines": [
+    [
+     "q_sizes",
+     {},
+     "Step five. Codes come in forty sizes, from twenty-one squares across, up to a hundred and seventy-seven, holding thousands of characters."
+    ],
+    [
+     "q_safe",
+     {},
+     "Your camera decodes one in a split second. But a QR code can point anywhere, so check the link before you tap."
+    ],
+    [
+     "q_origin",
+     {},
+     "Not bad for an idea from 1994, invented to track car parts in a Japanese factory."
+    ]
+   ]
+  },
+  {
+   "name": "Recap",
+   "lines": [
+    [
+     "w_recap",
+     {
+      "items": [
+       [
+        "Corners find the code",
+        ""
+       ],
+       [
+        "Each square is a bit",
+        ""
+       ],
+       [
+        "Backup fixes damage",
+        ""
+       ],
+       [
+        "Masks break up blocks",
+        ""
+       ],
+       [
+        "Check the link first",
+        ""
+       ]
+      ]
+     },
+     "Corners find the code. Every square is a bit. Backup data fixes the damage, and a mask keeps it readable."
+    ],
+    [
+     "outro",
+     {},
+     "Next time you scan one, you'll know you're reading a grid of ones and zeros. Follow for more of the tech you use every day."
+    ]
+   ]
+  }
+ ]
+}

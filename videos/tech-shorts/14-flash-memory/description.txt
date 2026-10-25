@@ -1,0 +1,13 @@
+How Your Phone Stores Photos (Flash Memory)
+
+Every photo on your phone is stored as electrons, trapped in tiny cages that hold them even with the power off. Here's how flash memory works, animated.
+
+1. Billions of cells: a photo is a long list of ones and zeros, kept in billions of tiny memory cells; a 256 GB phone holds about two trillion bits
+2. Trapping electrons: each cell has an insulated cage called a floating gate; a jolt of voltage pushes electrons through the insulation and into the cage, where they stay without power
+3. Reading it back: the chip checks how easily current flows past the cage, and by trapping different amounts of electrons a cell can store three or four bits
+4. Stacking up: cells are stacked into towers more than 200 layers high
+5. Wearing out: each rewrite wears the insulation a little, so a controller spreads writes evenly (wear levelling) and shuffles data because flash erases in big blocks
+
+Follow for more of the tech you use every day.
+
+#shorts #flashmemory #storage #techexplained #howitworks

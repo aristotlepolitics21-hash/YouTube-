@@ -1,0 +1,298 @@
+{
+ "id": "50-genghis-khan",
+ "say": {
+  "Genghis": "Jenghis",
+  "Temüjin": "Temmoo-jin",
+  "Otrar": "Ot-rar",
+  "Bukhara": "Boo-kahra",
+  "Juvayni": "Joo-vay-nee"
+ },
+ "scenes": [
+  {
+   "text": "IT SURRENDERED. IT DIDN'T MATTER.",
+   "red": [
+    "MATTER"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "riders",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "n": 7
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.44
+     ],
+     "p": {
+      "light": "bulb",
+      "amb": 0.25,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hat": "fur",
+        "stache": "thin",
+        "beard": "long",
+        "beardc": "#9a9a92",
+        "coat": "fur"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "shoes:60",
+       "suitcases:6"
+      ],
+      "light": "cold",
+      "amb": 0.35,
+      "floor": "#a89a80",
+      "cam": "push"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "city",
+     "fx": [
+      "glitch",
+      "shake"
+     ],
+     "p": {
+      "state": "ruin",
+      "seed": 3
+     }
+    }
+   ]
+  },
+  {
+   "text": "ABANDONED. CAPTURED. PROCLAIMED.",
+   "red": [
+    "PROCLAIMED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "people",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 8,
+      "pose": "walk"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "light": "cold",
+      "amb": 0.5,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hat": "fur",
+        "coat": "robe",
+        "hair": "long"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 4,
+     "scene": "podium",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "night": 0,
+      "cheer": 1,
+      "banners": 2
+     }
+    }
+   ]
+  },
+  {
+   "text": "SURRENDER, AND BE SPARED?",
+   "red": [
+    "SPARED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "versus",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "left": "Surrender",
+      "right": "Resist",
+      "mid": "?",
+      "red": "r"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "date",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "date": "1218",
+      "place": "Otrar"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "timeline",
+     "fx": [
+      "ramp",
+      "flash"
+     ],
+     "p": {
+      "events": [
+       [
+        "Otrar · 1218",
+        0.05
+       ],
+       [
+        "Bukhara · 1220",
+        0.35
+       ],
+       [
+        "Samarkand · 1220",
+        0.6
+       ],
+       [
+        "Merv · 1221",
+        0.9
+       ]
+      ]
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "light": "bulb",
+      "dies": 0.85,
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "HIS GRAVE HAS NEVER BEEN FOUND.",
+   "red": [
+    "GRAVE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "riders",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 5,
+      "flip": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "punch",
+      "glitch"
+     ],
+     "p": {
+      "value": "TENS OF MILLIONS?",
+      "label": "deaths, by uncertain estimates"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "bust",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "name": "Genghis Khan",
+      "years": "c. 1162 – 1227",
+      "role": "Founder of the Mongol Empire. Mongolia's national hero.",
+      "hat": "fur",
+      "stache": "thin",
+      "beard": "long",
+      "beardc": "#9a9a92",
+      "coat": "fur"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "riders",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "n": 7
+     }
+    }
+   ]
+  }
+ ]
+}

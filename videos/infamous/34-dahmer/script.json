@@ -1,0 +1,80 @@
+{
+  "series": "Infamous",
+  "episode": 34,
+  "title": "Jeffrey Dahmer",
+  "subtitle": "Seventeen victims, and the warnings no one heeded",
+  "say": {"Dahmer": "Dahmer", "Sinthasomphone": "Sintasompone", "Konerak": "Konnerack", "Doxtator": "Docks stayter", "Guerrero": "Gerrairo", "Tuomi": "Too omee", "Straughter": "Strawter", "Bradehoft": "Braid hoft", "Balcerzak": "Balser zack", "Gabrish": "Gabbrish", "Childress": "Childress"},
+  "package": {
+    "thumb_line": 21,
+    "thumb": ["17 VICTIMS", "IGNORED"],
+    "intro": "In May 1991, Milwaukee police officers handed a dazed fourteen-year-old boy back to Jeffrey Dahmer. This documentary is about the seventeen boys and young men he killed, and the many moments when someone could have stopped him. Nothing graphic is shown or described.",
+    "facts": ["Born 21 May 1960 in Milwaukee, Wisconsin; grew up in Bath Township, Ohio", "First killing in June 1978: Steven Hicks, 18, a hitchhiker", "Convicted in 1989 of sexually assaulting a 13-year-old boy; given one year in a work-release jail and five years' probation", "Moved into the Oxford Apartments, Milwaukee, in May 1990; twelve of his victims were killed there", "27 May 1991: police returned 14-year-old Konerak Sinthasomphone to Dahmer, who killed him shortly afterwards", "Arrested 22 July 1991 after Tracy Edwards escaped and flagged down police", "Found sane by a jury on 15 February 1992; sentenced to fifteen consecutive life terms, plus a sixteenth in Ohio", "Killed by a fellow inmate at Columbia Correctional Institution, Wisconsin, on 28 November 1994"],
+    "sources": "Encyclopaedia Britannica; contemporary reporting by the Milwaukee Journal Sentinel and The New York Times; records of the 1992 Milwaukee County trial; Anne E. Schwartz, The Man Who Could Not Kill Enough (1992).",
+    "hashtags": "#History #Documentary #TrueCrime",
+    "tags": "jeffrey dahmer, dahmer victims, milwaukee police, konerak sinthasomphone, glenda cleveland, true crime documentary, serial killer history, 1991 milwaukee, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "JEFFREY DAHMER", "sub": "Seventeen victims, and the warnings no one heeded", "art": "city", "artp": {"night": 1, "seed": 5}}, "In the early hours of the twenty-seventh of May 1991, two young women in Milwaukee found a boy in the street. He was fourteen, naked, dazed and barely able to stand."],
+      ["people", {"n": 3, "night": 1, "label": "North 25th Street · Milwaukee · 27 May 1991"}, "They called the police. When officers arrived, a calm, fair-haired man of thirty-one told them the boy was his adult boyfriend, drunk after a quarrel."],
+      ["stat", {"value": "14", "label": "Konerak Sinthasomphone's age"}, "The officers walked the boy back to the man's flat and left. His name was Konerak Sinthasomphone. He was killed shortly after they had gone."],
+      ["stat", {"value": "17", "label": "boys and men killed · 1978 – 1991"}, "The man was Jeffrey Dahmer. Between 1978 and 1991, he killed seventeen boys and young men."],
+      ["lesson", {"text": "Why did no one stop him?"}, "This film is not about his mind. It is about the people he took, and the many moments when someone could have stopped him, and did not."]
+    ]},
+    { "name": "Ohio", "lines": [
+      ["date", {"date": "21 May 1960", "place": "Milwaukee · Wisconsin"}, "Jeffrey Dahmer was born in Milwaukee on the twenty-first of May 1960. His father, Lionel, was a chemist, and when Jeffrey was a young boy the family moved to rural Ohio."],
+      ["bust", {"name": "Jeffrey Dahmer", "years": "1960 – 1994", "role": "Grew up in Bath, Ohio. Quiet, isolated, drinking heavily as a teenager.", "hair": "side", "hairc": "#b59a5a", "glasses": "square", "coat": "shirt"}, "He was a quiet, isolated boy. By high school he was drinking heavily, and his parents' marriage was falling apart."],
+      ["date", {"date": "June 1978", "place": "Bath Township · Ohio"}, "In June 1978, weeks after finishing school, he picked up an eighteen-year-old hitchhiker named Steven Hicks, who was on his way to a rock concert, and killed him."],
+      ["people", {"n": 4, "pose": "look", "label": "Steven Hicks · missing"}, "Steven's family never knew what had happened to him. For thirteen years he was simply a missing person."],
+      ["army", {"label": "US Army · 1979 – 1981"}, "Dahmer dropped out of university after one term. His father pushed him into the army, which discharged him early, in 1981, because of his drinking."]
+    ]},
+    { "name": "Missed signs", "lines": [
+      ["city", {"state": "normal", "seed": 2, "label": "West Allis · Wisconsin · 1980s"}, "He was sent to live with his grandmother in West Allis, just outside Milwaukee. He was arrested more than once in those years, for drunkenness and for exposing himself, but each time it was treated as a minor offence."],
+      ["timeline", {"events": [["Steven Tuomi · Nov 1987", 0.15], ["James Doxtator · Jan 1988", 0.5], ["Richard Guerrero · Mar 1988", 0.85]]}, "In late 1987 he began killing again. Steven Tuomi. James Doxtator, who was just fourteen. Richard Guerrero."],
+      ["decree", {"title": "State of Wisconsin v. Dahmer", "lines": ["Second-degree sexual assault", "of a 13-year-old boy", "1 year, work-release jail", "5 years' probation"], "date": "1989"}, "In September 1988, he was arrested for sexually assaulting a thirteen-year-old boy. He was convicted, but sentenced to one year in a work-release jail, which let him leave each day for his job, and five years' probation."],
+      ["cell", {"label": "awaiting sentence · March 1989"}, "While he was waiting to be sentenced, he killed Anthony Sears. No one connected him to the disappearance."],
+      ["paper", {"mast": "PROBATION", "head": "Released early", "sub": "Ten months served of a one-year term", "date": "March 1990"}, "He was released after ten months. His record now said, plainly, that he was a convicted child sex offender. It would matter later."]
+    ]},
+    { "name": "Apartment 213", "lines": [
+      ["city", {"state": "normal", "night": 1, "seed": 9, "label": "Oxford Apartments · North 25th Street"}, "In May 1990 he moved into a small flat in the Oxford Apartments, on Milwaukee's west side. Over the next fourteen months, he killed twelve more men there."],
+      ["people", {"n": 7, "pose": "walk", "label": "most victims were young men of colour"}, "Most of his victims were young Black, Asian or Latino men. Many were gay or bisexual, and many were poor."],
+      ["city", {"state": "normal", "night": 1, "seed": 3, "label": "Milwaukee · 1990 – 1991"}, "He met most of them in bars, at a shopping centre or on the street, and lured them back to his flat with an offer of money or a drink."],
+      ["people", {"n": 6, "pose": "mourn"}, "Their families reported them missing. Some later said that the police had shown little interest in young men like their sons and brothers."],
+      ["lesson", {"text": "The neighbours noticed."}, "Neighbours complained to the building manager about a terrible smell from his flat. He blamed spoiled meat and a broken freezer, and nobody looked further."]
+    ]},
+    { "name": "27 May 1991", "lines": [
+      ["people", {"n": 2, "night": 1, "label": "Sandra Smith and Nicole Childress · both 18"}, "Go back to that night in May. The two young women were cousins, Sandra Smith and Nicole Childress, both eighteen. When Dahmer came out to collect the boy, they tried to keep him away."],
+      ["versus", {"left": "WITNESSES", "right": "OFFICERS", "mid": "vs", "red": "r"}, "Three police officers arrived. The women told them the boy was a child and that he was hurt. According to the women, the officers told them to stay out of it."],
+      ["checklist", {"head": "What the officers did not do", "items": ["Check the boy's age", "Run Dahmer's name", "Search the flat", "Listen to the witnesses"]}, "The officers did not check the boy's age. They did not run Dahmer's name, which would have shown he was on probation for a sexual assault on a child."],
+      ["lesson", {"text": "They did not look in the bedroom."}, "They stepped briefly into the flat, but did not look in the bedroom, where the body of an earlier victim, Tony Hughes, lay."],
+      ["quote", {"text": "On the radio, an officer reported the boy returned to his 'boyfriend'. The officers were heard laughing.", "who": "summary of the police radio recording"}, "Afterwards, on the police radio, one officer reported that the boy had been returned to his boyfriend. The officers could be heard laughing."],
+      ["bust", {"name": "Glenda Cleveland", "years": "Neighbour · Sandra Smith's mother", "role": "Called the police to ask if they were sure the boy was an adult. She was reassured.", "hair": "curly", "coat": "shirt"}, "Sandra's mother, Glenda Cleveland, lived in the building next door. She called the police to ask whether they were sure the boy was an adult. An officer assured her that he was."],
+      ["stat", {"value": "1988", "label": "Konerak's older brother was the boy Dahmer had assaulted"}, "There was one more terrible detail. Konerak was the younger brother of the boy Dahmer had been convicted of assaulting."],
+      ["timeline", {"events": [["Matt Turner", 0.12], ["Jeremiah Weinberger", 0.38], ["Oliver Lacy", 0.63], ["Joseph Bradehoft", 0.88]]}, "In the eight weeks that followed, Dahmer killed four more men: Matt Turner, Jeremiah Weinberger, Oliver Lacy and Joseph Bradehoft."]
+    ]},
+    { "name": "Caught", "lines": [
+      ["city", {"state": "normal", "night": 1, "seed": 11, "label": "22 July 1991 · near midnight"}, "On the night of the twenty-second of July 1991, a man named Tracy Edwards escaped from the flat, with a handcuff hanging from one wrist, and flagged down a patrol car."],
+      ["people", {"n": 3, "night": 1, "pose": "look", "label": "Apartment 213"}, "This time, the two officers, Robert Rauth and Rolf Mueller, went back with him and looked around. Within minutes they found evidence that made the truth impossible to deny. Dahmer was arrested on the spot."],
+      ["paper", {"mast": "MILWAUKEE", "head": "Man held in string of killings", "sub": "Police begin to identify the victims", "date": "July 1991"}, "He confessed to police in detail. Over the following weeks, investigators worked to identify each victim and tell their families."]
+    ]},
+    { "name": "Trial and death", "lines": [
+      ["inquiry", {"label": "Milwaukee County Courthouse · 1992"}, "He was charged with fifteen murders in Wisconsin. He pleaded guilty, but argued that he was insane. On the fifteenth of February 1992, a jury rejected that, and found him sane."],
+      ["decree", {"title": "Sentence", "lines": ["15 consecutive life terms", "Wisconsin", "A 16th life term followed in Ohio"], "date": "17 February 1992"}, "Wisconsin has no death penalty. He was sentenced to fifteen consecutive life terms, and later a sixteenth in Ohio, for the killing of Steven Hicks."],
+      ["people", {"n": 6, "pose": "mourn", "label": "victim impact statements"}, "At the sentencing, the victims' families spoke. Rita Isbell, the sister of Errol Lindsey, confronted him in a moment of raw grief that was broadcast across the country."],
+      ["bust", {"name": "Jeffrey Dahmer", "years": "1992", "role": "Found sane and guilty. Fifteen consecutive life terms.", "hair": "side", "hairc": "#b59a5a", "glasses": "square", "coat": "shirt", "stache": "thin"}, "He was sent to Columbia Correctional Institution, a maximum-security prison in Portage, Wisconsin."],
+      ["cell", {"label": "Columbia Correctional Institution · 28 November 1994"}, "On the twenty-eighth of November 1994, while on a cleaning duty, he was beaten to death by another inmate, Christopher Scarver. He was thirty-four."]
+    ]},
+    { "name": "The police", "lines": [
+      ["inquiry", {"label": "Milwaukee Police Department · 1991"}, "After the arrest, the city learned what had happened that night in May. Two of the officers who had returned Konerak, John Balcerzak and Joseph Gabrish, were fired."],
+      ["paper", {"mast": "MILWAUKEE", "head": "Fired officers reinstated", "sub": "Both win their appeals", "date": "1990s"}, "Both appealed, and both later won their jobs back. Balcerzak went on to become president of the city's police union."],
+      ["people", {"n": 8, "pose": "up", "label": "Milwaukee · 1991"}, "To many in Milwaukee's Black, Asian and gay communities, the case proved what they had been saying for years: that the police did not take them seriously. The mayor set up a commission to examine relations between the police and the city they served."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["city", {"state": "normal", "seed": 9, "label": "North 25th Street · today"}, "The Oxford Apartments were demolished in 1992. The site has stood empty ever since."],
+      ["tv", {"text": "2022 · TV drama"}, "His name has never gone away. In 2022, a hugely popular television drama retold the story. Some victims' relatives said no one had asked them, and that it made them relive the worst days of their lives."],
+      ["lesson", {"text": "He was missed, again and again."}, "Dahmer was not a criminal mastermind. He was caught because one man ran. He was missed because, time after time, the people whose job it was to listen did not."],
+      ["memorial", {"n": 17, "date": "Remember their names"}, "These are the people he killed. Steven Hicks, Steven Tuomi, James Doxtator, Richard Guerrero, Anthony Sears, Raymond Smith, Edward Smith, Ernest Miller and David Thomas."],
+      ["memorial", {"n": 17, "date": "1978 – 1991"}, "Curtis Straughter, Errol Lindsey, Tony Hughes, Konerak Sinthasomphone, Matt Turner, Jeremiah Weinberger, Oliver Lacy and Joseph Bradehoft. Theirs are the names worth remembering."]
+    ]}
+  ]
+}

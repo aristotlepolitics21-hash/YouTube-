@@ -1,0 +1,151 @@
+{
+ "series": "Tech Shorts",
+ "episode": 7,
+ "title": "How a Microwave Actually Heats Food",
+ "sets": "microwave.js",
+ "voice": "kokoro:af_heart",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "m_hook",
+     {},
+     "Your microwave doesn't heat your food with heat. It shakes the water inside it."
+    ],
+    [
+     "m_title",
+     {
+      "top": "HOW A MICROWAVE",
+      "bottom": "ACTUALLY WORKS"
+     },
+     "Here's what's happening behind that door, in five steps."
+    ]
+   ]
+  },
+  {
+   "name": "The magnetron",
+   "lines": [
+    [
+     "m_magnetron",
+     {},
+     "Step one. Inside is a device called a magnetron. It turns electricity into radio waves, called microwaves."
+    ],
+    [
+     "m_guide",
+     {},
+     "A metal channel guides them into the box, where they bounce around off the metal walls."
+    ]
+   ]
+  },
+  {
+   "name": "Shaking water",
+   "lines": [
+    [
+     "m_water",
+     {},
+     "Step two. Water molecules are lopsided. Slightly positive at one end, and negative at the other."
+    ],
+    [
+     "m_flip",
+     {},
+     "The microwaves' electric field flips direction billions of times a second, and the water molecules keep twisting to follow it."
+    ],
+    [
+     "m_heat",
+     {},
+     "All that twisting and jostling is heat. The food cooks itself, from the water inside."
+    ]
+   ]
+  },
+  {
+   "name": "Hot and cold spots",
+   "lines": [
+    [
+     "m_spots",
+     {},
+     "Step three. The bouncing waves stack up into hot spots and cold spots inside the box."
+    ],
+    [
+     "m_turn",
+     {},
+     "That's why the plate turns. It carries your food through the hot spots, so it cooks more evenly."
+    ]
+   ]
+  },
+  {
+   "name": "Outside in",
+   "lines": [
+    [
+     "m_depth",
+     {},
+     "Step four. Microwaves only reach a few centimetres into food. The middle heats up more slowly, as the warmth spreads inward."
+    ],
+    [
+     "m_stir",
+     {},
+     "That's why the instructions say stir halfway, or let it stand for a minute."
+    ],
+    [
+     "m_ice",
+     {},
+     "Ice is tricky too. Its molecules are locked in place, so defrost mode pulses the power on and off, giving the heat time to spread."
+    ]
+   ]
+  },
+  {
+   "name": "The door and the fork",
+   "lines": [
+    [
+     "m_door",
+     {},
+     "Step five. The door has a metal mesh with tiny holes. Light can get out, but the microwaves are too big to fit through."
+    ],
+    [
+     "m_fork",
+     {},
+     "And metal with sharp edges, like a fork, can gather so much charge that it sparks. So keep it out."
+    ]
+   ]
+  },
+  {
+   "name": "Recap",
+   "lines": [
+    [
+     "w_recap",
+     {
+      "items": [
+       [
+        "It makes microwaves",
+        ""
+       ],
+       [
+        "Waves twist the water",
+        ""
+       ],
+       [
+        "Twisting makes heat",
+        ""
+       ],
+       [
+        "The plate evens it out",
+        ""
+       ],
+       [
+        "The mesh keeps waves in",
+        ""
+       ]
+      ]
+     },
+     "A magnetron makes the waves. The waves twist the water. The twisting makes heat. The plate spins to even it out, and the door keeps it all inside."
+    ],
+    [
+     "outro",
+     {},
+     "Next time you wait for that beep, picture all those spinning water molecules. Follow for more of the tech you use every day."
+    ]
+   ]
+  }
+ ]
+}

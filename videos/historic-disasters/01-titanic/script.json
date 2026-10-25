@@ -1,0 +1,90 @@
+{
+  "series": "Historic Disasters",
+  "episode": 1,
+  "title": "Titanic",
+  "subtitle": "The Night the Unsinkable Sank",
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "TITANIC", "sub": "The night the unsinkable sank"}, "At twenty to midnight on the fourteenth of April, 1912, a lookout high above the North Atlantic saw a dark shape in the water ahead."],
+      ["lookout", {"berg": 1}, "He rang the bell three times, picked up the telephone, and said three words. Iceberg, right ahead."],
+      ["ship", {"state": "night", "berg": 1}, "Thirty-seven seconds later, the largest moving object ever built by human beings brushed against the ice."],
+      ["ship", {"state": "night", "berg": 1, "scrape": 1}, "Most of the people on board barely felt it. Some thought the ship had lost a propeller blade. A few went up on deck to play with chunks of ice that had fallen onto the forward well deck."],
+      ["stat", {"value": "2 h 40 min", "label": "from collision to sinking"}, "Two hours and forty minutes later, the ship was gone."],
+      ["icons", {"total": 2224, "per": 20, "red": 1500, "label": "of about 2,224 people aboard, more than 1,500 died"}, "Of roughly two thousand two hundred people on board, more than fifteen hundred died."],
+      ["lesson", {"text": "How did it happen?"}, "This is how it happened. Not as legend, but as a chain of decisions, each of which made sense at the time."]
+    ]},
+    { "name": "The ship", "lines": [
+      ["date", {"date": "1909 – 1912", "place": "Harland & Wolff · Belfast"}, "Titanic was built in Belfast, at the Harland and Wolff shipyard, for the White Star Line."],
+      ["ship", {"state": "dock", "scale": 1}, "She was two hundred and sixty-nine metres long, weighed more than forty-six thousand tons, and was the second of three sister ships designed to be the most luxurious liners on the Atlantic."],
+      ["compartments", {"flooded": 0, "label": "16 watertight compartments"}, "Below the waterline, she was divided into sixteen compartments, separated by watertight doors that could be closed from the bridge."],
+      ["compartments", {"flooded": 4, "label": "designed to float with 4 flooded"}, "She was designed to stay afloat with any two compartments flooded, or even the first four. That design is where her reputation as unsinkable came from."],
+      ["lifeboat", {"mode": "davits"}, "On her decks were twenty lifeboats. That was more than the law required."],
+      ["bars", {"items": [["Required by law", 16, "lifeboats"], ["Carried", 20, "lifeboats"]], "max": 24}, "British regulations, written back in the 1890s, set lifeboat numbers by a ship's tonnage, not by how many people it carried. Any ship over ten thousand tons needed sixteen boats."],
+      ["bars", {"items": [["Lifeboat seats", 1178, "people"], ["People aboard", 2224, "people"]], "max": 2400, "red": 1}, "Titanic was more than four times that size. Her twenty boats could hold one thousand one hundred and seventy-eight people. On her maiden voyage, she carried about two thousand two hundred."],
+      ["lesson", {"text": "Lifeboats were seen as ferries, not arks."}, "At the time, this was not considered reckless. Lifeboats were seen as ferries, to carry people across to a rescue ship. Nobody planned for a liner sinking before help could arrive."]
+    ]},
+    { "name": "The voyage", "lines": [
+      ["date", {"date": "10 April 1912", "place": "Southampton"}, "On the tenth of April, 1912, Titanic left Southampton on her maiden voyage to New York."],
+      ["map", {"route": [["Southampton", 0.86, 0.32], ["Cherbourg", 0.88, 0.40], ["Queenstown", 0.76, 0.26], ["New York", 0.08, 0.50]], "upto": 2}, "She stopped at Cherbourg in France, and Queenstown in Ireland, to pick up more passengers, then turned west into the open Atlantic."],
+      ["crowd", {"mode": "classes"}, "On board were some of the richest people in the world, travelling in first class, and hundreds of emigrants in third class, carrying everything they owned toward a new life in America."],
+      ["portrait", {"name": "Captain Edward Smith", "role": "Commander, White Star Line", "cap": 1}, "In command was Captain Edward Smith, one of White Star's most experienced captains, on what was widely expected to be one of his last voyages before retirement."],
+      ["portrait", {"name": "Thomas Andrews", "role": "Shipbuilder, Harland & Wolff"}, "Also aboard was Thomas Andrews, who had overseen the ship's design, travelling to note improvements for her sisters."],
+      ["ship", {"state": "sail"}, "For four days, the weather was calm and the crossing was smooth. The ship was making good speed, around twenty-two knots."]
+    ]},
+    { "name": "Warnings", "lines": [
+      ["date", {"date": "14 April 1912", "place": "North Atlantic"}, "On Sunday the fourteenth of April, Titanic's wireless room began receiving messages from other ships."],
+      ["radio", {"text": "ICE REPORTED IN LAT 42 N"}, "They were warnings. Icebergs, growlers and field ice had drifted unusually far south that spring, directly across the shipping lanes."],
+      ["counter", {"n": 7, "label": "ice warnings received that day"}, "Over the course of the day, Titanic's operators received at least seven warnings of ice."],
+      ["portrait", {"name": "Jack Phillips", "role": "Senior wireless operator, Marconi Company"}, "But the wireless operators did not work for White Star. They were employees of the Marconi Company, and much of their job was sending passengers' private telegrams. That night, they had a backlog."],
+      ["radio", {"text": "SHUT UP, I AM BUSY"}, "Late in the evening, a nearby ship called the Californian, stopped for the night because of ice, tried to warn Titanic. Jack Phillips, busy with passenger messages, cut him off."],
+      ["californian", {"sleep": 1}, "At about half past eleven, the Californian's only wireless operator switched off his set and went to bed."],
+      ["bridge", {}, "On Titanic's bridge, not every warning had reached the officers on watch. The ship kept her speed. It was a clear, moonless night, and the sea was unusually flat, which made icebergs harder to see, because there were no waves breaking at their base."],
+      ["lookout", {"berg": 0}, "High in the crow's nest, the two lookouts were searching the dark with their naked eyes. The binoculars meant for them were not available on the voyage."]
+    ]},
+    { "name": "Collision", "lines": [
+      ["clock", {"time": "11:40 PM", "date": "14 April"}, "At eleven forty p.m., lookout Frederick Fleet saw the iceberg."],
+      ["bridge", {"turn": 1}, "First Officer William Murdoch ordered the ship hard to port, and the engines stopped and reversed."],
+      ["ship", {"state": "night", "berg": 1, "scrape": 1, "turn": 1}, "The bow swung away, but not far enough. The iceberg scraped along the starboard side, below the waterline, for several seconds."],
+      ["compartments", {"flooded": 5, "gash": 1, "label": "5 compartments open to the sea"}, "There was no single huge gash. The ice had buckled the hull plates and popped rivets along a length of about ninety metres, opening a series of thin gaps. Water poured into the first five compartments."],
+      ["portrait", {"name": "Thomas Andrews", "role": "Inspected the damage with Captain Smith"}, "Thomas Andrews went below with the captain to inspect the damage. Then he did the calculation."],
+      ["compartments", {"flooded": 6, "spill": 1, "label": "the bulkheads did not reach the top deck"}, "The watertight bulkheads did not go all the way up. As the bow sank lower, water from each full compartment would spill over the top into the next, like water in an ice cube tray."],
+      ["quote", {"text": "The ship will sink. It is a mathematical certainty.", "who": "Thomas Andrews, as later reported"}, "Andrews told the captain the ship would sink, and that she had perhaps an hour or two."]
+    ]},
+    { "name": "The lifeboats", "lines": [
+      ["radio", {"text": "CQD CQD MGY"}, "Just after midnight, Captain Smith ordered the wireless operators to call for help. Phillips began sending the distress call, CQD, followed by Titanic's call sign, MGY. Later he also used a newer signal: S O S."],
+      ["map", {"route": [["Titanic", 0.3, 0.3], ["Carpathia", 0.66, 0.66]], "dist": "58 nautical miles", "upto": 1, "ships": 1}, "The nearest ship to answer was the Carpathia, fifty-eight nautical miles away. Her captain, Arthur Rostron, turned her around and raced north through the ice. She would need nearly four hours."],
+      ["californian", {"sleep": 1, "rockets": 1}, "Meanwhile, the Californian was much closer, perhaps less than twenty miles away. Her crew saw rockets in the sky, but did not understand what they meant. Her radio operator was asleep. She did not come."],
+      ["lifeboat", {"mode": "lower", "n": 28, "cap": 65}, "At about twelve forty-five, the first lifeboat was lowered. It could hold sixty-five people. It left with twenty-eight."],
+      ["icons", {"total": 65, "per": 1, "red": 28, "fill": 1, "cols": 13, "label": "Boat 7: 28 people in a boat for 65"}, "Many passengers did not believe the ship was in real danger. The deck felt solid. It was cold. Getting into a small wooden boat, lowered seventy feet into the dark, seemed like the bigger risk."],
+      ["crowd", {"mode": "deck", "tilt": 0.05}, "There had been no lifeboat drill. Crew members were unsure how many people the boats could safely take as they were lowered. Officers on the two sides of the ship interpreted women and children first differently. On one side, men were allowed into boats if there was room. On the other, they were not."],
+      ["ship", {"state": "list", "tilt": 0.1, "rockets": 1}, "As the bow went lower, the mood changed. The later boats were fuller. Distress rockets went up every few minutes. In the wireless room, Phillips and the junior operator Harold Bride kept sending."],
+      ["crowd", {"mode": "classes", "dark": 1}, "The odds of survival were not equal. Most first class women and children were saved. In third class, deep in the ship, with fewer routes to the boat deck, far more people died."]
+    ]},
+    { "name": "The sinking", "lines": [
+      ["clock", {"time": "2:05 AM", "date": "15 April"}, "By five past two in the morning, the last lifeboat that could be lowered was gone. More than fifteen hundred people were still on board."],
+      ["ship", {"state": "list", "tilt": 0.25}, "The bow plunged under. The stern rose out of the water. The lights flickered, and went out."],
+      ["ship", {"state": "split", "tilt": 0.4}, "Under enormous strain, the hull broke apart between the third and fourth funnels. The bow section sank. The stern settled back, then rose again, almost vertical."],
+      ["clock", {"time": "2:20 AM", "date": "15 April"}, "At twenty past two, the stern slipped beneath the surface."],
+      ["ocean", {"cold": 1}, "The water was about minus two degrees Celsius. People in it could survive only minutes. Most of the lifeboats, many of them half empty, rowed away, afraid of being swamped."],
+      ["lifeboat", {"mode": "return", "n": 1}, "Only one boat went back to look for survivors. By the time it did, it found very few people still alive."]
+    ]},
+    { "name": "Rescue", "lines": [
+      ["rescue", {}, "At about four in the morning, the Carpathia arrived. Over the next hours, she picked up the survivors from the lifeboats scattered across the ice field."],
+      ["stat", {"value": "705", "label": "survivors picked up by the Carpathia"}, "Her captain reported rescuing seven hundred and five people."],
+      ["icons", {"total": 2224, "per": 20, "red": 1500, "label": "more than 1,500 lost"}, "More than fifteen hundred had died. Among them were Captain Smith, Thomas Andrews, and the wireless operator Jack Phillips, who stayed at his post until the very end."]
+    ]},
+    { "name": "Aftermath", "lines": [
+      ["inquiry", {}, "Within days, inquiries began in the United States, and then in Britain. They found no single villain. They found a system that had failed."],
+      ["timeline", {"events": [["7 warnings", 0.1], ["Full speed", 0.3], ["Too few boats", 0.5], ["No drill", 0.7], ["No 24-hour radio", 0.9]]}, "Too much speed in waters known to contain ice. Lifeboat rules that had not kept up with the size of ships. No drills. Warnings that never reached the bridge. A radio that could be switched off at night."],
+      ["lesson", {"text": "1914 · Safety of Life at Sea"}, "In 1914, the nations of the world signed the first International Convention for the Safety of Life at Sea."],
+      ["checklist", {"items": ["A lifeboat seat for every person aboard", "Lifeboat drills on every voyage", "Radios staffed 24 hours a day", "The International Ice Patrol"]}, "From then on, ships had to carry lifeboats for everyone on board. They had to hold drills. Their radios had to be staffed around the clock. And an International Ice Patrol was set up to track icebergs in the North Atlantic. It still operates today."],
+      ["wreck", {}, "For seventy-three years, the wreck lay undisturbed. In 1985, a French and American expedition led by Jean-Louis Michel and Robert Ballard found it, three thousand eight hundred metres down, in two pieces, about six hundred metres apart."]
+    ]},
+    { "name": "The lesson", "lines": [
+      ["ship", {"state": "sail", "dusk": 1}, "It is tempting to remember Titanic as a story about pride. A ship called unsinkable, and the sea proving otherwise."],
+      ["lesson", {"text": "Every rule was followed."}, "But the harder truth is that almost every rule was followed. The ship carried more lifeboats than the law required. Her speed was normal practice. Ice warnings were routine."],
+      ["lesson", {"text": "The rules were wrong."}, "The disaster happened because the rules themselves were wrong, and nobody had been forced to find out."],
+      ["memorial", {"n": 1500}, "More than fifteen hundred people paid for that lesson, on a calm, clear night in April 1912."]
+    ]}
+  ]
+}

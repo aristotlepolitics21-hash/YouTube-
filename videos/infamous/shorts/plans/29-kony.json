@@ -1,0 +1,305 @@
+{
+ "id": "29-kony",
+ "say": {
+  "Kony": "Konee",
+  "Aboke": "Abokay",
+  "Acholi": "Acholee"
+ },
+ "scenes": [
+  {
+   "text": "ABOKE, 1996. 139 GIRLS TAKEN.",
+   "red": [
+    "TAKEN"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "shoes:2"
+      ],
+      "seed": 5,
+      "light": "bulb",
+      "cam": "dolly"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.68,
+      0.5
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "shoes:2"
+      ],
+      "seed": 5,
+      "light": "bulb",
+      "cam": "down"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "jungle",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "night": 1,
+      "n": 2
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "light": "bulb",
+      "cam": "still",
+      "fig": {
+       "look": {
+        "female": 1,
+        "hat": "wrap",
+        "hatc": "#2a2a2a",
+        "coat": "#c8c0ae"
+       },
+       "yaw": 180,
+       "at": [
+        0,
+        -1.4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "HE CLAIMED TO FIGHT FOR THEM.",
+   "red": [
+    "THEM"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "candles"
+      ],
+      "light": "red",
+      "flicker": 1,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "goatee",
+        "coat": "shirt"
+       },
+       "pose": "sit",
+       "at": [
+        0,
+        -0.8
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "decree",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "title": "The Ten Commandments",
+      "lines": [
+       "I \u00b7 II \u00b7 III \u00b7 IV \u00b7 V",
+       "VI \u00b7 VII \u00b7 VIII \u00b7 IX \u00b7 X",
+       "The law he promised Uganda"
+      ]
+     }
+    },
+    {
+     "d": 5,
+     "scene": "field",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "village": 1,
+      "n": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "freeze",
+      "smash"
+     ],
+     "circle": [
+      0.5,
+      0.42
+     ],
+     "p": {
+      "props": [
+       "candles"
+      ],
+      "light": "red",
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "beard": "goatee",
+        "coat": "shirt"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.6
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "CHARGED. NEVER TRIED.",
+   "red": [
+    "NEVER",
+    "TRIED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "people",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "n": 12,
+      "pose": "walk",
+      "night": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "shoes:24"
+      ],
+      "light": "bulb",
+      "flicker": 1,
+      "cam": "rise"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "camp",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "night": 0,
+      "n": 24
+     }
+    },
+    {
+     "d": 4,
+     "scene": "paper",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "mast": "THE HAGUE",
+      "head": "ICC charges Kony",
+      "sub": "Warrant unsealed: crimes against humanity",
+      "date": "October 2005"
+     }
+    }
+   ]
+  },
+  {
+   "text": "AS OF 2025: STILL NOT ARRESTED.",
+   "red": [
+    "NOT",
+    "ARRESTED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "stat",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "value": "100,000,000",
+      "label": "views of Kony 2012 in under a week"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "jungle",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "n": 6
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "title": "Wanted",
+      "lines": [
+       "Joseph Kony",
+       "Charged by the ICC, 2005",
+       "Never arrested"
+      ],
+      "seal": 0
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "props": [
+       "bed",
+       "shoes:2"
+      ],
+      "seed": 5,
+      "light": "bulb",
+      "cam": "dolly"
+     }
+    }
+   ]
+  }
+ ]
+}

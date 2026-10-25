@@ -1,0 +1,13 @@
+How Touchscreens Actually Work (5 Steps)
+
+Your phone isn't feeling your touch. It's feeling your electricity. Here's what happens in that split second, animated.
+
+1. The invisible grid: rows and columns of see-through metal-oxide wires between the glass and the display, with a tiny electric field where they cross
+2. Your finger steals charge: your body conducts, so a fingertip pulls some of that field away. Gloves and pencils don't conduct, which is why touchscreen gloves have metal thread in the tips
+3. Scanning the grid: a controller chip checks every crossing many times a second, finds the biggest change, and works out where you touched to within about a millimetre
+4. Many fingers: every crossing is measured on its own, so the screen tracks several fingers at once, ignores your palm, and software turns movement into pinches and swipes
+5. Why it glitches: water conducts too, so raindrops cause ghost touches. Older resistive screens needed two layers pressed together, which is why you had to push hard
+
+Follow for more of the tech you use every day.
+
+#shorts #touchscreen #techexplained #howitworks #smartphone

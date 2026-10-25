@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
+node_modules/
 videos/*/out/
 videos/shorts/*/build/
 videos/shorts/*/final/*.mp4

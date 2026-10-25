@@ -1,0 +1,161 @@
+{
+ "series": "Tech Shorts",
+ "episode": 5,
+ "title": "How Touchscreens Actually Work",
+ "sets": "touch.js",
+ "voice": "kokoro:af_heart",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "t_hook",
+     {},
+     "You tap your phone hundreds of times a day. But it isn't feeling your touch. It's feeling your electricity."
+    ],
+    [
+     "t_title",
+     {
+      "top": "HOW TOUCHSCREENS",
+      "bottom": "ACTUALLY WORK"
+     },
+     "Here's what happens in that split second, in five steps."
+    ]
+   ]
+  },
+  {
+   "name": "The invisible grid",
+   "lines": [
+    [
+     "t_grid",
+     {},
+     "Step one. Under the glass is a grid of see-through wires. Rows running one way, columns the other."
+    ],
+    [
+     "t_layers",
+     {},
+     "They're made of a metal oxide so thin you can see right through it, sandwiched between the glass and the display."
+    ],
+    [
+     "t_field",
+     {},
+     "Where they cross, the screen holds a tiny electric field. Hundreds of little sensors, all waiting."
+    ]
+   ]
+  },
+  {
+   "name": "Your finger steals charge",
+   "lines": [
+    [
+     "t_finger",
+     {},
+     "Step two. Your body conducts electricity. So when your finger gets close, it pulls a little of that field away."
+    ],
+    [
+     "t_drop",
+     {},
+     "The change is tiny, but the screen is built to notice it."
+    ],
+    [
+     "t_glove",
+     {},
+     "That's why gloves don't work, and a pencil won't either. Touchscreen gloves have metal thread sewn into the fingertips."
+    ]
+   ]
+  },
+  {
+   "name": "Scanning the grid",
+   "lines": [
+    [
+     "t_scan",
+     {},
+     "Step three. A controller chip checks every crossing, row by row, many times every second."
+    ],
+    [
+     "t_speed",
+     {},
+     "A full scan takes just a few thousandths of a second, so it keeps up even when you scroll fast."
+    ],
+    [
+     "t_locate",
+     {},
+     "It finds the spots with the biggest change, and works out the centre. That's where you touched, to within about a millimetre."
+    ]
+   ]
+  },
+  {
+   "name": "Many fingers",
+   "lines": [
+    [
+     "t_multi",
+     {},
+     "Step four. Every crossing is measured on its own, so the screen can track several fingers at once."
+    ],
+    [
+     "t_palm",
+     {},
+     "It can even ignore your palm resting on the glass, by the size and shape of the touch."
+    ],
+    [
+     "t_gesture",
+     {},
+     "Software watches how those points move. Two fingers spreading apart? Pinch to zoom. One sliding fast? That's a swipe."
+    ]
+   ]
+  },
+  {
+   "name": "Why it glitches",
+   "lines": [
+    [
+     "t_water",
+     {},
+     "Step five. Water conducts too. So raindrops on your screen can look like fingers, and cause ghost touches."
+    ],
+    [
+     "t_old",
+     {},
+     "Older screens worked differently. Two flexible layers had to be pressed together, which is why you used to push so hard."
+    ]
+   ]
+  },
+  {
+   "name": "Recap",
+   "lines": [
+    [
+     "w_recap",
+     {
+      "items": [
+       [
+        "A hidden grid of wires",
+        ""
+       ],
+       [
+        "Finger steals charge",
+        ""
+       ],
+       [
+        "A chip scans it all",
+        ""
+       ],
+       [
+        "It tracks many fingers",
+        ""
+       ],
+       [
+        "Water can fool it",
+        ""
+       ]
+      ]
+     },
+     "A hidden grid. Your finger steals a little charge. A chip scans every crossing, tracks every finger, and turns it into a tap."
+    ],
+    [
+     "outro",
+     {},
+     "So every tap is a tiny electrical event. Follow for more of the tech you use every day."
+    ]
+   ]
+  }
+ ]
+}

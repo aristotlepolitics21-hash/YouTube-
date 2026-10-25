@@ -1,0 +1,13 @@
+How Video Streaming Actually Works
+
+When you press play, the video doesn't arrive as one big file. It comes in tiny pieces, a few seconds at a time. Here's what's behind every play button, animated.
+
+1. Chopped into chunks: the video is cut into chunks a few seconds long, each stored in several qualities from low to sharp HD
+2. A server near you: copies of popular videos sit on servers around the world, sometimes inside your internet provider's own network
+3. Filling the buffer: your app downloads chunks ahead of what you're watching; if they arrive slower than you watch, you get the spinning wheel
+4. Picking the quality: the app keeps measuring your speed and switches quality chunk by chunk, so the picture can go blurry and then snap back into focus
+5. Squeezed small: each chunk is heavily compressed and mostly stores only what changes from frame to frame
+
+Follow for more of the tech you use every day.
+
+#shorts #streaming #buffering #techexplained #howitworks

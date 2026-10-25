@@ -1,0 +1,156 @@
+{
+ "series": "Tech Shorts",
+ "episode": 13,
+ "title": "How Face Unlock Actually Works",
+ "sets": "face.js",
+ "voice": "kokoro:af_heart",
+ "style": "lively",
+ "sections": [
+  {
+   "name": "Hook",
+   "lines": [
+    [
+     "f_hook",
+     {},
+     "When you glance at your phone to unlock it, it can secretly cover your face in thousands of invisible dots."
+    ],
+    [
+     "f_title",
+     {
+      "top": "HOW FACE UNLOCK",
+      "bottom": "ACTUALLY WORKS"
+     },
+     "Here's how your phone knows it's you, in five steps."
+    ]
+   ]
+  },
+  {
+   "name": "Invisible light",
+   "lines": [
+    [
+     "f_flood",
+     {},
+     "Step one. On phones with 3D face unlock, a tiny flood light washes your face in infrared light, which your eyes can't see. That's why it works in the dark."
+    ],
+    [
+     "f_dots",
+     {},
+     "Then a projector beams more than thirty thousand infrared dots onto your face."
+    ]
+   ]
+  },
+  {
+   "name": "Reading the shape",
+   "lines": [
+    [
+     "f_camera",
+     {},
+     "Step two. An infrared camera photographs those dots. On a flat wall, they'd sit in neat rows."
+    ],
+    [
+     "f_depth",
+     {},
+     "But on your face, they bend around your nose, cheeks and chin. From that, the phone builds a 3D map of your face."
+    ]
+   ]
+  },
+  {
+   "name": "Faces into numbers",
+   "lines": [
+    [
+     "f_math",
+     {},
+     "Step three. That map gets turned into a long list of numbers, a mathematical description of your face."
+    ],
+    [
+     "f_compare",
+     {},
+     "It's compared with the one saved when you set it up. Close enough? Unlocked."
+    ],
+    [
+     "f_fast",
+     {},
+     "The whole thing, from glance to unlock, takes well under a second."
+    ],
+    [
+     "f_secure",
+     {},
+     "That description isn't a photo. It's kept in a secure chip on the phone, and isn't sent off to the cloud."
+    ]
+   ]
+  },
+  {
+   "name": "Real and paying attention",
+   "lines": [
+    [
+     "f_attention",
+     {},
+     "Step four. It can also check that your eyes are open and looking at the screen, so it won't unlock while you're asleep."
+    ],
+    [
+     "f_photo",
+     {},
+     "And because it reads real 3D shape, a flat photo of you won't fool it."
+    ]
+   ]
+  },
+  {
+   "name": "Changing faces",
+   "lines": [
+    [
+     "f_adapt",
+     {},
+     "Step five. Glasses, a new beard, a hat? It keeps learning, updating your saved face as you change."
+    ],
+    [
+     "f_odds",
+     {},
+     "The chance a random stranger unlocks it is about one in a million. Though an identical twin might just manage it."
+    ],
+    [
+     "f_2d",
+     {},
+     "Some phones skip the dots, and just use the normal front camera. That's easier to fool, so it often isn't allowed for payments."
+    ]
+   ]
+  },
+  {
+   "name": "Recap",
+   "lines": [
+    [
+     "w_recap",
+     {
+      "items": [
+       [
+        "Infrared lights it up",
+        ""
+       ],
+       [
+        "Dots map the shape",
+        ""
+       ],
+       [
+        "Shape becomes numbers",
+        ""
+       ],
+       [
+        "Numbers get compared",
+        ""
+       ],
+       [
+        "It stays on your phone",
+        ""
+       ]
+      ]
+     },
+     "Infrared light floods your face. Dots map its shape. The shape becomes numbers, and the numbers get compared, right there on your phone."
+    ],
+    [
+     "outro",
+     {},
+     "So every glance is a quick 3D scan. Follow for more of the tech you use every day."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,391 @@
+{
+ "id": "23-hoxha",
+ "say": {
+  "Hoxha": "Hodja",
+  "Enver": "En-vair",
+  "Sigurimi": "Seegoo-reemee",
+  "Tirana": "Tee-rahna"
+ },
+ "scenes": [
+  {
+   "text": "170,000 BUNKERS. NO INVASION.",
+   "red": [
+    "INVASION"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "cam": "still",
+      "light": "dark",
+      "wall": "#6f6d66",
+      "floor": "#5a5650",
+      "amb": 0.3,
+      "props": [
+       "window"
+      ],
+      "from": [
+       0.2,
+       1.2,
+       2.8
+      ],
+      "at": [
+       1.2,
+       1.7,
+       -2.9
+      ]
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.57,
+      0.32
+     ],
+     "p": {
+      "cam": "push",
+      "light": "dark",
+      "wall": "#6f6d66",
+      "floor": "#5a5650",
+      "amb": 0.3,
+      "props": [
+       "window"
+      ],
+      "from": [
+       1.0,
+       1.5,
+       2.5
+      ],
+      "at": [
+       1.4,
+       1.6,
+       -2.9
+      ]
+     }
+    },
+    {
+     "d": 5,
+     "scene": "field",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "village": 1,
+      "n": 2
+     }
+    },
+    {
+     "d": 5,
+     "scene": "stat",
+     "fx": [
+      "shake",
+      "glitch"
+     ],
+     "p": {
+      "value": "170,000",
+      "label": "concrete bunkers across Albania"
+     }
+    }
+   ]
+  },
+  {
+   "text": "ONE JOKE. YEARS IN PRISON.",
+   "red": [
+    "JOKE"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "chairs:6"
+      ],
+      "light": "bulb",
+      "amb": 0.4,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "back",
+        "hairc": "#9a9a92",
+        "coat": "suit",
+        "tie": "#2b2b30"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "desk",
+       "radio"
+      ],
+      "light": "bulb",
+      "amb": 0.35,
+      "cam": "down"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "web",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "nodes": [
+       [
+        "Sigurimi",
+        0.5,
+        0.2,
+        1
+       ],
+       [
+        "Village",
+        0.2,
+        0.55
+       ],
+       [
+        "Factory",
+        0.5,
+        0.55
+       ],
+       [
+        "School",
+        0.8,
+        0.55
+       ],
+       [
+        "Neighbour",
+        0.3,
+        0.85
+       ],
+       [
+        "Family",
+        0.7,
+        0.85
+       ]
+      ],
+      "links": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        5
+       ]
+      ],
+      "label": "Informers in every village"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "coats:4"
+      ],
+      "light": "bulb",
+      "dies": 0.75,
+      "cam": "push"
+     }
+    }
+   ]
+  },
+  {
+   "text": "THE FORTRESS HELD ITS PEOPLE IN.",
+   "red": [
+    "FORTRESS"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "props": [
+       "door",
+       "candles"
+      ],
+      "door": "close",
+      "light": "dark",
+      "amb": 0.35,
+      "cam": "low"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "flash",
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "bed"
+      ],
+      "light": "cold",
+      "amb": 0.3,
+      "cam": "down"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "camp",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "snow": 1,
+      "n": 1
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch",
+      "freeze"
+     ],
+     "circle": [
+      0.6,
+      0.39
+     ],
+     "p": {
+      "cam": "still",
+      "light": "cold",
+      "wall": "#6f6d66",
+      "floor": "#5a5650",
+      "amb": 0.3,
+      "from": [
+       0.2,
+       1.2,
+       2.8
+      ],
+      "at": [
+       1.2,
+       1.7,
+       -2.9
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "text": "NEVER USED AGAINST AN INVADER.",
+   "red": [
+    "INVADER"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "ruler",
+     "fx": [
+      "shake",
+      "punch"
+     ],
+     "p": {
+      "night": 1,
+      "pose": "up"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "stat",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "value": "6,000",
+      "label": "executed: Albanian estimates"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "chairs:6"
+      ],
+      "light": "bulb",
+      "dies": 0.7,
+      "amb": 0.3,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "cam": "still",
+      "light": "dark",
+      "wall": "#6f6d66",
+      "floor": "#5a5650",
+      "amb": 0.3,
+      "props": [
+       "window"
+      ],
+      "from": [
+       0.2,
+       1.2,
+       2.8
+      ],
+      "at": [
+       1.2,
+       1.7,
+       -2.9
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

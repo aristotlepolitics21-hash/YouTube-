@@ -1,0 +1,77 @@
+{
+  "series": "Infamous",
+  "episode": 9,
+  "title": "Saddam Hussein",
+  "subtitle": "The dictator who ruled Iraq by fear",
+  "say": {"Saddam": "Sah-dahm", "Hussein": "Hoo-sayn", "Tikrit": "Tikreet", "al-Awja": "al-Owja", "Khairallah Talfah": "Khairullah Talfa", "Baath": "Bahth", "Qasim": "Kahsim", "Abd al-Karim": "Abd al-Kareem", "al-Bakr": "al-Bakker", "Anfal": "Anfahl", "Dujail": "Doojail", "Uday": "Ooday", "Qusay": "Koosay", "Shia": "Sheea", "Mosul": "Mohsul", "Ali Hassan al-Majid": "Ahli Hassan al-Majeed"},
+  "package": {
+    "thumb_line": 26,
+    "thumb": ["RULE BY", "FEAR"],
+    "intro": "Saddam Hussein ruled Iraq from 1979 to 2003. He took his country into two disastrous wars, gassed Kurdish civilians at Halabja, and crushed every opponent he could find. This documentary tells how a boy from a poor village near Tikrit built one of the most feared dictatorships of his time, and how it fell.",
+    "facts": ["Born 28 April 1937 in al-Awja, near Tikrit, Iraq", "Took part in a failed attempt to assassinate Iraq's ruler, Abd al-Karim Qasim, in October 1959", "Became president of Iraq in July 1979 and purged the ruling party days later", "Invaded Iran on 22 September 1980; the war lasted until August 1988", "Around 5,000 people were killed in the chemical attack on Halabja on 16 March 1988", "Invaded Kuwait on 2 August 1990; driven out by a US-led coalition in February 1991", "Captured near Tikrit on 13 December 2003", "Convicted of crimes against humanity over the Dujail killings on 5 November 2006 and executed on 30 December 2006"],
+    "sources": "Encyclopaedia Britannica, Human Rights Watch (Genocide in Iraq: The Anfal Campaign Against the Kurds, 1993), Con Coughlin's Saddam: His Rise and Fall, Kanan Makiya's Republic of Fear, Charles Tripp's A History of Iraq, the Iraq Survey Group (Duelfer) report, 2004.",
+    "hashtags": "#History #Documentary #Iraq",
+    "tags": "saddam hussein, saddam documentary, iraq history, iran iraq war, halabja, anfal, gulf war, kuwait invasion, iraq war 2003, history documentary, infamous, animated documentary, stickman documentary"
+  },
+  "sections": [
+    { "name": "Cold open", "lines": [
+      ["title", {"title": "SADDAM HUSSEIN", "sub": "The dictator who ruled Iraq by fear", "art": "podium", "artp": {"night": 1, "banners": 1}}, "On the twenty-second of July 1979, hundreds of senior members of Iraq's ruling party gathered in a hall in Baghdad. Their new president, Saddam Hussein, sat on the stage, smoking a cigar. A camera recorded everything."],
+      ["inquiry", {"label": "Baghdad · 22 July 1979"}, "A party official confessed to a plot. Then names were read out, one by one, and each man named was led from the room. Twenty-two of them were later executed."],
+      ["stat", {"value": "24 years", "label": "Saddam Hussein in power, 1979 – 2003"}, "Copies of the film were shown to party members across the country. The message was clear. Saddam would rule Iraq for the next twenty-four years."],
+      ["stat", {"value": "~250,000", "label": "Iraqis killed or 'disappeared' · Human Rights Watch estimate"}, "In that time, he led Iraq into two disastrous wars, used poison gas against Kurdish civilians, and, according to Human Rights Watch, killed or made disappear around a quarter of a million of his own people."],
+      ["lesson", {"text": "Fear was his method."}, "This is how a boy from a poor village became one of the most feared dictators of his time, and how he fell."]
+    ]},
+    { "name": "A village boy", "lines": [
+      ["date", {"date": "28 April 1937", "place": "al-Awja · near Tikrit · Iraq"}, "Saddam Hussein was born on the twenty-eighth of April 1937, in al-Awja, a poor village near the town of Tikrit. His father died or disappeared before he was born."],
+      ["bust", {"name": "Saddam Hussein", "years": "1937 – 2006", "role": "From a poor village near Tikrit. A Baath Party gunman at 22.", "hair": "full", "stache": "big", "coat": "suit", "tie": "#2b2b30"}, "He had a hard childhood, and was largely raised by an uncle, Khairallah Talfah, an army officer and fierce Arab nationalist who later became his father-in-law."],
+      ["podium", {"night": 1, "banners": 1, "label": "Baghdad · 1957"}, "In Baghdad, in 1957, he joined the Baath Party, a secretive movement that preached Arab unity and socialism."],
+      ["city", {"state": "normal", "night": 1, "seed": 4, "label": "Baghdad · 7 October 1959"}, "In October 1959, aged twenty-two, he was one of a group of gunmen who tried to assassinate Iraq's ruler, General Abd al-Karim Qasim. The attempt failed. Saddam was wounded, and fled to Syria and then Egypt."],
+      ["cell", {"label": "Baghdad · 1964 – 1966"}, "The Baath Party seized power briefly in 1963, then lost it. Saddam was arrested and spent about two years in prison before escaping."]
+    ]},
+    { "name": "The deputy", "lines": [
+      ["army", {"tanks": 1, "label": "Baath coup · 17 July 1968"}, "In July 1968, the Baath took power again in a bloodless coup. The new president was Ahmed Hassan al-Bakr, a relative from Tikrit. Saddam became his deputy."],
+      ["web", {"nodes": [["Saddam", 0.5, 0.18, 1], ["Security services", 0.2, 0.52, 0], ["Party", 0.5, 0.52, 0], ["Tikrit clan", 0.8, 0.52, 0], ["Informers", 0.5, 0.84, 0]], "links": [[0, 1], [0, 2], [0, 3], [1, 4], [2, 4]], "label": "the security state"}, "Officially second in command, Saddam built and controlled the security services, filling key posts with relatives and men from Tikrit. Opponents were watched, arrested, tortured or killed."],
+      ["decree", {"title": "Oil nationalised", "lines": ["The Iraq Petroleum Company", "taken into state ownership"], "date": "1 June 1972"}, "In 1972, Iraq nationalised its oil industry. When world oil prices soared the following year, money poured in."],
+      ["checklist", {"head": "The boom years", "items": ["Free schools and hospitals", "A literacy campaign", "Roads, power and housing"]}, "The regime spent it on free schools and hospitals, a national literacy campaign, roads and electricity. Many Iraqis still remember the 1970s as good years."],
+      ["ruler", {"pose": "point", "guards": 4, "label": "President · 16 July 1979"}, "In July 1979, Saddam pushed al-Bakr aside and made himself president. Six days later came the meeting in the hall."]
+    ]},
+    { "name": "War with Iran", "lines": [
+      ["army", {"tanks": 1, "planes": 1, "fire": 1, "label": "Iraq invades Iran · 22 September 1980"}, "In September 1980 he invaded Iran, which was in turmoil after its Islamic revolution. He expected a quick victory."],
+      ["army", {"ruins": 1, "fire": 1, "dir": -1, "label": "Iran–Iraq War · 1980 – 1988"}, "Instead, the war lasted eight years and bogged down into trench warfare. Iraq used chemical weapons against Iranian troops. The United States and others quietly helped Iraq, fearing an Iranian victory."],
+      ["wall", {"night": 1, "n": 5, "label": "Dujail · July 1982"}, "At home, terror continued. In 1982, after gunmen fired on his convoy in the town of Dujail, his security forces arrested hundreds of people. A hundred and forty-eight men and boys were later sentenced to death."],
+      ["stat", {"value": "500,000+", "label": "estimated deaths in the Iran–Iraq War, 1980 – 1988"}, "The war ended in a ceasefire in 1988. Neither side had gained anything. Estimates of the dead run to half a million or more."]
+    ]},
+    { "name": "Halabja", "lines": [
+      ["date", {"date": "16 March 1988", "place": "Halabja · Iraqi Kurdistan"}, "In the war's final months, Saddam turned on Iraq's Kurds, some of whom had sided with Iran. On the sixteenth of March 1988, his forces attacked the Kurdish town of Halabja with poison gas."],
+      ["stat", {"value": "~5,000", "label": "people killed in the gas attack on Halabja"}, "Around five thousand people, most of them civilians, were killed in a single day. It is the deadliest chemical attack on civilians in history."],
+      ["tv", {"text": "HALABJA · MARCH 1988"}, "Images of the dead shocked the world. But Western governments, which saw Iraq as a barrier against Iran, did little more than protest."],
+      ["field", {"village": 1, "guard": 1, "label": "the Anfal campaign · 1986 – 1989"}, "Halabja was part of a wider campaign called Anfal. Thousands of Kurdish villages were destroyed. Human Rights Watch estimated that between fifty and a hundred thousand people were killed. An Iraqi court later ruled it genocide."]
+    ]},
+    { "name": "Kuwait", "lines": [
+      ["army", {"tanks": 1, "label": "Iraq invades Kuwait · 2 August 1990"}, "The war with Iran left Iraq deep in debt. In August 1990, Saddam invaded his small, oil-rich neighbour, Kuwait, and declared it part of Iraq."],
+      ["people", {"n": 6, "pose": "look", "label": "'human shields' · 1990"}, "He held hundreds of Western civilians at military and industrial sites as so-called human shields, before letting them go in December."],
+      ["decree", {"title": "UN Security Council", "lines": ["Resolution 678", "Iraq must leave Kuwait", "by 15 January 1991"], "date": "29 November 1990"}, "The United Nations demanded that he withdraw, and authorised the use of force if he did not. He refused."],
+      ["army", {"planes": 1, "fire": 1, "night": 1, "label": "Operation Desert Storm · 1991"}, "In January 1991, a coalition led by the United States began bombing. A ground offensive in late February drove Iraq out of Kuwait in about a hundred hours. Retreating Iraqi troops set hundreds of oil wells on fire."],
+      ["people", {"n": 8, "pose": "walk", "night": 1, "label": "uprisings · March 1991"}, "After the defeat, Shia Muslims in the south and Kurds in the north rose up. Saddam's forces crushed the revolts, killing tens of thousands of people."],
+      ["paper", {"mast": "WORLD NEWS", "head": "UN sanctions stay", "sub": "Weapons inspections continue", "date": "1990s"}, "Through the 1990s, Iraq lived under harsh UN sanctions while inspectors hunted for its banned weapons. Ordinary Iraqis suffered badly. Saddam built palaces."],
+      ["bunker", {"n": 3, "label": "Baghdad · February 1996"}, "Even his own family was not safe. In 1995, two of his sons-in-law defected to Jordan. When they were persuaded to return in 1996, they were killed within days."]
+    ]},
+    { "name": "The fall", "lines": [
+      ["bust", {"name": "Saddam Hussein", "years": "President · 1979 – 2003", "role": "His portraits and statues stood in every town in Iraq.", "hair": "full", "stache": "big", "coat": "military", "hat": "beret", "hatc": "#1c1b19", "medals": 2}, "His portraits and statues were everywhere. His sons, Uday and Qusay, held enormous power, and Uday became notorious for his brutality."],
+      ["army", {"tanks": 1, "planes": 1, "label": "Invasion of Iraq · 20 March 2003"}, "After the September the eleventh attacks, the American government accused Saddam of hiding weapons of mass destruction. In March 2003, American and British forces invaded."],
+      ["city", {"state": "normal", "seed": 8, "label": "Baghdad · 9 April 2003"}, "Baghdad fell within three weeks, and his statue in one of the city's squares was pulled down. No stockpiles of weapons of mass destruction were ever found."],
+      ["paper", {"mast": "WORLD NEWS", "head": "Saddam's sons killed", "sub": "Gun battle in Mosul", "date": "22 July 2003"}, "In July 2003, Uday and Qusay were killed in a gun battle with American troops in Mosul."],
+      ["bust", {"name": "Saddam Hussein", "years": "13 December 2003", "role": "Found hiding in an underground hideout near Tikrit.", "hair": "full", "hairc": "#77766a", "beard": "full", "beardc": "#9a9a92", "coat": "shirt"}, "Saddam himself went into hiding. In December 2003, American soldiers found him in a small underground hideout on a farm near Tikrit, bearded and dishevelled."],
+      ["inquiry", {"label": "Iraqi High Tribunal · Baghdad · 2005 – 2006"}, "An Iraqi court tried him for the Dujail killings. In November 2006 he was convicted of crimes against humanity and sentenced to death."],
+      ["date", {"date": "30 December 2006", "place": "Baghdad"}, "He was hanged on the thirtieth of December 2006. A phone video showed him being taunted on the gallows. Human rights groups called the trial deeply flawed."]
+    ]},
+    { "name": "Legacy", "lines": [
+      ["decree", {"title": "Verdict", "lines": ["Ali Hassan al-Majid", "Genocide · the Anfal campaign"], "date": "2007"}, "His cousin, Ali Hassan al-Majid, known as Chemical Ali, was convicted of genocide for the Anfal campaign, and hanged in 2010."],
+      ["timeline", {"events": [["Invasion · 2003", 0.1], ["Civil war · 2006 – 08", 0.45], ["Islamic State · 2014", 0.85]]}, "Saddam's fall did not bring peace. The invasion was followed by insurgency, sectarian civil war and the rise of the so-called Islamic State. Hundreds of thousands of Iraqis died."],
+      ["checklist", {"head": "How he is remembered", "items": ["Order and free services", "Halabja and the Anfal", "Mass graves", "Defying America"]}, "Some Iraqis remember the order and free services of his early years, and some Arabs admired him for defying America. For Kurds, he is the man of Halabja."],
+      ["people", {"n": 8, "pose": "mourn", "label": "Iraq · since 2003"}, "Since 2003, hundreds of mass graves have been found across Iraq, and families are still searching them for the remains of their relatives."],
+      ["lesson", {"text": "He built a state around fear, and one man."}, "Saddam's lasting legacy is a country hollowed out by fear: every institution built around one man, so that when he fell, very little was left standing."],
+      ["memorial", {"n": 500, "date": "Halabja · 16 March 1988"}, "Iraq is still recovering from both: from his rule, and from the way it ended."]
+    ]}
+  ]
+}

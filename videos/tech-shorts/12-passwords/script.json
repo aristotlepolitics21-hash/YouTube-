@@ -1,0 +1,34 @@
+{
+ "series": "Tech Shorts", "episode": 12, "title": "How Websites Store Your Password", "sets": "password.js", "voice": "kokoro:af_heart", "style": "lively",
+ "sections": [
+  { "name": "Hook", "lines": [
+   ["pw_hook", {}, "A well-built website doesn't know your password. Not even the people who run it."],
+   ["pw_title", {"top": "HOW PASSWORDS", "bottom": "ARE STORED"}, "Here's the clever trick behind every login, in five steps."]
+  ]},
+  { "name": "The one-way blender", "lines": [
+   ["pw_hash", {}, "Step one. When you sign up, the site runs your password through a hash. Think of it as a one-way blender."],
+   ["pw_out", {}, "Out comes a scrambled string of characters. The site saves that, and throws your actual password away."],
+   ["pw_oneway", {}, "You can't un-blend a smoothie. In the same way, there's no practical way to turn the hash back into your password."]
+  ]},
+  { "name": "Checking a login", "lines": [
+   ["pw_login", {}, "Step two. When you log in, the site blends whatever you type, and compares the result with the stored hash."],
+   ["pw_match", {}, "Same password, same hash, you're in. Change a single letter, and the hash comes out completely different."]
+  ]},
+  { "name": "A pinch of salt", "lines": [
+   ["pw_same", {}, "Step three. If two people chose the same password, they'd get the same hash. That's a clue for attackers."],
+   ["pw_salt", {}, "So sites add a random extra bit, called a salt, before blending. Now every hash is unique, even for identical passwords."]
+  ]},
+  { "name": "Slow on purpose", "lines": [
+   ["pw_slow", {}, "Step four. Good password hashes are deliberately slow, taking a fraction of a second each."],
+   ["pw_guess", {}, "You won't notice it once. But an attacker trying billions of guesses suddenly needs far, far longer."]
+  ]},
+  { "name": "Your part", "lines": [
+   ["pw_weak", {}, "Step five. Hashing can't save a password that's easy to guess. Attackers try the common ones first."],
+   ["pw_tips", {}, "So use long, unique passwords, a password manager, and two-factor login. And if a site ever emails you your old password, it wasn't hashing it."]
+  ]},
+  { "name": "Recap", "lines": [
+   ["w_recap", {"items": [["Passwords get hashed", ""], ["Hashes get compared", ""], ["Salt makes each unique", ""], ["Slow on purpose", ""], ["Long and unique wins", ""]]}, "Passwords get hashed. Logins compare hashes. Salt makes each one unique, slow hashing stalls attackers, and long, unique passwords do the rest."],
+   ["outro", {}, "Your password is safest when even the website doesn't know it. Follow for more of the tech you use every day."]
+  ]}
+ ]
+}

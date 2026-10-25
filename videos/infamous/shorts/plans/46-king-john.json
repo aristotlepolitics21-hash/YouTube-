@@ -1,0 +1,337 @@
+{
+ "id": "46-king-john",
+ "say": {
+  "Runnymede": "Runny-meed"
+ },
+ "scenes": [
+  {
+   "text": "HE AGREED. THEN HE KILLED IT.",
+   "red": [
+    "KILLED"
+   ],
+   "shots": [
+    {
+     "d": 2,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "light": "cold",
+      "amb": 0.4,
+      "floor": "#5a6048",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hat": "helmet",
+        "coat": "armour",
+        "beard": "full"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -1.0
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "freeze"
+     ],
+     "circle": [
+      0.5,
+      0.45
+     ],
+     "p": {
+      "props": [
+       "desk"
+      ],
+      "light": "bulb",
+      "amb": 0.25,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "beard": "full",
+        "hat": "crown",
+        "coat": "robe"
+       },
+       "pose": "desk",
+       "at": [
+        0,
+        -0.55
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "candles"
+      ],
+      "light": "dark",
+      "amb": 0.3,
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hair": "crop",
+        "hat": "kufi",
+        "coat": "#efe9dc"
+       },
+       "pose": "headDown",
+       "at": [
+        0,
+        -1.2
+       ]
+      }
+     }
+    },
+    {
+     "d": 5,
+     "scene": "stat",
+     "fx": [
+      "shake"
+     ],
+     "p": {
+      "value": "10 WEEKS",
+      "label": "until the pope declared the charter void"
+     }
+    }
+   ]
+  },
+  {
+   "text": "HIS NEPHEW VANISHED.",
+   "red": [
+    "VANISHED"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "room",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "props": [
+       "chairs:1"
+      ],
+      "light": "bulb",
+      "cam": "low",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "beard": "stubble",
+        "coat": "robe"
+       },
+       "pose": "point",
+       "at": [
+        0.6,
+        -1.4
+       ]
+      }
+     }
+    },
+    {
+     "d": 3,
+     "scene": "cell",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "pose": "stand"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "room",
+     "fx": [
+      "ramp"
+     ],
+     "p": {
+      "props": [
+       "chairs:1",
+       "coats:1",
+       "door"
+      ],
+      "door": "close",
+      "light": "cold",
+      "dies": 0.85,
+      "cam": "still"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "props": [
+       "door"
+      ],
+      "door": "open",
+      "light": "dark",
+      "amb": 0.3,
+      "cam": "face",
+      "fig": {
+       "look": {
+        "hair": "long",
+        "beard": "full",
+        "hat": "crown",
+        "coat": "robe"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "text": "EXCOMMUNICATED. AND RICHER THAN EVER.",
+   "red": [
+    "RICHER"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "date",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "date": "1204",
+      "place": "Normandy lost"
+     }
+    },
+    {
+     "d": 3,
+     "scene": "decree",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "title": "Excommunication",
+      "lines": [
+       "King John is cut off",
+       "from the Church"
+      ],
+      "date": "1209"
+     }
+    },
+    {
+     "d": 5,
+     "scene": "throne",
+     "fx": [
+      "ramp",
+      "shake"
+     ],
+     "p": {}
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "bars"
+      ],
+      "light": "cold",
+      "amb": 0.3,
+      "cam": "still"
+     }
+    }
+   ]
+  },
+  {
+   "text": "EVEN A KING IS BOUND BY LAW.",
+   "red": [
+    "LAW"
+   ],
+   "shots": [
+    {
+     "d": 3,
+     "scene": "lesson",
+     "fx": [
+      "punch"
+     ],
+     "p": {
+      "text": "Even a king is bound by the law."
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "ramp",
+      "glitch"
+     ],
+     "p": {
+      "props": [
+       "candles",
+       "chairs:1"
+      ],
+      "light": "dark",
+      "flicker": 1,
+      "cam": "push"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "decree",
+     "fx": [
+      "smash"
+     ],
+     "p": {
+      "title": "Magna Carta",
+      "lines": [
+       "No free man shall be seized or imprisoned",
+       "except by the lawful judgement of his equals",
+       "or by the law of the land"
+      ],
+      "date": "15 June 1215"
+     }
+    },
+    {
+     "d": 4,
+     "scene": "room",
+     "fx": [
+      "flash"
+     ],
+     "p": {
+      "light": "cold",
+      "amb": 0.4,
+      "floor": "#5a6048",
+      "cam": "push",
+      "fig": {
+       "look": {
+        "hat": "helmet",
+        "coat": "armour",
+        "beard": "full"
+       },
+       "turnTo": 1,
+       "at": [
+        0,
+        -1.0
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ]
+}
