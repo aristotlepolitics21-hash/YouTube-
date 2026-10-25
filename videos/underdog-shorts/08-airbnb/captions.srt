@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:05,611
+In 2007, two young designers in San Francisco couldn't afford their rent.
+
+2
+00:00:05,961 --> 00:00:10,316
+A big design conference was coming to town, and the hotels were full.
+
+3
+00:00:10,666 --> 00:00:16,456
+So they blew up three air mattresses on their living room floor, and rented them out, with breakfast.
+
+4
+00:00:16,806 --> 00:00:18,726
+They called it Air Bed and Breakfast.
+
+5
+00:00:19,076 --> 00:00:22,472
+Investors weren't interested. Many didn't even reply.
+
+6
+00:00:22,822 --> 00:00:30,562
+To stay alive, they designed and sold election themed cereal boxes, and raised about thirty thousand dollars.
+
+7
+00:00:30,912 --> 00:00:36,191
+That hustle helped get them into the startup programme Y Combinator, in 2009.
+
+8
+00:00:36,541 --> 00:00:40,386
+Today, Airbnb has hosted guests in almost every country on Earth.
