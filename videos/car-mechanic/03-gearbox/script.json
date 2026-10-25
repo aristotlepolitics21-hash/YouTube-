@@ -1,0 +1,179 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 3,
+ "title": "Why Your Car Needs Gears",
+ "out": "why-your-car-needs-gears",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Why Your Car Needs Gears",
+   "lines": [
+    [
+     "c03_1",
+     {
+      "label": "hook",
+      "head": "Why does a car need *gears*?",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "gears",
+       "r1": 70,
+       "r2": 140
+      }
+     },
+     "Why can a bicycle have one gear, but a car needs five or six?"
+    ],
+    [
+     "c03_2",
+     {
+      "label": "the problem",
+      "head": "Engines like a *narrow* speed range",
+      "pose": "shrug",
+      "face": "smug",
+      "prop": {
+       "type": "chart",
+       "title": "ENGINE POWER",
+       "xl": [
+        "IDLE",
+        "REDLINE"
+       ],
+       "series": [
+        {
+         "pts": [
+          2,
+          6,
+          14,
+          26,
+          40,
+          54,
+          66,
+          74,
+          78,
+          76
+         ],
+         "end": "sweet spot"
+        }
+       ],
+       "max": 82
+      }
+     },
+     "A petrol engine only makes useful power in a band, roughly fifteen hundred to six thousand rpm. The wheels need to go from stopped to very fast."
+    ],
+    [
+     "c03_3",
+     {
+      "label": "low gear",
+      "head": "First gear: *pulling* power",
+      "pose": "present",
+      "face": "grin",
+      "prop": {
+       "type": "gears",
+       "r1": 60,
+       "r2": 170,
+       "label": "LOW GEAR: SLOW BUT STRONG"
+      }
+     },
+     "In first gear, a small gear drives a much bigger one. The wheels turn slowly, but with lots of force to get you moving."
+    ],
+    [
+     "c03_4",
+     {
+      "label": "high gear",
+      "head": "Top gear: *speed*",
+      "pose": "cheer",
+      "face": "happy",
+      "prop": {
+       "type": "gears",
+       "r1": 110,
+       "r2": 110,
+       "label": "HIGH GEAR: FAST AND RELAXED"
+      }
+     },
+     "In top gear, the gears are closer in size. The wheels spin fast while the engine stays relaxed on the motorway."
+    ],
+    [
+     "c03_5",
+     {
+      "label": "the clutch",
+      "head": "The *clutch* connects and disconnects",
+      "pose": "count",
+      "face": "smile",
+      "prop": {
+       "type": "clutch"
+      }
+     },
+     "In a manual car, the clutch briefly unhooks the engine from the gearbox, so gears can change without grinding."
+    ],
+    [
+     "c03_6",
+     {
+      "label": "automatics",
+      "head": "Automatics shift *for you*",
+      "pose": "present",
+      "face": "smug",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Torque converter autos",
+         true
+        ],
+        [
+         "Dual clutch (DCT)",
+         true
+        ],
+        [
+         "CVT: no fixed gears",
+         true
+        ]
+       ]
+      }
+     },
+     "Automatics use planetary gearsets and hydraulics, or computer controlled clutches, to change gear on their own."
+    ],
+    [
+     "c03_7",
+     {
+      "label": "electric",
+      "head": "EVs usually need *one* gear",
+      "pose": "point",
+      "face": "wow",
+      "prop": {
+       "type": "gears",
+       "r1": 70,
+       "r2": 120,
+       "label": "MOST EVs: ONE GEAR"
+      }
+     },
+     "Electric motors work well across a huge range of speeds, so most electric cars get by with a single gear."
+    ],
+    [
+     "c03_8",
+     {
+      "label": "takeaway",
+      "head": "Gears trade speed for *force*",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "LOW = FORCE",
+        "HIGH = SPEED",
+        "CLUTCH = DISCONNECT"
+       ]
+      }
+     },
+     "Every gearbox does the same job. Trade speed for force, so the engine stays in its happy zone."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,161 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 8,
+ "title": "How Your Car Is Built to Crash",
+ "out": "how-your-car-is-built-to-crash",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How Your Car Is Built to Crash",
+   "lines": [
+    [
+     "c08_1",
+     {
+      "label": "hook",
+      "head": "Your car is *designed* to crush",
+      "pose": "point",
+      "face": "wow",
+      "prop": {
+       "type": "chassis",
+       "mode": "crash"
+      }
+     },
+     "Your car is designed to crush in a crash. On purpose. Here is why."
+    ],
+    [
+     "c08_2",
+     {
+      "label": "old way",
+      "head": "Old way: *body on frame*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "chassis",
+       "mode": "frame"
+      }
+     },
+     "Older cars, and many trucks, bolt the body onto a heavy steel ladder frame. Tough, but heavy."
+    ],
+    [
+     "c08_3",
+     {
+      "label": "new way",
+      "head": "Most cars: *monocoque*",
+      "pose": "present",
+      "face": "grin",
+      "prop": {
+       "type": "chassis",
+       "mode": "mono"
+      }
+     },
+     "Most modern cars use a monocoque, or unibody. The body shell itself is the frame. Lighter and stiffer."
+    ],
+    [
+     "c08_4",
+     {
+      "label": "crumple",
+      "head": "*Crumple zones* absorb the hit",
+      "pose": "count",
+      "face": "smug",
+      "prop": {
+       "type": "chassis",
+       "mode": "crash"
+      }
+     },
+     "The front and back are built to fold up in a crash, soaking up energy, so your body does not have to."
+    ],
+    [
+     "c08_5",
+     {
+      "label": "cage",
+      "head": "The cabin is a *safety cage*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "chassis",
+       "mode": "crash"
+      }
+     },
+     "The passenger cell uses ultra high strength steel, built to keep its shape around you."
+    ],
+    [
+     "c08_6",
+     {
+      "label": "physics",
+      "head": "Slower stop, *smaller* force",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "RIGID CAR",
+        "big": "sudden",
+        "sub": "huge forces"
+       },
+       "b": {
+        "t": "CRUMPLE ZONE",
+        "big": "gradual",
+        "sub": "lower forces"
+       },
+       "win": "b"
+      }
+     },
+     "Crumpling makes the stop take a little longer. Spreading it out over more time means much lower forces on you."
+    ],
+    [
+     "c08_7",
+     {
+      "label": "restraints",
+      "head": "Belts and airbags *finish* the job",
+      "pose": "count",
+      "face": "smile",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Crumple zones",
+         true
+        ],
+        [
+         "Safety cage",
+         true
+        ],
+        [
+         "Seatbelts",
+         true
+        ],
+        [
+         "Airbags",
+         true
+        ]
+       ]
+      }
+     },
+     "Seatbelts and airbags hold you in place, while the car absorbs the crash around you."
+    ],
+    [
+     "c08_8",
+     {
+      "label": "takeaway",
+      "head": "Crushed car, *safe* people",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "chassis",
+       "mode": "crash"
+      }
+     },
+     "A crushed car is often a car that did its job."
+    ]
+   ]
+  }
+ ]
+}

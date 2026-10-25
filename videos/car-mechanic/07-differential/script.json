@@ -1,0 +1,153 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 7,
+ "title": "Why Your Wheels Spin at Different Speeds",
+ "out": "why-your-wheels-spin-at-different-speeds",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Why Your Wheels Spin at Different Speeds",
+   "lines": [
+    [
+     "c07_1",
+     {
+      "label": "hook",
+      "head": "Your wheels spin at *different speeds*",
+      "pose": "point",
+      "face": "wow",
+      "prop": {
+       "type": "diff"
+      }
+     },
+     "Every time you turn a corner, your left and right wheels spin at different speeds."
+    ],
+    [
+     "c07_2",
+     {
+      "label": "why",
+      "head": "The outside wheel goes *farther*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "diff"
+      }
+     },
+     "In a turn, the outer wheel travels a longer path than the inner wheel, in the same amount of time."
+    ],
+    [
+     "c07_3",
+     {
+      "label": "problem",
+      "head": "A solid axle would *scrub*",
+      "pose": "shrug",
+      "face": "worried",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "TYRE SCRUB",
+        "WEAR",
+        "BAD HANDLING"
+       ]
+      }
+     },
+     "If both driven wheels were locked together, one would have to skid. Tyres would wear, and the car would fight every corner."
+    ],
+    [
+     "c07_4",
+     {
+      "label": "the fix",
+      "head": "The *differential* fixes it",
+      "pose": "present",
+      "face": "grin",
+      "prop": {
+       "type": "diff",
+       "gearset": true
+      }
+     },
+     "The differential, a clever set of gears, lets the two wheels turn at different speeds while both are still driven."
+    ],
+    [
+     "c07_5",
+     {
+      "label": "weakness",
+      "head": "The weakness: *one wheel spin*",
+      "pose": "facepalm",
+      "face": "sad",
+      "prop": {
+       "type": "stat",
+       "big": "STUCK",
+       "sub": "ONE WHEEL SPINS, THE OTHER GETS NOTHING"
+      }
+     },
+     "A simple open diff sends power where it is easiest to go. On ice or mud, that is the wheel that is spinning."
+    ],
+    [
+     "c07_6",
+     {
+      "label": "lsd",
+      "head": "*Limited slip* fights back",
+      "pose": "count",
+      "face": "smug",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Open diff: cheap, smooth",
+         true
+        ],
+        [
+         "Limited slip: better grip",
+         true
+        ],
+        [
+         "Locker: off-road hero",
+         true
+        ]
+       ]
+      }
+     },
+     "Limited slip and locking differentials push power to the wheel with grip, which is why off roaders and sports cars use them."
+    ],
+    [
+     "c07_7",
+     {
+      "label": "awd",
+      "head": "All wheel drive uses *several*",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "carmap",
+       "hi": [
+        "diff",
+        "gearbox"
+       ]
+      }
+     },
+     "All wheel drive cars may have a differential at the front, the rear, and one in the middle."
+    ],
+    [
+     "c07_8",
+     {
+      "label": "takeaway",
+      "head": "Corners need a *diff*",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "diff",
+       "gearset": true
+      }
+     },
+     "No differential, no smooth corners. A small box of gears doing a very clever job."
+    ]
+   ]
+  }
+ ]
+}

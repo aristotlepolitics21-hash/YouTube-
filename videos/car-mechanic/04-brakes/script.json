@@ -1,0 +1,161 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 4,
+ "title": "How One Foot Stops Two Tonnes",
+ "out": "how-one-foot-stops-two-tonnes",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How One Foot Stops Two Tonnes",
+   "lines": [
+    [
+     "c04_1",
+     {
+      "label": "hook",
+      "head": "One foot stops *two tonnes*",
+      "pose": "point",
+      "face": "wow",
+      "prop": {
+       "type": "brake"
+      }
+     },
+     "How can one foot stop a two tonne car? Hydraulics, and friction."
+    ],
+    [
+     "c04_2",
+     {
+      "label": "hydraulics",
+      "head": "The pedal pushes *fluid*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "brake",
+       "squeeze": 0.2
+      }
+     },
+     "The pedal pushes brake fluid through sealed pipes. Liquid barely compresses, so the push travels instantly to every wheel."
+    ],
+    [
+     "c04_3",
+     {
+      "label": "multiply",
+      "head": "Small piston, *big* force",
+      "pose": "count",
+      "face": "grin",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "PEDAL PISTON",
+        "big": "small",
+        "sub": "short push"
+       },
+       "b": {
+        "t": "WHEEL PISTONS",
+        "big": "BIG",
+        "sub": "huge force"
+       },
+       "win": "b"
+      }
+     },
+     "A small piston at the pedal pushes bigger pistons at the wheels, multiplying the force. A vacuum or electric booster adds even more."
+    ],
+    [
+     "c04_4",
+     {
+      "label": "friction",
+      "head": "Pads *squeeze* the disc",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "brake"
+      }
+     },
+     "At the wheel, the caliper squeezes friction pads onto a spinning steel disc."
+    ],
+    [
+     "c04_5",
+     {
+      "label": "heat",
+      "head": "Your speed becomes *heat*",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "brake",
+       "squeeze": 1
+      }
+     },
+     "Friction turns all that movement into heat. Race car discs can glow at over a thousand degrees."
+    ],
+    [
+     "c04_6",
+     {
+      "label": "abs",
+      "head": "*ABS* stops the wheels locking",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "stat",
+       "big": "ABS",
+       "sub": "PULSES THE BRAKES SO YOU CAN STILL STEER"
+      }
+     },
+     "A locked wheel skids, and you cannot steer. ABS senses this, and releases and reapplies the brake many times a second."
+    ],
+    [
+     "c04_7",
+     {
+      "label": "check",
+      "head": "Warning signs to *never ignore*",
+      "pose": "count",
+      "face": "worried",
+      "prop": {
+       "type": "checklist",
+       "title": "BRAKE WARNING SIGNS",
+       "items": [
+        [
+         "Squealing or grinding",
+         false
+        ],
+        [
+         "Soft, spongy pedal",
+         false
+        ],
+        [
+         "Pulls to one side",
+         false
+        ]
+       ]
+      }
+     },
+     "Squealing or grinding, a soft or spongy pedal, or the car pulling to one side. Get them checked straight away."
+    ],
+    [
+     "c04_8",
+     {
+      "label": "takeaway",
+      "head": "Fluid, friction, *heat*",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "FLUID",
+        "FRICTION",
+        "HEAT"
+       ]
+      }
+     },
+     "Fluid carries the force, friction does the work, and heat is where your speed goes."
+    ]
+   ]
+  }
+ ]
+}

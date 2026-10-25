@@ -1,0 +1,158 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 9,
+ "title": "Why Your Engine Does Not Melt",
+ "out": "why-your-engine-does-not-melt",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Why Your Engine Does Not Melt",
+   "lines": [
+    [
+     "c09_1",
+     {
+      "label": "hook",
+      "head": "Most of your fuel becomes *heat*",
+      "pose": "point",
+      "face": "wow",
+      "prop": {
+       "type": "split",
+       "center": "FUEL",
+       "parts": [
+        [
+         "MOVEMENT",
+         30,
+         "#2f9e5b"
+        ],
+        [
+         "HEAT + LOSSES",
+         70,
+         "#f0502a"
+        ]
+       ],
+       "hi": 1
+      }
+     },
+     "A petrol engine turns only around a third of its fuel into movement. Most of the rest becomes heat."
+    ],
+    [
+     "c09_2",
+     {
+      "label": "coolant",
+      "head": "*Coolant* carries heat away",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "cooling"
+      }
+     },
+     "Coolant flows through passages around the cylinders, soaking up heat."
+    ],
+    [
+     "c09_3",
+     {
+      "label": "pump",
+      "head": "The *water pump* keeps it moving",
+      "pose": "count",
+      "face": "smile",
+      "prop": {
+       "type": "cooling"
+      }
+     },
+     "A water pump, driven by the engine or an electric motor, keeps it circulating."
+    ],
+    [
+     "c09_4",
+     {
+      "label": "radiator",
+      "head": "The *radiator* dumps the heat",
+      "pose": "present",
+      "face": "grin",
+      "prop": {
+       "type": "cooling"
+      }
+     },
+     "Hot coolant flows through the radiator, where air rushing through thin fins carries the heat away. A fan helps when you are stopped."
+    ],
+    [
+     "c09_5",
+     {
+      "label": "thermostat",
+      "head": "The *thermostat* is the gatekeeper",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "cooling",
+       "open": false
+      }
+     },
+     "When the engine is cold, the thermostat stays shut so it warms up fast. At around ninety degrees, it opens."
+    ],
+    [
+     "c09_6",
+     {
+      "label": "danger",
+      "head": "Overheating can *wreck* an engine",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "stat",
+       "big": "PULL OVER",
+       "sub": "IF THE TEMPERATURE GAUGE HITS RED",
+       "col": "#f0502a"
+      }
+     },
+     "Overheating can warp the cylinder head and blow the head gasket. If the temperature gauge climbs high, pull over safely."
+    ],
+    [
+     "c09_7",
+     {
+      "label": "safety",
+      "head": "Never open a *hot* radiator cap",
+      "pose": "facepalm",
+      "face": "worried",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Open the cap when hot",
+         false
+        ],
+        [
+         "Wait until it cools",
+         true
+        ],
+        [
+         "Check level when cold",
+         true
+        ]
+       ]
+      }
+     },
+     "The system is under pressure. Opening it hot can spray scalding coolant. Always wait for it to cool down."
+    ],
+    [
+     "c09_8",
+     {
+      "label": "takeaway",
+      "head": "Pump, radiator, *thermostat*",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "cooling"
+      }
+     },
+     "Pump it round, cool it in the radiator, and let the thermostat decide when."
+    ]
+   ]
+  }
+ ]
+}

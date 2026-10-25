@@ -1,0 +1,147 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 10,
+ "title": "How an Electric Car Works",
+ "out": "how-an-electric-car-works",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How an Electric Car Works",
+   "lines": [
+    [
+     "c10_1",
+     {
+      "label": "hook",
+      "head": "How an *electric car* works",
+      "pose": "point",
+      "face": "grin",
+      "prop": {
+       "type": "ev"
+      }
+     },
+     "No pistons, no gearbox full of gears, no exhaust. So how does an electric car work?"
+    ],
+    [
+     "c10_2",
+     {
+      "label": "battery",
+      "head": "A huge *battery* in the floor",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "ev"
+      }
+     },
+     "Hundreds or even thousands of cells sit in a flat pack under the floor, storing energy as direct current."
+    ],
+    [
+     "c10_3",
+     {
+      "label": "inverter",
+      "head": "The *inverter* is the brain",
+      "pose": "count",
+      "face": "smug",
+      "prop": {
+       "type": "ev"
+      }
+     },
+     "The inverter turns that DC into alternating current for the motor, and controls exactly how fast it spins."
+    ],
+    [
+     "c10_4",
+     {
+      "label": "motor",
+      "head": "The *motor* pushes with magnets",
+      "pose": "cheer",
+      "face": "wow",
+      "prop": {
+       "type": "ev"
+      }
+     },
+     "Inside the motor, magnetic fields push and pull the rotor around. Full pulling power from zero rpm."
+    ],
+    [
+     "c10_5",
+     {
+      "label": "regen",
+      "head": "Braking *makes* electricity",
+      "pose": "present",
+      "face": "happy",
+      "prop": {
+       "type": "ev",
+       "regen": true
+      }
+     },
+     "When you lift off, the motor works in reverse as a generator, slowing the car and sending energy back to the battery."
+    ],
+    [
+     "c10_6",
+     {
+      "label": "maintenance",
+      "head": "Far *fewer* parts to service",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Oil changes",
+         false
+        ],
+        [
+         "Spark plugs",
+         false
+        ],
+        [
+         "Exhaust system",
+         false
+        ]
+       ]
+      }
+     },
+     "No oil changes, no spark plugs, no clutch, no exhaust. Far fewer moving parts to wear out."
+    ],
+    [
+     "c10_7",
+     {
+      "label": "still",
+      "head": "Tyres and brakes still *matter*",
+      "pose": "shrug",
+      "face": "smug",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "TYRES",
+        "SUSPENSION",
+        "BRAKES",
+        "12V BATTERY"
+       ]
+      }
+     },
+     "Tyres, suspension and brakes still need care. And EVs are heavy, so tyres can wear faster."
+    ],
+    [
+     "c10_8",
+     {
+      "label": "takeaway",
+      "head": "Battery, inverter, *motor*",
+      "pose": "thumbs",
+      "face": "happy",
+      "prop": {
+       "type": "ev"
+      }
+     },
+     "Battery stores it, inverter controls it, motor turns it into motion. That is an electric car."
+    ]
+   ]
+  }
+ ]
+}

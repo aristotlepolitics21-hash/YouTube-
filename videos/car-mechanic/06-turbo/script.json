@@ -1,0 +1,175 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 6,
+ "title": "How a Turbo Makes Free Power",
+ "out": "how-a-turbo-makes-free-power",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How a Turbo Makes Free Power",
+   "lines": [
+    [
+     "c06_1",
+     {
+      "label": "hook",
+      "head": "Power from your *exhaust*?",
+      "pose": "point",
+      "face": "wow",
+      "prop": {
+       "type": "turbo"
+      }
+     },
+     "A turbo makes extra power from something your engine would otherwise throw away. Its exhaust."
+    ],
+    [
+     "c06_2",
+     {
+      "label": "air",
+      "head": "Engines need *air*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "engine4",
+       "stroke": 0
+      }
+     },
+     "Engines burn fuel with air. Squeeze in more air, and you can burn more fuel, and make more power."
+    ],
+    [
+     "c06_3",
+     {
+      "label": "turbine",
+      "head": "Exhaust spins a *turbine*",
+      "pose": "count",
+      "face": "grin",
+      "prop": {
+       "type": "turbo"
+      }
+     },
+     "Hot exhaust gas rushes past a turbine wheel, spinning it at well over a hundred thousand rpm."
+    ],
+    [
+     "c06_4",
+     {
+      "label": "compressor",
+      "head": "Which spins a *compressor*",
+      "pose": "present",
+      "face": "smug",
+      "prop": {
+       "type": "turbo"
+      }
+     },
+     "On the same shaft, a compressor wheel crams fresh air into the engine, under pressure."
+    ],
+    [
+     "c06_5",
+     {
+      "label": "downsizing",
+      "head": "Small engine, *big* power",
+      "pose": "cheer",
+      "face": "happy",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "NO TURBO",
+        "big": "2.0 L",
+        "sub": "big engine"
+       },
+       "b": {
+        "t": "TURBO",
+        "big": "1.4 L",
+        "sub": "similar power"
+       },
+       "win": "b"
+      }
+     },
+     "That lets a small engine make the power of a much bigger one, while using less fuel when you are cruising."
+    ],
+    [
+     "c06_6",
+     {
+      "label": "lag",
+      "head": "The catch: *turbo lag*",
+      "pose": "shrug",
+      "face": "smug",
+      "prop": {
+       "type": "chart",
+       "title": "BOOST AFTER YOU FLOOR IT",
+       "xl": [
+        "0 s",
+        "2 s"
+       ],
+       "series": [
+        {
+         "pts": [
+          0,
+          1,
+          2,
+          5,
+          12,
+          30,
+          60,
+          85,
+          95,
+          98
+         ],
+         "end": "boost!"
+        }
+       ],
+       "max": 100
+      }
+     },
+     "The catch is turbo lag. A short delay while the exhaust builds up enough flow to spin it up."
+    ],
+    [
+     "c06_7",
+     {
+      "label": "care",
+      "head": "Treat it *kindly*",
+      "pose": "count",
+      "face": "smile",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Warm up before boosting",
+         true
+        ],
+        [
+         "Cool down after hard driving",
+         true
+        ],
+        [
+         "Change the oil on time",
+         true
+        ]
+       ]
+      }
+     },
+     "Warm the engine up before driving hard, and after a hard run, drive gently for a minute so oil can cool the bearings."
+    ],
+    [
+     "c06_8",
+     {
+      "label": "takeaway",
+      "head": "Exhaust in, *power* out",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "turbo"
+      }
+     },
+     "Exhaust spins the turbine, the turbine spins the compressor, and the compressor feeds the engine more air."
+    ]
+   ]
+  }
+ ]
+}

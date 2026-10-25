@@ -1,0 +1,136 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 1,
+ "title": "How a Car Engine Works",
+ "out": "how-a-car-engine-works",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How a Car Engine Works",
+   "lines": [
+    [
+     "c01_1",
+     {
+      "label": "hook",
+      "head": "Your car runs on *tiny explosions*",
+      "pose": "point",
+      "face": "grin",
+      "prop": {
+       "type": "engine4",
+       "speed": 2.4
+      }
+     },
+     "Every time you drive, your engine is setting off thousands of tiny explosions every minute."
+    ],
+    [
+     "c01_2",
+     {
+      "label": "the cylinder",
+      "head": "It all happens in a *cylinder*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "engine4",
+       "speed": 1.2
+      }
+     },
+     "Inside each cylinder, a piston slides up and down. A rod connects it to the crankshaft, which turns that motion into spinning."
+    ],
+    [
+     "c01_3",
+     {
+      "label": "stroke 1",
+      "head": "Stroke one: *intake*",
+      "pose": "count",
+      "face": "smile",
+      "prop": {
+       "type": "engine4",
+       "stroke": 0
+      }
+     },
+     "Stroke one, intake. The piston moves down, and the intake valve lets in air and fuel."
+    ],
+    [
+     "c01_4",
+     {
+      "label": "stroke 2",
+      "head": "Stroke two: *compression*",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "engine4",
+       "stroke": 1
+      }
+     },
+     "Stroke two, compression. Both valves close, and the piston squeezes the mixture into a tiny space."
+    ],
+    [
+     "c01_5",
+     {
+      "label": "stroke 3",
+      "head": "Stroke three: *power*",
+      "pose": "cheer",
+      "face": "wow",
+      "prop": {
+       "type": "engine4",
+       "stroke": 2
+      }
+     },
+     "Stroke three, power. The spark plug fires, the mixture burns, and the pressure shoves the piston down. This is what drives the car."
+    ],
+    [
+     "c01_6",
+     {
+      "label": "stroke 4",
+      "head": "Stroke four: *exhaust*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "engine4",
+       "stroke": 3
+      }
+     },
+     "Stroke four, exhaust. The exhaust valve opens, and the piston pushes the burnt gas out. Then it all starts again."
+    ],
+    [
+     "c01_7",
+     {
+      "label": "the math",
+      "head": "At 3,000 rpm: *1,500* bangs a minute",
+      "pose": "count",
+      "face": "grin",
+      "prop": {
+       "type": "stat",
+       "from": 0,
+       "to": 1500,
+       "sub": "POWER STROKES PER MINUTE, PER CYLINDER"
+      }
+     },
+     "Each cylinder fires once every two turns. So at three thousand rpm, that is fifteen hundred power strokes a minute, in every cylinder."
+    ],
+    [
+     "c01_8",
+     {
+      "label": "remember it",
+      "head": "Suck, squeeze, bang, *blow*",
+      "pose": "thumbs",
+      "face": "happy",
+      "prop": {
+       "type": "engine4",
+       "speed": 3
+      }
+     },
+     "Mechanics remember it as suck, squeeze, bang, blow."
+    ]
+   ]
+  }
+ ]
+}

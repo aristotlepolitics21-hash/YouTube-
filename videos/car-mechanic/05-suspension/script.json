@@ -1,0 +1,164 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 5,
+ "title": "Why Your Car Does Not Bounce",
+ "out": "why-your-car-does-not-bounce",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Why Your Car Does Not Bounce",
+   "lines": [
+    [
+     "c05_1",
+     {
+      "label": "hook",
+      "head": "Why your car *doesn't bounce*",
+      "pose": "point",
+      "face": "grin",
+      "prop": {
+       "type": "suspension",
+       "mode": "good"
+      }
+     },
+     "Hit a bump in a car, and it barely moves. Here is why."
+    ],
+    [
+     "c05_2",
+     {
+      "label": "springs",
+      "head": "*Springs* soak up the bump",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "suspension",
+       "mode": "spring",
+       "label": "SPRING ONLY"
+      }
+     },
+     "Springs between the wheel and the body compress over a bump, so the body does not get the full hit."
+    ],
+    [
+     "c05_3",
+     {
+      "label": "problem",
+      "head": "But springs keep *bouncing*",
+      "pose": "shrug",
+      "face": "worried",
+      "prop": {
+       "type": "suspension",
+       "mode": "none",
+       "label": "BOING BOING"
+      }
+     },
+     "On their own, springs would keep bouncing after every bump, like a pogo stick."
+    ],
+    [
+     "c05_4",
+     {
+      "label": "dampers",
+      "head": "*Shock absorbers* calm it down",
+      "pose": "present",
+      "face": "smug",
+      "prop": {
+       "type": "suspension",
+       "mode": "good",
+       "label": "SPRING + DAMPER"
+      }
+     },
+     "Shock absorbers, or dampers, force oil through tiny holes. That turns the bounce into heat, and the car settles at once."
+    ],
+    [
+     "c05_5",
+     {
+      "label": "real job",
+      "head": "The real job: *grip*",
+      "pose": "count",
+      "face": "smile",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Tyres stay on the road",
+         true
+        ],
+        [
+         "Steering stays sharp",
+         true
+        ],
+        [
+         "Shorter stopping",
+         true
+        ]
+       ]
+      }
+     },
+     "The real job is not comfort. It keeps the tyres pressed onto the road, so you can steer and brake."
+    ],
+    [
+     "c05_6",
+     {
+      "label": "worn",
+      "head": "Worn shocks are *dangerous*",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "GOOD SHOCKS",
+        "big": "planted",
+        "sub": "tyres stay down"
+       },
+       "b": {
+        "t": "WORN SHOCKS",
+        "big": "floaty",
+        "sub": "longer stops"
+       },
+       "win": "a"
+      }
+     },
+     "Worn dampers can make your stopping distance longer, and make the car wallow and float over bumps."
+    ],
+    [
+     "c05_7",
+     {
+      "label": "test",
+      "head": "Try the *bounce test*",
+      "pose": "present",
+      "face": "grin",
+      "prop": {
+       "type": "suspension",
+       "mode": "good"
+      }
+     },
+     "Push down hard on one corner and let go. If it bounces more than once or twice, get your shocks checked."
+    ],
+    [
+     "c05_8",
+     {
+      "label": "takeaway",
+      "head": "Springs hold, dampers *control*",
+      "pose": "thumbs",
+      "face": "happy",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "SPRINGS",
+        "DAMPERS",
+        "GRIP"
+       ]
+      }
+     },
+     "Springs hold the car up. Dampers control the bounce. Together, they keep you on the road."
+    ]
+   ]
+  }
+ ]
+}

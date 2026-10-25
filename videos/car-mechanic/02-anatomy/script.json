@@ -1,0 +1,156 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 2,
+ "title": "What's Actually Inside a Car",
+ "out": "what-s-actually-inside-a-car",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "What's Actually Inside a Car",
+   "lines": [
+    [
+     "c02_1",
+     {
+      "label": "hook",
+      "head": "What's *inside* your car?",
+      "pose": "point",
+      "face": "grin",
+      "prop": {
+       "type": "carmap",
+       "hi": []
+      }
+     },
+     "Let's strip a car down to the systems that actually make it work."
+    ],
+    [
+     "c02_2",
+     {
+      "label": "engine",
+      "head": "The *engine* makes the power",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "carmap",
+       "hi": [
+        "engine",
+        "radiator"
+       ]
+      }
+     },
+     "The engine, or the motor in an electric car, makes the power. The radiator keeps it from cooking itself."
+    ],
+    [
+     "c02_3",
+     {
+      "label": "gearbox",
+      "head": "The *gearbox* changes the ratio",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "carmap",
+       "hi": [
+        "gearbox"
+       ]
+      }
+     },
+     "The gearbox trades engine speed for pulling power, so you can pull away slowly or cruise fast."
+    ],
+    [
+     "c02_4",
+     {
+      "label": "drivetrain",
+      "head": "The *drivetrain* feeds the wheels",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "carmap",
+       "hi": [
+        "shaft",
+        "diff"
+       ]
+      }
+     },
+     "The driveshaft and differential carry that power to the driven wheels. This one is rear wheel drive."
+    ],
+    [
+     "c02_5",
+     {
+      "label": "control",
+      "head": "Steering, suspension, *brakes*",
+      "pose": "count",
+      "face": "smile",
+      "prop": {
+       "type": "carmap",
+       "hi": [
+        "steer",
+        "susp",
+        "brakes"
+       ]
+      }
+     },
+     "Steering points the wheels, suspension keeps the tyres on the road, and the brakes turn your speed into heat."
+    ],
+    [
+     "c02_6",
+     {
+      "label": "chassis",
+      "head": "The *body* holds it all together",
+      "pose": "present",
+      "face": "smug",
+      "prop": {
+       "type": "chassis",
+       "mode": "mono"
+      }
+     },
+     "The body shell ties everything together, and protects you in a crash."
+    ],
+    [
+     "c02_7",
+     {
+      "label": "electrics",
+      "head": "*Electrics* run everything else",
+      "pose": "think",
+      "face": "smile",
+      "prop": {
+       "type": "carmap",
+       "hi": [
+        "battery",
+        "tank"
+       ]
+      }
+     },
+     "A battery starts the car, then the alternator keeps it charged, powering lights, sensors and dozens of small computers."
+    ],
+    [
+     "c02_8",
+     {
+      "label": "takeaway",
+      "head": "Six systems, *one* machine",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "ENGINE",
+        "GEARBOX",
+        "DRIVETRAIN",
+        "CHASSIS",
+        "BRAKES",
+        "ELECTRICS"
+       ]
+      }
+     },
+     "Six systems working as one. Over the next episodes, we will open each of them up."
+    ]
+   ]
+  }
+ ]
+}
