@@ -10,7 +10,7 @@ But Einstein figured out something much stranger.
 
 Did you know this? Tell me in the comments 👇
 
-Follow @scimotion_lab for animated science every week 🧪
+Follow @scimotion_lab for a new animated science Reel every day 🧪
 .
 #science #physics #gravity #space #einstein
 

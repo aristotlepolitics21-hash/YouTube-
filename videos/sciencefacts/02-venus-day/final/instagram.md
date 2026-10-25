@@ -10,7 +10,7 @@ Venus takes 243 Earth days to spin once, but only 225 to orbit the Sun. And it s
 
 Did you know this? Tell me in the comments 👇
 
-Follow @scimotion_lab for animated science every week 🧪
+Follow @scimotion_lab for a new animated science Reel every day 🧪
 .
 #science #venus #planets #space #astronomy
 

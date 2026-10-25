@@ -10,7 +10,7 @@ The famous 10-to-1 bacteria ratio is a myth. A 2016 recount found it's closer to
 
 Did you know this? Tell me in the comments 👇
 
-Follow @scimotion_lab for animated science every week 🧪
+Follow @scimotion_lab for a new animated science Reel every day 🧪
 .
 #science #bacteria #microbiome #humanbody #biology
 

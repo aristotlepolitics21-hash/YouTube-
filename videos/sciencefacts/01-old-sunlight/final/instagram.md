@@ -10,7 +10,7 @@ The light on your skin took 8 minutes to get here. Getting out of the Sun took t
 
 Did you know this? Tell me in the comments 👇
 
-Follow @scimotion_lab for animated science every week 🧪
+Follow @scimotion_lab for a new animated science Reel every day 🧪
 .
 #science #sun #sunlight #space #physics
 

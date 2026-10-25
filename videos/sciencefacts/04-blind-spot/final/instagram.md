@@ -10,7 +10,7 @@ Every human eye has a blind spot where the optic nerve leaves the retina. Here's
 
 Did you know this? Tell me in the comments 👇
 
-Follow @scimotion_lab for animated science every week 🧪
+Follow @scimotion_lab for a new animated science Reel every day 🧪
 .
 #science #blindspot #eyes #vision #brain
 

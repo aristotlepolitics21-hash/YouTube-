@@ -13,7 +13,7 @@ Optional "instagram" key in short.json overrides the generated text:
   {"caption": "...", "question": "...", "hashtags": ["science", "space"]}
 
 Usage (from the repo root):
-  python videos/tools/instagram_pack.py                      # every Short, Tue/Fri 18:00 slots
+  python videos/tools/instagram_pack.py                      # every Short, one a day at 18:00
   python videos/tools/instagram_pack.py --days mon,thu --time 17:30 --start 2026-11-03
 """
 
@@ -60,7 +60,7 @@ def caption(spec: dict) -> str:
         hook = spec["shots"][0]["line"]
         question = ig.get("question", "Did you know this? Tell me in the comments 👇")
         body = f"{hook}\n\n{description(spec)}\n\n{question}"
-    return f"{body}\n\nFollow {HANDLE} for animated science every week 🧪\n.\n{' '.join(hashtags(spec))}"
+    return f"{body}\n\nFollow {HANDLE} for a new animated science Reel every day 🧪\n.\n{' '.join(hashtags(spec))}"
 
 
 def write_post(folder: Path, spec: dict) -> None:
@@ -86,7 +86,7 @@ def slots(start: dt.date, days: list[int], time: str):
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--days", default="tue,fri", help="posting days, e.g. tue,fri")
+    ap.add_argument("--days", default="mon,tue,wed,thu,fri,sat,sun", help="posting days, e.g. tue,fri")
     ap.add_argument("--time", default="18:00", help="posting time (your local time)")
     ap.add_argument("--start", type=dt.date.fromisoformat, default=dt.date.today() + dt.timedelta(days=1))
     args = ap.parse_args()

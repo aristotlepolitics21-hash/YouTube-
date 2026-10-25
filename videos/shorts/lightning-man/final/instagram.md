@@ -10,7 +10,7 @@ A lightning bolt is about five times hotter than the surface of the sun.
 
 Did you know this? Tell me in the comments 👇
 
-Follow @scimotion_lab for animated science every week 🧪
+Follow @scimotion_lab for a new animated science Reel every day 🧪
 .
 #science #lightning #weather #physics #survival
 

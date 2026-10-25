@@ -6,8 +6,8 @@ and the auto-reply setup.
 ## 1. Build the posts
 
 ```
-python videos/tools/instagram_pack.py              # Tue/Fri 18:00, starting tomorrow
-python videos/tools/instagram_pack.py --days mon,wed,fri --time 17:30
+python videos/tools/instagram_pack.py              # one a day at 18:00, starting tomorrow
+python videos/tools/instagram_pack.py --days tue,fri --time 17:30   # fewer posting days
 ```
 
 - Writes `final/instagram.md` next to each Short's video: the caption, a first comment with the sources, and the cover text.
@@ -42,7 +42,7 @@ ManyChat is an official Meta partner. Its free plan covers keyword auto-replies 
 | Comment contains `ANIMATE` | Any Reel | Public reply: "Sent you a DM 🎬". DM: "Hey! Want to learn how these animations are made? Tell me your level (total beginner / some Blender / pro) and I'll send you where to start." |
 | DM contains `animation`, `learn`, `course` | DMs | "Thanks for reaching out! 🧪 Are you a total beginner, do you know some Blender, or are you a pro? I'll reply personally within 24h." |
 | Comment contains `source` or `sources` | Any Reel | Public reply: "Sources are pinned in the first comment 📚" |
-| Default first DM (no keyword) | DMs | "Hey, thanks for messaging SciMotion Lab! 🌌 I read every DM and reply within a day. Meanwhile: new animated science every Tue & Fri." |
+| Default first DM (no keyword) | DMs | "Hey, thanks for messaging SciMotion Lab! 🌌 I read every DM and reply within a day. Meanwhile: a new animated science Reel every day." |
 
 To make the `ANIMATE` trigger work, add this line to the caption of one Reel a week:
 *"Comment ANIMATE and I'll show you how this was made."*

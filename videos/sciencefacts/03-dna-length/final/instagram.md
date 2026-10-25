@@ -10,7 +10,7 @@ Unwind the DNA in one of your cells and it's about 2 metres long. Here's how it 
 
 Did you know this? Tell me in the comments 👇
 
-Follow @scimotion_lab for animated science every week 🧪
+Follow @scimotion_lab for a new animated science Reel every day 🧪
 .
 #science #dna #biology #cells #humanbody
 
