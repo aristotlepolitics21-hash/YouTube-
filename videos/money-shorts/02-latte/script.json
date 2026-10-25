@@ -1,0 +1,178 @@
+{
+ "series": "Money Shorts",
+ "episode": 2,
+ "title": "Is Coffee Really Making You Broke",
+ "out": "is-coffee-really-making-you-broke",
+ "counter": {
+  "label": "PER YEAR",
+  "pre": "$"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Is Coffee Really Making You Broke",
+   "lines": [
+    [
+     "m02_1",
+     {
+      "label": "hook",
+      "head": "Is your coffee making you *broke*?",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "cup",
+       "price": "$5"
+      }
+     },
+     "Is your daily coffee really the reason you never have any money?"
+    ],
+    [
+     "m02_2",
+     {
+      "label": "the math",
+      "head": "$5 a day is *$1,825* a year",
+      "pose": "present",
+      "face": "wow",
+      "prop": {
+       "type": "stat",
+       "from": 0,
+       "to": 1825,
+       "pre": "$",
+       "sub": "PER YEAR ON COFFEE"
+      },
+      "count": 1825
+     },
+     "Five dollars a day adds up to about eighteen hundred dollars a year."
+    ],
+    [
+     "m02_3",
+     {
+      "label": "invested",
+      "head": "Invested? Maybe *$185K*",
+      "pose": "point",
+      "face": "grin",
+      "prop": {
+       "type": "chart",
+       "title": "IF YOU INVESTED IT",
+       "xl": [
+        "YEAR 0",
+        "YEAR 30"
+       ],
+       "series": [
+        {
+         "pts": [
+          0,
+          10,
+          22,
+          37,
+          56,
+          80,
+          109,
+          145,
+          185
+         ],
+         "end": "$185K"
+        }
+       ]
+      }
+     },
+     "Invest that instead for thirty years at around seven percent, and it could grow to about a hundred and eighty five thousand."
+    ],
+    [
+     "m02_4",
+     {
+      "label": "but",
+      "head": "That's not the *whole* story",
+      "pose": "shrug",
+      "face": "smug",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "HOUSING",
+        "TRANSPORT",
+        "FOOD"
+       ]
+      }
+     },
+     "Sounds huge. But here's what the coffee argument leaves out."
+    ],
+    [
+     "m02_5",
+     {
+      "label": "big three",
+      "head": "The real money is in the *big three*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "split",
+       "center": "COSTS",
+       "parts": [
+        [
+         "HOUSING",
+         33,
+         "#f0502a"
+        ],
+        [
+         "TRANSPORT",
+         17,
+         "#f2b632"
+        ],
+        [
+         "FOOD",
+         13,
+         "#171512"
+        ],
+        [
+         "EVERYTHING ELSE",
+         37,
+         "#fffdf8"
+        ]
+       ],
+       "hi": 0
+      }
+     },
+     "For most households, the biggest costs are housing, transport and food. That is where real savings hide."
+    ],
+    [
+     "m02_6",
+     {
+      "label": "compare",
+      "head": "One big cut beats *100* small ones",
+      "pose": "count",
+      "face": "grin",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "SKIP COFFEE",
+        "big": "$1,825",
+        "sub": "per year"
+       },
+       "b": {
+        "t": "$300 LESS RENT",
+        "big": "$3,600",
+        "sub": "per year"
+       },
+       "win": "b"
+      },
+      "count": 3600
+     },
+     "Paying three hundred less on rent saves twice as much as skipping every coffee all year."
+    ],
+    [
+     "m02_7",
+     {
+      "label": "takeaway",
+      "head": "Enjoy the *coffee*. Fix the big stuff.",
+      "pose": "thumbs",
+      "face": "happy",
+      "prop": {
+       "type": "cup",
+       "heart": true
+      }
+     },
+     "So enjoy the coffee. Just fix the big stuff first."
+    ]
+   ]
+  }
+ ]
+}

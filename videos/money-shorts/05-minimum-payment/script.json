@@ -1,0 +1,160 @@
+{
+ "series": "Money Shorts",
+ "episode": 5,
+ "title": "The Credit Card Trap",
+ "out": "the-credit-card-trap",
+ "counter": {
+  "label": "TOTAL PAID",
+  "pre": "$"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "The Credit Card Trap",
+   "lines": [
+    [
+     "m05_1",
+     {
+      "label": "hook",
+      "head": "This *$3,000* takes 11 years to pay off",
+      "pose": "point",
+      "face": "wow",
+      "prop": {
+       "type": "card",
+       "bal": "$3,000"
+      }
+     },
+     "Here is how a three thousand dollar credit card balance can take eleven years to pay off."
+    ],
+    [
+     "m05_2",
+     {
+      "label": "setup",
+      "head": "The card charges *22%* a year",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "card",
+       "bal": "$3,000",
+       "tag": "22% APR"
+      }
+     },
+     "Say your card charges twenty two percent interest, and you pay sixty dollars a month."
+    ],
+    [
+     "m05_3",
+     {
+      "label": "the trap",
+      "head": "Most of it is *interest*",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "bars",
+       "items": [
+        [
+         "INTEREST",
+         55,
+         "#f0502a"
+        ],
+        [
+         "DEBT",
+         5,
+         "#171512"
+        ]
+       ],
+       "pre": "$"
+      }
+     },
+     "At first, about fifty five dollars of that sixty is just interest. Only five dollars touches the debt."
+    ],
+    [
+     "m05_4",
+     {
+      "label": "the cost",
+      "head": "11 years. About *$8,200*.",
+      "pose": "facepalm",
+      "face": "sad",
+      "prop": {
+       "type": "bank",
+       "label": "TOTAL PAID",
+       "from": 0,
+       "to": 8207,
+       "chip": "for a $3,000 balance"
+      },
+      "count": 8207
+     },
+     "Keep paying sixty a month, and it takes over eleven years. You pay about eight thousand two hundred dollars in total."
+    ],
+    [
+     "m05_5",
+     {
+      "label": "the fix",
+      "head": "Pay *$150* instead?",
+      "pose": "count",
+      "face": "grin",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "$60 / MONTH",
+        "big": "11 yrs",
+        "sub": "$8,207 total"
+       },
+       "b": {
+        "t": "$150 / MONTH",
+        "big": "26 mo",
+        "sub": "$3,771 total"
+       },
+       "win": "b"
+      },
+      "count": 3771
+     },
+     "Pay a hundred and fifty a month instead, and it is gone in just over two years, for about thirty eight hundred."
+    ],
+    [
+     "m05_6",
+     {
+      "label": "plan",
+      "head": "Pay *more* than the minimum",
+      "pose": "point",
+      "face": "smile",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Pay more than the minimum",
+         true
+        ],
+        [
+         "Highest rate first",
+         true
+        ],
+        [
+         "Stop adding new debt",
+         true
+        ]
+       ]
+      }
+     },
+     "So pay more than the minimum every month, and tackle your highest interest debt first."
+    ],
+    [
+     "m05_7",
+     {
+      "label": "takeaway",
+      "head": "Make interest work *for* you",
+      "pose": "thumbs",
+      "face": "smug",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "EARN INTEREST",
+        "DON'T PAY IT"
+       ]
+      }
+     },
+     "Interest is great when you earn it, and painful when you pay it."
+    ]
+   ]
+  }
+ ]
+}

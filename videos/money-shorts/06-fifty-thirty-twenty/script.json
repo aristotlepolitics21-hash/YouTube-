@@ -1,0 +1,222 @@
+{
+ "series": "Money Shorts",
+ "episode": 6,
+ "title": "The Simplest Budget Ever",
+ "out": "the-simplest-budget-ever",
+ "counter": {
+  "label": "BUDGET",
+  "pre": "$"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "The Simplest Budget Ever",
+   "lines": [
+    [
+     "m06_1",
+     {
+      "label": "hook",
+      "head": "The simplest *budget* ever",
+      "pose": "wave",
+      "face": "grin",
+      "prop": {
+       "type": "split",
+       "center": "100%",
+       "parts": [
+        [
+         "NEEDS",
+         50,
+         "#f0502a"
+        ],
+        [
+         "WANTS",
+         30,
+         "#f2b632"
+        ],
+        [
+         "FUTURE YOU",
+         20,
+         "#171512"
+        ]
+       ]
+      }
+     },
+     "Hate budgeting? Try the simplest budget there is. Fifty, thirty, twenty."
+    ],
+    [
+     "m06_2",
+     {
+      "label": "needs",
+      "head": "*50%* for needs",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "split",
+       "center": "NEEDS",
+       "parts": [
+        [
+         "NEEDS",
+         50,
+         "#f0502a"
+        ],
+        [
+         "WANTS",
+         30,
+         "#f2b632"
+        ],
+        [
+         "FUTURE YOU",
+         20,
+         "#171512"
+        ]
+       ],
+       "hi": 0
+      }
+     },
+     "Fifty percent goes to needs. Rent, bills, groceries, and getting to work."
+    ],
+    [
+     "m06_3",
+     {
+      "label": "wants",
+      "head": "*30%* for wants",
+      "pose": "cheer",
+      "face": "happy",
+      "prop": {
+       "type": "split",
+       "center": "WANTS",
+       "parts": [
+        [
+         "NEEDS",
+         50,
+         "#f0502a"
+        ],
+        [
+         "WANTS",
+         30,
+         "#f2b632"
+        ],
+        [
+         "FUTURE YOU",
+         20,
+         "#171512"
+        ]
+       ],
+       "hi": 1
+      }
+     },
+     "Thirty percent is for wants. Eating out, hobbies, streaming, trips."
+    ],
+    [
+     "m06_4",
+     {
+      "label": "future",
+      "head": "*20%* for future you",
+      "pose": "point",
+      "face": "smug",
+      "prop": {
+       "type": "split",
+       "center": "FUTURE",
+       "parts": [
+        [
+         "NEEDS",
+         50,
+         "#f0502a"
+        ],
+        [
+         "WANTS",
+         30,
+         "#f2b632"
+        ],
+        [
+         "FUTURE YOU",
+         20,
+         "#171512"
+        ]
+       ],
+       "hi": 2
+      }
+     },
+     "And twenty percent goes to future you. Savings, investing, and paying off debt."
+    ],
+    [
+     "m06_5",
+     {
+      "label": "example",
+      "head": "On *$3,000* a month",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "bars",
+       "items": [
+        [
+         "NEEDS",
+         1500,
+         "#f0502a"
+        ],
+        [
+         "WANTS",
+         900,
+         "#f2b632"
+        ],
+        [
+         "FUTURE",
+         600,
+         "#171512"
+        ]
+       ],
+       "pre": "$"
+      },
+      "count": 3000
+     },
+     "On three thousand a month after tax, that's fifteen hundred, nine hundred, and six hundred."
+    ],
+    [
+     "m06_6",
+     {
+      "label": "honest",
+      "head": "It's a *guide*, not a law",
+      "pose": "shrug",
+      "face": "smug",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "60 / 20 / 20",
+        "70 / 20 / 10",
+        "ADJUST IT"
+       ]
+      }
+     },
+     "If rent eats more than half, that's normal in a lot of cities. Adjust the numbers, keep the idea."
+    ],
+    [
+     "m06_7",
+     {
+      "label": "takeaway",
+      "head": "Give every dollar a *job*",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Needs covered",
+         true
+        ],
+        [
+         "Wants planned",
+         true
+        ],
+        [
+         "Future you paid",
+         true
+        ]
+       ]
+      }
+     },
+     "The point is simple. Every dollar gets a job before the month starts."
+    ]
+   ]
+  }
+ ]
+}

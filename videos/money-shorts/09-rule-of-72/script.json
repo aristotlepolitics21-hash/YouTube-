@@ -1,0 +1,170 @@
+{
+ "series": "Money Shorts",
+ "episode": 9,
+ "title": "When Will Your Money Double",
+ "out": "when-will-your-money-double",
+ "counter": {
+  "label": "YEARS",
+  "pre": ""
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "When Will Your Money Double",
+   "lines": [
+    [
+     "m09_1",
+     {
+      "label": "hook",
+      "head": "When will your money *double*?",
+      "pose": "wave",
+      "face": "grin",
+      "prop": {
+       "type": "stat",
+       "big": "72",
+       "sub": "THE RULE OF 72"
+      }
+     },
+     "Here is a quick trick to see when your money will double. The rule of seventy two."
+    ],
+    [
+     "m09_2",
+     {
+      "label": "the rule",
+      "head": "72 \u00f7 your rate = *years*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "stat",
+       "big": "72 \u00f7 8 = 9",
+       "sub": "YEARS TO DOUBLE AT 8%",
+       "col": "#171512"
+      },
+      "count": 9
+     },
+     "Divide seventy two by your yearly return. The answer is roughly how many years it takes to double."
+    ],
+    [
+     "m09_3",
+     {
+      "label": "example",
+      "head": "At *8%*: about 9 years",
+      "pose": "point",
+      "face": "happy",
+      "prop": {
+       "type": "chart",
+       "title": "$1,000 AT 8% A YEAR",
+       "xl": [
+        "YEAR 0",
+        "YEAR 18"
+       ],
+       "series": [
+        {
+         "pts": [
+          1,
+          1.17,
+          1.36,
+          1.59,
+          1.85,
+          2.16,
+          2.52,
+          2.94,
+          3.43,
+          4.0
+         ],
+         "end": "$4,000"
+        }
+       ],
+       "max": 4.2
+      },
+      "count": 9
+     },
+     "At eight percent a year, seventy two divided by eight is nine. Your money doubles in about nine years."
+    ],
+    [
+     "m09_4",
+     {
+      "label": "savings",
+      "head": "At *2%*: 36 years",
+      "pose": "shrug",
+      "face": "sad",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "AT 8%",
+        "big": "9 yrs",
+        "sub": "to double"
+       },
+       "b": {
+        "t": "AT 2%",
+        "big": "36 yrs",
+        "sub": "to double"
+       },
+       "win": "a"
+      },
+      "count": 36
+     },
+     "In a savings account paying two percent? About thirty six years."
+    ],
+    [
+     "m09_5",
+     {
+      "label": "debt",
+      "head": "It works on *debt* too",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "card",
+       "bal": "$2K \u2192 $4K",
+       "tag": "24% APR"
+      },
+      "count": 3
+     },
+     "It works on debt too. At twenty four percent interest, an unpaid balance can double in about three years."
+    ],
+    [
+     "m09_6",
+     {
+      "label": "prices",
+      "head": "And on *prices*",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "TODAY",
+        "big": "$5",
+        "sub": "a coffee"
+       },
+       "b": {
+        "t": "IN 24 YEARS",
+        "big": "$10",
+        "sub": "same coffee"
+       }
+      },
+      "count": 24
+     },
+     "And at three percent inflation, prices double in about twenty four years."
+    ],
+    [
+     "m09_7",
+     {
+      "label": "takeaway",
+      "head": "Make *72* work for you",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "72 \u00f7 RATE",
+        "GROW SAVINGS",
+        "KILL DEBT"
+       ]
+      }
+     },
+     "So use it both ways. Help your money double, and stop your debt from doing the same."
+    ]
+   ]
+  }
+ ]
+}

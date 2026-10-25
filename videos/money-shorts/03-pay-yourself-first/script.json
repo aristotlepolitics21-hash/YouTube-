@@ -1,0 +1,168 @@
+{
+ "series": "Money Shorts",
+ "episode": 3,
+ "title": "Why You Never Have Money Left Over",
+ "out": "why-you-never-have-money-left-over",
+ "counter": {
+  "label": "SAVED",
+  "pre": "$"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Why You Never Have Money Left Over",
+   "lines": [
+    [
+     "m03_1",
+     {
+      "label": "hook",
+      "head": "Why is there never money *left over*?",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "bank",
+       "label": "LEFT ON THE 30TH",
+       "from": 2000,
+       "to": 0,
+       "chip": "again?!"
+      }
+     },
+     "Ever notice there's never any money left at the end of the month?"
+    ],
+    [
+     "m03_2",
+     {
+      "label": "problem",
+      "head": "Spending *grows* to fill your pay",
+      "pose": "shrug",
+      "face": "sad",
+      "prop": {
+       "type": "receipt",
+       "title": "THIS MONTH",
+       "items": [
+        [
+         "Rent",
+         "$1,200"
+        ],
+        [
+         "Groceries",
+         "$400"
+        ],
+        [
+         "Takeout",
+         "$180"
+        ],
+        [
+         "Subscriptions",
+         "$62"
+        ],
+        [
+         "Random stuff",
+         "$158"
+        ]
+       ],
+       "total": "$2,000"
+      }
+     },
+     "That is because spending quietly grows to fill whatever you earn."
+    ],
+    [
+     "m03_3",
+     {
+      "label": "the fix",
+      "head": "Pay *yourself* first",
+      "pose": "point",
+      "face": "grin",
+      "prop": {
+       "type": "phone",
+       "items": [
+        [
+         "Payday",
+         "+$2,000 deposited",
+         "#2f9e5b"
+        ],
+        [
+         "Moved to savings",
+         "$200, automatically",
+         "#f0502a"
+        ],
+        [
+         "Left to spend",
+         "$1,800",
+         "#171512"
+        ]
+       ]
+      }
+     },
+     "The fix is simple. Pay yourself first."
+    ],
+    [
+     "m03_4",
+     {
+      "label": "when",
+      "head": "Save on *payday*, not at the end",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "calendar",
+       "mark": [
+        1
+       ],
+       "label": "PAYDAY = SAVE DAY"
+      }
+     },
+     "The day your pay lands, move a set amount into savings, before you spend anything."
+    ],
+    [
+     "m03_5",
+     {
+      "label": "how",
+      "head": "Make it *automatic*",
+      "pose": "thumbs",
+      "face": "smug",
+      "prop": {
+       "type": "toggle",
+       "title": "Auto-transfer",
+       "sub": "$200 on payday, every month"
+      }
+     },
+     "Set it up as an automatic transfer, so you never have to decide again."
+    ],
+    [
+     "m03_6",
+     {
+      "label": "start",
+      "head": "Start with just *10%*",
+      "pose": "count",
+      "face": "happy",
+      "prop": {
+       "type": "coins",
+       "n": 12,
+       "label": "$2,400 / YEAR"
+      },
+      "count": 2400
+     },
+     "Even ten percent is a great start. On two thousand a month, that's twenty four hundred dollars a year."
+    ],
+    [
+     "m03_7",
+     {
+      "label": "takeaway",
+      "head": "Spend what's left, *guilt free*",
+      "pose": "cheer",
+      "face": "grin",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "PAY YOU FIRST",
+        "AUTOMATE IT",
+        "SPEND THE REST"
+       ]
+      }
+     },
+     "Then spend what's left without the guilt. Future you already got paid."
+    ]
+   ]
+  }
+ ]
+}

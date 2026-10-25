@@ -1,0 +1,178 @@
+{
+ "series": "Money Shorts",
+ "episode": 7,
+ "title": "Make It Once, Sell It Forever",
+ "out": "make-it-once-sell-it-forever",
+ "counter": {
+  "label": "SALES",
+  "pre": ""
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Make It Once, Sell It Forever",
+   "lines": [
+    [
+     "m07_1",
+     {
+      "label": "hook",
+      "head": "Make it *once*, sell it again and again",
+      "pose": "point",
+      "face": "grin",
+      "prop": {
+       "type": "phone",
+       "items": [
+        [
+         "New sale",
+         "+$12  Budget Planner",
+         "#2f9e5b"
+        ],
+        [
+         "New sale",
+         "+$12  Budget Planner",
+         "#2f9e5b"
+        ],
+        [
+         "New sale",
+         "+$12  Budget Planner",
+         "#2f9e5b"
+        ]
+       ]
+      },
+      "count": 3
+     },
+     "One of the simplest side hustles is making something once, and selling it again and again."
+    ],
+    [
+     "m07_2",
+     {
+      "label": "what",
+      "head": "Think *digital products*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "TEMPLATES",
+        "PLANNERS",
+        "PRESETS",
+        "PRINTABLES",
+        "GUIDES"
+       ]
+      }
+     },
+     "Think templates, planners, presets, printables, or short guides."
+    ],
+    [
+     "m07_3",
+     {
+      "label": "idea",
+      "head": "Sell what you *already* know",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "chat",
+       "text": "Help me outline a simple monthly budget spreadsheet for students, with tabs for income, bills and savings."
+      }
+     },
+     "Start with something you already know. A budget sheet, a workout plan, a study guide."
+    ],
+    [
+     "m07_4",
+     {
+      "label": "where",
+      "head": "List it where buyers *search*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "product",
+       "name": "Budget Planner",
+       "price": "$12",
+       "cta": "BUY NOW"
+      }
+     },
+     "List it on marketplaces like Etsy or Gumroad, where people are already searching."
+    ],
+    [
+     "m07_5",
+     {
+      "label": "honest",
+      "head": "Most start *slow*",
+      "pose": "shrug",
+      "face": "smug",
+      "prop": {
+       "type": "bars",
+       "items": [
+        [
+         "MONTH 1",
+         2,
+         "#171512"
+        ],
+        [
+         "MONTH 2",
+         3,
+         "#171512"
+        ],
+        [
+         "MONTH 3",
+         7,
+         "#f0502a"
+        ],
+        [
+         "MONTH 4",
+         11,
+         "#f0502a"
+        ]
+       ],
+       "suf": " sold"
+      },
+      "count": 11
+     },
+     "Be realistic. Most products sell slowly at first, and some never sell at all."
+    ],
+    [
+     "m07_6",
+     {
+      "label": "loop",
+      "head": "Test, tweak, *repeat*",
+      "pose": "count",
+      "face": "smile",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Make 3 small products",
+         true
+        ],
+        [
+         "See what sells",
+         true
+        ],
+        [
+         "Improve the winner",
+         true
+        ]
+       ]
+      }
+     },
+     "Make a few, see which one gets interest, then make that one better."
+    ],
+    [
+     "m07_7",
+     {
+      "label": "takeaway",
+      "head": "*Small* income that stacks",
+      "pose": "thumbs",
+      "face": "happy",
+      "prop": {
+       "type": "coins",
+       "n": 11,
+       "label": "SIDE INCOME"
+      }
+     },
+     "It won't replace your job overnight. But small sales can stack up over time."
+    ]
+   ]
+  }
+ ]
+}

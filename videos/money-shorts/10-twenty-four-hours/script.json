@@ -1,0 +1,164 @@
+{
+ "series": "Money Shorts",
+ "episode": 10,
+ "title": "The 24 Hour Rule",
+ "out": "the-24-hour-rule",
+ "counter": {
+  "label": "KEPT",
+  "pre": "$"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "The 24 Hour Rule",
+   "lines": [
+    [
+     "m10_1",
+     {
+      "label": "hook",
+      "head": "*Don't* hit buy yet",
+      "pose": "point",
+      "face": "smug",
+      "prop": {
+       "type": "product",
+       "name": "Wireless Earbuds",
+       "price": "$129",
+       "cta": "BUY NOW"
+      }
+     },
+     "Before you hit buy on that thing in your cart, try the twenty four hour rule."
+    ],
+    [
+     "m10_2",
+     {
+      "label": "the trick",
+      "head": "Stores *want* you to rush",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "timer",
+       "from": 3599,
+       "speed": 1,
+       "sub": "ONLY 2 LEFT!"
+      }
+     },
+     "Countdown timers, only two left, flash sales. They are built to make you decide fast."
+    ],
+    [
+     "m10_3",
+     {
+      "label": "the rule",
+      "head": "Wait *24 hours*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "timer",
+       "label": "COOL-OFF TIMER",
+       "from": 86399,
+       "speed": 2400,
+       "sub": "ADDED TO WISHLIST"
+      }
+     },
+     "So wait a full day before buying anything you didn't plan for."
+    ],
+    [
+     "m10_4",
+     {
+      "label": "why",
+      "head": "The urge *fades*",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "chart",
+       "title": "HOW MUCH I WANT IT",
+       "xl": [
+        "NOW",
+        "+24 HOURS"
+       ],
+       "series": [
+        {
+         "pts": [
+          10,
+          8.6,
+          7,
+          5.6,
+          4.4,
+          3.4,
+          2.7,
+          2.2,
+          2
+         ],
+         "end": "meh"
+        }
+       ],
+       "max": 10.5
+      },
+      "count": 129
+     },
+     "Often, by tomorrow, the urge has faded, and you can't remember why you wanted it."
+    ],
+    [
+     "m10_5",
+     {
+      "label": "still?",
+      "head": "Still want it? *Buy it.*",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Still want it tomorrow",
+         true
+        ],
+        [
+         "Fits the budget",
+         true
+        ],
+        [
+         "Not just a sale",
+         true
+        ]
+       ]
+      }
+     },
+     "Still want it after a day, and it fits your budget? Then buy it, guilt free."
+    ],
+    [
+     "m10_6",
+     {
+      "label": "bigger",
+      "head": "Big purchase? Try *30 days*",
+      "pose": "count",
+      "face": "smile",
+      "prop": {
+       "type": "calendar",
+       "title": "WISHLIST WAIT",
+       "cross": 30,
+       "label": "30-DAY RULE"
+      }
+     },
+     "For bigger purchases, stretch it to thirty days."
+    ],
+    [
+     "m10_7",
+     {
+      "label": "takeaway",
+      "head": "Wait a day, regret *less*",
+      "pose": "cheer",
+      "face": "happy",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "WAIT 24H",
+        "CHECK BUDGET",
+        "THEN DECIDE"
+       ]
+      }
+     },
+     "One tiny pause, and a lot fewer things you regret buying."
+    ]
+   ]
+  }
+ ]
+}

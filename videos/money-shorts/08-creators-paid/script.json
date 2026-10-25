@@ -1,0 +1,190 @@
+{
+ "series": "Money Shorts",
+ "episode": 8,
+ "title": "How YouTubers Actually Get Paid",
+ "out": "how-youtubers-actually-get-paid",
+ "counter": null,
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How YouTubers Actually Get Paid",
+   "lines": [
+    [
+     "m08_1",
+     {
+      "label": "hook",
+      "head": "How YouTubers *actually* get paid",
+      "pose": "point",
+      "face": "smug",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "ADS",
+        "SPONSORS",
+        "MEMBERSHIPS",
+        "MERCH",
+        "AFFILIATES"
+       ]
+      }
+     },
+     "How do YouTubers actually make money? It's not just ads."
+    ],
+    [
+     "m08_2",
+     {
+      "label": "step 1",
+      "head": "First, get *monetized*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "yt",
+       "rows": [
+        [
+         "Subscribers",
+         1000,
+         1000
+        ],
+        [
+         "Watch hours (12 mo)",
+         4000,
+         4000
+        ]
+       ]
+      }
+     },
+     "To earn from ads, you join the YouTube Partner Program. Usually a thousand subscribers and four thousand public watch hours in a year."
+    ],
+    [
+     "m08_3",
+     {
+      "label": "or shorts",
+      "head": "Or *10 million* Shorts views",
+      "pose": "count",
+      "face": "wow",
+      "prop": {
+       "type": "stat",
+       "big": "10M",
+       "sub": "SHORTS VIEWS IN 90 DAYS"
+      }
+     },
+     "Or a thousand subscribers and ten million Shorts views in ninety days."
+    ],
+    [
+     "m08_4",
+     {
+      "label": "long videos",
+      "head": "Long videos: *55%* of ad money",
+      "pose": "present",
+      "face": "grin",
+      "prop": {
+       "type": "split",
+       "center": "ADS",
+       "parts": [
+        [
+         "CREATOR",
+         55,
+         "#f0502a"
+        ],
+        [
+         "YOUTUBE",
+         45,
+         "#171512"
+        ]
+       ],
+       "hi": 0
+      }
+     },
+     "On long videos, creators keep about fifty five percent of the ad money their videos bring in."
+    ],
+    [
+     "m08_5",
+     {
+      "label": "shorts",
+      "head": "Shorts: *45%* of their share",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "split",
+       "center": "SHORTS",
+       "parts": [
+        [
+         "CREATOR",
+         45,
+         "#f0502a"
+        ],
+        [
+         "YOUTUBE",
+         55,
+         "#171512"
+        ]
+       ],
+       "hi": 0
+      }
+     },
+     "Shorts work differently. Ad money goes into a shared pool, and creators keep forty five percent of their share."
+    ],
+    [
+     "m08_6",
+     {
+      "label": "the big one",
+      "head": "The bigger money: *sponsors*",
+      "pose": "cheer",
+      "face": "happy",
+      "prop": {
+       "type": "phone",
+       "items": [
+        [
+         "New email",
+         "Brand deal proposal",
+         "#f0502a"
+        ],
+        [
+         "Affiliate payout",
+         "+$84 this week",
+         "#2f9e5b"
+        ],
+        [
+         "New member",
+         "joined your channel",
+         "#f2b632"
+        ]
+       ]
+      }
+     },
+     "For a lot of creators, the bigger money comes from sponsors, where brands pay for a mention."
+    ],
+    [
+     "m08_7",
+     {
+      "label": "takeaway",
+      "head": "Never rely on *one* stream",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Ads",
+         true
+        ],
+        [
+         "Sponsors",
+         true
+        ],
+        [
+         "Members and merch",
+         true
+        ],
+        [
+         "Your own products",
+         true
+        ]
+       ]
+      }
+     },
+     "The smartest creators never rely on just one income stream."
+    ]
+   ]
+  }
+ ]
+}

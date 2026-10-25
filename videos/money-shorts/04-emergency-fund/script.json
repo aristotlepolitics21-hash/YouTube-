@@ -1,0 +1,169 @@
+{
+ "series": "Money Shorts",
+ "episode": 4,
+ "title": "One Car Repair Away From Debt",
+ "out": "one-car-repair-away-from-debt",
+ "counter": {
+  "label": "FUND",
+  "pre": "$"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "One Car Repair Away From Debt",
+   "lines": [
+    [
+     "m04_1",
+     {
+      "label": "hook",
+      "head": "One *car repair* away from debt?",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "receipt",
+       "title": "GARAGE INVOICE",
+       "items": [
+        [
+         "Brake pads",
+         "$420"
+        ],
+        [
+         "Rotors",
+         "$330"
+        ],
+        [
+         "Labour",
+         "$250"
+        ]
+       ],
+       "total": "$1,000"
+      }
+     },
+     "Could you pay a surprise thousand dollar bill tomorrow, without a credit card?"
+    ],
+    [
+     "m04_2",
+     {
+      "label": "the fix",
+      "head": "That's what an *emergency fund* is for",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "coins",
+       "n": 10,
+       "label": "EMERGENCY FUND"
+      }
+     },
+     "That's exactly what an emergency fund is for. Money set aside only for real emergencies."
+    ],
+    [
+     "m04_3",
+     {
+      "label": "goal",
+      "head": "Aim for *3 to 6* months of costs",
+      "pose": "point",
+      "face": "smile",
+      "prop": {
+       "type": "stat",
+       "big": "3\u20136",
+       "sub": "MONTHS OF ESSENTIAL COSTS"
+      }
+     },
+     "A common goal is three to six months of your essential expenses."
+    ],
+    [
+     "m04_4",
+     {
+      "label": "start",
+      "head": "Start with *$1,000*",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "bank",
+       "label": "EMERGENCY FUND",
+       "from": 0,
+       "to": 1000,
+       "chip": "first goal: done"
+      },
+      "count": 1000
+     },
+     "That can feel huge, so start with a mini goal, like your first thousand dollars."
+    ],
+    [
+     "m04_5",
+     {
+      "label": "where",
+      "head": "Keep it *separate*",
+      "pose": "present",
+      "face": "smug",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "CHECKING",
+        "big": "spend",
+        "sub": "day to day"
+       },
+       "b": {
+        "t": "SAVINGS",
+        "big": "safety",
+        "sub": "hands off"
+       },
+       "win": "b"
+      }
+     },
+     "Keep it in a separate savings account, so it is easy to reach in a crisis, but not too easy to spend."
+    ],
+    [
+     "m04_6",
+     {
+      "label": "rules",
+      "head": "Emergencies *only*",
+      "pose": "count",
+      "face": "think",
+      "prop": {
+       "type": "checklist",
+       "title": "IS IT AN EMERGENCY?",
+       "items": [
+        [
+         "New phone",
+         false
+        ],
+        [
+         "Job loss",
+         true
+        ],
+        [
+         "Medical bill",
+         true
+        ],
+        [
+         "Concert tickets",
+         false
+        ]
+       ]
+      }
+     },
+     "A new phone? Not an emergency. Losing your job or a medical bill? That's what it's for."
+    ],
+    [
+     "m04_7",
+     {
+      "label": "takeaway",
+      "head": "Sleep *better* tonight",
+      "pose": "thumbs",
+      "face": "happy",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "START WITH $1K",
+        "KEEP IT SEPARATE",
+        "REFILL IT"
+       ]
+      }
+     },
+     "It won't make you rich. But it stops one bad week from turning into years of debt."
+    ]
+   ]
+  }
+ ]
+}
