@@ -1,0 +1,27 @@
+1
+00:00:00,400 --> 00:00:04,638
+Here is a quick trick to see when your money will double. The rule of seventy two.
+
+2
+00:00:04,988 --> 00:00:10,837
+Divide seventy two by your yearly return. The answer is roughly how many years it takes to double.
+
+3
+00:00:11,187 --> 00:00:17,865
+At eight percent a year, seventy two divided by eight is nine. Your money doubles in about nine years.
+
+4
+00:00:18,215 --> 00:00:22,105
+In a savings account paying two percent? About thirty six years.
+
+5
+00:00:22,455 --> 00:00:29,217
+It works on debt too. At twenty four percent interest, an unpaid balance can double in about three years.
+
+6
+00:00:29,567 --> 00:00:33,864
+And at three percent inflation, prices double in about twenty four years.
+
+7
+00:00:34,214 --> 00:00:39,086
+So use it both ways. Help your money double, and stop your debt from doing the same.
