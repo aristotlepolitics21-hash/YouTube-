@@ -1,0 +1,261 @@
+{
+ "series": "Underdogs",
+ "episode": 10,
+ "title": "Two Failed Car Companies First",
+ "out": "two-failed-car-companies-first",
+ "cast": {
+  "ford": {
+   "skin": "#ecbf9a",
+   "hairCol": "#6a6a6a",
+   "hair": "slick",
+   "outfit": "suit",
+   "top": "#3a3a40",
+   "tie": "#2a2a2a",
+   "seed": 1
+  },
+  "inv1": {
+   "skin": "#e9b48c",
+   "hairCol": "#3a2a20",
+   "hair": "side",
+   "outfit": "suit",
+   "top": "#2e3440",
+   "tie": "#6a2a2a",
+   "seed": 7
+  },
+  "inv2": {
+   "skin": "#d9a07a",
+   "hairCol": "#8a8a8a",
+   "hair": "bald",
+   "facial": "mustache",
+   "facialCol": "#6a6a6a",
+   "outfit": "suit",
+   "top": "#4a3a30",
+   "tie": "#2a4a6a",
+   "seed": 8
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Two Failed Car Companies First",
+   "lines": [
+    [
+     "u10_1",
+     {
+      "bg": "shed",
+      "cast": [
+       {
+        "id": "ford",
+        "x": 600,
+        "y": 420,
+        "s": 0.8,
+        "pose": "hips",
+        "expr": "determined",
+        "turn": 0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "quad",
+        "x": 1350,
+        "y": 980,
+        "s": 1.1
+       }
+      ],
+      "bgo": {
+       "hole": true
+      }
+     },
+     "In 1896, Henry Ford built his first car in a shed behind his house. It was too wide for the door, so he knocked out part of the wall."
+    ],
+    [
+     "u10_2",
+     {
+      "bg": "factory",
+      "cast": [
+       {
+        "id": "ford",
+        "x": 960,
+        "y": 400,
+        "s": 0.88,
+        "pose": "neck",
+        "expr": "sad",
+        "turn": 0
+       }
+      ],
+      "props": [],
+      "stamp": "CLOSED"
+     },
+     "In 1899, he started the Detroit Automobile Company. It built very few cars, and shut down within two years."
+    ],
+    [
+     "u10_3",
+     {
+      "bg": "factory",
+      "cast": [
+       {
+        "id": "ford",
+        "x": 1300,
+        "y": 400,
+        "s": 0.88,
+        "pose": "crossed",
+        "expr": "annoyed",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "car",
+        "x": 650,
+        "y": 1000,
+        "s": 0.8,
+        "col": "#5a2a2a"
+       }
+      ],
+      "stamp": "RENAMED"
+     },
+     "His second company failed too. He left, and it was later renamed Cadillac."
+    ],
+    [
+     "u10_4",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "inv1",
+        "x": 680,
+        "y": 400,
+        "s": 0.88,
+        "pose": "crossed",
+        "expr": "skeptical",
+        "turn": 0.3
+       },
+       {
+        "id": "inv2",
+        "x": 1280,
+        "y": 400,
+        "s": 0.88,
+        "pose": "shrug",
+        "expr": "annoyed",
+        "turn": -0.3
+       }
+      ],
+      "props": []
+     },
+     "A lot of investors had lost faith in him."
+    ],
+    [
+     "u10_5",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "ford",
+        "x": 680,
+        "y": 400,
+        "s": 0.88,
+        "pose": "shake",
+        "expr": "determined",
+        "turn": 0.3
+       },
+       {
+        "id": "inv1",
+        "x": 1300,
+        "y": 400,
+        "s": 0.88,
+        "pose": "shake",
+        "expr": "smile",
+        "turn": -0.3,
+        "flip": true
+       }
+      ],
+      "props": []
+     },
+     "But in 1903, on his third try, he started the Ford Motor Company."
+    ],
+    [
+     "u10_6",
+     {
+      "bg": "street",
+      "cast": [
+       {
+        "id": "ford",
+        "x": 1400,
+        "y": 300,
+        "s": 0.45,
+        "pose": "present",
+        "expr": "proud",
+        "turn": -0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "car",
+        "x": 700,
+        "y": 1000,
+        "s": 1,
+        "col": "#1d1d22"
+       }
+      ]
+     },
+     "In 1908 came the Model T. Simple, tough, and affordable."
+    ],
+    [
+     "u10_7",
+     {
+      "bg": "factory",
+      "cast": [],
+      "props": [
+       {
+        "type": "line",
+        "x": 960,
+        "y": 1000,
+        "s": 1
+       }
+      ],
+      "counter": {
+       "label": "MINUTES PER CAR",
+       "from_": 750,
+       "to": 93
+      }
+     },
+     "In 1913, his moving assembly line cut the time to build a car from about twelve hours, to about an hour and a half."
+    ],
+    [
+     "u10_8",
+     {
+      "bg": "street",
+      "cast": [
+       {
+        "id": "ford",
+        "x": 960,
+        "y": 300,
+        "s": 0.45,
+        "pose": "wave",
+        "expr": "proud",
+        "turn": 0
+       }
+      ],
+      "props": [
+       {
+        "type": "car",
+        "x": 420,
+        "y": 1000,
+        "s": 0.7
+       },
+       {
+        "type": "car",
+        "x": 1500,
+        "y": 1000,
+        "s": 0.7,
+        "col": "#3a3a40"
+       }
+      ],
+      "cam": "out"
+     },
+     "Two failed companies came first. Then came one of the most famous names in cars."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,278 @@
+{
+ "series": "Underdogs",
+ "episode": 3,
+ "title": "He Lost Everything, Then Drew a Mouse",
+ "out": "he-lost-everything-then-drew-a-mouse",
+ "cast": {
+  "walt": {
+   "skin": "#eec29e",
+   "hairCol": "#3a2a1c",
+   "hair": "slick",
+   "facial": "mustache",
+   "outfit": "suit",
+   "top": "#5a4a3a",
+   "tie": "#2a3a5a",
+   "seed": 1
+  },
+  "roy": {
+   "skin": "#e6b48e",
+   "hairCol": "#4a3a2a",
+   "hair": "side",
+   "glasses": "round",
+   "outfit": "suit",
+   "top": "#3a4a5a",
+   "tie": "#6a3a2a",
+   "seed": 2
+  },
+  "boss": {
+   "skin": "#e2aa86",
+   "hairCol": "#1d1714",
+   "hair": "slick",
+   "facial": "mustache",
+   "outfit": "period",
+   "top": "#1f2a3a",
+   "tie": "#7a2a2a",
+   "seed": 3
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "He Lost Everything, Then Drew a Mouse",
+   "lines": [
+    [
+     "u03_1",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "walt",
+        "x": 1250,
+        "y": 400,
+        "s": 0.88,
+        "pose": "write",
+        "expr": "smile",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "sketch",
+        "x": 600,
+        "y": 430,
+        "s": 0.7,
+        "kind": "lines"
+       },
+       {
+        "type": "desk",
+        "x": 960,
+        "y": 820,
+        "s": 1.6,
+        "col": "#6b4a30",
+        "front": true
+       }
+      ]
+     },
+     "In 1921, a young cartoonist named Walt Disney started his own studio in Kansas City."
+    ],
+    [
+     "u03_2",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "walt",
+        "x": 960,
+        "y": 400,
+        "s": 0.88,
+        "pose": "head",
+        "expr": "sad",
+        "turn": 0
+       }
+      ],
+      "props": [
+       {
+        "type": "papers",
+        "x": 960,
+        "y": 820,
+        "s": 1.4,
+        "n": 8,
+        "front": true
+       }
+      ],
+      "stamp": "BANKRUPT"
+     },
+     "It was called Laugh-O-Gram. By 1923, it was bankrupt."
+    ],
+    [
+     "u03_3",
+     {
+      "bg": "street",
+      "cast": [
+       {
+        "id": "walt",
+        "x": 900,
+        "y": 300,
+        "s": 0.45,
+        "pose": "hold",
+        "expr": "determined",
+        "turn": 0.2,
+        "walk": 1,
+        "hold": {
+         "type": "suitcase",
+         "s": 0.6,
+         "y": 560
+        }
+       }
+      ],
+      "props": []
+     },
+     "He moved to Hollywood with a cardboard suitcase and very little money, and started again with his brother Roy."
+    ],
+    [
+     "u03_4",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "walt",
+        "x": 1300,
+        "y": 400,
+        "s": 0.88,
+        "pose": "present",
+        "expr": "grin",
+        "turn": -0.3
+       },
+       {
+        "id": "roy",
+        "x": 600,
+        "y": 420,
+        "s": 0.85,
+        "pose": "rest",
+        "expr": "smile",
+        "turn": 0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "sketch",
+        "x": 960,
+        "y": 460,
+        "s": 0.65,
+        "kind": "rabbit"
+       }
+      ]
+     },
+     "Their studio had a hit: a cartoon rabbit called Oswald."
+    ],
+    [
+     "u03_5",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "boss",
+        "x": 680,
+        "y": 400,
+        "s": 0.88,
+        "pose": "crossed",
+        "expr": "skeptical",
+        "turn": 0.3
+       },
+       {
+        "id": "walt",
+        "x": 1300,
+        "y": 400,
+        "s": 0.88,
+        "pose": "rest",
+        "expr": "surprised",
+        "turn": -0.3
+       }
+      ],
+      "props": [],
+      "stamp": "NOT YOURS"
+     },
+     "Then, in 1928, his distributor took control of Oswald, and hired away most of his animators."
+    ],
+    [
+     "u03_6",
+     {
+      "bg": "train",
+      "cast": [
+       {
+        "id": "walt",
+        "x": 960,
+        "y": 420,
+        "s": 0.88,
+        "pose": "write",
+        "expr": "think",
+        "turn": 0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "notebook",
+        "x": 960,
+        "y": 830,
+        "s": 1,
+        "front": true
+       },
+       {
+        "type": "sketch",
+        "x": 1500,
+        "y": 520,
+        "s": 0.45,
+        "kind": "mouse"
+       }
+      ],
+      "bgo": {}
+     },
+     "On the train ride home, Walt started sketching a new character. A mouse."
+    ],
+    [
+     "u03_7",
+     {
+      "bg": "cinema",
+      "cast": [],
+      "props": [],
+      "cam": "in",
+      "focus": [
+       960,
+       300
+      ]
+     },
+     "Later that year, Steamboat Willie became one of the first cartoons with synchronised sound. Audiences loved it."
+    ],
+    [
+     "u03_8",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "walt",
+        "x": 960,
+        "y": 400,
+        "s": 0.88,
+        "pose": "chin",
+        "expr": "proud",
+        "turn": 0.1
+       }
+      ],
+      "props": [
+       {
+        "type": "desk",
+        "x": 960,
+        "y": 820,
+        "s": 1.6,
+        "col": "#6b4a30",
+        "front": true
+       }
+      ],
+      "cam": "out"
+     },
+     "Losing his first big character pushed him to create the one that built an empire."
+    ]
+   ]
+  }
+ ]
+}

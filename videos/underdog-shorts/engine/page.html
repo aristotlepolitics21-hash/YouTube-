@@ -1,0 +1,62 @@
+<!doctype html><meta charset="utf-8">
+<style>
+@font-face { font-family: IS; font-style: italic; src: url(../../money-shorts/fonts/instrument-serif-latin-400-italic.woff2); }
+body { margin: 0; background: #000; }
+</style>
+<canvas id="cv" width="1080" height="1920"></canvas>
+<script src="rig.js"></script>
+<script src="world.js"></script>
+<script>
+// Underdog Shorts: a 16:9 illustrated panel inside the 9:16 frame, with a title above and lowercase italic subtitles.
+// window.setup(data) loads the shots; window.__at(T) draws the frame at T seconds. Every frame is a pure function of T.
+const W = 1080, H = 1920, cv = document.getElementById('cv'), c = cv.getContext('2d'), PY = 640, PH = 608;
+const SC = document.createElement('canvas'); SC.width = 1920; SC.height = 1080; const sx = SC.getContext('2d');
+var X = sx;
+const out = k => 1 - Math.pow(1 - cl(k), 3), inout = k => (k = cl(k), k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2);
+// paper grain and vignette, made once
+const GR = document.createElement('canvas'); GR.width = 1920; GR.height = 1080; { const g = GR.getContext('2d'), id = g.createImageData(1920, 1080);
+  for (let i = 0; i < id.data.length; i += 4) { const v = 120 + Math.random() * 135; id.data[i] = v; id.data[i + 1] = v * .95; id.data[i + 2] = v * .85; id.data[i + 3] = 22; } g.putImageData(id, 0, 0);
+  const vg = g.createRadialGradient(960, 540, 420, 960, 540, 1150); vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(40,20,5,.38)'); g.fillStyle = vg; g.fillRect(0, 0, 1920, 1080); }
+let SHOTS = [], EP = {}, CAST = {};
+window.setup = async (data) => { await document.fonts.load('italic 40px IS'); EP = data.ep; CAST = data.cast;
+  let t = 0; SHOTS = data.shots.map((b, i) => { const o = { ...b, i, start: t, end: t + data.durs[i], cap: data.caps[i], text: data.texts[i] }; t += data.durs[i]; return o; }); window.__total = t; return t; };
+
+function drawShot(S, T) { const t = T - S.start, k = cl(t / (S.end - S.start)); X = sx; sx.setTransform(1, 0, 0, 1, 0, 0);
+  const cam = S.cam || ['in', 'left', 'out', 'right'][S.i % 4], fx = S.focus ? S.focus[0] : 960, fy = S.focus ? S.focus[1] : 480, e = inout(k);
+  let z = 1.04, px = 0, py = 0; if (cam === 'in') z = 1.02 + .08 * e; if (cam === 'out') z = 1.1 - .08 * e; if (cam === 'left') { z = 1.08; px = 40 - 80 * e; } if (cam === 'right') { z = 1.08; px = -40 + 80 * e; } if (cam === 'still') z = 1.03;
+  sx.translate(fx + px, fy + py); sx.scale(z, z); sx.translate(-fx, -fy);
+  const o = { ...(S.bgo || {}), T }; (BG[S.bg] || BG.home)(o);
+  const prop = (p) => { const f = PR[p.type]; if (!f) return; X.save(); X.translate(p.x || 0, p.y || 0); X.scale(p.s || 1, p.s || 1); f({ ...p, T }); X.restore(); };
+  (S.props || []).filter(p => !p.front).forEach(prop);
+  (S.cast || []).forEach(ch => { const P = { ...CAST[ch.id] }, full = (ch.s || .8) < .6, sc = (ch.s || .8) * (full ? 1.0 : 1.45), y = full ? 975 - 1530 * sc : (ch.y || 400) + 40;
+    if (full) P.legs = true; X.save(); X.translate(ch.x || 960, y + (ch.walk ? Math.abs(Math.sin(T * 6)) * -8 : 0)); X.scale(sc, sc);
+    const hold = ch.hold ? () => { X.save(); X.translate(ch.hold.x || 0, ch.hold.y || 440); X.scale(ch.hold.s || .55, ch.hold.s || .55); PR[ch.hold.type]({ ...ch.hold, T }); X.restore(); } : null;
+    person(P, { pose: ch.pose, expr: ch.expr, turn: ch.turn, flip: ch.flip, holding: hold, tilt: ch.tilt }, T + (ch.seed || 0)); X.restore(); });
+  (S.props || []).filter(p => p.front).forEach(prop);
+  sx.setTransform(1, 0, 0, 1, 0, 0);
+  if (S.counter) { const C = S.counter, v = ll(C.from_ ?? C.from ?? 0, C.to, inout((t - .3) / Math.max(.5, (S.end - S.start) * .6))); const s = (C.pre || '') + Math.round(v).toLocaleString('en-US') + (C.suf || '');
+    X.save(); X.translate(1860, 150); X.rotate(-.03); X.font = '800 64px Georgia, "DejaVu Serif", serif'; const w = Math.max(320, X.measureText(s).width + 70); R(-w, -70, w, 150, '#efe6d0', 4, 10); TX(C.label || '', -w / 2, -30, 28, '#6a5a4a', 'center', 'serif', 700); TX(s, -w / 2, 28, 64, INK, 'center', 'serif', 800); X.restore(); }
+  if (S.stamp) { const a = out((t - .35) / .25), sc = 1 + (1 - a) * 1.5; if (a > 0) { X.save(); X.globalAlpha = a * .9; X.translate(S.stampAt ? S.stampAt[0] : 1480, S.stampAt ? S.stampAt[1] : 170); X.rotate(-.12); X.scale(sc * .75, sc * .75);
+    X.font = '900 120px Inter, "DejaVu Sans", sans-serif'; const w = X.measureText(S.stamp).width + 80; X.lineWidth = 12; X.strokeStyle = '#b83228'; X.strokeRect(-w / 2, -86, w, 172); TX(S.stamp, 0, 6, 120, '#b83228', 'center', 'sans', 900); X.restore(); } }
+  sx.drawImage(GR, 0, 0); }
+
+function caption(S, T) { if (!S.cap || T < S.cap[0] || T > S.cap[1] + .25) return;
+  const words = S.text.toLowerCase().replace(/\.$/, '').split(/\s+/), chunks = []; let cur = [];
+  words.forEach(w => { cur.push(w); if (cur.length >= 5 || /[.,?!:;]$/.test(w)) { chunks.push(cur.join(' ')); cur = []; } }); if (cur.length) chunks.push(cur.join(' '));
+  const tot = chunks.reduce((a, ch) => a + ch.length + 3, 0), kk = (T - S.cap[0]) / (S.cap[1] - S.cap[0]) * tot; let acc = 0, idx = chunks.length - 1;
+  for (let i = 0; i < chunks.length; i++) { acc += chunks[i].length + 3; if (kk < acc) { idx = i; break; } }
+  const s = chunks[idx].replace(/[.,;]$/, ''); c.save(); c.font = 'italic 500 40px Inter, "DejaVu Sans", sans-serif'; c.textAlign = 'center'; c.textBaseline = 'middle';
+  c.shadowColor = 'rgba(0,0,0,.85)'; c.shadowBlur = 10; c.shadowOffsetY = 2; c.fillStyle = '#f6edd8'; c.fillText(s, W / 2, PY + PH - 54); c.restore(); }
+
+window.__at = (T) => { let i = SHOTS.findIndex(s => T < s.end); if (i < 0) i = SHOTS.length - 1; const S = SHOTS[i];
+  c.fillStyle = '#000'; c.fillRect(0, 0, W, H);
+  // title block above the panel
+  c.save(); c.textAlign = 'center'; c.fillStyle = '#8a7a64'; c.font = '600 26px Inter, "DejaVu Sans", sans-serif'; c.fillText(`UNDERDOGS  ·  ${String(EP.num).padStart(2, '0')}`, W / 2, PY - 150);
+  c.fillStyle = '#f2e8d2'; c.font = 'italic 64px IS'; c.fillText(EP.title, W / 2, PY - 70); c.restore();
+  drawShot(S, T); c.drawImage(SC, 0, PY, W, PH);
+  const fade = T - S.start; if (i > 0 && fade < .3) { drawShot(SHOTS[i - 1], T); c.save(); c.globalAlpha = 1 - fade / .3; c.drawImage(SC, 0, PY, W, PH); c.restore(); }
+  caption(S, T);
+  // progress line under the panel
+  c.fillStyle = '#3a3128'; c.fillRect(140, PY + PH + 60, 800, 4); c.fillStyle = '#c9a24a'; c.fillRect(140, PY + PH + 60, 800 * cl(T / window.__total), 4);
+};
+</script>

@@ -1,0 +1,316 @@
+{
+ "series": "Underdogs",
+ "episode": 1,
+ "title": "The Man Who Failed 5,126 Times",
+ "out": "the-man-who-failed-5-126-times",
+ "cast": {
+  "dyson": {
+   "skin": "#ecbf9a",
+   "hairCol": "#6a5040",
+   "hair": "side",
+   "glasses": "round",
+   "outfit": "shirt",
+   "top": "#5a7aa0",
+   "shirt": "#8fb0cf",
+   "seed": 1
+  },
+  "wife": {
+   "skin": "#f0c6a4",
+   "hairCol": "#8a5a3a",
+   "hair": "bob",
+   "fem": 1,
+   "outfit": "sweater",
+   "top": "#8a4a5a",
+   "seed": 2
+  },
+  "exec1": {
+   "skin": "#e9b48c",
+   "hairCol": "#3a2a20",
+   "hair": "side",
+   "outfit": "suit",
+   "top": "#2e3440",
+   "tie": "#6a2a2a",
+   "seed": 7
+  },
+  "exec2": {
+   "skin": "#d9a07a",
+   "hairCol": "#8a8a8a",
+   "hair": "bald",
+   "facial": "mustache",
+   "facialCol": "#6a6a6a",
+   "outfit": "suit",
+   "top": "#4a3a30",
+   "tie": "#2a4a6a",
+   "seed": 8
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "The Man Who Failed 5,126 Times",
+   "lines": [
+    [
+     "u01_1",
+     {
+      "bg": "home",
+      "cast": [
+       {
+        "id": "dyson",
+        "x": 820,
+        "y": 400,
+        "s": 0.9,
+        "pose": "hold",
+        "expr": "annoyed",
+        "turn": 0.2,
+        "hold": {
+         "type": "oldvac",
+         "s": 0.5,
+         "y": 640
+        }
+       }
+      ],
+      "props": []
+     },
+     "In 1978, James Dyson got annoyed with his vacuum cleaner. It kept losing suction."
+    ],
+    [
+     "u01_2",
+     {
+      "bg": "workshop",
+      "cast": [
+       {
+        "id": "dyson",
+        "x": 1180,
+        "y": 400,
+        "s": 0.9,
+        "pose": "chin",
+        "expr": "think",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "sketch",
+        "x": 560,
+        "y": 420,
+        "s": 0.8,
+        "kind": "cyclone"
+       }
+      ]
+     },
+     "The bag kept clogging with dust. So he wondered, what if a vacuum had no bag at all?"
+    ],
+    [
+     "u01_3",
+     {
+      "bg": "workshop",
+      "cast": [
+       {
+        "id": "dyson",
+        "x": 1450,
+        "y": 420,
+        "s": 0.85,
+        "pose": "desk",
+        "expr": "determined",
+        "turn": -0.4
+       }
+      ],
+      "props": [
+       {
+        "type": "table",
+        "x": 760,
+        "y": 760,
+        "s": 1.2
+       },
+       {
+        "type": "protos",
+        "x": 820,
+        "y": 760,
+        "s": 0.9,
+        "n": 6
+       }
+      ],
+      "counter": {
+       "label": "PROTOTYPE",
+       "from_": 1,
+       "to": 900,
+       "pre": "#"
+      }
+     },
+     "He started building prototypes in his workshop. One after another."
+    ],
+    [
+     "u01_4",
+     {
+      "bg": "kitchen",
+      "cast": [
+       {
+        "id": "wife",
+        "x": 640,
+        "y": 420,
+        "s": 0.85,
+        "pose": "desk",
+        "expr": "worried",
+        "turn": 0.3
+       },
+       {
+        "id": "dyson",
+        "x": 1300,
+        "y": 400,
+        "s": 0.9,
+        "pose": "neck",
+        "expr": "tired",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "papers",
+        "x": 640,
+        "y": 760,
+        "s": 1.2,
+        "n": 6
+       },
+       {
+        "type": "table",
+        "x": 960,
+        "y": 800,
+        "s": 1.6,
+        "front": true
+       }
+      ],
+      "bgo": {
+       "night": true
+      }
+     },
+     "Year after year, they failed. The family got by on his wife's art teaching income, and growing debts."
+    ],
+    [
+     "u01_5",
+     {
+      "bg": "workshop",
+      "cast": [
+       {
+        "id": "dyson",
+        "x": 1300,
+        "y": 400,
+        "s": 0.9,
+        "pose": "cheer",
+        "expr": "grin",
+        "turn": -0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "vacuum",
+        "x": 640,
+        "y": 900,
+        "s": 1.2,
+        "col": "#f2c032"
+       }
+      ],
+      "counter": {
+       "label": "PROTOTYPE",
+       "from_": 5126,
+       "to": 5127,
+       "pre": "#"
+      },
+      "cam": "in",
+      "focus": [
+       900,
+       500
+      ]
+     },
+     "After about five years, prototype number five thousand, one hundred and twenty seven finally worked."
+    ],
+    [
+     "u01_6",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "exec1",
+        "x": 700,
+        "y": 400,
+        "s": 0.88,
+        "pose": "crossed",
+        "expr": "skeptical",
+        "turn": 0.3
+       },
+       {
+        "id": "exec2",
+        "x": 1250,
+        "y": 420,
+        "s": 0.88,
+        "pose": "crossed",
+        "expr": "annoyed",
+        "turn": -0.3
+       }
+      ],
+      "props": [],
+      "stamp": "NO THANKS"
+     },
+     "But the big manufacturers weren't interested. Selling replacement bags was a very good business."
+    ],
+    [
+     "u01_7",
+     {
+      "bg": "street",
+      "cast": [
+       {
+        "id": "dyson",
+        "x": 960,
+        "y": 300,
+        "s": 0.45,
+        "pose": "wave",
+        "expr": "smile",
+        "turn": 0,
+        "walk": 1
+       }
+      ],
+      "props": [
+       {
+        "type": "boxes",
+        "x": 960,
+        "y": 1000,
+        "s": 0.7,
+        "n": 4,
+        "label": "DC01",
+        "col": "#f2c032"
+       }
+      ]
+     },
+     "So he licensed it in Japan first. Then, in 1993, he launched his own machine in Britain."
+    ],
+    [
+     "u01_8",
+     {
+      "bg": "home",
+      "cast": [
+       {
+        "id": "dyson",
+        "x": 1250,
+        "y": 400,
+        "s": 0.9,
+        "pose": "present",
+        "expr": "proud",
+        "turn": -0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "vacuum",
+        "x": 620,
+        "y": 920,
+        "s": 1.25,
+        "col": "#f2c032"
+       }
+      ],
+      "cam": "out"
+     },
+     "Within two years it was the best selling vacuum in the country. Five thousand failures, and one idea that worked."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,268 @@
+{
+ "series": "Underdogs",
+ "episode": 8,
+ "title": "Three Air Mattresses and a Rent Problem",
+ "out": "three-air-mattresses-and-a-rent-problem",
+ "cast": {
+  "brian": {
+   "skin": "#ecc29e",
+   "hairCol": "#3a2a1c",
+   "hair": "side",
+   "outfit": "hoodie",
+   "top": "#5a6a7a",
+   "seed": 1
+  },
+  "joe": {
+   "skin": "#e6b48e",
+   "hairCol": "#1d1714",
+   "hair": "buzz",
+   "stubble": 1,
+   "outfit": "tee",
+   "top": "#c98a3a",
+   "seed": 2
+  },
+  "guest": {
+   "skin": "#c98e6a",
+   "hairCol": "#15110e",
+   "hair": "curly",
+   "glasses": "rect",
+   "outfit": "shirt",
+   "top": "#5a8a7a",
+   "shirt": "#8ab8a8",
+   "seed": 3
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Three Air Mattresses and a Rent Problem",
+   "lines": [
+    [
+     "u08_1",
+     {
+      "bg": "home",
+      "cast": [
+       {
+        "id": "brian",
+        "x": 680,
+        "y": 400,
+        "s": 0.86,
+        "pose": "neck",
+        "expr": "worried",
+        "turn": 0.3
+       },
+       {
+        "id": "joe",
+        "x": 1280,
+        "y": 400,
+        "s": 0.86,
+        "pose": "hold",
+        "expr": "sad",
+        "turn": -0.3,
+        "hold": {
+         "type": "calendar",
+         "s": 0.5,
+         "y": 430,
+         "month": "RENT DUE",
+         "day": "1"
+        }
+       }
+      ],
+      "props": []
+     },
+     "In 2007, two young designers in San Francisco couldn't afford their rent."
+    ],
+    [
+     "u08_2",
+     {
+      "bg": "street",
+      "cast": [],
+      "props": [
+       {
+        "type": "sign",
+        "x": 960,
+        "y": 1000,
+        "s": 1,
+        "text": "NO VACANCY",
+        "w": 520,
+        "col": "#2b2622",
+        "tc": "#f2c94a"
+       }
+      ]
+     },
+     "A big design conference was coming to town, and the hotels were full."
+    ],
+    [
+     "u08_3",
+     {
+      "bg": "home",
+      "cast": [
+       {
+        "id": "joe",
+        "x": 1300,
+        "y": 400,
+        "s": 0.86,
+        "pose": "present",
+        "expr": "grin",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "mattress",
+        "x": 760,
+        "y": 1000,
+        "s": 0.75,
+        "n": 3
+       }
+      ]
+     },
+     "So they blew up three air mattresses on their living room floor, and rented them out, with breakfast."
+    ],
+    [
+     "u08_4",
+     {
+      "bg": "home",
+      "cast": [
+       {
+        "id": "brian",
+        "x": 1300,
+        "y": 420,
+        "s": 0.86,
+        "pose": "desk",
+        "expr": "smile",
+        "turn": -0.3
+       },
+       {
+        "id": "guest",
+        "x": 600,
+        "y": 420,
+        "s": 0.86,
+        "pose": "wave",
+        "expr": "grin",
+        "turn": 0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "laptop",
+        "x": 1300,
+        "y": 820,
+        "s": 0.8,
+        "front": true,
+        "text": "AIR BED + BREAKFAST"
+       }
+      ]
+     },
+     "They called it Air Bed and Breakfast."
+    ],
+    [
+     "u08_5",
+     {
+      "bg": "office",
+      "cast": [
+       {
+        "id": "brian",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "desk",
+        "expr": "sad",
+        "turn": 0.1
+       }
+      ],
+      "props": [
+       {
+        "type": "laptop",
+        "x": 960,
+        "y": 820,
+        "s": 0.9,
+        "front": true,
+        "text": "0 replies"
+       }
+      ],
+      "stamp": "NO REPLY"
+     },
+     "Investors weren't interested. Many didn't even reply."
+    ],
+    [
+     "u08_6",
+     {
+      "bg": "kitchen",
+      "cast": [
+       {
+        "id": "joe",
+        "x": 1300,
+        "y": 400,
+        "s": 0.86,
+        "pose": "present",
+        "expr": "grin",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "cereal",
+        "x": 640,
+        "y": 900,
+        "s": 1.1
+       }
+      ],
+      "counter": {
+       "label": "RAISED",
+       "from_": 0,
+       "to": 30000,
+       "pre": "$"
+      }
+     },
+     "To stay alive, they designed and sold election themed cereal boxes, and raised about thirty thousand dollars."
+    ],
+    [
+     "u08_7",
+     {
+      "bg": "office",
+      "cast": [
+       {
+        "id": "brian",
+        "x": 640,
+        "y": 400,
+        "s": 0.86,
+        "pose": "cheer",
+        "expr": "grin",
+        "turn": 0.3
+       },
+       {
+        "id": "joe",
+        "x": 1300,
+        "y": 400,
+        "s": 0.86,
+        "pose": "point",
+        "expr": "smile",
+        "turn": -0.3
+       }
+      ],
+      "props": []
+     },
+     "That hustle helped get them into the startup programme Y Combinator, in 2009."
+    ],
+    [
+     "u08_8",
+     {
+      "bg": "studio",
+      "cast": [],
+      "props": [
+       {
+        "type": "globe",
+        "x": 960,
+        "y": 560,
+        "s": 1.4
+       }
+      ],
+      "cam": "out"
+     },
+     "Today, Airbnb has hosted guests in almost every country on Earth."
+    ]
+   ]
+  }
+ ]
+}

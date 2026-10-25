@@ -1,0 +1,277 @@
+{
+ "series": "Underdogs",
+ "episode": 9,
+ "title": "From Food Stamps to 19 Billion",
+ "out": "from-food-stamps-to-19-billion",
+ "cast": {
+  "jan": {
+   "skin": "#ecc6a4",
+   "hairCol": "#3a2a1c",
+   "hair": "buzz",
+   "stubble": 1,
+   "outfit": "tee",
+   "top": "#3a3a44",
+   "seed": 1,
+   "eye": "#5a7a9a"
+  },
+  "mom": {
+   "skin": "#f0c8a8",
+   "hairCol": "#6a4a3a",
+   "hair": "bun",
+   "fem": 1,
+   "outfit": "sweater",
+   "top": "#6a5a7a",
+   "seed": 2
+  },
+  "brian": {
+   "skin": "#e6b48e",
+   "hairCol": "#6a5040",
+   "hair": "side",
+   "glasses": "rect",
+   "outfit": "shirt",
+   "top": "#4a5a6a",
+   "shirt": "#7a8a9a",
+   "seed": 3
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "From Food Stamps to 19 Billion",
+   "lines": [
+    [
+     "u09_1",
+     {
+      "bg": "kitchen",
+      "cast": [
+       {
+        "id": "mom",
+        "x": 680,
+        "y": 420,
+        "s": 0.86,
+        "pose": "desk",
+        "expr": "tired",
+        "turn": 0.3
+       },
+       {
+        "id": "jan",
+        "x": 1300,
+        "y": 440,
+        "s": 0.78,
+        "pose": "rest",
+        "expr": "sad",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "table",
+        "x": 960,
+        "y": 850,
+        "s": 1.6,
+        "front": true
+       }
+      ]
+     },
+     "At sixteen, Jan Koum moved from Ukraine to California with his mother. They relied on food stamps to get by."
+    ],
+    [
+     "u09_2",
+     {
+      "bg": "shop",
+      "cast": [
+       {
+        "id": "jan",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "hold",
+        "expr": "tired",
+        "turn": 0,
+        "hold": {
+         "type": "broom",
+         "s": 0.45,
+         "y": 520,
+         "rot": 0.2
+        }
+       }
+      ],
+      "props": []
+     },
+     "He swept floors at a grocery store to help pay the bills."
+    ],
+    [
+     "u09_3",
+     {
+      "bg": "office",
+      "cast": [
+       {
+        "id": "jan",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "desk",
+        "expr": "determined",
+        "turn": 0.1
+       }
+      ],
+      "props": [
+       {
+        "type": "laptop",
+        "x": 960,
+        "y": 820,
+        "s": 0.9,
+        "front": true,
+        "text": "> learning..."
+       }
+      ]
+     },
+     "He taught himself computer networking, and later spent nine years as an engineer at Yahoo."
+    ],
+    [
+     "u09_4",
+     {
+      "bg": "office",
+      "cast": [
+       {
+        "id": "brian",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "desk",
+        "expr": "sad",
+        "turn": 0.1
+       }
+      ],
+      "props": [
+       {
+        "type": "laptop",
+        "x": 960,
+        "y": 820,
+        "s": 0.9,
+        "front": true,
+        "text": "Not this time"
+       }
+      ],
+      "stamp": "REJECTED"
+     },
+     "In 2009, his friend Brian Acton applied for jobs at Facebook and Twitter. Both turned him down."
+    ],
+    [
+     "u09_5",
+     {
+      "bg": "home",
+      "cast": [
+       {
+        "id": "jan",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "phone",
+        "expr": "think",
+        "turn": 0.2
+       }
+      ],
+      "props": [],
+      "bgo": {
+       "night": true
+      }
+     },
+     "That same year, Jan bought an iPhone, and had an idea for an app. They called it WhatsApp."
+    ],
+    [
+     "u09_6",
+     {
+      "bg": "office",
+      "cast": [],
+      "props": [
+       {
+        "type": "note",
+        "x": 960,
+        "y": 560,
+        "s": 1.3,
+        "lines": [
+         "No ads!",
+         "No games!",
+         "No gimmicks!"
+        ]
+       }
+      ]
+     },
+     "They kept it simple. A note on Jan's desk said: no ads, no games, no gimmicks."
+    ],
+    [
+     "u09_7",
+     {
+      "bg": "office",
+      "cast": [
+       {
+        "id": "jan",
+        "x": 640,
+        "y": 400,
+        "s": 0.86,
+        "pose": "shake",
+        "expr": "grin",
+        "turn": 0.3
+       },
+       {
+        "id": "brian",
+        "x": 1300,
+        "y": 400,
+        "s": 0.86,
+        "pose": "cheer",
+        "expr": "grin",
+        "turn": -0.3
+       }
+      ],
+      "props": [],
+      "counter": {
+       "label": "SOLD TO FACEBOOK",
+       "from_": 0,
+       "to": 19,
+       "pre": "$",
+       "suf": " BILLION"
+      }
+     },
+     "In 2014, Facebook bought WhatsApp for about nineteen billion dollars. The company that turned Brian down."
+    ],
+    [
+     "u09_8",
+     {
+      "bg": "street",
+      "cast": [
+       {
+        "id": "jan",
+        "x": 960,
+        "y": 300,
+        "s": 0.45,
+        "pose": "hold",
+        "expr": "proud",
+        "turn": 0,
+        "hold": {
+         "type": "papers",
+         "s": 0.4,
+         "y": 470,
+         "n": 2
+        }
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "x": 1450,
+        "y": 990,
+        "s": 0.8,
+        "text": "SOCIAL SERVICES",
+        "w": 520,
+        "size": 44
+       }
+      ],
+      "cam": "out"
+     },
+     "Jan signed the deal outside the old welfare office, where he once queued for food stamps."
+    ]
+   ]
+  }
+ ]
+}

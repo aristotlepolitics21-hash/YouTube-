@@ -1,0 +1,257 @@
+{
+ "series": "Underdogs",
+ "episode": 2,
+ "title": "He Started Over in His Sixties",
+ "out": "he-started-over-in-his-sixties",
+ "cast": {
+  "sanders": {
+   "skin": "#f0c4a0",
+   "hairCol": "#eeeeee",
+   "hair": "swept",
+   "facial": "goatee",
+   "glasses": "heavy",
+   "outfit": "whitesuit",
+   "top": "#f4f1ea",
+   "seed": 1
+  },
+  "cust": {
+   "skin": "#d9a07a",
+   "hairCol": "#2a1a12",
+   "hair": "side",
+   "outfit": "shirt",
+   "top": "#6a8a6a",
+   "shirt": "#9ab89a",
+   "seed": 3
+  },
+  "owner": {
+   "skin": "#e6b088",
+   "hairCol": "#4a3a2e",
+   "hair": "slick",
+   "facial": "mustache",
+   "outfit": "apron",
+   "shirt": "#e8e0d0",
+   "seed": 4
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "He Started Over in His Sixties",
+   "lines": [
+    [
+     "u02_1",
+     {
+      "bg": "diner",
+      "cast": [
+       {
+        "id": "sanders",
+        "x": 960,
+        "y": 380,
+        "s": 0.88,
+        "pose": "hold",
+        "expr": "smile",
+        "turn": 0,
+        "hold": {
+         "type": "bucket",
+         "s": 0.5,
+         "y": 470
+        }
+       }
+      ],
+      "props": []
+     },
+     "In the 1950s, Harland Sanders ran a busy roadside cafe in Kentucky, famous for its fried chicken."
+    ],
+    [
+     "u02_2",
+     {
+      "bg": "road",
+      "cast": [],
+      "props": [
+       {
+        "type": "sign",
+        "x": 1400,
+        "y": 900,
+        "s": 1,
+        "text": "CAFE",
+        "w": 300,
+        "h": 130
+       },
+       {
+        "type": "car",
+        "x": 700,
+        "y": 1000,
+        "s": 0.7,
+        "col": "#3a5a8a"
+       }
+      ]
+     },
+     "Then a new interstate highway was built, and it bypassed his town."
+    ],
+    [
+     "u02_3",
+     {
+      "bg": "diner",
+      "cast": [
+       {
+        "id": "sanders",
+        "x": 960,
+        "y": 380,
+        "s": 0.88,
+        "pose": "neck",
+        "expr": "sad",
+        "turn": 0.2
+       }
+      ],
+      "props": [],
+      "stamp": "SOLD"
+     },
+     "The customers vanished. He sold everything at auction, and was left with little more than a small social security check."
+    ],
+    [
+     "u02_4",
+     {
+      "bg": "home",
+      "cast": [
+       {
+        "id": "sanders",
+        "x": 960,
+        "y": 420,
+        "s": 0.88,
+        "pose": "chin",
+        "expr": "think",
+        "turn": 0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "armchair",
+        "x": 960,
+        "y": 1080,
+        "s": 1.4
+       }
+      ],
+      "bgo": {
+       "night": true
+      },
+      "counter": {
+       "label": "AGE",
+       "from_": 65,
+       "to": 66
+      }
+     },
+     "He was in his sixties. Most people would have retired."
+    ],
+    [
+     "u02_5",
+     {
+      "bg": "road",
+      "cast": [],
+      "props": [
+       {
+        "type": "car",
+        "x": 960,
+        "y": 1000,
+        "s": 0.9,
+        "col": "#f4f1ea"
+       },
+       {
+        "type": "cooker",
+        "x": 700,
+        "y": 700,
+        "s": 0.6
+       }
+      ]
+     },
+     "Instead, he loaded a pressure cooker into his car, and drove from restaurant to restaurant."
+    ],
+    [
+     "u02_6",
+     {
+      "bg": "diner",
+      "cast": [
+       {
+        "id": "sanders",
+        "x": 680,
+        "y": 400,
+        "s": 0.86,
+        "pose": "hold",
+        "expr": "smile",
+        "turn": 0.3,
+        "hold": {
+         "type": "bucket",
+         "s": 0.45,
+         "y": 470
+        }
+       },
+       {
+        "id": "owner",
+        "x": 1300,
+        "y": 420,
+        "s": 0.88,
+        "pose": "crossed",
+        "expr": "skeptical",
+        "turn": -0.3
+       }
+      ],
+      "props": [],
+      "stamp": "NO"
+     },
+     "He offered owners a deal. He'd share his recipe, and they'd pay him a nickel for every chicken they sold. Many said no."
+    ],
+    [
+     "u02_7",
+     {
+      "bg": "road",
+      "cast": [],
+      "props": [
+       {
+        "type": "car",
+        "x": 960,
+        "y": 1000,
+        "s": 0.9,
+        "col": "#f4f1ea"
+       }
+      ],
+      "bgo": {},
+      "counter": {
+       "label": "RESTAURANTS",
+       "from_": 1,
+       "to": 600,
+       "suf": "+"
+      }
+     },
+     "He kept going, often sleeping in his car. By 1964, more than six hundred restaurants were selling his chicken."
+    ],
+    [
+     "u02_8",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "sanders",
+        "x": 960,
+        "y": 380,
+        "s": 0.88,
+        "pose": "present",
+        "expr": "proud",
+        "turn": 0
+       }
+      ],
+      "props": [
+       {
+        "type": "cheque",
+        "x": 1450,
+        "y": 700,
+        "s": 0.7,
+        "amount": "$2,000,000"
+       }
+      ],
+      "cam": "out"
+     },
+     "That year, he sold the company for two million dollars. Not bad for a man who started over in his sixties."
+    ]
+   ]
+  }
+ ]
+}

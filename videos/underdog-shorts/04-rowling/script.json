@@ -1,0 +1,322 @@
+{
+ "series": "Underdogs",
+ "episode": 4,
+ "title": "Rejected 12 Times",
+ "out": "rejected-12-times",
+ "cast": {
+  "jo": {
+   "skin": "#f2c8a8",
+   "hairCol": "#9a6a3a",
+   "hair": "long",
+   "fem": 1,
+   "outfit": "sweater",
+   "top": "#5a6a8a",
+   "seed": 1,
+   "eye": "#4a7a6a"
+  },
+  "pub": {
+   "skin": "#e6b48e",
+   "hairCol": "#6a6a6a",
+   "hair": "side",
+   "glasses": "rect",
+   "outfit": "suit",
+   "top": "#3a3a44",
+   "tie": "#7a3a2a",
+   "seed": 2
+  },
+  "alice": {
+   "skin": "#f4cfb0",
+   "hairCol": "#c98a4a",
+   "hair": "ponytail",
+   "fem": 1,
+   "kid": 1,
+   "outfit": "tee",
+   "top": "#d98a4a",
+   "seed": 3
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Rejected 12 Times",
+   "lines": [
+    [
+     "u04_1",
+     {
+      "bg": "kitchen",
+      "cast": [
+       {
+        "id": "jo",
+        "x": 960,
+        "y": 400,
+        "s": 0.88,
+        "pose": "hold",
+        "expr": "tired",
+        "turn": 0.1,
+        "hold": {
+         "type": "baby",
+         "s": 0.7,
+         "y": 420
+        }
+       }
+      ],
+      "props": [],
+      "bgo": {
+       "night": true
+      }
+     },
+     "In the early 1990s, Joanne Rowling was a single mother in Edinburgh, living on welfare benefits."
+    ],
+    [
+     "u04_2",
+     {
+      "bg": "kitchen",
+      "cast": [
+       {
+        "id": "jo",
+        "x": 960,
+        "y": 420,
+        "s": 0.88,
+        "pose": "desk",
+        "expr": "sad",
+        "turn": 0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "papers",
+        "x": 960,
+        "y": 800,
+        "s": 1.2,
+        "n": 5
+       },
+       {
+        "type": "table",
+        "x": 960,
+        "y": 830,
+        "s": 1.6,
+        "front": true
+       }
+      ],
+      "bgo": {
+       "night": true
+      }
+     },
+     "She later said that, at the time, she was the biggest failure she knew."
+    ],
+    [
+     "u04_3",
+     {
+      "bg": "cafe",
+      "cast": [
+       {
+        "id": "jo",
+        "x": 820,
+        "y": 420,
+        "s": 0.88,
+        "pose": "write",
+        "expr": "think",
+        "turn": 0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "stroller",
+        "x": 1450,
+        "y": 1000,
+        "s": 0.8
+       },
+       {
+        "type": "table",
+        "x": 820,
+        "y": 830,
+        "s": 1.4,
+        "front": true
+       },
+       {
+        "type": "notebook",
+        "x": 820,
+        "y": 800,
+        "s": 0.9,
+        "front": true
+       }
+      ]
+     },
+     "But she kept writing a story about a boy wizard, often in cafes, while her baby daughter slept."
+    ],
+    [
+     "u04_4",
+     {
+      "bg": "home",
+      "cast": [
+       {
+        "id": "jo",
+        "x": 1300,
+        "y": 400,
+        "s": 0.88,
+        "pose": "desk",
+        "expr": "determined",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "typewriter",
+        "x": 700,
+        "y": 880,
+        "s": 1
+       },
+       {
+        "type": "letter",
+        "x": 700,
+        "y": 520,
+        "s": 0.7,
+        "rot": -0.1
+       }
+      ],
+      "bgo": {
+       "night": true
+      }
+     },
+     "When it was finished, she typed it up and sent it out to publishers."
+    ],
+    [
+     "u04_5",
+     {
+      "bg": "home",
+      "cast": [],
+      "props": [
+       {
+        "type": "letter",
+        "x": 520,
+        "y": 400,
+        "s": 0.9,
+        "rot": -0.15,
+        "stamp": "NO"
+       },
+       {
+        "type": "letter",
+        "x": 960,
+        "y": 560,
+        "s": 0.9,
+        "rot": 0.08,
+        "stamp": "NO"
+       },
+       {
+        "type": "letter",
+        "x": 1400,
+        "y": 380,
+        "s": 0.9,
+        "rot": -0.05,
+        "stamp": "NO"
+       }
+      ],
+      "counter": {
+       "label": "REJECTIONS",
+       "from_": 1,
+       "to": 12
+      }
+     },
+     "Twelve publishers turned it down."
+    ],
+    [
+     "u04_6",
+     {
+      "bg": "office",
+      "cast": [
+       {
+        "id": "pub",
+        "x": 700,
+        "y": 400,
+        "s": 0.88,
+        "pose": "hold",
+        "expr": "surprised",
+        "turn": 0.3,
+        "hold": {
+         "type": "book",
+         "s": 0.5,
+         "y": 430,
+         "col": "#8a3a2a"
+        }
+       },
+       {
+        "id": "alice",
+        "x": 1300,
+        "y": 520,
+        "s": 0.6,
+        "pose": "cheer",
+        "expr": "grin",
+        "turn": -0.3
+       }
+      ],
+      "props": []
+     },
+     "Then a small publisher, Bloomsbury, gave it to the chairman's eight year old daughter. She loved it, and they said yes."
+    ],
+    [
+     "u04_7",
+     {
+      "bg": "office",
+      "cast": [],
+      "props": [
+       {
+        "type": "stack",
+        "x": 760,
+        "y": 960,
+        "s": 1.4,
+        "n": 8,
+        "cols": [
+         "#8a3a2a"
+        ],
+        "label": "THE BOY WIZARD"
+       },
+       {
+        "type": "stack",
+        "x": 1180,
+        "y": 960,
+        "s": 1.4,
+        "n": 6,
+        "cols": [
+         "#8a3a2a"
+        ],
+        "label": "THE BOY WIZARD"
+       }
+      ],
+      "counter": {
+       "label": "FIRST PRINT RUN",
+       "from_": 0,
+       "to": 500
+      }
+     },
+     "Harry Potter and the Philosopher's Stone came out in 1997, with a first printing of just five hundred hardbacks."
+    ],
+    [
+     "u04_8",
+     {
+      "bg": "studio",
+      "cast": [
+       {
+        "id": "jo",
+        "x": 960,
+        "y": 400,
+        "s": 0.88,
+        "pose": "wave",
+        "expr": "grin",
+        "turn": 0
+       }
+      ],
+      "props": [],
+      "cam": "out",
+      "counter": {
+       "label": "COPIES SOLD",
+       "from_": 0,
+       "to": 500000000,
+       "suf": "+"
+      }
+     },
+     "Today, the series has sold more than five hundred million copies."
+    ]
+   ]
+  }
+ ]
+}

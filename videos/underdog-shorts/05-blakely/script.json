@@ -1,0 +1,283 @@
+{
+ "series": "Underdogs",
+ "episode": 5,
+ "title": "From Fax Machines to Billionaire",
+ "out": "from-fax-machines-to-billionaire",
+ "cast": {
+  "sara": {
+   "skin": "#f4cdb0",
+   "hairCol": "#e2c27a",
+   "hair": "long",
+   "fem": 1,
+   "outfit": "blouse",
+   "top": "#c84a5a",
+   "seed": 1,
+   "eye": "#4a6a9a"
+  },
+  "mill": {
+   "skin": "#e2aa86",
+   "hairCol": "#9a9a9a",
+   "hair": "bald",
+   "facial": "mustache",
+   "facialCol": "#9a9a9a",
+   "outfit": "apron",
+   "shirt": "#6a7a8a",
+   "seed": 2
+  },
+  "exec1": {
+   "skin": "#e9b48c",
+   "hairCol": "#3a2a20",
+   "hair": "side",
+   "outfit": "suit",
+   "top": "#2e3440",
+   "tie": "#6a2a2a",
+   "seed": 7
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "From Fax Machines to Billionaire",
+   "lines": [
+    [
+     "u05_1",
+     {
+      "bg": "office",
+      "cast": [
+       {
+        "id": "sara",
+        "x": 820,
+        "y": 400,
+        "s": 0.88,
+        "pose": "hold",
+        "expr": "smile",
+        "turn": 0.3,
+        "hold": {
+         "type": "fax",
+         "s": 0.5,
+         "y": 470
+        }
+       },
+       {
+        "id": "exec1",
+        "x": 1400,
+        "y": 420,
+        "s": 0.86,
+        "pose": "crossed",
+        "expr": "annoyed",
+        "turn": -0.3
+       }
+      ],
+      "props": [],
+      "stamp": "NO"
+     },
+     "For seven years, Sara Blakely sold fax machines door to door."
+    ],
+    [
+     "u05_2",
+     {
+      "bg": "street",
+      "cast": [
+       {
+        "id": "sara",
+        "x": 960,
+        "y": 300,
+        "s": 0.45,
+        "pose": "rest",
+        "expr": "determined",
+        "turn": 0,
+        "walk": 1
+       }
+      ],
+      "props": []
+     },
+     "She heard no all day long. Later, she said it made her fearless."
+    ],
+    [
+     "u05_3",
+     {
+      "bg": "home",
+      "cast": [
+       {
+        "id": "sara",
+        "x": 1250,
+        "y": 400,
+        "s": 0.88,
+        "pose": "hold",
+        "expr": "think",
+        "turn": -0.3,
+        "hold": {
+         "type": "scissors",
+         "s": 0.6,
+         "y": 440
+        }
+       }
+      ],
+      "props": [
+       {
+        "type": "fabric",
+        "x": 600,
+        "y": 820,
+        "s": 0.9
+       }
+      ],
+      "bgo": {
+       "night": true
+      }
+     },
+     "One evening, before a party, she cut the feet off her tights, to look smoother under her white trousers."
+    ],
+    [
+     "u05_4",
+     {
+      "bg": "home",
+      "cast": [
+       {
+        "id": "sara",
+        "x": 1250,
+        "y": 400,
+        "s": 0.88,
+        "pose": "present",
+        "expr": "grin",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "money",
+        "x": 640,
+        "y": 900,
+        "s": 1.3,
+        "n": 5
+       }
+      ],
+      "counter": {
+       "label": "SAVINGS",
+       "from_": 0,
+       "to": 5000,
+       "pre": "$"
+      }
+     },
+     "She knew she had an idea. With five thousand dollars of her savings, she started a company."
+    ],
+    [
+     "u05_5",
+     {
+      "bg": "factory",
+      "cast": [
+       {
+        "id": "mill",
+        "x": 700,
+        "y": 400,
+        "s": 0.88,
+        "pose": "phone",
+        "expr": "think",
+        "turn": 0.3
+       },
+       {
+        "id": "sara",
+        "x": 1300,
+        "y": 400,
+        "s": 0.86,
+        "pose": "rest",
+        "expr": "worried",
+        "turn": -0.3
+       }
+      ],
+      "props": []
+     },
+     "Mill owners kept turning her down. Then one called back. His daughters had told him it was a great idea."
+    ],
+    [
+     "u05_6",
+     {
+      "bg": "home",
+      "cast": [
+       {
+        "id": "sara",
+        "x": 960,
+        "y": 420,
+        "s": 0.88,
+        "pose": "write",
+        "expr": "determined",
+        "turn": 0.1
+       }
+      ],
+      "props": [
+       {
+        "type": "notebook",
+        "x": 960,
+        "y": 830,
+        "s": 1,
+        "front": true
+       },
+       {
+        "type": "book",
+        "x": 1500,
+        "y": 700,
+        "s": 0.6,
+        "title": "PATENTS"
+       }
+      ]
+     },
+     "She wrote much of her own patent application, and called the brand Spanx."
+    ],
+    [
+     "u05_7",
+     {
+      "bg": "studio",
+      "cast": [],
+      "props": [
+       {
+        "type": "screen",
+        "x": 960,
+        "y": 560,
+        "s": 1.2,
+        "glow": "#f6e3b0",
+        "text": "ORDERS"
+       },
+       {
+        "type": "boxes",
+        "x": 960,
+        "y": 1060,
+        "s": 0.8,
+        "n": 8,
+        "label": "SPANX",
+        "col": "#d9a0a8"
+       }
+      ]
+     },
+     "Then Oprah Winfrey named it one of her favourite things, and orders exploded."
+    ],
+    [
+     "u05_8",
+     {
+      "bg": "studio",
+      "cast": [
+       {
+        "id": "sara",
+        "x": 960,
+        "y": 400,
+        "s": 0.88,
+        "pose": "cheer",
+        "expr": "grin",
+        "turn": 0
+       }
+      ],
+      "props": [
+       {
+        "type": "news",
+        "x": 1500,
+        "y": 600,
+        "s": 0.55,
+        "head": "YOUNGEST SELF-MADE BILLIONAIRE"
+       }
+      ],
+      "cam": "out"
+     },
+     "In 2012, Forbes called her the world's youngest self-made woman billionaire."
+    ]
+   ]
+  }
+ ]
+}

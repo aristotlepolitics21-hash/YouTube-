@@ -1,0 +1,282 @@
+{
+ "series": "Underdogs",
+ "episode": 6,
+ "title": "Rejected by Toyota, Then Ruined by an Earthquake",
+ "out": "rejected-by-toyota-then-ruined-by-an-earthquake",
+ "cast": {
+  "honda": {
+   "skin": "#e2b088",
+   "hairCol": "#1d1714",
+   "hair": "slick",
+   "glasses": "round",
+   "outfit": "apron",
+   "shirt": "#e8e2d4",
+   "apron": "#5a6a7a",
+   "seed": 1,
+   "eye": "#2a1d14"
+  },
+  "t1": {
+   "skin": "#e6b88e",
+   "hairCol": "#15110e",
+   "hair": "side",
+   "glasses": "rect",
+   "outfit": "suit",
+   "top": "#2e3440",
+   "tie": "#3a3a3a",
+   "seed": 2,
+   "eye": "#2a1d14"
+  },
+  "t2": {
+   "skin": "#dcaa82",
+   "hairCol": "#2a2420",
+   "hair": "slick",
+   "outfit": "suit",
+   "top": "#3a3a44",
+   "tie": "#5a2a2a",
+   "seed": 3,
+   "eye": "#2a1d14"
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Rejected by Toyota, Then Ruined by an Earthquake",
+   "lines": [
+    [
+     "u06_1",
+     {
+      "bg": "workshop",
+      "cast": [
+       {
+        "id": "honda",
+        "x": 1250,
+        "y": 400,
+        "s": 0.88,
+        "pose": "hold",
+        "expr": "determined",
+        "turn": -0.3,
+        "hold": {
+         "type": "rings",
+         "s": 0.5,
+         "y": 470,
+         "n": 3
+        }
+       }
+      ],
+      "props": [
+       {
+        "type": "gears",
+        "x": 600,
+        "y": 900,
+        "s": 0.8
+       }
+      ]
+     },
+     "Soichiro Honda loved engines. In the 1930s, he started a company making piston rings."
+    ],
+    [
+     "u06_2",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "t1",
+        "x": 700,
+        "y": 400,
+        "s": 0.88,
+        "pose": "crossed",
+        "expr": "skeptical",
+        "turn": 0.3
+       },
+       {
+        "id": "honda",
+        "x": 1300,
+        "y": 400,
+        "s": 0.88,
+        "pose": "rest",
+        "expr": "worried",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "rings",
+        "x": 960,
+        "y": 900,
+        "s": 0.9,
+        "front": true
+       }
+      ],
+      "stamp": "REJECTED"
+     },
+     "He tried to sell them to Toyota. They rejected almost all of them for poor quality."
+    ],
+    [
+     "u06_3",
+     {
+      "bg": "classroom",
+      "cast": [
+       {
+        "id": "honda",
+        "x": 960,
+        "y": 420,
+        "s": 0.88,
+        "pose": "write",
+        "expr": "determined",
+        "turn": 0.2
+       }
+      ],
+      "props": [
+       {
+        "type": "notebook",
+        "x": 960,
+        "y": 830,
+        "s": 1,
+        "front": true
+       }
+      ]
+     },
+     "So he went back to school to study metal, and fixed his process. Toyota became a customer."
+    ],
+    [
+     "u06_4",
+     {
+      "bg": "ruins",
+      "cast": [
+       {
+        "id": "honda",
+        "x": 960,
+        "y": 380,
+        "s": 0.8,
+        "pose": "head",
+        "expr": "sad",
+        "turn": 0
+       }
+      ],
+      "props": [
+       {
+        "type": "rubble",
+        "x": 960,
+        "y": 1080,
+        "s": 1.2,
+        "front": true
+       }
+      ]
+     },
+     "Then wartime bombing, and a huge earthquake in 1945, wrecked his factory."
+    ],
+    [
+     "u06_5",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "honda",
+        "x": 700,
+        "y": 400,
+        "s": 0.88,
+        "pose": "shake",
+        "expr": "tired",
+        "turn": 0.3
+       },
+       {
+        "id": "t2",
+        "x": 1300,
+        "y": 400,
+        "s": 0.88,
+        "pose": "shake",
+        "expr": "neutral",
+        "turn": -0.3,
+        "flip": true
+       }
+      ],
+      "props": []
+     },
+     "He sold what was left of his business to Toyota."
+    ],
+    [
+     "u06_6",
+     {
+      "bg": "street",
+      "cast": [],
+      "props": [
+       {
+        "type": "bike",
+        "x": 960,
+        "y": 980,
+        "s": 1.1,
+        "motor": true
+       }
+      ]
+     },
+     "After the war, Japan was short of fuel and transport. So he started fixing small engines onto bicycles."
+    ],
+    [
+     "u06_7",
+     {
+      "bg": "factory",
+      "cast": [
+       {
+        "id": "honda",
+        "x": 960,
+        "y": 400,
+        "s": 0.88,
+        "pose": "present",
+        "expr": "proud",
+        "turn": 0.1
+       }
+      ],
+      "props": [
+       {
+        "type": "moto",
+        "x": 520,
+        "y": 1000,
+        "s": 0.8,
+        "col": "#c0302a"
+       },
+       {
+        "type": "moto",
+        "x": 1450,
+        "y": 1000,
+        "s": 0.8,
+        "col": "#c0302a"
+       }
+      ]
+     },
+     "In 1948, he founded the Honda Motor Company."
+    ],
+    [
+     "u06_8",
+     {
+      "bg": "factory",
+      "cast": [],
+      "props": [
+       {
+        "type": "moto",
+        "x": 360,
+        "y": 1000,
+        "s": 0.7
+       },
+       {
+        "type": "moto",
+        "x": 960,
+        "y": 1000,
+        "s": 0.7,
+        "col": "#2a4a8a"
+       },
+       {
+        "type": "moto",
+        "x": 1560,
+        "y": 1000,
+        "s": 0.7
+       }
+      ],
+      "cam": "out",
+      "stamp": "NO.1"
+     },
+     "By 1959, Honda was the biggest motorcycle maker in the world."
+    ]
+   ]
+  }
+ ]
+}

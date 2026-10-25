@@ -1,0 +1,247 @@
+{
+ "series": "Underdogs",
+ "episode": 7,
+ "title": "Two Failed Shops Before Chocolate",
+ "out": "two-failed-shops-before-chocolate",
+ "cast": {
+  "milton": {
+   "skin": "#ecbf9a",
+   "hairCol": "#3a2a1c",
+   "hair": "slick",
+   "facial": "mustache",
+   "outfit": "period",
+   "top": "#3a3a30",
+   "tie": "#5a3a2a",
+   "seed": 1
+  },
+  "clerk": {
+   "skin": "#e2aa86",
+   "hairCol": "#6a4a2a",
+   "hair": "side",
+   "outfit": "apron",
+   "shirt": "#e8e0d0",
+   "seed": 2
+  }
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Two Failed Shops Before Chocolate",
+   "lines": [
+    [
+     "u07_1",
+     {
+      "bg": "shop",
+      "cast": [
+       {
+        "id": "milton",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "hold",
+        "expr": "smile",
+        "turn": 0,
+        "hold": {
+         "type": "pot",
+         "s": 0.35,
+         "y": 470
+        }
+       }
+      ],
+      "props": []
+     },
+     "Milton Hershey left school young, and started out as an apprentice to a candy maker."
+    ],
+    [
+     "u07_2",
+     {
+      "bg": "shop",
+      "cast": [
+       {
+        "id": "milton",
+        "x": 960,
+        "y": 420,
+        "s": 0.86,
+        "pose": "neck",
+        "expr": "sad",
+        "turn": 0.2
+       }
+      ],
+      "props": [],
+      "stamp": "CLOSED"
+     },
+     "At eighteen, he opened his own candy shop in Philadelphia. After about six years, it failed."
+    ],
+    [
+     "u07_3",
+     {
+      "bg": "street",
+      "cast": [
+       {
+        "id": "milton",
+        "x": 960,
+        "y": 300,
+        "s": 0.45,
+        "pose": "rest",
+        "expr": "tired",
+        "turn": 0
+       }
+      ],
+      "props": [
+       {
+        "type": "sign",
+        "x": 1450,
+        "y": 980,
+        "s": 0.8,
+        "text": "CLOSED",
+        "col": "#efe6d0",
+        "tc": "#b83228"
+       }
+      ]
+     },
+     "He tried again in New York. That failed too."
+    ],
+    [
+     "u07_4",
+     {
+      "bg": "kitchen",
+      "cast": [
+       {
+        "id": "milton",
+        "x": 1250,
+        "y": 400,
+        "s": 0.88,
+        "pose": "hold",
+        "expr": "determined",
+        "turn": -0.3,
+        "hold": {
+         "type": "pot",
+         "s": 0.4,
+         "y": 470
+        }
+       }
+      ],
+      "props": [
+       {
+        "type": "pot",
+        "x": 600,
+        "y": 900,
+        "s": 1
+       }
+      ]
+     },
+     "Broke, he went back home to Lancaster, Pennsylvania, and started making caramels."
+    ],
+    [
+     "u07_5",
+     {
+      "bg": "factory",
+      "cast": [
+       {
+        "id": "milton",
+        "x": 1300,
+        "y": 400,
+        "s": 0.88,
+        "pose": "present",
+        "expr": "grin",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "boxes",
+        "x": 700,
+        "y": 1000,
+        "s": 0.9,
+        "n": 8,
+        "label": "CARAMELS",
+        "col": "#c9a06a"
+       }
+      ]
+     },
+     "This time, it worked. His caramel company became a big success."
+    ],
+    [
+     "u07_6",
+     {
+      "bg": "factory",
+      "cast": [
+       {
+        "id": "milton",
+        "x": 1350,
+        "y": 400,
+        "s": 0.88,
+        "pose": "rest",
+        "expr": "surprised",
+        "turn": -0.4
+       }
+      ],
+      "props": [
+       {
+        "type": "gears",
+        "x": 650,
+        "y": 960,
+        "s": 1.1
+       }
+      ]
+     },
+     "Then, at a world fair in 1893, he saw German chocolate making machines, and bought them."
+    ],
+    [
+     "u07_7",
+     {
+      "bg": "oldoffice",
+      "cast": [
+       {
+        "id": "milton",
+        "x": 960,
+        "y": 400,
+        "s": 0.88,
+        "pose": "hold",
+        "expr": "proud",
+        "turn": 0,
+        "hold": {
+         "type": "cheque",
+         "s": 0.4,
+         "y": 430,
+         "amount": "$1,000,000"
+        }
+       }
+      ],
+      "props": []
+     },
+     "In 1900, he sold the caramel company for one million dollars, to focus on chocolate."
+    ],
+    [
+     "u07_8",
+     {
+      "bg": "shop",
+      "cast": [
+       {
+        "id": "milton",
+        "x": 1300,
+        "y": 400,
+        "s": 0.88,
+        "pose": "present",
+        "expr": "proud",
+        "turn": -0.3
+       }
+      ],
+      "props": [
+       {
+        "type": "bars",
+        "x": 640,
+        "y": 980,
+        "s": 1.2,
+        "n": 8,
+        "label": "CHOCOLATE"
+       }
+      ],
+      "cam": "out"
+     },
+     "Two failed shops came first. Then came one of the best known chocolate bars in the world."
+    ]
+   ]
+  }
+ ]
+}
