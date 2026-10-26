@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:04,343
+How does turning a round wheel in your hands point the tyres left and right?
+
+2
+00:00:04,693 --> 00:00:08,387
+At the bottom of the steering column is a small gear, called the pinion.
+
+3
+00:00:08,737 --> 00:00:13,741
+It meshes with a toothed bar, the rack. Turning the pinion slides the rack left or right.
+
+4
+00:00:14,091 --> 00:00:19,433
+Tie rods on each end of the rack push and pull the front wheels, so they point where you want.
+
+5
+00:00:19,783 --> 00:00:27,948
+Without help, steering a parked car is hard work. Older cars use a hydraulic pump. Most new cars use an electric motor.
+
+6
+00:00:28,298 --> 00:00:34,367
+If the car pulls to one side, or the wheel is off centre, your wheel alignment may need adjusting.
+
+7
+00:00:34,717 --> 00:00:40,138
+Clunks, whining when turning, or a heavy wheel can mean worn parts or a power steering fault.
+
+8
+00:00:40,488 --> 00:00:44,287
+Pinion turns, rack slides, tie rods push, and the wheels turn.

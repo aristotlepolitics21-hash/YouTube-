@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:06,164
+Your car turns twelve volts into a spark of over twenty thousand volts, thousands of times a minute.
+
+2
+00:00:06,514 --> 00:00:11,323
+The battery supplies about twelve volts. Far too weak to jump a gap on its own.
+
+3
+00:00:11,673 --> 00:00:18,174
+An ignition coil uses two windings of wire to step that up to tens of thousands of volts, in an instant.
+
+4
+00:00:18,524 --> 00:00:24,069
+At the tip of the plug, the voltage jumps a gap of about a millimetre, lighting the fuel and air.
+
+5
+00:00:24,419 --> 00:00:32,075
+The engine computer fires each plug just before the piston reaches the top, so the burn pushes at exactly the right time.
+
+6
+00:00:32,425 --> 00:00:38,902
+Over time the tips wear and the gap grows. You get rough idling, hard starts, and worse fuel economy.
+
+7
+00:00:39,252 --> 00:00:47,204
+Many plugs last tens of thousands of miles, long life iridium ones much longer. Your service book has the exact interval.
+
+8
+00:00:47,554 --> 00:00:51,349
+Twelve volts in, twenty thousand out, one tiny spark at a time.

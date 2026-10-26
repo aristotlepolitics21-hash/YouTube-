@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:04,750
+A diesel engine has no spark plugs. So how does it ignite its fuel?
+
+2
+00:00:05,100 --> 00:00:11,774
+A diesel squeezes air much harder than a petrol engine. That makes it hot enough to ignite fuel on contact.
+
+3
+00:00:12,124 --> 00:00:17,500
+At the top of the stroke, fuel is injected into that hot air, and it lights by itself.
+
+4
+00:00:17,850 --> 00:00:23,926
+Petrol engines usually compress around ten to one. Diesels, roughly fifteen to twenty to one.
+
+5
+00:00:24,276 --> 00:00:32,218
+Diesels make lots of low down pulling power, and usually go further on a litre of fuel. Great for towing and long trips.
+
+6
+00:00:32,568 --> 00:00:40,576
+Modern diesels have particulate filters that need hot, longer drives to clean themselves. Lots of short trips can clog them.
+
+7
+00:00:40,926 --> 00:00:46,282
+Petrol engines rev higher, are quieter, cheaper to buy, and better for short city trips.
+
+8
+00:00:46,632 --> 00:00:53,576
+Lots of long motorway miles, diesel makes sense. Mostly short trips, petrol or hybrid is usually better.

@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:05,812
+There is a belt inside many engines that, if it snaps, can destroy the engine in a second.
+
+2
+00:00:06,162 --> 00:00:11,883
+The timing belt links the crankshaft to the camshafts, keeping the pistons and valves perfectly in step.
+
+3
+00:00:12,233 --> 00:00:18,680
+The camshaft turns once for every two turns of the crank, because each valve opens once every four strokes.
+
+4
+00:00:19,030 --> 00:00:23,147
+Lobes on the camshaft push the valves open at exactly the right moment.
+
+5
+00:00:23,497 --> 00:00:29,602
+In many engines, called interference engines, a snapped belt lets pistons smash into open valves.
+
+6
+00:00:29,952 --> 00:00:34,618
+Replacing the belt on schedule is far cheaper than rebuilding a wrecked engine.
+
+7
+00:00:34,968 --> 00:00:44,116
+Many belts are due somewhere around sixty to a hundred thousand miles, or a set number of years. Timing chains usually last much longer.
+
+8
+00:00:44,466 --> 00:00:50,491
+If your engine has a timing belt, do not skip it. It is one service that can save the whole engine.

@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:04,353
+That string of numbers on your tyre tells you almost everything about it.
+
+2
+00:00:04,703 --> 00:00:07,948
+The first number is the width of the tyre in millimetres.
+
+3
+00:00:08,298 --> 00:00:12,778
+The next is the profile. The sidewall height is fifty five percent of the width.
+
+4
+00:00:13,128 --> 00:00:17,805
+R means radial construction, and sixteen is the wheel size in inches.
+
+5
+00:00:18,155 --> 00:00:27,908
+Ninety one is the load index, six hundred and fifteen kilos per tyre. V is the speed rating, up to two hundred and forty kilometres an hour.
+
+6
+00:00:28,258 --> 00:00:37,979
+A four digit code shows when it was made. Twenty three, twenty one means week twenty three of 2021. Rubber ages, even unused.
+
+7
+00:00:38,329 --> 00:00:46,082
+In the UK and Europe, the legal minimum tread is one point six millimetres. Many experts suggest replacing at three.
+
+8
+00:00:46,432 --> 00:00:51,990
+Width, profile, rim size, load, speed, and age. All printed on the side of your tyre.

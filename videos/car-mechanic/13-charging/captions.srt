@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:03,800
+What actually happens in the second you turn the key, or press start?
+
+2
+00:00:04,150 --> 00:00:10,979
+The battery sends a huge current, hundreds of amps, to the starter motor, which spins the engine until it fires.
+
+3
+00:00:11,329 --> 00:00:16,095
+Starting takes a big gulp of energy from the battery. Now something has to put it back.
+
+4
+00:00:16,445 --> 00:00:23,471
+Once running, a belt from the engine spins the alternator, which generates electricity to recharge the battery.
+
+5
+00:00:23,821 --> 00:00:29,205
+While driving, the alternator powers the lights, wipers, radio and all the computers.
+
+6
+00:00:29,555 --> 00:00:36,422
+If the battery warning light comes on while driving, the alternator usually is not charging. Get it checked soon.
+
+7
+00:00:36,772 --> 00:00:43,723
+Car batteries often last around three to five years. Slow cranking on cold mornings is a classic warning sign.
+
+8
+00:00:44,073 --> 00:00:47,667
+The battery starts the car. The alternator keeps it all running.

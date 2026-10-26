@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:07,055
+For petrol to burn cleanly, it needs about fourteen point seven parts air to one part fuel, by weight.
+
+2
+00:00:07,405 --> 00:00:13,789
+Older cars used a carburettor, which let airflow suck fuel in. Simple, but not very precise.
+
+3
+00:00:14,139 --> 00:00:20,883
+Modern engines use injectors. Electric valves that spray a fine mist of fuel, many times a second.
+
+4
+00:00:21,233 --> 00:00:28,575
+The engine computer reads sensors, like how much air is coming in, and decides exactly how much fuel to spray.
+
+5
+00:00:28,925 --> 00:00:34,836
+An oxygen sensor in the exhaust checks the burn, and the computer fine tunes the mix constantly.
+
+6
+00:00:35,186 --> 00:00:43,590
+Port injection sprays into the intake. Direct injection sprays straight into the cylinder, at very high pressure, for better efficiency.
+
+7
+00:00:43,940 --> 00:00:49,359
+Dirty or clogged injectors can cause misfires, hesitation, and poor fuel economy.
+
+8
+00:00:49,709 --> 00:00:55,003
+Sensors measure, the computer decides, the injector sprays. Hundreds of times a minute.

@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:04,921
+Hybrid, plug-in hybrid, or fully electric. What is actually the difference?
+
+2
+00:00:05,271 --> 00:00:10,813
+A regular hybrid has an engine, an electric motor, and a small battery. You never plug it in.
+
+3
+00:00:11,163 --> 00:00:17,076
+The engine and braking recharge the battery, and the motor helps out, especially in slow traffic.
+
+4
+00:00:17,426 --> 00:00:23,816
+A plug-in hybrid has a bigger battery you charge at home, enough for many short trips on electricity alone.
+
+5
+00:00:24,166 --> 00:00:28,862
+When the battery runs low, the engine takes over, so long trips are no problem.
+
+6
+00:00:29,212 --> 00:00:34,997
+A fully electric car has no engine at all. A big battery, a motor, and a charging port.
+
+7
+00:00:35,347 --> 00:00:42,880
+Can charge at home and drive mostly short trips? Electric or plug-in. No charging? A regular hybrid is easy.
+
+8
+00:00:43,230 --> 00:00:48,734
+Hybrid charges itself. Plug-in charges from the wall too. Electric is all battery.

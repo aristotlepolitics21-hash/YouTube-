@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:03,607
+Without oil, an engine can destroy itself in minutes.
+
+2
+00:00:03,957 --> 00:00:09,248
+It lubricates moving parts, carries away heat, traps dirt, and helps seal the pistons.
+
+3
+00:00:09,598 --> 00:00:14,340
+An oil pump pushes oil from the sump up to the crankshaft, camshafts and turbo.
+
+4
+00:00:14,690 --> 00:00:19,267
+Over time, oil breaks down and fills with dirt, so it protects less and less.
+
+5
+00:00:19,617 --> 00:00:28,457
+In 5W-30, the 5W is how well it flows when cold, the W is for winter. The 30 is its thickness when hot.
+
+6
+00:00:28,807 --> 00:00:36,920
+Many modern cars go five to ten thousand miles, or a year, between changes. Your owner's manual has the real answer.
+
+7
+00:00:37,270 --> 00:00:43,662
+Engine off, car level, pull the dipstick, wipe it, dip again. The level should sit between min and max.
+
+8
+00:00:44,012 --> 00:00:46,564
+Oil changes are cheap. Engines are not.

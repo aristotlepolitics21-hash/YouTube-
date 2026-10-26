@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:05,977
+Your dashboard lights follow a simple colour code. Learn it, and you will know how worried to be.
+
+2
+00:00:06,327 --> 00:00:10,693
+Red means a serious problem. Pull over safely, and do not keep driving.
+
+3
+00:00:11,043 --> 00:00:17,605
+The red oil can means low oil pressure. Stop the engine as soon as it is safe. Driving on can wreck it.
+
+4
+00:00:17,955 --> 00:00:22,939
+The thermometer means the engine is too hot. Pull over, switch off, and let it cool.
+
+5
+00:00:23,289 --> 00:00:28,601
+Amber or yellow means get it checked soon. Like tyre pressure, ABS, or the engine light.
+
+6
+00:00:28,951 --> 00:00:35,451
+A steady engine light means get it checked. A flashing one means a serious misfire. Ease off and get help.
+
+7
+00:00:35,801 --> 00:00:40,321
+Green and blue just tell you something is on, like your lights or high beams.
+
+8
+00:00:40,671 --> 00:00:43,655
+Red, stop. Amber, check. Green and blue, all good.
