@@ -1,0 +1,39 @@
+1
+00:00:00,350 --> 00:00:03,375
+IT company mein chhantni ho gayi. Ab kya karun?
+
+2
+00:00:03,675 --> 00:00:09,565
+Shreya, bachchon ko coding aur robotics sikha! Aane wala zamaana isi ka hai!
+
+3
+00:00:09,865 --> 00:00:12,460
+Dadaji, chhote bachche coding seekhenge?
+
+4
+00:00:12,760 --> 00:00:17,421
+Khel-khel mein! Paanch laptop aur robot kit, lagbhag 2 lakh.
+
+5
+00:00:17,721 --> 00:00:24,637
+Weekend pe free workshop kar. Bachche ne robot chalaya, to maa-baap khud admission karayenge.
+
+6
+00:00:25,187 --> 00:00:29,372
+Madam, mera beta din bhar game khelta hai. Use game banana sikha do!
+
+7
+00:00:29,672 --> 00:00:34,660
+Hafte mein teen class, 2 hazaar mahina. Teen mahine mein apna game banayega!
+
+8
+00:00:34,960 --> 00:00:37,995
+Tees bachche, yaani mahine ke 60 hazaar.
+
+9
+00:00:38,295 --> 00:00:43,400
+Phir schoolon se tie-up kar, wahan lab chala. Ek school, saikdon bachche!
+
+10
+00:00:43,700 --> 00:00:46,801
+Naukri gayi, startup aaya! Shreya ki life set!
