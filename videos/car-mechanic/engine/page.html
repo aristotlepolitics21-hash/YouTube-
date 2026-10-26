@@ -265,7 +265,7 @@ window.__at = (T) => {
   txt(`// ${String(i + 1).padStart(2, '0')} — ${b.label || ''}`, 80, 140, F.mono(32), C.mut, 'left');
   if (EP.counter) { const prev = BEATS.slice(0, i).reverse().find(x => x.count !== undefined), from = prev ? prev.count : 0, to = b.count ?? from, v = lerp(from, to, inout(t / .9));
     txt(fmt(v, EP.counter.pre || ''), 1000, 140, F.mono(34, 700), C.or, 'right'); X.font = F.mono(34, 700); const w = X.measureText(fmt(v, EP.counter.pre || '')).width; txt(EP.counter.label, 1000 - w - 22, 140, F.mono(32), C.mut, 'right'); }
-  else txt(`EP ${String(EP.num).padStart(2, '0')}/10`, 1000, 140, F.mono(32), C.mut, 'right');
+  else txt(`EP ${String(EP.num).padStart(2, '0')}/${EP.of || 10}`, 1000, 140, F.mono(32), C.mut, 'right');
   if (EP.note && (i === 0 || i === BEATS.length - 1)) txt(EP.note, 80, 190, F.mono(22), C.mut, 'left');
   drawHead(b.head, t);
   const st = stateAt(T, i);
@@ -277,3 +277,4 @@ window.__at = (T) => {
 };
 </script>
 <script src="diagrams.js"></script>
+<script src="diagrams2.js"></script>

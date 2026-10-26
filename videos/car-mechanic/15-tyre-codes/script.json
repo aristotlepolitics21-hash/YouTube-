@@ -1,0 +1,134 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 15,
+ "of": 20,
+ "title": "What the Numbers on Your Tyres Mean",
+ "out": "what-the-numbers-on-your-tyres-mean",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "What the Numbers on Your Tyres Mean",
+   "lines": [
+    [
+     "c15_1",
+     {
+      "label": "hook",
+      "head": "Your tyre is *talking* to you",
+      "pose": "point",
+      "face": "grin",
+      "prop": {
+       "type": "tyre"
+      }
+     },
+     "That string of numbers on your tyre tells you almost everything about it."
+    ],
+    [
+     "c15_2",
+     {
+      "label": "width",
+      "head": "205 = *width*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "tyre",
+       "hi": 0
+      }
+     },
+     "The first number is the width of the tyre in millimetres."
+    ],
+    [
+     "c15_3",
+     {
+      "label": "profile",
+      "head": "55 = *sidewall* height",
+      "pose": "count",
+      "face": "smug",
+      "prop": {
+       "type": "tyre",
+       "hi": 1
+      }
+     },
+     "The next is the profile. The sidewall height is fifty five percent of the width."
+    ],
+    [
+     "c15_4",
+     {
+      "label": "rim",
+      "head": "R16 = *radial*, 16-inch rim",
+      "pose": "present",
+      "face": "grin",
+      "prop": {
+       "type": "tyre",
+       "hi": 3
+      }
+     },
+     "R means radial construction, and sixteen is the wheel size in inches."
+    ],
+    [
+     "c15_5",
+     {
+      "label": "load speed",
+      "head": "91V = *load* and speed",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "tyre",
+       "hi": 5
+      }
+     },
+     "Ninety one is the load index, six hundred and fifteen kilos per tyre. V is the speed rating, up to two hundred and forty kilometres an hour."
+    ],
+    [
+     "c15_6",
+     {
+      "label": "age",
+      "head": "Check the *date code*",
+      "pose": "count",
+      "face": "smile",
+      "prop": {
+       "type": "tyre",
+       "date": true
+      }
+     },
+     "A four digit code shows when it was made. Twenty three, twenty one means week twenty three of 2021. Rubber ages, even unused."
+    ],
+    [
+     "c15_7",
+     {
+      "label": "tread",
+      "head": "Tread depth *matters*",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "tread",
+       "depth": 2
+      }
+     },
+     "In the UK and Europe, the legal minimum tread is one point six millimetres. Many experts suggest replacing at three."
+    ],
+    [
+     "c15_8",
+     {
+      "label": "takeaway",
+      "head": "Read your *sidewall*",
+      "pose": "thumbs",
+      "face": "happy",
+      "prop": {
+       "type": "tyre",
+       "hi": 4
+      }
+     },
+     "Width, profile, rim size, load, speed, and age. All printed on the side of your tyre."
+    ]
+   ]
+  }
+ ]
+}

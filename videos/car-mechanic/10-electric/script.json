@@ -1,6 +1,7 @@
 {
  "series": "Car Mechanic 101",
  "episode": 10,
+ "of": 20,
  "title": "How an Electric Car Works",
  "out": "how-an-electric-car-works",
  "counter": null,

@@ -1,0 +1,157 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 17,
+ "of": 20,
+ "title": "What Your Dashboard Lights Mean",
+ "out": "what-your-dashboard-lights-mean",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "What Your Dashboard Lights Mean",
+   "lines": [
+    [
+     "c17_1",
+     {
+      "label": "hook",
+      "head": "Your dashboard uses *traffic light* colours",
+      "pose": "point",
+      "face": "grin",
+      "prop": {
+       "type": "dash",
+       "hi": [
+        "all"
+       ]
+      }
+     },
+     "Your dashboard lights follow a simple colour code. Learn it, and you will know how worried to be."
+    ],
+    [
+     "c17_2",
+     {
+      "label": "red",
+      "head": "*Red* means stop",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "dash",
+       "hi": [
+        "oil",
+        "temp",
+        "battery",
+        "brake"
+       ]
+      }
+     },
+     "Red means a serious problem. Pull over safely, and do not keep driving."
+    ],
+    [
+     "c17_3",
+     {
+      "label": "oil",
+      "head": "Red oil can: *pressure*",
+      "pose": "present",
+      "face": "worried",
+      "prop": {
+       "type": "dash",
+       "hi": [
+        "oil"
+       ]
+      }
+     },
+     "The red oil can means low oil pressure. Stop the engine as soon as it is safe. Driving on can wreck it."
+    ],
+    [
+     "c17_4",
+     {
+      "label": "temp",
+      "head": "Thermometer: *overheating*",
+      "pose": "facepalm",
+      "face": "worried",
+      "prop": {
+       "type": "dash",
+       "hi": [
+        "temp"
+       ]
+      }
+     },
+     "The thermometer means the engine is too hot. Pull over, switch off, and let it cool."
+    ],
+    [
+     "c17_5",
+     {
+      "label": "amber",
+      "head": "*Amber* means check soon",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "dash",
+       "hi": [
+        "engine",
+        "tpms",
+        "abs"
+       ]
+      }
+     },
+     "Amber or yellow means get it checked soon. Like tyre pressure, ABS, or the engine light."
+    ],
+    [
+     "c17_6",
+     {
+      "label": "flashing",
+      "head": "Flashing engine light: *slow down*",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "dash",
+       "hi": [
+        "engine"
+       ],
+       "flash": "engine"
+      }
+     },
+     "A steady engine light means get it checked. A flashing one means a serious misfire. Ease off and get help."
+    ],
+    [
+     "c17_7",
+     {
+      "label": "green",
+      "head": "*Green* and *blue* are info",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "dash",
+       "hi": [
+        "beam"
+       ]
+      }
+     },
+     "Green and blue just tell you something is on, like your lights or high beams."
+    ],
+    [
+     "c17_8",
+     {
+      "label": "takeaway",
+      "head": "Red stop, amber *check*",
+      "pose": "thumbs",
+      "face": "happy",
+      "prop": {
+       "type": "dash",
+       "hi": [
+        "all"
+       ]
+      }
+     },
+     "Red, stop. Amber, check. Green and blue, all good."
+    ]
+   ]
+  }
+ ]
+}

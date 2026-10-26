@@ -1,0 +1,160 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 12,
+ "of": 20,
+ "title": "How Your Car Mixes Fuel and Air",
+ "out": "how-your-car-mixes-fuel-and-air",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How Your Car Mixes Fuel and Air",
+   "lines": [
+    [
+     "c12_1",
+     {
+      "label": "hook",
+      "head": "The perfect mix: *14.7 to 1*",
+      "pose": "point",
+      "face": "grin",
+      "prop": {
+       "type": "injector",
+       "ratio": true
+      }
+     },
+     "For petrol to burn cleanly, it needs about fourteen point seven parts air to one part fuel, by weight."
+    ],
+    [
+     "c12_2",
+     {
+      "label": "old",
+      "head": "Old cars used *carburettors*",
+      "pose": "shrug",
+      "face": "smug",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "CARBURETTOR",
+        "NOT PRECISE",
+        "CHOKE ON COLD DAYS"
+       ]
+      }
+     },
+     "Older cars used a carburettor, which let airflow suck fuel in. Simple, but not very precise."
+    ],
+    [
+     "c12_3",
+     {
+      "label": "injector",
+      "head": "Now: *fuel injectors*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "injector"
+      }
+     },
+     "Modern engines use injectors. Electric valves that spray a fine mist of fuel, many times a second."
+    ],
+    [
+     "c12_4",
+     {
+      "label": "ecu",
+      "head": "The *ECU* does the maths",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "injector",
+       "ratio": true
+      }
+     },
+     "The engine computer reads sensors, like how much air is coming in, and decides exactly how much fuel to spray."
+    ],
+    [
+     "c12_5",
+     {
+      "label": "oxygen",
+      "head": "The *oxygen sensor* checks the result",
+      "pose": "count",
+      "face": "smug",
+      "prop": {
+       "type": "injector"
+      }
+     },
+     "An oxygen sensor in the exhaust checks the burn, and the computer fine tunes the mix constantly."
+    ],
+    [
+     "c12_6",
+     {
+      "label": "direct",
+      "head": "Port vs *direct* injection",
+      "pose": "present",
+      "face": "grin",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "PORT",
+        "big": "intake",
+        "sub": "simpler"
+       },
+       "b": {
+        "t": "DIRECT",
+        "big": "cylinder",
+        "sub": "more efficient"
+       },
+       "win": "b"
+      }
+     },
+     "Port injection sprays into the intake. Direct injection sprays straight into the cylinder, at very high pressure, for better efficiency."
+    ],
+    [
+     "c12_7",
+     {
+      "label": "signs",
+      "head": "Clogged injectors *cost* you",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Misfires",
+         false
+        ],
+        [
+         "Hesitation",
+         false
+        ],
+        [
+         "Poor fuel economy",
+         false
+        ]
+       ]
+      }
+     },
+     "Dirty or clogged injectors can cause misfires, hesitation, and poor fuel economy."
+    ],
+    [
+     "c12_8",
+     {
+      "label": "takeaway",
+      "head": "Measure, spray, *burn*",
+      "pose": "thumbs",
+      "face": "happy",
+      "prop": {
+       "type": "injector",
+       "ratio": true
+      }
+     },
+     "Sensors measure, the computer decides, the injector sprays. Hundreds of times a minute."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,6 +1,7 @@
 {
  "series": "Car Mechanic 101",
  "episode": 2,
+ "of": 20,
  "title": "What's Actually Inside a Car",
  "out": "what-s-actually-inside-a-car",
  "counter": null,

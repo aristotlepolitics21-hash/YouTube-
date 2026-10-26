@@ -1,0 +1,158 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 13,
+ "of": 20,
+ "title": "How Your Car Starts and Charges",
+ "out": "how-your-car-starts-and-charges",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How Your Car Starts and Charges",
+   "lines": [
+    [
+     "c13_1",
+     {
+      "label": "hook",
+      "head": "What happens when you *turn the key*?",
+      "pose": "point",
+      "face": "grin",
+      "prop": {
+       "type": "charging",
+       "mode": "start"
+      }
+     },
+     "What actually happens in the second you turn the key, or press start?"
+    ],
+    [
+     "c13_2",
+     {
+      "label": "starter",
+      "head": "The *starter motor* spins the engine",
+      "pose": "present",
+      "face": "wow",
+      "prop": {
+       "type": "charging",
+       "mode": "start"
+      }
+     },
+     "The battery sends a huge current, hundreds of amps, to the starter motor, which spins the engine until it fires."
+    ],
+    [
+     "c13_3",
+     {
+      "label": "battery",
+      "head": "The battery is *drained* a bit",
+      "pose": "shrug",
+      "face": "smug",
+      "prop": {
+       "type": "bank",
+       "label": "BATTERY CHARGE",
+       "from": 100,
+       "to": 97,
+       "pre": "",
+       "chip": "percent, after starting"
+      }
+     },
+     "Starting takes a big gulp of energy from the battery. Now something has to put it back."
+    ],
+    [
+     "c13_4",
+     {
+      "label": "alternator",
+      "head": "The *alternator* recharges it",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "charging"
+      }
+     },
+     "Once running, a belt from the engine spins the alternator, which generates electricity to recharge the battery."
+    ],
+    [
+     "c13_5",
+     {
+      "label": "everything",
+      "head": "It powers *everything*",
+      "pose": "count",
+      "face": "grin",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "LIGHTS",
+        "WIPERS",
+        "RADIO",
+        "COMPUTERS",
+        "BATTERY"
+       ]
+      }
+     },
+     "While driving, the alternator powers the lights, wipers, radio and all the computers."
+    ],
+    [
+     "c13_6",
+     {
+      "label": "warning",
+      "head": "Battery light = *charging problem*",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "dash",
+       "hi": [
+        "battery"
+       ]
+      }
+     },
+     "If the battery warning light comes on while driving, the alternator usually is not charging. Get it checked soon."
+    ],
+    [
+     "c13_7",
+     {
+      "label": "life",
+      "head": "Batteries wear out",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Slow cranking",
+         false
+        ],
+        [
+         "Dim lights at idle",
+         false
+        ],
+        [
+         "Clicking when starting",
+         false
+        ]
+       ]
+      }
+     },
+     "Car batteries often last around three to five years. Slow cranking on cold mornings is a classic warning sign."
+    ],
+    [
+     "c13_8",
+     {
+      "label": "takeaway",
+      "head": "Battery starts, *alternator* runs",
+      "pose": "thumbs",
+      "face": "happy",
+      "prop": {
+       "type": "charging"
+      }
+     },
+     "The battery starts the car. The alternator keeps it all running."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 19,
+ "of": 20,
+ "title": "Hybrid vs Plug-In vs Electric",
+ "out": "hybrid-vs-plug-in-vs-electric",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Hybrid vs Plug-In vs Electric",
+   "lines": [
+    [
+     "c19_1",
+     {
+      "label": "hook",
+      "head": "Hybrid, plug-in or *electric*?",
+      "pose": "point",
+      "face": "grin",
+      "prop": {
+       "type": "hybrid",
+       "mode": "engine"
+      }
+     },
+     "Hybrid, plug-in hybrid, or fully electric. What is actually the difference?"
+    ],
+    [
+     "c19_2",
+     {
+      "label": "hybrid",
+      "head": "Hybrid: engine + *small* battery",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "hybrid",
+       "mode": "engine"
+      }
+     },
+     "A regular hybrid has an engine, an electric motor, and a small battery. You never plug it in."
+    ],
+    [
+     "c19_3",
+     {
+      "label": "regen",
+      "head": "It charges *itself*",
+      "pose": "count",
+      "face": "smug",
+      "prop": {
+       "type": "hybrid",
+       "mode": "regen"
+      }
+     },
+     "The engine and braking recharge the battery, and the motor helps out, especially in slow traffic."
+    ],
+    [
+     "c19_4",
+     {
+      "label": "plugin",
+      "head": "Plug-in: a *bigger* battery",
+      "pose": "present",
+      "face": "grin",
+      "prop": {
+       "type": "hybrid",
+       "mode": "plug"
+      }
+     },
+     "A plug-in hybrid has a bigger battery you charge at home, enough for many short trips on electricity alone."
+    ],
+    [
+     "c19_5",
+     {
+      "label": "ev mode",
+      "head": "Then the engine is *backup*",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "hybrid",
+       "mode": "ev",
+       "showPlug": true
+      }
+     },
+     "When the battery runs low, the engine takes over, so long trips are no problem."
+    ],
+    [
+     "c19_6",
+     {
+      "label": "electric",
+      "head": "Electric: battery *only*",
+      "pose": "cheer",
+      "face": "wow",
+      "prop": {
+       "type": "ev"
+      }
+     },
+     "A fully electric car has no engine at all. A big battery, a motor, and a charging port."
+    ],
+    [
+     "c19_7",
+     {
+      "label": "which",
+      "head": "Which one *suits* you?",
+      "pose": "count",
+      "face": "smile",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Home charging: EV or plug-in",
+         true
+        ],
+        [
+         "No charging: hybrid",
+         true
+        ],
+        [
+         "Lots of towing: check range",
+         true
+        ]
+       ]
+      }
+     },
+     "Can charge at home and drive mostly short trips? Electric or plug-in. No charging? A regular hybrid is easy."
+    ],
+    [
+     "c19_8",
+     {
+      "label": "takeaway",
+      "head": "Self-charging, plug-in, or *pure electric*",
+      "pose": "thumbs",
+      "face": "happy",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "HYBRID",
+        "PLUG-IN",
+        "ELECTRIC"
+       ]
+      }
+     },
+     "Hybrid charges itself. Plug-in charges from the wall too. Electric is all battery."
+    ]
+   ]
+  }
+ ]
+}

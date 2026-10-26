@@ -8,7 +8,7 @@ LOOK = {'hat': '#c8402a', 'hatD': '#a3321f', 'jacket': '#2f4a6a', 'jacketD': '#2
 def ep(n, slug, title, beats, counter=None):
     lines = [[f'c{n:02d}_{i + 1}', dict(label=b[0], head=b[1], pose=b[3], face=b[4], prop=b[5], **({'count': b[6]} if len(b) > 6 else {})), b[2]] for i, b in enumerate(beats)]
     out = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
-    d = dict(series='Car Mechanic 101', episode=n, title=title, out=out, counter=counter, look=LOOK, voice='kokoro:am_michael', sections=[dict(name=title, lines=lines)])
+    d = dict(series='Car Mechanic 101', episode=n, of=20, title=title, out=out, counter=counter, look=LOOK, voice='kokoro:am_michael', sections=[dict(name=title, lines=lines)])
     os.makedirs(f'{n:02d}-{slug}', exist_ok=True); json.dump(d, open(f'{n:02d}-{slug}/script.json', 'w'), indent=1)
 
 ep(1, 'engine', 'How a Car Engine Works', [
@@ -121,4 +121,115 @@ ep(10, 'electric', 'How an Electric Car Works', [
     ('maintenance', 'Far *fewer* parts to service', 'No oil changes, no spark plugs, no clutch, no exhaust. Far fewer moving parts to wear out.', 'thumbs', 'grin', {'type': 'checklist', 'items': [['Oil changes', False], ['Spark plugs', False], ['Exhaust system', False]]}),
     ('still', 'Tyres and brakes still *matter*', 'Tyres, suspension and brakes still need care. And EVs are heavy, so tyres can wear faster.', 'shrug', 'smug', {'type': 'tags', 'items': ['TYRES', 'SUSPENSION', 'BRAKES', '12V BATTERY']}),
     ('takeaway', 'Battery, inverter, *motor*', 'Battery stores it, inverter controls it, motor turns it into motion. That is an electric car.', 'thumbs', 'happy', {'type': 'ev'}),
+])
+
+# ---------- batch 2: how things work, car care, comparisons ----------
+ep(11, 'spark-plugs', 'How a Spark Plug Lights Your Engine', [
+    ('hook', '*20,000 volts*, thousands of times a minute', 'Your car turns twelve volts into a spark of over twenty thousand volts, thousands of times a minute.', 'point', 'wow', {'type': 'spark'}),
+    ('battery', 'It starts with *12 volts*', 'The battery supplies about twelve volts. Far too weak to jump a gap on its own.', 'present', 'smile', {'type': 'spark'}),
+    ('coil', 'The *coil* multiplies it', 'An ignition coil uses two windings of wire to step that up to tens of thousands of volts, in an instant.', 'count', 'grin', {'type': 'stat', 'from': 12, 'to': 20000, 'suf': '+ V', 'sub': 'WHAT THE COIL MAKES FROM 12 VOLTS'}),
+    ('the gap', 'The spark *jumps the gap*', 'At the tip of the plug, the voltage jumps a gap of about a millimetre, lighting the fuel and air.', 'present', 'smug', {'type': 'spark'}),
+    ('timing', 'Fired at the *perfect* moment', 'The engine computer fires each plug just before the piston reaches the top, so the burn pushes at exactly the right time.', 'think', 'think', {'type': 'engine4', 'stroke': 2}),
+    ('worn', 'Worn plugs *misfire*', 'Over time the tips wear and the gap grows. You get rough idling, hard starts, and worse fuel economy.', 'shy', 'worried', {'type': 'spark', 'mode': 'worn'}),
+    ('when', 'Change them *on schedule*', 'Many plugs last tens of thousands of miles, long life iridium ones much longer. Your service book has the exact interval.', 'count', 'smile', {'type': 'checklist', 'title': 'SIGNS OF WORN PLUGS', 'items': [['Rough idle', False], ['Hard starting', False], ['Worse fuel economy', False]]}),
+    ('takeaway', 'Battery, coil, *spark*', 'Twelve volts in, twenty thousand out, one tiny spark at a time.', 'thumbs', 'grin', {'type': 'spark'}),
+])
+
+ep(12, 'fuel-injection', 'How Your Car Mixes Fuel and Air', [
+    ('hook', 'The perfect mix: *14.7 to 1*', 'For petrol to burn cleanly, it needs about fourteen point seven parts air to one part fuel, by weight.', 'point', 'grin', {'type': 'injector', 'ratio': True}),
+    ('old', 'Old cars used *carburettors*', 'Older cars used a carburettor, which let airflow suck fuel in. Simple, but not very precise.', 'shrug', 'smug', {'type': 'tags', 'items': ['CARBURETTOR', 'NOT PRECISE', 'CHOKE ON COLD DAYS']}),
+    ('injector', 'Now: *fuel injectors*', 'Modern engines use injectors. Electric valves that spray a fine mist of fuel, many times a second.', 'present', 'smile', {'type': 'injector'}),
+    ('ecu', 'The *ECU* does the maths', 'The engine computer reads sensors, like how much air is coming in, and decides exactly how much fuel to spray.', 'think', 'think', {'type': 'injector', 'ratio': True}),
+    ('oxygen', 'The *oxygen sensor* checks the result', 'An oxygen sensor in the exhaust checks the burn, and the computer fine tunes the mix constantly.', 'count', 'smug', {'type': 'injector'}),
+    ('direct', 'Port vs *direct* injection', 'Port injection sprays into the intake. Direct injection sprays straight into the cylinder, at very high pressure, for better efficiency.', 'present', 'grin', {'type': 'versus', 'a': {'t': 'PORT', 'big': 'intake', 'sub': 'simpler'}, 'b': {'t': 'DIRECT', 'big': 'cylinder', 'sub': 'more efficient'}, 'win': 'b'}),
+    ('signs', 'Clogged injectors *cost* you', 'Dirty or clogged injectors can cause misfires, hesitation, and poor fuel economy.', 'shy', 'worried', {'type': 'checklist', 'items': [['Misfires', False], ['Hesitation', False], ['Poor fuel economy', False]]}),
+    ('takeaway', 'Measure, spray, *burn*', 'Sensors measure, the computer decides, the injector sprays. Hundreds of times a minute.', 'thumbs', 'happy', {'type': 'injector', 'ratio': True}),
+])
+
+ep(13, 'charging', 'How Your Car Starts and Charges', [
+    ('hook', 'What happens when you *turn the key*?', 'What actually happens in the second you turn the key, or press start?', 'point', 'grin', {'type': 'charging', 'mode': 'start'}),
+    ('starter', 'The *starter motor* spins the engine', 'The battery sends a huge current, hundreds of amps, to the starter motor, which spins the engine until it fires.', 'present', 'wow', {'type': 'charging', 'mode': 'start'}),
+    ('battery', 'The battery is *drained* a bit', 'Starting takes a big gulp of energy from the battery. Now something has to put it back.', 'shrug', 'smug', {'type': 'bank', 'label': 'BATTERY CHARGE', 'from': 100, 'to': 97, 'pre': '', 'chip': 'percent, after starting'}),
+    ('alternator', 'The *alternator* recharges it', 'Once running, a belt from the engine spins the alternator, which generates electricity to recharge the battery.', 'present', 'smile', {'type': 'charging'}),
+    ('everything', 'It powers *everything*', 'While driving, the alternator powers the lights, wipers, radio and all the computers.', 'count', 'grin', {'type': 'tags', 'items': ['LIGHTS', 'WIPERS', 'RADIO', 'COMPUTERS', 'BATTERY']}),
+    ('warning', 'Battery light = *charging problem*', 'If the battery warning light comes on while driving, the alternator usually is not charging. Get it checked soon.', 'shy', 'worried', {'type': 'dash', 'hi': ['battery']}),
+    ('life', 'Batteries wear out', 'Car batteries often last around three to five years. Slow cranking on cold mornings is a classic warning sign.', 'think', 'think', {'type': 'checklist', 'items': [['Slow cranking', False], ['Dim lights at idle', False], ['Clicking when starting', False]]}),
+    ('takeaway', 'Battery starts, *alternator* runs', 'The battery starts the car. The alternator keeps it all running.', 'thumbs', 'happy', {'type': 'charging'}),
+])
+
+ep(14, 'steering', 'How Your Steering Wheel Turns the Wheels', [
+    ('hook', 'How does turning *a wheel* turn the wheels?', 'How does turning a round wheel in your hands point the tyres left and right?', 'point', 'grin', {'type': 'rack'}),
+    ('pinion', 'A small gear: the *pinion*', 'At the bottom of the steering column is a small gear, called the pinion.', 'present', 'smile', {'type': 'rack'}),
+    ('rack', 'It moves a *rack* sideways', 'It meshes with a toothed bar, the rack. Turning the pinion slides the rack left or right.', 'count', 'smug', {'type': 'rack'}),
+    ('tie rods', '*Tie rods* push the wheels', 'Tie rods on each end of the rack push and pull the front wheels, so they point where you want.', 'present', 'grin', {'type': 'rack'}),
+    ('assist', 'Power steering *helps* you', 'Without help, steering a parked car is hard work. Older cars use a hydraulic pump. Most new cars use an electric motor.', 'cheer', 'happy', {'type': 'rack', 'assist': True, 'label': 'ELECTRIC POWER STEERING'}),
+    ('alignment', 'Alignment keeps it *straight*', 'If the car pulls to one side, or the wheel is off centre, your wheel alignment may need adjusting.', 'think', 'think', {'type': 'checklist', 'items': [['Car pulls to one side', False], ['Wheel off centre', False], ['Uneven tyre wear', False]]}),
+    ('warning', "Don't ignore *noises*", 'Clunks, whining when turning, or a heavy wheel can mean worn parts or a power steering fault.', 'shy', 'worried', {'type': 'tags', 'items': ['CLUNKING', 'WHINING', 'HEAVY WHEEL']}),
+    ('takeaway', 'Pinion turns, *rack* slides', 'Pinion turns, rack slides, tie rods push, and the wheels turn.', 'thumbs', 'grin', {'type': 'rack'}),
+])
+
+ep(15, 'tyre-codes', 'What the Numbers on Your Tyres Mean', [
+    ('hook', 'Your tyre is *talking* to you', 'That string of numbers on your tyre tells you almost everything about it.', 'point', 'grin', {'type': 'tyre'}),
+    ('width', '205 = *width*', 'The first number is the width of the tyre in millimetres.', 'present', 'smile', {'type': 'tyre', 'hi': 0}),
+    ('profile', '55 = *sidewall* height', 'The next is the profile. The sidewall height is fifty five percent of the width.', 'count', 'smug', {'type': 'tyre', 'hi': 1}),
+    ('rim', 'R16 = *radial*, 16-inch rim', 'R means radial construction, and sixteen is the wheel size in inches.', 'present', 'grin', {'type': 'tyre', 'hi': 3}),
+    ('load speed', '91V = *load* and speed', 'Ninety one is the load index, six hundred and fifteen kilos per tyre. V is the speed rating, up to two hundred and forty kilometres an hour.', 'think', 'think', {'type': 'tyre', 'hi': 5}),
+    ('age', 'Check the *date code*', 'A four digit code shows when it was made. Twenty three, twenty one means week twenty three of 2021. Rubber ages, even unused.', 'count', 'smile', {'type': 'tyre', 'date': True}),
+    ('tread', 'Tread depth *matters*', 'In the UK and Europe, the legal minimum tread is one point six millimetres. Many experts suggest replacing at three.', 'shy', 'worried', {'type': 'tread', 'depth': 2}),
+    ('takeaway', 'Read your *sidewall*', 'Width, profile, rim size, load, speed, and age. All printed on the side of your tyre.', 'thumbs', 'happy', {'type': 'tyre', 'hi': 4}),
+])
+
+ep(16, 'oil', 'When Should You Really Change Your Oil', [
+    ('hook', 'Oil is your engine\'s *blood*', 'Without oil, an engine can destroy itself in minutes.', 'point', 'wow', {'type': 'oilsys'}),
+    ('job', 'Oil does *four* jobs', 'It lubricates moving parts, carries away heat, traps dirt, and helps seal the pistons.', 'present', 'smile', {'type': 'tags', 'items': ['LUBRICATE', 'COOL', 'CLEAN', 'SEAL']}),
+    ('pump', 'A *pump* keeps it flowing', 'An oil pump pushes oil from the sump up to the crankshaft, camshafts and turbo.', 'count', 'grin', {'type': 'oilsys'}),
+    ('wear', 'Oil *wears out*', 'Over time, oil breaks down and fills with dirt, so it protects less and less.', 'shrug', 'smug', {'type': 'oilsys', 'dirty': True}),
+    ('grades', '5W-30: what it *means*', 'In 5W-30, the 5W is how well it flows when cold, the W is for winter. The 30 is its thickness when hot.', 'think', 'think', {'type': 'versus', 'a': {'t': 'COLD START', 'big': '5W', 'sub': 'flows easily'}, 'b': {'t': 'HOT', 'big': '30', 'sub': 'stays thick'}}),
+    ('interval', 'Follow your *manual*', 'Many modern cars go five to ten thousand miles, or a year, between changes. Your owner\'s manual has the real answer.', 'count', 'smile', {'type': 'checklist', 'items': [['Check the manual', True], ['Change at least yearly', True], ['Use the right grade', True]]}),
+    ('check', 'Check it *yourself*', 'Engine off, car level, pull the dipstick, wipe it, dip again. The level should sit between min and max.', 'present', 'grin', {'type': 'oilsys', 'level': .6}),
+    ('takeaway', 'Fresh oil, *long* engine life', 'Oil changes are cheap. Engines are not.', 'thumbs', 'happy', {'type': 'oilsys'}),
+])
+
+ep(17, 'warning-lights', 'What Your Dashboard Lights Mean', [
+    ('hook', 'Your dashboard uses *traffic light* colours', 'Your dashboard lights follow a simple colour code. Learn it, and you will know how worried to be.', 'point', 'grin', {'type': 'dash', 'hi': ['all']}),
+    ('red', '*Red* means stop', 'Red means a serious problem. Pull over safely, and do not keep driving.', 'shy', 'worried', {'type': 'dash', 'hi': ['oil', 'temp', 'battery', 'brake']}),
+    ('oil', 'Red oil can: *pressure*', 'The red oil can means low oil pressure. Stop the engine as soon as it is safe. Driving on can wreck it.', 'present', 'worried', {'type': 'dash', 'hi': ['oil']}),
+    ('temp', 'Thermometer: *overheating*', 'The thermometer means the engine is too hot. Pull over, switch off, and let it cool.', 'facepalm', 'worried', {'type': 'dash', 'hi': ['temp']}),
+    ('amber', '*Amber* means check soon', 'Amber or yellow means get it checked soon. Like tyre pressure, ABS, or the engine light.', 'think', 'think', {'type': 'dash', 'hi': ['engine', 'tpms', 'abs']}),
+    ('flashing', 'Flashing engine light: *slow down*', 'A steady engine light means get it checked. A flashing one means a serious misfire. Ease off and get help.', 'shy', 'worried', {'type': 'dash', 'hi': ['engine'], 'flash': 'engine'}),
+    ('green', '*Green* and *blue* are info', 'Green and blue just tell you something is on, like your lights or high beams.', 'present', 'smile', {'type': 'dash', 'hi': ['beam']}),
+    ('takeaway', 'Red stop, amber *check*', 'Red, stop. Amber, check. Green and blue, all good.', 'thumbs', 'happy', {'type': 'dash', 'hi': ['all']}),
+])
+
+ep(18, 'diesel-vs-petrol', 'Diesel vs Petrol Engines', [
+    ('hook', 'Diesels have *no spark plugs*', 'A diesel engine has no spark plugs. So how does it ignite its fuel?', 'point', 'wow', {'type': 'engine4', 'diesel': True, 'speed': 2}),
+    ('squeeze', 'It *squeezes* air until it is hot', 'A diesel squeezes air much harder than a petrol engine. That makes it hot enough to ignite fuel on contact.', 'present', 'smile', {'type': 'engine4', 'diesel': True, 'stroke': 1}),
+    ('inject', 'Fuel is sprayed *into* the hot air', 'At the top of the stroke, fuel is injected into that hot air, and it lights by itself.', 'count', 'grin', {'type': 'engine4', 'diesel': True, 'stroke': 2}),
+    ('ratio', 'Much higher *compression*', 'Petrol engines usually compress around ten to one. Diesels, roughly fifteen to twenty to one.', 'think', 'think', {'type': 'versus', 'a': {'t': 'PETROL', 'big': '~10:1', 'sub': 'spark ignites'}, 'b': {'t': 'DIESEL', 'big': '~18:1', 'sub': 'heat ignites'}}),
+    ('pros', 'Diesel: *torque* and economy', 'Diesels make lots of low down pulling power, and usually go further on a litre of fuel. Great for towing and long trips.', 'present', 'grin', {'type': 'checklist', 'items': [['Strong low-down torque', True], ['Better fuel economy', True], ['Great for towing', True]]}),
+    ('cons', 'But: *filters* and short trips', 'Modern diesels have particulate filters that need hot, longer drives to clean themselves. Lots of short trips can clog them.', 'shy', 'worried', {'type': 'tags', 'items': ['DPF CLOGGING', 'PRICIER REPAIRS', 'NEEDS LONG DRIVES']}),
+    ('petrol', 'Petrol: *smooth* and simple', 'Petrol engines rev higher, are quieter, cheaper to buy, and better for short city trips.', 'present', 'smile', {'type': 'engine4', 'speed': 3}),
+    ('takeaway', 'Long trips *diesel*, short trips petrol', 'Lots of long motorway miles, diesel makes sense. Mostly short trips, petrol or hybrid is usually better.', 'thumbs', 'happy', {'type': 'versus', 'a': {'t': 'LONG TRIPS', 'big': 'diesel', 'sub': 'motorway miles'}, 'b': {'t': 'SHORT TRIPS', 'big': 'petrol', 'sub': 'city driving'}}),
+])
+
+ep(19, 'hybrid-vs-electric', 'Hybrid vs Plug-In vs Electric', [
+    ('hook', 'Hybrid, plug-in or *electric*?', 'Hybrid, plug-in hybrid, or fully electric. What is actually the difference?', 'point', 'grin', {'type': 'hybrid', 'mode': 'engine'}),
+    ('hybrid', 'Hybrid: engine + *small* battery', 'A regular hybrid has an engine, an electric motor, and a small battery. You never plug it in.', 'present', 'smile', {'type': 'hybrid', 'mode': 'engine'}),
+    ('regen', 'It charges *itself*', 'The engine and braking recharge the battery, and the motor helps out, especially in slow traffic.', 'count', 'smug', {'type': 'hybrid', 'mode': 'regen'}),
+    ('plugin', 'Plug-in: a *bigger* battery', 'A plug-in hybrid has a bigger battery you charge at home, enough for many short trips on electricity alone.', 'present', 'grin', {'type': 'hybrid', 'mode': 'plug'}),
+    ('ev mode', 'Then the engine is *backup*', 'When the battery runs low, the engine takes over, so long trips are no problem.', 'think', 'think', {'type': 'hybrid', 'mode': 'ev', 'showPlug': True}),
+    ('electric', 'Electric: battery *only*', 'A fully electric car has no engine at all. A big battery, a motor, and a charging port.', 'cheer', 'wow', {'type': 'ev'}),
+    ('which', 'Which one *suits* you?', 'Can charge at home and drive mostly short trips? Electric or plug-in. No charging? A regular hybrid is easy.', 'count', 'smile', {'type': 'checklist', 'items': [['Home charging: EV or plug-in', True], ['No charging: hybrid', True], ['Lots of towing: check range', True]]}),
+    ('takeaway', 'Self-charging, plug-in, or *pure electric*', 'Hybrid charges itself. Plug-in charges from the wall too. Electric is all battery.', 'thumbs', 'happy', {'type': 'tags', 'items': ['HYBRID', 'PLUG-IN', 'ELECTRIC']}),
+])
+
+ep(20, 'timing-belt', 'The Belt That Can Destroy Your Engine', [
+    ('hook', 'One belt can *wreck* your engine', 'There is a belt inside many engines that, if it snaps, can destroy the engine in a second.', 'point', 'wow', {'type': 'timing', 'snap': True}),
+    ('job', 'The *timing belt*', 'The timing belt links the crankshaft to the camshafts, keeping the pistons and valves perfectly in step.', 'present', 'smile', {'type': 'timing'}),
+    ('half', 'The cams turn at *half* speed', 'The camshaft turns once for every two turns of the crank, because each valve opens once every four strokes.', 'count', 'grin', {'type': 'timing'}),
+    ('valves', 'Cams push the *valves*', 'Lobes on the camshaft push the valves open at exactly the right moment.', 'present', 'smug', {'type': 'engine4', 'speed': 1.4}),
+    ('snap', 'If it snaps: *crunch*', 'In many engines, called interference engines, a snapped belt lets pistons smash into open valves.', 'facepalm', 'sad', {'type': 'timing', 'snap': True}),
+    ('cost', 'A *cheap* job vs a big bill', 'Replacing the belt on schedule is far cheaper than rebuilding a wrecked engine.', 'shrug', 'worried', {'type': 'versus', 'a': {'t': 'REPLACE ON TIME', 'big': 'cheap', 'sub': 'planned service'}, 'b': {'t': 'BELT SNAPS', 'big': 'costly', 'sub': 'engine damage'}, 'win': 'a'}),
+    ('when', 'Check your *interval*', 'Many belts are due somewhere around sixty to a hundred thousand miles, or a set number of years. Timing chains usually last much longer.', 'count', 'think', {'type': 'checklist', 'items': [['Find the interval in your manual', True], ['Belt or chain? Ask', True], ['Replace the water pump too', True]]}),
+    ('takeaway', 'Do not *skip* the belt', 'If your engine has a timing belt, do not skip it. It is one service that can save the whole engine.', 'thumbs', 'grin', {'type': 'timing'}),
 ])

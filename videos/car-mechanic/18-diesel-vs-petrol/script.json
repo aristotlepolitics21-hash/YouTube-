@@ -1,0 +1,173 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 18,
+ "of": 20,
+ "title": "Diesel vs Petrol Engines",
+ "out": "diesel-vs-petrol-engines",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Diesel vs Petrol Engines",
+   "lines": [
+    [
+     "c18_1",
+     {
+      "label": "hook",
+      "head": "Diesels have *no spark plugs*",
+      "pose": "point",
+      "face": "wow",
+      "prop": {
+       "type": "engine4",
+       "diesel": true,
+       "speed": 2
+      }
+     },
+     "A diesel engine has no spark plugs. So how does it ignite its fuel?"
+    ],
+    [
+     "c18_2",
+     {
+      "label": "squeeze",
+      "head": "It *squeezes* air until it is hot",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "engine4",
+       "diesel": true,
+       "stroke": 1
+      }
+     },
+     "A diesel squeezes air much harder than a petrol engine. That makes it hot enough to ignite fuel on contact."
+    ],
+    [
+     "c18_3",
+     {
+      "label": "inject",
+      "head": "Fuel is sprayed *into* the hot air",
+      "pose": "count",
+      "face": "grin",
+      "prop": {
+       "type": "engine4",
+       "diesel": true,
+       "stroke": 2
+      }
+     },
+     "At the top of the stroke, fuel is injected into that hot air, and it lights by itself."
+    ],
+    [
+     "c18_4",
+     {
+      "label": "ratio",
+      "head": "Much higher *compression*",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "PETROL",
+        "big": "~10:1",
+        "sub": "spark ignites"
+       },
+       "b": {
+        "t": "DIESEL",
+        "big": "~18:1",
+        "sub": "heat ignites"
+       }
+      }
+     },
+     "Petrol engines usually compress around ten to one. Diesels, roughly fifteen to twenty to one."
+    ],
+    [
+     "c18_5",
+     {
+      "label": "pros",
+      "head": "Diesel: *torque* and economy",
+      "pose": "present",
+      "face": "grin",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Strong low-down torque",
+         true
+        ],
+        [
+         "Better fuel economy",
+         true
+        ],
+        [
+         "Great for towing",
+         true
+        ]
+       ]
+      }
+     },
+     "Diesels make lots of low down pulling power, and usually go further on a litre of fuel. Great for towing and long trips."
+    ],
+    [
+     "c18_6",
+     {
+      "label": "cons",
+      "head": "But: *filters* and short trips",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "DPF CLOGGING",
+        "PRICIER REPAIRS",
+        "NEEDS LONG DRIVES"
+       ]
+      }
+     },
+     "Modern diesels have particulate filters that need hot, longer drives to clean themselves. Lots of short trips can clog them."
+    ],
+    [
+     "c18_7",
+     {
+      "label": "petrol",
+      "head": "Petrol: *smooth* and simple",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "engine4",
+       "speed": 3
+      }
+     },
+     "Petrol engines rev higher, are quieter, cheaper to buy, and better for short city trips."
+    ],
+    [
+     "c18_8",
+     {
+      "label": "takeaway",
+      "head": "Long trips *diesel*, short trips petrol",
+      "pose": "thumbs",
+      "face": "happy",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "LONG TRIPS",
+        "big": "diesel",
+        "sub": "motorway miles"
+       },
+       "b": {
+        "t": "SHORT TRIPS",
+        "big": "petrol",
+        "sub": "city driving"
+       }
+      }
+     },
+     "Lots of long motorway miles, diesel makes sense. Mostly short trips, petrol or hybrid is usually better."
+    ]
+   ]
+  }
+ ]
+}

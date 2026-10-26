@@ -1,0 +1,148 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 11,
+ "of": 20,
+ "title": "How a Spark Plug Lights Your Engine",
+ "out": "how-a-spark-plug-lights-your-engine",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How a Spark Plug Lights Your Engine",
+   "lines": [
+    [
+     "c11_1",
+     {
+      "label": "hook",
+      "head": "*20,000 volts*, thousands of times a minute",
+      "pose": "point",
+      "face": "wow",
+      "prop": {
+       "type": "spark"
+      }
+     },
+     "Your car turns twelve volts into a spark of over twenty thousand volts, thousands of times a minute."
+    ],
+    [
+     "c11_2",
+     {
+      "label": "battery",
+      "head": "It starts with *12 volts*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "spark"
+      }
+     },
+     "The battery supplies about twelve volts. Far too weak to jump a gap on its own."
+    ],
+    [
+     "c11_3",
+     {
+      "label": "coil",
+      "head": "The *coil* multiplies it",
+      "pose": "count",
+      "face": "grin",
+      "prop": {
+       "type": "stat",
+       "from": 12,
+       "to": 20000,
+       "suf": "+ V",
+       "sub": "WHAT THE COIL MAKES FROM 12 VOLTS"
+      }
+     },
+     "An ignition coil uses two windings of wire to step that up to tens of thousands of volts, in an instant."
+    ],
+    [
+     "c11_4",
+     {
+      "label": "the gap",
+      "head": "The spark *jumps the gap*",
+      "pose": "present",
+      "face": "smug",
+      "prop": {
+       "type": "spark"
+      }
+     },
+     "At the tip of the plug, the voltage jumps a gap of about a millimetre, lighting the fuel and air."
+    ],
+    [
+     "c11_5",
+     {
+      "label": "timing",
+      "head": "Fired at the *perfect* moment",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "engine4",
+       "stroke": 2
+      }
+     },
+     "The engine computer fires each plug just before the piston reaches the top, so the burn pushes at exactly the right time."
+    ],
+    [
+     "c11_6",
+     {
+      "label": "worn",
+      "head": "Worn plugs *misfire*",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "spark",
+       "mode": "worn"
+      }
+     },
+     "Over time the tips wear and the gap grows. You get rough idling, hard starts, and worse fuel economy."
+    ],
+    [
+     "c11_7",
+     {
+      "label": "when",
+      "head": "Change them *on schedule*",
+      "pose": "count",
+      "face": "smile",
+      "prop": {
+       "type": "checklist",
+       "title": "SIGNS OF WORN PLUGS",
+       "items": [
+        [
+         "Rough idle",
+         false
+        ],
+        [
+         "Hard starting",
+         false
+        ],
+        [
+         "Worse fuel economy",
+         false
+        ]
+       ]
+      }
+     },
+     "Many plugs last tens of thousands of miles, long life iridium ones much longer. Your service book has the exact interval."
+    ],
+    [
+     "c11_8",
+     {
+      "label": "takeaway",
+      "head": "Battery, coil, *spark*",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "spark"
+      }
+     },
+     "Twelve volts in, twenty thousand out, one tiny spark at a time."
+    ]
+   ]
+  }
+ ]
+}

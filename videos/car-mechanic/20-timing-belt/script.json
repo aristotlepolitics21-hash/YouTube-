@@ -1,0 +1,155 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 20,
+ "of": 20,
+ "title": "The Belt That Can Destroy Your Engine",
+ "out": "the-belt-that-can-destroy-your-engine",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "The Belt That Can Destroy Your Engine",
+   "lines": [
+    [
+     "c20_1",
+     {
+      "label": "hook",
+      "head": "One belt can *wreck* your engine",
+      "pose": "point",
+      "face": "wow",
+      "prop": {
+       "type": "timing",
+       "snap": true
+      }
+     },
+     "There is a belt inside many engines that, if it snaps, can destroy the engine in a second."
+    ],
+    [
+     "c20_2",
+     {
+      "label": "job",
+      "head": "The *timing belt*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "timing"
+      }
+     },
+     "The timing belt links the crankshaft to the camshafts, keeping the pistons and valves perfectly in step."
+    ],
+    [
+     "c20_3",
+     {
+      "label": "half",
+      "head": "The cams turn at *half* speed",
+      "pose": "count",
+      "face": "grin",
+      "prop": {
+       "type": "timing"
+      }
+     },
+     "The camshaft turns once for every two turns of the crank, because each valve opens once every four strokes."
+    ],
+    [
+     "c20_4",
+     {
+      "label": "valves",
+      "head": "Cams push the *valves*",
+      "pose": "present",
+      "face": "smug",
+      "prop": {
+       "type": "engine4",
+       "speed": 1.4
+      }
+     },
+     "Lobes on the camshaft push the valves open at exactly the right moment."
+    ],
+    [
+     "c20_5",
+     {
+      "label": "snap",
+      "head": "If it snaps: *crunch*",
+      "pose": "facepalm",
+      "face": "sad",
+      "prop": {
+       "type": "timing",
+       "snap": true
+      }
+     },
+     "In many engines, called interference engines, a snapped belt lets pistons smash into open valves."
+    ],
+    [
+     "c20_6",
+     {
+      "label": "cost",
+      "head": "A *cheap* job vs a big bill",
+      "pose": "shrug",
+      "face": "worried",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "REPLACE ON TIME",
+        "big": "cheap",
+        "sub": "planned service"
+       },
+       "b": {
+        "t": "BELT SNAPS",
+        "big": "costly",
+        "sub": "engine damage"
+       },
+       "win": "a"
+      }
+     },
+     "Replacing the belt on schedule is far cheaper than rebuilding a wrecked engine."
+    ],
+    [
+     "c20_7",
+     {
+      "label": "when",
+      "head": "Check your *interval*",
+      "pose": "count",
+      "face": "think",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Find the interval in your manual",
+         true
+        ],
+        [
+         "Belt or chain? Ask",
+         true
+        ],
+        [
+         "Replace the water pump too",
+         true
+        ]
+       ]
+      }
+     },
+     "Many belts are due somewhere around sixty to a hundred thousand miles, or a set number of years. Timing chains usually last much longer."
+    ],
+    [
+     "c20_8",
+     {
+      "label": "takeaway",
+      "head": "Do not *skip* the belt",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "timing"
+      }
+     },
+     "If your engine has a timing belt, do not skip it. It is one service that can save the whole engine."
+    ]
+   ]
+  }
+ ]
+}

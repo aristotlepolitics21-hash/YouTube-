@@ -1,0 +1,159 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 16,
+ "of": 20,
+ "title": "When Should You Really Change Your Oil",
+ "out": "when-should-you-really-change-your-oil",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "When Should You Really Change Your Oil",
+   "lines": [
+    [
+     "c16_1",
+     {
+      "label": "hook",
+      "head": "Oil is your engine's *blood*",
+      "pose": "point",
+      "face": "wow",
+      "prop": {
+       "type": "oilsys"
+      }
+     },
+     "Without oil, an engine can destroy itself in minutes."
+    ],
+    [
+     "c16_2",
+     {
+      "label": "job",
+      "head": "Oil does *four* jobs",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "LUBRICATE",
+        "COOL",
+        "CLEAN",
+        "SEAL"
+       ]
+      }
+     },
+     "It lubricates moving parts, carries away heat, traps dirt, and helps seal the pistons."
+    ],
+    [
+     "c16_3",
+     {
+      "label": "pump",
+      "head": "A *pump* keeps it flowing",
+      "pose": "count",
+      "face": "grin",
+      "prop": {
+       "type": "oilsys"
+      }
+     },
+     "An oil pump pushes oil from the sump up to the crankshaft, camshafts and turbo."
+    ],
+    [
+     "c16_4",
+     {
+      "label": "wear",
+      "head": "Oil *wears out*",
+      "pose": "shrug",
+      "face": "smug",
+      "prop": {
+       "type": "oilsys",
+       "dirty": true
+      }
+     },
+     "Over time, oil breaks down and fills with dirt, so it protects less and less."
+    ],
+    [
+     "c16_5",
+     {
+      "label": "grades",
+      "head": "5W-30: what it *means*",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "versus",
+       "a": {
+        "t": "COLD START",
+        "big": "5W",
+        "sub": "flows easily"
+       },
+       "b": {
+        "t": "HOT",
+        "big": "30",
+        "sub": "stays thick"
+       }
+      }
+     },
+     "In 5W-30, the 5W is how well it flows when cold, the W is for winter. The 30 is its thickness when hot."
+    ],
+    [
+     "c16_6",
+     {
+      "label": "interval",
+      "head": "Follow your *manual*",
+      "pose": "count",
+      "face": "smile",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Check the manual",
+         true
+        ],
+        [
+         "Change at least yearly",
+         true
+        ],
+        [
+         "Use the right grade",
+         true
+        ]
+       ]
+      }
+     },
+     "Many modern cars go five to ten thousand miles, or a year, between changes. Your owner's manual has the real answer."
+    ],
+    [
+     "c16_7",
+     {
+      "label": "check",
+      "head": "Check it *yourself*",
+      "pose": "present",
+      "face": "grin",
+      "prop": {
+       "type": "oilsys",
+       "level": 0.6
+      }
+     },
+     "Engine off, car level, pull the dipstick, wipe it, dip again. The level should sit between min and max."
+    ],
+    [
+     "c16_8",
+     {
+      "label": "takeaway",
+      "head": "Fresh oil, *long* engine life",
+      "pose": "thumbs",
+      "face": "happy",
+      "prop": {
+       "type": "oilsys"
+      }
+     },
+     "Oil changes are cheap. Engines are not."
+    ]
+   ]
+  }
+ ]
+}

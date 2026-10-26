@@ -1,0 +1,148 @@
+{
+ "series": "Car Mechanic 101",
+ "episode": 14,
+ "of": 20,
+ "title": "How Your Steering Wheel Turns the Wheels",
+ "out": "how-your-steering-wheel-turns-the-wheels",
+ "counter": null,
+ "look": {
+  "hat": "#c8402a",
+  "hatD": "#a3321f",
+  "jacket": "#2f4a6a",
+  "jacketD": "#253b55",
+  "tee": "#dcd8d0"
+ },
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "How Your Steering Wheel Turns the Wheels",
+   "lines": [
+    [
+     "c14_1",
+     {
+      "label": "hook",
+      "head": "How does turning *a wheel* turn the wheels?",
+      "pose": "point",
+      "face": "grin",
+      "prop": {
+       "type": "rack"
+      }
+     },
+     "How does turning a round wheel in your hands point the tyres left and right?"
+    ],
+    [
+     "c14_2",
+     {
+      "label": "pinion",
+      "head": "A small gear: the *pinion*",
+      "pose": "present",
+      "face": "smile",
+      "prop": {
+       "type": "rack"
+      }
+     },
+     "At the bottom of the steering column is a small gear, called the pinion."
+    ],
+    [
+     "c14_3",
+     {
+      "label": "rack",
+      "head": "It moves a *rack* sideways",
+      "pose": "count",
+      "face": "smug",
+      "prop": {
+       "type": "rack"
+      }
+     },
+     "It meshes with a toothed bar, the rack. Turning the pinion slides the rack left or right."
+    ],
+    [
+     "c14_4",
+     {
+      "label": "tie rods",
+      "head": "*Tie rods* push the wheels",
+      "pose": "present",
+      "face": "grin",
+      "prop": {
+       "type": "rack"
+      }
+     },
+     "Tie rods on each end of the rack push and pull the front wheels, so they point where you want."
+    ],
+    [
+     "c14_5",
+     {
+      "label": "assist",
+      "head": "Power steering *helps* you",
+      "pose": "cheer",
+      "face": "happy",
+      "prop": {
+       "type": "rack",
+       "assist": true,
+       "label": "ELECTRIC POWER STEERING"
+      }
+     },
+     "Without help, steering a parked car is hard work. Older cars use a hydraulic pump. Most new cars use an electric motor."
+    ],
+    [
+     "c14_6",
+     {
+      "label": "alignment",
+      "head": "Alignment keeps it *straight*",
+      "pose": "think",
+      "face": "think",
+      "prop": {
+       "type": "checklist",
+       "items": [
+        [
+         "Car pulls to one side",
+         false
+        ],
+        [
+         "Wheel off centre",
+         false
+        ],
+        [
+         "Uneven tyre wear",
+         false
+        ]
+       ]
+      }
+     },
+     "If the car pulls to one side, or the wheel is off centre, your wheel alignment may need adjusting."
+    ],
+    [
+     "c14_7",
+     {
+      "label": "warning",
+      "head": "Don't ignore *noises*",
+      "pose": "shy",
+      "face": "worried",
+      "prop": {
+       "type": "tags",
+       "items": [
+        "CLUNKING",
+        "WHINING",
+        "HEAVY WHEEL"
+       ]
+      }
+     },
+     "Clunks, whining when turning, or a heavy wheel can mean worn parts or a power steering fault."
+    ],
+    [
+     "c14_8",
+     {
+      "label": "takeaway",
+      "head": "Pinion turns, *rack* slides",
+      "pose": "thumbs",
+      "face": "grin",
+      "prop": {
+       "type": "rack"
+      }
+     },
+     "Pinion turns, rack slides, tie rods push, and the wheels turn."
+    ]
+   ]
+  }
+ ]
+}
