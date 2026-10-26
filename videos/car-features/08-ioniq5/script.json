@@ -1,0 +1,154 @@
+{
+ "series": "Car Features",
+ "episode": 8,
+ "model": "Hyundai Ioniq 5",
+ "kind": "the 800-volt EV",
+ "title": "Hyundai Ioniq 5: the 800-volt EV",
+ "out": "hyundai-ioniq-5-the-800-volt-ev",
+ "note": "Specs vary by variant and year. Check with your dealer.",
+ "photos": [
+  {
+   "file": "p1.jpg",
+   "credit": "Photo: Alexander-93 / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "Hyundai Ioniq 5 1X7A7085.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5_1X7A7085.jpg"
+  },
+  {
+   "file": "p2.jpg",
+   "credit": "Photo: Alexander-93 / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "Hyundai Ioniq 5 1X7A0848.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5_1X7A0848.jpg"
+  },
+  {
+   "file": "p3.jpg",
+   "credit": "Photo: Alexander-93 / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "Hyundai Ioniq 5 1X7A0847.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5_1X7A0847.jpg"
+  },
+  {
+   "file": "p4.jpg",
+   "credit": "Photo: Alexander Migl / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "Hyundai Ioniq 5 Leonberg 2022 1X7A0510.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5_Leonberg_2022_1X7A0510.jpg"
+  }
+ ],
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Hyundai Ioniq 5",
+   "lines": [
+    [
+     "f08_1",
+     {
+      "label": "award",
+      "spec": [
+       "2022",
+       "World Car of the Year"
+      ],
+      "photo": 0
+     },
+     "The Hyundai Ioniq five won World Car of the Year in 2022."
+    ],
+    [
+     "f08_2",
+     {
+      "label": "design",
+      "tags": [
+       "PIXEL LIGHTS",
+       "RETRO 1974 PONY",
+       "FLAT FLOOR"
+      ],
+      "photo": 1
+     },
+     "Its pixel style lights and sharp lines are inspired by Hyundai's 1974 Pony concept."
+    ],
+    [
+     "f08_3",
+     {
+      "label": "800 V",
+      "spec": [
+       "~18 min",
+       "10-80% on a 350 kW charger"
+      ],
+      "photo": 2
+     },
+     "Its eight hundred volt system can charge from ten to eighty percent in about eighteen minutes, on an ultra fast charger."
+    ],
+    [
+     "f08_4",
+     {
+      "label": "India",
+      "specs": [
+       [
+        "72.6 kWh",
+        "battery"
+       ],
+       [
+        "631 km",
+        "claimed range"
+       ]
+      ],
+      "photo": 3
+     },
+     "In India it has a seventy two point six kilowatt hour battery, and a claimed range of six hundred and thirty one kilometres."
+    ],
+    [
+     "f08_5",
+     {
+      "label": "motor",
+      "specs": [
+       [
+        "217 PS",
+        "rear motor"
+       ],
+       [
+        "350 Nm",
+        "torque"
+       ]
+      ],
+      "photo": 0
+     },
+     "A rear motor with two hundred and seventeen P S, and three hundred and fifty newton metres."
+    ],
+    [
+     "f08_6",
+     {
+      "label": "space",
+      "spec": [
+       "3,000 mm",
+       "wheelbase"
+      ],
+      "photo": 1
+     },
+     "A three metre wheelbase gives limousine like legroom, and the centre console slides back and forth."
+    ],
+    [
+     "f08_7",
+     {
+      "label": "V2L",
+      "tags": [
+       "V2L",
+       "POWER A LAPTOP",
+       "OR A COFFEE MACHINE"
+      ],
+      "photo": 2
+     },
+     "Vehicle to load lets you power a laptop, or a coffee machine, from the car."
+    ],
+    [
+     "f08_8",
+     {
+      "label": "verdict",
+      "tags": [
+       "FAST CHARGING",
+       "HUGE SPACE",
+       "ICONIC DESIGN"
+      ],
+      "photo": 3
+     },
+     "Fast charging, a huge cabin, and a design that still turns heads."
+    ]
+   ]
+  }
+ ]
+}

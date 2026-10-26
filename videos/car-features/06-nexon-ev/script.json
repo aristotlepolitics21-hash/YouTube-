@@ -1,0 +1,135 @@
+{
+ "series": "Car Features",
+ "episode": 6,
+ "model": "Tata Nexon EV",
+ "kind": "India's EV pioneer",
+ "title": "Tata Nexon EV: India's EV pioneer",
+ "out": "tata-nexon-ev-india-s-ev-pioneer",
+ "note": "Specs vary by variant and year. Check with your dealer.",
+ "photos": [
+  {
+   "file": "p1.jpg",
+   "credit": "Photo: DriveSpark / CC BY 3.0 / Wikimedia Commons",
+   "title": "2020 Tata Nexon EV (India) front view.png",
+   "page": "https://commons.wikimedia.org/wiki/File:2020_Tata_Nexon_EV_(India)_front_view.png"
+  }
+ ],
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Tata Nexon EV",
+   "lines": [
+    [
+     "f06_1",
+     {
+      "label": "since 2020",
+      "spec": [
+       "2020",
+       "launched in India"
+      ],
+      "photo": 0
+     },
+     "The Tata Nexon E V launched in 2020, and became one of India's best selling electric cars."
+    ],
+    [
+     "f06_2",
+     {
+      "label": "batteries",
+      "specs": [
+       [
+        "30 kWh",
+        "medium range"
+       ],
+       [
+        "45 kWh",
+        "long range"
+       ]
+      ],
+      "photo": 0
+     },
+     "Today it comes with different battery sizes, up to forty five kilowatt hours."
+    ],
+    [
+     "f06_3",
+     {
+      "label": "range",
+      "spec": [
+       "489 km",
+       "claimed range, 45 kWh"
+      ],
+      "photo": 0
+     },
+     "The biggest battery has a claimed range of up to four hundred and eighty nine kilometres. Real world is lower."
+    ],
+    [
+     "f06_4",
+     {
+      "label": "motor",
+      "specs": [
+       [
+        "145 PS",
+        "power"
+       ],
+       [
+        "215 Nm",
+        "instant torque"
+       ]
+      ],
+      "photo": 0
+     },
+     "The long range motor makes a hundred and forty five P S, and two hundred and fifteen newton metres from zero r p m."
+    ],
+    [
+     "f06_5",
+     {
+      "label": "party trick",
+      "tags": [
+       "V2L",
+       "POWER YOUR KETTLE",
+       "V2V CHARGING"
+      ],
+      "photo": 0
+     },
+     "Vehicle to load lets you run appliances from the car, and even charge another E V."
+    ],
+    [
+     "f06_6",
+     {
+      "label": "safety",
+      "spec": [
+       "5 stars",
+       "Bharat NCAP"
+      ],
+      "photo": 0
+     },
+     "It scored five stars in the Bharat N CAP crash test."
+    ],
+    [
+     "f06_7",
+     {
+      "label": "charging",
+      "tags": [
+       "HOME WALLBOX",
+       "DC FAST CHARGE"
+      ],
+      "photo": 0
+     },
+     "Charge it overnight at home, or use a D C fast charger on longer trips."
+    ],
+    [
+     "f06_8",
+     {
+      "label": "verdict",
+      "tags": [
+       "PROVEN",
+       "PRACTICAL",
+       "SAFE"
+      ],
+      "photo": 0
+     },
+     "The car that made electric mainstream in India."
+    ]
+   ]
+  }
+ ]
+}

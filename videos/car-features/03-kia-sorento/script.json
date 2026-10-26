@@ -1,0 +1,158 @@
+{
+ "series": "Car Features",
+ "episode": 3,
+ "model": "Kia Sorento",
+ "kind": "the global 7-seater",
+ "title": "Kia Sorento: the global 7-seater",
+ "out": "kia-sorento-the-global-7-seater",
+ "note": "Specs differ by market. Not sold in India.",
+ "photos": [
+  {
+   "file": "p1.jpg",
+   "credit": "Photo: SsmIntrigue / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "2021 Kia Sorento LX Plus, Front Left, 01-17-2021.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:2021_Kia_Sorento_LX_Plus,_Front_Left,_01-17-2021.jpg"
+  },
+  {
+   "file": "p2.jpg",
+   "credit": "Photo: Kevauto / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "2021 Kia Sorento LX, rear 11.10.21.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:2021_Kia_Sorento_LX,_rear_11.10.21.jpg"
+  },
+  {
+   "file": "p3.jpg",
+   "credit": "Photo: AIMHO'S REBELLION 8490s / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "2021 Kia Sorento brown front view in Brunei.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:2021_Kia_Sorento_brown_front_view_in_Brunei.jpg"
+  },
+  {
+   "file": "p4.jpg",
+   "credit": "Photo: Kevauto / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "2021 Kia Sorento SX AWD, front 1.14.20.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:2021_Kia_Sorento_SX_AWD,_front_1.14.20.jpg"
+  }
+ ],
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Kia Sorento",
+   "lines": [
+    [
+     "f03_1",
+     {
+      "label": "7-seat SUV",
+      "tags": [
+       "LARGE SUV",
+       "7 SEATS",
+       "GLOBAL MODEL"
+      ],
+      "photo": 0
+     },
+     "The Kia Sorento is Kia's big seven seat SUV, sold in markets like the US, Europe and Australia."
+    ],
+    [
+     "f03_2",
+     {
+      "label": "4th gen",
+      "spec": [
+       "2020",
+       "fourth generation launched"
+      ],
+      "photo": 1
+     },
+     "The fourth generation arrived in 2020, on an all new platform."
+    ],
+    [
+     "f03_3",
+     {
+      "label": "powertrains",
+      "specs": [
+       [
+        "Petrol",
+        "non-turbo & turbo"
+       ],
+       [
+        "Diesel",
+        "2.2 litre"
+       ],
+       [
+        "Hybrid",
+        "1.6 turbo + motor"
+       ]
+      ],
+      "photo": 2
+     },
+     "Depending on the market, you can get petrol, diesel, a hybrid, or a plug in hybrid."
+    ],
+    [
+     "f03_4",
+     {
+      "label": "plug-in",
+      "spec": [
+       "~50 km",
+       "electric-only range (approx.)"
+      ],
+      "photo": 3
+     },
+     "The plug in hybrid can drive around fifty kilometres on electricity alone, before the engine starts."
+    ],
+    [
+     "f03_5",
+     {
+      "label": "inside",
+      "specs": [
+       [
+        "3 rows",
+        "seats 7"
+       ],
+       [
+        "AWD",
+        "available"
+       ]
+      ],
+      "photo": 0
+     },
+     "Three rows of seats, and all wheel drive on many versions."
+    ],
+    [
+     "f03_6",
+     {
+      "label": "tech",
+      "tags": [
+       "12.3\" SCREENS",
+       "BLIND-SPOT CAMERA",
+       "ADAS"
+      ],
+      "photo": 1
+     },
+     "Big screens, and a clever camera that shows your blind spot in the dials when you indicate."
+    ],
+    [
+     "f03_7",
+     {
+      "label": "india?",
+      "spec": [
+       "Not sold",
+       "in India (yet)"
+      ],
+      "photo": 2
+     },
+     "It is not sold in India, where Kia's three row SUV is the Carens and the electric E V nine."
+    ],
+    [
+     "f03_8",
+     {
+      "label": "verdict",
+      "tags": [
+       "SPACIOUS",
+       "HYBRID OPTIONS",
+       "FAMILY HAULER"
+      ],
+      "photo": 3
+     },
+     "A roomy, efficient family hauler, with a hybrid for every need."
+    ]
+   ]
+  }
+ ]
+}

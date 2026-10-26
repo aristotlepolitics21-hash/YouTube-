@@ -2,13 +2,17 @@
 //        render.cjs EPDIR WORKDIR OUT.jpg --still T [T2 ...] -> saves stills (several: OUT_0.jpg, OUT_1.jpg ...)
 // EPDIR holds script.json and photos/pN.jpg; WORKDIR holds durs.json and caps.json from ../../tech-shorts/engine/voice.py.
 const { chromium } = require('playwright'), fs = require('fs'), path = require('path'), { spawn } = require('child_process');
+// captions show the written form of things the narration spells out for the voice
+const SUBS = [[/M Q B A zero I N/g, 'MQB A0 IN'], [/\bP S\b/g, 'PS'], [/\bN CAP\b/g, 'NCAP'], [/\bE V\b/g, 'EV'], [/\bD C\b/g, 'DC'], [/\bC V T\b/g, 'CVT'], [/\bG R\b/g, 'GR'], [/\bB Y D\b/g, 'BYD'],
+  [/M G Z S/g, 'MG ZS'], [/X U V four hundred/g, 'XUV400'], [/X U V three hundred/g, 'XUV300'], [/Ioniq five/g, 'Ioniq 5'], [/Atto three/g, 'Atto 3'], [/r p m/g, 'rpm'], [/E V nine/g, 'EV9']];
+const display = s => SUBS.reduce((a, [r, t]) => a.replace(r, t), s);
 (async () => {
   const [ep, w, out, f0, ...rest] = process.argv.slice(2), FPS = 30, sc = JSON.parse(fs.readFileSync(`${ep}/script.json`));
   const lines = sc.sections.flatMap(s => s.lines), durs = JSON.parse(fs.readFileSync(`${w}/durs.json`)), caps = JSON.parse(fs.readFileSync(`${w}/caps.json`));
   const photos = sc.photos.map(p => 'data:image/jpeg;base64,' + fs.readFileSync(`${ep}/photos/${p.file}`).toString('base64'));
   const b = await chromium.launch(), p = await b.newPage({ viewport: { width: 1080, height: 1920 } }); p.on('pageerror', e => console.log('ERR', e.message));
   await p.goto('file://' + path.join(__dirname, 'page.html'));
-  await p.evaluate(d => window.setup(d), { photos, beats: lines.map(l => l[1]), texts: lines.map(l => l[2]), durs, caps,
+  await p.evaluate(d => window.setup(d), { photos, beats: lines.map(l => l[1]), texts: lines.map(l => display(l[2])), durs, caps,
     ep: { num: sc.episode, model: sc.model, kind: sc.kind, note: sc.note, credits: sc.photos.map(p => p.credit) } });
   const grab = async T => Buffer.from((await p.evaluate(t => { window.__at(t); return document.getElementById('cv').toDataURL('image/jpeg', .92); }, T)).split(',')[1], 'base64');
   if (f0 === '--still') { for (let i = 0; i < rest.length; i++) fs.writeFileSync(rest.length > 1 ? out.replace(/\.jpg$/, `_${i}.jpg`) : out, await grab(+rest[i])); await b.close(); return; }

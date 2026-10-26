@@ -1,0 +1,155 @@
+{
+ "series": "Car Features",
+ "episode": 4,
+ "model": "Toyota Fortuner",
+ "kind": "the tough one",
+ "title": "Toyota Fortuner: the tough one",
+ "out": "toyota-fortuner-the-tough-one",
+ "note": "Specs vary by variant and year. Check with your dealer.",
+ "photos": [
+  {
+   "file": "p1.jpg",
+   "credit": "Photo: Chanokchon / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "2021 Toyota Fortuner GR Sport 2.8 4WD.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:2021_Toyota_Fortuner_GR_Sport_2.8_4WD.jpg"
+  },
+  {
+   "file": "p2.jpg",
+   "credit": "Photo: Captainmorlypogi1959 / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "Toyota Fortuner 4x4 Legender (LTD) 2022.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Toyota_Fortuner_4x4_Legender_(LTD)_2022.jpg"
+  },
+  {
+   "file": "p3.jpg",
+   "credit": "Photo: \u30aa\u30fc\u30d0\u30fc\u30c9\u30e9\u30a4\u30d683 / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "2021 Toyota Fortuner 2.4 VRZ GR Sport 4x2 GUN165R interior (20211117).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:2021_Toyota_Fortuner_2.4_VRZ_GR_Sport_4x2_GUN165R_interior_(20211117).jpg"
+  },
+  {
+   "file": "p4.jpg",
+   "credit": "Photo: Captainmorlypogi1959 / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "Toyota Fortuner 4x4 Legender (LTD) 2-Tone White Pearl-Black.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Toyota_Fortuner_4x4_Legender_(LTD)_2-Tone_White_Pearl-Black.jpg"
+  }
+ ],
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Toyota Fortuner",
+   "lines": [
+    [
+     "f04_1",
+     {
+      "label": "body on frame",
+      "tags": [
+       "LADDER FRAME",
+       "IMV PLATFORM",
+       "SHARED WITH HILUX"
+      ],
+      "photo": 0
+     },
+     "The Toyota Fortuner is built the old school way. A ladder frame chassis, shared with the Hilux pickup truck."
+    ],
+    [
+     "f04_2",
+     {
+      "label": "diesel",
+      "specs": [
+       [
+        "204 PS",
+        "2.8 diesel"
+       ],
+       [
+        "500 Nm",
+        "with automatic"
+       ]
+      ],
+      "photo": 1
+     },
+     "Its two point eight diesel makes two hundred and four P S, and up to five hundred newton metres with the automatic."
+    ],
+    [
+     "f04_3",
+     {
+      "label": "petrol",
+      "spec": [
+       "166 PS",
+       "2.7 litre petrol"
+      ],
+      "photo": 2
+     },
+     "There is also a two point seven petrol, with a hundred and sixty six P S."
+    ],
+    [
+     "f04_4",
+     {
+      "label": "4x4",
+      "tags": [
+       "4WD",
+       "LOW RANGE",
+       "REAR DIFF LOCK"
+      ],
+      "photo": 3
+     },
+     "Four wheel drive versions get a low range gearbox and a locking rear differential, for serious off roading."
+    ],
+    [
+     "f04_5",
+     {
+      "label": "trade-off",
+      "specs": [
+       [
+        "Tough",
+        "rough roads"
+       ],
+       [
+        "Heavy",
+        "more body roll"
+       ]
+      ],
+      "photo": 0
+     },
+     "The ladder frame makes it tough on bad roads, but heavier, with more body roll than a monocoque SUV."
+    ],
+    [
+     "f04_6",
+     {
+      "label": "seats",
+      "spec": [
+       "7 seats",
+       "third row folds to the sides"
+      ],
+      "photo": 1
+     },
+     "Seven seats, with a third row that folds up against the sides."
+    ],
+    [
+     "f04_7",
+     {
+      "label": "legender",
+      "tags": [
+       "LEGENDER",
+       "SPORTIER LOOK",
+       "GR SPORT"
+      ],
+      "photo": 2
+     },
+     "The Legender and G R Sport versions add sharper styling and extra features."
+    ],
+    [
+     "f04_8",
+     {
+      "label": "verdict",
+      "tags": [
+       "BUILT TOUGH",
+       "GREAT RESALE",
+       "GO ANYWHERE"
+      ],
+      "photo": 3
+     },
+     "Known for toughness and strong resale value, it is the go anywhere status symbol."
+    ]
+   ]
+  }
+ ]
+}

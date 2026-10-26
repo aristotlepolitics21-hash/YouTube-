@@ -1,0 +1,154 @@
+{
+ "series": "Car Features",
+ "episode": 9,
+ "model": "MG ZS EV",
+ "kind": "the early mover",
+ "title": "MG ZS EV: the early mover",
+ "out": "mg-zs-ev-the-early-mover",
+ "note": "Specs vary by variant and year. Check with your dealer.",
+ "photos": [
+  {
+   "file": "p1.jpg",
+   "credit": "Photo: Alexander Migl / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "MG ZS EV Facelift 1X7A5867.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MG_ZS_EV_Facelift_1X7A5867.jpg"
+  },
+  {
+   "file": "p2.jpg",
+   "credit": "Photo: Alexander Migl / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "MG ZS EV Facelift Automesse Ludwigsburg 2022 1X7A5928.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MG_ZS_EV_Facelift_Automesse_Ludwigsburg_2022_1X7A5928.jpg"
+  },
+  {
+   "file": "p3.jpg",
+   "credit": "Photo: Mariordo (Mario Roberto Dur\u00e1n Ortiz) / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "MG ZS EV charging CRI 10 2021 1426.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MG_ZS_EV_charging_CRI_10_2021_1426.jpg"
+  },
+  {
+   "file": "p4.jpg",
+   "credit": "Photo: DanielPrzygoda (Diskussion) / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "Mg-zs-ev-cockpit.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mg-zs-ev-cockpit.jpg"
+  }
+ ],
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "MG ZS EV",
+   "lines": [
+    [
+     "f09_1",
+     {
+      "label": "since 2020",
+      "spec": [
+       "2020",
+       "launched in India"
+      ],
+      "photo": 0
+     },
+     "The M G Z S E V was one of the first electric SUVs sold in India, launched in 2020."
+    ],
+    [
+     "f09_2",
+     {
+      "label": "battery",
+      "specs": [
+       [
+        "50.3 kWh",
+        "battery"
+       ],
+       [
+        "461 km",
+        "claimed range"
+       ]
+      ],
+      "photo": 1
+     },
+     "It has a fifty point three kilowatt hour battery, and a claimed range of four hundred and sixty one kilometres."
+    ],
+    [
+     "f09_3",
+     {
+      "label": "motor",
+      "specs": [
+       [
+        "176 PS",
+        "power"
+       ],
+       [
+        "280 Nm",
+        "torque"
+       ]
+      ],
+      "photo": 2
+     },
+     "The motor makes a hundred and seventy six P S, and two hundred and eighty newton metres."
+    ],
+    [
+     "f09_4",
+     {
+      "label": "charging",
+      "tags": [
+       "HOME WALLBOX",
+       "OVERNIGHT",
+       "DC FAST CHARGE"
+      ],
+      "photo": 3
+     },
+     "Charge it overnight on a home wallbox, or top up quickly at a D C fast charger."
+    ],
+    [
+     "f09_5",
+     {
+      "label": "ADAS",
+      "spec": [
+       "Level 2",
+       "driver assistance"
+      ],
+      "photo": 0
+     },
+     "Newer versions add level two driver assistance."
+    ],
+    [
+     "f09_6",
+     {
+      "label": "inside",
+      "tags": [
+       "PANORAMIC SUNROOF",
+       "DIGITAL CLUSTER",
+       "CONNECTED CAR"
+      ],
+      "photo": 1
+     },
+     "Inside, a panoramic sunroof, a digital cluster, and connected car tech."
+    ],
+    [
+     "f09_7",
+     {
+      "label": "safety",
+      "spec": [
+       "5 stars",
+       "Euro NCAP, 2019"
+      ],
+      "photo": 2
+     },
+     "It scored five stars in Euro N CAP crash tests."
+    ],
+    [
+     "f09_8",
+     {
+      "label": "verdict",
+      "tags": [
+       "PROVEN",
+       "COMFORTABLE",
+       "EASY EV"
+      ],
+      "photo": 3
+     },
+     "A comfortable, proven electric SUV that helped start India's E V story."
+    ]
+   ]
+  }
+ ]
+}

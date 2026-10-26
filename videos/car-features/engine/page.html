@@ -21,9 +21,12 @@ window.setup = async (d) => { await Promise.all(['600 40px SG', '700 40px SG', '
   let t = 0; BEATS = d.beats.map((b, i) => { const o = { ...b, i, start: t, end: t + d.durs[i], cap: d.caps[i], text: d.texts[i] }; t += d.durs[i]; return o; }); window.__total = t; return t; };
 
 function photo(b, T, alpha = 1) { const img = IMGS[b.photo || 0]; if (!img) return; const k = inout((T - b.start) / (b.end - b.start)), mv = b.move || ['left', 'in', 'right', 'out'][b.i % 4];
-  const base = Math.max(W / img.width, PH / img.height), z = mv === 'in' ? 1.05 + .1 * k : mv === 'out' ? 1.15 - .1 * k : 1.06, s = base * z, w = img.width * s, h = img.height * s;
-  const span = Math.max(0, w - W), fx = b.fx ?? .5, x = mv === 'left' ? -span * lerp(fx + .15, fx - .15, k) : mv === 'right' ? -span * lerp(fx - .15, fx + .15, k) : -span * fx;
-  c.save(); c.globalAlpha = alpha; c.beginPath(); c.rect(0, 0, W, PH); c.clip(); c.drawImage(img, cl(x, -span, 0), (PH - h) * (b.fy ?? .5), w, h); c.restore(); }
+  c.save(); c.globalAlpha = alpha; c.beginPath(); c.rect(0, 0, W, PH); c.clip();
+  // blurred cover fill behind, then the photo fitted to the width so the whole car stays in view
+  const cs = Math.max(W / img.width, PH / img.height) * 1.1; c.filter = 'blur(28px) brightness(.55)'; c.drawImage(img, (W - img.width * cs) / 2, (PH - img.height * cs) / 2, img.width * cs, img.height * cs); c.filter = 'none';
+  const z = (mv === 'in' ? 1.0 + .16 * k : mv === 'out' ? 1.16 - .16 * k : 1.1) * (b.zoom || 1), s = W / img.width * z, w = img.width * s, h = img.height * s, span = w - W;
+  const fx = b.fx ?? .5, x = mv === 'left' ? -span * lerp(.75, .25, k) : mv === 'right' ? -span * lerp(.25, .75, k) : -span * fx, y = (PH - 120 - h) * (b.fy ?? .5) + 60;
+  c.drawImage(img, x, y, w, h); c.restore(); }
 function txt(s, x, y, font, col, align = 'left', base = 'alphabetic') { c.font = font; c.fillStyle = col; c.textAlign = align; c.textBaseline = base; c.fillText(s, x, y); }
 function rr(x, y, w, h, r) { c.beginPath(); c.roundRect(x, y, w, h, r); }
 function caption(b, T) { if (!b.cap || T < b.cap[0] || T > b.cap[1] + .2) return;
@@ -45,9 +48,9 @@ window.__at = (T) => { let i = BEATS.findIndex(b => T < b.end); if (i < 0) i = B
   const g2 = c.createLinearGradient(0, 0, 0, 260); g2.addColorStop(0, 'rgba(0,0,0,.55)'); g2.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g2; c.fillRect(0, 0, W, 260);
   txt(`CAR FEATURES  ·  ${String(EP.num).padStart(2, '0')}`, 60, 120, '700 30px JB', '#fff'); rr(60, 146, 64, 8, 4); c.fillStyle = OR; c.fill();
   if (EP.credits && EP.credits[b.photo || 0]) txt(EP.credits[b.photo || 0], W - 40, PH - 24, '500 18px JB', 'rgba(255,255,255,.55)', 'right');
-  txt(EP.model, 60, 1290, '700 92px SG', '#fff'); txt(EP.kind, 60, 1352, 'italic 52px IS', OR);
-  if (b.label) { c.font = '700 26px JB'; const w = c.measureText(b.label.toUpperCase()).width + 40; rr(1020 - w, 1250, w, 50, 25); c.fillStyle = '#1d2026'; c.fill(); txt(b.label.toUpperCase(), 1020 - w / 2, 1284, '700 26px JB', '#fff', 'center'); }
+  let ms = 92; c.font = `700 ${ms}px SG`; while (c.measureText(EP.model).width > 960 && ms > 50) { ms -= 4; c.font = `700 ${ms}px SG`; } txt(EP.model, 60, 1326, `700 ${ms}px SG`, '#fff'); txt(EP.kind, 60, 1388, 'italic 52px IS', OR);
+  if (b.label) { c.font = '700 24px JB'; const w = c.measureText(b.label.toUpperCase()).width + 36; rr(60, 1196, w, 44, 22); c.fillStyle = OR; c.fill(); txt(b.label.toUpperCase(), 60 + w / 2, 1226, '700 24px JB', '#fff', 'center'); }
   specCard(b, t); caption(b, T);
   BEATS.forEach((_, j) => { rr(60 + j * 60, 1840, 44, 8, 4); c.fillStyle = j < i ? '#fff' : j === i ? OR : '#2a2d34'; c.fill(); });
-  if (EP.note && i === BEATS.length - 1) txt(EP.note, 1020, 1848, '500 20px JB', MUT, 'right'); };
+  if (EP.note && i === BEATS.length - 1) txt(EP.note, 60, 1808, '500 22px JB', MUT, 'left'); };
 </script>

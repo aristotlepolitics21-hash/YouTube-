@@ -1,0 +1,149 @@
+{
+ "series": "Car Features",
+ "episode": 5,
+ "model": "Tata Safari",
+ "kind": "the legend, reborn",
+ "title": "Tata Safari: the legend, reborn",
+ "out": "tata-safari-the-legend-reborn",
+ "note": "Specs vary by variant and year. Check with your dealer.",
+ "photos": [
+  {
+   "file": "p1.jpg",
+   "credit": "Photo: Rutger van der Maar / CC BY 2.0 / Wikimedia Commons",
+   "title": "2007 Tata Safari 2.2 DiCOR.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:2007_Tata_Safari_2.2_DiCOR.jpg"
+  },
+  {
+   "file": "p2.jpg",
+   "credit": "Photo: Sabung.hamster / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "Tata Safari Storme (front), Denpasar.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tata_Safari_Storme_(front),_Denpasar.jpg"
+  },
+  {
+   "file": "p3.jpg",
+   "credit": "Photo: Alexander Migl / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "Tata Buzzard Genf 2019 1Y7A5791.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tata_Buzzard_Genf_2019_1Y7A5791.jpg"
+  },
+  {
+   "file": "p4.jpg",
+   "credit": "Photo: Gpkp / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "4th International Auto Show, Bangalore (2025) 108.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:4th_International_Auto_Show,_Bangalore_(2025)_108.jpg"
+  }
+ ],
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Tata Safari",
+   "lines": [
+    [
+     "f05_1",
+     {
+      "photo": 0,
+      "label": "since 1998",
+      "spec": [
+       "1998",
+       "first Tata Safari"
+      ]
+     },
+     "The Tata Safari name goes back to 1998, when it was one of India's first lifestyle SUVs."
+    ],
+    [
+     "f05_2",
+     {
+      "photo": 1,
+      "label": "old school",
+      "tags": [
+       "LADDER FRAME",
+       "BOXY",
+       "4X4"
+      ]
+     },
+     "The old Safari was a boxy, body on frame four by four."
+    ],
+    [
+     "f05_3",
+     {
+      "photo": 2,
+      "label": "reborn",
+      "spec": [
+       "2021",
+       "all-new Safari"
+      ]
+     },
+     "In 2021 it was reborn as a modern monocoque SUV. It was previewed as the Buzzard concept at the 2019 Geneva motor show."
+    ],
+    [
+     "f05_4",
+     {
+      "photo": 3,
+      "label": "platform",
+      "spec": [
+       "OMEGARC",
+       "derived from Land Rover D8"
+      ]
+     },
+     "It rides on Tata's Omega Arc platform, derived from a Land Rover architecture."
+    ],
+    [
+     "f05_5",
+     {
+      "photo": 3,
+      "label": "engine",
+      "specs": [
+       [
+        "170 PS",
+        "2.0 diesel"
+       ],
+       [
+        "350 Nm",
+        "torque"
+       ]
+      ]
+     },
+     "The two litre diesel makes a hundred and seventy P S and three hundred and fifty newton metres, with manual or automatic."
+    ],
+    [
+     "f05_6",
+     {
+      "photo": 2,
+      "label": "safety",
+      "spec": [
+       "5 stars",
+       "Global NCAP & Bharat NCAP"
+      ]
+     },
+     "The updated Safari scored five stars in both Global N CAP and Bharat N CAP crash tests."
+    ],
+    [
+     "f05_7",
+     {
+      "photo": 3,
+      "label": "inside",
+      "tags": [
+       "12.3\" SCREEN",
+       "ADAS",
+       "PANORAMIC ROOF",
+       "CAPTAIN SEATS"
+      ]
+     },
+     "Inside, a twelve point three inch screen, level two driver assistance, a panoramic sunroof, and optional captain seats."
+    ],
+    [
+     "f05_8",
+     {
+      "photo": 3,
+      "label": "verdict",
+      "tags": [
+       "7 SEATS",
+       "TOP SAFETY",
+       "ROAD PRESENCE"
+      ]
+     },
+     "A legendary name, now with seven seats, top safety, and huge road presence."
+    ]
+   ]
+  }
+ ]
+}

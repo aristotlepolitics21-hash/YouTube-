@@ -3,11 +3,11 @@
 # Specs are for the Indian-market versions where the car is sold in India, and are claimed/manufacturer figures that vary by variant and year.
 import json, os, re
 
-def ep(n, slug, model, kind, lines, note='Specs vary by variant and year. Check with your dealer.'):
+def ep(n, slug, model, kind, lines, note='Specs vary by variant and year. Check with your dealer.', crop={}):
     photos = json.load(open(f'{n:02d}-{slug}/photos.json'))
     rows = []
     for i, (b, t) in enumerate(lines):
-        b = dict(b); b['photo'] = b.get('photo', i) % len(photos); rows.append([f'f{n:02d}_{i + 1}', b, t])
+        b = dict(b); b['photo'] = b.get('photo', i) % len(photos); b = {**crop.get(b['photo'] + 1, {}), **b}; rows.append([f'f{n:02d}_{i + 1}', b, t])
     out = re.sub(r'[^a-z0-9]+', '-', (model + ' ' + kind).lower()).strip('-')
     d = dict(series='Car Features', episode=n, model=model, kind=kind, title=f'{model}: {kind}', out=out, note=note, photos=photos, voice='kokoro:am_michael', sections=[dict(name=model, lines=rows)])
     json.dump(d, open(f'{n:02d}-{slug}/script.json', 'w'), indent=1)
@@ -57,14 +57,14 @@ ep(4, 'fortuner', 'Toyota Fortuner', 'the tough one', [
 ])
 
 ep(5, 'tata-safari', 'Tata Safari', 'the legend, reborn', [
-    (dict(label='since 1998', spec=['1998', 'first Tata Safari']), 'The Tata Safari name goes back to 1998, when it was one of India\'s first lifestyle SUVs.'),
-    (dict(label='old school', tags=['LADDER FRAME', 'BOXY', '4X4']), 'The old Safari was a boxy, body on frame four by four.'),
-    (dict(label='reborn', spec=['2021', 'all-new Safari']), 'In 2021 it was reborn as a modern monocoque SUV. It was previewed as the Buzzard concept at the 2019 Geneva motor show.'),
-    (dict(label='platform', spec=['OMEGARC', 'derived from Land Rover D8']), 'It rides on Tata\'s Omega Arc platform, derived from a Land Rover architecture.'),
-    (dict(label='engine', specs=[['170 PS', '2.0 diesel'], ['350 Nm', 'torque']]), 'The two litre diesel makes a hundred and seventy P S and three hundred and fifty newton metres, with manual or automatic.'),
-    (dict(label='safety', spec=['5 stars', 'Global NCAP & Bharat NCAP']), 'The updated Safari scored five stars in both Global N CAP and Bharat N CAP crash tests.'),
-    (dict(label='inside', tags=['12.3" SCREEN', 'ADAS', 'PANORAMIC ROOF', 'CAPTAIN SEATS']), 'Inside, a twelve point three inch screen, level two driver assistance, a panoramic sunroof, and optional captain seats.'),
-    (dict(label='verdict', tags=['7 SEATS', 'TOP SAFETY', 'ROAD PRESENCE']), 'A legendary name, now with seven seats, top safety, and huge road presence.'),
+    (dict(photo=0, label='since 1998', spec=['1998', 'first Tata Safari']), 'The Tata Safari name goes back to 1998, when it was one of India\'s first lifestyle SUVs.'),
+    (dict(photo=1, label='old school', tags=['LADDER FRAME', 'BOXY', '4X4']), 'The old Safari was a boxy, body on frame four by four.'),
+    (dict(photo=2, label='reborn', spec=['2021', 'all-new Safari']), 'In 2021 it was reborn as a modern monocoque SUV. It was previewed as the Buzzard concept at the 2019 Geneva motor show.'),
+    (dict(photo=3, label='platform', spec=['OMEGARC', 'derived from Land Rover D8']), 'It rides on Tata\'s Omega Arc platform, derived from a Land Rover architecture.'),
+    (dict(photo=3, label='engine', specs=[['170 PS', '2.0 diesel'], ['350 Nm', 'torque']]), 'The two litre diesel makes a hundred and seventy P S and three hundred and fifty newton metres, with manual or automatic.'),
+    (dict(photo=2, label='safety', spec=['5 stars', 'Global NCAP & Bharat NCAP']), 'The updated Safari scored five stars in both Global N CAP and Bharat N CAP crash tests.'),
+    (dict(photo=3, label='inside', tags=['12.3" SCREEN', 'ADAS', 'PANORAMIC ROOF', 'CAPTAIN SEATS']), 'Inside, a twelve point three inch screen, level two driver assistance, a panoramic sunroof, and optional captain seats.'),
+    (dict(photo=3, label='verdict', tags=['7 SEATS', 'TOP SAFETY', 'ROAD PRESENCE']), 'A legendary name, now with seven seats, top safety, and huge road presence.'),
 ])
 
 ep(6, 'nexon-ev', 'Tata Nexon EV', 'India\'s EV pioneer', [

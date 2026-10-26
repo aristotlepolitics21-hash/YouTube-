@@ -1,0 +1,143 @@
+{
+ "series": "Car Features",
+ "episode": 10,
+ "model": "Mahindra XUV400",
+ "kind": "the quick electric SUV",
+ "title": "Mahindra XUV400: the quick electric SUV",
+ "out": "mahindra-xuv400-the-quick-electric-suv",
+ "note": "Specs vary by variant and year. Check with your dealer.",
+ "photos": [
+  {
+   "file": "p1.jpg",
+   "credit": "Photo: Ank Kumar / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "2023 Mahindra XUV 400 EL EV , Ashiana Brahmananda, Jamshedpur, Jharkhand, India ( Ank Kumar, Infosys Limited ) 01.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:2023_Mahindra_XUV_400_EL_EV_,_Ashiana_Brahmananda,_Jamshedpur,_Jharkhand,_India_(_Ank_Kumar,_Infosys_Limited_)_01.jpg"
+  },
+  {
+   "file": "p2.jpg",
+   "credit": "Photo: Ank Kumar / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "2023 Mahindra XUV 400 EL EV , Ashiana Brahmananda, Jamshedpur, Jharkhand, India ( Ank Kumar, Infosys Limited ) 03.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:2023_Mahindra_XUV_400_EL_EV_,_Ashiana_Brahmananda,_Jamshedpur,_Jharkhand,_India_(_Ank_Kumar,_Infosys_Limited_)_03.jpg"
+  }
+ ],
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Mahindra XUV400",
+   "lines": [
+    [
+     "f10_1",
+     {
+      "label": "first EV SUV",
+      "spec": [
+       "2023",
+       "Mahindra's first electric SUV"
+      ],
+      "photo": 0
+     },
+     "The Mahindra X U V four hundred, launched in 2023, was Mahindra's first electric SUV."
+    ],
+    [
+     "f10_2",
+     {
+      "label": "based on",
+      "tags": [
+       "XUV300 BASED",
+       "LONGER BODY",
+       "BIGGER BOOT"
+      ],
+      "photo": 1
+     },
+     "It is based on the X U V three hundred, but longer, with a bigger boot."
+    ],
+    [
+     "f10_3",
+     {
+      "label": "batteries",
+      "specs": [
+       [
+        "34.5 kWh",
+        "standard"
+       ],
+       [
+        "39.4 kWh",
+        "long range"
+       ]
+      ],
+      "photo": 0
+     },
+     "Two battery options. Thirty four point five, and thirty nine point four kilowatt hours."
+    ],
+    [
+     "f10_4",
+     {
+      "label": "range",
+      "spec": [
+       "456 km",
+       "claimed range, 39.4 kWh"
+      ],
+      "photo": 1
+     },
+     "The bigger battery has a claimed range of up to four hundred and fifty six kilometres."
+    ],
+    [
+     "f10_5",
+     {
+      "label": "quick",
+      "specs": [
+       [
+        "150 PS",
+        "power"
+       ],
+       [
+        "310 Nm",
+        "torque"
+       ]
+      ],
+      "photo": 0
+     },
+     "With a hundred and fifty P S and three hundred and ten newton metres, it is properly quick."
+    ],
+    [
+     "f10_6",
+     {
+      "label": "boot",
+      "spec": [
+       "378 L",
+       "boot space"
+      ],
+      "photo": 1
+     },
+     "The boot holds three hundred and seventy eight litres, big for this size."
+    ],
+    [
+     "f10_7",
+     {
+      "label": "modes",
+      "tags": [
+       "FUN",
+       "FAST",
+       "FEARLESS",
+       "ONE-PEDAL"
+      ],
+      "photo": 0
+     },
+     "Drive modes called fun, fast and fearless, plus one pedal driving with strong regeneration."
+    ],
+    [
+     "f10_8",
+     {
+      "label": "verdict",
+      "tags": [
+       "QUICK",
+       "ROOMY BOOT",
+       "VALUE EV"
+      ],
+      "photo": 1
+     },
+     "A quick, practical electric SUV, with plenty of punch for the money."
+    ]
+   ]
+  }
+ ]
+}

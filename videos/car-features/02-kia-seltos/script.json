@@ -1,0 +1,161 @@
+{
+ "series": "Car Features",
+ "episode": 2,
+ "model": "Kia Seltos",
+ "kind": "the feature king",
+ "title": "Kia Seltos: the feature king",
+ "out": "kia-seltos-the-feature-king",
+ "note": "Specs vary by variant and year. Check with your dealer.",
+ "photos": [
+  {
+   "file": "p1.jpg",
+   "credit": "Photo: Ganesh Mohan T / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "Kia Seltos 2024 3.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Kia_Seltos_2024_3.jpg"
+  },
+  {
+   "file": "p2.jpg",
+   "credit": "Photo: Ganesh Mohan T / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "Kia Seltos 2024 2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Kia_Seltos_2024_2.jpg"
+  },
+  {
+   "file": "p3.jpg",
+   "credit": "Photo: Ganesh Mohan T / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "Kia Seltos 2024.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Kia_Seltos_2024.jpg"
+  },
+  {
+   "file": "p4.jpg",
+   "credit": "Photo: Ethan Llamas / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "Kia Seltos 1.4 SX Turbo 2024.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Kia_Seltos_1.4_SX_Turbo_2024.jpg"
+  }
+ ],
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "Kia Seltos",
+   "lines": [
+    [
+     "f02_1",
+     {
+      "label": "mid-size SUV",
+      "tags": [
+       "MID-SIZE SUV",
+       "BEST-SELLER",
+       "MADE IN INDIA"
+      ],
+      "photo": 0
+     },
+     "The Kia Seltos is one of India's most popular mid size SUVs, and the car that launched Kia in India in 2019."
+    ],
+    [
+     "f02_2",
+     {
+      "label": "engines",
+      "specs": [
+       [
+        "115 PS",
+        "1.5 petrol"
+       ],
+       [
+        "160 PS",
+        "1.5 turbo"
+       ],
+       [
+        "116 PS",
+        "1.5 diesel"
+       ]
+      ],
+      "photo": 1
+     },
+     "Three engines. A one point five petrol, a one point five turbo petrol with a hundred and sixty P S, and a one point five diesel."
+    ],
+    [
+     "f02_3",
+     {
+      "label": "turbo",
+      "specs": [
+       [
+        "253 Nm",
+        "turbo petrol torque"
+       ],
+       [
+        "DCT",
+        "dual-clutch auto"
+       ]
+      ],
+      "photo": 2
+     },
+     "The turbo makes two hundred and fifty three newton metres, and pairs with a dual clutch automatic."
+    ],
+    [
+     "f02_4",
+     {
+      "label": "gearboxes",
+      "tags": [
+       "MANUAL",
+       "CVT",
+       "DUAL-CLUTCH",
+       "TORQUE CONVERTER"
+      ],
+      "photo": 3
+     },
+     "Depending on the engine, you get manual, C V T, dual clutch or torque converter automatics."
+    ],
+    [
+     "f02_5",
+     {
+      "label": "screens",
+      "spec": [
+       "2 \u00d7 10.25\"",
+       "twin screens, one panel"
+      ],
+      "photo": 0
+     },
+     "Inside, two ten point two five inch screens sit in one curved panel."
+    ],
+    [
+     "f02_6",
+     {
+      "label": "ADAS",
+      "spec": [
+       "Level 2",
+       "driver assistance"
+      ],
+      "photo": 1
+     },
+     "Level two driver assistance. Adaptive cruise, lane keeping, and automatic emergency braking."
+    ],
+    [
+     "f02_7",
+     {
+      "label": "features",
+      "tags": [
+       "PANORAMIC SUNROOF",
+       "360\u00b0 CAMERA",
+       "VENTILATED SEATS",
+       "6 AIRBAGS"
+      ],
+      "photo": 2
+     },
+     "Plus a panoramic sunroof, a three sixty camera, ventilated seats, and six airbags as standard."
+    ],
+    [
+     "f02_8",
+     {
+      "label": "verdict",
+      "tags": [
+       "LOADED",
+       "THREE ENGINES",
+       "EASY TO LIVE WITH"
+      ],
+      "photo": 3
+     },
+     "If you want the most features for your money in this class, the Seltos is hard to beat."
+    ]
+   ]
+  }
+ ]
+}

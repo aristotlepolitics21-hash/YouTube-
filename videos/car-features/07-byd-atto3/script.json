@@ -1,0 +1,160 @@
+{
+ "series": "Car Features",
+ "episode": 7,
+ "model": "BYD Atto 3",
+ "kind": "the Blade battery SUV",
+ "title": "BYD Atto 3: the Blade battery SUV",
+ "out": "byd-atto-3-the-blade-battery-suv",
+ "note": "Specs vary by variant and year. Check with your dealer.",
+ "photos": [
+  {
+   "file": "p1.jpg",
+   "credit": "Photo: Alexander Migl / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "BYD Atto 3 1X7A6495.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:BYD_Atto_3_1X7A6495.jpg"
+  },
+  {
+   "file": "p2.jpg",
+   "credit": "Photo: Alexander Migl / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "BYD Atto 3 1X7A6491.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:BYD_Atto_3_1X7A6491.jpg"
+  },
+  {
+   "file": "p3.jpg",
+   "credit": "Photo: Hubert Berberich (HubiB) / CC BY 4.0 / Wikimedia Commons",
+   "title": "BYD Atto 3 front-left.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:BYD_Atto_3_front-left.jpg"
+  },
+  {
+   "file": "p4.jpg",
+   "credit": "Photo: Calreyn88 / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "2023 BYD Atto 3 9.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:2023_BYD_Atto_3_9.jpg"
+  },
+  {
+   "file": "p5.jpg",
+   "credit": "Photo: Calreyn88 / CC BY-SA 4.0 / Wikimedia Commons",
+   "title": "2023 BYD Atto 3 Design 3.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:2023_BYD_Atto_3_Design_3.jpg"
+  }
+ ],
+ "voice": "kokoro:am_michael",
+ "sections": [
+  {
+   "name": "BYD Atto 3",
+   "lines": [
+    [
+     "f07_1",
+     {
+      "label": "BYD",
+      "tags": [
+       "CHINA",
+       "BATTERY GIANT",
+       "EV RIVAL TO TESLA"
+      ],
+      "photo": 0
+     },
+     "B Y D started as a battery maker, and is now one of the biggest electric car makers in the world."
+    ],
+    [
+     "f07_2",
+     {
+      "label": "blade",
+      "spec": [
+       "LFP",
+       "Blade battery cells"
+      ],
+      "photo": 1
+     },
+     "The Atto three uses B Y D's Blade battery. Long, thin lithium iron phosphate cells, known for being very resistant to catching fire."
+    ],
+    [
+     "f07_3",
+     {
+      "label": "battery",
+      "specs": [
+       [
+        "60.48 kWh",
+        "battery"
+       ],
+       [
+        "521 km",
+        "claimed range"
+       ]
+      ],
+      "photo": 2
+     },
+     "The bigger battery is sixty point four eight kilowatt hours, with a claimed range of up to five hundred and twenty one kilometres."
+    ],
+    [
+     "f07_4",
+     {
+      "label": "performance",
+      "specs": [
+       [
+        "204 PS",
+        "power"
+       ],
+       [
+        "7.3 s",
+        "0-100 km/h"
+       ]
+      ],
+      "photo": 3
+     },
+     "Two hundred and four P S, and zero to one hundred in about seven point three seconds."
+    ],
+    [
+     "f07_5",
+     {
+      "label": "safety",
+      "spec": [
+       "5 stars",
+       "Euro NCAP, 2022"
+      ],
+      "photo": 4
+     },
+     "It earned five stars in Euro N CAP crash tests."
+    ],
+    [
+     "f07_6",
+     {
+      "label": "quirky",
+      "tags": [
+       "ROTATING SCREEN",
+       "GUITAR-STRING POCKETS",
+       "GYM-INSPIRED"
+      ],
+      "photo": 0
+     },
+     "The interior is wonderfully weird. A screen that rotates, and door pockets strung like a guitar."
+    ],
+    [
+     "f07_7",
+     {
+      "label": "platform",
+      "spec": [
+       "e-Platform 3.0",
+       "dedicated EV platform"
+      ],
+      "photo": 1
+     },
+     "It sits on B Y D's dedicated electric platform, with a flat floor."
+    ],
+    [
+     "f07_8",
+     {
+      "label": "verdict",
+      "tags": [
+       "SAFE BATTERY",
+       "QUICK",
+       "FUN INSIDE"
+      ],
+      "photo": 2
+     },
+     "A safe battery, a quick motor, and an interior with real personality."
+    ]
+   ]
+  }
+ ]
+}
