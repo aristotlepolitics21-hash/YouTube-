@@ -1,0 +1,335 @@
+{
+ "out": "11-cooler-ac-repair",
+ "ep": {
+  "num": 11,
+  "of": 100,
+  "title": "Cooler Aur AC Repair",
+  "sign": "RAMESH COOLER CENTRE",
+  "kind": "cooler",
+  "final": "Ramesh Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Ramesh",
+    "look": "tshirt",
+    "skin": "#a9683a",
+    "hair": "spiky",
+    "stache": true,
+    "tag": "#e63946",
+    "colors": {
+     "shirt": "#e63946",
+     "logo": "COOL",
+     "pants": "#3b4a6b"
+    }
+   },
+   "mentor": {
+    "name": "Papa",
+    "look": "dhoti",
+    "skin": "#b5743f",
+    "hair": "bald",
+    "grey": true,
+    "glasses": true,
+    "stache": "big",
+    "build": "fat",
+    "tag": "#8a5a30",
+    "colors": {
+     "kurta": "#f4f1e8"
+    }
+   },
+   "cust": {
+    "name": "Gupta Ji",
+    "look": "tilak",
+    "skin": "#d39b6a",
+    "build": "fat",
+    "tag": "#f28c28",
+    "colors": {
+     "kurta": "#fff7e0",
+     "jacket": "#8a5a30"
+    }
+   }
+  },
+  "signColor": "#8fd3f4",
+  "signText": "#1d3fa8"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.05
+  ],
+  "mentor": [
+   "hm_omega",
+   0.92
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   1.0
+  ]
+ },
+ "sections": [
+  {
+   "name": "Cooler Aur AC Repair",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "इतनी गर्मी, और मेरा कूलर भी ख़राब! ऊपर से जेब भी ख़ाली।",
+     "Itni garmi, aur mera cooler bhi kharab! Upar se jeb bhi khaali."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "रमेश, पूरे मोहल्ले के कूलर ख़राब हैं। कूलर, पंखा और एसी रिपेयर सीख ले!",
+     "Ramesh, poore mohalle ke cooler kharab hain. Cooler, pankha aur AC repair seekh le!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "पापा, एसी तो बहुत मुश्किल काम है!",
+     "Papa, AC to bahut mushkil kaam hai!"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹40,000",
+       "Tools + training"
+      ]
+     },
+     "आई टी आई का छोटा कोर्स कर। टूल्स, गैस सिलेंडर और मीटर, चालीस हज़ार में।",
+     "ITI ka chhota course kar. Tools, gas cylinder aur meter, 40 hazaar mein."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "गर्मी आने से पहले, मार्च में ही दुकान खोलना। अप्रैल से लाइन लगेगी।",
+     "Garmi aane se pehle, March mein hi dukaan kholna. April se line lagegi."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "रमेश बेटा, एसी ठंडा नहीं कर रहा। घर में सब पसीने में नहा रहे हैं!",
+     "Ramesh beta, AC thanda nahi kar raha. Ghar mein sab paseene mein naha rahe hain!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "spanner",
+       "cust": null
+      },
+      "stat": [
+       "₹600",
+       "AC service"
+      ]
+     },
+     "गैस चेक, सर्विस, सफ़ाई। छह सौ रुपये, अंकल। एक घंटे में ठंडा!",
+     "Gas check, service, safai. 600 rupaye, uncle. Ek ghante mein thanda!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": null
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹2,500+",
+       "Garmi mein roz"
+      ]
+     },
+     "गर्मी में रोज़ चार-पाँच सर्विस, यानी ढाई हज़ार से ज़्यादा रोज़।",
+     "Garmi mein roz 4-5 service, yaani ₹2,500 se zyada roz."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "सर्दी में गीज़र और हीटर रिपेयर कर। साल भर काम चलेगा।",
+     "Sardi mein geyser aur heater repair kar. Saal bhar kaam chalega."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "गर्मी ने बना दी मेरी क़िस्मत! रमेश की लाइफ़ सेट!",
+     "Garmi ne bana di meri kismat! Ramesh ki life set!"
+    ]
+   ]
+  }
+ ]
+}

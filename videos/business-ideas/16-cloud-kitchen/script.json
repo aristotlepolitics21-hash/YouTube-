@@ -1,0 +1,335 @@
+{
+ "out": "16-cloud-kitchen",
+ "ep": {
+  "num": 16,
+  "of": 100,
+  "title": "Cloud Kitchen",
+  "sign": "NEETU'S KITCHEN",
+  "kind": "kitchen",
+  "final": "Neetu Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Neetu",
+    "look": "kurti",
+    "skin": "#d39b6a",
+    "hair": "long",
+    "tag": "#14a3a3",
+    "colors": {
+     "kurti": "#14a3a3",
+     "dupatta": "#f28c28"
+    }
+   },
+   "mentor": {
+    "name": "Monu Bhaiya",
+    "look": "hoodie",
+    "skin": "#c68642",
+    "hair": "spiky",
+    "build": "slim",
+    "tag": "#3aa76d",
+    "colors": {
+     "hoodie": "#3aa76d",
+     "pants": "#2a2a2e"
+    }
+   },
+   "cust": {
+    "name": "Delivery Raju",
+    "look": "tshirt",
+    "skin": "#a9683a",
+    "hat": "cap",
+    "stache": true,
+    "tag": "#e63946",
+    "colors": {
+     "shirt": "#e63946",
+     "hat": "#e63946",
+     "logo": "FOOD",
+     "pants": "#2a2a2e"
+    }
+   }
+  },
+  "signColor": "#e63946",
+  "signText": "#ffffff",
+  "awning": "#ffd23f"
+ },
+ "voices": {
+  "hero": [
+   "hf_alpha",
+   1.05
+  ],
+  "mentor": [
+   "hm_psi",
+   1.08
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   1.12
+  ]
+ },
+ "sections": [
+  {
+   "name": "Cloud Kitchen",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "भैया, मेरा रेस्टोरेंट खोलने का सपना है, पर दुकान का किराया पचास हज़ार!",
+     "Bhaiya, mera restaurant kholne ka sapna hai, par dukaan ka kiraya 50 hazaar!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "नीतू, दुकान की ज़रूरत ही नहीं! घर से क्लाउड किचन चला, ऑनलाइन ऑर्डर ले!",
+     "Neetu, dukaan ki zaroorat hi nahi! Ghar se cloud kitchen chala, online order le!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "बिना दुकान के रेस्टोरेंट? वो कैसे?",
+     "Bina dukaan ke restaurant? Wo kaise?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹50,000",
+       "Total setup"
+      ]
+     },
+     "फ़ूड लाइसेंस, बड़ा चूल्हा, पैकिंग, और ज़ोमैटो स्विगी पर लिस्टिंग। पचास हज़ार में।",
+     "Food license, bada chulha, packing, aur Zomato-Swiggy pe listing. 50 hazaar mein."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "मेन्यू छोटा रख। बस पाँच-छह डिश, पर स्वाद ऐसा कि रेटिंग चार से ऊपर रहे।",
+     "Menu chhota rakh. Bas 5-6 dish, par swaad aisa ki rating 4 se upar rahe."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "मैडम, तीन ऑर्डर तैयार हैं? कस्टमर फ़ोन पे फ़ोन कर रहा है!",
+     "Madam, teen order taiyaar hain? Customer phone pe phone kar raha hai!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "parcel",
+       "cust": null
+      },
+      "stat": [
+       "₹180",
+       "Ek order"
+      ]
+     },
+     "ये लो, राजमा चावल। एक सौ अस्सी का ऑर्डर, गरम पहुँचाना!",
+     "Ye lo, rajma chawal. 180 ka order, garam pahunchana!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "parcel"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹1,500–2,000",
+       "Roz ka munafa"
+      ]
+     },
+     "रोज़ चालीस ऑर्डर, कमीशन के बाद भी पंद्रह सौ से दो हज़ार रोज़।",
+     "Roz 40 order, commission ke baad bhi ₹1,500 se ₹2,000 roz."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "अपना व्हाट्सऐप नंबर भी डिब्बे पर लिख। सीधा ऑर्डर, कोई कमीशन नहीं!",
+     "Apna WhatsApp number bhi dibbe pe likh. Seedha order, koi commission nahi!"
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "बिना दुकान का रेस्टोरेंट, सुपरहिट! नीतू की लाइफ़ सेट!",
+     "Bina dukaan ka restaurant, superhit! Neetu ki life set!"
+    ]
+   ]
+  }
+ ]
+}

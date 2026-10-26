@@ -1,0 +1,337 @@
+{
+ "out": "13-tuition-classes",
+ "ep": {
+  "num": 13,
+  "of": 100,
+  "title": "Tuition Classes",
+  "sign": "VIKAS TUITION CLASSES",
+  "kind": "tuition",
+  "final": "Vikas Sir Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Vikas",
+    "look": "shirt",
+    "skin": "#d39b6a",
+    "glasses": "square",
+    "tag": "#3d6fd1",
+    "colors": {
+     "shirt": "#3d6fd1",
+     "shirt2": "#cfe0ff",
+     "pants": "#5a4636",
+     "shoes": "#2a2a2e"
+    }
+   },
+   "mentor": {
+    "name": "Dadi",
+    "look": "saree",
+    "skin": "#c68642",
+    "grey": true,
+    "glasses": true,
+    "build": "slim",
+    "s": 0.94,
+    "tag": "#6b7a8f",
+    "colors": {
+     "saree": "#f6f3ea",
+     "border": "#3d6fd1",
+     "blouse": "#cfe0ff"
+    }
+   },
+   "cust": {
+    "name": "Verma Ji",
+    "look": "suit",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#2d3142",
+    "colors": {
+     "suit": "#5a6070",
+     "tie": "#3d6fd1"
+    }
+   }
+  },
+  "signColor": "#ffffff",
+  "signText": "#2f6b4f",
+  "awning": "#2f8f4e"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.05
+  ],
+  "mentor": [
+   "hf_beta",
+   0.88
+  ],
+  "cust": [
+   "hm_omega",
+   1.02
+  ]
+ },
+ "sections": [
+  {
+   "name": "Tuition Classes",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "बी एस सी में टॉपर था, फिर भी नौकरी नहीं।",
+     "B.Sc. mein topper tha, phir bhi naukri nahi."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "विकास बेटा, टॉपर है तो बच्चों को पढ़ा! घर पर ट्यूशन शुरू कर!",
+     "Vikas beta, topper hai to bachchon ko padha! Ghar pe tuition shuru kar!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "दादी, बच्चे आएँगे कहाँ से?",
+     "Dadi, bachche aayenge kahan se?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹10,000",
+       "Shuruaat"
+      ]
+     },
+     "एक बोर्ड, बेंच, और मोहल्ले में पर्चे। दस हज़ार में शुरू।",
+     "Ek board, bench, aur mohalle mein parche. 10 hazaar mein shuru."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "पहले एक डेमो क्लास फ़्री दे। रिज़ल्ट अच्छा आया, तो बच्चे ख़ुद आएँगे।",
+     "Pehle ek demo class free de. Result achha aaya, to bachche khud aayenge."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "सर, मेरा बेटा मैथ्स में फ़ेल हो रहा है। कुछ कीजिए!",
+     "Sir, mera beta Maths mein fail ho raha hai. Kuch kijiye!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "book",
+       "cust": null
+      },
+      "stat": [
+       "₹1,500",
+       "Per bachcha / mahina"
+      ]
+     },
+     "रोज़ एक घंटा, महीने के पंद्रह सौ। तीन महीने में रिज़ल्ट दिखेगा।",
+     "Roz ek ghanta, mahine ke 1,500. Teen mahine mein result dikhega."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "book"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹60,000",
+       "40 bachche / mahina"
+      ]
+     },
+     "चार बैच, चालीस बच्चे, यानी महीने के साठ हज़ार।",
+     "Chaar batch, 40 bachche, yaani mahine ke 60 hazaar."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "फिर यूट्यूब पर भी पढ़ा। ऑनलाइन बच्चे पूरे देश से आएँगे।",
+     "Phir YouTube pe bhi padha. Online bachche poore desh se aayenge."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "विकास सर की क्लास, हाउसफ़ुल! लाइफ़ सेट!",
+     "Vikas Sir ki class, housefull! Life set!"
+    ]
+   ]
+  }
+ ]
+}

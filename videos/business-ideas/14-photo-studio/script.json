@@ -1,0 +1,340 @@
+{
+ "out": "14-photo-studio",
+ "ep": {
+  "num": 14,
+  "of": 100,
+  "title": "Photo Studio",
+  "sign": "AJAY PHOTO STUDIO",
+  "kind": "photo",
+  "final": "Ajay Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Ajay",
+    "look": "hoodie",
+    "skin": "#b5743f",
+    "hat": "cap",
+    "tag": "#f28c28",
+    "colors": {
+     "hoodie": "#f28c28",
+     "hat": "#2a2a2e",
+     "pants": "#2f4f8f"
+    }
+   },
+   "mentor": {
+    "name": "Bablu",
+    "look": "tshirt",
+    "skin": "#a9683a",
+    "beard": true,
+    "build": "fat",
+    "tag": "#ffd23f",
+    "colors": {
+     "shirt": "#ffd23f",
+     "logo": "GYM",
+     "logoColor": "#1d1410",
+     "pants": "#3b4a6b"
+    }
+   },
+   "cust": {
+    "name": "Sardar Ji",
+    "look": "shirt",
+    "skin": "#d39b6a",
+    "hat": "turban",
+    "beard": true,
+    "grey": true,
+    "tag": "#3d6fd1",
+    "colors": {
+     "hat": "#3d6fd1",
+     "shirt": "#f4f1e8",
+     "shirt2": "#cfe0ff",
+     "pants": "#3b4a6b",
+     "shoes": "#2a2a2e"
+    }
+   }
+  },
+  "signColor": "#2a2a2e",
+  "signText": "#ffd23f",
+  "awning": "#2a2a2e"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.08
+  ],
+  "mentor": [
+   "hm_omega+hm_psi",
+   1.05
+  ],
+  "cust": [
+   "hm_omega",
+   0.95
+  ]
+ },
+ "sections": [
+  {
+   "name": "Photo Studio",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "पूरा दिन फ़ोटो खींचता हूँ, पर कोई पैसे नहीं देता।",
+     "Poora din photo kheenchta hoon, par koi paise nahi deta."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "अजय भाई, तेरी फ़ोटो कमाल की हैं! फ़ोटो स्टूडियो खोल ले!",
+     "Ajay bhai, teri photo kamaal ki hain! Photo studio khol le!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "कैमरा, लाइट, सब बहुत महँगा है यार।",
+     "Camera, light, sab bahut mehnga hai yaar."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹1.5 lakh",
+       "Camera + lights"
+      ]
+     },
+     "सेकंड हैंड कैमरा, दो लाइट, बैकड्रॉप और प्रिंटर। डेढ़ लाख में सेटअप।",
+     "Second-hand camera, do light, backdrop aur printer. Dedh lakh mein setup."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "पासपोर्ट फ़ोटो से रोज़ का ख़र्चा निकाल। असली कमाई शादी और इवेंट में है।",
+     "Passport photo se roz ka kharcha nikaal. Asli kamai shaadi aur event mein hai."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "पुत्तर, मेरे बेटे की शादी है! फ़ोटो एकदम फ़िल्मी चाहिए!",
+     "Puttar, mere bete ki shaadi hai! Photo ekdum filmy chahiye!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "camera",
+       "cust": null
+      },
+      "stat": [
+       "₹40,000",
+       "Shaadi ka package"
+      ]
+     },
+     "फ़ोटो, वीडियो और एल्बम। पूरा पैकेज चालीस हज़ार, सरदार जी!",
+     "Photo, video aur album. Poora package 40 hazaar, Sardar ji!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": null
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹80,000+",
+       "Season mein mahina"
+      ]
+     },
+     "सीज़न में महीने की तीन-चार शादियाँ, अस्सी हज़ार से ऊपर!",
+     "Season mein mahine ki 3-4 shaadiyan, 80 hazaar se upar!"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "इंस्टाग्राम पर रील्स डाल। और प्री वेडिंग शूट बेच, वहाँ सबसे ज़्यादा पैसा है।",
+     "Instagram pe reels daal. Aur pre-wedding shoot bech, wahan sabse zyada paisa hai."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "अजय फ़ोटो स्टूडियो, क्लिक हो गया! लाइफ़ सेट!",
+     "Ajay Photo Studio, click ho gaya! Life set!"
+    ]
+   ]
+  }
+ ]
+}

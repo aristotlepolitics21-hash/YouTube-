@@ -1,0 +1,332 @@
+{
+ "out": "12-mehendi-artist",
+ "ep": {
+  "num": 12,
+  "of": 100,
+  "title": "Mehendi Artist",
+  "sign": "PINKY MEHENDI ARTS",
+  "kind": "mehendi",
+  "final": "Pinky Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Pinky",
+    "look": "kurti",
+    "skin": "#c68642",
+    "tag": "#f15bb5",
+    "colors": {
+     "kurti": "#f15bb5",
+     "dupatta": "#ffd23f"
+    }
+   },
+   "mentor": {
+    "name": "Mummy",
+    "look": "saree",
+    "skin": "#b5743f",
+    "build": "fat",
+    "tag": "#2f8f4e",
+    "colors": {
+     "saree": "#2f8f4e",
+     "blouse": "#ffcf4a"
+    }
+   },
+   "cust": {
+    "name": "Neha",
+    "look": "saree",
+    "skin": "#d39b6a",
+    "hair": "long",
+    "tag": "#d62828",
+    "colors": {
+     "saree": "#d62828",
+     "blouse": "#ffcf4a",
+     "border": "#ffd23f"
+    }
+   }
+  },
+  "signColor": "#ffc8dd",
+  "signText": "#c2185b",
+  "wall": "#ffe3f1",
+  "awning": "#f15bb5"
+ },
+ "voices": {
+  "hero": [
+   "hf_alpha",
+   1.05
+  ],
+  "mentor": [
+   "hf_beta",
+   0.95
+  ],
+  "cust": [
+   "hf_alpha+hf_beta",
+   1.1
+  ]
+ },
+ "sections": [
+  {
+   "name": "Mehendi Artist",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "मम्मी, पढ़ाई ख़त्म हो गई, अब घर पर बोर हो रही हूँ।",
+     "Mummy, padhai khatam ho gayi, ab ghar pe bore ho rahi hoon."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "पिंकी, तेरी मेहंदी पूरी गली में फ़ेमस है! मेहंदी आर्टिस्ट बन जा!",
+     "Pinky, teri mehendi poori gali mein famous hai! Mehendi artist ban ja!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "पर मम्मी, इससे कमाई होती है क्या?",
+     "Par Mummy, isse kamai hoti hai kya?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹5,000",
+       "Shuruaat"
+      ]
+     },
+     "बस पाँच हज़ार की मेहंदी, कोन और एक अच्छा फ़ोन। फ़ोटो खींच के इंस्टाग्राम पे डाल।",
+     "Bas 5 hazaar ki mehendi, cone aur ek achha phone. Photo kheench ke Instagram pe daal."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "शादी, तीज और करवा चौथ का सीज़न पकड़। तब तो दिन भर बुकिंग रहेगी।",
+     "Shaadi, Teej aur Karwa Chauth ka season pakad. Tab to din bhar booking rahegi."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "पिंकी दीदी, अगले हफ़्ते मेरी शादी है! फ़ुल हाथ, पैर तक मेहंदी चाहिए!",
+     "Pinky didi, agle hafte meri shaadi hai! Full haath, pair tak mehendi chahiye!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "cone",
+       "cust": null
+      },
+      "stat": [
+       "₹5,100",
+       "Bridal mehendi"
+      ]
+     },
+     "ब्राइडल पैकेज, इक्यावन सौ रुपये। दूल्हे का नाम भी छुपा दूँगी!",
+     "Bridal package, ₹5,100. Doolhe ka naam bhi chhupa doongi!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": null
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹30,000+",
+       "Season mein mahina"
+      ]
+     },
+     "सीज़न में हफ़्ते की चार-पाँच दुल्हन, महीने के तीस हज़ार से ऊपर।",
+     "Season mein hafte ki 4-5 dulhan, mahine ke 30 hazaar se upar."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "फिर दो लड़कियाँ सिखा कर टीम बना। बड़ी शादियों में पूरा परिवार मेहंदी लगवाता है।",
+     "Phir do ladkiyan sikha kar team bana. Badi shaadiyon mein poora parivaar mehendi lagwata hai."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "पिंकी मेहंदी आर्ट्स, बुकिंग फ़ुल! लाइफ़ सेट!",
+     "Pinky Mehendi Arts, booking full! Life set!"
+    ]
+   ]
+  }
+ ]
+}

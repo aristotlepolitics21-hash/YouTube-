@@ -1,0 +1,334 @@
+{
+ "out": "19-vada-pav-stall",
+ "ep": {
+  "num": 19,
+  "of": 100,
+  "title": "Vada Pav Stall",
+  "sign": "GANESH VADA PAV",
+  "kind": "vadapav",
+  "final": "Ganesh Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Ganesh",
+    "look": "shirt",
+    "skin": "#a9683a",
+    "hair": "side",
+    "stache": true,
+    "tag": "#c98a1c",
+    "colors": {
+     "shirt": "#c98a1c",
+     "shirt2": "#fff3b0",
+     "pants": "#4a4a4a",
+     "shoes": "#5a3a22"
+    }
+   },
+   "mentor": {
+    "name": "Aai",
+    "look": "saree",
+    "skin": "#8d5524",
+    "tag": "#2f8f4e",
+    "colors": {
+     "saree": "#2f8f4e",
+     "border": "#9b5de5",
+     "blouse": "#9b5de5"
+    }
+   },
+   "cust": {
+    "name": "Mehta Saab",
+    "look": "suit",
+    "skin": "#d39b6a",
+    "glasses": "square",
+    "build": "slim",
+    "tag": "#1d3fa8",
+    "colors": {
+     "suit": "#1d3fa8",
+     "tie": "#ffd23f"
+    }
+   }
+  },
+  "signColor": "#ffd23f",
+  "signText": "#d62828"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.06
+  ],
+  "mentor": [
+   "hf_beta",
+   0.95
+  ],
+  "cust": [
+   "hm_omega",
+   1.12
+  ]
+ },
+ "sections": [
+  {
+   "name": "Vada Pav Stall",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "street",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "आई, मुंबई में नौकरी ढूँढते-ढूँढते चप्पल घिस गई।",
+     "Aai, Mumbai mein naukri dhoondhte-dhoondhte chappal ghis gayi."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "गणेश, मुंबई चलती है वड़ा पाव पर! स्टेशन के बाहर स्टॉल लगा!",
+     "Ganesh, Mumbai chalti hai vada pav pe! Station ke bahar stall laga!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "वड़ा पाव? बीस रुपये में क्या बचेगा, आई?",
+     "Vada pav? 20 rupaye mein kya bachega, Aai?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹30,000",
+       "Shuruaat"
+      ]
+     },
+     "कढ़ाई, गैस, ठेला और परमिशन। तीस हज़ार में शुरू।",
+     "Kadhai, gas, thela aur permission. 30 hazaar mein shuru."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "मेरी सूखी लाल चटनी की रेसिपी ले जा। वही तेरा सीक्रेट होगा!",
+     "Meri sookhi laal chutney ki recipe le ja. Wahi tera secret hoga!"
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "भाऊ, जल्दी दो वड़ा पाव! आठ बीस की लोकल पकड़नी है!",
+     "Bhau, jaldi do vada pav! 8:20 ki local pakadni hai!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "plate",
+       "cust": null
+      },
+      "stat": [
+       "₹20",
+       "Ek vada pav"
+      ]
+     },
+     "ये लो साहब, गरम-गरम। बीस रुपये का एक!",
+     "Ye lo sahab, garam-garam. 20 rupaye ka ek!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "plate"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹3,000",
+       "Roz ki bachat"
+      ]
+     },
+     "एक की लागत आठ-दस रुपये। रोज़ तीन सौ बिके, तो तीन हज़ार की बचत।",
+     "Ek ki laagat 8-10 rupaye. Roz 300 bike, to 3 hazaar ki bachat."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "साथ में चाय और समोसा पाव भी रख। सुबह-शाम की भीड़ दोनों पकड़।",
+     "Saath mein chai aur samosa pav bhi rakh. Subah-shaam ki bheed dono pakad."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "गणेश वड़ा पाव, स्टेशन का हीरो! लाइफ़ सेट!",
+     "Ganesh Vada Pav, station ka hero! Life set!"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,340 @@
+{
+ "out": "20-tailoring-boutique",
+ "ep": {
+  "num": 20,
+  "of": 100,
+  "title": "Tailoring Boutique",
+  "sign": "SALMA BOUTIQUE",
+  "kind": "tailor",
+  "final": "Salma Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Salma",
+    "look": "kurti",
+    "skin": "#d39b6a",
+    "hair": "long",
+    "bindi": false,
+    "tag": "#8a1c4a",
+    "colors": {
+     "kurti": "#8a1c4a",
+     "dupatta": "#ffc8dd"
+    }
+   },
+   "mentor": {
+    "name": "Abbu",
+    "look": "kurta",
+    "skin": "#c68642",
+    "hat": "skullcap",
+    "beard": true,
+    "grey": true,
+    "glasses": true,
+    "tag": "#3aa76d",
+    "colors": {
+     "kurta": "#f4f1e8",
+     "jacket": "#3a5a40"
+    }
+   },
+   "cust": {
+    "name": "Tanya",
+    "look": "tshirt",
+    "skin": "#e0ac69",
+    "hair": "long",
+    "fem": true,
+    "build": "slim",
+    "tag": "#f28c28",
+    "colors": {
+     "shirt": "#ffd23f",
+     "logo": "★",
+     "logoColor": "#e63946",
+     "pants": "#2f4f8f"
+    }
+   }
+  },
+  "signColor": "#ffc8dd",
+  "signText": "#8a1c4a",
+  "wall": "#fde2ec",
+  "awning": "#c2185b"
+ },
+ "voices": {
+  "hero": [
+   "hf_alpha",
+   1.04
+  ],
+  "mentor": [
+   "hm_omega",
+   0.9
+  ],
+  "cust": [
+   "hf_beta",
+   1.12
+  ]
+ },
+ "sections": [
+  {
+   "name": "Tailoring Boutique",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "अब्बू, सिलाई तो आती है, पर बस घर के कपड़े सिलती हूँ।",
+     "Abbu, silai to aati hai, par bas ghar ke kapde silti hoon."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "सलमा बेटी, यही हुनर तेरा बिज़नेस है! बुटीक खोल, लेडीज़ टेलरिंग शुरू कर!",
+     "Salma beti, yahi hunar tera business hai! Boutique khol, ladies tailoring shuru kar!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "पर ग्राहक मेरे पास क्यों आएँगे, अब्बू?",
+     "Par grahak mere paas kyun aayenge, Abbu?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹40,000",
+       "Machine + stock"
+      ]
+     },
+     "क्योंकि तू टाइम पे देगी! अच्छी मशीन, पीको मशीन और कपड़ों का स्टॉक, चालीस हज़ार।",
+     "Kyunki tu time pe degi! Achhi machine, pico machine aur kapdon ka stock, 40 hazaar."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "ब्लाउज़ और सूट की फ़िटिंग में नाम बना। फ़िटिंग पसंद आई, तो ग्राहक ज़िंदगी भर का।",
+     "Blouse aur suit ki fitting mein naam bana. Fitting pasand aayi, to grahak zindagi bhar ka."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "दीदी, कॉलेज फ़ंक्शन के लिए ये लहंगा सिल दो, पर एकदम डिज़ाइनर!",
+     "Didi, college function ke liye ye lehenga sil do, par ekdum designer!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "cloth",
+       "cust": null
+      },
+      "stat": [
+       "₹1,200",
+       "Designer silai"
+      ]
+     },
+     "डिज़ाइनर सिलाई, बारह सौ रुपये। शुक्रवार तक रेडी!",
+     "Designer silai, ₹1,200. Shukravaar tak ready!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "cloth"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹40,000",
+       "Mahine tak"
+      ]
+     },
+     "रोज़ दो-तीन ऑर्डर, यानी महीने के चालीस हज़ार तक।",
+     "Roz 2-3 order, yaani mahine ke 40 hazaar tak."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "फिर दो कारीगर रख, और शादी के सीज़न में ब्राइडल ब्लाउज़ के ऑर्डर ले।",
+     "Phir do kaarigar rakh, aur shaadi ke season mein bridal blouse ke order le."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "सलमा बुटीक, शहर में धूम! लाइफ़ सेट!",
+     "Salma Boutique, sheher mein dhoom! Life set!"
+    ]
+   ]
+  }
+ ]
+}

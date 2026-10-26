@@ -1,0 +1,333 @@
+{
+ "out": "18-phool-mala-shop",
+ "ep": {
+  "num": 18,
+  "of": 100,
+  "title": "Phool Mala Ki Dukaan",
+  "sign": "KISHAN PHOOL BHANDAR",
+  "kind": "phool",
+  "final": "Kishan Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Kishan",
+    "look": "dhoti",
+    "skin": "#c68642",
+    "tilak": true,
+    "build": "slim",
+    "tag": "#ff9f1c",
+    "colors": {
+     "kurta": "#ffd23f"
+    }
+   },
+   "mentor": {
+    "name": "Pujari Ji",
+    "look": "dhoti",
+    "skin": "#b5743f",
+    "hair": "bald",
+    "grey": true,
+    "tilak": true,
+    "stache": true,
+    "build": "fat",
+    "tag": "#f28c28",
+    "colors": {
+     "kurta": "#f28c28"
+    }
+   },
+   "cust": {
+    "name": "Ritu",
+    "look": "saree",
+    "skin": "#d39b6a",
+    "tag": "#e63946",
+    "colors": {
+     "saree": "#e63946",
+     "blouse": "#ffd23f"
+    }
+   }
+  },
+  "signColor": "#ff9f1c",
+  "signText": "#ffffff",
+  "awning": "#ffd23f"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.04
+  ],
+  "mentor": [
+   "hm_omega",
+   0.9
+  ],
+  "cust": [
+   "hf_alpha",
+   1.08
+  ]
+ },
+ "sections": [
+  {
+   "name": "Phool Mala Ki Dukaan",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "street",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "मंदिर के बाहर बैठे-बैठे दिन निकल जाता है, कमाई कुछ नहीं।",
+     "Mandir ke bahar baithe-baithe din nikal jaata hai, kamai kuch nahi."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "किशन, मंदिर के बाहर ही तो सबसे बड़ा बाज़ार है! फूल माला की दुकान लगा!",
+     "Kishan, mandir ke bahar hi to sabse bada bazaar hai! Phool-mala ki dukaan laga!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "फूल तो एक दिन में मुरझा जाते हैं, पुजारी जी!",
+     "Phool to ek din mein murjha jaate hain, Pujari ji!"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹8,000",
+       "Shuruaat"
+      ]
+     },
+     "इसीलिए रोज़ सुबह मंडी से ताज़े फूल ला। शुरुआत बस आठ हज़ार में।",
+     "Isiliye roz subah mandi se taaze phool la. Shuruaat bas 8 hazaar mein."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "प्रसाद, अगरबत्ती और नारियल भी रख। एक ग्राहक, चार चीज़ें!",
+     "Prasad, agarbatti aur nariyal bhi rakh. Ek grahak, chaar cheezein!"
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "भैया, पूजा के लिए दो माला और एक नारियल दे दो।",
+     "Bhaiya, pooja ke liye do mala aur ek nariyal de do."
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "garland",
+       "cust": null
+      },
+      "stat": [
+       "₹50",
+       "Ek mala"
+      ]
+     },
+     "गेंदे की ताज़ा माला, पचास रुपये। भगवान ख़ुश, आप ख़ुश!",
+     "Gende ki taaza mala, 50 rupaye. Bhagwan khush, aap khush!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "garland"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹1,000–1,500",
+       "Roz ki bachat"
+      ]
+     },
+     "रोज़ की बिक्री से हज़ार से पंद्रह सौ बचेंगे। त्योहार पर तो कई गुना!",
+     "Roz ki bikri se ₹1,000 se ₹1,500 bachenge. Tyohaar pe to kai guna!"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "और शादी, उद्घाटन की सजावट के ऑर्डर ले। एक ऑर्डर, पूरे हफ़्ते की कमाई।",
+     "Aur shaadi, udghatan ki sajawat ke order le. Ek order, poore hafte ki kamai."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "फूलों जैसी महकी क़िस्मत! किशन की लाइफ़ सेट!",
+     "Phoolon jaisi mehki kismat! Kishan ki life set!"
+    ]
+   ]
+  }
+ ]
+}

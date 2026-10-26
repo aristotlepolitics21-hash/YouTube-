@@ -1,0 +1,337 @@
+{
+ "out": "17-kabadi-scrap-dealer",
+ "ep": {
+  "num": 17,
+  "of": 100,
+  "title": "Kabadi Wala (Scrap)",
+  "sign": "LALLAN KABADI WALA",
+  "kind": "kabadi",
+  "final": "Lallan Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Lallan",
+    "look": "lungi",
+    "skin": "#8d5524",
+    "beard": true,
+    "tag": "#8a5a30",
+    "colors": {
+     "lungi": "#8a5a30",
+     "lungi2": "#f0d9a8",
+     "gamcha": "#3d6fd1"
+    }
+   },
+   "mentor": {
+    "name": "Pradhan Ji",
+    "look": "dhoti",
+    "skin": "#b5743f",
+    "hat": "turban",
+    "grey": true,
+    "stache": "big",
+    "build": "fat",
+    "tag": "#d62828",
+    "colors": {
+     "hat": "#d62828",
+     "kurta": "#f4f1e8"
+    }
+   },
+   "cust": {
+    "name": "Mishra Aunty",
+    "look": "saree",
+    "skin": "#d39b6a",
+    "glasses": true,
+    "tag": "#9b5de5",
+    "colors": {
+     "saree": "#9b5de5",
+     "blouse": "#ffd23f"
+    }
+   }
+  },
+  "signColor": "#c9935a",
+  "signText": "#ffffff",
+  "wall": "#e8d7b0"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.0
+  ],
+  "mentor": [
+   "hm_omega",
+   0.9
+  ],
+  "cust": [
+   "hf_beta",
+   1.05
+  ]
+ },
+ "sections": [
+  {
+   "name": "Kabadi Wala (Scrap)",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "street",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "गाँव में काम नहीं, शहर में रहने को पैसे नहीं।",
+     "Gaon mein kaam nahi, sheher mein rehne ko paise nahi."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "ललन, शहर का कचरा ही तेरा ख़ज़ाना है! कबाड़ी का काम शुरू कर!",
+     "Lallan, sheher ka kachra hi tera khazana hai! Kabadi ka kaam shuru kar!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "कबाड़ी? लोग क्या कहेंगे, प्रधान जी?",
+     "Kabadi? Log kya kahenge, Pradhan ji?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹30,000",
+       "Shuruaat"
+      ]
+     },
+     "लोग कुछ नहीं कहेंगे, पैसा बोलेगा! रेहड़ी, तराज़ू और गोदाम का किराया, तीस हज़ार।",
+     "Log kuch nahi kahenge, paisa bolega! Rehdi, taraazu aur godown ka kiraya, 30 hazaar."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "रद्दी, लोहा, प्लास्टिक, सब अलग-अलग रख। अलग करके बेचोगे, तो ज़्यादा दाम मिलेगा।",
+     "Raddi, loha, plastic, sab alag-alag rakh. Alag karke bechoge, to zyada daam milega."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {
+       "cust": "scrap"
+      }
+     },
+     "भैया, ये पुराने अख़बार, बोतलें और टूटा कूलर, सब ले जाओ!",
+     "Bhaiya, ye purane akhbaar, botlein aur toota cooler, sab le jao!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": null
+      },
+      "stat": [
+       "₹12 / kg",
+       "Raddi (approx)"
+      ]
+     },
+     "रद्दी बारह रुपये किलो, आंटी जी। ये लीजिए, पूरे दो सौ!",
+     "Raddi 12 rupaye kilo, aunty ji. Ye lijiye, poore 200!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "cash"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹1,500+",
+       "Roz ki kamai"
+      ]
+     },
+     "यही माल आगे फ़ैक्टरी को ज़्यादा दाम पर। रोज़ पंद्रह सौ से ज़्यादा।",
+     "Yahi maal aage factory ko zyada daam pe. Roz ₹1,500 se zyada."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "सोसाइटी और ऑफ़िस से टाई अप कर। हर हफ़्ते पक्का माल मिलेगा।",
+     "Society aur office se tie-up kar. Har hafte pakka maal milega."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "कचरे से कमाई! ललन की लाइफ़ सेट!",
+     "Kachre se kamai! Lallan ki life set!"
+    ]
+   ]
+  }
+ ]
+}

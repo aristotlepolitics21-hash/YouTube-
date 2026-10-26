@@ -1,0 +1,336 @@
+{
+ "out": "15-anda-bhurji-cart",
+ "ep": {
+  "num": 15,
+  "of": 100,
+  "title": "Anda Bhurji Ka Thela",
+  "sign": "SHAMBHU ANDA CENTRE",
+  "kind": "anda",
+  "final": "Shambhu Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Shambhu",
+    "look": "lungi",
+    "skin": "#8d5524",
+    "hair": "bald",
+    "stache": "big",
+    "build": "fat",
+    "tag": "#f28c28",
+    "colors": {
+     "lungi": "#f28c28",
+     "lungi2": "#fff3b0",
+     "gamcha": "#2f8f4e"
+    }
+   },
+   "mentor": {
+    "name": "Kamla",
+    "look": "saree",
+    "skin": "#a9683a",
+    "tag": "#f28c28",
+    "colors": {
+     "saree": "#f28c28",
+     "blouse": "#3aa76d",
+     "border": "#d62828"
+    }
+   },
+   "cust": {
+    "name": "Sunny",
+    "look": "tshirt",
+    "skin": "#c68642",
+    "hat": "cap",
+    "build": "slim",
+    "tag": "#6a4c93",
+    "colors": {
+     "shirt": "#6a4c93",
+     "hat": "#e63946",
+     "logo": "IIT?",
+     "pants": "#2f4f8f"
+    }
+   }
+  },
+  "signColor": "#ffe066",
+  "signText": "#d62828"
+ },
+ "voices": {
+  "hero": [
+   "hm_omega",
+   1.0
+  ],
+  "mentor": [
+   "hf_alpha",
+   1.02
+  ],
+  "cust": [
+   "hm_psi",
+   1.12
+  ]
+ },
+ "sections": [
+  {
+   "name": "Anda Bhurji Ka Thela",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "फ़ैक्टरी बंद हो गई, कमला। अब घर कैसे चलेगा?",
+     "Factory band ho gayi, Kamla. Ab ghar kaise chalega?"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "अरे, तुम्हारी बनाई अंडा भुर्जी तो सब उँगलियाँ चाट के खाते हैं। ठेला लगाओ!",
+     "Arre, tumhari banayi anda bhurji to sab ungliyan chaat ke khaate hain. Thela lagao!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "अंडे का ठेला? लोग रात में आएँगे?",
+     "Ande ka thela? Log raat mein aayenge?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹25,000",
+       "Shuruaat"
+      ]
+     },
+     "ठेला, तवा, गैस और अंडे की ट्रे। पच्चीस हज़ार काफ़ी है।",
+     "Thela, tawa, gas aur ande ki tray. 25 hazaar kaafi hai."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "शाम छह से रात बारह बजे तक, हॉस्टल या मार्केट के पास। रात की भूख सबसे बड़ी होती है!",
+     "Shaam 6 se raat 12 baje tak, hostel ya market ke paas. Raat ki bhookh sabse badi hoti hai!"
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "अंकल, डबल अंडा भुर्जी, एक्स्ट्रा बटर! एग्ज़ाम की रात है!",
+     "Uncle, double anda bhurji, extra butter! Exam ki raat hai!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "plate",
+       "cust": null
+      },
+      "stat": [
+       "₹60",
+       "Ek plate"
+      ]
+     },
+     "ये लो, गरमा गरम भुर्जी पाव। साठ रुपये प्लेट!",
+     "Ye lo, garma garam bhurji pav. 60 rupaye plate!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "plate"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹2,000",
+       "Roz raat ki bachat"
+      ]
+     },
+     "रोज़ अस्सी से सौ प्लेट, यानी रात के दो हज़ार की बचत।",
+     "Roz 80-100 plate, yaani raat ke 2 hazaar ki bachat."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "ऑमलेट, बॉयल्ड अंडा और अंडा करी भी रखो। और ज़ोमैटो पर भी डालो।",
+     "Omelette, boiled anda aur anda curry bhi rakho. Aur Zomato pe bhi daalo."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "संडे हो या मंडे, रोज़ खाओ अंडे! शंभू की लाइफ़ सेट!",
+     "Sunday ho ya Monday, roz khao ande! Shambhu ki life set!"
+    ]
+   ]
+  }
+ ]
+}
