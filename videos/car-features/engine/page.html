@@ -1,0 +1,53 @@
+<!doctype html><meta charset="utf-8">
+<style>
+@font-face { font-family: SG; font-weight: 600; src: url(../../money-shorts/fonts/space-grotesk-latin-600-normal.woff2); }
+@font-face { font-family: SG; font-weight: 700; src: url(../../money-shorts/fonts/space-grotesk-latin-700-normal.woff2); }
+@font-face { font-family: IS; font-style: italic; src: url(../../money-shorts/fonts/instrument-serif-latin-400-italic.woff2); }
+@font-face { font-family: JB; font-weight: 500; src: url(../../money-shorts/fonts/jetbrains-mono-latin-500-normal.woff2); }
+@font-face { font-family: JB; font-weight: 700; src: url(../../money-shorts/fonts/jetbrains-mono-latin-700-normal.woff2); }
+body { margin: 0; background: #000; }
+</style>
+<canvas id="cv" width="1080" height="1920"></canvas>
+<script>
+// Car Features: real photos on top with slow camera pans, the model name, an animated spec card per line, and captions.
+// window.setup(data) loads the photos and beats; window.__at(T) draws the frame at T seconds. Every frame is a pure function of T.
+const W = 1080, H = 1920, PH = 1180, cv = document.getElementById('cv'), c = cv.getContext('2d');
+const OR = '#ff5a2a', BG = '#0d0e11', MUT = '#8e939c';
+const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x)), lerp = (a, b, k) => a + (b - a) * k, out = k => 1 - Math.pow(1 - cl(k), 3);
+const inout = k => (k = cl(k), k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2), back = k => { k = cl(k); const c1 = 1.7, c3 = c1 + 1; return 1 + c3 * Math.pow(k - 1, 3) + c1 * Math.pow(k - 1, 2); };
+let BEATS = [], EP = {}, IMGS = [];
+window.setup = async (d) => { await Promise.all(['600 40px SG', '700 40px SG', 'italic 40px IS', '500 40px JB', '700 40px JB'].map(f => document.fonts.load(f)));
+  IMGS = await Promise.all(d.photos.map(src => new Promise(r => { const i = new Image(); i.onload = () => r(i); i.src = src; }))); EP = d.ep;
+  let t = 0; BEATS = d.beats.map((b, i) => { const o = { ...b, i, start: t, end: t + d.durs[i], cap: d.caps[i], text: d.texts[i] }; t += d.durs[i]; return o; }); window.__total = t; return t; };
+
+function photo(b, T, alpha = 1) { const img = IMGS[b.photo || 0]; if (!img) return; const k = inout((T - b.start) / (b.end - b.start)), mv = b.move || ['left', 'in', 'right', 'out'][b.i % 4];
+  const base = Math.max(W / img.width, PH / img.height), z = mv === 'in' ? 1.05 + .1 * k : mv === 'out' ? 1.15 - .1 * k : 1.06, s = base * z, w = img.width * s, h = img.height * s;
+  const span = Math.max(0, w - W), fx = b.fx ?? .5, x = mv === 'left' ? -span * lerp(fx + .15, fx - .15, k) : mv === 'right' ? -span * lerp(fx - .15, fx + .15, k) : -span * fx;
+  c.save(); c.globalAlpha = alpha; c.beginPath(); c.rect(0, 0, W, PH); c.clip(); c.drawImage(img, cl(x, -span, 0), (PH - h) * (b.fy ?? .5), w, h); c.restore(); }
+function txt(s, x, y, font, col, align = 'left', base = 'alphabetic') { c.font = font; c.fillStyle = col; c.textAlign = align; c.textBaseline = base; c.fillText(s, x, y); }
+function rr(x, y, w, h, r) { c.beginPath(); c.roundRect(x, y, w, h, r); }
+function caption(b, T) { if (!b.cap || T < b.cap[0] || T > b.cap[1] + .2) return;
+  const words = b.text.split(/\s+/), chunks = []; let cur = []; words.forEach(w => { cur.push(w); if (cur.length >= 4 || /[.,?!:;]$/.test(w)) { chunks.push(cur.join(' ')); cur = []; } }); if (cur.length) chunks.push(cur.join(' '));
+  const tot = chunks.reduce((a, ch) => a + ch.length + 3, 0), kk = (T - b.cap[0]) / (b.cap[1] - b.cap[0]) * tot; let acc = 0, idx = chunks.length - 1; for (let i = 0; i < chunks.length; i++) { acc += chunks[i].length + 3; if (kk < acc) { idx = i; break; } }
+  const s = chunks[idx].replace(/[.,;]$/, ''); c.save(); c.font = '700 54px SG'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.lineWidth = 10; c.strokeStyle = 'rgba(0,0,0,.85)'; c.lineJoin = 'round'; c.strokeText(s, W / 2, 1040); c.fillStyle = '#fff'; c.fillText(s, W / 2, 1040); c.restore(); }
+function specCard(b, t) { const e = back((t - .15) / .45); if (e <= 0 || !(b.spec || b.specs || b.tags)) return; c.save(); c.translate(W / 2, 1560); c.scale(e, e);
+  if (b.spec) { const [v, l] = b.spec; c.font = '700 150px SG'; const w = Math.max(700, c.measureText(v).width + 120); rr(-w / 2, -150, w, 300, 36); c.fillStyle = '#17191e'; c.fill(); c.lineWidth = 3; c.strokeStyle = '#2a2d34'; c.stroke();
+    txt(v, 0, 30, '700 150px SG', OR, 'center'); txt(l.toUpperCase(), 0, 105, '700 30px JB', MUT, 'center'); }
+  else if (b.specs) { const n = b.specs.length, cw = n > 2 ? 300 : 420; b.specs.forEach(([v, l], i) => { const x = (i - (n - 1) / 2) * (cw + 24), ee = back((t - .15 - i * .12) / .45); if (ee <= 0) return; c.save(); c.translate(x, 0); c.scale(ee, ee);
+      rr(-cw / 2, -130, cw, 260, 30); c.fillStyle = '#17191e'; c.fill(); c.lineWidth = 3; c.strokeStyle = '#2a2d34'; c.stroke(); let fs = n > 2 ? 76 : 96; c.font = `700 ${fs}px SG`; while (c.measureText(v).width > cw - 40 && fs > 30) { fs -= 4; c.font = `700 ${fs}px SG`; }
+      txt(v, 0, 20, `700 ${fs}px SG`, i === 0 ? OR : '#fff', 'center'); txt(l.toUpperCase(), 0, 90, '700 24px JB', MUT, 'center'); c.restore(); }); }
+  else { let y = -60; const rows = []; let row = [], wsum = 0; c.font = '700 40px SG'; b.tags.forEach(s => { const w = c.measureText(s).width + 64; if (wsum + w > 960 && row.length) { rows.push(row); row = []; wsum = 0; } row.push([s, w]); wsum += w + 20; }); rows.push(row);
+    rows.forEach((r, ri) => { const tw = r.reduce((a, [, w]) => a + w + 20, -20); let x = -tw / 2; r.forEach(([s, w], j) => { rr(x, -60 + ri * 100 - 40, w, 80, 40); c.fillStyle = (ri + j) % 3 === 0 ? OR : '#1d2026'; c.fill(); txt(s, x + w / 2, -60 + ri * 100 + 14, '700 40px SG', '#fff', 'center'); x += w + 20; }); }); }
+  c.restore(); }
+window.__at = (T) => { let i = BEATS.findIndex(b => T < b.end); if (i < 0) i = BEATS.length - 1; const b = BEATS[i], t = T - b.start;
+  c.fillStyle = BG; c.fillRect(0, 0, W, H); photo(b, T); const pv = BEATS[i - 1]; if (pv && t < .35 && pv.photo !== b.photo) photo(pv, T, 1 - t / .35);
+  const g = c.createLinearGradient(0, PH - 420, 0, PH); g.addColorStop(0, 'rgba(13,14,17,0)'); g.addColorStop(1, BG); c.fillStyle = g; c.fillRect(0, PH - 420, W, 420);
+  const g2 = c.createLinearGradient(0, 0, 0, 260); g2.addColorStop(0, 'rgba(0,0,0,.55)'); g2.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g2; c.fillRect(0, 0, W, 260);
+  txt(`CAR FEATURES  ·  ${String(EP.num).padStart(2, '0')}`, 60, 120, '700 30px JB', '#fff'); rr(60, 146, 64, 8, 4); c.fillStyle = OR; c.fill();
+  if (EP.credits && EP.credits[b.photo || 0]) txt(EP.credits[b.photo || 0], W - 40, PH - 24, '500 18px JB', 'rgba(255,255,255,.55)', 'right');
+  txt(EP.model, 60, 1290, '700 92px SG', '#fff'); txt(EP.kind, 60, 1352, 'italic 52px IS', OR);
+  if (b.label) { c.font = '700 26px JB'; const w = c.measureText(b.label.toUpperCase()).width + 40; rr(1020 - w, 1250, w, 50, 25); c.fillStyle = '#1d2026'; c.fill(); txt(b.label.toUpperCase(), 1020 - w / 2, 1284, '700 26px JB', '#fff', 'center'); }
+  specCard(b, t); caption(b, T);
+  BEATS.forEach((_, j) => { rr(60 + j * 60, 1840, 44, 8, 4); c.fillStyle = j < i ? '#fff' : j === i ? OR : '#2a2d34'; c.fill(); });
+  if (EP.note && i === BEATS.length - 1) txt(EP.note, 1020, 1848, '500 20px JB', MUT, 'right'); };
+</script>
