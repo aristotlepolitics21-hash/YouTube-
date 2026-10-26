@@ -1,0 +1,342 @@
+{
+ "out": "40-cctv-smart-home",
+ "ep": {
+  "num": 40,
+  "of": 100,
+  "title": "CCTV & Smart Home Installation",
+  "sign": "MOHIT SECURITY SYSTEMS",
+  "kind": "cctv",
+  "final": "Mohit Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Mohit",
+    "look": "shirt",
+    "skin": "#c68642",
+    "hair": "side",
+    "glasses": true,
+    "tag": "#5fb8ec",
+    "colors": {
+     "shirt": "#5fb8ec",
+     "shirt2": "#1d3fa8",
+     "pants": "#2a2a2e",
+     "shoes": "#2a2a2e"
+    }
+   },
+   "mentor": {
+    "name": "Inspector Uncle",
+    "look": "shirt",
+    "skin": "#a9683a",
+    "hat": "cap",
+    "stache": "big",
+    "build": "fat",
+    "tag": "#8a7a3a",
+    "colors": {
+     "shirt": "#c9b47a",
+     "shirt2": "#c9b47a",
+     "hat": "#8a7a3a",
+     "pants": "#8a7a3a",
+     "shoes": "#2a2a2e"
+    }
+   },
+   "cust": {
+    "name": "Soni Ji",
+    "look": "kurta",
+    "skin": "#e0ac69",
+    "hair": "side",
+    "tilak": true,
+    "build": "fat",
+    "stache": true,
+    "tag": "#ffd23f",
+    "colors": {
+     "kurta": "#fff7e0",
+     "jacket": "#c9a227"
+    }
+   }
+  },
+  "signColor": "#2a2a2e",
+  "signText": "#ffffff",
+  "awning": "#2a2a2e"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.05
+  ],
+  "mentor": [
+   "hm_omega",
+   0.92
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   0.96
+  ]
+ },
+ "sections": [
+  {
+   "name": "CCTV & Smart Home Installation",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "इलेक्ट्रॉनिक्स में डिप्लोमा है, पर कोई अच्छा काम नहीं।",
+     "Electronics mein diploma hai, par koi achha kaam nahi."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "मोहित, आजकल हर दुकान, हर घर को सीसीटीवी चाहिए! कैमरा लगाने का काम शुरू कर!",
+     "Mohit, aajkal har dukaan, har ghar ko CCTV chahiye! Camera lagaane ka kaam shuru kar!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "अंकल, बड़ी कंपनियों से कैसे मुक़ाबला करूँगा?",
+     "Uncle, badi companiyon se kaise muqabla karunga?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹50,000",
+       "Tools + stock"
+      ]
+     },
+     "लोकल सर्विस से! एक फ़ोन पर पहुँच जाना। टूल्स और स्टॉक, पचास हज़ार में।",
+     "Local service se! Ek phone pe pahunch jaana. Tools aur stock, 50 hazaar mein."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "मोबाइल पर लाइव देखना सिखाना, ग्राहक को यही सबसे पसंद आता है। साथ में स्मार्ट लॉक और लाइट भी बेच।",
+     "Mobile pe live dekhna sikhana, grahak ko yahi sabse pasand aata hai. Saath mein smart lock aur light bhi bech."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "मोहित बेटा, ज्वेलरी की दुकान है। चोरों से डर लगता है!",
+     "Mohit beta, jewellery ki dukaan hai. Choron se darr lagta hai!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "cam",
+       "cust": null
+      },
+      "stat": [
+       "₹20,000",
+       "4 camera, lagwa ke"
+      ]
+     },
+     "चार कैमरे, नाइट विज़न, मोबाइल पर लाइव। बीस हज़ार, लगवा के!",
+     "Chaar camere, night vision, mobile pe live. 20 hazaar, lagwa ke!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": null
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹1 lakh+",
+       "Har mahina"
+      ]
+     },
+     "एक इंस्टॉलेशन पर पाँच हज़ार तक। महीने के बीस काम, यानी एक लाख!",
+     "Ek installation pe 5 hazaar tak. Mahine ke 20 kaam, yaani ek lakh!"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "फिर सालाना मेंटेनेंस का कॉन्ट्रैक्ट बेच। हर साल पक्की कमाई।",
+     "Phir saalana maintenance ka contract bech. Har saal pakki kamai."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "सबकी सुरक्षा, मेरी तरक़्क़ी! मोहित की लाइफ़ सेट!",
+     "Sabki suraksha, meri tarakki! Mohit ki life set!"
+    ]
+   ]
+  }
+ ]
+}

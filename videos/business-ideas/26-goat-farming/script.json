@@ -1,0 +1,333 @@
+{
+ "out": "26-goat-farming",
+ "ep": {
+  "num": 26,
+  "of": 100,
+  "title": "Bakri Paalan",
+  "sign": "IMRAN GOAT FARM",
+  "kind": "goats",
+  "final": "Imran Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Imran",
+    "look": "tshirt",
+    "skin": "#c68642",
+    "beard": true,
+    "hair": "short",
+    "tag": "#e63946",
+    "colors": {
+     "shirt": "#e63946",
+     "pants": "#2a2a2e"
+    }
+   },
+   "mentor": {
+    "name": "Ammi",
+    "look": "kurti",
+    "skin": "#d39b6a",
+    "veil": true,
+    "build": "fat",
+    "bindi": false,
+    "tag": "#2f8f4e",
+    "colors": {
+     "kurti": "#2f8f4e",
+     "dupatta": "#c7f0d0"
+    }
+   },
+   "cust": {
+    "name": "Patel Bhai",
+    "look": "kurta",
+    "skin": "#b5743f",
+    "hair": "side",
+    "stache": true,
+    "tag": "#8a5a30",
+    "colors": {
+     "kurta": "#e8d7b0"
+    }
+   }
+  },
+  "signColor": "#fff3d6",
+  "signText": "#8a5a30"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.06
+  ],
+  "mentor": [
+   "hf_beta",
+   0.94
+  ],
+  "cust": [
+   "hm_omega",
+   1.0
+  ]
+ },
+ "sections": [
+  {
+   "name": "Bakri Paalan",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "farm",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "पढ़ाई पूरी, पर गाँव में कोई काम नहीं। शहर जाऊँ क्या?",
+     "Padhai poori, par gaon mein koi kaam nahi. Sheher jaaun kya?"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "इमरान, शहर क्यों? बकरी पालन कर! बकरी को ग़रीब की गाय कहते हैं।",
+     "Imran, sheher kyun? Bakri paalan kar! Bakri ko gareeb ki gaay kehte hain."
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "पर अम्मी, बकरियाँ संभालेगा कौन?",
+     "Par Ammi, bakriyan sambhalega kaun?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹1.2 lakh",
+       "10 bakri + shed"
+      ]
+     },
+     "दस बकरी, एक बकरा और शेड, एक लाख बीस हज़ार। तू, मैं और तेरी बहन, सब संभाल लेंगे।",
+     "Das bakri, ek bakra aur shed, 1 lakh 20 hazaar. Tu, main aur teri behen, sab sambhaal lenge."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "अच्छी नस्ल, सिरोही या बरबरी लेना। साफ़ शेड और टीके, बीमारी पास नहीं आएगी।",
+     "Achhi nasl, Sirohi ya Barbari lena. Saaf shed aur teeke, beemari paas nahi aayegi."
+    ],
+    [
+     "cust",
+     {
+      "bg": "farmshop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "इमरान भाई, त्योहार आ रहा है। अच्छे तगड़े बकरे चाहिए!",
+     "Imran bhai, tyohaar aa raha hai. Achhe tagde bakre chahiye!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": null
+      },
+      "stat": [
+       "₹15,000",
+       "Ek tagda bakra"
+      ]
+     },
+     "देखिए, एकदम तंदुरुस्त। पंद्रह हज़ार का एक!",
+     "Dekhiye, ekdam tandurust. 15 hazaar ka ek!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "cash"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹2–3 lakh",
+       "Saal ki kamai"
+      ]
+     },
+     "हर बकरी साल में दो-तीन बच्चे देती है। साल के दो-तीन लाख आराम से।",
+     "Har bakri saal mein do-teen bachche deti hai. Saal ke 2-3 lakh aaram se."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "बकरी का दूध भी बेच, और खाद भी। कुछ भी बेकार नहीं जाता।",
+     "Bakri ka doodh bhi bech, aur khaad bhi. Kuch bhi bekaar nahi jaata."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "शहर नहीं, गाँव में ही धंधा! इमरान की लाइफ़ सेट!",
+     "Sheher nahi, gaon mein hi dhandha! Imran ki life set!"
+    ]
+   ]
+  }
+ ]
+}

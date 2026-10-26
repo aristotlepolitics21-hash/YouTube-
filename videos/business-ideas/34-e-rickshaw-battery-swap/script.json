@@ -1,0 +1,338 @@
+{
+ "out": "34-e-rickshaw-battery-swap",
+ "ep": {
+  "num": 34,
+  "of": 100,
+  "title": "E-Rickshaw Service & Battery Swap",
+  "sign": "TINKU E-RICKSHAW SERVICE",
+  "kind": "erick",
+  "final": "Tinku Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Tinku",
+    "look": "shirt",
+    "skin": "#a9683a",
+    "hair": "puffy",
+    "tag": "#3aa76d",
+    "colors": {
+     "shirt": "#5fb8ec",
+     "shirt2": "#ffffff",
+     "pants": "#3b4a6b"
+    }
+   },
+   "mentor": {
+    "name": "Rahim Chacha",
+    "look": "lungi",
+    "skin": "#8d5524",
+    "hat": "skullcap",
+    "beard": true,
+    "grey": true,
+    "gamcha": false,
+    "tag": "#14a3a3",
+    "colors": {
+     "lungi": "#14a3a3",
+     "lungi2": "#d0f7f7",
+     "vest": "#ffffff"
+    }
+   },
+   "cust": {
+    "name": "Bittu",
+    "look": "tshirt",
+    "skin": "#c68642",
+    "hat": "cap",
+    "stache": true,
+    "tag": "#f28c28",
+    "colors": {
+     "shirt": "#f28c28",
+     "hat": "#2a2a2e",
+     "pants": "#5a4636"
+    }
+   }
+  },
+  "signColor": "#3aa76d",
+  "signText": "#ffffff",
+  "awning": "#3aa76d"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.08
+  ],
+  "mentor": [
+   "hm_omega",
+   0.92
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   1.1
+  ]
+ },
+ "sections": [
+  {
+   "name": "E-Rickshaw Service & Battery Swap",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "street",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "मोबाइल रिपेयर सीखा, पर गली में दस दुकानें पहले से हैं।",
+     "Mobile repair seekha, par gali mein das dukaanein pehle se hain."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "टिंकू, शहर में अब हज़ारों ई रिक्शा हैं, पर उनका मैकेनिक कोई नहीं! ई रिक्शा सर्विस और बैटरी स्वैप खोल!",
+     "Tinku, sheher mein ab hazaaron e-rickshaw hain, par unka mechanic koi nahi! E-rickshaw service aur battery swap khol!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "बैटरी स्वैप? वो क्या होता है, चाचा?",
+     "Battery swap? Wo kya hota hai, Chacha?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹2.5 lakh",
+       "5 battery + charger"
+      ]
+     },
+     "ख़ाली बैटरी निकालो, फ़ुल बैटरी लगाओ, दो मिनट में! पाँच बैटरी और चार्जर, ढाई लाख।",
+     "Khaali battery nikaalo, full battery lagao, do minute mein! Paanch battery aur charger, dhai lakh."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "कंट्रोलर, मोटर और वायरिंग की रिपेयर भी सीख। वहीं रोज़ का काम है।",
+     "Controller, motor aur wiring ki repair bhi seekh. Wahin roz ka kaam hai."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "टिंकू भाई, बैटरी ख़त्म! सवारी बैठी है, जल्दी करो!",
+     "Tinku bhai, battery khatam! Sawaari baithi hai, jaldi karo!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "battery",
+       "cust": null
+      },
+      "stat": [
+       "₹150",
+       "Ek battery swap"
+      ]
+     },
+     "दो मिनट, बिट्टू भाई। फ़ुल बैटरी, एक सौ पचास रुपये!",
+     "Do minute, Bittu bhai. Full battery, 150 rupaye!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": null
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹2,500+",
+       "Roz ki kamai"
+      ]
+     },
+     "रोज़ बीस स्वैप और रिपेयर, ढाई हज़ार से ज़्यादा रोज़।",
+     "Roz 20 swap aur repair, dhai hazaar se zyada roz."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "फिर ड्राइवरों के लिए मंथली प्लान बना। हर दिन फ़िक्स ग्राहक।",
+     "Phir drivers ke liye monthly plan bana. Har din fix grahak."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "बैटरी फ़ुल, धंधा फ़ुल! टिंकू की लाइफ़ सेट!",
+     "Battery full, dhandha full! Tinku ki life set!"
+    ]
+   ]
+  }
+ ]
+}

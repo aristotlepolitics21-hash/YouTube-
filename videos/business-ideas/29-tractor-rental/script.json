@@ -1,0 +1,339 @@
+{
+ "out": "29-tractor-rental",
+ "ep": {
+  "num": 29,
+  "of": 100,
+  "title": "Tractor Aur Machine Kiraya",
+  "sign": "JAGDISH KRISHI SEVA KENDRA",
+  "kind": "tractor",
+  "final": "Jagdish Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Jagdish",
+    "look": "kurta",
+    "skin": "#b5743f",
+    "hair": "short",
+    "stache": "big",
+    "build": "fat",
+    "tag": "#c0392b",
+    "colors": {
+     "kurta": "#f4f1e8",
+     "jacket": "#8a5a30"
+    }
+   },
+   "mentor": {
+    "name": "Sarpanch Ji",
+    "look": "dhoti",
+    "skin": "#a9683a",
+    "hat": "turban",
+    "grey": true,
+    "beard": true,
+    "tag": "#f28c28",
+    "colors": {
+     "hat": "#f28c28",
+     "kurta": "#ffffff"
+    }
+   },
+   "cust": {
+    "name": "Ramu Kaka",
+    "look": "lungi",
+    "skin": "#8d5524",
+    "hair": "bald",
+    "grey": true,
+    "stache": true,
+    "build": "slim",
+    "s": 0.95,
+    "tag": "#2b6cb0",
+    "colors": {
+     "lungi": "#f4f1e8",
+     "lungi2": "#9ecbff",
+     "gamcha": "#e63946"
+    }
+   }
+  },
+  "signColor": "#ffd23f",
+  "signText": "#c0392b"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.0
+  ],
+  "mentor": [
+   "hm_omega",
+   0.9
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   0.88
+  ]
+ },
+ "sections": [
+  {
+   "name": "Tractor Aur Machine Kiraya",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "farm",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "ट्रैक्टर तो है, पर सिर्फ़ अपने खेत में चलता है। बाक़ी समय खड़ा रहता है।",
+     "Tractor to hai, par sirf apne khet mein chalta hai. Baaki samay khada rehta hai."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "जगदीश, खड़ा ट्रैक्टर पैसा खाता है! किराए पे चला, कस्टम हायरिंग सेंटर खोल!",
+     "Jagdish, khada tractor paisa khaata hai! Kiraye pe chala, custom hiring centre khol!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "बाक़ी मशीनें कहाँ से लाऊँ, सरपंच जी?",
+     "Baaki machinein kahan se laaun, Sarpanch ji?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹3 lakh",
+       "Rotavator, drill, thresher"
+      ]
+     },
+     "रोटावेटर, सीड ड्रिल और थ्रेशर, लगभग तीन लाख। इस पर सरकारी सब्सिडी भी मिलती है।",
+     "Rotavator, seed drill aur thresher, lagbhag 3 lakh. Is pe sarkari subsidy bhi milti hai."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "छोटे किसानों के पास मशीन नहीं होती। बुवाई और कटाई में सबसे ज़्यादा माँग होगी।",
+     "Chhote kisaanon ke paas machine nahi hoti. Buwai aur katai mein sabse zyada maang hogi."
+    ],
+    [
+     "cust",
+     {
+      "bg": "farmshop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "जगदीश बेटा, कल मेरे खेत की जुताई कर दो। बैल अब बूढ़े हो गए!",
+     "Jagdish beta, kal mere khet ki jutai kar do. Bail ab boodhe ho gaye!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "paper",
+       "cust": null
+      },
+      "stat": [
+       "₹1,500 / ekad",
+       "Jutai"
+      ]
+     },
+     "सुबह-सुबह पहुँच जाऊँगा, काका। पंद्रह सौ रुपये एकड़।",
+     "Subah-subah pahunch jaaunga, Kaka. 1,500 rupaye ekad."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "paper"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹4,000+",
+       "Season mein roz"
+      ]
+     },
+     "सीज़न में रोज़ तीन-चार एकड़, यानी चार हज़ार से ज़्यादा रोज़।",
+     "Season mein roz 3-4 ekad, yaani 4 hazaar se zyada roz."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "मोबाइल पर बुकिंग ले, और आस-पास के पाँच गाँव कवर कर।",
+     "Mobile pe booking le, aur aas-paas ke paanch gaon cover kar."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "ट्रैक्टर चला, पैसा चला! जगदीश की लाइफ़ सेट!",
+     "Tractor chala, paisa chala! Jagdish ki life set!"
+    ]
+   ]
+  }
+ ]
+}

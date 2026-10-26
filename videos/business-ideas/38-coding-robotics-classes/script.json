@@ -1,0 +1,340 @@
+{
+ "out": "38-coding-robotics-classes",
+ "ep": {
+  "num": 38,
+  "of": 100,
+  "title": "Coding & Robotics Classes",
+  "sign": "SHREYA CODING CLUB",
+  "kind": "coding",
+  "final": "Shreya Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Shreya",
+    "look": "tshirt",
+    "skin": "#e0ac69",
+    "hair": "plait",
+    "fem": true,
+    "glasses": "square",
+    "tag": "#3d6fd1",
+    "colors": {
+     "shirt": "#3d6fd1",
+     "logo": "</>",
+     "pants": "#2a2a2e"
+    }
+   },
+   "mentor": {
+    "name": "Dadaji",
+    "look": "dhoti",
+    "skin": "#c68642",
+    "hair": "bald",
+    "grey": true,
+    "glasses": true,
+    "stache": true,
+    "build": "slim",
+    "s": 0.95,
+    "tag": "#8a5a30",
+    "colors": {
+     "kurta": "#ffffff"
+    }
+   },
+   "cust": {
+    "name": "Mrs. Khanna",
+    "look": "saree",
+    "skin": "#e0ac69",
+    "hair": "long",
+    "glasses": true,
+    "tag": "#e63946",
+    "colors": {
+     "saree": "#e63946",
+     "blouse": "#2a2a2e",
+     "border": "#ffd23f"
+    }
+   }
+  },
+  "signColor": "#5fd0ff",
+  "signText": "#1d3fa8",
+  "awning": "#3d6fd1"
+ },
+ "voices": {
+  "hero": [
+   "hf_alpha",
+   1.06
+  ],
+  "mentor": [
+   "hm_omega",
+   0.88
+  ],
+  "cust": [
+   "hf_beta",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "Coding & Robotics Classes",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "आई टी कंपनी में छँटनी हो गई। अब क्या करूँ?",
+     "IT company mein chhantni ho gayi. Ab kya karun?"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "श्रेया, बच्चों को कोडिंग और रोबोटिक्स सिखा! आने वाला ज़माना इसी का है!",
+     "Shreya, bachchon ko coding aur robotics sikha! Aane wala zamaana isi ka hai!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "दादाजी, छोटे बच्चे कोडिंग सीखेंगे?",
+     "Dadaji, chhote bachche coding seekhenge?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹2 lakh",
+       "Laptop + robot kit"
+      ]
+     },
+     "खेल-खेल में! पाँच लैपटॉप और रोबोट किट, लगभग दो लाख।",
+     "Khel-khel mein! Paanch laptop aur robot kit, lagbhag 2 lakh."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "वीकेंड पर फ़्री वर्कशॉप कर। बच्चे ने रोबोट चलाया, तो माँ-बाप ख़ुद एडमिशन कराएँगे।",
+     "Weekend pe free workshop kar. Bachche ne robot chalaya, to maa-baap khud admission karayenge."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "मैडम, मेरा बेटा दिन भर गेम खेलता है। उसे गेम बनाना सिखा दो!",
+     "Madam, mera beta din bhar game khelta hai. Use game banana sikha do!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "robot",
+       "cust": null
+      },
+      "stat": [
+       "₹2,000 / mahina",
+       "Ek bachcha"
+      ]
+     },
+     "हफ़्ते में तीन क्लास, दो हज़ार महीना। तीन महीने में अपना गेम बनाएगा!",
+     "Hafte mein teen class, 2 hazaar mahina. Teen mahine mein apna game banayega!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "robot"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹60,000",
+       "30 bachche / mahina"
+      ]
+     },
+     "तीस बच्चे, यानी महीने के साठ हज़ार।",
+     "Tees bachche, yaani mahine ke 60 hazaar."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "फिर स्कूलों से टाई अप कर, वहाँ लैब चला। एक स्कूल, सैकड़ों बच्चे!",
+     "Phir schoolon se tie-up kar, wahan lab chala. Ek school, saikdon bachche!"
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "नौकरी गई, स्टार्टअप आया! श्रेया की लाइफ़ सेट!",
+     "Naukri gayi, startup aaya! Shreya ki life set!"
+    ]
+   ]
+  }
+ ]
+}

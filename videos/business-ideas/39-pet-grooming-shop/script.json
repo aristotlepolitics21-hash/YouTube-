@@ -1,0 +1,339 @@
+{
+ "out": "39-pet-grooming-shop",
+ "ep": {
+  "num": 39,
+  "of": 100,
+  "title": "Pet Grooming & Pet Shop",
+  "sign": "ARJUN PET CARE",
+  "kind": "pets",
+  "final": "Arjun Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Arjun",
+    "look": "tshirt",
+    "skin": "#b5743f",
+    "hair": "spiky",
+    "tag": "#9b5de5",
+    "colors": {
+     "shirt": "#9b5de5",
+     "logo": "🐾",
+     "pants": "#3b4a6b"
+    }
+   },
+   "mentor": {
+    "name": "Pinto Uncle",
+    "look": "shirt",
+    "skin": "#e0ac69",
+    "hat": "cap",
+    "beard": true,
+    "grey": true,
+    "build": "fat",
+    "tag": "#3aa76d",
+    "colors": {
+     "shirt": "#3aa76d",
+     "shirt2": "#ffffff",
+     "hat": "#ffffff",
+     "pants": "#c9b18a"
+    }
+   },
+   "cust": {
+    "name": "Sehgal Aunty",
+    "look": "kurti",
+    "skin": "#e0ac69",
+    "hair": "bun",
+    "glasses": true,
+    "build": "fat",
+    "tag": "#f15bb5",
+    "colors": {
+     "kurti": "#f15bb5",
+     "dupatta": "#ffffff"
+    }
+   }
+  },
+  "signColor": "#9b5de5",
+  "signText": "#ffffff",
+  "awning": "#9b5de5"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.06
+  ],
+  "mentor": [
+   "hm_omega",
+   0.95
+  ],
+  "cust": [
+   "hf_beta",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "Pet Grooming & Pet Shop",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "कुत्तों से इतना प्यार है, पर उससे पेट नहीं भरता।",
+     "Kutton se itna pyaar hai, par usse pet nahi bharta."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "अर्जुन, आजकल लोग पेट को बच्चे जैसा रखते हैं! पेट ग्रूमिंग और पेट शॉप खोल!",
+     "Arjun, aajkal log pet ko bachche jaisa rakhte hain! Pet grooming aur pet shop khol!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "कुत्तों को नहलाने के पैसे मिलेंगे, अंकल?",
+     "Kutton ko nehlaane ke paise milenge, uncle?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹2 lakh",
+       "Grooming setup"
+      ]
+     },
+     "अच्छे पैसे मिलेंगे! टब, ड्रायर, टेबल और ट्रिमर, लगभग दो लाख का सेटअप।",
+     "Achhe paise milenge! Tub, dryer, table aur trimmer, lagbhag 2 lakh ka setup."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "ग्रूमिंग का कोर्स कर, और जानवरों से प्यार से पेश आ। साथ में खाना और खिलौने भी बेच।",
+     "Grooming ka course kar, aur jaanwaron se pyaar se pesh aa. Saath mein khaana aur khilone bhi bech."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "अर्जुन, मेरे ब्रूनो को एकदम हीरो बना दो। कल उसका बर्थडे है!",
+     "Arjun, mere Bruno ko ekdam hero bana do. Kal uska birthday hai!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "brush",
+       "cust": null
+      },
+      "stat": [
+       "₹1,200",
+       "Full grooming"
+      ]
+     },
+     "नहाना, बाल कटिंग, नाख़ून, सब। बारह सौ रुपये, आंटी!",
+     "Nahaana, baal cutting, naakhoon, sab. 1,200 rupaye, aunty!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": null
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹5,000",
+       "Roz tak"
+      ]
+     },
+     "रोज़ चार-पाँच ग्रूमिंग, और खाने की बिक्री। पाँच हज़ार तक रोज़।",
+     "Roz 4-5 grooming, aur khaane ki bikri. 5 hazaar tak roz."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "फिर घर जाकर ग्रूमिंग की वैन चला। और पेट होस्टल भी, जब लोग छुट्टी पर जाएँ!",
+     "Phir ghar jaakar grooming ki van chala. Aur pet hostel bhi, jab log chhutti pe jaayein!"
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "शौक़ बना धंधा! अर्जुन की लाइफ़ सेट!",
+     "Shauk bana dhandha! Arjun ki life set!"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,340 @@
+{
+ "out": "31-ev-charging-station",
+ "ep": {
+  "num": 31,
+  "of": 100,
+  "title": "EV Charging Station",
+  "sign": "AMAN EV CHARGING",
+  "kind": "ev",
+  "final": "Aman Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Aman",
+    "look": "tshirt",
+    "skin": "#c68642",
+    "hair": "puffy",
+    "glasses": "square",
+    "tag": "#14a3a3",
+    "colors": {
+     "shirt": "#14a3a3",
+     "logo": "EV",
+     "pants": "#2a2a2e"
+    }
+   },
+   "mentor": {
+    "name": "Chopra Uncle",
+    "look": "suit",
+    "skin": "#e0ac69",
+    "hair": "bald",
+    "stache": true,
+    "build": "fat",
+    "tag": "#6b4c3b",
+    "colors": {
+     "suit": "#6b4c3b",
+     "tie": "#e63946"
+    }
+   },
+   "cust": {
+    "name": "Riya",
+    "look": "tshirt",
+    "skin": "#d39b6a",
+    "hat": "cap",
+    "hair": "plait",
+    "fem": true,
+    "build": "slim",
+    "tag": "#e63946",
+    "colors": {
+     "shirt": "#e63946",
+     "hat": "#e63946",
+     "logo": "FOOD",
+     "pants": "#2a2a2e"
+    }
+   }
+  },
+  "signColor": "#14a3a3",
+  "signText": "#ffffff",
+  "awning": "#14a3a3"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.06
+  ],
+  "mentor": [
+   "hm_omega",
+   0.96
+  ],
+  "cust": [
+   "hf_alpha",
+   1.1
+  ]
+ },
+ "sections": [
+  {
+   "name": "EV Charging Station",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "street",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "सब कहते हैं पेट्रोल का ज़माना जाने वाला है। मेरा क्या होगा?",
+     "Sab kehte hain petrol ka zamaana jaane wala hai. Mera kya hoga?"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "अमन, तो आने वाले ज़माने का धंधा कर! इलेक्ट्रिक गाड़ियों का चार्जिंग स्टेशन खोल!",
+     "Aman, to aane wale zamaane ka dhandha kar! Electric gaadiyon ka charging station khol!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "पर अंकल, अभी इलेक्ट्रिक गाड़ियाँ हैं कितनी?",
+     "Par uncle, abhi electric gaadiyan hain kitni?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹3 lakh",
+       "Charging hub setup"
+      ]
+     },
+     "ई रिक्शा, स्कूटर, हर दिन बढ़ रहे हैं! छोटी गाड़ियों का चार्जिंग हब, लगभग तीन लाख में।",
+     "E-rickshaw, scooter, har din badh rahe hain! Chhoti gaadiyon ka charging hub, lagbhag 3 lakh mein."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "बिजली विभाग से ई वी कनेक्शन ले, और ऐप पर अपना स्टेशन लिस्ट कर।",
+     "Bijli vibhag se EV connection le, aur app pe apna station list kar."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "भैया, मेरी स्कूटी की बैटरी दस परसेंट है! बीस डिलीवरी बाक़ी हैं!",
+     "Bhaiya, meri scooty ki battery 10 percent hai! 20 delivery baaki hain!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "plug",
+       "cust": null
+      },
+      "stat": [
+       "₹18 / unit",
+       "Charging"
+      ]
+     },
+     "एक घंटे में फ़ुल। अठारह रुपये यूनिट, बस!",
+     "Ek ghante mein full. 18 rupaye unit, bas!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": null
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹2,000",
+       "Roz ki kamai (approx)"
+      ]
+     },
+     "बिजली सस्ती, चार्जिंग महँगी। रोज़ पचास गाड़ियाँ, यानी दो हज़ार की कमाई।",
+     "Bijli sasti, charging mehngi. Roz 50 gaadiyan, yaani 2 hazaar ki kamai."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "साथ में चाय-कॉफ़ी और वाई फ़ाई रख। चार्जिंग का इंतज़ार, तेरी एक्स्ट्रा कमाई!",
+     "Saath mein chai-coffee aur WiFi rakh. Charging ka intezaar, teri extra kamai!"
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "पेट्रोल गया, करंट आया! अमन की लाइफ़ सेट!",
+     "Petrol gaya, current aaya! Aman ki life set!"
+    ]
+   ]
+  }
+ ]
+}

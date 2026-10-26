@@ -1,0 +1,335 @@
+{
+ "out": "24-beekeeping-honey",
+ "ep": {
+  "num": 24,
+  "of": 100,
+  "title": "Madhumakkhi Paalan (Honey)",
+  "sign": "DINESH HONEY FARM",
+  "kind": "bees",
+  "final": "Dinesh Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Dinesh",
+    "look": "tshirt",
+    "skin": "#b5743f",
+    "beard": true,
+    "tag": "#3aa76d",
+    "colors": {
+     "shirt": "#3aa76d",
+     "pants": "#3b4a6b"
+    }
+   },
+   "mentor": {
+    "name": "Fauji Chacha",
+    "look": "kurta",
+    "skin": "#c68642",
+    "hat": "cap",
+    "stache": "big",
+    "grey": true,
+    "tag": "#556b2f",
+    "colors": {
+     "kurta": "#f4f1e8",
+     "jacket": "#556b2f",
+     "hat": "#556b2f"
+    }
+   },
+   "cust": {
+    "name": "Vaidya Ji",
+    "look": "dhoti",
+    "skin": "#d39b6a",
+    "hair": "bald",
+    "grey": true,
+    "beard": true,
+    "tilak": true,
+    "tag": "#f28c28",
+    "colors": {
+     "kurta": "#ffd8a8"
+    }
+   }
+  },
+  "signColor": "#ffd23f",
+  "signText": "#8a4b00"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.04
+  ],
+  "mentor": [
+   "hm_omega",
+   0.92
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   0.9
+  ]
+ },
+ "sections": [
+  {
+   "name": "Madhumakkhi Paalan (Honey)",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "farm",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "खेत में सरसों है, पर मुनाफ़ा नहीं।",
+     "Khet mein sarson hai, par munafa nahi."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "दिनेश, सरसों के फूल पर मधुमक्खी पालो! शहद भी, और फ़सल भी ज़्यादा!",
+     "Dinesh, sarson ke phool pe madhumakkhi paalo! Shahad bhi, aur fasal bhi zyada!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "मधुमक्खी? चाचा, वो तो काट लेंगी!",
+     "Madhumakkhi? Chacha, wo to kaat lengi!"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹2 lakh",
+       "50 bee box"
+      ]
+     },
+     "ट्रेनिंग लो, जाली पहनो, कुछ नहीं होगा। पचास बॉक्स, लगभग दो लाख। सब्सिडी भी है।",
+     "Training lo, jaali pehno, kuch nahi hoga. 50 box, lagbhag 2 lakh. Subsidy bhi hai."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "फूलों के मौसम के हिसाब से बॉक्स घुमाओ। सरसों, लीची, सूरजमुखी, हर फूल का अलग शहद।",
+     "Phoolon ke mausam ke hisaab se box ghumao. Sarson, litchi, surajmukhi, har phool ka alag shahad."
+    ],
+    [
+     "cust",
+     {
+      "bg": "farmshop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "दिनेश, मुझे शुद्ध शहद चाहिए। मिलावट वाला नहीं!",
+     "Dinesh, mujhe shuddh shahad chahiye. Milawat wala nahi!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "jar",
+       "cust": null
+      },
+      "stat": [
+       "₹400 / kg",
+       "Shuddh shahad"
+      ]
+     },
+     "सीधा छत्ते से, वैद्य जी। चार सौ रुपये किलो!",
+     "Seedha chhatte se, Vaidya ji. 400 rupaye kilo!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "jar"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹3 lakh+",
+       "Saal ki kamai"
+      ]
+     },
+     "एक बॉक्स से साल में पच्चीस किलो। पचास बॉक्स, साल के तीन लाख से ऊपर।",
+     "Ek box se saal mein 25 kilo. 50 box, saal ke 3 lakh se upar."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "अपना ब्रांड बना, जार पर नाम छपवा। और ऑनलाइन बेच, दाम ज़्यादा मिलेगा।",
+     "Apna brand bana, jaar pe naam chhapwa. Aur online bech, daam zyada milega."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "ज़िंदगी में मिठास आ गई! दिनेश की लाइफ़ सेट!",
+     "Zindagi mein mithaas aa gayi! Dinesh ki life set!"
+    ]
+   ]
+  }
+ ]
+}

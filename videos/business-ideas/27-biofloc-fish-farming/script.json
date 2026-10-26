@@ -1,0 +1,337 @@
+{
+ "out": "27-biofloc-fish-farming",
+ "ep": {
+  "num": 27,
+  "of": 100,
+  "title": "Biofloc Machhli Paalan",
+  "sign": "RAGHAV FISH FARM",
+  "kind": "fish",
+  "final": "Raghav Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Raghav",
+    "look": "shirt",
+    "skin": "#a9683a",
+    "hair": "puffy",
+    "tag": "#f28c28",
+    "colors": {
+     "shirt": "#f28c28",
+     "shirt2": "#fff3b0",
+     "pants": "#3b4a6b",
+     "shoes": "#2a2a2e"
+    }
+   },
+   "mentor": {
+    "name": "Das Babu",
+    "look": "shirt",
+    "skin": "#c68642",
+    "hair": "bald",
+    "glasses": "square",
+    "stache": true,
+    "build": "fat",
+    "tag": "#3d6fd1",
+    "colors": {
+     "shirt": "#cfe0ff",
+     "shirt2": "#ffffff",
+     "pants": "#5a6070",
+     "shoes": "#2a2a2e"
+    }
+   },
+   "cust": {
+    "name": "Machhli Wali Mausi",
+    "look": "saree",
+    "skin": "#8d5524",
+    "tag": "#14a3a3",
+    "colors": {
+     "saree": "#14a3a3",
+     "blouse": "#e63946",
+     "border": "#ffd23f"
+    }
+   }
+  },
+  "signColor": "#8fd3f4",
+  "signText": "#1d3fa8"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.05
+  ],
+  "mentor": [
+   "hm_omega",
+   0.96
+  ],
+  "cust": [
+   "hf_beta",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "Biofloc Machhli Paalan",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "farm",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "ज़मीन बंजर है, खेती होती नहीं। अब क्या करूँ?",
+     "Zameen banjar hai, kheti hoti nahi. Ab kya karun?"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "राघव, मछली पालन कर! बायोफ़्लॉक टैंक में, तालाब की भी ज़रूरत नहीं।",
+     "Raghav, machhli paalan kar! Biofloc tank mein, taalab ki bhi zaroorat nahi."
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "टैंक में मछली? वो ज़िंदा कैसे रहेंगी, दास बाबू?",
+     "Tank mein machhli? Wo zinda kaise rahengi, Das Babu?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹2 lakh",
+       "2 tank ka setup"
+      ]
+     },
+     "मशीन से हवा, और पानी में अच्छे बैक्टीरिया। दो टैंक का सेटअप, लगभग दो लाख।",
+     "Machine se hawa, aur paani mein achhe bacteria. Do tank ka setup, lagbhag 2 lakh."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "मत्स्य संपदा योजना में सब्सिडी है। बिजली का बैकअप ज़रूर रखना, हवा बंद तो मछली ख़त्म।",
+     "Matsya Sampada Yojana mein subsidy hai. Bijli ka backup zaroor rakhna, hawa band to machhli khatam."
+    ],
+    [
+     "cust",
+     {
+      "bg": "farmshop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "राघव बेटा, बाज़ार के लिए रोज़ ताज़ा मछली चाहिए। ज़िंदा वाली!",
+     "Raghav beta, bazaar ke liye roz taaza machhli chahiye. Zinda wali!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "fish",
+       "cust": null
+      },
+      "stat": [
+       "₹150 / kg",
+       "Taaza machhli"
+      ]
+     },
+     "सीधा टैंक से, मौसी। एक सौ पचास रुपये किलो।",
+     "Seedha tank se, Mausi. 150 rupaye kilo."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "fish"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹75,000+",
+       "Har 4-5 mahine"
+      ]
+     },
+     "दो टैंक से हर चार-पाँच महीने में दस क्विंटल। दाना निकाल कर पचहत्तर हज़ार से ज़्यादा।",
+     "Do tank se har 4-5 mahine mein 10 quintal. Daana nikaal kar 75 hazaar se zyada."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "फिर टैंक बढ़ा, और सिंघी, मांगुर जैसी महँगी मछली पाल।",
+     "Phir tank badha, aur Singhi, Magur jaisi mehngi machhli paal."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "बंजर ज़मीन पर मछली की खेती! राघव की लाइफ़ सेट!",
+     "Banjar zameen pe machhli ki kheti! Raghav ki life set!"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,336 @@
+{
+ "out": "28-plant-nursery",
+ "ep": {
+  "num": 28,
+  "of": 100,
+  "title": "Paudhon Ki Nursery",
+  "sign": "GEETA PLANT NURSERY",
+  "kind": "nursery",
+  "final": "Geeta Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Geeta",
+    "look": "saree",
+    "skin": "#c68642",
+    "tag": "#f15bb5",
+    "colors": {
+     "saree": "#f15bb5",
+     "blouse": "#3aa76d",
+     "border": "#3aa76d"
+    }
+   },
+   "mentor": {
+    "name": "Mali Kaka",
+    "look": "dhoti",
+    "skin": "#8d5524",
+    "hat": "turban",
+    "grey": true,
+    "stache": true,
+    "build": "slim",
+    "s": 0.96,
+    "tag": "#2f8f4e",
+    "colors": {
+     "hat": "#ffffff",
+     "kurta": "#e8d7b0"
+    }
+   },
+   "cust": {
+    "name": "Malhotra Ji",
+    "look": "suit",
+    "skin": "#e0ac69",
+    "hair": "side",
+    "build": "fat",
+    "stache": true,
+    "tag": "#2d3142",
+    "colors": {
+     "suit": "#6b4c3b",
+     "tie": "#ffd23f"
+    }
+   }
+  },
+  "signColor": "#c7f0d0",
+  "signText": "#1f6b35"
+ },
+ "voices": {
+  "hero": [
+   "hf_alpha",
+   1.04
+  ],
+  "mentor": [
+   "hm_omega",
+   0.88
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   1.0
+  ]
+ },
+ "sections": [
+  {
+   "name": "Paudhon Ki Nursery",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "बच्चे स्कूल चले जाते हैं, और मैं दिन भर बस पौधों को पानी देती हूँ।",
+     "Bachche school chale jaate hain, aur main din bhar bas paudhon ko paani deti hoon."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "गीता बेटी, यही तो हुनर है! पौधों की नर्सरी खोल। आजकल हर घर में पौधे चाहिए!",
+     "Geeta beti, yahi to hunar hai! Paudhon ki nursery khol. Aajkal har ghar mein paudhe chahiye!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "पर काका, नर्सरी के लिए बड़ी ज़मीन चाहिए ना?",
+     "Par Kaka, nursery ke liye badi zameen chahiye na?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹60,000",
+       "Net, gamle, paudhe"
+      ]
+     },
+     "नहीं, आँगन भी काफ़ी है। ग्रीन नेट, गमले, मिट्टी और पौधे, साठ हज़ार में।",
+     "Nahi, aangan bhi kaafi hai. Green net, gamle, mitti aur paudhe, 60 hazaar mein."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "कटिंग और बीज से ख़ुद पौधे बना। दस रुपये का पौधा, सौ में बिकता है!",
+     "Cutting aur beej se khud paudhe bana. 10 rupaye ka paudha, 100 mein bikta hai!"
+    ],
+    [
+     "cust",
+     {
+      "bg": "farmshop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "मैडम, नए घर के लिए पचास पौधे चाहिए। गमले समेत!",
+     "Madam, naye ghar ke liye 50 paudhe chahiye. Gamle samet!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "pot",
+       "cust": null
+      },
+      "stat": [
+       "₹250",
+       "Indoor plant + gamla"
+      ]
+     },
+     "मनी प्लांट, स्नेक प्लांट, सब है। ढाई सौ रुपये का एक, गमले समेत!",
+     "Money plant, snake plant, sab hai. 250 rupaye ka ek, gamle samet!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "pot"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹40,000",
+       "Har mahina"
+      ]
+     },
+     "एक ऑर्डर से साढ़े बारह हज़ार! महीने के चालीस हज़ार तक आराम से।",
+     "Ek order se saadhe barah hazaar! Mahine ke 40 hazaar tak aaram se."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "गार्डन बनाने और देखभाल का ठेका भी ले। हर महीने पक्की कमाई।",
+     "Garden banane aur dekhbhaal ka theka bhi le. Har mahine pakki kamai."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "हरियाली से ख़ुशहाली! गीता की लाइफ़ सेट!",
+     "Hariyali se khushhali! Geeta ki life set!"
+    ]
+   ]
+  }
+ ]
+}

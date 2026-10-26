@@ -1,0 +1,339 @@
+{
+ "out": "21-mushroom-farming",
+ "ep": {
+  "num": 21,
+  "of": 100,
+  "title": "Mushroom Ki Kheti",
+  "sign": "MANOJ MUSHROOM FARM",
+  "kind": "mushroom",
+  "final": "Manoj Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Manoj",
+    "look": "shirt",
+    "skin": "#a9683a",
+    "hair": "side",
+    "stache": true,
+    "tag": "#2f8f4e",
+    "colors": {
+     "shirt": "#2f8f4e",
+     "shirt2": "#c7f0d0",
+     "pants": "#5a4636",
+     "shoes": "#5a3a22"
+    }
+   },
+   "mentor": {
+    "name": "Shalini Madam",
+    "look": "kurti",
+    "skin": "#d39b6a",
+    "glasses": true,
+    "hair": "bun",
+    "tag": "#14a3a3",
+    "colors": {
+     "kurti": "#14a3a3",
+     "dupatta": "#ffd23f"
+    }
+   },
+   "cust": {
+    "name": "Dhaba Paaji",
+    "look": "shirt",
+    "skin": "#d39b6a",
+    "hat": "turban",
+    "beard": true,
+    "build": "fat",
+    "tag": "#f28c28",
+    "colors": {
+     "hat": "#f28c28",
+     "shirt": "#fff7e0",
+     "shirt2": "#ffd6a0",
+     "pants": "#3b4a6b",
+     "shoes": "#2a2a2e"
+    }
+   }
+  },
+  "signColor": "#fff3d6",
+  "signText": "#8a5a30"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.04
+  ],
+  "mentor": [
+   "hf_alpha",
+   1.0
+  ],
+  "cust": [
+   "hm_omega",
+   0.95
+  ]
+ },
+ "sections": [
+  {
+   "name": "Mushroom Ki Kheti",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "farm",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "दो बीघा ज़मीन, और पानी भी कम। खेती से घर नहीं चलता।",
+     "Do bigha zameen, aur paani bhi kam. Kheti se ghar nahi chalta."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "मनोज जी, ज़मीन छोटी है तो क्या! एक कमरे में मशरूम उगाइए!",
+     "Manoj ji, zameen chhoti hai to kya! Ek kamre mein mushroom ugaiye!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "मशरूम? वो तो अंधेरे में उगने वाली चीज़ है ना, मैडम?",
+     "Mushroom? Wo to andhere mein ugne wali cheez hai na, Madam?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹20,000",
+       "100 bag ka setup"
+      ]
+     },
+     "हाँ, और यही इसका फ़ायदा है। भूसा, बीज और सौ बैग, बीस हज़ार में शुरुआत।",
+     "Haan, aur yahi iska fayda hai. Bhoosa, beej aur 100 bag, 20 hazaar mein shuruaat."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "कृषि विज्ञान केंद्र से ट्रेनिंग लीजिए। कमरे में नमी और साफ़-सफ़ाई सबसे ज़रूरी है।",
+     "Krishi Vigyan Kendra se training lijiye. Kamre mein nami aur saaf-safai sabse zaroori hai."
+    ],
+    [
+     "cust",
+     {
+      "bg": "farmshop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "ओए मनोज! ढाबे के लिए रोज़ दस किलो ताज़ा मशरूम चाहिए!",
+     "Oye Manoj! Dhabe ke liye roz 10 kilo taaza mushroom chahiye!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "mushroom",
+       "cust": null
+      },
+      "stat": [
+       "₹150 / kg",
+       "Taaza mushroom"
+      ]
+     },
+     "बिल्कुल पाजी, सीधा फ़ार्म से। डेढ़ सौ रुपये किलो।",
+     "Bilkul paaji, seedha farm se. 150 rupaye kilo."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "mushroom"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹22,000+",
+       "45 din, 100 bag"
+      ]
+     },
+     "हर बैग से डेढ़-दो किलो। सौ बैग से पैंतालीस दिन में बाईस हज़ार से ज़्यादा।",
+     "Har bag se dedh-do kilo. 100 bag se 45 din mein 22 hazaar se zyada."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "फिर पाँच सौ बैग कीजिए, और सूखा मशरूम और अचार बनाकर बेचिए। कुछ भी बर्बाद नहीं।",
+     "Phir 500 bag kijiye, aur sookha mushroom aur achaar banakar bechiye. Kuch bhi barbaad nahi."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "छोटी ज़मीन, बड़ी कमाई! मनोज की लाइफ़ सेट!",
+     "Chhoti zameen, badi kamai! Manoj ki life set!"
+    ]
+   ]
+  }
+ ]
+}

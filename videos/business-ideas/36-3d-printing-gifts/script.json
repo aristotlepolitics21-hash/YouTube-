@@ -1,0 +1,335 @@
+{
+ "out": "36-3d-printing-gifts",
+ "ep": {
+  "num": 36,
+  "of": 100,
+  "title": "3D Printing & Custom Gifts",
+  "sign": "KUNAL 3D PRINT HUB",
+  "kind": "print3d",
+  "final": "Kunal Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Kunal",
+    "look": "hoodie",
+    "skin": "#d39b6a",
+    "glasses": "square",
+    "hair": "spiky",
+    "tag": "#e63946",
+    "colors": {
+     "hoodie": "#e63946",
+     "pants": "#2a2a2e"
+    }
+   },
+   "mentor": {
+    "name": "Mama Ji",
+    "look": "kurta",
+    "skin": "#c68642",
+    "hair": "side",
+    "glasses": true,
+    "stache": true,
+    "build": "fat",
+    "tag": "#3d6fd1",
+    "colors": {
+     "kurta": "#cfe0ff",
+     "jacket": "#3d6fd1"
+    }
+   },
+   "cust": {
+    "name": "Preeti",
+    "look": "kurti",
+    "skin": "#e0ac69",
+    "hair": "long",
+    "tag": "#ffd23f",
+    "colors": {
+     "kurti": "#ffd23f",
+     "dupatta": "#f15bb5"
+    }
+   }
+  },
+  "signColor": "#22252b",
+  "signText": "#ff6b6b",
+  "awning": "#e63946"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.06
+  ],
+  "mentor": [
+   "hm_omega",
+   0.96
+  ],
+  "cust": [
+   "hf_beta",
+   1.06
+  ]
+ },
+ "sections": [
+  {
+   "name": "3D Printing & Custom Gifts",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "इंजीनियरिंग की, पर कंपनी वाले कहते हैं एक्सपीरियंस लाओ।",
+     "Engineering ki, par company wale kehte hain experience laao."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "कुणाल, एक्सपीरियंस ख़ुद बना! थ्री डी प्रिंटर ले, कुछ भी प्रिंट कर के बेच!",
+     "Kunal, experience khud bana! 3D printer le, kuch bhi print karke bech!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "मामा जी, थ्री डी प्रिंट से क्या बिकेगा?",
+     "Mama ji, 3D print se kya bikega?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹60,000",
+       "2 printer"
+      ]
+     },
+     "नाम वाले कीचेन, खिलौने, मूर्तियाँ, मशीन के पुर्ज़े। दो प्रिंटर, साठ हज़ार में।",
+     "Naam wale keychain, khilone, murtiyan, machine ke purze. Do printer, 60 hazaar mein."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "कॉलेज के प्रोजेक्ट और दुकानों के लोगो भी बना। इंस्टाग्राम पर ऑर्डर लेना।",
+     "College ke project aur dukaanon ke logo bhi bana. Instagram pe order lena."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "भैया, बेटे के बर्थडे पर उसका फ़ेवरेट सुपरहीरो चाहिए, उसके नाम के साथ!",
+     "Bhaiya, bete ke birthday pe uska favourite superhero chahiye, uske naam ke saath!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "gift",
+       "cust": null
+      },
+      "stat": [
+       "₹500",
+       "Custom gift"
+      ]
+     },
+     "कल तक तैयार, दीदी! पाँच सौ रुपये।",
+     "Kal tak taiyaar, didi! 500 rupaye."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "gift"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹40,000",
+       "Har mahina"
+      ]
+     },
+     "एक गिफ़्ट की लागत सौ रुपये। रोज़ चार-पाँच ऑर्डर, महीने के चालीस हज़ार।",
+     "Ek gift ki laagat 100 rupaye. Roz 4-5 order, mahine ke 40 hazaar."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "फिर फ़ैक्टरियों के टूटे पुर्ज़े प्रिंट कर। वहाँ एक पीस हज़ारों का बिकता है।",
+     "Phir factoriyon ke toote purze print kar. Wahan ek piece hazaaron ka bikta hai."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "जो सोचो, वो छापो! कुणाल की लाइफ़ सेट!",
+     "Jo socho, wo chhaapo! Kunal ki life set!"
+    ]
+   ]
+  }
+ ]
+}

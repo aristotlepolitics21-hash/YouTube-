@@ -1,0 +1,337 @@
+{
+ "out": "22-dairy-farm",
+ "ep": {
+  "num": 22,
+  "of": 100,
+  "title": "Dairy Farm",
+  "sign": "BHOLA DAIRY FARM",
+  "kind": "dairy",
+  "final": "Bhola Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Bhola",
+    "look": "dhoti",
+    "skin": "#8d5524",
+    "hat": "turban",
+    "stache": "big",
+    "tag": "#ffd23f",
+    "colors": {
+     "hat": "#ffd23f",
+     "kurta": "#f4f1e8"
+    }
+   },
+   "mentor": {
+    "name": "Rahul",
+    "look": "tshirt",
+    "skin": "#a9683a",
+    "hat": "cap",
+    "build": "slim",
+    "tag": "#3d6fd1",
+    "colors": {
+     "shirt": "#3d6fd1",
+     "hat": "#2a2a2e",
+     "logo": "CITY",
+     "pants": "#2a2a2e"
+    }
+   },
+   "cust": {
+    "name": "Lala Ji",
+    "look": "kurta",
+    "skin": "#d39b6a",
+    "hair": "side",
+    "tilak": true,
+    "glasses": true,
+    "build": "fat",
+    "tag": "#e63946",
+    "colors": {
+     "kurta": "#fff7e0",
+     "jacket": "#e63946"
+    }
+   }
+  },
+  "signColor": "#ffffff",
+  "signText": "#1d3fa8"
+ },
+ "voices": {
+  "hero": [
+   "hm_omega",
+   0.95
+  ],
+  "mentor": [
+   "hm_psi",
+   1.08
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   0.95
+  ]
+ },
+ "sections": [
+  {
+   "name": "Dairy Farm",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "farm",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "फ़सल का दाम नहीं मिलता। अब क्या करें?",
+     "Fasal ka daam nahi milta. Ab kya karein?"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "बापू, दूध का दाम रोज़ मिलता है! दो अच्छी गाय लाओ, डेयरी शुरू करो!",
+     "Bapu, doodh ka daam roz milta hai! Do achhi gaay laao, dairy shuru karo!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "गाय तो महँगी आती है, राहुल। पैसा कहाँ से लाएँ?",
+     "Gaay to mehngi aati hai, Rahul. Paisa kahan se laayein?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹1.5 lakh",
+       "2 gaay + shed"
+      ]
+     },
+     "दो गाय और शेड, लगभग डेढ़ लाख। पशुपालन के लिए लोन भी मिल जाएगा।",
+     "Do gaay aur shed, lagbhag dedh lakh. Pashupalan ke liye loan bhi mil jaayega."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "अच्छी नस्ल लो, समय पर टीका लगवाओ, और हरा चारा ख़ुद उगाओ। ख़र्चा बहुत कम हो जाएगा।",
+     "Achhi nasl lo, samay pe teeka lagwao, aur hara chara khud ugao. Kharcha bahut kam ho jaayega."
+    ],
+    [
+     "cust",
+     {
+      "bg": "farmshop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "भोला, रोज़ बीस लीटर दूध चाहिए, मिठाई के लिए। शुद्ध होना चाहिए!",
+     "Bhola, roz 20 litre doodh chahiye, mithai ke liye. Shuddh hona chahiye!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "can",
+       "cust": null
+      },
+      "stat": [
+       "₹55 / litre",
+       "Shuddh doodh"
+      ]
+     },
+     "एकदम शुद्ध, लाला जी। पचपन रुपये लीटर, घर पहुँचा देंगे।",
+     "Ekdam shuddh, Lala ji. 55 rupaye litre, ghar pahuncha denge."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "can"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹1,300",
+       "Roz ki bikri"
+      ]
+     },
+     "दो गाय, रोज़ चौबीस लीटर, यानी तेरह सौ की बिक्री। चारा निकाल कर भी आधा बचेगा।",
+     "Do gaay, roz 24 litre, yaani 1,300 ki bikri. Chara nikaal kar bhi aadha bachega."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "फिर पनीर, घी और दही बनाओ। उसमें दूध से ज़्यादा मुनाफ़ा है।",
+     "Phir paneer, ghee aur dahi banao. Usme doodh se zyada munafa hai."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "दूध की नदियाँ, पैसों की बारिश! भोला की लाइफ़ सेट!",
+     "Doodh ki nadiyan, paison ki baarish! Bhola ki life set!"
+    ]
+   ]
+  }
+ ]
+}

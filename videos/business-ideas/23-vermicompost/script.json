@@ -1,0 +1,338 @@
+{
+ "out": "23-vermicompost",
+ "ep": {
+  "num": 23,
+  "of": 100,
+  "title": "Kenchua Khad (Vermicompost)",
+  "sign": "SUSHILA ORGANIC KHAD",
+  "kind": "compost",
+  "final": "Sushila Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Sushila",
+    "look": "saree",
+    "skin": "#a9683a",
+    "veil": true,
+    "tag": "#c0392b",
+    "colors": {
+     "saree": "#c0392b",
+     "blouse": "#ffd23f",
+     "border": "#ffd23f"
+    }
+   },
+   "mentor": {
+    "name": "Kavita Didi",
+    "look": "saree",
+    "skin": "#c68642",
+    "glasses": true,
+    "tag": "#9b5de5",
+    "colors": {
+     "saree": "#9b5de5",
+     "blouse": "#ffcf4a",
+     "border": "#3aa76d"
+    }
+   },
+   "cust": {
+    "name": "Kapoor Saab",
+    "look": "shirt",
+    "skin": "#e0ac69",
+    "hair": "side",
+    "grey": true,
+    "glasses": "square",
+    "build": "slim",
+    "tag": "#5fb8ec",
+    "colors": {
+     "shirt": "#5fb8ec",
+     "shirt2": "#ffffff",
+     "pants": "#c9b18a",
+     "shoes": "#5a3a22"
+    }
+   }
+  },
+  "signColor": "#c7f0d0",
+  "signText": "#1f6b35",
+  "sackLabel": "KHAD"
+ },
+ "voices": {
+  "hero": [
+   "hf_alpha",
+   1.02
+  ],
+  "mentor": [
+   "hf_beta",
+   1.0
+  ],
+  "cust": [
+   "hm_omega",
+   1.0
+  ]
+ },
+ "sections": [
+  {
+   "name": "Kenchua Khad (Vermicompost)",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "farm",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "घर का काम, खेत का काम, पर अपनी कमाई कुछ नहीं।",
+     "Ghar ka kaam, khet ka kaam, par apni kamai kuch nahi."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "सुशीला, गोबर तो तेरे घर में मुफ़्त है! केंचुआ खाद बना, सोना बन जाएगा!",
+     "Sushila, gobar to tere ghar mein muft hai! Kenchua khad bana, sona ban jaayega!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "केंचुए से खाद? दीदी, कौन ख़रीदेगा?",
+     "Kenchue se khad? Didi, kaun kharidega?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹25,000",
+       "5 bed ka setup"
+      ]
+     },
+     "पाँच बेड, केंचुए और छाया का शेड। पच्चीस हज़ार में शुरू।",
+     "Paanch bed, kenchue aur chhaya ka shed. 25 hazaar mein shuru."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "दो महीने में खाद तैयार। किसानों को बोरी में, और शहर वालों को छोटे पैकेट में बेच।",
+     "Do mahine mein khad taiyaar. Kisaanon ko bori mein, aur sheher walon ko chhote packet mein bech."
+    ],
+    [
+     "cust",
+     {
+      "bg": "farmshop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "बहन जी, मेरी छत पर बगीचा है। ऑर्गेनिक खाद मिलेगी?",
+     "Behen ji, meri chhat pe bageecha hai. Organic khad milegi?"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "sack",
+       "cust": null
+      },
+      "stat": [
+       "₹200",
+       "5 kg packet"
+      ]
+     },
+     "पाँच किलो का पैकेट, दो सौ रुपये। आपके पौधे झूम उठेंगे!",
+     "Paanch kilo ka packet, 200 rupaye. Aapke paudhe jhoom uthenge!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "sack"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹15,000–20,000",
+       "Har mahina"
+      ]
+     },
+     "हर महीने एक-दो टन खाद, यानी पंद्रह से बीस हज़ार की कमाई।",
+     "Har mahine ek-do ton khad, yaani 15 se 20 hazaar ki kamai."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "केंचुए भी बेच! नए किसान केंचुए ख़रीदने आएँगे, वो अलग कमाई।",
+     "Kenchue bhi bech! Naye kisaan kenchue kharidne aayenge, wo alag kamai."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "गोबर से गोल्ड! सुशीला की लाइफ़ सेट!",
+     "Gobar se gold! Sushila ki life set!"
+    ]
+   ]
+  }
+ ]
+}

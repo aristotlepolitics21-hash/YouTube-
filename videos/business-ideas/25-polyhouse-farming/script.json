@@ -1,0 +1,333 @@
+{
+ "out": "25-polyhouse-farming",
+ "ep": {
+  "num": 25,
+  "of": 100,
+  "title": "Polyhouse Ki Kheti",
+  "sign": "HARPAL POLYHOUSE FARM",
+  "kind": "polyhouse",
+  "final": "Harpal Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Harpal Singh",
+    "look": "kurta",
+    "skin": "#d39b6a",
+    "hat": "turban",
+    "beard": true,
+    "grey": true,
+    "tag": "#1d3fa8",
+    "colors": {
+     "hat": "#1d3fa8",
+     "kurta": "#f4f1e8"
+    }
+   },
+   "mentor": {
+    "name": "Simran",
+    "look": "kurti",
+    "skin": "#e0ac69",
+    "glasses": true,
+    "tag": "#f28c28",
+    "colors": {
+     "kurti": "#f28c28",
+     "dupatta": "#ffffff"
+    }
+   },
+   "cust": {
+    "name": "Mall Wale Bhaiya",
+    "look": "suit",
+    "skin": "#c68642",
+    "hair": "puffy",
+    "build": "slim",
+    "tag": "#2d3142",
+    "colors": {
+     "suit": "#2d3142",
+     "tie": "#3aa76d"
+    }
+   }
+  },
+  "signColor": "#ffffff",
+  "signText": "#2f8f4e"
+ },
+ "voices": {
+  "hero": [
+   "hm_omega",
+   0.94
+  ],
+  "mentor": [
+   "hf_alpha",
+   1.06
+  ],
+  "cust": [
+   "hm_psi",
+   1.08
+  ]
+ },
+ "sections": [
+  {
+   "name": "Polyhouse Ki Kheti",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "farm",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "बारिश ने इस बार फिर फ़सल बर्बाद कर दी।",
+     "Baarish ne is baar phir fasal barbaad kar di."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "पापा, पॉलीहाउस लगाओ! अंदर मौसम का कोई असर नहीं। रंगीन शिमला मिर्च उगाओ!",
+     "Papa, polyhouse lagao! Andar mausam ka koi asar nahi. Rangeen shimla mirch ugao!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "पॉलीहाउस तो लाखों का है, सिमरन!",
+     "Polyhouse to laakhon ka hai, Simran!"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹8 lakh",
+       "Aadha ekad (subsidy ke baad)"
+      ]
+     },
+     "आधा एकड़ का पॉलीहाउस। आधा पैसा सब्सिडी से, अपना लगभग आठ लाख।",
+     "Aadha ekad ka polyhouse. Aadha paisa subsidy se, apna lagbhag 8 lakh."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "ड्रिप सिंचाई लगाओ, और बागवानी विभाग से ट्रेनिंग लो। एक गलती पूरी फ़सल ले डूबती है।",
+     "Drip sinchai lagao, aur baagwani vibhag se training lo. Ek galti poori fasal le doobti hai."
+    ],
+    [
+     "cust",
+     {
+      "bg": "farmshop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "सरदार जी, हमारे सुपरमार्केट को रोज़ लाल-पीली शिमला मिर्च चाहिए!",
+     "Sardar ji, hamare supermarket ko roz laal-peeli shimla mirch chahiye!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "basket",
+       "cust": null
+      },
+      "stat": [
+       "₹100 / kg",
+       "Rangeen shimla mirch"
+      ]
+     },
+     "एकदम ताज़ा, चमकदार। सौ रुपये किलो!",
+     "Ekdam taaza, chamakdaar. 100 rupaye kilo!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "basket"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹6 lakh+",
+       "Saal ka munafa (approx)"
+      ]
+     },
+     "आधे एकड़ से साल में कई टन। ख़र्चा निकाल कर छह लाख से ज़्यादा।",
+     "Aadhe ekad se saal mein kai ton. Kharcha nikaal kar 6 lakh se zyada."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "सीधे होटल और सुपरमार्केट से कॉन्ट्रैक्ट करो। मंडी का बिचौलिया हटाओ!",
+     "Seedhe hotel aur supermarket se contract karo. Mandi ka bichauliya hatao!"
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "बारिश हो या धूप, फ़सल एकदम ख़ूब! हरपाल की लाइफ़ सेट!",
+     "Baarish ho ya dhoop, fasal ekdam khoob! Harpal ki life set!"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,337 @@
+{
+ "out": "37-refurbished-phones",
+ "ep": {
+  "num": 37,
+  "of": 100,
+  "title": "Refurbished Phone Shop",
+  "sign": "FAIZAN PHONE BAZAAR",
+  "kind": "refurb",
+  "final": "Faizan Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Faizan",
+    "look": "tshirt",
+    "skin": "#c68642",
+    "beard": true,
+    "hair": "short",
+    "tag": "#2a2a2e",
+    "colors": {
+     "shirt": "#2a2a2e",
+     "logo": "FIX",
+     "logoColor": "#ffd23f",
+     "pants": "#3b4a6b"
+    }
+   },
+   "mentor": {
+    "name": "Chhotu Bhai",
+    "look": "shirt",
+    "skin": "#a9683a",
+    "hair": "puffy",
+    "build": "fat",
+    "stache": true,
+    "s": 0.95,
+    "tag": "#f28c28",
+    "colors": {
+     "shirt": "#f28c28",
+     "shirt2": "#ffffff",
+     "pants": "#2a2a2e"
+    }
+   },
+   "cust": {
+    "name": "Nikita",
+    "look": "kurti",
+    "skin": "#d39b6a",
+    "hair": "plait",
+    "tag": "#14a3a3",
+    "colors": {
+     "kurti": "#14a3a3",
+     "dupatta": "#ffd23f"
+    }
+   }
+  },
+  "signColor": "#ffd23f",
+  "signText": "#1d3fa8"
+ },
+ "voices": {
+  "hero": [
+   "hm_psi",
+   1.06
+  ],
+  "mentor": [
+   "hm_omega+hm_psi",
+   1.05
+  ],
+  "cust": [
+   "hf_alpha",
+   1.1
+  ]
+ },
+ "sections": [
+  {
+   "name": "Refurbished Phone Shop",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "नया फ़ोन बीस हज़ार का, और लोगों की जेब में पाँच हज़ार।",
+     "Naya phone 20 hazaar ka, aur logon ki jeb mein 5 hazaar."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "फ़ैज़ान, यही मौका है! पुराने फ़ोन ख़रीद, ठीक कर, और वारंटी के साथ बेच!",
+     "Faizan, yahi mauka hai! Purane phone khareed, theek kar, aur warranty ke saath bech!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "सेकंड हैंड फ़ोन पर लोग भरोसा करेंगे?",
+     "Second-hand phone pe log bharosa karenge?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹1.5 lakh",
+       "Phone stock"
+      ]
+     },
+     "बिल, चेकिंग रिपोर्ट और छह महीने की वारंटी दे, तो ज़रूर! डेढ़ लाख का स्टॉक काफ़ी है।",
+     "Bill, checking report aur chhe mahine ki warranty de, to zaroor! Dedh lakh ka stock kaafi hai."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "चोरी का फ़ोन कभी मत लेना। हर फ़ोन का आई एम ई आई चेक कर, और आईडी की कॉपी रख।",
+     "Chori ka phone kabhi mat lena. Har phone ka IMEI check kar, aur ID ki copy rakh."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "भैया, कॉलेज के लिए अच्छा फ़ोन चाहिए, पर बजट दस हज़ार है।",
+     "Bhaiya, college ke liye achha phone chahiye, par budget 10 hazaar hai."
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "phone",
+       "cust": null
+      },
+      "stat": [
+       "₹8,000",
+       "Like-new phone"
+      ]
+     },
+     "ये देखो, एकदम नया जैसा। आठ हज़ार, छह महीने की वारंटी!",
+     "Ye dekho, ekdam naya jaisa. 8 hazaar, chhe mahine ki warranty!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "phone"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹4,000",
+       "Roz ka munafa"
+      ]
+     },
+     "एक फ़ोन पर दो हज़ार तक मुनाफ़ा। रोज़ दो फ़ोन, यानी चार हज़ार।",
+     "Ek phone pe 2 hazaar tak munafa. Roz do phone, yaani 4 hazaar."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "ऑनलाइन भी बेच, और पुराने फ़ोन के बदले एक्सचेंज ऑफ़र चला।",
+     "Online bhi bech, aur purane phone ke badle exchange offer chala."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "पुराना माल, नया कमाल! फ़ैज़ान की लाइफ़ सेट!",
+     "Purana maal, naya kamaal! Faizan ki life set!"
+    ]
+   ]
+  }
+ ]
+}

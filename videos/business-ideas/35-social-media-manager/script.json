@@ -1,0 +1,343 @@
+{
+ "out": "35-social-media-manager",
+ "ep": {
+  "num": 35,
+  "of": 100,
+  "title": "Social Media Manager",
+  "sign": "ISHITA DIGITAL",
+  "kind": "social",
+  "final": "Ishita Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, jagah aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Ishita",
+    "look": "tshirt",
+    "skin": "#d39b6a",
+    "hair": "long",
+    "fem": true,
+    "glasses": true,
+    "build": "slim",
+    "tag": "#f15bb5",
+    "colors": {
+     "shirt": "#f15bb5",
+     "logo": "#",
+     "pants": "#2f4f8f"
+    }
+   },
+   "mentor": {
+    "name": "Nani",
+    "look": "saree",
+    "skin": "#c68642",
+    "grey": true,
+    "glasses": true,
+    "s": 0.94,
+    "tag": "#9b5de5",
+    "colors": {
+     "saree": "#e8e0ff",
+     "blouse": "#9b5de5",
+     "border": "#9b5de5"
+    }
+   },
+   "cust": {
+    "name": "Bhatia Ji",
+    "look": "shirt",
+    "skin": "#e0ac69",
+    "hair": "bald",
+    "stache": true,
+    "build": "fat",
+    "tag": "#e63946",
+    "colors": {
+     "shirt": "#e63946",
+     "shirt2": "#ffffff",
+     "pants": "#2a2a2e",
+     "shoes": "#2a2a2e"
+    }
+   }
+  },
+  "signColor": "#f15bb5",
+  "signText": "#ffffff",
+  "wall": "#f3e8ff",
+  "awning": "#9b5de5"
+ },
+ "voices": {
+  "hero": [
+   "hf_alpha",
+   1.08
+  ],
+  "mentor": [
+   "hf_beta",
+   0.9
+  ],
+  "cust": [
+   "hm_omega",
+   1.0
+  ]
+ },
+ "sections": [
+  {
+   "name": "Social Media Manager",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "पूरा दिन इंस्टाग्राम चलाती हूँ, और मम्मी कहती हैं टाइम वेस्ट है।",
+     "Poora din Instagram chalati hoon, aur Mummy kehti hain time waste hai."
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "mentor",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "mentor": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "mentor": "smug"
+      },
+      "fx": {
+       "mentor": "idea"
+      }
+     },
+     "इशिता, यही टाइम पैसा बन सकता है! दुकानों का सोशल मीडिया संभाल!",
+     "Ishita, yahi time paisa ban sakta hai! Dukaanon ka social media sambhaal!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "mentor": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "नानी, आपको सोशल मीडिया का कैसे पता?",
+     "Nani, aapko social media ka kaise pata?"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "idle",
+       "mentor": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "mentor": "happy"
+      },
+      "stat": [
+       "₹50,000",
+       "Laptop, phone, light"
+      ]
+     },
+     "मेरी रील्स पर भी लाख व्यूज़ हैं, बेटा! लैपटॉप, अच्छा फ़ोन और रिंग लाइट, पचास हज़ार।",
+     "Meri reels pe bhi lakh views hain, beta! Laptop, achha phone aur ring light, 50 hazaar."
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "hero": "think",
+       "mentor": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "mentor": "smug"
+      }
+     },
+     "पहले तीन दुकानों का काम सस्ते में कर। उनकी बिक्री बढ़ी, तो पूरा बाज़ार तेरे पास आएगा।",
+     "Pehle teen dukaanon ka kaam saste mein kar. Unki bikri badhi, to poora bazaar tere paas aayega."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "इशिता बेटा, मेरे रेस्टोरेंट पर कोई नहीं आता। ऑनलाइन कुछ करो!",
+     "Ishita beta, mere restaurant pe koi nahi aata. Online kuch karo!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "phone",
+       "cust": null
+      },
+      "stat": [
+       "₹8,000 / mahina",
+       "Ek dukaan"
+      ]
+     },
+     "रील्स, पोस्ट, गूगल रिव्यू, सब। आठ हज़ार महीना, अंकल!",
+     "Reels, post, Google review, sab. 8 hazaar mahina, uncle!"
+    ],
+    [
+     "mentor",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "mentor": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "mentor": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "phone"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹64,000",
+       "8 dukaanein / mahina"
+      ]
+     },
+     "आठ दुकानें, यानी महीने के चौंसठ हज़ार। घर बैठे!",
+     "Aath dukaanein, yaani mahine ke 64 hazaar. Ghar baithe!"
+    ],
+    [
+     "mentor",
+     {
+      "pose": {
+       "mentor": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "mentor": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "फिर वीडियो एडिटिंग और विज्ञापन चलाना भी सीख। उसका अलग चार्ज।",
+     "Phir video editing aur ads chalana bhi seekh. Uska alag charge."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "mentor",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "mentor": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "mentor": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "टाइम वेस्ट नहीं, टाइम इन्वेस्ट! इशिता की लाइफ़ सेट!",
+     "Time waste nahi, time invest! Ishita ki life set!"
+    ]
+   ]
+  }
+ ]
+}
