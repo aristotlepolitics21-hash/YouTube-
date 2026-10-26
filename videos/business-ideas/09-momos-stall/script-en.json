@@ -1,0 +1,323 @@
+{
+ "out": "09-momos-stall-english",
+ "ep": {
+  "num": 9,
+  "of": 100,
+  "title": "Momos Stall",
+  "sign": "CHINTU MOMOS",
+  "kind": "momos",
+  "final": "Chintu's Life = Set! 😂",
+  "note": "Figures are rough estimates and vary by city and season",
+  "cast": {
+   "hero": {
+    "name": "Chintu",
+    "look": "shirt",
+    "skin": "#b5743f",
+    "tag": "#1d4ed8",
+    "colors": {
+     "shirt": "#1d4ed8",
+     "shirt2": "#ffd23f"
+    }
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Priya",
+    "look": "kurti",
+    "skin": "#d39b6a",
+    "tag": "#9b5de5",
+    "colors": {
+     "kurti": "#9b5de5"
+    }
+   }
+  },
+  "signColor": "#ff6b6b",
+  "signText": "#ffffff"
+ },
+ "voices": {
+  "chacha": [
+   "bm_george",
+   1.0
+  ],
+  "hero": [
+   "am_puck",
+   1.05
+  ],
+  "cust": [
+   "af_nicole",
+   1.05
+  ]
+ },
+ "sections": [
+  {
+   "name": "Momos Stall",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "My family keeps telling me to work. But doing what?",
+     "My family keeps telling me to work. But doing what?"
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "Chintu, one thing sells on every street these days: momos! Start a momos stall!",
+     "Chintu, one thing sells on every street these days: momos! Start a momos stall!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "But I don't know how to make momos!",
+     "But I don't know how to make momos!"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹35,000",
+       "Total setup"
+      ]
+     },
+     "Learn from YouTube and practise for two weeks. Steamer, cart and fridge, all for 35,000. rupees",
+     "Learn from YouTube and practise for two weeks. Steamer, cart and fridge, all for ₹35,000."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "The real magic is the chutney. Make a red chutney so good that people come back.",
+     "The real magic is the chutney. Make a red chutney so good that people come back."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "Bhaiya, one plate steamed, one plate fried. And extra chutney!",
+     "Bhaiya, one plate steamed, one plate fried. And extra chutney!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "plate",
+       "cust": null
+      },
+      "stat": [
+       "₹70",
+       "Per plate"
+      ]
+     },
+     "Eight momos a plate for 70. rupees Unlimited chutney!",
+     "Eight momos a plate for ₹70. Unlimited chutney!"
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "plate"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹2,500–3,000",
+       "Profit per day"
+      ]
+     },
+     "A plate costs 25 rupees to 30 rupees to make. Eighty plates a day saves 2,500 rupees to 3,000. rupees",
+     "A plate costs ₹25 to ₹30 to make. Eighty plates a day saves ₹2,500 to ₹3,000."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "Add tandoori and crispy momos too. They sell for more and earn more.",
+     "Add tandoori and crispy momos too. They sell for more and earn more."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "Chintu Momos, famous all over town! Life set!",
+     "Chintu Momos, famous all over town! Life set!"
+    ]
+   ]
+  }
+ ]
+}

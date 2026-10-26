@@ -1,0 +1,321 @@
+{
+ "out": "04-tiffin-service-english",
+ "ep": {
+  "num": 4,
+  "of": 100,
+  "title": "Tiffin Service",
+  "sign": "SUNITA TIFFIN SERVICE",
+  "kind": "tiffin",
+  "final": "Sunita's Life = Set! 😂",
+  "note": "Figures are rough estimates and vary by city and season",
+  "cast": {
+   "hero": {
+    "name": "Sunita",
+    "look": "saree",
+    "skin": "#c68642",
+    "tag": "#e63977",
+    "female": true
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Rohit",
+    "look": "shirt",
+    "skin": "#c68642",
+    "tag": "#2b6cb0",
+    "colors": {
+     "shirt": "#2b6cb0",
+     "shirt2": "#9ecbff"
+    }
+   }
+  },
+  "signColor": "#ffd23f",
+  "wall": "#ffe3c2"
+ },
+ "voices": {
+  "chacha": [
+   "bm_george",
+   1.0
+  ],
+  "hero": [
+   "af_bella",
+   1.05
+  ],
+  "cust": [
+   "am_echo",
+   1.05
+  ]
+ },
+ "sections": [
+  {
+   "name": "Tiffin Service",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "Household costs keep rising, and I'm just sitting at home.",
+     "Household costs keep rising, and I'm just sitting at home."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "Sunita, the whole street remembers your cooking. Start a tiffin service!",
+     "Sunita, the whole street remembers your cooking. Start a tiffin service!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "But who will buy it, Chacha ji?",
+     "But who will buy it, Chacha ji?"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹15,000",
+       "To start"
+      ]
+     },
+     "Hostels, PGs and offices nearby. Start with 15,000 rupees for tiffins and big pots.",
+     "Hostels, PGs and offices nearby. Start with ₹15,000 for tiffins and big pots."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "Make a WhatsApp group and post the daily menu. And get your FSSAI food registration.",
+     "Make a WhatsApp group and post the daily menu. And get your FSSAI food registration."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "Aunty, I'm sick of hostel food. Sign me up for a monthly tiffin!",
+     "Aunty, I'm sick of hostel food. Sign me up for a monthly tiffin!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "tiffin",
+       "cust": null
+      },
+      "stat": [
+       "₹3,000",
+       "Per month, per person"
+      ]
+     },
+     "Dal, sabzi, four rotis and rice. 3,000 rupees a month.",
+     "Dal, sabzi, four rotis and rice. ₹3,000 a month."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "tiffin"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹90,000",
+       "30 tiffins a month"
+      ]
+     },
+     "Thirty customers means 90,000 rupees a month. Even after costs, 35,000 rupees to 40,000 rupees stays with you.",
+     "Thirty customers means ₹90,000 a month. Even after costs, ₹35,000 to ₹40,000 stays with you."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "When customers grow, hire a delivery boy.",
+     "When customers grow, hire a delivery boy."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "A business from home! Sunita's life is set!",
+     "A business from home! Sunita's life is set!"
+    ]
+   ]
+  }
+ ]
+}

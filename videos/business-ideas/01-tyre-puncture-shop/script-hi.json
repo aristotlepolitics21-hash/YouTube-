@@ -1,0 +1,316 @@
+{
+ "out": "01-tyre-puncture-shop-hindi",
+ "ep": {
+  "num": 1,
+  "of": 100,
+  "title": "Tyre Puncture Ki Dukaan",
+  "sign": "ABDUL TIRE WALA",
+  "kind": "tyre",
+  "final": "Abdul Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Abdul",
+    "look": "lungi",
+    "skin": "#b5743f",
+    "stache": true,
+    "tag": "#2b6cb0"
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Pandit Ji",
+    "look": "tilak",
+    "skin": "#d39b6a",
+    "stache": true,
+    "tag": "#f28c28"
+   }
+  }
+ },
+ "voices": {
+  "chacha": [
+   "hm_omega",
+   0.98
+  ],
+  "hero": [
+   "hm_psi",
+   1.05
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   0.92
+  ]
+ },
+ "sections": [
+  {
+   "name": "Tyre Puncture Shop",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "नौकरी नहीं मिली यार... अब घर कैसे चलेगा?",
+     "Naukri nahi mili yaar... ab ghar kaise chalega?"
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "अरे अब्दुल! रोना बंद कर। टायर पंक्चर की दुकान खोल ले!",
+     "Arre Abdul! Rona band kar. Tyre puncture ki dukaan khol le!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "पंक्चर की दुकान? उसमें कितना पैसा लगेगा, चाचा?",
+     "Puncture ki dukaan? Usme kitna paisa lagega, Chacha?"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹50,000",
+       "Total kharcha"
+      ]
+     },
+     "बस पचास हज़ार। एक कंप्रेसर, टूल किट, और ट्यूबलेस किट।",
+     "Bas 50 hazaar. Ek compressor, tool kit, aur tubeless kit."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "दुकान हाईवे या पेट्रोल पंप के पास खोलना। वहीं गाड़ियाँ सबसे ज़्यादा पंक्चर होती हैं।",
+     "Dukaan highway ya petrol pump ke paas kholna. Wahin gaadiyan sabse zyada puncture hoti hain."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "भैया जल्दी करो! गाड़ी पंक्चर है, शादी में जाना है!",
+     "Bhaiya jaldi karo! Gaadi puncture hai, shaadi mein jaana hai!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "tyre",
+       "cust": null
+      },
+      "stat": [
+       "₹150",
+       "Car puncture"
+      ]
+     },
+     "दस मिनट, साहब। कार का डेढ़ सौ, बाइक का साठ।",
+     "Das minute, sahab. Car ka 150, bike ka 60."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "tyre"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹1,500–2,500",
+       "Roz ki kamai"
+      ]
+     },
+     "रोज़ पंद्रह-बीस गाड़ियाँ, यानी पंद्रह सौ से ढाई हज़ार रोज़ की कमाई।",
+     "Roz 15-20 gaadiyan, yaani ₹1,500 se ₹2,500 roz ki kamai."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "टायर-ट्यूब बेचना, हवा भरना, सब एक्स्ट्रा कमाई। सुबह जल्दी खोलो, देर से बंद करो।",
+     "Tyre-tube bechna, hawa bharna, sab extra kamai. Subah jaldi kholo, der se band karo."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "महीने के पचास-साठ हज़ार! अब्दुल की लाइफ़ सेट!",
+     "Mahine ke 50-60 hazaar! Abdul ki life set!"
+    ]
+   ]
+  }
+ ]
+}

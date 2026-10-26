@@ -1,0 +1,323 @@
+{
+ "out": "09-momos-stall-hindi",
+ "ep": {
+  "num": 9,
+  "of": 100,
+  "title": "Momos Ka Stall",
+  "sign": "CHINTU MOMOS",
+  "kind": "momos",
+  "final": "Chintu Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Chintu",
+    "look": "shirt",
+    "skin": "#b5743f",
+    "tag": "#1d4ed8",
+    "colors": {
+     "shirt": "#1d4ed8",
+     "shirt2": "#ffd23f"
+    }
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Priya",
+    "look": "kurti",
+    "skin": "#d39b6a",
+    "tag": "#9b5de5",
+    "colors": {
+     "kurti": "#9b5de5"
+    }
+   }
+  },
+  "signColor": "#ff6b6b",
+  "signText": "#ffffff"
+ },
+ "voices": {
+  "chacha": [
+   "hm_omega",
+   0.98
+  ],
+  "hero": [
+   "hm_psi",
+   1.05
+  ],
+  "cust": [
+   "hf_beta",
+   1.05
+  ]
+ },
+ "sections": [
+  {
+   "name": "Momos Stall",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "घर वाले बोलते हैं कुछ काम कर। पर करूँ क्या?",
+     "Ghar wale bolte hain kuch kaam kar. Par karun kya?"
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "चिंटू, आजकल हर गली में एक चीज़ बिकती है, मोमोज़! मोमोज़ का स्टॉल लगा!",
+     "Chintu, aajkal har gali mein ek cheez bikti hai, momos! Momos ka stall laga!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "पर मुझे मोमोज़ बनाने नहीं आते!",
+     "Par mujhe momos banane nahi aate!"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹35,000",
+       "Total setup"
+      ]
+     },
+     "यूट्यूब से सीख, दो हफ़्ते प्रैक्टिस कर। स्टीमर, ठेला, फ़्रिज, सब पैंतीस हज़ार में।",
+     "YouTube se seekh, do hafte practice kar. Steamer, thela, fridge, sab 35 hazaar mein."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "असली जादू चटनी में है। ऐसी तीखी लाल चटनी बना, कि लोग दोबारा आएँ।",
+     "Asli jaadu chutney mein hai. Aisi teekhi laal chutney bana, ki log dobara aayein."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "भैया, एक प्लेट स्टीम, एक प्लेट फ़्राइड। और चटनी एक्स्ट्रा!",
+     "Bhaiya, ek plate steam, ek plate fried. Aur chutney extra!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "plate",
+       "cust": null
+      },
+      "stat": [
+       "₹70",
+       "Ek plate"
+      ]
+     },
+     "आठ मोमोज़ की प्लेट, सत्तर रुपये। चटनी अनलिमिटेड!",
+     "Aath momos ki plate, 70 rupaye. Chutney unlimited!"
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "plate"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹2,500–3,000",
+       "Roz ki bachat"
+      ]
+     },
+     "एक प्लेट की लागत पच्चीस-तीस रुपये। रोज़ अस्सी प्लेट, यानी ढाई-तीन हज़ार की बचत।",
+     "Ek plate ki laagat 25-30 rupaye. Roz 80 plate, yaani dhai-teen hazaar ki bachat."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "तंदूरी और कुरकुरे मोमोज़ भी रख। उनका दाम ज़्यादा, मुनाफ़ा भी ज़्यादा।",
+     "Tandoori aur kurkure momos bhi rakh. Unka daam zyada, munafa bhi zyada."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "चिंटू मोमोज़, शहर में फ़ेमस! लाइफ़ सेट!",
+     "Chintu Momos, sheher mein famous! Life set!"
+    ]
+   ]
+  }
+ ]
+}

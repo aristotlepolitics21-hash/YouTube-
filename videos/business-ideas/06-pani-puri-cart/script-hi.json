@@ -1,0 +1,322 @@
+{
+ "out": "06-pani-puri-cart-hindi",
+ "ep": {
+  "num": 6,
+  "of": 100,
+  "title": "Golgappe Ka Thela",
+  "sign": "GOLU GOLGAPPE WALA",
+  "kind": "golgappa",
+  "final": "Golu Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Golu",
+    "look": "shirt",
+    "skin": "#c68642",
+    "tag": "#f28c28",
+    "colors": {
+     "shirt": "#f28c28",
+     "shirt2": "#fff3b0"
+    }
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Priya",
+    "look": "kurti",
+    "skin": "#d39b6a",
+    "tag": "#9b5de5",
+    "colors": {
+     "kurti": "#9b5de5"
+    }
+   }
+  },
+  "signColor": "#ffcf4a"
+ },
+ "voices": {
+  "chacha": [
+   "hm_omega",
+   0.98
+  ],
+  "hero": [
+   "hm_psi",
+   1.05
+  ],
+  "cust": [
+   "hf_beta",
+   1.05
+  ]
+ },
+ "sections": [
+  {
+   "name": "Pani Puri Cart",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "दोस्तों की नौकरी लग गई, मेरी अभी तक नहीं।",
+     "Doston ki naukri lag gayi, meri abhi tak nahi."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "गोलू, पूरा शहर किस चीज़ के लिए लाइन लगाता है? गोलगप्पे! ठेला लगा!",
+     "Golu, poora sheher kis cheez ke liye line lagata hai? Golgappe! Thela laga!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "गोलगप्पे? उसमें कितना ख़र्चा आएगा?",
+     "Golgappe? Usme kitna kharcha aayega?"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹15,000",
+       "Shuruaat"
+      ]
+     },
+     "ठेला, मटके, बर्तन, सब पंद्रह हज़ार में।",
+     "Thela, matke, bartan, sab 15 hazaar mein."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "सफ़ाई रखना! दस्ताने पहनो, पानी फ़िल्टर का। साफ़ ठेले पर भीड़ दुगनी लगती है।",
+     "Safai rakhna! Dastaane pehno, paani filter ka. Saaf thele pe bheed dugni lagti hai."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "भैया, तीखा वाला! और लास्ट में सूखी पूरी फ़्री!",
+     "Bhaiya, teekha wala! Aur last mein sookhi puri free!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "plate",
+       "cust": null
+      },
+      "stat": [
+       "₹40",
+       "Ek plate"
+      ]
+     },
+     "छह गोलगप्पे, चालीस रुपये। सूखी पूरी आपके लिए फ़्री, मैडम!",
+     "Chhe golgappe, 40 rupaye. Sookhi puri aapke liye free, madam!"
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "plate"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹1,500–2,000",
+       "Roz ka munafa"
+      ]
+     },
+     "शाम के चार घंटे, सौ प्लेट। आधा मुनाफ़ा, यानी पंद्रह सौ से दो हज़ार रोज़।",
+     "Shaam ke 4 ghante, 100 plate. Aadha munafa, yaani ₹1,500 se ₹2,000 roz."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "दही पूरी और चाट भी रखो। और शादी-पार्टी के ऑर्डर लो, वहाँ एक दिन में हफ़्ते की कमाई।",
+     "Dahi puri aur chaat bhi rakho. Aur shaadi-party ke order lo, wahan ek din mein hafte ki kamai."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "गोलू के गोलगप्पे, फ़ुल डिमांड में! लाइफ़ सेट!",
+     "Golu ke golgappe, full demand mein! Life set!"
+    ]
+   ]
+  }
+ ]
+}

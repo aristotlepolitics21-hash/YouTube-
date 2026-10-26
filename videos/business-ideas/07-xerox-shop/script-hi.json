@@ -1,0 +1,323 @@
+{
+ "out": "07-xerox-shop-hindi",
+ "ep": {
+  "num": 7,
+  "of": 100,
+  "title": "Xerox Aur Online Form Shop",
+  "sign": "BUNTY XEROX CENTRE",
+  "kind": "xerox",
+  "final": "Bunty Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Bunty",
+    "look": "shirt",
+    "skin": "#d39b6a",
+    "tag": "#3aa76d",
+    "colors": {
+     "shirt": "#3aa76d",
+     "shirt2": "#d9f7c4"
+    }
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Pandit Ji",
+    "look": "tilak",
+    "skin": "#d39b6a",
+    "stache": true,
+    "tag": "#f28c28"
+   }
+  },
+  "signColor": "#ffffff",
+  "signText": "#1d4ed8"
+ },
+ "voices": {
+  "chacha": [
+   "hm_omega",
+   0.98
+  ],
+  "hero": [
+   "hm_psi",
+   1.05
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   0.92
+  ]
+ },
+ "sections": [
+  {
+   "name": "Xerox & Online Forms Shop",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "दिन भर नौकरी के फ़ॉर्म भरता हूँ। पर जवाब कोई नहीं आता।",
+     "Din bhar naukri ke form bharta hoon. Par jawab koi nahi aata."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "बंटी, जो फ़ॉर्म तू भरता है, वही दूसरों के भर! ज़ेरॉक्स और ऑनलाइन फ़ॉर्म की दुकान खोल!",
+     "Bunty, jo form tu bharta hai, wahi doosron ke bhar! Xerox aur online form ki dukaan khol!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "ज़ेरॉक्स मशीन? वो तो लाखों की आती है!",
+     "Xerox machine? Wo to laakhon ki aati hai!"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹1.5 lakh",
+       "Total setup"
+      ]
+     },
+     "पुरानी रीफ़र्बिश्ड मशीन, प्रिंटर, लैपटॉप और लैमिनेशन। डेढ़ लाख में सब।",
+     "Purani refurbished machine, printer, laptop aur lamination. Dedh lakh mein sab."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "दुकान कॉलेज, कचहरी या सरकारी दफ़्तर के पास लेना। वहाँ हर किसी को कॉपी चाहिए।",
+     "Dukaan college, kachehri ya sarkari daftar ke paas lena. Wahan har kisi ko copy chahiye."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {
+       "cust": "paper"
+      }
+     },
+     "बेटा, आधार की दस कॉपी, और ये पेंशन का फ़ॉर्म ऑनलाइन भर दो।",
+     "Beta, Aadhaar ki 10 copy, aur ye pension ka form online bhar do."
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "paper",
+       "cust": null
+      },
+      "stat": [
+       "₹2",
+       "Ek copy"
+      ]
+     },
+     "कॉपी दो रुपये की, और फ़ॉर्म भरने के सौ रुपये, अंकल।",
+     "Copy 2 rupaye ki, aur form bharne ke 100 rupaye, uncle."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "paper"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹1,500+",
+       "Roz ki kamai"
+      ]
+     },
+     "एक कॉपी की लागत पचास पैसे। कॉपी, प्रिंट, फ़ॉर्म मिलाकर रोज़ के पंद्रह सौ से ज़्यादा।",
+     "Ek copy ki laagat 50 paise. Copy, print, form milakar roz ke ₹1,500 se zyada."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "फ़ोटो, लैमिनेशन और स्टेशनरी भी रखो। एग्ज़ाम के सीज़न में तो लाइन लगेगी।",
+     "Photo, lamination aur stationery bhi rakho. Exam ke season mein to line lagegi."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "बंटी ज़ेरॉक्स, अब हर फ़ॉर्म यहीं! लाइफ़ सेट!",
+     "Bunty Xerox, ab har form yahin! Life set!"
+    ]
+   ]
+  }
+ ]
+}

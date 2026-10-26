@@ -1,0 +1,325 @@
+{
+ "out": "08-bike-car-wash-hindi",
+ "ep": {
+  "num": 8,
+  "of": 100,
+  "title": "Bike Aur Car Wash",
+  "sign": "KALLU WASHING CENTRE",
+  "kind": "wash",
+  "final": "Kallu Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Kallu",
+    "look": "lungi",
+    "skin": "#8d5524",
+    "stache": true,
+    "tag": "#6a4c93",
+    "colors": {
+     "lungi": "#6a4c93",
+     "lungi2": "#e0d0ff"
+    }
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Rohit",
+    "look": "shirt",
+    "skin": "#c68642",
+    "tag": "#2b6cb0",
+    "colors": {
+     "shirt": "#2b6cb0",
+     "shirt2": "#9ecbff"
+    }
+   }
+  },
+  "signColor": "#8fd3f4",
+  "signText": "#1d3fa8"
+ },
+ "voices": {
+  "chacha": [
+   "hm_omega",
+   0.98
+  ],
+  "hero": [
+   "hm_psi",
+   1.05
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   1.1
+  ]
+ },
+ "sections": [
+  {
+   "name": "Bike & Car Wash",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "सुबह से शाम तक घूमता हूँ, फिर भी जेब ख़ाली।",
+     "Subah se shaam tak ghoomta hoon, phir bhi jeb khaali."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "कल्लू, शहर में गाड़ियाँ बहुत हैं, और धोने का टाइम किसी के पास नहीं। बाइक और कार वॉश खोल!",
+     "Kallu, sheher mein gaadiyan bahut hain, aur dhone ka time kisi ke paas nahi. Bike aur car wash khol!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "उसके लिए क्या-क्या चाहिए, चाचा?",
+     "Uske liye kya-kya chahiye, Chacha?"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹60,000",
+       "Total setup"
+      ]
+     },
+     "प्रेशर वॉशर, फ़ोम मशीन, वैक्यूम, और पानी वाली जगह। साठ हज़ार काफ़ी।",
+     "Pressure washer, foam machine, vacuum, aur paani wali jagah. 60 hazaar kaafi."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "पानी की निकासी का इंतज़ाम रखना, और नगर पालिका से परमिशन ले लेना।",
+     "Paani ki nikasi ka intezaam rakhna, aur nagar palika se permission le lena."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "भैया, बाइक कीचड़ से भरी है। आज डेट पे जाना है!",
+     "Bhaiya, bike keechad se bhari hai. Aaj date pe jaana hai!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "hose",
+       "cust": null
+      },
+      "stat": [
+       "₹120",
+       "Bike wash"
+      ]
+     },
+     "फ़ोम वॉश, पॉलिश, शीशे जैसी चमक। बाइक एक सौ बीस, कार चार सौ।",
+     "Foam wash, polish, sheeshe jaisi chamak. Bike 120, car 400."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "hose"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹3,000+",
+       "Roz ki kamai"
+      ]
+     },
+     "रोज़ पंद्रह बाइक और पाँच कार, यानी दिन के तीन हज़ार से ज़्यादा।",
+     "Roz 15 bike aur 5 car, yaani din ke 3 hazaar se zyada."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "और सोसाइटी में मंथली प्लान बेचो। रोज़ सुबह कार साफ़, छह सौ रुपये महीना।",
+     "Aur society mein monthly plan becho. Roz subah car saaf, 600 rupaye mahina."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "कल्लू की गाड़ी चल पड़ी! लाइफ़ सेट!",
+     "Kallu ki gaadi chal padi! Life set!"
+    ]
+   ]
+  }
+ ]
+}

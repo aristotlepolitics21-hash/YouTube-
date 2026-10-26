@@ -1,0 +1,323 @@
+{
+ "out": "07-xerox-shop-english",
+ "ep": {
+  "num": 7,
+  "of": 100,
+  "title": "Xerox & Online Forms Shop",
+  "sign": "BUNTY XEROX CENTRE",
+  "kind": "xerox",
+  "final": "Bunty's Life = Set! 😂",
+  "note": "Figures are rough estimates and vary by city and season",
+  "cast": {
+   "hero": {
+    "name": "Bunty",
+    "look": "shirt",
+    "skin": "#d39b6a",
+    "tag": "#3aa76d",
+    "colors": {
+     "shirt": "#3aa76d",
+     "shirt2": "#d9f7c4"
+    }
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Pandit Ji",
+    "look": "tilak",
+    "skin": "#d39b6a",
+    "stache": true,
+    "tag": "#f28c28"
+   }
+  },
+  "signColor": "#ffffff",
+  "signText": "#1d4ed8"
+ },
+ "voices": {
+  "chacha": [
+   "bm_george",
+   1.0
+  ],
+  "hero": [
+   "am_puck",
+   1.05
+  ],
+  "cust": [
+   "am_michael",
+   1.0
+  ]
+ },
+ "sections": [
+  {
+   "name": "Xerox & Online Forms Shop",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "I fill job forms all day, but nobody ever replies.",
+     "I fill job forms all day, but nobody ever replies."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "Bunty, fill those forms for other people! Open a xerox and online forms shop!",
+     "Bunty, fill those forms for other people! Open a xerox and online forms shop!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "A xerox machine? Those cost lakhs!",
+     "A xerox machine? Those cost lakhs!"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹1.5 lakh",
+       "Total setup"
+      ]
+     },
+     "A refurbished machine, a printer, a laptop and a laminator. All for 1.5 lakh rupees.",
+     "A refurbished machine, a printer, a laptop and a laminator. All for ₹1.5 lakh."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "Get a shop near a college, a court or a government office. Everyone there needs copies.",
+     "Get a shop near a college, a court or a government office. Everyone there needs copies."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {
+       "cust": "paper"
+      }
+     },
+     "Son, ten copies of my Aadhaar, and fill in this pension form online.",
+     "Son, ten copies of my Aadhaar, and fill in this pension form online."
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "paper",
+       "cust": null
+      },
+      "stat": [
+       "₹2",
+       "Per copy"
+      ]
+     },
+     "2 rupees a copy, and 100 rupees to fill in the form, uncle.",
+     "₹2 a copy, and ₹100 to fill in the form, uncle."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "paper"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹1,500+",
+       "Per day"
+      ]
+     },
+     "A copy costs 50 paise to make. Copies, prints and forms add up to over 1,500 rupees a day.",
+     "A copy costs 50 paise to make. Copies, prints and forms add up to over ₹1,500 a day."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "Add passport photos, lamination and stationery. In exam season there'll be a queue.",
+     "Add passport photos, lamination and stationery. In exam season there'll be a queue."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "Bunty Xerox, every form done right here! Life set!",
+     "Bunty Xerox, every form done right here! Life set!"
+    ]
+   ]
+  }
+ ]
+}

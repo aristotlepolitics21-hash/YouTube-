@@ -1,0 +1,322 @@
+{
+ "out": "05-sugarcane-juice-hindi",
+ "ep": {
+  "num": 5,
+  "of": 100,
+  "title": "Ganne Ka Juice",
+  "sign": "PAPPU GANNA JUICE",
+  "kind": "ganna",
+  "final": "Pappu Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Pappu",
+    "look": "lungi",
+    "skin": "#b5743f",
+    "stache": true,
+    "tag": "#c0392b",
+    "colors": {
+     "lungi": "#c0392b",
+     "lungi2": "#ffd0c8"
+    }
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Pandit Ji",
+    "look": "tilak",
+    "skin": "#d39b6a",
+    "stache": true,
+    "tag": "#f28c28"
+   }
+  },
+  "signColor": "#b8f05a",
+  "signText": "#1f6b35"
+ },
+ "voices": {
+  "chacha": [
+   "hm_omega",
+   0.98
+  ],
+  "hero": [
+   "hm_psi",
+   1.05
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   0.92
+  ]
+ },
+ "sections": [
+  {
+   "name": "Sugarcane Juice Stall",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "street",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "इतनी गर्मी में काम ढूँढते-ढूँढते पसीने छूट गए।",
+     "Itni garmi mein kaam dhoondhte-dhoondhte paseene chhoot gaye."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "पप्पू, इसी गर्मी को बिज़नेस बना! गन्ने के जूस का ठेला लगा!",
+     "Pappu, isi garmi ko business bana! Ganne ke juice ka thela laga!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "मशीन तो बहुत महँगी होगी, चाचा?",
+     "Machine to bahut mehngi hogi, Chacha?"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹70,000",
+       "Machine + thela"
+      ]
+     },
+     "मोटर वाली मशीन और ठेला, सब मिलाकर लगभग सत्तर हज़ार।",
+     "Motor wali machine aur thela, sab milakar lagbhag 70 hazaar."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "मशीन साफ़ रखना, बर्फ़ साफ़ पानी की, और नींबू-अदरक डालना। लोग स्वाद के लिए लौटकर आते हैं।",
+     "Machine saaf rakhna, barf saaf paani ki, aur nimbu-adrak daalna. Log swaad ke liye laut kar aate hain."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "भैया, एक बड़ा गिलास, बर्फ़ डाल के! गला सूख गया!",
+     "Bhaiya, ek bada glass, barf daal ke! Gala sookh gaya!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "juice",
+       "cust": null
+      },
+      "stat": [
+       "₹30",
+       "Ek glass"
+      ]
+     },
+     "ठंडा-ठंडा गन्ना जूस। तीस रुपये गिलास!",
+     "Thanda-thanda ganna juice. 30 rupaye glass!"
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "juice"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹3,000",
+       "Garmi mein roz"
+      ]
+     },
+     "एक गिलास में गन्ना बस छह-सात रुपये का। गर्मी में दिन के तीन हज़ार तक बचते हैं।",
+     "Ek glass mein ganna bas 6-7 rupaye ka. Garmi mein din ke 3 hazaar tak bachte hain."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "पर ये सीज़नल है। सर्दी में यही ठेला सूप या भुट्टे का बना देना।",
+     "Par ye seasonal hai. Sardi mein yahi thela soup ya bhutte ka bana dena."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "गर्मी आई, पैसा लाई! पप्पू की लाइफ़ सेट!",
+     "Garmi aayi, paisa laayi! Pappu ki life set!"
+    ]
+   ]
+  }
+ ]
+}

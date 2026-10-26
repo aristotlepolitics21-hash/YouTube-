@@ -1,0 +1,325 @@
+{
+ "out": "08-bike-car-wash-english",
+ "ep": {
+  "num": 8,
+  "of": 100,
+  "title": "Bike & Car Wash",
+  "sign": "KALLU WASHING CENTRE",
+  "kind": "wash",
+  "final": "Kallu's Life = Set! 😂",
+  "note": "Figures are rough estimates and vary by city and season",
+  "cast": {
+   "hero": {
+    "name": "Kallu",
+    "look": "lungi",
+    "skin": "#8d5524",
+    "stache": true,
+    "tag": "#6a4c93",
+    "colors": {
+     "lungi": "#6a4c93",
+     "lungi2": "#e0d0ff"
+    }
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Rohit",
+    "look": "shirt",
+    "skin": "#c68642",
+    "tag": "#2b6cb0",
+    "colors": {
+     "shirt": "#2b6cb0",
+     "shirt2": "#9ecbff"
+    }
+   }
+  },
+  "signColor": "#8fd3f4",
+  "signText": "#1d3fa8"
+ },
+ "voices": {
+  "chacha": [
+   "bm_george",
+   1.0
+  ],
+  "hero": [
+   "am_puck",
+   1.05
+  ],
+  "cust": [
+   "am_echo",
+   1.05
+  ]
+ },
+ "sections": [
+  {
+   "name": "Bike & Car Wash",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "I roam around from morning to night, and my pockets are still empty.",
+     "I roam around from morning to night, and my pockets are still empty."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "Kallu, the city is full of vehicles and nobody has time to wash them. Open a bike and car wash!",
+     "Kallu, the city is full of vehicles and nobody has time to wash them. Open a bike and car wash!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "What do I need for that, Chacha?",
+     "What do I need for that, Chacha?"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹60,000",
+       "Total setup"
+      ]
+     },
+     "A pressure washer, a foam gun, a vacuum and a spot with water. 60,000 rupees is enough.",
+     "A pressure washer, a foam gun, a vacuum and a spot with water. ₹60,000 is enough."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "Arrange proper drainage, and take permission from the municipality.",
+     "Arrange proper drainage, and take permission from the municipality."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "Bhaiya, my bike is covered in mud, and I have a date today!",
+     "Bhaiya, my bike is covered in mud, and I have a date today!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "hose",
+       "cust": null
+      },
+      "stat": [
+       "₹120",
+       "Per bike wash"
+      ]
+     },
+     "Foam wash and polish, shiny as a mirror. 120 rupees a bike, 400 rupees a car.",
+     "Foam wash and polish, shiny as a mirror. ₹120 a bike, ₹400 a car."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "hose"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹3,000+",
+       "Per day"
+      ]
+     },
+     "Fifteen bikes and five cars a day means over 3,000 rupees a day.",
+     "Fifteen bikes and five cars a day means over ₹3,000 a day."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "And sell monthly plans in housing societies. A car cleaned every morning for 600 rupees a month.",
+     "And sell monthly plans in housing societies. A car cleaned every morning for ₹600 a month."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "Kallu's business is rolling! Life set!",
+     "Kallu's business is rolling! Life set!"
+    ]
+   ]
+  }
+ ]
+}

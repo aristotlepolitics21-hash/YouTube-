@@ -1,0 +1,323 @@
+{
+ "out": "03-mobile-repair-english",
+ "ep": {
+  "num": 3,
+  "of": 100,
+  "title": "Mobile Repair Shop",
+  "sign": "SONU MOBILE WALA",
+  "kind": "mobile",
+  "final": "Sonu's Life = Set! 😂",
+  "note": "Figures are rough estimates and vary by city and season",
+  "cast": {
+   "hero": {
+    "name": "Sonu",
+    "look": "shirt",
+    "skin": "#a9683a",
+    "tag": "#e24b4b"
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Pandit Ji",
+    "look": "tilak",
+    "skin": "#d39b6a",
+    "stache": true,
+    "tag": "#f28c28"
+   }
+  },
+  "signColor": "#5fd0ff",
+  "signText": "#1d3fa8"
+ },
+ "voices": {
+  "chacha": [
+   "bm_george",
+   1.0
+  ],
+  "hero": [
+   "am_puck",
+   1.05
+  ],
+  "cust": [
+   "am_michael",
+   1.0
+  ]
+ },
+ "sections": [
+  {
+   "name": "Mobile Repair Shop",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "I'm on my phone all day, but I earn zero.",
+     "I'm on my phone all day, but I earn zero."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "Then stop scrolling and learn to fix phones! Open a mobile repair shop.",
+     "Then stop scrolling and learn to fix phones! Open a mobile repair shop."
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "But I don't know how to repair anything, Chacha!",
+     "But I don't know how to repair anything, Chacha!"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "3 months",
+       "Training"
+      ]
+     },
+     "Do a three-month course. Then learn on the job at a shop for six months.",
+     "Do a three-month course. Then learn on the job at a shop for six months."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      },
+      "stat": [
+       "₹60,000",
+       "Tools + stock"
+      ]
+     },
+     "Then 60,000 rupees for tools, a soldering station and some spare parts.",
+     "Then ₹60,000 for tools, a soldering station and some spare parts."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {
+       "cust": "phone"
+      }
+     },
+     "Son, my phone screen is broken. My grandson threw it!",
+     "Son, my phone screen is broken. My grandson threw it!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "phone",
+       "cust": null
+      },
+      "stat": [
+       "₹2,000",
+       "Screen replacement"
+      ]
+     },
+     "New screen in one hour, uncle. 2,000. rupees",
+     "New screen in one hour, uncle. ₹2,000."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "phone"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹2,000–3,000",
+       "Per day"
+      ]
+     },
+     "Up to 800 rupees profit on every screen. 2,000 rupees to 3,000 rupees a day, easily.",
+     "Up to ₹800 profit on every screen. ₹2,000 to ₹3,000 a day, easily."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "And sell covers, chargers and screen guards. A 20 rupees guard sells for 150 rupees!",
+     "And sell covers, chargers and screen guards. A ₹20 guard sells for ₹150!"
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "Sonu Mobile Wala, number one in town! Life set!",
+     "Sonu Mobile Wala, number one in town! Life set!"
+    ]
+   ]
+  }
+ ]
+}

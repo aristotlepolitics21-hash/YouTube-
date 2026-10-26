@@ -1,0 +1,322 @@
+{
+ "out": "06-pani-puri-cart-english",
+ "ep": {
+  "num": 6,
+  "of": 100,
+  "title": "Pani Puri Cart",
+  "sign": "GOLU GOLGAPPE WALA",
+  "kind": "golgappa",
+  "final": "Golu's Life = Set! 😂",
+  "note": "Figures are rough estimates and vary by city and season",
+  "cast": {
+   "hero": {
+    "name": "Golu",
+    "look": "shirt",
+    "skin": "#c68642",
+    "tag": "#f28c28",
+    "colors": {
+     "shirt": "#f28c28",
+     "shirt2": "#fff3b0"
+    }
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Priya",
+    "look": "kurti",
+    "skin": "#d39b6a",
+    "tag": "#9b5de5",
+    "colors": {
+     "kurti": "#9b5de5"
+    }
+   }
+  },
+  "signColor": "#ffcf4a"
+ },
+ "voices": {
+  "chacha": [
+   "bm_george",
+   1.0
+  ],
+  "hero": [
+   "am_puck",
+   1.05
+  ],
+  "cust": [
+   "af_nicole",
+   1.05
+  ]
+ },
+ "sections": [
+  {
+   "name": "Pani Puri Cart",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "All my friends got jobs. I still haven't.",
+     "All my friends got jobs. I still haven't."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "Golu, what does the whole city queue up for? Pani puri! Start a cart!",
+     "Golu, what does the whole city queue up for? Pani puri! Start a cart!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "Pani puri? How much will that cost?",
+     "Pani puri? How much will that cost?"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹15,000",
+       "To start"
+      ]
+     },
+     "Cart, pots and utensils, all for 15,000. rupees",
+     "Cart, pots and utensils, all for ₹15,000."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "Keep it clean! Wear gloves and use filtered water. A clean cart draws double the crowd.",
+     "Keep it clean! Wear gloves and use filtered water. A clean cart draws double the crowd."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "Bhaiya, extra spicy! And the last dry puri is free!",
+     "Bhaiya, extra spicy! And the last dry puri is free!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "plate",
+       "cust": null
+      },
+      "stat": [
+       "₹40",
+       "Per plate"
+      ]
+     },
+     "Six puris for 40. rupees And the dry puri is free for you, madam!",
+     "Six puris for ₹40. And the dry puri is free for you, madam!"
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "plate"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹1,500–2,000",
+       "Profit per day"
+      ]
+     },
+     "Four evening hours, a hundred plates. Half is profit, so 1,500 rupees to 2,000 rupees a day.",
+     "Four evening hours, a hundred plates. Half is profit, so ₹1,500 to ₹2,000 a day."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "Add dahi puri and chaat. And take wedding orders. One party pays like a whole week.",
+     "Add dahi puri and chaat. And take wedding orders. One party pays like a whole week."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "Golu's pani puri is in full demand! Life set!",
+     "Golu's pani puri is in full demand! Life set!"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,323 @@
+{
+ "out": "02-chai-stall-english",
+ "ep": {
+  "num": 2,
+  "of": 100,
+  "title": "Tea Stall",
+  "sign": "RAJU CHAI WALA",
+  "kind": "chai",
+  "final": "Raju's Life = Set! 😂",
+  "note": "Figures are rough estimates and vary by city and season",
+  "cast": {
+   "hero": {
+    "name": "Raju",
+    "look": "lungi",
+    "skin": "#a9683a",
+    "stache": true,
+    "tag": "#2f8f4e",
+    "colors": {
+     "lungi": "#2f8f4e",
+     "lungi2": "#b7f0c8"
+    }
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Priya",
+    "look": "kurti",
+    "skin": "#d39b6a",
+    "tag": "#9b5de5",
+    "colors": {
+     "kurti": "#9b5de5"
+    }
+   }
+  },
+  "signColor": "#ffb703"
+ },
+ "voices": {
+  "chacha": [
+   "bm_george",
+   1.0
+  ],
+  "hero": [
+   "am_puck",
+   1.05
+  ],
+  "cust": [
+   "af_nicole",
+   1.05
+  ]
+ },
+ "sections": [
+  {
+   "name": "Tea Stall",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "I have a degree and still no job. What do I do now?",
+     "I have a degree and still no job. What do I do now?"
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "Arre Raju, the whole country runs on chai. Open a tea stall!",
+     "Arre Raju, the whole country runs on chai. Open a tea stall!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "Does anyone get rich selling tea, Chacha?",
+     "Does anyone get rich selling tea, Chacha?"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹20,000",
+       "To start"
+      ]
+     },
+     "You can start with 20,000. rupees A stall, gas, utensils and good tea leaves.",
+     "You can start with ₹20,000. A stall, gas, utensils and good tea leaves."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "Set up outside a college, office or hospital. The crowd there never ends.",
+     "Set up outside a college, office or hospital. The crowd there never ends."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "Bhaiya, one cutting chai and two biscuits!",
+     "Bhaiya, one cutting chai and two biscuits!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "glass",
+       "cust": null
+      },
+      "stat": [
+       "₹15",
+       "Per cup"
+      ]
+     },
+     "Here you go, madam, special ginger chai. Just 15. rupees",
+     "Here you go, madam, special ginger chai. Just ₹15."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "glass"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹1,500",
+       "Profit per day"
+      ]
+     },
+     "Two hundred cups a day is about 1,500 rupees profit every day.",
+     "Two hundred cups a day is about ₹1,500 profit every day."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "Keep samosas, biscuits and bun maska too. They earn more than the chai.",
+     "Keep samosas, biscuits and bun maska too. They earn more than the chai."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "Forty thousand a month! Raju's life is set!",
+     "Forty thousand a month! Raju's life is set!"
+    ]
+   ]
+  }
+ ]
+}

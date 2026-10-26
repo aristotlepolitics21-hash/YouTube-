@@ -1,0 +1,316 @@
+{
+ "out": "01-tyre-puncture-shop-english",
+ "ep": {
+  "num": 1,
+  "of": 100,
+  "title": "Tyre Puncture Shop",
+  "sign": "ABDUL TIRE WALA",
+  "kind": "tyre",
+  "final": "Abdul's Life = Set! 😂",
+  "note": "Figures are rough estimates and vary by city and season",
+  "cast": {
+   "hero": {
+    "name": "Abdul",
+    "look": "lungi",
+    "skin": "#b5743f",
+    "stache": true,
+    "tag": "#2b6cb0"
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Pandit Ji",
+    "look": "tilak",
+    "skin": "#d39b6a",
+    "stache": true,
+    "tag": "#f28c28"
+   }
+  }
+ },
+ "voices": {
+  "chacha": [
+   "bm_george",
+   1.0
+  ],
+  "hero": [
+   "am_puck",
+   1.05
+  ],
+  "cust": [
+   "am_michael",
+   1.0
+  ]
+ },
+ "sections": [
+  {
+   "name": "Tyre Puncture Shop",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "No job again... how will I run the house now?",
+     "No job again... how will I run the house now?"
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "Arre Abdul, stop crying! Open a tyre puncture shop!",
+     "Arre Abdul, stop crying! Open a tyre puncture shop!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "A puncture shop? How much money will that take, Chacha?",
+     "A puncture shop? How much money will that take, Chacha?"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹50,000",
+       "Total investment"
+      ]
+     },
+     "Just 50,000. rupees A compressor, a tool kit and a tubeless repair kit.",
+     "Just ₹50,000. A compressor, a tool kit and a tubeless repair kit."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "Open it near a highway or a petrol pump. That's where the most punctures happen.",
+     "Open it near a highway or a petrol pump. That's where the most punctures happen."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "Hurry up, brother! My car has a puncture and I'm late for a wedding!",
+     "Hurry up, brother! My car has a puncture and I'm late for a wedding!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "tyre",
+       "cust": null
+      },
+      "stat": [
+       "₹150",
+       "Per car puncture"
+      ]
+     },
+     "Ten minutes, sir. 150 rupees for a car, 60 rupees for a bike.",
+     "Ten minutes, sir. ₹150 for a car, ₹60 for a bike."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "tyre"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹1,500–2,500",
+       "Per day"
+      ]
+     },
+     "Fifteen to twenty vehicles a day means 1,500 rupees to 2,500 rupees every day.",
+     "Fifteen to twenty vehicles a day means ₹1,500 to ₹2,500 every day."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "Selling tyres and tubes and filling air are extra income. Open early, close late.",
+     "Selling tyres and tubes and filling air are extra income. Open early, close late."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "Fifty to sixty thousand a month! My life is set!",
+     "Fifty to sixty thousand a month! My life is set!"
+    ]
+   ]
+  }
+ ]
+}

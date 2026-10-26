@@ -1,0 +1,323 @@
+{
+ "out": "03-mobile-repair-hindi",
+ "ep": {
+  "num": 3,
+  "of": 100,
+  "title": "Mobile Repair Shop",
+  "sign": "SONU MOBILE WALA",
+  "kind": "mobile",
+  "final": "Sonu Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Sonu",
+    "look": "shirt",
+    "skin": "#a9683a",
+    "tag": "#e24b4b"
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Pandit Ji",
+    "look": "tilak",
+    "skin": "#d39b6a",
+    "stache": true,
+    "tag": "#f28c28"
+   }
+  },
+  "signColor": "#5fd0ff",
+  "signText": "#1d3fa8"
+ },
+ "voices": {
+  "chacha": [
+   "hm_omega",
+   0.98
+  ],
+  "hero": [
+   "hm_psi",
+   1.05
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   0.92
+  ]
+ },
+ "sections": [
+  {
+   "name": "Mobile Repair Shop",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "पूरा दिन फ़ोन चलाता हूँ, पर कमाई ज़ीरो।",
+     "Poora din phone chalata hoon, par kamai zero."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "तो फ़ोन चलाना छोड़, फ़ोन ठीक करना सीख! मोबाइल रिपेयर की दुकान खोल।",
+     "To phone chalana chhod, phone theek karna seekh! Mobile repair ki dukaan khol."
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "पर मुझे तो रिपेयर आता ही नहीं, चाचा!",
+     "Par mujhe to repair aata hi nahi, Chacha!"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "3 months",
+       "Training"
+      ]
+     },
+     "तीन महीने का कोर्स कर। फिर किसी दुकान पर छह महीने काम सीख।",
+     "Teen mahine ka course kar. Phir kisi dukaan pe chhe mahine kaam seekh."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      },
+      "stat": [
+       "₹60,000",
+       "Tools + stock"
+      ]
+     },
+     "फिर साठ हज़ार में टूल्स, सोल्डरिंग मशीन और थोड़ा स्पेयर स्टॉक।",
+     "Phir 60 hazaar mein tools, soldering machine aur thoda spare stock."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {
+       "cust": "phone"
+      }
+     },
+     "बेटा, मेरे फ़ोन की स्क्रीन टूट गई। पोते ने फेंक दिया!",
+     "Beta, mere phone ki screen toot gayi. Pote ne phenk diya!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "phone",
+       "cust": null
+      },
+      "stat": [
+       "₹2,000",
+       "Nayi screen"
+      ]
+     },
+     "एक घंटे में नई स्क्रीन, अंकल। दो हज़ार रुपये।",
+     "Ek ghante mein nayi screen, uncle. 2 hazaar rupaye."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "phone"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹2,000–3,000",
+       "Roz ki kamai"
+      ]
+     },
+     "हर स्क्रीन पर आठ सौ तक का मुनाफ़ा। रोज़ के दो से तीन हज़ार आराम से।",
+     "Har screen pe 800 tak ka munafa. Roz ke 2-3 hazaar aaram se."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "और कवर, चार्जर, टेम्पर्ड ग्लास बेच। बीस का ग्लास, डेढ़ सौ में बिकता है!",
+     "Aur cover, charger, tempered glass bech. 20 ka glass, 150 mein bikta hai!"
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "सोनू मोबाइल वाला, अब शहर में नंबर वन! लाइफ़ सेट!",
+     "Sonu Mobile Wala, ab sheher mein number one! Life set!"
+    ]
+   ]
+  }
+ ]
+}

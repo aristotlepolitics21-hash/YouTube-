@@ -1,0 +1,322 @@
+{
+ "out": "05-sugarcane-juice-english",
+ "ep": {
+  "num": 5,
+  "of": 100,
+  "title": "Sugarcane Juice Stall",
+  "sign": "PAPPU GANNA JUICE",
+  "kind": "ganna",
+  "final": "Pappu's Life = Set! 😂",
+  "note": "Figures are rough estimates and vary by city and season",
+  "cast": {
+   "hero": {
+    "name": "Pappu",
+    "look": "lungi",
+    "skin": "#b5743f",
+    "stache": true,
+    "tag": "#c0392b",
+    "colors": {
+     "lungi": "#c0392b",
+     "lungi2": "#ffd0c8"
+    }
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Pandit Ji",
+    "look": "tilak",
+    "skin": "#d39b6a",
+    "stache": true,
+    "tag": "#f28c28"
+   }
+  },
+  "signColor": "#b8f05a",
+  "signText": "#1f6b35"
+ },
+ "voices": {
+  "chacha": [
+   "bm_george",
+   1.0
+  ],
+  "hero": [
+   "am_puck",
+   1.05
+  ],
+  "cust": [
+   "am_michael",
+   1.0
+  ]
+ },
+ "sections": [
+  {
+   "name": "Sugarcane Juice Stall",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "street",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "sweat"
+      }
+     },
+     "Looking for work in this heat has me sweating buckets.",
+     "Looking for work in this heat has me sweating buckets."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "Pappu, turn this heat into business! Start a sugarcane juice stall!",
+     "Pappu, turn this heat into business! Start a sugarcane juice stall!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "The machine must be really expensive, Chacha?",
+     "The machine must be really expensive, Chacha?"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹70,000",
+       "Machine + cart"
+      ]
+     },
+     "A motorised machine and a cart, about 70,000 rupees in all.",
+     "A motorised machine and a cart, about ₹70,000 in all."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "Keep the machine clean, use clean ice, add lemon and ginger. People come back for the taste.",
+     "Keep the machine clean, use clean ice, add lemon and ginger. People come back for the taste."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "Bhaiya, one large glass with ice! My throat is dry!",
+     "Bhaiya, one large glass with ice! My throat is dry!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "juice",
+       "cust": null
+      },
+      "stat": [
+       "₹30",
+       "Per glass"
+      ]
+     },
+     "Ice-cold sugarcane juice. 30 rupees a glass!",
+     "Ice-cold sugarcane juice. ₹30 a glass!"
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "juice"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹3,000",
+       "Per summer day"
+      ]
+     },
+     "The cane in a glass costs just 6 rupees or 7. rupees In summer you can keep up to 3,000 rupees a day.",
+     "The cane in a glass costs just ₹6 or ₹7. In summer you can keep up to ₹3,000 a day."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "But it is seasonal. In winter, turn the same cart into soup or roasted corn.",
+     "But it is seasonal. In winter, turn the same cart into soup or roasted corn."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "Summer came and brought money! Pappu's life is set!",
+     "Summer came and brought money! Pappu's life is set!"
+    ]
+   ]
+  }
+ ]
+}

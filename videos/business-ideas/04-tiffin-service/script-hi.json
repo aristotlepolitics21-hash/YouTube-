@@ -1,0 +1,321 @@
+{
+ "out": "04-tiffin-service-hindi",
+ "ep": {
+  "num": 4,
+  "of": 100,
+  "title": "Tiffin Service",
+  "sign": "SUNITA TIFFIN SERVICE",
+  "kind": "tiffin",
+  "final": "Sunita Ki Life Set! 😂",
+  "note": "Figures rough estimates hain, sheher aur season ke hisaab se badalte hain",
+  "cast": {
+   "hero": {
+    "name": "Sunita",
+    "look": "saree",
+    "skin": "#c68642",
+    "tag": "#e63977",
+    "female": true
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Rohit",
+    "look": "shirt",
+    "skin": "#c68642",
+    "tag": "#2b6cb0",
+    "colors": {
+     "shirt": "#2b6cb0",
+     "shirt2": "#9ecbff"
+    }
+   }
+  },
+  "signColor": "#ffd23f",
+  "wall": "#ffe3c2"
+ },
+ "voices": {
+  "chacha": [
+   "hm_omega",
+   0.98
+  ],
+  "hero": [
+   "hf_alpha",
+   1.05
+  ],
+  "cust": [
+   "hm_omega+hm_psi",
+   1.1
+  ]
+ },
+ "sections": [
+  {
+   "name": "Tiffin Service",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "घर का ख़र्चा बढ़ता जा रहा है, और मैं घर पर बैठी हूँ।",
+     "Ghar ka kharcha badhta ja raha hai, aur main ghar pe baithi hoon."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "सुनीता बेटी, तुम्हारे हाथ का खाना पूरा मोहल्ला याद करता है। टिफ़िन सर्विस शुरू करो!",
+     "Sunita beti, tumhare haath ka khana poora mohalla yaad karta hai. Tiffin service shuru karo!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "पर खाना ख़रीदेगा कौन, चाचा जी?",
+     "Par khana kharidega kaun, Chacha ji?"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹15,000",
+       "Shuruaat"
+      ]
+     },
+     "पास के हॉस्टल, पीजी और ऑफ़िस वाले। शुरुआत पंद्रह हज़ार में, टिफ़िन और बड़े बर्तन।",
+     "Paas ke hostel, PG aur office wale. Shuruaat 15 hazaar mein, tiffin aur bade bartan."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "व्हाट्सऐप ग्रुप बनाओ, रोज़ का मेन्यू डालो। और एफ़ एस एस ए आई रजिस्ट्रेशन ज़रूर कराना।",
+     "WhatsApp group banao, roz ka menu daalo. Aur FSSAI registration zaroor karana."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "आंटी, हॉस्टल का खाना खाकर तंग आ गया। महीने का टिफ़िन लगा दो!",
+     "Aunty, hostel ka khana khaake tang aa gaya. Mahine ka tiffin laga do!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "tiffin",
+       "cust": null
+      },
+      "stat": [
+       "₹3,000",
+       "Mahina, per grahak"
+      ]
+     },
+     "दाल, सब्ज़ी, चार रोटी, चावल। महीने के तीन हज़ार।",
+     "Daal, sabzi, chaar roti, chawal. Mahine ke 3 hazaar."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "tiffin"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹90,000",
+       "30 tiffin / mahina"
+      ]
+     },
+     "तीस ग्राहक, यानी महीने के नब्बे हज़ार। ख़र्चा निकाल कर भी पैंतीस-चालीस हज़ार बचेंगे।",
+     "30 grahak, yaani mahine ke 90 hazaar. Kharcha nikaal kar bhi 35-40 hazaar bachenge."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "ग्राहक बढ़ें, तो डिलीवरी के लिए एक लड़का रख लेना।",
+     "Grahak badhein, to delivery ke liye ek ladka rakh lena."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "घर बैठे बिज़नेस! सुनीता की लाइफ़ सेट!",
+     "Ghar baithe business! Sunita ki life set!"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,325 @@
+{
+ "out": "10-ironing-press-stall-english",
+ "ep": {
+  "num": 10,
+  "of": 100,
+  "title": "Ironing Stall",
+  "sign": "MUNNA PRESS WALA",
+  "kind": "press",
+  "final": "Munna's Life = Set! 😂",
+  "note": "Figures are rough estimates and vary by city and season",
+  "cast": {
+   "hero": {
+    "name": "Munna",
+    "look": "lungi",
+    "skin": "#a9683a",
+    "stache": true,
+    "tag": "#c0392b",
+    "colors": {
+     "lungi": "#2b6cb0",
+     "lungi2": "#ffffff",
+     "vest": "#fff7d6"
+    }
+   },
+   "chacha": {
+    "name": "Chacha Ji",
+    "look": "topi",
+    "skin": "#c68642",
+    "stache": true,
+    "tag": "#3d6fd1"
+   },
+   "cust": {
+    "name": "Sharma Aunty",
+    "look": "saree",
+    "skin": "#d39b6a",
+    "tag": "#3aa76d",
+    "colors": {
+     "saree": "#3aa76d",
+     "blouse": "#e63946"
+    }
+   }
+  },
+  "signColor": "#ffd23f"
+ },
+ "voices": {
+  "chacha": [
+   "bm_george",
+   1.0
+  ],
+  "hero": [
+   "am_puck",
+   1.05
+  ],
+  "cust": [
+   "af_sarah",
+   1.0
+  ]
+ },
+ "sections": [
+  {
+   "name": "Ironing Stall",
+   "lines": [
+    [
+     "hero",
+     {
+      "bg": "home",
+      "cast": [
+       [
+        "hero",
+        420,
+        1
+       ]
+      ],
+      "pose": {
+       "hero": "sad"
+      },
+      "expr": {
+       "hero": "sad"
+      },
+      "fx": {
+       "hero": "tears"
+      }
+     },
+     "I can't even find small jobs. Just my luck!",
+     "I can't even find small jobs. Just my luck!"
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        290,
+        1
+       ],
+       [
+        "chacha",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "idle",
+       "chacha": "point"
+      },
+      "expr": {
+       "hero": "shock",
+       "chacha": "smug"
+      },
+      "fx": {
+       "chacha": "idea"
+      }
+     },
+     "Munna, every home needs clothes ironed, every day! Open an ironing stall!",
+     "Munna, every home needs clothes ironed, every day! Open an ironing stall!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "scratch",
+       "chacha": "hips"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "neutral"
+      },
+      "fx": {
+       "hero": "question"
+      }
+     },
+     "An ironing stall? How much can that earn, Chacha?",
+     "An ironing stall? How much can that earn, Chacha?"
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "idle",
+       "chacha": "count"
+      },
+      "expr": {
+       "hero": "neutral",
+       "chacha": "happy"
+      },
+      "stat": [
+       "₹10,000",
+       "To start"
+      ]
+     },
+     "A heavy iron, a table and a corner outside a housing society. Just 10,000. rupees",
+     "A heavy iron, a table and a corner outside a housing society. Just ₹10,000."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "hero": "think",
+       "chacha": "explain"
+      },
+      "expr": {
+       "hero": "think",
+       "chacha": "smug"
+      }
+     },
+     "Take orders on WhatsApp, pick up from homes, deliver back. That's your service.",
+     "Take orders on WhatsApp, pick up from homes, deliver back. That's your service."
+    ],
+    [
+     "cust",
+     {
+      "bg": "shop",
+      "cast": [
+       [
+        "hero",
+        280,
+        1
+       ],
+       [
+        "cust",
+        790,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "hips",
+       "cust": "explain"
+      },
+      "expr": {
+       "hero": "happy",
+       "cust": "shock"
+      },
+      "fx": {
+       "cust": "sweat"
+      },
+      "hold": {}
+     },
+     "Munna, I need these twenty clothes by evening. My husband has a meeting!",
+     "Munna, I need these twenty clothes by evening. My husband has a meeting!"
+    ],
+    [
+     "hero",
+     {
+      "pose": {
+       "hero": "give",
+       "cust": "idle"
+      },
+      "expr": {
+       "cust": "happy"
+      },
+      "hold": {
+       "hero": "iron",
+       "cust": null
+      },
+      "stat": [
+       "₹15",
+       "Per piece"
+      ]
+     },
+     "Done by evening, aunty ji. 15 rupees a piece.",
+     "Done by evening, aunty ji. ₹15 a piece."
+    ],
+    [
+     "chacha",
+     {
+      "cast": [
+       [
+        "hero",
+        220,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        880,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "money",
+       "chacha": "count",
+       "cust": "idle"
+      },
+      "expr": {
+       "hero": "happy",
+       "chacha": "happy",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": "cash",
+       "cust": "iron"
+      },
+      "fx": {
+       "hero": "stars"
+      },
+      "stat": [
+       "₹2,000–3,000",
+       "Per day"
+      ]
+     },
+     "One hundred fifty to two hundred pieces a day means 2,000 rupees to 3,000 rupees a day.",
+     "One hundred fifty to two hundred pieces a day means ₹2,000 to ₹3,000 a day."
+    ],
+    [
+     "chacha",
+     {
+      "pose": {
+       "chacha": "explain",
+       "hero": "think"
+      },
+      "expr": {
+       "chacha": "smug",
+       "hero": "smug"
+      },
+      "fx": {}
+     },
+     "Get a steam iron and tie up with a dry cleaner. You earn commission on every piece.",
+     "Get a steam iron and tie up with a dry cleaner. You earn commission on every piece."
+    ],
+    [
+     "hero",
+     {
+      "cast": [
+       [
+        "hero",
+        240,
+        1
+       ],
+       [
+        "chacha",
+        560,
+        -1
+       ],
+       [
+        "cust",
+        870,
+        -1
+       ]
+      ],
+      "pose": {
+       "hero": "cheer",
+       "chacha": "cheer",
+       "cust": "cheer"
+      },
+      "expr": {
+       "hero": "lol",
+       "chacha": "lol",
+       "cust": "lol"
+      },
+      "hold": {
+       "hero": null,
+       "cust": null
+      },
+      "final": true
+     },
+     "Munna Press Wala, the whole society's favourite! Life set!",
+     "Munna Press Wala, the whole society's favourite! Life set!"
+    ]
+   ]
+  }
+ ]
+}
