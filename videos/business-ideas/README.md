@@ -48,7 +48,39 @@ Each skit follows the same ten beats:
 | 19 | Vada pav stall | GANESH VADA PAV | Ganesh · Aai · Mehta Saab |
 | 20 | Tailoring boutique | SALMA BOUTIQUE | Salma · Abbu · Tanya |
 
-Each batch 2 episode folder holds `NN-slug.mp4`, `captions.srt`, `thumbnail.jpg` and `script.json`.
+## Batch 3: agriculture (Hindi, new cast each video)
+
+| # | Idea | Sign | Hero · mentor · customer |
+|---|---|---|---|
+| 21 | Mushroom farming | MANOJ MUSHROOM FARM | Manoj · Shalini Madam (KVK) · Dhaba Paaji |
+| 22 | Dairy farm | BHOLA DAIRY FARM | Bhola · his son Rahul · Lala Ji |
+| 23 | Vermicompost | SUSHILA ORGANIC KHAD | Sushila · Kavita Didi · Kapoor Saab |
+| 24 | Beekeeping (honey) | DINESH HONEY FARM | Dinesh · Fauji Chacha · Vaidya Ji |
+| 25 | Polyhouse farming | HARPAL POLYHOUSE FARM | Harpal Singh · his daughter Simran · Mall Wale Bhaiya |
+| 26 | Goat farming | IMRAN GOAT FARM | Imran · Ammi · Patel Bhai |
+| 27 | Biofloc fish farming | RAGHAV FISH FARM | Raghav · Das Babu · Machhli Wali Mausi |
+| 28 | Plant nursery | GEETA PLANT NURSERY | Geeta · Mali Kaka · Malhotra Ji |
+| 29 | Tractor & machine rental | JAGDISH KRISHI SEVA KENDRA | Jagdish · Sarpanch Ji · Ramu Kaka |
+| 30 | Atta chakki (flour mill) | REKHA ATTA CHAKKI | Rekha · her husband Suresh · Pandey Ji |
+
+## Batch 4: future businesses (Hindi, new cast each video)
+
+| # | Idea | Sign | Hero · mentor · customer |
+|---|---|---|---|
+| 31 | EV charging station | AMAN EV CHARGING | Aman · Chopra Uncle · Riya |
+| 32 | Solar panel installation | DEEPAK SOLAR SOLUTIONS | Deepak · Anjali Didi · Bansal Ji |
+| 33 | Drone spraying service | SUNIL DRONE SERVICES | Sunil · Dr. Mehra · Baldev Tau |
+| 34 | E-rickshaw service & battery swap | TINKU E-RICKSHAW SERVICE | Tinku · Rahim Chacha · Bittu |
+| 35 | Social media manager | ISHITA DIGITAL | Ishita · Nani · Bhatia Ji |
+| 36 | 3D printing & custom gifts | KUNAL 3D PRINT HUB | Kunal · Mama Ji · Preeti |
+| 37 | Refurbished phone shop | FAIZAN PHONE BAZAAR | Faizan · Chhotu Bhai · Nikita |
+| 38 | Coding & robotics classes | SHREYA CODING CLUB | Shreya · Dadaji · Mrs. Khanna |
+| 39 | Pet grooming & pet shop | ARJUN PET CARE | Arjun · Pinto Uncle · Sehgal Aunty |
+| 40 | CCTV & smart home installation | MOHIT SECURITY SYSTEMS | Mohit · Inspector Uncle · Soni Ji |
+
+Subsidy and scheme names (PM Surya Ghar, Matsya Sampada, custom hiring centres, beekeeping subsidy) are mentioned as places to look. Amounts and eligibility change, so check the current rules before quoting them.
+
+Each episode folder from batch 2 on holds `NN-slug.mp4`, `captions.srt`, `thumbnail.jpg` and `script.json`.
 
 Each batch 1 episode folder holds:
 
@@ -64,6 +96,7 @@ Money figures are rough Indian estimates. They vary by city and season, and the 
 1. Each batch file writes the scripts:
    - `scripts.py` writes batch 1. Each line is Devanagari for the Hindi voice, a Roman Hinglish caption, and an English line.
    - `batch2.py` writes batch 2: Devanagari plus a Hinglish caption, with each character's look and voice defined per video.
+   - `batch3.py` and `batch4.py` hold their ideas only and write through the shared `skit.py`, which also sets farm stories (`place='farm'`).
 2. `KOKORO_DIR=DIR ./make.sh NN-slug WORKDIR` voices, renders and muxes each episode.
 
 Voices are Kokoro, one per character. Batch 2 sets each character's voice in `batch2.py`, mixing hm_omega, hm_psi, hf_alpha, hf_beta, blends of them and different speeds. Batch 1 used:
@@ -77,7 +110,7 @@ Voices are Kokoro, one per character. Batch 2 sets each character's voice in `ba
 
 The renderer is `engine/page.html` with `engine/render.cjs`. It is all code-drawn:
 
-- **Backgrounds:** home, street, and a shop with a big sign banner, scalloped awning, nimbu-mirchi and props for each business.
+- **Backgrounds:** home, street, a farm, and either a shop with a big sign banner, scalloped awning and nimbu-mirchi or a signboard on the field, with props for each business. Props include cows, goats, a dog, bee boxes, fish tanks, a polyhouse, a tractor and a spray drone.
 - **Characters:** IK arms, poses, expressions, talking mouths, blinking, and props in hand. Each character mixes:
   - **Outfit:** lungi + vest + gamcha, kurta, dhoti, saree, kurti + dupatta, checked shirt, t-shirt, suit or hoodie.
   - **Hair:** short, puffy, spiky, side-parted, bald, bun, plait or long.
