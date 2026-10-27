@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:06,073
+Paisa kitne saal mein double hoga? Iski ek aasaan trick hai, Rule of 72.
+
+2
+00:00:06,373 --> 00:00:11,053
+72 ko byaaj dar se bhaag do. Jo aaye, utne saal mein paisa double.
+
+3
+00:00:11,353 --> 00:00:16,284
+FD pe 6 percent? 72 bhaag 6, yaani 12 saal mein double.
+
+4
+00:00:16,584 --> 00:00:20,011
+Agar 12 percent mile, to sirf 6 saal mein double.
+
+5
+00:00:20,311 --> 00:00:22,818
+Aur savings account ka 3 percent?
+
+6
+00:00:23,118 --> 00:00:26,946
+Poore 24 saal! Tab tak mehangai use kha chuki hogi.
+
+7
+00:00:27,246 --> 00:00:34,474
+Ulta bhi kaam karta hai. 36 percent wala credit card karz, sirf 2 saal mein double ho jaata hai!
+
+8
+00:00:34,774 --> 00:00:41,770
+Isliye, byaaj kamao, byaaj bharo mat. Agli baar koi scheme dekho, pehle Rule of 72 lagao.
