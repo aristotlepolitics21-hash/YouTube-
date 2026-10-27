@@ -1,0 +1,114 @@
+{
+ "out": "03-cibil-score",
+ "ep": {
+  "num": 3,
+  "title": "CIBIL Score Kya Hai?",
+  "look": "flat",
+  "cast": {
+   "N": "Narrator",
+   "bunty": "Bunty Bhai",
+   "iyer": "Bank Manager"
+  },
+  "note": "Seekhne ke liye hai, financial advice nahi. Returns guaranteed nahi hote."
+ },
+ "voices": {
+  "N": [
+   "hm_omega",
+   1.0
+  ],
+  "bunty": [
+   "hm_omega",
+   1.06
+  ],
+  "iyer": [
+   "hf_beta",
+   1.0
+  ]
+ },
+ "sections": [
+  {
+   "name": "CIBIL Score Kya Hai?",
+   "lines": [
+    [
+     "N",
+     {},
+     "बंटी भाई, घर के लिए लोन लेने बैंक पहुँचे।",
+     "Bunty bhai, ghar ke liye loan lene bank pahunche."
+    ],
+    [
+     "iyer",
+     {
+      "stat": [
+       "580",
+       "Bunty ka CIBIL score"
+      ]
+     },
+     "सॉरी सर, आपका सिबिल स्कोर पाँच सौ अस्सी है। लोन रिजेक्ट।",
+     "Sorry sir, aapka CIBIL score 580 hai. Loan reject."
+    ],
+    [
+     "bunty",
+     {},
+     "सिबिल? ये कौन सा नया दुश्मन है?",
+     "CIBIL? Ye kaun sa naya dushman hai?"
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "300–900",
+       "CIBIL score range"
+      ]
+     },
+     "सिबिल स्कोर, तीन सौ से नौ सौ के बीच एक नंबर है। ये बताता है कि आप क़र्ज़ लौटाने में कितने भरोसेमंद हो।",
+     "CIBIL score, 300 se 900 ke beech ek number hai. Ye batata hai ki aap karz lautane mein kitne bharosemand ho."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "750+",
+       "Achha score"
+      ]
+     },
+     "सात सौ पचास से ऊपर अच्छा माना जाता है। लोन जल्दी, और कम ब्याज पे मिलता है।",
+     "750 se upar achha maana jaata hai. Loan jaldi, aur kam byaaj pe milta hai."
+    ],
+    [
+     "N",
+     {},
+     "बंटी भाई की गलती? क्रेडिट कार्ड का बिल लेट भरना, और पूरी लिमिट इस्तेमाल करना।",
+     "Bunty bhai ki galti? Credit card ka bill late bharna, aur poori limit istemaal karna."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "30% se kam",
+       "Card limit ka use"
+      ]
+     },
+     "नियम: हर ई एम आई और बिल टाइम पे भरो। और कार्ड की लिमिट का तीस प्रतिशत से कम इस्तेमाल करो।",
+     "Rule: har EMI aur bill time pe bharo. Aur card ki limit ka 30 percent se kam istemaal karo."
+    ],
+    [
+     "N",
+     {},
+     "और एक साथ बहुत सारे लोन अप्लाई मत करो। हर एन्क्वायरी स्कोर गिराती है।",
+     "Aur ek saath bahut saare loan apply mat karo. Har enquiry score girati hai."
+    ],
+    [
+     "bunty",
+     {
+      "stat": [
+       "780",
+       "Ek saal baad"
+      ]
+     },
+     "एक साल बाद, स्कोर सात सौ अस्सी! अब घर भी, और कम ब्याज भी!",
+     "Ek saal baad, score 780! Ab ghar bhi, aur kam byaaj bhi!"
+    ]
+   ]
+  }
+ ]
+}

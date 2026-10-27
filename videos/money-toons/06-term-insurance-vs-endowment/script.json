@@ -1,0 +1,109 @@
+{
+ "out": "06-term-insurance-vs-endowment",
+ "ep": {
+  "num": 6,
+  "title": "Insurance Ka Sach",
+  "look": "flat",
+  "cast": {
+   "N": "Narrator",
+   "gattu": "Gattu",
+   "tiwari": "Agent Tiwari"
+  },
+  "note": "Seekhne ke liye hai, financial advice nahi. Returns guaranteed nahi hote."
+ },
+ "voices": {
+  "N": [
+   "hm_omega",
+   1.0
+  ],
+  "gattu": [
+   "hm_psi",
+   1.06
+  ],
+  "tiwari": [
+   "hm_omega",
+   1.02
+  ]
+ },
+ "sections": [
+  {
+   "name": "Insurance Ka Sach",
+   "lines": [
+    [
+     "N",
+     {},
+     "गट्टू की शादी हुई, और घर पे आए एजेंट तिवारी।",
+     "Gattu ki shaadi hui, aur ghar pe aaye Agent Tiwari."
+    ],
+    [
+     "tiwari",
+     {
+      "stat": [
+       "₹1 lakh / saal",
+       "Endowment premium"
+      ]
+     },
+     "ये लो एंडोमेंट पॉलिसी। इंश्योरेंस भी, इन्वेस्टमेंट भी! साल का बस एक लाख।",
+     "Ye lo endowment policy. Insurance bhi, investment bhi! Saal ka bas ek lakh."
+    ],
+    [
+     "gattu",
+     {},
+     "और अगर मुझे कुछ हो गया तो?",
+     "Aur agar mujhe kuch ho gaya to?"
+    ],
+    [
+     "tiwari",
+     {
+      "stat": [
+       "₹10 lakh",
+       "Endowment cover"
+      ]
+     },
+     "फ़ैमिली को मिलेंगे दस लाख।",
+     "Family ko milenge 10 lakh."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "₹1 crore",
+       "Term cover (~₹12,000/saal)"
+      ]
+     },
+     "अब देखो टर्म इंश्योरेंस। लगभग बारह हज़ार साल के प्रीमियम में, एक करोड़ का कवर। तीस साल के नॉन-स्मोकर के लिए।",
+     "Ab dekho term insurance. Lagbhag 12 hazaar saal ke premium mein, 1 crore ka cover. 30 saal ke non-smoker ke liye."
+    ],
+    [
+     "N",
+     {},
+     "टर्म प्लान सिर्फ़ सुरक्षा है। कुछ हुआ, तो फ़ैमिली को पूरा पैसा। कुछ नहीं हुआ, तो कुछ वापस नहीं।",
+     "Term plan sirf suraksha hai. Kuch hua, to family ko poora paisa. Kuch nahi hua, to kuch wapas nahi."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "~5–6%",
+       "Endowment ka return"
+      ]
+     },
+     "और एंडोमेंट का रिटर्न? आम तौर पे सिर्फ़ पाँच-छह प्रतिशत।",
+     "Aur endowment ka return? Aam taur pe sirf 5-6 percent."
+    ],
+    [
+     "N",
+     {},
+     "इसलिए कहते हैं: इंश्योरेंस और इन्वेस्टमेंट अलग रखो। टर्म प्लान लो, बाक़ी पैसा इन्वेस्ट करो।",
+     "Isliye kehte hain: insurance aur investment alag rakho. Term plan lo, baaki paisa invest karo."
+    ],
+    [
+     "gattu",
+     {},
+     "सॉरी तिवारी जी। पहले कंपैरिज़न, फिर सिग्नेचर!",
+     "Sorry Tiwari ji. Pehle comparison, phir signature!"
+    ]
+   ]
+  }
+ ]
+}

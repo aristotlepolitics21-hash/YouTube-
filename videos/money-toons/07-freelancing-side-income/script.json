@@ -1,0 +1,94 @@
+{
+ "out": "07-freelancing-side-income",
+ "ep": {
+  "num": 7,
+  "title": "Naukri Ke Saath Side Income",
+  "look": "faceless",
+  "cast": {
+   "N": "Narrator",
+   "meera": "Meera"
+  },
+  "note": "Seekhne ke liye hai, financial advice nahi. Returns guaranteed nahi hote."
+ },
+ "voices": {
+  "N": [
+   "hm_omega",
+   1.0
+  ],
+  "meera": [
+   "hf_alpha",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "Naukri Ke Saath Side Income",
+   "lines": [
+    [
+     "N",
+     {},
+     "मीरा की नौ से छह की नौकरी, और महीने के आख़िर में ख़ाली जेब।",
+     "Meera ki 9 se 6 ki naukri, aur mahine ke aakhir mein khaali jeb."
+    ],
+    [
+     "meera",
+     {},
+     "कुछ एक्स्ट्रा कमाई हो जाती, तो कितना अच्छा होता।",
+     "Kuch extra kamai ho jaati, to kitna achha hota."
+    ],
+    [
+     "N",
+     {},
+     "उसने रात में, यूट्यूब से वीडियो एडिटिंग सीखी। फ़्री सॉफ़्टवेयर, और पुराना लैपटॉप।",
+     "Usne raat mein, YouTube se video editing seekhi. Free software, aur purana laptop."
+    ],
+    [
+     "N",
+     {},
+     "फिर इंस्टाग्राम पे अपना काम दिखाया, और क्रिएटर्स को मैसेज किए।",
+     "Phir Instagram pe apna kaam dikhaya, aur creators ko message kiye."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "₹500 → ₹2,000",
+       "Ek reel edit (approx)"
+      ]
+     },
+     "पहला क्लाइंट मिला। एक रील के पाँच सौ रुपये। धीरे-धीरे, दो हज़ार तक।",
+     "Pehla client mila. Ek reel ke 500 rupaye. Dheere-dheere, 2 hazaar tak."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "₹30,000+",
+       "Mahine ki side income"
+      ]
+     },
+     "छह महीने बाद, हर महीने तीस हज़ार से ज़्यादा। सिर्फ़ वीकेंड और रातों में।",
+     "Chhe mahine baad, har mahine 30 hazaar se zyada. Sirf weekend aur raaton mein."
+    ],
+    [
+     "meera",
+     {},
+     "स्किल एक बार सीखो, कमाई बार-बार।",
+     "Skill ek baar seekho, kamai baar-baar."
+    ],
+    [
+     "N",
+     {},
+     "शुरुआत के लिए, वीडियो एडिटिंग, ग्राफ़िक डिज़ाइन, या कंटेंट राइटिंग। बस एक लैपटॉप और लगन चाहिए।",
+     "Shuruaat ke liye, video editing, graphic design, ya content writing. Bas ek laptop aur lagan chahiye."
+    ],
+    [
+     "N",
+     {},
+     "पहले पोर्टफ़ोलियो बनाओ, फिर पैसा माँगो। और पेमेंट का कुछ हिस्सा हमेशा एडवांस में लो।",
+     "Pehle portfolio banao, phir paisa maango. Aur payment ka kuch hissa hamesha advance mein lo."
+    ]
+   ]
+  }
+ ]
+}

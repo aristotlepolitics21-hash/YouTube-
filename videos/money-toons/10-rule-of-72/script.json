@@ -1,0 +1,103 @@
+{
+ "out": "10-rule-of-72",
+ "ep": {
+  "num": 10,
+  "title": "Rule of 72: Paisa Kab Double?",
+  "look": "faceless",
+  "cast": {
+   "N": "Narrator",
+   "zoya": "Zoya"
+  },
+  "note": "Seekhne ke liye hai, financial advice nahi. Returns guaranteed nahi hote."
+ },
+ "voices": {
+  "N": [
+   "hm_omega",
+   1.0
+  ],
+  "zoya": [
+   "hf_alpha",
+   1.08
+  ]
+ },
+ "sections": [
+  {
+   "name": "Rule of 72: Paisa Kab Double?",
+   "lines": [
+    [
+     "N",
+     {},
+     "पैसा कितने साल में डबल होगा? इसकी एक आसान ट्रिक है, रूल ऑफ़ सेवंटी टू।",
+     "Paisa kitne saal mein double hoga? Iski ek aasaan trick hai, Rule of 72."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "72 ÷ byaaj = saal",
+       "Rule of 72"
+      ]
+     },
+     "बहत्तर को ब्याज दर से भाग दो। जो आए, उतने साल में पैसा डबल।",
+     "72 ko byaaj dar se bhaag do. Jo aaye, utne saal mein paisa double."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "12 saal",
+       "FD ~6%"
+      ]
+     },
+     "एफ़ डी पे छह प्रतिशत? बहत्तर भाग छह, यानी बारह साल में डबल।",
+     "FD pe 6 percent? 72 bhaag 6, yaani 12 saal mein double."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "6 saal",
+       "12% return (agar mile)"
+      ]
+     },
+     "अगर बारह प्रतिशत मिले, तो सिर्फ़ छह साल में डबल।",
+     "Agar 12 percent mile, to sirf 6 saal mein double."
+    ],
+    [
+     "zoya",
+     {},
+     "और सेविंग्स अकाउंट का तीन प्रतिशत?",
+     "Aur savings account ka 3 percent?"
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "24 saal",
+       "72 ÷ 3"
+      ]
+     },
+     "पूरे चौबीस साल! तब तक महँगाई उसे खा चुकी होगी।",
+     "Poore 24 saal! Tab tak mehangai use kha chuki hogi."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "2 saal",
+       "Credit card karz ~36%"
+      ]
+     },
+     "उल्टा भी काम करता है। छत्तीस प्रतिशत वाला क्रेडिट कार्ड क़र्ज़, सिर्फ़ दो साल में डबल हो जाता है!",
+     "Ulta bhi kaam karta hai. 36 percent wala credit card karz, sirf 2 saal mein double ho jaata hai!"
+    ],
+    [
+     "N",
+     {},
+     "इसलिए, ब्याज कमाओ, ब्याज भरो मत। अगली बार कोई स्कीम देखो, पहले रूल ऑफ़ सेवंटी टू लगाओ।",
+     "Isliye, byaaj kamao, byaaj bharo mat. Agli baar koi scheme dekho, pehle Rule of 72 lagao."
+    ]
+   ]
+  }
+ ]
+}

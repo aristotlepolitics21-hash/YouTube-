@@ -1,0 +1,93 @@
+{
+ "out": "05-inflation-explained",
+ "ep": {
+  "num": 5,
+  "title": "Mehangai Chupchaap Paisa Kha Rahi Hai",
+  "look": "faceless",
+  "cast": {
+   "N": "Narrator",
+   "kabir": "Kabir",
+   "dada": "Dadaji"
+  },
+  "note": "Seekhne ke liye hai, financial advice nahi. Returns guaranteed nahi hote."
+ },
+ "voices": {
+  "N": [
+   "hm_omega",
+   1.0
+  ],
+  "kabir": [
+   "hm_psi",
+   1.06
+  ],
+  "dada": [
+   "hm_omega+hm_psi",
+   0.88
+  ]
+ },
+ "sections": [
+  {
+   "name": "Mehangai Chupchaap Paisa Kha Rahi Hai",
+   "lines": [
+    [
+     "N",
+     {
+      "stat": [
+       "₹5,000",
+       "1995 ki salary"
+      ]
+     },
+     "उन्नीस सौ पंचानवे में दादाजी की सैलरी थी पाँच हज़ार। और घर चल जाता था।",
+     "1995 mein Dadaji ki salary thi 5 hazaar. Aur ghar chal jaata tha."
+    ],
+    [
+     "kabir",
+     {},
+     "दादाजी, आज पाँच हज़ार में तो एक हफ़्ता भी नहीं चलता!",
+     "Dadaji, aaj 5 hazaar mein to ek hafta bhi nahi chalta!"
+    ],
+    [
+     "N",
+     {},
+     "इसी को महँगाई, यानी इन्फ़्लेशन कहते हैं। हर साल चीज़ें थोड़ी महँगी हो जाती हैं।",
+     "Isi ko mehangai, yaani inflation kehte hain. Har saal cheezein thodi mehngi ho jaati hain."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "₹31,000",
+       "Aaj ke ₹1 lakh ki value, 20 saal baad"
+      ]
+     },
+     "अगर महँगाई छह प्रतिशत सालाना हो, तो आज के एक लाख रुपये, बीस साल बाद सिर्फ़ इकतीस हज़ार जितने काम के रहेंगे।",
+     "Agar mehangai 6% saalana ho, to aaj ke 1 lakh rupaye, 20 saal baad sirf 31 hazaar jitne kaam ke rahenge."
+    ],
+    [
+     "kabir",
+     {},
+     "मतलब लॉकर में रखा पैसा, चुपचाप घट रहा है?",
+     "Matlab locker mein rakha paisa, chupchaap ghat raha hai?"
+    ],
+    [
+     "N",
+     {},
+     "बिल्कुल। इसलिए पैसा ऐसी जगह लगाओ, जहाँ रिटर्न, महँगाई से ज़्यादा मिलने की उम्मीद हो।",
+     "Bilkul. Isliye paisa aisi jagah lagao, jahan return, mehangai se zyada milne ki ummeed ho."
+    ],
+    [
+     "N",
+     {},
+     "जैसे लंबी अवधि के लिए इंडेक्स फ़ंड, पी पी एफ़ या ई पी एफ़। हर ऑप्शन का रिस्क अलग होता है।",
+     "Jaise lambi avadhi ke liye index fund, PPF ya EPF. Har option ka risk alag hota hai."
+    ],
+    [
+     "dada",
+     {},
+     "बेटा, पैसा बचाओ भी, और बढ़ाओ भी।",
+     "Beta, paisa bachao bhi, aur badhao bhi."
+    ]
+   ]
+  }
+ ]
+}

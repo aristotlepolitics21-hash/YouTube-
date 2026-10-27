@@ -633,6 +633,7 @@ function frame(TL, T, total) {
     if (a > 0) { c2.fillStyle = `rgba(255,248,240,${clamp(a) * .85})`; c2.fillRect(0, 0, W, H); }
   }
   overlay(L, T, total);
+  if (window.OVERLAY2) window.OVERLAY2(L, T); // optional per-series overlay from a set file
 }
 window.DOC3D = { frame };
 // building blocks for episode set files (engine3d/sets/*.js): each exports register(KIT) and adds to KIT.BUILD

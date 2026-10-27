@@ -1,0 +1,104 @@
+{
+ "out": "02-iphone-emi-trap",
+ "ep": {
+  "num": 2,
+  "title": "iPhone EMI Ka Chakkar",
+  "look": "toon",
+  "cast": {
+   "N": "Narrator",
+   "lucky": "Lucky",
+   "jugnu": "Jugnu"
+  },
+  "note": "Seekhne ke liye hai, financial advice nahi. Returns guaranteed nahi hote."
+ },
+ "voices": {
+  "N": [
+   "hm_omega",
+   1.0
+  ],
+  "lucky": [
+   "hm_psi",
+   1.08
+  ],
+  "jugnu": [
+   "hm_omega+hm_psi",
+   1.05
+  ]
+ },
+ "sections": [
+  {
+   "name": "iPhone EMI Ka Chakkar",
+   "lines": [
+    [
+     "N",
+     {
+      "stat": [
+       "₹25,000",
+       "Lucky ki salary"
+      ]
+     },
+     "लकी की सैलरी पच्चीस हज़ार। और सपना? नया आईफ़ोन!",
+     "Lucky ki salary 25 hazaar. Aur sapna? Naya iPhone!"
+    ],
+    [
+     "jugnu",
+     {},
+     "अरे टेंशन क्या, ई एम आई पे ले ले! बस चार हज़ार महीना!",
+     "Arre tension kya, EMI pe le le! Bas 4 hazaar mahina!"
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "₹94,000",
+       "₹80,000 ka phone, EMI pe"
+      ]
+     },
+     "अस्सी हज़ार का फ़ोन, चौबीस महीने की ई एम आई, सोलह प्रतिशत ब्याज। कुल दिए, चौरानवे हज़ार।",
+     "₹80,000 ka phone, 24 mahine ki EMI, 16% byaaj. Kul diye, ₹94,000."
+    ],
+    [
+     "N",
+     {},
+     "अब हर महीने, सैलरी आते ही चार हज़ार ग़ायब।",
+     "Ab har mahine, salary aate hi 4 hazaar gayab."
+    ],
+    [
+     "lucky",
+     {},
+     "बाइक की सर्विस, घर का किराया, और ये ई एम आई... पैसे ख़त्म!",
+     "Bike ki service, ghar ka kiraya, aur ye EMI... paise khatam!"
+    ],
+    [
+     "jugnu",
+     {},
+     "कोई ना, क्रेडिट कार्ड से भर दे!",
+     "Koi na, credit card se bhar de!"
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "36–42%",
+       "Credit card byaaj (saal)"
+      ]
+     },
+     "और यहीं से शुरू होता है क़र्ज़ का जाल। क्रेडिट कार्ड का ब्याज, साल का छत्तीस से बयालीस प्रतिशत तक।",
+     "Aur yahin se shuru hota hai karz ka jaal. Credit card ka byaaj, saal ka 36 se 42 percent tak."
+    ],
+    [
+     "N",
+     {},
+     "नियम सीधा है। जो चीज़ कमाई नहीं बढ़ाती, उसे ई एम आई पे मत लो।",
+     "Rule seedha hai. Jo cheez kamai nahi badhati, use EMI pe mat lo."
+    ],
+    [
+     "lucky",
+     {},
+     "पहले बचत, फिर आईफ़ोन! अब लकी सच में लकी है!",
+     "Pehle bachat, phir iPhone! Ab Lucky sach mein lucky hai!"
+    ]
+   ]
+  }
+ ]
+}

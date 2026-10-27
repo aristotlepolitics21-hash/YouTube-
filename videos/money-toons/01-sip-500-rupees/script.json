@@ -1,0 +1,109 @@
+{
+ "out": "01-sip-500-rupees",
+ "ep": {
+  "num": 1,
+  "title": "₹500 Ki SIP Ka Jaadu",
+  "look": "faceless",
+  "cast": {
+   "N": "Narrator",
+   "riya": "Riya",
+   "arjun": "Arjun"
+  },
+  "note": "Seekhne ke liye hai, financial advice nahi. Returns guaranteed nahi hote."
+ },
+ "voices": {
+  "N": [
+   "hm_omega",
+   1.0
+  ],
+  "riya": [
+   "hf_alpha",
+   1.04
+  ],
+  "arjun": [
+   "hm_psi",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "₹500 Ki SIP Ka Jaadu",
+   "lines": [
+    [
+     "N",
+     {},
+     "रिया और अर्जुन, दोनों की सैलरी एक जैसी। पर तीस साल बाद, एक के पास लाखों, दूसरे के पास कुछ नहीं।",
+     "Riya aur Arjun, dono ki salary ek jaisi. Par 30 saal baad, ek ke paas lakhon, doosre ke paas kuch nahi."
+    ],
+    [
+     "arjun",
+     {},
+     "मैं तो एस आई पी तब करूँगा, जब सैलरी बढ़ेगी।",
+     "Main to SIP tab karunga, jab salary badhegi."
+    ],
+    [
+     "riya",
+     {
+      "stat": [
+       "₹500",
+       "Har mahina SIP"
+      ]
+     },
+     "मैं तो अभी से करूँगी। सिर्फ़ पाँच सौ रुपये महीना।",
+     "Main to abhi se karungi. Sirf 500 rupaye mahina."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "₹1.2 lakh",
+       "20 saal mein lagaye"
+      ]
+     },
+     "बीस साल में रिया ने कुल एक लाख बीस हज़ार लगाए।",
+     "20 saal mein Riya ne kul 1 lakh 20 hazaar lagaye."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "₹5 lakh",
+       "20 saal, 12% maan kar"
+      ]
+     },
+     "अगर बारह प्रतिशत सालाना रिटर्न मिले, तो ये बन जाता है लगभग पाँच लाख।",
+     "Agar 12 percent saalana return mile, to ye ban jaata hai lagbhag 5 lakh."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "₹17.6 lakh",
+       "30 saal, 12% maan kar"
+      ]
+     },
+     "और तीस साल तक चलाया? लगभग सत्रह लाख साठ हज़ार!",
+     "Aur 30 saal tak chalaya? Lagbhag 17 lakh 60 hazaar!"
+    ],
+    [
+     "arjun",
+     {},
+     "मैंने दस साल देर से शुरू किया। मेरे पास उसका एक-तिहाई भी नहीं।",
+     "Maine 10 saal der se shuru kiya. Mere paas uska ek-tihaai bhi nahi."
+    ],
+    [
+     "N",
+     {},
+     "यही है कंपाउंडिंग का जादू। पैसा नहीं, टाइम सबसे बड़ा हीरो है।",
+     "Yahi hai compounding ka jaadu. Paisa nahi, time sabse bada hero hai."
+    ],
+    [
+     "N",
+     {},
+     "रिटर्न गारंटीड नहीं होता, मार्केट ऊपर-नीचे होता है। पर शुरुआत आज करो।",
+     "Return guaranteed nahi hota, market upar-neeche hota hai. Par shuruaat aaj karo."
+    ]
+   ]
+  }
+ ]
+}

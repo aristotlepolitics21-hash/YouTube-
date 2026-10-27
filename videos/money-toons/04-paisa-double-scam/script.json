@@ -1,0 +1,109 @@
+{
+ "out": "04-paisa-double-scam",
+ "ep": {
+  "num": 4,
+  "title": "30 Din Mein Paisa Double?",
+  "look": "toon",
+  "cast": {
+   "N": "Narrator",
+   "bholu": "Bholu",
+   "seth": "Chamkila Seth"
+  },
+  "note": "Seekhne ke liye hai, financial advice nahi. Returns guaranteed nahi hote."
+ },
+ "voices": {
+  "N": [
+   "hm_omega",
+   1.0
+  ],
+  "bholu": [
+   "hm_psi",
+   1.06
+  ],
+  "seth": [
+   "hm_omega",
+   0.95
+  ]
+ },
+ "sections": [
+  {
+   "name": "30 Din Mein Paisa Double?",
+   "lines": [
+    [
+     "N",
+     {},
+     "भोलू को व्हाट्सऐप पे मैसेज आया। तीस दिन में पैसा डबल!",
+     "Bholu ko WhatsApp pe message aaya. 30 din mein paisa double!"
+    ],
+    [
+     "seth",
+     {
+      "stat": [
+       "₹10,000 → ₹20,000",
+       "\"Guaranteed\" (30 din)"
+      ]
+     },
+     "भाई, बस दस हज़ार लगाओ, तीस दिन में बीस हज़ार! गारंटीड!",
+     "Bhai, bas 10 hazaar lagao, 30 din mein 20 hazaar! Guaranteed!"
+    ],
+    [
+     "N",
+     {},
+     "पहले महीने, सच में डबल मिला। भोलू ख़ुश।",
+     "Pehle mahine, sach mein double mila. Bholu khush."
+    ],
+    [
+     "bholu",
+     {
+      "stat": [
+       "₹2 lakh",
+       "Sab kuch daav pe"
+      ]
+     },
+     "अब तो पूरे दो लाख लगाऊँगा! बीवी के गहने भी!",
+     "Ab to poore 2 lakh lagaunga! Biwi ke gehne bhi!"
+    ],
+    [
+     "N",
+     {},
+     "अगले दिन। ऐप बंद, नंबर बंद, ऑफ़िस पे ताला।",
+     "Agle din. App band, number band, office pe taala."
+    ],
+    [
+     "N",
+     {},
+     "इसे पॉन्ज़ी स्कीम कहते हैं। नए लोगों का पैसा, पुराने लोगों को देकर भरोसा जीता जाता है।",
+     "Ise Ponzi scheme kehte hain. Naye logon ka paisa, purane logon ko dekar bharosa jeeta jaata hai."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "Guaranteed double?",
+       "= Fraud!"
+      ]
+     },
+     "याद रखो। कोई भी गारंटीड डबल रिटर्न, फ़्रॉड है।",
+     "Yaad rakho. Koi bhi guaranteed double return, fraud hai."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "1930",
+       "Cyber fraud helpline"
+      ]
+     },
+     "फ़्रॉड हो जाए, तो तुरंत उन्नीस सौ तीस पे कॉल करो, और साइबर क्राइम पोर्टल पे शिकायत करो।",
+     "Fraud ho jaaye, to turant 1930 pe call karo, aur cybercrime.gov.in pe shikayat karo."
+    ],
+    [
+     "bholu",
+     {},
+     "अब मैं सिर्फ़ सेबी रजिस्टर्ड जगह पे पैसा लगाता हूँ। लालच नहीं, समझ!",
+     "Ab main sirf SEBI registered jagah pe paisa lagata hoon. Lalach nahi, samajh!"
+    ]
+   ]
+  }
+ ]
+}

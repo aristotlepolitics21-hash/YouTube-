@@ -1,0 +1,93 @@
+{
+ "out": "08-gold-jewellery-vs-gold-fund",
+ "ep": {
+  "num": 8,
+  "title": "Gehna Ya Gold Fund?",
+  "look": "toon",
+  "cast": {
+   "N": "Narrator",
+   "chachi": "Chachi",
+   "dablu": "Dablu"
+  },
+  "note": "Seekhne ke liye hai, financial advice nahi. Returns guaranteed nahi hote."
+ },
+ "voices": {
+  "N": [
+   "hm_omega",
+   1.0
+  ],
+  "chachi": [
+   "hf_beta",
+   0.98
+  ],
+  "dablu": [
+   "hm_psi",
+   1.08
+  ]
+ },
+ "sections": [
+  {
+   "name": "Gehna Ya Gold Fund?",
+   "lines": [
+    [
+     "chachi",
+     {
+      "stat": [
+       "₹1 lakh",
+       "Sone ka budget"
+      ]
+     },
+     "इस धनतेरस, एक लाख का सोना लेंगे!",
+     "Is Dhanteras, ek lakh ka sona lenge!"
+    ],
+    [
+     "dablu",
+     {},
+     "चाची, रुको! पहले बिल देखो।",
+     "Chachi, ruko! Pehle bill dekho."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "8–25%",
+       "Making charge + 3% GST"
+      ]
+     },
+     "गहने पे मेकिंग चार्ज, आम तौर पे आठ से पच्चीस प्रतिशत। ऊपर से तीन प्रतिशत जी एस टी।",
+     "Gehne pe making charge, aam taur pe 8 se 25 percent. Upar se 3 percent GST."
+    ],
+    [
+     "N",
+     {},
+     "और जब बेचने जाओ, तो मेकिंग चार्ज वापस नहीं मिलता।",
+     "Aur jab bechne jaao, to making charge wapas nahi milta."
+    ],
+    [
+     "chachi",
+     {},
+     "हैं?! मतलब एक लाख का गहना, बेचने पे कम?",
+     "Hain?! Matlab ek lakh ka gehna, bechne pe kam?"
+    ],
+    [
+     "N",
+     {},
+     "इन्वेस्टमेंट के लिए, गोल्ड ई टी एफ़ या गोल्ड म्यूचुअल फ़ंड बेहतर। ना मेकिंग चार्ज, ना चोरी का डर।",
+     "Investment ke liye, gold ETF ya gold mutual fund behtar. Na making charge, na chori ka darr."
+    ],
+    [
+     "dablu",
+     {},
+     "पहनने के लिए गहना, बचत के लिए गोल्ड फ़ंड!",
+     "Pehenne ke liye gehna, bachat ke liye gold fund!"
+    ],
+    [
+     "chachi",
+     {},
+     "वाह बेटा! अब गहना भी, और समझदारी भी!",
+     "Waah beta! Ab gehna bhi, aur samajhdaari bhi!"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "out": "09-lifestyle-inflation",
+ "ep": {
+  "num": 9,
+  "title": "Salary Badhi, Bachat Kyun Nahi?",
+  "look": "flat",
+  "cast": {
+   "N": "Narrator",
+   "vicky": "Vicky",
+   "neha": "Neha"
+  },
+  "note": "Seekhne ke liye hai, financial advice nahi. Returns guaranteed nahi hote."
+ },
+ "voices": {
+  "N": [
+   "hm_omega",
+   1.0
+  ],
+  "vicky": [
+   "hm_psi",
+   1.1
+  ],
+  "neha": [
+   "hf_alpha",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "Salary Badhi, Bachat Kyun Nahi?",
+   "lines": [
+    [
+     "N",
+     {
+      "stat": [
+       "₹30k → ₹60k",
+       "Nayi salary"
+      ]
+     },
+     "विक्की की सैलरी, तीस हज़ार से साठ हज़ार हो गई!",
+     "Vicky ki salary, 30 hazaar se 60 hazaar ho gayi!"
+    ],
+    [
+     "vicky",
+     {},
+     "अब तो लाइफ़ सेट! नई कार, नया फ़ोन, रोज़ स्विगी!",
+     "Ab to life set! Nayi car, naya phone, roz Swiggy!"
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "₹0",
+       "Mahine ke aakhir mein bachat"
+      ]
+     },
+     "पर महीने के आख़िर में, फिर वही हाल। बचत ज़ीरो।",
+     "Par mahine ke aakhir mein, phir wahi haal. Bachat zero."
+    ],
+    [
+     "N",
+     {},
+     "इसे लाइफ़स्टाइल इन्फ़्लेशन कहते हैं। कमाई बढ़ी, तो ख़र्चे भी उतने ही बढ़ गए।",
+     "Ise lifestyle inflation kehte hain. Kamai badhi, to kharche bhi utne hi badh gaye."
+    ],
+    [
+     "neha",
+     {
+      "stat": [
+       "50%",
+       "Har increment ka"
+      ]
+     },
+     "विक्की, जब सैलरी बढ़े, तो कम से कम आधा हिस्सा बचत में डाल।",
+     "Vicky, jab salary badhe, to kam se kam aadha hissa bachat mein daal."
+    ],
+    [
+     "N",
+     {},
+     "सैलरी आते ही, पहले बचत अपने आप कट जाए। बचा हुआ ख़र्च करो।",
+     "Salary aate hi, pehle bachat apne aap kat jaaye. Bacha hua kharch karo."
+    ],
+    [
+     "N",
+     {
+      "stat": [
+       "₹15,000",
+       "Har mahine bachat"
+      ]
+     },
+     "विक्की ने तीस हज़ार की बढ़त में से, पंद्रह हज़ार बचाने शुरू किए।",
+     "Vicky ne 30 hazaar ki badhat mein se, 15 hazaar bachaane shuru kiye."
+    ],
+    [
+     "vicky",
+     {},
+     "अब कमाई भी बढ़ रही है, और बचत भी!",
+     "Ab kamai bhi badh rahi hai, aur bachat bhi!"
+    ]
+   ]
+  }
+ ]
+}
