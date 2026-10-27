@@ -1,0 +1,35 @@
+1
+00:00:00,350 --> 00:00:08,001
+Riya aur Arjun, dono ki salary ek jaisi. Par 30 saal baad, ek ke paas lakhon, doosre ke paas kuch nahi.
+
+2
+00:00:08,301 --> 00:00:11,554
+Main to SIP tab karunga, jab salary badhegi.
+
+3
+00:00:11,854 --> 00:00:15,183
+Main to abhi se karungi. Sirf 500 rupaye mahina.
+
+4
+00:00:15,483 --> 00:00:19,144
+20 saal mein Riya ne kul 1 lakh 20 hazaar lagaye.
+
+5
+00:00:19,444 --> 00:00:25,068
+Agar 12 percent saalana return mile, to ye ban jaata hai lagbhag 5 lakh.
+
+6
+00:00:25,368 --> 00:00:29,381
+Aur 30 saal tak chalaya? Lagbhag 17 lakh 60 hazaar!
+
+7
+00:00:29,681 --> 00:00:34,380
+Maine 10 saal der se shuru kiya. Mere paas uska ek-tihaai bhi nahi.
+
+8
+00:00:34,680 --> 00:00:39,211
+Yahi hai compounding ka jaadu. Paisa nahi, time sabse bada hero hai.
+
+9
+00:00:39,511 --> 00:00:45,022
+Return guaranteed nahi hota, market upar-neeche hota hai. Par shuruaat aaj karo.
