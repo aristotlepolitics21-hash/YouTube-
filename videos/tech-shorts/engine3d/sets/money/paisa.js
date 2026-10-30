@@ -6,6 +6,7 @@
 import { body } from '../body/common.js';
 
 export function register(K) {
+  if (register.done) return register.done;
   const { THREE, BUILD, M, RB, SPH, G, plastic, matte, metal, glowM, sprite, label, ctex, textSign, clamp, lerp, seg, ease, frac, V, rng } = K;
   const B = body(K), { reach, shoot, popIn } = B;
   const CYL = (a, b, h, n = 24) => new THREE.CylinderGeometry(a, b, h, n);
@@ -217,6 +218,7 @@ export function register(K) {
   }
 
   // ---------- prop factory ----------
+  const EXTRA = {};
   function prop(look, [kind, x = 0, y = 0, z = 0, s = 1, ry = 0, arg]) {
     let g;
     switch (kind) {
@@ -261,7 +263,7 @@ export function register(K) {
       case 'papers': g = new THREE.Group(); for (let i = 0; i < (arg ?? 6); i++) g.add(paper().translateY(.01 + i * .02).rotateY(i * .3)); g.children.forEach(c => c.rotation.x = -Math.PI / 2); break;
       case 'plant': g = G(M(CYL(.3, .22, .45, 20), plastic(0xc8643c), { pos: [0, .22, 0] }), M(SPH(.45, 18, 14), plastic(0x4aa85a), { pos: [0, .75, 0] })); break;
       case 'counter': g = G(M(RB(arg ?? 3, 1.3, 1.0, .08), plastic(0x8a5a3a), { pos: [0, .65, 0] })); break;
-      default: g = new THREE.Group();
+      default: g = EXTRA[kind] ? EXTRA[kind](look, arg) : new THREE.Group();
     }
     g.position.set(x, y, z); g.scale.multiplyScalar(s); g.rotation.y = ry; g.userData.kind = kind; return g;
   }
@@ -286,7 +288,7 @@ export function register(K) {
         const nod = talk && look === 'faceless' ? { headNod: (base.headNod ?? 0) + Math.sin(s * 5) * .05, headTilt: (base.headTilt ?? 0) + Math.sin(s * 2.3) * .06 } : {};
         a.pose({ s: s + i * 1.3, seed: i * .3, ...tk, ...base, ...nod, mouth });
         if (held) { a.userData.arms[1].userData.el.children[1].getWorldPosition(_w); held.position.copy(_w).add(V(0, o.holdY ?? .1, .05)); held.rotation.y = a.rotation.y + (o.holdRy ?? 0); } });
-      props.forEach((g, i) => { const kd = g.userData.kind; if (kd === 'cointree') g.scale.setScalar((p.props[i][4] ?? 1) * (.55 + .45 * ease(seg(t, 0, .8))));
+      props.forEach((g, i) => { const kd = g.userData.kind; if (g.userData.anim) g.userData.anim(t, s, p, d); if (kd === 'cointree') g.scale.setScalar((p.props[i][4] ?? 1) * (.55 + .45 * ease(seg(t, 0, .8))));
         if (kd === 'hourglass') g.userData.set(ease(t)); if (kd === 'cash' && p.shrink) g.scale.setScalar((p.props[i][4] ?? 1) * (1 - .6 * ease(seg(t, .15, .85)))); if (kd === 'gauge') g.userData.set(lerp(p.gaugeFrom ?? .1, p.gaugeTo ?? .3, ease(seg(t, .1, .8))));
         if (kd === 'piggy' && p.coinDrop) g.rotation.z = Math.sin(s * 6) * .04; if (kd === 'snail') g.position.x = p.props[i][1] + s * .12;
         if (kd === 'umbrella') g.rotation.z = Math.sin(s * 1.4) * .04; if (kd === 'scale') g.rotation.z = Math.sin(s * 1.2) * .03; });
@@ -301,7 +303,7 @@ export function register(K) {
   const cv = document.getElementById('cv'), c = cv.getContext('2d'), F = (w, s) => `${w} ${s}px Inter, "Noto Color Emoji", sans-serif`;
   const backE = k => { k = clamp(k); const c1 = 1.9, c3 = c1 + 1; return 1 + c3 * Math.pow(k - 1, 3) + c1 * Math.pow(k - 1, 2); };
   window.OVERLAY2 = (L, T) => { const p = L.p || {}, E = window.EP || {}, s = T - L.start;
-    c.save(); c.font = F(900, 30); const tg = `PAISA TOONS · #${String(E.num ?? 0).padStart(2, '0')}`, tw = c.measureText(tg).width + 44;
+    c.save(); c.font = F(900, 30); const tg = `${E.series || 'PAISA TOONS'} · #${String(E.num ?? 0).padStart(2, '0')}`, tw = c.measureText(tg).width + 44;
     c.fillStyle = '#ffd23f'; c.beginPath(); c.roundRect(50, 110, tw, 56, 28); c.fill(); c.fillStyle = '#1d1410'; c.textAlign = 'left'; c.textBaseline = 'middle'; c.fillText(tg, 72, 140);
     if (E.title) { c.font = F(900, 52); let fs = 52; while (c.measureText(E.title).width > 980 && fs > 30) { fs -= 2; c.font = F(900, fs); } c.lineJoin = 'round'; c.lineWidth = 10; c.strokeStyle = 'rgba(0,0,0,.75)'; c.strokeText(E.title, 52, 214); c.fillStyle = '#fff'; c.fillText(E.title, 52, 214); }
     const nm = (E.cast || {})[p.speaker]; if (nm && L.cap && T >= L.cap[0] && T <= L.cap[1] + .15) { c.font = F(900, 34); const w = c.measureText(nm).width + 44; c.fillStyle = p.speaker === 'N' ? 'rgba(20,16,12,.8)' : '#e63946'; c.beginPath(); c.roundRect(W2 - w / 2, 1418, w, 54, 27); c.fill(); c.fillStyle = '#fff'; c.textAlign = 'center'; c.fillText(nm, W2, 1446); }
@@ -311,4 +313,6 @@ export function register(K) {
     c.restore();
     if (E.note && L === window.TL[window.TL.length - 1]) { c.save(); c.font = F(700, 24); c.textAlign = 'center'; c.fillStyle = 'rgba(255,255,255,.9)'; c.strokeStyle = 'rgba(0,0,0,.7)'; c.lineWidth = 5; c.strokeText(E.note, W2, 1880); c.fillText(E.note, W2, 1880); c.restore(); } };
   const W2 = 540;
+  // other series (sets/money/diy.js) add prop kinds here and reuse the actor, room and prop builders
+  return (register.done = { EXTRA, actor, room, prop, card, poster, screen, phone, cup, coin, cash, POSE });
 }
