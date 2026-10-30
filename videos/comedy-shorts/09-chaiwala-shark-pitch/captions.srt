@@ -1,0 +1,23 @@
+1
+00:00:00,350 --> 00:00:01,774
+Aapka business kya hai?
+
+2
+00:00:02,074 --> 00:00:04,244
+Chai, sahab. Roz 500 cup.
+
+3
+00:00:04,544 --> 00:00:06,120
+Isme technology kahan hai?
+
+4
+00:00:06,420 --> 00:00:08,483
+Sahab, UPI scanner hai na!
+
+5
+00:00:08,783 --> 00:00:10,424
+Aur funding kitni chahiye?
+
+6
+00:00:10,724 --> 00:00:14,274
+Funding nahi, aap bas chai ka paisa de do. 10 rupaye!
