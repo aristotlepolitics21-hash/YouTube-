@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:05,006
+Golu, tumhare paas 10 aam hain. Maine 5 maang liye. Kitne bache?
+
+2
+00:00:05,306 --> 00:00:05,948
+10, sir.
+
+3
+00:00:06,248 --> 00:00:07,321
+10 kaise?
+
+4
+00:00:07,621 --> 00:00:09,005
+Kyunki main dunga hi nahi!
