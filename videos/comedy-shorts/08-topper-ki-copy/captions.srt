@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:03,420
+Raju! Tumne poora paper Rohit se copy kiya hai!
+
+2
+00:00:03,720 --> 00:00:06,363
+Nahi sir, kasam se, apna likha hai.
+
+3
+00:00:06,663 --> 00:00:09,158
+To copy pe naam Rohit kyun likha hai?
+
+4
+00:00:09,458 --> 00:00:12,131
+Sir, emotional attachment ho gaya tha.
