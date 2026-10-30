@@ -1,0 +1,19 @@
+1
+00:00:00,350 --> 00:00:03,286
+Doctor sahab, mujhe bhoolne ki bimari hai.
+
+2
+00:00:03,586 --> 00:00:05,300
+Achha? Ye bimari kab se hai?
+
+3
+00:00:05,600 --> 00:00:06,906
+Kaun si bimari?
+
+4
+00:00:07,206 --> 00:00:09,714
+Theek hai, fees pehle de do. 500 rupaye.
+
+5
+00:00:10,014 --> 00:00:11,071
+Kaun si fees?
