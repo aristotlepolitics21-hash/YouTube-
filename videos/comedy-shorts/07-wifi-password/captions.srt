@@ -1,0 +1,19 @@
+1
+00:00:00,350 --> 00:00:03,658
+Monu beta, tumhare WiFi ka password kya hai?
+
+2
+00:00:03,958 --> 00:00:05,023
+Pehle chai pilao.
+
+3
+00:00:05,323 --> 00:00:08,097
+Arre pila dunga, pehle password to batao!
+
+4
+00:00:08,397 --> 00:00:11,778
+Wahi to bataya, uncle. PehleChaiPilao, bina space ke!
+
+5
+00:00:12,078 --> 00:00:15,647
+Waah! Ab to roz chai bhi milegi, aur internet bhi!
