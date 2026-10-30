@@ -1,0 +1,19 @@
+1
+00:00:00,350 --> 00:00:01,795
+Ruko! Helmet kahan hai?
+
+2
+00:00:02,095 --> 00:00:03,080
+Sir, ghar pe hai.
+
+3
+00:00:03,380 --> 00:00:04,251
+Ghar pe kyun?
+
+4
+00:00:04,551 --> 00:00:07,613
+Sir, sar mein dard tha, to use aaram karne chhod aaya.
+
+5
+00:00:07,913 --> 00:00:11,459
+Achha? To challan bhi aaram se katega. 1000 rupaye!
