@@ -6,8 +6,8 @@ UA = 'ShortsResearch/1.0 (https://github.com/aristotlepolitics21-hash; contact v
 API = 'https://commons.wikimedia.org/w/api.php'
 OK = re.compile(r'^(CC BY(-SA)? [0-9.]+|CC0|Public domain|PD.*)', re.I)
 SCENES = {'road': 'road construction India asphalt', 'office': 'office interior desks India', 'classroom': 'classroom India school students',
-  'clinic': 'doctor clinic India', 'living': 'living room India house interior', 'kirana': 'kirana shop India grocery', 'traffic': 'traffic India road junction',
-  'exam': 'examination hall India students', 'boardroom': 'conference room meeting table', 'street': 'residential street India colony', 'teastall': 'tea stall India roadside', 'bank': 'bank branch interior India'}
+  'clinic': 'doctor clinic India', 'living': 'living room India house interior', 'kirana': 'grocery shop India', 'traffic': 'traffic India road junction',
+  'exam': 'examination hall India students', 'boardroom': 'conference room meeting table', 'street': 'residential street India colony', 'teastall': 'tea stall India roadside', 'bank': 'bank interior counter'}
 def get(params, tries=6):
     url = API + '?' + urllib.parse.urlencode(params)
     for i in range(tries):
@@ -27,7 +27,7 @@ thumb = lambda u, w: re.sub(r'/\d+px-', f'/{w}px-', u)
 if sys.argv[1] == 'search':
     out = sys.argv[2]; os.makedirs(out, exist_ok=True); cf = f'{out}/candidates.json'; allc = json.load(open(cf)) if os.path.exists(cf) else {}
     for key, q in SCENES.items():
-        if key in allc: continue
+        if allc.get(key): continue
         d = get(dict(action='query', format='json', generator='search', gsrsearch=q + ' filetype:bitmap', gsrnamespace=6, gsrlimit=30, prop='imageinfo', iiprop='url|size|extmetadata|mime', iiurlwidth=330))
         cs = []
         for p in sorted(d.get('query', {}).get('pages', {}).values(), key=lambda p: p.get('index', 0)):
