@@ -13,5 +13,5 @@ ffmpeg -v error -y -f concat -safe 0 -i $W/concat.txt -c copy $W/video.mp4
 ffmpeg -v error -y -i $W/video.mp4 -i $W/narration.wav -af "highpass=f=70,acompressor=threshold=-18dB:ratio=3,loudnorm=I=-14:TP=-1.5:LRA=9" \
   -c:v libx264 -crf 20 -preset medium -pix_fmt yuv420p -c:a aac -b:a 160k -ar 48000 -shortest -movflags +faststart $EP/$OUT.mp4
 cp $W/captions.srt $EP/
-NODE_PATH=$(npm root -g) node $E/render.cjs $EP $W $EP/thumbnail.jpg --still $(python3 -c "import json;d=json.load(open('$W/durs.json'));print(sum(d[:-1])+1.4)")
+NODE_PATH=$(npm root -g) node $E/render.cjs $EP $W $EP/thumbnail.jpg --still $(python3 -c "import json;d=json.load(open('$W/durs.json'));print(round(sum(d[:-2])+d[-2]*.6,2))")
 echo made $EP/$OUT.mp4
