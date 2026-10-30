@@ -1,0 +1,193 @@
+{
+ "out": "02-interview-imaandari",
+ "ep": {
+  "num": 2,
+  "title": "😂 Interview mein imaandari 😂",
+  "final": "Seedha jawab 😆",
+  "mode": "comedy",
+  "cast": {
+   "boss": {
+    "name": "Boss",
+    "look": "suit",
+    "skin": "#f4f4f4",
+    "bigeye": true,
+    "hair": "spiky",
+    "hairColor": "#f28c28",
+    "tag": "#e63946",
+    "colors": {
+     "suit": "#1d1d24",
+     "tie": "#d62828"
+    }
+   },
+   "pappu": {
+    "name": "Pappu",
+    "look": "lungi",
+    "skin": "#c68642",
+    "stache": "big",
+    "tag": "#f28c28",
+    "colors": {
+     "lungi": "#2b6cb0",
+     "lungi2": "#9ecbff",
+     "gamcha": "#f28c28"
+    }
+   },
+   "hr": {
+    "name": "HR Sir",
+    "look": "suit",
+    "skin": "#f0c8a0",
+    "hair": "shaggy",
+    "shades": true,
+    "tag": "#1d1d24",
+    "colors": {
+     "suit": "#1d1d24",
+     "tie": "#ffffff"
+    }
+   }
+  }
+ },
+ "voices": {
+  "boss": [
+   "hm_omega",
+   1.06
+  ],
+  "pappu": [
+   "hm_psi",
+   0.96
+  ],
+  "hr": [
+   "hm_omega+hm_psi",
+   1.08
+  ]
+ },
+ "photos": {
+  "office": "../bg/office.jpg"
+ },
+ "sections": [
+  {
+   "name": "😂 Interview mein imaandari 😂",
+   "lines": [
+    [
+     "boss",
+     {
+      "bg": "photo:office",
+      "cast": [
+       [
+        "boss",
+        250,
+        1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "pappu",
+        720,
+        -1,
+        {
+         "s": 1.28
+        }
+       ]
+      ],
+      "pose": {
+       "boss": "explain"
+      },
+      "expr": {
+       "pappu": "neutral"
+      }
+     },
+     "अपनी सबसे बड़ी कमज़ोरी बताओ।",
+     "Apni sabse badi kamzori batao."
+    ],
+    [
+     "pappu",
+     {
+      "pose": {
+       "pappu": "hips",
+       "boss": "idle"
+      },
+      "expr": {
+       "pappu": "smug"
+      }
+     },
+     "ईमानदारी, साहब।",
+     "Imaandaari, sahab."
+    ],
+    [
+     "boss",
+     {
+      "pose": {
+       "boss": "shrug",
+       "pappu": "idle"
+      },
+      "expr": {
+       "boss": "think"
+      },
+      "fx": {
+       "boss": "question"
+      }
+     },
+     "ईमानदारी कोई कमज़ोरी नहीं होती!",
+     "Imaandaari koi kamzori nahi hoti!"
+    ],
+    [
+     "pappu",
+     {
+      "pose": {
+       "pappu": "shrug",
+       "boss": "idle"
+      },
+      "expr": {
+       "pappu": "smug",
+       "boss": "shock"
+      },
+      "fx": {}
+     },
+     "मुझे आपकी राय से कोई फ़र्क़ नहीं पड़ता।",
+     "Mujhe aapki raay se koi farq nahi padta."
+    ],
+    [
+     "hr",
+     {
+      "cast": [
+       [
+        "boss",
+        230,
+        1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "pappu",
+        600,
+        -1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "hr",
+        860,
+        -1,
+        {
+         "s": 1.28
+        }
+       ]
+      ],
+      "pose": {
+       "hr": "point",
+       "boss": "facepalm"
+      },
+      "expr": {
+       "hr": "lol",
+       "boss": "shock"
+      },
+      "final": true
+     },
+     "सर, बंदा ईमानदार तो है!",
+     "Sir, banda imaandaar to hai!"
+    ]
+   ]
+  }
+ ]
+}

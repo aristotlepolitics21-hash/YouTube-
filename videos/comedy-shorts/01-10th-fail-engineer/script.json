@@ -1,0 +1,220 @@
+{
+ "out": "01-10th-fail-engineer",
+ "ep": {
+  "num": 1,
+  "title": "😆 Power of 10th fail 😆",
+  "final": "10th fail, 100% dimaag 😆",
+  "mode": "comedy",
+  "cast": {
+   "boss": {
+    "name": "Engineer Sahab",
+    "look": "suit",
+    "skin": "#f4f4f4",
+    "bigeye": true,
+    "hair": "spiky",
+    "hairColor": "#f28c28",
+    "tag": "#e63946",
+    "colors": {
+     "suit": "#1d1d24",
+     "tie": "#d62828"
+    }
+   },
+   "shades": {
+    "name": "Contractor",
+    "look": "suit",
+    "skin": "#f0c8a0",
+    "hair": "shaggy",
+    "shades": true,
+    "tag": "#1d1d24",
+    "colors": {
+     "suit": "#1d1d24",
+     "tie": "#ffffff"
+    }
+   },
+   "bhola": {
+    "name": "Bhola",
+    "look": "lungi",
+    "skin": "#c68642",
+    "stache": "big",
+    "tag": "#f28c28",
+    "colors": {
+     "lungi": "#2b6cb0",
+     "lungi2": "#9ecbff",
+     "gamcha": "#f28c28"
+    }
+   }
+  }
+ },
+ "voices": {
+  "boss": [
+   "hm_omega",
+   1.06
+  ],
+  "shades": [
+   "hm_omega+hm_psi",
+   1.08
+  ],
+  "bhola": [
+   "hm_psi",
+   0.96
+  ]
+ },
+ "photos": {
+  "road": "../bg/road.jpg"
+ },
+ "sections": [
+  {
+   "name": "😆 Power of 10th fail 😆",
+   "lines": [
+    [
+     "boss",
+     {
+      "bg": "photo:road",
+      "cast": [
+       [
+        "boss",
+        200,
+        1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "bhola",
+        560,
+        -1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "shades",
+        850,
+        -1,
+        {
+         "s": 1.28
+        }
+       ]
+      ],
+      "pose": {
+       "boss": "explain"
+      },
+      "expr": {
+       "boss": "neutral",
+       "bhola": "neutral"
+      }
+     },
+     "इस सड़क की लंबाई नापनी है। मेज़रिंग टेप दो दिन में आएगा।",
+     "Is sadak ki lambai napni hai. Measuring tape do din mein aayega."
+    ],
+    [
+     "shades",
+     {
+      "pose": {
+       "shades": "shrug",
+       "boss": "idle"
+      },
+      "expr": {
+       "shades": "sad"
+      }
+     },
+     "सर, तब तक काम बंद रहेगा।",
+     "Sir, tab tak kaam band rahega."
+    ],
+    [
+     "bhola",
+     {
+      "pose": {
+       "bhola": "count",
+       "shades": "idle"
+      },
+      "expr": {
+       "bhola": "smug",
+       "shades": "neutral"
+      },
+      "fx": {
+       "bhola": "idea"
+      }
+     },
+     "साहब, टेप की क्या ज़रूरत? मेरी चप्पल पूरी एक फ़ुट की है।",
+     "Sahab, tape ki kya zaroorat? Meri chappal poori ek foot ki hai."
+    ],
+    [
+     "boss",
+     {
+      "pose": {
+       "boss": "shrug",
+       "bhola": "idle"
+      },
+      "expr": {
+       "boss": "think"
+      },
+      "fx": {
+       "boss": "question"
+      }
+     },
+     "तो?",
+     "To?"
+    ],
+    [
+     "bhola",
+     {
+      "cast": [
+       [
+        "boss",
+        200,
+        1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "bhola",
+        760,
+        1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "shades",
+        890,
+        -1,
+        {
+         "s": 1.28
+        }
+       ]
+      ],
+      "pose": {
+       "bhola": "point"
+      },
+      "expr": {
+       "bhola": "happy"
+      },
+      "fx": {}
+     },
+     "मैं चलता हूँ, आप गिनती करते जाओ!",
+     "Main chalta hoon, aap ginti karte jao!"
+    ],
+    [
+     "boss",
+     {
+      "pose": {
+       "boss": "cheer",
+       "bhola": "hips",
+       "shades": "facepalm"
+      },
+      "expr": {
+       "boss": "lol",
+       "bhola": "smug",
+       "shades": "shock"
+      },
+      "final": true
+     },
+     "वाह! इसको चीफ़ इंजीनियर बना दो!",
+     "Waah! Isko chief engineer bana do!"
+    ]
+   ]
+  }
+ ]
+}

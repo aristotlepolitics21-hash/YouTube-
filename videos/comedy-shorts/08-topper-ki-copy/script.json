@@ -1,0 +1,142 @@
+{
+ "out": "08-topper-ki-copy",
+ "ep": {
+  "num": 8,
+  "title": "😂 Topper ki copy 😂",
+  "final": "Copy bhi imaandari se 😆",
+  "mode": "comedy",
+  "cast": {
+   "sir": {
+    "name": "Examiner Sir",
+    "look": "suit",
+    "skin": "#f4f4f4",
+    "bigeye": true,
+    "hair": "spiky",
+    "hairColor": "#f28c28",
+    "tag": "#e63946",
+    "colors": {
+     "suit": "#1d1d24",
+     "tie": "#d62828"
+    }
+   },
+   "raju": {
+    "name": "Raju",
+    "look": "lungi",
+    "skin": "#c68642",
+    "stache": "big",
+    "tag": "#f28c28",
+    "colors": {
+     "lungi": "#6a4c93",
+     "lungi2": "#e0d0ff",
+     "gamcha": "#f28c28"
+    }
+   }
+  }
+ },
+ "voices": {
+  "sir": [
+   "hm_omega",
+   1.06
+  ],
+  "raju": [
+   "hm_psi",
+   0.96
+  ]
+ },
+ "photos": {
+  "exam": "../bg/exam.jpg"
+ },
+ "sections": [
+  {
+   "name": "😂 Topper ki copy 😂",
+   "lines": [
+    [
+     "sir",
+     {
+      "bg": "photo:exam",
+      "cast": [
+       [
+        "sir",
+        270,
+        1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "raju",
+        760,
+        -1,
+        {
+         "s": 1.28
+        }
+       ]
+      ],
+      "pose": {
+       "sir": "point"
+      },
+      "hold": {
+       "sir": "paper"
+      },
+      "expr": {
+       "sir": "angry"
+      }
+     },
+     "राजू! तुमने पूरा पेपर रोहित से कॉपी किया है!",
+     "Raju! Tumne poora paper Rohit se copy kiya hai!"
+    ],
+    [
+     "raju",
+     {
+      "pose": {
+       "raju": "namaste",
+       "sir": "idle"
+      },
+      "expr": {
+       "raju": "sad"
+      }
+     },
+     "नहीं सर, क़सम से, अपना लिखा है।",
+     "Nahi sir, kasam se, apna likha hai."
+    ],
+    [
+     "sir",
+     {
+      "pose": {
+       "sir": "shrug",
+       "raju": "idle"
+      },
+      "expr": {
+       "sir": "think"
+      },
+      "fx": {
+       "sir": "question"
+      }
+     },
+     "तो कॉपी पे नाम रोहित क्यों लिखा है?",
+     "To copy pe naam Rohit kyun likha hai?"
+    ],
+    [
+     "raju",
+     {
+      "pose": {
+       "raju": "scratch",
+       "sir": "facepalm"
+      },
+      "hold": {
+       "sir": null
+      },
+      "expr": {
+       "raju": "smug",
+       "sir": "shock"
+      },
+      "fx": {},
+      "final": true
+     },
+     "सर, इमोशनल अटैचमेंट हो गया था।",
+     "Sir, emotional attachment ho gaya tha."
+    ]
+   ]
+  }
+ ]
+}

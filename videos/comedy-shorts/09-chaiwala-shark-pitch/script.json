@@ -1,0 +1,201 @@
+{
+ "out": "09-chaiwala-shark-pitch",
+ "ep": {
+  "num": 9,
+  "title": "😆 Power of 10th fail investor 😆",
+  "final": "Profit from day 1 😆",
+  "mode": "comedy",
+  "cast": {
+   "shark": {
+    "name": "Shark Sir",
+    "look": "suit",
+    "skin": "#f4f4f4",
+    "bigeye": true,
+    "hair": "spiky",
+    "hairColor": "#f28c28",
+    "tag": "#e63946",
+    "colors": {
+     "suit": "#1d1d24",
+     "tie": "#d62828"
+    }
+   },
+   "shark2": {
+    "name": "Investor Ji",
+    "look": "suit",
+    "skin": "#f0c8a0",
+    "hair": "shaggy",
+    "shades": true,
+    "tag": "#1d1d24",
+    "colors": {
+     "suit": "#1d1d24",
+     "tie": "#ffffff"
+    }
+   },
+   "kallu": {
+    "name": "Kallu Chaiwala",
+    "look": "lungi",
+    "skin": "#c68642",
+    "stache": "big",
+    "tag": "#f28c28",
+    "colors": {
+     "lungi": "#2b6cb0",
+     "lungi2": "#9ecbff",
+     "gamcha": "#f28c28"
+    }
+   }
+  }
+ },
+ "voices": {
+  "shark": [
+   "hm_omega",
+   1.06
+  ],
+  "shark2": [
+   "hm_omega+hm_psi",
+   1.08
+  ],
+  "kallu": [
+   "hm_psi",
+   0.96
+  ]
+ },
+ "photos": {
+  "boardroom": "../bg/boardroom.jpg"
+ },
+ "sections": [
+  {
+   "name": "😆 Power of 10th fail investor 😆",
+   "lines": [
+    [
+     "shark",
+     {
+      "bg": "photo:boardroom",
+      "cast": [
+       [
+        "shark",
+        210,
+        1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "kallu",
+        560,
+        -1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "shark2",
+        855,
+        -1,
+        {
+         "s": 1.28
+        }
+       ]
+      ],
+      "pose": {
+       "shark": "explain"
+      }
+     },
+     "आपका बिज़नेस क्या है?",
+     "Aapka business kya hai?"
+    ],
+    [
+     "kallu",
+     {
+      "pose": {
+       "kallu": "give",
+       "shark": "idle"
+      },
+      "hold": {
+       "kallu": "glass"
+      },
+      "expr": {
+       "kallu": "happy"
+      }
+     },
+     "चाय, साहब। रोज़ पाँच सौ कप।",
+     "Chai, sahab. Roz 500 cup."
+    ],
+    [
+     "shark2",
+     {
+      "pose": {
+       "shark2": "shrug",
+       "kallu": "idle"
+      },
+      "expr": {
+       "shark2": "think"
+      },
+      "fx": {
+       "shark2": "question"
+      }
+     },
+     "इसमें टेक्नोलॉजी कहाँ है?",
+     "Isme technology kahan hai?"
+    ],
+    [
+     "kallu",
+     {
+      "pose": {
+       "kallu": "wave",
+       "shark2": "idle"
+      },
+      "hold": {
+       "kallu": "phone"
+      },
+      "expr": {
+       "kallu": "smug"
+      },
+      "fx": {
+       "kallu": "idea"
+      }
+     },
+     "साहब, यू पी आई स्कैनर है ना!",
+     "Sahab, UPI scanner hai na!"
+    ],
+    [
+     "shark",
+     {
+      "pose": {
+       "shark": "count",
+       "kallu": "idle"
+      },
+      "hold": {
+       "kallu": null
+      },
+      "expr": {
+       "shark": "smug"
+      },
+      "fx": {}
+     },
+     "और फ़ंडिंग कितनी चाहिए?",
+     "Aur funding kitni chahiye?"
+    ],
+    [
+     "kallu",
+     {
+      "pose": {
+       "kallu": "give",
+       "shark": "facepalm",
+       "shark2": "shock"
+      },
+      "hold": {
+       "kallu": "glass"
+      },
+      "expr": {
+       "kallu": "lol",
+       "shark": "shock"
+      },
+      "final": true
+     },
+     "फ़ंडिंग नहीं, आप बस चाय का पैसा दे दो। दस रुपये!",
+     "Funding nahi, aap bas chai ka paisa de do. 10 rupaye!"
+    ]
+   ]
+  }
+ ]
+}

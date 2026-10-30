@@ -1,0 +1,157 @@
+{
+ "out": "06-helmet-kahan-hai",
+ "ep": {
+  "num": 6,
+  "title": "😂 Helmet kahan hai? 😂",
+  "final": "Helmet pehno, dard nahi hoga 😆",
+  "mode": "comedy",
+  "cast": {
+   "cop": {
+    "name": "Havaldar",
+    "look": "suit",
+    "skin": "#f0c8a0",
+    "hair": "shaggy",
+    "shades": true,
+    "tag": "#1d1d24",
+    "colors": {
+     "suit": "#8a7a3a",
+     "tie": "#c9b47a",
+     "hat": "#8a7a3a"
+    },
+    "hat": "cap"
+   },
+   "bunty": {
+    "name": "Bunty",
+    "look": "tshirt",
+    "skin": "#c68642",
+    "hair": "spiky",
+    "tag": "#3d7bff",
+    "colors": {
+     "shirt": "#3d7bff",
+     "pants": "#2a2a30",
+     "logo": "COOL"
+    }
+   }
+  }
+ },
+ "voices": {
+  "cop": [
+   "hm_omega+hm_psi",
+   1.08
+  ],
+  "bunty": [
+   "hm_psi",
+   1.16
+  ]
+ },
+ "photos": {
+  "traffic": "../bg/traffic.jpg"
+ },
+ "sections": [
+  {
+   "name": "😂 Helmet kahan hai? 😂",
+   "lines": [
+    [
+     "cop",
+     {
+      "bg": "photo:traffic",
+      "cast": [
+       [
+        "cop",
+        300,
+        1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "bunty",
+        760,
+        -1,
+        {
+         "s": 1.28
+        }
+       ]
+      ],
+      "pose": {
+       "cop": "point"
+      },
+      "expr": {
+       "cop": "angry"
+      }
+     },
+     "रुको! हेलमेट कहाँ है?",
+     "Ruko! Helmet kahan hai?"
+    ],
+    [
+     "bunty",
+     {
+      "pose": {
+       "bunty": "shrug",
+       "cop": "idle"
+      },
+      "expr": {
+       "bunty": "smug"
+      }
+     },
+     "सर, घर पे है।",
+     "Sir, ghar pe hai."
+    ],
+    [
+     "cop",
+     {
+      "pose": {
+       "cop": "hips",
+       "bunty": "idle"
+      },
+      "expr": {
+       "cop": "think"
+      },
+      "fx": {
+       "cop": "question"
+      }
+     },
+     "घर पे क्यों?",
+     "Ghar pe kyun?"
+    ],
+    [
+     "bunty",
+     {
+      "pose": {
+       "bunty": "scratch",
+       "cop": "idle"
+      },
+      "expr": {
+       "bunty": "happy"
+      },
+      "fx": {}
+     },
+     "सर, सर में दर्द था, तो उसे आराम करने छोड़ आया।",
+     "Sir, sar mein dard tha, to use aaram karne chhod aaya."
+    ],
+    [
+     "cop",
+     {
+      "pose": {
+       "cop": "count",
+       "bunty": "facepalm"
+      },
+      "hold": {
+       "cop": "paper"
+      },
+      "expr": {
+       "cop": "smug",
+       "bunty": "shock"
+      },
+      "fx": {
+       "bunty": "sweat"
+      },
+      "final": true
+     },
+     "अच्छा? तो चालान भी आराम से कटेगा। हज़ार रुपये!",
+     "Achha? To challan bhi aaram se katega. 1000 rupaye!"
+    ]
+   ]
+  }
+ ]
+}

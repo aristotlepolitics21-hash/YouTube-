@@ -1,0 +1,150 @@
+{
+ "out": "04-bhoolne-ki-bimari",
+ "ep": {
+  "num": 4,
+  "title": "😂 Bhoolne ki bimari 😂",
+  "final": "Doctor bhi confuse 😆",
+  "mode": "comedy",
+  "cast": {
+   "doc": {
+    "name": "Doctor Sahab",
+    "look": "suit",
+    "skin": "#f0c8a0",
+    "hair": "shaggy",
+    "shades": true,
+    "tag": "#1d1d24",
+    "colors": {
+     "suit": "#f4f6f8",
+     "tie": "#3d7bff"
+    }
+   },
+   "chhedi": {
+    "name": "Chhedi Lal",
+    "look": "lungi",
+    "skin": "#c68642",
+    "stache": "big",
+    "tag": "#f28c28",
+    "colors": {
+     "lungi": "#2b6cb0",
+     "lungi2": "#9ecbff",
+     "gamcha": "#f28c28"
+    }
+   }
+  }
+ },
+ "voices": {
+  "doc": [
+   "hm_omega+hm_psi",
+   1.08
+  ],
+  "chhedi": [
+   "hm_psi",
+   0.96
+  ]
+ },
+ "photos": {
+  "clinic": "../bg/clinic.jpg"
+ },
+ "sections": [
+  {
+   "name": "😂 Bhoolne ki bimari 😂",
+   "lines": [
+    [
+     "chhedi",
+     {
+      "bg": "photo:clinic",
+      "cast": [
+       [
+        "chhedi",
+        300,
+        1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "doc",
+        760,
+        -1,
+        {
+         "s": 1.28
+        }
+       ]
+      ],
+      "pose": {
+       "chhedi": "scratch"
+      },
+      "expr": {
+       "chhedi": "sad"
+      }
+     },
+     "डॉक्टर साहब, मुझे भूलने की बीमारी है।",
+     "Doctor sahab, mujhe bhoolne ki bimari hai."
+    ],
+    [
+     "doc",
+     {
+      "pose": {
+       "doc": "explain",
+       "chhedi": "idle"
+      },
+      "expr": {
+       "doc": "think"
+      }
+     },
+     "अच्छा? ये बीमारी कब से है?",
+     "Achha? Ye bimari kab se hai?"
+    ],
+    [
+     "chhedi",
+     {
+      "pose": {
+       "chhedi": "shrug",
+       "doc": "idle"
+      },
+      "expr": {
+       "chhedi": "shock"
+      },
+      "fx": {
+       "chhedi": "question"
+      }
+     },
+     "कौन सी बीमारी?",
+     "Kaun si bimari?"
+    ],
+    [
+     "doc",
+     {
+      "pose": {
+       "doc": "facepalm",
+       "chhedi": "idle"
+      },
+      "expr": {
+       "doc": "sad",
+       "chhedi": "neutral"
+      },
+      "fx": {}
+     },
+     "ठीक है, फ़ीस पहले दे दो। पाँच सौ रुपये।",
+     "Theek hai, fees pehle de do. 500 rupaye."
+    ],
+    [
+     "chhedi",
+     {
+      "pose": {
+       "chhedi": "shrug",
+       "doc": "shrug"
+      },
+      "expr": {
+       "chhedi": "smug",
+       "doc": "shock"
+      },
+      "final": true
+     },
+     "कौन सी फ़ीस?",
+     "Kaun si fees?"
+    ]
+   ]
+  }
+ ]
+}

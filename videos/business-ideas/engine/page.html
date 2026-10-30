@@ -10,9 +10,10 @@ const F = (w, s) => `${w} ${s}px Inter, "Noto Color Emoji", sans-serif`;
 const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x)), lerp = (a, b, k) => a + (b - a) * k, out = k => 1 - Math.pow(1 - cl(k), 3);
 const back = k => { k = cl(k); const c1 = 1.9, c3 = c1 + 1; return 1 + c3 * Math.pow(k - 1, 3) + c1 * Math.pow(k - 1, 2); };
 const hash = n => { const x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
-let BEATS = [], EP = {}, CAST = {};
+let BEATS = [], EP = {}, CAST = {}, PHOTO = {};
 
 window.setup = async (d) => { await Promise.all([F(900, 40), F(800, 40), F(700, 40)].map(f => document.fonts.load(f))); EP = d.ep; CAST = castFrom(d.ep.cast);
+  PHOTO = Object.fromEntries(await Promise.all(Object.entries(d.photos || {}).map(([k, src]) => new Promise(r => { const i = new Image(); i.onload = () => r([k, i]); i.src = src; }))));
   let t = 0, prev = { bg: 'street', cast: [], pose: {}, expr: {}, hold: {} };
   BEATS = d.beats.map((b, i) => { const o = { bg: b.bg || prev.bg, cast: b.cast || prev.cast, pose: { ...(b.bg ? {} : prev.pose), ...(b.pose || {}) }, expr: { ...(b.bg ? {} : prev.expr), ...(b.expr || {}) },
       hold: { ...(b.bg ? {} : prev.hold), ...(b.hold || {}) }, fx: b.fx || {}, stat: b.stat, final: b.final, i, who: d.speakers[i], start: t, end: t + d.durs[i], cap: d.caps[i], text: d.texts[i] };
@@ -299,9 +300,10 @@ const LOOKS = { lungi: { wear: 'lungi', hair: 'short', gamcha: true }, topi: { w
 const castFrom = cast => Object.fromEntries(Object.entries(cast).map(([id, ch]) => { const L = LOOKS[ch.look] || {}; return [id, { ...L, ...ch, colors: { ...(L.colors || {}), ...(ch.colors || {}) } }]; }));
 function face(o, t, talk) { const f = o.f, fx = f * 9, ex = o.expr, hy = -575, hc = o.grey ? '#e8e2d6' : (o.hairColor || INK);
   const blink = (t * 1 + o.seed * 3.1) % 3.7 < .12;
-  const er = ex === 'shock' ? 1.25 : 1; [-30, 30].forEach(dx => { const x = dx + fx;
+  const er = (ex === 'shock' ? 1.25 : 1) * (o.bigeye ? 1.9 : 1); [-30, 30].forEach(dx => { const x = dx * (o.bigeye ? 1.25 : 1) + fx;
     if (blink || ex === 'lol') { c.beginPath(); ex === 'lol' ? c.arc(x, hy - 2, 16, Math.PI * 1.1, Math.PI * 1.9) : (c.moveTo(x - 16, hy), c.lineTo(x + 16, hy)); c.lineWidth = 6; c.strokeStyle = INK; c.stroke(); }
     else { ell(x, hy, 17 * er, 21 * er); ink('#fff', 5); ell(x + f * 5, hy + (ex === 'sad' ? 5 : 2), 8 * er, 10 * er); c.fillStyle = INK; c.fill(); ell(x + f * 5 - 3, hy - 3, 2.5, 3); c.fillStyle = '#fff'; c.fill(); } });
+  if (o.shades) { [-30, 30].forEach(dx => { ell(dx + fx, hy, 29, 26); ink('#2a2a32', 5); ell(dx + fx - 8, hy - 8, 7, 5); c.fillStyle = 'rgba(255,255,255,.35)'; c.fill(); }); c.beginPath(); c.moveTo(-4 + fx, hy - 4); c.lineTo(4 + fx, hy - 4); c.lineWidth = 5; c.strokeStyle = INK; c.stroke(); }
   if (o.glasses) { [-30, 30].forEach(dx => { o.glasses === 'square' ? rr(dx + fx - 27, hy - 22, 54, 44, 8) : ell(dx + fx, hy, 27, 27); c.lineWidth = 5; c.strokeStyle = INK; c.stroke(); }); c.beginPath(); c.moveTo(-3 + fx, hy); c.lineTo(3 + fx, hy); c.stroke(); }
   const bt = { sad: [.35, -6], shock: [0, -16], angry: [-.35, 2], smug: [.15, -4], think: [-.15, -2], happy: [0, -10], lol: [0, -10] }[ex] || [0, -4];
   [-1, 1].forEach(s => { c.save(); c.translate(s * 30 + fx, hy - 32 + bt[1] - (o.glasses ? 6 : 0)); c.rotate(s * bt[0] * (ex === 'smug' && s === 1 ? -1.5 : 1)); rr(-17, -5, 34, o.fem ? 7 : 10, 5); c.fillStyle = hc; c.fill(); c.lineWidth = 3; c.strokeStyle = INK; c.stroke(); c.restore(); });
@@ -322,13 +324,14 @@ function face(o, t, talk) { const f = o.f, fx = f * 9, ex = o.expr, hy = -575, h
 function head(o, t, talk) { const f = o.f, skin = o.skin, hy = -575, fx = f * 9, hc = o.grey ? '#dcd6ca' : (o.hairColor || INK), hair = o.hat === 'cap' && (o.hair === 'puffy' || o.hair === 'spiky') ? 'short' : o.hair;
   if (hair === 'bun') { ell(-f * 58, hy - 40, 44, 40); ink(hc); }
   if (hair === 'plait') limb([[-f * 50, hy + 10], [-f * 66, hy + 140], [-f * 60, hy + 240]], 30, hc);
+  if (hair === 'shaggy') { c.beginPath(); c.ellipse(0, hy + 2, 100, 104, 0, 0, Math.PI * 2); ink(hc); for (let i = -1; i <= 1; i += 2) { c.beginPath(); c.ellipse(i * 86, hy + 72, 30, 46, i * .3, 0, Math.PI * 2); ink(hc, 5); } }
   if (hair === 'long') { c.beginPath(); c.moveTo(-88, hy - 30); c.quadraticCurveTo(-112, hy + 120, -84, hy + 180); c.lineTo(84, hy + 180); c.quadraticCurveTo(112, hy + 120, 88, hy - 30); c.closePath(); ink(hc); }
   if (o.hat === 'turban') { ell(-f * 70, hy - 30, 30, 30); ink(o.colors.hat || '#f28c28'); }
   [-1, 1].forEach(s => { ell(s * 80, hy + 6, 16, 24); ink(skin, 5); });
   ell(0, hy, 80, 90); ink(skin);
   const path = (pts) => { c.beginPath(); c.moveTo(...pts[0]); for (let i = 1; i < pts.length; i += 3) c.bezierCurveTo(...pts[i], ...pts[i + 1], ...pts[i + 2]); };
   if (!o.hat || o.hat === 'cap' || o.hat === 'skullcap') {
-    if (hair === 'short' || hair === 'puffy' || hair === 'spiky') { path([[-82, hy - 4], [-90, hy - 120], [70, hy - 140], [84, hy - 10], [60, hy - 60], [0, hy - 70], [-30, hy - 56], [-50, hy - 40], [-70, hy - 30], [-82, hy - 4]]); ink(hc, 4);
+    if (hair === 'short' || hair === 'puffy' || hair === 'spiky' || hair === 'shaggy') { path([[-82, hy - 4], [-90, hy - 120], [70, hy - 140], [84, hy - 10], [60, hy - 60], [0, hy - 70], [-30, hy - 56], [-50, hy - 40], [-70, hy - 30], [-82, hy - 4]]); ink(hc, 4);
       if (hair === 'puffy') { ell(-30, hy - 92, 40, 26); ink(hc, 4); ell(26, hy - 96, 44, 28); ink(hc, 4); }
       if (hair === 'spiky') for (let i = 0; i < 5; i++) { const x = -60 + i * 30; poly([[x - 18, hy - 70], [x + 4 * f, hy - 128 + Math.abs(i - 2) * 10], [x + 18, hy - 70]]); ink(hc, 4); } }
     else if (hair === 'side') { path([[-82, hy - 10], [-84, hy - 110], [80, hy - 120], [82, hy - 10], [70, hy - 60], [20, hy - 74], [4 * f, hy - 70], [-30, hy - 64], [-70, hy - 50], [-82, hy - 10]]); ink(hc === INK ? '#2a2a2e' : hc, 4); }
@@ -393,7 +396,9 @@ function fx(o, T) { const e = o.fxk; if (!e) return; c.save(); c.translate(o.x, 
   c.restore(); }
 
 // ---------- UI: header, dialogue box, stickers, finish ----------
-function header(T) { rr(40, 60, 420, 64, 32); ink('#e63946'); txt('100 BUSINESS IDEAS', 250, 104, F(900, 32), '#fff'); rr(476, 60, 130, 64, 32); ink('#ffd23f'); txt(`#${String(EP.num).padStart(2, '0')}`, 541, 105, F(900, 36), INK);
+function header(T) { if (EP.mode === 'comedy') { const fs = fitFont(EP.title, 900, 64, 34, 900); c.font = F(900, fs); const w = Math.min(1010, c.measureText(EP.title).width + 90);
+    rr(540 - w / 2 + 6, 176, w, 120, 26); c.fillStyle = 'rgba(0,0,0,.25)'; c.fill(); rr(540 - w / 2, 170, w, 120, 26); c.fillStyle = '#fff'; c.fill(); txt(EP.title, 540, 230 + fs * .36, F(900, fs), '#141414'); return; }
+  rr(40, 60, 420, 64, 32); ink('#e63946'); txt('100 BUSINESS IDEAS', 250, 104, F(900, 32), '#fff'); rr(476, 60, 130, 64, 32); ink('#ffd23f'); txt(`#${String(EP.num).padStart(2, '0')}`, 541, 105, F(900, 36), INK);
   const fs = fitFont(EP.title, 1000, 78, 40); otxt(EP.title, 40, 210, F(900, fs), '#fff', 14, 'left'); }
 function wrap(words, maxW, font) { c.font = font; const rows = []; let row = []; words.forEach((w, i) => { const test = [...row.map(j => words[j]), w].join(' '); if (c.measureText(test).width > maxW && row.length) { rows.push(row); row = []; } row.push(i); }); if (row.length) rows.push(row); return rows; }
 function dialogue(b, T) { if (!b.cap || !b.text) return; const a = out((T - b.start) / .2); if (a <= 0) return;
@@ -411,7 +416,9 @@ function sticker(b, t) { if (!b.stat) return; const [v, l] = b.stat, p = back((t
   txt(v, 0, 10 + fs * .3, F(900, fs), INK); rr(-w / 2 + 40, 70, w - 80, 56, 28); c.fillStyle = '#e63946'; c.fill(); txt(l.toUpperCase(), 0, 110, F(900, 32), '#fff'); c.restore(); }
 function finish(b, t, T) { if (!b.final) return; const p = back((t - .2) / .5);
   c.save(); c.globalAlpha = .9 * cl(t / .4); c.translate(540, 760); c.rotate(T * .25); for (let i = 0; i < 16; i++) { c.beginPath(); c.moveTo(0, 0); c.arc(0, 0, 1400, i * Math.PI / 8, i * Math.PI / 8 + Math.PI / 16); c.closePath(); c.fillStyle = 'rgba(255,214,64,.35)'; c.fill(); } c.restore();
-  for (let i = 0; i < 26; i++) { const x = hash(i) * W, y = ((t * (300 + hash(i + 5) * 300) + hash(i + 2) * 1600) % 1700) - 120, r = 20 + hash(i + 7) * 14; c.save(); c.translate(x, y); c.scale(Math.abs(Math.cos(T * 4 + i)), 1); ell(0, 0, r, r); ink('#ffcf33', 5); txt('₹', 0, r * .4, F(900, r * 1.1), '#b8860b'); c.restore(); }
+  for (let i = 0; i < 26; i++) { const x = hash(i) * W, y = ((t * (300 + hash(i + 5) * 300) + hash(i + 2) * 1600) % 1700) - 120, r = 20 + hash(i + 7) * 14; c.save(); c.translate(x, y);
+    if (EP.mode === 'comedy') { c.rotate(Math.sin(T * 3 + i) * .4); txt(['😂', '🤣', '😆'][i % 3], 0, r, F(400, r * 2.6), '#000'); c.restore(); continue; }
+    c.scale(Math.abs(Math.cos(T * 4 + i)), 1); ell(0, 0, r, r); ink('#ffcf33', 5); txt('₹', 0, r * .4, F(900, r * 1.1), '#b8860b'); c.restore(); }
   if (p <= 0) return; c.save(); c.translate(540, 700); c.rotate(-.03); c.scale(p, p); const fs = fitFont(EP.final, 860, 96, 50); const w = Math.min(1000, c.measureText(EP.final).width + 110);
   rr(-w / 2 + 12, -100 + 12, w, 200, 26); c.fillStyle = INK; c.fill(); rr(-w / 2, -100, w, 200, 26); ink('#fff', 9); txt(EP.final, 0, fs * .35, F(900, fs), INK); c.restore(); }
 
@@ -421,7 +428,9 @@ function castState(b, i, t) { const pv = BEATS[i - 1], same = pv && !b.newScene;
     const old = same && pv.cast.find(q => q[0] === id); let from = old ? old[1] : null;
     if (!old && (pv ? !b.newScene : false)) from = x < 540 ? -240 : W + 240; else if (!old && b.enter && b.enter.includes(id)) from = x < 540 ? -240 : W + 240;
     if (from !== null && from !== x) { const k = out(t / .7); o.x = lerp(from, x, k); o.walk = k < 1; } return o; }); }
-function scene(b, i, T) { const t = T - b.start; ({ street, shop, home, farm, farmshop }[b.bg] || street)();
+function photoBg(img, t) { if (!img) { c.fillStyle = '#7ab'; c.fillRect(0, 0, W, H); return; } const z = 1.04 + .03 * cl(t / 8), s = Math.max(W / img.width, H / img.height) * z;
+  c.drawImage(img, (W - img.width * s) / 2, (H - img.height * s) / 2 + (EP.photoY || 0), img.width * s, img.height * s); }
+function scene(b, i, T) { const t = T - b.start; if (b.bg && b.bg.startsWith('photo:')) photoBg(PHOTO[b.bg.slice(6)], t); else ({ street, shop, home, farm, farmshop }[b.bg] || street)();
   const cs = castState(b, i, t); cs.sort((p, q) => (p.z || 0) - (q.z || 0)).forEach(o => character(o, t, o.id === b.who && T >= b.cap[0] && T <= b.cap[1], T)); cs.forEach(o => fx(o, T)); }
 window.__at = (T) => { NOW = T; let i = BEATS.findIndex(b => T < b.end); if (i < 0) i = BEATS.length - 1; const b = BEATS[i], t = T - b.start;
   c.save(); const sp = b.cast.find(q => q[0] === b.who), cx = sp ? sp[1] : 540, z = 1 + .035 * cl(t / (b.end - b.start)) + (b.final ? .02 : 0);

@@ -1,0 +1,135 @@
+{
+ "out": "03-maths-ka-genius",
+ "ep": {
+  "num": 3,
+  "title": "😆 Maths ka genius 😆",
+  "final": "Business mind 😆",
+  "mode": "comedy",
+  "cast": {
+   "teacher": {
+    "name": "Masterji",
+    "look": "kurta",
+    "skin": "#d39b6a",
+    "glasses": true,
+    "hair": "bald",
+    "grey": true,
+    "stache": true,
+    "tag": "#3aa76d",
+    "colors": {
+     "kurta": "#f4f1e8",
+     "jacket": "#6b4c3b"
+    }
+   },
+   "golu": {
+    "name": "Golu",
+    "look": "shirt",
+    "skin": "#c68642",
+    "hair": "puffy",
+    "tag": "#e24b4b",
+    "s": 1.0,
+    "colors": {
+     "shirt": "#ffffff",
+     "shirt2": "#cfe0ff",
+     "pants": "#2f4f8f"
+    }
+   }
+  }
+ },
+ "voices": {
+  "teacher": [
+   "hm_omega",
+   0.95
+  ],
+  "golu": [
+   "hm_psi",
+   1.16
+  ]
+ },
+ "photos": {
+  "classroom": "../bg/classroom.jpg"
+ },
+ "sections": [
+  {
+   "name": "😆 Maths ka genius 😆",
+   "lines": [
+    [
+     "teacher",
+     {
+      "bg": "photo:classroom",
+      "cast": [
+       [
+        "teacher",
+        280,
+        1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "golu",
+        760,
+        -1,
+        {
+         "s": 1.05
+        }
+       ]
+      ],
+      "pose": {
+       "teacher": "explain"
+      }
+     },
+     "गोलू, तुम्हारे पास दस आम हैं। मैंने पाँच माँग लिए। कितने बचे?",
+     "Golu, tumhare paas 10 aam hain. Maine 5 maang liye. Kitne bache?"
+    ],
+    [
+     "golu",
+     {
+      "pose": {
+       "golu": "count",
+       "teacher": "idle"
+      },
+      "expr": {
+       "golu": "smug"
+      }
+     },
+     "दस, सर।",
+     "10, sir."
+    ],
+    [
+     "teacher",
+     {
+      "pose": {
+       "teacher": "shrug",
+       "golu": "idle"
+      },
+      "expr": {
+       "teacher": "angry"
+      },
+      "fx": {
+       "teacher": "question"
+      }
+     },
+     "दस कैसे?",
+     "10 kaise?"
+    ],
+    [
+     "golu",
+     {
+      "pose": {
+       "golu": "hips",
+       "teacher": "facepalm"
+      },
+      "expr": {
+       "golu": "lol",
+       "teacher": "shock"
+      },
+      "fx": {},
+      "final": true
+     },
+     "क्योंकि मैं दूँगा ही नहीं!",
+     "Kyunki main dunga hi nahi!"
+    ]
+   ]
+  }
+ ]
+}

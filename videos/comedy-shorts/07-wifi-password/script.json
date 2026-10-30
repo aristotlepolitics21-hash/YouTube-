@@ -1,0 +1,144 @@
+{
+ "out": "07-wifi-password",
+ "ep": {
+  "num": 7,
+  "title": "😆 WiFi ka password 😆",
+  "final": "Smart padosi 😆",
+  "mode": "comedy",
+  "cast": {
+   "sharma": {
+    "name": "Sharma Uncle",
+    "look": "lungi",
+    "skin": "#c68642",
+    "stache": "big",
+    "tag": "#f28c28",
+    "colors": {
+     "lungi": "#8a5a30",
+     "lungi2": "#f0d9a8",
+     "gamcha": "#f28c28"
+    }
+   },
+   "monu": {
+    "name": "Monu",
+    "look": "hoodie",
+    "skin": "#d39b6a",
+    "hair": "puffy",
+    "tag": "#9b5de5",
+    "colors": {
+     "hoodie": "#9b5de5",
+     "pants": "#2a2a30"
+    }
+   }
+  }
+ },
+ "voices": {
+  "sharma": [
+   "hm_psi",
+   0.96
+  ],
+  "monu": [
+   "hm_psi",
+   1.16
+  ]
+ },
+ "photos": {
+  "street": "../bg/street.jpg"
+ },
+ "sections": [
+  {
+   "name": "😆 WiFi ka password 😆",
+   "lines": [
+    [
+     "sharma",
+     {
+      "bg": "photo:street",
+      "cast": [
+       [
+        "sharma",
+        300,
+        1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "monu",
+        760,
+        -1,
+        {
+         "s": 1.28
+        }
+       ]
+      ],
+      "pose": {
+       "sharma": "wave"
+      },
+      "expr": {
+       "sharma": "happy"
+      }
+     },
+     "मोनू बेटा, तुम्हारे वाई फ़ाई का पासवर्ड क्या है?",
+     "Monu beta, tumhare WiFi ka password kya hai?"
+    ],
+    [
+     "monu",
+     {
+      "pose": {
+       "monu": "hips",
+       "sharma": "idle"
+      },
+      "expr": {
+       "monu": "smug"
+      }
+     },
+     "पहले चाय पिलाओ।",
+     "Pehle chai pilao."
+    ],
+    [
+     "sharma",
+     {
+      "pose": {
+       "sharma": "shrug",
+       "monu": "idle"
+      },
+      "expr": {
+       "sharma": "angry"
+      }
+     },
+     "अरे पिला दूँगा, पहले पासवर्ड तो बताओ!",
+     "Arre pila dunga, pehle password to batao!"
+    ],
+    [
+     "monu",
+     {
+      "pose": {
+       "monu": "facepalm",
+       "sharma": "idle"
+      },
+      "expr": {
+       "monu": "sad"
+      }
+     },
+     "वही तो बताया, अंकल। पहले चाय पिलाओ, बिना स्पेस के!",
+     "Wahi to bataya, uncle. PehleChaiPilao, bina space ke!"
+    ],
+    [
+     "sharma",
+     {
+      "pose": {
+       "sharma": "cheer",
+       "monu": "shock"
+      },
+      "expr": {
+       "sharma": "lol",
+       "monu": "shock"
+      },
+      "final": true
+     },
+     "वाह! अब तो रोज़ चाय भी मिलेगी, और इंटरनेट भी!",
+     "Waah! Ab to roz chai bhi milegi, aur internet bhi!"
+    ]
+   ]
+  }
+ ]
+}

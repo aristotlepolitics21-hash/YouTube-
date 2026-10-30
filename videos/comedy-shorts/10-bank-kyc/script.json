@@ -1,0 +1,158 @@
+{
+ "out": "10-bank-kyc",
+ "ep": {
+  "num": 10,
+  "title": "😂 Bank mein KYC 😂",
+  "final": "Logic mein dum hai 😆",
+  "mode": "comedy",
+  "cast": {
+   "clerk": {
+    "name": "Bank Babu",
+    "look": "suit",
+    "skin": "#f0c8a0",
+    "hair": "shaggy",
+    "shades": true,
+    "tag": "#1d1d24",
+    "colors": {
+     "suit": "#2b6cb0",
+     "tie": "#ffffff"
+    }
+   },
+   "ramu": {
+    "name": "Ramu Kaka",
+    "look": "lungi",
+    "skin": "#c68642",
+    "stache": "big",
+    "tag": "#f28c28",
+    "colors": {
+     "lungi": "#2b6cb0",
+     "lungi2": "#9ecbff",
+     "gamcha": "#f28c28"
+    },
+    "grey": true,
+    "hair": "bald"
+   }
+  }
+ },
+ "voices": {
+  "clerk": [
+   "hm_omega+hm_psi",
+   1.08
+  ],
+  "ramu": [
+   "hm_omega+hm_psi",
+   0.9
+  ]
+ },
+ "photos": {
+  "bank": "../bg/bank.jpg"
+ },
+ "sections": [
+  {
+   "name": "😂 Bank mein KYC 😂",
+   "lines": [
+    [
+     "clerk",
+     {
+      "bg": "photo:bank",
+      "cast": [
+       [
+        "clerk",
+        280,
+        1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "ramu",
+        760,
+        -1,
+        {
+         "s": 1.28
+        }
+       ]
+      ],
+      "pose": {
+       "clerk": "explain"
+      }
+     },
+     "काका, के वाई सी अपडेट करनी है। एड्रेस प्रूफ़ लाए?",
+     "Kaka, KYC update karni hai. Address proof laaye?"
+    ],
+    [
+     "ramu",
+     {
+      "pose": {
+       "ramu": "give",
+       "clerk": "idle"
+      },
+      "hold": {
+       "ramu": "paper"
+      },
+      "expr": {
+       "ramu": "happy"
+      }
+     },
+     "हाँ बेटा, ये लो।",
+     "Haan beta, ye lo."
+    ],
+    [
+     "clerk",
+     {
+      "pose": {
+       "clerk": "give",
+       "ramu": "idle"
+      },
+      "hold": {
+       "ramu": null,
+       "clerk": "paper"
+      },
+      "expr": {
+       "clerk": "shock"
+      },
+      "fx": {
+       "clerk": "sweat"
+      }
+     },
+     "ये तो बिजली का बिल है... दो हज़ार पंद्रह का!",
+     "Ye to bijli ka bill hai... 2015 ka!"
+    ],
+    [
+     "ramu",
+     {
+      "pose": {
+       "ramu": "hips",
+       "clerk": "idle"
+      },
+      "expr": {
+       "ramu": "smug"
+      },
+      "fx": {}
+     },
+     "घर तो वही है ना, बेटा। हम कहीं शिफ़्ट नहीं हुए!",
+     "Ghar to wahi hai na, beta. Hum kahin shift nahi hue!"
+    ],
+    [
+     "clerk",
+     {
+      "pose": {
+       "clerk": "facepalm",
+       "ramu": "cheer"
+      },
+      "hold": {
+       "clerk": null
+      },
+      "expr": {
+       "clerk": "sad",
+       "ramu": "lol"
+      },
+      "final": true
+     },
+     "काका, आपका लॉजिक तो बैंक से भी मज़बूत है!",
+     "Kaka, aapka logic to bank se bhi mazboot hai!"
+    ]
+   ]
+  }
+ ]
+}

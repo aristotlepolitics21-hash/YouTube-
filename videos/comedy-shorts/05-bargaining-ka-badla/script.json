@@ -1,0 +1,168 @@
+{
+ "out": "05-bargaining-ka-badla",
+ "ep": {
+  "num": 5,
+  "title": "😆 Bhaiya, 8 ka de do 😆",
+  "final": "Bargaining ka badla 😆",
+  "mode": "comedy",
+  "cast": {
+   "lallu": {
+    "name": "Lallu Dukaandar",
+    "look": "lungi",
+    "skin": "#c68642",
+    "stache": "big",
+    "tag": "#f28c28",
+    "colors": {
+     "lungi": "#2f8f4e",
+     "lungi2": "#b7f0c8",
+     "gamcha": "#f28c28"
+    }
+   },
+   "aunty": {
+    "name": "Aunty Ji",
+    "look": "saree",
+    "skin": "#d39b6a",
+    "tag": "#e63977",
+    "colors": {
+     "saree": "#e63977",
+     "blouse": "#ffd23f"
+    }
+   }
+  }
+ },
+ "voices": {
+  "lallu": [
+   "hm_psi",
+   0.96
+  ],
+  "aunty": [
+   "hf_beta",
+   1.02
+  ]
+ },
+ "photos": {
+  "kirana": "../bg/kirana.jpg"
+ },
+ "sections": [
+  {
+   "name": "😆 Bhaiya, 8 ka de do 😆",
+   "lines": [
+    [
+     "aunty",
+     {
+      "bg": "photo:kirana",
+      "cast": [
+       [
+        "lallu",
+        300,
+        1,
+        {
+         "s": 1.28
+        }
+       ],
+       [
+        "aunty",
+        760,
+        -1,
+        {
+         "s": 1.28
+        }
+       ]
+      ],
+      "pose": {
+       "aunty": "point"
+      }
+     },
+     "भैया, ये बिस्कुट का पैकेट कितने का?",
+     "Bhaiya, ye biscuit ka packet kitne ka?"
+    ],
+    [
+     "lallu",
+     {
+      "pose": {
+       "lallu": "count",
+       "aunty": "idle"
+      },
+      "expr": {
+       "lallu": "happy"
+      }
+     },
+     "दस रुपये का, बहन जी। दस बिस्कुट हैं।",
+     "10 rupaye ka, behen ji. 10 biscuit hain."
+    ],
+    [
+     "aunty",
+     {
+      "pose": {
+       "aunty": "hips",
+       "lallu": "idle"
+      },
+      "expr": {
+       "aunty": "smug"
+      }
+     },
+     "आठ का दे दो ना।",
+     "8 ka de do na."
+    ],
+    [
+     "lallu",
+     {
+      "pose": {
+       "lallu": "give",
+       "aunty": "idle"
+      },
+      "hold": {
+       "lallu": "plate"
+      },
+      "expr": {
+       "lallu": "smug",
+       "aunty": "happy"
+      },
+      "fx": {
+       "lallu": "idea"
+      }
+     },
+     "ठीक है। ये लो, आठ रुपये में आठ बिस्कुट!",
+     "Theek hai. Ye lo, 8 rupaye mein 8 biscuit!"
+    ],
+    [
+     "aunty",
+     {
+      "pose": {
+       "aunty": "shrug",
+       "lallu": "idle"
+      },
+      "hold": {
+       "lallu": null
+      },
+      "expr": {
+       "aunty": "shock"
+      },
+      "fx": {
+       "aunty": "question"
+      }
+     },
+     "और बाक़ी दो?",
+     "Aur baaki do?"
+    ],
+    [
+     "lallu",
+     {
+      "pose": {
+       "lallu": "hips",
+       "aunty": "facepalm"
+      },
+      "expr": {
+       "lallu": "lol",
+       "aunty": "angry"
+      },
+      "fx": {},
+      "final": true
+     },
+     "वो आपकी दो रुपये की बचत में गए!",
+     "Wo aapki 2 rupaye ki bachat mein gaye!"
+    ]
+   ]
+  }
+ ]
+}
