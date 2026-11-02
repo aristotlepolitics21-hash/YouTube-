@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:02,584
+You're trapped in a stone room with two exits.
+
+2
+00:00:02,884 --> 00:00:08,662
+Through the first is a giant magnifying glass. The sunlight through it will burn you instantly.
+
+3
+00:00:08,962 --> 00:00:12,239
+The second exit is guarded by a fire-breathing dragon.
+
+4
+00:00:12,539 --> 00:00:15,197
+How do you escape? You have 10 seconds. Think!
+
+5
+00:00:23,997 --> 00:00:25,041
+Wait until night!
+
+6
+00:00:25,341 --> 00:00:31,129
+With no sunlight, the magnifying glass can't burn you. Just walk out through the first exit.
+
+7
+00:00:31,429 --> 00:00:34,515
+Did you get it right? Follow for a new riddle every day!
