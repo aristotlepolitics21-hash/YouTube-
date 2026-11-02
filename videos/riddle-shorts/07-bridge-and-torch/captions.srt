@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:07,245
+Four people must cross a shaky bridge at night. They have one torch, and the bridge holds only two at a time.
+
+2
+00:00:07,545 --> 00:00:13,588
+They take 1, 2, 5 and 10 minutes to cross. A pair walks at the slower person's speed.
+
+3
+00:00:13,888 --> 00:00:18,459
+The torch must be carried on every crossing, and they have only 17 minutes.
+
+4
+00:00:18,759 --> 00:00:22,802
+Can everyone cross in 17 minutes? You have 10 seconds. Think!
+
+5
+00:00:31,602 --> 00:00:35,319
+1 and 2 cross: 2 minutes. 1 comes back: 3 minutes.
+
+6
+00:00:35,619 --> 00:00:44,435
+The two slowest, 5 and 10, cross together: 13 minutes. 2 comes back: 15. Then 1 and 2 cross again: exactly 17!
+
+7
+00:00:44,735 --> 00:00:47,821
+Did you get it right? Follow for a new riddle every day!
