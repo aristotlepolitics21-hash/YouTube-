@@ -1,0 +1,189 @@
+{
+ "out": "04-mirror-and-table",
+ "ep": {
+  "num": 4,
+  "title": "The Mirror and the Table",
+  "mode": "riddle",
+  "cta": "Follow for a new riddle every day!",
+  "cast": {
+   "N": {
+    "name": "Narrator"
+   },
+   "p": {
+    "name": "Prisoner",
+    "look": "shirt",
+    "wear": "stripes",
+    "hair": "side",
+    "skin": "#e0ac69",
+    "colors": {
+     "pants": "#f2f2f2",
+     "shoes": "#5a3a22"
+    }
+   }
+  }
+ },
+ "voices": {
+  "N": [
+   "am_michael",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "The Mirror and the Table",
+   "lines": [
+    [
+     "N",
+     {
+      "bg": "room",
+      "cast": [
+       [
+        "p",
+        300,
+        1,
+        {
+         "s": 1.15,
+         "y": 120
+        }
+       ]
+      ],
+      "pose": {
+       "p": "sad"
+      },
+      "expr": {
+       "p": "sad"
+      },
+      "props": [
+       [
+        "mirror",
+        760,
+        800,
+        1.1
+       ],
+       [
+        "table",
+        760,
+        1500,
+        1.2
+       ]
+      ]
+     },
+     "You're locked in a room with no doors and no windows.",
+     "You're locked in a room with no doors and no windows."
+    ],
+    [
+     "N",
+     {
+      "pose": {
+       "p": "shrug"
+      },
+      "expr": {
+       "p": "think"
+      },
+      "fx": {
+       "p": "question"
+      }
+     },
+     "All you have is a mirror and a table.",
+     "All you have is a mirror and a table."
+    ],
+    [
+     "N",
+     {
+      "ask": "How do you get out?",
+      "timer": 10,
+      "pause": 8.5
+     },
+     "How do you get out? You have 10 seconds. Think!",
+     "How do you get out? You have 10 seconds. Think!"
+    ],
+    [
+     "N",
+     {
+      "reveal": true,
+      "answer": "Look in the mirror.|You see what you saw!",
+      "fx": {},
+      "pose": {
+       "p": "point"
+      },
+      "expr": {
+       "p": "smug"
+      }
+     },
+     "Look in the mirror. You see what you saw.",
+     "Look in the mirror. You see what you saw."
+    ],
+    [
+     "N",
+     {
+      "reveal": false,
+      "props": [
+       [
+        "mirror",
+        760,
+        800,
+        1.1
+       ],
+       [
+        "table",
+        760,
+        1500,
+        1.2,
+        1,
+        "cut"
+       ],
+       [
+        "hole",
+        760,
+        1620,
+        1.2
+       ]
+      ],
+      "hold": {
+       "p": null
+      },
+      "front": [
+       [
+        "saw",
+        220,
+        1240,
+        0.9
+       ]
+      ],
+      "pose": {
+       "p": "give"
+      },
+      "expr": {
+       "p": "happy"
+      }
+     },
+     "Take the saw and cut the table in half. Two halves make a whole. Climb out through the hole!",
+     "Take the saw and cut the table in half. Two halves make a whole. Climb out through the hole!"
+    ],
+    [
+     "N",
+     {
+      "pose": {
+       "p": "cheer"
+      },
+      "expr": {
+       "p": "lol"
+      },
+      "front": []
+     },
+     "Yes, it is a pun riddle. Did it get you?",
+     "Yes, it's a pun riddle. Did it get you?"
+    ],
+    [
+     "N",
+     {
+      "pose": {},
+      "reveal": false
+     },
+     "Did you get it right? Follow for a new riddle every day!",
+     "Did you get it right? Follow for a new riddle every day!"
+    ]
+   ]
+  }
+ ]
+}

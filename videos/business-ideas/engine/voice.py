@@ -17,7 +17,7 @@ for i, l in enumerate(lines):
     with wave.open(f) as w: fr = w.readframes(w.getnframes()); d = w.getnframes() / SR
     lead = 0.35 if i == 0 else 0.0
     nxt = lines[i + 1] if i + 1 < len(lines) else None
-    gap = 2.4 if nxt is None else (0.55 if nxt[1].get("bg") else 0.3)
+    gap = 2.4 if nxt is None else (0.55 if nxt[1].get("bg") else 0.3) + l[1].get("pause", 0)  # a beat can hold silence after its line (riddle think time)
     out.writeframes(sil(lead) + fr + sil(gap)); caps.append((t + lead, t + lead + d, l[3]))
     durs.append(lead + d + gap); t += lead + d + gap
 out.close()

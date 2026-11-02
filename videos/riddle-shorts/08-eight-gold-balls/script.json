@@ -1,0 +1,161 @@
+{
+ "out": "08-eight-gold-balls",
+ "ep": {
+  "num": 8,
+  "title": "The King's 8 Gold Balls",
+  "mode": "riddle",
+  "cta": "Follow for a new riddle every day!",
+  "cast": {
+   "N": {
+    "name": "Narrator"
+   },
+   "k": {
+    "name": "King",
+    "look": "kurta",
+    "hat": "crown",
+    "beard": true,
+    "grey": true,
+    "skin": "#e0ac69",
+    "colors": {
+     "kurta": "#6a3a9a",
+     "jacket": "#ffcf33"
+    }
+   }
+  }
+ },
+ "voices": {
+  "N": [
+   "am_michael",
+   1.04
+  ],
+  "k": [
+   "bm_lewis",
+   0.98
+  ]
+ },
+ "sections": [
+  {
+   "name": "The King's 8 Gold Balls",
+   "lines": [
+    [
+     "N",
+     {
+      "bg": "treasury",
+      "cast": [
+       [
+        "k",
+        230,
+        1,
+        {
+         "s": 1.15,
+         "y": 60
+        }
+       ]
+      ],
+      "pose": {
+       "k": "hips"
+      },
+      "props": [
+       [
+        "scale",
+        700,
+        1500,
+        0.8
+       ]
+      ],
+      "front": [
+       [
+        "balls",
+        640,
+        1700,
+        0.9,
+        1,
+        8
+       ]
+      ]
+     },
+     "The king has 8 gold balls. They look the same, but one is slightly heavier.",
+     "The king has 8 gold balls. They look the same, but one is slightly heavier."
+    ],
+    [
+     "k",
+     {
+      "pose": {
+       "k": "point"
+      },
+      "expr": {
+       "k": "smug"
+      }
+     },
+     "Find the heavy one, and you may use my scale only twice!",
+     "Find the heavy one, and you may use my scale only twice!"
+    ],
+    [
+     "N",
+     {
+      "ask": "How do you find it in 2 weighings?",
+      "timer": 10,
+      "pause": 8.5
+     },
+     "How do you find it in 2 weighings? You have 10 seconds. Think!",
+     "How do you find it in 2 weighings? You have 10 seconds. Think!"
+    ],
+    [
+     "N",
+     {
+      "reveal": true,
+      "answer": "Weigh 3 vs 3.|Balanced? Weigh the last 2.",
+      "pose": {
+       "k": "idle"
+      },
+      "props": [
+       [
+        "scale",
+        700,
+        1500,
+        0.8,
+        1,
+        "left"
+       ]
+      ]
+     },
+     "Put 3 balls on each side. If they balance, the heavy ball is one of the 2 left over. Weigh those two.",
+     "Put 3 balls on each side. If they balance, the heavy ball is one of the 2 left over. Weigh those two."
+    ],
+    [
+     "N",
+     {
+      "reveal": false,
+      "front": [
+       [
+        "balls",
+        640,
+        1700,
+        0.9,
+        -1,
+        8
+       ]
+      ],
+      "pose": {
+       "k": "cheer"
+      },
+      "expr": {
+       "k": "lol"
+      }
+     },
+     "If one side is heavier, take those 3. Weigh one against another. If they balance, it is the third ball.",
+     "If one side is heavier, take those 3. Weigh one against another. If they balance, it's the third ball."
+    ],
+    [
+     "N",
+     {
+      "pose": {},
+      "reveal": false
+     },
+     "Did you get it right? Follow for a new riddle every day!",
+     "Did you get it right? Follow for a new riddle every day!"
+    ]
+   ]
+  }
+ ]
+}

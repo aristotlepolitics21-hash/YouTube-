@@ -1,0 +1,197 @@
+{
+ "out": "09-two-fathers-two-sons",
+ "ep": {
+  "num": 9,
+  "title": "Two Fathers, Two Sons",
+  "mode": "riddle",
+  "cta": "Follow for a new riddle every day!",
+  "cast": {
+   "N": {
+    "name": "Narrator"
+   },
+   "gp": {
+    "name": "Grandpa",
+    "look": "kurta",
+    "hair": "bald",
+    "grey": true,
+    "beard": true,
+    "skin": "#c68642",
+    "colors": {
+     "kurta": "#f4f1e8",
+     "jacket": "#6b4c3b"
+    }
+   },
+   "dad": {
+    "name": "Dad",
+    "look": "shirt",
+    "stache": true,
+    "skin": "#c68642",
+    "colors": {
+     "shirt": "#3d7bff",
+     "shirt2": "#cfe0ff"
+    }
+   },
+   "kid": {
+    "name": "Son",
+    "look": "tshirt",
+    "skin": "#c68642",
+    "hair": "puffy",
+    "s": 0.8,
+    "colors": {
+     "shirt": "#ffd23f"
+    }
+   }
+  }
+ },
+ "voices": {
+  "N": [
+   "am_michael",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "Two Fathers, Two Sons",
+   "lines": [
+    [
+     "N",
+     {
+      "bg": "lake",
+      "cast": [
+       [
+        "gp",
+        300,
+        1,
+        {
+         "s": 0.95,
+         "y": -120
+        }
+       ],
+       [
+        "dad",
+        540,
+        1,
+        {
+         "s": 0.95,
+         "y": -120
+        }
+       ],
+       [
+        "kid",
+        760,
+        -1,
+        {
+         "s": 0.75,
+         "y": -120
+        }
+       ]
+      ],
+      "props": [
+       [
+        "boat",
+        540,
+        1500,
+        1.5
+       ]
+      ],
+      "front": [
+       [
+        "boat",
+        540,
+        1500,
+        1.5
+       ]
+      ]
+     },
+     "Two fathers and two sons go fishing. Together they catch exactly three fish.",
+     "Two fathers and two sons go fishing. Together they catch exactly three fish."
+    ],
+    [
+     "N",
+     {
+      "front": [
+       [
+        "boat",
+        540,
+        1500,
+        1.5
+       ],
+       [
+        "fish",
+        300,
+        1180,
+        0.8
+       ],
+       [
+        "fish",
+        540,
+        1180,
+        0.8
+       ],
+       [
+        "fish",
+        760,
+        1180,
+        0.8,
+        -1
+       ]
+      ],
+      "pose": {
+       "gp": "give",
+       "dad": "give",
+       "kid": "cheer"
+      }
+     },
+     "Each of them takes home one whole fish. How is that possible?",
+     "Each of them takes home one whole fish. How is that possible?"
+    ],
+    [
+     "N",
+     {
+      "ask": "How does everyone get one fish?",
+      "timer": 10,
+      "pause": 8.5
+     },
+     "How does everyone get one fish? You have 10 seconds. Think!",
+     "How does everyone get one fish? You have 10 seconds. Think!"
+    ],
+    [
+     "N",
+     {
+      "reveal": true,
+      "answer": "There are only 3 people!"
+     },
+     "There are only three people!",
+     "There are only three people!"
+    ],
+    [
+     "N",
+     {
+      "reveal": false,
+      "pose": {
+       "gp": "cheer",
+       "dad": "point",
+       "kid": "cheer"
+      },
+      "expr": {
+       "gp": "lol",
+       "dad": "smug",
+       "kid": "lol"
+      }
+     },
+     "A grandfather, his son, and his grandson. The dad in the middle is both a father and a son.",
+     "A grandfather, his son, and his grandson. The dad in the middle is both a father and a son."
+    ],
+    [
+     "N",
+     {
+      "pose": {},
+      "reveal": false
+     },
+     "Did you get it right? Follow for a new riddle every day!",
+     "Did you get it right? Follow for a new riddle every day!"
+    ]
+   ]
+  }
+ ]
+}

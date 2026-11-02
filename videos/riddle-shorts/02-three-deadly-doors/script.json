@@ -1,0 +1,139 @@
+{
+ "out": "02-three-deadly-doors",
+ "ep": {
+  "num": 2,
+  "title": "Three Deadly Doors",
+  "mode": "riddle",
+  "cta": "Follow for a new riddle every day!",
+  "cast": {
+   "N": {
+    "name": "Narrator"
+   },
+   "p": {
+    "name": "Prisoner",
+    "look": "shirt",
+    "wear": "stripes",
+    "hair": "side",
+    "skin": "#e0ac69",
+    "colors": {
+     "pants": "#f2f2f2",
+     "shoes": "#5a3a22"
+    }
+   }
+  }
+ },
+ "voices": {
+  "N": [
+   "am_michael",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "Three Deadly Doors",
+   "lines": [
+    [
+     "N",
+     {
+      "bg": "hall3",
+      "cast": [
+       [
+        "p",
+        540,
+        1,
+        {
+         "s": 1.15,
+         "y": 120
+        }
+       ]
+      ],
+      "pose": {
+       "p": "sad"
+      },
+      "expr": {
+       "p": "sad"
+      }
+     },
+     "A prisoner gets one last chance to escape. There are three doors. Behind the first is a raging fire.",
+     "A prisoner gets one last chance to escape. There are three doors. Behind the first is a raging fire."
+    ],
+    [
+     "N",
+     {
+      "pose": {
+       "p": "shock"
+      },
+      "expr": {
+       "p": "shock"
+      },
+      "fx": {
+       "p": "sweat"
+      }
+     },
+     "Behind the second, assassins with sharp swords. Behind the third, lions that have not eaten in three years.",
+     "Behind the second, assassins with sharp swords. Behind the third, lions that haven't eaten in three years."
+    ],
+    [
+     "N",
+     {
+      "ask": "Which door is the safest?",
+      "timer": 10,
+      "pause": 8.5
+     },
+     "Which door is the safest? You have 10 seconds. Think!",
+     "Which door is the safest? You have 10 seconds. Think!"
+    ],
+    [
+     "N",
+     {
+      "reveal": true,
+      "answer": "The third door!",
+      "state": "lion",
+      "fx": {},
+      "pose": {
+       "p": "point"
+      },
+      "expr": {
+       "p": "smug"
+      }
+     },
+     "The third door!",
+     "The third door!"
+    ],
+    [
+     "N",
+     {
+      "reveal": false,
+      "front": [
+       [
+        "lion",
+        880,
+        1500,
+        0.9,
+        -1,
+        "dead"
+       ]
+      ],
+      "pose": {
+       "p": "cheer"
+      },
+      "expr": {
+       "p": "lol"
+      }
+     },
+     "Lions that have not eaten in three years would have starved long ago. The room is safe.",
+     "Lions that haven't eaten in three years would have starved long ago. The room is safe."
+    ],
+    [
+     "N",
+     {
+      "pose": {},
+      "reveal": false
+     },
+     "Did you get it right? Follow for a new riddle every day!",
+     "Did you get it right? Follow for a new riddle every day!"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+ "out": "06-wolf-goat-cabbage",
+ "ep": {
+  "num": 6,
+  "title": "Wolf, Goat and Cabbage",
+  "mode": "riddle",
+  "cta": "Follow for a new riddle every day!",
+  "cast": {
+   "N": {
+    "name": "Narrator"
+   },
+   "f": {
+    "name": "Farmer",
+    "look": "dhoti",
+    "hat": "cap",
+    "stache": true,
+    "skin": "#b5743f",
+    "colors": {
+     "hat": "#3aa76d",
+     "kurta": "#f2e6cc"
+    }
+   }
+  }
+ },
+ "voices": {
+  "N": [
+   "am_michael",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "Wolf, Goat and Cabbage",
+   "lines": [
+    [
+     "N",
+     {
+      "bg": "river",
+      "cast": [
+       [
+        "f",
+        300,
+        1,
+        {
+         "s": 1.0,
+         "y": 40
+        }
+       ]
+      ],
+      "pose": {
+       "f": "scratch"
+      },
+      "expr": {
+       "f": "think"
+      },
+      "props": [
+       [
+        "boat",
+        600,
+        1250,
+        0.9
+       ]
+      ],
+      "front": [
+       [
+        "wolf",
+        560,
+        1700,
+        0.7,
+        -1
+       ],
+       [
+        "goat",
+        760,
+        1720,
+        0.8,
+        -1
+       ],
+       [
+        "cabbage",
+        940,
+        1730,
+        0.9
+       ]
+      ]
+     },
+     "A farmer must cross a river with a wolf, a goat and a cabbage.",
+     "A farmer must cross a river with a wolf, a goat and a cabbage."
+    ],
+    [
+     "N",
+     {
+      "pose": {
+       "f": "count"
+      }
+     },
+     "His boat can carry only him and one of them at a time.",
+     "His boat can carry only him and one of them at a time."
+    ],
+    [
+     "N",
+     {
+      "pose": {
+       "f": "shock"
+      },
+      "expr": {
+       "f": "shock"
+      },
+      "fx": {
+       "f": "sweat"
+      }
+     },
+     "Left alone, the wolf eats the goat, and the goat eats the cabbage.",
+     "Left alone, the wolf eats the goat, and the goat eats the cabbage."
+    ],
+    [
+     "N",
+     {
+      "ask": "How does he get all three across?",
+      "timer": 10,
+      "pause": 8.5
+     },
+     "How does he get all three across? You have 10 seconds. Think!",
+     "How does he get all three across? You have 10 seconds. Think!"
+    ],
+    [
+     "N",
+     {
+      "reveal": true,
+      "answer": "Goat over. Wolf over,|bring the goat back.|Cabbage over. Goat over.",
+      "fx": {},
+      "pose": {
+       "f": "point"
+      },
+      "expr": {
+       "f": "smug"
+      }
+     },
+     "Take the goat across first. Go back and take the wolf, but bring the goat back with you.",
+     "Take the goat across first. Go back and take the wolf, but bring the goat back with you."
+    ],
+    [
+     "N",
+     {
+      "reveal": false,
+      "pose": {
+       "f": "cheer"
+      },
+      "expr": {
+       "f": "lol"
+      }
+     },
+     "Leave the goat, and take the cabbage across to the wolf. Finally, go back for the goat.",
+     "Leave the goat, and take the cabbage across to the wolf. Finally, go back for the goat."
+    ],
+    [
+     "N",
+     {
+      "pose": {},
+      "reveal": false
+     },
+     "Did you get it right? Follow for a new riddle every day!",
+     "Did you get it right? Follow for a new riddle every day!"
+    ]
+   ]
+  }
+ ]
+}

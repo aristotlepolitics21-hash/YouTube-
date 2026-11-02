@@ -1,0 +1,188 @@
+{
+ "out": "03-magnifying-glass-or-dragon",
+ "ep": {
+  "num": 3,
+  "title": "The Glass or the Dragon",
+  "mode": "riddle",
+  "cta": "Follow for a new riddle every day!",
+  "cast": {
+   "N": {
+    "name": "Narrator"
+   },
+   "p": {
+    "name": "Prisoner",
+    "look": "shirt",
+    "wear": "stripes",
+    "hair": "side",
+    "skin": "#e0ac69",
+    "colors": {
+     "pants": "#f2f2f2",
+     "shoes": "#5a3a22"
+    }
+   }
+  }
+ },
+ "voices": {
+  "N": [
+   "am_michael",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "The Glass or the Dragon",
+   "lines": [
+    [
+     "N",
+     {
+      "bg": "sunroom",
+      "cast": [
+       [
+        "p",
+        540,
+        1,
+        {
+         "s": 1.15,
+         "y": 140
+        }
+       ]
+      ],
+      "pose": {
+       "p": "scratch"
+      },
+      "expr": {
+       "p": "think"
+      },
+      "props": [
+       [
+        "magnifier",
+        270,
+        760,
+        0.9
+       ],
+       [
+        "beam",
+        270,
+        760,
+        1,
+        1,
+        "on"
+       ],
+       [
+        "dragon",
+        790,
+        1060,
+        0.85,
+        -1
+       ]
+      ]
+     },
+     "You're trapped in a stone room with two exits.",
+     "You're trapped in a stone room with two exits."
+    ],
+    [
+     "N",
+     {
+      "pose": {
+       "p": "shock"
+      },
+      "expr": {
+       "p": "shock"
+      },
+      "fx": {
+       "p": "sweat"
+      }
+     },
+     "Through the first is a giant magnifying glass. The sunlight through it will burn you instantly.",
+     "Through the first is a giant magnifying glass. The sunlight through it will burn you instantly."
+    ],
+    [
+     "N",
+     {
+      "fx": {},
+      "pose": {
+       "p": "shrug"
+      },
+      "expr": {
+       "p": "sad"
+      }
+     },
+     "The second exit is guarded by a fire breathing dragon.",
+     "The second exit is guarded by a fire-breathing dragon."
+    ],
+    [
+     "N",
+     {
+      "ask": "How do you escape?",
+      "timer": 10,
+      "pause": 8.5
+     },
+     "How do you escape? You have 10 seconds. Think!",
+     "How do you escape? You have 10 seconds. Think!"
+    ],
+    [
+     "N",
+     {
+      "reveal": true,
+      "answer": "Wait until night!",
+      "state": "night",
+      "props": [
+       [
+        "magnifier",
+        270,
+        760,
+        0.9
+       ],
+       [
+        "beam",
+        270,
+        760,
+        1,
+        1,
+        "off"
+       ],
+       [
+        "dragon",
+        790,
+        1060,
+        0.85,
+        -1
+       ]
+      ],
+      "pose": {
+       "p": "point"
+      },
+      "expr": {
+       "p": "smug"
+      }
+     },
+     "Wait until night!",
+     "Wait until night!"
+    ],
+    [
+     "N",
+     {
+      "reveal": false,
+      "pose": {
+       "p": "cheer"
+      },
+      "expr": {
+       "p": "lol"
+      }
+     },
+     "With no sunlight, the magnifying glass cannot burn you. Just walk out through the first exit.",
+     "With no sunlight, the magnifying glass can't burn you. Just walk out through the first exit."
+    ],
+    [
+     "N",
+     {
+      "pose": {},
+      "reveal": false
+     },
+     "Did you get it right? Follow for a new riddle every day!",
+     "Did you get it right? Follow for a new riddle every day!"
+    ]
+   ]
+  }
+ ]
+}

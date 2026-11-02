@@ -1,0 +1,169 @@
+{
+ "out": "10-second-place-race",
+ "ep": {
+  "num": 10,
+  "title": "The Race Riddle",
+  "mode": "riddle",
+  "cta": "Follow for a new riddle every day!",
+  "cast": {
+   "N": {
+    "name": "Narrator"
+   },
+   "you": {
+    "name": "You",
+    "look": "tshirt",
+    "skin": "#e0ac69",
+    "hair": "spiky",
+    "colors": {
+     "shirt": "#e63946",
+     "logo": "YOU"
+    }
+   },
+   "r2": {
+    "name": "Runner",
+    "look": "tshirt",
+    "skin": "#a9683a",
+    "hair": "short",
+    "colors": {
+     "shirt": "#3d7bff",
+     "logo": "2"
+    }
+   },
+   "r1": {
+    "name": "Leader",
+    "look": "tshirt",
+    "skin": "#d39b6a",
+    "hair": "puffy",
+    "colors": {
+     "shirt": "#ffd23f",
+     "logo": "1"
+    }
+   }
+  }
+ },
+ "voices": {
+  "N": [
+   "am_michael",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "The Race Riddle",
+   "lines": [
+    [
+     "N",
+     {
+      "bg": "track",
+      "cast": [
+       [
+        "r1",
+        860,
+        1,
+        {
+         "s": 0.95
+        }
+       ],
+       [
+        "r2",
+        520,
+        1,
+        {
+         "s": 0.95
+        }
+       ],
+       [
+        "you",
+        220,
+        1,
+        {
+         "s": 0.95
+        }
+       ]
+      ],
+      "pose": {
+       "r1": "idle",
+       "r2": "idle",
+       "you": "idle"
+      },
+      "expr": {
+       "you": "smug"
+      }
+     },
+     "You're running a race. Just before the finish line, you overtake the person in second place.",
+     "You're running a race. Just before the finish line, you overtake the person in second place."
+    ],
+    [
+     "N",
+     {
+      "ask": "What place are you in now?",
+      "timer": 10,
+      "pause": 8.5
+     },
+     "What place are you in now? You have 10 seconds. Think!",
+     "What place are you in now? You have 10 seconds. Think!"
+    ],
+    [
+     "N",
+     {
+      "reveal": true,
+      "answer": "Second place!",
+      "cast": [
+       [
+        "r1",
+        860,
+        1,
+        {
+         "s": 0.95
+        }
+       ],
+       [
+        "you",
+        560,
+        1,
+        {
+         "s": 0.95
+        }
+       ],
+       [
+        "r2",
+        260,
+        1,
+        {
+         "s": 0.95
+        }
+       ]
+      ],
+      "pose": {
+       "you": "cheer",
+       "r2": "sad"
+      },
+      "expr": {
+       "you": "lol",
+       "r2": "sad"
+      }
+     },
+     "Second place!",
+     "Second place!"
+    ],
+    [
+     "N",
+     {
+      "reveal": false
+     },
+     "You took their spot, so now you are second. The leader is still ahead of you. Most people say first. Did you?",
+     "You took their spot, so now you're second. The leader is still ahead of you. Most people say first. Did you?"
+    ],
+    [
+     "N",
+     {
+      "pose": {},
+      "reveal": false
+     },
+     "Did you get it right? Follow for a new riddle every day!",
+     "Did you get it right? Follow for a new riddle every day!"
+    ]
+   ]
+  }
+ ]
+}

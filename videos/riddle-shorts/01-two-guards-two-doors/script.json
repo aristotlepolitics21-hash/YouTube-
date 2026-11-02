@@ -1,0 +1,204 @@
+{
+ "out": "01-two-guards-two-doors",
+ "ep": {
+  "num": 1,
+  "title": "Two Guards, Two Doors",
+  "mode": "riddle",
+  "cta": "Follow for a new riddle every day!",
+  "cast": {
+   "N": {
+    "name": "Narrator"
+   },
+   "p": {
+    "name": "Prisoner",
+    "look": "shirt",
+    "wear": "stripes",
+    "hair": "side",
+    "skin": "#e0ac69",
+    "colors": {
+     "pants": "#f2f2f2",
+     "shoes": "#5a3a22"
+    }
+   },
+   "g1": {
+    "name": "Guard",
+    "look": "kurta",
+    "hat": "turban",
+    "stache": "big",
+    "skin": "#c68642",
+    "colors": {
+     "kurta": "#a8323a",
+     "hat": "#e8b030",
+     "pants": "#f4f1e8"
+    }
+   },
+   "g2": {
+    "name": "Guard",
+    "look": "kurta",
+    "hat": "turban",
+    "stache": "big",
+    "skin": "#c68642",
+    "colors": {
+     "kurta": "#3a5aa8",
+     "hat": "#e0e0e0",
+     "pants": "#f4f1e8"
+    }
+   }
+  }
+ },
+ "voices": {
+  "N": [
+   "am_michael",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "Two Guards, Two Doors",
+   "lines": [
+    [
+     "N",
+     {
+      "bg": "dungeon2",
+      "cast": [
+       [
+        "p",
+        540,
+        1,
+        {
+         "s": 1.15
+        }
+       ]
+      ],
+      "pose": {
+       "p": "sad"
+      },
+      "expr": {
+       "p": "sad"
+      },
+      "fx": {
+       "p": "sweat"
+      }
+     },
+     "You're locked in a dungeon with two doors. One leads to freedom. The other leads to a hungry beast.",
+     "You're locked in a dungeon with two doors. One leads to freedom. The other leads to a hungry beast."
+    ],
+    [
+     "N",
+     {
+      "cast": [
+       [
+        "g1",
+        230,
+        1,
+        {
+         "s": 1.15
+        }
+       ],
+       [
+        "p",
+        540,
+        1,
+        {
+         "s": 1.15
+        }
+       ],
+       [
+        "g2",
+        850,
+        -1,
+        {
+         "s": 1.15
+        }
+       ]
+      ],
+      "pose": {
+       "g1": "idle",
+       "g2": "idle",
+       "p": "scratch"
+      },
+      "hold": {
+       "g1": "spear",
+       "g2": "spear"
+      },
+      "expr": {
+       "p": "think"
+      },
+      "fx": {
+       "p": "question"
+      }
+     },
+     "Each door has a guard. One always tells the truth. The other always lies. You do not know which is which.",
+     "Each door has a guard. One always tells the truth. The other always lies. You don't know which is which."
+    ],
+    [
+     "N",
+     {
+      "fx": {},
+      "pose": {
+       "p": "count"
+      },
+      "expr": {
+       "p": "neutral"
+      }
+     },
+     "You may ask only one question, to only one guard.",
+     "You may ask only one question, to only one guard."
+    ],
+    [
+     "N",
+     {
+      "ask": "What one question gets you out?",
+      "timer": 10,
+      "pause": 8.5
+     },
+     "What one question gets you out? You have 10 seconds. Think!",
+     "What one question gets you out? You have 10 seconds. Think!"
+    ],
+    [
+     "N",
+     {
+      "reveal": true,
+      "answer": "Ask: which door would the|OTHER guard say is freedom?|Then take the opposite door.",
+      "pose": {
+       "p": "point"
+      },
+      "expr": {
+       "p": "smug"
+      }
+     },
+     "Ask either guard: which door would the other guard say leads to freedom? Then take the opposite door.",
+     "Ask either guard: which door would the other guard say leads to freedom? Then take the opposite door."
+    ],
+    [
+     "N",
+     {
+      "state": "right",
+      "reveal": false,
+      "pose": {
+       "p": "cheer",
+       "g1": "idle",
+       "g2": "idle"
+      },
+      "expr": {
+       "p": "lol",
+       "g1": "shock",
+       "g2": "shock"
+      }
+     },
+     "The truthful guard reports the liar's wrong answer. The liar twists the truthful one's answer. Either way, you hear the wrong door.",
+     "The truthful guard reports the liar's wrong answer. The liar twists the truthful one's answer. Either way, you hear the wrong door."
+    ],
+    [
+     "N",
+     {
+      "pose": {},
+      "reveal": false
+     },
+     "Did you get it right? Follow for a new riddle every day!",
+     "Did you get it right? Follow for a new riddle every day!"
+    ]
+   ]
+  }
+ ]
+}

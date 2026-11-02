@@ -1,0 +1,140 @@
+{
+ "out": "05-coconut-tree-race",
+ "ep": {
+  "num": 5,
+  "title": "The Coconut Tree Race",
+  "mode": "riddle",
+  "cta": "Follow for a new riddle every day!",
+  "cast": {
+   "N": {
+    "name": "Narrator"
+   }
+  }
+ },
+ "voices": {
+  "N": [
+   "am_michael",
+   1.04
+  ]
+ },
+ "sections": [
+  {
+   "name": "The Coconut Tree Race",
+   "lines": [
+    [
+     "N",
+     {
+      "bg": "jungle",
+      "cast": [],
+      "props": [
+       [
+        "coconut",
+        500,
+        1300,
+        1
+       ]
+      ],
+      "front": [
+       [
+        "monkey",
+        200,
+        1500,
+        0.7,
+        1
+       ],
+       [
+        "squirrel",
+        820,
+        1560,
+        0.9,
+        -1
+       ],
+       [
+        "bird",
+        820,
+        860,
+        1,
+        -1
+       ]
+      ]
+     },
+     "A monkey, a squirrel and a bird race to the top of a coconut tree.",
+     "A monkey, a squirrel and a bird race to the top of a coconut tree."
+    ],
+    [
+     "N",
+     {},
+     "Who will get the banana first?",
+     "Who will get the banana first?"
+    ],
+    [
+     "N",
+     {
+      "ask": "Who gets the banana?",
+      "timer": 10,
+      "pause": 8.5
+     },
+     "Who gets the banana? You have 10 seconds. Think!",
+     "Who gets the banana? You have 10 seconds. Think!"
+    ],
+    [
+     "N",
+     {
+      "reveal": true,
+      "answer": "Nobody!"
+     },
+     "Nobody!",
+     "Nobody!"
+    ],
+    [
+     "N",
+     {
+      "reveal": false,
+      "front": [
+       [
+        "monkey",
+        200,
+        1500,
+        0.7,
+        1
+       ],
+       [
+        "squirrel",
+        820,
+        1560,
+        0.9,
+        -1
+       ],
+       [
+        "bird",
+        820,
+        860,
+        1,
+        -1
+       ],
+       [
+        "emoji",
+        540,
+        760,
+        1.4,
+        1,
+        "🥥"
+       ]
+      ]
+     },
+     "It is a coconut tree. You will not find any bananas on it.",
+     "It's a coconut tree. You won't find any bananas on it."
+    ],
+    [
+     "N",
+     {
+      "pose": {},
+      "reveal": false
+     },
+     "Did you get it right? Follow for a new riddle every day!",
+     "Did you get it right? Follow for a new riddle every day!"
+    ]
+   ]
+  }
+ ]
+}

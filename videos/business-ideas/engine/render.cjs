@@ -6,7 +6,7 @@ const { chromium } = require('playwright'), fs = require('fs'), path = require('
   const [ep, w, out, f0, ...rest] = process.argv.slice(2), FPS = 30, sc = JSON.parse(fs.readFileSync(`${ep}/${process.env.SCRIPT || 'script.json'}`));
   const lines = sc.sections.flatMap(s => s.lines), durs = JSON.parse(fs.readFileSync(`${w}/durs.json`)), caps = JSON.parse(fs.readFileSync(`${w}/caps.json`));
   const b = await chromium.launch(), p = await b.newPage({ viewport: { width: 1080, height: 1920 } }); p.on('pageerror', e => console.log('ERR', e.message));
-  await p.goto('file://' + path.join(__dirname, 'page.html'));
+  await p.goto('file://' + (process.env.PAGE || path.join(__dirname, 'page.html'))); // PAGE: another series' page built on toon.js
   // real-photo backgrounds (comedy shorts): sc.photos maps a key to a jpg path relative to EPDIR
   const photos = Object.fromEntries(Object.entries(sc.photos || {}).map(([k, f]) => [k, 'data:image/jpeg;base64,' + fs.readFileSync(path.join(ep, f)).toString('base64')]));
   await p.evaluate(d => window.setup(d), { speakers: lines.map(l => l[0]), beats: lines.map(l => l[1]), texts: lines.map(l => l[3]), durs, caps, ep: sc.ep, photos });
