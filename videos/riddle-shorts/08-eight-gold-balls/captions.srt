@@ -1,0 +1,23 @@
+1
+00:00:00,350 --> 00:00:04,786
+The king has 8 gold balls. They look the same, but one is slightly heavier.
+
+2
+00:00:05,086 --> 00:00:08,571
+Find the heavy one, and you may use my scale only twice!
+
+3
+00:00:08,871 --> 00:00:12,458
+How do you find it in 2 weighings? You have 10 seconds. Think!
+
+4
+00:00:21,258 --> 00:00:27,791
+Put 3 balls on each side. If they balance, the heavy ball is one of the 2 left over. Weigh those two.
+
+5
+00:00:28,091 --> 00:00:34,318
+If one side is heavier, take those 3. Weigh one against another. If they balance, it's the third ball.
+
+6
+00:00:34,618 --> 00:00:37,704
+Did you get it right? Follow for a new riddle every day!
