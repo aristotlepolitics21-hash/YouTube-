@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:06,512
+You're locked in a dungeon with two doors. One leads to freedom. The other leads to a hungry beast.
+
+2
+00:00:06,812 --> 00:00:13,665
+Each door has a guard. One always tells the truth. The other always lies. You don't know which is which.
+
+3
+00:00:13,965 --> 00:00:17,135
+You may ask only one question, to only one guard.
+
+4
+00:00:17,435 --> 00:00:20,847
+What one question gets you out? You have 10 seconds. Think!
+
+5
+00:00:29,647 --> 00:00:35,879
+Ask either guard: which door would the other guard say leads to freedom? Then take the opposite door.
+
+6
+00:00:36,179 --> 00:00:44,494
+The truthful guard reports the liar's wrong answer. The liar twists the truthful one's answer. Either way, you hear the wrong door.
+
+7
+00:00:44,794 --> 00:00:47,880
+Did you get it right? Follow for a new riddle every day!
