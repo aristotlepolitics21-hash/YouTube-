@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:04,072
+A farmer must cross a river with a wolf, a goat and a cabbage.
+
+2
+00:00:04,372 --> 00:00:07,583
+His boat can carry only him and one of them at a time.
+
+3
+00:00:07,883 --> 00:00:11,663
+Left alone, the wolf eats the goat, and the goat eats the cabbage.
+
+4
+00:00:11,963 --> 00:00:15,338
+How does he get all three across? You have 10 seconds. Think!
+
+5
+00:00:24,138 --> 00:00:28,963
+Take the goat across first. Go back and take the wolf, but bring the goat back with you.
+
+6
+00:00:29,263 --> 00:00:34,241
+Leave the goat, and take the cabbage across to the wolf. Finally, go back for the goat.
+
+7
+00:00:34,541 --> 00:00:37,627
+Did you get it right? Follow for a new riddle every day!
